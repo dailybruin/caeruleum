@@ -4,7 +4,9 @@ The theme is only currently a group of html/css files that will eventually be po
 
 * HTML scaffolding for front page [complete]
 * Add in CSS and images
-* Work with the responsive-ness of the 
+* Work with the responsive-ness of the site (and make it work)
+* Convert it into a Wordpress theme (on a new branch)
+* Eternal glory
 
 ## License
 
