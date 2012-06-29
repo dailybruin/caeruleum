@@ -1,0 +1,18 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+.navlist {
+    list-style: none;
+    display: inline;
+}
+.navlist li {
+	display:inline;
+}
+
+div#toplinks ul, div#toplinks div {
+    background-color: #ededed;
+    border-radius: 0px 0px 3px 3px;
+}

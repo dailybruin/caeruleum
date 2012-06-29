@@ -13,22 +13,323 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet/less" href="less/style.less">
-	<script src="js/libs/less-1.3.0.min.js"></script>
-	
-	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
-	to style.css, and replace the 2 lines above by this one:
-
-	<link rel="stylesheet" href="less/style.css">
-	 -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<div class="container">
+		<div id="toplinks" class="row">
+			<ul class="span5 navlist" id="toplinks-info">
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Staff</a></li>
+				<li><a href="#">Join the Staff</a></li>
+				<li><a href="#">Advertise</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#" id="toplinks-info-donate">Donate</a></li>
+				<li><a href="#"><img src="http://placehold.it/15x15" /></a></li>
+			</ul>
+			<div class="span3 offset4">
+				We're also on  <img src="http://placehold.it/15x15" /> <img src="http://placehold.it/15x15" /> <img src="http://placehold.it/15x15" />
+			</div>
+		</div><!-- end div#toplinks -->
+		
+		<div id="nameplate" class="row">
+			<div class="span3" id="nameplate-todayspaper">
+				<span>Today's Paper</span>
+			</div>
+			<div class="span6" id="namepate-image"> </div>
+			<div class="span2 offset1" id="nameplate-date">
+				<span class="nameplate-date-weather"> </span>
+				<span class="nameplate-date-week">Week 6</span>
+				<span class="nameplate-date-today">May 12, 2012</span>
+			</div>
+		</div><!-- end div#nameplate -->
+		
+		<nav class="row" id="firstnav">
+			<ul class="navlist span12">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Opinion</a></li>
+				<li><a href="#">a&amp;e</a></li>
+				<li><a href="#">Blogs</a></li>
+				<li><a href="#">Media</a></li>
+			</ul>
+			<div class="firstnav-search"> </div>
+		</nav><!-- end nav#firstnav -->
+		
+		<nav class="row" id="secondnav">
+			<span class="span1">More:</span>
+			<ul class="navlist span7">
+				<li><a href="#">Prime Magazine</a></li>
+				<li><a href="#">Radio</a></li>
+				<li><a href="#">Graphics</a></li>
+				<li><a href="#">Classifieds</a></li>
+			</ul>
+			<div class="span4" id="secondnav-socialmedia"> 
+				<!-- put social media code here -->
+			</div>
+		</nav><!-- end nav#secondnav -->
+		
+		<div class="ad" style="width:728px;height:90px;background-color:red">
+			<img src="http://placehold.it/728x90&text=ADVERTISEMENT" />
+		</div>
 
+		<div class="row" id="topcontent">
+			<div class="span8" id="topcontent-rotator">
+				<ul class="navlist">
+					<li><a href="#">USAC Election Results</a></li>
+					<li><a href="#">CURE Referendum</a></li>
+					<li><a href="#">Women's Water Polo</a></li>
+					<li><a href="#">Culture Night</a></li>
+				</ul>
+				<img src="http://placehold.it/620x450" />
+				<span class="photocredit">Isaac Arjonilla / Daily Bruin Senior Staff</span>
+				<span class="timestamp">2 Hours Ago</span>
+				<h1 class="headline-c">Independents claim two of three contested seats in USAC elections</h1>
+				<span class="byline">By Melissa Truong</span>
+				<p class="rotator-story">Independent candidates Lana Habib El-Farra and Taylor Mason took two of three contested positions in this year's undergraduate student government elections, but the Bruins United slate will still hold a large majority on next year's council. <a href="#">More &raquo;</a></p>
+			</div><!-- end div#topcontent-rotator -->
+			
+			<div class="span4" id="topcontent-stories">
+				<article>
+					<span class="timestamp">1 Hour Ago</span>
+					<h1 class="headline-a">Students vote down CURE referendum</h1>
+					<span class="byline">By Jillian Beck</span>
+					<img src="http://placehold.it/100x100" />
+					<p>Students voted down a fee increase in Thursday night's undergraduate student government elections. <a href="#">More &raquo;</a></p>
+				</article>
+				
+				<article>
+					<span class="badge badge-now">Now</span>
+					<span class="timestamp">10 Minutes Ago</span>
+					<h1 class="headline-b">Independents balance Bruins United majority in council</h1>
+					<span class="byline">By Melissa Truong</span>
+					<p>Bruins United will again hold the majority in undergraduate student government, but with no opposing slate in next year's council. <a href="#">More &raquo;</a></p>
+				</article>
+				
+				<img src="http://placehold.it/300x250&text=ADVERTISEMENT" />
+			</div>
+		</div><!-- end div#topcontent -->
+		
+		<div class="row" id="middlecontent1">
+			<div class="span5">
+				<a class="togglemenu">Popular</a>
+				<a class="togglemenu">Most Commented</a>
+				<a class="togglemenu">Blog Posts</a>
+				<ul d="popularlist">
+					<a href="#"><li>California education institutions should back Gov. Brown's tax initiative <span>3</span></li></a>
+					<a href="#"><li>UCLA surgeon Dr. Christian Head's lawsuit against UC regents gains support through petition <span>2</span></li></a>
+					<a href="#"><li>Submission: 'Community and Conflict in the Modern World' GE requirement must be understood  <span>4</span></li></a>
+					<a href="#"><li>Strong Side: Coach John Savage is the driving force behind baseball's rising success <span>1</span></li></a>
+					<a href="#"><li>Back to USAC: Returning officers to aid with financial issues, guide new councilmembers   <span>1</span></li></a>
+				</ul>
+			</div>
+			<div class="span7">
+				<h2>Featured Classifieds</h2>
+				<p>ACCUSED of cheating? Plagiarism? Grade dispute? Criminal Charges? Call BEFORE speaking with the Dean or Police. FREE consultation. Law Offices of Kosnett&Durchfort. (310)444-8898http://www.educationlawyer.org &bull; <a href="#">6300 - Legal Advice/Attorneys</a></p>
+				<p>ORGANIC CHEMISTRY IN ONE MONTH.We offer all science classes required for health professional programs. Weekend WASC accredited. Whittierwww.integratedscienceprogram.com &bull; <a href="#">6700 - Professional Services</a></p>
+				<p>WRITING TUTORKind and patient Stanford graduate. Help with the English language--for students of all ages/levels. 310-440-3118. &bull; <a href="#">7000 - Tutoring Offered</a></p>
+				<p>SUMMER CAMPAIGN JOBS!Fight Hate Groups. Teach Tolerance. Seek Justice.Earn $1400-$2200/month.Los Angeles: 310-441-1712Pasadena: 626-844-1900Newport Beach: 202-695-8075 &bull; <a href="#">7800 - Help Wanted</a></p>
+				<p>$925 Bachelor. Small kitchenette. No parking. Utilities paid. July 10th Move in. 10943 Roebling Ave. 1yr lease. No pets. 310-395-8643. &bull; <a>8400 - Apartments for Rent</a></p>
+				<p>**SANTA MONICA. Private, charming 1Bdrm. Nice yard, blocks from beach. Newly remodeled. Pearl/11th Street. Serious applicants only. Laurent 310-994-1127. &bull; <a href="#">8400 - Apartments for Rent</a></p>
+			</div>
+		</div><!-- end div#middlecontent1 -->
+		
+		<div class="row" id="middlecontent2">
+			<div class="span8" id="multimedia-rotator">
+					<h2>Multimedia</h2> <span class="multimedia-more">More&hellip; <a href="#">photos &raquo;</a> <a href="#">videos &raquo;</a>   <a href="#">audio &raquo;</a>   <a href="#">graphics &raquo;</a></span>
+				<img src="http://placehold.it/200x300" />
+				<div class="multimedia-rotator-item multimedia-rotator-item-selected">
+					<span class="badge badge-now">Now</span>
+					<img src="http://placehold.it/30x30" />
+					<span class="multimedia-title">Photo Gallery</span>
+					<span class="multimedia-date">May 28 | 22 images</span>
+					<p>26th Annual JazzReggae Festival at UCLA: Jam Day</p>
+				</div>
+				
+				<div class="multimedia-rotator-item">
+					<img src="http://placehold.it/30x30" />
+					<span class="multimedia-title">Photo Gallery</span>
+					<span class="multimedia-date">May 28 | 22 images</span>
+					<p>Hitting a tackling issue in football</p>
+				</div>
+	
+				<div class="multimedia-rotator-item">
+					<img src="http://placehold.it/30x30" />
+					<span class="multimedia-title">Online Graphic</span>
+					<span class="multimedia-date">May 28</span>
+					<p>Miles of Memories: Man runs a marathon of memories</p>
+				</div>
+				
+				<div class="multimedia-item">
+					<img src="http://placehold.it/30x30" />
+					<span class="multimedia-title">Audio</span>
+					<span class="multimedia-date">May 28 | 3:20</span>
+					<span class="subhead">Student transforms her love for fish into a business at the dorms</span>
+					<span class="byline">By Alexia Boyarsly</span>
+					<p>To battle the loneliness that sometimes comes with living in the dorms, transfer student Kate turned to betta fish to offer her companionship. <a href="#">More &raquo;</a></p>
+				</div>
+				
+				<div id="multimedia-podcast"><a href="#">Subscribe to our podcast on iTunes.</a></div>
 
+			</div><!-- end div#multimedia-rotator -->
+			<div id="poll" class="span4">
+				<h2>Poll <img src="http://placehold.it/40x40" /></h2>
+				<a id="poll-past">Past polls &raquo;</a>
+				<span class="poll-question">Last week, Los Angeles City Council approved a ban on plastic bags in L.A. markets. Is this a good idea?</span>
+				<form>
+					<input type="radio" name="poll" value="1" />No. A ban no longer gives customers the freedom to choose between paper and plastic.<br />
+					<input type="radio" name="poll" value="2" />Yes. This ban makes the point that it is everyone's duty to care for the environment.<br />
+					<input type="radio" name="poll" value="3" />I think a ban is too drastic a measure. Not all consumers are aware of the negative environmental impact of plastic bags.<br />
+					<input type="radio" name="poll" value="4" />I am undecided on this issue.<br />
 
+					<submit class="btn">Submit </submit>
+					<a href="#">View results without voting</a>
+				</form>
+			</div><!-- end div#poll -->
+		</div><!-- end div#middlecontent2 -->
+		
+		<div class="row" id="bottomcontent">
+			<div class="span3" id="bottomcontent-news">
+				<h2>News</h2>
+				<ul>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>		
+					<a href="#"><li class="bottomcontent-more">More News</li></a>		
+				</ul>
+			</div><!-- end div#bottomcontent-news -->
+			
+			<div class="span3" id="bottomcontent-sports">
+				<h2>Sports</h2>
+				<ul>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>	
+					<a href="#"><li class="bottomcontent-more">More Sports</li></a>		
+				</ul>
+			</div><!-- end div#bottomcontent-sports -->
+
+			<div class="span3" id="bottomcontent-ae">
+				<h2>a&amp;e</h2>
+				<ul>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>		
+					<a href="#"><li class="bottomcontent-more">More a&amp;e</li></a>		
+				</ul>
+			</div><!-- end div#bottomcontent-ae -->
+
+			<div class="span3" id="bottomcontent-opinion">
+				<h2>Opinion</h2>
+				<ul>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>
+					<a href="#"><li>Third annual Cranes for Cancer aims to lift patients' spirits <span class="bottomcontent-date">May 25</span></li></a>		
+					<a href="#"><li class="bottomcontent-more">More Opinion</li></a>		
+				</ul>
+			</div><!-- end div#bottomcontent-opinion -->
+		</div><!-- end div#bottomcontent -->
+		
+		<div class="row" id="paidadvertising">
+			<h4>Paid Advertising</h4>
+			<ul>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+				<li><a href="#">Condoms</a></li>
+				<li><a href="#">sell my mobile</a></li>
+			</ul>
+		</div><!-- end div#paidadvertising -->
+	</div><!-- end div.container -->
+	
+	
+	<footer class="container">
+		<img src="http://placehold.it/500x100" />
+		<div class="footer-links">
+			<h3>News</h3>
+			<ul>
+				<li><a href="#">A closer look</a></li>
+				<li><a href="#">Campus</a></li>
+				<li><a href="#">Crime</a></li>
+				<li><a href="#">Science &amp; Health</a></li>
+				<li><a href="#">Student Government</a></li>
+				<li><a href="#">Westwood</a></li>
+			</ul>
+			<h3>a&amp;e</h3>
+			<ul>
+				<li><a href="#">A closer look</a></li>
+				<li><a href="#">Campus</a></li>
+				<li><a href="#">Crime</a></li>
+				<li><a href="#">Science &amp; Health</a></li>
+				<li><a href="#">Student Government</a></li>
+				<li><a href="#">Westwood</a></li>
+			</ul>
+			<h3>Sports</h3>
+			<ul>
+				<li><a href="#">A closer look</a></li>
+				<li><a href="#">Campus</a></li>
+				<li><a href="#">Crime</a></li>
+				<li><a href="#">Science &amp; Health</a></li>
+				<li><a href="#">Student Government</a></li>
+				<li><a href="#">Westwood</a></li>
+			</ul>
+			<h3>Opinion</h3>
+			<ul>
+				<li><a href="#">A closer look</a></li>
+				<li><a href="#">Campus</a></li>
+				<li><a href="#">Crime</a></li>
+				<li><a href="#">Science &amp; Health</a></li>
+				<li><a href="#">Student Government</a></li>
+				<li><a href="#">Westwood</a></li>
+			</ul>
+			<h3>Prime</h3>
+			<h3>Blogs</h3>
+			<h3>Classifieds</h3>
+			<h3>About</h3>
+		</div><!-- end div#footer-links -->
+		<span class="copyright">Content copyright &copy; 2012 the Daily Bruin</span>
+	</footer>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
