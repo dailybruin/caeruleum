@@ -30,10 +30,10 @@
 				<li><a href="#">Advertise</a></li>
 				<li><a href="#">Privacy Policy</a></li>
 				<li><a href="#" id="toplinks-info-donate">Donate</a></li>
-				<li><a href="#"><img src="http://placehold.it/15x15" /></a></li>
+				<li><a href="#"><i class="smicon-rss"></i></a></li>
 			</ul>
 			<div class="span3 offset3" id="toplinks-socialmedia">
-				We're also on  <img src="http://placehold.it/15x15" /> <img src="http://placehold.it/15x15" /> <img src="http://placehold.it/15x15" />
+				We're also on  <i class="smicon-youtube"></i> <i class="smicon-twitter"></i> <i class="smicon-fb"></i>
 			</div>
 		</div><!-- end div#toplinks -->
 		
@@ -41,7 +41,7 @@
 			<div class="span3" id="nameplate-todayspaper">
 				<span>Today's Paper</span>
 			</div>
-			<div class="span6" id="namepate-image"> </div>
+			<div class="span6" id="nameplate-image"><img src="img/nameplate.png" /></div>
 			<div class="span2 offset1" id="nameplate-date">
 				<span class="nameplate-date-weather"> </span>
 				<span class="nameplate-date-week">Week 6</span>
@@ -62,7 +62,9 @@
 				<li><a href="#">Blogs</a></li>
 				<li><a href="#">Media</a></li>
 			</ul>
-			<div class="firstnav-search"> </div>
+			<div class="firstnav-search input-append">
+				<input id="search-input" type="text" placeholder="Search..." /><button class="btn" type="button"><i class="icon-search"></i></button>
+			</div>
 		</nav><!-- end nav#firstnav -->
 	</div><!-- end div#firstnav-container -->
 	</div><!-- end div#firstnav-container-back -->
@@ -85,18 +87,20 @@
 	</div><!-- end div#secondnav-container-back -->
 
 	<div class="container">		
-		<div class="ad" style="width:728px;height:90px;background-color:red">
+		<div class="ad hidden-phone" style="width:728px;height:90px;background-color:red; margin-bottom:10px;">
 			<img src="http://placehold.it/728x90&text=ADVERTISEMENT" />
 		</div>
 
 		<div class="row" id="topcontent">
 			<div class="span8" id="topcontent-rotator">
-				<ul class="navlist">
-					<li><a href="#">USAC Election Results</a></li>
-					<li><a href="#">CURE Referendum</a></li>
-					<li><a href="#">Women's Water Polo</a></li>
-					<li><a href="#">Culture Night</a></li>
-				</ul>
+				<div id="topcontent-rotator-nav">
+					<ul class="navlist">
+						<li class="rotate-current"><a href="#">USAC Election Results</a></li>
+						<li><a href="#">CURE Referendum</a></li>
+						<li><a href="#">Women's Water Polo</a></li>
+						<li><a href="#">Culture Night</a></li>
+					</ul>
+				</div><!-- end div#topcontent-rotator-nav -->
 				<img src="http://placehold.it/620x450" />
 				<span class="photocredit">Isaac Arjonilla / Daily Bruin Senior Staff</span>
 				<span class="timestamp">2 Hours Ago</span>

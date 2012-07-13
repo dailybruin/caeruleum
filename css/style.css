@@ -3,8 +3,36 @@
 /* ===== Primary Styles ========================================================
    Author:
    ========================================================================== */
+  
+[class^="headline-"],
+[class*=" headline-"] {
+	font-family: "Palatino Linotype";
+}
+ 
+.headline-b {
+	font-family: "Palatino Linotype";
+	font-size: 25px;
+	line-height: 28px;
+}
+
+.headline-column {
+	font-style:italic;
+}
+
+.timestamp {
+	display: block;
+	color: #AAA;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	margin-bottom: -5px;
+}
 
 /* --- top links */
+div#nameplate-image {
+	padding-bottom: 10px;
+}
+
 .navlist {
     list-style: none;
     display: inline;
@@ -69,6 +97,7 @@ div#firstnav-container-back {
 nav#firstnav ul {
 	padding:0;
 	margin-bottom:0;
+	width:auto;
 }
 
 
@@ -88,6 +117,9 @@ nav#firstnav ul li a {
 	padding:12px 10px;
 	display:block;
 	color:black;
+	
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+
 }
 nav#firstnav ul li a:hover {
 	text-decoration:none;
@@ -155,6 +187,105 @@ span.more_text {
 	float:left;
 	display:block;
 }
+
+div.firstnav-search {
+	float: right;
+	margin-top: 8px;
+}
+
+/*--- rotator */
+div#topcontent-rotator ul {
+	padding-left:0;
+	margin-left:0;
+	text-align:center;
+}
+
+div#topcontent-rotator ul li a {
+	color:#333;
+	margin:0 10px;
+}
+
+div#topcontent-rotator ul li.rotate-current a {
+	font-weight:bold;
+	color:black;
+}
+
+div#topcontent-rotator-nav {
+	height:20px;
+	
+	text-align:center;
+	border: 1px solid #d9d9d9;
+	border-bottom:none;
+
+	
+	background: rgb(245,246,245); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(245,246,245,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,245,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f5', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* ===== Additional Icons (Social Media) ========================================================
+   Author:
+   ========================================================================== */
+[class^="smicon-"],
+[class*=" smicon-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 16px;
+  vertical-align: text-top;
+  background-image: url("../img/socialicons_sprite.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+[class^="smicon-"]:last-child,
+[class*=" smicon-"]:last-child {
+  *margin-left: 0;
+}
+
+.smicon-email {
+	background-position:0 0;
+}
+
+.smicon-fb {
+	background-position:-18px 0;
+}
+
+.smicon-flickr {
+	background-position:-36px 0;
+}
+
+.smicon-google {
+	background-position:-54px 0;
+}
+
+.smicon-rss {
+	background-position:-72px 0;
+}
+
+.smicon-spotify {
+	background-position:-90px 0;
+}
+
+.smicon-twitter {
+	background-position:-108px 0;
+}
+
+.smicon-vimeo {
+	background-position:-126px 0;
+}
+
+.smicon-youtube {
+	background-position:-144px 0;
+}
+
 
 
 /* ===== Responsive Styles ========================================================
