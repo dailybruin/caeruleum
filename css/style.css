@@ -328,6 +328,29 @@ div.topcontent-rotator-control {
 	padding-top:8px;
 }
 
+
+/* ===== Bottom content ========================================================
+   Author:
+   ========================================================================== */
+#paidadvertising {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#paidadvertising h4 {
+	text-align:center;
+	font-weight:normal;
+}
+#paidadvertising ul {
+	list-style:none;
+	width:100%;
+    display: block;
+    float: left;
+    background-color: #f0f0f0;
+}
+#paidadvertising ul li {
+	text-align:center;
+}
+
 /* ===== Additional Icons (Social Media) ========================================================
    Author:
    ========================================================================== */
