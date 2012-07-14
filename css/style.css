@@ -7,11 +7,23 @@
 [class^="headline-"],
 [class*=" headline-"] {
 	font-family: "Palatino Linotype";
+	font-weight:400;
+	font-size:24px;
+	line-height: 25px;
+	margin-bottom:10px;
+
+}
+.headline-a {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+    font-size: 2.3em;
+    line-height: 1em;
 }
  
 .headline-b {
 	font-family: "Palatino Linotype";
-	font-size: 25px;
+	font-weight:bold;
+	font-size: 28px;
 	line-height: 28px;
 }
 
@@ -20,13 +32,47 @@
 }
 
 .timestamp {
-	display: block;
 	color: #AAA;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.8em;
-	margin-bottom: -5px;
 }
+
+.timestamp-now {
+	color:#f89406;
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.photocredit {
+    font-style: italic;
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.byline {
+    font-family: "Palatino Linotype";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.thumbnail-a {
+    float: left;
+    margin-right: 10px;
+}
+
+article {
+	display:block;
+	margin:0 0 23px 0;
+}
+
+.label-now,
+.badge-now {
+	background-color:#f89406;
+}
+
+
 
 /* --- top links */
 div#nameplate-image {
@@ -74,6 +120,51 @@ div#toplinks-socialmedia {
 
 #toplinks-info li a#toplinks-info-donate {
 	color:#234a2c;
+}
+
+#nameplate-date {
+    color: white;
+    background-color: #333;
+    display: block;
+    height: 46px;
+    top: 35px;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+}
+
+.nameplate-date-week {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 5px;
+    padding-left:17px;
+}
+
+.nameplate-date-today {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin-top: 2px;
+    padding-left:17px;
+}
+
+.nameplate-date-weather {
+    display: block;
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+.nameplate-date-weather a span {
+	color:white;
+	display:block;
+    margin-top: -11px;
+    text-shadow: 0 0 5px black;
+}
+.nameplate-date-weather a:hover {
+	text-decoration:none;
+	color:#222;
 }
 
 /* --- top-level navigation */
@@ -194,6 +285,11 @@ div.firstnav-search {
 }
 
 /*--- rotator */
+div#topcontent-rotator {
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 10px;
+}
+
 div#topcontent-rotator ul {
 	padding-left:0;
 	margin-left:0;
@@ -226,7 +322,10 @@ div#topcontent-rotator-nav {
 	background: -ms-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f5', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}
 
+div.topcontent-rotator-control {
+	padding-top:8px;
 }
 
 /* ===== Additional Icons (Social Media) ========================================================
@@ -285,6 +384,47 @@ div#topcontent-rotator-nav {
 .smicon-youtube {
 	background-position:-144px 0;
 }
+
+
+
+[class^="wicon-"],
+[class*=" wicon-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 16px;
+  vertical-align: text-top;
+  background-image: url("../img/weathericons_sprite.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+[class^="wicon-"]:last-child,
+[class*=" wicon-"]:last-child {
+  *margin-left: 0;
+}
+
+.wicon-clouds{
+	background-position:0 0;
+}
+
+.wicon-cloudy{
+	background-position:-18px 0;
+}
+.wicon-lightning{
+	background-position:-36px 0;
+}
+.wicon-rain{
+	background-position:-54px 0;
+}
+.wicon-snow{
+	background-position:-72px 0;
+}
+.wicon-sun{
+	background-position:-90px 0;
+}
+
 
 
 

@@ -13,9 +13,11 @@
 
 	<meta name="viewport" content="width=device-width">
 
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/style.css">
+
 
 	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 </head>
@@ -39,12 +41,12 @@
 		
 		<div id="nameplate" class="row">
 			<div class="span3" id="nameplate-todayspaper">
-				<span>Today's Paper</span>
+				<span style="color: white;">Today's Paper</span>
 			</div>
 			<div class="span6" id="nameplate-image"><img src="img/nameplate.png" /></div>
 			<div class="span2 offset1" id="nameplate-date">
-				<span class="nameplate-date-weather"> </span>
-				<span class="nameplate-date-week">Week 6</span>
+				<span class="nameplate-date-weather"><a href="#"><i class="wicon-sun"></i><span>92&deg;</span></a></span>
+				<span class="nameplate-date-week">Week 3</span>
 				<span class="nameplate-date-today">May 12, 2012</span>
 			</div>
 		</div><!-- end div#nameplate -->
@@ -102,9 +104,12 @@
 					</ul>
 				</div><!-- end div#topcontent-rotator-nav -->
 				<img src="http://placehold.it/620x450" />
-				<span class="photocredit">Isaac Arjonilla / Daily Bruin Senior Staff</span>
+				<span class="photocredit">Isaac Arjonilla / Daily Bruin Senior Staff</span>		
+				<div class="topcontent-rotator-control input-append">
+					<button class="btn" type="button"><i class="icon-chevron-left"></i></button><button class="btn" type="button"><i class="icon-chevron-right"></i></button>
+				</div>
 				<span class="timestamp">2 Hours Ago</span>
-				<h1 class="headline-c">Independents claim two of three contested seats in USAC elections</h1>
+				<h1 class="headline-c">Independents claim two of three contested seats in USAC elections</h1>				
 				<span class="byline">By Melissa Truong</span>
 				<p class="rotator-story">Independent candidates Lana Habib El-Farra and Taylor Mason took two of three contested positions in this year's undergraduate student government elections, but the Bruins United slate will still hold a large majority on next year's council. <a href="#">More &raquo;</a></p>
 			</div><!-- end div#topcontent-rotator -->
@@ -114,13 +119,13 @@
 					<span class="timestamp">1 Hour Ago</span>
 					<h1 class="headline-a">Students vote down CURE referendum</h1>
 					<span class="byline">By Jillian Beck</span>
-					<img src="http://placehold.it/100x100" />
+					<img class="thumbnail-a" src="http://placehold.it/100x100" />
 					<p>Students voted down a fee increase in Thursday night's undergraduate student government elections. <a href="#">More &raquo;</a></p>
 				</article>
 				
 				<article>
-					<span class="badge badge-now">Now</span>
-					<span class="timestamp">10 Minutes Ago</span>
+					<span class="label label-now">Now</span>
+					<span class="timestamp timestamp-now">10 Minutes Ago</span>
 					<h1 class="headline-b">Independents balance Bruins United majority in council</h1>
 					<span class="byline">By Melissa Truong</span>
 					<p>Bruins United will again hold the majority in undergraduate student government, but with no opposing slate in next year's council. <a href="#">More &raquo;</a></p>
@@ -159,7 +164,7 @@
 					<h2>Multimedia</h2> <span class="multimedia-more">More&hellip; <a href="#">photos &raquo;</a> <a href="#">videos &raquo;</a>   <a href="#">audio &raquo;</a>   <a href="#">graphics &raquo;</a></span>
 				<img src="http://placehold.it/200x300" />
 				<div class="multimedia-rotator-item multimedia-rotator-item-selected">
-					<span class="badge badge-now">Now</span>
+					<span class="label label-now">Now</span>
 					<img src="http://placehold.it/30x30" />
 					<span class="multimedia-title">Photo Gallery</span>
 					<span class="multimedia-date">May 28 | 22 images</span>
