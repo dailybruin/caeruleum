@@ -568,6 +568,8 @@ div#poll form a {
 #bottomcontent {
 	border-top:1px solid #dadada;
 	margin-top:10px;
+    padding-top: 10px;
+    padding-bottom:10px;
 }
 
 div.bottomcontent-wrap {
@@ -605,9 +607,6 @@ div.bottomcontent-wrap ul a {
 }
 div.bottomcontent-wrap ul a:first-child {
 	border-top:none;
-}
-div.bottomcontent-wrap ul a:last-child {
-	border-bottom:none;
 }
 
 div.bottomcontent-wrap ul a:hover {
