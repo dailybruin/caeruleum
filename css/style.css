@@ -6,6 +6,7 @@
   
 h2 {
 	font-family: "Palatino Linotype";
+	text-rendering:auto;
 }  
 
 .segmented-box {
@@ -505,6 +506,90 @@ span.popularlist-comments:hover {
 	border-bottom:none;
 }
 
+/* ===== Multimedia ========================================================
+   Author:
+   ========================================================================== */
+.multimedia-item-featured {
+    float: right;
+    width: 400px;
+}
+span.multimedia-title {
+    font-weight: bolder;
+    color:#333;
+}
+span.multimedia-date {
+    color: #AAA;
+    display:block;
+}
+
+.multimedia-item p {
+	color:#333;
+}
+.multimedia-item:hover {
+	text-decoration:none;
+	opacity:1;
+}
+.multimedia-item img, .multimedia-item-featured-media {
+	margin-bottom:5px;
+}
+
+.multimedia-item-featured i, .multimedia-item i {
+	float:left;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.multimedia-item-featured p, .multimedia-item p {
+    margin-left: 42px;
+    margin-top: 4px;
+}
+.multimedia-item {
+    float: left;
+    width: 202px;
+    opacity:0.8;
+
+	color:#333;
+	border-bottom:1px solid #dadada;
+	display:block;
+	color:#555;
+	margin-bottom:5px;
+	
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+.multimedia-item-featured .multimedia-item {
+	width:100%;
+}
+
+.multimedia-more a {
+	margin-left:4px;
+}
+
+#multimedia-podcast {
+    float: right;
+    margin:5px 18px;
+    width: 382px;
+}
+#multimedia-podcast img {
+	height:111px;
+	display:block;
+	float:left;
+	margin-right:5px;
+}
+
+#multimedia-podcast-link {
+	display:block;
+    float: left;
+}
+
+
+
 /* ===== Poll ========================================================
    Author:
    ========================================================================== */
@@ -515,7 +600,7 @@ span.popularlist-comments:hover {
     line-height: 1.5em;
 }
 
-a#poll-past {
+a#poll-past, span.multimedia-more {
     font-family: "Helvetica Neue";
     font-size: 13px;
     font-weight: normal;
@@ -570,6 +655,7 @@ div#poll form a {
 	margin-top:10px;
     padding-top: 10px;
     padding-bottom:10px;
+    margin-left:0;
 }
 
 div.bottomcontent-wrap {
@@ -730,9 +816,11 @@ span.copyright {
 	text-align:center;
 }
 
-/* ===== Additional Icons (Social Media) ========================================================
+/* ===== Additional Icons ========================================================
    Author:
    ========================================================================== */
+
+/* SM ICONS (social media) */
 [class^="smicon-"],
 [class*=" smicon-"] {
   display: inline-block;
@@ -789,6 +877,7 @@ span.copyright {
 
 
 
+/* W ICONS (weather) */
 [class^="wicon-"],
 [class*=" wicon-"] {
   display: inline-block;
@@ -827,6 +916,38 @@ span.copyright {
 	background-position:-90px 0;
 }
 
+/* M ICONS (multimedia) */
+[class^="micon-"],
+[class*=" micon-"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  *margin-right: .3em;
+  line-height: 16px;
+  vertical-align: text-top;
+  background-image: url("../img/multimedia-icons.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+[class^="micon-"]:last-child,
+[class*=" micon-"]:last-child {
+  *margin-left: 0;
+}
+
+.micon-video{
+	background-position:0 0;
+}
+
+.micon-photo{
+	background-position:-32px 0;
+}
+.micon-audio{
+	background-position:-64px 0;
+}
+.micon-etc{
+	background-position:-96px 0;
+}
 
 
 
