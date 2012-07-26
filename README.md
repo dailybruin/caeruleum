@@ -3,7 +3,7 @@
 The theme is only currently a group of html/css files that will eventually be ported into Wordpress. Because the theme is so massive, this seems to be the easiest way to go about making it. Here's the plan:
 
 * HTML scaffolding for front page [complete]
-* Add in CSS and images
+* Add in CSS and images [complete]
 * Work with the responsive-ness of the site (and make it work)
 * Convert it into a Wordpress theme (on a new branch)
 * Eternal glory
