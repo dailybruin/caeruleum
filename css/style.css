@@ -34,7 +34,13 @@ h2 {
 	font-size:24px;
 	line-height: 25px;
 	margin-bottom:10px;
-
+	text-rendering:auto;
+	color:#333;
+}
+[class^="headline-"]:hover,
+[class*=" headline-"]:hover {
+	color:#333;
+	text-decoration:underline;
 }
 .headline-a {
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -88,6 +94,7 @@ h2 {
 article {
 	display:block;
 	margin:0 0 23px 0;
+	clear:both;
 }
 
 .label-now,
@@ -811,9 +818,14 @@ span.copyright {
     display: block;
     float: left;
     background-color: #f0f0f0;
+    margin:0;
+    padding:0;
 }
 #paidadvertising ul li {
 	text-align:center;
+}
+.paidadvertising-list li:nth-child(6n+1) {
+	margin-left:0;
 }
 
 /* ===== Additional Icons ========================================================
@@ -969,4 +981,15 @@ span.copyright {
 
 /* Large desktop */
 @media (min-width: 1200px) { 
+	#nameplate-date {
+		top:52px;
+	}
+	.multimedia-item {
+	    width: 175px;
+	    margin-right: 10px;
+	}
+	#multimedia-podcast {
+	    float: left;
+	    width: 324px;
+	}
 }
