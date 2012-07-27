@@ -368,8 +368,15 @@ div#middlecontent1-popular-headings {
 	margin-top:10px;
 }
 
+a.togglemenu:last-child {
+	margin-right:0;
+}
+
 
 a.togglemenu {
+	display: inline-block;
+	margin-right:5px;
+	
     padding: 6px 13px;
     border-radius: 5px;
     border:1px solid #bababa;
@@ -977,6 +984,29 @@ span.copyright {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
+	#nameplate-date {
+		top:19px;
+	}
+	a.togglemenu {
+		padding: 8px 11px;
+	width: 23%;
+	padding-left: 8px !important;
+	vertical-align: middle;
+	text-transform: none;
+	}
+	div.multimedia-item-featured {
+		width:476px;
+	}
+	#multimedia-podcast {
+	    width: 148px; 
+	    float: right;
+	    margin: 0;
+	    padding: 0;
+	}
+	.multimedia-item {
+		width: 148px;
+		margin-right: 10px;
+	}
 }
 
 /* Large desktop */
