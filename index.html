@@ -23,36 +23,45 @@
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-	<div class="container">
-		<div id="toplinks" class="row">
-			<ul class="span6 navlist" id="toplinks-info">
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Staff</a></li>
-				<li><a href="#">Join the Staff</a></li>
-				<li><a href="#">Advertise</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#" id="toplinks-info-donate">Donate</a></li>
-				<li><a href="#"><i class="smicon-rss"></i></a></li>
-			</ul>
-			<div class="span3 offset3" id="toplinks-socialmedia">
-				We're also on  <i class="smicon-youtube"></i> <i class="smicon-twitter"></i> <i class="smicon-fb"></i>
-			</div>
-		</div><!-- end div#toplinks -->
-		
-		<div id="nameplate" class="row">
-			<div class="span3" id="nameplate-todayspaper">
-				<span style="color: white;">Today's Paper</span>
-			</div>
-			<div class="span6" id="nameplate-image"><img src="img/nameplate.png" /></div>
-			<div class="span2 offset1" id="nameplate-date">
-				<span class="nameplate-date-weather"><a href="#"><i class="wicon-sun"></i><span>92&deg;</span></a></span>
-				<span class="nameplate-date-week">Week 3</span>
-				<span class="nameplate-date-today">May 12, 2012</span>
-			</div>
-		</div><!-- end div#nameplate -->
-	</div><!-- end container -->
+	<header>
+		<div class="container">
+			<div id="toplinks" class="row hidden-phone">
+				<ul class="span6 navlist" id="toplinks-info">
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Staff</a></li>
+					<li><a href="#">Join the Staff</a></li>
+					<li><a href="#">Advertise</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#" id="toplinks-info-donate">Donate</a></li>
+					<li><a href="#"><i class="smicon-rss"></i></a></li>
+				</ul>
+				<div class="span3 offset3" id="toplinks-socialmedia">
+					We're also on  <i class="smicon-youtube"></i> <i class="smicon-twitter"></i> <i class="smicon-fb"></i>
+				</div>
+			</div><!-- end div#toplinks -->
+			
+			<div id="nameplate" class="row">
+				<div class="span3 hidden-phone" id="nameplate-todayspaper">
+					<span style="color: white;">Today's Paper</span>
+				</div>
+				<div class="span6" id="nameplate-image">
+					<img src="img/nameplate.png" />
+					<button type="button" class="btn btn-navbar visible-phone">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="span2 offset1 hidden-phone" id="nameplate-date">
+					<span class="nameplate-date-weather"><a href="#"><i class="wicon-sun"></i><span>92&deg;</span></a></span>
+					<span class="nameplate-date-week">Week 3</span>
+					<span class="nameplate-date-today">May 12, 2012</span>
+				</div>
+			</div><!-- end div#nameplate -->
+		</div><!-- end container -->
+	</header>
 	
-	<div id="firstnav-container-back">
+	<div id="firstnav-container-back" class="hidden-phone">
 	<div class="container" id="firstnav-container">
 		<nav class="row" id="firstnav">
 			<ul class="navlist span12">
@@ -71,7 +80,7 @@
 	</div><!-- end div#firstnav-container -->
 	</div><!-- end div#firstnav-container-back -->
 		
-	<div id="secondnav-container-back">
+	<div id="secondnav-container-back" class="hidden-phone">
 	<div class="container" id="secondnav-container">
 		<nav class="row" id="secondnav">
 			<span class="more_text">More:</span>
@@ -95,7 +104,7 @@
 
 		<div class="row" id="topcontent">
 			<div class="span8" id="topcontent-rotator">
-				<div id="topcontent-rotator-nav">
+				<div id="topcontent-rotator-nav" class="hidden-phone">
 					<ul class="navlist">
 						<li class="rotate-current"><a href="#">USAC Election Results</a></li>
 						<li><a href="#">CURE Referendum</a></li>
@@ -154,7 +163,7 @@
 				</ul>
 			</div>
 			<div class="span7">
-				<div id="middlecontent1-classifieds" class="segmented-box">
+				<div id="middlecontent1-classifieds" class="segmented-box hidden-phone">
 					<h2>Featured Classifieds</h2>
 					<div id="middlecontent1-classifieds-column1">
 						<p>ACCUSED of cheating? Plagiarism? Grade dispute? Criminal Charges? Call BEFORE speaking with the Dean or Police. FREE consultation. Law Offices of Kosnett&Durchfort. (310)444-8898http://www.educationlawyer.org &bull; <a href="#">Legal Advice/Attorneys</a></p>
@@ -187,7 +196,7 @@
 					</a>
 				</div>
 				
-				<a href="#" class="multimedia-item">
+				<a href="#" class="multimedia-item" id="multimedia-item-1">
 					<img src="http://placehold.it/210x140" />
 					<i class="micon-photo"></i>
 					<span class="multimedia-title">Photo Gallery</span>
@@ -195,7 +204,7 @@
 					<p>Hitting a tackling issue in football</p>
 				</a>
 	
-				<a href="#" class="multimedia-item">
+				<a href="#" class="multimedia-item" id="multimedia-item-2">
 					<img src="http://placehold.it/210x140" />
 					<i class="micon-etc"></i>
 					<span class="multimedia-title">Online Graphic</span>
@@ -294,7 +303,7 @@
 			</div><!-- end div#bottomcontent-opinion -->
 		</div><!-- end div#bottomcontent -->
 		
-		<div class="row" id="paidadvertising">
+		<div class="row hidden-phone" id="paidadvertising">
 			<div class="span12">
 				<h4>Paid Advertising</h4>
 				<ul class="paidadvertising-list">
@@ -336,7 +345,7 @@
 	<footer>
 		<div class="container">
 			<img src="img/nameplate-black.png" id="bottom-logo" />
-			<div class="row">
+			<div class="row footer-nav">
 				<div class="footer-links span2">
 					<h3>News</h3>
 					<ul>
