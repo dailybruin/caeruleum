@@ -2,6 +2,32 @@
 	Byron Lutz
 */
 
+/****** POPULAR POSTS WIDGET *******/
+/* Inefficient; replace this later */
+
+$(document).ready(function() {
+	// Tabs control
+	$('.togglemenu').click(popularPosts);
+	
+	function popularPosts(event) {
+		event.preventDefault();
+		var changeTo = event.currentTarget.id.substr(11);
+		$('.togglemenu-current').removeClass('togglemenu-current');
+		$('#togglemenu-'+changeTo).addClass('togglemenu-current');
+		
+		$('.popularlist').hide();
+		$('#popularlist-'+changeTo).show();
+	};
+	
+	// Take out the "comment(s)" in the display. WE NEED A BETTER PLUGIN o.o
+	var commentNum=/^\d+/g;
+	$('.wpp-comments').each(function() {
+		$(this).text( $(this).text().match(commentNum) );
+		$(this).addClass('popularlist-comments');
+	});
+});
+
+
 
 /****** ROTATOR *******/
 

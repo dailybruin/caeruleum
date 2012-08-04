@@ -7,6 +7,13 @@ add_image_size( 'db-front', 100, 100, 1 );
 add_image_size( 'db-rotator', 670, 480, 1 );
 
 
+// Remove default WordPress Popular Posts stylesheet
+add_action('wp_head', 'remove_wpp_stylesheet', 1); 
+function remove_wpp_stylesheet() { 
+	global $wp_widget_factory; 
+	remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') ); 
+}
+
 
 
 // Remove the 'Continued' link at the end of excerpts

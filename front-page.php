@@ -28,7 +28,7 @@
 						<button class="btn disabled topcontent-rotator-control-back" type="button"><i class="icon-chevron-left"></i></button><button class="btn topcontent-rotator-control-forward" type="button"><i class="icon-chevron-right"></i></button>
 					</div>
 					<span class="timestamp"><?php the_time('F j'); ?></span>
-					<a href="#"><h1 class="headline-c"><?php the_title(); ?></h1></a>
+					<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
 				</div><!-- end div.topcontent-rotator-content -->
@@ -70,21 +70,31 @@
 				<img class="ad visible-desktop" src="http://placehold.it/300x250&text=ADVERTISEMENT" />
 			</div>
 		</div><!-- end div#topcontent -->
-		
 		<div class="row" id="middlecontent1">
 			<div class="span5" id="middlecontent1-popular">
 				<div id="middlecontent1-popular-headings">
-					<a href="#" class="togglemenu togglemenu-current">Popular</a
-					><a href="#" class="togglemenu">Most Commented</a
-					><a href="#" class="togglemenu">Blog Posts</a>
+					<a href="#" id="togglemenu-popular" class="togglemenu togglemenu-current">Popular</a
+					><a href="#" id="togglemenu-comment" class="togglemenu">Most Commented</a
+					><a href="#" id="togglemenu-blog" class="togglemenu">Blog Posts</a>
 					<span style="clear:both;display:block"></span>
 				</div><!-- end div#middlecontent1-popular-headings -->
-				<ul id="popularlist">
-					<a href="#"><li><span class="popularlist-comments">3</span>California education institutions should back Gov. Brown's tax initiative</li></a>
-					<a href="#"><li><span class="popularlist-comments">2</span>UCLA surgeon Dr. Christian Head's lawsuit against UC regents gains support through petition</li></a>
-					<a href="#"><li><span class="popularlist-comments">4</span>Submission: 'Community and Conflict in the Modern World' GE requirement must be understood </li></a>
-					<a href="#"><li><span class="popularlist-comments">1</span>Strong Side: Coach John Savage is the driving force behind baseball's rising success</li></a>
-					<a href="#"><li><span class="popularlist-comments">1</span>Back to USAC: Returning officers to aid with financial issues, guide new councilmembers</li></a>
+				<?php wpp_get_mostpopular('limit=5&range="weekly"&pages=0&wpp_start="<ul class=\'popularlist\' id=\'popularlist-popular\'>"&wpp_end="</ul>"&order_by="views"&do_pattern=1&pattern_form="{stats}{title}"'); ?>
+				<ul class="popularlist" style="display:none" id="popularlist-comment">
+					<?php
+						// From http://stackoverflow.com/questions/3328560/how-to-sort-posts-by-views-comments-rating-etc-wordpress
+					    global $wpdb;
+						$most_commented = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts WHERE post_type='post' AND post_status = 'publish' ORDER BY comment_count DESC LIMIT 0 , 5");
+						foreach ($most_commented as $post) : setup_postdata($post); ?>
+					<a href="<?php the_permalink(); ?>"><li><span class="popularlist-comments"><?php comments_number('0','1','%'); ?></span><?php the_title(); ?></li></a>
+						<?php endforeach; ?>
+				</ul>
+				<ul class="popularlist" style="display:none" id="popularlist-blog">	
+					<?php
+					$args = array( 'numberposts' => 5, 'category' => 21 );
+					$blogposts = get_posts( $args );
+					foreach( $blogposts as $post ) :	setup_postdata($post); ?>
+					<a href="<?php the_permalink(); ?>"><li><span class="popularlist-comments"><?php comments_number('0','1','%'); ?></span><?php the_title(); ?></li></a>
+					<?php endforeach; ?>
 				</ul>
 			</div>
 			<div class="span7">
@@ -171,13 +181,13 @@
 				<div class="bottomcontent-wrap" id="bottomcontent-news-wrap">
 					<h2>News</h2>
 					<ul>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>		
-						<a href="#"><li class="bottomcontent-more">More News</li></a>		
+					<?php
+						$args = array( 'numberposts' => 6, 'category' => 5 );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
+					<?php endforeach; ?>
+						<a href="/category/news"><li class="bottomcontent-more">More News</li></a>		
 					</ul>
 				</div><!-- end div#bottomcontent-news-wrap -->
 			</div><!-- end div#bottomcontent-news -->
@@ -186,13 +196,13 @@
 				<div class="bottomcontent-wrap" id="bottomcontent-sports-wrap">
 					<h2>Sports</h2>
 					<ul>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>	
-						<a href="#"><li class="bottomcontent-more">More Sports</li></a>		
+					<?php
+						$args = array( 'numberposts' => 6, 'category' => 6 );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
+					<?php endforeach; ?>
+						<a href="/category/sports"><li class="bottomcontent-more">More Sports</li></a>		
 					</ul>
 				</div><!-- end div#bottomcontent-sports-wrap -->
 			</div><!-- end div#bottomcontent-sports -->
@@ -201,13 +211,13 @@
 				<div class="bottomcontent-wrap" id="bottomcontent-ae-wrap">
 					<h2>a&amp;e</h2>
 					<ul>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>		
-						<a href="#"><li class="bottomcontent-more">More a&amp;e</li></a>		
+					<?php
+						$args = array( 'numberposts' => 6, 'category' => 8 );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
+					<?php endforeach; ?>
+						<a href="/category/ae"><li class="bottomcontent-more">More a&amp;e</li></a>		
 					</ul>
 				</div><!-- end div#bottomcontent-ae-wrap -->
 			</div><!-- end div#bottomcontent-ae -->
@@ -216,13 +226,13 @@
 				<div class="bottomcontent-wrap" id="bottomcontent-opinion-wrap">
 					<h2>Opinion</h2>
 					<ul>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>
-						<a href="#"><li><span class="bottomcontent-date">May<span>25</span></span>Third annual Cranes for Cancer aims to lift patients' spirits</li></a>		
-						<a href="#"><li class="bottomcontent-more">More Opinion</li></a>		
+					<?php
+						$args = array( 'numberposts' => 6, 'category' => 7 );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
+					<?php endforeach; ?>
+						<a href="/category/opinion"><li class="bottomcontent-more">More Opinion</li></a>		
 					</ul>
 				</div><!-- end div#bottomcontent-opinion-wrap -->
 			</div><!-- end div#bottomcontent-opinion -->
@@ -232,34 +242,13 @@
 			<div class="span12">
 				<h4>Paid Advertising</h4>
 				<ul class="paidadvertising-list">
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
-					<li class="span2"><a href="#">Condoms</a></li>		 
-					<li class="span2"><a href="#">sell my mobile</a></li>
+					<li class="span3"><a href="http://www.condomman.com/">Condoms</a></li>		 
+					<li class="span3"><a href="http://www.tmart.com/">Free Shipping</a></li>
+					<li class="span3"><a href="http://myreviewsnow.net/">shopping</a></li>		 
+					<li class="span3"><a href="http://www.bookwormlab.com/research-paper-writing/">Buy Research Paper</a></li>
+					<li class="span3"><a href="http://www.studentpolicy.com/">STUDENT HEALTH INSURANCE</a></li>		 
+					<li class="span3"><a href="http://www.babygames.net/">baby games</a></li>
+					<li class="span3"><a href="http://www.personalinjuryphiladelphialawyer.com/">Philadelphia Car Accident Attorney</a></li>		 
 					<br style="clear:both" />
 				</ul>
 			</div><!-- end div.span12 -->

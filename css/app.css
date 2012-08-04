@@ -425,12 +425,12 @@ a.togglemenu-current, a.togglemenu-current:hover {
 	color:white;
 }
 
-ul#popularlist {
+ul.popularlist {
 	list-style:none;
 	margin-left:0;
 }
 
-ul#popularlist a {
+ul.popularlist a {
 	color:#333;
 	border-bottom:1px solid #dadada;
 	display:block;
@@ -446,7 +446,11 @@ ul#popularlist a {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 }
 
-ul#popularlist a:hover {
+ul.popularlist li a {
+	padding-bottom: 9px;
+}
+
+ul.popularlist a:hover {
 	text-decoration:none;
 	color:black;
 
@@ -460,7 +464,7 @@ ul#popularlist a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efeeee',GradientType=0 ); /* IE6-9 */
 }
 
-ul#popularlist a li {
+ul.popularlist a li, ul.popularlist li {
 	display:block;
 	line-height:1.2em;
 	margin-bottom:10px;
