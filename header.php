@@ -18,6 +18,14 @@
 
   <?php roots_head(); ?>
   <?php wp_head(); ?>
+  
+	<!-- Press Plus script -->  
+	<script type="text/javascript" src="http://s.ppjol.net/pp.js">{
+		'zone':"qnbBZ63hK_pL2086YoKj3J",
+		'mode':"meter",
+		'debug':0
+	}</script>
+
 
 </head>
 
