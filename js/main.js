@@ -2,6 +2,12 @@
 	Byron Lutz
 */
 
+/***** GET RID OF HARD IMAGE SIZES *****/
+$(document).ready(function() {
+	$('.wp-post-image').removeAttr('height').removeAttr('width');
+});
+
+
 /****** POPULAR POSTS WIDGET *******/
 /* Inefficient; replace this later */
 

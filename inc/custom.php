@@ -2,6 +2,41 @@
 
 // Custom functions
 
+// Template tag to output multimedia post icons 
+function multimedia_post_flag( $multimedia_type ) {
+	$icon = "etc";
+	$type = $multimedia_type;
+	
+	if($multimedia_type == "photo_gallery") {
+		$icon = "photo";
+		$type = "Photo Gallery";
+	}
+	else if($multimedia_type == "photo") {
+		$icon = "photo";
+		$type = "Photo";
+	}
+	else if ($multimedia_type == "audio") {
+		$icon = "audio";
+		$type = "Audio";
+	}
+	else if ($multimedia_type == "radio") {
+		$icon = "audio";
+		$type = "Radio";
+	}
+	else if ($multimedia_type == "graphic") {
+		$icon = "etc";
+		$type = "Graphic";
+	}
+	else if ($multimedia_type == "interactive") {
+		$icon = "etc";
+		$type = "Interactive Graphic";
+	}
+	
+	$output = "<i class='micon-$icon'></i>";
+	$output .= "<span class='multimedia-title'>$type</span>";
+
+	echo $output;
+}
 
 // Fix issue with poll loading styles improperly
 add_action('wp_enqueue_scripts','dequeue_polls_style',11);
@@ -12,6 +47,7 @@ function dequeue_polls_style() {
 // Set image sizes
 add_image_size( 'db-front', 100, 100, 1 );
 add_image_size( 'db-rotator', 670, 480, 1 );
+add_image_size( 'db-multimedia', 476, 300, 1 );
 
 
 // Remove default WordPress Popular Posts stylesheet

@@ -21,7 +21,8 @@
 				<?php global $post; ?>
 				<?php foreach ($cstory as $i=>$story) : $post = $story[0]; setup_postdata($post); ?>
 				<div class="topcontent-rotator-content" id="topcontent-rotator-content-<?php echo $i+1; ?>" <?php if($i > 0) : ?>style="display:none"<?php endif; ?>>
-					<?php the_post_thumbnail('db-rotator'); ?>
+
+					<?php the_post_thumbnail('db-rotator', $rotator_attr); ?>
 <!-- 					<img src="http://placehold.it/670x480" /> -->
 					<span class="photocredit">Isaac Arjonilla / Daily Bruin Senior Staff</span>		
 					<div class="topcontent-rotator-control input-append">
@@ -119,16 +120,23 @@
 			<div class="span8" id="multimedia-rotator">
 					<h2>Multimedia <span class="multimedia-more">More&hellip; <a href="#">photos &raquo;</a> <a href="#">videos &raquo;</a>   <a href="#">audio &raquo;</a>   <a href="#">graphics &raquo;</a></span></h2>
 				<div class="multimedia-item-featured">
+				
+				<?php
+					$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
+					$lastposts = get_posts( $args );
+					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 					<div class="multimedia-item-featured-media">
-						<img src="http://placehold.it/476x300" />
+						<?php the_post_thumbnail('db-multimedia'); ?>
 					</div><!-- div.multimedia-item-featured-media -->
-					<a href="#" class="multimedia-item" >
-						<span class="label label-now">Now</span>
-						<i class="micon-photo"></i>
-						<span class="multimedia-title">Photo Gallery</span>
-						<span class="multimedia-date">May 28 | 22 images</span>
-						<p>26th Annual JazzReggae Festival at UCLA: Jam Day</p>
+					<a href="<?php the_permalink(); ?>" class="multimedia-item" >
+<!-- 						<span class="label label-now">Now</span> -->
+						<?php 	// output multimedia flag
+						$customFields = get_post_custom($post->ID);
+						multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
+						<span class="multimedia-date"><?php the_time('F j'); ?></span>
+						<p><?php the_excerpt(); ?></p>
 					</a>
+				<?php endforeach; ?>
 				</div>
 				
 				<a href="#" class="multimedia-item" id="multimedia-item-1">
