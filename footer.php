@@ -14,7 +14,7 @@
     	$prime_cat = 62;
     ?>
     		<div class="container">
-			<img src="img/nameplate-black.png" id="bottom-logo" />
+			<img src="/img/nameplate-black.png" id="bottom-logo" />
 			<div class="row footer-nav">
 				<div class="footer-links span2">
 					<h3><a href="<?php echo get_category_link( $news_cat ); ?>"><?php echo get_the_category_by_ID( $news_cat ); ?></a></h3>
