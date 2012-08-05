@@ -139,21 +139,33 @@
 				<?php endforeach; ?>
 				</div>
 				
-				<a href="#" class="multimedia-item" id="multimedia-item-1">
-					<img src="http://placehold.it/210x140" />
-					<i class="micon-photo"></i>
-					<span class="multimedia-title">Photo Gallery</span>
-					<span class="multimedia-date">May 28 | 22 images</span>
-					<p>Hitting a tackling issue in football</p>
+				<?php
+					$args = array( 'numberposts' => 1, 'tag' => 'db-story-m2' );
+					$lastposts = get_posts( $args );
+					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+				<a href="<?php the_permalink(); ?>" class="multimedia-item" id="multimedia-item-1">
+					<?php the_post_thumbnail('db-multimedia-small'); ?>
+					<?php 	// output multimedia flag
+					$customFields = get_post_custom($post->ID);
+					multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
+					<span class="multimedia-date"><?php the_time('F j'); ?></span>
+					<p><?php the_excerpt(); ?></p>
 				</a>
+				<?php endforeach; ?>
 	
-				<a href="#" class="multimedia-item" id="multimedia-item-2">
-					<img src="http://placehold.it/210x140" />
-					<i class="micon-etc"></i>
-					<span class="multimedia-title">Online Graphic</span>
-					<span class="multimedia-date">May 28</span>
-					<p>Miles of Memories: Man runs a marathon of memories</p>
+				<?php
+					$args = array( 'numberposts' => 1, 'tag' => 'db-story-m3' );
+					$lastposts = get_posts( $args );
+					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+				<a href="<?php the_permalink(); ?>" class="multimedia-item" id="multimedia-item-2">
+					<?php the_post_thumbnail('db-multimedia-small'); ?>
+					<?php 	// output multimedia flag
+					$customFields = get_post_custom($post->ID);
+					multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
+					<span class="multimedia-date"><?php the_time('F j'); ?></span>
+					<p><?php the_excerpt(); ?></p>
 				</a>
+				<?php endforeach; ?>
 								
 				<div id="multimedia-podcast">
 					<img class="visible-desktop" src="img/radio.jpeg" />
