@@ -150,12 +150,14 @@
 				<div id="multimedia-podcast">
 					<img class="visible-desktop" src="img/radio.jpeg" />
 					<p>Our live show, <strong>Long Story Short</strong>, streams live online Mondays at 6 p.m. on <a href="http://uclaradio.com">UCLAradio.com</a>. Click play to listen to our latest show or <a href="#">browse our archives</a>.</p>
-					<a href="#" id="multimedia-podcast-link" class="btn">Subscribe on iTunes.</a>
+					<a href="http://itunes.apple.com/us/podcast/daily-bruin-radio/id352605427" id="multimedia-podcast-link" class="btn">Subscribe on iTunes.</a>
 				</div>
 
 			</div><!-- end div#multimedia-rotator -->
 			<div id="poll" class="span4">
-				<h2>Poll <img src="/img/pollicon.png" /> <a id="poll-past">Past polls &raquo;</a></h2>
+				<h2>Poll <img src="/img/pollicon.png" /> <a href="/pollsarchive" id="poll-past">Past polls &raquo;</a></h2>
+				<?php get_poll();?>
+<!--
 				<span class="poll-question">Last week, Los Angeles City Council approved a ban on plastic bags in L.A. markets. Is this a good idea?</span>
 				<form>
 					<label class="radio">
@@ -173,6 +175,7 @@
 					<submit class="btn btn-large">Submit </submit>
 					<a href="#">View results without voting</a>
 				</form>
+-->
 			</div><!-- end div#poll -->
 		</div><!-- end div#middlecontent2 -->
 		

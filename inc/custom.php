@@ -2,6 +2,13 @@
 
 // Custom functions
 
+
+// Fix issue with poll loading styles improperly
+add_action('wp_enqueue_scripts','dequeue_polls_style',11);
+function dequeue_polls_style() {
+	wp_dequeue_style('wp-polls');
+}
+
 // Set image sizes
 add_image_size( 'db-front', 100, 100, 1 );
 add_image_size( 'db-rotator', 670, 480, 1 );
