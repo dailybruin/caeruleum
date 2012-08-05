@@ -85,7 +85,7 @@
 					    global $wpdb;
 						$most_commented = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts WHERE post_type='post' AND post_status = 'publish' ORDER BY comment_count DESC LIMIT 0 , 5");
 						foreach ($most_commented as $post) : setup_postdata($post); ?>
-					<a href="<?php the_permalink(); ?>"><li><span class="popularlist-comments"><?php comments_number('0','1','%'); ?></span><?php the_title(); ?></li></a>
+					<a href="<?php echo  get_permalink($post->ID); ?>"><li><span class="popularlist-comments"><?php comments_number('0','1','%'); ?></span><?php the_title(); ?></li></a>
 						<?php endforeach; ?>
 				</ul>
 				<ul class="popularlist" style="display:none" id="popularlist-blog">	
