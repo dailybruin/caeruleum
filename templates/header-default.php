@@ -70,12 +70,15 @@
 	<div class="container" id="secondnav-container">
 		<nav class="row" id="secondnav">
 			<span class="more_text">More:</span>
+			<?php wp_nav_menu(array('theme_location'=>'second_navigation', 'menu_class'=>'navlist span7')); ?>
+<!--
 			<ul class="navlist span7">
 				<li><a href="#">Prime Magazine</a></li>
 				<li><a href="#">Radio</a></li>
 				<li><a href="#">Graphics</a></li>
 				<li><a href="#">Classifieds</a></li>
 			</ul>
+-->
 			<div class="span4" id="secondnav-socialmedia"> 
 				<!-- put social media code here -->
 			</div>

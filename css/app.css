@@ -837,6 +837,10 @@ span.copyright {
 	font-style:italic;
 }
 
+.footer-links a {
+	color:white;
+}
+
 
 /* ===== Bottom content ========================================================
    Author:
@@ -1170,6 +1174,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	}
 	.multimedia-item {
 		opacity:1;
+	}
+	footer {	
+	    margin-left: -20px;
+	    margin-right: -20px;
 	}
 }
 
