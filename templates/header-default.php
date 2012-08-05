@@ -24,7 +24,7 @@
 						); ?>
 				</ul>
 				<div class="span3 offset3" id="toplinks-socialmedia">
-					We're also on  <i class="smicon-youtube"></i> <i class="smicon-twitter"></i> <i class="smicon-fb"></i>
+					We're also on  <a href="http://www.youtube.com/ucladailybruin"><i class="smicon-youtube"></i></a> <a href="http://www.twitter.com/dailybruin"><i class="smicon-twitter"></i></a> <a href="http://www.facebook.com/dailybruin"><i class="smicon-fb"></i></a>
 				</div>
 			</div><!-- end div#toplinks -->
 			
