@@ -346,6 +346,8 @@ add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);
  * @link http://justintadlock.com/archives/2011/07/01/captions-in-wordpress
  */
 function roots_caption($output, $attr, $content) {
+	error_log("Roots content");
+	error_log($content);
   if (is_feed()) {
     return $output;
   }
@@ -368,10 +370,11 @@ function roots_caption($output, $attr, $content) {
   $attributes  = (!empty($attr['id']) ? ' id="' . esc_attr($attr['id']) . '"' : '' );
   $attributes .= ' class="thumbnail wp-caption ' . esc_attr($attr['align']) . '"';
   $attributes .= ' style="width: ' . esc_attr($attr['width']) . 'px"';
+  
 
   $output  = '<figure' . $attributes .'>';
   $output .= do_shortcode($content);
-  $output .= '<figcaption class="caption wp-caption-text">' . $attr['caption'] . '</figcaption>';
+  $output .= '<figcaption class="caption wp-caption-text">' . do_shortcode($attr['caption']) . '</figcaption>'; // Note: Byron Lutz added shortcode support to captions.
   $output .= '</figure>';
 
   return $output;
