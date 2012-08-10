@@ -1,11 +1,10 @@
 <?php /* Start loop */ ?>
 <?php while (have_posts()) : the_post(); ?>
-  <?php roots_post_before(); ?>
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <?php roots_post_inside_before(); ?>
       <header>
         <h1 class="entry-title"><?php the_title(); ?></h1>
-        <?php roots_entry_meta(); ?>
+        <h2 class="subhead"><?php $subhead = get_post_custom_values('db_subhead'); echo $subhead[0]; ?></h2>
+        <?php the_post_thumbnail('db-rotator'); ?>
       </header>
       <div class="entry-content">
         <?php the_content(); ?>
@@ -15,7 +14,5 @@
         <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
       </footer>
       <?php comments_template(); ?>
-      <?php roots_post_inside_after(); ?>
     </article>
-  <?php roots_post_after(); ?>
 <?php endwhile; /* End loop */ ?>

@@ -385,6 +385,25 @@ ul#topMenu > li.active.open > a:hover {
 	color:white;
 }
 
+/* ===== Single Post styles ========================================================
+   Author:
+   ========================================================================== */
+.entry-title {
+	font-family:"Palatino Linotype";
+	text-rendering:auto;
+	font-weight:normal;
+    font-size: 2.3em;
+    padding-bottom: 5px;
+}
+.subhead {
+    font-weight: lighter;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 1.4em;
+    padding-bottom: 8px;
+}
+
+
+
 	
 /*--- rotator */
 div#topcontent-rotator {
