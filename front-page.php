@@ -268,13 +268,15 @@
 			<div class="span12">
 				<h4>Paid Advertising</h4>
 				<ul class="paidadvertising-list">
-					<li class="span3"><a href="http://www.condomman.com/">Condoms</a></li>		 
-					<li class="span3"><a href="http://www.tmart.com/">Free Shipping</a></li>
-					<li class="span3"><a href="http://myreviewsnow.net/">shopping</a></li>		 
-					<li class="span3"><a href="http://www.bookwormlab.com/research-paper-writing/">Buy Research Paper</a></li>
-					<li class="span3"><a href="http://www.studentpolicy.com/">STUDENT HEALTH INSURANCE</a></li>		 
-					<li class="span3"><a href="http://www.babygames.net/">baby games</a></li>
-					<li class="span3"><a href="http://www.personalinjuryphiladelphialawyer.com/">Philadelphia Car Accident Attorney</a></li>		 
+					<?php wp_list_bookmarks(array(
+						'title_li'			=>	__(''),
+						'title_before'		=>	'',
+						'title_after'		=>	'',
+						'category_before'	=>	'',
+						'category_after'	=> 	'',
+						'categorize'		=>	0,
+						'before'			=>	'<li class="span3">'
+					)); ?>
 					<br style="clear:both" />
 				</ul>
 			</div><!-- end div.span12 -->

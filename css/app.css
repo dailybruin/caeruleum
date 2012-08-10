@@ -217,6 +217,9 @@ div#firstnav-container-back {
 
 }
 
+nav#firstnav {
+	position:relative;
+}
 
 nav#firstnav ul {
 	padding:0;
@@ -276,6 +279,21 @@ nav#firstnav ul li.active a {
 	color:white;
 }
 
+
+/* --- drop-down menus */
+
+.db-drop {
+    position: absolute;
+    top: 43px;
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+    background-color: #b2b2b2;
+    left: 80px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+
 /* --- second-level navigation */
 
 div#secondnav-container-back {
@@ -319,6 +337,55 @@ span.more_text {
 	margin-top: 8px;
 }
 
+/* ===== Dropdown ========================================================
+   Author:
+   ========================================================================== */
+.dropdown-menu, nav#firstnav ul.dropdown-menu {
+	background-color: white;
+	width: 200px !important;
+	position: absolute;
+	border-top: none;
+	border-radius: 0 5px 5px 5px;
+	left: -2px;
+	top: 41px;
+}
+
+.open, .open:hover, nav#firstnav ul li.open a:hover {
+	background:white;
+	color:black;
+}
+
+nav#firstnav ul.dropdown-menu li {
+    border-right: none;
+    width: 100%;
+    display: block;
+    float: left;
+    clear: both;
+}
+nav#firstnav ul.dropdown-menu li:hover a {
+	background:#dbdbdb;
+}
+nav#firstnav ul.dropdown-menu li:first-child a {
+	font-weight:bold;
+}
+
+ul#topMenu ul.dropdown-menu li a{
+	color:#333;
+	background:white;
+}
+
+ul#topMenu ul.dropdown-menu li.active a {
+	background:#0088CC;
+	color:white;
+}
+
+ul#topMenu > li.active.open > a,
+ul#topMenu > li.active.open > a:hover {
+	background:#0088CC;
+	color:white;
+}
+
+	
 /*--- rotator */
 div#topcontent-rotator {
     border-bottom: 1px solid #D9D9D9;
@@ -1206,6 +1273,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 		width: 148px;
 		margin-right: 10px;
 	}
+	input#search-input {
+    	width: 132px;
+	}
+
 }
 
 /* Large desktop */

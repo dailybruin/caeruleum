@@ -2,6 +2,11 @@
 	Byron Lutz
 */
 
+/***** TOGGLE DROPDOWNS *****/
+$(document).ready(function() {
+	$('.dropdown-toggle').dropdown();
+});
+
 /***** GET RID OF HARD IMAGE SIZES *****/
 $(document).ready(function() {
 	$('.wp-post-image').removeAttr('height').removeAttr('width');

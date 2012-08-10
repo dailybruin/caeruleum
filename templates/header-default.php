@@ -38,10 +38,10 @@
 	<div id="firstnav-container-back" class="hidden-phone">
 	<div class="container" id="firstnav-container">
 		<nav class="row" id="firstnav">
-		
 			<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
 									'menu_class' => 'navlist span12',
 									'container' => '',
+									'menu_id' => 'topMenu',
 									)
 					); ?>
 			<form class="firstnav-search input-append" role="search" method="get" action="http://db.localhost/">
