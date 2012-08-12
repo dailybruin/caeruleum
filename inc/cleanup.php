@@ -346,8 +346,6 @@ add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);
  * @link http://justintadlock.com/archives/2011/07/01/captions-in-wordpress
  */
 function roots_caption($output, $attr, $content) {
-	error_log("Roots content");
-	error_log($content);
   if (is_feed()) {
     return $output;
   }

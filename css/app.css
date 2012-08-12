@@ -80,6 +80,11 @@ h2 {
     display: block;
     float: right;
     text-align: right;
+    opacity:0.5;
+}
+.photocredit a {
+	color:#333;
+	font-weight:bold;
 }
 
 .byline {
@@ -87,6 +92,12 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.1em;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.byline a {
+	color:#333;
 }
 
 .thumbnail-a {
@@ -401,8 +412,92 @@ ul#topMenu > li.active.open > a:hover {
     font-size: 1.4em;
     padding-bottom: 8px;
 }
+.photocredit-single {
+	width:100%;
+	float:right;
+	clear:both;
+}
+.photocaption {
+    display: block;
+    margin-bottom: 10px;
+}
+.infobar {
+    display: block;
+    background-color: #333333;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom:10px;
+}
+.infobar > span {
+	display:block;
+	float:left;
+}
+.infobar > .infobar-categories {
+	float:right;
+}
+.infobar-time {
+    margin-left: 20px;
+    opacity:0.7;
+}
+
+.infobar-categories {
+	color:#dbdbdb;
+}
+.infobar-categories a {
+	color:white;
+}
+
+figure, figure.alignnone {
+	float: right;
+	margin-left: 10px;
+	margin-right:0;
+}
+div.media-credit-container {
+	width: auto !important;
+	margin-right: -12px;
+	margin-bottom:8px;
+}
+figcaption{
+    padding-top: 0;
+}
+#post-extra-actions {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #dbdbdb;
+}
+#post-extra-actions li{
+	float:right;
+	display:block;
+	clear:both;
+	padding-bottom:7px;
+}
+#post-extra-actions a {
+	color:#333;
+}
+#post-extra-actions a:hover {
+	text-decoration:underline;
+}
 
 
+.list-space {
+	width:100%;
+	height:10px;
+}
+.post-extra-unimportant {
+	opacity:0.5;
+}
+
+.db-infobox {
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    background-color: #F5F5F5;
+    width: 200px;
+	float: right;
+	padding: 10px;
+}
 
 	
 /*--- rotator */
@@ -1088,6 +1183,88 @@ span.copyright {
 	background-position:-96px 0;
 }
 
+/* T ICONS (tiny, multi-purpose icons) */
+[class^="ticon-"],
+[class*=" ticon-"] {
+  display: inline-block;
+  width: 19px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 16px;
+  vertical-align: text-top;
+  background-image: url("/img/smallicons-sprite.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+[class^="ticon-"]:last-child,
+[class*=" ticon-"]:last-child {
+  *margin-left: 0;
+}
+
+.ticon-white {
+  background-image: url("/img/smallicons-sprite-white.png");
+}
+
+.ticon-clock {
+	background-position:0 0;
+}
+.ticon-email {
+	background-position:-32px 0;
+}
+.ticon-calendar {
+	background-position:-64px 0;
+}
+.ticon-printer {
+	background-position:-93px 0;
+}
+
+.ticon-twitter {
+	background-position:-124px 0;
+}
+
+.ticon-facebook {
+	background-position:-155px 0;
+}
+
+.ticon-link {
+	background-position:-186px 0;
+}
+
+.ticon-etc {
+	background-position:-219px 0;
+}
+
+.ticon-photo {
+	background-position:-248px 0;
+}
+
+.ticon-photos {
+	background-position:-279px 0;
+}
+
+.ticon-film {
+	background-position:-311px 0;
+}
+
+.ticon-headphones {
+	background-position:-342px 0;
+}
+
+.ticon-camera {
+	background-position:-372px 0;
+}
+
+.ticon-map {
+	background-position:-403px 0;
+}
+
+.ticon-chart {
+	background-position:-434px 0;
+}
+
+
+
 /* ===== Mobile navbar ========================================================
    Author:
    ========================================================================== */
@@ -1155,7 +1332,7 @@ span.copyright {
 .aligncenter { display: block; margin: 0 auto; }
 .alignleft { float: left; }
 .alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
+/* figure.alignnone { margin-left: 0; margin-right: 0; } */
 
 
 /* ===== Responsive Styles ========================================================

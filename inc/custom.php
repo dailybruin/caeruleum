@@ -2,6 +2,17 @@
 
 // Custom functions
 
+// Removes all tags that start with db- from displaying on the front end
+function remove_db_tags($input) {
+	error_log($input);
+	error_log(gettype($input));
+	$output = preg_replace('/<a href="\/tag\/db-[^\/]*\/" rel="tag">db-[^<]*<\/a>,*\s*/','',$input);
+	error_log($output);
+	return $output;
+}
+
+add_filter('the_tags','remove_db_tags');
+
 // Template tag to output multimedia post icons 
 function multimedia_post_flag( $multimedia_type ) {
 	$icon = "etc";
