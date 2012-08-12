@@ -35,11 +35,6 @@
 					</div>
 				<?php endif; ?>
 				<?php the_content(); ?>
-				<div class="sm">
-					<a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
-				</div>
 
 			</div><!-- end div.post-content -->
 
@@ -51,6 +46,24 @@
 				</div><!-- end div.post-tags -->
 			</div>
 			<div class="span6 about-author">
+				<div class="sm">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
+				</div><!-- end div.sm -->
+				<div class="author-info">
+					<?php userphoto_the_author_thumbnail(); ?>
+					<h2>About the Author</h2>
+					<h1><?php the_author_posts_link(); ?></h1>
+					<?php if(!get_the_author_meta('graduated')) : ?>					
+						<a href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
+						<?php if(get_the_author_meta('twitter_handle')) : ?>
+						<a href="https://twitter.com/<?php echo substr(get_the_author_meta('twitter_handle'),1); ?>" class="twitter-follow-button" data-show-count="false">Follow <?php the_author_meta('twitter_handle'); ?></a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<?php endif; ?>
+					<?php endif; ?>
+					<p><?php the_author_meta('description'); ?></p>
+				</div><!-- end div.author-info -->
 			</div>
 		</div><!-- end div#entry-bottom -->
       <?php comments_template(); ?>
