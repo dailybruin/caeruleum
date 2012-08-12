@@ -35,11 +35,24 @@
 					</div>
 				<?php endif; ?>
 				<?php the_content(); ?>
+				<div class="sm">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
+				</div>
+
 			</div><!-- end div.post-content -->
+
 		</div><!-- end div.entry-content -->
-      <div class="post-tags">
-        <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
-      </div><!-- end div.post-tags -->
+		<div class="row" id="entry-bottom">
+			<div class="span2 about-post">
+				<div class="post-tags">
+					<?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
+				</div><!-- end div.post-tags -->
+			</div>
+			<div class="span6 about-author">
+			</div>
+		</div><!-- end div#entry-bottom -->
       <?php comments_template(); ?>
     </article>
 <?php endwhile; /* End loop */ ?>

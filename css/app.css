@@ -428,6 +428,7 @@ ul#topMenu > li.active.open > a:hover {
     color: white;
     border-radius: 4px;
     margin-bottom:10px;
+    clear:both;
 }
 .infobar > span {
 	display:block;
@@ -498,9 +499,19 @@ figcaption{
 	float: right;
 	padding: 10px;
 }
-
-.entry-content {
+#entry-bottom {
     border-bottom: 2px solid #dbdbdb;
+}
+
+.wp-post-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sm > iframe {
+	position: relative;
+	top: -8px;
 }
 
 	
