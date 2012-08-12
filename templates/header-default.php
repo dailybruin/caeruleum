@@ -19,7 +19,7 @@
 				</div>
 				<div class="span6" id="nameplate-image">
 					<img src="/img/nameplate.png" />
-					<button type="button" class="btn btn-navbar visible-phone">
+					<button type="button" class="btn btn-navbar visible-phone" data-toggle="collapse" data-target="#mobile-nav">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -31,6 +31,11 @@
 					<span class="nameplate-date-week">Finals week</span>
 					<span class="nameplate-date-today"><?php echo date('F j, Y'); ?></span>
 				</div>
+
+			<nav id="mobile-nav" class="visible-phone nav-collapse collapse">
+				<?php wp_nav_menu(array('theme_location' => 'mobile_navigation','menu_class'=>'phone-nav')); ?>
+			</nav>
+
 			</div><!-- end div#nameplate -->
 		</div><!-- end container -->
 	</header>

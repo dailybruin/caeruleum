@@ -2,6 +2,37 @@
 
 // Custom functions
 
+
+// Add extra fields to a user profile
+function db_add_custom_user_profile_fields( $user ) {
+?>
+	<h3><?php _e('Extra Profile Information'); ?></h3>
+	<table class="form-table">
+		<tr>
+			<th>
+				<label for="twitter_handle"><?php _e('Twitter Username'); ?>
+			</label></th>
+			<td>
+				<input type="text" name="twitter_handle" id="twitter_handle" value="<?php echo esc_attr( get_the_author_meta( 'twitter_handle', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description"><?php _e('Please enter your twitter username if you would like it to be displayed on your profile.'); ?></span>
+			</td>
+		</tr>
+	</table>
+<?php }
+function db_save_custom_user_profile_fields( $user_id ) {
+	if ( !current_user_can( 'edit_user', $user_id ) )
+		return FALSE;
+	$twitter = $_POST['twitter_handle'];
+	if($twitter[0] != '@' && $twitter != '')
+		$twitter = '@'.$twitter;
+	update_usermeta( $user_id, 'twitter_handle', $twitter );
+}
+add_action( 'show_user_profile', 'db_add_custom_user_profile_fields' );
+add_action( 'edit_user_profile', 'db_add_custom_user_profile_fields' );
+add_action( 'personal_options_update', 'db_save_custom_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'db_save_custom_user_profile_fields' );
+
+
 // Removes all tags that start with db- from displaying on the front end
 function remove_db_tags($input) {
 	error_log($input);

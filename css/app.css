@@ -499,6 +499,10 @@ figcaption{
 	padding: 10px;
 }
 
+.entry-content {
+    border-bottom: 2px solid #dbdbdb;
+}
+
 	
 /*--- rotator */
 div#topcontent-rotator {
@@ -1323,6 +1327,34 @@ span.copyright {
   margin-top: 3px;
 }
 
+/* ===== Phone nav ========================================================
+   Author:
+   ========================================================================== */
+#mobile-nav {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+ul.phone-nav {
+	margin:0;
+	padding:0;
+}
+ul.phone-nav > li a {
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
+	color:white;
+	padding-left:10px;
+}
+ul.phone-nav > li:active, ul.phone-nav > li:hover {
+    background-color: black;
+}
+ul.phone-nav > li.active a {
+	color:black;
+	background-color:#dbdbdb;
+}
 
 /* =============================================================================
    WordPress Generated Classes
@@ -1354,7 +1386,7 @@ span.copyright {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	header {
-	    height: 44px;
+	    min-height: 44px;
 	    background-image: url('../img/black-linen.png');
 	    margin-left: -20px;
 		padding: 0 10px;
