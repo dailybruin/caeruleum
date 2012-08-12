@@ -17,14 +17,30 @@ function db_add_custom_user_profile_fields( $user ) {
 				<span class="description"><?php _e('Please enter your twitter username if you would like it to be displayed on your profile.'); ?></span>
 			</td>
 		</tr>
+		<tr>
+			<th>
+				<label for="graduated"><?php _e("Graduated"); ?></label>
+			</th>
+			<td>
+				<input type="checkbox" name="graduated" id="graduated" value="1" <?php
+					if(esc_attr( get_the_author_meta( 'graduated', $user->ID ) ))
+						echo "checked='checked'"; ?>></input><br />
+				<span class="description"><?php _e('If the user has graduated, check here and email/twitter links will be disabled'); ?></span>
+			</td>
+		</tr>
 	</table>
 <?php }
 function db_save_custom_user_profile_fields( $user_id ) {
+	error_log(print_r($_POST, true));
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return FALSE;
 	$twitter = $_POST['twitter_handle'];
+	$graduated = $_POST['graduated'];
 	if($twitter[0] != '@' && $twitter != '')
 		$twitter = '@'.$twitter;
+	if(!isset($graduated))
+		$graduated = 0;
+	update_usermeta( $user_id, 'graduated', $graduated );
 	update_usermeta( $user_id, 'twitter_handle', $twitter );
 }
 add_action( 'show_user_profile', 'db_add_custom_user_profile_fields' );
