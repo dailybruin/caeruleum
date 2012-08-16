@@ -5,10 +5,11 @@
       <div id="post-top">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<h2 class="subhead"><?php $subhead = get_post_custom_values('db_subhead'); echo $subhead[0]; ?></h2>
-		<?php the_post_thumbnail('db-rotator'); ?>
-		<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
-		<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
-		
+		<?php if(has_post_thumbnail()) : ?>
+			<?php the_post_thumbnail('db-rotator'); ?>
+			<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
+			<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
+		<?php endif; ?>
 		<div class="infobar">
 			<span class="infobar-day"><i class="ticon-calendar ticon-white"></i> <?php the_time('F n, Y'); ?></span>
 			<span class="infobar-time"><i class="ticon-clock ticon-white"></i> <?php the_time('g:i a'); ?></span>
@@ -28,6 +29,7 @@
 				</ul>
 			</div><!-- end div.post-extra -->
 			<div class="span6 post-content">
+				<?php the_audio(); ?>
 				<span class="byline">By <?php echo the_author_posts_link(); ?></span>
 				<?php if(isset($customFields['db_infobox'])) : ?>
 					<div class="db-infobox">

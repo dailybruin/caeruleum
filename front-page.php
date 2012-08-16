@@ -22,7 +22,6 @@
 				<?php foreach ($cstory as $i=>$story) : $post = $story[0]; setup_postdata($post); ?>
 				<div class="topcontent-rotator-content" id="topcontent-rotator-content-<?php echo $i+1; ?>" <?php if($i > 0) : ?>style="display:none"<?php endif; ?>>
 					<?php the_post_thumbnail('db-rotator', $rotator_attr); ?>
-<!-- 					<img src="http://placehold.it/670x480" /> -->
 					<span class="photocredit"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>		
 					<div class="topcontent-rotator-control input-append">
 						<button class="btn disabled topcontent-rotator-control-back" type="button"><i class="icon-chevron-left"></i></button><button class="btn topcontent-rotator-control-forward" type="button"><i class="icon-chevron-right"></i></button>
