@@ -111,6 +111,9 @@
 
   <?php wp_footer(); ?>
   <?php roots_footer(); ?>
+	<span style="clear:both;display:block;"></span>
 
 </body>
+	<span style="clear:both;display:block;"></span>
+
 </html>

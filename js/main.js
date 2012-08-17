@@ -2,6 +2,33 @@
 	Byron Lutz
 */
 
+$(document).ready(function() {
+	$('#popular-select').click(sidebarChange);
+	$('#commented-select').click(sidebarChange);
+	$('#side-info-commented').hide();
+	
+	function sidebarChange(eventObject) {
+		eventObject.preventDefault();
+		var switchTo = $(this).attr('id');
+		$('#popular-select').removeClass('activetab');
+		$('#commented-select').removeClass('activetab');
+		$(this).addClass('activetab');
+		
+		$('#side-info-popular').hide();
+		$('#side-info-commented').hide();
+		
+		
+		$('#'+$(this).attr('data-target')).show();
+	}
+});
+
+/***** ADJUST SIDEBAR HEIGHT *****/
+$(document).ready(function() {
+	var heightOfArticle = Math.max($('#sidebar').height(), $('article.post').height());
+	$('#sidebar').attr('style','height:'+heightOfArticle+'px');
+});
+
+
 /***** TOGGLE DROPDOWNS *****/
 $(document).ready(function() {
 	$('.dropdown-toggle').dropdown();

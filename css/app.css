@@ -3,6 +3,10 @@
 /* ===== Primary Styles ========================================================
    Author:
    ========================================================================== */
+
+p {
+	margin: 0 0 15px;
+}
   
 h2 {
 	font-family: "Palatino Linotype";
@@ -625,7 +629,7 @@ div.topcontent-rotator-control {
    ========================================================================== */
 
 
-#sidebar-inside > div {
+#sidebar-inside > div, #sidebar-inside > section {
 	padding-bottom:10px;
 	margin-bottom:4px;
 	border-bottom:2px solid #AAA;
@@ -655,6 +659,41 @@ div.topcontent-rotator-control {
 }
 
 #sidebar h2 {
+	font-size: 1.5em;
+}
+#sidebar h2 a {
+	text-decoration:none;
+	color:#333;
+}
+#popular-select, #commented-select {
+	opacity:0.5;
+	padding-bottom:3px;
+}
+#popular-select:hover, #commented-select:hover {
+    border-bottom: 2px solid #333;
+    padding-bottom:1px;
+}
+
+#popular-select.activetab, #commented-select.activetab {
+	opacity:1;
+}
+#popular-select {
+	float:left;
+}
+#commented-select {
+	float:right;
+}
+.side-info > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side-info > ul li {
+	padding:4px 0;
+	border-bottom:1px solid #dbdbdb;
+}
+.side-info > ul li:last-child {
+	border-bottom:none;
 }
 
 /* ===== Popular List ========================================================
@@ -766,7 +805,7 @@ ul.popularlist a li, ul.popularlist li {
 	padding:2px 5px;
 }
 
-span.popularlist-comments {
+.popularlist span.popularlist-comments {
 	display:block;
 	width:26px;
 	height:24px;
