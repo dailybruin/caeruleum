@@ -27,6 +27,8 @@ $(document).ready(function() {
 $(document).ready(function() {
 	if($(window).width() >= 980) {
 		var heightOfArticle = Math.max($('#sidebar').height(), $('article.post').height());
+		if($('#post-listing').height())
+			heightOfArticle = Math.max($('#post-listing').height()-10, heightOfArticle);
 		$('#sidebar').attr('style','height:'+heightOfArticle+'px');
 	}
 });

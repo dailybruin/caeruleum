@@ -6,7 +6,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<h2 class="subhead"><?php $subhead = get_post_custom_values('db_subhead'); echo $subhead[0]; ?></h2>
 		<?php if(has_post_thumbnail()) : ?>
-			<?php the_post_thumbnail('db-rotator'); ?>
+			<?php the_post_thumbnail('db-category-full'); ?>
 			<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
 			<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
 		<?php endif; ?>

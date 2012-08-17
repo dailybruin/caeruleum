@@ -8,27 +8,29 @@
 <?php } ?>
 
 <?php /* Start loop */ ?>
+<?php $firstArticle = true; ?>
 <?php while (have_posts()) : the_post(); ?>
-  <?php roots_post_before(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php roots_post_inside_before(); ?>
-      <header>
+    	<?php if($firstArticle): ?>
+	        <?php if(has_post_thumbnail()): ?>
+	      		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-full' ); ?></a>
+	      	<?php endif; ?>
+    		<?php $firstArticle = false; ?>
+    	<?php else : ?>
+	        <?php if(has_post_thumbnail()): ?>
+	      		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+	      	<?php endif; ?>
+    	<?php endif; ?>
+
+      <header class="articlelist-head">
+      	<span class="title-category"><?php the_category(' > ','single' );?></span>
+      	<span class="timestamp"><?php the_time('F n, Y'); ?></span>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <?php roots_entry_meta(); ?>
       </header>
       <div class="entry-content">
-        <?php if (is_archive() || is_search()) { ?>
-          <?php the_excerpt(); ?>
-        <?php } else { ?>
-          <?php the_content(); ?>
-        <?php } ?>
-      </div>
-      <footer>
-        <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
-      </footer>
-    <?php roots_post_inside_after(); ?>
+      	<?php the_audio(); ?>
+		<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
     </article>
-  <?php roots_post_after(); ?>
 <?php endwhile; /* End loop */ ?>
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>

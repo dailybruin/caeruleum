@@ -102,12 +102,6 @@ function dequeue_polls_style() {
 	wp_dequeue_style('wp-polls');
 }
 
-// Set image sizes
-add_image_size( 'db-front', 100, 100, 1 );
-add_image_size( 'db-rotator', 670, 480, 1 );
-add_image_size( 'db-multimedia', 476, 300, 1 );
-add_image_size( 'db-multimedia-small', 210, 140, 1 );
-
 
 // Remove default WordPress Popular Posts stylesheet
 add_action('wp_head', 'remove_wpp_stylesheet', 1); 

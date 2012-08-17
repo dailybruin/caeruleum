@@ -4,6 +4,11 @@
    Author:
    ========================================================================== */
 
+span.nameplate-date-weather {
+    display:none !important;
+}
+
+
 p {
 	margin: 0 0 15px;
 }
@@ -1206,6 +1211,43 @@ span.copyright {
 }
 .paidadvertising-list li:nth-child(6n+1) {
 	margin-left:0;
+}
+
+/* ===== Archive listing ========================================================
+   Author:
+   ========================================================================== */
+
+.page-header {
+    margin-top: 5px;
+}
+.page-header h1 {
+    text-align: right;
+    opacity: 0.5;
+}
+.title-category {
+	float:right;
+}
+.title-category a {
+	color:#AAA;
+	font-style:italic;
+}
+.articlelist-head > h2 {
+    font-weight: normal;
+    line-height: 1.3em;
+    padding-bottom: 7px;
+}
+.articlelist-head > h2 a {
+	color:#333;
+}
+.category-thumb {
+    float: left;
+    margin: 0 10px 10px 0;
+    clear:left;
+}
+#post-listing > article {
+    overflow: hidden;
+    border-bottom: 2px solid #AAA;
+    margin-bottom:7px;
 }
 
 /* ===== Audio player ========================================================
