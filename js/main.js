@@ -2,6 +2,7 @@
 	Byron Lutz
 */
 
+/***** CONTROL SIDEBAR POPULAR STORIES TABS *****/
 $(document).ready(function() {
 	$('#popular-select').click(sidebarChange);
 	$('#commented-select').click(sidebarChange);
@@ -24,8 +25,10 @@ $(document).ready(function() {
 
 /***** ADJUST SIDEBAR HEIGHT *****/
 $(document).ready(function() {
-	var heightOfArticle = Math.max($('#sidebar').height(), $('article.post').height());
-	$('#sidebar').attr('style','height:'+heightOfArticle+'px');
+	if($(window).width() >= 980) {
+		var heightOfArticle = Math.max($('#sidebar').height(), $('article.post').height());
+		$('#sidebar').attr('style','height:'+heightOfArticle+'px');
+	}
 });
 
 

@@ -7,6 +7,10 @@
 p {
 	margin: 0 0 15px;
 }
+
+figure {
+	clear:both;
+}
   
 h2 {
 	font-family: "Palatino Linotype";
@@ -506,6 +510,8 @@ figcaption{
     width: 200px;
 	float: right;
 	padding: 10px;
+	margin-left:10px;
+	clear:both;
 }
 #entry-bottom {
     border-bottom: 2px solid #dbdbdb;
@@ -1591,6 +1597,33 @@ ul.phone-nav > li.active a {
 	.topcontent-rotator-control {
 		clear:both;
 	}
+	.entry-title {
+	    font-size: 1.8em;
+	    line-height: 1.3em;
+	}
+	.subhead {	
+	    font-size: 1.2em;
+	    line-height: 1.4em;
+	    padding: 14px 0 21px;
+	}
+	.infobar > .infobar-categories {	
+	    float: left;
+	    padding-top: 5px;
+	}
+	.db-infobox {
+	    width: 80%;
+	    display: block;
+	    float: none;
+	    margin: 10px auto;
+	}
+	figure, figure.alignnone {
+		display: block;
+		text-align: center;
+		float: none;
+		margin: 10px auto;
+	}
+
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -1684,6 +1717,28 @@ ul.phone-nav > li.active a {
 	    margin-left: -20px;
 	    margin-right: -20px;
 	}
+	#post-extra-actions li {
+		clear: none;
+		float: left;
+		margin-right: 16px;
+	}
+	#post-extra-actions li.list-space {
+		display:none;
+	}
+	.post-content {
+		margin-top:10px;
+	}
+	#sidebar-inside {
+		border:none;
+	}
+	#commented-selected {
+	    float: left;
+	    margin-left: 19px;
+	}
+	#side-ad {
+		border:none;
+	}
+
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -1714,7 +1769,24 @@ ul.phone-nav > li.active a {
 	input#search-input {
     	width: 132px;
 	}
-
+	.entry-title {
+		font-size:2em;
+	}
+	#commented-select {
+		float:left;
+	}
+	figure, figure.alignnone {
+		display: block;
+		text-align: center;
+		float: none;
+		margin: 10px auto;
+	}
+	.db-infobox {
+	    width: 80%;
+	    display: block;
+	    float: none;
+	    margin: 10px auto;
+	}
 }
 
 /* Large desktop */
