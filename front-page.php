@@ -10,6 +10,16 @@
 				$cstory[3] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c4' ) );
 			?>
 			<div class="span8" id="topcontent-rotator">
+				<?php
+				$args = array( 'tag' => 'breaking' );
+				$lastposts = get_posts( $args );
+				foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+				<div id="breaking">
+					<a href="<?php the_permalink(); ?>"><span class="breaking-title"><?php the_title(); ?></span></a> <span class="breaking-timestamp"><?php the_time('F n'); echo " at "; the_time('g:i a'); ?></span>
+				</div><!-- end div#breaking -->
+				<?php endforeach; ?>
+				
+				
 				<div id="topcontent-rotator-nav" class="hidden-phone">
 					<ul class="navlist">
 						<li id="rotate-label-1" class="rotate-current"><a href="#"><?php echo get_post_meta($cstory[0][0]->ID, 'db_rotator_slug', true); ?></a></li>
