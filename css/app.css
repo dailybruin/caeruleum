@@ -1664,7 +1664,10 @@ ul.phone-nav > li.active a {
 		float: none;
 		margin: 10px auto;
 	}
-
+	.category-thumb {	
+	    float: none;
+	    margin: 0 auto;
+	}
 
 }
 

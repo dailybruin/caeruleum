@@ -22,11 +22,11 @@
 	      	<?php endif; ?>
     	<?php endif; ?>
 
-      <header class="articlelist-head">
+      <div class="articlelist-head">
       	<span class="title-category"><?php the_category(' > ','single' );?></span>
       	<span class="timestamp"><?php the_time('F n, Y'); ?></span>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      </header>
+      </div><!-- end div.article-head -->
       <div class="entry-content">
       	<?php the_audio(); ?>
 		<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
