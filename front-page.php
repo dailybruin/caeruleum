@@ -103,7 +103,7 @@
 				<ul class="popularlist" style="display:none" id="popularlist-blog">	
 					<?php
 					$args = array( 'numberposts' => 5, 'category' => 21 );
-					$blogposts = get_posts( $args );
+					$blogposts = ( $args );
 					foreach( $blogposts as $post ) :	setup_postdata($post); ?>
 					<a href="<?php the_permalink(); ?>"><li><span class="popularlist-comments"><?php comments_number('0','1','%'); ?></span><?php the_title(); ?></li></a>
 					<?php endforeach; ?>
@@ -113,14 +113,38 @@
 				<div id="middlecontent1-classifieds" class="segmented-box hidden-phone">
 					<h2>Featured Classifieds</h2>
 					<div id="middlecontent1-classifieds-column1">
+						<?php
+						$args = array(
+							'numberposts' => 3,
+							'post_type' => 'db_classified',
+							'featured' => 'Featured',
+							'post_status' => 'publish'
+						);
+						$featuredAds = get_posts( $args );
+						foreach( $featuredAds as $post ) :	setup_postdata($post);						
+						$classification = array_shift(get_the_terms($post->ID, 'classification')); ?>
+						<p><?php echo get_the_content(); ?> &bull; <a href="<?php echo get_term_link($classification); ?>"><?php echo $classification->name; ?></a></p>
+						<?php endforeach; ?>
+<!--
 						<p>ACCUSED of cheating? Plagiarism? Grade dispute? Criminal Charges? Call BEFORE speaking with the Dean or Police. FREE consultation. Law Offices of Kosnett&Durchfort. (310)444-8898http://www.educationlawyer.org &bull; <a href="#">Legal Advice/Attorneys</a></p>
 						<p>ORGANIC CHEMISTRY IN ONE MONTH.We offer all science classes required for health professional programs. Weekend WASC accredited. Whittierwww.integratedscienceprogram.com &bull; <a href="#">Professional Services</a></p>
 						<p>WRITING TUTORKind and patient Stanford graduate. Help with the English language--for students of all ages/levels. 310-440-3118. &bull; <a href="#">Tutoring Offered</a></p>
+-->
 					</div><!-- end div#middlecontent1-classifieds-column1 -->
 					<div id="middlecontent1-classifieds-column2">
-						<p>SUMMER CAMPAIGN JOBS!Fight Hate Groups. Teach Tolerance. Seek Justice.Earn $1400-$2200/month.Los Angeles: 310-441-1712Pasadena: 626-844-1900Newport Beach: 202-695-8075 &bull; <a href="#">Help Wanted</a></p>
-						<p>$925 Bachelor. Small kitchenette. No parking. Utilities paid. July 10th Move in. 10943 Roebling Ave. 1yr lease. No pets. 310-395-8643. &bull; <a>Apartments for Rent</a></p>
-						<p>**SANTA MONICA. Private, charming 1Bdrm. Nice yard, blocks from beach. Newly remodeled. Pearl/11th Street. Serious applicants only. Laurent 310-994-1127. &bull; <a href="#">Apartments for Rent</a></p>
+						<?php
+						$args = array(
+							'numberposts' => 3,
+							'post_type' => 'db_classified',
+							'featured' => 'Featured',
+							'post_status' => 'publish',
+							'offset' => 3
+						);
+						$featuredAds = get_posts( $args );
+						foreach( $featuredAds as $post ) :	setup_postdata($post);						
+						$classification = array_shift(get_the_terms($post->ID, 'classification')); ?>
+						<p><?php echo get_the_content(); ?> &bull; <a href="<?php echo get_term_link($classification); ?>"><?php echo $classification->name; ?></a></p>
+						<?php endforeach; ?>
 					</div><!-- end div#middlecontent1-classifieds-column2 -->
 				<br style="clear:both" />
 				</div><!-- end div#middlecontent1-classifieds -->
