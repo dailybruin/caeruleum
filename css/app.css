@@ -884,6 +884,10 @@ span.popularlist-comments:hover {
 	border-bottom:none;
 }
 
+article.db_classified {
+    border-bottom: 1px solid #dbdbdb;
+}
+
 /* ===== Multimedia ========================================================
    Author:
    ========================================================================== */
