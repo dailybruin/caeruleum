@@ -2,7 +2,7 @@
 
 <div class="row" id="single-post">
 	<div class="span8" id="post">
-		<?php get_template_part('loop', 'classified'); ?>
+		<?php get_template_part('loop', 'single'); ?>
 	</div><!-- end div#post -->
 	
 	<aside class="span4" id="sidebar" role="complementary">
