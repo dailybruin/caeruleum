@@ -37,7 +37,7 @@ function roots_setup() {
 	set_post_thumbnail_size(150, 150, false);
 	add_image_size( 'db-category-thumb', 300, 300 ); // 300px wide (and unlimited height)
 	add_image_size( 'db-front', 100, 100, 1 );
-	add_image_size( 'db-rotator', 670, 480, 1 );
+	add_image_size( 'db-rotator', 540, 387, 1 );
 	add_image_size( 'db-category-full', 670, 670);
 	add_image_size( 'db-multimedia', 476, 300, 1 );
 	add_image_size( 'db-multimedia-small', 210, 140, 1 );

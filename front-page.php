@@ -9,13 +9,13 @@
 				$cstory[2] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c3' ) );
 				$cstory[3] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c4' ) );
 			?>
-			<div class="span8" id="topcontent-rotator">
+			<div class="span7" id="topcontent-rotator">
 				<?php
 				$args = array( 'tag' => 'breaking' );
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 				<div id="breaking">
-					<a href="<?php the_permalink(); ?>"><span class="breaking-title"><?php the_title(); ?></span></a> <span class="breaking-timestamp"><?php the_time('F n'); echo " at "; the_time('g:i a'); ?></span>
+					<a href="<?php the_permalink(); ?>"><span class="breaking-title"><?php the_title(); ?></span></a> <span class="breaking-timestamp"><?php the_time('F j'); echo " at "; the_time('g:i a'); ?></span>
 				</div><!-- end div#breaking -->
 				<?php endforeach; ?>
 				
@@ -36,7 +36,7 @@
 					<div class="topcontent-rotator-control input-append">
 						<button class="btn disabled topcontent-rotator-control-back" type="button"><i class="icon-chevron-left"></i></button><button class="btn topcontent-rotator-control-forward" type="button"><i class="icon-chevron-right"></i></button>
 					</div>
-					<span class="timestamp"><?php the_time('F j'); ?></span>
+					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
@@ -44,14 +44,14 @@
 				<?php endforeach; ?>
 			</div><!-- end div#topcontent-rotator -->
 			
-			<div class="span4" id="topcontent-stories">
+			<div class="span5" id="topcontent-stories">
 				<!-- story tag db-story-a -->
 				<?php
 					$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
 					$lastposts = get_posts( $args );
 					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 				<article>
-					<span class="timestamp"><?php the_time('F j'); ?></span>
+					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
@@ -67,7 +67,7 @@
 					$lastposts = get_posts( $args );
 					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 				<article>
-					<span class="timestamp"><?php the_time('F j'); ?></span>
+					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
@@ -165,7 +165,7 @@
 						<?php 	// output multimedia flag
 						$customFields = get_post_custom($post->ID);
 						multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
-						<span class="multimedia-date"><?php the_time('F j'); ?></span>
+						<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
 						<p><?php the_excerpt(); ?></p>
 					</a>
 				<?php endforeach; ?>
@@ -180,7 +180,7 @@
 					<?php 	// output multimedia flag
 					$customFields = get_post_custom($post->ID);
 					multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
-					<span class="multimedia-date"><?php the_time('F j'); ?></span>
+					<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
 					<p><?php the_excerpt(); ?></p>
 				</a>
 				<?php endforeach; ?>
@@ -194,7 +194,7 @@
 					<?php 	// output multimedia flag
 					$customFields = get_post_custom($post->ID);
 					multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
-					<span class="multimedia-date"><?php the_time('F j'); ?></span>
+					<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
 					<p><?php the_excerpt(); ?></p>
 				</a>
 				<?php endforeach; ?>

@@ -138,10 +138,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	// Large screen
+/*
 	if($(window).width() >= 1200) {
-		$('#topcontent-rotator').removeClass('span8').addClass('span7');
-		$('#topcontent-stories').removeClass('span4').addClass('span5');
 	}
+*/
 	
 	// Small screen
 	if($(window).width() <= 979 && $(window).width() >= 768) {
