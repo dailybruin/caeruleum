@@ -6,12 +6,12 @@
     <?php roots_footer_inside(); ?>
     <!-- DB FOOTER -->
     <?php 
-    	$news_cat = 5;
-    	$ae_cat = 8;
-    	$sports_cat = 6;
-    	$opinion_cat = 7;
-    	$blogs_cat = 21;
-    	$prime_cat = 62;
+    	$news_cat = 14;
+    	$ae_cat = 4;
+    	$sports_cat = 29;
+    	$opinion_cat = 21;
+    	$blogs_cat = 10;
+    	$prime_cat = 28;
     ?>
     		<div class="container">
 			<img src="/img/nameplate-black.png" id="bottom-logo" />
