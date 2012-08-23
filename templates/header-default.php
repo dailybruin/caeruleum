@@ -28,7 +28,7 @@
 
 				<div class="span2 offset1 hidden-phone" id="nameplate-date">
 					<span class="nameplate-date-weather"><a href="#"><i class="wicon-sun"></i><span>92&deg;</span></a></span>
-					<span class="nameplate-date-week">Finals week</span>
+					<span class="nameplate-date-week">Summer</span>
 					<span class="nameplate-date-today"><?php echo date('F j, Y'); ?></span>
 				</div>
 
