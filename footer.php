@@ -12,6 +12,7 @@
     	$opinion_cat = 21;
     	$blogs_cat = 10;
     	$prime_cat = 28;
+    	$multimedia_cat = 52;
     ?>
     		<div class="container">
 			<img src="/img/nameplate-black.png" id="bottom-logo" />
@@ -65,14 +66,16 @@
 						wp_list_categories($cat_args);
 					?>
 					</ul>
-					<h3>Media</h3>
+					<h3><a href="<?php echo get_category_link( $multimedia_cat ); ?>"><?php echo get_the_category_by_ID( $multimedia_cat ); ?></a></h3>
 					<ul>
-						<li><a href="#">A closer look</a></li>
-						<li><a href="#">Campus</a></li>
-						<li><a href="#">Crime</a></li>
-						<li><a href="#">Science &amp; Health</a></li>
-						<li><a href="#">Student Government</a></li>
-						<li><a href="#">Westwood</a></li>
+					<?php $cat_args = array(
+							'child_of' => $multimedia_cat,
+							'orderby' => 'name',
+							'hide_empty' => 0,
+							'title_li' => ''
+						);
+						wp_list_categories($cat_args);
+					?>
 					</ul>
 				</div>
 				<div class="footer-links span2">
