@@ -2,6 +2,16 @@
 	Byron Lutz
 */
 
+
+/***** ENABLE DONATE BUTTON *****/
+$(document).ready(function() {
+	$('.menu-donate a').click(function(e) {
+		e.preventDefault();
+		$.pressplus.f.pop('plans');
+	});
+});
+
+
 /***** CONTROL SIDEBAR POPULAR STORIES TABS *****/
 $(document).ready(function() {
 	$('#popular-select').click(sidebarChange);
