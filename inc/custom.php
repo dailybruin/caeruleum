@@ -2,6 +2,17 @@
 
 // Custom functions
 
+// Theme hook to allow getting a list of categories
+function the_category_text($category_array) {
+	foreach($category_array as $category) {
+		if($category->parent == 0) {
+			echo $category->cat_name;
+			return;
+		}
+	}
+	echo trim(get_category_parents($category_array[0]->term_id, false, ', '),', ');
+}
+
 
 // Add extra fields to a user profile
 function db_add_custom_user_profile_fields( $user ) {

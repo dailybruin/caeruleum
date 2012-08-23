@@ -36,7 +36,7 @@
 					<div class="topcontent-rotator-control input-append">
 						<button class="btn disabled topcontent-rotator-control-back" type="button"><i class="icon-chevron-left"></i></button><button class="btn topcontent-rotator-control-forward" type="button"><i class="icon-chevron-right"></i></button>
 					</div>
-					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span>
+					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
@@ -51,7 +51,7 @@
 					$lastposts = get_posts( $args );
 					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 				<article>
-					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span>
+					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
@@ -67,7 +67,7 @@
 					$lastposts = get_posts( $args );
 					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 				<article>
-					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span>
+					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_title(); ?></h1></a>
 					<span class="byline">By <?php the_author(); ?></span>
 					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>

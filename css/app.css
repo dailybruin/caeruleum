@@ -98,7 +98,9 @@ img.ad {
     text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-
+.label-right {
+	float:right;
+}
 
 
 .photocredit {
