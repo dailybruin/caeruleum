@@ -49,7 +49,7 @@
 									'menu_id' => 'topMenu',
 									)
 					); ?>
-			<form class="firstnav-search input-append" role="search" method="get" action="http://db.localhost/">
+			<form class="firstnav-search input-append" role="search" method="get" action="<?php home_url('/'); ?>">
 					<input name="s" id="search-input" type="text" placeholder="Search..." /><button class="btn" type="button"><i class="icon-search"></i></button>
 			</form>
 		</nav><!-- end nav#firstnav -->
