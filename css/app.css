@@ -115,11 +115,9 @@ img.ad {
 
 .byline {
     font-family: "Palatino Linotype";
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 1.1em;
-    padding-bottom: 8px;
     display: inline-block;
+    font-style: italic;
 }
 
 .byline a {
