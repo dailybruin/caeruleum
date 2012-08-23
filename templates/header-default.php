@@ -18,7 +18,7 @@
 					<span style="color: white;">Today's Paper</span>
 				</div>
 				<div class="span6" id="nameplate-image">
-					<img src="/img/nameplate.png" />
+					<a href="<?php home_url('/'); ?>"><img src="/img/nameplate.png" /></a>
 					<button type="button" class="btn btn-navbar visible-phone" data-toggle="collapse" data-target="#mobile-nav">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
