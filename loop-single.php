@@ -20,14 +20,15 @@
 		<div class="row entry-content">
 			<div class="span2 post-extra">
 				<ul id="post-extra-actions">
-					<li><a href="#">Twitter <i class="ticon-twitter">	</a></i></li>
-					<li><a href="#">Facebook <i class="ticon-facebook">	</a></i></li>
-					<li class="list-space"></li>
+					<li><a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">Twitter <i class="ticon-twitter"</a></i></li>
+					<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://dailybruin.com<?php the_permalink(); ?>" target="_blank" >Facebook <i class="ticon-facebook">	</a></i></li>
+					<!--<li class="list-space"></li>
 					<li class="post-extra-unimportant"><a href="#">Print <i class="ticon-printer"></a></i></li>
-					<li class="post-extra-unimportant"><a href="#">Email <i class="ticon-email"></a></i></li>
+					<li class="post-extra-unimportant"><a href="#">Email <i class="ticon-email"></a></i></li>-->
 					<br style="clear:both" />
 				</ul>
 			</div><!-- end div.post-extra -->
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<div class="span6 post-content">
 				<?php the_audio(); ?>
 				<span class="byline">By <?php echo the_author_posts_link(); ?></span>
