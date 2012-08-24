@@ -108,7 +108,7 @@
 			</div>
 			<div class="span7">
 				<div id="middlecontent1-classifieds" class="segmented-box hidden-phone">
-					<h2>Featured Classifieds</h2>
+					<h2><a href="http://dailybruin.com/db_classified">Featured Classifieds</a></h2>
 					<div id="middlecontent1-classifieds-column1">
 						<?php
 						$args = array(
