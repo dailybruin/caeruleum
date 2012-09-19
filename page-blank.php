@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Full Width
+Template Name: Blank page
 */
 get_header(); ?>
   <?php roots_content_before(); ?>
