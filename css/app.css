@@ -1084,6 +1084,7 @@ div.bottomcontent-wrap ul a {
 	padding:7px 5px;
 	border-bottom:1px solid #dadada;
 	border-top:1px solid #ededed;
+	min-height:36px;
 	
 	background: rgb(255,255,255); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(238,238,239,1) 100%); /* FF3.6+ */
