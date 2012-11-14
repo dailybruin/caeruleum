@@ -166,7 +166,7 @@
 						$customFields = get_post_custom($post->ID);
 						multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
 						<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
-						<p><?php the_excerpt(); ?></p>
+						<p><?php the_title(); ?></p>
 					</a>
 				<?php endforeach; ?>
 				</div>
@@ -181,7 +181,7 @@
 					$customFields = get_post_custom($post->ID);
 					multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
 					<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
-					<p><?php the_excerpt(); ?></p>
+					<p><?php the_title(); ?></p>
 				</a>
 				<?php endforeach; ?>
 	
@@ -195,7 +195,7 @@
 					$customFields = get_post_custom($post->ID);
 					multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
 					<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
-					<p><?php the_excerpt(); ?></p>
+					<p><?php the_title(); ?></p>
 				</a>
 				<?php endforeach; ?>
 								
