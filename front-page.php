@@ -38,7 +38,7 @@
 					</div>
 					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
-					<span class="byline">By <?php the_author(); ?></span>
+					<?php the_byline(); ?>
 					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
 				</div><!-- end div.topcontent-rotator-content -->
 				<?php endforeach; ?>
@@ -53,7 +53,7 @@
 				<article>
 					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_title(); ?></h1></a>
-					<span class="byline">By <?php the_author(); ?></span>
+					<?php the_byline(); ?>
 					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
 					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
 					<span style="display:block;clear:both" />
@@ -69,7 +69,7 @@
 				<article>
 					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
 					<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_title(); ?></h1></a>
-					<span class="byline">By <?php the_author(); ?></span>
+					<?php the_byline(); ?>
 					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
 					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
 					<span style="display:block;clear:both" />

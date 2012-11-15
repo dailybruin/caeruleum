@@ -2,6 +2,23 @@
 
 // Custom functions
 
+function the_byline() {
+	global $post;
+	$authorid = $post->post_author;
+	$authordata = get_userdata($authorid);
+
+	// Code modified from WordPress core, wp-includes/author-template.php
+    if ( $authorid == 0 || !isset($authorid) )
+            return false;
+    $link = sprintf(
+            '<span class="byline">By <a href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+            get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
+            esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
+            get_the_author()
+    );
+    echo apply_filters( 'the_byline', $link );
+}
+
 // Theme hook to allow getting a list of categories
 function the_category_text($category_array) {
 	foreach($category_array as $category) {
