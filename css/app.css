@@ -1291,6 +1291,7 @@ span.copyright {
 .now-playing {width: 75%; overflow: hidden; display: block; 
 	position: absolute; top: 0; left: 0; font: bold 12px/15px arial}
 .now-playing span {text-transform: none; display: block; font: 16px/21px arial}
+.now-playing span.audio-songartist {display:none;} /* Custom CSS rule! -BL */
 
 .jp-interface .jp-controls {margin: 0}
 
