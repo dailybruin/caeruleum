@@ -124,6 +124,10 @@ function multimedia_post_flag( $multimedia_type ) {
 		$icon = "etc";
 		$type = "Graphic";
 	}
+	else if ($multimedia_type == "video") {
+		$icon = "video";
+		$type = "Video";
+	}
 	else if ($multimedia_type == "interactive") {
 		$icon = "etc";
 		$type = "Interactive Graphic";
