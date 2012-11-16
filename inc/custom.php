@@ -1,7 +1,18 @@
 <?php
 
 // Custom functions
+add_filter('the_title', 'title_italic');
+function title_italic($title)
+{
+	if(substr($title, 0, 1) == '_' && substr($title, -1) == '_')
+	{
+		return '<em>'.substr($title, 1, strlen($title)-2).'</em>';
+	}
+	return $title;
+}
 
+
+// Define a function to output bylines properly (and show/not show them)
 function the_byline() {
 	global $post;
 	$authorid = $post->post_author;
