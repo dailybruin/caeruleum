@@ -1,18 +1,29 @@
+<header id="topinfo">
+	<div class="container visible-desktop">
+		<div class="row">
+			<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
+						'menu_class' => 'spannav navlist',
+						'menu_id' => 'toplinks-info',
+						'container' => '',
+						)); ?>
+			<div class="spanbanner">
+				<?php get_template_part('ad','banner'); ?>
+			</div><!-- end ad div (span8) -->
+			<div class="spandate">
+				<span id="date-month"><?php echo date('F'); ?></span><br />
+				<span id="date-day"><?php echo date('j'); ?></span>
+			</div>
+		</div><!-- end div.row (header row) -->
+	</div><!-- end div.container -->
+</header>
+
+
+
+
+
+
 	<header>
-		<div class="container">
-			<div id="toplinks" class="row hidden-phone">
-				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
-										'menu_class' => 'span6 navlist',
-										'menu_id' => 'toplinks-info',
-										'container' => '',
-										)
-						); ?>
-				</ul>
-				<div class="span3 offset3" id="toplinks-socialmedia">
-					We're also on  <a href="http://www.youtube.com/ucladailybruin"><i class="smicon-youtube"></i></a> <a href="http://www.twitter.com/dailybruin"><i class="smicon-twitter"></i></a> <a href="http://www.facebook.com/dailybruin"><i class="smicon-fb"></i></a>
-				</div>
-			</div><!-- end div#toplinks -->
-			
+		<div class="container">			
 			<div id="nameplate" class="row">
 				<div class="span3 hidden-phone" id="nameplate-todayspaper">
 					<span style="color: white;">Today's Paper</span>

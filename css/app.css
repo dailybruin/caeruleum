@@ -27,7 +27,7 @@ figure {
 }
   
 h2 {
-	font-family: "Palatino Linotype";
+	font-family: "Georgiae";
 	text-rendering:auto;
 }  
 
@@ -55,7 +55,7 @@ img.ad {
 
 [class^="headline-"],
 [class*=" headline-"] {
-	font-family: "Palatino Linotype";
+	font-family: "Georgiae";
 	font-weight:400;
 	font-size:24px;
 	line-height: 25px;
@@ -76,7 +76,7 @@ img.ad {
 }
  
 .headline-b {
-	font-family: "Palatino Linotype";
+	font-family: "Georgiae";
 	font-weight:bold;
 	font-size: 23px;
 	line-height: 26px;
@@ -116,7 +116,7 @@ img.ad {
 }
 
 .byline {
-    font-family: "Palatino Linotype";
+    font-family: "Georgiae";
     font-size: 1.1em;
     display: inline-block;
     font-style: italic;
@@ -151,25 +151,23 @@ div#nameplate-image {
 
 .navlist {
     list-style: none;
-    display: inline;
+    display: block;
 }
 #toplinks-info {
-    padding:3px 0;
-    text-align:center;
+    padding:0;
+    text-align:right;
 }
 
-.navlist li {
-	display:inline;
-}
 #toplinks-info li {
-	border-right: 1px solid #bcbcbc;
-	padding:0 5px 0 0;
+	padding:0;
+	line-height:13px;
 }
 #toplinks-info li a {
-	color:#333;
+	color:#777;
+	font-size: 12px;
 }
 #toplinks-info li a:hover {
-	color:#08C;
+	color:#3a5792;
 }
 #toplinks-info li:first-child {
 	padding-left:5px;
@@ -190,6 +188,8 @@ div#toplinks-socialmedia {
 
 #toplinks-info li a#toplinks-info-donate, #toplinks-info li.menu-donate a {
 	color:#234a2c;
+	font-weight:bold;
+	line-height:16px;
 }
 
 #nameplate-date {
@@ -412,13 +412,13 @@ ul#topMenu ul.dropdown-menu li a{
 }
 
 ul#topMenu ul.dropdown-menu li.active a {
-	background:#0088CC;
+	background:#3a5792;
 	color:white;
 }
 
 ul#topMenu > li.active.open > a,
 ul#topMenu > li.active.open > a:hover {
-	background:#0088CC;
+	background:#3a5792;
 	color:white;
 }
 
@@ -426,7 +426,7 @@ ul#topMenu > li.active.open > a:hover {
    Author:
    ========================================================================== */
 .entry-title {
-	font-family:"Palatino Linotype";
+	font-family:"Georgiae";
 	text-rendering:auto;
 	font-weight:normal;
     font-size: 2.3em;
@@ -557,7 +557,7 @@ figcaption{
 }
 .author-info h1 a {
     color: #333;
-    font-family: "Palatino Linotype";
+    font-family: "Georgiae";
     text-rendering: auto;
 }
 .author-info h2 {
@@ -1163,7 +1163,7 @@ footer {
 }
 
 .footer-links h3 {
-	font-family:"Palatino Linotype";
+	font-family:"Georgiae";
 	color:white;
 	font-weight:normal;
 	margin-top:10px;
@@ -1601,6 +1601,52 @@ span.copyright {
 .btn-navbar .icon-bar + .icon-bar {
   margin-top: 3px;
 }
+
+/* ===== Top info/ad bar ===================================================== */
+#topinfo {
+	width:100%;
+	background-color:#f2f2f2;
+	border-bottom:1px solid #adadad;
+	padding-top:5px;
+}
+.ad-banner {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 728px;
+}
+
+.spannav, .spandate {
+	width:86px;
+}
+.spanbanner {
+	width:728px;
+}
+@media (min-width: 1200px) { 
+	.spannav, .spandate {
+		width:191px;
+	}
+}
+
+.spandate {
+	text-align:center;
+	padding-top: 15px;
+}
+#date-month, #date-day {
+	display:inline;
+	font-family:"Georgia",serif;
+}
+#date-month { 
+	font-size:1.1em;
+}
+#date-day {
+	font-size: 3.3em;
+	line-height: 46px;
+	font-style:italic;
+}
+
+
+
 
 /* ===== Phone nav ========================================================
    Author:
