@@ -1632,6 +1632,45 @@ ul.phone-nav > li.active a {
 	background-color:#dbdbdb;
 }
 
+/* ======================== etc */
+#topsearch {
+	background-color:#f5f5f5;
+	overflow:hidden;
+	height:44px;
+	display:block;
+	border-right: 1px solid #ADADAD;
+}
+#topsearch > button {
+	border-style: none;
+	background: none;
+	float: right;
+	padding-top: 12px;
+	padding-right: 14px;
+	opacity: 0.5;
+}
+#topsearch > button:hover {
+	opacity:1;
+}
+#topsearch > input {
+    border-style: none;
+    background: none;
+    height: 37px;
+    text-align: right;
+    overflow: hidden;
+    display: bl;
+    float: left;
+    border-radius: 0;
+    outline: none;
+    color: #333;
+    width: 87%;
+    box-shadow:none;
+}
+#topsearch > input:focus {
+	border:none;
+	box-shadow:none;
+}
+
+
 /* =============================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes

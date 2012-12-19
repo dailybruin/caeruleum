@@ -25,24 +25,19 @@
 	</div><!-- end div.row -->
 </nav>
 
-
-
-
-
-
 	
-	<div id="firstnav-container-back" class="hidden-phone">
+<div id="firstnav-container-back" class="hidden-phone">
 	<div class="container" id="firstnav-container">
 		<nav class="row" id="firstnav">
 			<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
 									'menu_class' => 'navlist span12',
 									'container' => '',
 									'menu_id' => 'topMenu',
-									)
-					); ?>
-			<form class="firstnav-search input-append" role="search" method="get" action="<?php home_url('/'); ?>">
-					<input name="s" id="search-input" type="text" placeholder="Search..." /><button class="btn" type="button"><i class="icon-search"></i></button>
-			</form>
+									)); ?>
+			<form id="topsearch" action="/" method="get">
+				<input type="text" name="s" placeholder="Search..." />
+				<button type="submit"><i class="icon-search"></i></button>
+			</form><!-- end form#topsearch -->
 		</nav><!-- end nav#firstnav -->
 	</div><!-- end div#firstnav-container -->
 	</div><!-- end div#firstnav-container-back -->
