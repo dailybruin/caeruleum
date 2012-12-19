@@ -231,7 +231,7 @@ body {
 }
 
 a {
-  color: #3a5792;
+  color: #236fae;
   text-decoration: none;
 }
 
@@ -2925,11 +2925,11 @@ table th[class*="span"],
   color: #ffffff;
   text-decoration: none;
   background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #3a5792, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3a5792), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #3a5792, #0077b3);
-  background-image: -o-linear-gradient(top, #3a5792, #0077b3);
-  background-image: linear-gradient(to bottom, #3a5792, #0077b3);
+  background-image: -moz-linear-gradient(top, #236fae, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#236fae), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #236fae, #0077b3);
+  background-image: -o-linear-gradient(top, #236fae, #0077b3);
+  background-image: linear-gradient(to bottom, #236fae, #0077b3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }
@@ -2939,11 +2939,11 @@ table th[class*="span"],
   color: #ffffff;
   text-decoration: none;
   background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #3a5792, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3a5792), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #3a5792, #0077b3);
-  background-image: -o-linear-gradient(top, #3a5792, #0077b3);
-  background-image: linear-gradient(to bottom, #3a5792, #0077b3);
+  background-image: -moz-linear-gradient(top, #236fae, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#236fae), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #236fae, #0077b3);
+  background-image: -o-linear-gradient(top, #236fae, #0077b3);
+  background-image: linear-gradient(to bottom, #236fae, #0077b3);
   background-repeat: repeat-x;
   outline: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
@@ -3316,11 +3316,11 @@ input[type="button"].btn-block {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
   *background-color: #0044cc;
-  background-image: -moz-linear-gradient(top, #3a5792, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3a5792), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #3a5792, #0044cc);
-  background-image: -o-linear-gradient(top, #3a5792, #0044cc);
-  background-image: linear-gradient(to bottom, #3a5792, #0044cc);
+  background-image: -moz-linear-gradient(top, #236fae, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#236fae), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #236fae, #0044cc);
+  background-image: -o-linear-gradient(top, #236fae, #0044cc);
+  background-image: linear-gradient(to bottom, #236fae, #0044cc);
   background-repeat: repeat-x;
   border-color: #0044cc #0044cc #002a80;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -3544,7 +3544,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-link {
-  color: #3a5792;
+  color: #236fae;
   cursor: pointer;
   border-color: transparent;
   -webkit-border-radius: 0;
@@ -3948,7 +3948,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #3a5792;
+  background-color: #236fae;
 }
 
 .nav-list [class^="icon-"],
@@ -4042,7 +4042,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #3a5792;
+  background-color: #236fae;
 }
 
 .nav-stacked > li {
@@ -4109,8 +4109,8 @@ input[type="submit"].btn.btn-mini {
 
 .nav .dropdown-toggle .caret {
   margin-top: 6px;
-  border-top-color: #3a5792;
-  border-bottom-color: #3a5792;
+  border-top-color: #236fae;
+  border-bottom-color: #236fae;
 }
 
 .nav .dropdown-toggle:hover .caret {
@@ -5474,7 +5474,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 a.thumbnail:hover {
-  border-color: #3a5792;
+  border-color: #236fae;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
      -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
           box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);

@@ -28,6 +28,7 @@ function roots_setup() {
     'primary_navigation' => __('Primary Navigation', 'db'),
     'mobile_navigation' => __('Mobile Navigation', 'db'),
     'share_footer' => __('Share Links', 'db'),
+    'in_the_news' => __('In the News', 'db'),
     'about_footer' => __('About','db')
   ));
 

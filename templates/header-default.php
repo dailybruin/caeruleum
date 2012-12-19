@@ -40,10 +40,20 @@
 			</form><!-- end form#topsearch -->
 		</nav><!-- end nav#firstnav -->
 	</div><!-- end div#firstnav-container -->
-	</div><!-- end div#firstnav-container-back -->
+</div><!-- end div#firstnav-container-back -->
 		
-
-	<div class="container ad hidden-phone" style="margin-bottom:10px;">
-		<iframe id='ae976b13' name='ae976b13' src='http://www.oncampusweb.com/delivery/afr.php?zoneid=129&amp;cb=18971928374158792837213' framespacing='0' frameborder='no' scrolling='no' width='728' height='90'><a href='http://www.oncampusweb.com/delivery/ck.php?n=afcf8f4b&amp;cb=18971928374158792837213' target='_blank'><img src='http://www.oncampusweb.com/delivery/avw.php?zoneid=129&amp;cb=18971928374158792837213&amp;n=afcf8f4b' border='0' alt='' /></a></iframe>
-<!-- 				<img src="http://placehold.it/728x90&text=ADVERTISEMENT" /> -->
-	</div>
+<div class="container">
+	<div class="row">
+		<div class="span7" id="inthenews">
+			<span>In the news:</span>
+			<?php wp_nav_menu(array('theme_location' => 'in_the_news', 
+						'container' => '',
+						)); ?>
+		</div><!-- end div#inthenewscont -->
+		<div class="span5" id="followus">
+			<a href="https://twitter.com/dailybruin" class="twitter-follow-button" data-show-count="false">Follow @dailybruin</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="fb-follow" data-href="https://www.facebook.com/dailybruin" data-show-faces="false" data-font="arial" data-width="225"></div>
+		</div>
+	</div><!-- end div.row -->
+</div><!-- end div.container -->
