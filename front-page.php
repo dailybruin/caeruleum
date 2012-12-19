@@ -9,8 +9,8 @@
 				$cstory[2] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c3' ) );
 				$cstory[3] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c4' ) );
 			?>
-			<div class="span8" id="topcontent-rotator">
-				<?php
+			<div class="span8" id="front-maincol">
+				<?php // Breaking posts
 				$args = array( 'tag' => 'breaking' );
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) :	setup_postdata($post); ?>
@@ -19,65 +19,84 @@
 				</div><!-- end div#breaking -->
 				<?php endforeach; ?>
 				
+				<div class="row">
+					<div class="span5" id="front-primarycol">
+						<div id="topcontent-rotator">
+							<div id="topcontent-rotator-nav" class="hidden-phone">
+								<ul id="rotate-controls">
+									<li id="rotate-label-1" class="rotate-current"><a href="#">1</a></li>
+									<li id="rotate-label-2"><a href="#">2</a></li>
+									<li id="rotate-label-3"><a href="#">3</a></li>
+									<li id="rotate-label-4"><a href="#">4</a></li>
+								</ul><!-- end div#rotate-controls -->
+								<div id="rotate-prevnext-controls">
+									<a href="#" class="topcontent-rotator-control-forward">Next</a>
+									<a href="#" class="topcontent-rotator-control-back">Previous</a>
+								</div>
+							</div><!-- end div#topcontent-rotator-nav -->
+							
+							<?php global $post; ?>
+							<?php foreach ($cstory as $i=>$story) : $post = $story[0]; setup_postdata($post); ?>
+							<div class="topcontent-rotator-content" id="topcontent-rotator-content-<?php echo $i+1; ?>" <?php if($i > 0) : ?>style="display:none"<?php endif; ?>>
+								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator', $rotator_attr); ?></a>
+								<span class="photocredit"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>		
+								<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
+								<?php the_byline(false); ?>
+								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							</div><!-- end div.topcontent-rotator-content -->
+							<?php endforeach; ?>
+						</div><!-- end div#topcontent-rotator -->
+					</div><!-- end div.span5 -->
+					<div class="span3" id="front-primarycol">
+						<!-- story tag db-story-a -->
+						<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<article>
+							<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_title(); ?></h1></a>
+							<?php the_byline(false); ?>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<span style="display:block;clear:both" />
+						</article>
+						<?php endforeach; ?>
+						
+						
+						<!-- story tag db-story-b -->
+						<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-b' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<article>
+							<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_title(); ?></h1></a>
+							<?php the_byline(); ?>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<span style="display:block;clear:both" />
+						</article>
+						<?php endforeach; ?>
+
+
+					</div><!-- end div#front-secondarycol -->
+				</div><!-- end div.row  inner row -->
 				
-				<div id="topcontent-rotator-nav" class="hidden-phone">
-					<ul class="navlist">
-						<li id="rotate-label-1" class="rotate-current"><a href="#"><?php echo get_post_meta($cstory[0][0]->ID, 'db_rotator_slug', true); ?></a></li>
-						<li id="rotate-label-2"><a href="#"><?php echo get_post_meta($cstory[1][0]->ID, 'db_rotator_slug', true); ?></a></li>
-						<li id="rotate-label-3"><a href="#"><?php echo get_post_meta($cstory[2][0]->ID, 'db_rotator_slug', true); ?></a></li>
-						<li id="rotate-label-4"><a href="#"><?php echo get_post_meta($cstory[3][0]->ID, 'db_rotator_slug', true); ?></a></li>
-					</ul>
-				</div><!-- end div#topcontent-rotator-nav -->
-				<?php global $post; ?>
-				<?php foreach ($cstory as $i=>$story) : $post = $story[0]; setup_postdata($post); ?>
-				<div class="topcontent-rotator-content" id="topcontent-rotator-content-<?php echo $i+1; ?>" <?php if($i > 0) : ?>style="display:none"<?php endif; ?>>
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator', $rotator_attr); ?></a>
-					<span class="photocredit"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>		
-					<div class="topcontent-rotator-control input-append">
-						<button class="btn disabled topcontent-rotator-control-back" type="button"><i class="icon-chevron-left"></i></button><button class="btn topcontent-rotator-control-forward" type="button"><i class="icon-chevron-right"></i></button>
-					</div>
-					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
-					<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
-					<?php the_byline(); ?>
-					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
-				</div><!-- end div.topcontent-rotator-content -->
-				<?php endforeach; ?>
-			</div><!-- end div#topcontent-rotator -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 			
-			<div class="span4" id="topcontent-stories">
+			<div class="span4" id="front-sidebar" class="sidebar">
 				<?php get_template_part('ad','side'); ?>
-				<!-- story tag db-story-a -->
-				<?php
-					$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
-					$lastposts = get_posts( $args );
-					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-				<article>
-					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
-					<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_title(); ?></h1></a>
-					<?php the_byline(); ?>
-					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
-					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
-					<span style="display:block;clear:both" />
-				</article>
-				<?php endforeach; ?>
 				
 				
-				<!-- story tag db-story-b -->
-				<?php
-					$args = array( 'numberposts' => 1, 'tag' => 'db-story-b' );
-					$lastposts = get_posts( $args );
-					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-				<article>
-					<span class="timestamp"><?php the_time('F j, g:i a'); ?></span> <span class="label label-right"><?php the_category_text(get_the_category()); ?></span>
-					<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_title(); ?></h1></a>
-					<?php the_byline(); ?>
-					<?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?>
-					<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
-					<span style="display:block;clear:both" />
-				</article>
-				<?php endforeach; ?>
 				
-		<?php get_template_part('ad','side'); ?>
 			</div>
 		</div><!-- end div#topcontent -->
 		<div class="row" id="middlecontent1">

@@ -20,6 +20,8 @@ a:visited {
 
 p {
 	margin: 0 0 15px;
+	font-family:"Georgia",serif;
+	line-height:1.2em;
 }
 
 figure {
@@ -27,7 +29,7 @@ figure {
 }
   
 h2 {
-	font-family: "Georgiae";
+	font-family: "Georgia";
 	text-rendering:auto;
 }  
 
@@ -55,11 +57,11 @@ img.ad {
 
 [class^="headline-"],
 [class*=" headline-"] {
-	font-family: "Georgiae";
+	font-family: "Georgia";
 	font-weight:400;
 	font-size:24px;
 	line-height: 25px;
-	margin-bottom:10px;
+	margin-bottom:3px;
 	text-rendering:auto;
 	color:#333;
 }
@@ -69,18 +71,25 @@ img.ad {
 	text-decoration:underline;
 }
 .headline-a {
-	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:bold;
-	font-size: 1.9em;
+	font-family: "Georgia";
+	font-weight: bold;
+	font-size: 1.8em;
 	line-height: 1.1em;
 }
  
 .headline-b {
-	font-family: "Georgiae";
+	font-family: "Georgia";
 	font-weight:bold;
-	font-size: 23px;
-	line-height: 26px;
+	font-size: 1.5em;
+	line-height: 1.1em;
 }
+
+.headline-c {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
 
 .headline-column {
 	font-style:italic;
@@ -109,6 +118,7 @@ img.ad {
     float: right;
     text-align: right;
     opacity:0.5;
+    font-size: 0.8em;
 }
 .photocredit a {
 	color:#333;
@@ -116,10 +126,11 @@ img.ad {
 }
 
 .byline {
-    font-family: "Georgiae";
-    font-size: 1.1em;
-    display: inline-block;
-    font-style: italic;
+	font-family: "Georgia";
+	font-size: 0.8em;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .byline a {
@@ -127,8 +138,11 @@ img.ad {
 }
 
 .thumbnail-a {
-    float: left;
-    margin-right: 10px;
+	float: right;
+	margin-left: 10px;
+	width: 90px;
+	height: 90px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 article {
@@ -381,7 +395,7 @@ ul#topMenu > li.active.open > a:hover {
    Author:
    ========================================================================== */
 .entry-title {
-	font-family:"Georgiae";
+	font-family:"Georgia";
 	text-rendering:auto;
 	font-weight:normal;
     font-size: 2.3em;
@@ -512,7 +526,7 @@ figcaption{
 }
 .author-info h1 a {
     color: #333;
-    font-family: "Georgiae";
+    font-family: "Georgia";
     text-rendering: auto;
 }
 .author-info h2 {
@@ -565,48 +579,54 @@ figcaption{
     color: #aaa;
 }
 
-div#topcontent-rotator {
-    border-bottom: 1px solid #D9D9D9;
-    margin-bottom: 10px;
+#rotate-controls {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#rotate-controls > li > a {
+	display: block;
+	float: left;
+	margin-right: 3px;
+	padding: 3px 10px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#rotate-controls > li > a:hover {
+	background-color:#dbdbdb;
+	text-decoration:none;
 }
 
-div#topcontent-rotator ul {
-	padding-left:0;
-	margin-left:0;
-	text-align:center;
+#rotate-controls > li.rotate-current > a {
+	color:white;
+	background-color:#333;
 }
-
-div#topcontent-rotator ul li a {
+#rotate-prevnext-controls {
+    float: right;
+    bottom: 0;
+    height: 26px;
+    font-size: 0.9em;
+}
+#rotate-prevnext-controls > a {
+    padding: 4px 7px 2px 7px;
+    display: block;
+    float: right;
+    color:#333;
+}
+#rotate-prevnext-controls > a.disabled {
+	opacity:0.3;
+}
+#rotate-prevnext-controls > a:hover {
+	background-color:#eee;
+	text-decoration:none;
 	color:#333;
-	margin:0 10px;
 }
-
-div#topcontent-rotator ul li.rotate-current a {
+.topcontent-rotator-control-forward {
 	font-weight:bold;
-	color:black;
+	background-color:#f6f6f6;
 }
 
-div#topcontent-rotator-nav {
-	height:20px;
-	
-	text-align:center;
-	border: 1px solid #d9d9d9;
-	border-bottom:none;
 
-	
-	background: rgb(245,246,245); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(245,246,245,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,245,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(245,246,245,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f5', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
-}
-
-div.topcontent-rotator-control {
-	padding-top:8px;
-}
 
 /* ===== Sidebar ========================================================
    Author:
@@ -1125,7 +1145,7 @@ footer {
 }
 
 .footer-links h3 {
-	font-family:"Georgiae";
+	font-family:"Georgia";
 	color:white;
 	font-weight:normal;
 	margin-top:10px;
@@ -1738,9 +1758,6 @@ ul.phone-nav > li.active a {
 	    margin-left: -20px;
 	    padding: 0 10px;
 	    margin-right: -20px;
-	}
-	.topcontent-rotator-control {
-		clear:both;
 	}
 	.entry-title {
 	    font-size: 1.8em;

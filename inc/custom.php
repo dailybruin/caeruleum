@@ -13,7 +13,7 @@ function title_italic($title)
 
 
 // Define a function to output bylines properly (and show/not show them)
-function the_byline() {
+function the_byline($displayBy=true) {
 	global $post;
 	$authorid = $post->post_author;
 	$authordata = get_userdata($authorid);
@@ -21,8 +21,11 @@ function the_byline() {
 	// Code modified from WordPress core, wp-includes/author-template.php
     if ( $authorid == 0 || !isset($authorid) )
             return false;
+    $by = "By ";
+    if(!$displayBy)
+    	$by = "";
     $link = sprintf(
-            '<span class="byline">By <a href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+            '<span class="byline">'.$by.'<a href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
             get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
             esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
             get_the_author()

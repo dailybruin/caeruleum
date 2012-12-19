@@ -124,7 +124,7 @@ $(document).ready(function() {
 		$('.topcontent-rotator-control-back').on("click", {    forward: false }, changeRotator);
 		$('.topcontent-rotator-control-forward').on("click", { forward: true }, changeRotator);
 		// Bind top links
-		$('#rotate-label-1 a').on("click", { changeToStory: 1 }, changeRotator);
+		$('#rotate-label-1 a').on("click", { changeToStory: 1 }, changeRotator).click();
 		$('#rotate-label-2 a').on("click", { changeToStory: 2 }, changeRotator);
 		$('#rotate-label-3 a').on("click", { changeToStory: 3 }, changeRotator);
 		$('#rotate-label-4 a').on("click", { changeToStory: 4 }, changeRotator);
