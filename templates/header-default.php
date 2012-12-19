@@ -52,8 +52,16 @@
 		</div><!-- end div#inthenewscont -->
 		<div class="span5" id="followus">
 			<a href="https://twitter.com/dailybruin" class="twitter-follow-button" data-show-count="false">Follow @dailybruin</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<div class="fb-follow" data-href="https://www.facebook.com/dailybruin" data-show-faces="false" data-font="arial" data-width="225"></div>
 		</div>
+	</div><!-- end div.row -->
+	<div class="row" id="adrow">
+		<div class="span6">
+			<?php get_template_part('ad','smallbanner'); ?>
+		</div><!-- end div.span6 -->
+		<div class="span6">
+			<?php get_template_part('ad','housebanner'); ?>
+		</div><!-- end div.span6 -->
 	</div><!-- end div.row -->
 </div><!-- end div.container -->
