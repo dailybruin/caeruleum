@@ -9,7 +9,7 @@
 				$cstory[2] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c3' ) );
 				$cstory[3] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c4' ) );
 			?>
-			<div class="span7" id="topcontent-rotator">
+			<div class="span8" id="topcontent-rotator">
 				<?php
 				$args = array( 'tag' => 'breaking' );
 				$lastposts = get_posts( $args );
@@ -44,7 +44,8 @@
 				<?php endforeach; ?>
 			</div><!-- end div#topcontent-rotator -->
 			
-			<div class="span5" id="topcontent-stories">
+			<div class="span4" id="topcontent-stories">
+				<?php get_template_part('ad','side'); ?>
 				<!-- story tag db-story-a -->
 				<?php
 					$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );

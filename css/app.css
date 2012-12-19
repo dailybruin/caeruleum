@@ -552,10 +552,17 @@ figcaption{
 	
 /*--- rotator */
 #breaking {
-    background-color: #EEE;
-    font-weight: bold;
-    padding: 10px;
-    margin-bottom: 16px;
+	background-color: #F7F7F7;
+	padding: 5px 10px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.breaking-timestamp {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #aaa;
 }
 
 div#topcontent-rotator {
