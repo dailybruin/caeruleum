@@ -17,39 +17,19 @@
 	</div><!-- end div.container -->
 </header>
 
+<nav class="container" id="nav-nameplate">
+	<div class="row">
+		<div class="span12" id="nameplate">
+			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" /></a>
+		</div>
+	</div><!-- end div.row -->
+</nav>
 
 
 
 
 
-	<header>
-		<div class="container">			
-			<div id="nameplate" class="row">
-				<div class="span3 hidden-phone" id="nameplate-todayspaper">
-					<span style="color: white;">Today's Paper</span>
-				</div>
-				<div class="span6" id="nameplate-image">
-					<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" /></a>
-					<button type="button" class="btn btn-navbar visible-phone" data-toggle="collapse" data-target="#mobile-nav">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
 
-				<div class="span2 offset1 hidden-phone" id="nameplate-date">
-					<span class="nameplate-date-weather"><a href="#"><i class="wicon-sun"></i><span>92&deg;</span></a></span>
-					<span class="nameplate-date-week">Summer</span>
-					<span class="nameplate-date-today"><?php echo date('F j, Y'); ?></span>
-				</div>
-
-			<nav id="mobile-nav" class="visible-phone nav-collapse collapse">
-				<?php wp_nav_menu(array('theme_location' => 'mobile_navigation','menu_class'=>'phone-nav')); ?>
-			</nav>
-
-			</div><!-- end div#nameplate -->
-		</div><!-- end container -->
-	</header>
 	
 	<div id="firstnav-container-back" class="hidden-phone">
 	<div class="container" id="firstnav-container">
@@ -67,25 +47,6 @@
 	</div><!-- end div#firstnav-container -->
 	</div><!-- end div#firstnav-container-back -->
 		
-	<div id="secondnav-container-back" class="hidden-phone">
-	<div class="container" id="secondnav-container">
-		<nav class="row" id="secondnav">
-			<span class="more_text">More:</span>
-			<?php wp_nav_menu(array('theme_location'=>'second_navigation', 'menu_class'=>'navlist span7')); ?>
-<!--
-			<ul class="navlist span7">
-				<li><a href="#">Prime Magazine</a></li>
-				<li><a href="#">Radio</a></li>
-				<li><a href="#">Graphics</a></li>
-				<li><a href="#">Classifieds</a></li>
-			</ul>
--->
-			<div class="span4" id="secondnav-socialmedia"> 
-				<!-- put social media code here -->
-			</div>
-		</nav><!-- end nav#secondnav -->
-	</div><!-- end div#secondnav-container -->
-	</div><!-- end div#secondnav-container-back -->
 
 	<div class="container ad hidden-phone" style="margin-bottom:10px;">
 		<iframe id='ae976b13' name='ae976b13' src='http://www.oncampusweb.com/delivery/afr.php?zoneid=129&amp;cb=18971928374158792837213' framespacing='0' frameborder='no' scrolling='no' width='728' height='90'><a href='http://www.oncampusweb.com/delivery/ck.php?n=afcf8f4b&amp;cb=18971928374158792837213' target='_blank'><img src='http://www.oncampusweb.com/delivery/avw.php?zoneid=129&amp;cb=18971928374158792837213&amp;n=afcf8f4b' border='0' alt='' /></a></iframe>

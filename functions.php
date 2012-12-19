@@ -24,10 +24,9 @@ function roots_setup() {
 
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
-    'top_navigation' => __('Top Navigation', 'db'),
+    'top_navigation' => __('Top Links', 'db'),
     'primary_navigation' => __('Primary Navigation', 'db'),
     'mobile_navigation' => __('Mobile Navigation', 'db'),
-    'second_navigation' => __('Secondary Navigation', 'db'),
     'share_footer' => __('Share Links', 'db'),
     'about_footer' => __('About','db')
   ));
