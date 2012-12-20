@@ -1715,6 +1715,7 @@ ul.phone-nav > li.active a {
     float: right;
     padding-left: 10px;
     width: 56%;
+    margin-bottom:10px;
 }
 .small-section-list:first-child {
 	border-top: 1px solid #ADADAD;
