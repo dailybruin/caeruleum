@@ -18,6 +18,13 @@ a:visited {
     color: #451D6E;
 }
 
+hr {
+	margin: 10px 0;
+	border: 0;
+	border-top: 1px solid #ADADAD;
+	border-bottom: none;
+}
+
 p {
 	margin: 0 0 15px;
 	font-family:"Georgia",serif;
@@ -32,6 +39,11 @@ h2 {
 	font-family: "Georgia";
 	text-rendering:auto;
 }  
+h3 {
+	color: #333;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
 
 img.ad {
 	width:100%;
@@ -616,6 +628,9 @@ figcaption{
 #rotate-prevnext-controls > a.disabled {
 	opacity:0.3;
 }
+#rotate-prevnext-controls > .topcontent-rotator-control-back.disabled {
+	opacity:0;
+}
 #rotate-prevnext-controls > a:hover {
 	background-color:#eee;
 	text-decoration:none;
@@ -873,85 +888,29 @@ article.db_classified {
 /* ===== Multimedia ========================================================
    Author:
    ========================================================================== */
-.multimedia-item-featured {
-    float: right;
-    width: 400px;
-}
-span.multimedia-title {
-    font-weight: bolder;
-    color:#333;
-}
-span.multimedia-date {
-    color: #AAA;
-    display:block;
-}
-
-.multimedia-item p {
-	color:#333;
-}
-.multimedia-item:hover {
-	text-decoration:none;
-	opacity:1;
-}
-.multimedia-item img, .multimedia-item-featured-media {
-	margin-bottom:5px;
-}
-
-.multimedia-item-featured i, .multimedia-item i {
-	float:left;
-	margin-right:5px;
-	margin-left:5px;
-}
-
-.multimedia-item-featured p, .multimedia-item p {
-    margin-left: 42px;
-    margin-top: 4px;
+.multimedia-item > a > img {
+	width:180px;
+	border-radius:10px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
 }
 .multimedia-item {
-    float: left;
-    width: 202px;
-    opacity:0.8;
-
-	color:#333;
-	border-bottom:1px solid #dadada;
-	display:block;
-	color:#555;
-	margin-bottom:5px;
-	
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+	width:180px;
 }
-.multimedia-item-featured .multimedia-item {
-	width:100%;
-}
-
-.multimedia-more a {
-	margin-left:4px;
-}
-
-#multimedia-podcast {
-    float: right;
-    margin:5px 18px;
-    width: 382px;
-}
-#multimedia-podcast img {
-	height:111px;
-	display:block;
+#multimedia-item-1 {
+	clear:both;
 	float:left;
-	margin-right:5px;
 }
-
-#multimedia-podcast-link {
-	display:block;
-    float: left;
+#multimedia-item-2 {
+	float:right;
 }
-
+.multimedia-title {
+    font-family: "Georgia";
+    font-size: 1.1em;
+    padding-top: 6px;
+    display: block;
+    font-weight: bold;
+    color:#333;
+}
 
 
 /* ===== Poll ========================================================
@@ -1737,6 +1696,39 @@ ul.phone-nav > li.active a {
 	margin-bottom:10px;
 }
 
+#front-multimedia > a > h3 {
+	padding-left: 10px;
+	display:block;
+	float:left;
+	margin-top:-5px;
+}
+#front-multimedia > a > h3:hover {
+	text-decoration:underline;
+}
+
+.sections {
+    list-style: none;
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top:5px;
+}
+.sections > li {
+	display:block;
+	float:right;
+}
+.sections > li > a {
+	text-transform:uppercase;
+	color:#adadad;
+	padding-right:10px;
+	font-size:0.85em;
+}
+.sections > li > a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
 /* =============================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
@@ -1822,30 +1814,6 @@ ul.phone-nav > li.active a {
 	    margin: 0;
 	    padding: 0;
 	    margin-top: -8px;
-	}
-	.multimedia-item-featured {
-		width:100%;
-	}
-
-	#multimedia-item-1, #multimedia-item-2 {
-		width:48%;
-	}
-	#multimedia-item-1 {
-		float:left;
-	}
-	#multimedia-item-2 {
-		float:right;
-	}
-	.multimedia-item-featured p, .multimedia-item p {
-		margin-left:0;
-	}
-	#multimedia-podcast {
-	    width: 100%;
-	    margin: 0;
-	    padding: 0;
-	    border-bottom: 1px solid #AAA;
-	    padding-bottom: 11px;
-	    margin-bottom: 6px;
 	}
 	.footer-nav {
 		display:none;

@@ -46,8 +46,39 @@
 							</div><!-- end div.topcontent-rotator-content -->
 							<?php endforeach; ?>
 						</div><!-- end div#topcontent-rotator -->
+						<hr />
+						<div id="front-multimedia">
+							<a href="#"><h3>Multimedia &raquo;</h3></a>
+							<ul class="sections">
+								<li><a href="#">Photos</a></li>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Radio</a></li>
+							</ul>
+							<div class="multimedia-item" id="multimedia-item-1">
+								<?php
+								$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
+								$lastposts = get_posts( $args );
+								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('db-multimedia'); ?>
+									<span class="multimedia-title"><?php the_title(); ?></span>
+								</a>
+								<?php endforeach; ?>
+							</div><!-- end div#multimedia-item-1 -->
+							<div class="multimedia-item" id="multimedia-item-2">
+								<?php
+								$args = array( 'numberposts' => 1, 'tag' => 'db-story-m2' );
+								$lastposts = get_posts( $args );
+								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('db-multimedia'); ?>
+									<span class="multimedia-title"><?php the_title(); ?></span>
+								</a>
+								<?php endforeach; ?>
+							</div><!-- end div#multimedia-item-2 -->
+						</div><!-- end div#front-multimedia -->
 					</div><!-- end div.span5 -->
-					<div class="span3" id="front-primarycol">
+					<div class="span3" id="front-secondarycol">
 						<!-- story tag db-story-a -->
 						<?php
 							$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
@@ -80,7 +111,7 @@
 
 					</div><!-- end div#front-secondarycol -->
 				</div><!-- end div.row  inner row -->
-				
+			</div><!-- end div#front-maincol -->	
 				
 				
 				
@@ -173,22 +204,6 @@
 					<h2>Multimedia <span class="multimedia-more">More&hellip; <a href="#">photos &raquo;</a> <a href="#">videos &raquo;</a>   <a href="#">audio &raquo;</a>   <a href="#">graphics &raquo;</a></span></h2>
 				<div class="multimedia-item-featured">
 				
-				<?php
-					$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
-					$lastposts = get_posts( $args );
-					foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-					<div class="multimedia-item-featured-media">
-						<?php the_post_thumbnail('db-multimedia'); ?>
-					</div><!-- div.multimedia-item-featured-media -->
-					<a href="<?php the_permalink(); ?>" class="multimedia-item" >
-<!-- 						<span class="label label-now">Now</span> -->
-						<?php 	// output multimedia flag
-						$customFields = get_post_custom($post->ID);
-						multimedia_post_flag( $customFields['db_multimedia_type'][0] ) ?>
-						<span class="multimedia-date"><?php the_time('F j, g:i a'); ?></span>
-						<p><?php the_title(); ?></p>
-					</a>
-				<?php endforeach; ?>
 				</div>
 				
 				<?php

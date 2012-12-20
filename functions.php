@@ -39,8 +39,7 @@ function roots_setup() {
 	add_image_size( 'db-front', 90, 90, 1 );
 	add_image_size( 'db-rotator', 470, 360, 1 );
 	add_image_size( 'db-category-full', 670, 670);
-	add_image_size( 'db-multimedia', 476, 300, 1 );
-	add_image_size( 'db-multimedia-small', 210, 140, 1 );
+	add_image_size( 'db-multimedia', 225, 142, 1 ); // normal size: 180x113
 
 
   // Add post formats (http://codex.wordpress.org/Post_Formats)
