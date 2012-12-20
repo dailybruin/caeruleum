@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
+<?php
+	// IMPORTANT: set these for your particular wordpress installation
+	// This includes db-story-a, db-story-b, db-story-c1, db-story-c2,
+	// db-story-c3, db-story-c4, db-story-m1, db-story-m2, db-story-d1,
+	// db-story-d2, db-story-d3, db-story-ns, db-story-op, db-story-ae,
+	// db-story-sp
+	$frontPageTags = array('15','16','17','18','19','20','25','26','27','158','159','160','161','162','163','164');
+?>
+
 	<div class="container">		
 
 		<div class="row" id="topcontent">
@@ -140,10 +149,89 @@
 						<?php endforeach; ?>
 					</div><!-- end div#front-secondarycol -->
 				</div><!-- end div.row  inner row -->
-				<hr />
+				
+				<div class="row">
+					<div class="span8 front-section" id="front-news">
+						<hr />
+						<a href="#"><h3>News &raquo;</h3></a>
+						<ul class="sections">
+							<li><a href="#">Student gov</a></li>
+							<li><a href="#">Campus</a></li>
+							<li><a href="#">Crime</a></li>
+						</ul>
+						<div class="row front-section-content clearfix">
+							<div class="span5 front-section-main">
+								<?php
+								$args = array( 'numberposts' => 1, 'tag' => 'db-story-ns' );
+								$lastposts = get_posts( $args );
+								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
+									<span class="headline-d"><?php the_title(); ?></span>
+								</a>
+								<?php the_byline(false); ?>
+								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+								<?php endforeach; ?>
+							</div><!-- end div.front-section-main -->
+							<div class="span3 front-section-more">
+								<ul class="section-list">
+								<?php
+									$args = array( 'numberposts' => 4, 'cat' => 5, 'tag__not_in' => $frontPageTags );
+									$lastposts = get_posts( $args );
+									foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+									<li><a href="<?php the_permalink(); ?>">
+										<span class="headline-d"><?php the_title(); ?></span></a>
+									<span class="section-date"><?php the_time('M j'); ?></span>
+									</li>
+								<?php endforeach; ?>
+								</ul>
+							</div><!-- end div.front-section-more -->
+						</div><!-- end div.front-section-content -->
+					</div><!-- end div#front-news -->
+					
+										
+					<div class="span8 front-section" id="front-sports">
+						<hr />
+						<a href="#"><h3>Sports &raquo;</h3></a>
+						<ul class="sections">
+							<li><a href="#">Football</a></li>
+							<li><a href="#">Men's Basketball</a></li>
+							<li><a href="#">Women's Basketball</a></li>
+						</ul>
+						<div class="row front-section-content clearfix">
+							<div class="span5 front-section-main">
+								<?php
+								$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
+								$lastposts = get_posts( $args );
+								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
+									<span class="headline-d"><?php the_title(); ?></span>
+								</a>
+								<?php the_byline(false); ?>
+								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+								<?php endforeach; ?>
+							</div><!-- end div.front-section-main -->
+							<div class="span3 front-section-more">
+								<ul class="section-list">
+								<?php
+									$args = array( 'numberposts' => 4, 'cat' => 6, 'tag__not_in' => $frontPageTags );
+									$lastposts = get_posts( $args );
+									foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+									<li><a href="<?php the_permalink(); ?>">
+										<span class="headline-d"><?php the_title(); ?></span></a>
+									<span class="section-date"><?php the_time('M j'); ?></span>
+									</li>
+								<?php endforeach; ?>
+								</ul>
+							</div><!-- end div.front-section-more -->
+						</div><!-- end div.front-section-content -->
+					</div><!-- end div#front-sports -->
+					
+					
+				</div><!-- end div.row -->
 			</div><!-- end div#front-maincol -->	
-				
-				
+							
 				
 				
 				

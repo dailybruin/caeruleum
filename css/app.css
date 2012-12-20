@@ -1007,90 +1007,6 @@ div#poll form a {
    ========================================================================== */
 
 
-#bottomcontent {
-	border-top:1px solid #dadada;
-	margin-top:10px;
-    padding-top: 10px;
-    padding-bottom:10px;
-    margin-left:0;
-}
-
-div.bottomcontent-wrap {
-	border-right: 1px solid #dadada;
-}
-#bottomcontent-news-wrap {
-	border-left:none;
-}
-#bottomcontent-opinion-wrap {
-	border-right:none;
-}
-
-div.bottomcontent-wrap ul {
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-div.bottomcontent-wrap ul a {
-	display:block;
-	width:auto;
-	color:black;
-	opacity:0.6;
-	padding:7px 5px;
-	border-bottom:1px solid #dadada;
-	border-top:1px solid #ededed;
-	min-height:36px;
-	
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(238,238,239,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,239,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,239,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,239,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,239,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(238,238,239,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeef',GradientType=0 ); /* IE6-9 */
-}
-div.bottomcontent-wrap ul a:first-child {
-	border-top:none;
-}
-
-div.bottomcontent-wrap ul a:hover {
-	text-decoration:none;
-	opacity:1;
-}
-
-div.bottomcontent {
-	width:25%;
-	margin:0;
-	float:left;
-}
-
-.bottomcontent-date {
-	display:block;
-	float:right;
-	width:25px;
-	text-align:center;
-	text-transform:uppercase;
-	font-size:11px;
-}
-
-.bottomcontent-date span {
-	display:block;
-	font-size:18px;
-	font-weight:lighter;
-	margin-top:-3px;
-}
-
-.bottomcontent-wrap h2 {
-	padding-left:7px;
-}
-
-.bottomcontent-more {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 5px;
-    padding-bottom: 9px;
-}
 
 /* ===== Footer ========================================================
    Author:
@@ -1709,13 +1625,13 @@ ul.phone-nav > li.active a {
 	margin-bottom:10px;
 }
 
-#front-multimedia > a > h3 {
+#front-multimedia > a > h3, .front-section > a > h3 {
 	padding-left: 10px;
 	display:block;
 	float:left;
 	margin-top:-5px;
 }
-#front-multimedia > a > h3:hover {
+#front-multimedia > a > h3:hover, .front-section > a > h3:hover {
 	text-decoration:underline;
 }
 
@@ -1734,7 +1650,7 @@ ul.phone-nav > li.active a {
 .sections > li > a {
 	text-transform:uppercase;
 	color:#adadad;
-	padding-right:10px;
+	padding-right:16px;
 	font-size:0.85em;
 }
 .sections > li > a:hover {
@@ -1749,6 +1665,48 @@ ul.phone-nav > li.active a {
 }
 .story-info-category {
 	font-weight:bold;
+}
+
+.front-section-content {
+	clear:both;
+}
+
+.section-cover {
+	float:left;
+	max-width:200px;
+	max-height:200px;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.front-section-main .headline-d {
+	font-size: 1.15em;
+	display: block;
+	line-height: 1.2em;
+}
+
+.section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.section-list > li {
+	border-bottom: 1px solid #ADADAD;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+.section-list > li:first-child {
+	padding-top:0;
+}
+.section-list > li:last-child {
+	padding-bottom:0;
+	border:none;
+}
+.section-date {
+    text-transform: uppercase;
+	color: #ADADAD;
+	font-size: 0.8em;
+	padding-left: 5px;
+	font-family: "Georgia";
 }
 
 /* =============================================================================
@@ -1839,24 +1797,6 @@ ul.phone-nav > li.active a {
 	}
 	.footer-nav {
 		display:none;
-	}
-	div.bottomcontent {
-		width:100%;
-	}
-	div.bottomcontent-wrap {
-		border-right:none;
-	}
-	.bottomcontent-date {
-	    padding-left: 5px;
-	}
-	div.bottomcontent-wrap ul a {
-		opacity:1;
-		color:#333;
-		background:none;
-	}
-	div.bottomcontent-wrap ul a {
-		height: 44px;
-		font-size: 1.2em;
 	}
 	a.togglemenu {
 		padding: 8px 11px;
