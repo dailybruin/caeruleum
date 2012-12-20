@@ -58,10 +58,10 @@
 	</div><!-- end div.row -->
 	<div class="row" id="adrow">
 		<div class="span6">
-			<?php get_template_part('ad','smallbanner'); ?>
+			<?php get_template_part('ad','housebanner'); ?>
 		</div><!-- end div.span6 -->
 		<div class="span6">
-			<?php get_template_part('ad','housebanner'); ?>
+			<?php get_template_part('ad','smallbanner'); ?>
 		</div><!-- end div.span6 -->
 	</div><!-- end div.row -->
 </div><!-- end div.container -->
