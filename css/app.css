@@ -102,6 +102,12 @@ img.ad {
     line-height: 1.2em;
 }
 
+.headline-d {
+    font-size: 1em;
+    line-height: 0.9em;
+    font-weight: bold;
+}
+
 
 .headline-column {
 	font-style:italic;
@@ -161,6 +167,13 @@ article {
 	display:block;
 	margin:0 0 23px 0;
 	clear:both;
+}
+
+#front-secondarycol > article:nth-child(2) {
+	margin-bottom:5px;
+}
+#front-secondarycol > hr {
+	margin:5px 0;
 }
 
 .label-now,
@@ -1727,6 +1740,15 @@ ul.phone-nav > li.active a {
 .sections > li > a:hover {
 	color:#333;
 	text-decoration:none;
+}
+
+
+.story-info {
+	display: block;
+	font-size: 0.8em;
+}
+.story-info-category {
+	font-weight:bold;
 }
 
 /* =============================================================================

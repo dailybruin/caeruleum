@@ -108,9 +108,39 @@
 						</article>
 						<?php endforeach; ?>
 
-
+						<!-- stories tagged db-story-d1 through db-story-d3 -->
+						<?php
+						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+						<a href="<?php the_permalink(); ?>">
+							<span class="headline-d"><?php the_title(); ?></span>
+						</a>
+						<?php endforeach; ?>
+						<?php
+						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<hr />
+						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+						<a href="<?php the_permalink(); ?>">
+							<span class="headline-d"><?php the_title(); ?></span>
+						</a>
+						<?php endforeach; ?>
+						<?php
+						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+						<hr />
+						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+						<a href="<?php the_permalink(); ?>">
+							<span class="headline-d"><?php the_title(); ?></span>
+						</a>
+						<?php endforeach; ?>
 					</div><!-- end div#front-secondarycol -->
 				</div><!-- end div.row  inner row -->
+				<hr />
 			</div><!-- end div#front-maincol -->	
 				
 				
