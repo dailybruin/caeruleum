@@ -41,6 +41,8 @@ function roots_setup() {
 	add_image_size( 'db-category-full', 670, 670);
 	add_image_size( 'db-multimedia', 225, 142, 1 ); // normal size: 180x113
 	add_image_size( 'db-section-cover', 220, 220, 1 ); // normal size: 200x200
+	add_image_size( 'db-section-cover-small', 370, 270, 1 ); // normal size: 300x219
+	add_image_size( 'db-section-cover-opinion', 207, 307, 1 ); // normal size: 300x219
 
 
 

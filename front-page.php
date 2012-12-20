@@ -47,7 +47,7 @@
 							<?php global $post; ?>
 							<?php foreach ($cstory as $i=>$story) : $post = $story[0]; setup_postdata($post); ?>
 							<div class="topcontent-rotator-content" id="topcontent-rotator-content-<?php echo $i+1; ?>" <?php if($i > 0) : ?>style="display:none"<?php endif; ?>>
-								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator', $rotator_attr); ?></a>
+								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 								<span class="photocredit"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>		
 								<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_title(); ?></h1></a>
 								<?php the_byline(false); ?>
@@ -229,13 +229,84 @@
 					</div><!-- end div#front-sports -->
 					
 					
+					<div class="span4 front-section" id="front-ae">
+						<hr />
+						<a href="#"><h3>A&E &raquo;</h3></a>
+						<ul class="sections">
+							<li><a href="#">All A&E stories</a></li>
+						</ul>
+						<div class="clearfix front-section-main">
+							<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-ae' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail('db-section-cover-small', array('class'=>'section-cover-small')); ?>
+								<span class="headline-d"><?php the_title(); ?></span>
+							</a>
+							<?php the_byline(false); ?>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<?php endforeach; ?>
+						</div><!--end div.front-section-main -->
+						<div class="front-section-more">
+							<ul class="section-list small-section-list">
+							<?php
+								$args = array( 'numberposts' => 2, 'cat' => 8, 'tag__not_in' => $frontPageTags );
+								$lastposts = get_posts( $args );
+								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+								<li><a href="<?php the_permalink(); ?>">
+									<span class="headline-d"><?php the_title(); ?></span></a>
+								<span class="section-date"><?php the_time('M j'); ?></span>
+								</li>
+							<?php endforeach; ?>
+							</ul>
+						</div><!-- end div.front-section-more -->
+						
+					</div><!-- end div#front-ae -->
+					<div class="span4 front-section" id="front-opinion">
+						<hr />
+						<a href="#"><h3>Opinion &raquo;</h3></a>
+						<ul class="sections">
+							<li><a href="#">All opinion stories</a></li>
+						</ul>
+						<div class="clearfix front-section-main">
+							<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-op' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail('db-section-cover-opinion', array('class'=>'section-cover-opinion')); ?>
+								<span class="headline-d"><?php the_title(); ?></span>
+							</a>
+							<?php the_byline(false); ?>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<?php endforeach; ?>
+						</div><!--end div.front-section-main -->
+						
+						<div class="front-section-more">
+							<ul class="section-list small-section-list">
+							<?php
+								$args = array( 'numberposts' => 3, 'cat' => 7, 'tag__not_in' => $frontPageTags );
+								$lastposts = get_posts( $args );
+								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+								<li><a href="<?php the_permalink(); ?>">
+									<span class="headline-d"><?php the_title(); ?></span></a>
+								<span class="section-date"><?php the_time('M j'); ?></span>
+								</li>
+							<?php endforeach; ?>
+								<li id="front-cartoon-link"><a href="#">View this week's editorial cartoon</a></li>
+							</ul>
+						</div><!-- end div.front-section-more -->
+					</div><!-- end div#front-opinion -->
+				</div><!-- end div.row -->
+				
+				<div class="row">
+					<div class="span8" id="featuredProject">
+						 hey you!
+					</div><!-- end div#featuredProject -->
 				</div><!-- end div.row -->
 			</div><!-- end div#front-maincol -->	
 							
-				
-				
-				
-				
 				
 				
 				
@@ -291,11 +362,6 @@
 						$classification = array_shift(get_the_terms($post->ID, 'classification')); ?>
 						<p><?php echo get_the_content(); ?> &bull; <a href="<?php echo get_term_link($classification); ?>"><?php echo $classification->name; ?></a></p>
 						<?php endforeach; ?>
-<!--
-						<p>ACCUSED of cheating? Plagiarism? Grade dispute? Criminal Charges? Call BEFORE speaking with the Dean or Police. FREE consultation. Law Offices of Kosnett&Durchfort. (310)444-8898http://www.educationlawyer.org &bull; <a href="#">Legal Advice/Attorneys</a></p>
-						<p>ORGANIC CHEMISTRY IN ONE MONTH.We offer all science classes required for health professional programs. Weekend WASC accredited. Whittierwww.integratedscienceprogram.com &bull; <a href="#">Professional Services</a></p>
-						<p>WRITING TUTORKind and patient Stanford graduate. Help with the English language--for students of all ages/levels. 310-440-3118. &bull; <a href="#">Tutoring Offered</a></p>
--->
 					</div><!-- end div#middlecontent1-classifieds-column1 -->
 					<div id="middlecontent1-classifieds-column2">
 						<?php
@@ -362,107 +428,9 @@
 			<div id="poll" class="span4">
 				<h2>Poll <img src="/img/pollicon.png" /> <a href="/pollsarchive" id="poll-past">Past polls &raquo;</a></h2>
 				<?php get_poll();?>
-<!--
-				<span class="poll-question">Last week, Los Angeles City Council approved a ban on plastic bags in L.A. markets. Is this a good idea?</span>
-				<form>
-					<label class="radio">
-						<input type="radio" name="poll" value="1" />No. A ban no longer gives customers the freedom to choose between paper and plastic.
-					</label>
-					<label class="radio">
-						<input type="radio" name="poll" value="2" />Yes. This ban makes the point that it is everyone's duty to care for the environment.
-					</label>
-					<label class="radio">
-						<input type="radio" name="poll" value="3" />I think a ban is too drastic a measure. Not all consumers are aware of the negative environmental impact of plastic bags.
-					</label>
-					<label class="radio">
-						<input type="radio" name="poll" value="4" />I am undecided on this issue.
-					</label>
-					<submit class="btn btn-large">Submit </submit>
-					<a href="#">View results without voting</a>
-				</form>
--->
 			</div><!-- end div#poll -->
 		</div><!-- end div#middlecontent2 -->
 		
-		<div class="row" id="bottomcontent">
-			<div class="span3 bottomcontent" id="bottomcontent-news">
-				<div class="bottomcontent-wrap" id="bottomcontent-news-wrap">
-					<h2>News</h2>
-					<ul>
-					<?php
-						$args = array( 'numberposts' => 6, 'category' => 5 );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
-					<?php endforeach; ?>
-						<a href="/category/news"><li class="bottomcontent-more">More News</li></a>		
-					</ul>
-				</div><!-- end div#bottomcontent-news-wrap -->
-			</div><!-- end div#bottomcontent-news -->
-			
-			<div class="span3 bottomcontent" id="bottomcontent-sports">
-				<div class="bottomcontent-wrap" id="bottomcontent-sports-wrap">
-					<h2>Sports</h2>
-					<ul>
-					<?php
-						$args = array( 'numberposts' => 6, 'category' => 6 );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
-					<?php endforeach; ?>
-						<a href="/category/sports"><li class="bottomcontent-more">More Sports</li></a>		
-					</ul>
-				</div><!-- end div#bottomcontent-sports-wrap -->
-			</div><!-- end div#bottomcontent-sports -->
-
-			<div class="span3 bottomcontent" id="bottomcontent-ae">
-				<div class="bottomcontent-wrap" id="bottomcontent-ae-wrap">
-					<h2>a&amp;e</h2>
-					<ul>
-					<?php
-						$args = array( 'numberposts' => 6, 'category' => 8 );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
-					<?php endforeach; ?>
-						<a href="/category/ae"><li class="bottomcontent-more">More a&amp;e</li></a>		
-					</ul>
-				</div><!-- end div#bottomcontent-ae-wrap -->
-			</div><!-- end div#bottomcontent-ae -->
-
-			<div class="span3 bottomcontent" id="bottomcontent-opinion">
-				<div class="bottomcontent-wrap" id="bottomcontent-opinion-wrap">
-					<h2>Opinion</h2>
-					<ul>
-					<?php
-						$args = array( 'numberposts' => 6, 'category' => 7 );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<a href="<?php the_permalink(); ?>"><li><span class="bottomcontent-date"><?php the_time('M'); ?><span><?php the_time('j'); ?></span></span><?php the_title(); ?></li></a>
-					<?php endforeach; ?>
-						<a href="/category/opinion"><li class="bottomcontent-more">More Opinion</li></a>		
-					</ul>
-				</div><!-- end div#bottomcontent-opinion-wrap -->
-			</div><!-- end div#bottomcontent-opinion -->
-		</div><!-- end div#bottomcontent -->
-		
-		<div class="row hidden-phone" id="paidadvertising">
-			<div class="span12">
-				<h4>Paid Advertising</h4>
-				<ul class="paidadvertising-list">
-					<?php wp_list_bookmarks(array(
-						'title_li'			=>	__(''),
-						'title_before'		=>	'',
-						'title_after'		=>	'',
-						'category_before'	=>	'',
-						'category_after'	=> 	'',
-						'categorize'		=>	0,
-						'before'			=>	'<li class="span3">'
-					)); ?>
-					<br style="clear:both" />
-				</ul>
-			</div><!-- end div.span12 -->
-		</div><!-- end div#paidadvertising -->
 	</div><!-- end div.container -->
 
 <?php get_footer(); ?>
