@@ -300,9 +300,18 @@
 					</div><!-- end div#front-opinion -->
 				</div><!-- end div.row -->
 				
-				<div class="row">
-					<div class="span8" id="featuredProject">
-						 hey you!
+				<div class="row" id="featuredProject">
+					<div class="span8">
+						<div>
+							 <h3>Gay Conversion Therapy</h3>
+							 <ul class="sections">
+							 	<li><a href="#">Previous features</a></li>
+							 </ul>
+							 <span style="display:block;width:100%;clear:both;"></span>
+							 <img src="http://placehold.it/250x180" />
+							 <p>In the 1960s and 1970s, the UCLA Gender Identity Research Clinic studied children and adults who identified as a gender different than their biological sex, and provided therapy when sought out.</p>
+							 <a href="#" class="featuredlink">Read the story, watch videos, and more &raquo;</a>
+						</div>
 					</div><!-- end div#featuredProject -->
 				</div><!-- end div.row -->
 			</div><!-- end div#front-maincol -->	
