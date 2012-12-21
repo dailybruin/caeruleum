@@ -323,7 +323,10 @@
 			
 			<div class="span4" id="front-sidebar" class="sidebar">
 				<?php get_template_part('ad','side'); ?>
+				
+				
 				<ul id="sidebar-list">
+					<?php dynamic_sidebar('sidebar-primary'); ?>
 					<li>
 						<h4>Most Popular</h4>
 						<pre>Blah blah blah</pre>

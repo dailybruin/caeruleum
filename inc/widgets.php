@@ -3,151 +3,82 @@
 function roots_widgets_init() {
   // Register widgetized areas
   register_sidebar(array(
-    'name' => __('Primary Sidebar', 'roots'),
+    'name' => __('Primary Sidebar', 'db'),
     'id' => 'sidebar-primary',
-    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
-    'after_widget' => '</div></section>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-  ));
-  register_sidebar(array(
-    'name' => __('Footer', 'roots'),
-    'id' => 'sidebar-footer',
-    'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
-    'after_widget' => '</div></section>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
+    'before_widget' => '<li>',
+    'after_widget' => '</li>',
+    'before_title' => '<h4>',
+    'after_title' => '</h4>',
   ));
 
   // Register widgets
-  register_widget('Roots_Vcard_Widget');
+  register_widget('DB_Text_More_Link');
 }
 add_action('widgets_init', 'roots_widgets_init');
 
-// Example vCard widget
-class Roots_Vcard_Widget extends WP_Widget {
-  function Roots_Vcard_Widget() {
-    $widget_ops = array('classname' => 'widget_roots_vcard', 'description' => __('Use this widget to add a vCard', 'roots'));
-    $this->WP_Widget('widget_roots_vcard', __('Roots: vCard', 'roots'), $widget_ops);
-    $this->alt_option_name = 'widget_roots_vcard';
 
-    add_action('save_post', array(&$this, 'flush_widget_cache'));
-    add_action('deleted_post', array(&$this, 'flush_widget_cache'));
-    add_action('switch_theme', array(&$this, 'flush_widget_cache'));
-  }
+class DB_Text_More_Link extends WP_Widget {
 
-  function widget($args, $instance) {
-    $cache = wp_cache_get('widget_roots_vcard', 'widget');
+	function __construct() {
+		$widget_ops = array('classname' => 'widget_text_morelink', 'description' => __('Arbitrary text or HTML with a link to more'));
+		$control_ops = array('width' => 400, 'height' => 350);
+		parent::__construct('text_link', __('Text with link'), $widget_ops, $control_ops);
+	}
 
-    if (!is_array($cache)) {
-      $cache = array();
-    }
+	function widget( $args, $instance ) {
+		extract($args);
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+		$text = apply_filters( 'widget_text_morelink', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
+		echo $before_widget;
+		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; } ?>
+			<div class="textwidget"><?php echo !empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></div>
+			<?php if(!empty($instance['more_link']) && !empty($instance['more_link_text'])): ?>
+				<span class="sidebar-more"><a href="<?php echo $instance['more_link'] ?>"><?php echo $instance['more_link_text']; ?></a></span>
+			<?php endif; ?>
+		<?php
+		echo $after_widget;
+	}
 
-    if (!isset($args['widget_id'])) {
-      $args['widget_id'] = null;
-    }
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$instance['title'] = strip_tags($new_instance['title']);
+		$instance['more_link'] = strip_tags($new_instance['more_link']);
+		if ( current_user_can('unfiltered_html') )
+		{
+			$instance['text'] =  $new_instance['text'];
+			$instance['more_link_text'] = $new_instance['more_link_text'];
+		}
+		else
+		{
+			$instance['text'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['text']) ) ); // wp_filter_post_kses() expects slashed
+			$instance['more_link_text'] = strip_tags($new_instance['more_link_text']);
+		}
+		$instance['filter'] = isset($new_instance['filter']);
+		return $instance;
+	}
 
-    if (isset($cache[$args['widget_id']])) {
-      echo $cache[$args['widget_id']];
-      return;
-    }
+	function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( 'title' => '', 'text' => '', 'more_link' => '', 'more_link_text' => '' ) );
+		$title = strip_tags($instance['title']);
+		$text = esc_textarea($instance['text']);
+		$more_link = $instance['more_link'];
+		$more_link_text = $instance['more_link_text'];
+?>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
-    ob_start();
-    extract($args, EXTR_SKIP);
+		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
 
-    $title = apply_filters('widget_title', empty($instance['title']) ? __('vCard', 'roots') : $instance['title'], $instance, $this->id_base);
-    if (!isset($instance['street_address'])) { $instance['street_address'] = ''; }
-    if (!isset($instance['locality'])) { $instance['locality'] = ''; }
-    if (!isset($instance['region'])) { $instance['region'] = ''; }
-    if (!isset($instance['postal_code'])) { $instance['postal_code'] = ''; }
-    if (!isset($instance['tel'])) { $instance['tel'] = ''; }
-    if (!isset($instance['email'])) { $instance['email'] = ''; }
+		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Automatically add paragraphs'); ?></label></p>
+		
+		
+		<p><label for="<?php echo $this->get_field_id('more_link_text'); ?>"><?php _e('Link text:'); ?></label>
+		<input class="widefat" id="<?php echo $this->get_field_id('more_link_text'); ?>" name="<?php echo $this->get_field_name('more_link_text'); ?>" type="text" value="<?php echo esc_attr($more_link_text); ?>" /></p>
 
-    echo $before_widget;
-    if ($title) {
-      echo $before_title;
-      echo $title;
-      echo $after_title;
-    }
-  ?>
-    <p class="vcard">
-      <a class="fn org url" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a><br>
-      <span class="adr">
-        <span class="street-address"><?php echo $instance['street_address']; ?></span><br>
-        <span class="locality"><?php echo $instance['locality']; ?></span>,
-        <span class="region"><?php echo $instance['region']; ?></span>
-        <span class="postal-code"><?php echo $instance['postal_code']; ?></span><br>
-      </span>
-      <span class="tel"><span class="value"><?php echo $instance['tel']; ?></span></span><br>
-      <a class="email" href="mailto:<?php echo $instance['email']; ?>"><?php echo $instance['email']; ?></a>
-    </p>
-  <?php
-    echo $after_widget;
+		
+		<p><label for="<?php echo $this->get_field_id('more_link'); ?>"><?php _e('Link:'); ?></label>
+		<input class="widefat" id="<?php echo $this->get_field_id('more_link'); ?>" name="<?php echo $this->get_field_name('more_link'); ?>" type="text" value="<?php echo esc_attr($more_link); ?>" /></p>
 
-    $cache[$args['widget_id']] = ob_get_flush();
-    wp_cache_set('widget_roots_vcard', $cache, 'widget');
-  }
-
-  function update($new_instance, $old_instance) {
-    $instance = $old_instance;
-    $instance['title'] = strip_tags($new_instance['title']);
-    $instance['street_address'] = strip_tags($new_instance['street_address']);
-    $instance['locality'] = strip_tags($new_instance['locality']);
-    $instance['region'] = strip_tags($new_instance['region']);
-    $instance['postal_code'] = strip_tags($new_instance['postal_code']);
-    $instance['tel'] = strip_tags($new_instance['tel']);
-    $instance['email'] = strip_tags($new_instance['email']);
-    $this->flush_widget_cache();
-
-    $alloptions = wp_cache_get('alloptions', 'options');
-    if (isset($alloptions['widget_roots_vcard'])) {
-      delete_option('widget_roots_vcard');
-    }
-
-    return $instance;
-  }
-
-  function flush_widget_cache() {
-    wp_cache_delete('widget_roots_vcard', 'widget');
-  }
-
-  function form($instance) {
-    $title = isset($instance['title']) ? esc_attr($instance['title']) : '';
-    $street_address = isset($instance['street_address']) ? esc_attr($instance['street_address']) : '';
-    $locality = isset($instance['locality']) ? esc_attr($instance['locality']) : '';
-    $region = isset($instance['region']) ? esc_attr($instance['region']) : '';
-    $postal_code = isset($instance['postal_code']) ? esc_attr($instance['postal_code']) : '';
-    $tel = isset($instance['tel']) ? esc_attr($instance['tel']) : '';
-    $email = isset($instance['email']) ? esc_attr($instance['email']) : '';
-  ?>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title (optional):', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
-    </p>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('street_address')); ?>"><?php _e('Street Address:', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('street_address')); ?>" name="<?php echo esc_attr($this->get_field_name('street_address')); ?>" type="text" value="<?php echo esc_attr($street_address); ?>" />
-    </p>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('locality')); ?>"><?php _e('City/Locality:', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('locality')); ?>" name="<?php echo esc_attr($this->get_field_name('locality')); ?>" type="text" value="<?php echo esc_attr($locality); ?>" />
-    </p>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('region')); ?>"><?php _e('State/Region:', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('region')); ?>" name="<?php echo esc_attr($this->get_field_name('region')); ?>" type="text" value="<?php echo esc_attr($region); ?>" />
-    </p>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('postal_code')); ?>"><?php _e('Zipcode/Postal Code:', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('postal_code')); ?>" name="<?php echo esc_attr($this->get_field_name('postal_code')); ?>" type="text" value="<?php echo esc_attr($postal_code); ?>" />
-    </p>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('tel')); ?>"><?php _e('Telephone:', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('tel')); ?>" name="<?php echo esc_attr($this->get_field_name('tel')); ?>" type="text" value="<?php echo esc_attr($tel); ?>" />
-    </p>
-    <p>
-      <label for="<?php echo esc_attr($this->get_field_id('email')); ?>"><?php _e('Email:', 'roots'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr($this->get_field_id('email')); ?>" name="<?php echo esc_attr($this->get_field_name('email')); ?>" type="text" value="<?php echo esc_attr($email); ?>" />
-    </p>
-  <?php
-  }
+<?php
+	}
 }
