@@ -28,7 +28,7 @@ hr {
 p {
 	margin: 0 0 15px;
 	font-family:"Georgia",serif;
-	line-height:1.28em;
+	line-height:1.38em;
 }
 
 figure {
@@ -805,10 +805,36 @@ figcaption{
    Author:
    ========================================================================== */
 .poll-question {
-	padding:0 0 10px 0;
-	display:block;
-	font-size:1.2em;
-    line-height: 1.5em;
+	font-family:"Georgia",serif;
+	display: block;
+	margin-bottom: 10px;
+}
+.wp-polls-form, .wp-polls {
+    font-family: "Georgia",serif;
+}
+.wp-polls-form > submit {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wp-polls-ul {
+	list-style: none;
+	margin: 0;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+.wp-polls-ul > li {
+	padding:10px;
+}
+.wp-polls-ul > li:nth-child(2n-1) {
+	background-color: #F2F2F2;
+}
+.poll-view-results {
+    color: #333;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
 }
 
 a#poll-past, span.multimedia-more {
@@ -839,42 +865,21 @@ div#poll form label.radio {
 	margin-bottom:13px;
 }
 
-div#poll form label.radio:hover {
-
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(242,242,243,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(242,242,243,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(242,242,243,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(242,242,243,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(242,242,243,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(242,242,243,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f3',GradientType=0 ); /* IE6-9 */
-}
-
-div#poll form submit {
-    display: block;
-    margin-bottom: 8px;
-}
-
-div#poll form a {
-	text-align:center;
-	display:block;
-}
 
 /* css3 for coloring each pollbars */
-.wp-polls-ul li:nth-child(01) .pollbar{ background:#8FA0C5}
-.wp-polls-ul li:nth-child(02) .pollbar{ background:#FF8}
-.wp-polls-ul li:nth-child(03) .pollbar{ background:#ff8a3b}
-.wp-polls-ul li:nth-child(04) .pollbar{ background:#a61e2a}
-.wp-polls-ul li:nth-child(05) .pollbar{ background:#4ebbff}
-.wp-polls-ul li:nth-child(06) .pollbar{ background:#fbca54}
-.wp-polls-ul li:nth-child(07) .pollbar{ background:#aad34f}
-.wp-polls-ul li:nth-child(08) .pollbar{ background:#66cc9a}
-.wp-polls-ul li:nth-child(09) .pollbar{ background:#98CBCB}
-.wp-polls-ul li:nth-child(10) .pollbar{ background:#a67c52}
-/* little transition */
-.wp-polls-ul li .pollbar{-webkit-transition: background 0.7s ease-in-out}
-.wp-polls-ul li .pollbar:hover{background:#F00}
+.wp-polls-ul li:nth-child(01) .pollbar{ background:#BF0C43}
+/*
+.wp-polls-ul li:nth-child(01) .pollbar{ background:#BF0C43}
+.wp-polls-ul li:nth-child(02) .pollbar{ background:#F9BA15}
+.wp-polls-ul li:nth-child(03) .pollbar{ background:#8EAC00}
+.wp-polls-ul li:nth-child(04) .pollbar{ background:#127A97}
+.wp-polls-ul li:nth-child(05) .pollbar{ background:#452B72}
+.wp-polls-ul li:nth-child(06) .pollbar{ background:#BF0C43}
+.wp-polls-ul li:nth-child(07) .pollbar{ background:#F9BA15}
+.wp-polls-ul li:nth-child(08) .pollbar{ background:#8EAC00}
+.wp-polls-ul li:nth-child(09) .pollbar{ background:#127A97}
+.wp-polls-ul li:nth-child(10) .pollbar{ background:#452B72}
+*/
 
 
 /* ===== Bottom Content (listing) ========================================================
