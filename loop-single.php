@@ -4,7 +4,10 @@
     	<?php $customFields = get_post_custom(); ?>
       <div id="post-top">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<h2 class="subhead"><?php $subhead = get_post_custom_values('db_subhead'); echo $subhead[0]; ?></h2>
+		<?php $subhead = get_post_custom_values('db_subhead');
+			if(isset($subhead) && $subhead[0] != ''): ?>
+			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
+		<?php endif; ?>
 		<?php if(has_post_thumbnail()) : ?>
 			<?php the_post_thumbnail('db-category-full'); ?>
 			<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>

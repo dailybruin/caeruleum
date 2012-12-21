@@ -38,7 +38,7 @@ function roots_setup() {
 	add_image_size( 'db-category-thumb', 300, 300 ); // 300px wide (and unlimited height)
 	add_image_size( 'db-front', 90, 90, 1 );
 	add_image_size( 'db-rotator', 470, 360, 1 );
-	add_image_size( 'db-category-full', 670, 670);
+	add_image_size( 'db-category-full', 640, 640);
 	add_image_size( 'db-multimedia', 225, 142, 1 ); // normal size: 180x113
 	add_image_size( 'db-section-cover', 220, 220, 1 ); // normal size: 200x200
 	add_image_size( 'db-section-cover-small', 370, 270, 1 ); // normal size: 300x219

@@ -425,17 +425,20 @@ ul#topMenu > li.active.open > a:hover {
    Author:
    ========================================================================== */
 .entry-title {
-	font-family:"Georgia";
-	text-rendering:auto;
-	font-weight:normal;
-    font-size: 2.3em;
-    padding-bottom: 5px;
+	font-family: "Georgia";
+	text-rendering: auto;
+	font-weight: normal;
+	font-size: 2em;
+	line-height: 33px;
+	padding-bottom: 0;
+	margin-bottom: 7px;
 }
 .subhead {
-    font-weight: lighter;
-    font-family: "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 1.4em;
-    padding-bottom: 8px;
+	font-weight: lighter;
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 1.2em;
+	padding-bottom: 8px;
+	line-height: 1.2em;
 }
 .photocredit-single {
 	width:100%;
@@ -1033,8 +1036,10 @@ span.copyright {
     margin-top: 5px;
 }
 .page-header h1 {
-    text-align: right;
-    opacity: 0.5;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
 }
 .title-category {
 	float:right;
@@ -1044,9 +1049,10 @@ span.copyright {
 	font-style:italic;
 }
 .articlelist-head > h2 {
-    font-weight: normal;
-    line-height: 1.3em;
-    padding-bottom: 7px;
+	line-height: 1.3em;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top:0;
 }
 .articlelist-head > h2 a {
 	color:#333;
@@ -1058,7 +1064,7 @@ span.copyright {
 }
 #post-listing > article {
     overflow: hidden;
-    border-bottom: 2px solid #AAA;
+    border-bottom: 1px solid #ADADAD;
     margin-bottom:7px;
 }
 
@@ -1698,6 +1704,11 @@ ul.phone-nav > li.active a {
     border-radius: 10px;
 }
 
+
+
+.side-ads {
+    margin: 30px 0;
+}
 
 
 /* =============================================================================

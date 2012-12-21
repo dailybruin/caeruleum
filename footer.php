@@ -1,4 +1,5 @@
 	<div class="container">
+	<hr />
 	<?php get_template_part('ad','banner'); ?>	
 	<div class="row hidden-phone" id="paidadvertising">
 		<div class="span12">
