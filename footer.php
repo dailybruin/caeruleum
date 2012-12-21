@@ -28,16 +28,15 @@
     <?php roots_footer_inside(); ?>
     <!-- DB FOOTER -->
     <?php 
-    	$news_cat = 14;
-    	$ae_cat = 4;
-    	$sports_cat = 29;
-    	$opinion_cat = 21;
-    	$blogs_cat = 10;
-    	$prime_cat = 28;
-    	$multimedia_cat = 52;
+    	$news_cat = get_category_by_slug('news')->term_id;
+    	$ae_cat = get_category_by_slug('ae')->term_id;
+    	$sports_cat = get_category_by_slug('sports')->term_id;
+    	$opinion_cat = get_category_by_slug('opinion')->term_id;
+    	$blogs_cat = get_category_by_slug('blogs')->term_id;
+    	$prime_cat = get_category_by_slug('prime')->term_id;
+    	$multimedia_cat = get_category_by_slug('multimedia')->term_id;
     ?>
     		<div class="container">
-			<img src="/img/nameplate-black.png" id="bottom-logo" />
 			<div class="row footer-nav">
 				<div class="footer-links span2">
 					<h3><a href="<?php echo get_category_link( $news_cat ); ?>"><?php echo get_the_category_by_ID( $news_cat ); ?></a></h3>
@@ -114,16 +113,17 @@
 					?>
 					<li><a href="http://mojo.dailybruin.com">Mojo</a></li>
 					</ul>
-					<h3><a href="#">Classifieds</a></h3>
-					<h3>Share</h3>
-					<?php wp_nav_menu(array('theme_location'=>'share_footer')); ?>
+					<h3><a href="#">Classifieds</a></h3>					
 				</div>
-				<div class="footer-links span2">
+				<div class="footer-links span4 about">
 					<h3>About</h3>
 					<?php wp_nav_menu(array('theme_location'=>'about_footer')); ?>
-				</div>
-				<div class="footer-links span2">
-				<?php dynamic_sidebar( 'Footer' ); ?> 
+					
+					<br />
+					
+					<?php wp_nav_menu(array('theme_location'=>'share_footer')); ?>
+					
+					<?php dynamic_sidebar( 'Footer' ); ?>
 				</div>
 			</div>
 			<span class="copyright">Content copyright &copy; <?php echo date('Y'); ?> the Daily Bruin</span>
