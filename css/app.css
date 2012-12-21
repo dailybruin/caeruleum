@@ -530,7 +530,6 @@ figcaption{
 	clear:both;
 }
 #entry-bottom {
-    border-bottom: 2px solid #dbdbdb;
 }
 
 
@@ -1710,6 +1709,39 @@ ul.phone-nav > li.active a {
     margin: 30px 0;
 }
 
+
+/* ===== Pagination ========================================================
+   Author:
+   ========================================================================== */
+
+.page-numbers {
+	padding: 4px 9px;
+	border: 1px solid #EEE;
+	margin: 2px;
+	color:#333;
+	border-radius:1px;
+}
+a.page-numbers {
+	color:#333;
+}
+a.page-numbers:hover {
+	background-color: #EEE;
+	text-decoration:none;
+}
+.page-numbers.current {
+	border: none;
+	font-weight: bold;
+	color: white;
+	background-color: #333;
+}
+.page-numbers.next {
+	font-weight: bold;
+	border: 1px solid #ADADAD;
+	margin-left: 20px;
+}
+.page-numbers.prev {
+	margin-right:20px;
+}
 
 /* =============================================================================
    WordPress Generated Classes

@@ -32,10 +32,20 @@
     </article>
 <?php endwhile; /* End loop */ ?>
 
-<?php /* Display navigation to next/previous pages when applicable */ ?>
-<?php if ($wp_query->max_num_pages > 1) { ?>
-  <nav id="post-nav" class="pager">
-    <div class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></div>
-    <div class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></div>
-  </nav>
-<?php } ?>
+<?php        
+$total_pages = $wp_query->max_num_pages;  
+if ($total_pages > 1) {  
+  $current_page = max(1, get_query_var('paged'));  ?>
+  <div class="pager"> 
+  <?php echo paginate_links(array(  
+      'base' => get_pagenum_link(1) . '%_%',  
+      'format' => '/page/%#%',  
+      'current' => $current_page,  
+      'total' => $total_pages,  
+      'prev_text' => '&larr; Prev',  
+      'next_text' => 'Next &rarr;'  
+    ));  ?>
+  </div><!-- end div.pager -->
+<?php
+} 
+?>
