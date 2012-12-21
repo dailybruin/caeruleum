@@ -14,6 +14,7 @@ function roots_widgets_init() {
 
   // Register widgets
   register_widget('DB_Text_More_Link');
+  register_widget('Facebook_Recommends');
 }
 add_action('widgets_init', 'roots_widgets_init');
 
@@ -83,3 +84,28 @@ class DB_Text_More_Link extends WP_Widget {
 <?php
 	}
 }
+
+
+class Facebook_Recommends extends WP_Widget {
+
+	function __construct() {
+		$widget_ops = array('classname' => 'widget_fb_recommend', 'description' => __('Facebook recommend box'));
+		parent::__construct('fb_recommend', __('Facebook recommend box'), $widget_ops, $control_ops);
+	}
+
+	function widget( $args, $instance ) {
+	?>
+		<li class="sidebar-clean">
+			<div class="fb-recommendations" data-site="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>" data-width="300" data-height="300" data-header="true"></div>
+		</li><!-- end li.sidebar-clean -->
+	<?php
+	}
+
+	function update( $new_instance, $old_instance ) {
+		return $new_instance;
+	}
+
+	function form( $instance ) {
+	}
+}
+
