@@ -323,8 +323,18 @@
 			
 			<div class="span4" id="front-sidebar" class="sidebar">
 				<?php get_template_part('ad','side'); ?>
-				
-				
+				<ul id="sidebar-list">
+					<li>
+						<h4>Most Popular</h4>
+						<pre>Blah blah blah</pre>
+						<span class="sidebar-more"><a href="#">Blah blah blah &raquo;</a></span>
+					</li>
+					<li>
+						<h4>Most Popular</h4>
+						<pre>Blah blah blah</pre>
+						<span class="sidebar-more"><a href="#">Blah blah blah &raquo;</a></span>
+					</li>
+				</ul><!-- end div#sidebar-list -->
 				
 			</div>
 		</div><!-- end div#topcontent -->
