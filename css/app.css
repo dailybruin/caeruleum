@@ -188,9 +188,7 @@ article {
 	padding-bottom: 10px;
 	padding-top:10px;
 	height:60px;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
+	display:inline;
 }
 
 .navlist {
@@ -234,6 +232,13 @@ div#toplinks-socialmedia {
 	color:#234a2c;
 	font-weight:bold;
 	line-height:16px;
+}
+#nameplate {
+	text-align:center;
+}
+#nameplate > a {
+    display: inline;
+    text-align: center;
 }
 
 #nameplate-date {
