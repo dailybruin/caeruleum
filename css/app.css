@@ -669,6 +669,9 @@ figcaption{
     margin-bottom: -15px;
     display: block;
 }
+.textwidget {
+	margin-bottom:10px;
+}
 
 #sidebar-list > li {
     display: block;
@@ -720,6 +723,33 @@ figcaption{
 	background: -ms-linear-gradient(top,  #f2f2f2 0%,#e8e8e8 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #f2f2f2 0%,#e8e8e8 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+
+.wpp-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family:"Georgia",serif;
+}
+.wpp-list > li {
+	display:block;
+	border-bottom: 1px solid #ADADAD;
+	margin-bottom: 7px;
+	padding-bottom: 9px;
+    font-size: 13px;
+    line-height: 16px;
+}
+.wpp-list > li > a {
+}
+.wpp-list > li:last-child {
+	border:none;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+.wpp-date {
+    color: #adadad;
+    text-transform: uppercase;
+    font-size: 9px;
 }
 
 

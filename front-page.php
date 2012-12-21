@@ -327,16 +327,6 @@
 				
 				<ul id="sidebar-list">
 					<?php dynamic_sidebar('sidebar-primary'); ?>
-					<li>
-						<h4>Most Popular</h4>
-						<pre>Blah blah blah</pre>
-						<span class="sidebar-more"><a href="#">Blah blah blah &raquo;</a></span>
-					</li>
-					<li>
-						<h4>Most Popular</h4>
-						<pre>Blah blah blah</pre>
-						<span class="sidebar-more"><a href="#">Blah blah blah &raquo;</a></span>
-					</li>
 				</ul><!-- end div#sidebar-list -->
 				
 			</div>
