@@ -57,16 +57,25 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					<div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
 				</div><!-- end div.sm -->
-				<div class="author-info">
-					<?php userphoto_the_author_thumbnail(); ?>
-					<h2>About the Author</h2>
-					<h1><?php the_author_posts_link(); ?></h1>
+				<?php // Find out if the user has a thumbnail
+				ob_start();
+				userphoto_the_author_thumbnail();
+				$thumbnail = ob_get_contents();
+				$thumbnail_class = "";
+				if(!isset($thumbnail) || $thumbnail == "")
+					$thumbnail_class = "nothumb";
+				ob_end_clean();
+				?>
+				<div class="author-info <?php echo $thumbnail_class; ?>">
+					<?php echo $thumbnail; ?>
+					<span class="author-about">About the Author</span>
+					<span class="author-name"><?php the_author_posts_link(); ?></span>
 					<?php if(!get_the_author_meta('graduated')) : ?>					
-						<a href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
 						<?php if(get_the_author_meta('twitter_handle')) : ?>
 						<a href="https://twitter.com/<?php echo substr(get_the_author_meta('twitter_handle'),1); ?>" class="twitter-follow-button" data-show-count="false">Follow <?php the_author_meta('twitter_handle'); ?></a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						<?php endif; ?>
+						<a class="author-email" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
 					<?php endif; ?>
 					<p><?php the_author_meta('description'); ?></p>
 				</div><!-- end div.author-info -->
