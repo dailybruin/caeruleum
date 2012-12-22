@@ -13,6 +13,24 @@
 		}
 	}
 	?>
+	<?php 
+	foreach(get_the_category() as $cat)
+	{
+		switch($cat->name)
+		{
+        	case "Bruin Sights":
+        		the_blog_banner('bruinsights');
+        		break(2);
+        	case "Spotlight":
+        		the_blog_banner('spotlight');
+        		break(2);
+        	case "Timestamp":
+        		the_blog_banner('timestamp');
+        		break(2);
+		}
+	}
+	?>
+
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
       <div id="post-top">

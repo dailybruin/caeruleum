@@ -20,7 +20,21 @@
                 $author_id = $post->post_author;
                 printf(__('Author Archives: %s', 'roots'), get_the_author_meta('display_name', $author_id));
               } else {
-                single_cat_title();
+                $categoryTitle = single_cat_title('',false);
+                switch ($categoryTitle)
+                {
+                	case "Bruin Sights":
+                		the_blog_banner('bruinsights');
+                		break;
+                	case "Spotlight":
+                		the_blog_banner('spotlight');
+                		break;
+                	case "Timestamp":
+                		the_blog_banner('timestamp');
+                		break;
+                	default:
+                		echo $categoryTitle;
+                }
               }
             ?>
           </h1>

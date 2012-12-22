@@ -2,6 +2,12 @@
 
 // Custom functions
 
+function the_blog_banner($blog_name)
+{
+	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";
+}
+
+
 // Customize headline. Use this instead of the_title()
 // This can only be used from within the loop
 function the_headline()
