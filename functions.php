@@ -15,6 +15,7 @@ require_once locate_template('/inc/htaccess.php');        // Rewrites for assets
 require_once locate_template('/inc/hooks.php');           // Hooks
 require_once locate_template('/inc/actions.php');         // Actions
 require_once locate_template('/inc/widgets.php');         // Sidebars and widgets
+require_once locate_template('/inc/radiowalker.php');     // Walker used for radio buttons
 require_once locate_template('/inc/custom.php');          // Custom functions
 
 function roots_setup() {
