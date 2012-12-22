@@ -89,7 +89,7 @@
 		<div class="row" id="entry-bottom">
 			<div class="span2 about-post">
 				<div class="post-tags">
-					<?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
+					<p><?php the_tags(); ?></p>
 				</div><!-- end div.post-tags -->
 			</div>
 			<div class="span6 about-author">

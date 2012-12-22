@@ -173,7 +173,7 @@ add_action( 'edit_user_profile_update', 'db_save_custom_user_profile_fields' );
 // Removes all tags that start with db- from displaying on the front end
 function remove_db_tags($input) {
 	$output = preg_replace('/<a href="\/tag\/db-[^\/]*\/" rel="tag">db-[^<]*<\/a>,*\s*/','',$input);
-	if(strpos("<a",$output)===FALSE)
+	if(strpos($output,'rel')===FALSE)
 		$output = "";
 	return $output;
 }
