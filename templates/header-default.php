@@ -57,10 +57,10 @@
 		</div>
 	</div><!-- end div.row -->
 	<div class="row" id="adrow">
-		<div class="span6">
+		<div class="span6" id="adrow-house">
 			<?php get_template_part('ad','housebanner'); ?>
 		</div><!-- end div.span6 -->
-		<div class="span6">
+		<div class="span6" id="adrow-out">
 			<?php get_template_part('ad','smallbanner'); ?>
 		</div><!-- end div.span6 -->
 	</div><!-- end div.row -->

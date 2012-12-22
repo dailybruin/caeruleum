@@ -211,12 +211,6 @@ article {
 #toplinks-info li a:hover {
 	color:#236fae;
 }
-#toplinks-info li:first-child {
-	padding-left:5px;
-}
-#toplinks-info li:last-child {
-	border-right:none;
-}
 
 div#toplinks ul, div#toplinks div {
     background-color: #ededed;
@@ -449,6 +443,10 @@ ul#topMenu > li.active.open > a:hover {
     display: block;
     margin-bottom: 10px;
 }
+.photocaption > p {
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 0.8rem;
+}
 .infobar {
     display: block;
     background-color: #333333;
@@ -627,6 +625,7 @@ figcaption{
 }
 .textwidget {
 	margin-bottom:10px;
+    min-height: 142px;
 }
 
 #sidebar-list > li {
@@ -731,6 +730,15 @@ figcaption{
 #classifieds-container p:last-child {
 	padding-bottom:0;
 	border-bottom:none;
+}
+.fb-recommendations {
+	width:100%;
+}
+.fb-recommendations > span {
+	width:100% !important;
+}
+.fb-recommendations > span > iframe {
+	width:100% !important;
 }
 
 /* ===== Multimedia ========================================================
@@ -1549,6 +1557,7 @@ ul.phone-nav > li.active a {
 }
 .story-info-category {
 	font-weight:bold;
+	color:#333;
 }
 
 .front-section-content {
@@ -1707,6 +1716,8 @@ a.page-numbers:hover {
     margin-top: 18px;
     margin-left: 90px;
     position: relative;
+    min-height: 83px;
+	margin-bottom: 10px;
 }
 .author-info > img {
     position: absolute;
@@ -1757,6 +1768,19 @@ a.page-numbers:hover {
 .author-info.nothumb {
 	margin-left:0;
 }
+
+
+
+#adrow-out {
+	text-align:right;
+}
+#adrow-house {
+	height:60px;
+}
+#adrow-house > div > img {
+	height:60px;
+}
+
 
 /* =============================================================================
    WordPress Generated Classes
@@ -1932,15 +1956,19 @@ a.page-numbers:hover {
 
 /* Large desktop */
 @media (min-width: 1200px) { 
-	#nameplate-date {
-		top:52px;
+	#side-ad {
+		text-align:center;
+	}
+	#toplinks-info {
+    	text-align: left;
 	}
 	.multimedia-item {
-	    width: 175px;
-	    margin-right: 10px;
+		width:225px;
 	}
-	#multimedia-podcast {
-	    float: left;
-	    width: 324px;
+	.multimedia-item > a > img {
+		width:225px;
+	}
+	#paidadvertising ul {
+    	width: 1158px;
 	}
 }

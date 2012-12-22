@@ -138,10 +138,9 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	// Large screen
-/*
 	if($(window).width() >= 1200) {
+		;
 	}
-*/
 	
 	// Small screen
 	if($(window).width() <= 979 && $(window).width() >= 768) {
