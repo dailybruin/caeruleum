@@ -13,8 +13,9 @@ function add_article_formats()
 		'show_ui' => false,
 		'show_admin_column' => false,
 	));
-	wp_insert_term('Column','article-format');
-	wp_insert_term('Brief', 'article-format');
+	wp_insert_term('Normal','article-format', array('slug' => 'normal'));
+	wp_insert_term('Column','article-format', array('slug' => 'column'));
+	wp_insert_term('Brief', 'article-format', array('slug' => 'brief'));
 }
 add_action('init','add_article_formats', 0);
 function add_article_formats_metabox()

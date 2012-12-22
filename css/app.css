@@ -77,8 +77,8 @@ img.ad {
 	text-rendering:auto;
 	color:#333;
 }
-[class^="headline-"]:hover,
-[class*=" headline-"]:hover {
+a.[class^="headline-"]:hover,
+a.[class*=" headline-"]:hover {
 	color:#333;
 	text-decoration:underline;
 }

@@ -1,9 +1,25 @@
 <?php /* Start loop */ ?>
 <?php while (have_posts()) : the_post(); ?>
+	<?php $articleFormats = wp_get_post_terms($post->ID,'article-format');
+	$articleFormat = $articleFormats[0]->slug;
+	$headlineClass = ''; $displayAuthor = true;
+	if(isset($articleFormat))
+	{
+		switch($articleFormat)
+		{
+			case 'column':
+				$headlineClass="headline-column";
+				break;
+			case 'brief':
+				$displayAuthor = false;
+				break;
+		}
+	}
+	?>
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
       <div id="post-top">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title <?php echo $headlineClass; ?>"><?php the_title(); ?></h1>
 		<?php $subhead = get_post_custom_values('db_subhead');
 			if(isset($subhead) && $subhead[0] != ''): ?>
 			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
@@ -34,7 +50,7 @@
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<div class="span6 post-content">
 				<?php the_audio(); ?>
-				<?php the_byline(); ?>
+				<?php if($displayAuthor) { the_byline(); } ?>
 				<?php if(isset($customFields['db_infobox'])) : ?>
 					<div class="db-infobox">
 						<?php echo $customFields['db_infobox'][0]; ?>
@@ -57,28 +73,30 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					<div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
 				</div><!-- end div.sm -->
-				<?php // Find out if the user has a thumbnail
-				ob_start();
-				userphoto_the_author_thumbnail();
-				$thumbnail = ob_get_contents();
-				$thumbnail_class = "";
-				if(!isset($thumbnail) || $thumbnail == "")
-					$thumbnail_class = "nothumb";
-				ob_end_clean();
-				?>
-				<div class="author-info <?php echo $thumbnail_class; ?>">
-					<?php echo $thumbnail; ?>
-					<span class="author-about">About the Author</span>
-					<span class="author-name"><?php the_author_posts_link(); ?></span>
-					<?php if(!get_the_author_meta('graduated')) : ?>					
-						<?php if(get_the_author_meta('twitter_handle')) : ?>
-						<a href="https://twitter.com/<?php echo substr(get_the_author_meta('twitter_handle'),1); ?>" class="twitter-follow-button" data-show-count="false">Follow <?php the_author_meta('twitter_handle'); ?></a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<?php if($displayAuthor): ?>
+					<?php // Find out if the user has a thumbnail
+					ob_start();
+					userphoto_the_author_thumbnail();
+					$thumbnail = ob_get_contents();
+					$thumbnail_class = "";
+					if(!isset($thumbnail) || $thumbnail == "")
+						$thumbnail_class = "nothumb";
+					ob_end_clean();
+					?>
+					<div class="author-info <?php echo $thumbnail_class; ?>">
+						<?php echo $thumbnail; ?>
+						<span class="author-about">About the Author</span>
+						<span class="author-name"><?php the_author_posts_link(); ?></span>
+						<?php if(!get_the_author_meta('graduated')) : ?>					
+							<?php if(get_the_author_meta('twitter_handle')) : ?>
+							<a href="https://twitter.com/<?php echo substr(get_the_author_meta('twitter_handle'),1); ?>" class="twitter-follow-button" data-show-count="false">Follow <?php the_author_meta('twitter_handle'); ?></a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							<?php endif; ?>
+							<a class="author-email" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
 						<?php endif; ?>
-						<a class="author-email" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
-					<?php endif; ?>
-					<p><?php the_author_meta('description'); ?></p>
-				</div><!-- end div.author-info -->
+						<p><?php the_author_meta('description'); ?></p>
+					</div><!-- end div.author-info -->
+				<?php endif; ?>
 			</div>
 		</div><!-- end div#entry-bottom -->
       <?php comments_template(); ?>
