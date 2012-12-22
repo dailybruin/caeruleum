@@ -411,13 +411,13 @@ ul#topMenu ul.dropdown-menu li a{
 }
 
 ul#topMenu ul.dropdown-menu li.active a {
-	background:#236fae;
+	background:#333;
 	color:white;
 }
 
 ul#topMenu > li.active.open > a,
 ul#topMenu > li.active.open > a:hover {
-	background:#236fae;
+	background:#333;
 	color:white;
 }
 
