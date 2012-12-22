@@ -1,18 +1,19 @@
 <header id="topinfo">
-	<noscript id="topad">
-		<script type="text/javascript">
-			alert("this doesn't work");
-		</script>
-		<img src="http://my.ucla.edu/Images/logo_5_G.gif" />
-	</noscript>
-	<div class="container visible-desktop">
+	<div class="container">
+	
+		<div class="row visible-tablet">
+			<div class="span12" id="ad-banner-large-tablet">
+					<?php // Empty div used for correct ad placement ?>
+			</div>
+		</div><!-- end #ad-banner-large-tablet -->
+	
 		<div class="row">
 			<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
 						'menu_class' => 'spannav navlist',
 						'menu_id' => 'toplinks-info',
 						'container' => '',
 						)); ?>
-			<div class="spanbanner">
+			<div class="spanbanner visible-desktop">
 				<?php get_template_part('ad','banner'); ?>
 			</div><!-- end ad div (span8) -->
 			<div class="spandate">
@@ -62,7 +63,7 @@
 			<div class="fb-follow" data-href="https://www.facebook.com/dailybruin" data-show-faces="false" data-font="arial" data-width="225"></div>
 		</div>
 	</div><!-- end div.row -->
-	<div class="row" id="adrow">
+	<div class="row visible-desktop" id="adrow">
 		<div class="span6" id="adrow-house">
 			<?php get_template_part('ad','housebanner'); ?>
 		</div><!-- end div.span6 -->

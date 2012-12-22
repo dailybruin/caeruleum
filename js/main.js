@@ -157,6 +157,7 @@ $(document).ready(function() {
 			$('#side-ad-low1').html(ads['square_2']);
 			$('#side-ad-low2').html(ads['square_3']);
 			$('#ad-house').html(ads['house']);
+			$('#banner-bottom').html(ads['banner_large']);
 		}
 		// All mobile sizes
 		if($(window).width() < 980) {
@@ -174,8 +175,13 @@ $(document).ready(function() {
 			;
 		}		
 		
-		// Small screen
+		// Small screen (tablet)
 		if($(window).width() <= 979 && $(window).width() >= 768) {
+			// ad code
+			$('#ad-banner-large-tablet').html(ads['banner_large']);
+			if($('#banner-bottom').html() == '')
+				$('#banner-bottom').html(ads['banner_large']);
+		
 			$('#nameplate-date').removeClass('offset1').removeClass('span2').addClass('span3');
 			$('#toplinks-info').removeClass('span6').addClass('span8');
 			$('#toplinks-socialmedia').removeClass('offset3').addClass('offset1');
@@ -183,6 +189,9 @@ $(document).ready(function() {
 		
 		// Phone (Horizontal & Vertical) 
 		if($(window).width() <= 767) {
+			// ad code
+			$('#banner-bottom').html('');
+			
 			$('#nameplate-image img').attr('src','/img/nameplate-mobile.png');
 			$('.nameplate-date-weather').insertBefore('#nameplate-date');
 			$('#multimedia-rotator').insertAfter('#paidadvertising');

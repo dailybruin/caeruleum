@@ -1,6 +1,9 @@
 	<div class="container">
 	<hr />
-	<?php get_template_part('ad','banner'); ?>	
+	<div class="row">
+		<div class="span12 hidden-mobile" id="banner-bottom"
+			><?php // make sure there is no whitespace here for the ad to display correctly ?></div><!-- end div#banner-bottom -->
+	</div>
 	<div class="row hidden-phone" id="paidadvertising">
 		<div class="span12">
 			<h4>Paid Advertising</h4>

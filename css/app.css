@@ -1466,7 +1466,6 @@ ul.phone-nav > li.active a {
     height: 37px;
     text-align: right;
     overflow: hidden;
-    display: bl;
     float: left;
     border-radius: 0;
     outline: none;
@@ -1781,6 +1780,10 @@ a.page-numbers:hover {
 	height:60px;
 }
 
+#banner-bottom {
+	text-align:center;
+}
+
 
 /* =============================================================================
    WordPress Generated Classes
@@ -1918,19 +1921,6 @@ a.page-numbers:hover {
 		vertical-align: middle;
 		text-transform: none;
 	}
-	div.multimedia-item-featured {
-		width:476px;
-	}
-	#multimedia-podcast {
-	    width: 148px; 
-	    float: right;
-	    margin: 0;
-	    padding: 0;
-	}
-	.multimedia-item {
-		width: 148px;
-		margin-right: 10px;
-	}
 	input#search-input {
     	width: 132px;
 	}
@@ -1951,6 +1941,89 @@ a.page-numbers:hover {
 	    display: block;
 	    float: none;
 	    margin: 10px auto;
+	}
+	#paidadvertising ul {
+		width:724px;
+	}
+	#toplinks-info {	
+	    text-align: left;
+	    width: 80%;
+	}
+	#toplinks-info li {
+		float: left;
+		display: block;
+		margin-right: 19px;
+		padding-top: 6px;
+	}
+	.spandate {	
+	    padding-top: 5px;
+	    text-align: right;
+	    width: auto;
+	    display: block;
+	    float: right;
+	    margin-left: 0;
+	    font-size: 14px;
+	    color: #777;
+	}
+	#date-month {
+		padding-right: 5px;
+		font-size:1em;
+	}
+	.spandate > br {
+		display:none;
+	}
+	#date-day {
+	    font-size: 1em;
+	    line-height: 1em;
+	    font-style: normal;
+	}
+	#topsearch > input {
+		width:73%;
+	}
+	#sidebar-list > li:first-child {
+		margin-top:0;
+	}
+	#ad-banner-large-tablet {
+		margin-bottom:10px;
+	}
+	#inthenews {
+    	margin-top: 10px;
+	}
+	.headline-b, .headline-a {
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+	#rotate-controls > li > a {
+		padding: 6px 13px;
+	}
+	#rotate-prevnext-controls > a {
+		padding: 7px 10px 5px 10px;
+	}
+	.thumbnail-a {
+		width: 70px;
+		height: 70px;
+	}
+	.sections {
+		display:none;
+	}
+	.multimedia-item {
+		width: 140px;
+	}
+	.section-cover {	
+	    float: right;
+	    margin-right: 0;
+	    margin-left: 10px;
+	    margin-top: 10px;
+	    width: 160px;
+	}
+	.front-section-main > a:first-child {
+		display:block;
+	}
+	.section-list.large-section-list > li:last-child {
+		display:none;
+	}
+	.section-list.large-section-list > li:nth-child(3) {
+		border-bottom:none;
 	}
 }
 

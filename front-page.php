@@ -51,7 +51,7 @@
 								<span class="photocredit"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>		
 								<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_headline(); ?></h1></a>
 								<?php the_byline(false); ?>
-								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							</div><!-- end div.topcontent-rotator-content -->
 							<?php endforeach; ?>
 						</div><!-- end div#topcontent-rotator -->
@@ -97,7 +97,7 @@
 							<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_headline(); ?></h1></a>
 							<?php the_byline(false); ?>
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<span style="display:block;clear:both" />
 						</article>
 						<?php endforeach; ?>
@@ -112,11 +112,48 @@
 							<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_headline(); ?></h1></a>
 							<?php the_byline(); ?>
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<span style="display:block;clear:both" />
 						</article>
 						<?php endforeach; ?>
 
+						<div id="d-stories-desktop" class="visible-desktop">
+							<!-- stories tagged db-story-d1 through db-story-d3 -->
+							<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+							<a href="<?php the_permalink(); ?>">
+								<span class="headline-d"><?php the_headline(); ?></span>
+							</a>
+							<?php endforeach; ?>
+							<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+							<hr />
+							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+							<a href="<?php the_permalink(); ?>">
+								<span class="headline-d"><?php the_headline(); ?></span>
+							</a>
+							<?php endforeach; ?>
+							<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+							<hr />
+							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+							<a href="<?php the_permalink(); ?>">
+								<span class="headline-d"><?php the_headline(); ?></span>
+							</a>
+							<?php endforeach; ?>
+						</div><!-- end div.#d-stories-desktop -->						
+					</div><!-- end div#front-secondarycol -->
+				</div><!-- end div.row  inner row -->
+				
+				<div class="row hidden-desktop">
+					<div class="span8">
 						<!-- stories tagged db-story-d1 through db-story-d3 -->
 						<?php
 						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
@@ -147,8 +184,9 @@
 							<span class="headline-d"><?php the_headline(); ?></span>
 						</a>
 						<?php endforeach; ?>
-					</div><!-- end div#front-secondarycol -->
-				</div><!-- end div.row  inner row -->
+					</div><!-- end div.span8 -->
+				</div><!-- end div.row -->
+				
 				
 				<div class="row">
 					<div class="span8 front-section" id="front-news">
@@ -166,15 +204,16 @@
 								$lastposts = get_posts( $args );
 								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 								<a href="<?php the_permalink(); ?>">
+									<span class="headline-d hidden-desktop"><?php the_headline(); ?></span>
 									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
-									<span class="headline-d"><?php the_headline(); ?></span>
+									<span class="headline-d visible-desktop"><?php the_headline(); ?></span>
 								</a>
 								<?php the_byline(false); ?>
-								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 								<?php endforeach; ?>
 							</div><!-- end div.front-section-main -->
 							<div class="span3 front-section-more">
-								<ul class="section-list">
+								<ul class="section-list large-section-list">
 								<?php
 									$args = array( 'numberposts' => 4, 'cat' => 5, 'tag__not_in' => $frontPageTags );
 									$lastposts = get_posts( $args );
@@ -209,11 +248,11 @@
 									<span class="headline-d"><?php the_headline(); ?></span>
 								</a>
 								<?php the_byline(false); ?>
-								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 								<?php endforeach; ?>
 							</div><!-- end div.front-section-main -->
 							<div class="span3 front-section-more">
-								<ul class="section-list">
+								<ul class="section-list large-section-list">
 								<?php
 									$args = array( 'numberposts' => 4, 'cat' => 6, 'tag__not_in' => $frontPageTags );
 									$lastposts = get_posts( $args );
@@ -245,7 +284,7 @@
 								<span class="headline-d"><?php the_headline(); ?></span>
 							</a>
 							<?php the_byline(false); ?>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<?php endforeach; ?>
 						</div><!--end div.front-section-main -->
 						<div class="front-section-more">
@@ -279,7 +318,7 @@
 								<span class="headline-d"><?php the_headline(); ?></span>
 							</a>
 							<?php the_byline(false); ?>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<?php endforeach; ?>
 						</div><!--end div.front-section-main -->
 						
@@ -310,7 +349,7 @@
 							 <span style="display:block;width:100%;clear:both;"></span>
 							 <img src="http://placehold.it/250x180" />
 							 <p>In the 1960s and 1970s, the UCLA Gender Identity Research Clinic studied children and adults who identified as a gender different than their biological sex, and provided therapy when sought out.</p>
-							 <a href="#" class="featuredlink">Read the story, watch videos, and more &raquo;</a>
+							 <a href="#" class="featuredlink">Read the story, watch videos, and More&nbsp;&raquo;</a>
 						</div>
 					</div><!-- end div#featuredProject -->
 				</div><!-- end div.row -->
