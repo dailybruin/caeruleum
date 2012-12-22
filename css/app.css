@@ -1932,15 +1932,16 @@ a.page-numbers:hover {
 	}
 	figure, figure.alignnone {
 		display: block;
-		text-align: center;
-		float: none;
-		margin: 10px auto;
+		float: right;
+		margin: 21px auto;
+		margin-left:10px;
 	}
 	.db-infobox {
-	    width: 80%;
+	    width: 40%;
+	    float:right
 	    display: block;
-	    float: none;
 	    margin: 10px auto;
+	    margin-left:10px;
 	}
 	#paidadvertising ul {
 		width:724px;
@@ -2024,6 +2025,27 @@ a.page-numbers:hover {
 	}
 	.section-list.large-section-list > li:nth-child(3) {
 		border-bottom:none;
+	}
+	.post-extra {
+		float:right;
+	}
+	.post-content {		
+	    width: 476px;
+	    float: left;
+	}
+	h3 {
+		line-height:1.2em;
+	}
+	.about-post {
+		float:right;
+	}
+	.entry-title {	
+	    font-size: 1.6em;
+	    line-height: 1.2em;
+	}
+	.subhead {
+	    font-size: 1em;
+	    line-height: 1em;
 	}
 }
 
