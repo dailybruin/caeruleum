@@ -2,14 +2,11 @@
 <?php while (have_posts()) : the_post(); ?>
 	<?php $articleFormats = wp_get_post_terms($post->ID,'article-format');
 	$articleFormat = $articleFormats[0]->slug;
-	$headlineClass = ''; $displayAuthor = true;
+	$displayAuthor = true;
 	if(isset($articleFormat))
 	{
 		switch($articleFormat)
 		{
-			case 'column':
-				$headlineClass="headline-column";
-				break;
 			case 'brief':
 				$displayAuthor = false;
 				break;
@@ -19,7 +16,7 @@
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
       <div id="post-top">
-		<h1 class="entry-title <?php echo $headlineClass; ?>"><?php the_title(); ?></h1>
+		<h1 class="entry-title"><?php the_headline(); ?></h1>
 		<?php $subhead = get_post_custom_values('db_subhead');
 			if(isset($subhead) && $subhead[0] != ''): ?>
 			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
@@ -50,7 +47,7 @@
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<div class="span6 post-content">
 				<?php the_audio(); ?>
-				<?php if($displayAuthor) { the_byline(); } ?>
+				<?php the_byline(); ?>
 				<?php if(isset($customFields['db_infobox'])) : ?>
 					<div class="db-infobox">
 						<?php echo $customFields['db_infobox'][0]; ?>

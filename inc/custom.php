@@ -2,6 +2,26 @@
 
 // Custom functions
 
+// Customize headline. Use this instead of the_title()
+// This can only be used from within the loop
+function the_headline()
+{
+	global $post;
+	$articleFormats = wp_get_post_terms($post->ID,'article-format');
+	$articleFormat = $articleFormats[0]->slug;
+
+	$headline = apply_filters('the_title',$post->post_title);
+
+	if($articleFormat == "column")
+	{
+		echo '<em>'.$headline.'</em>';
+	}
+	else
+	{
+		echo $headline;
+	}
+}
+
 
 // Add post formats (because WordPress won't let us do it ourselves)
 function add_article_formats()
@@ -51,16 +71,28 @@ function title_italic($title)
 	}
 	return $title;
 }
-
+// And make a minor fix to the page's title so underscores don't show
+add_filter('wp_title', 'title_italic_head');
+function title_italic_head($title)
+{
+	if(substr($title, 0, 1) == '_' && substr($title, -4, 1) == '_')
+	{
+		return substr($title, 1, strlen($title)-5)." | ";
+	}
+	return $title;
+}
 
 // Define a function to output bylines properly (and show/not show them)
 function the_byline($displayBy=true) {
 	global $post;
 	$authorid = $post->post_author;
 	$authordata = get_userdata($authorid);
+	
+	$articleFormats = wp_get_post_terms($post->ID,'article-format');
+	$articleFormat = $articleFormats[0]->slug;
 
 	// Code modified from WordPress core, wp-includes/author-template.php
-    if ( $authorid == 0 || !isset($authorid) )
+    if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief" )
             return false;
     $by = "By ";
     if(!$displayBy)
