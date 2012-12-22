@@ -146,33 +146,55 @@ $(document).ready(function() {
 	ads['square_3'] = $('#side-ad-low2').text();
 	ads['house'] = $('#ad-house').text();
 
-	// Large screen
-	if($(window).width() >= 1200) {
-		;
-	}
+
+	function responsive()
+	{
+		// All desktop sizes
+		if($(window).width() >= 980) {
+			$('#ad-banner-top').html(ads['banner_large']);
+			$('#ad-banner-small').html(ads['banner_small']);
+			$('#side-ad').html(ads['square_1']);
+			$('#side-ad-low1').html(ads['square_2']);
+			$('#side-ad-low2').html(ads['square_3']);
+			$('#ad-house').html(ads['house']);
+		}
+		// All mobile sizes
+		if($(window).width() < 980) {
+			$('#ad-banner-top').html('');
+			$('#ad-banner-small').html('');
+			$('#side-ad').html('');
+			$('#side-ad-low1').html('');
+			$('#side-ad-low2').html('');
+			$('#ad-house').html('');
+		}
 	
-	// Normal screen (and large screen)
-	if($(window).width() >= 980) {
-		$('#ad-banner-top').html(ads['banner_large']);
-		$('#ad-banner-small').html(ads['banner_small']);
-		$('#side-ad').html(ads['square_1']);
-		$('#side-ad-low1').html(ads['square_2']);
-		$('#side-ad-low2').html(ads['square_3']);
-		$('#ad-house').html(ads['house']);
+	
+		// Large screen
+		if($(window).width() >= 1200) {
+			;
+		}		
+		
+		// Small screen
+		if($(window).width() <= 979 && $(window).width() >= 768) {
+			$('#nameplate-date').removeClass('offset1').removeClass('span2').addClass('span3');
+			$('#toplinks-info').removeClass('span6').addClass('span8');
+			$('#toplinks-socialmedia').removeClass('offset3').addClass('offset1');
+		}
+		
+		// Phone (Horizontal & Vertical) 
+		if($(window).width() <= 767) {
+			$('#nameplate-image img').attr('src','/img/nameplate-mobile.png');
+			$('.nameplate-date-weather').insertBefore('#nameplate-date');
+			$('#multimedia-rotator').insertAfter('#paidadvertising');
+		}
 	}
+	responsive();
 	
 	
-	// Small screen
-	if($(window).width() <= 979 && $(window).width() >= 768) {
-		$('#nameplate-date').removeClass('offset1').removeClass('span2').addClass('span3');
-		$('#toplinks-info').removeClass('span6').addClass('span8');
-		$('#toplinks-socialmedia').removeClass('offset3').addClass('offset1');
-	}
-	
-	// Phone (Horizontal & Vertical) 
-	if($(window).width() <= 767) {
-		$('#nameplate-image img').attr('src','/img/nameplate-mobile.png');
-		$('.nameplate-date-weather').insertBefore('#nameplate-date');
-		$('#multimedia-rotator').insertAfter('#paidadvertising');
-	}
+	// Now trigger this function on a window resize
+	var resizeTimer;
+	$(window).resize(function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = window.setTimeout(function() {responsive();}, 200);
+	});
 });
