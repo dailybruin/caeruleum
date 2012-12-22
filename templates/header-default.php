@@ -1,4 +1,10 @@
 <header id="topinfo">
+	<noscript id="topad">
+		<script type="text/javascript">
+			alert("this doesn't work");
+		</script>
+		<img src="http://my.ucla.edu/Images/logo_5_G.gif" />
+	</noscript>
 	<div class="container visible-desktop">
 		<div class="row">
 			<?php wp_nav_menu(array('theme_location' => 'top_navigation', 

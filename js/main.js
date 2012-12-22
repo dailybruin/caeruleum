@@ -137,10 +137,30 @@ $(document).ready(function() {
 /****** RESPONSIVE STYLES *******/
 
 $(document).ready(function() {
+	// Get the ad-loading code from the page
+	var ads = [];
+	ads['banner_large'] = $('#ad-banner-top').text();
+	ads['banner_small'] = $('#ad-banner-small').text();
+	ads['square_1'] = $('#side-ad').text();
+	ads['square_2'] = $('#side-ad-low1').text();
+	ads['square_3'] = $('#side-ad-low2').text();
+	ads['house'] = $('#ad-house').text();
+
 	// Large screen
 	if($(window).width() >= 1200) {
 		;
 	}
+	
+	// Normal screen (and large screen)
+	if($(window).width() >= 980) {
+		$('#ad-banner-top').html(ads['banner_large']);
+		$('#ad-banner-small').html(ads['banner_small']);
+		$('#side-ad').html(ads['square_1']);
+		$('#side-ad-low1').html(ads['square_2']);
+		$('#side-ad-low2').html(ads['square_3']);
+		$('#ad-house').html(ads['house']);
+	}
+	
 	
 	// Small screen
 	if($(window).width() <= 979 && $(window).width() >= 768) {
