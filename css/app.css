@@ -1846,13 +1846,12 @@ a.page-numbers:hover {
 	    margin-right: -20px;
 	}
 	.entry-title {
-	    font-size: 1.8em;
+	    font-size: 1.5em;
 	    line-height: 1.3em;
 	}
 	.subhead {	
 	    font-size: 1.2em;
 	    line-height: 1.4em;
-	    padding: 14px 0 21px;
 	}
 	.infobar > .infobar-categories {	
 	    float: left;
@@ -1897,7 +1896,6 @@ a.page-numbers:hover {
 		background: linear-gradient(to bottom,  rgba(34,34,34,1) 0%,rgba(20,20,20,1) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#141414',GradientType=0 ); /* IE6-9 */
 		
-	}
 	}
 	#nameplate-image img {
 	    padding-top: 11px;
@@ -1993,6 +1991,15 @@ a.page-numbers:hover {
 	}
 	.longstoryshort > img {
 		max-width: 126px;
+	}
+	.post-extra {
+		width: 50%;
+		float: right;
+		margin-top: 3px;
+		margin-left: 10px;
+	}
+	#post-extra-actions {
+	    border: none;
 	}
 }
 

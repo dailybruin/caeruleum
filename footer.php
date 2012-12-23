@@ -1,4 +1,4 @@
-	<div class="container">
+	<div class="container hidden-phone">
 	<hr />
 	<div class="row">
 		<div class="span12 hidden-mobile" id="banner-bottom"

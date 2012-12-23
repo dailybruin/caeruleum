@@ -1,4 +1,4 @@
-			<div class="span4" id="sidebar-main" class="sidebar">
+			<div class="span4 sidebar" id="sidebar-main">
 				<?php get_template_part('ad','side'); ?>				
 				<ul id="sidebar-list">
 					<?php dynamic_sidebar('sidebar-primary'); ?>
