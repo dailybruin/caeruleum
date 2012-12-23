@@ -291,7 +291,7 @@ div#toplinks-socialmedia {
 	padding:0;
     padding-bottom: 15px;
     margin-left: 30px;
-    margin-top: 18px;
+    margin-top: 0px;
 } 
 #menu-mobile-navigation li {
 	text-align: left;
@@ -1026,6 +1026,22 @@ span.copyright {
 	margin:0;
 }
 
+.categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.categories > li {
+	display:block;
+	float:left;
+}
+.categories > li > a {
+	color:#777;
+	text-transform:uppercase;
+	margin-right:7px;
+	font-size:0.8em;
+}
+
 /* ===== Archive listing ========================================================
    Author:
    ========================================================================== */
@@ -1038,6 +1054,7 @@ span.copyright {
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
+	line-height: 1.7rem;
 }
 .title-category {
 	float:right;
@@ -1820,6 +1837,16 @@ a.page-numbers:hover {
 
 #banner-bottom {
 	text-align:center;
+}
+
+#search-mobile {
+    margin-bottom: 0;
+    margin-top: 22px;
+    margin-left: 44px;
+}
+#search-mobile > input {
+    display: block;
+    width: 90%;
 }
 
 

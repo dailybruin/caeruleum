@@ -5,6 +5,7 @@
           <h1>
             <?php
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
+              $categoryTitle = single_cat_title('',false);
               if ($term) {
                 echo $term->name;
               } elseif (is_post_type_archive()) {
@@ -20,7 +21,6 @@
                 $author_id = $post->post_author;
                 printf(__('Author Archives: %s', 'roots'), get_the_author_meta('display_name', $author_id));
               } else {
-                $categoryTitle = single_cat_title('',false);
                 switch ($categoryTitle)
                 {
                 	case "Bruin Sights":
@@ -34,10 +34,24 @@
                 		break;
                 	default:
                 		echo $categoryTitle;
-                }
+                }				
               }
             ?>
           </h1>
+          <?php
+  	    		$cat_args = array(
+					'child_of' => get_cat_ID($categoryTitle),
+					'orderby' => 'name',
+					'hide_empty' => 1,
+					'title_li' => ''
+				);
+				$categories = get_categories($cat_args);
+				if(!empty($categories)): ?>
+					<ul class="categories">
+					<?php wp_list_categories($cat_args); ?>
+					</ul>
+				<?php endif; ?>
+          <span style="display:block;width:100%;clear:both"></span>
           <?php if(is_author()): ?>
 			<p><?php the_author_meta('description'); ?></p>
 			<?php if(!get_the_author_meta('graduated')) : ?>					

@@ -29,13 +29,10 @@
 				<span class="icon-bar"></span>
 			</button>
 			<nav id="nav-collapse" class="accordion-body collapse">
-				<?php wp_nav_menu(array('theme_location' => 'mobile_navigation', 
-/*
-							'menu_class' => 'spannav navlist hidden-phone',
-							'menu_id' => 'toplinks-info',
-							'container' => '',
-*/
-							)); ?>
+				<form action="/" method="GET" id="search-mobile">
+					<input type="search" placeholder="Search..." name="s"></input>
+				</form>
+				<?php wp_nav_menu(array('theme_location' => 'mobile_navigation')); ?>
 			</nav>
 		</div>
 	</div><!-- end div.container -->
