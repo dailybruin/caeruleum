@@ -31,7 +31,7 @@
 				<div class="row">
 					<div class="span5" id="front-primarycol">
 						<div id="topcontent-rotator">
-							<div id="topcontent-rotator-nav" class="hidden-phone">
+							<div id="topcontent-rotator-nav">
 								<ul id="rotate-controls">
 									<li id="rotate-label-1" class="rotate-current"><a href="#">1</a></li>
 									<li id="rotate-label-2"><a href="#">2</a></li>
@@ -85,6 +85,7 @@
 								</a>
 								<?php endforeach; ?>
 							</div><!-- end div#multimedia-item-2 -->
+							<span style="width:100%;display:block;clear:both;"></span>
 						</div><!-- end div#front-multimedia -->
 					</div><!-- end div.span5 -->
 					<div class="span3" id="front-secondarycol">
@@ -350,6 +351,7 @@
 							 <img src="http://placehold.it/250x180" />
 							 <p>In the 1960s and 1970s, the UCLA Gender Identity Research Clinic studied children and adults who identified as a gender different than their biological sex, and provided therapy when sought out.</p>
 							 <a href="#" class="featuredlink">Read the story, watch videos, and More&nbsp;&raquo;</a>
+							 <span style="display:block;width:100%;clear:both"></span>
 						</div>
 					</div><!-- end div#featuredProject -->
 				</div><!-- end div.row -->

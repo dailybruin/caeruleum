@@ -1906,7 +1906,8 @@ a.page-numbers:hover {
 		clear:both;
 	}
 	.headline-a {
-		font-size:1.8em;
+		font-size: 22px;
+		line-height: 24px;
 	}
 	.headline-b {
 		font-size: 21px;
@@ -1954,7 +1955,45 @@ a.page-numbers:hover {
 	#side-ad {
 		border:none;
 	}
-
+	.multimedia-item {
+		width: 47%;
+		text-align: center;
+	}
+	#front-multimedia {
+		border-bottom: 1px solid #ADADAD;
+		padding-bottom: 8px;
+	}
+	.section-cover {
+		width: 100px;
+		float: right;
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	.front-section-main .headline-d.hidden-desktop {
+		display:block !important;
+	}
+	.section-list {
+		border-top: 1px solid #ADADAD;
+		padding-top: 7px;
+	}
+	.sections {
+		display:none;
+	}
+	#featuredProject img {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	span.copyright {
+		margin-top: 38px;
+	}
+	.section-cover-opinion {
+		max-width: 200px;
+	}
+	.longstoryshort > img {
+		max-width: 126px;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
