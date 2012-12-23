@@ -7,6 +7,7 @@
 				'hierarchical' => false,
 				'title_li' => ''
 			)); ?>
+		<?php get_template_part('ad','tower'); ?>
 	</div><!-- end div#classified-categories -->
 
 	<div class="span6" id="classified-ads">
@@ -43,9 +44,9 @@
 		    <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		    	<?php $customFields = get_post_custom(); ?>
 				<div class="row entry-content">
-					<div class="span6 post-content">
+					<div class="span6">
 						<?php the_content(); ?>
-					</div><!-- end div.post-content -->
+					</div><!-- end div.span6 -->
 		
 				</div><!-- end div.entry-content -->
 		    </article>

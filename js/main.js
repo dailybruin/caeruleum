@@ -135,6 +135,7 @@ $(document).ready(function() {
 	ads['square_2'] = $('#side-ad-low1').text();
 	ads['square_3'] = $('#side-ad-low2').text();
 	ads['house'] = $('#ad-house').text();
+	ads['tower'] = $('#ad-tower').text();
 
 
 	function responsive()
@@ -148,6 +149,7 @@ $(document).ready(function() {
 			$('#side-ad-low2').html(ads['square_3']);
 			$('#ad-house').html(ads['house']);
 			$('#banner-bottom').html(ads['banner_large']);
+			$('#ad-tower').html(ads['tower']);
 		}
 		// All mobile sizes
 		if($(window).width() < 980) {
@@ -157,6 +159,7 @@ $(document).ready(function() {
 			$('#side-ad-low1').html('');
 			$('#side-ad-low2').html('');
 			$('#ad-house').html('');
+			$('#ad-tower').html('');
 		}
 	
 	
@@ -171,6 +174,8 @@ $(document).ready(function() {
 			$('#ad-banner-large-tablet').html(ads['banner_large']);
 			if($('#banner-bottom').html() == '')
 				$('#banner-bottom').html(ads['banner_large']);
+			if($('#ad-tower').html() == '')
+				$('#ad-tower').html(ads['tower']);
 		
 			$('#nameplate-date').removeClass('offset1').removeClass('span2').addClass('span3');
 			$('#toplinks-info').removeClass('span6').addClass('span8');
