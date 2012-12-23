@@ -9,25 +9,42 @@
 	
 		<div class="row">
 			<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
-						'menu_class' => 'spannav navlist',
+						'menu_class' => 'spannav navlist hidden-phone',
 						'menu_id' => 'toplinks-info',
 						'container' => '',
 						)); ?>
 			<div class="spanbanner visible-desktop">
 				<?php get_template_part('ad','banner'); ?>
 			</div><!-- end ad div (span8) -->
-			<div class="spandate">
+			<div class="spandate hidden-phone">
 				<span id="date-month"><?php echo date('F'); ?></span><br />
 				<span id="date-day"><?php echo date('j'); ?></span>
 			</div>
 		</div><!-- end div.row (header row) -->
+		<div class="row visible-phone mobile-nav">
+			<img id="nameplate-mobile" src="/img/nameplate-mobile.png" />
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<nav id="nav-collapse" class="accordion-body collapse">
+				<?php wp_nav_menu(array('theme_location' => 'mobile_navigation', 
+/*
+							'menu_class' => 'spannav navlist hidden-phone',
+							'menu_id' => 'toplinks-info',
+							'container' => '',
+*/
+							)); ?>
+			</nav>
+		</div>
 	</div><!-- end div.container -->
 </header>
 
 <nav class="container" id="nav-nameplate">
 	<div class="row">
 		<div class="span12" id="nameplate">
-			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" /></a>
+			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" class="hidden-phone" /></a>
 		</div>
 	</div><!-- end div.row -->
 </nav>
