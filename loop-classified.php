@@ -18,7 +18,7 @@
 		</div>	
 			<?php
 			$args = array(
-				'post_type' => 'db_classified',
+				'post_type' => 'classifieds',
 				'featured' => 'Featured',
 				'post_status' => 'publish'
 			);
@@ -34,7 +34,7 @@
 		<?php // CATEGORIES ?>
 		<?php else : ?>
 		<div class="page-header">
-			<h2><a href="http://dailybruin.com/db_classified/">Daily Bruin Classified Ads</a></h2>
+			<h2><a href="/classifieds/">Daily Bruin Classified Ads</a></h2>
 			<h3><?php wp_title(''); ?></h3>
 		</div>
 

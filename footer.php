@@ -1,3 +1,4 @@
+	<span style="width:100%;display:block;clear:both;"></span>
 	<div class="container hidden-phone">
 	<hr />
 	<div class="row">

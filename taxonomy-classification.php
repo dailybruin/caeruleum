@@ -1,1 +1,1 @@
-<?php get_template_part('archive','db_classified'); ?>
+<?php get_template_part('archive','classifieds'); ?>
