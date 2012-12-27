@@ -1857,6 +1857,14 @@ a.page-numbers:hover {
 	margin-top: 15px;
 }
 
+.post-content {
+	position:relative;
+}
+.post-content > div.entry-content-asset > iframe {
+	width: 100% !important;
+	height: 348px !important;
+}
+
 
 /* =============================================================================
    WordPress Generated Classes
@@ -1908,7 +1916,10 @@ a.page-numbers:hover {
 	    float: none;
 	    margin: 0 auto;
 	}
-
+	.post-content > div.entry-content-asset > iframe {
+		width: 100% !important;
+		height: 300px !important;
+	}
 }
 
 /* Landscape phone to portrait tablet */
