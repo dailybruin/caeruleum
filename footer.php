@@ -34,7 +34,7 @@
     <!-- DB FOOTER -->
     <?php 
     	$news_cat = get_category_by_slug('news')->term_id;
-    	$ae_cat = get_category_by_slug('ae')->term_id;
+    	$ae_cat = get_category_by_slug('arts-entertainment')->term_id;
     	$sports_cat = get_category_by_slug('sports')->term_id;
     	$opinion_cat = get_category_by_slug('opinion')->term_id;
     	$blogs_cat = get_category_by_slug('blogs')->term_id;

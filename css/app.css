@@ -920,6 +920,11 @@ footer {
 
 .footer-links h3 {
 }
+.footer-links li {
+	line-height: 14px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
 
 .footer-links h3 {
 	font-family: "Georgia";
