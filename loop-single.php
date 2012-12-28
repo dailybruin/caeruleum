@@ -104,7 +104,8 @@
 				<?php if($displayAuthor): ?>
 					<?php // Find out if the user has a thumbnail
 					ob_start();
-					userphoto_the_author_thumbnail();
+					if(function_exists(userphoto_the_author_thumbnail))
+						userphoto_the_author_thumbnail();
 					$thumbnail = ob_get_contents();
 					$thumbnail_class = "";
 					if(!isset($thumbnail) || $thumbnail == "")
