@@ -90,6 +90,7 @@ class Facebook_Recommends extends WP_Widget {
 
 	function __construct() {
 		$widget_ops = array('classname' => 'widget_fb_recommend', 'description' => __('Facebook recommend box'));
+		$control_ops = array();
 		parent::__construct('fb_recommend', __('Facebook recommend box'), $widget_ops, $control_ops);
 	}
 

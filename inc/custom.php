@@ -14,7 +14,10 @@ function the_headline()
 {
 	global $post;
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
-	$articleFormat = $articleFormats[0]->slug;
+	if(isset($articleFormats[0]))
+		$articleFormat = $articleFormats[0]->slug;
+	else
+		$articleFormat = "";
 
 	$headline = apply_filters('the_title',$post->post_title);
 
@@ -95,7 +98,10 @@ function the_byline($displayBy=true) {
 	$authordata = get_userdata($authorid);
 	
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
-	$articleFormat = $articleFormats[0]->slug;
+	if(isset($articleFormats[0]))
+		$articleFormat = $articleFormats[0]->slug;
+	else
+		$articleFormat = "";
 
 	// Code modified from WordPress core, wp-includes/author-template.php
     if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief" )
@@ -230,7 +236,8 @@ function dequeue_polls_style() {
 add_action('wp_head', 'remove_wpp_stylesheet', 1); 
 function remove_wpp_stylesheet() { 
 	global $wp_widget_factory; 
-	remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') ); 
+	if(isset($wp_widget_factory->widgets['WordPressPopularPosts']))
+		remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') ); 
 }
 
 
