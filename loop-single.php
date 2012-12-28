@@ -64,7 +64,10 @@
 			</div><!-- end div.post-extra -->
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<div class="span6 post-content">
-				<?php the_audio(); ?>
+				<?php 
+					if(function_exists('the_audio'))
+						the_audio();
+				?>
 				<div class="span2 post-extra hidden-desktop">
 					<ul id="post-extra-actions">
 						<li><a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">Tweet <i class="ticon-twitter"</a></i></li>
