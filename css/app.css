@@ -1084,11 +1084,17 @@ span.copyright {
     float: left;
     margin: 0 10px 10px 0;
     clear:left;
+    max-width:300px;
+    max-height:300px;
 }
 #post-listing > article {
     overflow: hidden;
     border-bottom: 1px solid #ADADAD;
     margin-bottom:7px;
+}
+.attachment-db-category-full {
+	max-width:640px;
+	max-height:480px;
 }
 
 /* ===== Audio player ========================================================
