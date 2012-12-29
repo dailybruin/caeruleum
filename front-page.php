@@ -111,7 +111,7 @@
 							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 						<article>
 							<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_headline(); ?></h1></a>
-							<?php the_byline(); ?>
+							<?php the_byline(false); ?>
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
 							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<span style="display:block;clear:both" />
