@@ -7,6 +7,11 @@
 	// db-story-d2, db-story-d3, db-story-ns, db-story-op, db-story-ae,
 	// db-story-sp
 	$frontPageTags = array('15','16','17','18','19','20','25','26','27','158','159','160','161','162','163','164');
+		
+	$news_cat = get_category_by_slug('news')->term_id;
+	$ae_cat = get_category_by_slug('arts-entertainment')->term_id;
+	$sports_cat = get_category_by_slug('sports')->term_id;
+	$opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
 
 	<div class="container">		
@@ -216,7 +221,7 @@
 							<div class="span3 front-section-more">
 								<ul class="section-list large-section-list">
 								<?php
-									$args = array( 'numberposts' => 4, 'cat' => 5, 'tag__not_in' => $frontPageTags );
+									$args = array( 'numberposts' => 4, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
 									$lastposts = get_posts( $args );
 									foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 									<li><a href="<?php the_permalink(); ?>">
@@ -255,7 +260,7 @@
 							<div class="span3 front-section-more">
 								<ul class="section-list large-section-list">
 								<?php
-									$args = array( 'numberposts' => 4, 'cat' => 6, 'tag__not_in' => $frontPageTags );
+									$args = array( 'numberposts' => 4, 'cat' => $sports_cat, 'tag__not_in' => $frontPageTags );
 									$lastposts = get_posts( $args );
 									foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 									<li><a href="<?php the_permalink(); ?>">
@@ -291,7 +296,7 @@
 						<div class="front-section-more">
 							<ul class="section-list small-section-list">
 							<?php
-								$args = array( 'numberposts' => 2, 'cat' => 8, 'tag__not_in' => $frontPageTags );
+								$args = array( 'numberposts' => 2, 'cat' => $ae_cat, 'tag__not_in' => $frontPageTags );
 								$lastposts = get_posts( $args );
 								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 								<li><a href="<?php the_permalink(); ?>">
@@ -326,7 +331,7 @@
 						<div class="front-section-more">
 							<ul class="section-list small-section-list">
 							<?php
-								$args = array( 'numberposts' => 3, 'cat' => 7, 'tag__not_in' => $frontPageTags );
+								$args = array( 'numberposts' => 3, 'cat' => $opinion_cat, 'tag__not_in' => $frontPageTags );
 								$lastposts = get_posts( $args );
 								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 								<li><a href="<?php the_permalink(); ?>">
