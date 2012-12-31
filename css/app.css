@@ -87,6 +87,7 @@ a.[class*=" headline-"]:hover {
 	font-weight: bold;
 	font-size: 1.8em;
 	line-height: 1.1em;
+    margin-top:2px;
 }
  
 .headline-b {
@@ -94,12 +95,14 @@ a.[class*=" headline-"]:hover {
 	font-weight:bold;
 	font-size: 1.5em;
 	line-height: 1.1em;
+    margin-top:2px;
 }
 
 .headline-c {
     font-size: 1.3em;
     font-weight: bold;
     line-height: 1.2em;
+    margin-top:2px;
 }
 
 .headline-d {
@@ -1622,6 +1625,7 @@ ul.phone-nav > li.active a {
 .story-info {
 	display: block;
 	font-size: 0.8em;
+	clear:both;
 }
 .story-info-category {
 	font-weight:bold;
