@@ -212,9 +212,9 @@
 								<a href="<?php the_permalink(); ?>">
 									<span class="headline-d hidden-desktop"><?php the_headline(); ?></span>
 									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
-									<span class="headline-d visible-desktop"><?php the_headline(); ?></span>
+									<span class="headline-d visible-desktop"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
+
 								</a>
-								<?php the_byline(false); ?>
 								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 								<?php endforeach; ?>
 							</div><!-- end div.front-section-main -->
@@ -251,9 +251,8 @@
 								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 								<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
-									<span class="headline-d"><?php the_headline(); ?></span>
+									<span class="headline-d"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
 								</a>
-								<?php the_byline(false); ?>
 								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 								<?php endforeach; ?>
 							</div><!-- end div.front-section-main -->
@@ -287,9 +286,8 @@
 							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('db-section-cover-small', array('class'=>'section-cover-small')); ?>
-								<span class="headline-d"><?php the_headline(); ?></span>
+								<span class="headline-d"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
 							</a>
-							<?php the_byline(false); ?>
 							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<?php endforeach; ?>
 						</div><!--end div.front-section-main -->
@@ -321,9 +319,8 @@
 							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('db-section-cover-opinion', array('class'=>'section-cover-opinion')); ?>
-								<span class="headline-d"><?php the_headline(); ?></span>
+								<span class="headline-d"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
 							</a>
-							<?php the_byline(false); ?>
 							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
 							<?php endforeach; ?>
 						</div><!--end div.front-section-main -->

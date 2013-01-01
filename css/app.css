@@ -1627,6 +1627,9 @@ ul.phone-nav > li.active a {
 	font-size: 0.8em;
 	clear:both;
 }
+.story-time {
+	font-size: 0.8em;
+}
 .story-info-category {
 	font-weight:bold;
 	color:#333;
@@ -2060,6 +2063,11 @@ a.page-numbers:hover {
 	#post-extra-actions {
 	    border: none;
 	}
+	.section-date {
+		margin-top: -5px;
+		display: block;
+		padding-left:0;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -2199,6 +2207,11 @@ a.page-numbers:hover {
 	.subhead {
 	    font-size: 1em;
 	    line-height: 1em;
+	}
+	.section-date {
+		margin-top: -5px;
+		display: block;
+		padding-left:0;
 	}
 }
 
