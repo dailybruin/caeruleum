@@ -62,11 +62,11 @@
 						</div><!-- end div#topcontent-rotator -->
 						<hr />
 						<div id="front-multimedia">
-							<a href="#"><h3>Multimedia &raquo;</h3></a>
+							<a href="/category/multimedia/"><h3>Multimedia &raquo;</h3></a>
 							<ul class="sections">
-								<li><a href="#">Photos</a></li>
-								<li><a href="#">Videos</a></li>
-								<li><a href="#">Radio</a></li>
+								<li><a href="/category/multimedia/photo-galleries/">Photos</a></li>
+								<li><a href="/category/multimedia/video/">Videos</a></li>
+								<li><a href="/category/multimedia/radio/">Radio</a></li>
 							</ul>
 							<div class="multimedia-item" id="multimedia-item-1">
 								<?php
@@ -197,11 +197,11 @@
 				<div class="row">
 					<div class="span8 front-section" id="front-news">
 						<hr />
-						<a href="#"><h3>News &raquo;</h3></a>
+						<a href="/category/news/"><h3>News &raquo;</h3></a>
 						<ul class="sections">
-							<li><a href="#">Student gov</a></li>
-							<li><a href="#">Campus</a></li>
-							<li><a href="#">Crime</a></li>
+							<li><a href="/category/news/student-government/">Student gov</a></li>
+							<li><a href="/category/news/campus/">Campus</a></li>
+							<li><a href="/category/news/crime/">Crime</a></li>
 						</ul>
 						<div class="row front-section-content clearfix">
 							<div class="span5 front-section-main">
@@ -237,11 +237,11 @@
 										
 					<div class="span8 front-section" id="front-sports">
 						<hr />
-						<a href="#"><h3>Sports &raquo;</h3></a>
+						<a href="/category/sports/"><h3>Sports &raquo;</h3></a>
 						<ul class="sections">
-							<li><a href="#">Football</a></li>
-							<li><a href="#">Men's Basketball</a></li>
-							<li><a href="#">Women's Basketball</a></li>
+							<li><a href="/category/sports/football/">Football</a></li>
+							<li><a href="/category/sports/mens-basketball/">Men's Basketball</a></li>
+							<li><a href="/category/sports/womens-basketball/">Women's Basketball</a></li>
 						</ul>
 						<div class="row front-section-content clearfix">
 							<div class="span5 front-section-main">
@@ -275,9 +275,9 @@
 					
 					<div class="span4 front-section" id="front-ae">
 						<hr />
-						<a href="#"><h3>A&E &raquo;</h3></a>
+						<a href="/category/arts-entertainment/"><h3>A&E &raquo;</h3></a>
 						<ul class="sections">
-							<li><a href="#">All A&E stories</a></li>
+							<li><a href="/category/arts-entertainment/">All A&E stories</a></li>
 						</ul>
 						<div class="clearfix front-section-main">
 							<?php
@@ -308,9 +308,9 @@
 					</div><!-- end div#front-ae -->
 					<div class="span4 front-section" id="front-opinion">
 						<hr />
-						<a href="#"><h3>Opinion &raquo;</h3></a>
+						<a href="/category/opinion/"><h3>Opinion &raquo;</h3></a>
 						<ul class="sections">
-							<li><a href="#">All opinion stories</a></li>
+							<li><a href="/category/opinion">All opinion stories</a></li>
 						</ul>
 						<div class="clearfix front-section-main">
 							<?php
