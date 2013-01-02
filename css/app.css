@@ -1948,6 +1948,46 @@ a.page-numbers:hover {
 	text-align: center;
 }
 
+/* ======= HOUSE AD ======= */
+.housead-survey {				
+    text-align: center;
+    background-color: #333;
+    display: block;
+    border-radius: 3px;
+    top: 0;
+    padding-top: 11px;
+    margin-top: 2px;
+    box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.6);
+	border: 1px solid #666;
+}
+.housead-survey:hover {
+	background-color:#555;
+	text-decoration:none;
+}
+.housead-survey > h4 {
+    color: #fefefe;
+    font-style: italic;
+    font-family: "Georgia",serif;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 1px rgba(0,0,0,1);
+}
+.housead-survey > span {				
+    color: #ddd;
+    margin-top: 2px;
+    display: block;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px rgba(0,0,0,1);
+}
+@media (min-width: 1200px) { 
+	.housead-survey {				
+		width:680px;
+	}
+}
+
 
 /* =============================================================================
    WordPress Generated Classes
