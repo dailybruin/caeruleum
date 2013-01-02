@@ -1120,6 +1120,13 @@ span.copyright {
 
 /* PLAYER
  --------------*/
+.now-playing {
+	color:#F6F6F6;
+}
+.now-playing > span {
+	color:#333;
+}
+ 
 .jp-player {width: 0; height: 0} 
 .list-playlist .jp-playlist-player {margin-bottom: 20px}
 .jp-interface {position: relative; display: block; width: 100%; height: 50px}
