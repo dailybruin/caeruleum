@@ -24,6 +24,7 @@
 	</div><!-- end div#paidadvertising -->
 	</div><!-- end div.container -->
 
+					<a href="#" id="backtotop">Top &uarr;</a>
 
 
 	</div><!-- /#wrap -->

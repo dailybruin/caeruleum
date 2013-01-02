@@ -2,6 +2,22 @@
 	Byron Lutz
 */
 
+/***** BACK TO TOP BUTTON *****/
+$(document).ready(function() {
+	$('#backtotop').click(function(e) {
+		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "fast");
+	});
+	$('#backtotop').hide();
+	$(window).scroll(function() {
+		if($(window).width() > 767) {
+			if($(window).scrollTop() >= 600)
+				$('#backtotop').fadeIn();
+			else
+				$('#backtotop').fadeOut();
+		}
+	});
+});
 
 /***** ENABLE DONATE BUTTON *****/
 $(document).ready(function() {
