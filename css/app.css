@@ -1113,9 +1113,8 @@ span.copyright {
     margin-bottom:7px;
 }
 .attachment-db-category-full {
-	max-width:640px;
 	max-height:480px;
-	width:100%;
+	max-width:100% !important;
 }
 
 /* ===== Audio player ========================================================
@@ -1622,6 +1621,10 @@ ul.phone-nav > li.active a {
 #front-multimedia > a > h3:hover, .front-section > a > h3:hover {
 	text-decoration:underline;
 }
+.front-section > a {
+	margin-top: 3px;
+	display: inline-block;
+}
 
 .sections {
     list-style: none;
@@ -1743,6 +1746,8 @@ ul.phone-nav > li.active a {
 	display:block;
 	float:left;
 	margin:0;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 #featuredProject .sections > li > a:hover {
 	color:white;
