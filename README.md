@@ -1,12 +1,4 @@
 # Gryphondor Wordpress theme
-## Timeline
-The theme is only currently a group of html/css files that will eventually be ported into Wordpress. Because the theme is so massive, this seems to be the easiest way to go about making it. Here's the plan:
-
-* HTML scaffolding for front page [complete]
-* Add in CSS and images [complete]
-* Work with the responsive-ness of the site (and make it work) [complete]
-* Convert it into a Wordpress theme _[in progress]_
-
 ## Notes and todo
 The icons included in the theme are from the [Social Media Bookmark Icon Set](http://www.nouveller.com/general/free-social-media-bookmark-icon-pack-the-ever-growing-icon-set/), but those icons are outdated and do not necessarily fit our needs. (The twitter icon, for example, is their old logo.) This icon set will be replaced towards the release of this theme or on a second release.
 
