@@ -1629,6 +1629,9 @@ ul.phone-nav > li.active a {
 	font-size: 0.8em;
 	clear:both;
 }
+.topcontent-rotator-content .story-info {
+	clear:both;
+}
 .story-time {
 	font-size: 0.8em;
 }
