@@ -1991,7 +1991,9 @@ a.page-numbers:hover {
 		width: 100% !important;
 		height: 300px !important;
 	}
-
+	.f-title {
+		font-size:6em;
+	}
 }
 
 /* Landscape phone to portrait tablet */
