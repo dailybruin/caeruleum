@@ -1606,7 +1606,7 @@ ul.phone-nav > li.active a {
     float: right;
     margin: 0;
     padding: 0;
-    margin-top:5px;
+    margin-top:-1px;
 }
 .sections > li {
 	display:block;
