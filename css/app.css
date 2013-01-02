@@ -1897,6 +1897,40 @@ a.page-numbers:hover {
 	height: 383px !important;
 }
 
+/* ====== 404 ===== */
+.f-title {
+	display: block;
+	font-weight: bold;
+	font-size: 8em;
+	text-align: center;
+	line-height: 1.4em;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.f-desc {
+    display: block;
+    text-align: center;
+    font-family: Georgia,serif;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.f-verbose {
+	font-family: Georgia,serif;
+	display: block;
+	text-align: center;
+	font-size: 0.9em;
+	opacity: 0.6;
+}
+.fourohfour > p {
+	width: 90%;
+	margin-top: 31px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.f-search {
+	text-align: center;
+}
 
 
 /* =============================================================================
