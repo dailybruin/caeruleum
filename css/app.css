@@ -43,6 +43,7 @@ h3 {
 	color: #333;
 	text-transform: uppercase;
 	font-size: 1.4em;
+	line-height: 1.2em;
 }
 
 img.ad {
@@ -1098,6 +1099,7 @@ span.copyright {
 .attachment-db-category-full {
 	max-width:640px;
 	max-height:480px;
+	width:100%;
 }
 
 /* ===== Audio player ========================================================
@@ -1880,6 +1882,11 @@ a.page-numbers:hover {
 	width: 100% !important;
 	height: 348px !important;
 }
+.video-story > div.entry-content-asset > iframe {
+	width: 100% !important;
+	height: 383px !important;
+}
+
 
 
 /* =============================================================================
@@ -1936,6 +1943,11 @@ a.page-numbers:hover {
 		width: 100% !important;
 		height: 300px !important;
 	}
+	.video-story > div.entry-content-asset > iframe {
+		width: 100% !important;
+		height: 300px !important;
+	}
+
 }
 
 /* Landscape phone to portrait tablet */

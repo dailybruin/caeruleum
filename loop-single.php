@@ -27,6 +27,21 @@
         	case "Timestamp":
         		the_blog_banner('timestamp');
         		break(2);
+        	case "Video":
+        		$videoStory = true;
+        		break(2);
+		}
+	}
+	// Find out if this is a video story
+	// Expand this to do something better for multimedia/gallery display
+	$video_story = false;
+	foreach(get_the_category() as $cat)
+	{
+		switch($cat->name)
+		{
+        	case "Video":
+        		$video_story = true;
+        		break(2);
 		}
 	}
 	?>
@@ -39,10 +54,15 @@
 			if(isset($subhead) && $subhead[0] != ''): ?>
 			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
 		<?php endif; ?>
-		<?php if(has_post_thumbnail()) : ?>
+		<?php if(has_post_thumbnail() && !$video_story) : ?>
 			<?php the_post_thumbnail('db-category-full'); ?>
 			<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
 			<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
+		<?php endif; ?>
+		<?php if($video_story): ?>
+			<div class="video-story">
+				<?php the_content(); ?>
+			</div><!-- end div.video-story -->
 		<?php endif; ?>
 		<div class="infobar">
 			<span class="infobar-day"><i class="ticon-calendar ticon-white"></i> <?php the_time('F n, Y'); ?></span>
@@ -84,7 +104,7 @@
 						<?php echo $customFields['db_infobox'][0]; ?>
 					</div>
 				<?php endif; ?>
-				<?php the_content(); ?>
+				<?php if(!$video_story) { the_content(); } ?>
 
 			</div><!-- end div.post-content -->
 
