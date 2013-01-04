@@ -121,7 +121,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					<div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
 				</div><!-- end div.sm -->
-				<?php if($displayAuthor): ?>
+				<?php if($displayAuthor && 0): ?>
 					<?php // Find out if the user has a thumbnail
 					ob_start();
 					if(function_exists('userphoto_the_author_thumbnail'))
