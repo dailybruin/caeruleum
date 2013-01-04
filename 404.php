@@ -10,7 +10,6 @@
 			<div class="f-search">
 				<?php get_search_form(); ?>
 			</div><!-- end div.f-search -->
-			<?php if(function_exists('wbz404_suggestions')) {wbz404_suggestions();} ?>
 		</div><!-- end div.fourohfour -->
 	</div><!-- end div.span8 -->
 
