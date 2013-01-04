@@ -93,15 +93,21 @@ function title_italic_head($title)
 
 // Define a function to output bylines properly (and show/not show them)
 function the_byline($displayBy=true) {
-	global $post;
+	global $post, $authordata, $wpdb;
 	$authorid = $post->post_author;
-	$authordata = get_userdata($authorid);
-	
+		
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
 	if(isset($articleFormats[0]))
 		$articleFormat = $articleFormats[0]->slug;
 	else
 		$articleFormat = "";
+		
+	// Get coauthors
+	ob_start();
+	coauthors_posts_links();
+	$coauthors = ob_get_contents();
+	ob_end_clean();
+	
 
 	// Code modified from WordPress core, wp-includes/author-template.php
     if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief" )
@@ -109,12 +115,7 @@ function the_byline($displayBy=true) {
     $by = "By ";
     if(!$displayBy)
     	$by = "";
-    $link = sprintf(
-            '<span class="byline">'.$by.'<a href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-            get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
-            esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
-            get_the_author()
-    );
+    $link = '<span class="byline">'.$by.$coauthors.'</span>';
     echo apply_filters( 'the_byline', $link );
 }
 
