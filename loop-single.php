@@ -65,7 +65,7 @@
 			</div><!-- end div.video-story -->
 		<?php endif; ?>
 		<div class="infobar">
-			<span class="infobar-day"><i class="ticon-calendar ticon-white"></i> <?php the_time('F n, Y'); ?></span>
+			<span class="infobar-day"><i class="ticon-calendar ticon-white"></i> <?php the_time('F j, Y'); ?></span>
 			<span class="infobar-time"><i class="ticon-clock ticon-white"></i> <?php the_time('g:i a'); ?></span>
 			<span class="infobar-categories">More stories in <?php the_category(", "); ?></span>
 			<br style="clear:both" />
