@@ -119,7 +119,7 @@
 					?>
 					<li><a href="http://mojo.dailybruin.com">Mojo</a></li>
 					</ul>
-					<h3><a href="#">Classifieds</a></h3>					
+					<h3><a href="/classifieds/">Classifieds</a></h3>					
 				</div>
 				<div class="footer-links span4 about">
 					<h3>About</h3>
