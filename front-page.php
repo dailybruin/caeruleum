@@ -6,7 +6,7 @@
 	// db-story-c3, db-story-c4, db-story-m1, db-story-m2, db-story-d1,
 	// db-story-d2, db-story-d3, db-story-ns, db-story-op, db-story-ae,
 	// db-story-sp
-	$frontPageTags = array('15','16','17','18','19','20','25','26','27','158','159','160','161','162','163','164');
+	$frontPageTags = array('4847','4859','4850','4849','4851','4853','4855','4862','4863','4861','4854','4860','4856','4858','4857','4865');
 		
 	$news_cat = get_category_by_slug('news')->term_id;
 	$ae_cat = get_category_by_slug('arts-entertainment')->term_id;
