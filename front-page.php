@@ -345,14 +345,14 @@
 				<div class="row" id="featuredProject">
 					<div class="span8">
 						<div>
-							 <h3>Gay Conversion Therapy</h3>
+							 <h3>Gender Behavior Therapy</h3>
 							 <ul class="sections">
-							 	<li><a href="#">Previous features</a></li>
+							 	<li><a href="/features/">Previous features</a></li>
 							 </ul>
 							 <span style="display:block;width:100%;clear:both;"></span>
-							 <img src="http://placehold.it/250x180" />
+							 <img src="http://dailybruin.com/images/features/conversion-therapy/front-thumb.jpg" />
 							 <p>In the 1960s and 1970s, the UCLA Gender Identity Research Clinic studied children and adults who identified as a gender different than their biological sex, and provided therapy when sought out.</p>
-							 <a href="#" class="featuredlink">Read the story, watch videos, and More&nbsp;&raquo;</a>
+							 <a href="/features/conversion-therapy/" class="featuredlink">Read the story, watch videos, and more&nbsp;&raquo;</a>
 							 <span style="display:block;width:100%;clear:both"></span>
 						</div>
 					</div><!-- end div#featuredProject -->
