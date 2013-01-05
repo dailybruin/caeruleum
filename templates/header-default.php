@@ -17,6 +17,7 @@
 				<?php get_template_part('ad','banner'); ?>
 			</div><!-- end ad div (span8) -->
 			<div class="spandate hidden-phone">
+				<?php date_default_timezone_set('America/Los_Angeles'); ?>
 				<span id="date-month"><?php echo date('F'); ?></span><br />
 				<span id="date-day"><?php echo date('j'); ?></span>
 			</div>
