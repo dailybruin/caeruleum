@@ -156,8 +156,15 @@ $(document).ready(function() {
 
 	function responsive()
 	{
+		var windowWidth = $(window).innerWidth();
+		// Firefox uses a different width (includes scrollbar) for media queries
+		if($.browser['mozilla'] == true)
+		{
+			windowWidth = window.innerWidth;
+		}
+	
 		// All desktop sizes
-		if($(window).width() >= 980) {
+		if(windowWidth >= 980) {
 			$('#ad-banner-top').html(ads['banner_large']);
 			$('#ad-banner-small').html(ads['banner_small']);
 			$('#side-ad').html(ads['square_1']);
@@ -168,7 +175,7 @@ $(document).ready(function() {
 			$('#ad-tower').html(ads['tower']);
 		}
 		// All mobile sizes
-		if($(window).width() < 980) {
+		if(windowWidth < 980) {
 			$('#ad-banner-top').html('');
 			$('#ad-banner-small').html('');
 			$('#side-ad').html('');
@@ -180,12 +187,12 @@ $(document).ready(function() {
 	
 	
 		// Large screen
-		if($(window).width() >= 1200) {
+		if(windowWidth >= 1200) {
 			;
 		}		
 		
 		// Small screen (tablet)
-		if($(window).width() <= 979 && $(window).width() >= 768) {
+		if(windowWidth <= 979 && windowWidth >= 768) {
 			// ad code
 			$('#ad-banner-large-tablet').html(ads['banner_large']);
 			if($('#banner-bottom').html() == '')
@@ -199,7 +206,7 @@ $(document).ready(function() {
 		}
 		
 		// Phone (Horizontal & Vertical) 
-		if($(window).width() <= 767) {
+		if(windowWidth <= 767) {
 			// ad code
 			$('#banner-bottom').html('');
 			
