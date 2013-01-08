@@ -1908,6 +1908,7 @@ a.page-numbers:hover {
 
 .post-content {
 	position:relative;
+	font-family: "Georgia",serif;
 }
 .post-content > div.entry-content-asset > iframe {
 	width: 100% !important;
