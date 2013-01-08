@@ -1910,14 +1910,12 @@ a.page-numbers:hover {
 	position:relative;
 	font-family: "Georgia",serif;
 }
-.post-content > div.entry-content-asset > iframe {
-	width: 100% !important;
-	height: 348px !important;
+
+/* Resize YouTube videos */
+.entry-content-asset > iframe {
+	width: 100%;
 }
-.video-story > div.entry-content-asset > iframe {
-	width: 100% !important;
-	height: 383px !important;
-}
+
 
 /* ====== 404 ===== */
 .f-title {
