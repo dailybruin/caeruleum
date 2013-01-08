@@ -11,7 +11,7 @@ add_theme_support('bootstrap-top-navbar');  // Enable Bootstrap's fixed navbar
 add_theme_support( 'post-thumbnails' );		// Enable post thumbnails
 
 // Set the content width based on the theme's design and stylesheet
-if (!isset($content_width)) { $content_width = 940; }
+if (!isset($content_width)) { $content_width = 620; }
 
 define('POST_EXCERPT_LENGTH',       40);
 define('WRAP_CLASSES',              'container');
