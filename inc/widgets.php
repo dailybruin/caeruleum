@@ -97,7 +97,7 @@ class Facebook_Recommends extends WP_Widget {
 	function widget( $args, $instance ) {
 	?>
 		<li class="sidebar-clean">
-			<div class="fb-recommendations" data-site="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>"  data-height="300" data-header="true"></div>
+			<div class="fb-recommendations" data-site="dailybruin.com"  data-height="300" data-header="true"></div>
 		</li><!-- end li.sidebar-clean -->
 	<?php
 	}
