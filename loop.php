@@ -23,7 +23,7 @@
     	<?php endif; ?>
 
       <div class="articlelist-head">
-      	<span class="story-info"><span class="story-info-category"><?php the_category(', ');?></span> | <?php the_time('F n, Y'); ?></span>
+      	<span class="story-info"><span class="story-info-category"><?php the_category(', ');?></span> | <?php the_time('F j, Y'); ?></span>
         <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
       </div><!-- end div.article-head -->
       <div class="entry-content">
