@@ -1,5 +1,6 @@
 <?php /* Start loop */ ?>
 <?php while (have_posts()) : the_post(); ?>
+
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
       <div id="post-top">

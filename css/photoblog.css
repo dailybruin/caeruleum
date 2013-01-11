@@ -1,0 +1,254 @@
+/* ALSO ADDED A FUNCTION TO CUSTOM in INC!! ALSO DON'T FORGET THAT NGGALLERY FOLDER ADDED*/
+/*WHERE TO PROPERLY PUT JS LINK AND STUFF*/
+/*ADDED MARGIN-LEFT/RIGHT AUTO TO GALLERYVIEW CSS FOR BEAUTY...ALSO SCREWED AROUND WITH THE FOLLOWING DEfAULTS: panel_width: 1000; 
+panel_height: 500; enable_overlay=true; around line 920 in js: overlayVisible: true; added click event for overlay and unbind!, hide the caption
+when caption is up, took out title, added in a left/right key navigation, added next nav when clicking picture */
+
+
+.page-header h1{
+	color: white;
+	font-family: 'Palatino Linotype';
+	font-size: 50px;
+	font-weight: normal;
+	opacity: 1.0;
+	text-align: center;
+}
+.page-header h2{
+	color: #999999;
+	font-family: 'Palatino Linotype';
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	opacity: 1.0;
+	text-align: center;
+}
+/*
+.category-photoblog, .category-adventures-with-sid,
+.category-features, .category-week-in-sports,
+.category-back-to-the-future, .category-humans-in-westwood{
+	background-color: #202020;
+}*/
+
+body {
+	background-color: #202020 !important;
+}
+
+
+header {
+	background-color: #FFFFFF !important;
+}
+.photoblog-header-dashes {
+	color: #FFCC33;
+}
+
+/*THE POSTS*/
+
+#photoblog-post-block {
+	border: solid;
+	border-color: #303030;
+	border-radius: 5px;
+	color: #BBBBBB;
+	font-family: 'Palatino Linotype';
+	height: auto;
+	margin-bottom: 20px;
+	text-align: left;
+}
+#photoblog-post-block h1 {
+	color: #FFFFFF;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#photoblog-post-image {
+
+	border: solid;
+	border-color: #606060;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	width: 95%;
+}
+.photoblog-text {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 95%;
+}
+.photoblog-text a, .photblog-text a:visited {
+	color: #FFFFFF;
+}
+.photoblog-text a:hover {
+	/*text-decoration: none;*/
+}
+.photoblog-text p {
+	line-height: 20px;
+}
+#photoblog-post-author {
+	font-style: italic;
+}
+/*THE SIDEBAR*/
+#sidebar-inside {
+	border-left: none;
+
+}
+#sidebar-inside > div, #sidebar-inside > section {
+	border-bottom: none;
+}
+#sidebar-inside > div {
+
+}
+#sidebar-menu{
+	background-color: #101010;
+	border-color: #707070;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1.5px;
+	height: 400px;
+	width: 60%;
+	margin-left: 10% !important;
+    margin-top: 5%;
+}
+.sidebar-tab {
+	
+
+	margin-left: -5%;
+	margin-top: 20px;
+	width: 100%;
+	height: 30px;
+	
+}
+.sidebar-tab:hover {
+	background-color: #505050;
+	border-color: #909090;
+	border-radius: 5px;
+	border-style: double;
+	border-width: 1px;
+	cursor: pointer;
+	height: 40px;
+	margin-top: 8px;
+	margin-left: -8.25%;
+	width: 107.5%;
+}
+#all-stories-tab:hover {
+	background-color: #705000;
+	
+}
+#adventures-tab:hover {
+	background-color: #006090;
+}
+#back-to-tab:hover {
+	background-color: #000050;
+}
+#humans-of-tab:hover {
+	background-color: #300030;
+}
+#week-in-tab:hover { 
+	background-color: #800000;
+}
+#features-tab:hover {
+	background-color: #306028;
+}
+.sidebar-tab-text {
+	color: #AAAAAA;
+
+	display: block;
+	font-family: 'Arial';
+	font-size: 16px;
+
+	line-height: 30px;
+	text-decoration: none;
+	text-indent: 20px;
+	width: 100%;
+	height: 35px;
+	
+}
+.sidebar-tab-text:visited {
+	color: #909090;
+}
+.sidebar-tab-text:hover {
+	color: #FFFFFF;
+	height: 125%;
+	margin-left: 0px;
+
+	width: 102.5%;
+	font-size: 125%;
+	line-height: 250%;
+	text-decoration: none;
+}
+#sidebar-linebreak {
+	
+	margin-top: 20px;
+	height: 1px;
+	width: 90%;
+}
+#sidebar-about-link {
+	color: #999999;
+	font-family: "Palatino Linotype";
+	font-size: 14px;
+	font-style: italic;
+	line-height:10px;
+	margin-left: 20%;
+}
+#sidebar-about-link:hover {
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+
+/*NEXTGEN GALLERY CSS TEMP SOLUTION*/
+
+.ngg-singlepic {
+	background-color: #FFFFFF;
+	
+	padding: 0px;
+	width: 100%;
+}
+
+.ngg-imagebrowser img{
+	padding: 0px;
+}
+.ngg-slideshow {
+	width: 100% !important;
+}
+.ngg-slideshow img{
+	padding: 0px;
+	width: 100% !important;
+}
+
+
+/*GALLERY PAGE*/
+#pb-gallery-block {/*
+	border: solid;
+	border-color: #303030;
+	border-radius: 5px;
+	*/
+	color: #BBBBBB;
+	font-family: 'Palatino Linotype';
+	height: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 90%;
+}
+#pb-gallery-image {
+	/*
+	border: solid;
+	border-color: #606060;
+	*/
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	width: 100%;
+}
+
+/*GALLERYVIEW OVERWRITES/ADDITIONS */
+.gv_galleryWrap { 
+	margin-left: auto;
+	margin-right: auto;
+}
+.gv_overlay {
+	cursor: pointer;
+	opacity: .7;
+}

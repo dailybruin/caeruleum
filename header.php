@@ -11,6 +11,8 @@
   <?php if (current_theme_supports('bootstrap-responsive')) { ?><meta name="viewport" content="width=device-width, initial-scale=1.0"><?php } ?>
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.5.3.min.js"></script>
+  
+
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
@@ -21,7 +23,22 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
 
+<!--Need to find proper place to put this!-->
+  <!--script src="/galleryview/js/jquery.galleryview-3.0-dev.js"></script-->
+  <script src="/js/jquery.galleryview-3.0-dev.js"></script>
+  <script src="/js/jquery.easing.1.3.js"></script>
+  <script src="/js/jquery.timers-1.2.js"></script>
+  <link href="/css/jquery.galleryview-3.0-dev.css" rel="stylesheet" type="text/css" />
 
+  <script type="text/javascript">
+    $(function(){
+      $("#gallery").galleryView({
+        enable_overlays: true,
+        panel_width: 1000,         
+        panel_height: 500, 
+      });
+    });
+  </script>
 
   <?php roots_head(); ?>
   <?php wp_head(); ?>

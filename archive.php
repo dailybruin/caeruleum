@@ -7,7 +7,7 @@
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
               if ($term) {
                 echo $term->name;
-              } elseif (is_post_type_archive()) {
+              } elseif (is_post_type_archive()) { 
                 echo get_queried_object()->labels->name;
               } elseif (is_day()) {
                 printf(__('Daily Archives: %s', 'roots'), get_the_date());
@@ -25,7 +25,7 @@
             ?>
           </h1>
         </div><!-- end div.page-header -->
-        <?php get_template_part('loop', 'category'); ?>
+        <?php //get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
       
       
