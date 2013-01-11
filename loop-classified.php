@@ -21,7 +21,8 @@
 			$args = array(
 				'post_type' => 'classifieds',
 				'featured' => 'Featured',
-				'post_status' => 'publish'
+				'post_status' => 'publish',
+				'numberposts' => -1,
 			);
 			$featuredAds = get_posts( $args );
 			foreach( $featuredAds as $post ) :	setup_postdata($post);						
