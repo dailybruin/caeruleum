@@ -2,7 +2,7 @@
 /*WHERE TO PROPERLY PUT JS LINK AND STUFF*/
 /*ADDED MARGIN-LEFT/RIGHT AUTO TO GALLERYVIEW CSS FOR BEAUTY...ALSO SCREWED AROUND WITH THE FOLLOWING DEfAULTS: panel_width: 1000; 
 panel_height: 500; enable_overlay=true; around line 920 in js: overlayVisible: true; added click event for overlay and unbind!, hide the caption
-when caption is up, took out title, added in a left/right key navigation, added next nav when clicking picture */
+when caption is up, took out title, added in a left/right key navigation, added next nav when clicking picture, changed overlay caption and add author credit for 'attrs' */
 
 
 .page-header h1{
@@ -12,15 +12,21 @@ when caption is up, took out title, added in a left/right key navigation, added 
 	font-weight: normal;
 	opacity: 1.0;
 	text-align: center;
+	
 }
 .page-header h2{
-	color: #999999;
+	color: white;
 	font-family: 'Palatino Linotype';
 	font-size: 14px;
 	font-weight: normal;
 	font-style: italic;
 	opacity: 1.0;
 	text-align: center;
+}
+.page-header a img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*
 .category-photoblog, .category-adventures-with-sid,
@@ -30,20 +36,19 @@ when caption is up, took out title, added in a left/right key navigation, added 
 }*/
 
 body {
-	background-color: #202020 !important;
+	background-color: #202020 ;
+	background-image: url(spectrum-bg.png);
 }
-
 
 header {
 	background-color: #FFFFFF !important;
 }
-.photoblog-header-dashes {
-	color: #FFCC33;
-}
 
 /*THE POSTS*/
 
-#photoblog-post-block {
+#photoblog-post-block{
+	background-image: url(dark-tire.png) !important;
+	background-color: #101010;
 	border: solid;
 	border-color: #303030;
 	border-radius: 5px;
@@ -55,23 +60,32 @@ header {
 }
 #photoblog-post-block h1 {
 	color: #FFFFFF;
-	font-size: 30px;
+	font-size: 24px;
 	margin-bottom: 10px;
 }
-#photoblog-post-image {
-
+.photoblog-post-image {
 	border: solid;
 	border-color: #606060;
+	
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2%;
+	/*padding: 5px 5px 5px 5px;*/
 	width: 95%;
+}
+.photoblog-post-image img {
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 500px;
+	width: auto;
 }
 .photoblog-text {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 	width: 95%;
+
 }
 .photoblog-text a, .photblog-text a:visited {
 	color: #FFFFFF;
@@ -80,6 +94,7 @@ header {
 	/*text-decoration: none;*/
 }
 .photoblog-text p {
+	font-family: 'Helvetica';
 	line-height: 20px;
 }
 #photoblog-post-author {
@@ -91,102 +106,107 @@ header {
 
 }
 #sidebar-inside > div, #sidebar-inside > section {
-	border-bottom: none;
+	padding-left: 0px;
+	padding-bottom: 10px;
 }
 #sidebar-inside > div {
-
+	border-bottom: none;
 }
 #sidebar-menu{
 	background-color: #101010;
 	border-color: #707070;
-	border-radius: 10px;
+	border-radius: 2px;
 	border-style: solid;
 	border-width: 1.5px;
-	height: 400px;
+	height: auto;
 	width: 60%;
-	margin-left: 10% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
     margin-top: 5%;
 }
-.sidebar-tab {
-	
 
-	margin-left: -5%;
-	margin-top: 20px;
-	width: 100%;
-	height: 30px;
-	
+.sidebar-menu{
+	width: 70%;
+
 }
-.sidebar-tab:hover {
-	background-color: #505050;
+#sidebar-menu ul{
+	color: #549053;
+	list-style: none;
+}
+#menu-sidebar-filter {
+	margin: 0;
+	width: 100%;
+}
+#menu-sidebar-filter li {
+	color: #FFFFFF;
+	display: block;
+	font-family: 'Arial';
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	width: 100%;
+}/*
+#menu-sidebar-filter li:hover{
+	background-color: #605000;
 	border-color: #909090;
 	border-radius: 5px;
 	border-style: double;
 	border-width: 1px;
-	cursor: pointer;
-	height: 40px;
-	margin-top: 8px;
-	margin-left: -8.25%;
+	margin-left: -15%;
 	width: 107.5%;
-}
-#all-stories-tab:hover {
-	background-color: #705000;
-	
-}
-#adventures-tab:hover {
-	background-color: #006090;
-}
-#back-to-tab:hover {
-	background-color: #000050;
-}
-#humans-of-tab:hover {
-	background-color: #300030;
-}
-#week-in-tab:hover { 
-	background-color: #800000;
-}
-#features-tab:hover {
-	background-color: #306028;
-}
-.sidebar-tab-text {
-	color: #AAAAAA;
-
+}*/
+#menu-sidebar-filter li a{
 	display: block;
-	font-family: 'Arial';
-	font-size: 16px;
-
-	line-height: 30px;
-	text-decoration: none;
-	text-indent: 20px;
-	width: 100%;
-	height: 35px;
-	
 }
-.sidebar-tab-text:visited {
-	color: #909090;
-}
-.sidebar-tab-text:hover {
-	color: #FFFFFF;
-	height: 125%;
-	margin-left: 0px;
-
-	width: 102.5%;
-	font-size: 125%;
-	line-height: 250%;
+#menu-sidebar-filter li a,
+#menu-sidebar-filter li a:visited,
+#menu-sidebar-filter li a:hover{
+	color: #BBBBBB;
 	text-decoration: none;
 }
-#sidebar-linebreak {
-	
-	margin-top: 20px;
-	height: 1px;
-	width: 90%;
+#menu-sidebar-filter li a:hover{
+	color: #FFFFFF !important;
 }
+#menu-sidebar-filter li a:active{
+	background-color: #D3A000;
+}
+.menu-sidebar-filter-item1:hover {
+	height:50px;
+	line-height:50px;
+}
+.menu-sidebar-filter-item1:hover {
+	/*background-color: #D32419 !important;*/
+	background-color: #D3A000;
+}
+.menu-sidebar-filter-item2:hover {
+	/*background-color: #E37E20;*/
+	background-color: #8D11A0;
+}
+.menu-sidebar-filter-item3:hover {
+	/*background-color: #D3A00F;*/
+	background-color: #0275E6;
+}
+.menu-sidebar-filter-item4:hover {
+	background-color: #348324
+}
+.menu-sidebar-filter-item5:hover {
+	background-color: #E37E20;;
+}
+.menu-sidebar-filter-item6:hover {
+	background-color: #D32419;
+}
+.menu-sidebar hr {
+	margin-top: 10px; margin-left: auto; margin-right: auto; margin-bottom: 10px; height: 1px; width: 90%;
+}
+
 #sidebar-about-link {
 	color: #999999;
-	font-family: "Palatino Linotype";
-	font-size: 14px;
-	font-style: italic;
-	line-height:10px;
-	margin-left: 20%;
+	/*font-family: "Palatino Linotype";*/
+	font-size: 16px;
+	/*font-style: italic;*/
+	line-height:20px;
+	margin-left: 20px;
 }
 #sidebar-about-link:hover {
     color: #FFFFFF;
@@ -199,20 +219,9 @@ header {
 
 .ngg-singlepic {
 	background-color: #FFFFFF;
-	
+	height: inherit;
 	padding: 0px;
 	width: 100%;
-}
-
-.ngg-imagebrowser img{
-	padding: 0px;
-}
-.ngg-slideshow {
-	width: 100% !important;
-}
-.ngg-slideshow img{
-	padding: 0px;
-	width: 100% !important;
 }
 
 
@@ -226,8 +235,6 @@ header {
 	font-family: 'Palatino Linotype';
 	height: auto;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: left;
 	width: 90%;
 }
@@ -251,4 +258,7 @@ header {
 .gv_overlay {
 	cursor: pointer;
 	opacity: .7;
+}
+.gv_panel {
+	background-image: url(subtle-carbon.png);
 }

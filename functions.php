@@ -21,7 +21,6 @@ function roots_setup() {
 
   // Make theme available for translation
   load_theme_textdomain('roots', get_template_directory() . '/lang');
-  load_theme_textdomain('roots', get_template_directory() . '/galleryview');
 
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
@@ -30,7 +29,8 @@ function roots_setup() {
     'mobile_navigation' => __('Mobile Navigation', 'db'),
     'second_navigation' => __('Secondary Navigation', 'db'),
     'share_footer' => __('Share Links', 'db'),
-    'about_footer' => __('About','db')
+    'about_footer' => __('About','db'), 
+    'photoblog_sidebar' => __('Photoblog Sidebar', 'db')
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)

@@ -202,3 +202,7 @@ function ww_new_subcat_hierarchy() {
 }
 
 add_filter( 'category_template', 'ww_new_subcat_hierarchy' );
+/*
+$('pb-gallery-text').focus(function() {
+  alert('Handler for .focus() called.');
+});*/

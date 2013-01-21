@@ -276,21 +276,27 @@
 		topPadding	= 50;
 
 		$window.scroll(function() {
-			if ($window.scrollTop() > sidebarTop && ($window.scrollTop() + $window.height()) < $footer.offset().top){
-				$sidebar.stop().animate({
-				marginTop: $window.scrollTop() - sidebarTop + topPadding});
+			if ($window.scrollTop() > sidebarTop - topPadding && ($window.scrollTop() + $window.height())  < $footer.offset().top){
+				$sidebar.css("marginTop", $window.scrollTop() - sidebarTop + topPadding);
+				//$sidebar.stop().animate({
+				//marginTop: $window.scrollTop() - sidebarTop + topPadding});
 			}
 			//else if (sidebarOffset.bot)
-			else if ($window.scrollTop() > sidebarTop && ($window.scrollTop() + $window.height()) > $footer.offset().top){
-				$sidebar.stop().animate({
-				marginTop: $footer.offset().top - sidebarBottom});
+			else if ($window.scrollTop() > sidebarTop - topPadding && ($window.scrollTop() + $window.height()) > $footer.offset().top){
+				//$window.scrollTop() > sidebarTop - topPadding && sidebarBottom > $footer.offset().top){
+				//$sidebar.stop().animate({marginTop: $footer.offset().top - sidebarBottom});
+				$sidebar.css("marginTop", $footer.offset().top - sidebarBottom);
 			}
 			else {
-				$sidebar.stop().animate({
-				marginTop: 0});
+				$sidebar.css("marginTop", 0);
+				//$sidebar.stop().animate({marginTop: 0});
 			}
 		});   
  	 });
+
+	$('#pb-gallery-text').focus(function() {
+	  alert('Handler for .focus() called.');
+	});
 
 
 }(window.jQuery);
