@@ -230,7 +230,6 @@ $(document).ready(function() {
 	/*********** PHOTO BLOG *************/
 	var $sidebar	= $(".sidebar-menu"); 
 	if (typeof $sidebar[0] != 'undefined') {
-		alert(typeof $sidebar);	
 		var $window		= $(window),
 		$footer		= $("#content-info"),
 		sidebarTop	= $sidebar.offset().top,
