@@ -158,10 +158,12 @@ $(document).ready(function() {
 	{
 		var windowWidth = $(window).innerWidth();
 		// Firefox uses a different width (includes scrollbar) for media queries
+/*
 		if($.browser['mozilla'] == true)
 		{
 			windowWidth = window.innerWidth;
 		}
+*/
 	
 		// All desktop sizes
 		if(windowWidth >= 980) {
@@ -224,4 +226,37 @@ $(document).ready(function() {
 		clearTimeout(resizeTimer);
 		resizeTimer = window.setTimeout(function() {responsive();}, 200);
 	});
+	
+	/*********** PHOTO BLOG *************/
+	var $sidebar	= $(".sidebar-menu"); 
+	if (typeof $sidebar[0] != 'undefined') {
+		alert(typeof $sidebar);	
+		var $window		= $(window),
+		$footer		= $("#content-info"),
+		sidebarTop	= $sidebar.offset().top,
+		sidebarHeight	= $sidebar.height(),
+		sidebarBottom	= sidebarHeight + sidebarTop,
+		topPadding	= 50;
+	
+		$window.scroll(function() {
+			if ($window.scrollTop() > sidebarTop - topPadding  && ($window.scrollTop() + $window.height()) - topPadding < $footer.offset().top) {
+				$sidebar.css({marginTop: $window.scrollTop() - sidebarTop + topPadding});
+			}
+			else if ($window.scrollTop() > sidebarTop && ($window.scrollTop() + $window.height()) - topPadding > $footer.offset().top) {
+				$sidebar.css({margintop: 0});
+			}
+			else {
+				$sidebar.css({
+					marginTop: 0});
+			}
+		});
+	}
+  $("#gallery").galleryView({
+    enable_overlays: true,
+    panel_width: 850,         
+    panel_height: 425, 
+    panel_scale: 'fit',
+    show_filmstrip_nav: false,
+  });
+
 });

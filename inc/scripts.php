@@ -17,6 +17,7 @@
 
 function roots_scripts() {
   wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/css/bootstrap.css', false, null);
+  wp_enqueue_style('galleryview_css', get_template_directory_uri() . '/css/jquery.galleryview-3.0-dev.css', false, null );
 
   if (current_theme_supports('bootstrap-responsive')) {
     wp_enqueue_style('roots_bootstrap_responsive', get_template_directory_uri() . '/css/bootstrap-responsive.css', array('roots_bootstrap'), null);
@@ -46,8 +47,15 @@ function roots_scripts() {
 
   wp_register_script('roots_plugins', get_template_directory_uri() . '/js/plugins.js', false, null, false);
   wp_register_script('roots_main', get_template_directory_uri() . '/js/main.js', false, null, false);
+  
+  wp_register_script('galleryview_main', get_template_directory_uri() . '/js/vendor/jquery.galleryview-3.0-dev.js', false, null, false);
+  wp_register_script('galleryview_easing', get_template_directory_uri() . '/js/vendor/jquery.easing.1.3.js', false, null, false);
+  wp_register_script('galleryview_timers', get_template_directory_uri() . '/js/vendor/jquery.timers-1.2.js', false, null, false);
   wp_enqueue_script('roots_plugins');
   wp_enqueue_script('roots_main');
+  wp_enqueue_script('galleryview_main');
+  wp_enqueue_script('galleryview_easing');
+  wp_enqueue_script('galleryview_timers');
 }
 
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);

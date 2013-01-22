@@ -263,5 +263,4 @@
       $(target).collapse(option)
     })
   })
-
 }(window.jQuery);

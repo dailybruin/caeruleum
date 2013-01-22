@@ -21,8 +21,6 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
 
-
-
   <?php roots_head(); ?>
   <?php wp_head(); ?>
   

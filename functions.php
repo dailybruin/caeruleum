@@ -30,7 +30,8 @@ function roots_setup() {
     'mobile_navigation' => __('Mobile Navigation', 'db'),
     'share_footer' => __('Share Links', 'db'),
     'in_the_news' => __('In the News', 'db'),
-    'about_footer' => __('About','db')
+    'about_footer' => __('About','db'),
+    'photoblog_sidebar' => __('Photoblog Sidebar', 'db'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
