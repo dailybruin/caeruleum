@@ -2,123 +2,6 @@
 
 // Custom functions
 
-function the_blog_banner($blog_name)
-{
-	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";
-}
-
-
-// Customize headline. Use this instead of the_title()
-// This can only be used from within the loop
-function the_headline()
-{
-	global $post;
-	$articleFormats = wp_get_post_terms($post->ID,'article-format');
-	if(isset($articleFormats[0]))
-		$articleFormat = $articleFormats[0]->slug;
-	else
-		$articleFormat = "";
-
-	$headline = apply_filters('the_title',$post->post_title);
-
-	if($articleFormat == "column")
-	{
-		echo '<em>'.$headline.'</em>';
-	}
-	else
-	{
-		echo $headline;
-	}
-}
-
-
-// Add post formats (because WordPress won't let us do it ourselves)
-function add_article_formats()
-{
-	register_taxonomy('article-format', 'post', array(
-		'label' => 'Article format',
-		'show_in_nav_menus' => true,
-		'show_tagcloud' => false,
-		'show_ui' => false,
-		'show_admin_column' => false,
-	));
-	wp_insert_term('Normal','article-format', array('slug' => 'normal'));
-	wp_insert_term('Column','article-format', array('slug' => 'column'));
-	wp_insert_term('Brief', 'article-format', array('slug' => 'brief'));
-}
-add_action('init','add_article_formats', 0);
-function add_article_formats_metabox()
-{
-	add_meta_box('article-format-radio','Article format','add_article_formats_metabox_html','post','side','low');
-	function add_article_formats_metabox_html()
-	{ ?>
-		<div id="taxonomy-article-format" class="categorydiv">
-            <div class="inside">
-                <div id="article-format-all">
-                    <ul id="article-format-checklist" class="list:article-format categorychecklist form-no-clear"><?php
-                    	global $post;
-	                    wp_terms_checklist($post->ID, array('taxonomy' => 'article-format', 'checked_ontop' => false, 'walker' => new Walker_Category_RadioList));
-                    ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	<?php 
-	}
-}
-add_action('add_meta_boxes','add_article_formats_metabox');
-
-
-
-// Change column titles to italic
-add_filter('the_title', 'title_italic');
-function title_italic($title)
-{
-	if(substr($title, 0, 1) == '_' && substr($title, -1) == '_')
-	{
-		return '<em>'.substr($title, 1, strlen($title)-2).'</em>';
-	}
-	return $title;
-}
-// And make a minor fix to the page's title so underscores don't show
-add_filter('wp_title', 'title_italic_head');
-function title_italic_head($title)
-{
-	if(substr($title, 0, 1) == '_' && substr($title, -4, 1) == '_')
-	{
-		return substr($title, 1, strlen($title)-5)." | ";
-	}
-	return $title;
-}
-
-// Define a function to output bylines properly (and show/not show them)
-function the_byline($displayBy=true) {
-	global $post, $authordata, $wpdb;
-	$authorid = $post->post_author;
-		
-	$articleFormats = wp_get_post_terms($post->ID,'article-format');
-	if(isset($articleFormats[0]))
-		$articleFormat = $articleFormats[0]->slug;
-	else
-		$articleFormat = "";
-		
-	// Get coauthors
-	ob_start();
-	coauthors_posts_links();
-	$coauthors = ob_get_contents();
-	ob_end_clean();
-	
-
-	// Code modified from WordPress core, wp-includes/author-template.php
-    if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief" )
-            return false;
-    $by = "By ";
-    if(!$displayBy)
-    	$by = "";
-    $link = '<span class="byline">'.$by.$coauthors.'</span>';
-    echo apply_filters( 'the_byline', $link );
-}
-
 // Theme hook to allow getting a list of categories
 function the_category_text($category_array) {
 	foreach($category_array as $category) {
@@ -179,11 +62,13 @@ add_action( 'edit_user_profile_update', 'db_save_custom_user_profile_fields' );
 
 // Removes all tags that start with db- from displaying on the front end
 function remove_db_tags($input) {
+	error_log($input);
+	error_log(gettype($input));
 	$output = preg_replace('/<a href="\/tag\/db-[^\/]*\/" rel="tag">db-[^<]*<\/a>,*\s*/','',$input);
-	if(strpos($output,'rel')===FALSE)
-		$output = "";
+	error_log($output);
 	return $output;
 }
+
 add_filter('the_tags','remove_db_tags');
 
 // Template tag to output multimedia post icons 
@@ -211,10 +96,6 @@ function multimedia_post_flag( $multimedia_type ) {
 		$icon = "etc";
 		$type = "Graphic";
 	}
-	else if ($multimedia_type == "video") {
-		$icon = "video";
-		$type = "Video";
-	}
 	else if ($multimedia_type == "interactive") {
 		$icon = "etc";
 		$type = "Interactive Graphic";
@@ -237,8 +118,7 @@ function dequeue_polls_style() {
 add_action('wp_head', 'remove_wpp_stylesheet', 1); 
 function remove_wpp_stylesheet() { 
 	global $wp_widget_factory; 
-	if(isset($wp_widget_factory->widgets['WordPressPopularPosts']))
-		remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') ); 
+	remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') ); 
 }
 
 
@@ -287,39 +167,42 @@ add_filter('pre_user_display_name', 'sd_substitute_displayname_filter');
 function db_nav_menu_filter($items, $args) {
 	$feed_url = get_bloginfo('rss2_url');
 	if($args->theme_location == 'top_navigation')
-		$items .="<li><a href='".$feed_url."'><i class='smicon-rss'></i></a> <a href=\"http://www.youtube.com/ucladailybruin\"><i class=\"smicon-youtube\"></i></a> <a href=\"http://www.twitter.com/dailybruin\"><i class=\"smicon-twitter\"></i></a> <a href=\"http://www.facebook.com/dailybruin\"><i class=\"smicon-fb\"></i></a></li>";
+		$items .="<li><a href='".$feed_url."'><i class='smicon-rss'></i></a></li>";
 	return $items;
 }
 add_filter('wp_nav_menu_items', 'db_nav_menu_filter', 10, 2);
 
 // Filter Template Hierarchy
-function ww_new_subcat_hierarchy() {   
-	// TODO: This needs a citation
-    $category = get_queried_object();
+function ww_new_subcat_hierarchy() {    
+        $category = get_queried_object();
 
-    $parent_id = $category->category_parent;
+        $parent_id = $category->category_parent;
 
-    $templates = array();
-    
-    if ( $parent_id == 0 ) {
-            // Use default values from get_category_template()
-            $templates[] = "category-{$category->slug}.php";
-            $templates[] = "category-{$category->term_id}.php";
-            $templates[] = 'category.php';          
-    } else {
-            // Create replacement $templates array
-            $parent = get_category( $parent_id );
+        $templates = array();
+        
+        if ( $parent_id == 0 ) {
+                // Use default values from get_category_template()
+                $templates[] = "category-{$category->slug}.php";
+                $templates[] = "category-{$category->term_id}.php";
+                $templates[] = 'category.php';          
+        } else {
+                // Create replacement $templates array
+                $parent = get_category( $parent_id );
 
-            // Current first
-            $templates[] = "category-{$category->slug}.php";
-            $templates[] = "category-{$category->term_id}.php";
+                // Current first
+                $templates[] = "category-{$category->slug}.php";
+                $templates[] = "category-{$category->term_id}.php";
 
-            // Parent second
-            $templates[] = "category-{$parent->slug}.php";
-            $templates[] = "category-{$parent->term_id}.php";
-            $templates[] = 'category.php';  
-    }
-    return locate_template( $templates );
+                // Parent second
+                $templates[] = "category-{$parent->slug}.php";
+                $templates[] = "category-{$parent->term_id}.php";
+                $templates[] = 'category.php';  
+        }
+        return locate_template( $templates );
 }
 
 add_filter( 'category_template', 'ww_new_subcat_hierarchy' );
+
+$('pb-gallery-text').focus(function() {
+  alert('Handler for .focus() called.');
+});

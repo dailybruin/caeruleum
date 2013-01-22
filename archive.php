@@ -8,7 +8,7 @@
               $categoryTitle = single_cat_title('',false);
               if ($term) {
                 echo $term->name;
-              } elseif (is_post_type_archive()) {
+              } elseif (is_post_type_archive()) { 
                 echo get_queried_object()->labels->name;
               } elseif (is_day()) {
                 printf(__('Daily Archives: %s', 'roots'), get_the_date());
@@ -68,7 +68,7 @@
           
           <?php endif; ?>
         </div><!-- end div.page-header -->
-        <?php get_template_part('loop', 'category'); ?>
+        <?php //get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
       
       

@@ -293,6 +293,7 @@ function db_nav_menu_filter($items, $args) {
 add_filter('wp_nav_menu_items', 'db_nav_menu_filter', 10, 2);
 
 // Filter Template Hierarchy
+<<<<<<< HEAD
 function ww_new_subcat_hierarchy() {   
 	// TODO: This needs a citation
     $category = get_queried_object();
@@ -323,3 +324,38 @@ function ww_new_subcat_hierarchy() {
 }
 
 add_filter( 'category_template', 'ww_new_subcat_hierarchy' );
+=======
+function ww_new_subcat_hierarchy() {    
+        $category = get_queried_object();
+
+        $parent_id = $category->category_parent;
+
+        $templates = array();
+        
+        if ( $parent_id == 0 ) {
+                // Use default values from get_category_template()
+                $templates[] = "category-{$category->slug}.php";
+                $templates[] = "category-{$category->term_id}.php";
+                $templates[] = 'category.php';          
+        } else {
+                // Create replacement $templates array
+                $parent = get_category( $parent_id );
+
+                // Current first
+                $templates[] = "category-{$category->slug}.php";
+                $templates[] = "category-{$category->term_id}.php";
+
+                // Parent second
+                $templates[] = "category-{$parent->slug}.php";
+                $templates[] = "category-{$parent->term_id}.php";
+                $templates[] = 'category.php';  
+        }
+        return locate_template( $templates );
+}
+
+add_filter( 'category_template', 'ww_new_subcat_hierarchy' );
+/*
+$('pb-gallery-text').focus(function() {
+  alert('Handler for .focus() called.');
+});*/
+>>>>>>> b2de6f62e5515147ad875588eb32c876219db8f5

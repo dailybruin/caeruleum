@@ -1,0 +1,18 @@
+<?php /* Start loop */ ?>
+<<<<<<< HEAD
+<?php while (have_posts()) : the_post(); ?>
+  	<div class="page-header">
+  		<h1><?php the_title(); ?></h1>
+  	</div>
+  	<?php the_content(); ?>
+  	<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
+<?php endwhile; /* End loop */ ?>
+=======
+	<?php while (have_posts()) : the_post(); ?>
+	  	<div class="page-header">
+	  		<h1><?php the_title(); ?></h1>
+	  	</div>
+	  	<?php the_content(); ?>
+	  	<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
+	<?php endwhile; /* End loop */ ?>
+>>>>>>> b2de6f62e5515147ad875588eb32c876219db8f5
