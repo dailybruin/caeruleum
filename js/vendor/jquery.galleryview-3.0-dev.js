@@ -631,11 +631,11 @@ if (typeof Object.create !== 'function') {
 			
 			if(this.overlayVisible) {
 				this.hideOverlay(null,function(){
-					dom.gv_overlay.html(/*'<h4>'+self.gvImages[i].attrs.title+'</h4>*/'<p><span style="font-style: italic;">'+self.gvImages[i].attrs.tags+'</span><br />'+self.gvImages[i].attrs.description+'</p>');
+					dom.gv_overlay.html(/*'<h4>'+self.gvImages[i].attrs.title+'</h4>*/'<p>'+self.gvImages[i].attrs.description+'<br /><span style="font-style: italic;">'+self.gvImages[i].attrs.tags+'</span></p>');
 					self.showOverlay();
 				});
 			} else {
-				dom.gv_overlay.html(/*'<h4>'+self.gvImages[i].attrs.title+'</h4>*/'<p>'+self.gvImages[i].attrs.tags+'</p><p>'+self.gvImages[i].attrs.tags+'</p>');
+				dom.gv_overlay.html(/*'<h4>'+self.gvImages[i].attrs.title+'</h4>*/'<p>'+self.gvImages[i].attrs.description+'</p><p>'+self.gvImages[i].attrs.tags+'</p>');
 				dom.gv_overlay.css(this.opts.overlay_position,-1 * dom.gv_overlay.outerHeight());
 			}
 			

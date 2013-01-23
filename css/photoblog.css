@@ -56,7 +56,7 @@ header {
 	background-color: #101010;
 	border: solid;
 	border-color: #303030;
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
 	color: #BBBBBB;
 	font-family: 'Palatino Linotype';
 	height: auto;
@@ -68,25 +68,42 @@ header {
 	font-size: 24px;
 	margin-bottom: 10px;
 }
-.photoblog-post-tag {
+a.photoblog-post-tag {
 	background-color: #DE1518;
-	border-radius: 0px 0px 2.5px 2.5px;
-	color: white;
+	border-radius: 0px 0px 0px 0px;
+	color: #FFFFFF;
 	display: block;
 	font-family: 'Helvetica';
 	font-size: 12px;
 	font-weight: bold;
 	height: 20px;
-	margin-left: auto;
-	margin-right: 10px;
-	opacity: .5;
+	margin-left: 0px;
+	margin-top: 0px;
+	opacity: 1.0;
 	text-align: center;
-	width: 90px;
+	text-transform: uppercase;
+	width: 70px;
 }
-.photoblog-post-tag:hover {
+a.photoblog-post-tag:hover {
 	
-	opacity: 0.7;
+	opacity: 1.0;
+	text-decoration: none;
 }
+a.photoblog-post-tag.pb-tag-archives {
+	background-color: #3EC113;
+}
+a.photoblog-post-tag.pb-tag-campus {
+	background-color: #195DED;
+}
+a.photoblog-post-tag.pb-tag-humans-of-westwood {
+	background-color: #AA21DB;
+}
+a.photoblog-post-tag.pb-tag-sports {
+	background-color: #DE1518;
+}
+a.photoblog-post-tag.pb-tag-westwood-la {
+	background-color: #F17810;
+} 
 .photoblog-post-image {
 	border: solid;
 	border-color: #606060;
@@ -128,6 +145,19 @@ header {
 #photoblog-post-author {
 	font-style: italic;
 }
+.pager-pb{
+	margin-top: 50px;
+}
+.pager-pb .page-numbers {
+	border-color: #CCCCCC;
+	color: #CCCCCC;
+}
+.pager-pb .page-numbers:hover {
+	color: #000000;
+}
+.pager-pb .page-numbers.current:hover {
+	color: #FFFFFF;
+}
 /*THE SIDEBAR*/
 #sidebar-reference{
 	width: 100%;
@@ -154,11 +184,11 @@ header {
 	color: #549053;
 	list-style: none;
 }
-#menu-sidebar-filter {
+#menu-spectrum-filter {
 	margin: 0;
 	width: 100%;
 }
-#menu-sidebar-filter li {
+#menu-spectrum-filter li {
 	color: #FFFFFF;
 	display: block;
 	font-family: 'Arial';
@@ -177,40 +207,44 @@ header {
 	margin-left: -15%;
 	width: 107.5%;
 }*/
-#menu-sidebar-filter li a{
+#menu-spectrum-filter li a{
 	display: block;
 }
-#menu-sidebar-filter li a,
-#menu-sidebar-filter li a:visited,
-#menu-sidebar-filter li a:hover{
+#menu-spectrum-filter li a,
+#menu-spectrum-filter li a:visited,
+#menu-spectrum-filter li a:hover{
 	color: #BBBBBB;
 
 	text-decoration: none;
 }
-#menu-sidebar-filter li a:hover,
-#menu-sidebar-filter li.active a{
+#menu-spectrum-filter li a:hover,
+#menu-spectrum-filter li.active a{
 	color: #FFFFFF;
 }
-/*DELETE THIS LATER!
-.menu-sidebar-filter-item1.active a,
-.menu-sidebar-filter-item1 a:hover{
+#menu-spectrum-filter .menu-all-stories.active a,
+#menu-spectrum-filter .menu-all-stories a:hover{
 	background-color: #D3A000;
-	color: #FFFFFF !important;
 }
-.menu-sidebar-filter-item2:hover {
-	background-color: #8D11A0;
+#menu-spectrum-filter .menu-archives.active a,
+#menu-spectrum-filter .menu-archives a:hover{
+	background-color: #3EC113;
 }
-.menu-sidebar-filter-item3:hover {
-	background-color: #0275E6;
+#menu-spectrum-filter .menu-campus.active a,
+#menu-spectrum-filter .menu-campus a:hover{
+	background-color: #195DED;;
 }
-.menu-sidebar-filter-item4:hover {
-	background-color: #348324
+#menu-spectrum-filter .menu-humans-of-westwood.active a,
+#menu-spectrum-filter .menu-humans-of-westwood a:hover{
+	background-color: #AA21DB;
 }
-.menu-sidebar-filter-item5:hover {
-	background-color: #E37E20;;
+#menu-spectrum-filter .menu-sports.active a,
+#menu-spectrum-filter .menu-sports a:hover{
+	background-color: #DE1518;
+	
 }
-.menu-sidebar-filter-item6:hover {
-	background-color: #D32419;
+#menu-spectrum-filter .menu-westwoodla.active a,
+#menu-spectrum-filter .menu-westwoodla a:hover{
+	background-color: #F17810;
 }
 /*END DELETE*/
 /*

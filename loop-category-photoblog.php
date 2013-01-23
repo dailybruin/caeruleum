@@ -18,8 +18,23 @@
 ?>
 
 	<div id="photoblog-post-block">
-		<div class="photoblog-post-tag" id ="pb-tag-<?php echo $the_cat->name; ?>">CAMPUS</div>
-		<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->name; ?>">
+		<a href= "/category/photoblog/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
+			<?php if ($the_cat->slug == "archives"): { ?>
+				ARCHIVES <?php } ?>
+			<?php elseif ($the_cat->slug == "campus"): { ?>
+				CAMPUS <?php } ?>
+			<?php elseif ($the_cat->slug == "humans-of-westwood"):{ ?>
+				HOWEWO <?php } ?>
+			<?php elseif ($the_cat->slug == "sports"):{ ?>
+				SPORTS <?php } ?>
+			<?php elseif ($the_cat->slug == "westwood-la"):{ ?>
+				WW/LA <?php } ?>
+			
+
+			<?php endif ?>
+		</a>
+		<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
+
 		<a href="<?php the_permalink(); ?>">
 			<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
 			echo do_shortcode('[singlepic id='.$singlepicture.']');
@@ -30,8 +45,8 @@
 		<div class="photoblog-text" id="photoblog-post-text">
 				<h1>
 				<a href="<?php the_permalink() ?>">
-					<?php echo $the_cat->name;
-					echo (": "); 
+					<?php /*echo $the_cat->name;
+					echo (": "); */
 					the_title();
 					?>
 				</a></h1> 
@@ -39,6 +54,8 @@
 			<?php the_excerpt(); ?>
 			<p id="photoblog-post-author">Credit to <?php the_author(); ?>.</p>
 			<p>FACEBOOK TWITTER RSS TODO</p>
+
+	
 
 		</div>
 	</div> <!--photoblog-post-block-->
