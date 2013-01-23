@@ -230,28 +230,25 @@ $(document).ready(function() {
 	/*********** PHOTO BLOG *************/
 	var $sidebar	= $(".sidebar-menu"); 
 	if (typeof $sidebar[0] != 'undefined') {
+		var $window	= $(window),
+		botBound	= $("#banner-bottom").offset().top,
+		sidebarTop	= $sidebar.offset().top,
+		sidebarHeight	= $sidebar.height(),
+		sidebarBottom	= sidebarTop + sidebarHeight,
+		topPadding	= 50;
 	
-		$(window).scroll(function() {
-			//alert(botBound);
-			sidebarHeight	= $sidebar.height();
-			var scrollNow = $(this).scrollTop(),
-			sidebarTop	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
-			botBound	= $("#banner-bottom").offset().top;
-	
-			if(scrollNow > sidebarTop && scrollNow < botBound - sidebarHeight) {
+		$window.scroll(function() {
+			var scrollNow = $(this).scrollTop();
+				//sidebarBottom = $sidebar.offset().top + $sidebar.height();
+			if(scrollNow > sidebarTop && ($window.scrollTop() + $window.height()) - sidebarHeight < botBound) {
 				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});
 			}
-			else if(scrollNow > sidebarTop && scrollNow > botBound - sidebarHeight){
-				$sidebar.css({'position':'absolute','top': botBound - sidebarHeight - 50});
+			else if(scrollNow > sidebarTop && ($window.scrollTop() + $window.height()) - sidebarHeight >= botBound) {
+				$sidebar.css({'position':'absolute','top': botBound - 200 });
 			}
 			else {
 				$sidebar.css({'position':'relative','marginTop': 'sidebarTop' });
 			}
-
-			/*($window.scrollTop() + $window.height()) - sidebarHeight < botBound)
-			($window.scrollTop() + $window.height()) - sidebarHeight >= botBound) 
-
-			*/
 /*
 			if ($window.scrollTop() > sidebarTop - topPadding  && ($window.scrollTop() + $window.height()) - topPadding < $footer.offset().top){
 				$sidebar.css({marginTop: $window.scrollTop() - sidebarTop + topPadding});
@@ -266,17 +263,12 @@ $(document).ready(function() {
 */
 		});
 	}
-	$(window).trigger("scroll");
+  $("#gallery").galleryView({
+    enable_overlays: true,
+    panel_width: 850,         
+    panel_height: 425, 
+    panel_scale: 'fit',
+    show_filmstrip_nav: false,
+  });
 
-	$(document).ready(function(){
-		gallerywidth = $('.span9').width();
-		galleryheight = gallerywidth * 0.7;
-	 	$("#gallery").galleryView({
-		    enable_overlays: true,
-		    panel_width: gallerywidth,         
-		    panel_height: galleryheight, 
-		    panel_scale: 'fit',
-		    show_filmstrip_nav: false,
-	 	});
-	});
 });

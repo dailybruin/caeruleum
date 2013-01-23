@@ -8,7 +8,7 @@ $posts_per_page--;?>
 	//$the_cat = get_the_category()[0];
 	if ($cats) {
 		foreach($cats as $cat){
-			if ($cat->name != "Photoblog"){
+			if ($cat->name != "Spectrum"){
 				$the_cat = $cat;
 				/*
 				echo $cat->name;

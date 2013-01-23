@@ -5,6 +5,11 @@ panel_height: 500; enable_overlay=true; around line 920 in js: overlayVisible: t
 when caption is up, took out title, added in a left/right key navigation, added next nav when clicking picture, changed overlay caption and add author credit for 'attrs' */
 
 
+#topinfo {
+	background-image: url(micro-carbon.png);
+	color: white;
+}
+
 .page-header h1{
 	color: white;
 	font-family: 'Palatino Linotype';
@@ -37,7 +42,7 @@ when caption is up, took out title, added in a left/right key navigation, added 
 
 body {
 	background-color: #202020 ;
-	background-image: url(spectrum-bg.png);
+	/*background-image: url(micro-carbon.png);*/
 }
 
 header {
@@ -51,7 +56,7 @@ header {
 	background-color: #101010;
 	border: solid;
 	border-color: #303030;
-	border-radius: 5px;
+	border-radius: 10px 10px 0px 0px;
 	color: #BBBBBB;
 	font-family: 'Palatino Linotype';
 	height: auto;
@@ -63,16 +68,39 @@ header {
 	font-size: 24px;
 	margin-bottom: 10px;
 }
+.photoblog-post-tag {
+	background-color: #DE1518;
+	border-radius: 0px 0px 2.5px 2.5px;
+	color: white;
+	display: block;
+	font-family: 'Helvetica';
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	margin-left: auto;
+	margin-right: 10px;
+	opacity: .5;
+	text-align: center;
+	width: 90px;
+}
+.photoblog-post-tag:hover {
+	
+	opacity: 0.7;
+}
 .photoblog-post-image {
 	border: solid;
 	border-color: #606060;
-	
+	height: 384px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2%;
 	/*padding: 5px 5px 5px 5px;*/
 	width: 95%;
-}
+}/*
+#pb-image-Features {
+	border-color: #DB4E54;
+
+}*/
 .photoblog-post-image img {
 	height: 100%;
 	margin-left: auto;
@@ -101,6 +129,11 @@ header {
 	font-style: italic;
 }
 /*THE SIDEBAR*/
+#sidebar-reference{
+	width: 100%;
+	display: block;
+	clear: both;
+}
 #sidebar-inside {
 	border-left: none;
 
@@ -112,21 +145,9 @@ header {
 #sidebar-inside > div {
 	border-bottom: none;
 }
-#sidebar-menu{
-	background-color: #101010;
-	border-color: #707070;
-	border-radius: 2px;
-	border-style: solid;
-	border-width: 1.5px;
-	height: auto;
-	width: 60%;
-	margin-left: auto !important;
-	margin-right: auto !important;
-    margin-top: 5%;
-}
 
 .sidebar-menu{
-	width: 70%;
+	width: 250px;
 
 }
 #sidebar-menu ul{
@@ -163,28 +184,23 @@ header {
 #menu-sidebar-filter li a:visited,
 #menu-sidebar-filter li a:hover{
 	color: #BBBBBB;
+
 	text-decoration: none;
 }
-#menu-sidebar-filter li a:hover{
+#menu-sidebar-filter li a:hover,
+#menu-sidebar-filter li.active a{
+	color: #FFFFFF;
+}
+/*DELETE THIS LATER!
+.menu-sidebar-filter-item1.active a,
+.menu-sidebar-filter-item1 a:hover{
+	background-color: #D3A000;
 	color: #FFFFFF !important;
 }
-#menu-sidebar-filter li a:active{
-	background-color: #D3A000;
-}
-.menu-sidebar-filter-item1:hover {
-	height:50px;
-	line-height:50px;
-}
-.menu-sidebar-filter-item1:hover {
-	/*background-color: #D32419 !important;*/
-	background-color: #D3A000;
-}
 .menu-sidebar-filter-item2:hover {
-	/*background-color: #E37E20;*/
 	background-color: #8D11A0;
 }
 .menu-sidebar-filter-item3:hover {
-	/*background-color: #D3A00F;*/
 	background-color: #0275E6;
 }
 .menu-sidebar-filter-item4:hover {
@@ -196,6 +212,19 @@ header {
 .menu-sidebar-filter-item6:hover {
 	background-color: #D32419;
 }
+/*END DELETE*/
+/*
+.all-stories.active a,
+.all-stories a:hover{
+	background-color: #D3A000;
+	color: #FFFFFF !important;
+}
+.campus.active a,
+.campus a:hover{
+
+}*/
+
+
 .menu-sidebar hr {
 	margin-top: 10px; margin-left: auto; margin-right: auto; margin-bottom: 10px; height: 1px; width: 90%;
 }

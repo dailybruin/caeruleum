@@ -838,7 +838,7 @@ if (typeof Object.create !== 'function') {
 			var self = this,
 				dom = this.dom;
 			
-			$(document).bind("keypress.nav", function(k) {
+			$(document).bind("keydown.nav", function(k) {
 				if(k.keyCode == 37){
 					self.showPrev();
 					//return false;
@@ -914,7 +914,7 @@ if (typeof Object.create !== 'function') {
 				
 			dom.gv_showOverlay.unbind('click.galleryview');
 			dom.gv_overlay.unbind('click.galleryview');
-			$(document).unbind('keypress.nav');
+			$(document).unbind('keydown.nav');
 			//dom.gv_panelWrap.unbind('click.galleryview');
 			dom.gv_panelNavNext.unbind('click.galleryview');
 			dom.gv_panelNavPrev.unbind('click.galleryview');
