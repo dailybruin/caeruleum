@@ -1,4 +1,4 @@
-<?php /* Start loop */ ?>
+<?php  /* Start loop * ?>
 <?php echo '<link href="/css/photoblog.css" rel="stylesheet" media="screen" type="text/css" />'; ?>
 <?php $posts_per_page = 5; ?>
 <?php while (have_posts() and $posts_per_page != 0): the_post(); 
@@ -13,7 +13,7 @@ $posts_per_page--;?>
 				/*
 				echo $cat->name;
 				echo (": "); 
-				the_title();*/
+				the_title();
 			}
 		}
 	}
@@ -41,6 +41,6 @@ $posts_per_page--;?>
 			<p id="photoblog-post-author">Credit to <?php the_author(); ?>.</p>
 		</div>
 	</div> <!--photoblog-post-block-->
-<?php endwhile; /* End loop */ ?>
+<?php endwhile; /* End loop  ?>
 
-<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
+<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); */?>

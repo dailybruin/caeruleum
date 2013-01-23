@@ -38,7 +38,7 @@
 
 			<?php the_excerpt(); ?>
 			<p id="photoblog-post-author">Credit to <?php the_author(); ?>.</p>
-			<p>FACEBOOK TWITTER RSS</p>
+			<p>FACEBOOK TWITTER RSS TODO</p>
 
 		</div>
 	</div> <!--photoblog-post-block-->

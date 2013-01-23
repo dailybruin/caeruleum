@@ -50,7 +50,7 @@ if($spectrum) :
 
 				<?php the_content(); ?>
 				<p id="photoblog-post-author">Credit to <?php the_author(); ?>.</p>
-				<p>FACEBOOK TWITTER RSS</p>
+				<p>FACEBOOK TWITTER RSS TODO</p>
 
 				<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 			</div>
