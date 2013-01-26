@@ -348,3 +348,9 @@ a.photoblog-post-tag.pb-tag-westwood-la,
 .gv_panel {
 	background-image: url(subtle-carbon.png);
 }
+
+/* SOCIAL MEDIA */
+/* Float the twitter icon to the right */
+.photoblog-sm > iframe {
+  float: right;
+}
