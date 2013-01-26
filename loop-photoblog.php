@@ -51,7 +51,7 @@
 			<hr />
 	        <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?>
 	        <hr /> 
-	        <a id="sidebar-about-link" href="/behind-the-blog"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a> ?>
+	        <a id="sidebar-about-link" href="/behind-the-blog"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a>
      	 </div><!--sidebar-menu-->
   </div>
 </aside>
