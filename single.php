@@ -20,7 +20,7 @@ if($spectrum) :
 	<div class="span9" id="post">
 		<?php the_post() ?>
 		<div class="page-header">
-	    	<a div="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
+	    	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
 	    </div><!-- end div.page-header -->
 		<div id="pb-gallery-block">
 			<div id="pb-gallery-image">
@@ -42,8 +42,8 @@ if($spectrum) :
 					?>
 					<h1>
 					<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
-						<?php /* echo $the_cat->name;
-						echo (": "); */
+						<?php echo $the_cat->name;
+						echo (": "); 
 						the_title();
 						?>
 					</a></h1> 
@@ -64,8 +64,8 @@ if($spectrum) :
 			<div class="sidebar-menu">
 				<hr />
 		        <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?>
-		        <hr /> <?php  /*
-		        <a id="sidebar-about-link" href="/sample-page"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a>*/ ?>
+		        <hr /> <?php /*
+		        <a id="sidebar-about-link" href="/sample-page"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a> */?>
 	     	 </div><!--sidebar-menu-->
 	  </div>
 	</aside>

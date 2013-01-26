@@ -228,6 +228,7 @@ $(document).ready(function() {
 	});
 	
 	/*********** PHOTO BLOG *************/
+	
 	var $sidebar	= $(".sidebar-menu"); 
 	if (typeof $sidebar[0] != 'undefined') {
 	
@@ -238,32 +239,15 @@ $(document).ready(function() {
 			sidebarTop	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
 			botBound	= $("#banner-bottom").offset().top;
 	
-			if(scrollNow > sidebarTop && scrollNow < botBound - sidebarHeight) {
+			if(scrollNow > sidebarTop && scrollNow < botBound - sidebarHeight - 50) {
 				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});
 			}
-			else if(scrollNow > sidebarTop && scrollNow > botBound - sidebarHeight){
+			else if(scrollNow > sidebarTop && scrollNow > botBound - sidebarHeight - 50){
 				$sidebar.css({'position':'absolute','top': botBound - sidebarHeight - 50});
 			}
 			else {
 				$sidebar.css({'position':'relative','marginTop': 'sidebarTop' });
 			}
-
-			/*($window.scrollTop() + $window.height()) - sidebarHeight < botBound)
-			($window.scrollTop() + $window.height()) - sidebarHeight >= botBound) 
-
-			*/
-/*
-			if ($window.scrollTop() > sidebarTop - topPadding  && ($window.scrollTop() + $window.height()) - topPadding < $footer.offset().top){
-				$sidebar.css({marginTop: $window.scrollTop() - sidebarTop + topPadding});
-			}
-			else if ($window.scrollTop() > sidebarTop && ($window.scrollTop() + $window.height()) - topPadding > $footer.offset().top) {
-				$sidebar.css({margintop: 0});
-			}
-			else {
-				$sidebar.css({
-					marginTop: 0});
-			}
-*/
 		});
 	}
 	$(window).trigger("scroll");

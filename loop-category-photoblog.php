@@ -8,17 +8,13 @@
 		foreach($cats as $cat){
 			if ($cat->name != "Spectrum"){
 				$the_cat = $cat;
-				/*
-				echo $cat->name;
-				echo (": "); 
-				the_title();*/
 			}
 		}
-	}
-?>
+	} ?>
+
 
 	<div id="photoblog-post-block">
-		<a href= "/category/photoblog/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
+		<a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
 			<?php if ($the_cat->slug == "archives"): { ?>
 				ARCHIVES <?php } ?>
 			<?php elseif ($the_cat->slug == "campus"): { ?>
@@ -54,8 +50,6 @@
 			<?php the_excerpt(); ?>
 			<p id="photoblog-post-author">Credit to <?php the_author(); ?>.</p>
 			<p>FACEBOOK TWITTER RSS TODO</p>
-
-	
 
 		</div>
 	</div> <!--photoblog-post-block-->
