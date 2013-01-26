@@ -52,8 +52,11 @@
 			    	break(2);
 			}
 		}
+		$behindtheblog = false;
+		if(get_post_meta( get_the_ID(), '_wp_page_template', TRUE ) == "page-spectrumbtb.php")
+			$behindtheblog = true;
 
-		if($spectrum) : ?>
+		if($spectrum || $behindtheblog) : ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone" /></a>
 		<?php else : ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" class="hidden-phone" /></a>

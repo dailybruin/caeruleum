@@ -7,8 +7,10 @@ Template Name: Behind the Blog
     <div class="page-header">
       <a class="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
       <h2>Exploring the UCLA experience through photojournalism</h2>
-      <?php echo '<link href="/css/photoblog.css" rel="stylesheet" media="screen" type="text/css" />'; 
-            get_template_part('loop', 'page'); ?>
+        <div class="pb-btb-text">
+        <?php echo '<link href="/css/photoblog.css" rel="stylesheet" media="screen" type="text/css" />'; 
+              get_template_part('loop', 'page'); ?>
+        </div>
 
     
     </div><!-- end div.page-header -->
@@ -23,7 +25,7 @@ Template Name: Behind the Blog
         <hr />
         <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?>
         <hr />
-        <a id="sidebar-about-link" href="/behind"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a>
+        <a id="sidebar-about-link" href="/behind-the-blog"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a>
       </div><!--sidebar-menu-->
 
     </div><!-- end div#sidebar-inside -->

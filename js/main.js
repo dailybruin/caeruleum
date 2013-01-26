@@ -236,17 +236,17 @@ $(document).ready(function() {
 			//alert(botBound);
 			sidebarHeight	= $sidebar.height();
 			var scrollNow = $(this).scrollTop(),
-			sidebarTop	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
+			topBound	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
 			botBound	= $("#banner-bottom").offset().top;
-	
-			if(scrollNow > sidebarTop && scrollNow < botBound - sidebarHeight - 50) {
+		
+			if(scrollNow > topBound && scrollNow < botBound - sidebarHeight - 50) {
 				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});
 			}
-			else if(scrollNow > sidebarTop && scrollNow > botBound - sidebarHeight - 50){
+			else if(scrollNow > topBound && scrollNow > botBound - sidebarHeight - 50){
 				$sidebar.css({'position':'absolute','top': botBound - sidebarHeight - 50});
 			}
 			else {
-				$sidebar.css({'position':'relative','marginTop': 'sidebarTop' });
+				$sidebar.css({'position':'relative','marginTop': 'topBound' });
 			}
 		});
 	}

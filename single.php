@@ -64,8 +64,8 @@ if($spectrum) :
 			<div class="sidebar-menu">
 				<hr />
 		        <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?>
-		        <hr /> <?php /*
-		        <a id="sidebar-about-link" href="/sample-page"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a> */?>
+		        <hr /> 
+		        <a id="sidebar-about-link" href="/behind-the-blog"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a> ?>
 	     	 </div><!--sidebar-menu-->
 	  </div>
 	</aside>

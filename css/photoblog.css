@@ -68,6 +68,9 @@ body {
 header {
 	background-color: #FFFFFF !important;
 }
+.span8 {
+	min-height: 700px;
+}
 
 /*THE POSTS*/
 
@@ -326,6 +329,11 @@ a.photoblog-post-tag.pb-tag-westwood-la,
 	margin-right: auto;
 	margin-top: 2%;
 	width: 100%;
+}
+
+/*BEHIND THE BLOG */
+.pb-btb-text {
+	color: #BBBBBB;
 }
 
 /*GALLERYVIEW OVERWRITES/ADDITIONS */
