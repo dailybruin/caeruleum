@@ -5,11 +5,14 @@ panel_height: 500; enable_overlay=true; around line 920 in js: overlayVisible: t
 when caption is up, took out title, added in a left/right key navigation, added next nav when clicking picture, changed overlay caption and add author credit for 'attrs' */
 
 
-#topinfo {
-	background-image: url(micro-carbon.png);
-	color: white;
+@media (min-width: 768px)
+{
+  #topinfo {
+  	background-image: url(micro-carbon.png);
+  	color: white;
+  }
 }
-
+  
 .page-header h1{
 	color: white;
 	font-family: 'Palatino Linotype';
@@ -68,7 +71,7 @@ body {
 header {
 	background-color: #FFFFFF !important;
 }
-.span8 {
+#post-listing {
 	min-height: 700px;
 }
 

@@ -2,7 +2,7 @@
 	<div id="sidebar-inside">
       	<?php get_template_part('ad','side'); ?>
       	<div id="sidebar-reference"> </div>
-		<div class="sidebar-menu">
+		<div class="sidebar-menu hidden-phone">
 			<hr />
 	        <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?>
 	        <hr /> 
