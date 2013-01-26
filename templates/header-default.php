@@ -53,7 +53,7 @@
 			}
 		}
 		$behindtheblog = false;
-		if(get_post_meta( get_the_ID(), '_wp_page_template', TRUE ) == "page-spectrumbtb.php")
+		if(get_post_meta( get_the_ID(), '_wp_page_template', TRUE ) == "page-spectrum-behind-the-blog.php")
 			$behindtheblog = true;
 
 		if($spectrum || $behindtheblog) : ?>
