@@ -16,20 +16,7 @@ Template Name: Behind the Blog
     </div><!-- end div.page-header -->
   </div><!-- end div#post-listing -->
 
-  <aside class="span4" id="sidebar" role="complementary">
-    <div id="sidebar-inside">
-      <?php get_template_part('ad','side'); ?>
-      <div id="sidebar-reference"> </div>
-
-      <div class ="sidebar-menu">
-        <hr />
-        <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?>
-        <hr />
-        <a id="sidebar-about-link" href="/behind-the-blog"> <?php _e( 'Behind the Blog', 'gryphondor' ); ?></a>
-      </div><!--sidebar-menu-->
-
-    </div><!-- end div#sidebar-inside -->
-  </aside><!-- end aside#sidebar -->
-  
+<?php get_template_part('sidebar','photoblog'); ?>
 </div><!-- end div#archive-content -->
+
 <?php get_footer(); ?>
