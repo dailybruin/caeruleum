@@ -68,7 +68,7 @@
           
           <?php endif; ?>
         </div><!-- end div.page-header -->
-        <?php //get_template_part('loop', 'category'); ?>
+        <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
       
       
