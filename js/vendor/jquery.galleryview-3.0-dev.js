@@ -615,8 +615,10 @@ if (typeof Object.create !== 'function') {
 					panel.prependTo(dom.gv_panelWrap);
 					break;
 			}
+
 			
 			this.updateOverlay(i);
+
 			
 			this.iterator = i;
 			this.updateFilmstrip(frame_i);
@@ -1076,7 +1078,7 @@ if (typeof Object.create !== 'function') {
 		// Panel Options
 		show_panels: true, 				//BOOLEAN - flag to show or hide panel portion of gallery
 		show_panel_nav: true, 			//BOOLEAN - flag to show or hide panel navigation buttons
-		enable_overlays: false, 			//BOOLEAN - flag to show or hide panel overlays
+		enable_overlays: false, 		//BOOLEAN - flag to show or hide panel overlays
 		panel_width: 800, 				//INT - width of gallery panel (in pixels)
 		panel_height: 400, 				//INT - height of gallery panel (in pixels)
 		panel_animation: 'fade', 		//STRING - animation method for panel transitions (crossfade,fade,slide,none)

@@ -121,7 +121,7 @@ a.photoblog-post-tag.pb-tag-archives,
 	/*background-color: #3EC113;*/
 	background-color: #00730D;
 }
-a.photoblog-post-tag.pb-tag-campus,
+a.photoblog-post-tag.pb-tag-campus-spectrum,
 #menu-spectrum-filter .menu-campus.active a,
 #menu-spectrum-filter .menu-campus a:hover {
 	/*background-color: #195DED;*/
@@ -133,13 +133,13 @@ a.photoblog-post-tag.pb-tag-humans-of-westwood,
 	/*background-color: #AA21DB;*/
 	background-color: #2C0052;
 }
-a.photoblog-post-tag.pb-tag-sports,
+a.photoblog-post-tag.pb-tag-sports-spectrum,
 #menu-spectrum-filter .menu-sports.active a,
 #menu-spectrum-filter .menu-sports a:hover {
 	/*background-color: #DE1518;*/
 	background-color: #B41711
 }
-a.photoblog-post-tag.pb-tag-westwood-la,
+a.photoblog-post-tag.pb-tag-westwoodla,
 #menu-spectrum-filter .menu-westwoodla.active a,
 #menu-spectrum-filter .menu-westwoodla a:hover{
 	/*background-color: #F17810;*/

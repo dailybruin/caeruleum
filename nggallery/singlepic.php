@@ -23,7 +23,7 @@ Please note : A Image resize or watermarking operation will remove all meta info
 <?php //the_post(); ?>
 
 <a href="<?php the_permalink() ?>" title="<?php echo $image->linktitle ?>" <?php echo $image->thumbcode ?> >
-	<img class="<?php echo $image->classname ?>" src="<?php echo $image->thumbnailURL ?>" alt="<?php echo $image->alttext ?>" title="MEGADERP" />
+	<img class="<?php echo $image->classname ?>" src="<?php echo $image->thumbnailURL ?>" alt="<?php echo $image->alttext ?>"  />
 </a>
 <?php if (!empty ($image->caption)) : ?><span><?php echo $image->caption ?></span><?php endif; ?>
 <?php endif; ?>

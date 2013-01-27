@@ -17,13 +17,13 @@
 		<a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
 			<?php if ($the_cat->slug == "archives"): { ?>
 				ARCHIVES <?php } ?>
-			<?php elseif ($the_cat->slug == "campus"): { ?>
+			<?php elseif ($the_cat->slug == "campus-spectrum"): { ?>
 				CAMPUS <?php } ?>
 			<?php elseif ($the_cat->slug == "humans-of-westwood"):{ ?>
 				HOWEWO <?php } ?>
-			<?php elseif ($the_cat->slug == "sports"):{ ?>
+			<?php elseif ($the_cat->slug == "sports-spectrum"):{ ?>
 				SPORTS <?php } ?>
-			<?php elseif ($the_cat->slug == "westwood-la"):{ ?>
+			<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
 				WW/LA <?php } ?>
 			
 
