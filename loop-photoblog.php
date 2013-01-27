@@ -25,8 +25,8 @@
 				?>
 				<h1>
 				<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
-					<?php echo $the_cat->name;
-					echo (": "); 
+					<?php /*echo $the_cat->name;
+					echo (": "); */
 					the_title();
 					?>
 				</a></h1> 

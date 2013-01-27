@@ -8,7 +8,8 @@ when caption is up, took out title, added in a left/right key navigation, added 
 @media (min-width: 768px)
 {
   #topinfo {
-  	background-image: url(micro-carbon.png);
+  	/*background-image: url(micro-carbon.png);*/
+  	background-color: #151515;
   	color: white;
   }
 }
@@ -54,7 +55,7 @@ nav#firstnav ul li.open a{
 	color: #BBBBBB;
 }
 #topsearch {
-	background-color: #111111;
+	background-color: #050505;
 }
 #topsearch input{
 	color: #999999;
@@ -66,12 +67,10 @@ nav#firstnav ul li.open a{
 	opacity: 1.0;
 }
 body {
-	background-color: #202020 ;
-	background-image: url(micro-carbon.png);
+	background-color: #111111;
+	/*background-image: url(micro-carbon.png);*/
 }
-header {
-	background-color: #FFFFFF !important;
-}
+
 #post-listing {
 	min-height: 700px;
 }
