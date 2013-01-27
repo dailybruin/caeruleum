@@ -43,7 +43,8 @@ nav#firstnav ul li a,
 nav#firstnav ul li.active a:hover{
 	color: #FFFFFF;
 }
-nav#firstnav ul li a:hover{
+nav#firstnav ul li a:hover,
+nav#firstnav ul li.open a{
 	color: #000000;
 }
 #inthenews > span{
