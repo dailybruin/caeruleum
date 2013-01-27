@@ -4,6 +4,7 @@
 	<?php the_post() ?>
 	<div class="page-header">
     	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
+    	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
 	<div id="pb-gallery-block">
 		<div id="pb-gallery-image">
@@ -25,8 +26,8 @@
 				?>
 				<h1>
 				<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
-					<?php echo $the_cat->name;
-					echo (": "); 
+					<?php /*echo $the_cat->name;
+					echo (": "); */
 					the_title();
 					?>
 				</a></h1> 
