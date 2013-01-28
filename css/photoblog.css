@@ -9,7 +9,7 @@ when caption is up, took out title, added in a left/right key navigation, added 
 {
   #topinfo {
   	/*background-image: url(micro-carbon.png);*/
-  	background-color: #111111;
+  	background-color: #181818;
   	color: white;
   }
 }
@@ -67,7 +67,7 @@ nav#firstnav ul li.open a{
 	opacity: 1.0;
 }
 body {
-	background-color: #111111;
+	background-color: #181818;
 	/*background-image: url(micro-carbon.png);*/
 }
 
