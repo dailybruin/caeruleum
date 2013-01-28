@@ -42,12 +42,13 @@
 <nav class="container" id="nav-nameplate">
 	<div class="row">
 		<div class="span12" id="nameplate">
-		<?php if(is_category("spectrum") || 
+		<?php if(/*is_category("spectrum") || 
 				 is_category("sports-spectrum") ||
 				 is_category("campus-spectrum") ||
 				 is_category("humans-of-westwood") ||
 				 is_category("archives") ||
-				 is_category("westwoodla") ||
+				 is_category("westwoodla") ||*/
+				 in_category("Spectrum") ||
 				 is_page_template( 'page-spectrum-behind-the-blog.php' ) ) : ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone" /></a>
 		<?php else: ?>
