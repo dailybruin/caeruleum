@@ -1992,6 +1992,49 @@ a.page-numbers:hover {
 	}
 }
 
+/* Spectrum ad (remove when gone) */
+#spectrum-refer {
+  background-color: #252525;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: block;
+}
+#spectrum-refer-explain {
+  color: white;
+  padding: 0;
+  display: block;
+  text-align: center;
+  width: 47%;
+  float: right;
+  padding-right: 3%;
+  padding-top: 18px;
+  text-shadow: 1px 1px 1px black;
+}
+#spectrum-refer:hover {
+  box-shadow: 0 0 34px rgba(0,0,0,0.5) inset;
+  background-color: #2e2e2e;
+}
+#spectrum-refer-logo {
+  width: 50%;
+  float: right;
+  max-width: 224px;
+}
+@media (min-width: 1200px) { 
+  #spectrum-refer-explain{
+    padding-top:42px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) { 
+  #spectrum-refer-explain{
+    padding-top:0px;
+  }
+}
+@media (max-width: 480px) { 
+  #spectrum-refer-explain{
+    padding-top:7px;
+  }
+}
 
 /* =============================================================================
    WordPress Generated Classes

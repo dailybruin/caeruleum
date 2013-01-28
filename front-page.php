@@ -92,6 +92,11 @@
 							</div><!-- end div#multimedia-item-2 -->
 							<span style="width:100%;display:block;clear:both;"></span>
 						</div><!-- end div#front-multimedia -->
+						<a id="spectrum-refer" href="/spectrum/">
+						    <span id="spectrum-refer-explain">Explore the UCLA experience through photojournalism on the Daily Bruin's newest blog, <strong>Spectrum</strong>.</span>
+						    <img id="spectrum-refer-logo" src="/img/spectrumlogo.png" />
+						    <br style="width:100%; clear:both; display:block;" />
+						</a><!-- end a#spectrum-refer -->
 					</div><!-- end div.span5 -->
 					<div class="span3" id="front-secondarycol">
 						<!-- story tag db-story-a -->
