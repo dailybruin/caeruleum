@@ -99,7 +99,7 @@
 							'child_of' => $multimedia_cat,
 							'orderby' => 'name',
 							'hide_empty' => 0,
-							'title_li' => ''
+							'title_li' => '',
 						);
 						wp_list_categories($cat_args);
 					?>
@@ -113,7 +113,8 @@
 							'child_of' => $blogs_cat,
 							'orderby' => 'name',
 							'hide_empty' => 0,
-							'title_li' => ''
+							'title_li' => '',
+                            'depth' => 1,
 						);
 						wp_list_categories($cat_args);
 					?>
