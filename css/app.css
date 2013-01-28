@@ -2050,7 +2050,7 @@ a.page-numbers:hover {
 }
 @media (max-width: 480px) { 
   #spectrum-refer {
-    background-position-y:-52px;
+    background-position-y:-14px;
   }
 }
 
