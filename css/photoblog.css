@@ -78,8 +78,8 @@ body {
 /*THE POSTS*/
 
 #photoblog-post-block{
-	background-image: url(dark-tire.png) !important;
-	background-color: #101010;
+	/*background-image: url(dark-tire.png) !important;*/
+	background-color: #050505;
 	border: solid;
 	border-color: #303030;
 	border-radius: 0px 0px 0px 0px;
