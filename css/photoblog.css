@@ -9,7 +9,7 @@ when caption is up, took out title, added in a left/right key navigation, added 
 {
   #topinfo {
   	/*background-image: url(micro-carbon.png);*/
-  	background-color: #151515;
+  	background-color: #111111;
   	color: white;
   }
 }
@@ -78,8 +78,8 @@ body {
 /*THE POSTS*/
 
 #photoblog-post-block{
-	background-image: url(dark-tire.png) !important;
-	background-color: #101010;
+	/*background-image: url(dark-tire.png) !important;*/
+	background-color: #050505;
 	border: solid;
 	border-color: #303030;
 	border-radius: 0px 0px 0px 0px;
@@ -177,6 +177,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	width: 95%;
 
 }
+.photoblog-text#pb-gallery-text h1 a{
+	font-size: 30px;
+}
 .photoblog-text a, .photblog-text a:visited {
 	color: #FFFFFF;
 }
@@ -185,7 +188,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .photoblog-text p {
 	font-family: 'Helvetica';
-	line-height: 20px;
+	line-height: 18px;
+	font-size: 14px;
 }
 #photoblog-post-author {
 	font-style: italic;

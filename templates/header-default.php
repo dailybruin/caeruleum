@@ -42,25 +42,19 @@
 <nav class="container" id="nav-nameplate">
 	<div class="row">
 		<div class="span12" id="nameplate">
-		<?php 
-		$spectrum = false;
-		foreach(get_the_category() as $cat)
-		{
-			switch($cat->name){
-			    	case "Spectrum":
-				$spectrum = true;
-			    	break(2);
-			}
-		}
-		$behindtheblog = false;
-		if(get_post_meta( get_the_ID(), '_wp_page_template', TRUE ) == "page-spectrum-behind-the-blog.php")
-			$behindtheblog = true;
-
-		if($spectrum || $behindtheblog) : ?>
+		<?php if(/*is_category("spectrum") || 
+				 is_category("sports-spectrum") ||
+				 is_category("campus-spectrum") ||
+				 is_category("humans-of-westwood") ||
+				 is_category("archives") ||
+				 is_category("westwoodla") ||*/
+				 in_category("Spectrum") ||
+				 is_page_template( 'page-spectrum-behind-the-blog.php' ) ) : ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone" /></a>
-		<?php else : ?>
+		<?php else: ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" class="hidden-phone" /></a>
-		<?php endif; ?>
+		<?php endif ?>
+
 		
 
 		</div>
