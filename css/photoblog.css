@@ -177,6 +177,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	width: 95%;
 
 }
+.photoblog-text#pb-gallery-text h1 a{
+	font-size: 30px;
+}
 .photoblog-text a, .photblog-text a:visited {
 	color: #FFFFFF;
 }
@@ -185,7 +188,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .photoblog-text p {
 	font-family: 'Helvetica';
-	line-height: 20px;
+	line-height: 18px;
+	font-size: 14px;
 }
 #photoblog-post-author {
 	font-style: italic;
