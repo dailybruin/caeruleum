@@ -1,4 +1,4 @@
-<?php echo '<link href="/css/photoblog.css" rel="stylesheet" media="screen" type="text/css" />'; ?>
+<?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
 <div class="span9" id="post">
 	<?php the_post() ?>
