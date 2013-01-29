@@ -49,7 +49,7 @@
 				 is_category("archives") ||
 				 is_category("westwoodla") ||
 				 (is_single() && in_category("Spectrum")) ||
-				 is_page_template( 'page-spectrum-behind-the-blog.php' ) ) : ?>
+				 is_page( 'spectrum-behind-the-blog' ) ) : ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone" /></a>
 		<?php else: ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" class="hidden-phone" /></a>
