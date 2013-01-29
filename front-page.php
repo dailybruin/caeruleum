@@ -341,7 +341,7 @@
 								<span class="section-date"><?php the_time('M j'); ?></span>
 								</li>
 							<?php endforeach; ?>
-								<li id="front-cartoon-link"><a href="#">View this week's editorial cartoon</a></li>
+								<li id="front-cartoon-link"><a href="/category/editorial-cartoons/">View this week's editorial cartoon</a></li>
 							</ul>
 						</div><!-- end div.front-section-more -->
 					</div><!-- end div#front-opinion -->
