@@ -1,7 +1,7 @@
 <?php /* Start loop */ ?>
 <div class="row">
 	<div class="span2" id="classified-categories">
-		<h3>More ads</h3>
+		<h4>Ads by classification</h4>
 		<?php wp_list_categories(array(
 				'taxonomy' => 'classification',
 				'hierarchical' => false,
@@ -17,6 +17,8 @@
 		<div class="page-header">
 			<h1>Daily Bruin Classified Ads</h1>
 		</div>	
+		<strong style="display:block;margin-bottom:10px;">Featured ads:</strong>
+		
 			<?php
 			$args = array(
 				'post_type' => 'classifieds',
@@ -36,7 +38,7 @@
 		<?php // CATEGORIES ?>
 		<?php else : ?>
 		<div class="page-header">
-			<h2><a href="/classifieds/">Daily Bruin Classified Ads</a></h2>
+			<h1><a href="/classifieds/">&laquo; Daily Bruin Classified Ads</a></h1>
 			<h3><?php wp_title(''); ?></h3>
 		</div>
 
