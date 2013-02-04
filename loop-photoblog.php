@@ -1,36 +1,36 @@
 <?php echo '<link href="/css/photoblog.css" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
 <div class="span9" id="post">
-	<?php the_post() ?>
+	<?php the_post();
+	$cats = get_the_category();
+	if ($cats) {
+		foreach($cats as $cat){//DON'T HAVE MULTIPLE CATS OTHER THAN SPECTRUM AND THE SUBCAT
+			if ($cat->name != "Spectrum"){
+				$the_cat = $cat;
+			}
+		}
+	}
+
+	?>
 	<div class="page-header">
-    	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
+    	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>
     	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
 	<div id="pb-gallery-block">
 		<div id="pb-gallery-image">
 			<?php $gallery = get_post_meta($post->ID, 'gallery', true);
-			echo do_shortcode('[nggallery id='.$gallery.' template="galleryview"]');
+			if ($gallery != '-1') //THIS PART DONE BY NEIL
+				echo do_shortcode('[nggallery id='.$gallery.' template="galleryview"]');
 			?>
 		</div>
 		<div class="photoblog-text" id="pb-gallery-text">
-			<?php 
-				$cats = get_the_category();
-				//$the_cat = get_the_category()[0];
-				if ($cats) {
-					foreach($cats as $cat){//DON'T HAVE MULTIPLE CATS OTHER THAN SPECTRUM AND THE SUBCAT
-						if ($cat->name != "Spectrum"){
-							$the_cat = $cat;
-						}
-					}
-				}
+			<h1>
+			<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
+				<?php /*echo $the_cat->name;
+				echo (": "); */
+				the_title();
 				?>
-				<h1>
-				<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
-					<?php /*echo $the_cat->name;
-					echo (": "); */
-					the_title();
-					?>
-				</a></h1> 
+			</a></h1> 
 
 			<?php the_content(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
