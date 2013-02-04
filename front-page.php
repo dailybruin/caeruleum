@@ -91,6 +91,11 @@
 								<?php endforeach; ?>
 							</div><!-- end div#multimedia-item-2 -->
 							<span style="width:100%;display:block;clear:both;"></span>
+							<a id="spectrum-refer" href="/spectrum/">
+    						    <span id="spectrum-refer-explain">Photojournalism by the Daily Bruin.</span>
+    						    <img id="spectrum-refer-logo" src="/img/spectrum-shadow.png" />
+    						    <br style="width:100%; clear:both; display:block;" />
+    						</a><!-- end a#spectrum-refer -->
 						</div><!-- end div#front-multimedia -->
 					</div><!-- end div.span5 -->
 					<div class="span3" id="front-secondarycol">

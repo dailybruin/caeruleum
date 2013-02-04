@@ -8,7 +8,7 @@ Template Name: Behind the Blog
       <a class="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
       <h2>Exploring the UCLA experience through photojournalism</h2>
         <div class="pb-btb-text">
-        <?php echo '<link href="/css/photoblog.css" rel="stylesheet" media="screen" type="text/css" />'; 
+        <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; 
               get_template_part('loop', 'page'); ?>
         </div>
 
