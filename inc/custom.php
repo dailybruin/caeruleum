@@ -2,6 +2,20 @@
 
 // Custom functions
 
+
+function db_link_stories($permalink, $post, $leavename)
+{
+    if(!$post)
+        global $post;
+    $dblink = get_post_meta($post->ID,'db_link',true);    
+    if($dblink)
+        return $dblink;
+    else
+        return $permalink;
+}
+add_filter( 'post_link' , 'db_link_stories');
+
+
 function the_blog_banner($blog_name)
 {
 	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";
