@@ -2,7 +2,26 @@
 
 // Custom functions
 
+// Adds a link to the WordPress web production doc from the admin bar
+function uploading_doc_link()
+{
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_node('ngg-menu');
+    $wp_admin_bar->add_node( array(
+        'id' => 'db_uploading',
+        'title' => __('Uploading Guide'),
+        'href' => 'http://bit.ly/dailybruinuploading',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );
+}
+add_action( 'wp_before_admin_bar_render', 'uploading_doc_link' );
 
+
+// Add the ability to link to external sites by creating a post
+// in WordPress. It's not a symantically correct solution but it
+// works just fine for what we need, especially in 9 lines of code.
 function db_link_stories($permalink, $post, $leavename)
 {
     if(!$post)
