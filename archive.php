@@ -4,6 +4,7 @@
         <div class="page-header">
           <h1>
             <?php
+              $sectionPage = false;
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
               $categoryTitle = single_cat_title('',false);
               if ($term) {
@@ -17,10 +18,9 @@
               } elseif (is_year()) {
                 printf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
               } elseif (is_author()) {
-                global $post;
-                $author_id = $post->post_author;
-                printf(__('Author Archives: %s', 'roots'), get_the_author_meta('display_name', $author_id));
+                printf(__('Author Archives: %s', 'roots'), get_the_author());
               } else {
+                $sectionPage = true;
                 switch ($categoryTitle)
                 {
                 	case "Bruin Sights":
@@ -39,6 +39,7 @@
             ?>
           </h1>
           <?php
+          if($sectionPage):
   	    		$cat_args = array(
 					'child_of' => get_cat_ID($categoryTitle),
 					'orderby' => 'name',
@@ -50,7 +51,8 @@
 					<ul class="categories">
 					<?php wp_list_categories($cat_args); ?>
 					</ul>
-				<?php endif; ?>
+				<?php endif;
+			endif; ?>
           <span style="display:block;width:100%;clear:both"></span>
           <?php if(is_author()): ?>
 			<p><?php the_author_meta('description'); ?></p>
