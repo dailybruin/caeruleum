@@ -8,13 +8,45 @@ function uploading_doc_link()
     global $wp_admin_bar;
     $wp_admin_bar->remove_node('ngg-menu');
     $wp_admin_bar->add_node( array(
-        'id' => 'db_uploading',
-        'title' => __('Uploading Guide'),
+        'id' => 'dailybruin',
+        'title' => __('Uploading links'),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_uploading',
+        'parent' => 'dailybruin',
+        'title' => __('Web production doc'),
         'href' => 'http://bit.ly/dailybruinuploading',
         'meta' => array(
             'target' => '_blank',
         ),
     ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_rankings',
+        'parent' => 'dailybruin',
+        'title' => __('Rankings'),
+        'href' => 'https://docs.google.com/a/media.ucla.edu/document/d/1ISa739JAaoDFkUYEEVSpS_PzngOo7mlbbRITsw5N2b8',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_tweetsposts',
+        'parent' => 'dailybruin',
+        'title' => __('Tweets &amp; posts'),
+        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0Aqbw_P_k45fWdGdpUEtkdWZrU2U0RGFucVJyczQ5YlE',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_audits',
+        'parent' => 'dailybruin',
+        'title' => __('Audits'),
+        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0AqgbtmTCg5qodHVwandlVDM3bTdoRzJoQTFlVXhENWc#gid=49',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );    
 }
 add_action( 'wp_before_admin_bar_render', 'uploading_doc_link' );
 
