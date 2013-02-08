@@ -24,7 +24,7 @@ function uploading_doc_link()
         'id' => 'dailybruin_rankings',
         'parent' => 'dailybruin',
         'title' => __('Rankings'),
-        'href' => 'https://docs.google.com/a/media.ucla.edu/document/d/1ISa739JAaoDFkUYEEVSpS_PzngOo7mlbbRITsw5N2b8',
+        'href' => 'https://docs.google.com/a/media.ucla.edu/document/d/1ISa739JAaoDFkUYEEVSpS_PzngOo7mlbbRITsw5N2b8/edit',
         'meta' => array(
             'target' => '_blank',
         ),
