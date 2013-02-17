@@ -20,7 +20,7 @@
     }
     .dm-2013-page #dm-liveblog:hover {
         text-decoration:none;
-        opacity:0.85;
+        box-shadow: 0 0 55px rgba(0,0,0,0.2) inset;
     }
     .dm-2013-page #dm-top {
         margin-top:20px;
@@ -31,6 +31,8 @@
         line-height: 22px;
         font-style: italic;
         text-align: center;
+        margin-top: 27px;
+        margin-bottom: 46px;
     }
     .dm-2013-page [id^="dm-c-"]
     {
@@ -170,7 +172,6 @@
         font-family: "Georgia",serif;
         font-size: 1.2em;
         font-style: italic;
-        color: #cb7201;
         font-weight: bold;
         text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     }
@@ -207,6 +208,26 @@
     .dm-2013-page .link-mb2 {
         margin-bottom:25px;
     }
+    .dm-2013-page .dm-story {
+        font-family: "Georgia",serif;
+        font-size: 1.3em;
+        color: #333;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        display:block;
+        padding-top:4px;
+        padding-bottom:4px;
+    }
+    .dm-2013-page .dm-story:hover {
+        background-color:#e6e6e6;
+        text-decoration:none;
+    }
+    .dm-2013-page .dm-pubdate {
+        display: block;
+        font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+        text-transform: uppercase;
+        font-size: 0.6em;
+        font-weight: bold;
+    }
 </style>
 <div class="row dm-2013-page">
 	<div class="span8" id="post">
@@ -230,7 +251,7 @@
         </a><!-- end #dm-liveblog -->
         <div class="row" id="dm-top">
             <div class="span3">
-                <p id="dm-explain">UCLA students are spending 26 hours on their feet for Dance Marathon. The event, in its 12th year, raises money to combat pediatric AIDS. Follow our live coverage here. If you’re participating in Dance Marathon, tweet with the hashtag #UCLADM13 and send us photos by tagging @dailybruin on Instagram.</p>
+                <p id="dm-explain">UCLA students are spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raises money to combat pediatric AIDS.</p>
                 <!-- SnapWidget -->
                 <h3>Instagram #ucladm13</h3>
                 <iframe src="http://snapwidget.com/in/?h=dWNsYWRtMTN8aW58MTAwfDJ8M3x8eWVzfDV8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 345px" ></iframe>
@@ -240,6 +261,31 @@
                 <a class="twitter-timeline" href="https://twitter.com/search?q=%23ucladm13" data-widget-id="303120684165496834">Tweets about "#ucladm13"</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
+        </div><!-- end div.row -->
+        <div class="row">
+            <div class="span8">
+                <h3>More stories:</h3>
+            </div>
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/17/student-shows-off-her-props-costumes/" class="dm-story">
+                    <span class="dm-pubdate">Feb 17</span>
+                    Student shows off props, costumes</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/16/cause-room-aims-to-eliminate-stigma/" class="dm-story">
+                    <span class="dm-pubdate">Feb 16</span>
+                    &ldquo;Cause Room&rdquo; aims to eliminate stigma</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/16/ucla-alumna-sells-dance-marathon-merchandise/" class="dm-story">
+                    <span class="dm-pubdate">Feb 16</span>
+                    UCLA alumna sells Dance Marathon merchandise</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/15/dance-marathon-changes-name-to-include-generous-donor/" class="dm-story">
+                    <span class="dm-pubdate">Feb 15</span>
+                    Dance Marathon changes name to include generous donor</a>
+            </div><!-- end div.span2 -->
         </div><!-- end div.row -->
 	</div><!-- end div#post -->
 	
@@ -278,6 +324,10 @@
 	    </div><!-- end div.dm-timeline-link-->
 	    <hr class="vertical" />
 	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=2x5SsFZYzes">Video: Participants and committee members do the Harlem Shake</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
 	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=4yk25ikTvYE">Video: Jamar Rogers performs &ldquo;Ours for the Taking&rdquo;</a>
 	    </div><!-- end div.dm-timeline-link-->
 	    <hr class="vertical" />
@@ -293,10 +343,6 @@
 	        <span class="dmwhite">Half-way point</span>
 	        <span class="timeline-time">12:00 a.m.</span>
 	    </div><!-- end div.dm-timline-event -->
-	    <hr class="vertical" />
-	    <div class="dm-timeline-link">
-	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=2x5SsFZYzes">Video: Participants and committee members do the Harlem Shake</a>
-	    </div><!-- end div.dm-timeline-link-->
 	    <hr class="vertical" />
 	    <div class="dm-timeline-event">
 	        <span class="dmwhite">Curtains open</span>
