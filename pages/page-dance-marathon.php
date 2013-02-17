@@ -246,6 +246,37 @@ jQuery(document).ready(function() {
         top:0;
         right:0;
     }
+    .dm-2013-page #dm-spectrumrefer {
+        float:right;
+        position:relative;
+        overflow: hidden;
+        display:block;
+    }
+    .dm-2013-page #dm-spectrumrefer .dm-spectrum-title {
+        position: absolute;
+        color: white;
+        background-color: rgba(0,0,0,0.6);
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        font-family: "Georgia",serif;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        box-shadow: 0 0 4px black;
+        top: 0;
+        display:block;
+        -webkit-transition:background-color, padding 0.2s;
+    }
+    .dm-2013-page #dm-spectrumrefer:hover .dm-spectrum-title {
+        text-decoration:none;
+        padding-top: 21px;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .dm-2013-page .dm-spectrum-title:hover {
+        text-decoration:none;
+    }
 </style>
 <div class="row dm-2013-page">
 	<div class="span8" id="post">
@@ -301,6 +332,12 @@ jQuery(document).ready(function() {
                     <span class="dm-pubdate">Feb 16</span>
                     &ldquo;Cause Room&rdquo; aims to eliminate stigma</a>
             </div><!-- end div.span2 -->
+            <a class="span4" id="dm-spectrumrefer" href="http://dailybruin.com/2013/02/17/dance-marathon-portraits/">
+                <div class="dm-spectrum-title">
+                    Photo gallery: Portraits of dancers
+                </div><!-- end div.dm-spectrum-title -->
+                <img src="/images/features/dm-2013/DSC_5134.jpg" />
+            </a><!-- end div.span4 -->
             <div class="span2">
                 <a href="http://dailybruin.com/2013/02/16/ucla-alumna-sells-dance-marathon-merchandise/" class="dm-story">
                     <span class="dm-pubdate">Feb 16</span>
