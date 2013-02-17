@@ -1,0 +1,326 @@
+<?php get_header(); ?>
+<style type="text/css">
+    .dm-2013-page {
+        position: relative;
+    }
+    .dm-2013-page .dmwhite {
+        padding:16px;
+        color:white;
+        display:block;
+    }
+    .dm-2013-page .biglink {
+        font-size: 1.3em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .dm-2013-page #dm-liveblog {
+        width:100%;
+        display:block;
+        background-color:#f50a1b;
+    }
+    .dm-2013-page #dm-liveblog:hover {
+        text-decoration:none;
+        opacity:0.85;
+    }
+    .dm-2013-page #dm-top {
+        margin-top:20px;
+    }
+    .dm-2013-page #dm-explain {
+        font-family: "Georgia",serif;
+        font-size: 1.1em;
+        line-height: 22px;
+        font-style: italic;
+        text-align: center;
+    }
+    .dm-2013-page [id^="dm-c-"]
+    {
+        display:block;
+        height:10px;
+        width:10px;
+        background-color:gray;
+    }
+    .dm-2013-page #dm-collage {
+        position:relative;
+    }
+    .dm-2013-page #dm-c-1 {
+        width: 100%;
+        height: 210px;
+        margin-bottom: 10px;
+        background-image:url("/images/features/dm-2013/CHAR3583.JPG");
+        background-position: center center;
+        background-size: 100%;
+    }
+    .dm-2013-page #dm-c-2 {
+        height: 150px;
+        margin-bottom: 10px;
+        width: 106px;
+        float: left;
+        background-image:url("/images/features/dm-2013/CHAR3599.JPG");
+    }
+    .dm-2013-page #dm-c-3 {
+        float: left;
+        margin-left: 10px;
+        width: 195px;
+        height: 77px;
+        background-image:url("/images/features/dm-2013/Wide-Shot.jpg");
+    }
+    .dm-2013-page #dm-c-4 {
+        float: left;
+        margin-left: 10px;
+        height: 150px;
+        width: 200px;
+        background-image: url("/images/features/dm-2013/CHAR3064.JPG");
+        background-position: center center;
+        background-size: 100%;
+    }
+    .dm-2013-page #dm-c-5 {
+        float: left;
+        margin-left: 10px;
+        width: 89px;
+        height: 74px;
+        background-image: url("/images/features/dm-2013/CHAR3476.JPG");
+        background-position: center center;
+        background-size: 100%;
+    }
+    .dm-2013-page #dm-c-6 {
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        height: 66px;
+        width: 89px;
+        background-image: url("/images/features/dm-2013/CHAR3335.JPG");
+        background-position: center center;
+        background-size: 100%;
+    }
+    .dm-2013-page #dm-c-7 {
+        position: absolute;
+        bottom: 10px;
+        left: 216px;
+        height: 64px;
+        width: 94px;
+        background-image: url("/images/features/dm-2013/CHAR2975.JPG");
+        background-position: center center;
+        background-size: 100%;
+    }
+    .dm-2013-page #dm-c-8 {
+        position: absolute;
+        bottom: 10px;
+        left: 117px;
+        height: 64px;
+        width: 89px;
+        background-image: url("/images/features/dm-2013/CHAR3208.JPG");
+        background-position: center center;
+        background-size: 100%;
+    }
+    .dm-2013-page #dm-collage-title {
+        position: absolute;
+        right: 14px;
+        top: 31px;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px black;
+    }
+    .dm-2013-page #dm-collage-title2 {
+        position: absolute;
+        color: white;
+        right: 14px;
+        top: 72px;
+        font-weight: bold;
+        top: 71px;
+        font-weight: bold;
+        font-size: 2.2em;
+        text-shadow: 1px 1px 1px black;
+    }
+    .dm-2013-page .dm-timeline-day {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #060342;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        border-radius: 2px;
+    }
+    .dm-2013-page .dm-timeline-event {
+        width: 100%;
+        background-color: #2c7c1d;
+        border-radius: 2px;
+    }
+    .dm-2013-page hr.vertical {
+        margin: 0;
+        height: 30px;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #aaa;
+        width: 50%;
+    }
+    .dm-2013-page .timeline-time {
+        display: block;
+        float: right;
+        color: #2c7c1d;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        margin-top: -3px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    }
+    .dm-2013-page .dm-timeline-link a {
+        font-family: "Georgia",serif;
+        font-size: 1.2em;
+        font-style: italic;
+        color: #cb7201;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    }
+    .dm-2013-page .dm-link {
+        opacity: 0.2;
+        position: relative;
+        top: -3px;
+        display: block;
+        float: left;
+        margin-right: 7px;
+    }
+    .dm-2013-page .dm-timeline-event .dmwhite {
+        padding:8px;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+    .dm-2013-page .dm-timeline-day {
+        text-shadow: 1px 1px 0 black;
+    }
+    .dm-2013-page .unbold {
+        font-weight:normal;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        display: block;
+        opacity: 0.7;
+    }
+    .dm-2013-page .link-oneline {
+        display: block;
+        padding-top: 7px;
+    }
+    .dm-2013-page .link-mb1 {
+        margin-bottom:10px;
+    }
+    .dm-2013-page .link-mb2 {
+        margin-bottom:25px;
+    }
+</style>
+<div class="row dm-2013-page">
+	<div class="span8" id="post">
+	    <div id="dm-collage">
+	        <span id="dm-collage-title">Dance Marathon</span>
+	        <span id="dm-collage-title2">2013</span>
+    	    <div id="dm-c-1"> </div>
+    	    <div id="dm-c-2"> </div>
+    	    <div id="dm-c-3"> </div>
+    	    <div id="dm-c-4"> </div>
+    	    <div id="dm-c-5"> </div>
+    	    <div id="dm-c-6"> </div>
+    	    <div id="dm-c-7"> </div>
+    	    <div id="dm-c-8"> </div>
+    	    <div style="display:block;clear:both;width:100%;"></div>	    
+	    </div>
+	    
+	    
+        <a id="dm-liveblog" href="/2013/02/16/live-blog-dance-marathon-2013/">
+            <span class="dmwhite biglink">Read the latest on our liveblog &raquo;</span>
+        </a><!-- end #dm-liveblog -->
+        <div class="row" id="dm-top">
+            <div class="span3">
+                <p id="dm-explain">UCLA students are spending 26 hours on their feet for Dance Marathon. The event, in its 12th year, raises money to combat pediatric AIDS. Follow our live coverage here. If you’re participating in Dance Marathon, tweet with the hashtag #UCLADM13 and send us photos by tagging @dailybruin on Instagram.</p>
+                <!-- SnapWidget -->
+                <h3>Instagram #ucladm13</h3>
+                <iframe src="http://snapwidget.com/in/?h=dWNsYWRtMTN8aW58MTAwfDJ8M3x8eWVzfDV8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 345px" ></iframe>
+                
+            </div><!-- end div.span3 -->
+            <div class="span5">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23ucladm13" data-widget-id="303120684165496834">Tweets about "#ucladm13"</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div><!-- end div.row -->
+	</div><!-- end div#post -->
+	
+	<div class="span4 dm-2013-page">
+	    <?php get_template_part('ad','side'); ?>
+	    <div style="display:block;width:100%;height:15px;"></div>
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link" /> <a href="http://mojo.dailybruin.com/how-to-prepare-for-dance-marathon/">How to prepare for Dance Marathon</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-day">
+	        <span class="dmwhite">Saturday<br /><span class="unbold">February 16</span></span>
+	    </div><!-- end .div-timeline-day -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link" /> <a href="http://dailybruin.com/images/2013/02/dm3.jpg" class="link-oneline">Photo: Dancers check in</a>
+	        <span style="display:block;width:100%;clear:both"></span>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Introduction &amp; countdown</span>
+	        <span class="timeline-time">10:45 a.m.</span>
+	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Dancing begins</span>
+	        <span class="timeline-time">11:00 a.m.</span>
+	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=zJbWUasdW9A">Video: Beginning moments of Dance Marathon 2013</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb2" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=zJbWUasdW9A">Video: Pediatric AIDS Coalition committee members demo morale dance</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=4yk25ikTvYE">Video: Jamar Rogers performs &ldquo;Ours for the Taking&rdquo;</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link" /> <a href="http://dailybruin.com/2013/02/16/participants-take-break-from-dancing-to-eat/">Participants take break from dancing to eat</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-day">
+	        <span class="dmwhite">Sunday<br /><span class="unbold">February 17</span></span>
+	    </div><!-- end .div-timeline-day -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Half-way point</span>
+	        <span class="timeline-time">12:00 a.m.</span>
+	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=2x5SsFZYzes">Video: Participants and committee members do the Harlem Shake</a>
+	    </div><!-- end div.dm-timeline-link-->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Curtains open</span>
+	        <span class="timeline-time">9:00 a.m.</span>
+	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Power hour</span>
+	        <span class="timeline-time">Noon</span>
+	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Dancing ends</span>
+	        <span class="timeline-time">1:00 p.m.</span>
+	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-event">
+	        <span class="dmwhite">Fundraising amount announced</span>
+	        <span class="timeline-time">1:30 p.m.</span>
+	    </div><!-- end div.dm-timline-event -->	    
+	</div>
+	<?php //get_sidebar(); ?>
+	
+</div><!-- end div#single-post -->      
+
+
+<?php get_footer(); ?>
