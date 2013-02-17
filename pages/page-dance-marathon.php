@@ -1,3 +1,6 @@
+<?php/*
+Template Name: Dance Marathon 2013
+*/ ?>
 <?php get_header(); ?>
 <script type="text/javascript">
 jQuery(document).ready(function() {
