@@ -307,7 +307,7 @@ jQuery(document).ready(function() {
         
         <div class="row" id="dm-top">
             <div class="span3">
-                <p id="dm-explain">UCLA students spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raises money to combat pediatric AIDS.</p>
+                <p id="dm-explain">UCLA students spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raised $475,422.57 to combat pediatric AIDS.</p>
                 <!-- SnapWidget -->
                 <h3>Instagram #ucladm13</h3>
                 <iframe src="http://snapwidget.com/in/?h=dWNsYWRtMTN8aW58MTAwfDJ8M3x8eWVzfDV8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 345px" ></iframe>
