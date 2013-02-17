@@ -2,6 +2,15 @@
 	Byron Lutz
 */
 
+/***** ALLOW PAGES TO MAKE PAGE UN-RESPONSIVE *****/
+function unresponsivize() {
+    $('meta[name="viewport"]').attr('content','width=980, initial-scale=0.1');
+    $('link[href="/css/bootstrap-responsive.css"]').attr('disabled','true');
+    $('link[href="/css/app-responsive.css"]').attr('disabled','true');
+    $(window).unbind('resize');
+}
+
+
 /***** BACK TO TOP BUTTON *****/
 $(document).ready(function() {
 	$('#backtotop').click(function(e) {
