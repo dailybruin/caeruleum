@@ -236,6 +236,16 @@ jQuery(document).ready(function() {
         font-size: 0.6em;
         font-weight: bold;
     }
+    .dm-2013-page #dm-sm {
+        margin-top: 10px;
+        position:relative;
+    }
+    .dm-2013-page #dm-sm iframe {
+        float:right;
+        position:absolute;
+        top:0;
+        right:0;
+    }
 </style>
 <div class="row dm-2013-page">
 	<div class="span8" id="post">
@@ -253,10 +263,17 @@ jQuery(document).ready(function() {
     	    <div style="display:block;clear:both;width:100%;"></div>	    
 	    </div>
 	    
-	    
         <a id="dm-liveblog" href="/2013/02/16/live-blog-dance-marathon-2013/">
             <span class="dmwhite biglink">Read the latest on our liveblog &raquo;</span>
         </a><!-- end #dm-liveblog -->
+        
+        <div id="dm-sm">    	
+            <div class="fb-like" data-send="true" data-width="225" data-show-faces="true" data-action="recommend"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-hashtags="ucladm13">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div><!-- end div#dm-sm -->
+        
+        
         <div class="row" id="dm-top">
             <div class="span3">
                 <p id="dm-explain">UCLA students spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raises money to combat pediatric AIDS.</p>
