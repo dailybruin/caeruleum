@@ -1,8 +1,10 @@
 <?php get_header(); ?>
-<script>
-jQuery(document.ready(function() {
-    $('meta[name="viewport"]').attr('content','width=980, initial-scale=1.0');
-}));
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    $('meta[name="viewport"]').attr('content','width=980, initial-scale=0.1');
+    $('link[href="/css/bootstrap-responsive.css"]').attr('disabled','true');
+    $('link[href="/css/app-responsive.css"]').attr('disabled','true');
+});
 </script>
 <style type="text/css">
     .dm-2013-page {
