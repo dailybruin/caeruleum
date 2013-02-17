@@ -8,6 +8,11 @@ function unresponsivize() {
     $('link[href="/css/bootstrap-responsive.css"]').attr('disabled','true');
     $('link[href="/css/app-responsive.css"]').attr('disabled','true');
     $(window).unbind('resize');
+    $('.hidden').css('display','none').css('visibility','hidden');
+    $('.visible-phone').css('display','none','important');
+    $('.visible-tablet').css('display','none','important');
+    $('.hidden-desktop').css('display','none','important');
+    $('.visible-desktop').css('display','inherit','important');
 }
 
 
