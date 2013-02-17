@@ -424,7 +424,11 @@ jQuery(document).ready(function() {
 	    <div class="dm-timeline-event">
 	        <span class="dmwhite">Fundraising amount announced</span>
 	        <span class="timeline-time">1:30 p.m.</span>
-	    </div><!-- end div.dm-timline-event -->	    
+	    </div><!-- end div.dm-timline-event -->	  
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link" /> <a href="http://www.youtube.com/watch?v=Pf9r8cp1H8I&feature=youtu.be">Video: Fundraising amount revealed</a>
+	    </div><!-- end div.dm-timeline-link-->  
 	</div>
 	<?php //get_sidebar(); ?>
 	
