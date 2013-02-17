@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<script>
+jQuery(document.ready(function() {
+    $('meta[name="viewport"]').attr('content','width=980, initial-scale=1.0');
+}));
+</script>
 <style type="text/css">
     .dm-2013-page {
         position: relative;
