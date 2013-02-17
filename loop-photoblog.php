@@ -20,7 +20,7 @@
 		<div id="pb-gallery-image">
 			<?php $gallery = get_post_meta($post->ID, 'gallery', true);
 			if ($gallery != '-1') //THIS PART DONE BY NEIL
-				echo do_shortcode('[nggallery id='.$gallery.' template="galleryview"]');
+				echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images="0"]');
 			?>
 		</div>
 		<div class="photoblog-text" id="pb-gallery-text">
