@@ -277,6 +277,17 @@ jQuery(document).ready(function() {
     .dm-2013-page .dm-spectrum-title:hover {
         text-decoration:none;
     }
+    .dm-2013-page .dm-online-byline {
+        text-align: center;
+        font-family: "Georgia",serif;
+        font-size: 0.8em;
+        opacity: 0.6;
+        font-weight: bold;
+    }
+    .dm-2013-page #dm-byline-row {
+        padding-top:14px;
+        text-align:center;
+    }
 </style>
 <div class="row dm-2013-page">
 	<div class="span8" id="post">
@@ -348,6 +359,9 @@ jQuery(document).ready(function() {
                     <span class="dm-pubdate">Feb 15</span>
                     Dance Marathon changes name to include generous donor</a>
             </div><!-- end div.span2 -->
+        </div><!-- end div.row -->
+        <div class="row" id="dm-byline-row">
+            <span class="dm-online-byline span8">Online page/design by <a href="mailto:blutz@media.ucla.edu">Byron Lutz</a></span>
         </div><!-- end div.row -->
 	</div><!-- end div#post -->
 	
