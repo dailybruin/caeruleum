@@ -400,7 +400,7 @@ jQuery(document).ready(function() {
 	    </div><!-- end div.dm-timeline-link-->
 	    <hr class="vertical" />
 	    <div class="dm-timeline-link">
-	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=2x5SsFZYzes">Video: Participants and committee members do the Harlem Shake</a>
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://www.youtube.com/watch?feature=player_embedded&v=2x5SsFZYzes">Video: Morale committee performs</a>
 	    </div><!-- end div.dm-timeline-link-->
 	    <hr class="vertical" />
 	    <div class="dm-timeline-link">
