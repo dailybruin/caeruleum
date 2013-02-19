@@ -22,9 +22,13 @@ jQuery(document).ready(function() {
         text-transform: uppercase;
     }
     .dm-2013-page #dm-liveblog {
-        width:100%;
         display:block;
         background-color:#f50a1b;
+    }
+    .dm-2013-page #dm-liveblog span {
+        font-size:1.2em;
+        text-transform:none;
+        padding:10px;
     }
     .dm-2013-page #dm-liveblog:hover {
         text-decoration:none;
@@ -39,8 +43,6 @@ jQuery(document).ready(function() {
         line-height: 22px;
         font-style: italic;
         text-align: center;
-        margin-top: 27px;
-        margin-bottom: 46px;
     }
     .dm-2013-page [id^="dm-c-"]
     {
@@ -224,10 +226,14 @@ jQuery(document).ready(function() {
         display:block;
         padding-top:4px;
         padding-bottom:4px;
+        margin-bottom:10px;
     }
     .dm-2013-page .dm-story:hover {
         background-color:#e6e6e6;
         text-decoration:none;
+    }
+    .dm-2013-page .dm-story-column {
+        font-style:italic;
     }
     .dm-2013-page .dm-pubdate {
         display: block;
@@ -235,6 +241,7 @@ jQuery(document).ready(function() {
         text-transform: uppercase;
         font-size: 0.6em;
         font-weight: bold;
+        font-style:normal;
     }
     .dm-2013-page #dm-sm {
         margin-top: 10px;
@@ -288,9 +295,20 @@ jQuery(document).ready(function() {
         padding-top:14px;
         text-align:center;
     }
+    .dm-2013-page #dm-wraplink > a {
+        background-color:black;
+        color: white;
+        padding: 10px;
+        padding-top: 5px;
+        margin-bottom:10px;
+    }
+    .dm-2013-page #dm-wraplink:hover > a {
+        background-color:#333;
+    }
 </style>
 <div class="row dm-2013-page">
 	<div class="span8" id="post">
+	    
 	    <div id="dm-collage">
 	        <span id="dm-collage-title">Dance Marathon</span>
 	        <span id="dm-collage-title2">2013</span>
@@ -305,50 +323,62 @@ jQuery(document).ready(function() {
     	    <div style="display:block;clear:both;width:100%;"></div>	    
 	    </div>
 	    
-        <a id="dm-liveblog" href="/2013/02/16/live-blog-dance-marathon-2013/">
-            <span class="dmwhite biglink">Read the latest on our liveblog &raquo;</span>
-        </a><!-- end #dm-liveblog -->
-        
-        <div id="dm-sm">    	
-            <div class="fb-like" data-send="true" data-width="225" data-show-faces="true" data-action="recommend"></div>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-hashtags="ucladm13">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div><!-- end div#dm-sm -->
+    	        <p id="dm-explain">UCLA students spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raised $475,422.57 to combat pediatric AIDS.</p>
+	    
+                <div id="dm-sm">    	
+                    <div class="fb-like" data-send="true" data-width="225" data-show-faces="true" data-action="recommend"></div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-hashtags="ucladm13">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div><!-- end div#dm-sm -->
         
         
-        <div class="row" id="dm-top">
-            <div class="span3">
-                <p id="dm-explain">UCLA students spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raised $475,422.57 to combat pediatric AIDS.</p>
-                <!-- SnapWidget -->
-                <h3>Instagram #ucladm13</h3>
-                <iframe src="http://snapwidget.com/in/?h=dWNsYWRtMTN8aW58MTAwfDJ8M3x8eWVzfDV8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 345px" ></iframe>
-                
-            </div><!-- end div.span3 -->
-            <div class="span5">
-                <a class="twitter-timeline" href="https://twitter.com/search?q=%23ucladm13" data-widget-id="303120684165496834">Tweets about "#ucladm13"</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-        </div><!-- end div.row -->
         <div class="row">
             <div class="span8">
-                <h3>More stories:</h3>
+                <h3>Read about the marathon:</h3>
             </div>
-            <div class="span2">
+            <div class="span4" id="dm-wraplink">
                 <a href="http://dailybruin.com/2013/02/17/student-shows-off-her-props-costumes/" class="dm-story">
-                    <span class="dm-pubdate">Feb 17</span>
-                    Student shows off props, costumes</a>
-            </div><!-- end div.span2 -->
-            <div class="span2">
-                <a href="http://dailybruin.com/2013/02/16/cause-room-aims-to-eliminate-stigma/" class="dm-story">
-                    <span class="dm-pubdate">Feb 16</span>
-                    &ldquo;Cause Room&rdquo; aims to eliminate stigma</a>
-            </div><!-- end div.span2 -->
+                    <span class="dm-pubdate">Feb 19</span>
+                    After 26 hours, dancers find relief in cause</a>
+            </div><!-- end div.span4 -->
             <a class="span4" id="dm-spectrumrefer" href="http://dailybruin.com/2013/02/17/dance-marathon-portraits/">
                 <div class="dm-spectrum-title">
                     Photo gallery: Portraits of dancers
                 </div><!-- end div.dm-spectrum-title -->
                 <img src="/images/features/dm-2013/DSC_5134.jpg" />
             </a><!-- end div.span4 -->
+            
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/19/kohli-calling-cause-makes-third-dance-marathon-worthwhile/" class="dm-story dm-story-column">
+                    <span class="dm-pubdate">Feb 19</span>
+                    Kohli Calling: Cause makes third Dance Marathon worthwile</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/19/dance-marathon-2013-kindle-ambassadors/" class="dm-story">
+                    <span class="dm-pubdate">Feb 19</span>
+                    Video: Kindle Ambassadors</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/19/dance-marathon-2013-kinetic-dance-floor/" class="dm-story">
+                    <span class="dm-pubdate">Feb 19</span>
+                    Video: Kinetic dance floor</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/19/dance-marathon-raised-thousands-to-fight-pediatric-aids/" class="dm-story">
+                    <span class="dm-pubdate">Feb 19</span>
+                    Dance Marathon raised thousands to fight pediatric AIDS [Graphic]</a>
+            </div><!-- end div.span2 -->
+            
+            <div class="span2">
+                <a href="http://dailybruin.com/2013/02/17/student-shows-off-her-props-costumes/" class="dm-story">
+                    <span class="dm-pubdate">Feb 17</span>
+                    Student shows off props, costumes</a>
+            </div><!-- end div.span2 -->
+            <div class="span2" style="float:right">
+                <a href="http://dailybruin.com/2013/02/16/cause-room-aims-to-eliminate-stigma/" class="dm-story">
+                    <span class="dm-pubdate">Feb 16</span>
+                    &ldquo;Cause Room&rdquo; aims to eliminate stigma</a>
+            </div><!-- end div.span2 -->
             <div class="span2">
                 <a href="http://dailybruin.com/2013/02/16/ucla-alumna-sells-dance-marathon-merchandise/" class="dm-story">
                     <span class="dm-pubdate">Feb 16</span>
@@ -359,14 +389,37 @@ jQuery(document).ready(function() {
                     <span class="dm-pubdate">Feb 15</span>
                     Dance Marathon changes name to include generous donor</a>
             </div><!-- end div.span2 -->
+            
+            <a id="dm-liveblog" href="/2013/02/16/live-blog-dance-marathon-2013/" class="span4">
+                <span class="dmwhite biglink">Click here to view our live blog from the 2013 Dance Marathon&nbsp;&raquo;</span>
+            </a><!-- end #dm-liveblog -->
+    	    
         </div><!-- end div.row -->
+        
+        <div class="row" id="dm-top">
+            <div class="span3">
+                <!-- SnapWidget -->
+                <h3>Instagram #ucladm13</h3>
+                <iframe src="http://snapwidget.com/in/?h=dWNsYWRtMTN8aW58MTAwfDJ8M3x8eWVzfDV8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 345px" ></iframe>
+                
+            </div><!-- end div.span3 -->
+            <div class="span5">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23ucladm13" data-widget-id="303120684165496834">Tweets about "#ucladm13"</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div><!-- end div.row -->
+        
         <div class="row" id="dm-byline-row">
             <span class="dm-online-byline span8">Online page/design by <a href="mailto:blutz@media.ucla.edu">Byron Lutz</a></span>
-        </div><!-- end div.row -->
+        </div><!-- end div.row#dm-byline-row -->
+        
 	</div><!-- end div#post -->
 	
 	<div class="span4 dm-2013-page">
 	    <?php get_template_part('ad','side'); ?>
+	    <hr />
+        
+        <h3>Timeline:</h3>
 	    <div style="display:block;width:100%;height:15px;"></div>
 	    <div class="dm-timeline-link">
 	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link" /> <a href="http://mojo.dailybruin.com/how-to-prepare-for-dance-marathon/">How to prepare for Dance Marathon</a>
@@ -424,6 +477,10 @@ jQuery(document).ready(function() {
 	        <span class="dmwhite">Curtains open</span>
 	        <span class="timeline-time">9:00 a.m.</span>
 	    </div><!-- end div.dm-timline-event -->
+	    <hr class="vertical" />
+	    <div class="dm-timeline-link">
+	        <img src="/images/features/dm-2013/icon-link.png" class="dm-link link-mb1" /> <a href="http://dailybruin.com/2013/02/17/returning-dj-pumps-up-crowd-during-dance-marathon/">Returning DJ pumps up crowd during Dance Marathon</a>
+	    </div><!-- end div.dm-timeline-link-->
 	    <hr class="vertical" />
 	    <div class="dm-timeline-event">
 	        <span class="dmwhite">Power hour</span>
