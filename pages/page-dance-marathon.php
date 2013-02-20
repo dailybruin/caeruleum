@@ -337,7 +337,7 @@ jQuery(document).ready(function() {
                 <h3>Read about the marathon:</h3>
             </div>
             <div class="span4" id="dm-wraplink">
-                <a href="http://dailybruin.com/2013/02/17/student-shows-off-her-props-costumes/" class="dm-story">
+                <a href="http://dailybruin.com/2013/02/18/after-26-hours-dancers-find-relief-in-cause/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     After 26 hours, dancers find relief in cause</a>
             </div><!-- end div.span4 -->
