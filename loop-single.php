@@ -98,7 +98,29 @@
 						<br style="clear:both" />
 					</ul>
 				</div><!-- end div.post-extra -->
-				<?php the_byline(); ?>
+				<?php // Display the columnist's mugshot
+				    if($displayAuthor && $articleFormat === "column")
+				    {
+				        ob_start();
+    					if(function_exists('userphoto_the_author_thumbnail'))
+    						userphoto_the_author_thumbnail();
+    					$thumbnail = ob_get_contents();
+    					$thumbnail_class = "";
+    					ob_end_clean();
+    					if(!isset($thumbnail) || $thumbnail == "")
+    						the_byline(false);
+    					else 
+    					{
+        					?><div class="author-photo"><?php echo $thumbnail; ?></div><?php
+        					the_byline(false);
+        					echo "<hr style='margin:5px 0;' />";
+        				}
+				    }
+				    else
+				    {
+				        the_byline();
+				    }
+				?>
 				<?php if(isset($customFields['db_infobox'])) : ?>
 					<div class="db-infobox">
 						<?php echo $customFields['db_infobox'][0]; ?>

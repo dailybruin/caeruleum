@@ -1818,7 +1818,16 @@ a.page-numbers:hover {
 /* ===== Author info ========================================================
    Author:
    ========================================================================== */
+.author-photo {
+   float: right;
+   margin-left: 10px;
+   margin-bottom: 10px;
+}
+.author-photo.nothumb {
+    display:none;
+}
 
+/* BELOW: old stuff. It's not used yet */
 .author-info {
     margin-top: 18px;
     margin-left: 90px;
