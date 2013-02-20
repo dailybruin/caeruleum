@@ -364,6 +364,11 @@ jQuery(document).ready(function() {
                     Video: Kinetic dance floor</a>
             </div><!-- end div.span2 -->
             <div class="span2">
+                <a href="http://dailybruin.com/2013/02/19/dance-marathon-2013-the-characters-on-the-dance-floor/" class="dm-story">
+                    <span class="dm-pubdate">Feb 19</span>
+                    Video: Characters on the dance floor</a>
+            </div><!-- end div.span2 -->
+            <div class="span2">
                 <a href="http://dailybruin.com/2013/02/19/dance-marathon-raised-thousands-to-fight-pediatric-aids/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     Dance Marathon raised thousands to fight pediatric AIDS [Graphic]</a>
