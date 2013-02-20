@@ -1827,6 +1827,10 @@ a.page-numbers:hover {
     display:none;
 }
 
+.author-contact {
+    font-style:italic;
+}
+
 /* BELOW: old stuff. It's not used yet */
 .author-info {
     margin-top: 18px;

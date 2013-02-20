@@ -127,6 +127,45 @@
 					</div>
 				<?php endif; ?>
 				<?php if(!$video_story) { the_content(); } ?>
+				<p class="author-contact">
+				    <?php if(isset($customFields['db_authoremail']))
+				    {
+				        echo $customFields['db_authoremail'][0];
+				    }
+                    else if(intval(the_date('U','','',false)) <= 1361363177)
+                    { ; }
+				    else
+				    {
+				        $coauthors = get_coauthors();
+				        $finalAuthorKey = count($coauthors) - 1;
+				        $firstAuthor = true;
+				        foreach($coauthors as $key=>$author)
+				        {
+				            $lastAuthor = ($finalAuthorKey == $key);
+				            $lastName = get_the_author_meta('last_name', $author->ID);
+				            $graduated = get_the_author_meta('graduated', $author->ID);
+				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated)
+				                continue;
+				            if($firstAuthor)
+				                echo "Email ";
+				            else
+				            {
+				                if($lastAuthor && $key == 1)
+				                    echo " and email ";
+				                else if($lastAuthor)
+				                    echo ", and email ";
+				                else
+				                    echo ", email ";
+				            }
+			                echo $lastName . " at <a href='mailto:"
+			                    . $author->user_email . "'>" . $author->user_email 
+			                    . "</a>";
+			                if($lastAuthor)
+			                    echo ".";
+			                $firstAuthor = false;
+				        }
+				    }?>
+				</p>
 
 			</div><!-- end div.post-content -->
 
