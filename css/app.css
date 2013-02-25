@@ -2066,6 +2066,19 @@ a.page-numbers:hover {
   }
 }
 
+/* Chilean winter refer styles. Remove when off the front page. */
+#featuredProject > div {
+    background-color: #182e49;
+}
+#featuredProject p {
+    line-height: 1.7em;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+}
+#featuredProject .featuredlink {
+    background-color:black;
+    color:white;
+}
+
 /* =============================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
