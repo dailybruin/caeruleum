@@ -6,6 +6,7 @@ get_header(); ?>
 <style type="text/css">
 
 input.input_field {
+    margin: 0 0 10px 0;    
     width:100%;
 }
 p.inner {
@@ -29,11 +30,9 @@ div.column_two {
     margin-right: 0;
 }
 h2.title {
-    /*
+    margin: 20px 0 20px 0;
     border-bottom: 1px solid #7a7a7a;
-    margin: 0;
-    padding: 0 0 15px 0;
-    */
+    padding: 0 0 20px 0;
 }
 label.options {
     font-size: 16px;
@@ -87,7 +86,7 @@ p.big {
 widget_wysija 
     -->
     <div class="span4">
-        <p>To subscribe to our dandy newsletter simply add your email below. A confirmation email will be sent to you!</p>
+        <p class="inner">To subscribe to our dandy newsletter simply add your email below. A confirmation email will be sent to you!</p>
         <p class="wysija-p-email"><input type="text" id="form-html510dbe4125ad3-wysija-to" value="<?php echo $_GET['email']; ?>" placeholder="Email" title="Email" class="input_field defaultlabels wysija-email validate[required,custom[email]]" name="wysija[user][email]" /></p>
         <span class="wysija-p-email abs-req"><input type="text" id="form-html510dbe4125ad3-abs-email" value="" class="defaultlabels validated[abs][email]" name="wysija[user][abs][email]" /></span>
         
