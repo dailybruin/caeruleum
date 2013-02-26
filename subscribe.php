@@ -88,9 +88,8 @@ widget_wysija
     -->
     <div class="span4">
         <p>To subscribe to our dandy newsletter simply add your email below. A confirmation email will be sent to you!</p>
-        <p class="wysija-p-firstname"><input type="text" id="form-html510dbe4125ad3-firstname" placeholder="First name" value="<?php echo $_GET['email']; ?>" title="First name" class="input_field defaultlabels wysija-firstname validate[required]" name="wysija[user][firstname]" /></p>
-        <p class="wysija-p-email"><input type="text" id="form-html510dbe4125ad3-wysija-to" placeholder="Email" title="Email" class="input_field defaultlabels wysija-email validate[required,custom[email]]" name="wysija[user][email]" /></p>
-        <span class="wysija-p-firstname abs-req"><input type="text" id="form-html510dbe4125ad3-abs-firstname" value="" class="defaultlabels validated[abs][req]" name="wysija[user][abs][firstname]" /></span><span class="wysija-p-lastname abs-req"><input type="text" id="form-html510dbe4125ad3-abs-lastname" value="" class="defaultlabels validated[abs][req]" name="wysija[user][abs][lastname]" /></span><span class="wysija-p-email abs-req"><input type="text" id="form-html510dbe4125ad3-abs-email" value="" class="defaultlabels validated[abs][email]" name="wysija[user][abs][email]" /></span>
+        <p class="wysija-p-email"><input type="text" id="form-html510dbe4125ad3-wysija-to" value="<?php echo $_GET['email']; ?>" placeholder="Email" title="Email" class="input_field defaultlabels wysija-email validate[required,custom[email]]" name="wysija[user][email]" /></p>
+        <span class="wysija-p-email abs-req"><input type="text" id="form-html510dbe4125ad3-abs-email" value="" class="defaultlabels validated[abs][email]" name="wysija[user][abs][email]" /></span>
         
 
 
