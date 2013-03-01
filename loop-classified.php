@@ -42,7 +42,8 @@
 			<h3><?php wp_title(''); ?></h3>
 		</div>
 
-
+        <?php global $query_string; ?>
+        <?php query_posts($query_string . '&posts_per_page=-1'); ?>
 		<?php while (have_posts()) : the_post(); ?>
 		    <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		    	<?php $customFields = get_post_custom(); ?>
