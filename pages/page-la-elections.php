@@ -1,16 +1,13 @@
 <?php/*
 Template Name: LA Elections 2013
 */ ?>
-<?php wp_enqueue_script('jquery'); ?>
-<?php
-function my_scripts_method() {
-	wp_enqueue_script(
-		'audiojs',
-		get_template_directory_uri() . '/js/vendor/audio.min.js',
-		array('jquery')
-	);
-}
-add_action('wp_enqueue_scripts', 'my_scripts_method');
+<?php 
+    wp_enqueue_script('jquery');
+    wp_enqueue_script(
+    	'audiojs',
+    	get_template_directory_uri() . '/js/vendor/audio.min.js',
+    	array('jquery')
+    );
 ?>
 <?php get_header(); ?>
 
@@ -145,7 +142,7 @@ add_action('wp_enqueue_scripts', 'my_scripts_method');
 								border-bottom: 3px solid #540000;
 								clear: both;
 								}
-								p {
+								#la-elections-2013 p {
 								line-height: 1.5;
 								text-indent: 25px;
 								}
@@ -198,7 +195,7 @@ add_action('wp_enqueue_scripts', 'my_scripts_method');
 								.candidate p:hover {
 								cursor: pointer;
 								}
-								span {
+								#la-elections-2013 span {
 								cursor: auto;
 								margin-bottom: 20px;
 								}
@@ -470,10 +467,11 @@ add_action('wp_enqueue_scripts', 'my_scripts_method');
 								margin-top: 40px;
 								}
 								</style>
+<div id="la-elections-2013">
 								<div class="row1"><div id="election-header"><p><i>The Daily Bruin&rsquo;s</i></p><h6>Los Angeles</h6><h1>Election Endorsements</h1></div></div>
 								
 								<div class="row1" id="social">
-								<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-related="dailybruin">Tweet</a>
 								<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
 								<span id="byline">Page design by <a href="mailto:jwu@media.ucla.edu">James Wu</a>, Bruin contributor</span>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -634,5 +632,6 @@ add_action('wp_enqueue_scripts', 'my_scripts_method');
 								<p>During his interview with the editorial board, Koretz said adequate parking in Westwood was &ldquo;key&rdquo; to the neighborhood&rsquo;s revival. He suggested converting parallel parking spots into angled parking spots, which might create 20 to 50 new spaces, he said.</p>
 								<p><a href="http://dailybruin.com/?p=127331">Read more...</a>
 								</div>
-								</div>
+    							</div>
+</div><!-- end div#la-elections-2013 -->
 <?php get_footer(); ?>
