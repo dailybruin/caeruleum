@@ -209,6 +209,7 @@
 				<?php endif; ?>
 			</div>
 		</div><!-- end div#entry-bottom -->
+		<p id="comment-policy">Comments are supposed to create a forum for thoughtful, respectful community discussion. Please be nice. <a href="<?php echo get_permalink( get_page_by_path( 'comment-policy' ) ); ?>">View our full comments policy here.</a></p>
       <?php comments_template(); ?>
     </article>
 <?php endwhile; /* End loop */ ?>
