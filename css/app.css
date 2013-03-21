@@ -175,6 +175,12 @@ a.[class*=" headline-"]:hover {
 	color:#333;
 }
 
+#comment-policy {
+	font-style: italic;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
 .thumbnail-a {
 	float: right;
 	margin-left: 10px;
