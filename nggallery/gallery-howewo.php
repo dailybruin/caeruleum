@@ -1,5 +1,5 @@
 <?php if (!defined ('ABSPATH')) die ('No direct access allowed'); ?><?php if (!empty ($gallery)) : ?>
-
+<?php /*
 <div class="row">
 	<?php 
 		$col_count = 4;
@@ -35,12 +35,11 @@
 		endfor;
 	?>
 </div>
-<?php /* 
+  */?>
 <div class="row" id="howewo-container">
 	<?php foreach ( $images as $image ) : ?>
 		<img src="<?php echo $image->imageURL ?>" alt="<?php echo $image->alttext ?>" data-description="<?php echo $image->description ?>" value="<?php echo $image->tags[0] ?>" />
  	<?php endforeach; ?>
 </div>
-*/?>
 
 <?php endif; ?>
