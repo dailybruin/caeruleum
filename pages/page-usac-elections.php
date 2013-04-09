@@ -12,7 +12,121 @@ jQuery(document).ready(function() {
 </script>
 
 <style type="text/css">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
 
+body {
+line-height: 1;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+#banner {
+	position: absolute;
+	background-color:silver;
+	float:left;
+	width:65%;
+	height:305px;
+}
+
+#page_tab {
+	position:relative;
+	top: 305px;
+	overflow: hidden;
+	background-color:plum;
+	width:100%;
+	height: 300px;
+}
+
+#candidate {
+	float:left;
+	width: 33%;
+	height: 300px;
+	border-style:solid;
+	border-width:2px;
+}
+
+#info {
+	float: left;
+	width:33%;
+	height:300px;
+	border-style:solid:
+	border-width:2px;
+}
+#opinion {
+	float: left;
+	width:33%;
+	height:300px;
+	border-style:solid;	
+	border-width:2px;
+
+}
+
+#campaign_violation {
+	position:relative;
+	top:305px;
+	float:left;
+	width: 75%;
+	height:400px;
+	background-color:peru;
+
+}
+
+#calendar {
+	position:relative;
+	float:left;
+	top:305px;
+	width:25%;
+	height:300px;
+	background-color:gray;
+
+}
+
+#article {
+	position:relative;
+	float:left;
+	top:305px;
+	width:75%;
+	height:300px;
+	background-color:orchid;
+
+}
+
+#social_media {
+	position:relative;
+	float:left;
+	top:200px;
+	width:25%;
+	height:400px;
+	background-color:khaki;
+
+}
 </style>
 
 <div id="usac page">
