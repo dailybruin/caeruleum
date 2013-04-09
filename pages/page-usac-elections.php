@@ -55,6 +55,11 @@ line-height: 1;
 	height:305px;
 }
 
+#ad {
+	position:relative;
+	float:left;
+}
+
 #page_tab {
 	position:relative;
 	top: 305px;
@@ -145,6 +150,7 @@ line-height: 1;
         <body>
         <div id="container">
         <div id="banner">BANNER</div>
+        <div id="ad"><?php get_template_part('ad','side'); ?></div>
         <div id="page_tab">
         <div id="candidate">CANDIDATE</div>
         <div id="info">INFO</div>
@@ -161,7 +167,6 @@ line-height: 1;
 
     <!-- TODO: What ads do we have to display? This one? <?php get_template_part('ad','smallbanner'); ?>--> 
 
-	<?php get_template_part('ad','side'); ?>
 
     
 	
