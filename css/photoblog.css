@@ -150,8 +150,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	background-color: #D3A000;
 }
 .photoblog-post-image {
-	border: solid;
-	border-color: #606060;
+	/*border: solid;
+	border-color: #606060;*/
 	max-height: 384px;
 	margin-left: auto;
 	margin-right: auto;
