@@ -14,14 +14,10 @@ p.inner {
     font-family: "Arial", serif;
 }
 #important {
-  font-size: 17px;
+  font-size: 18.5px;
   font-family: "Arial", serif;
 }
 #unimportant {
-	font-size: 13px;
-	font-family: "Arial", serif;
-}
-div.unimportant p, p.unimportant, label.unimportant {
 	font-size: 13px;
 	font-family: "Arial", serif;
 }
@@ -100,7 +96,7 @@ widget_wysija
     -->
         <p class="inner">To subscribe to our dandy newsletter simply add your email below. A confirmation email will be sent to you!</p>
     <div class="row">
-    <div class="span4">
+    <div class="span3 offset1">
       <p class="wysija_list_check">
         <label id="important" for="form-html51749e245b688_list_id_9"><input id="form-html51749e245b688_list_id_9" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="9" checked="checked"/> Basketball </label>
       </p>
@@ -111,7 +107,7 @@ widget_wysija
         <label id="important" for="form-html51749e245b688_list_id_7"><input id="form-html51749e245b688_list_id_7" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="7" checked="checked"/> Top Stories (Daily) </label>
       </p>
     </div>
-    <div class="span4">
+    <div class="span3 offset1">
       <p class="wysija_list_check">
         <label id="important" for="form-html51749e245b688_list_id_6"><input id="form-html51749e245b688_list_id_6" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="6" checked="checked"/> Everything </label>
       </p>
