@@ -111,29 +111,29 @@ widget_wysija
     <div class="span3 offset1">
     <p class="wysija_list_check">
           <label id="important" for="form-html5177483378631_list_id_10">
-          <input id="form-html5177483378631_list_id_10" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="10" checked="checked" />Basketball</label>
+          <input id="form-html5177483378631_list_id_10" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="10"/>Basketball</label>
     </p>
       <p class="wysija_list_check">
           <label id="important" for="form-html5177483378631_list_id_8">
-          <input id="form-html5177483378631_list_id_8" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="8" checked="checked" />Football</label>
+          <input id="form-html5177483378631_list_id_8" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="8"/>Football</label>
       </p>
       <p class="wysija_list_check">
           <label id="important" for="form-html5177483378631_list_id_9">
-          <input id="form-html5177483378631_list_id_9" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="9" checked="checked" />Top stories daily</label>
+          <input id="form-html5177483378631_list_id_9" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="9"/>Top stories daily</label>
       </p>
     </div>
     <div class="span3 offset1">
       <p class="wysija_list_check">
         <label id="important" for="form-html5177483378631_list_id_32">
-        <input id="form-html5177483378631_list_id_32" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="32" checked="checked" />Top stories weekly</label>
+        <input id="form-html5177483378631_list_id_32" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="32"/>Top stories weekly</label>
       </p>
                 <p class="wysija_list_check">
                     <label id="important" for="form-html5177483378631_list_id_7">
-                        <input id="form-html5177483378631_list_id_7" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="7" checked="checked" />Sports</label>
+                        <input id="form-html5177483378631_list_id_7" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="7"/>Sports</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="important" for="form-html5177483378631_list_id_6">
-                        <input id="form-html5177483378631_list_id_6" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="6" checked="checked" />Breaking news</label>
+                        <input id="form-html5177483378631_list_id_6" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="6"/>Breaking news</label>
                 </p>
     </div>
     </div>
@@ -163,51 +163,51 @@ widget_wysija
           <div class="span4">
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_31">
-                        <input id="form-html5177483378631_list_id_31" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="31" checked="checked" />Women's water polo</label>
+                        <input id="form-html5177483378631_list_id_31" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="31"/>Women's water polo</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_30">
-                        <input id="form-html5177483378631_list_id_30" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="30" checked="checked" />Women's volleyball</label>
+                        <input id="form-html5177483378631_list_id_30" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="30"/>Women's volleyball</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_29">
-                        <input id="form-html5177483378631_list_id_29" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="29" checked="checked" />Women's track and field</label>
+                        <input id="form-html5177483378631_list_id_29" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="29"/>Women's track and field</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_28">
-                        <input id="form-html5177483378631_list_id_28" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="28" checked="checked" />Women's tennis</label>
+                        <input id="form-html5177483378631_list_id_28" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="28"/>Women's tennis</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_27">
-                        <input id="form-html5177483378631_list_id_27" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="27" checked="checked" />Women's soccer</label>
+                        <input id="form-html5177483378631_list_id_27" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="27"/>Women's soccer</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_26">
-                        <input id="form-html5177483378631_list_id_26" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="26" checked="checked" />Women's golf</label>
+                        <input id="form-html5177483378631_list_id_26" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="26"/>Women's golf</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_24">
-                        <input id="form-html5177483378631_list_id_24" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="24" checked="checked" />Swim and dive</label>
+                        <input id="form-html5177483378631_list_id_24" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="24"/>Swim and dive</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_23">
-                        <input id="form-html5177483378631_list_id_23" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="23" checked="checked" />Softball</label>
+                        <input id="form-html5177483378631_list_id_23" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="23"/>Softball</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_22">
-                        <input id="form-html5177483378631_list_id_22" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="22" checked="checked" />Rowing</label>
+                        <input id="form-html5177483378631_list_id_22" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="22"/>Rowing</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_21">
-                        <input id="form-html5177483378631_list_id_21" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="21" checked="checked" />Men's water polo</label>
+                        <input id="form-html5177483378631_list_id_21" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="21"/>Men's water polo</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_20">
-                        <input id="form-html5177483378631_list_id_20" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="20" checked="checked" />Men's volleyball</label>
+                        <input id="form-html5177483378631_list_id_20" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="20"/>Men's volleyball</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_19">
-                        <input id="form-html5177483378631_list_id_19" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="19" checked="checked" />Men's track and field</label>
+                        <input id="form-html5177483378631_list_id_19" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="19"/>Men's track and field</label>
                 </p>
     </div>
       </td>
@@ -215,51 +215,51 @@ widget_wysija
       <td>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_18">
-                        <input id="form-html5177483378631_list_id_18" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="18" checked="checked" />Men's tennis</label>
+                        <input id="form-html5177483378631_list_id_18" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="18"/>Men's tennis</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_17">
-                        <input id="form-html5177483378631_list_id_17" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="17" checked="checked" />Men's soccer</label>
+                        <input id="form-html5177483378631_list_id_17" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="17"/>Men's soccer</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_16">
-                        <input id="form-html5177483378631_list_id_16" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="16" checked="checked" />Men's golf</label>
+                        <input id="form-html5177483378631_list_id_16" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="16"/>Men's golf</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_15">
-                        <input id="form-html5177483378631_list_id_15" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="15" checked="checked" />Men's basketball</label>
+                        <input id="form-html5177483378631_list_id_15" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="15"/>Men's basketball</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_25">
-                        <input id="form-html5177483378631_list_id_25" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="25" checked="checked" />Women's basketball</label>
+                        <input id="form-html5177483378631_list_id_25" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="25"/>Women's basketball</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_14">
-                        <input id="form-html5177483378631_list_id_14" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="14" checked="checked" />Gymnastics</label>
+                        <input id="form-html5177483378631_list_id_14" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="14"/>Gymnastics</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_13">
-                        <input id="form-html5177483378631_list_id_13" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="13" checked="checked" />Cross country</label>
+                        <input id="form-html5177483378631_list_id_13" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="13"/>Cross country</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_12">
-                        <input id="form-html5177483378631_list_id_12" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="12" checked="checked" />A&E</label>
+                        <input id="form-html5177483378631_list_id_12" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="12"/>A&E</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_11">
-                        <input id="form-html5177483378631_list_id_11" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="11" checked="checked" />News</label>
+                        <input id="form-html5177483378631_list_id_11" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="11"/>News</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_5">
-                        <input id="form-html5177483378631_list_id_5" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="5" checked="checked" />Opinion</label>
+                        <input id="form-html5177483378631_list_id_5" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="5"/>Opinion</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_4">
-                        <input id="form-html5177483378631_list_id_4" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="4" checked="checked" />Club and intramural sports</label>
+                        <input id="form-html5177483378631_list_id_4" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="4"/>Club and intramural sports</label>
                 </p>
                 <p class="wysija_list_check">
                     <label id="unimportant" for="form-html5177483378631_list_id_3">
-                        <input id="form-html5177483378631_list_id_3" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="3" checked="checked" />Baseball</label>
+                        <input id="form-html5177483378631_list_id_3" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="3"/>Baseball</label>
                 </p>
     </td>
     </div>
