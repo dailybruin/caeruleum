@@ -11,21 +11,17 @@ input.input_field {
 }
 p.inner {
     font-size: 17.5px;
-    font-family: "Arial", serif;
 }
 #important {
   font-size: 18.5px;
-  font-family: "Arial", serif;
 }
 
 #accordion{ 
   font-size: 20px;
-  font-family: "Arial", serif;
 }
 
 #unimportant {
   font-size: 17px;
-  font-family: "Arial", serif;
 }
 
 #dropdown {
