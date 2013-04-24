@@ -249,7 +249,6 @@ widget_wysija
     </form>
 </div>
 
-        <?php get_template_part('loop', 'page'); ?>
   </div><!-- end div#post -->
   
   <?php get_sidebar(); ?>
