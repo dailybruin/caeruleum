@@ -14,12 +14,7 @@ Template Name: HOWEWO
       </div>
     </div>
     <div class="span12 page-content">
-
-        <?php 
-          $gallery = get_post_meta($post->ID, 'gallery', true);
-          $gallery = 6;
-          echo do_shortcode('[nggallery id='.$gallery.' template="howewo" images="0"]'); 
-          ?>
+        <?php get_template_part( 'loop', 'howewo' ); ?>
       </div>
       
   </div><!-- end div#post-listing -->

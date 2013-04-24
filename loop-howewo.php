@@ -1,14 +1,24 @@
-<?php if (!defined ('ABSPATH')) die ('No direct access allowed'); ?><?php if (!empty ($gallery)) : ?>
-<?php /*
+<?php /* Start loop */ ?>
+<?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
+<?php while (have_posts() ): the_post(); 
+
+$cats = get_the_category();
+if ($cats) {
+	foreach($cats as $cat){
+		if ($cat->name == "HOWEWO-page"){
+			$the_cat = $cat;
+		}
+	}
+} ?>
 <div class="row">
-	<?php 
+	<?php echo "HERPHERHPER";/*
 		$col_count = 4;
 		$cols = array();
 		$col_heights = array();
 		for ($n = 0; $n < $col_count; $n++) :
 			$cols[] = array();
 			$col_heights[] = 0;
-		endfor;
+		endfor;W
 		foreach ( $images as $image ) : 
 			$size = getimagesize($image->imagePath);
 			$hwratio = $size[1]/$size[0];
@@ -33,14 +43,7 @@
 			echo "</div>";
 
 		endfor;
-	?>
+	*/
+endwhile;
+?>
 </div>
-  */?>
-<div class="row" id="howewo-container">
-	<?php foreach ( $images as $image ) : ?>
-		<img src="<?php echo $image->imageURL ?>" alt="<?php echo $image->alttext ?>" data-description="<?php echo $image->description ?>" value="<?php echo $image->tags[0] ?>" />
- 	<?php endforeach; ?>
-</div>
-
-
-<?php endif; ?>
