@@ -2,6 +2,71 @@
 
 // Custom functions
 
+// Adds a link to the WordPress web production doc from the admin bar
+function uploading_doc_link()
+{
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_node('ngg-menu');
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin',
+        'title' => __('Uploading links'),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_uploading',
+        'parent' => 'dailybruin',
+        'title' => __('Web production doc'),
+        'href' => 'http://bit.ly/dailybruinuploading',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_rankings',
+        'parent' => 'dailybruin',
+        'title' => __('Rankings'),
+        'href' => 'https://docs.google.com/a/media.ucla.edu/document/d/1ISa739JAaoDFkUYEEVSpS_PzngOo7mlbbRITsw5N2b8/edit',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_tweetsposts',
+        'parent' => 'dailybruin',
+        'title' => __('Tweets &amp; posts'),
+        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0Aqbw_P_k45fWdGdpUEtkdWZrU2U0RGFucVJyczQ5YlE',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );
+    $wp_admin_bar->add_node( array(
+        'id' => 'dailybruin_audits',
+        'parent' => 'dailybruin',
+        'title' => __('Audits'),
+        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0AqgbtmTCg5qodHVwandlVDM3bTdoRzJoQTFlVXhENWc#gid=49',
+        'meta' => array(
+            'target' => '_blank',
+        ),
+    ) );    
+}
+add_action( 'wp_before_admin_bar_render', 'uploading_doc_link' );
+
+
+// Add the ability to link to external sites by creating a post
+// in WordPress. It's not a symantically correct solution but it
+// works just fine for what we need, especially in 9 lines of code.
+function db_link_stories($permalink, $post, $leavename)
+{
+    if(!$post)
+        global $post;
+    $dblink = get_post_meta($post->ID,'db_link',true);    
+    if($dblink)
+        return $dblink;
+    else
+        return $permalink;
+}
+add_filter( 'post_link' , 'db_link_stories');
+
+
 function the_blog_banner($blog_name)
 {
 	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";

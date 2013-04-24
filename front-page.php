@@ -341,7 +341,7 @@
 								<span class="section-date"><?php the_time('M j'); ?></span>
 								</li>
 							<?php endforeach; ?>
-								<li id="front-cartoon-link"><a href="#">View this week's editorial cartoon</a></li>
+								<li id="front-cartoon-link"><a href="/category/editorial-cartoons/">View this week's editorial cartoon</a></li>
 							</ul>
 						</div><!-- end div.front-section-more -->
 					</div><!-- end div#front-opinion -->
@@ -350,14 +350,14 @@
 				<div class="row" id="featuredProject">
 					<div class="span8">
 						<div>
-							 <h3>Gender Behavior Therapy</h3>
+							 <h3>Chilean Winter</h3>
 							 <ul class="sections">
 							 	<li><a href="/features/">Previous features</a></li>
 							 </ul>
 							 <span style="display:block;width:100%;clear:both;"></span>
-							 <img src="http://dailybruin.com/images/features/conversion-therapy/front-thumb.jpg" />
-							 <p>In the 1960s and 1970s, the UCLA Gender Identity Research Clinic studied children and adults who identified as a gender different than their biological sex, and provided therapy when sought out.</p>
-							 <a href="/features/conversion-therapy/" class="featuredlink">Read the story, watch videos, and more&nbsp;&raquo;</a>
+							 <img src="http://dailybruin.com/images/features/THUMBS/chileanwinter_thumb.jpg" />
+							 <p>Since 2011, protesters have taken to the streets of Chile to fight for free tuition and fairness within the higher education system. The Daily Bruin spent 15 days in Santiago, Chile to report on these student protesters, who have been inspired by the country's history of protests during the dictatorship. Activists within the University of California have taken cues from Chilean protesters, adopting their organizational structures and protest tactics. Explore the protests in both hemispheres through stories, photos and video footage.</p>
+							 <a href="http://chileanwinter.dailybruin.com/" class="featuredlink">Read the story, watch videos, and more&nbsp;&raquo;</a>
 							 <span style="display:block;width:100%;clear:both"></span>
 						</div>
 					</div><!-- end div#featuredProject -->

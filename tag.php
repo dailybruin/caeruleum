@@ -38,21 +38,6 @@
               }
             ?>
           </h1>
-          <?php
-          if($sectionPage):
-  	    		$cat_args = array(
-					'child_of' => get_cat_ID($categoryTitle),
-					'orderby' => 'name',
-					'hide_empty' => 1,
-					'title_li' => ''
-				);
-				$categories = get_categories($cat_args);
-				if(!empty($categories)): ?>
-					<ul class="categories">
-					<?php wp_list_categories($cat_args); ?>
-					</ul>
-				<?php endif;
-			endif; ?>
           <span style="display:block;width:100%;clear:both"></span>
           <?php if(is_author()): ?>
 			<p><?php the_author_meta('description'); ?></p>

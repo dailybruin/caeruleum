@@ -2,6 +2,20 @@
 	Byron Lutz
 */
 
+/***** ALLOW PAGES TO MAKE PAGE UN-RESPONSIVE *****/
+function unresponsivize() {
+    $('meta[name="viewport"]').attr('content','width=980, initial-scale=0.1');
+    $('link[href="/css/bootstrap-responsive.css"]').attr('disabled','true');
+    $('link[href="/css/app-responsive.css"]').attr('disabled','true');
+    $(window).unbind('resize');
+    $('.hidden').css('display','none').css('visibility','hidden');
+    $('.visible-phone').css('display','none','important');
+    $('.visible-tablet').css('display','none','important');
+    $('.hidden-desktop').css('display','none','important');
+    $('.visible-desktop').css('display','inherit','important');
+}
+
+
 /***** BACK TO TOP BUTTON *****/
 $(document).ready(function() {
 	$('#backtotop').click(function(e) {
@@ -166,7 +180,7 @@ $(document).ready(function() {
 */
 	
 		// All desktop sizes
-		if(windowWidth >= 980) {
+		if(window.matchMedia("(min-width: 980px)").matches) {
 			$('#ad-banner-top').html(ads['banner_large']);
 			$('#ad-banner-small').html(ads['banner_small']);
 			$('#side-ad').html(ads['square_1']);
@@ -177,7 +191,7 @@ $(document).ready(function() {
 			$('#ad-tower').html(ads['tower']);
 		}
 		// All mobile sizes
-		if(windowWidth < 980) {
+		if(window.matchMedia("(max-width: 979px)").matches) {
 			$('#ad-banner-top').html('');
 			$('#ad-banner-small').html('');
 			$('#side-ad').html('');
@@ -189,12 +203,12 @@ $(document).ready(function() {
 	
 	
 		// Large screen
-		if(windowWidth >= 1200) {
-			;
-		}		
+    // if(window.matchMedia("(min-width: 1200px)").matches) {
+    //  ;
+    // }    
 		
 		// Small screen (tablet)
-		if(windowWidth <= 979 && windowWidth >= 768) {
+		if(window.matchMedia("(max-width: 979px) and (min-width: 768px)").matches) {
 			// ad code
 			$('#ad-banner-large-tablet').html(ads['banner_large']);
 			if($('#banner-bottom').html() == '')
@@ -208,7 +222,7 @@ $(document).ready(function() {
 		}
 		
 		// Phone (Horizontal & Vertical) 
-		if(windowWidth <= 767) {
+		if(window.matchMedia("(min-width: 767px)").matches) {
 			// ad code
 			$('#banner-bottom').html('');
 			

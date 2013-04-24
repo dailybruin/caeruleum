@@ -98,13 +98,74 @@
 						<br style="clear:both" />
 					</ul>
 				</div><!-- end div.post-extra -->
-				<?php the_byline(); ?>
+				<?php // Display the columnist's mugshot
+				    if($displayAuthor && $articleFormat === "column")
+				    {
+				        ob_start();
+    					if(function_exists('userphoto_the_author_thumbnail'))
+    						userphoto_the_author_thumbnail();
+    					$thumbnail = ob_get_contents();
+    					$thumbnail_class = "";
+    					ob_end_clean();
+    					if(!isset($thumbnail) || $thumbnail == "")
+    						the_byline(false);
+    					else 
+    					{
+        					?><div class="author-photo"><?php echo $thumbnail; ?></div><?php
+        					the_byline(false);
+        					echo "<hr style='margin:5px 0;' />";
+        				}
+				    }
+				    else
+				    {
+				        the_byline();
+				    }
+				?>
 				<?php if(isset($customFields['db_infobox'])) : ?>
 					<div class="db-infobox">
 						<?php echo $customFields['db_infobox'][0]; ?>
 					</div>
 				<?php endif; ?>
 				<?php if(!$video_story) { the_content(); } ?>
+				<p class="author-contact">
+				    <?php if(isset($customFields['db_authoremail']))
+				    {
+				        echo $customFields['db_authoremail'][0];
+				    }
+                    else if(intval(the_date('U','','',false)) <= 1361363177)
+                    { ; }
+				    else
+				    {
+				        $coauthors = get_coauthors();
+				        $finalAuthorKey = count($coauthors) - 1;
+				        $firstAuthor = true;
+				        foreach($coauthors as $key=>$author)
+				        {
+				            $lastAuthor = ($finalAuthorKey == $key);
+				            $lastName = get_the_author_meta('last_name', $author->ID);
+				            $graduated = get_the_author_meta('graduated', $author->ID);
+				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated)
+				                continue;
+				            if($firstAuthor)
+				                echo "Email ";
+				            else
+				            {
+				                if($lastAuthor && $key == 1)
+				                    echo " and email ";
+				                else if($lastAuthor)
+				                    echo ", and email ";
+				                else
+				                    echo ", email ";
+				            }
+			                echo $lastName . " at <a href='mailto:"
+			                    . $author->user_email . "'>" . $author->user_email 
+			                    . "</a>";
+			                if($lastAuthor)
+			                    echo ".";
+			                $firstAuthor = false;
+				        }
+				    }?>
+				</p>
 
 			</div><!-- end div.post-content -->
 
@@ -148,6 +209,7 @@
 				<?php endif; ?>
 			</div>
 		</div><!-- end div#entry-bottom -->
+		<p id="comment-policy">Comments are supposed to create a forum for thoughtful, respectful community discussion. Please be nice. <a href="<?php echo get_permalink( get_page_by_path( 'comment-policy' ) ); ?>">View our full comments policy here.</a></p>
       <?php comments_template(); ?>
     </article>
 <?php endwhile; /* End loop */ ?>

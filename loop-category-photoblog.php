@@ -1,5 +1,5 @@
 <?php /* Start loop */ ?>
-<?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
+<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
 <?php while (have_posts() ): the_post(); 
 
 	$cats = get_the_category();
