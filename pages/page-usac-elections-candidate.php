@@ -14,9 +14,18 @@ Template Name: USAC Elections Candidate 2013
 .left {
     float: left;
 }
+
 .right {
     float: left;
     margin-left: 30px;
+}
+
+.grey{
+  color:grey;
+}
+
+.fleft {
+    float: left;
 }
 
 .candidate
@@ -48,11 +57,16 @@ img {
   color: #0098D4;
 }
 
+.ad{
+  float: right;
+}
+
 </style>
 
 <div id="usac page candidates">
 
- <div class='container'>
+<div class='container'>
+
 
   <div class="navbar navbar-inverse">
       <div class="navbar-inner">
@@ -67,7 +81,6 @@ img {
             <ul class="nav">
               <li><a href="/usac-elections">Home</a></li>
               <li class="active"><a href="#">Candidates</a></li>
-              <li><a href="#contact">Opinion</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -76,16 +89,29 @@ img {
 
     <div id='content' class='row-fluid navigation'>
 
-      <div class='left'>
-        <h4> Sort Candidates By: </h4>
-        <h5 style='font-style:italic'> (Click category below to expand!) </h5>
+      <div class='fleft'>
+        
+          <h1> USAC 2013 Candidates </h1>
+
+          <div>
+            <h2 style='font-style:italic' class='grey'> (Click category below to expand) </h2>
+          </div> 
+
+          <div>
+            <h2>Sort by: </h2>
+          </div>
+
+          <div class="btn-group">
+            <button id="Office" class="btn-large btn-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
+            <button id="Slate" class="btn-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
+          </div>
+
+       
       </div>
 
-      <div class="btn-group right">
-        <button id="Office" class="btn btn-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
-        <button id="Slate" class="btn" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
+      <div class="ad">
+        <?php get_template_part('ad','side'); ?>
       </div>
-
 
     </div>
 
