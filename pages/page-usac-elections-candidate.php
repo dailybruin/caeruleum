@@ -621,7 +621,7 @@ function randArray(myArray)
     else if (o.slate == SLATE.BALLY)
       string += "<div class='row candidate' style='background-color: #93BCC4;'>";
     else if (o.slate == SLATE.INDEPENDENT)
-      string += "<div class='row candidate' style='background-color: #7AFF75;'>";
+      string += "<div class='row candidate' style='background-color: #A2DEA6;'>";
     else  
       string += "<div class='row candidate'>";
 
