@@ -53,8 +53,8 @@ Template Name: USAC Elections 2013
             <ul class="thumbnails">
               <li class="span6">
                 <div class="thumbnail">
-    <a href="#">
-                  <img src="db.jpg" width=200px height=200px alt="pic1" style="text-align:center">
+    <a href="/usac-elections/candidates">
+                  <img src="/images/features/usac2013/db.jpg" width=200px height=200px alt="pic1" style="text-align:center">
                  </a>
      <div class="caption">
                     <h3 style="text-align:center">Candidates</h3>
@@ -64,7 +64,7 @@ Template Name: USAC Elections 2013
               <li class="span6">
   <div class="thumbnail">
     <a href="#myModal" role="button" class="btn" data-toggle="modal">
-    <img src="db.jpg" width=190px height=200px alt="">
+    <img src="/images/features/usac2013/db.jpg" width=190px height=200px alt="">
     </a>
  
       <!-- Modal -->
@@ -113,16 +113,16 @@ Template Name: USAC Elections 2013
             <li class="span12">
     <h4 style="text-align:center">Campaign Violations</h4>
     <div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
+ <!--  <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+  </ol> -->
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item"><img src="sky.jpg"></div>
-    <div class="item"><img src="sky.jpg"></div>
-    <div class="item"><img src="sky.jpg"></div>
+    <div class="active item"><img src="/images/features/usac2013/sky.jpg"></div>
+    <div class="item"><img src="/images/features/usac2013/sky.jpg"></div>
+    <div class="item"><img src="/images/features/usac2013/sky.jpg"></div>
   </div>
   <!-- Carousel nav -->
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
