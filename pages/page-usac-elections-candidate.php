@@ -66,6 +66,8 @@ img {
   float: right;
 }
 
+div #preload { display: none; }
+
 </style>
 
 <div id="usac page candidates">
@@ -74,33 +76,33 @@ img {
 
 
   <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">USAC Elections 2013</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="/usac-elections">Home</a></li>
-              <li class="active"><a href="#">Candidates</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">USAC Elections 2013</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="/usac-elections">Home</a></li>
+            <li class="active"><a href="#">Candidates</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
+  </div>
 
     <div id='content' class='row-fluid navigation'>
 
-      <div class='fleft'>
+      <div class='span9'>
         
-          <h1> USAC 2013 Candidates </h1>
+          <h1> USAC Elections 2013: Candidates </h1>
 
-          <div>
-            <h3 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
-          </div> 
+          <p>This year, 23 candidates are running for the 13 elected USAC positions. Nine positions are contested. Three slates, groups of students who pool their resources together and run on similar platforms, are running candidates in the spring elections. Two new slates emerged for this year's elections: Bruin Alliance and LET'S ACT!. Bruin Alliance is running two candidates and LET'S ACT! is running 10. Bruins United is running eight candidates. </p>
+
+          
 
           <div>
             <h4>Sort by: </h4>
@@ -111,10 +113,14 @@ img {
             <button id="Slate" class="btn-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
           </div>
 
+          <div>
+            <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
+          </div> 
+
        
       </div>
 
-      <div class="ad">
+      <div class="span3">
         <?php get_template_part('ad','side'); ?>
       </div>
 
@@ -134,6 +140,34 @@ img {
   </div>
 
 	
+<div id='preload'>
+
+  <img src="/images/features/usac2013/Taylor Bazley.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/John Joanino.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Carly Yoshida.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Lana Habib El-Farra.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Avi Oved.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Maryssa Hall.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Nicole Fossier.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Sunny Singh.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Sam Haws.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Avinoam Baral.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Charmaine Campbell.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Lizzy Naameh.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Devin Murphy.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Darren Ramalho.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Uyen Hoang.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Jessica Kim.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Omar Arce.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Jessica Trumble.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Armen Hadjimanoukian.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Anthony Montalvo.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Lauren Rogers.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Brenda Gutierrez.jpg" width="1" height="1"/>; //Picture name
+  <img src="/images/features/usac2013/Savannah Dianne Badalich.jpg" width="1" height="1"/>; //Picture name
+
+</div>
+
 </div><!-- end div#usac page candidates -->  
 
 <script type="text/javascript">
@@ -581,11 +615,11 @@ function randArray(myArray)
     if (o.winner)
       string += "<div class='row candidate' style='background-color: #65A0CF;'>";
     else if (o.slate == SLATE.BUNITED)
-      string += "<div class='row candidate' style='background-color: #B5BAFF;'>";
+      string += "<div class='row candidate' style='background-color: #C2E1F2;'>";
     else if (o.slate == SLATE.LETSACT)
-      string += "<div class='row candidate' style='background-color: #F1FF59;'>";
+      string += "<div class='row candidate' style='background-color: #F7F499;'>";
     else if (o.slate == SLATE.BALLY)
-      string += "<div class='row candidate' style='background-color: #777DD1;'>";
+      string += "<div class='row candidate' style='background-color: #93BCC4;'>";
     else if (o.slate == SLATE.INDEPENDENT)
       string += "<div class='row candidate' style='background-color: #7AFF75;'>";
     else  
