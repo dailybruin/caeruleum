@@ -30,11 +30,16 @@ Template Name: USAC Elections Candidate 2013
 
 .candidate
 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2px;
+  margin-bottom: 5px;
   border-style:solid;
   border-width:medium;
   border-color: #C2C2C2;
+}
+
+.accordion
+{
+  margin-bottom: 3px;
 }
 
 img {
@@ -94,11 +99,11 @@ img {
           <h1> USAC 2013 Candidates </h1>
 
           <div>
-            <h2 style='font-style:italic' class='grey'> (Click category below to expand) </h2>
+            <h3 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
           </div> 
 
           <div>
-            <h2>Sort by: </h2>
+            <h4>Sort by: </h4>
           </div>
 
           <div class="btn-group">
@@ -152,7 +157,7 @@ img {
     BUNITED : 4,
     BALLY : 5,
     LETSACT : 6,
-    INDEPENDENT : 6
+    INDEPENDENT : 19
   }
 
   var OFFICE = {
@@ -488,7 +493,7 @@ img {
   function getRandomInt(min, max) 
   {
       return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+  }
 
   function spliceFunc(x)
   {
@@ -575,15 +580,20 @@ function randArray(myArray)
       
     if (o.winner)
       string += "<div class='row candidate' style='background-color: #65A0CF;'>";
+    else if (o.slate == SLATE.BUNITED)
+      string += "<div class='row candidate' style='background-color: #B5BAFF;'>";
+    else if (o.slate == SLATE.LETSACT)
+      string += "<div class='row candidate' style='background-color: #F1FF59;'>";
+    else if (o.slate == SLATE.BALLY)
+      string += "<div class='row candidate' style='background-color: #777DD1;'>";
+    else if (o.slate == SLATE.INDEPENDENT)
+      string += "<div class='row candidate' style='background-color: #7AFF75;'>";
     else  
       string += "<div class='row candidate'>";
 
       string +=   "<div class='offset1 left'>";
 
-    if (o.winner)
-      string +=     "<img src='" + o.picture + "' style='border-color:#FFF04D;'/>";
-    else  
-      string +=     "<img src='" + o.picture + "'/>";
+      string +=     "<img src='" + o.picture + "' style='border-color:#0011FF;'/>";
       string +=   "</div>";
 
       string +=   "<div class='right'>";
