@@ -90,9 +90,9 @@ div #preload { display: none; }
           <a class="brand" href="#">USAC Elections 2013</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="/usac-elections/">Home</a></li>
+              <li><a href="/usac-elections-2013/">Home</a></li>
               <li class="active"><a href="#">Candidates</a></li>
-              <li><a href="/usac-elections/campaign-violations">Campaign Violations</a></li>
+              <li><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></li>
               <li><a href="http://my.ucla.edu/">Vote Here!</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -104,7 +104,7 @@ div #preload { display: none; }
 
       <div class='span9'>
 
-        <a title='USAC Elections' href='/usac-elections/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
+        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
 
         <!--<h1> USAC Elections 2013: Candidates </h1>-->
 
