@@ -42,7 +42,11 @@ Template Name: USAC Elections Candidate 2013
   margin-bottom: 3px;
 }
 
-img {
+#banner{
+  margin-bottom: 12px;
+}
+
+.candimg {
   width:95px;
   height:146px;
   margin-top: 30px;
@@ -75,47 +79,52 @@ div #preload { display: none; }
 <div class='container'>
 
 
-  <div class="navbar navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="brand" href="#">USAC Elections 2013</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li><a href="/usac-elections">Home</a></li>
-            <li class="active"><a href="#">Candidates</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">USAC Elections 2013</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/usac-elections/">Home</a></li>
+              <li class="active"><a href="#">Candidates</a></li>
+              <li><a href="/usac-elections/campaign-violations">Campaign Violations</a></li>
+              <li><a href="http://my.ucla.edu/">Vote Here!</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
-  </div>
 
     <div id='content' class='row-fluid navigation'>
 
       <div class='span9'>
+
+        <a title='USAC Elections' href='/usac-elections/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
+
+        <!--<h1> USAC Elections 2013: Candidates </h1>-->
+
+        <div class="thumbnail">
+          <p style="text-align:center"><b>This year, 23 candidates are running for the 13 elected USAC positions. Nine positions are contested. Three slates, groups of students who pool their resources together and run on similar platforms, are running candidates in the spring elections. Two new slates emerged for this year's elections: Bruin Alliance and LET'S ACT!. Bruin Alliance is running two candidates and LET'S ACT! is running 10. Bruins United is running eight candidates.</b></p>
+        </div>
         
-          <h1> USAC Elections 2013: Candidates </h1>
 
-          <p>This year, 23 candidates are running for the 13 elected USAC positions. Nine positions are contested. Three slates, groups of students who pool their resources together and run on similar platforms, are running candidates in the spring elections. Two new slates emerged for this year's elections: Bruin Alliance and LET'S ACT!. Bruin Alliance is running two candidates and LET'S ACT! is running 10. Bruins United is running eight candidates. </p>
+        <div>
+          <h4>Sort by: </h4>
+        </div>
 
-          
+        <div class="btn-group">
+          <button id="Office" class="btn-large btn-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
+          <button id="Slate" class="btn-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
+        </div>
 
-          <div>
-            <h4>Sort by: </h4>
-          </div>
-
-          <div class="btn-group">
-            <button id="Office" class="btn-large btn-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
-            <button id="Slate" class="btn-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
-          </div>
-
-          <div>
-            <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
-          </div> 
+        <div>
+          <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
+        </div> 
 
        
       </div>
@@ -627,7 +636,7 @@ function randArray(myArray)
 
       string +=   "<div class='offset1 left'>";
 
-      string +=     "<img src='" + o.picture + "' style='border-color:#0011FF;'/>";
+      string +=     "<img class='candimg' src='" + o.picture + "' style='border-color:#0011FF;'/>";
       string +=   "</div>";
 
       string +=   "<div class='right'>";
