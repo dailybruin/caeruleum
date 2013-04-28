@@ -4,7 +4,9 @@ Template Name: USAC Elections 2013
 
 <?php get_header(); ?>
 
-<style type="text/css">
+<!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
@@ -17,14 +19,19 @@ Template Name: USAC Elections 2013
           padding-right: 5px;
         }
       }
-</style>
+  .btn-custom{
+
+ background-color: hsl(187, 44%, 42%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aed9df", endColorstr="#3b8f9a"); background-image: -khtml-gradient(linear, left top, left bottom, from(#aed9df), to(#3b8f9a)); background-image: -moz-linear-gradient(top, #aed9df, #3b8f9a); background-image: -ms-linear-gradient(top, #aed9df, #3b8f9a); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aed9df), color-stop(100%, #3b8f9a)); background-image: -webkit-linear-gradient(top, #aed9df, #3b8f9a); background-image: -o-linear-gradient(top, #aed9df, #3b8f9a); background-image: linear-gradient(#aed9df, #3b8f9a); border-color: #3b8f9a #3b8f9a hsl(187, 44%, 33%); color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.59); -webkit-font-smoothing: antialiased;
+
+  }
+
+    </style>
+    <link href="bootstrap-responsive.css" rel="stylesheet">
 
 <script> $('#navbar').scrollspy()</script>
 <script>$('#myModal').modal('toggle')</script>
 
-<div id="usac page">
-
- <div class="navbar navbar-inverse">
+  <div class="navbar">
       <div class="navbar-inner">
         <div class="container-fluid">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -37,36 +44,54 @@ Template Name: USAC Elections 2013
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="/usac-elections/candidates">Candidates</a></li>
+              <li><a href="/usac-elections/campaign-violations">Campaign Violations</a></li>
+              <li><a href="http://my.ucla.edu/">Vote Here!</a></li>
+
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="span9">
-          <div class="hero-unit">
-            <h2 style="text-align:center">Daily Bruin : USAC Election Coverage</h2>
-   
-          </div>
-          <div class="row-fluid">
-            <ul class="thumbnails">
-              <li class="span6">
-                <div class="thumbnail">
-    <a href="/usac-elections/candidates">
-                  <img src="/images/features/usac2013/db.jpg" width=200px height=200px alt="pic1" style="text-align:center">
-                 </a>
-     <div class="caption">
-                    <h3 style="text-align:center">Candidates</h3>
-                  </div>
-                </div>
-              </li>
-              <li class="span6">
+<div class="container-fluid">
+  <div class="span9">
+  <a title='USAC Elections' href='#'><img src='/images/features/usac2013/bannercic.jpg' border='0'/></a> 
+  <br /><br />
+
   <div class="thumbnail">
-    <a href="#myModal" role="button" class="btn" data-toggle="modal">
-    <img src="/images/features/usac2013/db.jpg" width=190px height=200px alt="">
+    <p style="text-align:center">
+    <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students vote
+     on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA start
+    ing May 6 at noon until May 9 at 6 p.m.</b></p>
+    </div>
+  </div>
+  <div class="span5">
+    <?php get_template_part('ad','side'); ?>
+  </div>
+<div class="span10">
+    <div class="span4" style="padding-left:24px">
+    <br /><br />
+    <div class = "btn-group">
+    <a href="http://www.google.com/">
+    <button class="btn-custom">
+      <div class="caption">
+                    <h4 style="text-align:center">Learn about the candidates</h4>
+        <h5>XX students are running for 13 seats!</h5>
+                  </div>
+    </button>
     </a>
- 
+    </div>
+              </div>
+              <div class="span4">
+    <br /><br />
+    <a href="#myModal" role="button" data-toggle="modal">
+    <button class="btn-custom">
+    <div class="caption">
+                    <h4 style="text-align:center">What is USAC ?</h4>
+        <h5>The basics of your student government</h5>
+                </div>
+    </button>
+    </a>
       <!-- Modal -->
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
@@ -101,47 +126,12 @@ Template Name: USAC Elections 2013
     </p>
       </div>
     </div>
-    <div class="caption">
-                    <h3 style="text-align:center">About USAC</h3>
-    </div>
-    </div>
-              </li> 
-            </ul>
-          </div>
-          <div class="row-fluid">
-<ul class="thumbnails">
-            <li class="span12">
-    <h4 style="text-align:center">Campaign Violations</h4>
-    <div id="myCarousel" class="carousel slide">
- <!--  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol> -->
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item"><img src="/images/features/usac2013/sky.jpg"></div>
-    <div class="item"><img src="/images/features/usac2013/sky.jpg"></div>
-    <div class="item"><img src="/images/features/usac2013/sky.jpg"></div>
   </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-              </a>
-            </li>
-            <li class="span4">
-    <br />
-    <br />
-    <a class="twitter-timeline"  href="https://twitter.com/search?q=%23ucla"  data-widget-id="327276744354709505">Tweets about "#ucla"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </li>
- <li class="span7">
-    <br />
-    <br />
+<ul class="thumbnails">
+ <li class="span10"><br />
                 <div class="thumbnail">
                 <div class="caption">
-                <h3>Recent Articles<h3>
+                <h3 style="text-align:center">Recent Articles<h3>
                 </div>
 <ul>
 <?php
@@ -151,25 +141,24 @@ foreach( $myposts as $post ) :  setup_postdata($post); ?>
 <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php endforeach; ?>
 </ul>
-    </div>
-    </li>
 
-          </ul>              
+                </ul>
+                </li>
+</ul>  
+</div>
+<div class="span4">
+       <a class="twitter-timeline" href="https://twitter.com/search?q=%23USACelections" data-widget-id="328262590398603264">Tweets about "#USACelections"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
 
 
-
-
-          </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
 
       <hr>
 
-
     </div><!--/.fluid-container-->
-
-	
-</div><!-- end div#usac page -->  
 
 
 <?php get_footer(); ?>
