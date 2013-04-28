@@ -72,7 +72,7 @@ Template Name: USAC Elections 2013
     <div class="span4" style="padding-left:24px">
     <br /><br />
     <div class = "btn-group">
-    <a href="http://www.google.com/">
+    <a href="/usac-elections/candidates">
     <button class="btn-custom">
       <div class="caption">
                     <h4 style="text-align:center">Learn about the candidates</h4>
