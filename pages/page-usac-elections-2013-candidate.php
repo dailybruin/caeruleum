@@ -279,7 +279,7 @@ div #preload { display: none; }
   c.push(o0);
 
   var o1 = {};
-    o1.fname = "Joan"; //First name
+    o1.fname = "John"; //First name
     o1.lname = "Joanino"; //Last name
     o1.slate = SLATE.LETSACT; //Party affiliation
     o1.office = OFFICE.PRESIDENT; //Office
