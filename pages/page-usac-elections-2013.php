@@ -62,7 +62,7 @@ Template Name: USAC Elections 2013
     <br /><br />
     <div class="thumbnail">
       <p style="text-align:center">
-      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUC  LA starting May 6 at noon until May 9 at 6 p.m.</b></p>
+      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
     <div class="row-fluid" style="padding-left:80px">
      <div class="span6">
@@ -72,7 +72,7 @@ Template Name: USAC Elections 2013
         <button class="btn" style="color:#009999">
           <div class="caption">
                           <h4 style="text-align:center">Learn about the candidates</h4>
-              <h5>23 students are running for 13 seats!</h5>
+              <h5>23 students are running for 13 seats</h5>
                       </div>
         </button>
         </a>
