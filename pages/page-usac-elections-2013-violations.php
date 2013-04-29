@@ -49,7 +49,15 @@ Template Name: USAC Elections Campaign Violations 2013
 
         <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
 
-        <h2 id="violations" style="text-align:center">There are currently no campaign violations.</h2>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+        <?php
+        the_content();
+        ?>
+
+        <?php endwhile; else: ?>
+        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+        <?php endif; ?>
 
       </div>
 
