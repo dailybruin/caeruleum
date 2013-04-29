@@ -62,7 +62,7 @@ Template Name: USAC Elections 2013
     <br /><br />
     <div class="thumbnail">
       <p style="text-align:center">
-      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUC  LA starting May 6 at noon until May 9 at 6 p.m.</b></p>
+      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
     <div class="row-fluid" style="padding-left:80px">
      <div class="span6">
@@ -72,7 +72,7 @@ Template Name: USAC Elections 2013
         <button class="btn" style="color:#009999">
           <div class="caption">
                           <h4 style="text-align:center">Learn about the candidates</h4>
-              <h5>23 students are running for 13 seats!</h5>
+              <h5>23 students are running for 13 seats</h5>
                       </div>
         </button>
         </a>
@@ -109,7 +109,8 @@ Template Name: USAC Elections 2013
             <br /><br />
 
             <b>What is on the ballot?</b><br />
-            There are 23 candidates running for 13 elected offices. Students will also be able to vote on an initiative and a referendum. An initiative is put on the ballot by students when they gather signatures of at least 10 percent of the undergraduate population. A referendum is put on the ballot by a two-thirds vote by USAC. 
+            There are 23 candidates running for 13 elected offices. Students will also be able to vote on an initiative and a referendum. An initiative is put on the ballot by students when they gather signatures of at least 10 percent of the undergraduate population. A referendum is put on the ballot by a two-thirds vote by USAC. The Bruin Diversity Initiative proposes a $9.93 increase to student fees every quarter to provide funding for various student groups including the Campus Retention Committee, the Student Initiated Access Committee, the American Indian Student Association, the Vietnamese Student Union, the Community Programs Office and the Pacific Islands’ Student Association. The Bruin Bash Referendum proposes a $1.33 increase to quarterly student fees to create a fund to support putting on Bruin Bash, the beginning of the year welcome back concert.
+
             <br /><br />
 
             <b>How can I vote?</b><br />
