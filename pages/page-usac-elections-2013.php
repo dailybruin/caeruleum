@@ -64,7 +64,7 @@ Template Name: USAC Elections 2013
       <p style="text-align:center">
       <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
-    <div class="row-fluid" style="padding-left:80px">
+    <div class="row-fluid">
      <div class="span6">
       <br />
       <div class = "btn-group">
@@ -124,11 +124,10 @@ Template Name: USAC Elections 2013
             </div>
       </div>
   </div>
-  </div>
-      <div class="span11"><br />
-      <ul class="thumbnail" style="border-color:white">
+  </div><br />
+      <div class="thumbnail">
                   <div class="caption">
-                     <h3 style="text-align:center">Recent Articles<h3>
+                     <h3>Recent Articles<h3>
                    </div>
           <ul>
         <?php
@@ -138,13 +137,15 @@ Template Name: USAC Elections 2013
         <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
         <?php endforeach; ?>
          </ul>
-      </ul>
       </div>
 </div>
    <div class="span3">
       <div class='ad'>
         <?php get_template_part('ad','side'); ?>
       </div>
+      <div class="thumbnail">
+        <p><h4 style="color:#009999">Important Dates:</h4>May 1 - Group endorsement hearing<br />May 2 - Meet the candidates event<br />May 4 - Candidates debates<br />May 6 - Voting begins at noon<br />May 9 - Voting ends at 6 p.m.<br /><b> Election results announced at 11 p.m.</b></p>
+        </div><br />
       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23USACelections" data-widget-id="328749991814369281">Tweets about "#USACelections"</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
