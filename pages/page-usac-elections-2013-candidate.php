@@ -93,7 +93,7 @@ div #preload { display: none; }
               <li><a href="/usac-elections-2013/">Home</a></li>
               <li class="active"><a href="#">Candidates</a></li>
               <li><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here!</a></li>
+              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

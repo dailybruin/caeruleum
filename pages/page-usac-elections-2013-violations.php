@@ -36,7 +36,7 @@ Template Name: USAC Elections Campaign Violations 2013
               <li><a href="/usac-elections-2013/">Home</a></li>
               <li><a href="/usac-elections-2013/candidates">Candidates</a></li>
               <li class="active"><a href="#">Campaign Violations</a></li>
-        <li><a href="http://my.ucla.edu/">Vote Here!</a></li>
+        <li><a href="http://my.ucla.edu/">Vote Here</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
