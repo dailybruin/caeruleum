@@ -20,6 +20,12 @@ Template Name: USAC Elections Candidate 2013
     margin-left: 30px;
 }
 
+.fright {
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
 .grey{
   color:grey;
 }
@@ -276,6 +282,13 @@ div #preload { display: none; }
     o0.bio = "Lots of info."; //Candidate bio
     o0.major = "Political Science"; //Candidate Major
     o0.year = "Third"; //Year
+
+    o0.plat = [];
+    o0.plat.push("Increase student engagement");
+    o0.plat.push("Increase USAC transparency and visibility");
+    o0.plat.push("Foster a stronger UCLA community through collaboration");
+    o0.plat.push("Ensure USAC is sensitive to, and seeks opinions and ideas of, students");
+
   c.push(o0);
 
   var o1 = {};
@@ -287,6 +300,15 @@ div #preload { display: none; }
     o1.bio = "Lots of info."; //Candidate bio
     o1.major = "Sociology"; //Candidate Major
     o1.year = "Third"; //Year
+
+    o1.plat = [];
+    o1.plat.push("Establish Night YRL");
+    o1.plat.push("Revitalize Campus Safety & Crime Reporting");
+    o1.plat.push("Unite UCLA & LA 2050 Initiative");
+    o1.plat.push("Institutionalize Community Service Scholarship");
+    o1.plat.push("Advocate for a fee rollback and affordable UC SHIP costs");
+
+
   c.push(o1);
 
   var o2 = {};
@@ -298,6 +320,12 @@ div #preload { display: none; }
     o2.bio = "Lots of info."; //Candidate bio
     o2.major = "English"; //Candidate Major
     o2.year = "Third"; //Year
+
+    o2.plat = [];
+    o2.plat.push("Strengthening Alumni Connections to Students");
+    o2.plat.push("Expanding Sustainable Funding for Student Programming");
+    o2.plat.push("Revitalizing UCLA Traditions");
+
   c.push(o2);
 
   var o3 = {};
@@ -309,6 +337,14 @@ div #preload { display: none; }
     o3.bio = "Lots of info."; //Candidate bio
     o3.major = "Political Science"; //Candidate Major
     o3.year = "Third"; //Year
+
+    o3.plat = [];
+    o3.plat.push("Increase Transparency with USAC Live-Blog");
+    o3.plat.push("Expand Crime Prevention & Preventative Education");
+    o3.plat.push("Facilitate Student Group Organizing");
+    o3.plat.push("Bridge International & Domestic Students");
+    o3.plat.push("Improve Transfer Admit Resources");
+
   c.push(o3);
 
   var o4 = {};
@@ -320,6 +356,13 @@ div #preload { display: none; }
     o4.bio = "Lots of info."; //Candidate bio
     o4.major = "Economics"; //Candidate Major
     o4.year = "Second"; //Year
+
+    o4.plat = [];
+    o4.plat.push("Increase Safety Resources and Develop Mobile Panic Button Application");
+    o4.plat.push("Institutionalize Marketing/Design Team for Student Groups");
+    o4.plat.push("Enhance Transparency of USAC & Student Fees");
+    o4.plat.push("Spring Activities Fair");
+
   c.push(o4);
 
   var o5 = {};
@@ -332,6 +375,13 @@ div #preload { display: none; }
     o5.major = "Political Science and"; //Candidate Major
     o5.major2 = "Afro-American Studies"
     o5.year = "Third"; //Year
+
+    o5.plat = [];
+    o5.plat.push("Bring legislators to students to create student-centered legislation");
+    o5.plat.push("Advocate for long-term funding of the UC");
+    o5.plat.push("Increase student engagement with Regents");
+    o5.plat.push("Connect students to the LA city leadership and LAUSD");
+
   c.push(o5);
 
   var o6 = {};
@@ -344,6 +394,15 @@ div #preload { display: none; }
     o6.major = "Political Science and"; //Candidate Major
     o6.major2 = "Psychology";
     o6.year = "Third"; //Year
+
+    o6.plat = [];
+    o6.plat.push("Bring Legislators to Campus");
+    o6.plat.push("Advocacy Training Access");
+    o6.plat.push("Op-Eds Explaining Student Issues");
+    o6.plat.push("Advocate for Student-Centered Legislation");
+    o6.plat.push("Voter Participation in Local Elections");
+    o6.plat.push("Regent Appointment Reform");
+
   c.push(o6);
 
   var o7 = {};
@@ -356,6 +415,12 @@ div #preload { display: none; }
     o7.major = "History and"; //Candidate Major
     o7.major2 = "Economics";
     o7.year = "Second"; //Year
+
+    o7.plat = [];
+    o7.plat.push("Strengthening Relationships Among UCLA Governing Bodies");
+    o7.plat.push("Greater Connection Between Students and ASUCLA");
+    o7.plat.push("Address Campus Climate Issues Through Educational Panels and Cultural Events");
+
   c.push(o7);
 
   var o8 = {};
@@ -368,6 +433,12 @@ div #preload { display: none; }
     o8.major = "Political Science and"; //Candidate Major
     o8.major2 = "Economics";
     o8.year = "Second"; //Year
+
+    o8.plat = [];
+    o8.plat.push("More Versatile BruinCard and Implementation of a Suit Closet");
+    o8.plat.push("Implement the Ultimate Traditions Bucket List");
+    o8.plat.push("Empower Identity: Create Identity Video Series and Advocate for Non-Denominational Prayer Space");
+
   c.push(o8);
 
   var o9 = {};
@@ -380,6 +451,12 @@ div #preload { display: none; }
     o9.major = "Human Biology and"; //Candidate Major
     o9.major2 = "Society";
     o9.year = "Second"; //Year
+
+    o9.plat = [];
+    o9.plat.push("Self-expression: Institutionalize Bruin Confidential; Quarterly Appreciation Days");
+    o9.plat.push("Health Awareness: Healthy Studying Initiative, UC[LA] Resource Map");
+    o9.plat.push("UC[LA]: Westwood Restaurants on campus; food trucks");
+
   c.push(o9);
 
   var o10 = {};
@@ -391,6 +468,12 @@ div #preload { display: none; }
     o10.bio = "Lots of info."; //Candidate bio
     o10.major = "Sociology"; //Candidate Major
     o10.year = "Third"; //Year
+
+    o10.plat = [];
+    o10.plat.push("Expand commuter services");
+    o10.plat.push("Help athletes regain their voice on campus");
+    o10.plat.push("Advocate for equality for all womyn on and off campus");
+
   c.push(o10);
 
   var o11 = {};
@@ -402,6 +485,13 @@ div #preload { display: none; }
     o11.bio = "Lots of info."; //Candidate bio
     o11.major = "International Development Studies"; //Candidate Major
     o11.year = "Third"; //Year
+
+    o11.plat = [];
+    o11.plat.push("Directly engage Bruins in Arts ReSTORE LA: Westwood");
+    o11.plat.push("Expand Mental Health Resources");
+    o11.plat.push("Social Justice Campaign promoting Student Activism at UCLA");
+    o11.plat.push("Increase Student Access to Faculty Resources, Mentorship");
+
   c.push(o11);
 
   var o12 = {};
@@ -413,6 +503,13 @@ div #preload { display: none; }
     o12.bio = "Lots of info."; //Candidate bio
     o12.major = "Political Science"; //Candidate Major
     o12.year = "Second"; //Year
+
+    o12.plat = [];
+    o12.plat.push("Know Your Rights, Know Your Resources Campaign");
+    o12.plat.push("Student-Centered ASUCLA");
+    o12.plat.push("Promote financial literacy with UCLA FinAid Mobile App");
+    o12.plat.push("USAC Newsletter to Increase USAC Visibility and Transparency");
+
   c.push(o12);
 
   var o13 = {};
@@ -425,6 +522,13 @@ div #preload { display: none; }
     o13.major = "Political Science and"; //Candidate Major
     o13.major2 = "English";
     o13.year = "Third"; //Year
+
+    o13.plat = [];
+    o13.plat.push("Increase accessibility to administration");
+    o13.plat.push("Establish an online education advisory board");
+    o13.plat.push("Introduce transfer workshops and an academic how-to guide");
+    o13.plat.push("Expand advocacy for a diversity requirement");
+
   c.push(o13);
 
   var o14 = {};
@@ -436,6 +540,13 @@ div #preload { display: none; }
     o14.bio = "Lots of info."; //Candidate bio
     o14.major = "International Development Studies"; //Candidate Major
     o14.year = "Third"; //Year
+
+    o14.plat = [];
+    o14.plat.push("Enhance student-faculty interaction");
+    o14.plat.push("Address re-admission and financial aid policies");
+    o14.plat.push("Provide students with post-grad mentors");
+    o14.plat.push("Implement culturally relevant education");
+
   c.push(o14);
 
   var o15 = {};
@@ -447,6 +558,13 @@ div #preload { display: none; }
     o15.bio = "Lots of info."; //Candidate bio
     o15.major = "Anthropology"; //Candidate Major
     o15.year = "Third"; //Year
+
+    o15.plat = [];
+    o15.plat.push("Continue to the Films, Speakers and Concerts programs");
+    o15.plat.push("Hold events that cater to international students");
+    o15.plat.push("Bring Bruin Bash back to Pauley Pavilion ");
+    o15.plat.push("Hold Commissioner Office Hours to help student groups");
+
   c.push(o15);
 
   var o16 = {};
@@ -458,6 +576,12 @@ div #preload { display: none; }
     o16.bio = "Lots of info."; //Candidate bio
     o16.major = "International Development Studies"; //Candidate Major
     o16.year = "Third"; //Year
+
+    o16.plat = [];
+    o16.plat.push("Support independent service groups through the CSC Network");
+    o16.plat.push("Improve and expand service, issues awareness, and advocacy programs");
+    o16.plat.push("Provide more leadership opportunities through community engagement");
+
   c.push(o16);
 
   var o17 = {};
@@ -469,6 +593,13 @@ div #preload { display: none; }
     o17.bio = "Lots of info."; //Candidate bio
     o17.major = "English"; //Candidate Major
     o17.year = "Third"; //Year
+
+    o17.plat = [];
+    o17.plat.push("Improve CAC Mini-Fund to better address student needs");
+    o17.plat.push("UCLA Art Walk");
+    o17.plat.push("Raise awareness about the effect of sustainability issues in cultural expression");
+    o17.plat.push("Celebrate history of art & activism at UCLA");
+
   c.push(o17);
 
   var o18 = {};
@@ -481,6 +612,12 @@ div #preload { display: none; }
     o18.major = "Economics and"; //Candidate Major
     o18.major2= "International Development Studies";
     o18.year = "Second"; //Year
+
+    o18.plat = [];
+    o18.plat.push("Institutionalize a Thrift Shop that would raise money for clubs through donations");
+    o18.plat.push("Revamp the ASUCLA reusable cup, offer a cheaper student friendly version");
+    o18.plat.push("Bring charging lockers with built-in chargers");
+
   c.push(o18);
 
   var o19 = {};
@@ -492,6 +629,13 @@ div #preload { display: none; }
     o19.bio = "Lots of info."; //Candidate bio
     o19.major = "English"; //Candidate Major
     o19.year = "Third"; //Year
+
+    o19.plat = [];
+    o19.plat.push("More Student Voice in UCLA Transportation");
+    o19.plat.push("Component to push joint student-group green campaigns");
+    o19.plat.push("UCPD sensitivity & street improvements");
+    o19.plat.push("Revise gender-neutral, student-group & disability inclusive spaces");
+
   c.push(o19);
 
   var o20 = {};
@@ -504,6 +648,12 @@ div #preload { display: none; }
     o20.major = "Psychology and"; //Candidate Major
     o20.major2 = "Communication Studies";
     o20.year = "Second"; //Year
+
+    o20.plat = [];
+    o20.plat.push("Promote financial responsibility and independence");
+    o20.plat.push("Engage alumni to ease post-graduate transition");
+    o20.plat.push("Increase access to resources to ensure affordability");
+
   c.push(o20);
 
   var o21 = {};
@@ -516,6 +666,13 @@ div #preload { display: none; }
     o21.major = "Sociology and"; //Candidate Major
     o21.major2 = "English";
     o21.year = "Second"; //Year
+
+    o21.plat = [];
+    o21.plat.push("push for affordable off-campus housing and parking");
+    o21.plat.push("waive 1st Bruin Card replacement fee");
+    o21.plat.push("ensure student aid budget reflects the real cost of UCLA");
+    o21.plat.push("create a financial literacy fiat lux course ");
+
   c.push(o21);
 
   var o22 = {};
@@ -527,6 +684,12 @@ div #preload { display: none; }
     o22.bio = "Lots of info."; //Candidate bio
     o22.major = "Global Studies"; //Candidate Major
     o22.year = "Second"; //Year
+
+    o22.plat = [];
+    o22.plat.push("Teaching consent to prevent sexual assault and promote sexual health");
+    o22.plat.push("Encourage healthy, individualized eating and avoid fad dieting");
+    o22.plat.push("Educate students on the realities of depression, anxiety and suicide");
+
   c.push(o22);      
 
 
@@ -634,12 +797,12 @@ function randArray(myArray)
     else  
       string += "<div class='row candidate'>";
 
-      string +=   "<div class='offset1 left'>";
+      string +=   "<div class='offset1 span2'>";
 
       string +=     "<img class='candimg' src='" + o.picture + "' style='border-color:#0011FF;'/>";
       string +=   "</div>";
 
-      string +=   "<div class='right'>";
+      string +=   "<div class='span3'>";
 
     if (o.winner)
       string +=     "<h3 style='font-style:italic;'>" + o.fname + " " + o.lname + "</h3>";
@@ -658,6 +821,30 @@ function randArray(myArray)
     if (o.major2 != undefined)
       string +=     "<h4 class='spacer'>" + o.major2 + "</h4>";
       string +=     "<h4 class='spacer'><u>Year:</u> " + o.year + "</h4>";
+
+      string += "</div>";
+
+      string +=  "<div class='span6'>";
+
+      string += "<h4>Platforms</h4>"
+
+      string += "<ul>"
+
+      if (o.plat != undefined)
+      {
+        for (var i = 0; i < o.plat.length; i++)
+        {
+          string += "<li>"
+
+          string += o.plat[i];
+
+          string += "</li>"
+
+        }
+
+      }     
+
+      string += "</ul>"
 
       //string +=     "<div class='accordion' id='" + id + "'>";
       //string +=     "<div class='accordion-group'>";
