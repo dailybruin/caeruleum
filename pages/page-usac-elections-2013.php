@@ -132,7 +132,7 @@ Template Name: USAC Elections 2013
           <ul>
         <?php
         global $post;
-        $myposts = get_posts( array('tag_slug__and'  => 'USAC elections'));
+        $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1'));
         foreach( $myposts as $post ) :  setup_postdata($post); ?>
         <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
         <?php endforeach; ?>
