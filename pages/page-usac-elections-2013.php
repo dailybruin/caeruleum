@@ -55,6 +55,43 @@ Template Name: USAC Elections 2013
           text-align: center;
         }
 
+        .bally{
+          background-color: #93BCC4;
+        }
+
+        .bunited{
+          background-color: #C2E1F2;
+        }
+
+        .indep{
+          background-color: #A2DEA6;
+        }
+
+        .letsact
+        {
+          background-color: #F7F499;
+        }
+
+        .pass
+        {
+          background-color: green;
+        }
+
+        .fail
+        {
+          background-color: red;
+        }
+
+        .white
+        {
+          color: white;
+        }
+
+        .offwhite
+        {
+          color: #858585;
+        }
+
 
    </style>
 
@@ -97,8 +134,8 @@ Template Name: USAC Elections 2013
       <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
 
-
-    <!--
+<!--
+    
     <br/><br/>
 
     
@@ -110,7 +147,7 @@ Template Name: USAC Elections 2013
     <ul class="thumbnails">
 
       <li class="span12">
-        <div class="thumbnail">
+        <div class="thumbnail bally">
 
           <div class="row-fluid">
             <div class="span6">
@@ -132,7 +169,7 @@ Template Name: USAC Elections 2013
     <ul class="thumbnails">
 
       <li class="span3">
-        <div class="thumbnail">
+        <div class="thumbnail indep">
           <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
           <div class="textcentered">
             <h4>Internal Vice President</h4>
@@ -143,7 +180,7 @@ Template Name: USAC Elections 2013
       </li>
 
       <li class="span3">
-        <div class="thumbnail">
+        <div class="thumbnail letsact">
           <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
           <div class="textcentered">
             <h4>External Vice President</h4>
@@ -154,7 +191,7 @@ Template Name: USAC Elections 2013
       </li>
 
       <li class="span3">
-        <div class="thumbnail">
+        <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
           <div class="textcentered">
             <h4>Academic Affairs Commissioner</h4>
@@ -165,7 +202,7 @@ Template Name: USAC Elections 2013
       </li>
 
       <li class="span3">
-        <div class="thumbnail">
+        <div class="thumbnail indep">
           <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
           <div class="textcentered">
             <h4>Campus Events Commissioner</h4>
@@ -180,7 +217,7 @@ Template Name: USAC Elections 2013
     <ul class="thumbnails">
 
       <li class="span3">
-        <div class="thumbnail">
+        <div class="thumbnail indep">
           <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
           <div class="textcentered">
             <h4>Cultural Affairs Commissioner</h4>
@@ -191,7 +228,7 @@ Template Name: USAC Elections 2013
       </li>
 
       <li class="span3">
-        <div class="thumbnail">
+        <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
           <div class="textcentered">
             <h4>General Representative</h4>
@@ -275,28 +312,26 @@ Template Name: USAC Elections 2013
     <ul class="thumbnails">
 
       <li class="span6">
-        <div class="thumbnail">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail fail">
           <div class="textcentered">
-            <h3>Bruin Bash Referendum</h3>
-            <h4>Passed or didnt</h4>
+            <h1 class="white">FAILED</h1>
+            <h3>Bruin Bash Referendum</h3></span>
           </div>
         </div>
       </li>
 
       <li class="span6">
-        <div class="thumbnail">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail pass">
           <div class="textcentered">
+            <h1 class="white">PASSED</h1>
             <h3>Bruin Diversity Initiative</h3>
-            <h4>Passed or didnt</h4>
           </div>
         </div>
       </li>
 
     </ul>
-
-    -->
+  -->
+    
 
     <div class="row-fluid">
 
@@ -442,7 +477,7 @@ Template Name: USAC Elections 2013
   <div class='ad'>
     <?php get_template_part('ad','side'); ?>
   </div>
-  <div class="thumbnail">
+  <div class="thumbnail textcentered">
     <p><h4 style="color:#009999">Important Dates:</h4>May 1 - Group endorsement hearing<br />May 2 - Meet the candidates event<br />May 4 - Candidates debates<br />May 6 - Voting begins at noon<br />May 9 - Voting ends at 6 p.m.<br /><b> Election results announced at 11 p.m.</b></p>
   </div>
   <br />
