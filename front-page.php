@@ -24,6 +24,31 @@
 				$cstory[3] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c4' ) );
 			?>
 			<div class="span8" id="front-maincol">
+
+				<?php
+					// Set up livestream post
+					$livestream_post = get_posts( array('numberposts' => 1, 'tag' => 'db-story-livestream'));
+					if(!empty($livestream_post)):
+						setup_postdata($livestream_post[0]);
+				?>
+					<style type="text/css">
+						#front-livestream {
+							margin-bottom:10px;
+						}
+						#front-livestream span.livestream-head {
+						    font-size: 2.5em;
+						    font-weight: bold;
+						    line-height: 1em;
+						    margin-bottom:10px;
+						    display:block;
+						}
+					</style>
+					<div id="front-livestream">
+						<span class="livestream-head"><?php the_headline(); ?></span>
+						<?php the_content(); ?>
+					</div>
+				<?php endif; ?>
+
 				<?php // Breaking posts
 				$args = array( 'tag' => 'breaking' );
 				$lastposts = get_posts( $args );
