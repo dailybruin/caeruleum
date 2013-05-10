@@ -47,8 +47,8 @@ Template Name: USAC Elections 2013
         }
 
         .box{
-          margin-top: 20%;
-          margin-bottom: 20%;
+          margin-top: 10%;
+          margin-bottom: 10%;
           margin-left: 20px;
         }
 
@@ -96,6 +96,10 @@ Template Name: USAC Elections 2013
         .topnote
         {
           font-size: 44px
+        }
+
+        .greyer{
+          color: #0327AF;
         }
 
         .laterbuttons {
@@ -179,7 +183,7 @@ Template Name: USAC Elections 2013
                 <h1>President</h1>
                 <h2 style="font-family:sans-serif;">John Joanino</h2>
                 <h3>Let's Act!</h3>
-                <!--51.8%-->
+                <h3 style="text-transform: lowercase;"class="greyer">51.8% of the vote</h3>
               </div>
             </div>
           </div>
@@ -200,8 +204,7 @@ Template Name: USAC Elections 2013
             <h4>Internal Vice President</h4>
             <h5>Avi Oved</h5>
             <h5>Bruins United</h5>
-
-            <!--52%-->
+            <h4 class="greyer">52.6%</h4>
 
           </div>
         </div>
@@ -215,7 +218,8 @@ Template Name: USAC Elections 2013
           <div class="textcentered">
             <h4>External Vice President</h4>
             <h5>Maryssa Hall</h5>
-            <h5>Let's Act</h5>
+            <h5>Let's Act!</h5>
+            <h4 class="greyer">55%</h4>
           </div>
         </div>
       </li>
@@ -229,7 +233,7 @@ Template Name: USAC Elections 2013
             <h4>Academic Affairs Commissioner</h4>
             <h5>Darren Ramalho</h5>
             <h5>Bruins United</h5>
-            <!-- 53% -->
+            <h4 class="greyer">53.1%</h4>
           </div>
         </div>
       </li>
@@ -243,6 +247,7 @@ Template Name: USAC Elections 2013
             <h4>Campus Events Commissioner</h4>
             <h5>Jessica Kim</h5>
             <h5>Independent</h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
@@ -260,6 +265,7 @@ Template Name: USAC Elections 2013
             <h4>Cultural Affairs Commissioner</h4>
             <h5>Jessica Trumble</h5>
             <h5>Let's Act!</h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
@@ -273,6 +279,7 @@ Template Name: USAC Elections 2013
             <h4>General Representative 1</h4>
             <h5>Sam Haws</h5>
             <h5>Bruins United</h5>
+            <h4>&nbsp;</h4>
           </div>
       </li>
 
@@ -284,6 +291,7 @@ Template Name: USAC Elections 2013
             <h4>General Representative 2</h4>
             <h5>Sunny Singh</h5>
             <h5>Bruins United</h5>
+            <h4>&nbsp;</h4>
           </div>
         </div>
       </li>
@@ -295,6 +303,7 @@ Template Name: USAC Elections 2013
             <h4>General Representative 3</h4>
             <h5>Lizzy Naameh</h5>
             <h5>Let's Act!</h5>
+            <h4>&nbsp;</h4>
           </div>
       </li>
 
@@ -311,6 +320,7 @@ Template Name: USAC Elections 2013
             <h4>Community Service Commissioner</h4>
             <h5>Omar Arce</h5>
             <h5>Independent</h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
@@ -324,7 +334,7 @@ Template Name: USAC Elections 2013
             <h4>Facilities Commissioner</h4>
             <h5>Armen Hadjimanoukian</h5>
             <h5>Bruins United</h5>
-            <!-- 50% -->
+            <h4 class="greyer">50.9%</h4>
           </div>
         </div>
       </li>
@@ -338,7 +348,7 @@ Template Name: USAC Elections 2013
             <h4>Financial Support Commissioner</h4>
             <h5>Lauren Rogers</h5>
             <h5>Bruins United</h5>
-            <!-- 51% -->
+            <h4 class="greyer">54.1%</h4>
           </div>
         </div>
       </li>
@@ -352,6 +362,7 @@ Template Name: USAC Elections 2013
             <h4>Student Wellness Commissioner</h4>
             <h5>Savannah Dianne Badalich</h5>
             <h5>Independent</h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
