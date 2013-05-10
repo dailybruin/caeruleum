@@ -182,7 +182,7 @@ Template Name: USAC Elections 2013
               <div class="box">
                 <h1>President</h1>
                 <h2 style="font-family:sans-serif;">John Joanino</h2>
-                <h3>Let's Act!</h3>
+                <h3>LET'S ACT!</h3>
                 <h3 style="text-transform: lowercase;"class="greyer">51.8% of the vote</h3>
               </div>
             </div>
@@ -218,7 +218,7 @@ Template Name: USAC Elections 2013
           <div class="textcentered">
             <h4>External Vice President</h4>
             <h5>Maryssa Hall</h5>
-            <h5>Let's Act!</h5>
+            <h5>LET'S ACT!</h5>
             <h4 class="greyer">55%</h4>
           </div>
         </div>
@@ -264,7 +264,7 @@ Template Name: USAC Elections 2013
           <div class="textcentered">
             <h4>Cultural Affairs Commissioner</h4>
             <h5>Jessica Trumble</h5>
-            <h5>Let's Act!</h5>
+            <h5>LET'S ACT!</h5>
             <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
@@ -302,7 +302,7 @@ Template Name: USAC Elections 2013
           <div class="textcentered">
             <h4>General Representative 3</h4>
             <h5>Lizzy Naameh</h5>
-            <h5>Let's Act!</h5>
+            <h5>LET'S ACT!</h5>
             <h4>&nbsp;</h4>
           </div>
       </li>
