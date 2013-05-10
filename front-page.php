@@ -42,6 +42,24 @@
 						    margin-bottom:10px;
 						    display:block;
 						}
+						#front-livestream iframe {
+							-moz-transform: scale(0.9);
+							-webkit-transform: scale(0.9);
+						}
+						@media (min-width: 1200px) { 
+							#front-livestream iframe {
+								-moz-transform: scale(1);
+								-webkit-transform: scale(1);
+							}
+						}
+						@media (max-width: 979px) { 
+							#front-livestream iframe {
+								-moz-transform: scale(0.75);
+								-moz-transform-origin: 0 0;
+								-webkit-transform: scale(0.75);
+								-webkit-transform-origin: 0 0;
+								margin-bottom: -97px;							}
+						}
 					</style>
 					<div id="front-livestream">
 						<span class="livestream-head"><?php the_headline(); ?></span>
