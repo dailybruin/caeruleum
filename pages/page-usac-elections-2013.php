@@ -97,6 +97,24 @@ Template Name: USAC Elections 2013
           font-size: 44px
         }
 
+        .laterbuttons {
+            display:none;
+            visibility: hidden;
+          }
+
+        @media (max-width: 1200px) {
+          .initbuttons {
+            display:none;
+            visibility: hidden;
+          }
+
+          .laterbuttons {
+            display: inline;
+            visibility: visible;
+            width: 100%;
+          }
+}
+
 
    </style>
 
@@ -524,6 +542,8 @@ Template Name: USAC Elections 2013
 
     <div class="row-fluid">
 
+      <div class="initbuttons">
+
       <div class="span4">
       <br/>
         <div class = "btn-group">
@@ -567,6 +587,64 @@ Template Name: USAC Elections 2013
         </div>
       </div>
 
+    </div>
+        
+    </div>
+
+    <div class="row-fluid">
+
+      <div class="laterbuttons">
+
+      <div class="row-fluid">
+      <div class="span12">
+      <br/>
+        <div class = "btn-group">
+          <a href="/usac-elections-2013/candidates">
+            <button class="btn" style="color:#009999">
+              <div class="caption">
+                  <h4 style="text-align:center">Learn about the candidates</h4>
+                  <h5>23 students are running for 13 seats</h5>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+      </div>
+
+      <div class="row-fluid">
+      <div class="span12">
+      <br/>
+        <div class = "btn-group">
+          <a href="#myModal" role="button" data-toggle="modal">
+            <button class="btn" style="color:#009999">
+              <div class="caption">
+                  <h4 style="text-align:center">What is USAC ?</h4>
+                  <h5>Basics of your student government  </h5>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+      </div>
+
+      <div class="row-fluid">
+      <div class="span12">
+      <br/>
+        <div class = "btn-group">
+          <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
+" role="button" data-toggle="modal">
+            <button class="btn" style="color:#009999">
+              <div class="caption">
+                  <h4 style="text-align:center">Daily Bruin Endorsements</h4>
+                  <h5>Check out the selections</h5>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+      </div>
+
+    </div>
         
     </div>
 
