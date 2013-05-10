@@ -345,7 +345,7 @@ Template Name: USAC Elections 2013
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Lauren Rogers.jpg" alt="">
           <div class="textcentered">
-            <h4>Financial Support Commissioner</h4>
+            <h4>Financial Supports Commissioner</h4>
             <h5>Lauren Rogers</h5>
             <h5>Bruins United</h5>
             <h4 class="greyer">54.1%</h4>
