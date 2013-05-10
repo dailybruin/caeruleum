@@ -545,9 +545,9 @@ Template Name: USAC Elections 2013
 
       <div class="span6">
 
-      </div>
+        <script src="//storify.com/dailybruin/usac-elections-2013.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2013" target="_blank">View the story "USAC Elections 2013" on Storify</a>]</noscript>
 
-      <script src="//storify.com/dailybruin/usac-elections-2013.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2013" target="_blank">View the story "USAC Elections 2013" on Storify</a>]</noscript>
+      </div>
 
       </div>
 
