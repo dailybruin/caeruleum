@@ -293,6 +293,7 @@ div #preload { display: none; }
     o1.bio = "Lots of info."; //Candidate bio
     o1.major = "Sociology"; //Candidate Major
     o1.year = "Third"; //Year
+    o1.winner = true;
 
     o1.plat = [];
     o1.plat.push("Establish Night YRL");
@@ -349,6 +350,7 @@ div #preload { display: none; }
     o4.bio = "Lots of info."; //Candidate bio
     o4.major = "Economics"; //Candidate Major
     o4.year = "Second"; //Year
+    o4.winner = true;
 
     o4.plat = [];
     o4.plat.push("Increase Safety Resources and Develop Mobile Panic Button Application");
@@ -368,6 +370,7 @@ div #preload { display: none; }
     o5.major = "Political Science and"; //Candidate Major
     o5.major2 = "Afro-American Studies"
     o5.year = "Third"; //Year
+    o5.winner = true;
 
     o5.plat = [];
     o5.plat.push("Bring legislators to students to create student-centered legislation");
@@ -408,6 +411,7 @@ div #preload { display: none; }
     o7.major = "History and"; //Candidate Major
     o7.major2 = "Economics";
     o7.year = "Second"; //Year
+    o7.winner = true;
 
     o7.plat = [];
     o7.plat.push("Strengthening Relationships Among UCLA Governing Bodies");
@@ -426,6 +430,7 @@ div #preload { display: none; }
     o8.major = "Political Science and"; //Candidate Major
     o8.major2 = "Economics";
     o8.year = "Second"; //Year
+    o8.winner = true;
 
     o8.plat = [];
     o8.plat.push("More Versatile BruinCard and Implementation of a Suit Closet");
@@ -478,6 +483,7 @@ div #preload { display: none; }
     o11.bio = "Lots of info."; //Candidate bio
     o11.major = "International Development Studies"; //Candidate Major
     o11.year = "Third"; //Year
+    o11.winner = true;
 
     o11.plat = [];
     o11.plat.push("Directly engage Bruins in Arts ReSTORE LA: Westwood");
@@ -515,6 +521,7 @@ div #preload { display: none; }
     o13.major = "Political Science and"; //Candidate Major
     o13.major2 = "English";
     o13.year = "Third"; //Year
+    o13.winner = true;
 
     o13.plat = [];
     o13.plat.push("Increase accessibility to administration");
@@ -551,6 +558,7 @@ div #preload { display: none; }
     o15.bio = "Lots of info."; //Candidate bio
     o15.major = "Anthropology"; //Candidate Major
     o15.year = "Third"; //Year
+    o15.winner = true;
 
     o15.plat = [];
     o15.plat.push("Continue to the Films, Speakers and Concerts programs");
@@ -569,6 +577,7 @@ div #preload { display: none; }
     o16.bio = "Lots of info."; //Candidate bio
     o16.major = "International Development Studies"; //Candidate Major
     o16.year = "Third"; //Year
+    o16.winner = true;
 
     o16.plat = [];
     o16.plat.push("Support independent service groups through the CSC Network");
@@ -586,6 +595,7 @@ div #preload { display: none; }
     o17.bio = "Lots of info."; //Candidate bio
     o17.major = "English"; //Candidate Major
     o17.year = "Third"; //Year
+    o17.winner = true;
 
     o17.plat = [];
     o17.plat.push("Improve CAC Mini-Fund to better address student needs");
@@ -605,6 +615,7 @@ div #preload { display: none; }
     o18.major = "Economics and"; //Candidate Major
     o18.major2= "International Development Studies";
     o18.year = "Second"; //Year
+    o18.winner = true;
 
     o18.plat = [];
     o18.plat.push("Institutionalize a Thrift Shop that would raise money for clubs through donations");
@@ -641,6 +652,7 @@ div #preload { display: none; }
     o20.major = "Psychology and"; //Candidate Major
     o20.major2 = "Communication Studies";
     o20.year = "Second"; //Year
+    o20.winner = true;
 
     o20.plat = [];
     o20.plat.push("Promote financial responsibility and independence");
@@ -677,6 +689,7 @@ div #preload { display: none; }
     o22.bio = "Lots of info."; //Candidate bio
     o22.major = "Global Studies"; //Candidate Major
     o22.year = "Second"; //Year
+    o22.winner = true;
 
     o22.plat = [];
     o22.plat.push("Teaching consent to prevent sexual assault and promote sexual health");
@@ -777,9 +790,9 @@ function randArray(myArray)
 
     var string = "";
       
-    if (o.winner)
-      string += "<div class='row candidate' style='background-color: #65A0CF;'>";
-    else if (o.slate == SLATE.BUNITED)
+    //if (o.winner)
+      //string += "<div class='row candidate' style='background-color: #65A0CF;'>";
+    if (o.slate == SLATE.BUNITED)
       string += "<div class='row candidate' style='background-color: #C2E1F2;'>";
     else if (o.slate == SLATE.LETSACT)
       string += "<div class='row candidate' style='background-color: #F7F499;'>";
@@ -802,8 +815,7 @@ function randArray(myArray)
     else
       string +=     "<h3 style='font-style:italic; margin-bottom:30px;'>" + o.fname + " " + o.lname + "</h3>";
 
-    if (o.winner)
-      string +=     "<h3 style='font-style:bold;'><u>ELECTED!</u></h3>";
+    
 
     if (outersort == SORTYPE.OFFICE)
       string +=     "<h4 class='spacer'><u>Slate:</u> " + getString(o.slate) + "</h4>";
@@ -818,6 +830,9 @@ function randArray(myArray)
       string += "</div>";
 
       string +=  "<div class='span6'>";
+
+      if (o.winner)
+        string +=     "<h3 style='font-style:bold; color: #0327AF;'><u>ELECTED</u></h3>";
 
       string += "<h4>Platforms</h4>"
 
