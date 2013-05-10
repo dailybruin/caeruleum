@@ -427,8 +427,8 @@ div #preload { display: none; }
     o8.office = OFFICE.GENERALREP; //Office
     o8.picture = "/images/features/usac2013/Sam Haws.jpg"; //Picture name
     o8.bio = "Lots of info."; //Candidate bio
-    o8.major = "Political Science and"; //Candidate Major
-    o8.major2 = "Economics";
+    o8.major = "Political Science"; //Candidate Major
+    o8.major2 = "and Economics";
     o8.year = "Second"; //Year
     o8.winner = true;
 
@@ -518,8 +518,8 @@ div #preload { display: none; }
     o13.office = OFFICE.ACAAFFAIRS; //Office
     o13.picture = "/images/features/usac2013/Darren Ramalho.jpg"; //Picture name
     o13.bio = "Lots of info."; //Candidate bio
-    o13.major = "Political Science and"; //Candidate Major
-    o13.major2 = "English";
+    o13.major = "Political Science"; //Candidate Major
+    o13.major2 = "and English";
     o13.year = "Third"; //Year
     o13.winner = true;
 
