@@ -49,6 +49,7 @@ Template Name: USAC Elections 2013
         .box{
           margin-top: 20%;
           margin-bottom: 20%;
+          margin-left: 20px;
         }
 
         .textcentered{
@@ -170,14 +171,14 @@ Template Name: USAC Elections 2013
         <div class="thumbnail letsact">
 
           <div class="row-fluid">
-            <div class="span6">
+            <div class="span3">
               <img class="presphoto" src="/images/features/usac2013/John Joanino.jpg" alt="">
             </div>
-            <div class="span6">
+            <div class="span9">
               <div class="box">
-                <h3>President</h3>
-                <h4>John Joanino</h4>
-                <h4>Let's Act!</h4>
+                <h1>President</h1>
+                <h2 style="font-family:sans-serif;">John Joanino</h2>
+                <h3>Let's Act!</h3>
                 <!--51.8%-->
               </div>
             </div>
