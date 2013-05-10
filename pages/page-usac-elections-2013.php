@@ -150,173 +150,6 @@ Template Name: USAC Elections 2013
       <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
 
-  </br>
-
-<h2 class="topnote" style="text-align:center;">Check back at 11 p.m. for the USAC election results:</h2>
-
-    <br/>
-
-    <ul class="thumbnails">
-
-      <li class="span12">
-        <div class="thumbnail">
-
-          <div class="row-fluid">
-            <div class="span6">
-              <img class="presphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-            </div>
-            <div class="span6">
-              <div class="box">
-                <h3>President</h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </li>
-    </ul>
-
-    <ul class="thumbnails">
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Internal Vice President</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>External Vice President</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Academic Affairs Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Campus Events Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-
-    <ul class="thumbnails">
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Cultural Affairs Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>General Representative</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>General Representative</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>General Representative</h4>
-          </div>
-      </li>
-
-    </ul>
-
-    <ul class="thumbnails">
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Community Service Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Facilities Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Financial Support Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
-          <div class="textcentered">
-            <h4>Student Wellness Commissioner</h4>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-
-    <ul class="thumbnails">
-
-      <li class="span6">
-        <div class="thumbnail">
-          <div class="textcentered">
-            <h3>Bruin Bash Referendum</h3></span>
-          </div>
-        </div>
-      </li>
-
-      <li class="span6">
-        <div class="thumbnail">
-          <div class="textcentered">
-            <h3>Bruin Diversity Initiative</h3>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-
-
-    
     <br/><br/>
 
 
@@ -332,21 +165,20 @@ Template Name: USAC Elections 2013
 
     <!-- Presidents-->
 
-    <!--
-
     <ul class="thumbnails">
       <li class="span12">
-        <div class="thumbnail bally">
+        <div class="thumbnail letsact">
 
           <div class="row-fluid">
             <div class="span6">
-              <img class="presphoto" src="/images/features/usac2013/Carly Yoshida.jpg" alt="">
+              <img class="presphoto" src="/images/features/usac2013/John Joanino.jpg" alt="">
             </div>
             <div class="span6">
               <div class="box">
                 <h3>President</h3>
-                <h4>Carly Yoshida</h4>
-                <h4>Bruins United</h4>
+                <h4>John Joanino</h4>
+                <h4>Let's Act!</h4>
+                <!--51.8%-->
               </div>
             </div>
           </div>
@@ -355,83 +187,53 @@ Template Name: USAC Elections 2013
       </li>
     </ul>
 
-    <ul class="thumbnails">
-      <li class="span12">
-        <div class="thumbnail bally">
-
-          <div class="row-fluid">
-            <div class="span6">
-              <img class="presphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
-            </div>
-            <div class="span6">
-              <div class="box">
-                <h3>President</h3>
-                <h4>Taylor Bazley</h4>
-                <h4>Bruins Alliance</h4>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </li>
-    </ul>
-
-    <ul class="thumbnails">
-      <li class="span12">
-        <div class="thumbnail bally">
-
-          <div class="row-fluid">
-            <div class="span6">
-              <img class="presphoto" src="/images/features/usac2013/Carly Yoshida.jpg" alt="">
-            </div>
-            <div class="span6">
-              <div class="box">
-                <h3>President</h3>
-                <h4>Carly Yoshida</h4>
-                <h4>Bruins United</h4>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </li>
-    </ul>
+    <!-- IVPS-->
 
 
     <ul class="thumbnails">
 
       <li class="span3">
-        <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Avi Oved.jpg" alt="">
           <div class="textcentered">
             <h4>Internal Vice President</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h5>Avi Oved</h5>
+            <h5>Bruins United</h5>
+
+            <!--52%-->
+
           </div>
         </div>
       </li>
 
+      <!-- EVPS-->
+
       <li class="span3">
         <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+          <img class="candphoto" src="/images/features/usac2013/Maryssa Hall.jpg" alt="">
           <div class="textcentered">
             <h4>External Vice President</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h5>Maryssa Hall</h5>
+            <h5>Let's Act</h5>
           </div>
         </div>
       </li>
 
+      <!-- Academic Affairs Commissioner -->
+
       <li class="span3">
-        <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Jessica Trumble.jpg" alt="">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Darren Ramalho.jpg" alt="">
           <div class="textcentered">
             <h4>Academic Affairs Commissioner</h4>
-            <h5>Jessica Trumble</h5>
-            <h5>Let's Act!</h5>
+            <h5>Darren Ramalho</h5>
+            <h5>Bruins United</h5>
+            <!-- 53% -->
           </div>
         </div>
       </li>
+
+      <!--Campus Events Commisioner-->
 
       <li class="span3">
         <div class="thumbnail indep">
@@ -448,52 +250,58 @@ Template Name: USAC Elections 2013
 
     <ul class="thumbnails">
 
+      <!--Cultural Affairs Commissioner-->
+
       <li class="span3">
-        <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail letsact">
+          <img class="candphoto" src="/images/features/usac2013/Jessica Trumble.jpg" alt="">
           <div class="textcentered">
             <h4>Cultural Affairs Commissioner</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h5>Jessica Trumble</h5>
+            <h5>Let's Act!</h5>
           </div>
         </div>
       </li>
+
+      <!--General Representatives-->
+
+       <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Sam Haws.jpg" alt="">
+          <div class="textcentered">
+            <h4>General Representative 1</h4>
+            <h5>Sam Haws</h5>
+            <h5>Bruins United</h5>
+          </div>
+      </li>
+
 
       <li class="span3">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+          <img class="candphoto" src="/images/features/usac2013/Sunny Singh.jpg" alt="">
           <div class="textcentered">
-            <h4>General Representative</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h4>General Representative 2</h4>
+            <h5>Sunny Singh</h5>
+            <h5>Bruins United</h5>
           </div>
         </div>
       </li>
-
+     
       <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail letsact">
+          <img class="candphoto" src="/images/features/usac2013/Lizzy Naameh.jpg" alt="">
           <div class="textcentered">
-            <h4>General Representative</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
-          </div>
-        </div>
-      </li>
-
-      <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
-          <div class="textcentered">
-            <h4>General Representative</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h4>General Representative 3</h4>
+            <h5>Lizzy Naameh</h5>
+            <h5>Let's Act!</h5>
           </div>
       </li>
 
     </ul>
 
     <ul class="thumbnails">
+
+      <!-- Community Service Commisioner -->
 
       <li class="span3">
         <div class="thumbnail indep">
@@ -506,27 +314,35 @@ Template Name: USAC Elections 2013
         </div>
       </li>
 
+      <!-- Facilities Commissioner -->
+
       <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
           <div class="textcentered">
             <h4>Facilities Commissioner</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h5>Armen Hadjimanoukian</h5>
+            <h5>Bruins United</h5>
+            <!-- 50% -->
           </div>
         </div>
       </li>
 
+      <!-- Financial Commisioner -->
+
       <li class="span3">
-        <div class="thumbnail">
-          <img class="candphoto" src="/images/features/usac2013/Taylor Bazley.jpg" alt="">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Lauren Rogers.jpg" alt="">
           <div class="textcentered">
             <h4>Financial Support Commissioner</h4>
-            <h5>Candidate Name Here</h5>
-            <h5>Slate Name Here</h5>
+            <h5>Lauren Rogers</h5>
+            <h5>Bruins United</h5>
+            <!-- 51% -->
           </div>
         </div>
       </li>
+
+      <!-- Student Wellness Commissioner -->
 
       <li class="span3">
         <div class="thumbnail indep">
@@ -544,26 +360,24 @@ Template Name: USAC Elections 2013
     <ul class="thumbnails">
 
       <li class="span6">
-        <div class="thumbnail fail">
+        <div class="thumbnail pass">
           <div class="textcentered">
-            <h1 class="white">FAILED</h1>
+            <h1 class="white">PASSED - 60%</h1>
             <h3>Bruin Bash Referendum</h3></span>
           </div>
         </div>
       </li>
 
       <li class="span6">
-        <div class="thumbnail pass">
+        <div class="thumbnail fail">
           <div class="textcentered">
-            <h1 class="white">PASSED</h1>
+            <h1 class="white">FAILED - 47.9%</h1>
             <h3>Bruin Diversity Initiative</h3>
           </div>
         </div>
       </li>
 
     </ul>
-
-    -->
 
 
     
@@ -729,14 +543,13 @@ Template Name: USAC Elections 2013
         </div>
       </div>
 
-
       <div class="span6">
-
-        <script src="//storify.com/dailybruin/usac-elections-2013.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2013" target="_blank">View the story "USAC Elections 2013" on Storify</a>]</noscript>
 
       </div>
 
-    </div>
+      <script src="//storify.com/dailybruin/usac-elections-2013.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2013" target="_blank">View the story "USAC Elections 2013" on Storify</a>]</noscript>
+
+      </div>
 
 <!-- Modal -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
