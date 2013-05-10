@@ -255,7 +255,7 @@ div #preload { display: none; }
       case OFFICE.FACILITIES:
         return "Facilities Commissioner";
       case OFFICE.FINANCIALSUPPORT:
-        return "Financial Support Commissioner";
+        return "Financial Supports Commissioner";
       case OFFICE.STUDENTWELLNESS:
         return "Student Wellness Commissioner";
 
