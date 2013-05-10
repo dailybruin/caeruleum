@@ -17,7 +17,7 @@ Template Name: USAC Elections 2013
           display: block; 
         }
 
-        li {
+        .lid {
           font-size: 18px;
           margin-left: 7px;
 
@@ -92,6 +92,11 @@ Template Name: USAC Elections 2013
           color: #858585;
         }
 
+        .topnote
+        {
+          font-size: 44px
+        }
+
 
    </style>
 
@@ -104,13 +109,7 @@ Template Name: USAC Elections 2013
     <div class="navbar">
       <div class="navbar-inner" style="color:#009999">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="brand" href="#">USAC Elections 2013</a>
-          <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="/usac-elections-2013/candidates">Candidates</a></li>
@@ -118,7 +117,6 @@ Template Name: USAC Elections 2013
               <li><a href="http://my.ucla.edu/">Vote Here</a></li>
 
             </ul>
-          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
@@ -133,6 +131,197 @@ Template Name: USAC Elections 2013
       <p style="text-align:center">
       <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
+
+  </br>
+
+<h2 class="topnote" style="text-align:center;">Check back at 11 p.m. for the USAC election results:</h2>
+
+    <br/>
+
+    <ul class="thumbnails">
+
+      <li class="span12">
+        <div class="thumbnail">
+
+          <div class="row-fluid">
+            <div class="span6">
+              <img class="presphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+            </div>
+            <div class="span6">
+              <div class="box">
+                <h3>President</h3>
+                <h4>Candidate Name Here</h4>
+                <h4>Slate Name Here</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
+    <ul class="thumbnails">
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Internal Vice President</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>External Vice President</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Academic Affairs Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Campus Events Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="thumbnails">
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Cultural Affairs Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>General Representative</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>General Representative</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>General Representative</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+      </li>
+
+    </ul>
+
+    <ul class="thumbnails">
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Community Service Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Facilities Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Financial Support Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img class="candphoto" src="http://dailybruin.com/images/2013/05/placeholder_gray.jpg" alt="">
+          <div class="textcentered">
+            <h4>Student Wellness Commissioner</h4>
+            <h5>Candidate Name Here</h5>
+            <h5>Slate Name Here</h5>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="thumbnails">
+
+      <li class="span6">
+        <div class="thumbnail">
+          <div class="textcentered">
+            <h3>Bruin Bash Referendum</h3></span>
+          </div>
+        </div>
+      </li>
+
+      <li class="span6">
+        <div class="thumbnail">
+          <div class="textcentered">
+            <h3>Bruin Diversity Initiative</h3>
+          </div>
+        </div>
+      </li>
+
+    </ul>
 
 <!--
     
@@ -402,7 +591,7 @@ Template Name: USAC Elections 2013
               global $post;
               $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1', 'category' => $category_id));
               foreach( $myposts as $post ) :  setup_postdata($post); ?>
-              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+              <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
 
@@ -414,7 +603,7 @@ Template Name: USAC Elections 2013
               global $post;
               $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1', 'category' => $category_id));
               foreach( $myposts as $post ) :  setup_postdata($post); ?>
-              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+              <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
 
@@ -426,7 +615,7 @@ Template Name: USAC Elections 2013
               global $post;
               $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1', 'category' => $category_id));
               foreach( $myposts as $post ) :  setup_postdata($post); ?>
-              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+              <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
 

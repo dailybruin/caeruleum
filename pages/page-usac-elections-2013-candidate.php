@@ -88,20 +88,13 @@ div #preload { display: none; }
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="brand" href="#">USAC Elections 2013</a>
-          <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="/usac-elections-2013/">Home</a></li>
               <li class="active"><a href="#">Candidates</a></li>
               <li><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></li>
               <li><a href="http://my.ucla.edu/">Vote Here</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
