@@ -1989,42 +1989,75 @@ a.page-numbers:hover {
 }
 
 /* ======= HOUSE AD ======= */
-.housead-survey {				
-    text-align: center;
-    background-color: #333;
-    display: block;
-    border-radius: 3px;
-    top: 0;
-    padding-top: 11px;
-    margin-top: 2px;
-    box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.6);
-	border: 1px solid #666;
+a.housead {			
+	position:relative;	
+	text-align: center;
+	background-color: #86bde7;
+	display: block;
+	border-radius: 3px;
+	top: 0;
+	border: 1px solid #78aacf;
+	text-align: left;
+	padding-left: 14px;
+	color:black;
+	background-image: url('http://dailybruin.com/images/ads/house/football-players.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
-.housead-survey:hover {
-	background-color:#555;
+a.housead:hover {
 	text-decoration:none;
 }
-.housead-survey > h4 {
-    color: #fefefe;
-    font-style: italic;
-    font-family: "Georgia",serif;
-    font-weight: normal;
-    font-size: 1.6em;
-    line-height: 18px;
-    padding: 0;
-    margin: 0;
-    text-shadow: 1px 1px rgba(0,0,0,1);
+a.housead h4 {
+	margin-top: 9px;
+	margin-bottom: 2px;
 }
-.housead-survey > span {				
-    color: #ddd;
-    margin-top: 2px;
-    display: block;
-    padding-bottom: 5px;
-    text-shadow: 1px 1px rgba(0,0,0,1);
+a.housead > span {
+	margin-bottom: 10px;
+	display: block;
 }
+#housead-grunge1 {
+	background-image: url('http://dailybruin.com/images/ads/house/football-grunge1.png');
+	height: 61px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	background-position: top right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#housead-grunge2 {
+	background-image: url('http://dailybruin.com/images/ads/house/football-grunge2.png');
+	height: 61px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	background-position: center left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#housead-grunge3 {
+	background-image: url('http://dailybruin.com/images/ads/house/football-grunge3.png');
+	height: 61px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+span.housead-extraword {
+	display:none;
+}
+
 @media (min-width: 1200px) { 
-	.housead-survey {				
+	a.housead {				
 		width:680px;
+		background-image: url('http://dailybruin.com/images/ads/house/football-players-large.png');
+	}
+	span.housead-extraword {
+		display:inline;
 	}
 }
 
