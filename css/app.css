@@ -2095,7 +2095,7 @@ span.housead-extraword {
 
 #phone-football-refer {
 	width: 100%;
-	height: 40px;
+	min-height: 44px;
 	display: block;
 	margin-bottom: 10px;
 	background-color: #86bee7;
@@ -2112,6 +2112,9 @@ span.housead-extraword {
 	display: block;
 	margin-left: 10px;
 	font-weight: bold;
+	margin-right:53px;
+	line-height: 15px;
+	margin-bottom: 9px;
 }
 
 
