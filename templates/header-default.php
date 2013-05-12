@@ -42,6 +42,10 @@
 <nav class="container" id="nav-nameplate">
 	<div class="row">
 		<div class="span12" id="nameplate">
+			<a id="nameplate-app-refer" href="https://itunes.apple.com/lb/app/bruin-football-by-ucla-daily/id548832108?mt=8&ign-mpt=uo%3D2" class="visible-tablet">
+				<span>Download the Bruin Football iPhone app</span>
+				<img src="http://dailybruin.com/images/ads/house/football-icon.png" />
+			</a>
 		<?php if(is_category("spectrum") || 
 				 is_category("sports-spectrum") ||
 				 is_category("campus-spectrum") ||
@@ -50,9 +54,9 @@
 				 is_category("westwoodla") ||
 				 (is_single() && in_category("Spectrum")) ||
 				 is_page( 'spectrum-behind-the-blog' ) ) : ?>
-			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone" /></a>
+			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone nameplate-image" /></a>
 		<?php else: ?>
-			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" class="hidden-phone" /></a>
+			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate.png" class="hidden-phone nameplate-image" /></a>
 		<?php endif ?>
 
 		

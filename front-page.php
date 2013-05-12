@@ -293,6 +293,10 @@
 						</ul>
 						<div class="row front-section-content clearfix">
 							<div class="span5 front-section-main">
+								<a class="visible-phone" id="phone-football-refer" href="https://itunes.apple.com/lb/app/bruin-football-by-ucla-daily/id548832108?mt=8&ign-mpt=uo%3D2">
+									<span>Download the Bruin Football iPhone app &raquo;</span>
+								</a>
+
 								<?php
 								$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
 								$lastposts = get_posts( $args );
