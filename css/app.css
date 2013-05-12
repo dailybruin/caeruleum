@@ -209,7 +209,7 @@ article {
 
 
 /* --- top links */
-#nameplate img {
+.nameplate-image {
 	padding-bottom: 10px;
 	padding-top:10px;
 	height:60px;
@@ -254,6 +254,7 @@ div#toplinks-socialmedia {
 }
 #nameplate {
 	text-align:center;
+	position:relative;
 }
 #nameplate > a {
     display: inline;
@@ -274,6 +275,37 @@ div#toplinks-socialmedia {
     position: relative;
     border-radius: 3px 3px 0 0;
 }
+
+#nameplate-app-refer {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	display: block;
+    overflow: hidden;
+    width: 138px;
+	height: 76px;
+}
+#nameplate-app-refer img {
+    width: 61px;
+    margin-bottom: -17px;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+}
+#nameplate-app-refer span {
+	position: absolute;
+	z-index: 1;
+	color: #555;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	text-shadow: 0 0 2px white;
+	font-size: 0.8rem;
+	line-height: 0.9rem;
+	bottom: 38px;
+}
+
 
 .nameplate-date-week {
     display: block;
@@ -2060,6 +2092,7 @@ span.housead-extraword {
 		display:inline;
 	}
 }
+
 
 /* Spectrum ad (remove when gone) */
 #spectrum-refer {
