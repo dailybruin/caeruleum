@@ -23,6 +23,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
 
+  <meta name="apple-itunes-app" content="app-id=548832108">
+
   <?php roots_head(); ?>
   <?php wp_head(); ?>
   
