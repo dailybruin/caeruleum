@@ -1,6 +1,6 @@
 <?php /* Start loop */ ?>
 <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
-<div class="row">
+<div class="row" id="howewo-container">
 <?php while (have_posts() ): 
 	the_post(); 
 	$cats = get_the_category();
@@ -11,12 +11,12 @@
 			}
 		}
 	}
-	if (!has_post_thumbnail())
-		echo $post->post_title;
 	if (has_post_thumbnail()) :
-		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ));
+		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ));
+		$size = getimagesize($image_url[0]);
 		?>
-		<img src="<?php echo $image_url[0]; ?>" alt="DERPPPPPP" />
+		<?php the_post_thumbnail('db-category-full'); ?>
+		<!--img src="<?php echo $image_url[0]; ?>" style="width: 300px; " alt="DERPPPPPP" /-->
 		<?php
 	endif;
 	/*
