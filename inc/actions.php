@@ -29,3 +29,24 @@ function roots_google_analytics() {
 }
 
 add_action('roots_footer', 'roots_google_analytics');
+
+
+	function howewo_ajax_enqueue() {
+		if (is_category('howewo') ){
+			wp_enqueue_script( 'ajax-script', get_template_directory_uri().'/js/vendor/infinitescroll.js', array('jquery'));
+
+			wp_localize_script( 'ajax-script', 'ajax_object',
+			    array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => $email_nonce ) );
+			}
+		}
+	add_action( 'roots_head', 'howewo_ajax_enqueue' );
+
+	function inf_scroll_callback() {
+		global $wpdb;
+		$whatever = intval( $_POST['whatever'] );
+		$whatever += 10;
+		echo $whatever;
+		die();
+	}
+	add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
+
