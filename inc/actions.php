@@ -36,17 +36,27 @@ add_action('roots_footer', 'roots_google_analytics');
 			wp_enqueue_script( 'ajax-script', get_template_directory_uri().'/js/vendor/infinitescroll.js', array('jquery'));
 
 			wp_localize_script( 'ajax-script', 'ajax_object',
-			    array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => $email_nonce ) );
+			    array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 			}
 		}
 	add_action( 'roots_head', 'howewo_ajax_enqueue' );
 
 	function inf_scroll_callback() {
-		global $wpdb;
-		$whatever = intval( $_POST['whatever'] );
+		/*global $wpdb;
+		$whatever = intval( $_POST['counter'] );
 		$whatever += 10;
 		echo $whatever;
-		die();
+		die();*/
+		$latestPosts = new WP_Query();
+		//$postArr = array('');
+		$postArr = intval($_POST['counter']);
+		$latestPosts->query('showposts=5');
+			
+		while ($latestPosts->have_posts()) : $latestPosts->the_post(); 
+			//$postArr[] = the_title();
+    	endwhile;
+    	echo 5;
+
 	}
 	add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
 
