@@ -31,32 +31,30 @@ function roots_google_analytics() {
 add_action('roots_footer', 'roots_google_analytics');
 
 
-	function howewo_ajax_enqueue() {
-		if (is_category('howewo') ){
-			wp_enqueue_script( 'ajax-script', get_template_directory_uri().'/js/vendor/infinitescroll.js', array('jquery'));
+function howewo_ajax_enqueue() {
+	if (is_category('howewo') ){
+		wp_enqueue_script( 'ajax-script', get_template_directory_uri().'/js/vendor/infinitescroll.js', array('jquery'));
 
-			wp_localize_script( 'ajax-script', 'ajax_object',
-			    array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
-			}
+		wp_localize_script( 'ajax-script', 'ajax_object',
+		    array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 		}
-	add_action( 'roots_head', 'howewo_ajax_enqueue' );
-
-	function inf_scroll_callback() {
-		/*global $wpdb;
-		$whatever = intval( $_POST['counter'] );
-		$whatever += 10;
-		echo $whatever;
-		die();*/
-		$latestPosts = new WP_Query();
-		//$postArr = array('');
-		$postArr = intval($_POST['counter']);
-		$latestPosts->query('showposts=5');
-			
-		while ($latestPosts->have_posts()) : $latestPosts->the_post(); 
-			//$postArr[] = the_title();
-    	endwhile;
-    	echo 5;
-
 	}
-	add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
+add_action( 'roots_head', 'howewo_ajax_enqueue' );
+
+function inf_scroll_callback() {
+	global $post;
+	$postArr = array();
+	$offset = intval( $_POST['counter']);
+	$args = array('numberposts' => 5, 'offset' => $offset, 'category' => 'HOWEWO');
+	$latestPosts = get_posts( $args );
+	
+	foreach( $latestPosts as $post ) :	setup_postdata($post); 
+		$postArr[] = the_post_thumbnail('db-category-full');;
+	endforeach; //wp_reset_postdata();
+	echo $postArr;
+	echo count($postArr);
+	die();
+
+}
+add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
 

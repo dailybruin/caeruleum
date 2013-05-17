@@ -6,13 +6,13 @@
 	$cats = get_the_category();
 	if ($cats) {
 		foreach($cats as $cat){
-			if ($cat->name == "HOWEWO-page"){
+			if ($cat->name == "howewo"){
 				$the_cat = $cat;
 			}
 		}
 	}
 	if (has_post_thumbnail()) :
-		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ));
+		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
 		$size = getimagesize($image_url[0]);
 		?>
 		<?php the_post_thumbnail('db-category-full'); ?>
