@@ -26,7 +26,7 @@ function roots_scripts() {
   // If you're not using Bootstrap, include HTML5 Boilerplate's main.css:
   // wp_enqueue_style('roots_h5bp', get_template_directory_uri() . '/css/main.css', false, null);
 
-  wp_enqueue_style('roots_app', get_template_directory_uri() . '/css/app.css', false, "1368394637");
+  wp_enqueue_style('roots_app', get_template_directory_uri() . '/css/app.css', false, "1369171886");
   wp_enqueue_style('roots_app_responsive', get_template_directory_uri() . '/css/app-responsive.css', false, "1361360103");
   
 

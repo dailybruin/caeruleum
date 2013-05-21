@@ -1629,6 +1629,11 @@ ul.phone-nav > li.active a {
 	box-shadow:none;
 }
 
+#ad-sm-row {
+	/* This is to fix the bug with Facebook messing up the layout */
+	overflow:hidden;
+}
+
 #inthenews {
     padding: 10px 0;
     font-size: 1.1em;

@@ -83,7 +83,7 @@
 </div><!-- end div#firstnav-container-back -->
 		
 <div class="container">
-	<div class="row">
+	<div class="row" id="ad-sm-row">
 		<div class="span7" id="inthenews">
 			<span>In the news:</span>
 			<?php wp_nav_menu(array('theme_location' => 'in_the_news', 
@@ -95,7 +95,7 @@
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			<div class="fb-follow" data-href="https://www.facebook.com/dailybruin" data-show-faces="false" data-font="arial" data-width="225"></div>
 		</div>
-	</div><!-- end div.row -->
+	</div><!-- end div#ad-sm-row -->
 	<div class="row visible-desktop" id="adrow">
 		<div class="span6" id="adrow-house">
 			<?php get_template_part('ad','housebanner'); ?>
