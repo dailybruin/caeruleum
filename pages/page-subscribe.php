@@ -88,6 +88,9 @@ get_header(); ?>
     .email-newsletter #fix_margin {
         margin:0 0 -19px;
     }
+    .email-newsletter #more-newsletters {
+        margin-top: 25px;
+    }
     .email-newsletter .more-newsletters-head > span.label {
         float: left;
         margin-top: 11px;
@@ -131,21 +134,21 @@ widget_wysija
         <div class="span3 offset1">
             <p class="wysija_list_check">
                   <label id="important" for="form-html5177483378631_list_id_10" class="checkbox">
-                  <input id="form-html5177483378631_list_id_10" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="10"/> Basketball <span class="label label-info">Biweekly</span></label> 
+                  <input id="form-html5177483378631_list_id_10" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="10"/> Basketball <span class="label label-info">Twice a week</span></label> 
             </p>
             <p class="wysija_list_check">
               <label id="important" for="form-html5177483378631_list_id_8" class="checkbox">
-              <input id="form-html5177483378631_list_id_8" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="8"/>Football <span class="label label-info">Biweekly</span></label>
+              <input id="form-html5177483378631_list_id_8" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="8"/>Football <span class="label label-info">Twice a week</span></label>
             </p>
             <p class="wysija_list_check">
               <label id="important" for="form-html5177483378631_list_id_9" class="checkbox">
-              <input id="form-html5177483378631_list_id_9" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="9"/>Top stories daily</label>
+              <input id="form-html5177483378631_list_id_9" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="9"/>Top stories <span class="label label-warning">Daily</span></label>
             </p>
         </div>
         <div class="span3 offset1">
             <p class="wysija_list_check">
             <label id="important" for="form-html5177483378631_list_id_32" class="checkbox">
-            <input id="form-html5177483378631_list_id_32" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="32" checked="checked"/>Top stories weekly</label>
+            <input id="form-html5177483378631_list_id_32" class="validate[minCheckbox[1]] checkbox checklists" type="checkbox" name="wysija[user_list][list_id][]" value="32" checked="checked"/>Top stories <span class="label label-success">Weekly</span></label>
             </p>
             <p class="wysija_list_check">
               <label id="important" for="form-html5177483378631_list_id_7" class="checkbox">
@@ -171,7 +174,7 @@ widget_wysija
             <h3>More newsletters</h3>
         </div><!-- end div.span8 -->
         <div class="span4 more-newsletters-head">
-            <h4>Sports</h4><span class="label label-info">Biweekly</span>
+            <h4>Sports</h4><span class="label label-info">Twice a week</span>
 
             <p class="wysija_list_check" style="clear:both">
                 <label id="unimportant" for="form-html5177483378631_list_id_3" class="checkbox">
