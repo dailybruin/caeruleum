@@ -2,14 +2,26 @@
 <?php while (have_posts()) : the_post(); ?>
 	<?php $articleFormats = wp_get_post_terms($post->ID,'article-format');
 	$articleFormat = $articleFormats[0]->slug;
+	if(empty($articleFormat) || $articleFormat === 'normal')
+		$articleFormat = get_field('db_article_format');
 	$displayAuthor = true;
-	if(isset($articleFormat))
+	$italicHeadline = false;
+	$displayMugshot = false;
+	if($articleFormat)
 	{
 		switch($articleFormat)
 		{
 			case 'brief':
 				$displayAuthor = false;
 				break;
+			case 'column':
+				$italicHeadline = true;
+				$displayMugshot = true;
+				break;
+			case 'default':
+				$displayAuthor = !in_array('hide_byline', get_field('db_display_options'));
+				$italicHeadline = in_array('italic_headline', get_field('db_display_options'));
+				$displayMugshot = in_array('mugshot', get_field('db_display_options'));
 		}
 	}
 	?>
@@ -99,7 +111,7 @@
 					</ul>
 				</div><!-- end div.post-extra -->
 				<?php // Display the columnist's mugshot
-				    if($displayAuthor && $articleFormat === "column")
+				    if($displayMugshot && $displayAuthor)
 				    {
 				        ob_start();
     					if(function_exists('userphoto_the_author_thumbnail'))
@@ -121,16 +133,35 @@
 				        the_byline();
 				    }
 				?>
-				<?php if(isset($customFields['db_infobox'])) : ?>
+				<?php if(!empty($customFields['db_infobox'][0])) : ?>
 					<div class="db-infobox">
-						<?php echo $customFields['db_infobox'][0]; ?>
+						<?php echo $customFields['db_infobox'][0];
+						$numberOfPaws = get_field('db_number_of_paws');
+						if(isset($numberOfPaws) && intval(ceil($numberOfPaws)) > 0)
+						{
+							$numf = intval(floor($numberOfPaws));
+							$numc = intval(ceil($numberOfPaws));
+							echo '<div class="infobox-paws">';
+							for($i = 0; $i < $numf; $i++)
+								echo '<img src="http://dailybruin.com/images/paws/full.png" />';
+							if($numf != $numc)
+								echo '<img src="http://dailybruin.com/images/paws/half.png" />';
+							for($i = $numc; $i < 5; $i++)
+								echo '<img src="http://dailybruin.com/images/paws/blank.png" />';
+							echo '</div><!-- end div.infobox-paws -->';
+						} 
+						?>
 					</div>
 				<?php endif; ?>
 				<?php if(!$video_story) { the_content(); } ?>
 				<p class="author-contact">
-				    <?php if(isset($customFields['db_authoremail']))
+				    <?php 
+				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))
+			    	{ ; }
+				    else if(!empty($customFields['db_authoremail'][0]) || get_field('db_article_format') == 'brief')
 				    {
-				        echo $customFields['db_authoremail'][0];
+				    	if(!empty($customFields['db_authoremail'][0]))
+					        echo $customFields['db_authoremail'][0];
 				    }
                     else if(intval(the_date('U','','',false)) <= 1361363177)
                     { ; }
