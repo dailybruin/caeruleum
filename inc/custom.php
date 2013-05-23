@@ -81,12 +81,13 @@ function the_headline()
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
 	if(isset($articleFormats[0]))
 		$articleFormat = $articleFormats[0]->slug;
-	else
-		$articleFormat = "";
+	if(empty($articleFormat) || $articleFormat === 'normal')
+		$articleFormat = get_field('db_article_format');
 
 	$headline = apply_filters('the_title',$post->post_title);
 
-	if($articleFormat == "column")
+	if($articleFormat === "column" || 
+		($articleFormat === 'default' && in_array('italic_headline', get_field('db_display_options'))))
 	{
 		echo '<em>'.$headline.'</em>';
 	}

@@ -5,6 +5,8 @@
 	if(empty($articleFormat) || $articleFormat === 'normal')
 		$articleFormat = get_field('db_article_format');
 	$displayAuthor = true;
+	$italicHeadline = false;
+	$displayMugshot = false;
 	if($articleFormat)
 	{
 		switch($articleFormat)
@@ -12,6 +14,14 @@
 			case 'brief':
 				$displayAuthor = false;
 				break;
+			case 'column':
+				$italicHeadline = true;
+				$displayMugshot = true;
+				break;
+			case 'default':
+				$displayAuthor = !in_array('hide_byline', get_field('db_display_options'));
+				$italicHeadline = in_array('italic_headline', get_field('db_display_options'));
+				$displayMugshot = in_array('mugshot', get_field('db_display_options'));
 		}
 	}
 	?>
@@ -101,7 +111,7 @@
 					</ul>
 				</div><!-- end div.post-extra -->
 				<?php // Display the columnist's mugshot
-				    if($displayAuthor && $articleFormat === "column")
+				    if($displayMugshot && $displayAuthor)
 				    {
 				        ob_start();
     					if(function_exists('userphoto_the_author_thumbnail'))
