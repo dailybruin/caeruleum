@@ -123,7 +123,24 @@
 				?>
 				<?php if(isset($customFields['db_infobox'])) : ?>
 					<div class="db-infobox">
-						<?php echo $customFields['db_infobox'][0]; ?>
+						<?php echo $customFields['db_infobox'][0];
+						$numberOfPaws = get_field('db_number_of_paws');
+						print_r($numberOfPaws);
+						if(isset($numberOfPaws) && intval(ceil($numberOfPaws)) > 0)
+						{
+							$numf = intval(floor($numberOfPaws));
+							$numc = intval(ceil($numberOfPaws));
+							print_r($numberOfPaws);
+							echo '<div class="infobox-paws">';
+							for($i = 0; $i < $numf; $i++)
+								echo '<img src="http://dailybruin.com/images/paws/full.png" />';
+							if($numf != $numc)
+								echo '<img src="http://dailybruin.com/images/paws/half.png" />';
+							for($i = $numc; $i < 5; $i++)
+								echo '<img src="http://dailybruin.com/images/paws/blank.png" />';
+							echo '</div><!-- end div.infobox-paws -->';
+						} 
+						?>
 					</div>
 				<?php endif; ?>
 				<?php if(!$video_story) { the_content(); } ?>
