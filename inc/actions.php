@@ -30,7 +30,6 @@ function roots_google_analytics() {
 
 add_action('roots_footer', 'roots_google_analytics');
 
-
 function howewo_ajax_enqueue() {
 	if (is_category('howewo') ){
 		wp_enqueue_script( 'ajax-script', get_template_directory_uri().'/js/vendor/infinitescroll.js', array('jquery'));
@@ -49,10 +48,11 @@ function inf_scroll_callback() {
 	$latestPosts = get_posts( $args );
 	
 	foreach( $latestPosts as $post ) :	setup_postdata($post); 
-		$postArr[] = the_post_thumbnail('db-category-full');;
+		$postArr[] = get_the_title();//the_post_thumbnail('db-category-full');
 	endforeach; //wp_reset_postdata();
-	echo $postArr;
-	echo count($postArr);
+	$test = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+	echo json_encode($postArr);
+	
 	die();
 
 }
