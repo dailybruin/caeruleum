@@ -287,12 +287,7 @@ $(document).ready(function() {
 			container.show();
 			var images = $("#howewo-container img").css('width','300');
 			var col_count = 4;
-			var column = new Array();
-			for (var n = 0; n < col_count; n++){
-				container.append($('<div></div>').addClass('span3 howewo-column'));
-			}
-			
-			column = container.children('div');
+			var column = $(".howewo-column");
 
 			for (var n = 0; n < images.length; n++){
 				var smallest = column[0].offsetHeight;

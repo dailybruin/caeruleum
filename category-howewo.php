@@ -16,6 +16,9 @@ Template Name: HOWEWO
     <div class="span12 page-content">
       <div class="row" id="howewo-container">
         <?php get_template_part( 'loop', 'howewo' ); ?>
+        <?php for ($i = 1; $i <= 4; $i++) { ?>
+          <div class="span3 howewo-column"></div>
+        <?php } ?>
       </div>
       <div class="row" id="howewo-load"></div>
     </div>
