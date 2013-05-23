@@ -164,9 +164,14 @@ function the_byline($displayBy=true) {
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
 	if(isset($articleFormats[0]))
 		$articleFormat = $articleFormats[0]->slug;
-	else
-		$articleFormat = "";
+	
+	if(empty($articleFormat) || $articleFormat === 'normal')
+		$articleFormat = get_field('db_article_format');
 		
+    if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief"
+    	|| (get_field('db_article_format') == 'default' && in_array('hide_byline', get_field('db_display_options'))))
+            return false;
+
 	// Get coauthors
 	ob_start();
 	coauthors_posts_links();
@@ -175,8 +180,6 @@ function the_byline($displayBy=true) {
 	
 
 	// Code modified from WordPress core, wp-includes/author-template.php
-    if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief" )
-            return false;
     $by = "By ";
     if(!$displayBy)
     	$by = "";

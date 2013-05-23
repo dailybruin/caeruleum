@@ -2,8 +2,10 @@
 <?php while (have_posts()) : the_post(); ?>
 	<?php $articleFormats = wp_get_post_terms($post->ID,'article-format');
 	$articleFormat = $articleFormats[0]->slug;
+	if(empty($articleFormat) || $articleFormat === 'normal')
+		$articleFormat = get_field('db_article_format');
 	$displayAuthor = true;
-	if(isset($articleFormat))
+	if($articleFormat)
 	{
 		switch($articleFormat)
 		{
@@ -121,16 +123,14 @@
 				        the_byline();
 				    }
 				?>
-				<?php if(isset($customFields['db_infobox'])) : ?>
+				<?php if(!empty($customFields['db_infobox'][0])) : ?>
 					<div class="db-infobox">
 						<?php echo $customFields['db_infobox'][0];
 						$numberOfPaws = get_field('db_number_of_paws');
-						print_r($numberOfPaws);
 						if(isset($numberOfPaws) && intval(ceil($numberOfPaws)) > 0)
 						{
 							$numf = intval(floor($numberOfPaws));
 							$numc = intval(ceil($numberOfPaws));
-							print_r($numberOfPaws);
 							echo '<div class="infobox-paws">';
 							for($i = 0; $i < $numf; $i++)
 								echo '<img src="http://dailybruin.com/images/paws/full.png" />';
