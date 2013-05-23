@@ -113,26 +113,6 @@ function add_article_formats()
 	wp_insert_term('Brief', 'article-format', array('slug' => 'brief'));
 }
 add_action('init','add_article_formats', 0);
-function add_article_formats_metabox()
-{
-	add_meta_box('article-format-radio','Article format','add_article_formats_metabox_html','post','side','low');
-	function add_article_formats_metabox_html()
-	{ ?>
-		<div id="taxonomy-article-format" class="categorydiv">
-            <div class="inside">
-                <div id="article-format-all">
-                    <ul id="article-format-checklist" class="list:article-format categorychecklist form-no-clear"><?php
-                    	global $post;
-	                    wp_terms_checklist($post->ID, array('taxonomy' => 'article-format', 'checked_ontop' => false, 'walker' => new Walker_Category_RadioList));
-                    ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-	<?php 
-	}
-}
-add_action('add_meta_boxes','add_article_formats_metabox');
 
 
 
