@@ -288,7 +288,6 @@ $(document).ready(function() {
 			var images = $("#howewo-container img").css('width','300');
 			var col_count = 4;
 			var column = $(".howewo-column");
-
 			for (var n = 0; n < images.length; n++){
 				var smallest = column[0].offsetHeight;
 				var small_i = 0;
