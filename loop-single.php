@@ -145,9 +145,13 @@
 				<?php endif; ?>
 				<?php if(!$video_story) { the_content(); } ?>
 				<p class="author-contact">
-				    <?php if(isset($customFields['db_authoremail']))
+				    <?php 
+				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))
+			    	{ ; }
+				    else if(!empty($customFields['db_authoremail'][0]) || get_field('db_article_format') == 'brief')
 				    {
-				        echo $customFields['db_authoremail'][0];
+				    	if(!empty($customFields['db_authoremail'][0]))
+					        echo $customFields['db_authoremail'][0];
 				    }
                     else if(intval(the_date('U','','',false)) <= 1361363177)
                     { ; }
