@@ -1,6 +1,6 @@
 <?php /* Start loop */ ?>
 <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
-<div class="row" id="howewo-container">
+
 <?php while (have_posts() ): 
 	the_post(); 
 	$cats = get_the_category();
@@ -13,7 +13,6 @@
 	}
 	if (has_post_thumbnail()) :
 		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
-		$size = getimagesize($image_url[0]);
 		?>
 		<?php the_post_thumbnail('db-category-full'); ?>
 		<?php
@@ -21,4 +20,3 @@
 	
 endwhile;
 ?>
-</div>

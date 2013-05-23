@@ -14,8 +14,11 @@ Template Name: HOWEWO
       </div>
     </div>
     <div class="span12 page-content">
+      <div class="row" id="howewo-container">
         <?php get_template_part( 'loop', 'howewo' ); ?>
       </div>
+      <div class="row" id="howewo-load"></div>
+    </div>
       
   </div><!-- end div#post-listing -->
 </div><!-- end div#archive-content -->

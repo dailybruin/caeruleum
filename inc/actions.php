@@ -48,9 +48,9 @@ function inf_scroll_callback() {
 	$latestPosts = get_posts( $args );
 	
 	foreach( $latestPosts as $post ) :	setup_postdata($post); 
-		$postArr[] = get_the_title();//the_post_thumbnail('db-category-full');
+		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
+		$postArr[] = $image_url[0];
 	endforeach; //wp_reset_postdata();
-	$test = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
 	echo json_encode($postArr);
 	
 	die();
