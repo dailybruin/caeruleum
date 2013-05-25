@@ -624,7 +624,23 @@ $(function(){
 	text-align: center;
 	margin: 10px;
 }
+
+#prime-graphology .paid-ad-warning {
+	float: left;
+	transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	position: relative;
+	top: 52px;
+	left: 68px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #999;
+	font-size: 0.7rem;
+}
 </style>
+<div id="prime-graphology">
 <div class="row-fluid">
 <div class="span12 border" id="container">
 
@@ -641,7 +657,9 @@ $(function(){
 	</div>
 
 	</div>
-	<div class="span5"><?php get_template_part('ad','side'); ?>
+	<div class="span5">
+		<div class="paid-ad-warning">Paid Advertisement</div>
+		<?php get_template_part('ad','side'); ?>
 		<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #FAFAFA; padding: 20px; margin: 15px; border-radius: 5px; border: 1px solid #ccc;" id="feature-story-side">
 		<img src="/img/images/features/prime-graphology/prime.png" width="200px;" style="float: left;  margin-right: 10px;"/>This is a feature story from Prime magazine. Pick up a copy of Prime's Spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">Prime online</a> for more.(?)</div>
 	</div>
@@ -914,7 +932,11 @@ $(function(){
 
 <hr style="margin-top: 20px; margin-bottom: 15px;" /><div id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
 
+</div> <!-- end div.row-fluid -->
+
 </div> <!-- end row-fluid -->
+
+</div><!-- end div#prime-graphology -->
 
 <?php get_footer(); ?>
 
