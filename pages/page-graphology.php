@@ -107,260 +107,260 @@ $(function(){
 
 <style type="text/css">
 /* basic styling */
-#container {
+#prime-graphology #container {
     box-shadow: 0 0 15px #ccc; /* all latest browser */
    -moz-box-shadow: 0 0 15px #ccc; /* Firefox older version*/
    -webkit-box-shadow: 0 0 10px #ccc;
 }
-.border {
+#prime-graphology .border {
 	border: 1px solid #CDCDCD;
 }
-.normal {
+#prime-graphology .normal {
 	font-weight: normal;
 }
-.medium {
+#prime-graphology .medium {
 	font-size: medium;
 }
-.font {
+#prime-graphology .font {
 	font-family: Georgia, serif;
 }
-.bold {
+#prime-graphology .bold {
        font-weight: bold;
 }
-hr {
+#prime-graphology hr {
 	border: 1px dashed #ccc;
 }
-.padded-div {
+#prime-graphology .padded-div {
 	padding: 20px 20px 0px 20px;
 }
-div.center {
+#prime-graphology div.center {
 	text-align: center; 
 }
 /* highlighting and popovers */
-.hl-region {
+#prime-graphology .hl-region {
        position:absolute;
 	opacity: 0;
 }
-.hl-region:hover {
+#prime-graphology .hl-region:hover {
        opacity:1;
 }
-.hl-btn {
+#prime-graphology .hl-btn {
 	float: right;
 	margin-top: 10px;
 }
-.bg-image {
+#prime-graphology .bg-image {
 	background-repeat: no-repeat;
 }
-.main-bg-image {
+#prime-graphology .main-bg-image {
 	opacity: 0.5;   
 }
-#jw-container {
+#prime-graphology #jw-container {
        height:440px;
        width:435px;
 }
-#jw-container .bg-image {      
-	background-image:url('/img/images/features/prime-graphology/jw-writing-sample.jpg');
+#prime-graphology #jw-container .bg-image {      
+	background-image:url('/images/features/prime-graphology/jw-writing-sample.jpg');
 	background-size: 435px 430px;
        height:430px;
        width:435px;
 }
-#jw-container div.hl-region {
+#prime-graphology #jw-container div.hl-region {
        height:45px;
        width:45px;
        border-radius: 45px;
 }
-#jw-container div.hl-region-large {
+#prime-graphology #jw-container div.hl-region-large {
 	height:75px;
 	width:70px;
 	border-radius: 20px;
 }
-#jw-d-stem {
+#prime-graphology #jw-d-stem {
 	top:205px;
 	left:270px;
 	background-position: -270px -205px;
 }
-#jw-t-stem {
+#prime-graphology #jw-t-stem {
 	top:130px;
 	left:137px;
 	background-position: -137px -130px;
 }
-#jw-h-stem {
+#prime-graphology #jw-h-stem {
 	top:115px;
 	left:265px;
 	background-position: -265px -115px;
 }
-#jw-o-seal {
+#prime-graphology #jw-o-seal {
 	top:230px;
 	left:230px;
 	background-position: -230px -230px;
 }
-#jw-capital {
+#prime-graphology #jw-capital {
 	top:30px;
 	left:162px;
 	background-position: -162px -30px;
 }
-#jm-container {
+#prime-graphology #jm-container {
        height:440px;
        width: 700px;
 	margin: 0px 15px 15px 15px;
 }
-#jm-container .bg-image {
-       background-image:url('/img/images/features/prime-graphology/jm-writing-sample-small.jpg');
+#prime-graphology #jm-container .bg-image {
+       background-image:url('/images/features/prime-graphology/jm-writing-sample-small.jpg');
        background-size: 700px 420px;
        height: 420px;
        width: 700px;
 }
-#jm-container div.hl-region {
+#prime-graphology #jm-container div.hl-region {
        height:45px;
        width:45px;
        border-radius: 45px;
 }
-#jm-container div.hl-region-name {
+#prime-graphology #jm-container div.hl-region-name {
        height:67px;
        width:200px;
        border-radius: 67px;
 }
-#jm-s-curs {
+#prime-graphology #jm-s-curs {
 	top:65px;
 	left:550px;
 	background-position: -550px -65px;
 }
-#jm-name {
+#prime-graphology #jm-name {
 	top:5px;
 	left:220px;
 	background-position: -220px -5px;
 }
-#jm-t-stem {
+#prime-graphology #jm-t-stem {
 	top:185px;
 	left:430px;
 	background-position: -430px -185px;
 }
-#jm-retrace {
+#prime-graphology #jm-retrace {
 	top:143px;
 	left:347px;
 	background-position: -347px -143px;
 }
-#jm-tribe{
+#prime-graphology #jm-tribe{
 	top:143px;
 	left:188px;
 	background-position: -188px -143px;
 }
-#jm-of {
+#prime-graphology #jm-of {
 	top:72px;
 	left:484px;
 	background-position: -484px -72px;
 }
-#ad-container {
+#prime-graphology #ad-container {
        height:610px;
        width:610px;
 }
-.writing-sample-container {
+#prime-graphology .writing-sample-container {
        position: relative;
 }
-#ad-container .bg-image {
-       background-image: url('/img/images/features/prime-graphology/ad-writing-sample.jpg');
+#prime-graphology #ad-container .bg-image {
+       background-image: url('/images/features/prime-graphology/ad-writing-sample.jpg');
        background-size: 610px 610px;
 	height:610px;
        width:610px;
 }
-#ad-container div.hl-region {
+#prime-graphology #ad-container div.hl-region {
 	height:25px;
 	width:100px;
 	border-radius: 25px;
 }
-#ad-container div.hl-region-short {
+#prime-graphology #ad-container div.hl-region-short {
 	width:50px;
 }
-#ad-adventure {
+#prime-graphology #ad-adventure {
 	top:165px;
       	left:237px;
        background-position: -237px -165px;
 }
-#ad-your {
+#prime-graphology #ad-your {
 	top:500px;
 	left:313px;
 	background-position: -313px -500px;
 }
-#ad-ac-space {
+#prime-graphology #ad-ac-space {
 	top:145px;
 	left:102px;
 	background-position: -102px -145px;
 }
-#ad-overhead {
+#prime-graphology #ad-overhead {
 	top:430px;
 	left:207px;
 	background-position: -207px -430px;
 }
-#ad-neck {
+#prime-graphology #ad-neck {
 	top:262px;
 	left:128px;
 	background-position: -128px -262px;
 }
-#ad-fort {
+#prime-graphology #ad-fort {
 	top:217px;
 	left:72px;
 	background-position: -72px -217px;
 }
-#cb-container {
+#prime-graphology #cb-container {
        height: 280px;
        width:540px;
 	margin: 15px;
 }
-#cb-container .bg-image {
-       background-image:url('/img/images/features/prime-graphology/cb-writing-sample.jpg');
+#prime-graphology #cb-container .bg-image {
+       background-image:url('/images/features/prime-graphology/cb-writing-sample.jpg');
        background-size:540px 249px;
 	height:249px;
        width:540px;
 }
-#cb-container div.hl-region {
+#prime-graphology #cb-container div.hl-region {
        height:45px;
        width:45px;
        border-radius: 45px;
 }
-#cb-container div.hl-region-oval {
+#prime-graphology #cb-container div.hl-region-oval {
        height:50px;
        width:25px;
        border-radius: 50px;
 }
-#cb-of {
+#prime-graphology #cb-of {
 	top:28px;
 	left:363px;
 	background-position: -363px -28px;
 }
-#cb-think {
+#prime-graphology #cb-think {
 	top:11px;
 	left:260px;
 	background-position: -260px -11px;
 }
-#cb-handwriting {
+#prime-graphology #cb-handwriting {
 	top:73px;
 	left:96px;
 	background-position: -96px -73px;
 }
-#cb-m-sharp {
+#prime-graphology #cb-m-sharp {
 	top:18px;
 	left:412px;
  	background-position: -412px -18px;
 }
-#cb-n-sharp {
+#prime-graphology #cb-n-sharp {
 	top:20px;
 	left:300px;
 	background-position: -300px -20px;
     }
-#cb-name{
+#prime-graphology #cb-name{
 	top:145px;
 	left:110px;
 	background-position: -110px -145px;
 }
 
 /* writing samples preview */
-#writing-sample-intro {
+#prime-graphology #writing-sample-intro {
 	margin: 30px 20px 0px 20px;
 }
-#writing-sample-intro span {
+#prime-graphology #writing-sample-intro span {
    float:right;
 }
-.preview-div {
+#prime-graphology .preview-div {
 	height: 225px;
     	width: 245px;
 	display: block;
@@ -369,202 +369,202 @@ div.center {
     	background-position: center;
     	opacity: 0.85;
 }
-.preview-div:hover {
+#prime-graphology .preview-div:hover {
        opacity: 1;
 
 }
-#jw-preview {
-       background-image: url('/img/images/features/prime-graphology/jw-writing-sample.jpg');
+#prime-graphology #jw-preview {
+       background-image: url('/images/features/prime-graphology/jw-writing-sample.jpg');
 	border: 15px #FABEBF solid;
 	margin-left: 15px;
 }
-#jm-preview {
-       background-image: url('/img/images/features/prime-graphology/jm-writing-sample.jpg');
+#prime-graphology #jm-preview {
+       background-image: url('/images/features/prime-graphology/jm-writing-sample.jpg');
 	    	border: 15px #f1cd96 solid;
 }
-#ad-preview {
-	background-image: url('/img/images/features/prime-graphology/ad-writing-sample.jpg');
+#prime-graphology #ad-preview {
+	background-image: url('/images/features/prime-graphology/ad-writing-sample.jpg');
 	border: 15px #bec9fa solid;
 }
-#cb-preview {
-       background-image: url('/img/images/features/prime-graphology/cb-writing-sample.jpg');
+#prime-graphology #cb-preview {
+       background-image: url('/images/features/prime-graphology/cb-writing-sample.jpg');
        background-size: 400px 400px;
        background-position: 200px 10px;
 	border: 15px #b7f0cb solid;
 }
-#writing-samples-container {
+#prime-graphology #writing-samples-container {
        padding: 10px;
 }
-.sample-previews {
+#prime-graphology .sample-previews {
       font-size: 22px;
       display: inline-block;    
 }
-#arrow-container {
+#prime-graphology #arrow-container {
 	margin-top: -5px;
 }
-#arrow-container div {
+#prime-graphology #arrow-container div {
 	opacity: 0.9;
 	width:0px;
 	height: 0px;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 }
-#jw-preview-arrow {
+#prime-graphology #jw-preview-arrow {
 	border-top: 20px solid #FABEBF;
        margin-left: 130px;
 }
-#jm-preview-arrow {
+#prime-graphology #jm-preview-arrow {
 	border-top: 20px solid #f1cd96;
        margin-left: 420px;
 }
-#ad-preview-arrow {
+#prime-graphology #ad-preview-arrow {
 	border-top: 20px solid #bec9fa;
        margin-left: 710px;
 }
-#cb-preview-arrow {
+#prime-graphology #cb-preview-arrow {
 	border-top: 20px solid #b7f0cb;
        margin-left: 995px;
 }
 
 /* writing samples */
-.two-col-div {
+#prime-graphology .two-col-div {
 	padding: 20px;
 }
-.left-div {
+#prime-graphology .left-div {
 	float: left;
 }
-.right-div {
+#prime-graphology .right-div {
    	float:right;
 }
-#left-div-jw {
+#prime-graphology #left-div-jw {
 	width: 650px;
 }
-#left-div-ad {
+#prime-graphology #left-div-ad {
 	width: 480px;
 	height: 660px;
 }
-#jw-title {
+#prime-graphology #jw-title {
 	width: 400px; 
 	margin-right:-30px;
 	margin-top: -20px;
 	margin-left: -20px;
 }
-#jm-title {
+#prime-graphology #jm-title {
 	width: 340px;
 	margin-top: -20px;
 }
-#ad-title {
+#prime-graphology #ad-title {
 	width: 300px; 
 	margin-top:-20px;
 	margin-bottom: -10px;
 }
-#cb-title {
+#prime-graphology #cb-title {
 	width: 300px;
 	margin-top:-20px;
 }
 
 /* feature story */
-#header-div {
+#prime-graphology #header-div {
 	text-align: center;
 }
-figcaption {
+#prime-graphology figcaption {
 	margin-left: 100px;
 }
-#feature-story .story-page img {
+#prime-graphology #feature-story .story-page img {
 	float: left; 
 	width: 300px; 
 	height: 300px; 
 	margin: 0px 20px 20px 20px;
 } 
-.pagination.center {
+#prime-graphology .pagination.center {
 	margin-left: 30%;
 }
 
 /* annette */
-#annette {
+#prime-graphology #annette {
  	padding: 20px 20px 20px 20px;
 }
-#annette-img {
+#prime-graphology #annette-img {
 	margin: 0px 20px 0px 20px; 
 	float: right; 
 	width: 500px; 
 	height: 300px;
 }
-#annette-title {
+#prime-graphology #annette-title {
 	width: 400px;
 	margin-top:-15px;
 }
 
 /* pop overs */
-.popover-title {
+#prime-graphology .popover-title {
 	display: none;
 }
-#jw-container .popover {
+#prime-graphology #jw-container .popover {
    border: 1px solid #FABEBF;
 }
-#jw-container .popover.top .arrow {
+#prime-graphology #jw-container .popover.top .arrow {
 	border-top-color: #FABEBF;
 }
-#jw-container .popover.right .arrow {
+#prime-graphology #jw-container .popover.right .arrow {
 	border-right-color: #FABEBF;
 }
-#jw-container .popover.left .arrow {
+#prime-graphology #jw-container .popover.left .arrow {
 	border-left-color: #FABEBF;
 }
-#jw-container .popover.bottom .arrow {
+#prime-graphology #jw-container .popover.bottom .arrow {
 	border-bottom-color: #FABEBF;
 }
-#jm-container .popover {
+#prime-graphology #jm-container .popover {
 	border: 1px solid #f1cd96;
 }
-#jm-container .popover.top .arrow {
+#prime-graphology #jm-container .popover.top .arrow {
 	border-top-color: #f1cd96;
 }
-#jm-container .popover.right .arrow {
+#prime-graphology #jm-container .popover.right .arrow {
 	border-right-color: #f1cd96;
 }
-#jm-container .popover.left .arrow {
+#prime-graphology #jm-container .popover.left .arrow {
 	border-left-color: #f1cd96;
 }
-#jm-container .popover.bottom .arrow {
+#prime-graphology #jm-container .popover.bottom .arrow {
 	border-bottom-color: #f1cd96;
 }
-#cb-container .popover {
+#prime-graphology #cb-container .popover {
 	border: 1px solid #b7f0cb;
 }
-#cb-container .popover.top .arrow {
+#prime-graphology #cb-container .popover.top .arrow {
 	border-top-color: #b7f0cb;
 }
-#cb-container .popover.right .arrow {
+#prime-graphology #cb-container .popover.right .arrow {
 	border-right-color: #b7f0cb;
 }
-#cb-container .popover.left .arrow {
+#prime-graphology #cb-container .popover.left .arrow {
 	border-left-color: #b7f0cb;
 }
-#cb-container .popover.bottom .arrow {
+#prime-graphology #cb-container .popover.bottom .arrow {
 	border-bottom-color: #b7f0cb;
 }
-#ad-container .popover {
+#prime-graphology #ad-container .popover {
 	border: 1px solid #bec9fa;
 }
-#cb-container .popover.top .arrow {
+#prime-graphology #cb-container .popover.top .arrow {
 	border-top-color: #bec9fa;
 }
-#cb-container .popover.right .arrow {
+#prime-graphology #cb-container .popover.right .arrow {
 	border-right-color: #bec9fa;
 }
-#cb-container .popover.left .arrow {
+#prime-graphology #cb-container .popover.left .arrow {
 	border-left-color: #bec9fa;
 }
-#cb-container .popover.bottom .arrow {
+#prime-graphology #cb-container .popover.bottom .arrow {
 	border-bottom-color: #bec9fa;
 }
 
 /* graphology 101 */	
-#g-101 div.nav-wrapper {
+#prime-graphology #g-101 div.nav-wrapper {
     float: left;
 }
-div.nav-wrapper .g-101-item {
+#prime-graphology div.nav-wrapper .g-101-item {
     border: 3px solid #E6E6E6;
     border-radius: 5px;
     margin: 3px;
@@ -572,15 +572,15 @@ div.nav-wrapper .g-101-item {
     width: 155px;  
     float: left;    
 }
-#g-101-title {
+#prime-graphology #g-101-title {
        color: #78E29D;
 	font-size: 5em;	
 }
-#g-101-intro {
+#prime-graphology #g-101-intro {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: medium;
 }
-.prev, .next {
+#prime-graphology .prev, #prime-graphology .next {
 	float: left;
 	padding: 0px;
 	margin: 100px 5px 5px 5px;
@@ -589,10 +589,10 @@ div.nav-wrapper .g-101-item {
 	font-size: 5em;
 	color: #78E29D;
 }
-.prev:hover, .next:hover {
+#prime-graphology .prev:hover, #prime-graphology .next:hover {
 	font-weight: bold;
 }
-.g-101-item div {
+#prime-graphology .g-101-item div {
 	font-family: "Georgia",serif;
 	font-size: 1.4em;
 	border-bottom: 3px dashed #f1cd96;
@@ -600,27 +600,27 @@ div.nav-wrapper .g-101-item {
 	margin:10px 10px 15px 10px;
 	padding: 0px;
 }
-#g-101-us {
+#prime-graphology #g-101-us {
 	width: 275px;
 	height: 210px;
 }
-#g-101-lsl {
+#prime-graphology #g-101-lsl {
 	width: 190px;
 	height: 210px;
 }
-#g-101-c {
+#prime-graphology #g-101-c {
 	width: 265px;
 	height: 210px;
 }
-#g-101-ss {
+#prime-graphology #g-101-ss {
 	width: 190px;
 	height: 210px;
 }
-#g-101-ls {
+#prime-graphology #g-101-ls {
 	width: 190px;
 	height: 210px;
 }
-div#footer {
+#prime-graphology div#footer {
 	text-align: center;
 	margin: 10px;
 }
