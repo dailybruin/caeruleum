@@ -649,10 +649,10 @@ $(function(){
 	<div class="row-fluid">
 	<div class="span7">
 		<div id="header-div">
-			<img width="430px" src="/img/images/features/prime-graphology/title.jpg"/>
+			<img width="430px" src="/images/features/prime-graphology/title.jpg"/>
 			<div style="margin-top: -30px; margin-bottom: 15px;">
-			<img width="80px" src="/img/images/features/prime-graphology/by.jpg" />
-			<img width="420px" src="/img/images/features/prime-graphology/author.jpg" />
+			<img width="80px" src="/images/features/prime-graphology/by.jpg" />
+			<img width="420px" src="/images/features/prime-graphology/author.jpg" />
 		</div>
 	</div>
 
@@ -661,7 +661,7 @@ $(function(){
 		<div class="paid-ad-warning">Paid Advertisement</div>
 		<?php get_template_part('ad','side'); ?>
 		<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #FAFAFA; padding: 20px; margin: 15px; border-radius: 5px; border: 1px solid #ccc;" id="feature-story-side">
-		<img src="/img/images/features/prime-graphology/prime.png" width="200px;" style="float: left;  margin-right: 10px;"/>This is a feature story from Prime magazine. Pick up a copy of Prime's Spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">Prime online</a> for more.(?)</div>
+		<img src="/images/features/prime-graphology/prime.png" width="200px;" style="float: left;  margin-right: 10px;"/>This is a feature story from Prime magazine. Pick up a copy of Prime's Spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">Prime online</a> for more.(?)</div>
 	</div>
 	</div>
 	<a name="story"></a>
@@ -671,7 +671,7 @@ $(function(){
 			<p>Then I curiously glanced at my sloppy signature, which changes every time I sign it, and it didn't seem to tell me much about myself. And though I'll never sign onto anything as important as the Declaration of Independence, I wonder what people will think about me when they see my signature on a document. Years from now, will a kid scrutinize the shape and of the "a" and "l" in Alessandra? Or will she draw some conclusion from the prominent "dask" and near absence of "alakis" in Daskalakis? </p> 
 		<p>Overanalyzing everything is a tendency of mine, and I can't help but think about these things. An example: not a med student in scrubs goes by without me internally cringing at my grade in electricity and magnetism. I can't help but apply this same over-analysis to my signature, so I decided to talk to a graphologist.</p>
 		<p>Graphology, for those who don't know, is the study of handwriting and what it says about a person. Some employers hire graphologists to analyze potential future employees and screen them for a position. Other graphologists testify in court for handwriting verification. </p> 
-		<figure><img src="/img/images/features/prime-graphology/story-img.jpg" />
+		<figure><img src="/images/features/prime-graphology/story-img.jpg" />
 		<figcaption><i>illustration by Bijun Liang / Daily Bruin</i></figcaption>
 		</figure>
 		<p> "Every envelope I get gives me an impression," said Lena Rivkin, a graphologist based in Los Angeles. </p>
@@ -784,7 +784,7 @@ $(function(){
 <!-- john wooden -->
 <div class="writing-samples writing-jw two-col-div">
 	<div class="left-div" id="left-div-jw">
-		<h2><img id="jw-title" src="/img/images/features/prime-graphology/John_wooden.png""/> <span class="normal" >| traditional values</span></h2>
+		<h2><img id="jw-title" src="/images/features/prime-graphology/John_wooden.png"/> <span class="normal" >| traditional values</span></h2>
 		<p>This writer uses something called "copybook script." In elementary school, children are taught a classic copybook style script. Many kids will ultimately deviate from that copybook script and create an idiosyncratic type of handwriting. Some writers, though, are traditionalists. They stay true and loyal to the copybook script they learned in school, making very few adjustments. </p>
 		<p>This writing style reveals the individual who is conservative, disciplined, community-minded; somebody who heralds the importance of classic values. The copybook writer takes very seriously the societal message that has come to him about what is good and right. He re-creates the "good and right" handwriting he learned in elementary school. He will similarly align with wholesome values that come from earlier generations. He possesses the quality of loyalty to causes and people. His priority is to be responsible.</p>
 		<p>Copybook writers often become teachers and we see many teachers with this style of writing. It's as if this individual happily internalized the traditional teachings of their society and having done so successfully, wanted nothing other than to be a mouthpiece for the same traditional values.</p>
@@ -807,7 +807,7 @@ $(function(){
 
 <!-- jim morrison -->
 <div class="writing-samples writing-jm two-col-div">
-	<h2><img src="/img/images/features/prime-graphology/Jim_morrison.png" id="jm-title" /><span class="normal">| immaturity</span></h2>
+	<h2><img src="/images/features/prime-graphology/Jim_morrison.png" id="jm-title" /><span class="normal">| immaturity</span></h2>
 	<div id="jm-container" class="right-div writing-sample-container">
             <div class="main-bg-image bg-image border"></div>
             <div class="hl-region bg-image border" id="jm-s-curs" rel="popover" data-content="a sign of somebody who lets himself off the hook so he doesn't have to finish what he starts" data-original-title="Unsealed cursive s"></div>
@@ -827,7 +827,7 @@ $(function(){
 
 <!-- alessandra -->
 <div class="writing-samples writing-ad two-col-div">
-	<div class ="left-div" id="left-div-ad"><h2><img src="/img/images/features/prime-graphology/alessandra.png" id="ad-title"><span class="normal">| author</span></h2>
+	<div class ="left-div" id="left-div-ad"><h2><img src="/images/features/prime-graphology/alessandra.png" id="ad-title"><span class="normal">| author</span></h2>
 		<p>Regarding the first line of text of the story: this writer pens her script with a relatively straight baseline even though she
 		is writing on a piece of paper with out lines. A straight baseline implies somebody with discipline and a good work ethic.
 		Somebody with good follow-through.</p>
@@ -865,7 +865,7 @@ $(function(){
                <div class="hl-region bg-image border" id="cb-name" rel="popover" data-placement="left" data-content="Note the way she encapsulates her professional name and encloses it in the first letter. That draws extra attention to that name, the part of her identity that speaks to her professional life. So there's an intensity around that name that comes through because of that special treatment of that name. As if she is showcasing that name. That's her specialness." data-original-title="Encapsulation"></div>
       	         <button class="hl-btn btn"><i class="icon-eye-open"></i> Hover to view all highlights(?)</button>
 	</div>
-       <h2><img src="/img/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>
+       <h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>
 	<p>Great sensitivity is indicated by the light pressure of her written line (as compared to a darker imprint penned by somebody who really digs into the page with the pen) and also indicated by a written line that is fine and delicate looking.</p>
 	<p> We also find something called simplification; strokes connect letters to each other in a way that is efficient so that the writer takes shortcuts, deleting extraneous strokes, while also maintaining legibility e.g. The writer crosses the first letter of the word "think" and attaches the cross stroke to the following letter, h. Simplification indicates a writer who is both creative and possesses above-average intelligence as well as somebody who has good physical coordination.</p>
 	<p> Note how some letters are connected to each other while others are printed/disconnected. That "printscript" indicates the individual with writing skill. We also notice a sharpness in this writing. Look at the sharp angles in the letters m and n. Angularity indicates strong analytical thinking and the writer who can aggressively push projects through. Good organizational skills are indicated by the way she spaces the sample; clear spacing, well-organized, text is written on a straight line. And note that the handwriting is not particularly embellished. Rather humble or modest looking. A root quality of humility, at her core.</p>
@@ -876,9 +876,9 @@ $(function(){
 
 <!-- begin annette div -->
 <div id="annette" class="span12">
-<div class="center" id="annette-header"><h1><img src="/img/images/features/prime-graphology/Annette_poizner.png" id="annette-title" /><span class="normal font">| <span style="color: #748AF5; font-size: 150%;">graphologist</span></span></h1>
+<div class="center" id="annette-header"><h1><img src="/images/features/prime-graphology/Annette_poizner.png" id="annette-title" /><span class="normal font">| <span style="color: #748AF5; font-size: 150%;">graphologist</span></span></h1>
 </div>
-<img class="border" id="annette-img" src="/img/images/features/prime-graphology/annette.jpg" />
+<img class="border" id="annette-img" src="/images/features/prime-graphology/annette.jpg" />
 
 <p>Annette Poizner is located in Toronto, Canada. She has been in private practice for the last 20 years. Initially she studied graphology privately with a clinical graphologist in Israel. In fact her experience with a therapist who studied handwriting in Israel is what sparked her interest. At a time when she was feeling a little stuck personally and professionally, the therapists accuracy blew her away and inspired her to pursue graphology.</p>
 <p>She has a Specialized Honors degree in psychology at York University in Toronto. She has a Masters of Social Work degree from Columbia University in New York. At the University of Toronto she completed a Doctorate of Education specializing in Counseling Psychology and completed a doctoral dissertation which explored the use of graphology within psychotherapy. She also has background in psychological assessment. </p>
@@ -895,7 +895,6 @@ $(function(){
 	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
 	<p id="g-101-intro">What does your handwriting say about you?<br />
 						Here are graphological interpretation principles that readers can use to think about their own handwriting: </p>
-
 
 <div class="center row-fluid">
 
