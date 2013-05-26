@@ -2,9 +2,51 @@
 Template Name: Graphology
 */ ?>
 <?php get_header(); ?>
-
 <script type="text/javascript">
-$(function(){
+$(document).ready(function() {
+  /* graphology 101 */
+  $(".slider").diyslider({
+    width: "982px", // width of the slider
+    height: "230px", // height of the slider
+    display: 1, // num of slides displaying
+    loop:false// disable looping on slides
+  }); 
+
+  var currSlide = 1;
+
+  $(".prev").click( function(){
+    $(".next").css('opacity', 1 );
+    if( currSlide == 2 ) {
+        $(this).css('opacity', 0.5 );
+        currSlide--;
+    }
+    else if( currSlide > 1 ){
+         currSlide--;
+    } 
+    $(".slider").diyslider("move", "back");
+  });
+
+  $(".prev").hover( function() {
+    if( currSlide > 1 ) $(this).css('font-weight', 'bold' );     
+    }, function() { $(this).css('font-weight', 'normal' );  
+  });
+
+  $(".next").hover( function() {
+    if( currSlide < 4 ) $(this).css('font-weight', 'bold' ); 
+    }, function() { $(this).css('font-weight', 'normal' );  
+  });
+
+  $(".next").click( function() {
+    $(".prev").css('opacity', 1 );
+    if( currSlide == 3 ) {
+        $(this).css('opacity', 0.5 );
+        currSlide++;
+    }
+    else if( currSlide < 4 ) {
+        currSlide++;
+    }
+    $(".slider").diyslider("move", "forth");
+  });
 
   /* feature story */
   $(".story-page").hide();
@@ -77,14 +119,17 @@ $(function(){
   });
 
 
-  /* pop-overs */
-  $(".jw-stem").hover(
-  	function(){
-       	$(".jw-stem").css('opacity','1');
-       },function(){
-		$(".jw-stem").css('opacity','0');
-  });
+  $(".sample-previews").hover( function() {
+	var id = $(this).data("id");
+	if(id!==undefined) 
+         $("#arrow-container ." + id).css('opacity', 1);
+    }, function() {
+	var id = $(this).data("id");
+	if(id!==undefined) 
+ 	$("#arrow-container ." + id).css('opacity', 0.85);
+   });
 
+  /* pop-overs */
   $(".hl-region").hover(
   	function(){
        	$(this).popover('show');
@@ -108,9 +153,13 @@ $(function(){
 <style type="text/css">
 /* basic styling */
 #prime-graphology #container {
-    box-shadow: 0 0 15px #ccc; /* all latest browser */
-   -moz-box-shadow: 0 0 15px #ccc; /* Firefox older version*/
-   -webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 15px #ccc; /* all latest browser */
+	-moz-box-shadow: 0 0 15px #ccc; /* Firefox older version*/
+	-webkit-box-shadow: 0 0 10px #ccc;
+}
+#prime-graphology img {
+	max-width: 100%;
+	height: auto;
 }
 #prime-graphology .border {
 	border: 1px solid #CDCDCD;
@@ -135,6 +184,9 @@ $(function(){
 }
 #prime-graphology div.center {
 	text-align: center; 
+}
+#prime-graphology .color-bg {
+	background-color: #F7F7F7;
 }
 /* highlighting and popovers */
 #prime-graphology .hl-region {
@@ -165,39 +217,28 @@ $(function(){
        width:435px;
 }
 #prime-graphology #jw-container div.hl-region {
-       height:45px;
-       width:45px;
-       border-radius: 45px;
+       height:50px;
+       width:50px;
+       border-radius: 30px;
 }
 #prime-graphology #jw-container div.hl-region-large {
-	height:75px;
-	width:70px;
-	border-radius: 20px;
+	height:90px;
+	width:78px;
 }
-#prime-graphology #jw-d-stem {
-	top:205px;
-	left:270px;
-	background-position: -270px -205px;
+#prime-graphology #jw-t {
+        top:139px;
+        left:151px;
+        background-position: -151px -139px;
 }
-#prime-graphology #jw-t-stem {
-	top:130px;
-	left:137px;
-	background-position: -137px -130px;
-}
-#prime-graphology #jw-h-stem {
-	top:115px;
-	left:265px;
-	background-position: -265px -115px;
-}
-#prime-graphology #jw-o-seal {
-	top:230px;
-	left:230px;
-	background-position: -230px -230px;
+#prime-graphology #jw-oo {
+        top:251px;
+        left:257px;
+        background-position: -257px -251px;
 }
 #prime-graphology #jw-capital {
-	top:30px;
-	left:162px;
-	background-position: -162px -30px;
+       top:27px;
+       left:180px;
+       background-position: -180px -27px;
 }
 #prime-graphology #jm-container {
        height:440px;
@@ -220,42 +261,34 @@ $(function(){
        width:200px;
        border-radius: 67px;
 }
-#prime-graphology #jm-s-curs {
-	top:65px;
-	left:550px;
-	background-position: -550px -65px;
+#prime-graphology #jm-s {
+	top:75px;
+	left:554px;
+	background-position: -554px -75px;
 }
-#prime-graphology #jm-name {
+#prime-graphology #jm-sig {
 	top:5px;
 	left:220px;
 	background-position: -220px -5px;
 }
-#prime-graphology #jm-t-stem {
-	top:185px;
-	left:430px;
-	background-position: -430px -185px;
+#prime-graphology #jm-t-slash {
+	top:190px;
+	left:435px;
+	background-position: -435px -190px;
 }
-#prime-graphology #jm-retrace {
-	top:143px;
-	left:347px;
-	background-position: -347px -143px;
+#prime-graphology #jm-t {
+	top:345px;
+	left:145px;
+	background-position: -145px -345px;
 }
-#prime-graphology #jm-tribe{
-	top:143px;
+#prime-graphology #jm-ibe{
+	top:151px;
 	left:188px;
-	background-position: -188px -143px;
-}
-#prime-graphology #jm-of {
-	top:72px;
-	left:484px;
-	background-position: -484px -72px;
+	background-position: -188px -151px;
 }
 #prime-graphology #ad-container {
        height:610px;
        width:610px;
-}
-#prime-graphology .writing-sample-container {
-       position: relative;
 }
 #prime-graphology #ad-container .bg-image {
        background-image: url('/images/features/prime-graphology/ad-writing-sample.jpg');
@@ -272,34 +305,24 @@ $(function(){
 	width:50px;
 }
 #prime-graphology #ad-adventure {
-	top:165px;
-      	left:237px;
-       background-position: -237px -165px;
+	top:170px;
+      	left:240px;
+       background-position: -240px -170px;
 }
 #prime-graphology #ad-your {
-	top:500px;
-	left:313px;
-	background-position: -313px -500px;
+	top:509px;
+	left:317px;
+	background-position: -317px -509px;
 }
-#prime-graphology #ad-ac-space {
-	top:145px;
-	left:102px;
-	background-position: -102px -145px;
-}
-#prime-graphology #ad-overhead {
-	top:430px;
-	left:207px;
-	background-position: -207px -430px;
+#prime-graphology #ad-space {
+	top:150px;
+	left:105px;
+	background-position: -105px -150px;
 }
 #prime-graphology #ad-neck {
-	top:262px;
-	left:128px;
-	background-position: -128px -262px;
-}
-#prime-graphology #ad-fort {
-	top:217px;
-	left:72px;
-	background-position: -72px -217px;
+	top:268px;
+	left:131px;
+	background-position: -131px -268px;
 }
 #prime-graphology #cb-container {
        height: 280px;
@@ -317,55 +340,50 @@ $(function(){
        width:45px;
        border-radius: 45px;
 }
-#prime-graphology #cb-container div.hl-region-oval {
-       height:50px;
-       width:25px;
-       border-radius: 50px;
+#prime-graphology #cb-container div.hl-region-large {
+       height: 87px;
+       width: 78px;
+       border-radius: 20px;
 }
-#prime-graphology #cb-of {
-	top:28px;
-	left:363px;
-	background-position: -363px -28px;
-}
-#prime-graphology #cb-think {
-	top:11px;
-	left:260px;
-	background-position: -260px -11px;
-}
-#prime-graphology #cb-handwriting {
-	top:73px;
-	left:96px;
-	background-position: -96px -73px;
-}
-#prime-graphology #cb-m-sharp {
-	top:18px;
-	left:412px;
- 	background-position: -412px -18px;
-}
-#prime-graphology #cb-n-sharp {
-	top:20px;
-	left:300px;
-	background-position: -300px -20px;
-    }
-#prime-graphology #cb-name{
+#prime-graphology #cb-b{
 	top:145px;
-	left:110px;
-	background-position: -110px -145px;
+	left:205px;
+	background-position: -205px -145px;
+}
+#prime-graphology #cb-simp {
+	top:30px;
+	left:367px;
+	background-position: -367px -30px;
 }
 
-/* writing samples preview */
-#prime-graphology #writing-sample-intro {
-	margin: 30px 20px 0px 20px;
+#prime-graphology #cb-dw {
+	top:75px;
+	left:96px;
+	background-position: -96px -75px;
 }
-#prime-graphology #writing-sample-intro span {
-   float:right;
+#prime-graphology #cb-m {
+	top:20px;
+	left:414px;
+ 	background-position: -414px -20px;
+}
+
+#prime-graphology #cb-arcade{
+	top:158px;
+	left:315px;
+	background-position: -315px -158px;
+}
+/* writing samples preview */
+#prime-graphology #writing-sample-intro a {
+	float:right;
+	padding: 5px;
+	border-radius: 5px;
 }
 #prime-graphology .preview-div {
 	height: 225px;
-    	width: 245px;
+    	width: 240px;
 	display: block;
        float:left;
-    	margin: 5px 5px 0px 5px;
+    	margin: 3px 3px 0px 3px;
     	background-position: center;
     	opacity: 0.85;
 }
@@ -376,7 +394,6 @@ $(function(){
 #prime-graphology #jw-preview {
        background-image: url('/images/features/prime-graphology/jw-writing-sample.jpg');
 	border: 15px #FABEBF solid;
-	margin-left: 15px;
 }
 #prime-graphology #jm-preview {
        background-image: url('/images/features/prime-graphology/jm-writing-sample.jpg');
@@ -392,8 +409,8 @@ $(function(){
        background-position: 200px 10px;
 	border: 15px #b7f0cb solid;
 }
-#prime-graphology #writing-samples-container {
-       padding: 10px;
+#prime-graphology #writing-samples-div{
+       padding: 20px;
 }
 #prime-graphology .sample-previews {
       font-size: 22px;
@@ -403,7 +420,7 @@ $(function(){
 	margin-top: -5px;
 }
 #prime-graphology #arrow-container div {
-	opacity: 0.9;
+	opacity: 0.85;
 	width:0px;
 	height: 0px;
 	border-left: 20px solid transparent;
@@ -415,26 +432,27 @@ $(function(){
 }
 #prime-graphology #jm-preview-arrow {
 	border-top: 20px solid #f1cd96;
-       margin-left: 420px;
+       margin-left: 405px;
 }
 #prime-graphology #ad-preview-arrow {
 	border-top: 20px solid #bec9fa;
-       margin-left: 710px;
+       margin-left: 685px;
 }
 #prime-graphology #cb-preview-arrow {
 	border-top: 20px solid #b7f0cb;
-       margin-left: 995px;
+       margin-left: 965px;
 }
 
 /* writing samples */
-#prime-graphology .two-col-div {
-	padding: 20px;
+#prime-graphology .ws-container {
+	margin: 15px 0px;
 }
 #prime-graphology .left-div {
 	float: left;
 }
 #prime-graphology .right-div {
    	float:right;
+	position: relative;
 }
 #prime-graphology #left-div-jw {
 	width: 650px;
@@ -467,6 +485,20 @@ $(function(){
 #prime-graphology #header-div {
 	text-align: center;
 }
+#prime-graphology #feature-title {
+	width: 430px;
+}
+#prime-graphology #feature-by {
+	width: 80px;
+}
+#prime-graphology #feature-author {
+	width: 420px;
+}
+#prime-graphology #feature-prime {
+	width: 200px;
+	float: left; 
+	margin-right: 10px;"
+}
 #prime-graphology figcaption {
 	margin-left: 100px;
 }
@@ -475,18 +507,15 @@ $(function(){
 	width: 300px; 
 	margin: 0px 20px 20px 20px;
 } 
-#prime-graphology .pagination.center {
-	margin-left: 30%;
-}
 
 /* annette */
 #prime-graphology #annette {
- 	padding: 20px 20px 20px 20px;
+ 	padding: 20px;
 }
 #prime-graphology #annette-img {
-	margin: 0px 20px 0px 20px; 
+	margin: 10px 20px 10px 20px; 
 	float: right; 
-	width: 500px; 
+	width: 450px; 
 }
 #prime-graphology #annette-title {
 	width: 400px;
@@ -498,7 +527,7 @@ $(function(){
 	display: none;
 }
 #prime-graphology #jw-container .popover {
-   border: 1px solid #FABEBF;
+	border: 1px solid #FABEBF;
 }
 #prime-graphology #jw-container .popover.top .arrow {
 	border-top-color: #FABEBF;
@@ -559,36 +588,47 @@ $(function(){
 }
 
 /* graphology 101 */	
-#prime-graphology #g-101 div.nav-wrapper {
-    float: left;
+#prime-graphology #g-101 {
+   margin: 15px 0px;
 }
-#prime-graphology div.nav-wrapper .g-101-item {
+#prime-graphology .slider {
+   margin: 20px 0px;
+}
+#prime-graphology .g-101-item {
     border: 3px solid #E6E6E6;
     border-radius: 5px;
     margin: 3px;
     padding: 5px 10px;
-    width: 155px;  
-    float: left;    
+    float: left; 
+    height: 210px;  
 }
 #prime-graphology #g-101-title {
        color: #78E29D;
-	font-size: 5em;	
+	font-size: 480%;
+	margin: 15px 0px;	
 }
 #prime-graphology #g-101-intro {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: medium;
 }
-#prime-graphology .prev, #prime-graphology .next {
+#prime-graphology .prev, .next {
 	float: left;
 	padding: 0px;
-	margin: 100px 5px 5px 5px;
 	width: 50px;
 	cursor: pointer;
 	font-size: 5em;
 	color: #78E29D;
 }
-#prime-graphology .prev:hover, #prime-graphology .next:hover {
-	font-weight: bold;
+#prime-graphology .prev {
+	margin: 100px 15px 5px 30px;
+}
+#prime-graphology .prev {
+	opacity: 0.5;
+}
+#prime-graphology .next {
+	float: right;
+	margin: -170px 25px 5px 0px;
+
 }
 #prime-graphology .g-101-item div {
 	font-family: "Georgia",serif;
@@ -600,29 +640,46 @@ $(function(){
 }
 #prime-graphology #g-101-us {
 	width: 275px;
-	height: 210px;
 }
 #prime-graphology #g-101-lsl {
 	width: 190px;
-	height: 210px;
-}
-#prime-graphology #g-101-c {
-	width: 265px;
-	height: 210px;
 }
 #prime-graphology #g-101-ss {
 	width: 190px;
-	height: 210px;
 }
 #prime-graphology #g-101-ls {
-	width: 190px;
-	height: 210px;
+	width: 260px;
+}
+#prime-graphology #g-101-rw {
+	width: 380px;
+}
+#prime-graphology #g-101-tlw {
+	width: 300px;
+}
+#prime-graphology #g-101-aw {
+	width: 400px;
+}
+#prime-graphology #g-101-lt {
+	width: 460px;
+}
+#prime-graphology #g-101-ps {
+	width: 230px;
+}
+#prime-graphology #g-101-c {
+	width: 280px;
+}
+#prime-graphology #g-101-sb {
+	width: 240px;
+}
+#prime-graphology #g-101-s {
+	width: 330px;
 }
 #prime-graphology div#footer {
-	text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 10px;
 }
 
+/* ad */
 #prime-graphology .paid-ad-warning {
 	float: left;
 	transform: rotate(-90deg);
@@ -653,10 +710,10 @@ $(function(){
 	<div class="row-fluid">
 	<div class="span7">
 		<div id="header-div">
-			<img width="430px" src="/images/features/prime-graphology/title.jpg"/>
+			<img id="feature-title" src="/images/features/prime-graphology/title.jpg"/>
 			<div style="margin-top: -30px; margin-bottom: 15px;">
-			<img width="80px" src="/images/features/prime-graphology/by.jpg" />
-			<img width="420px" src="/images/features/prime-graphology/author.jpg" />
+			<img id="feature-by" src="/images/features/prime-graphology/by.jpg" />
+			<img id="feature-author" src="/images/features/prime-graphology/author.jpg" />
 		</div>
 	</div>
 
@@ -664,8 +721,8 @@ $(function(){
 	<div class="span5">
 		<div class="paid-ad-warning visible-desktop">Paid Advertisement</div>
 		<?php get_template_part('ad','side'); ?>
-		<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #FAFAFA; padding: 20px; margin: 15px; border-radius: 5px; border: 1px solid #ccc;" id="feature-story-side">
-		<img src="/images/features/prime-graphology/prime.png" width="200px;" style="float: left;  margin-right: 10px;"/>This is a feature story from Prime magazine. Pick up a copy of Prime's Spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">Prime online</a> for more.(?)</div>
+		<div class="border color-bg" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  padding: 20px; margin: 15px; border-radius: 5px; " id="feature-story-side">
+		<img id="feature-prime" src="/images/features/prime-graphology/prime.png" />This is a feature story from prime magazine. Pick up a copy of prime's spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">prime online</a> for more.</div>
 	</div>
 	</div>
 	<a name="story"></a>
@@ -740,7 +797,7 @@ $(function(){
 
 	<div class="pagination center">
   		<ul>
-  	  	<li id="prev" class="disabled"><a style="pointer-events: none;" href="#feature-story" ><<</a></li>
+  	  	<li id="prev" class="disabled"><a style="pointer-events: none;" href="#story" ><<</a></li>
   	 	<li id="1" class="disabled"><a style="pointer-events: none;" href="#feature-story" >1</a></li>
    		<li id="2"><a href="#story" >2</a></li>
    	 	<li id="3"><a href="#story">3</a></li>
@@ -749,17 +806,18 @@ $(function(){
  	 	</ul>
 	</div>
 	<div style="clear:both;" /></div>
-</div>
-<!-- end feature story -->
+</div><!-- end feature story -->
 
 <hr />
 
-
+<div id="writing-samples-div">
 <div id="writing-sample-intro">
+	<a class="border color-bg" href="#"><i class="icon-file"></i> Print PDF with complete analysis</a>
      <h4 class="medium normal">Select a handwriting sample to
-		read graphologist Annette Poizner's analysis on what it reveals about the author.(?)<span><a href="#"><i class="icon-file"></i> Print PDF with complete analysis(?)</span></a></h4>
+		read graphologist Annette Poizner's analysis on what it reveals about Daskalakis and three famous UCLA alumni.</h4>
 </div>
 
+<div class="center">
 <div>
     <a class="sample-previews" data-id="writing-jw" href="#">
         <div id="jw-preview" class="preview-div"></div>
@@ -781,101 +839,91 @@ $(function(){
 	<div id="ad-preview-arrow" class="writing-samples writing-ad"></div>
 	<div id="cb-preview-arrow" class="writing-samples writing-cb"></div>
 </div>
+</div>
 
-<br id="space" />
-<br class="writing-samples"/>
 
 <!-- john wooden -->
-<div class="writing-samples writing-jw two-col-div">
+<div class="writing-samples writing-jw ws-container">
 	<div class="left-div" id="left-div-jw">
 		<h2><img id="jw-title" src="/images/features/prime-graphology/John_wooden.png"/> <span class="normal" >| traditional values</span></h2>
 		<p>This writer uses something called "copybook script." In elementary school, children are taught a classic copybook style script. Many kids will ultimately deviate from that copybook script and create an idiosyncratic type of handwriting. Some writers, though, are traditionalists. They stay true and loyal to the copybook script they learned in school, making very few adjustments. </p>
 		<p>This writing style reveals the individual who is conservative, disciplined, community-minded; somebody who heralds the importance of classic values. The copybook writer takes very seriously the societal message that has come to him about what is good and right. He re-creates the "good and right" handwriting he learned in elementary school. He will similarly align with wholesome values that come from earlier generations. He possesses the quality of loyalty to causes and people. His priority is to be responsible.</p>
 		<p>Copybook writers often become teachers and we see many teachers with this style of writing. It's as if this individual happily internalized the traditional teachings of their society and having done so successfully, wanted nothing other than to be a mouthpiece for the same traditional values.</p>
-		<i>John Wooden is a former UCLA basketball coach. Mouse over the image to learn more character traits revealed by his handwriting.(?)</i>
+		<i>John Wooden is a former UCLA basketball coach. Mouse over the image to see what Poizner has to say.</i>
 	</div> <!-- end left div -->
 
-       <div id="jw-container" class=" right-div writing-sample-container">
+       <div id="jw-container" class="right-div">
             <div class="bg-image main-bg-image border"></div>
-            <div class="hl-region bg-image jw-stem border" id="jw-d-stem" rel="popover" data-content="asdfd" data-title="Adsfsd">
-		</div>
-            <div class="hl-region hl-region-large bg-image border" id="jw-capital" rel="popover" data-placement="top" data-content="content" data-original-title="Capital letters"></div>
-            <div class="hl-region bg-image jw-stem border" id="jw-t-stem"></div>
-            <div class="hl-region bg-image jw-stem border" id="jw-h-stem"></div>
-            <div class="hl-region bg-image border" id="jw-o-seal" rel="popover" data-content="Note that this writer often does not seal the letter o. When these little middle zone letters are left open at the top graphologists often interpret somebody who likes to communicate. So if he was a very private man, he was also engaged with others and enjoyed sharing ideas." data-original-title="Unsealed letter o"></div>	
-	     <button class="hl-btn btn"><i class="icon-eye-open"></i> Hover to view all highlights(?)</button>
+            <div class="hl-region bg-image border hl-region-large" id="jw-capital" rel="popover" data-placement="top" data-content="His capitals are fairly elaborate and sometimes even decorative and formal. This is an expression of dignity. Capital letters represent first impressions. If a person believes it's important to make a good first impression they do so by putting a bit of a bow tie on their capital letter. Something a little dressier versus something plain."></div>
+            <div class="hl-region bg-image border" id="jw-t" rel="popover" data-placement="left" data-content="Retracing is interpreted as a sign of privacy or discretion around personal matters. And that is consistent with the copybook script writer, somebody who has a sense of grace, privacy, discretion, dignity, a sense of what is appropriate for public consumption versus what is personal."></div>
+            <div class="hl-region bg-image border" id="jw-oo" rel="popover" data-content="This writer often does not seal the letter o. When these little middle zone letters are left open at the top graphologists often interpret somebody who likes to communicate. So if he was a very private man, he was also engaged with others and enjoyed sharing ideas." data-original-title="Unsealed letter o"></div>	
+	     <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
 </div> <!-- end right div -->
 
 	<div style="clear:both;" /></div>
 </div> <!-- end john wooden div -->
 
 <!-- jim morrison -->
-<div class="writing-samples writing-jm two-col-div">
+<div class="writing-samples writing-jm ws-container">
 	<h2><img src="/images/features/prime-graphology/Jim_morrison.png" id="jm-title" /><span class="normal">| immaturity</span></h2>
-	<div id="jm-container" class="right-div writing-sample-container">
+	<div id="jm-container" class="right-div">
             <div class="main-bg-image bg-image border"></div>
-            <div class="hl-region bg-image border" id="jm-s-curs" rel="popover" data-content="a sign of somebody who lets himself off the hook so he doesn't have to finish what he starts" data-original-title="Unsealed cursive s"></div>
-            <div class="hl-region hl-region-name bg-image border" id="jm-name" rel="popover" data-content="His impulse, when he presents, is to maintain privacy about his personal self and pull it together when it comes to presentation in the public domain. Yet, the greater handwriting sample shows that on a day-to-day level he was experiencing moodiness, confusion, rigidity, and an overall lack of discipline." data-original-title="Sophisticated signature"></div>
-            <div class="hl-region bg-image border" id="jm-t-stem" rel="popover" data-content="Notice the way he slashes sharp strokes to cross his t's. Quite sharp. Little daggers. He would have a well of anger that would be expressed through irritation, resentment but also anger that could find expression in self-loathing." data-original-title="Crossed 'T's"></div>
-            <div class="hl-region bg-image border" id="jm-retrace" rel="popover" data-content="The writer who retraces these two strokes so that they cover each other perfectly shows a need for privacy" data-original-title="Retraced 't' stems"></div>
-            <div class="hl-region bg-image border" id="jm-tribe" rel="popover" data-placement="left" data-content="The last three letters of that word are so nicely joined to each other showing a trait that we call 'simplification.'" data-original-title="Tribe"></div>
-            <div class="hl-region bg-image border" id="jm-of" rel="popover" data-placement="top" data-content="Sometimes you can see little symbols in people's handwriting or signatures. Look at the phrase 'events of those'. See the little musical note embedded in that word of?" data-original-title="Of"></div>
-	     <button class="hl-btn btn"><i class="icon-eye-open"></i> Hover to view all highlights(?)</button>
+            <div class="hl-region bg-image border" id="jm-s" rel="popover" data-placement="top" data-content="He does not seal the bottom of the cursive letter 's': a sign of somebody who lets himself off the hook so he doesn't have to finish what he starts." data-original-title="Unsealed cursive s"></div>
+            <div class="hl-region hl-region-name bg-image border" id="jm-sig" rel="popover" data-placement="left" data-content="The greater handwriting sample shows that on a day-to-day level he was experiencing moodiness, confusion, rigidity, and an overall lack of discipline. But that signature shows his motivation to pull it together so he could come off as sophisticated and polished in the public arena."></div>
+            <div class="hl-region bg-image border" id="jm-t" rel="popover" data-content="Normally, a person moves the pen upward, to reach the height of the t and then brings the stroke down. Sometimes this is done creating a bit of a loop. After all, why does it have to be done perfectly so that the upstroke and the downstroke are perfectly retraced one on top the other? The writer who does retraces these two strokes so that they cover each other perfectly shows a need to be highly private."></div>
+            <div class="hl-region bg-image border" id="jm-t-slash" rel="popover" data-content="He slashes sharp strokes to cross his t's. Quite sharp. Little daggers. He would have a well of anger that would be expressed through irritation, resentment but also anger that could find expression in self-loathing."></div>
+            <div class="hl-region bg-image border" id="jm-ibe" rel="popover" data-placement="left" data-content="The last three letters of that word are so nicely joined to each other showing a trait that we call 'simplification.'"></div>
+            <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
         </div>
 	
 	<p >In this handwriting, the overall impression is that it was written by a child. Childish-looking handwriting, unless it is specifically the result of a physical problem like visual, cognitive or muscular difficulties, would suggest immaturity. This writing looks like it was written by a child given irregularities like spacing that varies tremendously, poorly formed letters or an overall messiness that implies inner chaos. We anticipate a writer who is impulsive, needy and moody.</p>
 	<p>Note the difference between the writing style of the sample and the writing style of the signature. The signature looks rather sophisticated. It doesn't look like it was written by a child. In other words, when it comes to expressing his image (represented by his signature) he was able to radiate an image that didn't necessarily imply the level of neediness he was experiencing.</p>
 	<p>Notice that in his signature he truncates his first name, his private name representing his private/personal self, by just writing the first initial of his first name. In doing so, the focus is on his last name, his professional self/identity. So his preference would be to maintain some degree of privacy, trying to be discreet about the degree to which he suffered from moodiness, confusion, rigidity and an overall lack of discipline.</p>
-	<i>Jim Morrison is an American singer and poet. Mouse over the image to blahblah(?)</i>
+	<i>Jim Morrison is an American singer, poet and UCLA alumnus. Mouse over the image to see what Poizner has to say.</i>
 </div> <!-- end jim morrison -->
 
 <!-- alessandra -->
-<div class="writing-samples writing-ad two-col-div">
+<div class="writing-samples writing-ad ws-container">
 	<div class ="left-div" id="left-div-ad"><h2><img src="/images/features/prime-graphology/alessandra.png" id="ad-title"><span class="normal">| author</span></h2>
-		<p>Regarding the first line of text of the story: this writer pens her script with a relatively straight baseline even though she
-		is writing on a piece of paper with out lines. A straight baseline implies somebody with discipline and a good work ethic.
-		Somebody with good follow-through.</p>
-		<p><strong>adventure, line 8: </strong>notice that some letters are connected and others are disconnected or printed. Writers who do this are using the writing style called printscript and demonstrate good logical thinking (because people who connect one letter to the next show a logical tendency to follow from one idea to the next) and good intuition (represented by those spaces in between letters... Having a good intuitive hunch about when to connect letters to each other and when to let them be disconnected and allow a different inspiration to enter the process).</p>
-		<p><strong>Organization of the page: </strong>lines are spaced pretty evenly and there is a bit of margin on the left and right and lower margin... Well organized... Neat. Good organizational skills.
+		<p>Regarding the first line of text of the story: this writer pens her script with a relatively straight baseline even though she is writing on a piece of paper with out lines. A straight baseline implies somebody with discipline and a good work ethic. Somebody with good follow-through.</p>
 		<p>We discussed that there are three zones to the handwriting, upper, middle and lower. All of these are represented in her writing so that overall she is a balanced person with skills in the zone of thinking, social relating and doing. Still, there is a nice developed middle zone which shows a primary interest in that which is human, an interest in connecting with others. The middle zone makes a person a people-oriented person. The kind of person who opens up the newspaper and reads the life section first.</p>
-		<i>Allessandra is a third-year student at UCLA(?). Mouse over image to learn more blahbalhba.(?)</i>
+		<p>Mostly this writer uses a slant that we call the upright slant. The right slant writer is more engaged emotionally with others whereas the upright slant writer is more objective, poised, "head over heart" type. Not gushy. Not huggy. A little more formal, a little more distant. (More formal, like the girl in the story who sets out with the cartouche necklace around her neck... So graceful!)</p>
+		<p>Simplification is a trait whereby the writer maintains legibility while connecting and forming letters in the minimum amount of strokes which is optimally efficient... And this writer constantly does this kind of thing. It's a sign of above average intelligence. The ability to keep that which is necessary and to extract that which is unnecessary and come up with something that is fluidly made but legible.</p>
+		<i>Daskalakis is a third-year comparative literature and biology student. Mouse over the image to see what Poizner has to say about her bedtime story.</i>
 
 	</div> <!-- end left div -->
 
-       <div id="ad-container" class="right-div writing-sample-container">
+       <div id="ad-container" class="right-div">
             <div class="main-bg-image bg-image border"></div>
-                <div class="hl-region bg-image" id="ad-adventure" rel="popover" data-content="Notice that some letters are connected and others are disconnected or printed. Writers who do this are using the writing style called printscript and demonstrate good logical thinking (because people who connect one letter to the next show a logical tendency to follow from one idea to the next) and good intuition (represented by those spaces in between letters)" data-original-title="Printscript"></div>
-                <div class="hl-region hl-region-short bg-image" id="ad-your" rel="popover" data-content="Notice how this writer brings the lower zone stroke of her 'y' to an abrupt stop instead of trailing off into a loop and bringing it back to the baseline. She often does these abrupt strokes to finish off a 'y'. It's more comfortable to loop around and allow that stroke to gradually shift directions." data-original-title="Abrupt strokes"></div>
-                <div class="hl-region hl-region-short bg-image" id="ad-ac-space" data-placement="top" rel="popover" data-content="Normally, there should be one character width between words. This writer has a wider space between her words - almost 2 character widths. Probably 1.5 character width, on average. This is somebody who has a difficult time bridging the gap between self and other, representing trust issues." data-original-title="Spacing"></div>
-                <div class="hl-region bg-image" id="ad-overhead" rel="popover" data-content="This writer mostly uses a slant that we call the upright slant. The right slant writer is more engaged emotionally with others whereas the upright slant writer is more objective, poised, 'head over heart' type. Not gushy. Not huggy. A little more formal, a little more distant. " data-original-title="Slants"></div>
-                <div class="hl-region hl-region-short bg-image" id="ad-neck" rel="popover" data-placement="left" data-content="Notice the angles in the first letter of each of these words. Angles represents analytical thinking skills." data-original-title="Angles"></div>
-                <div class="hl-region hl-region-short bg-image" id="ad-fort" rel="popover" data-placement="left" data-content="Simplification is a trait whereby the writer maintains legibility while connecting and forming letters in the minimum amount of strokes which is optimally efficient. And this writer constantly does this kind of thing. It's a sign of above average intelligence." data-original-title="Simplification"></div>
-
-	     <div class="hl-region"></div>
-		<button class="hl-btn btn"><i class="icon-eye-open"></i> Hover to view all highlights(?)</button>
+                <div class="hl-region bg-image border" id="ad-adventure" rel="popover" data-content="Notice that some letters are connected and others are disconnected or printed. Writers who do this are using the writing style called printscript and demonstrate good logical thinking and good intuition"></div>
+                <div class="hl-region hl-region-short border bg-image" id="ad-your" rel="popover" data-placement="left" data-content="This writer brings the lower zone stroke of her y to an abrupt stop instead of trailing off into a loop and bringing it back to the baseline. She often does these abrupt strokes to finish off a y . It's more comfortable to loop around and allow that stroke to gradually shift directions. Somebody who stops on a dime like that is somebody with a lot of willpower."></div>
+                <div class="hl-region hl-region-short border bg-image" id="ad-space" data-placement="top" rel="popover" data-content="Normally, there should be one character width between words. This writer has a wider space between her words… Almost 2 character widths. This is somebody who has a difficult time bridging the gap between self and other, representing trust issues. Still, as mentioned above, her primary zone of interest is the social and emotional zone. So as she grows and matures, she will get past this distrust and find more ways to connect intimately, on an emotional level."></div>
+                 <div class="hl-region hl-region-short border bg-image" id="ad-neck" rel="popover" data-placement="left" data-content="Notice the angles in the first letter of each of these words. Angles represent analytical thinking skills." data-original-title="Angles"></div>
+                <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
        </div> <!-- end right div -->
 	<div style="clear:both;" /></div>
 </div> <!-- end alessandra div -->
 
 <!-- carol burnett -->
-<div class="writing-samples writing-cb two-col-div">       
-	<div id="cb-container" class="right-div writing-sample-container">
+<div class="writing-samples writing-cb ws-container">       
+	<div id="cb-container" class="right-div">
        	<div class="main-bg-image bg-image border"></div>
-               <div class="hl-region bg-image border" id="cb-of" rel="popover" data-placement="top" data-content="Note the way the writer attaches the letter o to the letter f in the word 'of.'" data-original-title="Simplified handwriting"></div>
-               <div class="hl-region bg-image border" id="cb-think" rel="popover" data-placement="top" data-content="The writer crosses the first letter of the word 'think' and attaches the cross stroke to the following letter, h." data-original-title="Simplified handwriting"></div>
-               <div class="hl-region bg-image border" id="cb-handwriting" rel="popover" data-placement="left" data-content="The writing is also print script which means she sometimes connects letters and sometimes leaves them disconnected. Print script is a sign of somebody with literary ability, somebody who loves to write and who is a good writer." data-original-title="Printscript"></div>
-               <div class="hl-region bg-image border" id="cb-m-sharp" rel="popover" data-placement="top" data-content="Sharpness is a function of analytical thinking and also enough access to aggressive energy to push projects through." data-original-title="Sharp angles in 'm' and 'n'"></div>
-               <div class="hl-region bg-image border" id="cb-n-sharp" data-placement="top"></div>
-               <div class="hl-region bg-image border" id="cb-name" rel="popover" data-placement="left" data-content="Note the way she encapsulates her professional name and encloses it in the first letter. That draws extra attention to that name, the part of her identity that speaks to her professional life. So there's an intensity around that name that comes through because of that special treatment of that name. As if she is showcasing that name. That's her specialness." data-original-title="Encapsulation"></div>
-      	         <button class="hl-btn btn"><i class="icon-eye-open"></i> Hover to view all highlights(?)</button>
+               <div class="hl-region bg-image border" id="cb-dw" rel="popover" data-placement="left" data-content="The writing is also print script which means she sometimes connects letters and sometimes leaves them disconnected. Print script is a sign of somebody with literary ability. Somebody who loves to write and who is a good writer."></div>
+               <div class="hl-region bg-image border" id="cb-m" rel="popover" data-content="Sharpness is a function of analytical thinking and also enough access to aggressive energy to push projects through."></div>
+               <div class="hl-region bg-image border" id="cb-simp" data-placement="top" data-content="A simplified handwriting is one where simplified strokes are used to connect letters to each other and in so doing legibility is maintained but speed of writing is also facilitated."></div>
+               <div class="hl-region bg-image border hl-region-large" id="cb-b" rel="popover" data-placement="bottom" data-content="She encapsulates her professional name and encloses it in the first letter. That draws extra attention to that name, the part of her identity that speaks to her professional life. So there's an intensity around that name that comes through because of that special treatment of that name."></div>
+      	        <div class="hl-region bg-image border" id="cb-arcade" rel="popover" data-content="Arch type of structure associates with people who have a strong grace and dignity and even formality about them. There's a commitment to privacy and discretion."></div>
+		<button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
 	</div>
        <h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>
 	<p>Great sensitivity is indicated by the light pressure of her written line (as compared to a darker imprint penned by somebody who really digs into the page with the pen) and also indicated by a written line that is fine and delicate looking.</p>
 	<p> We also find something called simplification; strokes connect letters to each other in a way that is efficient so that the writer takes shortcuts, deleting extraneous strokes, while also maintaining legibility e.g. The writer crosses the first letter of the word "think" and attaches the cross stroke to the following letter, h. Simplification indicates a writer who is both creative and possesses above-average intelligence as well as somebody who has good physical coordination.</p>
 	<p> Note how some letters are connected to each other while others are printed/disconnected. That "printscript" indicates the individual with writing skill. We also notice a sharpness in this writing. Look at the sharp angles in the letters m and n. Angularity indicates strong analytical thinking and the writer who can aggressively push projects through. Good organizational skills are indicated by the way she spaces the sample; clear spacing, well-organized, text is written on a straight line. And note that the handwriting is not particularly embellished. Rather humble or modest looking. A root quality of humility, at her core.</p>
-	<i>Carol Burnett is an American actress. Mouse over image to learn asfdlfk blabhalbh.(?)</i>
-</div> <!-- end carol burnett --> 
-<hr style="margin-top: 20px;"/>
+	<i>Carol Burnett is an American actress, comedian and UCLA alumna. Mouse over the image to see what Poizner has to say.</i>
+</div> <!-- end carol burnett -->
+</div> <!-- end writing-samples-div -->
+<hr />
+
 <div class="row-fluid">
 
 <!-- begin annette div -->
@@ -887,53 +935,88 @@ $(function(){
 <p>Annette Poizner is located in Toronto, Canada. She has been in private practice for the last 20 years. Initially she studied graphology privately with a clinical graphologist in Israel. In fact her experience with a therapist who studied handwriting in Israel is what sparked her interest. At a time when she was feeling a little stuck personally and professionally, the therapists accuracy blew her away and inspired her to pursue graphology.</p>
 <p>She has a Specialized Honors degree in psychology at York University in Toronto. She has a Masters of Social Work degree from Columbia University in New York. At the University of Toronto she completed a Doctorate of Education specializing in Counseling Psychology and completed a doctoral dissertation which explored the use of graphology within psychotherapy. She also has background in psychological assessment. </p>
 
-<i>Learn more about Poizner at her <a href="http://www.annettepoizner.com">website.(?)</a></i>
+<i>Learn more about Poizner at her <a href="http://www.annettepoizner.com">website.</a></i>
 </div> <!-- end annette div -->
 
 </div>
 
-<hr style="margin-bottom: 20px;" />
+<hr />
 
-<div class="center row-fluid">
-
+<div class=row-fluid"><div class="center span12" id="g-101">
 	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
-	<p id="g-101-intro">What does your handwriting say about you?<br />
-						Here are graphological interpretation principles that readers can use to think about their own handwriting: </p>
-
-<div class="center row-fluid">
-
-<div class="span12" id="g-101">
-    
+	<span id="g-101-intro">What does your handwriting say about you?<br />Here are graphological interpretation principles that readers can use to think about their own handwriting: </span>
+	<br />
 	<div class="prev"><</div>
-	
-	<div class="nav-wrapper clearfix">
-  		<div class="g-101-row" id="row-one">
-  		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright 
-        		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer 
-        		is reserved.he or she looks at a situation from a detached perspective, then decides what 
-        		degree of emotional involvement will be appropriate.</p></div>
-    		<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even 
-       		more strongly reserved than one whose writing shows an upright slant. This person is usually 
-        		introverted, reserved and highly private.</p></div>
-		 <div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line 
-        		intermingles with the upper zone of the line below.the bottom loop of a cursive .f. would hit 
-        		the top of a cursive .h. in the line below it. This is called crashing, and is indicative of 
-        		an individual who daydreams, often watching an internal TV.</p></div>
-  		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
-        		spaces of less than one character width, may reveal an individual who is needy. This is the 
-        		writing of a person who craves extra close contact with others.</p></div>
-		</div> <!-- end row one -->
-	</div> <!-- end nav-wrapper -->
-	
+	<div class="slider center"><!-- slider -->
+		<div><!-- mandatory div used by the slider -->
+		<div>
+			<div class="g-101-item" id="g-101-ps"><div>Printscript</div><p>Printscript occurs when the writer sometimes prints
+        			and sometimes writes in cursive. This writing style indicates the writer who is both 
+        			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
+        			use print script.</p></div>
+			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more 
+        			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or 
+        			beautifying the environment. These people tend to shape letters by being very true to the 
+        			letter form. They honor how something should look; they want their writing to look nice. These 
+        			people often have a sensitivity for dressing well, interior design, art appreciation, etc.</p></div>
+        		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright 
+       	 		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer 
+       	 		is reserved.he or she looks at a situation from a detached perspective, then decides what 
+        			degree of emotional involvement will be appropriate.</p></div>
+		</div> <!-- end row 1 -->
+      		<div>
+			<div class="g-101-item" id="g-101-aw"><div>Angular writing</div><p>Angular writing shows someone who is rational above all 
+        			else; emotionally detached, analytical, and objective. It's usually the writing of engineers, 
+       			scientists, and people who are tough-minded and think about issues without troubling over 
+        			emotions. These writers strip down their handwriting and don't care about the form of the
+        			letters that much. They abbreviate the letters. They tend to be black-or-white thinkers 
+        			- an "all or nothing" approach.</p></div>	
+			<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even 
+       			more strongly reserved than one whose writing shows an upright slant. This person is usually 
+        			introverted, reserved and highly private.</p></div>
+			<div class="g-101-item" id="g-101-tlw"><div>Tiny little writing</div><p>Very small writing expresses introversion. It is the 
+       			writing of somebody with strong concentration skills, increased intelligence (concentration 
+        			always improves intelligence) and humility. If the writing is extremely narrow or tight-looking,
+        			it might indicate some type of repression or inhibition. Some librarians write like this.</p></div>		
+		</div> <!-- end row 2 -->
+       	<div>
+			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid 
+        			and perfectionist, that looks like it came right out of the typewriter. These people are 
+       			 demonstrating through their handwriting a repressive nature, which has them potentially 
+        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others'. 
+        			These are the perfectionists. They love to do things right, and tend to be very control-oriented
+        			and have difficulty being spontaneous. They tend to suffer from muscular tension.</p></div>		
+		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
+        			spaces of less than one character width, may reveal an individual who is needy. This is the 
+        			writing of a person who craves extra close contact with others.</p></div>
+		<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline.the line of the text as it moves 
+        			across the page.is firm and straight, the person writing tends to have a strong work ethic. 
+        			A wavy baseline indicates moodiness, potential difficulties with discipline, and possible 
+        			medical issues.</p></div>		
+		</div> <!-- end row 3 -->
+       	<div>
+			<div class="g-101-item" id="g-101-ls"><div>Large spaces</div><p>Normally there should be only one character width
+        			between one word and the next; more than this implies somebody who has difficulty bridging the
+       			gap between themselves and others, socially and emotionally. This person is emotionally 
+        			detached from their own feelings and those of others.</p></div>
+  			<div class="g-101-item" id="g-101-s"><div>Speed</div><p>How fast is the handwriting written? Carefully formed 
+        			letters, and strong attention to diacritics and other details indicate a writer who prefers 
+        			to be slow and thorough. Messy writing which races across the page indicates the individual 
+        			who works at a fast tempo. Less interested in detail, they prefer to be busy, dynamic, 
+        			multitasking.they like lots going on.</p></div>
+			<div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line 
+        			intermingles with the upper zone of the line below.the bottom loop of a cursive .f. would hit 
+        			the top of a cursive .h. in the line below it. This is called crashing, and is indicative of 
+        			an individual who daydreams, often watching an internal TV.</p></div>
+		</div> <!-- end row 4 -->
+    		</div> <!-- end mandatory div -->
+	</div> <!-- end slider -->
 	<div class="next">></div>
+</div></div> <!-- end graphology 101 -->
 
-</div> <!-- end span12 graph-101 -->
+<hr />
 
-</div> <!-- end row-fluid div -->
-
-</div> <!-- end span12 -->
-
-<hr style="margin-top: 20px; margin-bottom: 15px;" /><div id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
+<div class="center" id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
 
 </div> <!-- end div.row-fluid -->
 
