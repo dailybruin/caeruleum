@@ -473,7 +473,6 @@ $(function(){
 #prime-graphology #feature-story .story-page img {
 	float: left; 
 	width: 300px; 
-	height: 300px; 
 	margin: 0px 20px 20px 20px;
 } 
 #prime-graphology .pagination.center {
@@ -488,7 +487,6 @@ $(function(){
 	margin: 0px 20px 0px 20px; 
 	float: right; 
 	width: 500px; 
-	height: 300px;
 }
 #prime-graphology #annette-title {
 	width: 400px;
@@ -631,13 +629,19 @@ $(function(){
 	-moz-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 	position: relative;
-	top: 52px;
-	left: 68px;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
 	color: #999;
 	font-size: 0.7rem;
+	top: 70px;
+	left: 250px;
+}
+@media (min-width: 1200px) {
+	#prime-graphology .paid-ad-warning {
+		top: 52px;
+		left: 68px;
+	}
 }
 </style>
 <div id="prime-graphology">
@@ -658,7 +662,7 @@ $(function(){
 
 	</div>
 	<div class="span5">
-		<div class="paid-ad-warning">Paid Advertisement</div>
+		<div class="paid-ad-warning visible-desktop">Paid Advertisement</div>
 		<?php get_template_part('ad','side'); ?>
 		<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #FAFAFA; padding: 20px; margin: 15px; border-radius: 5px; border: 1px solid #ccc;" id="feature-story-side">
 		<img src="/images/features/prime-graphology/prime.png" width="200px;" style="float: left;  margin-right: 10px;"/>This is a feature story from Prime magazine. Pick up a copy of Prime's Spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">Prime online</a> for more.(?)</div>
