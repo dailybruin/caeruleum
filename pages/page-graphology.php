@@ -625,7 +625,7 @@ $(document).ready(function() {
 }
 #prime-graphology .next {
 	float: right;
-	margin: -180px 25px 5px 0px;
+	margin: -190px 25px 5px 0px;
 
 }
 #prime-graphology .g-101-item div {
