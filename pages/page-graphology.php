@@ -4,6 +4,8 @@ Template Name: Graphology
 <?php get_header(); ?>
 <script type="text/javascript">
 $(document).ready(function() {
+  /* turn off responsive layout */
+  unresponsivize();
 
   /* feature story */
   $(".story-page").hide();
