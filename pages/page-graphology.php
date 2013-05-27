@@ -867,7 +867,7 @@ $(document).ready(function() {
 <div id="writing-samples-div">
 <div id="writing-sample-intro">
 	<a class="border color-bg" href="http://dailybruin.com/images/features/prime-graphology/handwriting-analysis.pdf"><i class="icon-file"></i> Print PDF with complete analysis</a>
-     	<h4>Annette Poizner is a Toronto-based graphologist with 20 years of experience, first sparked by her studies with a therapist who studied handwriting in Israel. Poizner now uses graphology in conjunction with therapy to help her clients. The Daily Bruin asked Poizner to analyze handwriting samples for Alessandra Daskalakis, the author of this article, and three famous UCLA alumni: John Wooden, Jim Morrison and Carol Burnett.  Select a sample to see what each person's handwriting reveals about them.</h4>
+     	<h4>Annette Poizner is a Toronto-based graphologist with 20 years of experience, first sparked by her studies with a therapist who studied handwriting in Israel. Poizner now uses graphology in conjunction with therapy to help her clients. The Daily Bruin asked Poizner to analyze handwriting samples for Alessandra Daskalakis, the author of this article, and three famous UCLA alumni: John Wooden, Jim Morrison and Carol Burnett.</h4><h4>  Select a sample to see what each person's handwriting reveals about them.</h4>
 </div>
 
 <div>
