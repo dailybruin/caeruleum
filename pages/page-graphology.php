@@ -725,7 +725,7 @@ $(document).ready(function() {
 		<div class="paid-ad-warning visible-desktop">Paid Advertisement</div>
 		<?php get_template_part('ad','side'); ?>
 		<div class="border color-bg" id="feature-side">
-		<img id="feature-prime" src="/images/features/prime-graphology/prime.png" />This is a feature story from prime magazine. Pick up a copy of prime's spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">prime online</a> for more.
+		<img id="feature-prime" src="/images/features/prime-graphology/prime.png" />This is a feature story from prime magazine. Pick up a copy of prime's spring 2013 issue or visit <a href="http://dailybruin.com/category/prime">prime online</a> for more.
 		</div>
 	</div>
 	</div>
