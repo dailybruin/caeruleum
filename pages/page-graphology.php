@@ -4,49 +4,6 @@ Template Name: Graphology
 <?php get_header(); ?>
 <script type="text/javascript">
 $(document).ready(function() {
-  /* graphology 101 */
-  $(".slider").diyslider({
-    width: "982px", // width of the slider
-    height: "230px", // height of the slider
-    display: 1, // num of slides displaying
-    loop:false// disable looping on slides
-  }); 
-
-  var currSlide = 1;
-
-  $(".prev").click( function(){
-    $(".next").css('opacity', 1 );
-    if( currSlide == 2 ) {
-        $(this).css('opacity', 0.5 );
-        currSlide--;
-    }
-    else if( currSlide > 1 ){
-         currSlide--;
-    } 
-    $(".slider").diyslider("move", "back");
-  });
-
-  $(".prev").hover( function() {
-    if( currSlide > 1 ) $(this).css('font-weight', 'bold' );     
-    }, function() { $(this).css('font-weight', 'normal' );  
-  });
-
-  $(".next").hover( function() {
-    if( currSlide < 4 ) $(this).css('font-weight', 'bold' ); 
-    }, function() { $(this).css('font-weight', 'normal' );  
-  });
-
-  $(".next").click( function() {
-    $(".prev").css('opacity', 1 );
-    if( currSlide == 3 ) {
-        $(this).css('opacity', 0.5 );
-        currSlide++;
-    }
-    else if( currSlide < 4 ) {
-        currSlide++;
-    }
-    $(".slider").diyslider("move", "forth");
-  });
 
   /* feature story */
   $(".story-page").hide();
@@ -97,6 +54,16 @@ $(document).ready(function() {
   });
 
   /* writing samples */
+  $(".sample-previews").hover( function() {
+	var id = $(this).data("id");
+	if(id!==undefined) 
+         $("#arrow-container ." + id).css('opacity', 1);
+    }, function() {
+	var id = $(this).data("id");
+	if(id!==undefined) 
+ 	$("#arrow-container ." + id).css('opacity', 0.85);
+   });
+
   $(".writing-samples").hide();
   $(".sample-previews").click(function(event){
    	event.preventDefault();
@@ -118,17 +85,6 @@ $(document).ready(function() {
     	}
   });
 
-
-  $(".sample-previews").hover( function() {
-	var id = $(this).data("id");
-	if(id!==undefined) 
-         $("#arrow-container ." + id).css('opacity', 1);
-    }, function() {
-	var id = $(this).data("id");
-	if(id!==undefined) 
- 	$("#arrow-container ." + id).css('opacity', 0.85);
-   });
-
   /* pop-overs */
   $(".hl-region").hover(
   	function(){
@@ -147,12 +103,58 @@ $(document).ready(function() {
 	$('.hl-region').css('opacity','0');
 	$('.hl-region').popover('destroy');
     });
+
+  /* graphology 101 */
+  $(".slider").diyslider({
+    width: "775px", // width of the slider
+    height: "270px", // height of the slider
+    display: 1, // num of slides displaying
+    loop:false// disable looping on slides
+  }); 
+
+  var currSlide = 1;
+
+  $(".prev").click( function(){
+    $(".next").css('opacity', 1 );
+    if( currSlide == 2 ) {
+        $(this).css('opacity', 0.3 );
+	 $(this).css('font-weight', 'normal' );
+        currSlide--;
+    }
+    else if( currSlide > 1 ){
+         currSlide--;
+    } 
+    $(".slider").diyslider("move", "back");
+  });
+
+  $(".prev").hover( function() {
+    if( currSlide > 1 ) $(this).css('font-weight', 'bold' );     
+    }, function() { $(this).css('font-weight', 'normal' );  
+  });
+
+  $(".next").hover( function() {
+    if( currSlide < 4 ) $(this).css('font-weight', 'bold' ); 
+    }, function() { $(this).css('font-weight', 'normal' );  
+  });
+
+  $(".next").click( function() {
+    $(".prev").css('opacity', 1 );
+    if( currSlide == 3 ) {
+        $(this).css('opacity', 0.3 );
+	 $(this).css('font-weight', 'normal' );
+        currSlide++;
+    }
+    else if( currSlide < 4 ) {
+        currSlide++;
+    }
+    $(".slider").diyslider("move", "forth");
+  });
 });
 </script>
 
 <style type="text/css">
 /* basic styling */
-#prime-graphology #container {
+#prime-graphology {
 	box-shadow: 0 0 15px #ccc; /* all latest browser */
 	-moz-box-shadow: 0 0 15px #ccc; /* Firefox older version*/
 	-webkit-box-shadow: 0 0 10px #ccc;
@@ -167,20 +169,8 @@ $(document).ready(function() {
 #prime-graphology .normal {
 	font-weight: normal;
 }
-#prime-graphology .medium {
-	font-size: medium;
-}
-#prime-graphology .font {
-	font-family: Georgia, serif;
-}
-#prime-graphology .bold {
-       font-weight: bold;
-}
 #prime-graphology hr {
 	border: 1px dashed #ccc;
-}
-#prime-graphology .padded-div {
-	padding: 20px 20px 0px 20px;
 }
 #prime-graphology div.center {
 	text-align: center; 
@@ -188,7 +178,157 @@ $(document).ready(function() {
 #prime-graphology .color-bg {
 	background-color: #F7F7F7;
 }
-/* highlighting and popovers */
+
+/* feature story */
+#prime-graphology #feature-story {
+	padding: 20px 20px 0px 20px;
+}
+#prime-graphology #feature-title {
+	width: 500px;
+	margin-top: 10px;
+}
+#prime-graphology #feature-prime {
+	width: 130px;
+	float: left; 
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+#prime-graphology #feature-side {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 20px;
+	margin: 15px 0px;
+	border-radius: 5px;
+}
+#prime-graphology figcaption {
+	margin-left: 100px;
+}
+#prime-graphology #feature-story .story-page img {
+	float: left; 
+	width: 300px; 
+	margin: 0px 20px 20px 20px;
+} 
+
+/* writing samples preview */
+#prime-graphology #writing-sample-intro a {
+	float:right;
+	padding: 5px;
+	border-radius: 5px;
+}
+#prime-graphology #writing-sample-intro h4 {
+	font-weight: normal;
+	font-size: medium;
+	margin-left: 10px;
+}
+#prime-graphology .preview-div {
+	height: 180px;
+    	width: 190px;
+	display: block;
+       float:left;
+    	margin: 3px 3px 0px 3px;
+    	background-position: center;
+    	opacity: 0.85;
+}
+#prime-graphology .preview-div:hover {
+       opacity: 1;
+
+}
+#prime-graphology #jw-preview {
+       background-image: url('/images/features/prime-graphology/jw-writing-sample.jpg');
+	background-position: -150px -120px;
+	background-size: 400px 400px;
+	border: 13px #FABEBF solid;
+}
+#prime-graphology #jm-preview {
+       background-image: url('/images/features/prime-graphology/jm-writing-sample.jpg');
+	    	border: 13px #f1cd96 solid;
+}
+#prime-graphology #ad-preview {
+	background-image: url('/images/features/prime-graphology/ad-writing-sample.jpg');
+	border: 13px #bec9fa solid;
+}
+#prime-graphology #cb-preview {
+      background-image: url('/images/features/prime-graphology/cb-writing-sample.jpg');
+      background-size: 500px 300px;
+      background-position: -30px 5px;
+	border: 13px #b7f0cb solid;
+}
+#prime-graphology #writing-samples-div {
+      padding: 10px 0px 20px 0px;
+	margin: 0 auto;
+	max-width: 900px;
+}
+#prime-graphology .sample-previews {
+      font-size: 22px;
+      display: inline-block;    
+}
+#prime-graphology #arrow-container {
+	margin-top: -5px;
+
+}
+#prime-graphology #arrow-container div {
+	position: relative;
+	opacity: 0.85;
+	width:0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+#prime-graphology #jw-preview-arrow {
+	border-top: 20px solid #FABEBF;
+       margin-left: 10%;
+}
+#prime-graphology #jm-preview-arrow {
+	border-top: 20px solid #f1cd96;
+       margin-left: 35%;
+}
+#prime-graphology #ad-preview-arrow {
+	border-top: 20px solid #bec9fa;
+       margin-left: 60%;
+}
+#prime-graphology #cb-preview-arrow {
+	border-top: 20px solid #b7f0cb;
+       margin-left: 85%;
+}
+
+/* writing samples */
+#prime-graphology .ws-container {
+	margin-top: 15px;
+}
+#prime-graphology .left-div {
+	float: left;
+}
+#prime-graphology .right-div {
+   	float:right;
+	position: relative;
+}
+#prime-graphology #left-div-jw {
+	width: 445px;
+}
+#prime-graphology #left-div-ad {
+	width: 350px;
+	height: 570px;
+}
+#prime-graphology #jw-title {
+	width: 400px; 
+	margin-right:-30px;
+	margin-top: -20px;
+	margin-left: -20px;
+}
+#prime-graphology #jm-title {
+	width: 340px;
+	margin-top: -20px;
+}
+#prime-graphology #ad-title {
+	width: 300px; 
+	margin-top:-20px;
+	margin-bottom: -10px;
+}
+#prime-graphology #cb-title {
+	width: 300px;
+	margin-top:-20px;
+}
+
+/* highlight regions */
 #prime-graphology .hl-region {
        position:absolute;
 	opacity: 0;
@@ -207,7 +347,7 @@ $(document).ready(function() {
 	opacity: 0.5;   
 }
 #prime-graphology #jw-container {
-       height:440px;
+       height:470px;
        width:435px;
 }
 #prime-graphology #jw-container .bg-image {      
@@ -241,88 +381,88 @@ $(document).ready(function() {
        background-position: -180px -27px;
 }
 #prime-graphology #jm-container {
-       height:440px;
-       width: 700px;
+       height:380px;
+       width: 610px;
 	margin: 0px 15px 15px 15px;
 }
 #prime-graphology #jm-container .bg-image {
        background-image:url('/images/features/prime-graphology/jm-writing-sample-small.jpg');
-       background-size: 700px 420px;
-       height: 420px;
-       width: 700px;
+       background-size: 610px 360px;
+       height: 360px;
+       width: 610px;
 }
 #prime-graphology #jm-container div.hl-region {
-       height:45px;
-       width:45px;
+       height:39px;
+       width:39px;
        border-radius: 45px;
 }
 #prime-graphology #jm-container div.hl-region-name {
-       height:67px;
-       width:200px;
+       height:60px;
+       width:165px;
        border-radius: 67px;
 }
 #prime-graphology #jm-s {
-	top:75px;
-	left:554px;
-	background-position: -554px -75px;
+	top:67px;
+	left:480px;
+	background-position: -480px -67px;
 }
 #prime-graphology #jm-sig {
 	top:5px;
-	left:220px;
-	background-position: -220px -5px;
+	left:196px;
+	background-position: -196px -5px;
 }
 #prime-graphology #jm-t-slash {
-	top:190px;
-	left:435px;
-	background-position: -435px -190px;
+	top:157px;
+	left:382px;
+	background-position: -382px -157px;
 }
 #prime-graphology #jm-t {
-	top:345px;
-	left:145px;
-	background-position: -145px -345px;
+	top:295px;
+	left:126px;
+	background-position: -126px -295px;
 }
 #prime-graphology #jm-ibe{
-	top:151px;
-	left:188px;
-	background-position: -188px -151px;
+	top:130px;
+	left:166px;
+	background-position: -166px -130px;
 }
 #prime-graphology #ad-container {
-       height:610px;
-       width:610px;
+       height:530px;
+       width:520px;
 }
 #prime-graphology #ad-container .bg-image {
        background-image: url('/images/features/prime-graphology/ad-writing-sample.jpg');
-       background-size: 610px 610px;
-	height:610px;
-       width:610px;
+       background-size: 520px 530px;
+	height:530px;
+       width:520px;
 }
 #prime-graphology #ad-container div.hl-region {
-	height:25px;
-	width:100px;
+	height:20px;
+	width:85px;
 	border-radius: 25px;
 }
 #prime-graphology #ad-container div.hl-region-short {
-	width:50px;
+	width:39px;
 }
 #prime-graphology #ad-adventure {
-	top:170px;
-      	left:240px;
-       background-position: -240px -170px;
+	top:148px;
+      	left:205px;
+       background-position: -205px -148px;
 }
 #prime-graphology #ad-your {
-	top:509px;
-	left:317px;
-	background-position: -317px -509px;
+	top:443px;
+	left:272px;
+	background-position: -272px -443px;
 }
 #prime-graphology #ad-space {
-	top:150px;
-	left:105px;
-	background-position: -105px -150px;
+	top:130px;
+	left:92px;
+	background-position: -92px -130px;
 }
 #prime-graphology #ad-neck {
-	top:268px;
-	left:131px;
-	background-position: -131px -268px;
+	top:235px;
+	left:115px;
+	background-position: -115px -235px;
 }
 #prime-graphology #cb-container {
        height: 280px;
@@ -371,155 +511,6 @@ $(document).ready(function() {
 	top:158px;
 	left:315px;
 	background-position: -315px -158px;
-}
-/* writing samples preview */
-#prime-graphology #writing-sample-intro a {
-	float:right;
-	padding: 5px;
-	border-radius: 5px;
-}
-#prime-graphology .preview-div {
-	height: 225px;
-    	width: 240px;
-	display: block;
-       float:left;
-    	margin: 3px 3px 0px 3px;
-    	background-position: center;
-    	opacity: 0.85;
-}
-#prime-graphology .preview-div:hover {
-       opacity: 1;
-
-}
-#prime-graphology #jw-preview {
-       background-image: url('/images/features/prime-graphology/jw-writing-sample.jpg');
-	border: 15px #FABEBF solid;
-}
-#prime-graphology #jm-preview {
-       background-image: url('/images/features/prime-graphology/jm-writing-sample.jpg');
-	    	border: 15px #f1cd96 solid;
-}
-#prime-graphology #ad-preview {
-	background-image: url('/images/features/prime-graphology/ad-writing-sample.jpg');
-	border: 15px #bec9fa solid;
-}
-#prime-graphology #cb-preview {
-       background-image: url('/images/features/prime-graphology/cb-writing-sample.jpg');
-       background-size: 400px 400px;
-       background-position: 200px 10px;
-	border: 15px #b7f0cb solid;
-}
-#prime-graphology #writing-samples-div{
-       padding: 20px;
-}
-#prime-graphology .sample-previews {
-      font-size: 22px;
-      display: inline-block;    
-}
-#prime-graphology #arrow-container {
-	margin-top: -5px;
-}
-#prime-graphology #arrow-container div {
-	opacity: 0.85;
-	width:0px;
-	height: 0px;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-}
-#prime-graphology #jw-preview-arrow {
-	border-top: 20px solid #FABEBF;
-       margin-left: 130px;
-}
-#prime-graphology #jm-preview-arrow {
-	border-top: 20px solid #f1cd96;
-       margin-left: 405px;
-}
-#prime-graphology #ad-preview-arrow {
-	border-top: 20px solid #bec9fa;
-       margin-left: 685px;
-}
-#prime-graphology #cb-preview-arrow {
-	border-top: 20px solid #b7f0cb;
-       margin-left: 965px;
-}
-
-/* writing samples */
-#prime-graphology .ws-container {
-	margin: 15px 0px;
-}
-#prime-graphology .left-div {
-	float: left;
-}
-#prime-graphology .right-div {
-   	float:right;
-	position: relative;
-}
-#prime-graphology #left-div-jw {
-	width: 650px;
-}
-#prime-graphology #left-div-ad {
-	width: 480px;
-	height: 660px;
-}
-#prime-graphology #jw-title {
-	width: 400px; 
-	margin-right:-30px;
-	margin-top: -20px;
-	margin-left: -20px;
-}
-#prime-graphology #jm-title {
-	width: 340px;
-	margin-top: -20px;
-}
-#prime-graphology #ad-title {
-	width: 300px; 
-	margin-top:-20px;
-	margin-bottom: -10px;
-}
-#prime-graphology #cb-title {
-	width: 300px;
-	margin-top:-20px;
-}
-
-/* feature story */
-#prime-graphology #header-div {
-	text-align: center;
-}
-#prime-graphology #feature-title {
-	width: 430px;
-}
-#prime-graphology #feature-by {
-	width: 80px;
-}
-#prime-graphology #feature-author {
-	width: 420px;
-}
-#prime-graphology #feature-prime {
-	width: 200px;
-	float: left; 
-	margin-right: 10px;"
-}
-#prime-graphology figcaption {
-	margin-left: 100px;
-}
-#prime-graphology #feature-story .story-page img {
-	float: left; 
-	width: 300px; 
-	margin: 0px 20px 20px 20px;
-} 
-
-/* annette */
-#prime-graphology #annette {
- 	padding: 20px;
-}
-#prime-graphology #annette-img {
-	margin: 10px 20px 10px 20px; 
-	float: right; 
-	width: 450px; 
-}
-#prime-graphology #annette-title {
-	width: 400px;
-	margin-top:-15px;
 }
 
 /* pop overs */
@@ -587,9 +578,31 @@ $(document).ready(function() {
 	border-bottom-color: #bec9fa;
 }
 
+/* annette */
+#prime-graphology #annette {
+ 	padding: 20px;
+}
+#prime-graphology #annette-img {
+	margin: 10px 20px 10px 20px; 
+	float: right; 
+	width: 450px; 
+}
+#prime-graphology #annette-title {
+	width: 400px;
+	margin-top:-15px;
+}
+#prime-graphology #annette span {
+	font-family: "Georgia",serif;
+}
+#prime-graphology #annette span span {
+	color: #748AF5;
+	font-size: 150%;
+}
+
 /* graphology 101 */	
 #prime-graphology #g-101 {
-   margin: 15px 0px;
+	max-width: 930px;
+	margin: 0 auto;
 }
 #prime-graphology .slider {
    margin: 20px 0px;
@@ -600,7 +613,7 @@ $(document).ready(function() {
     margin: 3px;
     padding: 5px 10px;
     float: left; 
-    height: 210px;  
+    height: 250px;  
 }
 #prime-graphology #g-101-title {
        color: #78E29D;
@@ -620,14 +633,12 @@ $(document).ready(function() {
 	color: #78E29D;
 }
 #prime-graphology .prev {
-	margin: 100px 15px 5px 30px;
-}
-#prime-graphology .prev {
-	opacity: 0.5;
+	opacity: 0.3;
+	margin: 130px 5px 0px 25px;
 }
 #prime-graphology .next {
 	float: right;
-	margin: -170px 25px 5px 0px;
+	margin: -180px 25px 5px 0px;
 
 }
 #prime-graphology .g-101-item div {
@@ -638,45 +649,48 @@ $(document).ready(function() {
 	margin:10px 10px 15px 10px;
 	padding: 0px;
 }
-#prime-graphology #g-101-us {
-	width: 275px;
-}
-#prime-graphology #g-101-lsl {
-	width: 190px;
-}
-#prime-graphology #g-101-ss {
-	width: 190px;
-}
-#prime-graphology #g-101-ls {
-	width: 260px;
+
+#prime-graphology #g-101-sb {
+	width: 180px;
 }
 #prime-graphology #g-101-rw {
-	width: 380px;
+	width: 285px;
 }
-#prime-graphology #g-101-tlw {
-	width: 300px;
+#prime-graphology #g-101-us {
+	width: 205px;
 }
 #prime-graphology #g-101-aw {
-	width: 400px;
+	width: 300px;
 }
-#prime-graphology #g-101-lt {
-	width: 460px;
+#prime-graphology #g-101-lsl {
+	width: 135px;
 }
-#prime-graphology #g-101-ps {
-	width: 230px;
-}
-#prime-graphology #g-101-c {
-	width: 280px;
-}
-#prime-graphology #g-101-sb {
+#prime-graphology #g-101-tlw {
 	width: 240px;
 }
-#prime-graphology #g-101-s {
-	width: 330px;
+#prime-graphology #g-101-lt {
+	width: 340px;
 }
+#prime-graphology #g-101-ss {
+	width: 155px;
+}
+#prime-graphology #g-101-ps {
+	width: 175px;
+}
+#prime-graphology #g-101-ls {
+	width: 210px;
+}
+#prime-graphology #g-101-s {
+	width: 260px;
+}
+#prime-graphology #g-101-c {
+	width: 200px;
+}
+
 #prime-graphology div#footer {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 10px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 2px;
+	font-size: small;
 }
 
 /* ad */
@@ -692,106 +706,91 @@ $(document).ready(function() {
 	color: #999;
 	font-size: 0.7rem;
 	top: 70px;
-	left: 250px;
+	left: 260px;
 }
-@media (min-width: 1200px) {
-	#prime-graphology .paid-ad-warning {
-		top: 52px;
-		left: 68px;
-	}
-}
+
 </style>
-<div id="prime-graphology">
 <div class="row-fluid">
-<div class="span12 border" id="container">
+<div class="span12 border center" id="prime-graphology">
 
 <!-- feature story -->
-<div class="padded-div" id="feature-story">
+<div id="feature-story">
 	<div class="row-fluid">
-	<div class="span7">
-		<div id="header-div">
-			<img id="feature-title" src="/images/features/prime-graphology/title.jpg"/>
-			<div style="margin-top: -30px; margin-bottom: 15px;">
-			<img id="feature-by" src="/images/features/prime-graphology/by.jpg" />
-			<img id="feature-author" src="/images/features/prime-graphology/author.jpg" />
-		</div>
-	</div>
-
+	<div class="span7 center">
+		<img id="feature-title" src="/images/features/prime-graphology/title.png" />
 	</div>
 	<div class="span5">
 		<div class="paid-ad-warning visible-desktop">Paid Advertisement</div>
 		<?php get_template_part('ad','side'); ?>
-		<div class="border color-bg" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  padding: 20px; margin: 15px; border-radius: 5px; " id="feature-story-side">
-		<img id="feature-prime" src="/images/features/prime-graphology/prime.png" />This is a feature story from prime magazine. Pick up a copy of prime's spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">prime online</a> for more.</div>
+		<div class="border color-bg" id="feature-side">
+		<img id="feature-prime" src="/images/features/prime-graphology/prime.png" />This is a feature story from prime magazine. Pick up a copy of prime's spring 2013 issue or visit <a href="http://www.dailybruin.com/category/prime">prime online</a> for more.
+		</div>
 	</div>
 	</div>
 	<a name="story"></a>
 	<div class="story-page" id="story-page-1">
-		<p>Someone once told me Abraham Lincoln massaged his hands before signing the Emancipation Proclamation so historians in the future could not claim his signature manifested hesitancy. Whether it's true or not, I never forgot that anecdote.</p>
-		<p>And when I walked through the National Archives on my eighth grade field trip and saw John Hancock's signature, still bold despite the passing of time, I didn't forget that either. The giant "John Hancock" along with the 55 other signatures of the Founding Fathers, were the closest I could get to meeting the men who bravely defied the British crown to establish our nation and who, up until that point, had only been as real as characters in a novel to me- well known, sure, but out of reach.</p>
-			<p>Then I curiously glanced at my sloppy signature, which changes every time I sign it, and it didn't seem to tell me much about myself. And though I'll never sign onto anything as important as the Declaration of Independence, I wonder what people will think about me when they see my signature on a document. Years from now, will a kid scrutinize the shape and of the "a" and "l" in Alessandra? Or will she draw some conclusion from the prominent "dask" and near absence of "alakis" in Daskalakis? </p> 
-		<p>Overanalyzing everything is a tendency of mine, and I can't help but think about these things. An example: not a med student in scrubs goes by without me internally cringing at my grade in electricity and magnetism. I can't help but apply this same over-analysis to my signature, so I decided to talk to a graphologist.</p>
-		<p>Graphology, for those who don't know, is the study of handwriting and what it says about a person. Some employers hire graphologists to analyze potential future employees and screen them for a position. Other graphologists testify in court for handwriting verification. </p> 
+		<p>Whether it's true or not, when someone told me Abraham Lincoln massaged his hands before signing the Emancipation Proclamation so historians in the future could not claim his signature manifested hesitancy, I never forgot it.</p>
+		<p>And when I walked through the National Archives and found John Hancock's signature boldly looking right back at me, I didn't forget that either. Those 56 signatures were the closest I could get to meeting the men who, up until that point, had only been as real as characters in a novel - well known, sure, but out of reach.</p>
+		<p>Then I look at my signature, which changes every time I sign it, and it doesn't seem to tell me much about myself. Since overanalyzing everything is a hobby of mine, I decided I might as well "take the test" and talk to a graphologist. I was curious to see if graphology is something that exists only if you want to believe it, like seeing a president's head in a potato chip, or if it has value as a means of understanding a person. Sort of like acupuncture, I didn't think it was fair to judge something with approach or results arguably difficult to quantify without trying it for myself.</p>
+		<p>Graphology, for those who don't know, is the study of handwriting and what it says about a person. Some employers hire graphologists to analyze potential future employees and screen if they might be right for the position, and other graphologists testify in court for handwriting verification. Other graphologists use their work in conjunction with therapy to help clients open up and learn about themselves and how they can move forward.</p>
+		<p>All of this is apparently quite popular in France, despite skepticism in the United States, showing an interesting cultural difference, said Jennifer Mnookin, Vice Dean and professor of law at the UCLA School of Law and an expert in courtroom evidence.</p>
+		<p>Mnookin, who has written extensively on handwriting analysis and verification in the courtroom, said handwriting verification has been used routinely in the United States since the middle to late nineteenth century. But she added that she had never come across a case where handwriting experts testified on behalf of character based on handwriting analysis.</p>
+		<p>She said that in her experience those analyzing the handwriting have identified themselves mostly as document examiners and not graphologists. Those who identify as document examiners, she said, pay close attention to the similarity in such details as letter formation, instead of assessing potential character traits based on the writing styles.</p>
+		<p>Mnookin added that in recent years handwriting verification has become controversial because of the uncertainty of valid empirical evidence.</p>
 		<figure><img src="/images/features/prime-graphology/story-img.jpg" />
 		<figcaption><i>illustration by Bijun Liang / Daily Bruin</i></figcaption>
 		</figure>
-		<p> "Every envelope I get gives me an impression," said Lena Rivkin, a graphologist based in Los Angeles. </p>
-		<p>Rivkin, who practices graphology professionally in addition to being an artist, said signatures are interesting because they are like a public persona or a cover of a book. </p>
-		<p> "(Graphology) is a very honest form of communication," Rivkin said. "Handwriting is body language on paper."</p>
-		<p>Recently I was introduced to a graphologist, Annette Poizner, a graphologist who uses her work in conjunction with therapy to help clients open up and learn about themselves and how they can move forward from conflicts or concerns in their lives. For instance, if somebody wants to quit his or her job and see what they should consider pursuing next, they might talk to Poizner.</p>
-		<p>She reached out to me for a story idea, and I told her I was interested in writing a first-hand account. </p>
-		<p>Her philosophy is one of projective psychology, which is the discipline that believes a person's innermost thoughts manifest themselves in everything they do, even his or her writing.</p>
-		<p>But is it true? I plunged myself into the deep of Poizner's process to find out.</p>	
+		<p>Professor Frank Schmidt of the University of Iowa, who studies employees and the hiring process, reviewed studies of the validity of graphology in the hiring process and said he has come to believe graphology is as accurate as astrology in judging character.</p>
+		<p>He said his reasoning comes from a series of studies that show that without personal contexts, even the most skilled graphologists would miss the mark.</p>
+		<p>According to the studies, in cases when the employees were asked to write about something they cared about, instead of copy a paragraph, the graphologists were more successful. Schmidt said traditional personality tests were more effective.</p>
+		<p>Which brings me to my experience with Annette Poizner, a graphologist based in Toronto who uses graphology in conjunction with therapy in order to help her clients.</p>
+		<p>Her philosophy is one of projective psychology. Projective psychology is the idea that a person's innermost thoughts manifest themselves in everything they do, even his or her writing.</p>
+		<p>Call me crazy, or call me a journalist, but I sort of like the sound of that. But is it true? So I took the test and went through Poizner's process.</p>
 	</div> <!-- end page one -->
 
 	<div class="story-page" id="story-page-2">
 		<i>Page 2 of 4</i><br /><br />
-		<p>To start she had me sign and print my name and date of birth. She then asked me to describe my 10 earliest memories and describe the most vivid moments and feelings of each one. </p>
-		<p>Thinking of them wasn't very hard, but I didn't like to imagine what tripping on the sprinkler-head in pre-school would say about my coordination in life, and what consistently losing to the sumo wrestler in Street Fighter II in a fit of rage the night my sister was born would say about my priorities as a child (to be fair, I didn't really understand that my parents went to the hospital so my mom could give birth to my sister). </p>
-		<p>Another part of the process was to write a quick bedtime story on white, unlined paper. Unsure of what to do, I borrowed from my favorite stories, threw in a little bit of autobiography and ended up with a story about a little girl in a periwinkle dress who hops over the fence and follows the creek by the elementary school until she ends up meeting some of her favorite fictional characters. </p>
-		<p>That seemed like a lot, and a part of me couldn't help but feel like I was giving her all the answers, but I was willing to go along with the ride. When the time came for the interview, she wove together her interpretation of my personality. </p>
-		<p>Poizner said she firmly believes that graphology cannot stand alone. For her, it is a complement to psychology because, in her interpretation, the two are so closely linked. Together the two studies form a complete understanding of a person. </p>
-		<p>After talking to me about my life, Poizner took a look at my handwriting and started to tell me what she saw. </p>
-		<p>We first took a look the way I formed my words and letters. She described what I consider my sloppy scrawl as organized and "print-script": slanted and deliberately formed. My words are evenly spaced, and if one was to imagine the paper was lined, my writing is fairly straight. All together this told Poizner that I feel and approach my writing as a personal strength. </p>
-		<p>My writing is also categorized as a standard "gifted child" type. I did not want to be wooed by flattery. But then, without talking about my memories she told me I was torn between two things. That's where I started to listen a little closer. As the comparative literature and biology pre-med who can't seem to let go of the newspaper, it was the first time I really agreed during the process.  </p>
-		<p>She elaborated that the way I connected my words was somewhat unconventional, but showed my desire and affinity to communicate with people in order to work around obstacles. That too, seemed pretty accurate. </p>
-		<p>Later we discussed my memories and the way in which my writing did not fully extend across the white page. She assessed that this, in conjunction with my memories, might mean I am at times unsure of myself and eager to "return home," or to the left side of the page. </p>
-		<p>Poizner, who uses her background in traditional Chinese medicine and Jewish influences in her work, said she thought I had too much yin and should embrace more yang through expression of anger. She added that I should embrace my "go-getter" attitude and believe more in my ability to accomplish my goals and be less maternal. </p>
-		<p>Here I disagreed. I have always felt I get too angry, too easily. But then again, those who know me also know how much I hate yelling. So was she on to something? I mentioned some of this and we talked about how perhaps I feared becoming angry and should allow myself to release my frustration more often in more productive ways. She suggested kickboxing, which I will no doubt have too little time to pursue. But still, interesting. </p>
-		<p>As far as her statement about me being too maternal, that also has multiple interpretations. I find myself at a point in my life where I have many things I want to accomplish, and I consider myself a proactive, independent person. However, if my family called me right now and told me they needed me to come home, I know that I would. </p>
+		<p>Poizner said she firmly believes the graphology cannot stand alone. For her, it is a complement to psychology because the two are so closely linked. Together the two form a complete understanding of a person.</p>	
+		<p>To start she had me sign and print my name and date of birth. She then asked me to describe my ten earliest memories and describe the most vivid moments and feelings of each one. Another part of the process was to write a quick bedtime story on white, unlined paper. </p>
+		<p>That seemed like a lot, and a part of me couldn't help but feel like I was giving her all the answers, but I was willing to go along with the ride. When the time came for the interview, she wove together her interpretation of my personality.</p>
+		<p>The results were interesting.</p>
+		<p>We first took a look the way I formed my words and letters. She described my sloppy scrawl as organized and "print-script:" slanted and deliberately formed. My words are evenly spaced, and if one was to imagine the paper was lined, my writing is fairly straight. All together this told Poizner that I feel and approach my writing as a personal strength. This is also categorized as a standard "gifted child" type. But I did not want to be wooed by flattery. But then, without talking about my memories she told me I was torn between two things. That's where I started to listen a little closer. As the comparative literature and biology pre-med who can't seem to let go of the newspaper, it was the first time I really agreed during the process.</p>
+		<p>She elaborated that the way I connected my words was somewhat unconventional, but showed my desire and affinity to communicate with people in order to work around obstacles. That too, seemed pretty right</p>
+		<p>Later we discussed my memories and the way in which my writing did not fully extend across the white page. She assessed that this, in conjunction with my memories, might mean I am at times unsure of myself and eager to "return home," or to the left side of the page.</p>
+		<p>Poizner, who uses her background in traditional Chinese medicine and Jewish influences, said she thought I had too much yin and should embrace more yang through expression of anger.</p>
+		<p>Here I disagreed. I have always felt I get too angry, too easily. Those who know me also know how much I hate yelling. I mentioned some of this and we talked about how perhaps I feared becoming angry and should allow myself to release my frustration more often in more productive ways. She suggested kickboxing, which I will no doubt have too little time to pursue. But still, interesting.</p>
 	</div> <!-- end page two -->
 
 	<div class="story-page" id="story-page-3">
 	<i>Page 3 of 4</i><br /><br />
-		<p>All in all my experience with graphology was interesting and enjoyable. I learned more about myself, and I appreciated how we used my handwriting as a jumping point to start a dialogue. I think some things were a little bit of a stretch, but certain points were surprisingly accurate. Ultimately, I walked away with respect for Poizner and her ability to take handwriting and confidently work with someone she doesn't even know to help them better understand themselves. I can see, though, how some people might be skeptical. After all, Poizner and I had a discussion about my handwriting, and isn't the handwriting supposed to speak for itself? To Poizner, this is a misconception. </p>
-		<p>Jennifer Mnookin is skeptical about the effectiveness of graphology. Mnookin is vice dean and professor of law at the UCLA School of Law, and has written extensively on handwriting analysis and verification in the courtroom. </p>
-		<p>Nonetheless, graphology is apparently quite popular in France, despite skepticism in the United States, showing an interesting cultural difference, Mnookin added. </p>
-		<p>Mnookin said handwriting verification has been used routinely in the United States since the middle to late nineteenth century. But she added that she had never come across a case where handwriting experts testified on behalf of character based on handwriting analysis. </p>
-		<p>In her experience, those graphologists and document examiners identify themselves differently. Document examiners, she said, pay close attention to the similarity in such details as letter formation, instead of assessing potential character traits based on writing styles. </p>
-		<p>Some graphologists use their skills in court to recognize differences in handwriting as well. </p>
-		<p>Mnookin added that in recent years handwriting verification has become controversial in courtrooms because of the uncertainty of valid empirical evidence. </p>
-		<p>After talking to graphologists like Poizner and Rivkin, I understand that graphologists, too, understand the limitations of their trade. </p>
-		<p> "I know what I can see and what I cannot see," Rivkin said. "People have layers; (they) are more complicated." </p>
-		<p>Like learning a language, graphology is not easy, she said. </p>
-		<p> "Let's say I was wrong about something. It's usually my fault," she said. "I just didn't put the puzzle together correctly." </p>
-		<p>For this reason she said she exerts caution, mindful that she is dealing with real people and their feelings. She said she always tries to learn as much as she can about a person. </p>
-		</div> <!-- end page three -->
+		<p>All in all the experience was interesting and enjoyable. I learned more about myself, and I appreciated how we used my handwriting as a jumping point. I think some things were a little bit of a stretch, but certain points were surprisingly accurate. I walked away with respect for Poizner and her ability to take handwriting and confidently work with someone she doesn't even know to help them better understand themselves.</p>
+		<p>If I had a friend who was struggling with something and had a bad experience with therapists, I would say why not give graphology a try. It's different, and if approached correctly it seems as though it could be helpful in identifying traits or starting discussions instead of aggressively fighting problems with questioning.</p>
+		<p>So I walked away with a better understanding of graphology, although a not a certain one. But I think that's what I like about it. Although I probably would not testify in court on the basis of a signature, a part of me likes the idea. And maybe that's because, like Poizner said, intuition and compassion are what I value most in myself. </p>
+		<p>So graphology, although it has what I believe to be limitations, interests me. My next step would be to talk to more graphologists and get a clearer picture. The few interviews I had were not extensive enough to draw concrete conclusions. </p>
+		<p>Another thing I can take away from this is that I am fond of the type of people graphology seems to attract. I think it takes a certain type of person to dedicate their profession to interpreting the lives of others through their handwriting. It is not something you can fall into, it is something you must pursue. </p>
+		<p>They universally seem to have a desire to connect with people and test themselves, and each has an interesting story of their own.</p>	
+		<p>Lena Revkin, a Los Angeles graphologist, for example, became interested in graphology when she was just 14 years old. Her parents took her to Olvera Street in downtown where she met a graphologist who seemed to know Revkin quite well after taking a glance at her handwriting. After that experience, Revkin went to that place where all great things begin, the library. She wanted to learn more.</p>
+		<p>Revkin said she always knew she would be an artist. In particular she had always been drawn to signatures as a form of art. Today graphology is her professional career, although she is also a sculptor and a painter, teaching classes when she is not working in her studio. Her life, like her approach to graphology, is interdisciplinary.</p>
+		<p>She said she could spend all day looking at the registry books.</p>
+		<p>"Signatures are interesting, too, because they are a public persona, like the cover of a book. I find it fun to look at signatures to see how they differ from the writing," she said. "Every envelope I get gives me an impression." </p>
+		
+	</div> <!-- end page three -->
 	
 	<div class="story-page" id="story-page-4">
 	<i>Page 4 of 4</i><br />
 	<br />
-		<p>So what's my verdict? If I had a friend who was struggling with something and had a bad experience with therapists, I would tell them to give graphology a try. It's different, and if approached correctly it seems as though it could be helpful in identifying traits or starting discussions instead of aggressively fighting problems with questioning. </p>
-		<p>I think graphology can be helpful. Poizner correctly identified my work ethic, my occasional hesitancy to trust and what I would want from a career from my handwriting. These are things we did not explicitly talk about in our session. Although I would feel uncomfortable making decisions, like employment, based on handwriting, I found myself surprised by Poizner's accuracy. </p>
-		<p>So graphology, to me, and to people like Poizner, is a supplement to other information. </p>
-		<p>As of yet we do not have time machines, so I'll never really get to know the historical figures I've read about or imagined I'd like to meet. But I'd like to think that we leave something more than ink behind when we commit to something or sign our name. </p>
-		<p>As a journalist, I guess part of me likes the idea that our writing might tell our own story as much as it tells the story we are trying to share. And if it might be that we leave a piece of ourselves behind in the slope of our letters, I'll buy it. </p>
-		<p> "Signatures are interesting, too, because they are a public persona, like the cover of a book. I find it fun to look at signatures to see how they differ from the writing," she said. "Every envelope I get gives me an impression." </p>
-		<p> Rivkin has a collection of signatures she finds particularly interesting in a book. </p>
-		<p> "(Graphology) is a very honest form of communication," Rivkin said. "Handwriting is body language on paper." </p>
-		<p> And she said she acknowledges that there are boundaries with graphology. "I know what I can see and what I cannot see," she said. "People have layers; (they) are more complicated." </p>
-		<p> Like learning a language, graphology is not easy, she said. </p>
-		<p> "Let's say I was wrong about something. It's usually my fault," she said. "I just didn't put the puzzle together correctly." </p>
-		<p> For this reason she said she exerts caution, mindful that she is dealing with real people and their feelings. She said she always tries to learn as much as she can about a person. </p>
+		<p>Revkin has a collection of signatures she finds particularly interesting in a book.</p>
+		<p>"(Graphology) is a very honest form of communication," Revkin said. "Handwriting is body language on paper."</p>
+		<p>And she said she acknowledges that there are boundaries with graphology. </p>
+		<p>"I know what I can see and what I cannot see," she said. "People have layers; (they) are more complicated."</p>
+		<p>Like learning a language, graphology is not easy, she said.</p>
+		<p>"Let's say I was wrong about something. It's usually my fault," she said. "I just didn't put the puzzle together correctly." </p>
+		<p>For this reason she said she exerts caution, mindful that she is dealing with real people and their feelings. She said she always tries to learn as much as she can about a person.</p>
+		<p>This sort of interaction with people, I think, is admirable. Although I understand how some may find it hard to quantify. </p>
+		<p> "(To become a good graphologist,) I would say to work as hard as you can and learn as much as you can and never stop," she said. </p>
+		<p>And I think that's something even the skeptics can respect. No field is perfect, and from my experience, no graphologist is trying to say that the process is. </p>
+		<p>Graphology in conjunction with therapy sounds like a good way for everyone involved, the graphologist and the client, to learn from each other and appreciate the way writing brings us together and closer to ourselves.</p>
+		<p>As of yet we do not have time machines, so I'll never really get to know the historical figures I've read about or imagined I'd like to meet. But I'd like to think that we leave something more than ink behind when we commit to something or sign our name. And if it might be that we leave a piece of ourselves in the slope of our letters, I'll buy it.</p>
 		<i>Email Daskalakis at <a href="mailto:adaskalakis@media.ucla.edu">adaskalakis@media.ucla.edu.</a></i>
 	</div> <!-- end page four -->
 
@@ -812,12 +811,11 @@ $(document).ready(function() {
 
 <div id="writing-samples-div">
 <div id="writing-sample-intro">
-	<a class="border color-bg" href="#"><i class="icon-file"></i> Print PDF with complete analysis</a>
-     <h4 class="medium normal">Select a handwriting sample to
+	<a class="border color-bg" href="http://dailybruin.com/images/features/prime-graphology/handwriting-analysis.pdf"><i class="icon-file"></i> Print PDF with complete analysis</a>
+     	<h4>Select a handwriting sample to
 		read graphologist Annette Poizner's analysis on what it reveals about Daskalakis and three famous UCLA alumni.</h4>
 </div>
 
-<div class="center">
 <div>
     <a class="sample-previews" data-id="writing-jw" href="#">
         <div id="jw-preview" class="preview-div"></div>
@@ -839,13 +837,11 @@ $(document).ready(function() {
 	<div id="ad-preview-arrow" class="writing-samples writing-ad"></div>
 	<div id="cb-preview-arrow" class="writing-samples writing-cb"></div>
 </div>
-</div>
-
 
 <!-- john wooden -->
 <div class="writing-samples writing-jw ws-container">
+	<h2><img id="jw-title" src="/images/features/prime-graphology/John_wooden.png"/> <span class="normal" >| traditional values</span></h2>
 	<div class="left-div" id="left-div-jw">
-		<h2><img id="jw-title" src="/images/features/prime-graphology/John_wooden.png"/> <span class="normal" >| traditional values</span></h2>
 		<p>This writer uses something called "copybook script." In elementary school, children are taught a classic copybook style script. Many kids will ultimately deviate from that copybook script and create an idiosyncratic type of handwriting. Some writers, though, are traditionalists. They stay true and loyal to the copybook script they learned in school, making very few adjustments. </p>
 		<p>This writing style reveals the individual who is conservative, disciplined, community-minded; somebody who heralds the importance of classic values. The copybook writer takes very seriously the societal message that has come to him about what is good and right. He re-creates the "good and right" handwriting he learned in elementary school. He will similarly align with wholesome values that come from earlier generations. He possesses the quality of loyalty to causes and people. His priority is to be responsible.</p>
 		<p>Copybook writers often become teachers and we see many teachers with this style of writing. It's as if this individual happily internalized the traditional teachings of their society and having done so successfully, wanted nothing other than to be a mouthpiece for the same traditional values.</p>
@@ -884,11 +880,11 @@ $(document).ready(function() {
 
 <!-- alessandra -->
 <div class="writing-samples writing-ad ws-container">
-	<div class ="left-div" id="left-div-ad"><h2><img src="/images/features/prime-graphology/alessandra.png" id="ad-title"><span class="normal">| author</span></h2>
+	<h2><img src="/images/features/prime-graphology/alessandra.png" id="ad-title"><span class="normal">| author</span></h2>
+	<div class ="left-div" id="left-div-ad">
 		<p>Regarding the first line of text of the story: this writer pens her script with a relatively straight baseline even though she is writing on a piece of paper with out lines. A straight baseline implies somebody with discipline and a good work ethic. Somebody with good follow-through.</p>
 		<p>We discussed that there are three zones to the handwriting, upper, middle and lower. All of these are represented in her writing so that overall she is a balanced person with skills in the zone of thinking, social relating and doing. Still, there is a nice developed middle zone which shows a primary interest in that which is human, an interest in connecting with others. The middle zone makes a person a people-oriented person. The kind of person who opens up the newspaper and reads the life section first.</p>
 		<p>Mostly this writer uses a slant that we call the upright slant. The right slant writer is more engaged emotionally with others whereas the upright slant writer is more objective, poised, "head over heart" type. Not gushy. Not huggy. A little more formal, a little more distant. (More formal, like the girl in the story who sets out with the cartouche necklace around her neck... So graceful!)</p>
-		<p>Simplification is a trait whereby the writer maintains legibility while connecting and forming letters in the minimum amount of strokes which is optimally efficient... And this writer constantly does this kind of thing. It's a sign of above average intelligence. The ability to keep that which is necessary and to extract that which is unnecessary and come up with something that is fluidly made but legible.</p>
 		<i>Daskalakis is a third-year comparative literature and biology student. Mouse over the image to see what Poizner has to say about her bedtime story.</i>
 
 	</div> <!-- end left div -->
@@ -905,7 +901,8 @@ $(document).ready(function() {
 </div> <!-- end alessandra div -->
 
 <!-- carol burnett -->
-<div class="writing-samples writing-cb ws-container">       
+<div class="writing-samples writing-cb ws-container">
+	<h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>       
 	<div id="cb-container" class="right-div">
        	<div class="main-bg-image bg-image border"></div>
                <div class="hl-region bg-image border" id="cb-dw" rel="popover" data-placement="left" data-content="The writing is also print script which means she sometimes connects letters and sometimes leaves them disconnected. Print script is a sign of somebody with literary ability. Somebody who loves to write and who is a good writer."></div>
@@ -915,7 +912,6 @@ $(document).ready(function() {
       	        <div class="hl-region bg-image border" id="cb-arcade" rel="popover" data-content="Arch type of structure associates with people who have a strong grace and dignity and even formality about them. There's a commitment to privacy and discretion."></div>
 		<button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
 	</div>
-       <h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>
 	<p>Great sensitivity is indicated by the light pressure of her written line (as compared to a darker imprint penned by somebody who really digs into the page with the pen) and also indicated by a written line that is fine and delicate looking.</p>
 	<p> We also find something called simplification; strokes connect letters to each other in a way that is efficient so that the writer takes shortcuts, deleting extraneous strokes, while also maintaining legibility e.g. The writer crosses the first letter of the word "think" and attaches the cross stroke to the following letter, h. Simplification indicates a writer who is both creative and possesses above-average intelligence as well as somebody who has good physical coordination.</p>
 	<p> Note how some letters are connected to each other while others are printed/disconnected. That "printscript" indicates the individual with writing skill. We also notice a sharpness in this writing. Look at the sharp angles in the letters m and n. Angularity indicates strong analytical thinking and the writer who can aggressively push projects through. Good organizational skills are indicated by the way she spaces the sample; clear spacing, well-organized, text is written on a straight line. And note that the handwriting is not particularly embellished. Rather humble or modest looking. A root quality of humility, at her core.</p>
@@ -928,7 +924,7 @@ $(document).ready(function() {
 
 <!-- begin annette div -->
 <div id="annette" class="span12">
-<div class="center" id="annette-header"><h1><img src="/images/features/prime-graphology/Annette_poizner.png" id="annette-title" /><span class="normal font">| <span style="color: #748AF5; font-size: 150%;">graphologist</span></span></h1>
+<div class="center" id="annette-header"><h1><img src="/images/features/prime-graphology/Annette_poizner.png" id="annette-title" /><span class="normal">| <span>graphologist</span></span></h1>
 </div>
 <img class="border" id="annette-img" src="/images/features/prime-graphology/annette.jpg" />
 
@@ -942,7 +938,7 @@ $(document).ready(function() {
 
 <hr />
 
-<div class=row-fluid"><div class="center span12" id="g-101">
+<div class=row-fluid"><div class="span12"><div class="center" id="g-101">
 	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
 	<span id="g-101-intro">What does your handwriting say about you?<br />Here are graphological interpretation principles that readers can use to think about their own handwriting: </span>
 	<br />
@@ -950,10 +946,10 @@ $(document).ready(function() {
 	<div class="slider center"><!-- slider -->
 		<div><!-- mandatory div used by the slider -->
 		<div>
-			<div class="g-101-item" id="g-101-ps"><div>Printscript</div><p>Printscript occurs when the writer sometimes prints
-        			and sometimes writes in cursive. This writing style indicates the writer who is both 
-        			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
-        			use print script.</p></div>
+			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline--the line of the text as it moves 
+        			across the page--is firm and straight, the person writing tends to have a strong work ethic. 
+        			A wavy baseline indicates moodiness, potential difficulties with discipline, and possible 
+        			medical issues.</p></div>	
 			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more 
         			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or 
         			beautifying the environment. These people tend to shape letters by being very true to the 
@@ -980,6 +976,10 @@ $(document).ready(function() {
         			it might indicate some type of repression or inhibition. Some librarians write like this.</p></div>		
 		</div> <!-- end row 2 -->
        	<div>
+			<div class="g-101-item" id="g-101-ps"><div>Printscript</div><p>Printscript occurs when the writer sometimes prints
+        			and sometimes writes in cursive. This writing style indicates the writer who is both 
+        			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
+        			use print script.</p></div>	
 			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid 
         			and perfectionist, that looks like it came right out of the typewriter. These people are 
        			 demonstrating through their handwriting a repressive nature, which has them potentially 
@@ -989,10 +989,7 @@ $(document).ready(function() {
 		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
         			spaces of less than one character width, may reveal an individual who is needy. This is the 
         			writing of a person who craves extra close contact with others.</p></div>
-		<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline.the line of the text as it moves 
-        			across the page.is firm and straight, the person writing tends to have a strong work ethic. 
-        			A wavy baseline indicates moodiness, potential difficulties with discipline, and possible 
-        			medical issues.</p></div>		
+		
 		</div> <!-- end row 3 -->
        	<div>
 			<div class="g-101-item" id="g-101-ls"><div>Large spaces</div><p>Normally there should be only one character width
@@ -1012,17 +1009,17 @@ $(document).ready(function() {
     		</div> <!-- end mandatory div -->
 	</div> <!-- end slider -->
 	<div class="next">></div>
-</div></div> <!-- end graphology 101 -->
+</div></div></div><!-- end graphology 101 -->
 
 <hr />
 
-<div class="center" id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
+<div class="row-fluid">
+	<div class="center span12" id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
+</div>
 
-</div> <!-- end div.row-fluid -->
+</div> <!-- end div#prime-graphology -->
 
 </div> <!-- end row-fluid -->
-
-</div><!-- end div#prime-graphology -->
 
 <?php get_footer(); ?>
 
