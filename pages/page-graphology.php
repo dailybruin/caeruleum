@@ -117,9 +117,9 @@ $(document).ready(function() {
   var currSlide = 1;
 
   $(".prev").click( function(){
-    $(".next").css('opacity', 1 );
+    $(".next").css('opacity', 0.8 );
     if( currSlide == 2 ) {
-        $(this).css('opacity', 0.3 );
+        $(this).css('opacity', 0.4 );
 	 $(this).css('font-weight', 'normal' );
         currSlide--;
     }
@@ -140,9 +140,9 @@ $(document).ready(function() {
   });
 
   $(".next").click( function() {
-    $(".prev").css('opacity', 1 );
+    $(".prev").css('opacity', 0.8 );
     if( currSlide == 3 ) {
-        $(this).css('opacity', 0.3 );
+        $(this).css('opacity', 0.4 );
 	 $(this).css('font-weight', 'normal' );
         currSlide++;
     }
@@ -157,9 +157,9 @@ $(document).ready(function() {
 <style type="text/css">
 /* basic styling */
 #prime-graphology {
-	box-shadow: 0 0 15px #ccc; /* all latest browser */
-	-moz-box-shadow: 0 0 15px #ccc; /* Firefox older version*/
-	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 15px #aaa; /* all latest browser */
+	-moz-box-shadow: 0 0 15px #aaa; /* Firefox older version*/
+	-webkit-box-shadow: 0 0 10px #aaa;
 }
 #prime-graphology img {
 	max-width: 100%;
@@ -211,15 +211,19 @@ $(document).ready(function() {
 } 
 
 /* writing samples preview */
+#prime-graphology #writing-sample-intro {
+	margin-bottom: 10px;
+}
 #prime-graphology #writing-sample-intro a {
 	float:right;
 	padding: 5px;
 	border-radius: 5px;
+	margin: 0px 0px 5px 5px;
 }
 #prime-graphology #writing-sample-intro h4 {
 	font-weight: normal;
 	font-size: medium;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 #prime-graphology .preview-div {
 	height: 180px;
@@ -383,7 +387,7 @@ $(document).ready(function() {
        background-position: -180px -27px;
 }
 #prime-graphology #jm-container {
-       height:380px;
+       height: 392px;
        width: 610px;
 	margin: 0px 15px 15px 15px;
 }
@@ -467,7 +471,7 @@ $(document).ready(function() {
 	background-position: -115px -235px;
 }
 #prime-graphology #cb-container {
-       height: 280px;
+       height: 283px;
        width:540px;
 	margin: 15px;
 }
@@ -580,27 +584,6 @@ $(document).ready(function() {
 	border-bottom-color: #bec9fa;
 }
 
-/* annette */
-#prime-graphology #annette {
- 	padding: 20px;
-}
-#prime-graphology #annette-img {
-	margin: 10px 20px 10px 20px; 
-	float: right; 
-	width: 450px; 
-}
-#prime-graphology #annette-title {
-	width: 400px;
-	margin-top:-15px;
-}
-#prime-graphology #annette span {
-	font-family: "Georgia",serif;
-}
-#prime-graphology #annette span span {
-	color: #748AF5;
-	font-size: 150%;
-}
-
 /* graphology 101 */	
 #prime-graphology #g-101 {
 	max-width: 930px;
@@ -618,7 +601,8 @@ $(document).ready(function() {
     height: 250px;  
 }
 #prime-graphology #g-101-title {
-       color: #78E29D;
+       color: #748AF5;
+	opacity: 0.8;
 	font-size: 480%;
 	margin: 15px 0px;	
 }
@@ -632,10 +616,11 @@ $(document).ready(function() {
 	width: 50px;
 	cursor: pointer;
 	font-size: 5em;
-	color: #78E29D;
+	color: #748AF5;
+	opacity: 0.8;
 }
 #prime-graphology .prev {
-	opacity: 0.3;
+	opacity: 0.4;
 	margin: 130px 5px 0px 25px;
 }
 #prime-graphology .next {
@@ -814,8 +799,7 @@ $(document).ready(function() {
 <div id="writing-samples-div">
 <div id="writing-sample-intro">
 	<a class="border color-bg" href="http://dailybruin.com/images/features/prime-graphology/handwriting-analysis.pdf"><i class="icon-file"></i> Print PDF with complete analysis</a>
-     	<h4>Select a handwriting sample to
-		read graphologist Annette Poizner's analysis on what it reveals about Daskalakis and three famous UCLA alumni.</h4>
+     	<h4>Annette Poizner is a Toronto-based graphologist with 20 years of experience, first sparked by her studies with a therapist who studied handwriting in Israel. Poizner now uses graphology in conjunction with therapy to help her clients. The Daily Bruin asked Poizner to analyze handwriting samples for Alessandra Daskalakis, the author of this article, and three famous UCLA alumni: John Wooden, Jim Morrison and Carol Burnett.  Select a sample to see what each person's handwriting reveals about them.</h4>
 </div>
 
 <div>
@@ -922,23 +906,6 @@ $(document).ready(function() {
 </div> <!-- end writing-samples-div -->
 <hr />
 
-<div class="row-fluid">
-
-<!-- begin annette div -->
-<div id="annette" class="span12">
-<div class="center" id="annette-header"><h1><img src="/images/features/prime-graphology/Annette_poizner.png" id="annette-title" /><span class="normal">| <span>graphologist</span></span></h1>
-</div>
-<img class="border" id="annette-img" src="/images/features/prime-graphology/annette.jpg" />
-
-<p>Annette Poizner is located in Toronto, Canada. She has been in private practice for the last 20 years. Initially she studied graphology privately with a clinical graphologist in Israel. In fact her experience with a therapist who studied handwriting in Israel is what sparked her interest. At a time when she was feeling a little stuck personally and professionally, the therapists accuracy blew her away and inspired her to pursue graphology.</p>
-<p>She has a Specialized Honors degree in psychology at York University in Toronto. She has a Masters of Social Work degree from Columbia University in New York. At the University of Toronto she completed a Doctorate of Education specializing in Counseling Psychology and completed a doctoral dissertation which explored the use of graphology within psychotherapy. She also has background in psychological assessment. </p>
-
-<i>Learn more about Poizner at her <a href="http://www.annettepoizner.com">website.</a></i>
-</div> <!-- end annette div -->
-
-</div>
-
-<hr />
 
 <div class=row-fluid"><div class="span12"><div class="center" id="g-101">
 	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
@@ -1024,4 +991,3 @@ $(document).ready(function() {
 </div> <!-- end row-fluid -->
 
 <?php get_footer(); ?>
-
