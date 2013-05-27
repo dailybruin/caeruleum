@@ -33,7 +33,7 @@ $(document).ready(function() {
 	  	$("#" + currPage.toString()).addClass('disabled');
 		$("#" + currPage.toString() + " a").css('pointer-events', 'none');
 		$("#story-page-" + currPage.toString()).fadeIn(200);
-		if( currPage == 4 ) {
+		if( currPage == 3 ) {
 			$("#next").addClass('disabled');
 			$("#next a").css('pointer-events', 'none');
 		}
@@ -44,7 +44,7 @@ $(document).ready(function() {
 		$("#" + id + " a").css('pointer-events', 'none');
 		$("#story-page-" + id).fadeIn(200);
 
-		if( parseInt( id ) == 4 ) {
+		if( parseInt( id ) == 3 ) {
 			$("#next").addClass('disabled');
 			$("#next a").css('pointer-events', 'none');
               }
@@ -109,7 +109,7 @@ $(document).ready(function() {
   /* graphology 101 */
   $(".slider").diyslider({
     width: "775px", // width of the slider
-    height: "270px", // height of the slider
+    height: "280px", // height of the slider
     display: 1, // num of slides displaying
     loop:false// disable looping on slides
   }); 
@@ -212,7 +212,7 @@ $(document).ready(function() {
 
 /* writing samples preview */
 #prime-graphology #writing-sample-intro {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 #prime-graphology #writing-sample-intro a {
 	float:right;
@@ -631,7 +631,7 @@ $(document).ready(function() {
 #prime-graphology .g-101-item div {
 	font-family: "Georgia",serif;
 	font-size: 1.4em;
-	border-bottom: 3px dashed #f1cd96;
+	border-bottom: 2px solid #f5cf99;
 	display:inline-block;
 	margin:10px 10px 15px 10px;
 	padding: 0px;
@@ -716,83 +716,151 @@ $(document).ready(function() {
 	</div>
 	<a name="story"></a>
 	<div class="story-page" id="story-page-1">
-		<p>Whether it's true or not, when someone told me Abraham Lincoln massaged his hands before signing the Emancipation Proclamation so historians in the future could not claim his signature manifested hesitancy, I never forgot it.</p>
-		<p>And when I walked through the National Archives and found John Hancock's signature boldly looking right back at me, I didn't forget that either. Those 56 signatures were the closest I could get to meeting the men who, up until that point, had only been as real as characters in a novel - well known, sure, but out of reach.</p>
-		<p>Then I look at my signature, which changes every time I sign it, and it doesn't seem to tell me much about myself. Since overanalyzing everything is a hobby of mine, I decided I might as well "take the test" and talk to a graphologist. I was curious to see if graphology is something that exists only if you want to believe it, like seeing a president's head in a potato chip, or if it has value as a means of understanding a person. Sort of like acupuncture, I didn't think it was fair to judge something with approach or results arguably difficult to quantify without trying it for myself.</p>
-		<p>Graphology, for those who don't know, is the study of handwriting and what it says about a person. Some employers hire graphologists to analyze potential future employees and screen if they might be right for the position, and other graphologists testify in court for handwriting verification. Other graphologists use their work in conjunction with therapy to help clients open up and learn about themselves and how they can move forward.</p>
-		<p>All of this is apparently quite popular in France, despite skepticism in the United States, showing an interesting cultural difference, said Jennifer Mnookin, Vice Dean and professor of law at the UCLA School of Law and an expert in courtroom evidence.</p>
-		<p>Mnookin, who has written extensively on handwriting analysis and verification in the courtroom, said handwriting verification has been used routinely in the United States since the middle to late nineteenth century. But she added that she had never come across a case where handwriting experts testified on behalf of character based on handwriting analysis.</p>
-		<p>She said that in her experience those analyzing the handwriting have identified themselves mostly as document examiners and not graphologists. Those who identify as document examiners, she said, pay close attention to the similarity in such details as letter formation, instead of assessing potential character traits based on the writing styles.</p>
-		<p>Mnookin added that in recent years handwriting verification has become controversial because of the uncertainty of valid empirical evidence.</p>
+		<p>Someone once told me Abraham Lincoln massaged his hands before signing the Emancipation Proclamation so historians in the future could not claim his signature manifested hesitancy. Whether it's true or not, I never forgot that anecdote. </p>
+		<p>And when I walked through the National Archives on my eighth grade field trip and saw John Hancock's signature, still bold despite the passing of time, I didn't forget that either. </p>
+		<p>The giant "John Hancock," along with the 55 other signatures of the Founding Fathers, were the closest I could get to meeting the men who bravely defied the British crown to establish our nation and who, up until that point, had only been as real as characters in a novel to me - well known, sure, but out of reach. </p>
+		<p>Then I curiously glanced at my sloppy signature, which changes every time I sign it, and it didn't seem to tell me much about myself. And though I'll never sign onto anything as important as the Declaration of Independence, I wonder what people will think about me when they see my signature on a document. Years from now, will a kid scrutinize the shape of the "a" and "l" in Alessandra? Or will she draw some conclusion from the prominent "dask" and near absence of "alakis" in Daskalakis? </p>
+		<p>Overanalyzing everything is a tendency of mine, and I can't help but think about these things. An example: not a medical student in scrubs goes by without me internally cringing at my grade in electricity and magnetism. </p>
+		<p>I can't help but apply this same overanalysis to my signature, so I decided to talk to a graphologist. </p>
+		<p>Graphology, for those who don't know, is the study of handwriting and what it says about a person. Some employers hire graphologists to analyze potential employees and screen them for a position. Other graphologists testify in court for handwriting verification. </p>
+		<p>"Every envelope I get gives me an impression," said Lena Rivkin, a graphologist based in Los Angeles. </p>
+		<p>Rivkin, who practices graphology professionally in addition to being an artist, said signatures are interesting because they are like a public persona or a cover of a book. </p><p>
 		<figure><img src="/images/features/prime-graphology/story-img.jpg" />
-		<figcaption><i>illustration by Bijun Liang / Daily Bruin</i></figcaption>
+			<figcaption><i>illustration by Bijun Liang / Daily Bruin</i></figcaption>
 		</figure>
-		<p>Professor Frank Schmidt of the University of Iowa, who studies employees and the hiring process, reviewed studies of the validity of graphology in the hiring process and said he has come to believe graphology is as accurate as astrology in judging character.</p>
-		<p>He said his reasoning comes from a series of studies that show that without personal contexts, even the most skilled graphologists would miss the mark.</p>
-		<p>According to the studies, in cases when the employees were asked to write about something they cared about, instead of copy a paragraph, the graphologists were more successful. Schmidt said traditional personality tests were more effective.</p>
-		<p>Which brings me to my experience with Annette Poizner, a graphologist based in Toronto who uses graphology in conjunction with therapy in order to help her clients.</p>
-		<p>Her philosophy is one of projective psychology. Projective psychology is the idea that a person's innermost thoughts manifest themselves in everything they do, even his or her writing.</p>
-		<p>Call me crazy, or call me a journalist, but I sort of like the sound of that. But is it true? So I took the test and went through Poizner's process.</p>
+		<p>"(Graphology) is a very honest form of communication," Rivkin said. </p>
+		<p>"Handwriting is body language on paper." </p>
+		<p>Recently I was introduced to Annette Poizner, a graphologist who uses her work in conjunction with therapy to help clients open up and learn about themselves and how they can move forward from conflicts or concerns in their lives. For instance, if somebody wants to quit his or her job and see what they should consider pursuing next, they might talk to Poizner. </p>
+		<p>She reached out to me with a story idea, and I told her I was interested in writing a first-hand account. </p>
+		<p>Her philosophy is one of projective psychology, which is the discipline that believes a person's innermost thoughts manifest themselves in everything they do, even his or her writing. </p>
+		<p>But is it true? I plunged myself into the depths of Poizner's process to find out. </p>
 	</div> <!-- end page one -->
 
 	<div class="story-page" id="story-page-2">
-		<i>Page 2 of 4</i><br /><br />
-		<p>Poizner said she firmly believes the graphology cannot stand alone. For her, it is a complement to psychology because the two are so closely linked. Together the two form a complete understanding of a person.</p>	
-		<p>To start she had me sign and print my name and date of birth. She then asked me to describe my ten earliest memories and describe the most vivid moments and feelings of each one. Another part of the process was to write a quick bedtime story on white, unlined paper. </p>
-		<p>That seemed like a lot, and a part of me couldn't help but feel like I was giving her all the answers, but I was willing to go along with the ride. When the time came for the interview, she wove together her interpretation of my personality.</p>
-		<p>The results were interesting.</p>
-		<p>We first took a look the way I formed my words and letters. She described my sloppy scrawl as organized and "print-script:" slanted and deliberately formed. My words are evenly spaced, and if one was to imagine the paper was lined, my writing is fairly straight. All together this told Poizner that I feel and approach my writing as a personal strength. This is also categorized as a standard "gifted child" type. But I did not want to be wooed by flattery. But then, without talking about my memories she told me I was torn between two things. That's where I started to listen a little closer. As the comparative literature and biology pre-med who can't seem to let go of the newspaper, it was the first time I really agreed during the process.</p>
-		<p>She elaborated that the way I connected my words was somewhat unconventional, but showed my desire and affinity to communicate with people in order to work around obstacles. That too, seemed pretty right</p>
+		<i>Page 2 of 3</i><br /><br />
+		<p>To start she had me sign and print my name and date of birth. She then asked me to describe my 10 earliest memories and describe the most vivid moments and feelings of each one. </p>
+		<p>Thinking of them wasn't very hard, but I didn't like to imagine what tripping on the sprinkler-head in pre-school would say about my coordination in life, and what consistently losing to the sumo wrestler in Street Fighter II in a fit of rage the night my sister was born would say about my priorities as a child (to be fair, I didn't really understand that my parents went to the hospital so my mom could give birth to my sister). </p>
+		<p>Another part of the process was to write a quick bedtime story on white, unlined paper. Unsure of what to do, I borrowed from my favorite stories, threw in a little bit of autobiography and ended up with a story about a little girl in a periwinkle dress who hops over the fence and follows the creek by the elementary school until she ends up meeting some of her favorite fictional characters. </p>
+		<p>That seemed like a lot, and part of me couldn't help but feel like I was giving her all the answers, but I was willing to go along with the ride. When the time came for the interview, she wove together her interpretation of my personality. </p>
+		<p>Poizner said she firmly believes that graphology cannot stand alone. For her, it is a complement to psychology because, in her interpretation, the two are so closely linked. Together the two studies form a complete understanding of a person. </p>
+		<p>After talking to me about my life, Poizner took a look at my handwriting and started to tell me what she saw. </p>
+		<p>We first took a look at the way I formed my words and letters. She described what I consider my sloppy scrawl as organized and "print-script": slanted and deliberately formed. My words are evenly spaced and, if one was to imagine the paper was lined, my writing is fairly straight. All together this told Poizner that I feel and approach my writing as a personal strength. </p>
+		<p>My writing is also categorized as a standard "gifted child" type. I did not want to be wooed by flattery. But then, without talking about my memories she told me I was torn between two things. That's where I started to listen a little closer. As the comparative literature and biology pre-med who can't seem to let go of the newspaper, it was the first time I really agreed during the process.  </p>
+		<p>She elaborated that the way I connected my words was somewhat unconventional, but showed my desire and affinity to communicate with people in order to work around obstacles. That too, seemed pretty accurate.</p>
 		<p>Later we discussed my memories and the way in which my writing did not fully extend across the white page. She assessed that this, in conjunction with my memories, might mean I am at times unsure of myself and eager to "return home," or to the left side of the page.</p>
-		<p>Poizner, who uses her background in traditional Chinese medicine and Jewish influences, said she thought I had too much yin and should embrace more yang through expression of anger.</p>
-		<p>Here I disagreed. I have always felt I get too angry, too easily. Those who know me also know how much I hate yelling. I mentioned some of this and we talked about how perhaps I feared becoming angry and should allow myself to release my frustration more often in more productive ways. She suggested kickboxing, which I will no doubt have too little time to pursue. But still, interesting.</p>
+		<p>Poizner, who uses her background in traditional Chinese medicine and Jewish influences in her work, said she thought I had too much yin and should embrace more yang through expression of anger. She added that I should embrace my "go-getter" attitude and believe more in my ability to accomplish my goals and be less maternal. </p>
+		<p>Here I disagreed. I have always felt I get too angry, too easily. But then again, those who know me also know how much I hate yelling. So was she on to something? I mentioned some of this and we talked about how perhaps I feared becoming angry and should allow myself to release my frustration more often in more productive ways. She suggested kickboxing, which I will no doubt have too little time to pursue. But still, interesting. </p>
+		<p>As far as her statement about me being too maternal, that also has multiple interpretations. I find myself at a point in my life where I have many things I want to accomplish, and I consider myself a proactive, independent person. However, if my family called me right now and told me they needed me to come home, I know that I would. </p>
 	</div> <!-- end page two -->
 
 	<div class="story-page" id="story-page-3">
-	<i>Page 3 of 4</i><br /><br />
-		<p>All in all the experience was interesting and enjoyable. I learned more about myself, and I appreciated how we used my handwriting as a jumping point. I think some things were a little bit of a stretch, but certain points were surprisingly accurate. I walked away with respect for Poizner and her ability to take handwriting and confidently work with someone she doesn't even know to help them better understand themselves.</p>
-		<p>If I had a friend who was struggling with something and had a bad experience with therapists, I would say why not give graphology a try. It's different, and if approached correctly it seems as though it could be helpful in identifying traits or starting discussions instead of aggressively fighting problems with questioning.</p>
-		<p>So I walked away with a better understanding of graphology, although a not a certain one. But I think that's what I like about it. Although I probably would not testify in court on the basis of a signature, a part of me likes the idea. And maybe that's because, like Poizner said, intuition and compassion are what I value most in myself. </p>
-		<p>So graphology, although it has what I believe to be limitations, interests me. My next step would be to talk to more graphologists and get a clearer picture. The few interviews I had were not extensive enough to draw concrete conclusions. </p>
-		<p>Another thing I can take away from this is that I am fond of the type of people graphology seems to attract. I think it takes a certain type of person to dedicate their profession to interpreting the lives of others through their handwriting. It is not something you can fall into, it is something you must pursue. </p>
-		<p>They universally seem to have a desire to connect with people and test themselves, and each has an interesting story of their own.</p>	
-		<p>Lena Revkin, a Los Angeles graphologist, for example, became interested in graphology when she was just 14 years old. Her parents took her to Olvera Street in downtown where she met a graphologist who seemed to know Revkin quite well after taking a glance at her handwriting. After that experience, Revkin went to that place where all great things begin, the library. She wanted to learn more.</p>
-		<p>Revkin said she always knew she would be an artist. In particular she had always been drawn to signatures as a form of art. Today graphology is her professional career, although she is also a sculptor and a painter, teaching classes when she is not working in her studio. Her life, like her approach to graphology, is interdisciplinary.</p>
-		<p>She said she could spend all day looking at the registry books.</p>
-		<p>"Signatures are interesting, too, because they are a public persona, like the cover of a book. I find it fun to look at signatures to see how they differ from the writing," she said. "Every envelope I get gives me an impression." </p>
-		
+	<i>Page 3 of 3</i><br /><br />
+		<p>All in all my experience with graphology was interesting and enjoyable. I learned more about myself, and I appreciated how we used my handwriting as a jumping point to start a dialogue. I think some things were a little bit of a stretch, but certain points were surprisingly accurate. Ultimately, I walked away with respect for Poizner and her ability to take handwriting and confidently work with someone she doesn't even know to help them better understand themselves. I can see, though, how people unfamiliar with Poizner's ideology might be skeptical. Going into this, I thought the handwriting would speak entirely for itself. </p>
+		<p>Jennifer Mnookin is skeptical about the effectiveness of graphology. Mnookin is vice dean and professor of law at the UCLA School of Law, and has written extensively on handwriting analysis and verification in the courtroom. </p>
+		<p>Mnookin said handwriting verification has been used routinely in the United States since the middle to late 19th century. But she added that she had never come across a case where handwriting experts testified on behalf of character based on handwriting analysis. </p>
+		<p>In her experience, those graphologists and document examiners identify themselves differently. Document examiners, she said, pay close attention to the similarity in such details as letter formation, instead of assessing potential character traits based on writing styles. </p>
+		<p>Some graphologists use their skills in court to recognize differences in handwriting as well. </p>
+		<p>Mnookin added that in recent years handwriting verification has become controversial in courtrooms because of the uncertainty of valid empirical evidence. </p>
+		<p>Nonetheless, graphology is apparently quite popular in France, despite skepticism in the United States, showing an interesting cultural difference, Mnookin added. </p>
+		<p>After talking to graphologists like Poizner and Rivkin, I understand that graphologists, too, understand the limitations of their trade. "I know what I can see and what I cannot see," Rivkin said. "People have layers; (they) are more complicated." </p>
+		<p>Like learning a language, graphology is not easy, she said. </p>
+		<p>"Let's say I was wrong about something. It's usually my fault," she said. "I just didn't put the puzzle together correctly." </p>
+		<p>For this reason she said she exerts caution, mindful that she is dealing with real people and their feelings. She said she always tries to learn as much as she can about a person. </p>
+		<p>So what's my verdict? If I had a friend who was struggling with something and had a bad experience with therapists, I would tell them to give graphology a try. It's different, and if approached correctly it seems as though it could be helpful in identifying traits or starting discussions instead of aggressively fighting problems with questioning. </p>
+		<p>From my handwriting, Poizner correctly identified my work ethic, my occasional hesitancy to trust and what I would want from a career. Our interview was over the phone, so her accuracy cannot be attributed to judgments based on my appearance. At this point, though, I would feel uncomfortable making decisions, like employment, based on handwriting. </p>
+		<p>So graphology, to me, and to people like Poizner, is a supplement to other information. </p>
+		<p>As of yet we do not have time machines, so I'll never really get to know the historical figures I've read about or imagined I'd like to meet. But I'd like to think that we leave something more than ink behind when we commit to something or sign our name. </p>
+		<p>As a journalist, I guess part of me likes the idea that our writing might tell our own story as much as it tells the story we are trying to share. And if it might be that we leave a piece of ourselves behind in the slope of our letters, I'll buy it. </p>	
+		<i>Email Daskalakis at <a href="mailto:adaskalakis@media.ucla.edu">adaskalakis@media.ucla.edu.</a></i>
 	</div> <!-- end page three -->
 	
-	<div class="story-page" id="story-page-4">
-	<i>Page 4 of 4</i><br />
-	<br />
-		<p>Revkin has a collection of signatures she finds particularly interesting in a book.</p>
-		<p>"(Graphology) is a very honest form of communication," Revkin said. "Handwriting is body language on paper."</p>
-		<p>And she said she acknowledges that there are boundaries with graphology. </p>
-		<p>"I know what I can see and what I cannot see," she said. "People have layers; (they) are more complicated."</p>
-		<p>Like learning a language, graphology is not easy, she said.</p>
-		<p>"Let's say I was wrong about something. It's usually my fault," she said. "I just didn't put the puzzle together correctly." </p>
-		<p>For this reason she said she exerts caution, mindful that she is dealing with real people and their feelings. She said she always tries to learn as much as she can about a person.</p>
-		<p>This sort of interaction with people, I think, is admirable. Although I understand how some may find it hard to quantify. </p>
-		<p> "(To become a good graphologist,) I would say to work as hard as you can and learn as much as you can and never stop," she said. </p>
-		<p>And I think that's something even the skeptics can respect. No field is perfect, and from my experience, no graphologist is trying to say that the process is. </p>
-		<p>Graphology in conjunction with therapy sounds like a good way for everyone involved, the graphologist and the client, to learn from each other and appreciate the way writing brings us together and closer to ourselves.</p>
-		<p>As of yet we do not have time machines, so I'll never really get to know the historical figures I've read about or imagined I'd like to meet. But I'd like to think that we leave something more than ink behind when we commit to something or sign our name. And if it might be that we leave a piece of ourselves in the slope of our letters, I'll buy it.</p>
-		<i>Email Daskalakis at <a href="mailto:adaskalakis@media.ucla.edu">adaskalakis@media.ucla.edu.</a></i>
-	</div> <!-- end page four -->
-
 	<div class="pagination center">
   		<ul>
   	  	<li id="prev" class="disabled"><a style="pointer-events: none;" href="#story" ><<</a></li>
   	 	<li id="1" class="disabled"><a style="pointer-events: none;" href="#feature-story" >1</a></li>
    		<li id="2"><a href="#story" >2</a></li>
    	 	<li id="3"><a href="#story">3</a></li>
-  	 	<li id="4"><a href="#story" >4</a></li>
  	  	<li id="next"><a href="#story" >>></a></li>
  	 	</ul>
 	</div>
 	<div style="clear:both;" /></div>
 </div><!-- end feature story -->
+
+<hr />
+
+
+<div class=row-fluid"><div class="span12"><div class="center" id="g-101">
+	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
+	<span id="g-101-intro">What does your handwriting say about you?<br />Here are graphological interpretation principles that readers can use to think about their own handwriting: </span>
+	<br />
+	<div class="prev"><</div>
+	<div class="slider center"><!-- slider -->
+		<div><!-- mandatory div used by the slider -->
+		<div>
+			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline--the line of the text as it moves 
+        			across the page--is firm and straight, the person writing tends to have a strong work ethic. 
+        			A wavy baseline indicates moodiness, potential difficulties with discipline, and possible 
+        			medical issues.</p></div>	
+			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more 
+        			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or 
+        			beautifying the environment. These people tend to shape letters by being very true to the 
+        			letter form. They honor how something should look; they want their writing to look nice. These 
+        			people often have a sensitivity for dressing well, interior design, art appreciation, etc.</p></div>
+        		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright 
+       	 		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer 
+       	 		is reserved.he or she looks at a situation from a detached perspective, then decides what 
+        			degree of emotional involvement will be appropriate.</p></div>
+		</div> <!-- end row 1 -->
+      		<div>
+			<div class="g-101-item" id="g-101-aw"><div>Angular writing</div><p>Angular writing shows someone who is rational above all 
+        			else; emotionally detached, analytical, and objective. It's usually the writing of engineers, 
+       			scientists, and people who are tough-minded and think about issues without troubling over 
+        			emotions. These writers strip down their handwriting and don't care about the form of the
+        			letters that much. They abbreviate the letters. They tend to be black-or-white thinkers 
+        			- an "all or nothing" approach.</p></div>	
+			<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even 
+       			more strongly reserved than one whose writing shows an upright slant. This person is usually 
+        			introverted, reserved and highly private.</p></div>
+			<div class="g-101-item" id="g-101-tlw"><div>Tiny little writing</div><p>Very small writing expresses introversion. It is the 
+       			writing of somebody with strong concentration skills, increased intelligence (concentration 
+        			always improves intelligence) and humility. If the writing is extremely narrow or tight-looking,
+        			it might indicate some type of repression or inhibition. Some librarians write like this.</p></div>		
+		</div> <!-- end row 2 -->
+       	<div>
+			<div class="g-101-item" id="g-101-ps"><div>Printscript</div><p>Printscript occurs when the writer sometimes prints
+        			and sometimes writes in cursive. This writing style indicates the writer who is both 
+        			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
+        			use print script.</p></div>	
+			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid 
+        			and perfectionist, that looks like it came right out of the typewriter. These people are 
+       			 demonstrating through their handwriting a repressive nature, which has them potentially 
+        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others'. 
+        			These are the perfectionists. They love to do things right, and tend to be very control-oriented
+        			and have difficulty being spontaneous. They tend to suffer from muscular tension.</p></div>		
+		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
+        			spaces of less than one character width, may reveal an individual who is needy. This is the 
+        			writing of a person who craves extra close contact with others.</p></div>
+		
+		</div> <!-- end row 3 -->
+       	<div>
+			<div class="g-101-item" id="g-101-ls"><div>Large spaces</div><p>Normally there should be only one character width
+        			between one word and the next; more than this implies somebody who has difficulty bridging the
+       			gap between themselves and others, socially and emotionally. This person is emotionally 
+        			detached from their own feelings and those of others.</p></div>
+  			<div class="g-101-item" id="g-101-s"><div>Speed</div><p>How fast is the handwriting written? Carefully formed 
+        			letters, and strong attention to diacritics and other details indicate a writer who prefers 
+        			to be slow and thorough. Messy writing which races across the page indicates the individual 
+        			who works at a fast tempo. Less interested in detail, they prefer to be busy, dynamic, 
+        			multitasking.they like lots going on.</p></div>
+			<div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line 
+        			intermingles with the upper zone of the line below.the bottom loop of a cursive .f. would hit 
+        			the top of a cursive .h. in the line below it. This is called crashing, and is indicative of 
+        			an individual who daydreams, often watching an internal TV.</p></div>
+		</div> <!-- end row 4 -->
+    		</div> <!-- end mandatory div -->
+	</div> <!-- end slider -->
+	<div class="next">></div>
+</div></div></div><!-- end graphology 101 -->
 
 <hr />
 
@@ -892,8 +960,8 @@ $(document).ready(function() {
 	<div id="cb-container" class="right-div">
        	<div class="main-bg-image bg-image border"></div>
                <div class="hl-region bg-image border" id="cb-dw" rel="popover" data-placement="left" data-content="The writing is also print script which means she sometimes connects letters and sometimes leaves them disconnected. Print script is a sign of somebody with literary ability. Somebody who loves to write and who is a good writer."></div>
-               <div class="hl-region bg-image border" id="cb-m" rel="popover" data-content="Sharpness is a function of analytical thinking and also enough access to aggressive energy to push projects through."></div>
-               <div class="hl-region bg-image border" id="cb-simp" data-placement="top" data-content="A simplified handwriting is one where simplified strokes are used to connect letters to each other and in so doing legibility is maintained but speed of writing is also facilitated."></div>
+               <div class="hl-region bg-image border" id="cb-m" rel="popover" data-placement="top" data-content="Sharpness is a function of analytical thinking and also enough access to aggressive energy to push projects through."></div>
+               <div class="hl-region bg-image border" id="cb-simp" data-placement="left" data-content="A simplified handwriting is one where simplified strokes are used to connect letters to each other and in so doing legibility is maintained but speed of writing is also facilitated."></div>
                <div class="hl-region bg-image border hl-region-large" id="cb-b" rel="popover" data-placement="bottom" data-content="She encapsulates her professional name and encloses it in the first letter. That draws extra attention to that name, the part of her identity that speaks to her professional life. So there's an intensity around that name that comes through because of that special treatment of that name."></div>
       	        <div class="hl-region bg-image border" id="cb-arcade" rel="popover" data-content="Arch type of structure associates with people who have a strong grace and dignity and even formality about them. There's a commitment to privacy and discretion."></div>
 		<button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
@@ -907,80 +975,6 @@ $(document).ready(function() {
 <hr />
 
 
-<div class=row-fluid"><div class="span12"><div class="center" id="g-101">
-	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
-	<span id="g-101-intro">What does your handwriting say about you?<br />Here are graphological interpretation principles that readers can use to think about their own handwriting: </span>
-	<br />
-	<div class="prev"><</div>
-	<div class="slider center"><!-- slider -->
-		<div><!-- mandatory div used by the slider -->
-		<div>
-			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline--the line of the text as it moves 
-        			across the page--is firm and straight, the person writing tends to have a strong work ethic. 
-        			A wavy baseline indicates moodiness, potential difficulties with discipline, and possible 
-        			medical issues.</p></div>	
-			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more 
-        			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or 
-        			beautifying the environment. These people tend to shape letters by being very true to the 
-        			letter form. They honor how something should look; they want their writing to look nice. These 
-        			people often have a sensitivity for dressing well, interior design, art appreciation, etc.</p></div>
-        		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright 
-       	 		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer 
-       	 		is reserved.he or she looks at a situation from a detached perspective, then decides what 
-        			degree of emotional involvement will be appropriate.</p></div>
-		</div> <!-- end row 1 -->
-      		<div>
-			<div class="g-101-item" id="g-101-aw"><div>Angular writing</div><p>Angular writing shows someone who is rational above all 
-        			else; emotionally detached, analytical, and objective. It's usually the writing of engineers, 
-       			scientists, and people who are tough-minded and think about issues without troubling over 
-        			emotions. These writers strip down their handwriting and don't care about the form of the
-        			letters that much. They abbreviate the letters. They tend to be black-or-white thinkers 
-        			- an "all or nothing" approach.</p></div>	
-			<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even 
-       			more strongly reserved than one whose writing shows an upright slant. This person is usually 
-        			introverted, reserved and highly private.</p></div>
-			<div class="g-101-item" id="g-101-tlw"><div>Tiny little writing</div><p>Very small writing expresses introversion. It is the 
-       			writing of somebody with strong concentration skills, increased intelligence (concentration 
-        			always improves intelligence) and humility. If the writing is extremely narrow or tight-looking,
-        			it might indicate some type of repression or inhibition. Some librarians write like this.</p></div>		
-		</div> <!-- end row 2 -->
-       	<div>
-			<div class="g-101-item" id="g-101-ps"><div>Printscript</div><p>Printscript occurs when the writer sometimes prints
-        			and sometimes writes in cursive. This writing style indicates the writer who is both 
-        			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
-        			use print script.</p></div>	
-			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid 
-        			and perfectionist, that looks like it came right out of the typewriter. These people are 
-       			 demonstrating through their handwriting a repressive nature, which has them potentially 
-        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others'. 
-        			These are the perfectionists. They love to do things right, and tend to be very control-oriented
-        			and have difficulty being spontaneous. They tend to suffer from muscular tension.</p></div>		
-		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
-        			spaces of less than one character width, may reveal an individual who is needy. This is the 
-        			writing of a person who craves extra close contact with others.</p></div>
-		
-		</div> <!-- end row 3 -->
-       	<div>
-			<div class="g-101-item" id="g-101-ls"><div>Large spaces</div><p>Normally there should be only one character width
-        			between one word and the next; more than this implies somebody who has difficulty bridging the
-       			gap between themselves and others, socially and emotionally. This person is emotionally 
-        			detached from their own feelings and those of others.</p></div>
-  			<div class="g-101-item" id="g-101-s"><div>Speed</div><p>How fast is the handwriting written? Carefully formed 
-        			letters, and strong attention to diacritics and other details indicate a writer who prefers 
-        			to be slow and thorough. Messy writing which races across the page indicates the individual 
-        			who works at a fast tempo. Less interested in detail, they prefer to be busy, dynamic, 
-        			multitasking.they like lots going on.</p></div>
-			<div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line 
-        			intermingles with the upper zone of the line below.the bottom loop of a cursive .f. would hit 
-        			the top of a cursive .h. in the line below it. This is called crashing, and is indicative of 
-        			an individual who daydreams, often watching an internal TV.</p></div>
-		</div> <!-- end row 4 -->
-    		</div> <!-- end mandatory div -->
-	</div> <!-- end slider -->
-	<div class="next">></div>
-</div></div></div><!-- end graphology 101 -->
-
-<hr />
 
 <div class="row-fluid">
 	<div class="center span12" id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
