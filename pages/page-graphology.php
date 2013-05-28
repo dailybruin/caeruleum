@@ -789,7 +789,7 @@ $(document).ready(function() {
 <hr />
 
 
-<div class=row-fluid"><div class="span12"><div class="center" id="g-101">
+<div class="row-fluid"><div class="span12"><div class="center" id="g-101">
 	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
 	<span id="g-101-intro">What does your handwriting say about you?<br />Here are graphological interpretation principles that readers can use to think about their own handwriting: </span>
 	<br />
@@ -797,9 +797,9 @@ $(document).ready(function() {
 	<div class="slider center"><!-- slider -->
 		<div><!-- mandatory div used by the slider -->
 		<div>
-			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline--the line of the text as it moves 
-        			across the page--is firm and straight, the person writing tends to have a strong work ethic. 
-        			A wavy baseline indicates moodiness, potential difficulties with discipline, and possible 
+			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline &mdash; the line of the text as it moves 
+        			across the page &mdash; is firm and straight, the person writing tends to have a strong work ethic. 
+        			A wavy baseline indicates moodiness, potential difficulties with discipline and possible 
         			medical issues.</p></div>	
 			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more 
         			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or 
@@ -808,33 +808,33 @@ $(document).ready(function() {
         			people often have a sensitivity for dressing well, interior design, art appreciation, etc.</p></div>
         		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright 
        	 		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer 
-       	 		is reserved.he or she looks at a situation from a detached perspective, then decides what 
+       	 		is reserved. He or she looks at a situation from a detached perspective, then decides what 
         			degree of emotional involvement will be appropriate.</p></div>
 		</div> <!-- end row 1 -->
       		<div>
 			<div class="g-101-item" id="g-101-aw"><div>Angular writing</div><p>Angular writing shows someone who is rational above all 
-        			else; emotionally detached, analytical, and objective. It's usually the writing of engineers, 
+        			else, emotionally detached, analytical and objective. It's usually the writing of engineers, 
        			scientists, and people who are tough-minded and think about issues without troubling over 
         			emotions. These writers strip down their handwriting and don't care about the form of the
         			letters that much. They abbreviate the letters. They tend to be black-or-white thinkers 
-        			- an "all or nothing" approach.</p></div>	
+        			&mdash; an &ldquo;all-or-nothing&rdquo; approach.</p></div>	
 			<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even 
        			more strongly reserved than one whose writing shows an upright slant. This person is usually 
         			introverted, reserved and highly private.</p></div>
 			<div class="g-101-item" id="g-101-tlw"><div>Tiny little writing</div><p>Very small writing expresses introversion. It is the 
        			writing of somebody with strong concentration skills, increased intelligence (concentration 
         			always improves intelligence) and humility. If the writing is extremely narrow or tight-looking,
-        			it might indicate some type of repression or inhibition. Some librarians write like this.</p></div>		
+        			it might indicate some type of repression or inhibition.</p></div>		
 		</div> <!-- end row 2 -->
        	<div>
-			<div class="g-101-item" id="g-101-ps"><div>Printscript</div><p>Printscript occurs when the writer sometimes prints
+			<div class="g-101-item" id="g-101-ps"><div>Print-script</div><p>Print-script occurs when the writer sometimes prints
         			and sometimes writes in cursive. This writing style indicates the writer who is both 
         			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
-        			use print script.</p></div>	
+        			use print-script.</p></div>	
 			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid 
         			and perfectionist, that looks like it came right out of the typewriter. These people are 
        			 demonstrating through their handwriting a repressive nature, which has them potentially 
-        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others'. 
+        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others.' 
         			These are the perfectionists. They love to do things right, and tend to be very control-oriented
         			and have difficulty being spontaneous. They tend to suffer from muscular tension.</p></div>		
 		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
@@ -845,16 +845,16 @@ $(document).ready(function() {
        	<div>
 			<div class="g-101-item" id="g-101-ls"><div>Large spaces</div><p>Normally there should be only one character width
         			between one word and the next; more than this implies somebody who has difficulty bridging the
-       			gap between themselves and others, socially and emotionally. This person is emotionally 
+       			gap between themselves and others, socially and emotionally. These people might be emotionally 
         			detached from their own feelings and those of others.</p></div>
   			<div class="g-101-item" id="g-101-s"><div>Speed</div><p>How fast is the handwriting written? Carefully formed 
         			letters, and strong attention to diacritics and other details indicate a writer who prefers 
-        			to be slow and thorough. Messy writing which races across the page indicates the individual 
+        			to be slow and thorough. Messy writing that races across the page indicates the individual 
         			who works at a fast tempo. Less interested in detail, they prefer to be busy, dynamic, 
-        			multitasking.they like lots going on.</p></div>
+        			multitasking. They like lots going on.</p></div>
 			<div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line 
-        			intermingles with the upper zone of the line below.the bottom loop of a cursive .f. would hit 
-        			the top of a cursive .h. in the line below it. This is called crashing, and is indicative of 
+        			intermingles with the upper zone of the line below.the bottom loop of a cursive &lsquo;f&rsquo; would hit 
+        			the top of a cursive &lsquo;h&rsquo; in the line below it. This is called crashing and is indicative of 
         			an individual who daydreams, often watching an internal TV.</p></div>
 		</div> <!-- end row 4 -->
     		</div> <!-- end mandatory div -->
@@ -897,8 +897,8 @@ $(document).ready(function() {
 	<h2><img id="jw-title" src="/images/features/prime-graphology/John_wooden.png"/> <span class="normal" >| traditional values</span></h2>
 	<div class="left-div" id="left-div-jw">
 		<p>This writer uses something called "copybook script." In elementary school, children are taught a classic copybook style script. Many kids will ultimately deviate from that copybook script and create an idiosyncratic type of handwriting. Some writers, though, are traditionalists. They stay true and loyal to the copybook script they learned in school, making very few adjustments. </p>
-		<p>This writing style reveals the individual who is conservative, disciplined, community-minded; somebody who heralds the importance of classic values. The copybook writer takes very seriously the societal message that has come to him about what is good and right. He re-creates the "good and right" handwriting he learned in elementary school. He will similarly align with wholesome values that come from earlier generations. He possesses the quality of loyalty to causes and people. His priority is to be responsible.</p>
-		<p>Copybook writers often become teachers and we see many teachers with this style of writing. It's as if this individual happily internalized the traditional teachings of their society and having done so successfully, wanted nothing other than to be a mouthpiece for the same traditional values.</p>
+		<p>This writing style reveals the individual who is conservative, disciplined, community-minded; somebody who heralds the importance of classic values. The copybook writer takes very seriously the societal message that has come to him about what is good and right. He recreates the "good and right" handwriting he learned in elementary school. He will similarly align with wholesome values that come from earlier generations. He possesses the quality of loyalty to causes and people. His priority is to be responsible.</p>
+		<p>Copybook writers often become teachers and we see many teachers with this style of writing. It's as if this individual happily internalized the traditional teachings of his society and having done so successfully, wanted nothing other than to be a mouthpiece for the same traditional values.</p>
 		<i>John Wooden is a former UCLA basketball coach. Mouse over the image to see what Poizner has to say.</i>
 	</div> <!-- end left div -->
 
@@ -919,8 +919,8 @@ $(document).ready(function() {
 	<div id="jm-container" class="right-div">
             <div class="main-bg-image bg-image border"></div>
             <div class="hl-region bg-image border" id="jm-s" rel="popover" data-placement="top" data-content="He does not seal the bottom of the cursive letter 's': a sign of somebody who lets himself off the hook so he doesn't have to finish what he starts." data-original-title="Unsealed cursive s"></div>
-            <div class="hl-region hl-region-name bg-image border" id="jm-sig" rel="popover" data-placement="left" data-content="The greater handwriting sample shows that on a day-to-day level he was experiencing moodiness, confusion, rigidity, and an overall lack of discipline. But that signature shows his motivation to pull it together so he could come off as sophisticated and polished in the public arena."></div>
-            <div class="hl-region bg-image border" id="jm-t" rel="popover" data-content="Normally, a person moves the pen upward, to reach the height of the t and then brings the stroke down. Sometimes this is done creating a bit of a loop. After all, why does it have to be done perfectly so that the upstroke and the downstroke are perfectly retraced one on top the other? The writer who does retraces these two strokes so that they cover each other perfectly shows a need to be highly private."></div>
+            <div class="hl-region hl-region-name bg-image border" id="jm-sig" rel="popover" data-placement="left" data-content="The greater handwriting sample shows that on a day-to-day level he was experiencing moodiness, confusion, rigidity and an overall lack of discipline. But that signature shows his motivation to pull it together so he could come off as sophisticated and polished in the public arena."></div>
+            <div class="hl-region bg-image border" id="jm-t" rel="popover" data-content="Normally, a person moves the pen upward, to reach the height of the 't' and then brings the stroke down. Sometimes this is done creating a bit of a loop. After all, why does it have to be done perfectly so that the upstroke and the downstroke are perfectly retraced one on top the other? The writer who does retraces these two strokes so that they cover each other perfectly shows a need to be highly private."></div>
             <div class="hl-region bg-image border" id="jm-t-slash" rel="popover" data-content="He slashes sharp strokes to cross his t's. Quite sharp. Little daggers. He would have a well of anger that would be expressed through irritation, resentment but also anger that could find expression in self-loathing."></div>
             <div class="hl-region bg-image border" id="jm-ibe" rel="popover" data-placement="left" data-content="The last three letters of that word are so nicely joined to each other showing a trait that we call 'simplification.'"></div>
             <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
@@ -936,17 +936,17 @@ $(document).ready(function() {
 <div class="writing-samples writing-ad ws-container">
 	<h2><img src="/images/features/prime-graphology/alessandra.png" id="ad-title"><span class="normal">| author</span></h2>
 	<div class ="left-div" id="left-div-ad">
-		<p>Regarding the first line of text of the story: this writer pens her script with a relatively straight baseline even though she is writing on a piece of paper with out lines. A straight baseline implies somebody with discipline and a good work ethic. Somebody with good follow-through.</p>
-		<p>We discussed that there are three zones to the handwriting, upper, middle and lower. All of these are represented in her writing so that overall she is a balanced person with skills in the zone of thinking, social relating and doing. Still, there is a nice developed middle zone which shows a primary interest in that which is human, an interest in connecting with others. The middle zone makes a person a people-oriented person. The kind of person who opens up the newspaper and reads the life section first.</p>
-		<p>Mostly this writer uses a slant that we call the upright slant. The right slant writer is more engaged emotionally with others whereas the upright slant writer is more objective, poised, "head over heart" type. Not gushy. Not huggy. A little more formal, a little more distant. (More formal, like the girl in the story who sets out with the cartouche necklace around her neck... So graceful!)</p>
+		<p>Regarding the first line of text of the story: this writer pens her script with a relatively straight baseline even though she is writing on a piece of paper without lines. A straight baseline implies somebody with discipline and a good work ethic, somebody with good follow-through.</p>
+		<p>We discussed that there are three zones to the handwriting: upper, middle and lower. All of these are represented in her writing so that overall she is a balanced person with skills in the zone of thinking, social relating and doing. Still, there is a nice developed middle zone which shows a primary interest in that which is human, an interest in connecting with others. The middle zone indicates a people-oriented individual, the kind of person who opens up the newspaper and reads the life section first.</p>
+		<p>Mostly this writer uses a slant that we call the upright slant. The right slant writer is more engaged emotionally with others whereas the upright slant writer is more objective, poised, "head over heart" type. Not gushy. Not huggy. A little more formal, a little more distant. (More formal, like the girl in the story who sets out with the cartouche necklace around her neck. &hellip; So graceful!)</p>
 		<i>Daskalakis is a third-year comparative literature and biology student. Mouse over the image to see what Poizner has to say about her bedtime story.</i>
 
 	</div> <!-- end left div -->
 
        <div id="ad-container" class="right-div">
             <div class="main-bg-image bg-image border"></div>
-                <div class="hl-region bg-image border" id="ad-adventure" rel="popover" data-content="Notice that some letters are connected and others are disconnected or printed. Writers who do this are using the writing style called printscript and demonstrate good logical thinking and good intuition"></div>
-                <div class="hl-region hl-region-short border bg-image" id="ad-your" rel="popover" data-placement="left" data-content="This writer brings the lower zone stroke of her y to an abrupt stop instead of trailing off into a loop and bringing it back to the baseline. She often does these abrupt strokes to finish off a y . It's more comfortable to loop around and allow that stroke to gradually shift directions. Somebody who stops on a dime like that is somebody with a lot of willpower."></div>
+                <div class="hl-region bg-image border" id="ad-adventure" rel="popover" data-content="Notice that some letters are connected and others are disconnected or printed. Writers who do this are using the writing style called print-script and demonstrate good logical thinking and good intuition."></div>
+                <div class="hl-region hl-region-short border bg-image" id="ad-your" rel="popover" data-placement="left" data-content="This writer brings the lower zone stroke of her 'y' to an abrupt stop instead of trailing off into a loop and bringing it back to the baseline. She often does these abrupt strokes to finish off a y . It's more comfortable to loop around and allow that stroke to gradually shift directions. Somebody who stops on a dime like that is somebody with a lot of willpower."></div>
                 <div class="hl-region hl-region-short border bg-image" id="ad-space" data-placement="top" rel="popover" data-content="Normally, there should be one character width between words. This writer has a wider space between her words… Almost 2 character widths. This is somebody who has a difficult time bridging the gap between self and other, representing trust issues. Still, as mentioned above, her primary zone of interest is the social and emotional zone. So as she grows and matures, she will get past this distrust and find more ways to connect intimately, on an emotional level."></div>
                  <div class="hl-region hl-region-short border bg-image" id="ad-neck" rel="popover" data-placement="left" data-content="Notice the angles in the first letter of each of these words. Angles represent analytical thinking skills." data-original-title="Angles"></div>
                 <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
@@ -959,16 +959,16 @@ $(document).ready(function() {
 	<h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>       
 	<div id="cb-container" class="right-div">
        	<div class="main-bg-image bg-image border"></div>
-               <div class="hl-region bg-image border" id="cb-dw" rel="popover" data-placement="left" data-content="The writing is also print script which means she sometimes connects letters and sometimes leaves them disconnected. Print script is a sign of somebody with literary ability. Somebody who loves to write and who is a good writer."></div>
+               <div class="hl-region bg-image border" id="cb-dw" rel="popover" data-placement="left" data-content="The writing is also print-script which means she sometimes connects letters and sometimes leaves them disconnected. Print-script is a sign of somebody with literary ability. Somebody who loves to write and who is a good writer."></div>
                <div class="hl-region bg-image border" id="cb-m" rel="popover" data-placement="top" data-content="Sharpness is a function of analytical thinking and also enough access to aggressive energy to push projects through."></div>
                <div class="hl-region bg-image border" id="cb-simp" data-placement="left" data-content="A simplified handwriting is one where simplified strokes are used to connect letters to each other and in so doing legibility is maintained but speed of writing is also facilitated."></div>
                <div class="hl-region bg-image border hl-region-large" id="cb-b" rel="popover" data-placement="bottom" data-content="She encapsulates her professional name and encloses it in the first letter. That draws extra attention to that name, the part of her identity that speaks to her professional life. So there's an intensity around that name that comes through because of that special treatment of that name."></div>
       	        <div class="hl-region bg-image border" id="cb-arcade" rel="popover" data-content="Arch type of structure associates with people who have a strong grace and dignity and even formality about them. There's a commitment to privacy and discretion."></div>
 		<button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
 	</div>
-	<p>Great sensitivity is indicated by the light pressure of her written line (as compared to a darker imprint penned by somebody who really digs into the page with the pen) and also indicated by a written line that is fine and delicate looking.</p>
-	<p> We also find something called simplification; strokes connect letters to each other in a way that is efficient so that the writer takes shortcuts, deleting extraneous strokes, while also maintaining legibility e.g. The writer crosses the first letter of the word "think" and attaches the cross stroke to the following letter, h. Simplification indicates a writer who is both creative and possesses above-average intelligence as well as somebody who has good physical coordination.</p>
-	<p> Note how some letters are connected to each other while others are printed/disconnected. That "printscript" indicates the individual with writing skill. We also notice a sharpness in this writing. Look at the sharp angles in the letters m and n. Angularity indicates strong analytical thinking and the writer who can aggressively push projects through. Good organizational skills are indicated by the way she spaces the sample; clear spacing, well-organized, text is written on a straight line. And note that the handwriting is not particularly embellished. Rather humble or modest looking. A root quality of humility, at her core.</p>
+	<p>Great sensitivity is indicated by the light pressure of her written line (as compared to a darker imprint penned by somebody who really digs into the page with the pen) and also indicated by a written line that is fine and delicate-looking.</p>
+	<p> We also find something called 'simplification'; strokes connect letters to each other in a way that is efficient so that the writer takes shortcuts, deleting extraneous strokes, while also maintaining legibility e.g. the writer crosses the first letter of the word "think" and attaches the cross stroke to the following letter, 'h.' Simplification indicates a writer who is both creative and possesses above-average intelligence as well as somebody who has good physical coordination.</p>
+	<p> Note how some letters are connected to each other while others are printed/disconnected. That "print-script" indicates the individual with writing skill. We also notice a sharpness in this writing. Look at the sharp angles in the letters 'm' and 'n'. Angularity indicates strong analytical thinking and the writer who can aggressively push projects through. Good organizational skills are indicated by the way she spaces the sample; clear spacing, well-organized, text is written on a straight line. And note that the handwriting is not particularly embellished. Rather humble or modest-looking. A root quality of humility, at her core.</p>
 	<i>Carol Burnett is an American actress, comedian and UCLA alumna. Mouse over the image to see what Poizner has to say.</i>
 </div> <!-- end carol burnett -->
 </div> <!-- end writing-samples-div -->
