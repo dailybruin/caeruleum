@@ -716,6 +716,7 @@ $(document).ready(function() {
 	</div>
 	<a name="story"></a>
 	<div class="story-page" id="story-page-1">
+		<p><em>The original version of this article contained information that was unclear. See the bottom of the article for additional information.</em></p>
 		<p>Someone once told me Abraham Lincoln massaged his hands before signing the Emancipation Proclamation so historians in the future could not claim his signature manifested hesitancy. Whether it's true or not, I never forgot that anecdote. </p>
 		<p>And when I walked through the National Archives on my eighth grade field trip and saw John Hancock's signature, still bold despite the passing of time, I didn't forget that either. </p>
 		<p>The giant "John Hancock," along with the 55 other signatures of the Founding Fathers, were the closest I could get to meeting the men who bravely defied the British crown to establish our nation and who, up until that point, had only been as real as characters in a novel to me - well known, sure, but out of reach. </p>
@@ -730,7 +731,7 @@ $(document).ready(function() {
 		</figure>
 		<p>"(Graphology) is a very honest form of communication," Rivkin said. </p>
 		<p>"Handwriting is body language on paper." </p>
-		<p>Recently I was introduced to Annette Poizner, a graphologist who uses her work in conjunction with therapy to help clients open up and learn about themselves and how they can move forward from conflicts or concerns in their lives. For instance, if somebody wants to quit his or her job and see what they should consider pursuing next, they might talk to Poizner. </p>
+		<p>Recently I was introduced to Annette Poizner, a graphologist and clinical social worker who uses handwriting analysis in her practice of psychotherapy to help clients open up and learn about themselves and how they can move forward from conflicts or concerns in their lives. For instance, if somebody wants to quit his or her job and see what they should consider pursuing next, they might talk to Poizner. </p>
 		<p>She reached out to me with a story idea, and I told her I was interested in writing a first-hand account. </p>
 		<p>Her philosophy is one of projective psychology, which is the discipline that believes a person's innermost thoughts manifest themselves in everything they do, even his or her writing. </p>
 		<p>But is it true? I plunged myself into the depths of Poizner's process to find out. </p>
@@ -771,7 +772,8 @@ $(document).ready(function() {
 		<p>So graphology, to me, and to people like Poizner, is a supplement to other information. </p>
 		<p>As of yet we do not have time machines, so I'll never really get to know the historical figures I've read about or imagined I'd like to meet. But I'd like to think that we leave something more than ink behind when we commit to something or sign our name. </p>
 		<p>As a journalist, I guess part of me likes the idea that our writing might tell our own story as much as it tells the story we are trying to share. And if it might be that we leave a piece of ourselves behind in the slope of our letters, I'll buy it. </p>	
-		<i>Email Daskalakis at <a href="mailto:adaskalakis@media.ucla.edu">adaskalakis@media.ucla.edu.</a></i>
+		<p><i>Email Daskalakis at <a href="mailto:adaskalakis@media.ucla.edu">adaskalakis@media.ucla.edu.</a></i></p>
+		<p><strong>Clarification:</strong> <em>Poizner is a graphologist and clinical social worker.</em></p>
 	</div> <!-- end page three -->
 	
 	<div class="pagination center">
