@@ -38,7 +38,8 @@ function howewo_ajax_enqueue() {
 		    array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 		}
 	}
-add_action( 'roots_head', 'howewo_ajax_enqueue' );
+add_action('wp_ajax_nopriv_howewo_ajax', 'howewo_ajax_enqueue');
+//add_action( 'wp_ajax_nopriv_my_action', 'howewo_ajax_enqueue' );
 
 function inf_scroll_callback() {
 	global $post;
@@ -56,5 +57,5 @@ function inf_scroll_callback() {
 	die();
 
 }
-add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
+add_action('wp_ajax_nopriv_infinite_scroll', 'inf_scroll_callback');
 
