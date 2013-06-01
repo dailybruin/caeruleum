@@ -58,5 +58,6 @@ function inf_scroll_callback() {
 	die();
 
 }
+add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
 add_action('wp_ajax_nopriv_infinite_scroll', 'inf_scroll_callback');
 

@@ -9,7 +9,7 @@ $(window).ready(function() {
 			var data = {
 				action: 'infinite_scroll',
 				offset: 8*(offset_inc),
-				numberposts: 5,
+				numberposts: 4,
 			};
 			$.post(ajax_object.ajax_url, data, function(response) {
 				var image_urls = JSON.parse(response);
