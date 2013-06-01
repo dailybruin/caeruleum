@@ -44,8 +44,9 @@ add_action('wp_ajax_nopriv_howewo_ajax', 'howewo_ajax_enqueue');
 function inf_scroll_callback() {
 	global $post;
 	$postArr = array();
-	$offset = intval( $_POST['counter']);
-	$args = array('numberposts' => 5, 'offset' => $offset, 'category' => 'HOWEWO');
+	$offset = intval( $_POST['offset']);
+	$numberposts = intval( $_POST['numberposts']);
+	$args = array('numberposts' => $numberposts, 'offset' => $offset, 'category' => 'HOWEWO');
 	$latestPosts = get_posts( $args );
 	
 	foreach( $latestPosts as $post ) :	setup_postdata($post); 
