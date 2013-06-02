@@ -85,8 +85,7 @@
 <div class="row">
 	<div class="span8 studio-recording-page" id="post">
     	<div id="feature-head">
-            <h1>put feature head here</h1>
-            <span class="subhead">Look at me I'm a pretty subhead. We need to put the subhead here yay.</span>
+            <img src="/images/features/studio-recording/secret-kind-of-art.svg" />
         </div><!-- end div#feature-head -->
 
         <div class="row">
