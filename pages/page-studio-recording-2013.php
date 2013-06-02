@@ -1,3 +1,6 @@
+<?php/*
+Template Name: A Secret Kind of Art
+*/ ?>
 <?php 
     // Load jPlayer
     wp_enqueue_script( 
