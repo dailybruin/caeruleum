@@ -85,7 +85,7 @@
 <div class="row">
 	<div class="span8 studio-recording-page" id="post">
     	<div id="feature-head">
-            <img src="/images/features/studio-recording/secret-kind-of-art.svg" />
+            <img src="/images/features/studio-recording/secret-kind-of-art.svg" alt="A Secret Kind of Art" />
         </div><!-- end div#feature-head -->
 
         <div class="row">
