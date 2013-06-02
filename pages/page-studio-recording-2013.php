@@ -1,47 +1,8 @@
-<?php 
-    // Load jPlayer
-    wp_enqueue_script( 
-        'jplayer', 
-        get_template_directory_uri() . '/js/vendor/jPlayer/jquery.jplayer.min.js', 
-        array('jquery'), null, false 
-    ); 
-?>
+<?php/*
+Template Name: A Secret Kind of Art
+*/ ?>
 
 <?php get_header(); ?>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-      $("#jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            mp3: "http://dailybruin.com/images/2013/05/5.20.lss_.mp3"
-          });
-        },
-        ended: function() {
-            $("#play_1 .jplayer_play").click();
-        },
-        swfPath: "/js/vendor/jPlayer",
-        supplied: "mp3"
-      });
-    });
-
-    $(document).ready(function(){
-        $('#play_1 .jplayer_play').click(function(e) {
-            $('#play_1 .jplayer_play').css('display','none');
-            $('#play_1 .jplayer_pause').css('display','block');
-            $.jPlayer.pause();
-            $("#jplayer_1").jPlayer("play");
-            e.preventDefault();
-        });
-        $('#play_1 .jplayer_pause').click(function(e) {
-            $('#play_1 .jplayer_pause').css('display','none');
-            $('#play_1 .jplayer_play').css('display','block');
-            $.jPlayer.pause();
-            e.preventDefault();
-        });
-
-    });
-</script>
 
 <style type="text/css">
     .studio-recording-page #feature-head {
@@ -50,43 +11,17 @@
     .studio-recording-page .video-explainer {
         margin-top:6px;
     }
-    .studio-recording-page .js_player {
-        float: right;
-        width: 50%;
-        margin-left: 8px;
-        margin-bottom: 8px;
-        background-color: #eee;
-        padding: 5px;
-        margin-top: 7px;
-    }
-    .studio-recording-page .js_player h4 {
-        font-size: 1em;
-        margin-top: 0;
-        margin-bottom: 10px;
-        line-height: 1.1em;
-    }
-    .studio-recording-page .js_player a {
-        width: 100%;
-        display: block;
-        text-align: center;
-        color: black;
-        font-size: 1em;
-        position: relative;
-    }
-    .studio-recording-page .js_player a:hover {
-        text-decoration:none;
-        background-color:#dfdfdf;
-        cursor:pointer;
-    }
-    .studio-recording-page .js_player .jplayer_pause {
-        display:none;
+    .studio-recording-page #gsPlaylist8717217575 {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:100% !important;
     }
 </style>
 <div class="row">
 	<div class="span8 studio-recording-page" id="post">
     	<div id="feature-head">
-            <h1>put feature head here</h1>
-            <span class="subhead">Look at me I'm a pretty subhead. We need to put the subhead here yay.</span>
+            <img src="/images/features/studio-recording/secret-kind-of-art.svg" alt="A Secret Kind of Art" />
         </div><!-- end div#feature-head -->
 
         <div class="row">
@@ -98,16 +33,6 @@
             <div class="span4">
                 <h3>Title of the video</h3>
                 <iframe width="100%" height="240px" src="http://www.youtube.com/embed/kfVsfOSbJY0" frameborder="0" allowfullscreen></iframe>
-                <div id="jplayer_1" class="jp-jplayer"></div>
-                <div id="play_1" class="js_player">
-                    <h4>Listen to a sample of his work</h4>
-                    <a class="jplayer_play" href="#"><i class="icon-play"></i> Play</a>
-                    <a class="jplayer_pause" href="#"><i class="icon-pause"></i> Pause</a>
-                </div><!-- end div#play_1 -->
-
-
-
-
                 <p class="video-explainer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue, dolor et tempus pulvinar, nisi dolor dapibus velit, at pulvinar orci turpis eu nisl. Curabitur tincidunt leo vel risus elementum mollis. Nulla commodo, augue vel venenatis sollicitudin, tellus velit porta metus, quis bibendum lacus sem eu nisl.</p>
             </div><!-- end div.span4 -->
             <div class="span4">
@@ -115,6 +40,10 @@
                 <iframe width="100%" height="240px" src="http://www.youtube.com/embed/kfVsfOSbJY0" frameborder="0" allowfullscreen></iframe>
                 <p class="video-explainer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue, dolor et tempus pulvinar, nisi dolor dapibus velit, at pulvinar orci turpis eu nisl. Curabitur tincidunt leo vel risus elementum mollis. Nulla commodo, augue vel venenatis sollicitudin, tellus velit porta metus, quis bibendum lacus sem eu nisl.</p>
             </div><!-- end div.span4 -->
+            <div class="span8">
+                <h3>Listen to their songs</h3>
+                <p>Do you want an explainer here?</p>
+                <object width="100%" height="320" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsPlaylist8717217531" name="gsPlaylist8717217531"><param name="movie" value="http://grooveshark.com/widget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=87172175&p=0&bbg=232323&bth=232323&pfg=232323&lfg=232323&bt=d1d5bc&pbg=d1d5bc&pfgh=d1d5bc&si=d1d5bc&lbg=d1d5bc&lfgh=d1d5bc&sb=d1d5bc&bfg=62ba45&pbgh=62ba45&lbgh=62ba45&sbh=62ba45" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="100%" height="320"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=87172175&p=0&bbg=232323&bth=232323&pfg=232323&lfg=232323&bt=d1d5bc&pbg=d1d5bc&pfgh=d1d5bc&si=d1d5bc&lbg=d1d5bc&lfgh=d1d5bc&sb=d1d5bc&bfg=62ba45&pbgh=62ba45&lbgh=62ba45&sbh=62ba45" /><span><a href="http://grooveshark.com/search/playlist?q=Introduction%20to%20Recording%20Engineering%20%E2%80%94%20Class%20projects%20sampler%202009-2012%20Daily%20Bruin%20Online" title="Introduction to Recording Engineering — Class projects sampler 2009-2012 by Daily Bruin Online on Grooveshark">Introduction to Recording Engineering — Class projects sampler 2009-2012 by Daily Bruin Online on Grooveshark</a></span></object></object>            </div><!-- end div.span8 -->
         </div><!-- end div.row -->
 
 	</div><!-- end div#post -->
