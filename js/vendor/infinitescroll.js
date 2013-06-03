@@ -19,7 +19,7 @@ $(window).ready(function() {
 				$.each( image_urls, function(key, value) {
 					var image = document.createElement('img');
 				    image.setAttribute('src',value);
-				    image.setAttribute('width','300');
+				    image.setAttribute('width','100%');
 				    images.push(image);
 				});
 				

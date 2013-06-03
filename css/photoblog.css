@@ -375,3 +375,14 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #howewo-container {
 	display: none;
 }
+.howewo-column {
+	margin-left: 0px;
+	margin-right: 30px;
+}
+.howewo-img-content {
+	display: none;
+}
+/*
+.howewo-img-wrap {
+	margin: 10px 0 10px 0;
+}*/

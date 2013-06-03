@@ -12,10 +12,12 @@
 		}
 	}
 	if (has_post_thumbnail()) :
-		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
+		the_post_thumbnail('db-category-full'); 
 		?>
-		<?php the_post_thumbnail('db-category-full'); ?>
-		<?php
+		<div class="howewo-img-content">
+			<?php the_content(); ?>
+		</div>
+	<?php
 	endif;
 	
 endwhile;
