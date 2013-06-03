@@ -290,8 +290,6 @@ Template Name: Major_Stats_2013
 			  background: blue;
 			}*/
 		</style>
-		<link type="text/css" rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/table.css">
 		<script id="sort_table">
 			/*
 			  SortTable
