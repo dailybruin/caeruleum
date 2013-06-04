@@ -1,0 +1,353 @@
+[
+	{
+		"Major": "Aerospace_Engineering",
+		"bracket1": "2",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "2",
+		"10years": "3"
+	},
+	{
+		"Major": "American_Literature_and_Culture",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Anthropology",
+		"bracket1": "4",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "Art",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "1",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Bioengineering",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "1",
+		"1year": "2",
+		"10years": "4"
+	},
+	{
+		"Major": "Biology",
+		"bracket1": "2",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Business_Economics",
+		"bracket1": "1",
+		"bracket4": "1",
+		"bracket2": "6",
+		"bracket3": "6",
+		"1year": "2",
+		"10years": "3"
+	},
+	{
+		"Major": "Chemical_Engineering",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "4",
+		"1year": "2",
+		"10years": "4"
+	},
+	{
+		"Major": "Chemistry",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "1",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Civil_Engineering",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "2",
+		"1year": "2",
+		"10years": "3"
+	},
+	{
+		"Major": "Communication_Studies",
+		"bracket1": "6",
+		"bracket4": "0",
+		"bracket2": "5",
+		"bracket3": "1",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "Computer_Science",
+		"bracket1": "0",
+		"bracket4": "1",
+		"bracket2": "3",
+		"bracket3": "3",
+		"1year": "2",
+		"10years": "4"
+	},
+	{
+		"Major": "Computer_Science_and_Engineering",
+		"bracket1": "0",
+		"bracket4": "1",
+		"bracket2": "0",
+		"bracket3": "2",
+		"1year": "2",
+		"10years": "4"
+	},
+	{
+		"Major": "Design_Media_Arts",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Economics",
+		"bracket1": "6",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "2",
+		"1year": "2",
+		"10years": "3"
+	},
+	{
+		"Major": "Electrical_Engineering",
+		"bracket1": "0",
+		"bracket4": "1",
+		"bracket2": "0",
+		"bracket3": "2",
+		"1year": "2",
+		"10years": "4"
+	},
+	{
+		"Major": "English",
+		"bracket1": "3",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Environmental_Science",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Gender_Studies",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "Geography",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "Geography_Environmental_Studies",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "History",
+		"bracket1": "2",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "International_Development_Studies",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "Japanese",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Linguistics_and_Computer_Science",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "1"
+	},
+	{
+		"Major": "Mathematics",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "2",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Mathematics_for_Teaching",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Mathematics_Applied",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Mathematics_Applied_Science",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Mechanical_Engineering",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "4",
+		"1year": "2",
+		"10years": "3"
+	},
+	{
+		"Major": "Music_Music_Education",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Nursing_Prelicensure",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "2",
+		"bracket3": "0",
+		"1year": "2",
+		"10years": "3"
+	},
+	{
+		"Major": "Philosophy",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "1"
+	},
+	{
+		"Major": "Political_Science",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "2",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	},
+	{
+		"Major": "Psychobiology",
+		"bracket1": "1",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "1",
+		"1year": "1",
+		"10years": "1"
+	},
+	{
+		"Major": "Psychology",
+		"bracket1": "2",
+		"bracket4": "0",
+		"bracket2": "2",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "1"
+	},
+	{
+		"Major": "Sociology",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Statistics",
+		"bracket1": "2",
+		"bracket4": "0",
+		"bracket2": "0",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "2"
+	},
+	{
+		"Major": "Undeclared_Social Sciences",
+		"bracket1": "0",
+		"bracket4": "0",
+		"bracket2": "1",
+		"bracket3": "0",
+		"1year": "1",
+		"10years": "3"
+	}
+]
