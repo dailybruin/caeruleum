@@ -300,23 +300,11 @@ $(document).ready(function() {
 				}
 				var j = $('<div/>', {
 				    "class": 'howewo-img-wrap',
-				})
-				.css({ 'margin':'0 0 30px 0',
-					   'position':'relative'})
-				.append(images[n]);
+				}).append(images[n]);
 				j.append($('<div/>', {
 					text: image_content[n].innerHTML,
-				})
-					.css({	'background-color': 'black',
-							'color': 'white',
-							//'height': '100%',
-							'opacity':'.7',
-							'padding':'5px 0px 5px 0px',
-							'position':'absolute',
-							'text-indent':'5px',
-							'top':'0px',
-						 	'width': '100%'}));
-					j.appendTo(column[small_i]);
+				}));
+				j.appendTo(column[small_i]);
 			}
 		}
 	});

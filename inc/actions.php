@@ -51,7 +51,8 @@ function inf_scroll_callback() {
 	
 	foreach( $latestPosts as $post ) :	setup_postdata($post); 
 		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
-		$postArr[] = $image_url[0];
+		$caption = get_the_content();
+		$postArr[] = array( $image_url[0], $caption );
 	endforeach; //wp_reset_postdata();
 	echo json_encode($postArr);
 	
