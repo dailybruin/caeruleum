@@ -6,24 +6,7 @@ Template Name: Major_Stats_2013
 <div class="row" id="single-post">
 	<div class="span12">
 		<style>
-			/* http://meyerweb.com/eric/tools/css/reset/ 
-			   v2.0 | 20110126
-			   License: none (public domain)
-			*/
-
-			html, body, div, span, applet, object, iframe,
-			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-			a, abbr, acronym, address, big, cite, code,
-			del, dfn, em, img, ins, kbd, q, s, samp,
-			small, strike, strong, sub, sup, tt, var,
-			b, u, i, center,
-			dl, dt, dd, ol, ul, li,
-			fieldset, form, label, legend,
-			table, caption, tbody, tfoot, thead, tr, th, td,
-			article, aside, canvas, details, embed, 
-			figure, figcaption, footer, header, hgroup, 
-			menu, nav, output, ruby, section, summary,
-			time, mark, audio, video {
+			#poll div {
 				margin: 0;
 				padding: 0;
 				border: 0;
@@ -31,40 +14,23 @@ Template Name: Major_Stats_2013
 				font: inherit;
 				vertical-align: baseline;
 			}
-			/* HTML5 display-role reset for older browsers */
-			article, aside, details, figcaption, figure, 
-			footer, header, hgroup, menu, nav, section {
-				display: block;
-			}
-			body {
-				line-height: 1;
-			}
-			ol, ul {
+
+			#poll ul {
 				list-style: none;
-			}
-			blockquote, q {
-				quotes: none;
-			}
-			blockquote:before, blockquote:after,
-			q:before, q:after {
-				content: '';
-				content: none;
-			}
-			table {
-				border-collapse: collapse;
-				border-spacing: 0;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
 			}
 
-			html, body {
-				font-family: Helvetica, Arial, sans-serif;
-			}
-
-			#wrapper {
+			#poll {
 				width: 960px;
 				margin: 0 auto 0 auto;
 			}
 
-			#numbers {
+			#poll #numbers {
 				height: 215px;
 				width: 960px;
 				padding-left: 50px;
@@ -83,7 +49,7 @@ Template Name: Major_Stats_2013
 				);
 			}
 
-			#numbers td {
+			#poll #numbers td {
 				width: 215px;
 				text-align: center;
 				vertical-align: middle;
@@ -92,12 +58,13 @@ Template Name: Major_Stats_2013
 				font-weight: bold;
 			}
 
-			#numbers td p {
+			#poll #numbers td p {
 				font-size: 20px;
 			}
 
 
-			#leftTransition {
+			#poll #leftTransition {
+				clear: both;
 				width: 0;
 				height: 0;
 				border-top: 0px;
@@ -106,7 +73,7 @@ Template Name: Major_Stats_2013
 				float: left;
 			}
 
-			#rightTransition {
+			#poll #rightTransition {
 				width: 0;
 				height: 0;
 				border-top: 0px;
@@ -115,7 +82,7 @@ Template Name: Major_Stats_2013
 				float: right;
 			}
 
-			#transition {
+			#poll #transition {
 				width: 860px;
 				height: 50px;
 				margin-left: 50px;
@@ -134,7 +101,7 @@ Template Name: Major_Stats_2013
 				);
 			}
 
-			#axis {
+			#poll #axis {
 				width: 860px;
 				height: 50px;
 				margin-left: 50px;
@@ -153,7 +120,7 @@ Template Name: Major_Stats_2013
 				);
 			}
 
-			#axis li {
+			#poll #axis li {
 				float: left;
 				width: 214px;
 				text-align: center;
@@ -163,12 +130,12 @@ Template Name: Major_Stats_2013
 				font-weight: bold;
 			}
 
-			#axis li:last-child {
+			#poll #axis li:last-child {
 				border-right: none;
 				width: 215px;
 			}
 
-			#axisBottom {
+			#poll #axisBottom {
 				width: 860px;
 				margin-left: 50px;
 				height: 1px;
@@ -188,7 +155,7 @@ Template Name: Major_Stats_2013
 				box-shadow: 5px 5px 5px #888;
 			}
 
-			#leftContainer {
+			#poll #leftContainer {
 				width: 0;
 				height: 0;
 				border-top: 0px;
@@ -197,7 +164,7 @@ Template Name: Major_Stats_2013
 				float: left;
 			}
 
-			#rightContainer {
+			#poll #rightContainer {
 				width: 0;
 				height: 0;
 				border-top: 0px;
@@ -206,7 +173,7 @@ Template Name: Major_Stats_2013
 				float: right;
 			}
 
-			#graphContainer {
+			#poll #graphContainer {
 				height: 300px;
 				width: 860px;
 				position: relative;
@@ -226,7 +193,7 @@ Template Name: Major_Stats_2013
 				);
 			}
 
-			#bottomContainer {
+			#poll #bottomContainer {
 				width: 960px;
 				height: 10px;
 				background-color: #29afbf;
@@ -244,12 +211,12 @@ Template Name: Major_Stats_2013
 				);
 			}
 
-			#graphContainer img{
+			#poll #graphContainer img{
 				position: absolute;
 				height: 50px;
 			}
 
-			img#loader {
+			#poll img#loader {
 				position: absolute;
 				width: 32px;
 				height: 32px;
@@ -259,29 +226,33 @@ Template Name: Major_Stats_2013
 				margin-top: -16px;
 			}
 
-			.graphColumn {
+			#poll .graphColumn {
 				float: left;
 				width: 300px;
 			}
 		</style>
 		<style>
-			table{
+			#poll table{
 				width:100%;
 				font-size: 12px;
 			}
-			thead{
+			#poll thead{
 				border-collapse-bottom: 2px;
 			}
-			td,th{
+			#poll td,th{
 				text-align: center;
 				padding: 10px;
 				width:50px;
 			}
-			table.sortable thead {
+			#poll table.sortable thead {
 			    background-color:#eee;
 			    color:#666666;
 			    font-weight: bold;
 			    cursor: default;
+			}
+
+			#myMenu {
+				float: right;
 			}
 			/*table tbody tr:nth-child(2n) td {
 			  background: red;
@@ -782,7 +753,7 @@ Template Name: Major_Stats_2013
 			};
 		</script>
 
-		<div id="wrapper">
+		<div id="poll">
 			<table id="numbers">
 				<tr>
 					<td id="bracket1"></td>
@@ -804,29 +775,27 @@ Template Name: Major_Stats_2013
 			<div id="axisBottom"></div>
 			<div id="leftContainer"></div><div id="rightContainer"></div>
 			<div id="graphContainer">
-				<img id="loader" src="/img/major-stats-assets/ajax-loader.gif"/>
+				<img id="loader" src="/images/features/major-stats-2013/assets/ajax-loader.gif"/>
 			</div>
 			<div id="bottomContainer"></div>
 			<br/>
-			<a href="#" id="move1">Expected</a>
-			<a href="#" id="move2">Recent Grads</a>
-			<a href="#" id="move3">10 years later</a>
-			<br/><br/>
-			<a href="#" id="loadugrad">Undergrad Data</a>
-			<a href="#" id="loadgrad">Grad Data</a>
-			<br/>
-			<br/>
-			<label for="selective">View selected majors</label>
-			<input type="checkbox" id="selective"></input>
-			<br/>
-			<br/>
 			<div id="myMenu">
 				<form>
-					<select id="mySelect">
+					<select id="mySelect" style="position: relative; top: 4px;">
 					</select>
-					<button type="button" id="menuButton">Add</button>
+					<button type="button" id="menuButton" class="btn">Add</button>
 				</form>
 			</div>
+			<button href="#" id="move1" class="staging btn btn-primary">Expected</button>
+			<button href="#" id="move2" class="staging btn">Recent Grads</button>
+			<button href="#" id="move3" class="staging btn">10 years later</button>
+			<br/>
+			<br/>
+			<label for="selective" style="clear: right; float: right;">View selected majors</label>
+			<input type="checkbox" id="selective" style="float: right; margin-right: 10px;"></input>
+			<button href="#" id="loadugrad" class="classing btn btn-primary">Undergrad Data</button>
+			<button href="#" id="loadgrad" class="classing btn">Grad Data</button>
+			<br/>
 			<br/>
 			<table id="myTable" class="sortable">
 				<thead id="myHeadings">
@@ -855,7 +824,7 @@ Template Name: Major_Stats_2013
 			window.imageheight = 50;
 
 			$(document).ready(function(){
-				window.application = new view('/img/major-stats-2013-data/undergrad.json',function(){
+				window.application = new view('/images/features/major-stats-2013/data/undergrad.json',function(){
 					this.createGrid(1,this.render);
 				});
 				getData();
@@ -864,8 +833,10 @@ Template Name: Major_Stats_2013
 			});
 
 			$("#loadugrad").click(function(e){
+				$(".classing").removeClass("btn-primary");
+				$(this).addClass("btn-primary");
 				window.application.clear(function(){
-					window.application = new view('/img/major-stats-2013-data/undergrad.json',function(){
+					window.application = new view('/images/features/major-stats-2013/data/undergrad.json',function(){
 						this.createGrid(1,this.render);
 					});
 				});
@@ -873,8 +844,10 @@ Template Name: Major_Stats_2013
 			});
 
 			$("#loadgrad").click(function(e){
+				$(".classing").removeClass("btn-primary");
+				$(this).addClass("btn-primary");
 				window.application.clear(function(){
-					window.application = new view('/img/major-stats-2013-data/grad.json',function(){
+					window.application = new view('/images/features/major-stats-2013/data/grad.json',function(){
 						this.createGrid(1,this.render);
 					});
 				});
@@ -882,16 +855,22 @@ Template Name: Major_Stats_2013
 			});
 
 			$("#move1").click(function(e){
+				$(".staging").removeClass("btn-primary");
+				$(this).addClass("btn-primary");
 				window.application.move(1);
 				e.preventDefault();
 			});
 
 			$("#move2").click(function(e){
+				$(".staging").removeClass("btn-primary");
+				$(this).addClass("btn-primary");
 				window.application.move(2);
 				e.preventDefault();
 			})
 
 			$("#move3").click(function(e){
+				$(".staging").removeClass("btn-primary");
+				$(this).addClass("btn-primary");
 				window.application.move(3);
 				e.preventDefault();
 			})
@@ -1045,13 +1024,13 @@ Template Name: Major_Stats_2013
 						var tempLeft = xLoc+Math.floor(Math.random()*15);
 					this.collection.people[i].dom_id = 'person'+i;
 					//FIX: classes should not be space delimited
-					var string = '<img class="people" major="'+this.collection.people[i].major+'" id="person'+i+'" src="/img/major-stats-assets/silhouettes/males/'+number+'.png" grid="'+gridLoc+'" style="top:'+(yLoc+Math.floor(Math.random()*20)+20)+'px; left:'+tempLeft+'px;"/>'
+					var string = '<img class="people" major="'+this.collection.people[i].major+'" id="person'+i+'" src="/images/features/major-stats-2013/assets/silhouettes/males/'+number+'.png" grid="'+gridLoc+'" style="top:'+(yLoc+Math.floor(Math.random()*20)+20)+'px; left:'+tempLeft+'px;"/>'
 					this.dom.innerHTML += string;
 				}
 			}
 
 			view.prototype.clear = function(callback) {
-				document.getElementById('graphContainer').innerHTML = '<img id="loader" src="/img/major-stats-assets/ajax-loader.gif"/>';
+				document.getElementById('graphContainer').innerHTML = '<img id="loader" src="/images/features/major-stats-2013/assets/ajax-loader.gif"/>';
 				document.getElementById('numbers').innerHTML = '<td id="bracket1"></td><td id="bracket2"></td><td id="bracket3"></td><td id="bracket4"></td>';
 				for (var prop in this)
 				{
@@ -1119,7 +1098,7 @@ Template Name: Major_Stats_2013
 			var mySelection;
 
 			function getData(){
-				$.getJSON("/img/major-stats-2013-data/StatsSurveyTentative.JSON", function(data){
+				$.getJSON("/images/features/major-stats-2013/data/StatsSurveyTentative.JSON", function(data){
 					for(x in data){
 						Stats.push(data[x]);
 					}
@@ -1157,7 +1136,7 @@ Template Name: Major_Stats_2013
 					}
 					myCell = myRow.insertCell(-1);
 					var appendedtemp = "'"+temp+"'";
-					myCell.innerHTML="<button class=\"remove\" id=\""+temp+"\" type=\"button\" onclick=\"removeFromTable(this.parentNode.parentNode.rowIndex,'"+temp+"')\">X</button>";
+					myCell.innerHTML="<button class=\"remove btn\" id=\""+temp+"\" type=\"button\" onclick=\"removeFromTable(this.parentNode.parentNode.rowIndex,'"+temp+"')\">X</button>";
 					Visible.push(temp);
 					sorttable.makeSortable(myTable);
 					$('.people').each(function(){
@@ -1217,12 +1196,6 @@ Template Name: Major_Stats_2013
 		</script>
 
 	</div>
-	<div class="span8" id="post">
-
-        <?php get_template_part('loop', 'page'); ?>
-	</div><!-- end div#post -->
-	
-	<?php get_sidebar(); ?>
 	
 </div><!-- end div#single-post -->      
 
