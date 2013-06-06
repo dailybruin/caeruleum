@@ -22,7 +22,11 @@ Template Name: Major_Stats_2013
 		<img src="/images/features/major-stats-2013/assets/banner.png" alt="a major choice">
 	<div class="span11" style="padding: 20px;">
 		<br><br>
-		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students to rate their expected salary one year out of college. This interactive graphic compares UCLA undergraduates' predictions of their expected salaries to national salary data for recent graduates and graduates 10 years out of college. The national data was provided by Job Search Intelligence, a company that analyzes national salary data. The interactive graphic does not include survey participants who indicated plans to attend graduate school, only those who indicated plans to enter the workforce directly after their undergraduate education. 
+		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students to rate their expected salary one year out of college. 
+			This interactive graphic compares UCLA undergraduates' predictions of their expected salaries to national salary data for recent graduates 
+			and graduates 10 years out of college. The national data was provided by Job Search Intelligence, a company that analyzes national salary data.
+			The interactive graphic does not include survey participants who indicated plans to attend graduate school, only those 114 students who 
+			indicated plans to enter the workforce directly after their undergraduate education.
 		</p>
 		<p>Click through the interactive graphic below to explore and compare students' salary expectations by major. You can also select a specific major and view stats for that major in the table below.</p>
 		<hr>
@@ -249,6 +253,17 @@ Template Name: Major_Stats_2013
 				float: left;
 				width: 300px;
 			}
+
+			.relatedArticlesDoe {
+				height: 200px; 
+				background-color: #d6f2f5; 
+				padding: 10px;
+			}
+
+			.relatedArticlesDoe:hover {
+				background-color: #6ecfdb; 
+			}
+
 		</style>
 		<style>
 			#poll table{
@@ -805,8 +820,8 @@ Template Name: Major_Stats_2013
 					<button type="button" id="menuButton" class="btn">Add</button>
 				</form>
 			</div>
-			<button href="#" id="move1" class="staging btn btn-primary">Expected</button>
-			<button href="#" id="move2" class="staging btn">Recent Grads</button>
+			<button href="#" id="move1" class="staging btn btn-primary">Student Expectations for Future Salaries</button>
+			<button href="#" id="move2" class="staging btn">Recent Graduates</button>
 			<button href="#" id="move3" class="staging btn">10 years later</button>
 			<br/>
 			<br/>
@@ -989,7 +1004,7 @@ Template Name: Major_Stats_2013
 			view.prototype.render = function(stage) {
 				for (var i=0; i<this.numbers.length;i++)
 				{
-					this.numbers[i].innerHTML = this.collection.returnRatio(stage)[i] + "<br><br><p>students</p>";
+					this.numbers[i].innerHTML = (this.collection.returnRatio(stage)[i]/114).toFixed(2)*100 + "&#37;<br><br><p>of students</p>";
 				}
 				this.dom.innerHTML = "";
 				for (var i=0; i<this.collection.people.length; i++)
@@ -1043,7 +1058,10 @@ Template Name: Major_Stats_2013
 				var number = stage+1;
 				for (var i=0; i<this.numbers.length;i++)
 				{
-					this.numbers[i].innerHTML = this.collection.returnRatio(stage)[i] + "<br><br><p>students</p>";
+					if (stage==3 && i==2)
+						this.numbers[i].innerHTML = (this.collection.returnRatio(stage)[i]/114).toFixed(2)*100-1 + "&#37;<br><br><p>of students</p>";
+					else
+						this.numbers[i].innerHTML = (this.collection.returnRatio(stage)[i]/114).toFixed(2)*100 + "&#37;<br><br><p>of students</p>";
 				}
 				this.createGrid(stage,function(){
 					for (var i=0; i<temp.collection.people.length; i++)
@@ -1194,8 +1212,12 @@ Template Name: Major_Stats_2013
 		</script>
 	</div>
 	<div class="span12">
+		<br>
 		<hr>
-		<h1>How many students have switched between North and South Campuses?</h1>
+		<br>
+		<em><p style="font-size: 30pt; text-align: center;">How many students have switched between North and South Campus?</p></em><br>
+		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students if they had switched majors during their college career. Click below to see how respondents have moved throughout North and South Campus.</p>
+		<br>
 		<div id="graphcontainer" class="row">
 	    	<div class="span1">
 	      </div>
@@ -1232,9 +1254,17 @@ Template Name: Major_Stats_2013
 	        }
 	    });
 	    </script>
+	<br><br>
 	</div>
-	<br/>
-	
+	<div class="span12"><hr><br><em><p style="font-size: 30pt; text-align: center;">Related Articles</p></em></div>
+	<div class="span1"></div>
+	<a href="http://dailybruin.com/2013/06/06/a-major-choice-decision-comes-down-to-interests-finances/"><div class="span3 relatedArticlesDoe"><h3>A Major Choice: Decision comes down to interests, finances</h3><em>by Kylie Reynolds</em></div></a>
+	<a href="http://dailybruin.com/2013/06/06/ucla-alumni-creates-job-search-site-based-on-majors/"><div class="span3 relatedArticlesDoe"><h3>UCLA alumni creates job search site based on majors</h3><em>by Lawrence Han</em></div></a>
+	<a href="http://dailybruin.com/2013/06/06/graduate-degree-higher-salary-does-not-always-connect/"><div class="span3 relatedArticlesDoe"><h3>Graduate degree, higher salary does not always connect</h3><em>by Alexia Boyarsky</em></div></a>
+	<div class="span12"><br>
+	<hr>
+	<em style="margin-top: 20px;"><br><p>Salary Interactive by Calvin Chan and Jimmy Yang, Bruin Contributors.</p><p>Campus Interactive by Daniel Duan, Bruin Contributor</p><p>Illustration by Kristen Fong, Bruin Senior Staff.</p></em>
+	</div>
 </div><!-- end div#single-post -->      
 
 <?php get_footer(); ?>
