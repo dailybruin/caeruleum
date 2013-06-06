@@ -859,7 +859,7 @@ Template Name: Major_Stats_2013
 			window.imageheight = 50;
 
 			function preload(array) {
-			    $(arrayOfImages).each(function(){
+			    $(array).each(function(){
 			        $('<img/>')[0].src = this;
 			    });
 			}
