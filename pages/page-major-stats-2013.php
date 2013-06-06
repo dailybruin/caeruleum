@@ -4,6 +4,30 @@ Template Name: Major_Stats_2013
 
 <?php get_header(); ?>
 <div class="row" id="single-post">
+	<div class="span12" style="
+				background-color: #d6f2f5;
+				background-image: linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
+				background-image: -o-linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
+				background-image: -moz-linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
+				background-image: -webkit-linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
+				background-image: -ms-linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
+				background-image: -webkit-gradient(
+					linear,
+					left bottom,
+					right bottom,
+					color-stop(0, #d6f2f5),
+					color-stop(0.75, #6ecfdb)
+				);">
+		<br>
+		<img src="/images/features/major-stats-2013/assets/banner.png" alt="a major choice">
+	<div class="span11" style="padding: 20px;">
+		<br><br>
+		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students to rate their expected salary one year out of college. This interactive graphic compares UCLA undergraduates' predictions of their expected salaries to national salary data for recent graduates and graduates 10 years out of college. The national data was provided by Job Search Intelligence, a company that analyzes national salary data. The interactive graphic does not include survey participants who indicated plans to attend graduate school, only those who indicated plans to enter the workforce directly after their undergraduate education. 
+		</p>
+		<p>Click through the interactive graphic below to explore and compare students' salary expectations by major. You can also select a specific major and view stats for that major in the table below.</p>
+		<hr>
+	</div>
+	</div>
 	<div class="span12">
 		<style>
 			#poll div {
@@ -26,13 +50,13 @@ Template Name: Major_Stats_2013
 			}
 
 			#poll {
-				width: 960px;
+				width: 940px;
 				margin: 0 auto 0 auto;
 			}
 
 			#poll #numbers {
-				height: 215px;
-				width: 960px;
+				height: 210px;
+				width: 940px;
 				padding-left: 50px;
 				background-color: #6ecfdb;
 				background-image: linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
@@ -83,7 +107,7 @@ Template Name: Major_Stats_2013
 			}
 
 			#poll #transition {
-				width: 860px;
+				width: 840px;
 				height: 50px;
 				margin-left: 50px;
 				background-color: #29afbf;
@@ -102,7 +126,7 @@ Template Name: Major_Stats_2013
 			}
 
 			#poll #axis {
-				width: 860px;
+				width: 840px;
 				height: 50px;
 				margin-left: 50px;
 				background-color: #6ecfdb;
@@ -122,7 +146,7 @@ Template Name: Major_Stats_2013
 
 			#poll #axis li {
 				float: left;
-				width: 214px;
+				width: 210px;
 				text-align: center;
 				line-height: 50px;
 				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -130,13 +154,8 @@ Template Name: Major_Stats_2013
 				font-weight: bold;
 			}
 
-			#poll #axis li:last-child {
-				border-right: none;
-				width: 215px;
-			}
-
 			#poll #axisBottom {
-				width: 860px;
+				width: 840px;
 				margin-left: 50px;
 				height: 1px;
 				background-color: #29afbf;
@@ -175,7 +194,7 @@ Template Name: Major_Stats_2013
 
 			#poll #graphContainer {
 				height: 300px;
-				width: 860px;
+				width: 840px;
 				position: relative;
 				margin-left: 50px;
 				background-color: #6ecfdb;
@@ -194,7 +213,7 @@ Template Name: Major_Stats_2013
 			}
 
 			#poll #bottomContainer {
-				width: 960px;
+				width: 940px;
 				height: 10px;
 				background-color: #29afbf;
 				background-image: linear-gradient(left , #6ecfdb 0%, #29afbf 75%);
@@ -775,7 +794,7 @@ Template Name: Major_Stats_2013
 			<div id="axisBottom"></div>
 			<div id="leftContainer"></div><div id="rightContainer"></div>
 			<div id="graphContainer">
-				<img id="loader" src="/images/features/major-stats-2013/assets/ajax-loader.gif"/>
+				
 			</div>
 			<div id="bottomContainer"></div>
 			<br/>
@@ -793,8 +812,6 @@ Template Name: Major_Stats_2013
 			<br/>
 			<label for="selective" style="clear: right; float: right;">View selected majors</label>
 			<input type="checkbox" id="selective" style="float: right; margin-right: 10px;"></input>
-			<button href="#" id="loadugrad" class="classing btn btn-primary">Undergrad Data</button>
-			<button href="#" id="loadgrad" class="classing btn">Grad Data</button>
 			<br/>
 			<br/>
 			<table id="myTable" class="sortable">
@@ -817,41 +834,23 @@ Template Name: Major_Stats_2013
 			</table>
 			<br/>
 			<br/>
+			<p>Note: There are a number of majors specific to UCLA that are not included in the national data provided by Job Search Intelligence. To allow all students the chance to search for their major's data, the Daily Bruin paired up UCLA majors with national majors as accurately as possible. 
+			</p>
+			<p>Note: Some majors were not represented in the survey data because no students in that major took the survey. To allow all students the chance to search for their major's data, the Daily Bruin included UCLA majors in the national data. 
+			</p>
 		</div>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script type="text/javascript" id="globals">
 			window.imagewidth = 30;
 			window.imageheight = 50;
 
 			$(document).ready(function(){
+				unresponsivize();
 				window.application = new view('/images/features/major-stats-2013/data/undergrad.json',function(){
 					this.createGrid(1,this.render);
 				});
 				getData();
 				document.getElementById('selective').checked = false;
 				document.getElementById('selective').disabled = true;
-			});
-
-			$("#loadugrad").click(function(e){
-				$(".classing").removeClass("btn-primary");
-				$(this).addClass("btn-primary");
-				window.application.clear(function(){
-					window.application = new view('/images/features/major-stats-2013/data/undergrad.json',function(){
-						this.createGrid(1,this.render);
-					});
-				});
-				e.preventDefault();
-			});
-
-			$("#loadgrad").click(function(e){
-				$(".classing").removeClass("btn-primary");
-				$(this).addClass("btn-primary");
-				window.application.clear(function(){
-					window.application = new view('/images/features/major-stats-2013/data/grad.json',function(){
-						this.createGrid(1,this.render);
-					});
-				});
-				e.preventDefault();
 			});
 
 			$("#move1").click(function(e){
@@ -990,7 +989,7 @@ Template Name: Major_Stats_2013
 			view.prototype.render = function(stage) {
 				for (var i=0; i<this.numbers.length;i++)
 				{
-					this.numbers[i].innerHTML = this.collection.returnRatio(stage)[i] + "<p>students</p>";
+					this.numbers[i].innerHTML = this.collection.returnRatio(stage)[i] + "<br><br><p>students</p>";
 				}
 				this.dom.innerHTML = "";
 				for (var i=0; i<this.collection.people.length; i++)
@@ -1030,7 +1029,6 @@ Template Name: Major_Stats_2013
 			}
 
 			view.prototype.clear = function(callback) {
-				document.getElementById('graphContainer').innerHTML = '<img id="loader" src="/images/features/major-stats-2013/assets/ajax-loader.gif"/>';
 				document.getElementById('numbers').innerHTML = '<td id="bracket1"></td><td id="bracket2"></td><td id="bracket3"></td><td id="bracket4"></td>';
 				for (var prop in this)
 				{
@@ -1045,7 +1043,7 @@ Template Name: Major_Stats_2013
 				var number = stage+1;
 				for (var i=0; i<this.numbers.length;i++)
 				{
-					this.numbers[i].innerHTML = this.collection.returnRatio(stage)[i] + "<p>students</p>";
+					this.numbers[i].innerHTML = this.collection.returnRatio(stage)[i] + "<br><br><p>students</p>";
 				}
 				this.createGrid(stage,function(){
 					for (var i=0; i<temp.collection.people.length; i++)
@@ -1194,8 +1192,48 @@ Template Name: Major_Stats_2013
 				document.getElementById("selective").disabled=false;
 			};
 		</script>
-
 	</div>
+	<div class="span12">
+		<hr>
+		<h1>How many students have switched between North and South Campuses?</h1>
+		<div id="graphcontainer" class="row">
+	    	<div class="span1">
+	      </div>
+	    	<div id="graph" class="span10" style="text-align:center; position:relative">
+	        <img id="royce" src="/images/features/major-stats-2013/assets/dd/royce.png" style="width:50%; z-index:10;">
+	        <img id="boelter" src="/images/features/major-stats-2013/assets/dd/engrV.png" style="width:50%; z-index:10;">
+	        <img id="move" src="/images/features/major-stats-2013/assets/dd/onload.png" style="position:absolute; left:0; top:0; z-index:-10;">
+	    	</div>
+	      <div class="span1">
+	      </div>
+	    </div>
+	    
+	    <script>
+	    var toggle = 0;
+
+	      $("#graph").click(function() {
+	        var divWidth = $("#graph").width();
+	        if (toggle==0) {
+	          $("#move").fadeOut('fast', function() {
+	            $("#move").attr("src","/images/features/major-stats-2013/assets/dd/move2.gif");
+	            $("#move").fadeIn('fast');
+	          });
+	          $('#royce').animate({width:divWidth*0.45+1+"px"}, 'slow');
+	          $('#boelter').animate({width:divWidth*0.55+1+"px"}, 'slow');
+	          toggle=1;
+	        } else {
+	          $("#move").fadeOut('fast', function() {
+	            $("#move").attr("src","/images/features/major-stats-2013/assets/dd/onload.png");
+	            $("#move").fadeIn('fast');
+	          });
+	          $('#royce').animate({width:divWidth*0.5+1+"px"}, 'slow');
+	          $('#boelter').animate({width:divWidth*0.5+1+"px"}, 'slow');
+	          toggle=0;
+	        }
+	    });
+	    </script>
+	</div>
+	<br/>
 	
 </div><!-- end div#single-post -->      
 
