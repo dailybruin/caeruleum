@@ -394,6 +394,8 @@
 					</div><!-- end div#front-opinion -->
 				</div><!-- end div.row -->
 				
+				<?php wp_reset_query(); ?>
+
 				<div class="row" id="featuredProject">
 					<div class="span8">
 						<div>
