@@ -391,14 +391,25 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	display: none;
 }
 .howewo-img-wrap:hover div {
-	background-color: white;
-	color: white;
+	background: rgba(0,0,0,0.7);
 	display: inline;
 	height: 100%;
-	opacity: .2;
-	padding: 5px 0px 5px 0px;
+	/*opacity: .5;*/
+	/*padding: 5px 0px 5px 0px;*/
 	position: absolute;
-	text-indent: 5px;
-	top: 0px;
 	width: 100%;
+	
+	top: 0px;
+}
+.howewo-img-wrap:hover div p{
+	color: white;
+	font-size: 50px;
+	opacity: 1.0;
+	text-indent: 5px;
+	width: 100%;
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+    user-select: none;
 }

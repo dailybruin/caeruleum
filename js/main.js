@@ -281,7 +281,6 @@ $(document).ready(function() {
 
 	//Since height() and offsetHeight were returning non-updated values of height, decided to use the ratio method instead
 	$(window).load(function (){
-
 		var container = $("#howewo-container");
 		if (container[0] != 'undefined'){
 			container.show();
@@ -301,9 +300,9 @@ $(document).ready(function() {
 				var j = $('<div/>', {
 				    "class": 'howewo-img-wrap',
 				}).append(images[n]);
-				j.append($('<div/>', {
+				j.append($('<div/>').append($('<p/>', {
 					text: image_content[n].innerHTML,
-				}));
+				})));
 				j.appendTo(column[small_i]);
 			}
 		}
