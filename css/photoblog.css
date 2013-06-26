@@ -365,10 +365,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 #howewo-banner {
 	background-image: url(/img/howewo-banner.jpg);
-	height: auto;
-/*
-	height: 100px;
-	max-height: 200px;*/
+	height: 250px;
 }
 .span3 {
 }
@@ -387,15 +384,18 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin: 0 0 30px 0;
 	position: relative;
 }
+.howewo-img-wrap img{
+	width: 100%;
+}
 .howewo-img-wrap div {
 	display: none;
 }
 .howewo-img-wrap:hover div {
-	background-color: black;
+	background-color: white;
 	color: white;
 	display: inline;
-	/*height: 100%;*/
-	opacity: .7;
+	height: 100%;
+	opacity: .2;
 	padding: 5px 0px 5px 0px;
 	position: absolute;
 	text-indent: 5px;

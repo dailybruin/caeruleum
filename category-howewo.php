@@ -6,11 +6,10 @@ Template Name: HOWEWO
 	<div class="span12" id="post-listing">
     <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
     <div class="row page-header">
-      <div class="span8" id="howewo-banner" style="height:200px;">
-        <p>DERP</p>
+      <div class="span8" id="howewo-banner" >
       </div>
       <div class="span4">
-        <p>HERP</p>
+        <?php get_template_part('ad','side'); ?>
       </div>
     </div>
     <div class="span12 page-content">

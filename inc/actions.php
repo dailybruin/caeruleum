@@ -39,7 +39,6 @@ function howewo_ajax_enqueue() {
 		}
 	}
 add_action('wp_ajax_nopriv_howewo_ajax', 'howewo_ajax_enqueue');
-//add_action( 'wp_ajax_nopriv_my_action', 'howewo_ajax_enqueue' );
 
 function inf_scroll_callback() {
 	global $post;
@@ -53,7 +52,7 @@ function inf_scroll_callback() {
 		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
 		$caption = get_the_content();
 		$postArr[] = array( $image_url[0], $caption );
-	endforeach; //wp_reset_postdata();
+	endforeach;
 	echo json_encode($postArr);
 	
 	die();
