@@ -10,6 +10,7 @@ $(window).load(function() {
 			numberposts: 8,
 		};
 		$.post(ajax_object.ajax_url, data, function(response) {
+			//alert(response);
 			var image_urls = JSON.parse(response);
 			var container = $("#howewo-container");
 		    var column = $(".howewo-column");
@@ -28,7 +29,7 @@ $(window).load(function() {
 					}
 					var wrap = $('<div/>', {
 					    "class": 'howewo-img-wrap',
-					}).append(image,$('<div/>').append($('<p/>', { "text": value[1], })));
+					}).append(image,$('<div/>').append($('<p/>', { "text": value[3], })));
 					wrap.appendTo(column[small_i]);
 				});
 			});

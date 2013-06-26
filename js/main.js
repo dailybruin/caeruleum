@@ -285,7 +285,7 @@ $(document).ready(function() {
 		if (container[0] != 'undefined'){
 			container.show();
 			var images = $("#howewo-container img");
-			var image_content = $(".howewo-img-content p");
+			var image_content = $(".howewo-img-content ul li:nth-child(3)");
 			var col_count = 4;
 			var column = $(".howewo-column");
 			for (var n = 0; n < images.length; n++){

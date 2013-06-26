@@ -15,7 +15,11 @@
 		the_post_thumbnail('db-category-full'); 
 		?>
 		<div class="howewo-img-content">
-			<?php the_content(); ?>
+			<ul>
+				<li><?php the_content(); ?></li>
+				<li><?php the_author(); ?></li>
+				<li><?php the_date('M j'); ?></li>
+			</ul>
 		</div>
 	<?php
 	endif;
