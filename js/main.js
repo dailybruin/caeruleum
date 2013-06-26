@@ -297,13 +297,22 @@ $(document).ready(function() {
 						small_i = p;
 					}
 				}
-				var j = $('<div/>', {
+				var wrap = $('<div/>', {
+					    "class": 'howewo-img-wrap',
+					}).append(
+						images[n], 
+						$('<a/>',{"href": images[n].getAttribute('src'), }).append(
+							$('<div/>',{"width": "100%", }).append(
+								$('<p/>',{ "text": image_content[n].innerHTML, }))));
+				
+				/*
+				var wrap = $('<div/>', {
 				    "class": 'howewo-img-wrap',
 				}).append(images[n]);
-				j.append($('<div/>').append($('<p/>', {
+				wrap.append($('<div/>').append($('<p/>', {
 					text: image_content[n].innerHTML,
-				})));
-				j.appendTo(column[small_i]);
+				})));*/
+				wrap.appendTo(column[small_i]);
 			}
 		}
 	});

@@ -383,6 +383,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .howewo-img-wrap {
 	margin: 0 0 30px 0;
 	position: relative;
+	width: 100%;
 }
 .howewo-img-wrap img{
 	width: 100%;
@@ -394,11 +395,14 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	background: rgba(0,0,0,0.7);
 	display: inline;
 	height: 100%;
-	/*opacity: .5;*/
-	/*padding: 5px 0px 5px 0px;*/
 	position: absolute;
 	width: 100%;
 	top: 0px;
+}
+.howewo-img-wrap:hover a {
+	height: 100%;
+	width: 100%;
+	display: inline;
 }
 .howewo-img-wrap:hover div p{
 	color: white;

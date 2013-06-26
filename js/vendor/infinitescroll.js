@@ -29,7 +29,11 @@ $(window).load(function() {
 					}
 					var wrap = $('<div/>', {
 					    "class": 'howewo-img-wrap',
-					}).append(image,$('<div/>').append($('<p/>', { "text": value[3], })));
+					}).append(
+						image, 
+						$('<a/>',{"href": value[0], }).append(
+							$('<div/>',{"width": "100%", }).append(
+								$('<p/>',{ "text": value[3], }))));
 					wrap.appendTo(column[small_i]);
 				});
 			});
