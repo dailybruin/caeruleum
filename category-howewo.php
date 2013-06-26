@@ -25,5 +25,4 @@ Template Name: HOWEWO
   </div><!-- end div#post-listing -->
 </div><!-- end div#archive-content -->
 
-<div id="howewo-lightbox"></div> 
 <?php get_footer(); ?>

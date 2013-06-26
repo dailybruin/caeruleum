@@ -419,11 +419,11 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #howewo-lightbox {
 	/*if need to work on IE, can use overlay.png from this site: 
 	http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/super-simple-lightbox-with-css-and-jquery/;*/
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.8);
 	width: 100%;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: none;
+	text-align: center;
 }
