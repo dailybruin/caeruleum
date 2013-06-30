@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".howewo-img-wrap a").live('click',function(e){
+	$(document).on("click", ".howewo-img-wrap a", function(e){
 		e.preventDefault();
 		var img_src = $(this).attr("href");
 		if ($('#howewo-lightbox').length > 0) { 
@@ -21,8 +21,8 @@ $(document).ready(function() {
 	    }
 	});
 
-	$('#howewo-lightbox').live('click', function(){
-		$('#howewo-lightbox').hide();
+	$(document).on('click', '#howewo-lightbox', function(){
+		$(this).hide();
 	});
 });
 
