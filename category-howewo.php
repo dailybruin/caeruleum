@@ -7,6 +7,15 @@ Template Name: HOWEWO
     <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
     <div class="row page-header">
       <div class="span8" id="howewo-banner" >
+        <img src="/img/howewo-banner.jpg" />
+        <div>
+          <p>HUMANS OF<br/><span>WESTWOOD</span></p>
+          <div id="howewo-banner-nav">
+            <a href="#">All Photos</a>
+            <a href="#">About</a>
+            <a href="/category/spectrum">Spectrum</a>
+          </div>
+        </div>
       </div>
       <div class="span4">
         <?php get_template_part('ad','side'); ?>

@@ -6,7 +6,8 @@ $(document).ready(function() {
 		if ($('#howewo-lightbox').length > 0) { 
 	        $('#lightbox-container').html('<img src="' + img_src + '" />' + '<div><p>' + img_desc + '</p></div>');
 	        $('#howewo-lightbox').show();
-	        $('#lightbox-container div').width($('#lightbox-container img').width());
+	        if ($('#lightbox-container div').width() < $('#lightbox-container img').width())
+	        	$('#lightbox-container div').width($('#lightbox-container img').width());
 	    }
 	    else {
 	        var lightbox = 
@@ -18,7 +19,9 @@ $(document).ready(function() {
 	        '</div>';
 
 	        $('body').append(lightbox);
-	        $('#lightbox-container div').width($('#lightbox-container img').width());
+	        //Make the text div bigger to match a large horizontal image
+	        if ($('#lightbox-container div').width() < $('#lightbox-container img').width())
+	        	$('#lightbox-container div').width($('#lightbox-container img').width());
 
 	        $(document).keyup(function(e) {
 			    if (e.keyCode == 27 && $('#howewo-lightbox').length > 0) 

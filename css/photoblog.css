@@ -364,10 +364,61 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*margin-left: 0;*/
 }
 #howewo-banner {
-	background-image: url(/img/howewo-banner.jpg);
-	height: 250px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
 }
-.span3 {
+#howewo-banner img{
+	display: inline;
+	position: absolute;
+	width: 100%;
+}
+#howewo-banner > div {
+	background: rgba(0,0,0,0.3);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#howewo-banner > div p {
+	position: absolute;
+	bottom: 30px;
+	left: 15px;
+
+	color: white;
+	font-size: 45px;
+	font-family: "Arial";
+	font-weight: bold;
+}
+#howewo-banner > div p span {
+	font-size: 65px;
+}
+#howewo-banner-nav {
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	margin: 0 0 0 0;
+
+	background: rgba(100,100,100,0.6);
+}
+/*change width, font-size, and padding together!*/
+#howewo-banner-nav a {
+	display:inline-block;
+	width: 20%;
+	height: 50px;
+
+
+	color: black;
+	font-size: 18px;
+	font-family: "Helvetica";
+	font-weight: bold;
+	padding: 16px;
+}
+#howewo-banner-nav a:link,
+#howewo-banner-nav a:visited,
+#howewo-banner-nav a:hover,
+#howewo-banner-nav a:active{
+	text-decoration: none;
 }
 #howewo-container {
 	display: none;
@@ -410,8 +461,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .howewo-img-wrap:hover div p{
 	color: white;
 	font-size: 50px;
-	opacity: 1.0;
-	text-indent: 5px;
+	opacity: 1.0; 
+	text-indent: 10px;
 	width: 100%;
 	-moz-user-select: none; 
     -khtml-user-select: none; 
@@ -431,16 +482,20 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	text-align: center;
 }
 #lightbox-container {
-	height: 95%;
-	margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	height: 100%;
 }
 #lightbox-container img {
+	padding: 20px 0px 0px 0px;
+	position: relative;
 	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #lightbox-container div {
 	margin-left: auto;
 	margin-right: auto;
+	width: 60%;
+
 	color: white;
 }
