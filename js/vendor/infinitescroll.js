@@ -34,7 +34,9 @@ $(window).load(function() {
 						    "class": 'howewo-img-wrap',
 						}).append(
 							image, 
-							$('<a/>',{"href": value[0],}).append(
+							$('<a/>',{
+								"href": value[0],
+								"title": value[1],}).append(
 								$('<div/>',{"width": "100%", }).append(
 									$('<p/>',{ "text": value[3], }))));
 						wrap.appendTo(column[small_i]);

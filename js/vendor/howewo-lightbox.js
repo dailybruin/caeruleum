@@ -2,18 +2,24 @@ $(document).ready(function() {
 	$(document).on("click", ".howewo-img-wrap a", function(e){
 		e.preventDefault();
 		var img_src = $(this).attr("href");
+		var img_desc = $(this).attr("title");
 		if ($('#howewo-lightbox').length > 0) { 
-	        $('#lightbox-container').html('<img src="' + img_src + '" />');
+	        $('#lightbox-container').html('<img src="' + img_src + '" />' + '<div><p>' + img_desc + '</p></div>');
 	        $('#howewo-lightbox').show();
+	        $('#lightbox-container div').width($('#lightbox-container img').width());
 	    }
 	    else {
-	        var lightbox =
+	        var lightbox = 
 	        '<div id="howewo-lightbox">' +
 	            '<div id="lightbox-container">' + 
 	                '<img src="' + img_src +'" />' +
+	                '<div><p>' + img_desc + '</p></div>' +
 	            '</div>' +
 	        '</div>';
+
 	        $('body').append(lightbox);
+	        $('#lightbox-container div').width($('#lightbox-container img').width());
+
 	        $(document).keyup(function(e) {
 			    if (e.keyCode == 27 && $('#howewo-lightbox').length > 0) 
 			  		$('#howewo-lightbox').hide();

@@ -431,8 +431,16 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	text-align: center;
 }
 #lightbox-container {
-	/*background-color: black;
-	border: 1px solid white;*/
+	height: 95%;
+	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
+}
+#lightbox-container img {
+	height: 80%;
+}
+#lightbox-container div {
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
 }
