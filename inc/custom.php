@@ -42,7 +42,7 @@ function uploading_doc_link()
         'id' => 'dailybruin_audits',
         'parent' => 'dailybruin',
         'title' => __('Audits'),
-        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0AqgbtmTCg5qodHVwandlVDM3bTdoRzJoQTFlVXhENWc#gid=49',
+        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0AiQduRDt-18xdE1ISjF5VVVMdnJKYnkyZzQwVDRrZEE#gid=9',
         'meta' => array(
             'target' => '_blank',
         ),
