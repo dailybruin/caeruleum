@@ -40,8 +40,9 @@
           </h1>
           <?php
           if($sectionPage):
+                $categoryID = get_query_var('cat');
   	    		$cat_args = array(
-					'child_of' => get_cat_ID($categoryTitle),
+					'child_of' => $categoryID,
 					'orderby' => 'name',
 					'hide_empty' => 1,
 					'title_li' => ''
