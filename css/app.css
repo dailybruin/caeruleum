@@ -1632,6 +1632,7 @@ ul.phone-nav > li.active a {
 #ad-sm-row {
 	/* This is to fix the bug with Facebook messing up the layout */
 	overflow:hidden;
+    clear:both;
 }
 
 #inthenews {
