@@ -199,4 +199,6 @@ Template Name: Registration Issue 2013
 
 <div class="reg-credit">
     Leading illustration by Madeline Isaacs.
-</div>  
+</div>
+
+<?php get_footer(); ?>
