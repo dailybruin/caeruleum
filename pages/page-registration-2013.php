@@ -18,6 +18,10 @@ Template Name: Registration Issue 2013
 </script>
 
 <style type="text/css">
+    body {
+        overflow-x: hidden;
+    }
+
     .reg-banner {
         display: block;
         margin: 0;
@@ -203,7 +207,7 @@ Template Name: Registration Issue 2013
 </div>
 
 <div class="reg-credit">
-    Leading illustration by Madeline Isaacs. News and A&amp;E section photos by Brandon Choe, Bruin senior staff. Sports section photo by Neil Bedi, Bruin senior staff. Opinion section photo Daily Bruin file photo.
+    Leading illustration by Madeline Isaacs. News and A&amp;E section photos by Brandon Choe, Bruin senior staff. Sports section photo by Neil Bedi, Bruin senior staff. Opinion section photo Daily Bruin file photo. Registration Issue online pages design by Harrison Liddiard.
 </div>
 
 <?php get_footer(); ?>
