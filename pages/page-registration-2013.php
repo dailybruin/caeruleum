@@ -82,6 +82,7 @@ Template Name: Registration Issue 2013
         font-style: italic;
         text-align: center;
         margin: 1em 0;
+        line-height: 1.4em;
     }
 
     /* REFERS */
