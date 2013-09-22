@@ -193,7 +193,7 @@ Template Name: Registration Issue 2013
 
 <a href="http://graphics.dailybruin.com/reg2013/bruin-built/"><div id="reg-refer-sp" class="reg-refer">
     <div class="reg-title">Bruin Built</div>
-    <div class="reg-teaser">The making of an athlete &ndash; in photos.</div>
+    <div class="reg-teaser">The making of an athlete.</div>
 </div></a>
 
 <a href="http://graphics.dailybruin.com/reg2013/places/"><div id="reg-refer-vd" class="reg-refer">
