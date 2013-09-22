@@ -51,7 +51,7 @@ Template Name: Registration Issue 2013
         font-size: 1.3em;
         font-style: italic;
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         text-shadow: 1px 1px 1px black;
     }
     #reg-ns{
@@ -146,28 +146,32 @@ Template Name: Registration Issue 2013
 <div class="reg-section-wrap">
     <div class="reg-section" id="reg-ns">
         <div class="reg-articles">
-            <a href="#">Lorem ipsum dolor sit amet eiusmod do</a>
-            <a href="#">Consectecture adspicing</a>
+            <a href="http://dailybruin.com/2013/09/22/veteran-graduates-28-years-after-first-enrolling/">Veteran graduates 28 years after first enrolling</a>
+            <a href="http://dailybruin.com/2013/09/22/new-bruin-placed-third-in-the-braille-challenge/">New Bruin placed third in The Braille Challenge</a>
+            <a href="http://dailybruin.com/2013/09/22/yudofs-legacy-gets-mixed-reactions-from-uc-community/">Yudof’s legacy gets mixed reactions from UC community</a>
         </div>
     </div>
     <div class="reg-section" id="reg-sp">
         <div class="reg-articles">
-            <a href="#">Lorem ipsum dolor sit amet eiusmod do</a>
-            <a href="#">Consectecture adspicing</a>
+            <a href="http://dailybruin.com/2013/09/22/team-usa-contributor-joins-ucla-mens-water-polo-team/">Team USA contributor joins UCLA men’s water polo team</a>
+            <a href="http://dailybruin.com/2013/09/22/vanderdoes-pushes-for-football-success-at-ucla/">Vanderdoes pushes for football success at UCLA</a>
+            <a href="http://dailybruin.com/2013/09/22/ucla-professor-creates-polymer-liner-to-reduce-injuries/">UCLA professor creates polymer liner to reduce injuries</a>
         </div>
     </div>
 </div>
 <div class="reg-section-wrap">
     <div class="reg-section" id="reg-ae">
         <div class="reg-articles">
-            <a href="#">Lorem ipsum dolor sit amet eiusmod do</a>
-            <a href="#">Consectecture adspicing</a>
+            <a href="http://dailybruin.com/2013/09/22/qa-student-djs-open-up-about-inspiration-methods/">Q&amp;A: Student DJs open up about inspiration, methods</a>
+            <a href="http://dailybruin.com/2013/09/22/flavors-of-westwood-ucla-adjacent-restaurants-show-connection-to-students-alumni/">Flavors of Westwood: UCLA-adjacent restaurants show connection to students, alumni</a>
+            <a href="http://dailybruin.com/2013/09/22/fall-music-preview-2/">Fall music preview</a>
         </div>
     </div>
     <div class="reg-section" id="reg-op">
         <div class="reg-articles">
-            <a href="#">Lorem ipsum dolor sit amet eiusmod do</a>
-            <a href="#">Consectecture adspicing</a>
+            <a href="http://dailybruin.com/2013/09/22/alexandra-tashman-activism-should-refocus-on-public-speech-tangible-goals/">Alexandra Tashman: Activism should refocus on public speech, tangible goals</a>
+            <a href="http://dailybruin.com/2013/09/22/maia-ferdman-israeli-palestinian-conflict-needs-respect-on-both-sides/">Maia Ferdman: Israeli-Palestinian conflict needs respect on both sides</a>
+            <a href="http://dailybruin.com/2013/09/22/editorial-bruin-bash-allocation-should-be-impetus-to-secure-sponsors/">Editorial: Bruin Bash allocation should be impetus to secure sponsors</a>
         </div>
     </div>
 </div>
