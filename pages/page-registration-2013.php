@@ -207,7 +207,7 @@ Template Name: Registration Issue 2013
 </div>
 
 <div class="reg-credit">
-    Leading illustration by Madeline Isaacs. News and A&amp;E section photos by Brandon Choe, Bruin senior staff. Sports section photo by Neil Bedi, Bruin senior staff. Opinion section photo Daily Bruin file photo. Registration Issue online pages design by Harrison Liddiard.
+    Leading illustration by Madeline Isaacs. News and A&amp;E section photos by Brandon Choe, Bruin senior staff. Sports section photo by Neil Bedi, Bruin senior staff. Opinion section photo Daily Bruin file photo. Registration Issue online pages by Harrison Liddiard.
 </div>
 
 <?php get_footer(); ?>
