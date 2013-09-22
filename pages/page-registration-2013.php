@@ -51,7 +51,7 @@ Template Name: Registration Issue 2013
         font-size: 1.3em;
         font-style: italic;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 10   px;
         text-shadow: 1px 1px 1px black;
     }
     #reg-ns{
@@ -202,7 +202,7 @@ Template Name: Registration Issue 2013
 </div>
 
 <div class="reg-credit">
-    Leading illustration by Madeline Isaacs.
+    Leading illustration by Madeline Isaacs. News and A&amp;E section photos by Brandon Choe, Bruin senior staff. Sports section photo by Neil Bedi, Opinion photo Daily Bruin file photo.
 </div>
 
 <?php get_footer(); ?>
