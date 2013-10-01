@@ -107,7 +107,7 @@
 						<div id="front-multimedia">
 							<a href="/category/multimedia/"><h3>Multimedia &raquo;</h3></a>
 							<ul class="sections">
-								<li><a href="/category/multimedia/photo-galleries/">Photos</a></li>
+								<li><a href="/category/spectrum/">Photos</a></li>
 								<li><a href="/category/multimedia/video/">Videos</a></li>
 								<li><a href="/category/multimedia/radio/">Radio</a></li>
 							</ul>
