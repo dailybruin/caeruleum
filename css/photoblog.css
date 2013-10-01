@@ -230,6 +230,23 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	color: #549053;
 	list-style: none;
 }
+
+.sidebar-menu .sidebar-link {
+	color: #999999;
+	/*font-family: "Palatino Linotype";*/
+	font-size: 16px;
+	font-style: italic;
+	line-height:20px;
+	margin-left: 20px;
+}
+.sidebar-menu .sidebar-link:hover {
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+
+
 #menu-spectrum-filter {
 	margin: 0;
 	width: 100%;
@@ -283,20 +300,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 .menu-sidebar hr {
 	margin-top: 10px; margin-left: auto; margin-right: auto; margin-bottom: 10px; height: 1px; width: 90%;
-}
-
-.sidebar-link {
-	color: #999999;
-	/*font-family: "Palatino Linotype";*/
-	font-size: 16px;
-	font-style: italic;
-	line-height:20px;
-	margin-left: 20px;
-}
-.sidebar-link:hover {
-    color: #FFFFFF;
-
-    text-decoration: none;
 }
 
 
