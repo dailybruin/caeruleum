@@ -32,8 +32,8 @@ function uploading_doc_link()
     $wp_admin_bar->add_node( array(
         'id' => 'dailybruin_tweetsposts',
         'parent' => 'dailybruin',
-        'title' => __('Tweets &amp; posts'),
-        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0Aqbw_P_k45fWdGdpUEtkdWZrU2U0RGFucVJyczQ5YlE',
+        'title' => __('Meow'),
+        'href' => 'http://meow.dailybruin.com/',
         'meta' => array(
             'target' => '_blank',
         ),
@@ -42,7 +42,7 @@ function uploading_doc_link()
         'id' => 'dailybruin_audits',
         'parent' => 'dailybruin',
         'title' => __('Audits'),
-        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0AiQduRDt-18xdE1ISjF5VVVMdnJKYnkyZzQwVDRrZEE#gid=9',
+        'href' => 'https://docs.google.com/a/media.ucla.edu/spreadsheet/ccc?key=0AiQduRDt-18xdGJNZEw3MTBzRnhNdlBpQ0lBbGhQdEE&usp=sharing#gid=49',
         'meta' => array(
             'target' => '_blank',
         ),
