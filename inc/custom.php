@@ -12,19 +12,19 @@ function uploading_doc_link()
         'title' => __('Uploading links'),
     ) );
     $wp_admin_bar->add_node( array(
-        'id' => 'dailybruin_uploading',
+        'id' => 'dailybruin_camayak',
         'parent' => 'dailybruin',
-        'title' => __('Web production doc'),
-        'href' => 'http://bit.ly/dailybruinuploading',
+        'title' => __('Using Camayak and WordPress'),
+        'href' => 'https://docs.google.com/document/d/10t6Fc2aMY5oRehM9Grx4sQI0w5_It-hB6LzQM6RpF3E/pub',
         'meta' => array(
             'target' => '_blank',
         ),
     ) );
     $wp_admin_bar->add_node( array(
-        'id' => 'dailybruin_rankings',
+        'id' => 'dailybruin_uploading',
         'parent' => 'dailybruin',
-        'title' => __('Rankings'),
-        'href' => 'https://docs.google.com/a/media.ucla.edu/document/d/1ISa739JAaoDFkUYEEVSpS_PzngOo7mlbbRITsw5N2b8/edit',
+        'title' => __('Web production doc'),
+        'href' => 'http://bit.ly/dailybruinuploading',
         'meta' => array(
             'target' => '_blank',
         ),
