@@ -14,7 +14,7 @@ function uploading_doc_link()
     $wp_admin_bar->add_node( array(
         'id' => 'dailybruin_camayak',
         'parent' => 'dailybruin',
-        'title' => __('Using Camayak and WordPress'),
+        'title' => __('Camayak production'),
         'href' => 'https://docs.google.com/document/d/10t6Fc2aMY5oRehM9Grx4sQI0w5_It-hB6LzQM6RpF3E/pub',
         'meta' => array(
             'target' => '_blank',
