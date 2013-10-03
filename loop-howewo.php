@@ -11,16 +11,8 @@
 			}
 		}
 	}
-	if (has_post_thumbnail()) :
-		the_post_thumbnail('db-category-full'); 
-		?>
-		<div class="howewo-img-content">
-			<ul>
-				<li><?php the_content(); ?></li>
-				<li><?php the_author(); ?></li>
-				<li><?php the_date('M j'); ?></li>
-			</ul>
-		</div>
+	if (has_post_thumbnail()) : the_post_thumbnail('db-category-full'); ?>
+		<div class="howewo-img-content" data-content="<?php echo get_the_content(); ?>" data-author="<?php the_author(); ?>" data-date="<?php the_date('M j'); ?>"></div>
 	<?php
 	endif;
 	
