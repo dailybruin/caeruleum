@@ -483,6 +483,12 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #lightbox-container {
 	position: relative;
 	height: 100%;
+/*
+	animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s; 
+    -webkit-animation: fadein 0.5s;
+    -o-animation: fadein 0.5s;
+    */
 }
 #lightbox-container img {
 	padding: 20px 0px 0px 0px;
@@ -490,7 +496,23 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	height: 80%;
 	margin-left: auto;
 	margin-right: auto;
+}/*
+@keyframes fadein {
+    from {opacity:0.5;}
+    to {opacity:1;}
 }
+@-moz-keyframes fadein { 
+    from {opacity:0.5;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein {
+    from {opacity:0.5;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { 
+    from {opacity:0.5;}
+    to {opacity: 1;}
+}​*/
 #lightbox-container div {
 	margin-left: auto;
 	margin-right: auto;

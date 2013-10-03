@@ -32,6 +32,12 @@ Template Name: HOWEWO
     </div>
       
   </div><!-- end div#post-listing -->
+  <div id="howewo-lightbox" hidden='true'>
+    <div id="lightbox-container">
+      <img src="" />
+      <div><p></p></div>
+    </div>
+  </div>
 </div><!-- end div#archive-content -->
 
 <?php get_footer(); ?>
