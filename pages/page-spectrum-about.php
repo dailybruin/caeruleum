@@ -1,5 +1,5 @@
 <?php/*
-Template Name: Behind the Blog
+Template Name: About Spectrum
 */ ?>
 <?php get_header(); ?>
 <div class="row" id="archive-content">
