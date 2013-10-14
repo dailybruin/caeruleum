@@ -234,4 +234,5 @@ p {
 <p>Cherry said significantly bolstering security against hacking requires writing new, more complicated programs &ndash; and with that, significant funding.</p>
 <p>Though Berkeley has increased its security budget, Rivers said the main factor for IT security officials to consider is remembering to be open and adapt to an increasingly changing cyber landscape.<br />&ldquo;I still think we&rsquo;re at risk ... it&rsquo;s just inherent,&rdquo; Rivers said. &ldquo;I think there is more that we can and must do.&rdquo;</p>
 
+<p style="clear:both" class="eh-credit">Leading illustration by Madeline Isaacs.</p>
 <?php get_footer(); ?>
