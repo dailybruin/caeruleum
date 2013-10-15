@@ -7,6 +7,7 @@ $(function() {
 		this.$current_wrap = null;
 		this.$next = this.$lightbox.find('#lightbox-container div.nav.right');
 		this.$prev = this.$lightbox.find('#lightbox-container div.nav.left');
+		this.$close_btn = this.$lightbox.find('#lightbox-container div#lb-close');
 		this.init();
 	};
 	lightbox.prototype = {
@@ -39,6 +40,7 @@ $(function() {
 				if ($(e.target).attr('id') == this.$container.attr('id'))
 					this.close();
 			},this));
+			this.$close_btn.click($.proxy(this.close,this));
 			this.$next.click($.proxy(this.next,this));
 			this.$prev.click($.proxy(this.prev,this));
 		},

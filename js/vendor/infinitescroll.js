@@ -5,7 +5,6 @@ $(window).load(function() {
 	$(window).scroll(function() { 
 		var scrolltop = $(this).scrollTop();
 		var botbound = $("#banner-bottom").offset().top;
-
 		var data = {
 			action: 'infinite_scroll',
 			offset: 4*(offset_inc),
@@ -17,6 +16,7 @@ $(window).load(function() {
 				image_urls = JSON.parse(response);
 				var container = $("#howewo-container");
 			    var column = $(".howewo-column");
+			    var wrapcounter = $(".howewo-img-wrap").length + 1;
 				$.each( image_urls, function(key, value) {
 					var image = $('<img/>', {
 						"class": 'attachment-db-category-full wp-post-image',
@@ -32,11 +32,12 @@ $(window).load(function() {
 						}
 						var wrap = $('<div/>', {
 						    "class": 'howewo-img-wrap',
+						    "id": 'wrap-' + wrapcounter++,
 						}).append(
 							image, 
 							$('<a/>',{
 								"href": value[0],
-								"title": value[1],}).append(
+								"data-desc": value[1],}).append(
 								$('<div/>',{"width": "100%", }).append(
 									$('<p/>',{ "text": value[3], }))));
 						wrap.appendTo(column[small_i]);

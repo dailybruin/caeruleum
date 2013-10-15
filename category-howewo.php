@@ -38,7 +38,7 @@ Template Name: HOWEWO
       <div id='lb-description'><p></p></div>
       <div class="nav left"></div>
       <div class="nav right"></div>
-      <div id="lb-close"></div>
+      <div id="lb-close">x</div>
     </div>
   </div>
 </div><!-- end div#archive-content -->
