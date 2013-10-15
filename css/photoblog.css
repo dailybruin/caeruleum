@@ -497,7 +497,15 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-}/*
+}
+@media (max-width: 480px)
+{
+  #lightbox-container img {
+  	width: 80%;
+  	height: auto;
+  }
+}
+/*
 @keyframes fadein {
     from {opacity:0.5;}
     to {opacity:1;}
@@ -522,7 +530,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 #lightbox-container div.nav {
 	background: url("/img/nav-arrow.png") no-repeat;
-	top: 100px;
+	top: 200px;
 	position: absolute;
 	height: 50px;
 	width: 25px;
