@@ -1,71 +1,80 @@
-/*$(document).ready(function() {
-	$(document).on("click", ".howewo-img-wrap a", function(e){
-		e.preventDefault();
-		var img_src = $(this).attr("href");
-		var img_desc = $(this).attr("title");
-		if (!$('#howewo-lightbox').is(":visible")) { 
-	        $('#lightbox-container').html('<img src="' + img_src + '" />' + '<div><p>' + img_desc + '</p></div>');
-	        $('#howewo-lightbox').show();
-	        if ($('#lightbox-container div').width() < $('#lightbox-container img').width())
-	        	$('#lightbox-container div').width($('#lightbox-container img').width());
-	    }
-	    else {
-	        //Make the text div bigger to match a large horizontal image
-	        if ($('#lightbox-container div').width() < $('#lightbox-container img').width())
-	        	$('#lightbox-container div').width($('#lightbox-container img').width());
-
-	        $(document).keyup(function(e) {
-			    if (e.keyCode == 27 && $('#howewo-lightbox').length > 0) 
-			  		$('#howewo-lightbox').hide();
-			});
-	    }
-	});
-
-	$(document).on('click', '#howewo-lightbox', function(){
-		$(this).hide();
-	});
-});*/
 $(function() {
 	var lightbox = function(lb) {
 		this.$lightbox = lb;
 		this.$container = this.$lightbox.find('#lightbox-container');
-		this.$img_container = this.$lightbox.find('#lightbox-container img');
-		this.$desc_container = this.$lightbox.find('#lightbox-container div');
-		this.$current_img = null;
+		this.$img_container = this.$lightbox.find('#lightbox-container img#lb-image');
+		this.$desc_container = this.$lightbox.find('#lightbox-container div#lb-description');
+		this.$current_wrap = null;
+		this.$next = this.$lightbox.find('#lightbox-container div.nav.right');
+		this.$prev = this.$lightbox.find('#lightbox-container div.nav.left');
 		this.init();
 	};
 	lightbox.prototype = {
 		init: function() {
-			$('body').on("click", ".howewo-img-wrap a", { lb: this }, this.show);
-			this.$lightbox.click($.proxy(this.close,this));
+			this.bind_key();
+			this.bind_click();
 		},
 		show: function(event) {
 			event.preventDefault();
 			var lb = event.data.lb;
-			lb.$current_img = $(this);
-			lb.$img_container.attr("src", $(this).attr("href"));
-			lb.$desc_container.html("<p>" + $(this).attr("title") + "</p>");
+			lb.$current_wrap = $($(this).parent());
 			lb.$lightbox.show();
-			if (lb.$desc_container.width() < lb.$img_container.width())  
-				lb.$desc_container.width(lb.$img_container.width());
+			lb.update();
 			$('body').css('overflow','hidden');
 		},
-		close: function(e) {
-			if ($(e.target).attr('id') == this.$container.attr('id')){
-				this.$lightbox.hide();
-				$('body').css('overflow','auto');
-			}
+		bind_key: function() {
+			//$('body').keyup($.proxy(this.close,this));
+			$('body').keyup($.proxy(function(e) {
+				if (e.keyCode == 27)
+					this.close();
+				else if (e.keyCode == 37)
+					this.prev();
+				else if (e.keyCode == 39)
+					this.next();
+			},this));
+		},
+		bind_click: function(e) {
+			$('body').on("click", ".howewo-img-wrap a", { lb: this }, this.show);
+			this.$lightbox.click($.proxy(function(e) {
+				if ($(e.target).attr('id') == this.$container.attr('id'))
+					this.close();
+			},this));
+			this.$next.click($.proxy(this.next,this));
+			this.$prev.click($.proxy(this.prev,this));
+		},
+		close: function() {
+			this.$lightbox.hide();
+			$('body').css('overflow','auto');
 		},
 		update: function() {
-			//this.$container.html('<img src="' + this.img + '" />' + '<div><p>' + this.desc + '</p></div>');
-			//if (this.$container..width() < $('#lightbox-container img').width())
-	       // 	$('#lightbox-container div').width($('#lightbox-container img').width());
+			this.$img_container.attr("src", this.$current_wrap.children('a').attr("href"));
+			this.$desc_container.html("<p>" + this.$current_wrap.children('a').attr("data-desc") + "</p>");
+			//Make width grow with image if image is REALLY wide
+			if (this.$desc_container.width() < this.$img_container.width())  
+				this.$desc_container.width(this.$img_container.width());
+			//Hide navs if the block is the first/last
+			if($("#wrap-" + (this.$current_wrap.attr('id').replace('wrap-',"")*1-1)).length > 0)
+				this.$prev.show();
+			else
+				this.$prev.hide();
+			if($("#wrap-" + (this.$current_wrap.attr('id').replace('wrap-',"")*1+1)).length > 0)
+				this.$next.show();
+			else
+				this.$next.hide();
 		},
 		next: function() {
-
+			var wrapid = "#wrap-" + (this.$current_wrap.attr('id').replace('wrap-',"")*1+1);
+			if ($(wrapid).length > 0){
+				this.$current_wrap = $(wrapid);
+				this.update();
+			}
 		},
 		prev: function() {
-
+			var wrapid = "#wrap-" + (this.$current_wrap.attr('id').replace('wrap-',"")*1-1);
+			if ($(wrapid).length > 0){
+				this.$current_wrap = $(wrapid);
+				this.update();
+			}
 		},
 	}
 	document.getElementById('howewo-lightbox') && new lightbox($('#howewo-lightbox'));

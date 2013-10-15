@@ -34,8 +34,11 @@ Template Name: HOWEWO
   </div><!-- end div#post-listing -->
   <div id="howewo-lightbox" hidden='true'>
     <div id="lightbox-container">
-      <img src="" />
-      <div><p></p></div>
+      <img id='lb-image' src="" />
+      <div id='lb-description'><p></p></div>
+      <div class="nav left"></div>
+      <div class="nav right"></div>
+      <div id="lb-close"></div>
     </div>
   </div>
 </div><!-- end div#archive-content -->

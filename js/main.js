@@ -298,12 +298,13 @@ $(document).ready(function() {
 					}
 				}
 				var wrap = $('<div/>', {
-					    "class": 'howewo-img-wrap',
+					    "class": 'howewo-img-wrap ',
+					    "id": 'wrap-' + (n+1),
 					}).append(
 						images[n], 
 						$('<a/>',{
 							"href": images[n].getAttribute('src'), 
-							"title": image_content.eq(n).data().content, }).append(
+							"data-desc": image_content.eq(n).data().content, }).append(
 							$('<div/>',{"width": "100%", }).append(
 								$('<p/>',{ "text": image_content.eq(n).data().date, }))));
 				
