@@ -49,7 +49,7 @@ function inf_scroll_callback() {
 	$postArr = array();
 	$offset = intval( $_POST['offset']);
 	$numberposts = intval( $_POST['numberposts']);
-	$args = array('numberposts' => $numberposts, 'offset' => $offset, 'category' => 'HOWEWO');
+	$args = array('category' => get_cat_ID( "HOWEWO" ), 'numberposts' => $numberposts, 'offset' => $offset);
 	$latestPosts = get_posts( $args );
 	
 	foreach( $latestPosts as $post ) :	setup_postdata($post); 
@@ -60,7 +60,6 @@ function inf_scroll_callback() {
 		$postArr[] = array( $image_url[0], $caption, $author, $date );
 	endforeach;
 	echo json_encode($postArr);
-	
 	die();
 
 }

@@ -284,11 +284,10 @@ $(document).ready(function() {
 		var container = $("#howewo-container");
 		if (container[0] != 'undefined'){
 			container.show();
-			var images = $("#howewo-container img");
-			var image_content = $(".howewo-img-content");
+			var wraps = $(".howewo-img-wrap");
 			var col_count = 4;
 			var column = $(".howewo-column");
-			for (var n = 0; n < images.length; n++){
+			for (var n = 0; n < wraps.length; n++){
 				var smallest = column[0].offsetHeight;
 				var small_i = 0;
 				for (var p = 1; p < column.length; p++){
@@ -297,19 +296,10 @@ $(document).ready(function() {
 						small_i = p;
 					}
 				}
-				var wrap = $('<div/>', {
-					    "class": 'howewo-img-wrap ',
-					    "id": 'wrap-' + (n+1),
-					}).append(
-						images[n], 
-						$('<a/>',{
-							"href": images[n].getAttribute('src'), 
-							"data-desc": image_content.eq(n).data().content, }).append(
-							$('<div/>',{"width": "100%", }).append(
-								$('<p/>',{ "text": image_content.eq(n).data().date, }))));
-				
-				wrap.appendTo(column[small_i]);
+				$(wraps[n]).attr("id","wrap-"+(n+1));
+				$(wraps[n]).appendTo(column[small_i]);
 			}
+			
 		}
 	});
 });

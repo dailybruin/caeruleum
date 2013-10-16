@@ -1,7 +1,7 @@
 <?php /* Start loop */ ?>
 <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
-<?php while (have_posts() ): 
+<?php for ($i = 1; $i <= 12; $i++) : 
 	the_post(); 
 	$cats = get_the_category();
 	if ($cats) {
@@ -11,10 +11,15 @@
 			}
 		}
 	}
-	if (has_post_thumbnail()) : the_post_thumbnail('db-category-full'); ?>
-		<div class="howewo-img-content" data-content="<?php echo get_the_content(); ?>" data-author="<?php the_author(); ?>" data-date="<?php the_date('M j'); ?>"></div>
+	if (has_post_thumbnail()) : ?>
+		<?php $image_src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(), 'full' ), 'full'); ?>
+		<div class="howewo-img-wrap">
+			<img src="<?php echo $image_src[0]; ?>" class="attachment-db-category-full wp-post-image" alt="thissucks" />
+			<a href="<?php echo $image_src[0]; ?>" data-desc="<?php echo get_the_content(); ?>">
+				<div style="width:100%;"><p><?php the_date('M j'); ?></p></div>
+			</a>
+		</div>
 	<?php
 	endif;
-	
-endwhile;
+endfor;
 ?>
