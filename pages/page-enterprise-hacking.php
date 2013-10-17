@@ -144,7 +144,7 @@ p {
 <h2 class="eh-header">On the rise</h2>
 <img class="eh-aside-right" src="http://dailybruin.com/images/2013/10/CL.Hacking.Data_.copyedited.ai_.jpg"/>
 <p>The threat is increasingly feared and fought &ndash; a breach of security in which the personal information of students, faculty or staff, such as social security numbers or credit card information, is stolen and sold on the black market.</p>
-<p>Earlier this year, The New York Times published an article detailing how hacking attempts on major universities across the U.S., especially from China, are becoming more frequent.</p>
+<p>Earlier this year, The New York Times <a href="http://www.nytimes.com/2013/07/17/education/barrage-of-cyberattacks-challenges-campus-culture.html?_r=0">published an article</a> detailing how hacking attempts on major universities across the U.S., especially from China, are becoming more frequent.</p>
 <p>The New York Timesarticle garnered concern from some UCLA employees, said Ross Bollens, chief information security officer at UCLA.</p>
 <p>&ldquo;I run around wringing my hands ... saying we should pay attention to this,&rdquo; Bollens said, laughing. &ldquo;That article, it was interesting, because I got an email from a vice chancellor saying &lsquo;Does this affect us?&rsquo; and four other emails ... It (finally) got their attention."</p>
 <p>He added that the Stanford incident this summer further emphasized to university officials that hackers are attacking major universities.</p>
@@ -162,7 +162,7 @@ p {
 <p>The biggest breach of security UCLA has seen thus far occurred in 2006, when hackers attacked UCLA&rsquo;s administrative database, stealing thousands of Social Security Numbers.</p>
 <img class="eh-fullwidth" src="http://dailybruin.com/images/2013/10/Hacking_Timeline_copyedited.ai_.jpg"/>
 <p>Bollens had just started working at UCLA in August 2006, and in November the office discovered that a hack had been in continual motion for almost a year. A month later, the office sent out an email to 800,000 people &ndash; including people who had only applied to the university &ndash; warning them that their Social Security information may be at risk.</p>
-<p>The announcement sent shockwaves through university and IT communities. At the time, the 2006 breach was considered &ldquo;one of the largest computer security breaches ever at an American university,&rdquo; according to the Los Angeles Times.</p>
+<p>The announcement sent shockwaves through university and IT communities. At the time, the 2006 breach was considered &ldquo;one of the largest computer security breaches ever at an American university,&rdquo; <a href="http://articles.latimes.com/2006/dec/12/local/me-ucla12">according to the Los Angeles Times</a>.</p>
 <p>UCLA even <a href="http://dailybruin.com/2008/01/09/database-breach-investigation-ongoing/">called in the FBI to investigate</a>, who eventually discovered that the attack came from China, Bollens said.</p>
 <p>He added that they later figured out only a portion of the larger net of people actually had their Social Security numbers stolen &ndash; about 20,000 people.</p>
 <p>Bollens said the 2006 incident was one of the only examples of a real &ldquo;breach,&rdquo; in which personal information is threatened, at UCLA.</p>
