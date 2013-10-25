@@ -2186,9 +2186,9 @@ span.housead-extraword {
   }
 }
 
-/* Chilean winter refer styles. Remove when off the front page. */
+/* In the Shadows refer styles. Remove when off the front page. */
 #featuredProject > div {
-    background-color: #182e49;
+    background-color: #1b1d0f;
 }
 #featuredProject p {
     line-height: 1.7em;
