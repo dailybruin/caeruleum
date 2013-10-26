@@ -1,7 +1,10 @@
 <?php
 
 // header.php
-function roots_head() { do_action('roots_head'); }
+function roots_head() { do_action('roots_head'); 
+			do_action('wp_ajax_howewo_ajax');
+			do_action('wp_ajax_nopriv_howewo_ajax');
+}
 function roots_wrap_before() { do_action('roots_wrap_before'); }
 function roots_header_before() { do_action('roots_header_before'); }
 function roots_header_inside() { do_action('roots_header_inside'); }

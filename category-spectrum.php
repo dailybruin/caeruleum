@@ -15,8 +15,8 @@
       <h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
     <?php get_template_part('loop', 'category-photoblog'); ?>
+    
   </div><!-- end div#post-listing -->
-
 
   <?php get_template_part('sidebar','photoblog'); ?>
   

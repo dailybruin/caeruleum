@@ -29,3 +29,40 @@ function roots_google_analytics() {
 }
 
 add_action('roots_footer', 'roots_google_analytics');
+
+function howewo_ajax_enqueue() {
+	if (is_category('howewo') ){
+		wp_enqueue_script( 'inf-scroll-script', get_template_directory_uri().'/js/vendor/infinitescroll.js', array('jquery'));
+		wp_localize_script( 'inf-scroll-script', 'ajax_object',
+		    array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+
+		wp_enqueue_script( 'lightbox-script', get_template_directory_uri().'/js/vendor/howewo-lightbox.js', array('jquery'));
+
+		wp_localize_script( 'lightbox-script', 'ajax_object',
+		    array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+		}
+	}
+add_action('wp_ajax_nopriv_howewo_ajax', 'howewo_ajax_enqueue');
+
+function inf_scroll_callback() {
+	global $post;
+	$postArr = array();
+	$offset = intval( $_POST['offset']);
+	$numberposts = intval( $_POST['numberposts']);
+	$args = array('category' => get_cat_ID( "HOWEWO" ), 'numberposts' => $numberposts, 'offset' => $offset);
+	$latestPosts = get_posts( $args );
+	
+	foreach( $latestPosts as $post ) :	setup_postdata($post); 
+		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID, 'full' ), 'full');
+		$caption = get_the_content();
+		$author = get_the_author();
+		$date = get_the_date("M j");
+		$postArr[] = array( $image_url[0], $caption, $author, $date );
+	endforeach;
+	echo json_encode($postArr);
+	die();
+
+}
+add_action('wp_ajax_infinite_scroll', 'inf_scroll_callback');
+add_action('wp_ajax_nopriv_infinite_scroll', 'inf_scroll_callback');
+

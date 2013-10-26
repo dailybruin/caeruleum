@@ -53,6 +53,7 @@
 				 is_category("archives") ||
 				 is_category("westwoodla") ||
 				 (is_single() && in_category("Spectrum")) ||
+				 is_category("howewo") ||
 				 is_page( 'about-spectrum' ) ) : ?>
 			<a href="<?php echo home_url('/'); ?>"><img src="/img/nameplate-spectrum.png" class="hidden-phone nameplate-image" /></a>
 		<?php else: ?>

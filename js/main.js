@@ -281,47 +281,25 @@ $(document).ready(function() {
 
 	//Since height() and offsetHeight were returning non-updated values of height, decided to use the ratio method instead
 	$(window).load(function (){
-
 		var container = $("#howewo-container");
-		//container.css( 'display', 'block' );
-		container.show();
-		//container.style.display = 'block';
-		//var images = container.getElementsByTagName("img");
-		var images = $("#howewo-container img");
-
-		var col_count = 4;
-		var column = new Array();
-		//var col_height = new Array();
-
-		for (var n = 0; n < col_count; n++){
-			container.append($('<div></div>').addClass('span3 howewo-column'));
-/*
-
-			column.push(document.createElement('div'));
-			//col_height.push(0);
-			column[n].setAttribute('class','span3 howewo-column');
-			//column[n].appendChild(images[0]); //Seems to take the element out of the array; then after the iteration of the loop is ran it adds the image to the end
-			container.append(column[n]);*/
-
-		}
-		
-		column = container.children('div');
-
-		for (var n = 0; n < images.length; n++){
-			var smallest = column[0].offsetHeight;
-			var small_i = 0;
-			for (var p = 1; p < column.length; p++){
-				if (smallest > column[p].offsetHeight){
-					smallest = column[p].offsetHeight;
-					small_i = p;
+		if (container[0] != 'undefined'){
+			container.show();
+			var wraps = $(".howewo-img-wrap");
+			var col_count = 4;
+			var column = $(".howewo-column");
+			for (var n = 0; n < wraps.length; n++){
+				var smallest = column[0].offsetHeight;
+				var small_i = 0;
+				for (var p = 1; p < column.length; p++){
+					if (smallest > column[p].offsetHeight){
+						smallest = column[p].offsetHeight;
+						small_i = p;
+					}
 				}
+				$(wraps[n]).attr("id","wrap-"+(n+1));
+				$(wraps[n]).appendTo(column[small_i]);
 			}
-			alert(small_i);
-
-			column[small_i].appendChild(images[n]);
+			
 		}
-		//container.css({'display': 'none'});
-		
-		//container.appendChild(images[0]);
 	});
 });
