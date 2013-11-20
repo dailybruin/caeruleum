@@ -87,8 +87,8 @@
 									<li id="rotate-label-4"><a href="#">4</a></li>
 								</ul><!-- end div#rotate-controls -->
 								<div id="rotate-prevnext-controls">
-									<a href="#" class="topcontent-rotator-control-forward">Next</a>
-									<a href="#" class="topcontent-rotator-control-back">Previous</a>
+									<a href="#" class="topcontent-rotator-control-forward">Next &raquo;</a>
+									<a href="#" class="topcontent-rotator-control-back">&laquo; Previous</a>
 								</div>
 							</div><!-- end div#topcontent-rotator-nav -->
 							
