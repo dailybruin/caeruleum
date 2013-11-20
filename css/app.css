@@ -1674,7 +1674,6 @@ ul.phone-nav > li.active a {
 }
 
 #front-multimedia > a > h3, .front-section > a > h3 {
-	padding-left: 10px;
 	display:block;
 	float:left;
 	margin-top:-5px;
