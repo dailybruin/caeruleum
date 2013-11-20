@@ -16,14 +16,13 @@ Template Name: USC Football Rivalry 2013
 		<div class="span4">
 			<div class="row-fluid">
 				<h2>Headline A</h2>
-				<p>Biscuit chocolate bar topping gingerbread cupcake lollipop chocolate cake cookie. Gummi bears sweet roll jelly-o muffin. Chocolate cake gingerbread marzipan sesame snaps dragee gingerbread chocolate cake icing gummi bears. Caramels marzipan jelly-o bonbon bear claw sugar plum pie jelly.
-Candy gummi bears pastry pastry ice cream ice cream chupa chups. Sugar plum dragee danish toffee. Cake croissant lollipop pie sweet roll. Fruitcake wafer gingerbread jujubes.</p>
-			</div>
-			<div class="row-fluid">
-				<h2>Headline B</h2>
 				<p>Cotton candy ice cream caramels chocolate cake chocolate bar oat cake macaroon. Lollipop cupcake croissant apple pie topping cheesecake oat cake. Apple pie cotton candy dessert dragee candy canes cheesecake. Croissant chocolate cake cookie brownie oat cake gummi bears topping dessert.
 Sweet carrot cake tootsie roll pie cheesecake. Icing cookie bear claw chupa chups cotton candy ice cream. Dessert candy brownie. Cheesecake cheesecake jujubes apple pie jujubes fruitcake fruitcake donut tart.
 </p>
+			</div>
+			<div class="row-fluid">
+				<h2>Headline B</h2>
+				<img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg">
 			</div>
 		</div>
 	</div>
