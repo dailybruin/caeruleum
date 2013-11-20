@@ -103,7 +103,7 @@
 							</div><!-- end div.topcontent-rotator-content -->
 							<?php endforeach; ?>
 						</div><!-- end div#topcontent-rotator -->
-						<hr />
+
 						<div id="front-multimedia">
 							<a href="/category/multimedia/"><h3>Multimedia &raquo;</h3></a>
 							<ul class="sections">
@@ -171,38 +171,42 @@
 						</article>
 						<?php endforeach; ?>
 
-						<div id="d-stories-desktop" class="visible-desktop">
+						<ul id="d-stories-desktop" class="visible-desktop">
 							<!-- stories tagged db-story-d1 through db-story-d3 -->
 							<?php
 							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
 							$lastposts = get_posts( $args );
 							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-							<a href="<?php the_permalink(); ?>">
-								<span class="headline-d"><?php the_headline(); ?></span>
-							</a>
+                            <li>
+                                <span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+                                <a href="<?php the_permalink(); ?>">
+                                    <span class="headline-d"><?php the_headline(); ?></span>
+                                </a>
+                            </li>
 							<?php endforeach; ?>
 							<?php
 							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
 							$lastposts = get_posts( $args );
 							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-							<hr />
-							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-							<a href="<?php the_permalink(); ?>">
-								<span class="headline-d"><?php the_headline(); ?></span>
-							</a>
+                            <li>
+                                <span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+                                <a href="<?php the_permalink(); ?>">
+                                    <span class="headline-d"><?php the_headline(); ?></span>
+                                </a>
+                            </li>
 							<?php endforeach; ?>
 							<?php
 							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
 							$lastposts = get_posts( $args );
 							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-							<hr />
-							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-							<a href="<?php the_permalink(); ?>">
-								<span class="headline-d"><?php the_headline(); ?></span>
-							</a>
+                            <li>
+                                <span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
+                                <a href="<?php the_permalink(); ?>">
+                                    <span class="headline-d"><?php the_headline(); ?></span>
+                                </a>
+                            </li>
 							<?php endforeach; ?>
-						</div><!-- end div.#d-stories-desktop -->						
+						</ul><!-- end ul#d-stories-desktop -->						
 					</div><!-- end div#front-secondarycol -->
 				</div><!-- end div.row  inner row -->
 				
@@ -222,7 +226,6 @@
 						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
 						$lastposts = get_posts( $args );
 						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<hr />
 						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
 						<a href="<?php the_permalink(); ?>">
 							<span class="headline-d"><?php the_headline(); ?></span>
@@ -232,7 +235,6 @@
 						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
 						$lastposts = get_posts( $args );
 						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<hr />
 						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
 						<a href="<?php the_permalink(); ?>">
 							<span class="headline-d"><?php the_headline(); ?></span>
@@ -243,8 +245,8 @@
 				
 				
 				<div class="row">
+
 					<div class="span8 front-section" id="front-news">
-						<hr />
 						<a href="/category/news/"><h3>News &raquo;</h3></a>
 						<ul class="sections">
 							<li><a href="/category/news/student-government/">Student gov</a></li>
@@ -282,9 +284,8 @@
 						</div><!-- end div.front-section-content -->
 					</div><!-- end div#front-news -->
 					
-										
+                    
 					<div class="span8 front-section" id="front-sports">
-						<hr />
 						<a href="/category/sports/"><h3>Sports &raquo;</h3></a>
 						<ul class="sections">
 							<li><a href="/category/sports/football/">Football</a></li>
@@ -326,7 +327,6 @@
 					
 					
 					<div class="span4 front-section" id="front-ae">
-						<hr />
 						<a href="/category/arts-entertainment/"><h3>A&E &raquo;</h3></a>
 						<ul class="sections">
 							<li><a href="/category/arts-entertainment/">All A&E stories</a></li>
@@ -356,10 +356,10 @@
 							<?php endforeach; ?>
 							</ul>
 						</div><!-- end div.front-section-more -->
-						
 					</div><!-- end div#front-ae -->
+
+
 					<div class="span4 front-section" id="front-opinion">
-						<hr />
 						<a href="/category/opinion/"><h3>Opinion &raquo;</h3></a>
 						<ul class="sections">
 							<li><a href="/category/opinion">All opinion stories</a></li>
@@ -388,7 +388,7 @@
 								<span class="section-date"><?php the_time('M j'); ?></span>
 								</li>
 							<?php endforeach; ?>
-								<li id="front-cartoon-link"><a href="/category/editorial-cartoons/">View this week's editorial cartoon</a></li>
+								<li id="front-cartoon-link"><a href="/category/editorial-cartoons/">View this week&rsquo;s editorial cartoon</a></li>
 							</ul>
 						</div><!-- end div.front-section-more -->
 					</div><!-- end div#front-opinion -->

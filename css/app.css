@@ -51,13 +51,10 @@ img.ad {
 
 #backtotop {
 	position: fixed;
-	bottom: 20px;
+	bottom: 0;
 	right: 0;
-	padding-right: 7px;
-	padding-left: 7px;
+    padding: 5px 7px 3px 7px;
 	background-color: #777;
-	padding-top: 5px;
-	padding-bottom: 3px;
 	color: #FFF;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -194,11 +191,26 @@ article {
 	clear:both;
 }
 
+#front-maincol .hidden-desktop .story-info {
+    margin-top: 0.5em;
+}
+
 #front-secondarycol > article:nth-child(2) {
 	margin-bottom:5px;
 }
-#front-secondarycol > hr {
-	margin:5px 0;
+
+#front-secondarycol ul {
+    margin: 0;
+}
+
+#front-secondarycol ul > li {
+	list-style-type: none;
+    border-top: 1px solid #ccc;
+    padding: 6px 0;
+}
+
+#front-secondarycol ul > li:first-child {
+    border-top: none;
 }
 
 .label-now,
@@ -862,8 +874,6 @@ a.classifieds-button {
    ========================================================================== */
 .multimedia-item > a > img {
 	width:180px;
-	border-radius:10px;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
 }
 .multimedia-item {
 	width:180px;
@@ -1676,14 +1686,18 @@ ul.phone-nav > li.active a {
 #front-multimedia > a > h3, .front-section > a > h3 {
 	display:block;
 	float:left;
-	margin-top:-5px;
+    margin: 0 0 0.5em 0;
 }
 #front-multimedia > a > h3:hover, .front-section > a > h3:hover {
 	text-decoration:underline;
 }
+.front-section, #front-multimedia {
+    border-top: 1px solid #333;
+    margin-top: 1.5em;
+    padding-top: 0.5em;
+}
 .front-section > a {
-	margin-top: 3px;
-	display: inline-block;
+    display: inline-block;
 }
 
 .sections {
@@ -1701,7 +1715,7 @@ ul.phone-nav > li.active a {
 .sections > li > a {
 	text-transform:uppercase;
 	color:#adadad;
-	padding-right:16px;
+	padding-left:16px;
 	font-size:0.85em;
 }
 .sections > li > a:hover {
@@ -1749,9 +1763,8 @@ ul.phone-nav > li.active a {
     margin: 0;
 }
 .section-list > li {
-	border-bottom: 1px solid #ADADAD;
-	padding-bottom: 6px;
-	padding-top: 6px;
+	border-bottom: 1px solid #ccc;
+	padding: 6px 0;
 }
 .section-list > li:first-child {
 	padding-top:0;
@@ -1777,7 +1790,7 @@ ul.phone-nav > li.active a {
     margin-bottom:10px;
 }
 .small-section-list:first-child {
-	border-top: 1px solid #ADADAD;
+	border-top: 1px solid #ccc;
 	padding-top: 5px;
 }
 #front-cartoon-link {
@@ -2138,6 +2151,7 @@ span.housead-extraword {
   background-position-y: -59px;
   background-repeat: no-repeat;
   box-shadow: 0 0 34px rgba(0,0,0,0.3) inset;
+  margin-top: 10px !important;
   
   transition: box-shadow 0.3s;
   -webkit-transition: box-shadow 0.3s;
