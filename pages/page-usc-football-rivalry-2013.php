@@ -54,7 +54,7 @@ Template Name: USC Football Rivalry 2013
 <script>
   // Load the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
+  tag.src = "http://www.youtube.com/player_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -65,7 +65,7 @@ Template Name: USC Football Rivalry 2013
     player = new YT.Player('ytplayer', {
       height: '390',
       width: '640',
-      videoId: 'M7lc1UVf-VE'
+      videoId: 'SEBLt6Kd9EY'
     });
   }
 </script>
