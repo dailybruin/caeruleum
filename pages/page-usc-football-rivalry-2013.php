@@ -19,6 +19,11 @@ Template Name: USC Football Rivalry 2013
 	margin-right: 15px;
 }
 
+.credit {
+    color: #666;
+    font-size: 0.8em;
+}
+
 h3 {
 	text-transform: none;
 }
@@ -122,4 +127,6 @@ h3 {
     });
   }
 </script>
+
+<div class="credit">Page designed by Simon Zou and Christina Yang</div>
 <?php get_footer(); ?>
