@@ -13,8 +13,8 @@ Template Name: USC Football Rivalry 2013
 	<div class="row-fluid">
 		<div class="span8">
 			<div class="row-fluid">
-				<h2>Headline 1</h2>
-				<a href="http://www.youtube.com/watch?v=N8G4YgQyEMk"><img src="http://sitmeanssit.com/dog-training-mu/houston-dog-training/files/2013/03/puppy.jpeg"></a>
+				<h2>UCLA, USC compete for Victory Bell during annual game</h2>
+				<a href="http://www.youtube.com/watch?v=N8G4YgQyEMk"><img src="http://dailybruin.com/images/2013/11/80851f22-b618-4a8c-affc-2944b29dfd53.jpg"></a>
 			</div>
 			<div class="row-fluid">
 				<h2>Stories</h2>
