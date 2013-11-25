@@ -44,7 +44,7 @@ h3 {
 	<div class="row-fluid">
 		<div class="span8">
 			<div class="row-fluid">
-				<a href="http://www.youtube.com/watch?v=N8G4YgQyEMk"><h2 class="headline-a">UCLA, USC compete for Victory Bell during annual game</h2>
+				<a href="http://dailybruin.com/2013/11/25/victory-bell-resonates-with-bruins-past-and-present/"><h2 class="headline-a">UCLA, USC compete for Victory Bell during annual game</h2>
 				<img src="http://dailybruin.com/images/2013/11/80851f22-b618-4a8c-affc-2944b29dfd53.jpg"></a>
 			</div>
 			<div class="row-fluid">
@@ -67,16 +67,16 @@ h3 {
 					</p>
 				</div>
 				<div class="story">
-                    <a href="#">
+                    <a href="http://dailybruin.com/2013/11/25/nguyening-ucla-usc-matchup-now-just-a-matter-of-pride/">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/39fe789a-1c4c-41f8-bee1-ebc6f6777f52.jpg">
-					<h3>column</h3>
+					<h3>Nguyening: UCLA-USC matchup now just a matter of pride</h3>
                     </a>
 					<p>
 						The fact that this upcoming game against USC doesn’t matter at all could make it actually mean something.
 					</p>
 				</div>
 				<div class="story">
-                    <a href="#">
+                    <a href="http://dailybruin.com/2013/11/25/ucla-still-fired-up-for-usc-game-despite-elimination-from-pac-12-race/">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/usc.jpg">
 					<h3>UCLA still fired up for USC game despite elimination from Pac-12 race</h3>
                     </a>
@@ -85,7 +85,7 @@ h3 {
 					</p>
 				</div>				
 				<div class="story">
-                    <a href="#">
+                    <a href="http://dailybruin.com/2013/11/25/taxing-season-for-bruins-to-culminate-with-rivalry-game/">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/6ab6d89e-7cb2-4331-9837-b67f9c42cadd.jpg">
 					<h3>Taxing season for Bruins to culminate with rivalry game</h3>
                     </a>
@@ -97,11 +97,11 @@ h3 {
 		</div>
 		<div class="span4">
 			<div class="row-fluid side">
-				<a href="http://en.wikipedia.org/wiki/Welsh_Corgi"><h2 class="headline-b">Special bond with sister keeps Brett Hundley grounded</h2>
+				<a href="http://dailybruin.com/2013/11/25/special-bond-with-sister-keeps-brett-hundley-grounded/"><h2 class="headline-b">Special bond with sister keeps Brett Hundley grounded</h2>
 				<img src="http://dailybruin.com/images/2013/11/hundley_edited.jpg"></a>
 			</div>
 			<div class="row-fluid side">
-				<a href="http://www.youtube.com/watch?v=RCNdSc8_qF4"><h2 class="headline-b">End of an era: UCLA alumni cheerleader Geof Strand retires</h2>
+				<a href="http://dailybruin.com/2013/11/25/end-of-an-era-ucla-alumni-cheerleader-geof-strand-retires/"><h2 class="headline-b">End of an era: UCLA alumni cheerleader Geof Strand retires</h2>
 				<img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg"></a>
 
 			</div>
