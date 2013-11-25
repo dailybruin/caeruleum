@@ -26,6 +26,8 @@ Template Name: USC Football Rivalry 2013
 .credit {
     color: #666;
     font-size: 0.8em;
+    margin-top: 1em;
+    text-align: right;
 }
 
 h3 {
