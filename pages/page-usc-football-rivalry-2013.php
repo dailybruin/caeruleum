@@ -14,7 +14,7 @@ Template Name: USC Football Rivalry 2013
 		<div class="span8">
 			<div class="row-fluid">
 				<h2>Headline 1</h2>
-				<img src="http://sitmeanssit.com/dog-training-mu/houston-dog-training/files/2013/03/puppy.jpeg">
+				<a href="http://www.youtube.com/watch?v=N8G4YgQyEMk"><img src="http://sitmeanssit.com/dog-training-mu/houston-dog-training/files/2013/03/puppy.jpeg"></a>
 			</div>
 			<div class="row-fluid">
 				<h2>Stories</h2>
@@ -23,11 +23,11 @@ Template Name: USC Football Rivalry 2013
 		<div class="span4">
 			<div class="row-fluid">
 				<h2>Headline A</h2>
-				<img src="http://dailybruin.com/images/2013/11/hundley_edited.jpg">
+				<a href="http://en.wikipedia.org/wiki/Welsh_Corgi"><img src="http://dailybruin.com/images/2013/11/hundley_edited.jpg"></a>
 			</div>
 			<div class="row-fluid">
 				<h2>Headline B</h2>
-				<img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg">
+				<a href="http://www.youtube.com/watch?v=RCNdSc8_qF4"><img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg"></a>
 			</div>
 		</div>
 	</div>
@@ -76,8 +76,8 @@ Template Name: USC Football Rivalry 2013
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: '390',
-      width: '640',
+      //height: '390',
+      width: '100%',
       videoId: 'SEBLt6Kd9EY'
     });
   }
