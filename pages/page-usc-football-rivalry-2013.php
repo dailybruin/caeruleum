@@ -16,8 +16,7 @@ Template Name: USC Football Rivalry 2013
 		<div class="span4">
 			<div class="row-fluid">
 				<h2>Headline A</h2>
-				<p>Biscuit chocolate bar topping gingerbread cupcake lollipop chocolate cake cookie. Gummi bears sweet roll jelly-o muffin. Chocolate cake gingerbread marzipan sesame snaps dragee gingerbread chocolate cake icing gummi bears. Caramels marzipan jelly-o bonbon bear claw sugar plum pie jelly.
-Candy gummi bears pastry pastry ice cream ice cream chupa chups. Sugar plum dragee danish toffee. Cake croissant lollipop pie sweet roll. Fruitcake wafer gingerbread jujubes.</p>
+				<img src="http://dailybruin.com/images/2013/11/hundley_edited.jpg">
 			</div>
 			<div class="row-fluid">
 				<h2>Headline B</h2>
