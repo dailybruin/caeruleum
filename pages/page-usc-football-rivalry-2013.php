@@ -2,6 +2,13 @@
 Template Name: USC Football Rivalry 2013
 */ ?>
 <?php get_header(); ?>
+<style>
+.story-thumbnail{
+	height: 150px;
+	width: 150px;
+	float: left;
+}
+</style>
 <div id="main-page-wrapper">
 
 	<div class="row-fluid">
@@ -13,11 +20,13 @@ Template Name: USC Football Rivalry 2013
 	<div class="row-fluid">
 		<div class="span8">
 			<div class="row-fluid">
-				<h2>UCLA, USC compete for Victory Bell during annual game</h2>
-				<a href="http://www.youtube.com/watch?v=N8G4YgQyEMk"><img src="http://dailybruin.com/images/2013/11/80851f22-b618-4a8c-affc-2944b29dfd53.jpg"></a>
+				<a href="http://www.youtube.com/watch?v=N8G4YgQyEMk"><h2 class="headline-a">UCLA, USC compete for Victory Bell during annual game</h2>
+				<img src="http://dailybruin.com/images/2013/11/80851f22-b618-4a8c-affc-2944b29dfd53.jpg"></a>
 			</div>
 			<div class="row-fluid">
 				<h2>Stories</h2>
+				<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/geof-640x640.jpg">
+				<h3>related headline</h3>
 			</div>
 		</div>
 		<div class="span4">
