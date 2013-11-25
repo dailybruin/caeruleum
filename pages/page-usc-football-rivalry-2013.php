@@ -46,7 +46,7 @@ h3 {
 	<div class="row-fluid">
 		<div class="span8">
 			<div class="row-fluid">
-				<a href="http://dailybruin.com/2013/11/25/victory-bell-resonates-with-bruins-past-and-present/"><h2 class="headline-a">UCLA, USC compete for Victory Bell during annual game</h2>
+				<a href="http://dailybruin.com/2013/11/25/victory-bell-resonates-with-bruins-past-and-present/"><h2 class="headline-a">Victory Bell resonates with Bruins past and present</h2>
 				<img src="http://dailybruin.com/images/2013/11/80851f22-b618-4a8c-affc-2944b29dfd53.jpg"></a>
 			</div>
 			<div class="row-fluid">
