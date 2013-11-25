@@ -19,6 +19,9 @@ Template Name: USC Football Rivalry 2013
 	margin-right: 15px;
 }
 
+h3 {
+	text-transform: none;
+}
 
 </style>
 <div id="main-page-wrapper">
