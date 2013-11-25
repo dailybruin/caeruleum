@@ -3,8 +3,12 @@ Template Name: USC Football Rivalry 2013
 */ ?>
 <?php get_header(); ?>
 <style>
-#banner, .headline-a, .headline-b, .side {
+#banner, .headline-a, .side {
 	margin-bottom: 15px;
+}
+
+.headline-b {
+    margin: 15px 0 5px 0;
 }
 
 .story {
@@ -63,22 +67,28 @@ h3 {
 					</p>
 				</div>
 				<div class="story">
+                    <a href="#">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/39fe789a-1c4c-41f8-bee1-ebc6f6777f52.jpg">
 					<h3>column</h3>
+                    </a>
 					<p>
 						The fact that this upcoming game against USC doesn’t matter at all could make it actually mean something.
 					</p>
 				</div>
 				<div class="story">
+                    <a href="#">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/usc.jpg">
 					<h3>UCLA still fired up for USC game despite elimination from Pac-12 race</h3>
+                    </a>
 					<p>
 						At the L.A. Memorial Coliseum two years ago, in their last game officially under the lockdown of a two-year bowl ban, the Trojans treated their final home against the Bruins as an all-in-one national championship and Pac-12 title game.
 					</p>
 				</div>				
 				<div class="story">
+                    <a href="#">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/6ab6d89e-7cb2-4331-9837-b67f9c42cadd.jpg">
 					<h3>Taxing season for Bruins to culminate with rivalry game</h3>
+                    </a>
 					<p>
 						Members of UCLA’s football team trudged to the locker room moments after falling short in a final, desperate push to extend a shot at a BCS bowl game. Some Bruins began the walk with their faces in plain sight during a walk to the exit tunnel.
 					</p>
