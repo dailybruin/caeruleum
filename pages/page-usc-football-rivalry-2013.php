@@ -34,14 +34,13 @@ Template Name: USC Football Rivalry 2013
 	
 	<div class="row-fluid">
 		<div class="span8">
-			<h2>Headline 2</h2>
+			<h2>Arcs</h2>
 			<img src="http://www.hdwallpapers.in/walls/cutest_puppy-wide.jpg">
 		</div>
 		<div class="span4">
 			<h2>Twitter Feed</h2>
-			<a class="twitter-timeline" href="https://twitter.com/search?q=%23corgi" data-widget-id="402979422954737665">Tweets about "#corgi"</a>
+			<a class="twitter-timeline" href="https://twitter.com/search?q=%23victorybell" data-widget-id="404848229688160256">Tweets about "#victorybell"</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 		</div>
 
 	</div>
