@@ -25,7 +25,7 @@ Template Name: USC Football Rivalry 2013
 
 	<div class="row-fluid">
 		<div class="span12" id="banner">
-			<img src="http://host.trivialbeing.org/up/tdk-apr30-hong-kong-banner.jpg">
+			<img src="http://dailybruin.com/images/2013/11/onlinebanner.jpg">
 		</div>
 	</div>
 	
