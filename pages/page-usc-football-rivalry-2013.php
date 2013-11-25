@@ -69,7 +69,7 @@ h3 {
 				<div class="story">
                     <a href="http://dailybruin.com/2013/11/25/nguyening-ucla-usc-matchup-now-just-a-matter-of-pride/">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/39fe789a-1c4c-41f8-bee1-ebc6f6777f52.jpg">
-					<h3>Nguyening: UCLA-USC matchup now just a matter of pride</h3>
+					<h3><em>Nguyening: UCLA-USC matchup now just a matter of pride</em></h3>
                     </a>
 					<p>
 						The fact that this upcoming game against USC doesn’t matter at all could make it actually mean something.
