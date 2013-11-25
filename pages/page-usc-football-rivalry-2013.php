@@ -49,11 +49,11 @@ Template Name: USC Football Rivalry 2013
 		</div>
 		<div class="span4">
 			<div class="row-fluid side">
-				<a href="http://en.wikipedia.org/wiki/Welsh_Corgi"><h2 class="headline-b">Headline A</h2>
+				<a href="http://en.wikipedia.org/wiki/Welsh_Corgi"><h2 class="headline-b">Special bond with sister keeps Brett Hundley grounded</h2>
 				<img src="http://dailybruin.com/images/2013/11/hundley_edited.jpg"></a>
 			</div>
 			<div class="row-fluid side">
-				<a href="http://www.youtube.com/watch?v=RCNdSc8_qF4"><h2 class="headline-b">Headline B</h2>
+				<a href="http://www.youtube.com/watch?v=RCNdSc8_qF4"><h2 class="headline-b">End of an era: UCLA alumni cheerleader Geof Strand retires</h2>
 				<img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg"></a>
 
 			</div>
