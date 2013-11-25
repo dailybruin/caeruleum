@@ -14,9 +14,17 @@ Template Name: USC Football Rivalry 2013
 			<img src="http://sitmeanssit.com/dog-training-mu/houston-dog-training/files/2013/03/puppy.jpeg">
 		</div>
 		<div class="span4">
-			<h2>Twitter Feed</h2>
-			<a class="twitter-timeline" href="https://twitter.com/search?q=%23corgi" data-widget-id="402979422954737665">Tweets about "#corgi"</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="row-fluid">
+				<h2>Headline A</h2>
+				<p>Biscuit chocolate bar topping gingerbread cupcake lollipop chocolate cake cookie. Gummi bears sweet roll jelly-o muffin. Chocolate cake gingerbread marzipan sesame snaps dragee gingerbread chocolate cake icing gummi bears. Caramels marzipan jelly-o bonbon bear claw sugar plum pie jelly.
+Candy gummi bears pastry pastry ice cream ice cream chupa chups. Sugar plum dragee danish toffee. Cake croissant lollipop pie sweet roll. Fruitcake wafer gingerbread jujubes.</p>
+			</div>
+			<div class="row-fluid">
+				<h2>Headline B</h2>
+				<p>Cotton candy ice cream caramels chocolate cake chocolate bar oat cake macaroon. Lollipop cupcake croissant apple pie topping cheesecake oat cake. Apple pie cotton candy dessert dragee candy canes cheesecake. Croissant chocolate cake cookie brownie oat cake gummi bears topping dessert.
+Sweet carrot cake tootsie roll pie cheesecake. Icing cookie bear claw chupa chups cotton candy ice cream. Dessert candy brownie. Cheesecake cheesecake jujubes apple pie jujubes fruitcake fruitcake donut tart.
+</p>
+			</div>
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -32,11 +40,11 @@ Template Name: USC Football Rivalry 2013
 	</div>
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div class="span2">
+			<div class="span4">
 				<h2>Side Column</h2>
 				<p>Nori winter purslane seakale potato peanut carrot bamboo shoot garlic quandong rutabaga coriander groundnut. Napa cabbage turnip lettuce pumpkin swiss chard welsh onion bitterleaf courgette garlic quandong.</p>
 			</div>
-			<div class="span10">
+			<div class="span4">
 				<div class="row-fluid">
 					<h3>Companion row</h3>
 					<p>Corn napa cabbage cress lettuce fennel chickpea. Beetroot grape kohlrabi gram quandong water chestnut peanut rock melon jícama tigernut gourd eggplant horseradish prairie turnip avocado. Burdock celtuce rock melon sweet pepper watercress zucchini bitterleaf dulse soko parsley chicory scallion tomato coriander.</p>
@@ -45,7 +53,12 @@ Template Name: USC Football Rivalry 2013
 					<h3>Sub Headline</h3>
 					<p>Veggies sunt bona vobis, proinde vos postulo esse magis shallot watercress bell pepper winter purslane tatsoi cauliflower bush tomato dandelion komatsuna prairie turnip gumbo asparagus leek spinach bunya nuts.</p>
 			</div>
-			
+			<div class="span4">
+			<h2>Twitter Feed</h2>
+			<a class="twitter-timeline" href="https://twitter.com/search?q=%23corgi" data-widget-id="402979422954737665">Tweets about "#corgi"</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+
 		</div>
 	</div>
 	
