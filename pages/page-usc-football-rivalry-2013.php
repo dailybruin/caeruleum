@@ -2,6 +2,9 @@
 Template Name: USC Football Rivalry 2013
 */ ?>
 <?php get_header(); ?>
+
+<script src="http://dailybruin.com/js/vendor/minishare.js"></script>
+<link src="http://dailybruin.com/css/vendor/minishare.css" rel="stylesheet" type="text/css">
 <style>
 #banner, .headline-a, .side {
 	margin-bottom: 15px;
@@ -33,7 +36,6 @@ Template Name: USC Football Rivalry 2013
 h3 {
 	text-transform: none;
 }
-
 </style>
 <div id="main-page-wrapper">
 
@@ -95,6 +97,9 @@ h3 {
 						Members of UCLA’s football team trudged to the locker room moments after falling short in a final, desperate push to extend a shot at a BCS bowl game. Some Bruins began the walk with their faces in plain sight during a walk to the exit tunnel.
 					</p>
 				</div>
+                <div class="story">
+                    <div id="ytplayer"></div>
+                </div>
 			</div>
 		</div>
 		<div class="span4">
@@ -105,7 +110,10 @@ h3 {
 			<div class="row-fluid side">
 				<a href="http://dailybruin.com/2013/11/25/end-of-an-era-ucla-alumni-cheerleader-geof-strand-retires/"><h2 class="headline-b">End of an era: UCLA alumni cheerleader Geof Strand retires</h2>
 				<img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg"></a>
-
+			</div>
+			<div class="row-fluid side">
+				<a href="http://dailybruin.com/2013/11/25/recalling-ucla-usc-rivalry-heading-into-2013-game/"><h2 class="headline-b">Recalling UCLA-USC rivalry heading into 2013 game</h2>
+				<img src="http://dailybruin.com/images/2013/11/rivalry_timeline.jpg"></a>
 			</div>
 			<div class="row-fluid side">
 				<a class="twitter-timeline" href="https://twitter.com/search?q=%23victorybell" data-widget-id="404848229688160256">Tweets about "#victorybell"</a>
@@ -114,14 +122,14 @@ h3 {
 		</div>
 	</div>
 	
-	<div class="row-fluid">
-		<div class="span8">
-				<div id="ytplayer"></div>
-		</div>
-	</div>
 </div>
 
 <script>
+  // Load the minishare widget
+  $(document).ready(function(){
+    $.miniShare();
+  });
+
   // Load the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
   tag.src = "http://www.youtube.com/player_api";
@@ -140,5 +148,5 @@ h3 {
   }
 </script>
 
-<div class="credit">Page designed by Simon Zou and Christina Yang</div>
+<div class="credit">Page created by Simon Zou and Christina Yang</div>
 <?php get_footer(); ?>
