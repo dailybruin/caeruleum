@@ -1,0 +1,193 @@
+#viz {
+    width: 800px;
+    margin: 0 auto 80px auto;
+    text-align: center;
+}
+
+.vizSvg {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.axis line {
+    stroke: #000000;
+    stroke-width: 2px;
+}
+
+.axis .ticks line {
+    stroke: #4F4F4F;
+    stroke-width: 2px;
+}
+
+.axis .ticks line.minor{
+    stroke: #CCCCCC;
+    stroke-width:1px;
+}
+
+
+
+#admissions {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#slider {
+	position: relative;
+	top: 60px;
+	border: 0px !important;
+}
+
+#control {
+	background-color: #333;
+	padding: 15px;
+	width: 250px;
+	height: 40px;
+	color: #fff;
+	position: relative;
+	top: -50px;
+}
+
+#key {
+	float: right;
+	width: 240px;
+	height: 30px;
+	padding: 15px;
+	border: 5px solid #333;
+	position: relative;
+	top: -50px;
+	color: #fff;
+	background-color: #333;
+}
+
+#cwrap {
+	width: 240px;
+	margin: 0 auto;
+	margin-top: -7px;
+}
+
+.color {
+	float: left;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	width: 80px;
+}
+
+.color span {
+	min-width: 30px;
+	min-height: 30px;
+	position: absolute;
+	margin-left: -15px;
+}
+
+#apply {
+	background-color: #ffd8d4;
+}
+
+#admit {
+	background-color: #f9a69c;
+}
+
+#sir {
+	background-color: #f36656;
+}
+
+#year {
+	font-size: 20px;	
+}
+
+#choices {
+	position: relative;
+	left: -10px;
+}
+
+#chooser {
+	display: none;
+}
+
+#refresh:hover {
+	cursor: pointer;
+}
+
+.ui-slider .ui-slider-handle {
+	height: 112px !important;
+	margin-top: -85px;
+}
+
+.ui-slider .ui-slider-handle:hover {
+	cursor: pointer;
+}
+
+.ui-slider-handle.ui-state-default, .ui-slider-handle.ui-state-hover , .ui-state-active .ui-slider-handle {
+	background: rgba(0,0,0,0.7) !important;
+	background-repeat: no-repeat !important;
+	border: 0px !important;
+}
+
+.admissions-checkbox {
+	float: left;
+	font-size: 15px;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+#year {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+#year span {
+	color: #b3b3b3;
+	font-weight: normal;
+}
+
+.but1 {
+	border: 5px solid #333;
+	height: 20px;
+	width: 140px;
+	padding: 10px;
+	border-radius: 30px;
+	margin: 0 auto;
+	position: relative;
+	top: -120px;
+}
+
+.but1:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.but1 img {
+	float: left;
+	opacity: 0.5;
+	position: relative;
+	bottom: 5px;
+}
+
+.but1:hover img {
+	opacity: 1;
+}
+
+.but1 span {
+	float: left;
+	font-size: 15px;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+}
+
+#button {
+	position: relative;
+	top: -100px;
+}
