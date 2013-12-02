@@ -4,13 +4,10 @@ Template Name: Online Features
 <?php get_header(); ?>
 
 
-<!DOCTYPE html>
-<head>
-
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
 <style>
-
+>>>>>>> 4d78bf863921f61c0c394ae0fb327a49a657ff2c
 a.darken {
     display: inline-block;
     background: black;
@@ -41,20 +38,22 @@ a.darken span{
 	font-size: 10pt;
 }
 
+<<<<<<< HEAD
 a.darken:hover span
 {color:#fff;
+=======
+a.darken:hover span{color:#fff;
+>>>>>>> 4d78bf863921f61c0c394ae0fb327a49a657ff2c
     -webkit-transition: all 0.5s linear;
        -moz-transition: all 0.5s linear;
         -ms-transition: all 0.5s linear;
          -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
             visibility: visible;
-
 }
 
 </style>
-</head>
-<body>
+
 
 <div class="jumbotron">
 <div class="container">
@@ -138,9 +137,5 @@ a.darken:hover span
   </div>
 </div>
 
-
-</body>
-
-</html>
 
 <?php get_footer(); ?>
