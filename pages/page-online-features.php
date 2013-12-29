@@ -2,6 +2,7 @@
 Template Name: Online Features
 */ ?>
 <?php get_header(); ?>
+
 <style type="text/css">
 .classname {
   -moz-box-shadow:inset 0px 1px 19px 0px #e8e8eb;
@@ -92,6 +93,7 @@ a.darken:hover span{color:#fff;
 .box {
     display: inline-block;
     margin: 1em;
+    width: 320px;
     vertical-align: top;
 }
 
@@ -191,7 +193,7 @@ var features =
     {
         "fname"     : "Graduation Issue 2011",
         "description"     : "Graduating Bruins shared with us their favorite memories and wrote a few words answering the question: What has UCLA meant to you?",
-        "picture"           : "wp-content/uploads/2013/12/Graduation-2011.png",
+        "picture"           : "/wp-content/uploads/2013/12/Graduation-2011.png",
         "web"       : "http://dailybruin.com/features/graduation-issue-2011/",
         "author"        : "The Daily Bruin",
         "year"      : "2011"
@@ -295,7 +297,7 @@ var features =
     {
         "fname"     : "Timeline of Budget Changes",
         "description"     : "",
-        "picture"           : "wp-content/uploads/2013/12/Timeline-of-budget-changes.png",
+        "picture"           : "/wp-content/uploads/2013/12/Timeline-of-budget-changes.png",
         "web"       : "http://dailybruin.com/features/timeline-of-budget-changes/",
         "author"        : "The Daily Bruin",
         "year"      : "2010"
@@ -366,11 +368,10 @@ function rerender(feature_year) {
         if(features[i].year == feature_year) {
             var obj = features[i];
 
-            fhtml = fhtml + '<div class="box"><a class="thumbnail darken" href="' + obj.web + '">'
-            + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;"><b>'
-            + obj.fname + '</b><br/>' + obj.description
+            fhtml = fhtml + '<div class="box"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
+            + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;">' + obj.description
             + '<br/><i style="font-size: 8pt; float: right; margin-right: 10px;">' + obj.author
-            + '</i></span></div>';
+            + '</i></span></a></div>';
         }
     }
     }
@@ -378,11 +379,10 @@ function rerender(feature_year) {
 	 for(var i = 0; i < features.length; i++) {
         var obj = features[i];
 
-        fhtml = fhtml + '<div class="box"><a class="thumbnail darken" href="' + obj.web + '">'
-        + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;"><b>'
-        + obj.fname + '</b><br/>' + obj.description
+        fhtml = fhtml + '<div class="box"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
+        + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;">' + obj.description
         + '<br/><i style="font-size: 8pt; float: right; margin-right: 10px;">' + obj.author
-        + '</i></span></div>';
+        + '</i></span></a></div>';
     }
     }
 
@@ -396,11 +396,10 @@ $(document).ready(function() {
     for(var i = 0; i < features.length; i++) {
         var obj = features[i];
 
-        fhtml = fhtml + '<div class="box"><a class="thumbnail darken" href="' + obj.web + '">'
-        + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;"><b>'
-        + obj.fname + '</b><br/>' + obj.description
+        fhtml = fhtml + '<div class="box"><h4>' + obj.fname + '</h4><a class="thumbnail darken" href="' + obj.web + '">'
+        + '<img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span style="width: 300px;">' + obj.description
         + '<br/><i style="font-size: 8pt; float: right; margin-right: 10px;">' + obj.author
-        + '</i></span></div>';
+        + '</i></span></a></div>';
     }
 
     $('div.feature_objects').html(fhtml);
@@ -408,12 +407,19 @@ $(document).ready(function() {
 
 </script>
 
+<div class="page-header">
+<h1>FEATURES</h1>
+</div>
+
 <button type="button" href="#" class="classname" onclick="rerender('0')">ALL</button>
 <button type="button" href="#" class="classname" onclick="rerender('2013')">2013</button>
 <button type="button" href="#" class="classname" onclick="rerender('2012')">2012</button>
 <button type="button" href="#" class="classname" onclick="rerender('2011')">2011</button>
 <button type="button" href="#" class="classname" onclick="rerender('2010')">2010</button>
+
 <div class="feature_objects">
+
+<!--Features are rendered in here-->
 
 </div>
 
