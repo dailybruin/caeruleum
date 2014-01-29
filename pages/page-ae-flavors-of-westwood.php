@@ -11,7 +11,7 @@ Template Name: A&E Flavors of Westwood
 
 <style>
     article#fow {
-        max-width: 1280px;
+        max-width: 1150px;
         margin: 0 auto;
     }
     article#fow #background {
@@ -39,6 +39,7 @@ Template Name: A&E Flavors of Westwood
       line-height: 25px;
     }
     article#fow .lead {
+        font-size: 1.2em;
         max-width: 600px;
         text-align: center;
         margin: 20px auto;
@@ -176,7 +177,7 @@ Template Name: A&E Flavors of Westwood
 
 <article id="fow">
 
-<img id="background" src="http://dailybruin.com/images/2014/01/bg1.png"/>
+<img id="background" src="http://dailybruin.com/images/2014/01/bg7_2.png"/>
 
 <h1>Flavors of Westwood</h1>
 <p class="lead">Throughout this past year, A&amp;E reporters have been venturing into the world of Westwood dining to dig up the stories behind the creation and the flavor of each eatery. Explore the flavors of Westwood through our interactive map.</p>
