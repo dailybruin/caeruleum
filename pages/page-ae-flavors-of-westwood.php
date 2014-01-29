@@ -194,7 +194,7 @@ var LocsB = [
                         title: 'Saffron & Rose Ice Cream',
                         html: [
                                         '<h3>Saffron & Rose Ice Cream</h3>',
-                                        '<p>Persian ice cream made with whole milk.</p>'
+                                        '<p>Persian ice cream made with whole milk</p>'
                         ].join(''),
                         fulldesc: [
                 '<h3>Saffron & Rose Ice Cream</h3>',
@@ -209,7 +209,7 @@ var LocsB = [
                         title: 'Honeymade',
                         html: [
                                         '<h3>Honeymade</h3>',
-                                        '<p>Sweet & savory.</p>'
+                                        '<p>Sweet & savory</p>'
                         ].join(''),
                         fulldesc: [
                 '<h3>Honeymade</h3>',
@@ -226,7 +226,7 @@ var LocsB = [
                         title: 'Angelino&#39;s Cafe',
                         html: [
                                         '<h3>Angelino&#39;s Cafe</h3>',
-                                        '<p>Authentic flavors for 11 years.</p>'
+                                        '<p>Authentic flavors for 11 years</p>'
                         ].join(''),
                         fulldesc: [
                 '<h3>Angelino&#39;s Cafe</h3>',
@@ -242,7 +242,7 @@ var LocsB = [
                         title: 'Fat Sal&#39;s',
                         html: [
                                         '<h3>Fat Sal&#39;s</h3>',
-                                        '<p>"Fat sandwiches" brought from New York.</p>'
+                                        '<p>"Fat sandwiches" brought from New York</p>'
                         ].join(''),
                         fulldesc: [
                                         '<h3>Fat Sal&#39;s</h3>',
@@ -258,7 +258,7 @@ var LocsB = [
                         title: '800 Degrees',
                         html: [
                                         '<h3>800 Degrees</h3>',
-                                        '<p>Customizable fresh pizza.</p>'
+                                        '<p>Customizable fresh pizza</p>'
                         ].join(''),
                         fulldesc: [
                                         '<h3>800 Degrees</h3>',
@@ -273,7 +273,7 @@ var LocsB = [
                         title: 'Stan&#39;s Donuts',
                         html: [
                                         '<h3>Stan&#39;s Donuts</h3>',
-                                        '<p>Three generations of signature doughnuts.</p>'
+                                        '<p>Three generations of signature doughnuts</p>'
                         ].join(''),
                         fulldesc: [
                                         '<h3>Stan&#39;s Donuts</h3>',
@@ -288,7 +288,7 @@ var LocsB = [
                         title: 'Fab Hot Dogs',
                         html: [
                                         '<h3>Fab Hot Dogs</h3>',
-                                        '<p>19 types of hot dogs, with an "I Ate It All" challenge.</p>'
+                                        '<p>19 types of hot dogs, with an "I Ate It All" challenge</p>'
                         ].join(''),
                         fulldesc: [
                                         '<h3>Fab Hot Dogs</h3>',
@@ -303,7 +303,7 @@ var LocsB = [
                         title: 'Napa Valley Grille',
                         html: [
                                         '<h3>Napa Valley Grille</h3>',
-                                        '<p>Locally sourced, farm-to-table, seasonal cuisine.</p>'
+                                        '<p>Locally sourced, farm-to-table, seasonal cuisine</p>'
                         ].join(''),
                         fulldesc: [
                                         '<h3>Napa Valley Grille</h3>',
@@ -318,7 +318,7 @@ var LocsB = [
                         title: 'Espresso Profeta',
                         html: [
                                         '<h3>Espresso Profeta</h3>',
-                                        '<p>Quaint little cafe specializing in latte art.</p>'
+                                        '<p>Quaint little cafe specializing in latte art</p>'
                         ].join(''),
                         fulldesc: [
                                         '<h3>Espresso Profeta</h3>',
@@ -333,7 +333,7 @@ var LocsB = [
                         title: 'fundamental LA',
                         html: [
                                         '<h3>fundamental LA</h3>',
-                                        '<p>Farmer-chef relationships produce wholesome, seasonal cuisine.</p>'
+                                        '<p>Farmer-chef relationships produce wholesome, seasonal cuisine</p>'
                         ].join(''),
                         fulldesc: [
                 '<h3>fundamental LA</h3>',
@@ -349,7 +349,7 @@ var LocsB = [
                         title: 'Mon Amour Cafe',
                         html: [
                                         '<h3>Mon Amour Cafe</h3>',
-                                        '<p>Late-night sweet and savory crepes.</p>'
+                                        '<p>Late-night sweet and savory crepes</p>'
                         ].join(''),
                         fulldesc: [
                 '<h3>Mon Amour Cafe</h3>',
