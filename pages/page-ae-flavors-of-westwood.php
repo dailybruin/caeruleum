@@ -17,8 +17,8 @@ Template Name: A&E Flavors of Westwood
     article#fow #background {
         position: absolute;
         z-index: -1;
-        margin-top: -320px;
-        opacity: 0.25;
+        margin-top: -280px;
+        opacity: 0.3;
     }
     article#fow h1 {
       text-align: center;
@@ -42,6 +42,7 @@ Template Name: A&E Flavors of Westwood
         max-width: 600px;
         text-align: center;
         margin: 20px auto;
+        text-shadow: 1px 1px 6px white;
     }
     article#fow .gmap {
       height: 400px;
