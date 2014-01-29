@@ -10,16 +10,22 @@ Template Name: A&E Flavors of Westwood
 <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
 
 <style>
+    article#fow {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
     article#fow h1 {
       text-align: center;
       font: 400 100px/1.3 'Lobster Two', Helvetica, sans-serif;
       color: #2685bb;
       text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+      text-transform: none;
     }
     article#fow h3 {
       font: 100 30px/1.3 'Lobster Two', Helvetica, sans-serif;
       color: #2685bb;
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+      text-transform: none;
     }
     article#fow p {
       font-family: 'Cabin', Helvetica, Arial, sans-serif;
@@ -135,16 +141,23 @@ Template Name: A&E Flavors of Westwood
     article#fow .gmnoprint {
       display: none !important;
     }
-    article#fow footer {
-      margin: 2em 0;
+    article#fow #page-credit {
+      margin: 3em 0 2em 0;
       text-align: center;
       color: gray;
       border-top: 1px solid #2685BB;
       padding-top: 0.5em;
+      font-size: 0.9em;
     }
-    article#fow footer a {
+    article#fow #page-credit a {
       color: #2685BB;
       text-decoration: none;
+    }
+    @media (max-width: 640px) {
+        article#fow #controls-tabs {
+            width: 100%;
+            float: none;
+        }
     }
 </style>
 
@@ -155,7 +168,7 @@ Template Name: A&E Flavors of Westwood
 
 <div id="controls-tabs"></div>
 <div id="gmap-tabs" class="gmap" style="position: relative; overflow: hidden;"></div>
-<div id="info">
+<div id="info"></div>
 
 
 <script type="text/javascript">
@@ -356,7 +369,7 @@ $(document).ready(function(){
 });
 </script>
 
-<footer>Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></footer>
+<div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
 
 </article>
 
