@@ -14,6 +14,12 @@ Template Name: A&E Flavors of Westwood
         max-width: 1280px;
         margin: 0 auto;
     }
+    article#fow #background {
+        position: absolute;
+        z-index: -1;
+        margin-top: -320px;
+        opacity: 0.25;
+    }
     article#fow h1 {
       text-align: center;
       font: 400 100px/1.3 'Lobster Two', Helvetica, sans-serif;
@@ -163,6 +169,8 @@ Template Name: A&E Flavors of Westwood
 
 
 <article id="fow">
+
+<img id="background" src="http://dailybruin.com/images/2014/01/bg1.png"/>
 
 <h1>Flavors of Westwood</h1>
 
