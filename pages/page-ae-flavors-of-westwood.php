@@ -24,7 +24,7 @@ Template Name: A&E Flavors of Westwood
       text-align: center;
       font: 400 100px/1.3 'Lobster Two', Helvetica, sans-serif;
       color: #2685bb;
-      text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+      text-shadow: 2px 4px 0px rgba(255, 255, 255, 0.7);
       text-transform: none;
     }
     article#fow h3 {
