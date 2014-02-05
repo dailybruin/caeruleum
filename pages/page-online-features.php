@@ -8,37 +8,89 @@ Template Name: Online Features
 <script src="../js/vendor/jquery.dotdotdot.js" type="text/javascript"></script>
 
 <style>
+.classname {
+  -moz-box-shadow:inset 0px 1px 19px 0px #e8e8eb;
+  -webkit-box-shadow:inset 0px 1px 19px 0px #e8e8eb;
+  box-shadow:inset 0px 1px 19px 0px #e8e8eb;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2f2f2), color-stop(1, #dbd7db) );
+  background:-moz-linear-gradient( center top, #f2f2f2 5%, #dbd7db 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#dbd7db');
+  background-color:#f2f2f2;
+  -webkit-border-top-left-radius:7px;
+  -moz-border-radius-topleft:7px;
+  border-top-left-radius:7px;
+  -webkit-border-top-right-radius:7px;
+  -moz-border-radius-topright:7px;
+  border-top-right-radius:7px;
+  -webkit-border-bottom-right-radius:7px;
+  -moz-border-radius-bottomright:7px;
+  border-bottom-right-radius:7px;
+  -webkit-border-bottom-left-radius:7px;
+  -moz-border-radius-bottomleft:7px;
+  border-bottom-left-radius:7px;
+  text-indent:0;
+  border:1px solid #f7f4f7;
+  display:inline-block;
+  color:#1f1d1f;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:40px;
+  line-height:40px;
+  width:55px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #e3e0e3;
+}
+
+.classname:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dbd7db), color-stop(1, #f2f2f2) );
+  background:-moz-linear-gradient( center top, #dbd7db 5%, #f2f2f2 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbd7db', endColorstr='#f2f2f2');
+  background-color:#dbd7db;
+}
+
+.classname:active {
+  position:relative;
+  top:1px;
+}
+
+/*css for styling check boxes*/
 input[type=checkbox].css-checkbox {
-							  position: absolute; 
-							overflow: hidden; 
-							clip: rect(0 0 0 0); 
-							height:1px; 
-							width:1px; 
-							margin:-1px; 
-							padding:0;
-							border:0;
-						}
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+    height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0;
+	border:0;
+}
 
-						input[type=checkbox].css-checkbox + label.css-label {
-							padding-left:20px;
-							height:15px; 
-							display:inline-block;
-							line-height:15px;
-							background-repeat:no-repeat;
-							background-position: 0 0;
-							font-size:15px;
-							vertical-align:middle;
-							cursor:pointer;
-						}
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:20px;
+	height:15px; 
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+}
 
-						input[type=checkbox].css-checkbox:checked + label.css-label {
-							background-position: 0 -15px;
-						}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -15px;
+}
 						
-						.css-label{
-							background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
-						}
+.css-label{
+	background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
+/*end css for styling check boxes*/
 
+
+/*general css for styling container/items*/
 #container {
     padding: 15px 5px 15px 5px;
     font: 10pt normal Arial, sans-serif;  
@@ -63,7 +115,10 @@ input[type=checkbox].css-checkbox {
     margin-bottom: 0;
     text-align: center;
 }
+/*end general css*/
 
+
+/*css for slide in caption starts here*/
 #container .item img {  
     left: 0;  
     -webkit-transition: all 300ms ease-out;  
@@ -104,6 +159,9 @@ input[type=checkbox].css-checkbox {
       transform: translateX(-100%);  
     }  
 
+/*end css for slide in caption*/
+
+/*css for ellipsis for over-long descriptions*/
 .ellipsis {
     max-height: 50px;
 }
@@ -117,6 +175,7 @@ input[type=checkbox].css-checkbox {
     -moz-binding: url(<q>ellipsis.xml#ellipsis</q>);
 }
 
+/*css for styling author names*/
 .authors {
     font-style: italic;
     font-family: Arial, sans-serif;
@@ -137,7 +196,7 @@ var features =
         "picture"   : "../wp-content/uploads/2013/12/Chilean-Winter.png",
         "web"       : "http://chileanwinter.dailybruin.com/",
         "author"        : "Calvin Chan and Jimmy Yang",
-        "category"  : ["news", "BoB", "2013"]
+        "category"  : ["news", "2013"]
     },
     {
         "fname"     : "Dance Marathon 2013",
@@ -153,7 +212,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Gender-Behavior-Therapy.png",
         "web"       : "http://dailybruin.com/features/conversion-therapy/",
         "author"        : "The Daily Bruin",
-        "category"      : ["acl", "2012"]
+        "category"      : ["2012"]
     },
     {
         "fname"     : "Welcoming Back Pauley",
@@ -361,7 +420,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/ucla-dining.png",
         "web"       : "http://dailybruin.com/features/a-closer-look-ucla-dining/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010", "acl"]
+        "category"      : ["2010"]
     },
     {
         "fname"     : "Timeline of Budget Changes",
@@ -383,6 +442,8 @@ var features =
 </script>
 
 <script>
+
+//Erase all items from container
 function erase() {
 
         //identify container
@@ -392,85 +453,109 @@ function erase() {
         $container.masonry('remove', $container.find('.item'));
 }
 
-function filter() {
-
-    var $container = $('#container');
-
-    var ycati = 0;
-    var ocati = 0;
-
-    var ycategories = new Array();
-    var ocategories = new Array();
-
-    //Years
-    if(document.getElementById("2010").checked) {
-        ycategories[ycati] = "2010";
-        ycati++;
-    }
-    if(document.getElementById("2011").checked) {
-        ycategories[ycati] = "2011";
-        ycati++;
-    }
-    if(document.getElementById("2012").checked) {
-        ycategories[ycati] = "2012";
-        ycati++;
-    }
-    if(document.getElementById("2013").checked) {
-        ycategories[ycati] = "2013";
-        ycati++;
-    }
-
-    //Other
-    if(document.getElementById("news").checked) {
-        ocategories[ocati] = "news";
-        ocati++;
-    }
-    if(document.getElementById("a&e").checked) {
-        ocategories[ocati] = "a&e";
-        ocati++;
-    }
-    if(document.getElementById("sports").checked) {
-        ocategories[ocati] = "sports";
-        ocati++;
-    }
-    if(document.getElementById("prime").checked) {
-        ocategories[ocati] = "prime";
-        ocati++;
-    }
-    if(document.getElementById("BoB").checked) {
-        ocategories[ocati] = "BoB";
-        ocati++;
-    }
-    if(document.getElementById("acl").checked) {
-        ocategories[ocati] = "acl";
-        ocati++;
-    }
+//Filter by years
+function filterByYr(feature_year) {
 
     var fhtml = "";
 
-    if(ycati > 0 || ocati > 0) {
+        features.sort(function(a, b) {
+                if(a.fname < b.fname) return -1;
+            
+                if(a.fname > b.fname) return 1;
+        
+                return 0;
+            }
+        )
+
+        for(var i = 0; i < features.length; i++) {
+            if(jQuery.inArray(feature_year,features[i].category,0) >= 0) {
+                var obj = features[i];
+
+                fhtml = fhtml + '<div class="item">'
+                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span class="caption slide-caption"><p class="authors">' + obj.author
+                + '</p><p class="ellipsis">' + obj.description
+                + '</p></span></a></div>';
+          
+            }
+        }
+
+
+    var $container = $('#container');
+
+    erase();
+
+    var $items = $(fhtml);
+
+    $container.append($items);
+    $container.masonry('appended', $items);
+    $container.imagesLoaded( function() {
+    	$container.masonry();
+	$(".ellipsis").dotdotdot({
+	/* The HTML to add as ellipsis. */
+	ellipsis : '... ',
+ 
+	/* How to cut off the text/html: 'word'/'letter'/'children' */
+	wrap : 'word'
+       });
+    });
+
+}
+
+//Filter by category
+function filterByCat() {
+
+    var $container = $('#container');
+
+    var cati = 0;
+
+    var categories = new Array();
+
+    if(document.getElementById("news").checked) {
+        categories[cati] = "news";
+        cati++;
+    }
+    if(document.getElementById("sports").checked) {
+        categories[cati] = "sports";
+        cati++;
+    }
+    if(document.getElementById("a&e").checked) {
+        categories[cati] = "a&e";
+        cati++;
+    }
+    if(document.getElementById("opinion").checked) {
+        categories[cati] = "opinion";
+        cati++;
+    }
+    if(document.getElementById("prime").checked) {
+        categories[cati] = "prime";
+        cati++;
+    }
+
+        features.sort(function(a, b) {
+                if(a.fname < b.fname) return -1;
+            
+                if(a.fname > b.fname) return 1;
+        
+                return 0;
+            }
+        )
+
+    var fhtml = "";
+
+    if(cati > 0) {
     for(var i = 0; i < features.length; i++) {
 
-            var yinclude = 1;
-            var oinclude = 1;
+            var include = 1;
 
-            for(var j = 0; j < ycati; j++) {
-                if(jQuery.inArray(ycategories[j],features[i].category,0) >= 0) {
-                    yinclude = 1;
+            for(var j = 0; j < cati; j++) {
+                if(jQuery.inArray(categories[j],features[i].category,0) >= 0) {
+                    include = 1;
                     break;
                 }
-                yinclude = 0;
+                include = 0;
             }
 
-            for(var l = 0; l < ocati; l++) {
-                if(jQuery.inArray(ocategories[l],features[i].category,0) >= 0) {
-                    oinclude = 1;
-                    break;
-                }
-                oinclude = 0;
-            }
-
-            if(yinclude && oinclude) {
+            if(include) {
                 var obj = features[i];
 
                 fhtml = fhtml + '<div class="item">'
@@ -483,14 +568,12 @@ function filter() {
 
             if(fhtml == "") {
                 erase();
-                //$("div.feature_objects").empty();
+                
                 $container.masonry();
                 $( "div.js-masonry" ).html("Sorry, no results were found.");
             }
             else {
                     erase();
-
-                    //$("div.feature_objects").empty();
 
                     $container.masonry({
                       columnWidth: 335,
@@ -503,21 +586,33 @@ function filter() {
 
                     $container.append($items);
 	
-			$(".ellipsis").dotdotdot({
-			/* The HTML to add as ellipsis. */
-			ellipsis : '... ',
+			        $(".ellipsis").dotdotdot({
+			         
+                        /* The HTML to add as ellipsis. */
+			             ellipsis : '... ',
  
-			/* How to cut off the text/html: 'word'/'letter'/'children' */
-			wrap : 'word'
-        });
+			             /* How to cut off the text/html: 'word'/'letter'/'children' */
+			             wrap : 'word'
+                    });
 
                     $container.masonry('appended', $items);
+		       $container.imagesLoaded( function() {
+        			$container.masonry();
+	 			$(".ellipsis").dotdotdot({
+				/* The HTML to add as ellipsis. */
+				ellipsis : '... ',
+ 
+				/* How to cut off the text/html: 'word'/'letter'/'children' */
+				wrap : 'word'
+        			});
+    			});
             }
     }
 }
 </script>
 
 <script>
+//Render all features
 function renderAll() {
 
     erase();
@@ -571,6 +666,7 @@ function renderAll() {
 </script>
 
 <script>
+//First page load rendering (renders all features)
 $(window).load(function () {
     renderAll();
 });
@@ -578,10 +674,12 @@ $(window).load(function () {
 </script>
 
 <script>
+//reset check boxes
 function clearAll() {
     $("input:checkbox").attr('checked', false);
 }
 
+//select all check boxes
 function checkAll(formname, checktoggle)
 {
   var checkboxes = new Array();
@@ -601,46 +699,35 @@ function checkAll(formname, checktoggle)
 
 <h4>FEATURES</h4>
 
-<div>
-
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Year</h5>
-<form name="yrs" method="post" style="padding: 5px;">
-<input id="2010" class="css-checkbox" type="checkbox" />
-<label for="2010" name="2010" class="css-label">2010</label>&nbsp;&nbsp;
-<input id="2011" class="css-checkbox" type="checkbox" />
-<label for="2011" name="2011" class="css-label">2011</label>&nbsp;&nbsp;
-<input id="2012" class="css-checkbox" type="checkbox" />
-<label for="2012" name="2012" class="css-label">2012</label>&nbsp;&nbsp;
-<input id="2013" class="css-checkbox" type="checkbox" />
-<label for="2013" name="2013" class="css-label">2013</label>&nbsp;&nbsp;
-<input type="button" value="All" onclick="javascript:checkAll('yrs', true);"/>
-</form>
+<button type="button" href="#" class="classname" onclick="renderAll()">ALL</button>
+<button type="button" href="#" class="classname" onclick="filterByYr('2013')">2013</button>
+<button type="button" href="#" class="classname" onclick="filterByYr('2012')">2012</button>
+<button type="button" href="#" class="classname" onclick="filterByYr('2011')">2011</button>
+<button type="button" href="#" class="classname" onclick="filterByYr('2010')">2010</button>
 </div>
+
+<br/>
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Category</h5>
 <form name="other" method="post" style="padding: 5px;">
 <input id="news" class="css-checkbox" type="checkbox" />
 <label for="news" name="news" class="css-label">News</label>&nbsp;&nbsp;
-<input id="a&e" class="css-checkbox" type="checkbox" />
-<label for="a&e" name="a&e" class="css-label">A&E</label>&nbsp;&nbsp;
 <input id="sports" class="css-checkbox" type="checkbox" />
 <label for="sports" name="sports" class="css-label">Sports</label>&nbsp;&nbsp;
-
+<input id="a&e" class="css-checkbox" type="checkbox" />
+<label for="a&e" name="a&e" class="css-label">A&E</label>&nbsp;&nbsp;
+<input id="opinion" class="css-checkbox" type="checkbox" />
+<label for="opinion" name="opinion" class="css-label">Opinion</label>&nbsp;&nbsp;
 <input id="prime" class="css-checkbox" type="checkbox" />
 <label for="prime" name="prime" class="css-label">Prime</label>&nbsp;&nbsp;
-<input id="BoB" class="css-checkbox" type="checkbox" />
-<label for="BoB" name="BoB" class="css-label">Bridget O'Brien</label>&nbsp;&nbsp;
-<input id="acl" class="css-checkbox" type="checkbox" />
-<label for="acl" name="acl" class="css-label">A Closer Look</label>&nbsp;&nbsp;
-<input type="button" value="All" onclick="javascript:checkAll('other', true);"/><br/>
 </form>
 </div>
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
-<input type="button" value="Submit" onclick="filter()"/>
-<input type="button" value="All Features" onclick="renderAll()"/>
+<input type="button" value="Submit" onclick="filterByCat()"/>
 <input type="button" value="Reset" onclick="clearAll()"/>
 </form>
 </div>
