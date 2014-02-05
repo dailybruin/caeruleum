@@ -456,6 +456,10 @@ function erase() {
 //Filter by years
 function filterByYr(feature_year) {
 
+    clearAll();
+
+    $('div.js-masonry').empty();
+
     var fhtml = "";
 
         features.sort(function(a, b) {
@@ -503,6 +507,8 @@ function filterByYr(feature_year) {
 
 //Filter by category
 function filterByCat() {
+
+    $('div.js-masonry').empty();
 
     var $container = $('#container');
 
@@ -614,6 +620,10 @@ function filterByCat() {
 <script>
 //Render all features
 function renderAll() {
+
+    clearAll();
+
+    $('div.js-masonry').empty();
 
     erase();
 
