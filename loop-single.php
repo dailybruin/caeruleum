@@ -68,7 +68,11 @@
 		<?php endif; ?>
 		<?php if(has_post_thumbnail() && !$video_story) : ?>
 			<?php the_post_thumbnail('db-category-full'); ?>
-			<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
+			<?php 
+			// We don't do media credits like this any more
+			if(get_the_time('U') < 1391744168): ?>
+				<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
+			<?php endif; ?>
 			<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
 		<?php endif; ?>
 		<?php if($video_story): ?>

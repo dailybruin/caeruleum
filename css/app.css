@@ -549,6 +549,7 @@ ul#topMenu > li.active.open > a:hover {
 .photocaption {
     display: block;
     margin-bottom: 10px;
+    margin-top:5px;
 }
 .photocaption > p {
 	font-family: "Helvetica Neue", sans-serif;
@@ -716,6 +717,9 @@ figcaption{
 }
 .topcontent-rotator-content {
 	clear:both;
+}
+.topcontent-rotator-content .story-info {
+	margin-top:5px;
 }
 
 
