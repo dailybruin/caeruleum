@@ -179,7 +179,7 @@
 				            $lastAuthor = ($finalAuthorKey == $key);
 				            $lastName = get_the_author_meta('last_name', $author->ID);
 				            $graduated = get_the_author_meta('graduated', $author->ID);
-				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated || substr($author->user_email,0,8) == 'camayak+') // camayak generates gross-looking author emails that we don't want to display
+				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated || substr($author->user_email,-12) == '@camayak.com') // camayak generates gross-looking author emails that we don't want to display
 				                continue;
 				            if($firstAuthor)
 				                echo "Email ";
