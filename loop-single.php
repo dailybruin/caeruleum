@@ -164,7 +164,7 @@
 			    	{ ; }
 				    else if(!empty($customFields['db_authoremail'][0]) || get_field('db_article_format') == 'brief')
 				    {
-				    	if(!empty($customFields['db_authoremail'][0]))
+				    	if(!empty($customFields['db_authoremail'][0]) && array_slice($customFields['db_authoremail'][0],0,8) != 'camayak+') // camayak generates gross-looking author emails that we don't want to display
 					        echo $customFields['db_authoremail'][0];
 				    }
                     else if(intval(the_date('U','','',false)) <= 1361363177)
