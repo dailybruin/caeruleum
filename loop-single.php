@@ -164,7 +164,7 @@
 			    	{ ; }
 				    else if(!empty($customFields['db_authoremail'][0]) || get_field('db_article_format') == 'brief')
 				    {
-				    	if(!empty($customFields['db_authoremail'][0]))
+				    	if(!empty($customFields['db_authoremail'][0])) 
 					        echo $customFields['db_authoremail'][0];
 				    }
                     else if(intval(the_date('U','','',false)) <= 1361363177)
@@ -179,7 +179,7 @@
 				            $lastAuthor = ($finalAuthorKey == $key);
 				            $lastName = get_the_author_meta('last_name', $author->ID);
 				            $graduated = get_the_author_meta('graduated', $author->ID);
-				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated)
+				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated || substr($author->user_email,-12) == '@camayak.com') // camayak generates gross-looking author emails that we don't want to display
 				                continue;
 				            if($firstAuthor)
 				                echo "Email ";
