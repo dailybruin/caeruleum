@@ -112,7 +112,7 @@ Template Name: Coaches and Companions
 <p>
 <p>The two coaches have only been together a few months at UCLA, but their story goes much further back.
 <p>
-<p><span class="cc-headline">"Forging a friendship"</span>
+<p><span class="cc-headline">Forging a friendship</span>
 <p>
 <p>Cromwell leans back in her office chair. The coach takes a slight pause before finishing her answer.
 <p>
@@ -216,7 +216,7 @@ Template Name: Coaches and Companions
 <p>
 <p>“Probably at that point I knew she was a lifelong friend,” Close said.
 <p>
-<p><span class="cc-headline">"Becoming a Bruin"</span>
+<p><span class="cc-headline">Becoming a Bruin</span>
 <p>
 <p>Even a few years ago, Close, who started at UCLA in 2011, would have had a hard time believing both her and Cromwell would be reunited in Westwood.
 <p>
@@ -253,7 +253,7 @@ Your browser does not support the audio element.
 <p>
 <p>“It feels like family coming together,” she said.
 <p>
-<p><span class="cc-headline">"Los Angeles legacy"</span>
+<p><span class="cc-headline">Los Angeles legacy</span>
 <p>
 <p>Cromwell's predecessor had departed abruptly, and among the players the initial surprise gave way to uncertainty about a new coach.
 <p>
