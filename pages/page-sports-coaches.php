@@ -127,9 +127,6 @@ Template Name: Coaches and Companions
 <p>By contrast, Cromwell was a newbie, but one that the camp was excited to welcome; a newbie who juggled coaching soccer at University of Central Florida with a position on the U.S. Women’s National Team.
 <p>
 <p>To use Close’s terms, Cromwell was “a big dog soccer player.”
-<div class="cc-img">
-    <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picE_.jpg" alt=""></img>
-</div>
 <p>
 <p>But there was one passion they shared that overshadowed their dichotomous positions within the organization. It was the same ambition  that would motivate them to voluntarily give up precious off-season time year after year.
 <p>
@@ -149,6 +146,9 @@ Template Name: Coaches and Companions
     </p>
     <p class="cc-right-quote">"</p>
     <p class="quoter"> - Debbie Haliday, a mutual friend of Cori Close and Amanda Cromwell</p>
+</div>
+<div class="cc-img">
+    <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picE_.jpg" alt=""></img>
 </div>
 <p>
 <p>Whenever Close was on a recruiting trip near a city Cromwell was scheduled to play in, there would always be one additional item on her travel itinerary – visiting a stadium on game day.
