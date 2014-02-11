@@ -283,7 +283,7 @@ Your browser does not support the audio element.
 <div class="cc-img">
     <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picD_.jpg" alt=""></img>
 </div>
-<p><a href="http://dailybruin.com/2014/02/11/coaches-continue-friendship-at-ucla/">>> For more photos explore the gallery on Spectrum</a>
+<p><a href="http://dailybruin.com/2014/02/11/coaches-continue-friendship-at-ucla/">&raquo; For more photos, explore the gallery on Spectrum.</a>
 <p>
 <p>Today the coaches continue to pen the new chapter in their friendship that started close to 20 years ago – an endearing and enduring friendship that began because of the love they shared for molding the next generation of athletes.
 <p>
