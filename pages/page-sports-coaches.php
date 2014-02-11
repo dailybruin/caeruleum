@@ -56,7 +56,6 @@ Template Name: Coaches and Companions
 
     .cc-note {
         padding: 10px 0px;
-        text-align: right;
         margin-right: 20px;
         border-bottom: 1px solid #DDD;
     }
@@ -64,6 +63,11 @@ Template Name: Coaches and Companions
     .cc-headline {
         font-weight: bold;
         font-size: 20px;
+    }
+
+    .cc-byline {
+        margin-left: 20px;
+        font-style: italic;
     }
 
     .cc-radio-audio {
@@ -79,11 +83,11 @@ Template Name: Coaches and Companions
 
  <div id="cc-banner">
     <img class="cc-round" src="http://dailybruin.com/images/2014/02/coaches.jpg" alt=""></img>
-    <p class="cc-note">Description goes here</p>
+    <p class="cc-note">UCLA women's basketball coach Cori Close (left) and UCLA women's soccer coach Amanda Cromwell (right) have a friendship dating back nearly two decades after the two met volunteering as coaches at a camp for female high school athletes.</p>
 </div>
 
 <div id="cc-container">
-<p><b>By Aubrey Yeo</b>
+<p><b>BY AUBREY YEO</b>
 <p>
 <p>Nestled between the pages of Amanda Cromwell’s Bible is a handwritten letter.
 <p>
@@ -121,8 +125,8 @@ Template Name: Coaches and Companions
         <p id="quote3" class="cc-quote">
         I think they’re two of the most competitive people I know so everything turns into a competition. Fishing becomes a competition even, and so it’s fun to…watch them kind of go at each other and compete. At the camp everyone would play basketball and then everyone would go play soccer…and those two (would be) right in the mix of that, kind of ringleaders for that and (they) would love to give each other a hard time if the other one won soccer or basketball.
         </p>
-        <p class="quoter"> - Debbie Haliday</p>
         <p class="cc-right-quote">"</p>
+        <p class="quoter"> - Debbie Haliday, a mutual friend of Cori Close and Amanda Cromwell</p>
     </div>
     <div class="cc-img">
         <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picE_.jpg" alt=""></img>
@@ -148,8 +152,8 @@ Template Name: Coaches and Companions
         <p id="quote1" class="cc-quote">
         She’s got a nickname… (and) her nickname is ‘Sal’. And every time I’m like ‘Hey, Sal!’ down the hall, she’ll turn around and people will be like ‘Who are you calling Sal?” Well when she was with the national team, they were down in Brazil, and it was this Salamander, and it become ‘Salamanda’ and it got shortened to ‘Sal’….So most of the people with USA Soccer call her Sal. But people around here think I’m crazy when I do that.
         </p>
-        <p class="quoter"> - Cori Close</p>
         <p class="cc-right-quote">"</p>
+        <p class="quoter"> - Cori Close</p>
     </div>
 <p>
 <p>But even elite athletes have bad days. For Cromwell, one such day came in July of 2003.
@@ -178,8 +182,8 @@ Template Name: Coaches and Companions
         <p id="quote4" class="cc-quote">
         When I was helping (Cori) when she was in Tallahassee tryin to find a place to live, she was a crazy person driving around. We’d be on the left side of the road, and she would see this sign for an open house on the right, and she would cross three lanes of traffic and fly in to see this one open house. I felt like we were just driving around like a bat out of hell. It was fun, we look back on that and laugh.
         </p>
-        <p class="quoter"> – Amanda Cromwell</p>
         <p class="cc-right-quote">"</p>
+        <p class="quoter"> – Amanda Cromwell</p>
     </div>
 <p>But no amount of preparation could have readied Close for what she faced on her first day on the job.
 <p>
@@ -212,6 +216,7 @@ Template Name: Coaches and Companions
 <p>The time the two spent together gave Close privileged access to the most recent developments regarding which NCAA powerhouses were offering her friend job offers. But as Cromwell's confidant, Close also knew that only two jobs could really pique Cromwell’s interest enough to consider leaving UCF – UCLA and Virginia.
 <p>
 <p><span class="cc-radio-headline">Coaches’ friendship transcends the playing field</span>
+<p><span class="cc-byline">Rebeca Rankin/Daily Bruin Radio</span>
 <p>
 <audio controls class="cc-radio-audio">
   <source src="http://dailybruin.com/images/2014/02/2.11.radio_.cromwellclose.mp3" type="audio/mp3">
@@ -259,8 +264,8 @@ Your browser does not support the audio element.
         <p id="quote2" class="cc-quote">
         One thing we always would kid around with Cori, you know that book ‘The Purpose Driven Life’? … I always thought Cori is so determined and dedicated and she’s just all on point all the time, and so I’ll just joke around that she’s getting from point A to point B. So I would joke around and say she has the purpose driven walk. Like she’s just walking and she has a purpose and you can say that about everything in her life. And so that’s what she probably brings out of me, a little bit about having more of a purpose and knowing ‘These are my goals’ and ‘How do I get there?’…She brings out of me wanting to be a better coach and wanting to get the most out of this program as I can.
         </p>
-        <p class="quoter"> - Amanda Cromwell</p>
         <p class="cc-right-quote">"</p>
+        <p class="quoter"> - Amanda Cromwell</p>
     </div>
 <p>
 <p>That wouldn’t be the last time Close got a chance to   play fan at UCLA.
@@ -271,11 +276,11 @@ Your browser does not support the audio element.
     <div class="cc-img">
         <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picD_.jpg" alt=""></img>
     </div>
+<p><a href="http://dailybruin.com/2014/02/11/coaches-continue-friendship-at-ucla/">>> For more photos explore the gallery on Spectrum</a>
 <p>
 <p>Today the coaches continue to pen the new chapter in their friendship that started close to 20 years ago – an endearing and enduring friendship that began because of the love they shared for molding the next generation of athletes.
 <p>
 <p>It's the same the reason they both don blue and gold to this day.
 <br><br>
-    <a href="http://dailybruin.com/2014/02/11/coaches-continue-friendship-at-ucla/">>> Explore the photo gallery at Spectrum!</a>
 </div>
 <?php get_footer(); ?>
