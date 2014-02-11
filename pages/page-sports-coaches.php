@@ -287,7 +287,7 @@ Your browser does not support the audio element.
 <p>
 <p>Today the coaches continue to pen the new chapter in their friendship that started close to 20 years ago – an endearing and enduring friendship that began because of the love they shared for molding the next generation of athletes.
 <p>
-<p>It's the same the reason they both don blue and gold to this day.
+<p>It's the same reason they both don blue and gold to this day.
 <br><br>
 </div>
 <div id="cc-footer">Photos by Erin Ng. Page created by Phillip Chen and Steven Ly.</div>
