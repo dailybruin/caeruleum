@@ -3,87 +3,94 @@ Template Name: Coaches and Companions
 */ ?>
 <?php get_header(); ?>
 <style type="text/css">
-    .cc-quote {
-        margin: 0px 50px;
-        font-size: 16px;
-        font-family: Verdana, Arial;
-    }
+.cc-quote {
+    margin: 0px 50px;
+    font-size: 16px;
+    font-family: Verdana, Arial;
+}
 
-    .cc-quote-block {
-        margin: 10px 50px;
-    }
+.cc-quote-block {
+    margin: 10px 50px;
+}
 
-    .cc-left-quote {
-        color: #0080C6;
-        text-align: left;
-        font-size: 24px;
-    }
+.cc-left-quote {
+    color: #0080C6;
+    text-align: left;
+    font-size: 24px;
+}
 
-    .cc-right-quote {
-        color: #0080C6;
-        text-align: right;
-        font-size: 24px;
-    }
+.cc-right-quote {
+    color: #0080C6;
+    text-align: right;
+    font-size: 24px;
+}
 
-    .quoter {
-        color: #0080C6;
-        text-align: right;
-        margin-right: 20px;
-        font-size: 18px;
-        font-family: Verdana, Arial;
-        font-style: italic;
-    }
+.quoter {
+    color: #0080C6;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: Verdana, Arial;
+    font-style: italic;
+}
 
-    .cc-img {
-        margin: 25px;
-        text-align: center;
-    }
+.cc-img {
+    margin: 25px;
+    text-align: center;
+}
 
-    .cc-round {
-        border-radius: 25px;
-        -webkit-box-shadow: #000 0 2px 10px;
-        -moz-box-shadow: #000 0 2px 10px;
-        box-shadow: #000 0 2px 10px;
-    }
+.cc-round {
+    border-radius: 25px;
+    -webkit-box-shadow: #000 0 2px 10px;
+    -moz-box-shadow: #000 0 2px 10px;
+    box-shadow: #000 0 2px 10px;
+}
 
-    #cc-container {
-        margin: 0px 200px;
-    }
+#cc-container {
+    margin: 0px 200px;
+}
 
-    #cc-banner {
-        width: 100%;
-    }
+#cc-banner {
+    width: 100%;
+}
 
-    .cc-note {
-        padding: 10px 0px;
-        margin-right: 20px;
-        border-bottom: 1px solid #DDD;
-    }
+.cc-note {
+    padding: 10px 0px;
+    margin-right: 20px;
+    border-bottom: 1px solid #DDD;
+}
 
-    .cc-headline {
-        font-weight: bold;
-        font-size: 20px;
-    }
+.cc-headline {
+    font-weight: bold;
+    font-size: 20px;
+}
 
-    .cc-byline {
-        margin-left: 20px;
-        font-style: italic;
-    }
+.cc-byline {
+    margin-left: 20px;
+    font-style: italic;
+}
 
-    .cc-radio-audio {
-        margin-left: 20px;
-    }
+.cc-radio-audio {
+    margin-left: 20px;
+}
 
-    .cc-radio-headline {
-        margin-left: 20px;
-        font-weight: bold;
-    }
+.cc-radio-headline {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#cc-footer {
+    text-align: center;
+    color: gray;
+    font-size: 0.8em;
+    margin-top: 2em;
+}
 
 </style>
 
- <div id="cc-banner">
-    <img class="cc-round" src="http://dailybruin.com/images/2014/02/coaches.jpg" alt=""></img>
-    <p class="cc-note">UCLA women's basketball coach Cori Close (left) and UCLA women's soccer coach Amanda Cromwell (right) have a friendship dating back nearly two decades after the two met volunteering as coaches at a camp for female high school athletes.</p>
+<div id="cc-banner">
+<img class="cc-round" src="http://dailybruin.com/images/2014/02/coaches.jpg" alt=""></img>
+<p class="cc-note">UCLA women's basketball coach Cori Close (left) and UCLA women's soccer coach Amanda Cromwell (right) have a friendship dating back nearly two decades after the two met volunteering as coaches at a camp for female high school athletes.</p>
 </div>
 
 <div id="cc-container">
@@ -120,17 +127,17 @@ Template Name: Coaches and Companions
 <p>By contrast, Cromwell was a newbie, but one that the camp was excited to welcome; a newbie who juggled coaching soccer at University of Central Florida with a position on the U.S. Women’s National Team.
 <p>
 <p>To use Close’s terms, Cromwell was “a big dog soccer player.”
-    <div class="cc-quote-block">
-        <p class="cc-left-quote">"</p>
-        <p id="quote3" class="cc-quote">
-        I think they’re two of the most competitive people I know so everything turns into a competition. Fishing becomes a competition even, and so it’s fun to…watch them kind of go at each other and compete. At the camp everyone would play basketball and then everyone would go play soccer…and those two (would be) right in the mix of that, kind of ringleaders for that and (they) would love to give each other a hard time if the other one won soccer or basketball.
-        </p>
-        <p class="cc-right-quote">"</p>
-        <p class="quoter"> - Debbie Haliday, a mutual friend of Cori Close and Amanda Cromwell</p>
-    </div>
-    <div class="cc-img">
-        <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picE_.jpg" alt=""></img>
-    </div>
+<div class="cc-quote-block">
+    <p class="cc-left-quote">"</p>
+    <p id="quote3" class="cc-quote">
+    I think they’re two of the most competitive people I know so everything turns into a competition. Fishing becomes a competition even, and so it’s fun to…watch them kind of go at each other and compete. At the camp everyone would play basketball and then everyone would go play soccer…and those two (would be) right in the mix of that, kind of ringleaders for that and (they) would love to give each other a hard time if the other one won soccer or basketball.
+    </p>
+    <p class="cc-right-quote">"</p>
+    <p class="quoter"> - Debbie Haliday, a mutual friend of Cori Close and Amanda Cromwell</p>
+</div>
+<div class="cc-img">
+    <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picE_.jpg" alt=""></img>
+</div>
 <p>
 <p>But there was one passion they shared that overshadowed their dichotomous positions within the organization. It was the same ambition  that would motivate them to voluntarily give up precious off-season time year after year.
 <p>
@@ -147,23 +154,23 @@ Template Name: Coaches and Companions
 <p>Whenever Close was on a recruiting trip near a city Cromwell was scheduled to play in, there would always be one additional item on her travel itinerary – visiting a stadium on game day.
 <p>
 <p>“She’s one of the best defenders in the world, literally, she’s a World Cup level player,” Close said. “To follow her professional career, it was just fun. It was fun to support her; it was fun to be her little psycho fan.”
-    <div class="cc-quote-block">
-        <p class="cc-left-quote">"</p>
-        <p id="quote1" class="cc-quote">
-        She’s got a nickname… (and) her nickname is ‘Sal’. And every time I’m like ‘Hey, Sal!’ down the hall, she’ll turn around and people will be like ‘Who are you calling Sal?” Well when she was with the national team, they were down in Brazil, and it was this Salamander, and it become ‘Salamanda’ and it got shortened to ‘Sal’….So most of the people with USA Soccer call her Sal. But people around here think I’m crazy when I do that.
-        </p>
-        <p class="cc-right-quote">"</p>
-        <p class="quoter"> - Cori Close</p>
-    </div>
+<div class="cc-quote-block">
+    <p class="cc-left-quote">"</p>
+    <p id="quote1" class="cc-quote">
+    She’s got a nickname… (and) her nickname is ‘Sal’. And every time I’m like ‘Hey, Sal!’ down the hall, she’ll turn around and people will be like ‘Who are you calling Sal?” Well when she was with the national team, they were down in Brazil, and it was this Salamander, and it become ‘Salamanda’ and it got shortened to ‘Sal’….So most of the people with USA Soccer call her Sal. But people around here think I’m crazy when I do that.
+    </p>
+    <p class="cc-right-quote">"</p>
+    <p class="quoter"> - Cori Close</p>
+</div>
 <p>
 <p>But even elite athletes have bad days. For Cromwell, one such day came in July of 2003.
 <p>
 <p>A defender for the now-defunct San Jose CyberRays, Cromwell didn’t perform up to her expectations during a match. Her coach decided to take her out of the game. And to add to her growing list of frustrations, her team lost.
 <p>
 <p>After the game, Cromwell picked up her Bible and found inside it a handwritten note Close had left there after the loss.
-    <div class="cc-img">
-        <img class="cc-round" src="http://dailybruin.com/images/2014/02/Note-with-writing.jpeg" alt=""></img>
-    </div>
+<div class="cc-img">
+    <img class="cc-round" src="http://dailybruin.com/images/2014/02/Note-with-writing.jpeg" alt=""></img>
+</div>
 <p>
 <p>“She knew how much I was … eaten up because of that situation. … The level of competitiveness is through the roof; it’s different for (coaches), and we can empathize for each other,” Cromwell said. 
 <p>
@@ -177,14 +184,14 @@ Template Name: Coaches and Companions
 <p>
 <p>In early June 2004, Close, the newly appointed associate head coach of the Florida State Seminoles, made the journey from California to the East Coast. She was ready to take on the challenge of leading a new women’s basketball program.
 <p>
-    <div class="cc-quote-block">
-        <p class="cc-left-quote">"</p>
-        <p id="quote4" class="cc-quote">
-        When I was helping (Cori) when she was in Tallahassee tryin to find a place to live, she was a crazy person driving around. We’d be on the left side of the road, and she would see this sign for an open house on the right, and she would cross three lanes of traffic and fly in to see this one open house. I felt like we were just driving around like a bat out of hell. It was fun, we look back on that and laugh.
-        </p>
-        <p class="cc-right-quote">"</p>
-        <p class="quoter"> – Amanda Cromwell</p>
-    </div>
+<div class="cc-quote-block">
+    <p class="cc-left-quote">"</p>
+    <p id="quote4" class="cc-quote">
+    When I was helping (Cori) when she was in Tallahassee tryin to find a place to live, she was a crazy person driving around. We’d be on the left side of the road, and she would see this sign for an open house on the right, and she would cross three lanes of traffic and fly in to see this one open house. I felt like we were just driving around like a bat out of hell. It was fun, we look back on that and laugh.
+    </p>
+    <p class="cc-right-quote">"</p>
+    <p class="quoter"> – Amanda Cromwell</p>
+</div>
 <p>But no amount of preparation could have readied Close for what she faced on her first day on the job.
 <p>
 <p>An aneurysm had taken the life of the team's 19-year-old starting center Ronalda Pierce.
@@ -219,7 +226,7 @@ Template Name: Coaches and Companions
 <p><span class="cc-byline">Rebeca Rankin/Daily Bruin Radio</span>
 <p>
 <audio controls class="cc-radio-audio">
-  <source src="http://dailybruin.com/images/2014/02/2.11.radio_.cromwellclose.mp3" type="audio/mp3">
+<source src="http://dailybruin.com/images/2014/02/2.11.radio_.cromwellclose.mp3" type="audio/mp3">
 Your browser does not support the audio element.
 </audio> 
 <p>But even then, Close always gave the upper hand to the Virginia Cavaliers, Cromwell’s alma mater.
@@ -237,9 +244,9 @@ Your browser does not support the audio element.
 <p>“I was going right around the bend of Pauley Pavilion, and I could see her about 70 yards away, and I could see her smiling from there,” Close said. “And I said to myself ‘she wants this job.’”
 <p>
 <p>Cromwell got the job. The final piece of the puzzle for a Fellowship of Christian Athletes reunion was finally in place.
-    <div class="cc-img">
-        <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picA_.jpg" alt=""></img>
-    </div>
+<div class="cc-img">
+    <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picA_.jpg" alt=""></img>
+</div>
 
 <p>
 <p>Haliday, whom UCLA hired just a year ago, got a chance to see the two coaches join forces once again. And the reaction she provided was one only capable of being elucidated by someone who’s known them for the longest time.
@@ -259,23 +266,23 @@ Your browser does not support the audio element.
 <p>And once again, Close’s words delivered.
 <p>
 <p>“(Cromwell) lived up to her expectations of being really nice and a players’ coach,” Dydasco said.
-    <div class="cc-quote-block">
-        <p class="cc-left-quote">"</p>
-        <p id="quote2" class="cc-quote">
-        One thing we always would kid around with Cori, you know that book ‘The Purpose Driven Life’? … I always thought Cori is so determined and dedicated and she’s just all on point all the time, and so I’ll just joke around that she’s getting from point A to point B. So I would joke around and say she has the purpose driven walk. Like she’s just walking and she has a purpose and you can say that about everything in her life. And so that’s what she probably brings out of me, a little bit about having more of a purpose and knowing ‘These are my goals’ and ‘How do I get there?’…She brings out of me wanting to be a better coach and wanting to get the most out of this program as I can.
-        </p>
-        <p class="cc-right-quote">"</p>
-        <p class="quoter"> - Amanda Cromwell</p>
-    </div>
+<div class="cc-quote-block">
+    <p class="cc-left-quote">"</p>
+    <p id="quote2" class="cc-quote">
+    One thing we always would kid around with Cori, you know that book ‘The Purpose Driven Life’? … I always thought Cori is so determined and dedicated and she’s just all on point all the time, and so I’ll just joke around that she’s getting from point A to point B. So I would joke around and say she has the purpose driven walk. Like she’s just walking and she has a purpose and you can say that about everything in her life. And so that’s what she probably brings out of me, a little bit about having more of a purpose and knowing ‘These are my goals’ and ‘How do I get there?’…She brings out of me wanting to be a better coach and wanting to get the most out of this program as I can.
+    </p>
+    <p class="cc-right-quote">"</p>
+    <p class="quoter"> - Amanda Cromwell</p>
+</div>
 <p>
 <p>That wouldn’t be the last time Close got a chance to   play fan at UCLA.
 <p>
 <p>In a new tradition, Cromwell now makes it a point to immerse potential recruits in the culture of UCLA athletics via a women's basketball game in Pauley Pavilion, introducing her prospective players to her good friend.
 <p>
 <p> “(Close is) one of my biggest fans,” Cromwell said. “If I bring her around anybody she just goes on and on and just gushes about me.”
-    <div class="cc-img">
-        <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picD_.jpg" alt=""></img>
-    </div>
+<div class="cc-img">
+    <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picD_.jpg" alt=""></img>
+</div>
 <p><a href="http://dailybruin.com/2014/02/11/coaches-continue-friendship-at-ucla/">>> For more photos explore the gallery on Spectrum</a>
 <p>
 <p>Today the coaches continue to pen the new chapter in their friendship that started close to 20 years ago – an endearing and enduring friendship that began because of the love they shared for molding the next generation of athletes.
@@ -283,4 +290,5 @@ Your browser does not support the audio element.
 <p>It's the same the reason they both don blue and gold to this day.
 <br><br>
 </div>
+<div id="cc-footer">Photos by Erin Ng. Page created by Phillip Chen and Steven Ly.</div>
 <?php get_footer(); ?>
