@@ -1,5 +1,6 @@
 <style>
 
+
 /*css for styling check boxes*/
 input[type=checkbox].css-checkbox {
 position: absolute; 
@@ -57,6 +58,7 @@ background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
 }
 
 #container .item h5 {
+  color:black;
    margin-bottom: 0;
    text-align: center;
 }
