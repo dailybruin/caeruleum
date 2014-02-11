@@ -127,14 +127,6 @@ Template Name: Coaches and Companions
 <p>By contrast, Cromwell was a newbie, but one that the camp was excited to welcome; a newbie who juggled coaching soccer at University of Central Florida with a position on the U.S. Women’s National Team.
 <p>
 <p>To use Close’s terms, Cromwell was “a big dog soccer player.”
-<div class="cc-quote-block">
-    <p class="cc-left-quote">"</p>
-    <p id="quote3" class="cc-quote">
-    I think they’re two of the most competitive people I know so everything turns into a competition. Fishing becomes a competition even, and so it’s fun to…watch them kind of go at each other and compete. At the camp everyone would play basketball and then everyone would go play soccer…and those two (would be) right in the mix of that, kind of ringleaders for that and (they) would love to give each other a hard time if the other one won soccer or basketball.
-    </p>
-    <p class="cc-right-quote">"</p>
-    <p class="quoter"> - Debbie Haliday, a mutual friend of Cori Close and Amanda Cromwell</p>
-</div>
 <div class="cc-img">
     <img class="cc-round" src="http://dailybruin.com/images/2014/02/web.sp_.2.11.coaches.picE_.jpg" alt=""></img>
 </div>
@@ -150,6 +142,14 @@ Template Name: Coaches and Companions
 <p>But a shared love for the sport that the other represented certainly didn’t hurt.
 <p>
 <p>“She actually grew up playing basketball, like I grew up playing soccer,” Close said. "She grew up playing basketball, and I think just ended up being a little better at soccer and so she went that direction. I ended up being a little better at basketball (and) went that direction.”
+<div class="cc-quote-block">
+    <p class="cc-left-quote">"</p>
+    <p id="quote3" class="cc-quote">
+    I think they’re two of the most competitive people I know so everything turns into a competition. Fishing becomes a competition even, and so it’s fun to…watch them kind of go at each other and compete. At the camp everyone would play basketball and then everyone would go play soccer…and those two (would be) right in the mix of that, kind of ringleaders for that and (they) would love to give each other a hard time if the other one won soccer or basketball.
+    </p>
+    <p class="cc-right-quote">"</p>
+    <p class="quoter"> - Debbie Haliday, a mutual friend of Cori Close and Amanda Cromwell</p>
+</div>
 <p>
 <p>Whenever Close was on a recruiting trip near a city Cromwell was scheduled to play in, there would always be one additional item on her travel itinerary – visiting a stadium on game day.
 <p>
