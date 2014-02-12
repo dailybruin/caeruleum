@@ -212,7 +212,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Gender-Behavior-Therapy.png",
         "web"       : "http://dailybruin.com/features/conversion-therapy/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2012"]
+        "category"      : ["news", "2012"]
     },
     {
         "fname"     : "Welcoming Back Pauley",
@@ -220,7 +220,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Welcoming-Back-Pauley.png",
         "web"       : "http://dailybruin.com/features/welcoming-back-pauley/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2012"]
+        "category"      : ["news", "sports", "2012"]
     },
     {
         "fname"     : "Prime by the Daily Bruin: Fall 2012",
@@ -260,7 +260,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Ten-years-since-9-11.png",
         "web"       : "http://dailybruin.com/features/ten-years-since-911/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news", "opinion"]
     },
     {
         "fname"     : "Registration Issue 2011",
@@ -268,7 +268,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Registration-Issue-2011.png",
         "web"       : "http://dailybruin.com/features/registration-issue-2011/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news", "sports", "opinion", "a&e"]
     },
     {
         "fname"     : "Orientation 2011",
@@ -276,7 +276,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Orientation-2011.png",
         "web"       : "http://dailybruin.com/features/orientation-2011/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news", "sports", "a&e", "opinion"]
     },
     {
         "fname"     : "My First Time",
@@ -284,7 +284,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/My-first-time.png",
         "web"       : "http://dailybruin.com/features/my-first-time/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "video"]
     },
     {
         "fname"     : "Barriers Across the Border",
@@ -292,7 +292,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Barriers-across-the-border.png",
         "web"       : "http://dailybruin.com/features/barriers-across-the-border/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news"]
     },
     {
         "fname"     : "Bruin Day 2011",
@@ -300,7 +300,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Bruin-Day-2011.png",
         "web"       : "http://dailybruin.com/features/bruin-day-2011/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news", "video"]
     },
     {
         "fname"     : "Commencement 2011",
@@ -308,7 +308,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Commencement-2011.png",
         "web"       : "http://dailybruin.com/features/commencement-2011/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news", "video"]
     },
     {
         "fname"     : "Graduation Issue 2011",
@@ -316,7 +316,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Graduation-2011.png",
         "web"       : "http://dailybruin.com/features/graduation-issue-2011/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "news", "sports", "opinion", "a&e"]
     },
     {
         "fname"     : "UCLA: after dark",
@@ -324,7 +324,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/UCLA-after-dark.png",
         "web"       : "http://dailybruin.com/features/ucla-after-dark/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "video"]
     },
     {
         "fname"     : "Dodgers Storified",
@@ -348,7 +348,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/exploring-la.png",
         "web"       : "http://dailybruin.com/features/places-exploring-los-angeles-one-place-at-a-time/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "video"]
     },
     {
         "fname"     : "A cut above the rest",
@@ -356,7 +356,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/A-cut-above-the-rest.png",
         "web"       : "http://dailybruin.com/features/a-cut-above-the-rest/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "sports", "video"]
     },
     {
         "fname"     : "How-to's: The Bare Basics",
@@ -364,7 +364,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/The-bare-basics.png",
         "web"       : "http://dailybruin.com/features/how-tos-the-bare-basics/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2011"]
+        "category"      : ["2011", "sports", "video"]
     },
     {
         "fname"     : "Rivalry Resumed",
@@ -372,7 +372,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Rivalry-Resumed.png",
         "web"       : "http://dailybruin.com/features/rivalry-resumed/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010", "blah", "sports"]
+        "category"      : ["2010", "blah", "sports", "video"]
     },
     {
         "fname"     : "Injured Athletes",
@@ -388,7 +388,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/It-takes-2.png",
         "web"       : "http://dailybruin.com/features/it-takes-2/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010"]
+        "category"      : ["2010", "video"]
     },
     {
         "fname"     : "Volunteerism Abroad",
@@ -396,7 +396,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Volunteerism-Abroad.png",
         "web"       : "http://dailybruin.com/features/volunteerism-abroad/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010"]
+        "category"      : ["2010", "video"]
     },
     {
         "fname"     : "Exploring the William Andrews Clark Memorial Library",
@@ -404,7 +404,7 @@ var features =
         "picture"         : "../wp-content/uploads/2013/12/Exploring-library.png",
         "web"       : "http://dailybruin.com/features/clark-library/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010"]
+        "category"      : ["2010", "a&e"]
     },
     {
         "fname"     : "The New Season",
@@ -420,7 +420,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/ucla-dining.png",
         "web"       : "http://dailybruin.com/features/a-closer-look-ucla-dining/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010"]
+        "category"      : ["2010", "news"]
     },
     {
         "fname"     : "Timeline of Budget Changes",
@@ -428,7 +428,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Timeline-of-budget-changes.png",
         "web"       : "http://dailybruin.com/features/timeline-of-budget-changes/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010"]
+        "category"      : ["2010", "news"]
     },
     {
         "fname"     : "Cultivating flowers and community: the Empowerment Community Garden",
@@ -436,7 +436,7 @@ var features =
         "picture"           : "../wp-content/uploads/2013/12/Empowerment-Community-Garden.png",
         "web"       : "http://dailybruin.com/features/cultivating-flowers-and-community-the-empowerment-community-garden/",
         "author"        : "The Daily Bruin",
-        "category"      : ["2010"]
+        "category"      : ["2010", "video"]
     }
 ];
 </script>
@@ -536,6 +536,10 @@ function filterByCat() {
         categories[cati] = "prime";
         cati++;
     }
+    if(document.getElementById("video").checked) {
+        categories[cati] = "video";
+        cati++;
+    }
 
         features.sort(function(a, b) {
                 if(a.fname < b.fname) return -1;
@@ -591,15 +595,6 @@ function filterByCat() {
                     var $items = $(fhtml);
 
                     $container.append($items);
-	
-			        $(".ellipsis").dotdotdot({
-			         
-                        /* The HTML to add as ellipsis. */
-			             ellipsis : '... ',
- 
-			             /* How to cut off the text/html: 'word'/'letter'/'children' */
-			             wrap : 'word'
-                    });
 
                     $container.masonry('appended', $items);
 		       $container.imagesLoaded( function() {
@@ -624,6 +619,15 @@ function renderAll() {
     clearAll();
 
     $('div.js-masonry').empty();
+
+        features.sort(function(a, b) {
+                if(a.fname < b.fname) return -1;
+            
+                if(a.fname > b.fname) return 1;
+        
+                return 0;
+            }
+        )
 
     erase();
 
@@ -658,12 +662,13 @@ function renderAll() {
 
     var $items = $(fhtml);
 
+    $("#container").hide();
+
     $container.append($items);
 
-    $container.masonry( 'appended', $items);
-
     $container.imagesLoaded( function() {
-        $container.masonry();
+	 $("#container").show();
+	 $container.masonry( 'appended', $items);
 	 $(".ellipsis").dotdotdot({
 		/* The HTML to add as ellipsis. */
 		ellipsis : '... ',
@@ -672,6 +677,7 @@ function renderAll() {
 		wrap : 'word'
         });
     });
+
 };
 </script>
 
@@ -722,7 +728,7 @@ function checkAll(formname, checktoggle)
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Category</h5>
-<form name="other" method="post" style="padding: 5px;">
+<form name="categories" method="post" style="padding: 5px;">
 <input id="news" class="css-checkbox" type="checkbox" />
 <label for="news" name="news" class="css-label">News</label>&nbsp;&nbsp;
 <input id="sports" class="css-checkbox" type="checkbox" />
@@ -733,12 +739,15 @@ function checkAll(formname, checktoggle)
 <label for="opinion" name="opinion" class="css-label">Opinion</label>&nbsp;&nbsp;
 <input id="prime" class="css-checkbox" type="checkbox" />
 <label for="prime" name="prime" class="css-label">Prime</label>&nbsp;&nbsp;
+<input id="video" class="css-checkbox" type="checkbox" />
+<label for="video" name="video" class="css-label">Video</label>&nbsp;&nbsp;
 </form>
 </div>
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
-<input type="button" value="Submit" onclick="filterByCat()"/>
+<input type="button" value="CheckAll" onclick="checkAll('categories','true')"/>
 <input type="button" value="Reset" onclick="clearAll()"/>
+<input type="button" value="Submit" onclick="filterByCat()"/>
 </form>
 </div>
 
