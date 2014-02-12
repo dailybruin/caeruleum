@@ -292,7 +292,9 @@ function checkAll(formname, checktoggle)
 
 <body>
 
-<h4>FEATURES</h4>
+<h1 class="feature_title">ONLINE FEATURES</h1>
+
+<p>Lorem ipsum...</p>
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Year</h5>
@@ -308,17 +310,17 @@ function checkAll(formname, checktoggle)
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Category</h5>
 <form name="categories" method="post" style="padding: 5px;">
-<input id="news" class="css-checkbox" style="display:none;" type="checkbox" />
+<input id="news" class="css-checkbox" type="checkbox" />
 <label for="news" name="news" class="css-label">News</label>&nbsp;&nbsp;
-<input id="sports" class="css-checkbox" style="display:none;" type="checkbox" />
+<input id="sports" class="css-checkbox" type="checkbox" />
 <label for="sports" name="sports" class="css-label">Sports</label>&nbsp;&nbsp;
-<input id="a&e" class="css-checkbox" style="display:none;" type="checkbox" />
+<input id="a&e" class="css-checkbox" type="checkbox" />
 <label for="a&e" name="a&e" class="css-label">A&E</label>&nbsp;&nbsp;
-<input id="opinion" class="css-checkbox" style="display:none;" type="checkbox" />
+<input id="opinion" class="css-checkbox" type="checkbox" />
 <label for="opinion" name="opinion" class="css-label">Opinion</label>&nbsp;&nbsp;
-<input id="prime" class="css-checkbox" style="display:none;" type="checkbox" />
+<input id="prime" class="css-checkbox" type="checkbox" />
 <label for="prime" name="prime" class="css-label">Prime</label>&nbsp;&nbsp;
-<input id="video" class="css-checkbox" style="display:none;" type="checkbox" />
+<input id="video" class="css-checkbox" type="checkbox" />
 <label for="video" name="video" class="css-label">Video</label>&nbsp;&nbsp;
 </form>
 </div>

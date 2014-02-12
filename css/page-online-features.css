@@ -1,5 +1,8 @@
 <style>
 
+body {
+    background-color: red !important;
+}
 
 /*css for styling check boxes*/
 input[type=checkbox].css-checkbox {

@@ -44,7 +44,7 @@
        "description"     : "Hip checks, jammers and whips � this is the sport of roller derby, brought to Angelenos by the L.A. Derby Dolls. Explore what a derby looks and sounds like, from the track to the ticket table, in video, photos and text.",
        "picture"           : "../wp-content/uploads/2013/12/Inside-the-doll-factory.png",
        "web"       : "http://dailybruin.com/features/inside-the-doll-factory/",
-       "author"        : "The Daily Bruin",
+       "author"        : "By Kelly Zhou",
        "category"      : ["2012", "a&e"]
    },
    {
@@ -94,14 +94,6 @@
        "web"       : "http://dailybruin.com/features/my-first-time/",
        "author"        : "The Daily Bruin",
        "category"      : ["2011", "video"]
-   },
-   {
-       "fname"     : "Barriers Across the Border",
-       "description"     : "For the past four years, a group of UCLA students has crossed the border, breaking the barriers that prevent residents of a rural town from leading healthy lives.They cannot solve all the problems that plague the impoverished community, but residents still say the clinic is an invaluable service.",
-       "picture"           : "../wp-content/uploads/2013/12/Barriers-across-the-border.png",
-       "web"       : "http://dailybruin.com/features/barriers-across-the-border/",
-       "author"        : "The Daily Bruin",
-       "category"      : ["2011", "news"]
    },
    {
        "fname"     : "Bruin Day 2011",
