@@ -87,6 +87,12 @@ Template Name: Enterprise Hacking Feature
 .eh-author {
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 0;
+}
+
+.eh-published {
+    margin-top: 0;
+    font-style: italic;
 }
 
 .eh-fullwidth {
@@ -128,6 +134,7 @@ p {
 <div id="eh-cover">
 </div>
 <p class="eh-author">by Katherine Hafner</p>
+<p class="eh-published">October 14, 2013</p>
 
 <div class="eh-infobox eh-aside-right eh-refer">
     <div><a href="http://dailybruin.com/2013/10/17/a-constant-threat-uc-attempts-to-balance-digital-privacy-security/"><div class="eh-icon eh-icon-link"></div>UC attempts to balance digital privacy, security</a></div>

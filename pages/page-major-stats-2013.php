@@ -1275,7 +1275,7 @@ Template Name: Major_Stats_2013
 	<a href="http://dailybruin.com/2013/06/06/graduate-degree-higher-salary-does-not-always-connect/"><div class="span3 relatedArticlesDoe"><h3>Graduate degree, higher salary does not always connect</h3><em>by Alexia Boyarsky</em></div></a>
 	<div class="span12"><br>
 	<hr>
-	<em style="margin-top: 20px;"><br><p>Salary Interactive by Calvin Chan and Jimmy Yang, Bruin Contributors.</p><p>Campus Interactive by Daniel Duan, Bruin Contributor</p><p>Illustration by Kristen Fong, Bruin Senior Staff.</p><p>Campus Graphics courtesy of Jonathan Solichin and Daniel Duan.</p></em>
+	<em style="margin-top: 20px;"><br><p>Salary Interactive by Calvin Chan and Jimmy Yang, Bruin Contributors.</p><p>Campus Interactive by Daniel Duan, Bruin Contributor</p><p>Illustration by Kristen Fong, Bruin Senior Staff.</p><p>Campus Graphics by  Jonathan Solichin and Daniel Duan.</p></em>
 	</div>
 </div><!-- end div#single-post -->      
 

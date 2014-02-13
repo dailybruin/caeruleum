@@ -123,7 +123,7 @@ get_header(); ?>
   <div id="msg-form-html51749a146e680" class="wysija-msg ajax">
   </div>
     <h2 class="title">Email newsletter</h2>
-  <form id="form-html51749a146e680" method="post" action="#wysija" class="widget_wysija form-valid-sub">
+  <form id="form-html51749a146e680" method="post" action="../confirm" class="widget_wysija form-valid-sub">
     <!--
 widget_wysija 
     -->

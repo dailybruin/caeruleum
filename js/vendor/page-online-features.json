@@ -1,0 +1,243 @@
+{  "articles":[
+    {
+       "fname"     : "Chilean Winter",
+       "description" : "Protests offer lessons for UC student organizers",
+       "picture"   : "http://dailybruin.com/images/2014/02/Chilean-Winter.png",
+       "web"       : "http://chileanwinter.dailybruin.com/",
+       "author"        : "Calvin Chan and Jimmy Yang",
+       "category"  : ["news", "2013"]
+   },
+   {
+       "fname"     : "Dance Marathon 2013",
+       "description"     : "UCLA students spent 26 hours on their feet for Dance Marathon from Feb. 16-17. The event, in its 12th year, raised $475,422.57 to combat pediatric AIDS.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Dance-Marathon-2013.png",
+       "web"       : "http://dailybruin.com/dance-marathon/",
+       "author"        : "Byron Lutz",
+       "category"      : ["news", "Campus", "2013"]
+   },
+   {
+       "fname"     : "Gender behavior therapy and gay conversion:  UCLA's past, California's future",
+       "description"     : "The Daily Bruin spoke with UCLA Gender Identity Research Clinic members and participants - as well as current UCLA students who went through gay conversion therapy - to tell the story of the university's past with gender behavior therapy and gay conversion, and how it connects to the state's future gender therapy practices.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Gender-Behavior-Therapy.png",
+       "web"       : "http://dailybruin.com/features/conversion-therapy/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["news", "2012"]
+   },
+   {
+       "fname"     : "Welcoming Back Pauley",
+       "description"     : "Reopening of Pauley Pavilion begins new chapter for UCLA",
+       "picture"           : "http://dailybruin.com/images/2014/02/Welcoming-Back-Pauley.png",
+       "web"       : "http://dailybruin.com/features/welcoming-back-pauley/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["news", "sports", "2012"]
+   },
+   {
+       "fname"     : "Prime by the Daily Bruin: Fall 2012",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/Prime-fall-2012.png",
+       "web"       : "http://dailybruin.com/features/prime-by-the-daily-bruin-fall-2012/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2012", "prime"]
+   },
+   {
+       "fname"     : "Inside the Doll Factory",
+       "description"     : "Hip checks, jammers and whips � this is the sport of roller derby, brought to Angelenos by the L.A. Derby Dolls. Explore what a derby looks and sounds like, from the track to the ticket table, in video, photos and text.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Inside-the-doll-factory.png",
+       "web"       : "http://dailybruin.com/features/inside-the-doll-factory/",
+       "author"        : "By Kelly Zhou",
+       "category"      : ["2012", "a&e"]
+   },
+   {
+       "fname"     : "UCLA v. USC Basketball Preview",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/UCLA-v.-USC-Basketball-Preview.png",
+       "web"       : "http://dailybruin.com/features/ucla-v-usc-basketball-preview/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2012", "sports"]
+   },
+   {
+       "fname"     : "Prime by the Daily Bruin: The Extreme Issue",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/Prime-extreme-issue.png",
+       "web"       : "http://dailybruin.com/features/prime-by-the-daily-bruin-the-extreme-issue/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "prime"]
+   },
+   {
+       "fname"     : "Ten years since 9/11",
+       "description"     : "The attacks on the World Trade Center and Pentagon on Sept. 11, 2001 shaped the world a generation of Americans have grown up in. Here, we tell some of their stories, in the hopes of embodying both the remembrance of the day and the paths we have taken since.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Ten-years-since-9-11.png",
+       "web"       : "http://dailybruin.com/features/ten-years-since-911/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "news", "opinion"]
+   },
+   {
+       "fname"     : "Registration Issue 2011",
+       "description"     : "Our back-to-school issue is designed to provide you with a snapshot of the beginning of the year and introduce you to the service the Daily Bruin provides to the UCLA community as a premier news source.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Registration-Issue-2011.png",
+       "web"       : "http://dailybruin.com/features/registration-issue-2011/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "news", "sports", "opinion", "a&e"]
+   },
+   {
+       "fname"     : "Orientation 2011",
+       "description"     : "This issue is designed to help you gain a sense of what it means to be a Bruin as droves of new students make their way home to the hills of Westwood.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Orientation-2011.png",
+       "web"       : "http://dailybruin.com/features/orientation-2011/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "news", "sports", "a&e", "opinion"]
+   },
+   {
+       "fname"     : "My First Time",
+       "description"     : "Whether alone or with a group, spontaneous or planned, no one can forget their UCLA firsts: the first time biting into a delicious Diddy Riese, or the first time dying in the heat at the Rose Bowl, or the first time being wowed at Spring Sing. Watch these Bruins as they retell their defining first times at UCLA.",
+       "picture"           : "http://dailybruin.com/images/2014/02/My-first-time.png",
+       "web"       : "http://dailybruin.com/features/my-first-time/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "video"]
+   },
+   {
+       "fname"     : "Bruin Day 2011",
+       "description"     : "On April 9, 2011, UCLA held its first Bruin Day, inviting more than 10,000 prospective freshmen to the campus to see the school. We asked these future Bruins one question: why do you belong at UCLA?",
+       "picture"           : "http://dailybruin.com/images/2014/02/Bruin-Day-2011.png",
+       "web"       : "http://dailybruin.com/features/bruin-day-2011/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "news", "video"]
+   },
+   {
+       "fname"     : "Commencement 2011",
+       "description"     : "On June 10, 2011, UCLA held its commencement ceremonies for the graduating class of 2011. Here you can find an interview with Aaron S. Williams, a tag cloud of his commencement speech, a photo gallery and video highlighting the ceremony, and four other videos asking new graduates about their final thoughts on UCLA.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Commencement-2011.png",
+       "web"       : "http://dailybruin.com/features/commencement-2011/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "news", "video"]
+   },
+   {
+       "fname"     : "Graduation Issue 2011",
+       "description"     : "Graduating Bruins shared with us their favorite memories and wrote a few words answering the question: What has UCLA meant to you?",
+       "picture"           : "http://dailybruin.com/images/2014/02/Graduation-2011.png",
+       "web"       : "http://dailybruin.com/features/graduation-issue-2011/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "news", "sports", "opinion", "a&e"]
+   },
+   {
+       "fname"     : "UCLA: after dark",
+       "description"     : "Take a look at what takes place when most members of the UCLA community have already returned home.",
+       "picture"           : "http://dailybruin.com/images/2014/02/UCLA-after-dark.png",
+       "web"       : "http://dailybruin.com/features/ucla-after-dark/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "video"]
+   },
+   {
+       "fname"     : "Dodgers Storified",
+       "description"     : "The 23-year-old shortstop entered spring training with his spot on the Dodgers' opening day roster already locked up, though that didn't prevent him from tasting some laces during practice.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Dodgers-Storified.png",
+       "web"       : "http://dailybruin.com/features/dodgers-storified/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2012", "sports"]
+   },
+   {
+       "fname"     : "Prime by the Daily Bruin: The World Issue",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/prime-the-world-issue.png",
+       "web"       : "http://dailybruin.com/features/prime-by-the-daily-bruin-the-world-issue/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "prime"]
+   },
+   {
+       "fname"     : "Places: Exploring Los Angeles one place at a time",
+       "description"     : "Known for its large collection of cultures and styles, Los Angeles is home to an array of diverse and interesting places to visit. Journey with us as we take a closer look at some of these pLAces.",
+       "picture"           : "http://dailybruin.com/images/2014/02/exploring-la.png",
+       "web"       : "http://dailybruin.com/features/places-exploring-los-angeles-one-place-at-a-time/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "video"]
+   },
+   {
+       "fname"     : "A cut above the rest",
+       "description"     : "What makes an athlete stand out? Is it pure skill? Is it overcoming adversity? Is it balancing skills on and off the field? A Cut Above the Rest explores the lives of four UCLA athletes.",
+       "picture"           : "http://dailybruin.com/images/2014/02/A-cut-above-the-rest.png",
+       "web"       : "http://dailybruin.com/features/a-cut-above-the-rest/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "sports", "video"]
+   },
+   {
+       "fname"     : "How-to's: The Bare Basics",
+       "description"     : "UCLA didn't get to 106 championships just by luck. These athletes have spent countless hours perfecting their skills in the game. Join these NCAA athletes as they break down the basics and share their secrets to success.",
+       "picture"           : "http://dailybruin.com/images/2014/02/The-bare-basics.png",
+       "web"       : "http://dailybruin.com/features/how-tos-the-bare-basics/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2011", "sports", "video"]
+   },
+   {
+       "fname"     : "Rivalry Resumed",
+       "description"     : "With the big game looming ahead, Akeem Ayers and Ricky Marvray reflect on the pain of last year's loss to their cross-town rivals and the mental preparation required for their next meeting.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Rivalry-Resumed.png",
+       "web"       : "http://dailybruin.com/features/rivalry-resumed/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "blah", "sports", "video"]
+   },
+   {
+       "fname"     : "Injured Athletes",
+       "description"     : "Whether playing volleyball or doing martial arts, injuries are a painful, though inevitable, part of the sport. Nevertheless, the best defense against such injuries is a bit of sports medicine.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Injured-Athletes.png",
+       "web"       : "http://dailybruin.com/features/injured-athletes/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "sports"]
+   },
+   {
+       "fname"     : "It Takes 2",
+       "description"     : "�It Takes Two� breaks down the stereotypical image of the archetypal mentor to reveal that mentors can come in all different shapes and forms.",
+       "picture"           : "http://dailybruin.com/images/2014/02/It-takes-2.png",
+       "web"       : "http://dailybruin.com/features/it-takes-2/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "video"]
+   },
+   {
+       "fname"     : "Volunteerism Abroad",
+       "description"     : "The term 'volunteerism' has become something of a commodity in a society that sees service as a requirement rather than an option. This project looks back to students, exploring what motivated them to go abroad to serve others and the type of impact they left behind.",
+       "picture"           : "http://dailybruin.com/images/2014/02/Volunteerism-Abroad.png",
+       "web"       : "http://dailybruin.com/features/volunteerism-abroad/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "video"]
+   },
+   {
+       "fname"     : "Exploring the William Andrews Clark Memorial Library",
+       "description"     : "",
+       "picture"         : "http://dailybruin.com/images/2014/02/Exploring-library.png",
+       "web"       : "http://dailybruin.com/features/clark-library/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "a&e"]
+   },
+   {
+       "fname"     : "The New Season",
+       "description"     : "September apparently brings 113-degree temperatures this year, but also the usual bounty of new TV shows. Daily Bruin A&E reviewed some of the pilot episodes and gave them a letter grade. Read on to see which ones we think are worth watching, and which ones are probably going to be canceled before the season�s over.",
+       "picture"           : "http://dailybruin.com/images/2014/02/The-new-season.png",
+       "web"       : "http://dailybruin.com/features/the-new-season/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "a&e"]
+   },
+   {
+       "fname"     : "A Closer Look: UCLA Dining",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/ucla-dining.png",
+       "web"       : "http://dailybruin.com/features/a-closer-look-ucla-dining/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "news"]
+   },
+   {
+       "fname"     : "Timeline of Budget Changes",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/Timeline-of-budget-changes.png",
+       "web"       : "http://dailybruin.com/features/timeline-of-budget-changes/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "news"]
+   },
+   {
+       "fname"     : "Cultivating flowers and community: the Empowerment Community Garden",
+       "description"     : "",
+       "picture"           : "http://dailybruin.com/images/2014/02/Empowerment-Community-Garden.png",
+       "web"       : "http://dailybruin.com/features/cultivating-flowers-and-community-the-empowerment-community-garden/",
+       "author"        : "The Daily Bruin",
+       "category"      : ["2010", "video"]
+   }
+    ]
+}
