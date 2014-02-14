@@ -1,15 +1,11 @@
-<?php/*
-Template Name: Online Features
-*/ ?>
-<?php get_header(); ?>
+<?php get_header();?>
 
 <script src="../js/vendor/masonry.pkgd.min.js"></script>
 <script src="../js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="../js/vendor/jquery.dotdotdot.js" type="text/javascript"></script>
 
-<link   rel="stylesheet" href="../css/page-online-features.css" type="text/css">
-
-
+<link rel="stylesheet" href="../css/page-online-features.css" type="text/css">
+<link rel="stylesheet" href="../css/page-online-features-narrow.css" media='screen and (max-width: 480px)' type="text/css">
 
 <script>
 
@@ -298,16 +294,16 @@ function checkAll(formname, checktoggle)
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Year</h5>
-<button type="button" href="#" class="btn" onclick="renderAll()">ALL</button>
-<button type="button" href="#" class="btn" onclick="filterByYr('2013')">2013</button>
-<button type="button" href="#" class="btn" onclick="filterByYr('2012')">2012</button>
-<button type="button" href="#" class="btn" onclick="filterByYr('2011')">2011</button>
-<button type="button" href="#" class="btn" onclick="filterByYr('2010')">2010</button>
+<button type="button" href="#" class="btn yr" onclick="filterByYr('2010')">2010</button>
+<button type="button" href="#" class="btn yr" onclick="filterByYr('2011')">2011</button>
+<button type="button" href="#" class="btn yr" onclick="filterByYr('2012')">2012</button>
+<button type="button" href="#" class="btn yr" onclick="filterByYr('2013')">2013</button>
+<button type="button" href="#" class="btn yr" onclick="renderAll()">ALL</button>
 </div>
 
 <br/>
 
-<div style="display: inline-block; margin: 10px; padding: 5px;">
+<div style="display: inline-block; margin: 10px 10px 0 10px; padding: 5px;">
 <h5>Category</h5>
 <form name="categories" method="post" style="padding: 5px;">
 <input id="news" class="css-checkbox" type="checkbox" />
@@ -325,7 +321,7 @@ function checkAll(formname, checktoggle)
 </form>
 </div>
 
-<div style="display: inline-block; margin: 10px; padding: 5px;">
+<div style="display: inline-block; margin: 0 10px 20px 10px; padding: 5px;">
 <input type="button" value="Check All" class="btn" onclick="checkAll('categories','true')"/>
 <input type="button" value="Reset" class="btn" onclick="clearAll()"/>
 <input type="button" value="Submit" class="btn" onclick="filterByCat()"/>
@@ -340,4 +336,4 @@ function checkAll(formname, checktoggle)
 
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>
