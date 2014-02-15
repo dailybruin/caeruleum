@@ -5,7 +5,7 @@
 <script src="../js/vendor/jquery.dotdotdot.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../css/page-online-features.css" type="text/css">
-<link rel="stylesheet" href="../css/page-online-features-narrow.css" media='screen and (max-width: 480px)' type="text/css">
+<link rel="stylesheet" href="../css/page-online-features-narrow.css" media='(max-width: 480px)' type="text/css">
 
 <script>
 
