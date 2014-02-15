@@ -23,6 +23,9 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
 
+  <script src="http://404monitor.s3.amazonaws.com/404monitor.min.js"></script>
+  <script>_404_SETTINGS = {exclude: '#wpadminbar a'}</script>
+
   <meta name="apple-itunes-app" content="app-id=548832108">
 
   <?php roots_head(); ?>

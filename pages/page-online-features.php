@@ -1,3 +1,6 @@
+<?php/*
+ -Template Name: Online Features
+ -*/ ?>
 <?php get_header();?>
 
 <script src="../js/vendor/masonry.pkgd.min.js"></script>
