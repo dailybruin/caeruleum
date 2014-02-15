@@ -225,7 +225,7 @@ var LocsB = [
           lon: -118.444659,
           title: 'Angelino&#39;s Cafe',
           html: [
-                  '<h3>Angelino&#39;s Cafe</h3>',
+                  '<h3>Angelino&#39;s Cafe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>',
                   '<p>Authentic flavors for 11 years</p>'
                 ].join(''),
           fulldesc: [
@@ -286,7 +286,7 @@ var LocsB = [
           title: 'Fab Hot Dogs',
           html: [
                   '<h3>Fab Hot Dogs</h3>',
-                  '<p>19 types of hot dogs, with an "I Ate It All" challenge</p>'
+                  '<p>19 types of hot dogs</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Fab Hot Dogs</h3>',
@@ -301,7 +301,7 @@ var LocsB = [
           title: 'Napa Valley Grille',
           html: [
                   '<h3>Napa Valley Grille</h3>',
-                  '<p>Locally sourced, farm-to-table, seasonal cuisine</p>'
+                  '<p>Locally sourced, farm-to-table seasonal cuisine</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Napa Valley Grille</h3>',
@@ -362,7 +362,7 @@ var LocsB = [
           title: 'Barney&#39;s Beanery',
           html: [
                   '<h3>Barney&#39;s Beanery</h3>',
-                  '<p>Offers a variety of options to beer-loving patrons</p>'
+                  '<p>A variety of options to beer-loving patrons</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Barney&#39;s Beanery</h3>',
