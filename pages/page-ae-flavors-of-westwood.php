@@ -186,7 +186,7 @@ Template Name: A&E Flavors of Westwood
 <h1>Flavors of Westwood</h1>
 <p class="lead">Throughout this past year, A&amp;E reporters have been venturing into the world of Westwood dining to dig up the stories behind the creation and the flavor of each eatery. Explore the flavors of Westwood through our interactive map.</p>
 
-<div id="controls-tabs" style="height: 415px; overflow: scroll;"></div>
+<div id="controls-tabs" style="height: 415px; overflow-y: scroll;"></div>
 <div id="gmap-tabs" class="gmap" style="position: relative; overflow: hidden;"></div>
 <div id="info"></div>
 
