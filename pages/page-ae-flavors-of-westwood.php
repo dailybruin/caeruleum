@@ -199,7 +199,7 @@ var LocsB = [
           title: 'Saffron & Rose Ice Cream',
           html: [
                   '<h3>Saffron & Rose Ice Cream</h3>',
-                  '<p>Persian ice cream made with whole milk</p>'
+                  '<p>Persian ice cream with more than 50 flavors, including lavender, pistachio & canteloupe</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Saffron & Rose Ice Cream</h3>',
@@ -214,7 +214,7 @@ var LocsB = [
           title: 'Honeymade',
           html: [
                   '<h3>Honeymade</h3>',
-                  '<p>Sweet & savory</p>'
+                  '<p>Signature sweet & savory twists to desserts</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Honeymade</h3>',
@@ -230,7 +230,7 @@ var LocsB = [
           title: 'Angelino&#39;s Cafe',
           html: [
                   '<h3>Angelino&#39;s Cafe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>',
-                  '<p>Authentic flavors for 11 years</p>'
+                  '<p>Authentic flavors for 11 years, where everyone is treated like family</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Angelino&#39;s Cafe</h3>',
@@ -260,7 +260,7 @@ var LocsB = [
           title: '800 Degrees',
           html: [
                   '<h3>800 Degrees</h3>',
-                  '<p>Customizable fresh pizza</p>'
+                  '<p>Customizable fresh pizza with fresh ingredients from local farmers</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>800 Degrees</h3>',
@@ -275,7 +275,7 @@ var LocsB = [
           title: 'Stan&#39;s Donuts',
           html: [
                   '<h3>Stan&#39;s Donuts</h3>',
-                  '<p>Three generations of signature doughnuts</p>'
+                  '<p>Three generations behind the cozy bakery counter selling signature doughnuts</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Stan&#39;s Donuts</h3>',
@@ -290,7 +290,7 @@ var LocsB = [
           title: 'Fab Hot Dogs',
           html: [
                   '<h3>Fab Hot Dogs</h3>',
-                  '<p>19 types of hot dogs</p>'
+                  '<p>19 types of hot dogs, with an "I Ate It All" challenge</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Fab Hot Dogs</h3>',
@@ -365,7 +365,7 @@ var LocsB = [
           title: 'Barney&#39;s Beanery',
           html: [
                   '<h3>Barney&#39;s Beanery</h3>',
-                  '<p>A variety of options to beer-loving patrons</p>'
+                  '<p>A variety of options for beer-loving patrons</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Barney&#39;s Beanery</h3>',
@@ -380,7 +380,7 @@ var LocsB = [
           title: 'Donna Sophia',
           html: [
                   '<h3>Donna Sophia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>',
-                  '<p>Homemade-style Italian food</p>'
+                  '<p>Homemade-style Italian food with pasta, bread & pastries made from scratch each morning</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Donna Sophia</h3>',
@@ -395,11 +395,11 @@ var LocsB = [
           title: 'Tanino Ristorante',
           html: [
                   '<h3>Tanino Ristorante&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>',
-                  '<p>Authentic Italian, modern flair</p>'
+                  '<p>Authentic Italian mixed with modern Californian flair</p>'
                 ].join(''),
           fulldesc: [
                 '<h3>Tanino Ristorante</h3>',
-                '<div class="row"><div class="span8"><img src="http://dailybruin.com/images/2014/02/745e2551-8f0d-434d-85e6-71d62c3f51b0.jpg" class="img-responsive" alt="Tanino Ristorante"><span class="photocred">Courtesy of Randall Michelson</span><br><br><strong>BY ALICIA SONTAG</strong><br><br>As Tanino Drago descends the stairs wearing a white chef‘s coat with two small Italian flags on both sides of the collar, he is greeted by excited shouts of "Tanino!" and hugs a longtime customer.<br><br>This is a typical reaction to chef Drago, who has built many friendships with customers over the years.<br><br>Drago, the owner and head chef of Tanino Ristorante, opened the Italian restaurant over 15 years ago. The restaurant, located on Westwood Boulevard, is devoted to authentic Italian cuisine. <br><br><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/02/eddf4a71-ebad-457a-ba51-5543b8e5e8b2-300x199.jpg" width="300"><span class="photocred-inline">Evaneet Sidhu / Daily Bruin</span></div>Drago said he started working in the family business with his five brothers and two sisters, six of whom now have restaurants in Los Angeles, when he moved from Italy to the United States 24 years ago. He worked with his oldest brother at Drago, the family restaurant, for eight years before moving to open his own restaurant.<br><br>Drago first opened Tanino Ristorante in 1998. Despite the suggestions of family and friends to open a restaurant elsewhere, Drago said he loved Westwood Village and insisted it be located in Westwood. The restaurant, a mix of Italian cuisine with Californian flair, resides in one of the oldest buildings in the village.<br><br>"I first saw the building, and I fell in love," Drago said. "It looks like a Florentine building, and it is a great marriage with Italian cuisine."<br><br>The building, built in 1929, is elegant yet cozy, with high ceilings, brick walls, black and white floor tiles, and a bar with columns and arches. Tanino Ristorante is illuminated by dimly lit chandeliers and filled with peppy Italian music - the ambiance seemingly transports diners to Italy.<br><br>The menu includes a range of authentic Italian dishes, including pumpkin tortelloni and artichoke salad. Drago said his signature dish is his mushroom soup, and people come from all over Los Angeles for it.<br><br>"It is hard for even me to change the menu," Drago said. "And people miss the dishes when I do change it."<br><br>Drago works to bring the freshest ingredients to his guests. He said his first inspiration is quality.<br><br>"If you use quality, you will see and taste the results," Drago said.<br><br><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/02/377ea95e-d01e-4616-8180-9cecf8cfd4d8-199x300.jpg" width="199"><span class="photocred-inline">Evaneet Sidhu / Daily Bruin</span></div>Aside from the daily a la carte items on the menu, Drago also includes seasonal daily specials. Guests will find seven to eight dish specials, such as white truffles or fettuccine with lamb ragout. Drago, who creates the menu, said Tanino Ristorante makes striped bass, sardines and langostinos, all imported daily from the Mediterranean for the freshest quality.<br><br>"I enjoy creating the daily special because it doesn&#39;t let me get bored with my menu," Drago said.<br><br>Tanino Ristorante is consistent not only with the food, but with the employees as well, Drago said. Some have worked with Drago since the restaurant opened.<br><br>Drago said he has expanded his connections from within the restaurant to UCLA and other businesses in Westwood over the last 15 years. Tanino Ristorante has frequently worked with Geffen Playhouse, and has built a relationship with Royce Hall and UCLA research departments.<br><br>"It is why after 16 years we are still successful," Drago said. "We plan to be here (for) many more years."</div><div class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 1043 Westwood Blvd, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 208-0444</li>         <li><i class="icon-calendar"></i> Lunch: Mon-Fri 11 a.m. to 2:30 p.m.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dinner: Mon-Sat 5 p.m., Sun 4 p.m.<br></li>  <li><i class="icon-briefcase"></i> Delivery: No</li>        <li><i class="icon-tag"></i> $$$</li>         <li><i class="icon-info-sign"></i> Street parking.</li> <li><i class="icon-globe"></i> <a href="http://www.tanino.com/" target="_blank">www.tanino.com/</a></li></ul></div></div>'
+                '<div class="row"><div class="span8"><img src="http://dailybruin.com/images/2014/02/745e2551-8f0d-434d-85e6-71d62c3f51b0.jpg" class="img-responsive" alt="Tanino Ristorante"><span class="photocred">Courtesy of Randall Michelson</span><br><br><strong>BY ALICIA SONTAG</strong><br><br>As Tanino Drago descends the stairs wearing a white chef‘s coat with two small Italian flags on both sides of the collar, he is greeted by excited shouts of "Tanino!" and hugs a longtime customer.<br><br>This is a typical reaction to chef Drago, who has built many friendships with customers over the years.<br><br>Drago, the owner and head chef of Tanino Ristorante, opened the Italian restaurant over 15 years ago. The restaurant, located on Westwood Boulevard, is devoted to authentic Italian cuisine. <br><br><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/02/eddf4a71-ebad-457a-ba51-5543b8e5e8b2-300x199.jpg" width="300"><span class="photocred-inline">Evaneet Sidhu / Daily Bruin</span></div>Drago said he started working in the family business with his five brothers and two sisters, six of whom now have restaurants in Los Angeles, when he moved from Italy to the United States 24 years ago. He worked with his oldest brother at Drago, the family restaurant, for eight years before moving to open his own restaurant.<br><br>Drago first opened Tanino Ristorante in 1998. Despite the suggestions of family and friends to open a restaurant elsewhere, Drago said he loved Westwood Village and insisted it be located in Westwood. The restaurant, a mix of Italian cuisine with Californian flair, resides in one of the oldest buildings in the village.<br><br>"I first saw the building, and I fell in love," Drago said. "It looks like a Florentine building, and it is a great marriage with Italian cuisine."<br><br>The building, built in 1929, is elegant yet cozy, with high ceilings, brick walls, black and white floor tiles, and a bar with columns and arches. Tanino Ristorante is illuminated by dimly lit chandeliers and filled with peppy Italian music - the ambiance seemingly transports diners to Italy.<br><br>The menu includes a range of authentic Italian dishes, including pumpkin tortelloni and artichoke salad. Drago said his signature dish is his mushroom soup, and people come from all over Los Angeles for it.<br><br>"It is hard for even me to change the menu," Drago said. "And people miss the dishes when I do change it."<br><br>Drago works to bring the freshest ingredients to his guests. He said his first inspiration is quality.<br><br>"If you use quality, you will see and taste the results," Drago said.<br><br><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/02/377ea95e-d01e-4616-8180-9cecf8cfd4d8-199x300.jpg" width="199"><span class="photocred-inline">Evaneet Sidhu / Daily Bruin</span></div>Aside from the daily a la carte items on the menu, Drago also includes seasonal daily specials. Guests will find seven to eight dish specials, such as white truffles or fettuccine with lamb ragout. Drago, who creates the menu, said Tanino Ristorante makes striped bass, sardines and langostinos, all imported daily from the Mediterranean for the freshest quality.<br><br>"I enjoy creating the daily special because it doesn&#39;t let me get bored with my menu," Drago said.<br><br>Tanino Ristorante is consistent not only with the food, but with the employees as well, Drago said. Some have worked with Drago since the restaurant opened.<br><br>Drago said he has expanded his connections from within the restaurant to UCLA and other businesses in Westwood over the last 15 years. Tanino Ristorante has frequently worked with Geffen Playhouse, and has built a relationship with Royce Hall and UCLA research departments.<br><br>"It is why after 16 years we are still successful," Drago said. "We plan to be here (for) many more years."</div><div class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 1043 Westwood Blvd, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 208-0444</li>         <li><i class="icon-calendar"></i> Lunch: Mon-Fri 11 a.m. to 2:30 p.m.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dinner: Mon-Sat 5 p.m., Sun 4 p.m.<br></li>  <li><i class="icon-briefcase"></i> Delivery: No</li>        <li><i class="icon-tag"></i> $$$</li>         <li><i class="icon-info-sign"></i> Valet, Street parking.</li> <li><i class="icon-globe"></i> <a href="http://www.tanino.com/" target="_blank">www.tanino.com</a></li></ul></div></div>'
                 ].join(''),
                 icon: 'http://maps.google.com/mapfiles/markerN.png',
                 zoom: 17,
