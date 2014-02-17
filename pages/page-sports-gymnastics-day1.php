@@ -68,7 +68,7 @@ Though Peszek delivered solid performances to help secure a win, the team’s er
 
 Redshirt junior Samantha Peszek swung around the bar once, twice, three times and landed firmly on the mat, solidifying a perfect routine. The judges rewarded her perfection with a perfect score of 10.<br><br>
 
-One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/4d88e911-1743-42f5-b8f2-fce26c12e263-640x426.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2013/05/web.sp_.5.29.losses.spread.gymnastics-1024x686.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
 
 “We had ups and downs … which is okay for the first or second meet, but not for the … fifth meet of the year,” said coach Valorie Kondos Field. “The mistakes that we made were not okay, simply not okay. They need to start living what they talk.”<br><br>
 

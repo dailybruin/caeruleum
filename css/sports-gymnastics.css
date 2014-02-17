@@ -157,10 +157,10 @@ body {
   margin: 0;
   padding:0;
 }
-#sp-gym.thumbnail.with-caption-right small:before {
+#sp-gym .thumbnail.with-caption-right small:before {
   content: '\2014 \00A0';
 }
-#sp-gym.thumbnail.with-caption-right small {
+#sp-gym .thumbnail.with-caption-right small {
   width: 100%;
   display: inline-block;
   color: #999;
