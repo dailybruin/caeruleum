@@ -10,17 +10,7 @@ Template Name: Sports Gymnastics day1
 <!--css -->
 <article id="sp-gym">
 	<img src="http://dailybruin.com/images/2013/04/web.ns_.4.22.gymnastics.wrap_.picA_.jpg">
-	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span><br><br><br>
-	<div class="navbar">
-  <div class="navbar-inner">
-    <ul class="nav"><li class="divider-vertical"></li>
-      <li class="active"><a href="#">Gymnastics Day 1</a></li><li class="divider-vertical"></li>
-      <li class="disabled"><a href="#">Gymnastics Day 2</a></li><li class="divider-vertical"></li>
-      <li class="disabled"><a href="#">Gymnastics Day 3</a></li><li class="divider-vertical"></li>
-      <li class="disabled"><a href="#">Gymnastics Day 4</a></li><li class="divider-vertical"></li>
-    </ul>
-  </div>
-</div>
+	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span>
 
 <h1>Gymnastics Day 1</h1>
 	<strong>BY SOMEBODY SPECIAL</strong><br><br><p>
