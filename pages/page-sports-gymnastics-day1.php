@@ -36,10 +36,11 @@ Redshirt sophomore Ellette Craddock led the second rotation with two falls on ba
 
 Craddock added that her miscues on bars allowed her to gain clarity as to how she should approach the event in the future.
 
-		<div class="pq-wrap pq-style-2">
-    <div class="pq-thumb"></div>
+<div class="pq-wrap pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
-        <p>I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”</p></blockquote></div>
+        <p>I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”</p>
+    </blockquote>
+</div>
 
  “I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”<br><br>
 
@@ -47,7 +48,7 @@ Craddock redeemed herself with a solid starting performance on beam, adding more
 
 Craddock’s performance followed Peszek’s flawless bars routine. Peszek has been resting an Achilles injury and thus has not been competing as often as she typically does during the season.<br><br>		“I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”<br><br>
 
-She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br>
+She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a025fd6c-8bde-488c-a8ea-a388340f570a-218x300.jpg" width="225"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
 
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
 
@@ -58,12 +59,12 @@ Peszek’s perfect ten was followed by another nearly flawless beam routine, whe
 Though Peszek delivered solid performances to help secure a win, the team’s errors during the meet have revealed mental weaknesses. The team still has to readjust perspective if it wants to finish the season with a title.<br><br>
 
 “They talk about being champions, and they need to believe that they are champions in order to compete like it because you can see the people that believe it – Olivia (Courtney), Syd(ney Sawa), Sam Peszek – they believe they’re champions. Danusia (Francis) believes she’s a champion,” Kondos Field said. “The other ones talk it, but they’re not walking it.”<br><br> 
-Craddock redeemed herself with a solid starting performance on beam, adding more than a point to her bars routine score with a 9.825.<br><br>   <div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/02/a025fd6c-8bde-488c-a8ea-a388340f570a-218x300.jpg" width="225"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+Craddock redeemed herself with a solid starting performance on beam, adding more than a point to her bars routine score with a 9.825.<br><br>   
 Craddock’s performance followed Peszek’s flawless bars routine.<br><br>
 
 Peszek has been resting an Achilles injury and thus has not been competing as often as she typically does during the season.<br><br>
 
-She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br>
+She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-right"><img src="http://dailybruin.com/images/2014/02/4d88e911-1743-42f5-b8f2-fce26c12e263-640x426.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
 
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
 
@@ -77,7 +78,7 @@ Though Peszek delivered solid performances to help secure a win, the team’s er
 
 Redshirt junior Samantha Peszek swung around the bar once, twice, three times and landed firmly on the mat, solidifying a perfect routine. The judges rewarded her perfection with a perfect score of 10.<br><br>
 
-One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br>
+One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/4d88e911-1743-42f5-b8f2-fce26c12e263-640x426.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
 
 “We had ups and downs … which is okay for the first or second meet, but not for the … fifth meet of the year,” said coach Valorie Kondos Field. “The mistakes that we made were not okay, simply not okay. They need to start living what they talk.”<br><br>
 
@@ -85,8 +86,13 @@ While the vault performances in the first rotation were fairly routine, the No. 
 
 Redshirt sophomore Ellette Craddock led the second rotation with two falls on bars. She said she felt calm before the event, but ended up losing her grip on a turn, resulting in a score of 8.575.<br><br>
 
-Craddock added that her miscues on bars allowed her to gain clarity as to how she should approach the event in the future.<br><br>
+Craddock added that her miscues on bars allowed her to gain clarity as to how she should approach the event in the future.<br><br><div class="pq-wrap pq-style-2"><div class="pq-thumb"></div>
+    <blockquote style-"pq-style-2">
+        <p>I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence</p>
+    </blockquote>
+</div>
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
+
 
 Kondos Field praised Peszek’s work ethic, and mentioned her willingness to ruthlessly attack her weaknesses. Kondos Field added that Peszek has earned the right to be as confident as she is.<br><br>
 

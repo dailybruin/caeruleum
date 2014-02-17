@@ -21,12 +21,13 @@ body {
 }
 
 #sp-gym .pq-wrap {
-    width: 280px;
-    margin: 10px auto;
+    width: 260px;
+    margin: 5px 10px 10px 10pxauto;
     padding: 5px 20px 20px 50px;
     position: relative;
     float:right;
     display:inline-block;
+    height: 300px;
 }
 
 #sp-gym .pq-wrap p{
@@ -120,9 +121,9 @@ body {
   margin:0px;
   padding:0px;
 }
-#sp-gym .thumbnail.with-caption {
+#sp-gym .thumbnail.with-caption-left {
   display: inline-block;
-  background: rgba(108,193,235,0.1);
+  background: rgba(200,200,200,0.1);
   float: left;
   text-align: center;
   margin: 5px 10px 5px 0px;
@@ -130,16 +131,37 @@ body {
   font-style: italic;
 }
 
-#sp-gym .thumbnail.with-caption p {
+#sp-gym .thumbnail.with-caption-left p {
   margin: 0;
   padding:0;
 }
-#sp-gym.thumbnail.with-caption small:before {
+#sp-gym.thumbnail.with-caption-left small:before {
   content: '\2014 \00A0';
 }
-#sp-gym.thumbnail.with-caption small {
+#sp-gym.thumbnail.with-caption-left small {
   width: 100%;
-  text-align: right;
+  display: inline-block;
+  color: #999;
+}
+#sp-gym .thumbnail.with-caption-right {
+  display: inline-block;
+  background: rgba(200,200,200,0.1);
+  float: right;
+  text-align: center;
+  margin: 5px 0px 5px 10px;
+  border:none;
+  font-style: italic;
+}
+
+#sp-gym .thumbnail.with-caption-right p {
+  margin: 0;
+  padding:0;
+}
+#sp-gym.thumbnail.with-caption-right small:before {
+  content: '\2014 \00A0';
+}
+#sp-gym.thumbnail.with-caption-right small {
+  width: 100%;
   display: inline-block;
   color: #999;
 }
