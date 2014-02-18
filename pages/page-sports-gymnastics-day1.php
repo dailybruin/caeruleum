@@ -21,7 +21,7 @@ Template Name: Sports Gymnastics day1
 </div>
 
 	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg">
-	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><br>
+	<span class="photocred">Katie Meyers / Daily Bruin</span><br><br>
 
 <h2>Samantha Peszek</h2>
 	<p><strong>BY ZACHARY LEMOS</strong></p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
@@ -32,7 +32,7 @@ Template Name: Sports Gymnastics day1
             <cite>On her Olympic uneven bars routine</cite>
           </div>
 
-</div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter stepbackward. </p>
+</div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter step backward. </p>
 
 <p>For a short moment, she raised her arms, signaling the end of her routine on uneven bars and somberly forced her eyes toward the Olympic judges. </p>
 
