@@ -16,12 +16,12 @@ article#sp-gym p {
 
 article#sp-gym h1 {
   font-family: 'Raleway',Helvetica,Arial,sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 70px;
   text-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
-article#sp-gym .pq-wrap {
+article#sp-gym .pq-wrap-2 {
     width: 260px;
     margin: 5px 10px 10px 10pxauto;
     padding: 5px 20px 20px 50px;
@@ -31,19 +31,19 @@ article#sp-gym .pq-wrap {
     height: 300px;
 }
 
-article#sp-gym .pq-wrap p{
+article#sp-gym .pq-wrap-2 p{
     margin: 0;
     padding: 0;
 }
  
-article#sp-gym .pq-wrap blockquote {
+article#sp-gym .pq-wrap-2 blockquote {
     margin: 0;
     padding: 0;
     position: relative;
     border-left: none !important;
 }
  
-article#sp-gym .pq-wrap cite {
+article#sp-gym .pq-wrap-2 cite {
     font-style: normal;
 }
 
@@ -94,10 +94,10 @@ article#sp-gym .pq-style-2 .pq-attribution {
  
 article#sp-gym .pq-style-2 .pq-author{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 10px;
     font-weight: bold;
-    color: #d48158;
+    color: gray;
     text-shadow: 0 1px 1px rgba(255,255,255,0.1);
 }
  
@@ -110,6 +110,94 @@ article#sp-gym .pq-style-2 cite a:hover{
     color: #d48158;
 }
 
+article#sp-gym .pq-wrap-1 {
+    width: 260px;
+    margin: 5px 10px 10px 10pxauto;
+    padding: 5px 20px 20px 50px;
+    position: relative;
+    float:right;
+    display:inline-block;
+    height: 400px;
+}
+
+article#sp-gym .pq-wrap-1 p{
+    margin: 0;
+    padding: 0;
+}
+ 
+article#sp-gym .pq-wrap-1 blockquote {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-left: none !important;
+}
+ 
+article#sp-gym .pq-wrap-1 cite {
+    font-style: normal;
+}
+
+article#sp-gym .pq-style-1 blockquote{
+    padding-top: 110px;
+}
+article#sp-gym .pq-style-1 blockquote:after {
+    font-family: 'icons';
+    background: rgba(0,0,0,0.9);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    content: '\275e';
+    position: absolute;
+    font-size: 80px;
+    line-height: 120px;
+    text-align: center;
+    top: 0px;
+    left: 50%;
+    margin-left: -65px;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+article#sp-gym .pq-style-1 blockquote:before{
+    content: '';
+    width: 280px;
+    height: 400px;
+    border-radius: 50%;
+    border-left: 5px solid rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0px;
+    left: -35px;
+    z-index: -1;
+}
+article#sp-gym .pq-style-1 blockquote p {
+    font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    background: rgba(255,255,255,0.5);
+    display: inline;
+    color: rgba(0,0,0,0.7);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+    line-height: 30px;
+}
+article#sp-gym .pq-style-1 .pq-attribution {
+    text-align: right;
+}
+ 
+article#sp-gym .pq-style-1 .pq-author{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: gray;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+ 
+article#sp-gym .pq-style-1 cite a{
+    color: #d7aa94;
+    font-style: italic;
+}
+ 
+article#sp-gym .pq-style-1 cite a:hover{
+    color: #d48158;
+}
 
 article#sp-gym .photocred {
   float: right;
