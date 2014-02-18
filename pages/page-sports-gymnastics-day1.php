@@ -13,10 +13,10 @@ Template Name: Sports Gymnastics day1
 	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span>
 <div class="pagination pagination-centered">
   <ul>
-    <li class="active"><a href="#">Day 1</a></li>
-    <li class="disabled"><a href="#">Day 2</a></li>
-    <li class="disabled"><a href="#">Day 3</a></li>
-    <li class="disabled"><a href="#">Day 4</a></li>
+    <li class="active"><a href="#">Samantha Peszek</a></li>
+    <li class="disabled"><a href="#">Jennifer Pinches</a></li>
+    <li class="disabled"><a href="#">Jordyn Wieber</a></li>
+    <li class="disabled"><a href="#">Danusia Francis</a></li>
   </ul>
 </div>
 
