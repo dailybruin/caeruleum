@@ -22,7 +22,7 @@ Template Name: Sports Gymnastics day1
 </div>
 
 <h1>Samantha Peszek</h1>
-	<strong>BY SOMEBODY SPECIAL</strong><br><br><p>
+	<strong>BY ZACHARY LEMOS</strong><br><br><p>
 <div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
         <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet,”</p>
