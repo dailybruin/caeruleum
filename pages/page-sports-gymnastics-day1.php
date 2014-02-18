@@ -29,7 +29,7 @@ Template Name: Sports Gymnastics day1
         <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
-            <cite></cite>
+            <cite>On her Olympic uneven bars routine</cite>
           </div>
 
 </div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter stepbackward. </p>
@@ -56,7 +56,7 @@ Template Name: Sports Gymnastics day1
         <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
-            <cite></cite>
+            <cite>On her Olympic trials performance</cite>
           </div>
 </div>
 
@@ -87,7 +87,7 @@ Template Name: Sports Gymnastics day1
         <p>“I think it’s 99 percent (mental). We’ve all been doing these skills for so long that when it’s time to compete, it’s purely just mental.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Sydney Sawa</p>
-            <cite>UCLA Senior Gymnast</cite>
+            <cite>UCLA senior gymnast</cite>
           </div>
 </div>
 
