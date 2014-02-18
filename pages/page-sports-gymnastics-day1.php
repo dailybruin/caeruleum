@@ -104,7 +104,7 @@ Template Name: Sports Gymnastics day1
   <li class="previous disabled">
     <a href="#">&larr; Previous</a>
   </li>
-  <li class="next">
+  <li class="next disabled">
     <a href="#">Next &rarr;</a>
   </li>
 </ul>

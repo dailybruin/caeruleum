@@ -70,7 +70,7 @@ article#sp-gym .pq-style-2 blockquote:after {
 article#sp-gym .pq-style-2 blockquote:before{
     content: '';
     width: 200px;
-    height: 250px;
+    height: 220px;
     border-radius: 50%;
     border-left: 5px solid rgba(0,0,0,0.1);
     position: absolute;
