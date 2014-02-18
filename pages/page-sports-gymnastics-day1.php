@@ -22,14 +22,14 @@ Template Name: Sports Gymnastics day1
 </div>
 
 <h1>Samantha Peszek</h1>
-	<strong>BY ZACHARY LEMOS</strong><br><br><p>
-<div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
+	<p><strong>BY ZACHARY LEMOS</strong></p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
         <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet,”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
             <cite></cite>
           </div>
+
 </div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter stepbackward. </p>
 
 <p>For a short moment, she raised her arms, signaling the end of her routine on uneven bars and somberly forced her eyes toward the Olympic judges. </p>
@@ -38,7 +38,7 @@ Template Name: Sports Gymnastics day1
 
 <p>It was only after one or two limp-free steps away from the apparatus that Peszek remembered what her coaches had told her after she injured her foot in warm-ups minutes ago: You're not allowed to cry. You're not allowed to talk about it. You’re not allowed to be upset.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-300x190.jpg" width="300"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-1024x649.jpg" width="500"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 
 <p>So the then-16-year-old hid her look of pain, put a smile on her face and walked away from her first – and what turned out to be only – event in the 2008 Beijing Olympics.</p>
 
@@ -50,24 +50,21 @@ Template Name: Sports Gymnastics day1
 
 <p>And if the mental turmoil of being held from competition in Beijing wasn’t enough, Peszek was told to hide her despair for the sake of the other girls on the team.</p>
 
-<div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
-    <blockquote style-"pq-style-1">
-        <p>“Last event, 5 minutes before we walk out, last tumbling pass of the day and completely just landed crooked on my foot. They were like, ‘You need to get from here to over there without crying, without limping, we’re going to give you a cortisone shot really quick.’ It was super dramatic and they had to switch lineups around,”</p>
+<p>“I just had to switch gears really quick and do everything in my power to help (the team) compete well,” she said. “If I would've been distraught and a mess about it, that wouldn’t have really been helping.”</p>
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-682x1024.jpg" width="300"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
+<p>This wasn’t the first time Peszek masked her emotions for the sake of her Olympic ambitions. At the Olympic trials a month earlier, the pressure mounted to a level even higher than what Peszek said she later felt in Beijing.</p>
+
+<p>After struggling on a few earlier routines, Peszek was told that the last one of the day would be do-or-die – hit it and she would make the team, miss it and she was done.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
+    <blockquote style-"pq-style-2">
+        <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics,”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
             <cite></cite>
           </div>
 </div>
 
-<p>“I just had to switch gears really quick and do everything in my power to help (the team) compete well,” she said. “If I would've been distraught and a mess about it, that wouldn’t have really been helping.”</p>
-
-<p>This wasn’t the first time Peszek masked her emotions for the sake of her Olympic ambitions. At the Olympic trials a month earlier, the pressure mounted to a level even higher than what Peszek said she later felt in Beijing.</p>
-
-<p>After struggling on a few earlier routines, Peszek was told that the last one of the day would be do-or-die – hit it and she would make the team, miss it and she was done.</p>
-
 <p>Despite the heavy pressure, Peszek pulled off the routine to ultimately make Team USA.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-200x300.jpg" width="200"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 
 <p>That Peszek was able to first block heavy pressure to reach the Olympics  and then shut out the disappointment of being sidelined in Beijing speaks to her tremendous mental strength, said Tara Scanlan, a UCLA sports psychology professor.</p>
 
@@ -75,13 +72,21 @@ Template Name: Sports Gymnastics day1
 
 <p>“When you’re on the beam … if you splatter, there’s no regroup time – and you have to do it with a smile. You have to bounce right back up, let that mistake go, smile, focus and keep going," Scanlan said.</p>
 
-<div class="thumbnail with-caption-right"><img src="http://dailybruin.com/images/2014/02/a2f93911-c786-4561-8188-74b8f5f4691e-200x300.jpg" width="200"><span class="photocred-inline">Samantha and Bela Karolyi.
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a2f93911-c786-4561-8188-74b8f5f4691e-682x1024.jpg" width="300"><span class="photocred-inline">Samantha and Bela Karolyi.
 <br>
 (Courtesy of Samantha Peszek)</span></div>
 
 <p>And mental recovery becomes that much more important in a perfection-oriented sport like gymnastics, where wobblylandings or spread toes often translate into large point deductions.</p>
 
-<p>Years of performing under immense pressure mean that most Olympic athletes tend to have more confidence than their less-tested equivalents, said UCLA coach Valorie Kondos Field.</p>
+
+<p>Years of performing under immense pressure mean that most Olympic athletes tend to have more confidence than their less-tested equivalents, said UCLA coach Valorie Kondos Field.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
+    <blockquote style-"pq-style-2">
+        <p>“I think it’s ninety-nine percent (mental). We’ve all been doing these skills for so long that when it’s time to compete, it’s purely just mental,”</p>
+    </blockquote><div class="pq-attribution">
+            <p class="pq-author"> – Sydney Sawa</p>
+            <cite>UCLA gymnastics’ senior</cite>
+          </div>
+</div>
 
 <p>Peszek's ability to remain unfazed despite less-than-ideal conditions was on display in UCLA gymnastics’ most recent home meet on Feb. 8. She scored a career-first perfect 10 on uneven bars – coincidentally her least favorite event and the only one in which she was able to compete in Beijing – in only her fifth routine this year. 
 </p>

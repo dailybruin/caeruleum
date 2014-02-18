@@ -48,18 +48,18 @@ article#sp-gym .pq-wrap-2 cite {
 }
 
 article#sp-gym .pq-style-2 blockquote{
-    padding-top: 70px;
+    padding-top: 57px;
 }
 article#sp-gym .pq-style-2 blockquote:after {
     font-family: 'icons';
     background: rgba(0,0,0,0.9);
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     content: '\275e';
     position: absolute;
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 40px;
+    line-height: 60px;
     text-align: center;
     top: 0px;
     left: 50%;
@@ -80,13 +80,13 @@ article#sp-gym .pq-style-2 blockquote:before{
 }
 article#sp-gym .pq-style-2 blockquote p {
     font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     background: rgba(255,255,255,0.5);
     display: inline;
     color: rgba(0,0,0,0.7);
     text-shadow: 0 1px 1px rgba(255,255,255,0.5);
-    line-height: 28px;
+    line-height: 23px;
 }
 article#sp-gym .pq-style-2 .pq-attribution {
     text-align: right;
@@ -117,7 +117,7 @@ article#sp-gym .pq-wrap-1 {
     position: relative;
     float:right;
     display:inline-block;
-    height: 400px;
+    height: 350px;
 }
 
 article#sp-gym .pq-wrap-1 p{
@@ -137,18 +137,18 @@ article#sp-gym .pq-wrap-1 cite {
 }
 
 article#sp-gym .pq-style-1 blockquote{
-    padding-top: 110px;
+    padding-top: 75px;
 }
 article#sp-gym .pq-style-1 blockquote:after {
     font-family: 'icons';
     background: rgba(0,0,0,0.9);
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     content: '\275e';
     position: absolute;
-    font-size: 80px;
-    line-height: 120px;
+    font-size: 60px;
+    line-height: 80px;
     text-align: center;
     top: 0px;
     left: 50%;
@@ -159,7 +159,7 @@ article#sp-gym .pq-style-1 blockquote:after {
 article#sp-gym .pq-style-1 blockquote:before{
     content: '';
     width: 280px;
-    height: 400px;
+    height: 350px;
     border-radius: 50%;
     border-left: 5px solid rgba(0,0,0,0.1);
     position: absolute;
@@ -175,7 +175,7 @@ article#sp-gym .pq-style-1 blockquote p {
     display: inline;
     color: rgba(0,0,0,0.7);
     text-shadow: 0 1px 1px rgba(255,255,255,0.5);
-    line-height: 30px;
+    line-height: 25px;
 }
 article#sp-gym .pq-style-1 .pq-attribution {
     text-align: right;
@@ -265,4 +265,10 @@ article#sp-gym #page-credit {
 article#sp-gym #page-credit a {
   color: #000;
   text-decoration: none;
+}
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  body {
+    background: #fff;
+  }
 }
