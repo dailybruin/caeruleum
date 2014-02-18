@@ -12,11 +12,11 @@ Template Name: Sports Gymnastics day1
   <h1>Gymnastics:<br> The Competitive Demands</h1>
   <div class="pagination pagination-centered">
   <ul>
-    <li class="active"><a href="">Samantha Peszek</a></li>
-    <li class="disabled"><a href="">Jennifer Pinches</a></li>
-    <li class="disabled"><a href="">Jordyn Wieber</a></li>
+    <li class="active"><a>Samantha Peszek</a></li>
+    <li class="disabled"><a>Jennifer Pinches</a></li>
+    <li class="disabled"><a>Jordyn Wieber</a></li>
 
-    <li class="disabled"><a href="">Danusia Francis</a></li>
+    <li class="disabled"><a>Danusia Francis</a></li>
   </ul>
 </div>
 
@@ -103,10 +103,10 @@ Template Name: Sports Gymnastics day1
 
 <ul class="pager">
   <li class="previous disabled">
-    <a href="">&larr; Previous</a>
+    <a>&larr; Previous</a>
   </li>
   <li class="next disabled">
-    <a href="">Next &rarr;</a>
+    <a>Next &rarr;</a>
   </li>
 </ul>
 </p>
