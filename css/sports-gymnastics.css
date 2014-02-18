@@ -22,13 +22,13 @@ article#sp-gym h1 {
 }
 
 article#sp-gym .pq-wrap-2 {
-    width: 260px;
+    width: 200px;
     margin: 5px 10px 10px 10pxauto;
     padding: 5px 20px 20px 50px;
     position: relative;
     float:right;
     display:inline-block;
-    height: 300px;
+    height: 215px;
 }
 
 article#sp-gym .pq-wrap-2 p{
@@ -48,18 +48,18 @@ article#sp-gym .pq-wrap-2 cite {
 }
 
 article#sp-gym .pq-style-2 blockquote{
-    padding-top: 110px;
+    padding-top: 70px;
 }
 article#sp-gym .pq-style-2 blockquote:after {
     font-family: 'icons';
     background: rgba(0,0,0,0.9);
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     content: '\275e';
     position: absolute;
-    font-size: 80px;
-    line-height: 120px;
+    font-size: 60px;
+    line-height: 80px;
     text-align: center;
     top: 0px;
     left: 50%;
@@ -69,8 +69,8 @@ article#sp-gym .pq-style-2 blockquote:after {
 }
 article#sp-gym .pq-style-2 blockquote:before{
     content: '';
-    width: 280px;
-    height: 320px;
+    width: 200px;
+    height: 250px;
     border-radius: 50%;
     border-left: 5px solid rgba(0,0,0,0.1);
     position: absolute;
@@ -86,7 +86,7 @@ article#sp-gym .pq-style-2 blockquote p {
     display: inline;
     color: rgba(0,0,0,0.7);
     text-shadow: 0 1px 1px rgba(255,255,255,0.5);
-    line-height: 30px;
+    line-height: 28px;
 }
 article#sp-gym .pq-style-2 .pq-attribution {
     text-align: right;
