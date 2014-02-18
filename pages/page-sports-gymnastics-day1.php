@@ -10,7 +10,7 @@ Template Name: Sports Gymnastics day1
 <!--css -->
 <article id="sp-gym">
 	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg">
-	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span><br><br>
+	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><br>
 <div class="pagination pagination-centered">
   <ul>
     <li class="active"><a href="#">Samantha Peszek</a></li>
@@ -46,7 +46,7 @@ Craddock redeemed herself with a solid starting performance on beam, adding more
 
 Craddock’s performance followed Peszek’s flawless bars routine. Peszek has been resting an Achilles injury and thus has not been competing as often as she typically does during the season.<br><br>		“I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”<br><br>
 
-She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a025fd6c-8bde-488c-a8ea-a388340f570a-218x300.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-300x190.jpg" width="300"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
 
@@ -62,7 +62,7 @@ Craddock’s performance followed Peszek’s flawless bars routine.<br><br>
 
 Peszek has been resting an Achilles injury and thus has not been competing as often as she typically does during the season.<br><br>
 
-She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-right"><img src="http://dailybruin.com/images/2014/02/4d88e911-1743-42f5-b8f2-fce26c12e263-640x426.jpg" width="400"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-right"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-200x300.jpg" width="200"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
 
@@ -76,7 +76,9 @@ Though Peszek delivered solid performances to help secure a win, the team’s er
 
 Redshirt junior Samantha Peszek swung around the bar once, twice, three times and landed firmly on the mat, solidifying a perfect routine. The judges rewarded her perfection with a perfect score of 10.<br><br>
 
-One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2013/05/web.sp_.5.29.losses.spread.gymnastics-1024x686.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a2f93911-c786-4561-8188-74b8f5f4691e-200x300.jpg" width="300"><span class="photocred-inline">Samantha and Bela Karolyi.
+<br>
+(Courtesy of Samantha Peszek)</span></div>
 
 “We had ups and downs … which is okay for the first or second meet, but not for the … fifth meet of the year,” said coach Valorie Kondos Field. “The mistakes that we made were not okay, simply not okay. They need to start living what they talk.”<br><br>
 
