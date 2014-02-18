@@ -16,6 +16,7 @@ Template Name: Sports Gymnastics day1
     <li class="active"><a href="#">Samantha Peszek</a></li>
     <li class="disabled"><a href="#">Jennifer Pinches</a></li>
     <li class="disabled"><a href="#">Jordyn Wieber</a></li>
+
     <li class="disabled"><a href="#">Danusia Francis</a></li>
   </ul>
 </div>
@@ -77,6 +78,7 @@ Template Name: Sports Gymnastics day1
 </p>
 
 <p>And although she missed two of the season's first four meets and sat out the entire 2013 season with an Achilles tear, Peszek ranks first nationally on beam and third on uneven bars.</p>
+One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a2f93911-c786-4561-8188-74b8f5f4691e-200x300.jpg" width="200"><span class="photocred-inline">Samantha and Bela Karolyi.
 
 <p>But just as she has shown before, things that might rattle any athlete – like a serious injury or competing sparingly – generally do not affect Peszek's routines.</p>
 
