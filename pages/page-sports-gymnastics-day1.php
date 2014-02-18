@@ -11,6 +11,14 @@ Template Name: Sports Gymnastics day1
 <article id="sp-gym">
 	<img src="http://dailybruin.com/images/2013/04/web.ns_.4.22.gymnastics.wrap_.picA_.jpg">
 	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span>
+<div class="pagination pagination-centered">
+  <ul>
+    <li class="active"><a href="#">Day 1</a></li>
+    <li class="disabled"><a href="#">Day 2</a></li>
+    <li class="disabled"><a href="#">Day 3</a></li>
+    <li class="disabled"><a href="#">Day 4</a></li>
+  </ul>
+</div>
 
 <h1>Gymnastics Day 1</h1>
 	<strong>BY SOMEBODY SPECIAL</strong><br><br><p>
@@ -38,7 +46,7 @@ Craddock redeemed herself with a solid starting performance on beam, adding more
 
 Craddock’s performance followed Peszek’s flawless bars routine. Peszek has been resting an Achilles injury and thus has not been competing as often as she typically does during the season.<br><br>		“I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”<br><br>
 
-She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a025fd6c-8bde-488c-a8ea-a388340f570a-218x300.jpg" width="225"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a025fd6c-8bde-488c-a8ea-a388340f570a-218x300.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
 
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
 
@@ -54,7 +62,7 @@ Craddock’s performance followed Peszek’s flawless bars routine.<br><br>
 
 Peszek has been resting an Achilles injury and thus has not been competing as often as she typically does during the season.<br><br>
 
-She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-right"><img src="http://dailybruin.com/images/2014/02/4d88e911-1743-42f5-b8f2-fce26c12e263-640x426.jpg" width="300"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
+She said that she has never received a ten before and is encouraged to know that she can still perform despite the stall in her training.<br><br><div class="thumbnail with-caption-right"><img src="http://dailybruin.com/images/2014/02/4d88e911-1743-42f5-b8f2-fce26c12e263-640x426.jpg" width="400"><span class="photocred-inline">Courtesy of Naz Papen</span></div>
 
 “I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence and hopefully gives the team a lot of confidence that I can do my job no matter what the circumstances are,” Peszek said.<br><br>
 
@@ -92,6 +100,18 @@ Though Peszek delivered solid performances to help secure a win, the team’s er
 
 “They talk about being champions, and they need to believe that they are champions in order to compete like it because you can see the people that believe it – Olivia (Courtney), Syd(ney Sawa), Sam Peszek – they believe they’re champions. Danusia (Francis) believes she’s a champion,” Kondos Field said. “The other ones talk it, but they’re not walking it.”<br><br> 
 </p>
+<ul class="pager">
+  <li class="previous disabled">
+    <a href="#">&larr; Previous</a>
+  </li>
+  <li class="next">
+    <a href="#">Next &rarr;</a>
+  </li>
+</ul>
+
+
+<div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:cyang@media.ucla.edu">Christina Yang</a></div>
+
 </article> 
 
 <?php get_footer(); ?>

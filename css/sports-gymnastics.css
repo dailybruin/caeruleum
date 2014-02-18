@@ -10,18 +10,18 @@ body {
   font-family: 'Droid Sans',sans-serif;
 }
 
-#sp-gym p {
+article#sp-gym p {
   font-family: 'Droid Sans',sans-serif;
 }
 
-#sp-gym h1 {
+article#sp-gym h1 {
   font-family: 'Raleway',Helvetica,Arial,sans-serif;
   font-size: 50px;
   line-height: 70px;
   text-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
-#sp-gym .pq-wrap {
+article#sp-gym .pq-wrap {
     width: 260px;
     margin: 5px 10px 10px 10pxauto;
     padding: 5px 20px 20px 50px;
@@ -31,26 +31,26 @@ body {
     height: 300px;
 }
 
-#sp-gym .pq-wrap p{
+article#sp-gym .pq-wrap p{
     margin: 0;
     padding: 0;
 }
  
-#sp-gym .pq-wrap blockquote {
+article#sp-gym .pq-wrap blockquote {
     margin: 0;
     padding: 0;
     position: relative;
     border-left: none !important;
 }
  
-#sp-gym .pq-wrap cite {
+article#sp-gym .pq-wrap cite {
     font-style: normal;
 }
 
-#sp-gym .pq-style-2 blockquote{
+article#sp-gym .pq-style-2 blockquote{
     padding-top: 110px;
 }
-#sp-gym .pq-style-2 blockquote:after {
+article#sp-gym .pq-style-2 blockquote:after {
     font-family: 'icons';
     background: rgba(0,0,0,0.9);
     width: 100px;
@@ -67,18 +67,18 @@ body {
     color: rgba(255,255,255,0.5);
     text-shadow: 0 1px 1px rgba(255,255,255,0.1);
 }
-#sp-gym .pq-style-2 blockquote:before{
+article#sp-gym .pq-style-2 blockquote:before{
     content: '';
     width: 280px;
     height: 320px;
     border-radius: 50%;
-    border-left: 5px solid rgba(108,193,235,0.1);
+    border-left: 5px solid rgba(0,0,0,0.1);
     position: absolute;
     top: 0px;
     left: -35px;
     z-index: -1;
 }
-#sp-gym .pq-style-2 blockquote p {
+article#sp-gym .pq-style-2 blockquote p {
     font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-style: italic;
@@ -88,11 +88,11 @@ body {
     text-shadow: 0 1px 1px rgba(255,255,255,0.5);
     line-height: 30px;
 }
-#sp-gym .pq-style-2 .pq-attribution {
+article#sp-gym .pq-style-2 .pq-attribution {
     text-align: right;
 }
  
-#sp-gym .pq-style-2 .pq-author{
+article#sp-gym .pq-style-2 .pq-author{
     text-transform: uppercase;
     font-size: 18px;
     padding-top: 10px;
@@ -101,28 +101,28 @@ body {
     text-shadow: 0 1px 1px rgba(255,255,255,0.1);
 }
  
-#sp-gym .pq-style-2 cite a{
+article#sp-gym .pq-style-2 cite a{
     color: #d7aa94;
     font-style: italic;
 }
  
-#sp-gym .pq-style-2 cite a:hover{
+article#sp-gym .pq-style-2 cite a:hover{
     color: #d48158;
 }
 
 
-#sp-gym .photocred {
+article#sp-gym .photocred {
   float: right;
   color: #c0c0c0;
   font-style: italic;
 }
-#sp-gym .photocred-inline {
+article#sp-gym .photocred-inline {
   color: #707070;
   font-size: 13px;
   margin:0px;
   padding:0px;
 }
-#sp-gym .thumbnail.with-caption-left {
+article#sp-gym .thumbnail.with-caption-left {
   display: inline-block;
   background: rgba(200,200,200,0.1);
   float: left;
@@ -132,19 +132,19 @@ body {
   font-style: italic;
 }
 
-#sp-gym .thumbnail.with-caption-left p {
+article#sp-gym .thumbnail.with-caption-left p {
   margin: 0;
   padding:0;
 }
-#sp-gym.thumbnail.with-caption-left small:before {
+article#sp-gym.thumbnail.with-caption-left small:before {
   content: '\2014 \00A0';
 }
-#sp-gym.thumbnail.with-caption-left small {
+article#sp-gym.thumbnail.with-caption-left small {
   width: 100%;
   display: inline-block;
   color: #999;
 }
-#sp-gym .thumbnail.with-caption-right {
+article#sp-gym .thumbnail.with-caption-right {
   display: inline-block;
   background: rgba(200,200,200,0.1);
   float: right;
@@ -154,15 +154,27 @@ body {
   font-style: italic;
 }
 
-#sp-gym .thumbnail.with-caption-right p {
+article#sp-gym .thumbnail.with-caption-right p {
   margin: 0;
   padding:0;
 }
-#sp-gym .thumbnail.with-caption-right small:before {
+article#sp-gym .thumbnail.with-caption-right small:before {
   content: '\2014 \00A0';
 }
-#sp-gym .thumbnail.with-caption-right small {
+article#sp-gym .thumbnail.with-caption-right small {
   width: 100%;
   display: inline-block;
   color: #999;
+}
+article#sp-gym #page-credit {
+  margin: 3em 0 2em 0;
+  text-align: center;
+  color: gray;
+  border-top: 1px solid #bebebe;
+  padding-top: 0.5em;
+  font-size: 0.9em;
+}
+article#sp-gym #page-credit a {
+  color: #000;
+  text-decoration: none;
 }
