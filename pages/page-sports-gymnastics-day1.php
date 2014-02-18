@@ -9,8 +9,8 @@ Template Name: Sports Gymnastics day1
 
 <!--css -->
 <article id="sp-gym">
-	<img src="http://dailybruin.com/images/2013/04/web.ns_.4.22.gymnastics.wrap_.picA_.jpg">
-	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span>
+	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg">
+	<span class="photocred">Erin Ng / Daily Bruin Senior Staff</span><br><br>
 <div class="pagination pagination-centered">
   <ul>
     <li class="active"><a href="#">Samantha Peszek</a></li>
@@ -20,7 +20,7 @@ Template Name: Sports Gymnastics day1
   </ul>
 </div>
 
-<h1>Gymnastics Day 1</h1>
+<h1>Samantha Peszek</h1>
 	<strong>BY SOMEBODY SPECIAL</strong><br><br><p>
 Redshirt junior Samantha Peszek swung around the bar once, twice, three times and landed firmly on the mat, solidifying a perfect routine. The judges rewarded her perfection with a perfect score of 10.<br><br>
 
