@@ -9,22 +9,24 @@ Template Name: Sports Gymnastics day1
 
 <!--css -->
 <article id="sp-gym">
-	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg">
-	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><br>
-<div class="pagination pagination-centered">
+  <h1>Gymnastics:<br> The Competitive Demands</h1>
+  <div class="pagination pagination-centered">
   <ul>
-    <li class="active"><a href="#">Samantha Peszek</a></li>
-    <li class="disabled"><a href="#">Jennifer Pinches</a></li>
-    <li class="disabled"><a href="#">Jordyn Wieber</a></li>
+    <li class="active"><a href="">Samantha Peszek</a></li>
+    <li class="disabled"><a href="">Jennifer Pinches</a></li>
+    <li class="disabled"><a href="">Jordyn Wieber</a></li>
 
-    <li class="disabled"><a href="#">Danusia Francis</a></li>
+    <li class="disabled"><a href="">Danusia Francis</a></li>
   </ul>
 </div>
 
-<h1>Samantha Peszek</h1>
+	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg">
+	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><br>
+
+<h2>Samantha Peszek</h2>
 	<p><strong>BY ZACHARY LEMOS</strong></p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
-        <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet,”</p>
+        <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
             <cite></cite>
@@ -51,7 +53,7 @@ Template Name: Sports Gymnastics day1
 
 <p>And if the mental turmoil of being held from competition in Beijing wasn’t enough, Peszek was told to hide her despair for the sake of the other girls on the team.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
-        <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics,”</p>
+        <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
             <cite></cite>
@@ -82,10 +84,10 @@ Template Name: Sports Gymnastics day1
 
 <p>Years of performing under immense pressure mean that most Olympic athletes tend to have more confidence than their less-tested equivalents, said UCLA coach Valorie Kondos Field.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
-        <p>“I think it’s ninety-nine percent (mental). We’ve all been doing these skills for so long that when it’s time to compete, it’s purely just mental,”</p>
+        <p>“I think it’s 99 percent (mental). We’ve all been doing these skills for so long that when it’s time to compete, it’s purely just mental.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Sydney Sawa</p>
-            <cite>UCLA gymnastics’ senior</cite>
+            <cite>UCLA Senior Gymnast</cite>
           </div>
 </div>
 
@@ -99,16 +101,15 @@ Template Name: Sports Gymnastics day1
 <p>After all, from a short-lived Olympic appearance to her UCLA gymnastics career, she's come through time and time again.</p>
 
 
-</p>
 <ul class="pager">
   <li class="previous disabled">
-    <a href="#">&larr; Previous</a>
+    <a href="">&larr; Previous</a>
   </li>
   <li class="next disabled">
-    <a href="#">Next &rarr;</a>
+    <a href="">Next &rarr;</a>
   </li>
 </ul>
-
+</p>
 
 <div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:cyang@media.ucla.edu">Christina Yang</a></div>
 
