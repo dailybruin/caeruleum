@@ -43,11 +43,13 @@ Template Name: Sports Gymnastics day1
 
 <p>And if the mental turmoil of being held from competition in Beijing wasn’t enough, Peszek was told to hide her despair for the sake of the other girls on the team.</p>
 
-
-<div class="pq-wrap pq-style-2"><div class="pq-thumb"></div>
-    <blockquote style-"pq-style-2">
-        <p>I went really big, and I didn’t catch my first release,” Craddock said. “And then, just like getting the flow back, I mean I should’ve been able to do that … since I do that all the time in workout.”</p>
-    </blockquote>
+<div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
+    <blockquote style-"pq-style-1">
+        <p>“Last event, 5 minutes before we walk out, last tumbling pass of the day and completely just landed crooked on my foot. They were like, ‘You need to get from here to over there without crying, without limping, we’re going to give you a cortisone shot really quick.’ It was super dramatic and they had to switch lineups around,”</p>
+    </blockquote><div class="pq-attribution">
+            <p class="pq-author"> – Samantha Peszek</p>
+            <cite></cite>
+          </div>
 </div>
 
 <p>“I just had to switch gears really quick and do everything in my power to help (the team) compete well,” she said. “If I would've been distraught and a mess about it, that wouldn’t have really been helping.”</p>
@@ -85,11 +87,14 @@ One flawless performance on uneven bars may have been enough to help the UCLA wo
 <p>After all, from a short-lived Olympic appearance to her UCLA gymnastics career, she's come through time and time again.</p>
 
 
-<div class="pq-wrap pq-style-2"><div class="pq-thumb"></div>
+<div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
-        <p>I have a lot of experience, so to know that I can do it even when I haven’t been training gives me a lot of confidence</p>
-    </blockquote>
-</div> 
+        <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics,”</p>
+    </blockquote><div class="pq-attribution">
+            <p class="pq-author"> – Samantha Peszek</p>
+            <cite></cite>
+          </div>
+</div>
 </p>
 <ul class="pager">
   <li class="previous disabled">
