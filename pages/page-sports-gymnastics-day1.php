@@ -34,27 +34,22 @@ Template Name: Sports Gymnastics day1
 
 <p>For a short moment, she raised her arms, signaling the end of her routine on uneven bars and somberly forced her eyes toward the Olympic judges. </p>
 
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-1024x649.jpg" class="img-hori"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
+
 <p>Then her eyes flicked down, her shoulders slumped and she quickly stepped away from the pad under her feet.</p>
 
 <p>It was only after one or two limp-free steps away from the apparatus that Peszek remembered what her coaches had told her after she injured her foot in warm-ups minutes ago: You're not allowed to cry. You're not allowed to talk about it. You’re not allowed to be upset.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-1024x649.jpg" width="500"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 
 <p>So the then-16-year-old hid her look of pain, put a smile on her face and walked away from her first – and what turned out to be only – event in the 2008 Beijing Olympics.</p>
 
 <p>Even though the now-redshirt-junior was originally slated to represent the United States in all four gymnastics events, she showed off her ability to compete through less-than-ideal circumstances and hit the one routine Team USA needed her to hit – a skill she frequently displays as a gymnast at UCLA.</p>
 
 <p>“I asked if I could do the other events and the (coach) was like ‘No, we really just need you to hit (an uneven) bar routine,’” she said. "‘That’s your one job.’”</p>
-
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-682x1024.jpg" class="img-vert"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 <p>While the women’s gymnastics team, headlined by household names Nastia Liukin and Shawn Johnson, went on to win a silver medal, Peszek later discovered she tore every ligament in her foot and was unable to compete after the preliminary round.</p>
 
-<p>And if the mental turmoil of being held from competition in Beijing wasn’t enough, Peszek was told to hide her despair for the sake of the other girls on the team.</p>
-
-<p>“I just had to switch gears really quick and do everything in my power to help (the team) compete well,” she said. “If I would've been distraught and a mess about it, that wouldn’t have really been helping.”</p>
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-682x1024.jpg" width="300"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
-<p>This wasn’t the first time Peszek masked her emotions for the sake of her Olympic ambitions. At the Olympic trials a month earlier, the pressure mounted to a level even higher than what Peszek said she later felt in Beijing.</p>
-
-<p>After struggling on a few earlier routines, Peszek was told that the last one of the day would be do-or-die – hit it and she would make the team, miss it and she was done.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
+<p>And if the mental turmoil of being held from competition in Beijing wasn’t enough, Peszek was told to hide her despair for the sake of the other girls on the team.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
     <blockquote style-"pq-style-2">
         <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics,”</p>
     </blockquote><div class="pq-attribution">
@@ -62,6 +57,12 @@ Template Name: Sports Gymnastics day1
             <cite></cite>
           </div>
 </div>
+
+<p>“I just had to switch gears really quick and do everything in my power to help (the team) compete well,” she said. “If I would've been distraught and a mess about it, that wouldn’t have really been helping.”</p>
+
+<p>This wasn’t the first time Peszek masked her emotions for the sake of her Olympic ambitions. At the Olympic trials a month earlier, the pressure mounted to a level even higher than what Peszek said she later felt in Beijing.</p>
+
+<p>After struggling on a few earlier routines, Peszek was told that the last one of the day would be do-or-die – hit it and she would make the team, miss it and she was done.</p>
 
 <p>Despite the heavy pressure, Peszek pulled off the routine to ultimately make Team USA.</p>
 
@@ -72,7 +73,7 @@ Template Name: Sports Gymnastics day1
 
 <p>“When you’re on the beam … if you splatter, there’s no regroup time – and you have to do it with a smile. You have to bounce right back up, let that mistake go, smile, focus and keep going," Scanlan said.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a2f93911-c786-4561-8188-74b8f5f4691e-682x1024.jpg" width="300"><span class="photocred-inline">Samantha and Bela Karolyi.
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/a2f93911-c786-4561-8188-74b8f5f4691e-682x1024.jpg" class="img-vert"><span class="photocred-inline">Samantha and Bela Karolyi.
 <br>
 (Courtesy of Samantha Peszek)</span></div>
 

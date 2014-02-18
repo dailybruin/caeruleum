@@ -266,9 +266,20 @@ article#sp-gym #page-credit a {
   color: #000;
   text-decoration: none;
 }
+.img-vert {
+  width: auto; 
+  max-height: 400px;}
 
-@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
-  body {
-    background: #fff;
-  }
+.img-hori {
+max-width:auto;
+height:250px;}
+
+@media screen and (max-width: 1200px) {
+.img-vert{
+  width: auto; 
+  max-height: 300px;}
+.img-hori {
+max-width:auto;
+height:200px;}
 }
+
