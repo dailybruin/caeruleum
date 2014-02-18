@@ -23,7 +23,14 @@ Template Name: Sports Gymnastics day1
 
 <h1>Samantha Peszek</h1>
 	<strong>BY SOMEBODY SPECIAL</strong><br><br><p>
-<p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter stepbackward. </p>
+<div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
+    <blockquote style-"pq-style-2">
+        <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet,”</p>
+    </blockquote><div class="pq-attribution">
+            <p class="pq-author"> – Samantha Peszek</p>
+            <cite></cite>
+          </div>
+</div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter stepbackward. </p>
 
 <p>For a short moment, she raised her arms, signaling the end of her routine on uneven bars and somberly forced her eyes toward the Olympic judges. </p>
 
@@ -80,20 +87,12 @@ Template Name: Sports Gymnastics day1
 </p>
 
 <p>And although she missed two of the season's first four meets and sat out the entire 2013 season with an Achilles tear, Peszek ranks first nationally on beam and third on uneven bars.</p>
-One flawless performance on uneven bars may have been enough to help the UCLA women’s gymnastics team overtake the Arizona State Sun Devils 196.925-194.950 in Pauley Pavilion on Saturday, but the meet was riddled with errors and shaky performances.</p>
 
 <p>But just as she has shown before, things that might rattle any athlete – like a serious injury or competing sparingly – generally do not affect Peszek's routines.</p>
 
 <p>After all, from a short-lived Olympic appearance to her UCLA gymnastics career, she's come through time and time again.</p>
 
-<div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
-    <blockquote style-"pq-style-2">
-        <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics,”</p>
-    </blockquote><div class="pq-attribution">
-            <p class="pq-author"> – Samantha Peszek</p>
-            <cite></cite>
-          </div>
-</div>
+
 </p>
 <ul class="pager">
   <li class="previous disabled">
