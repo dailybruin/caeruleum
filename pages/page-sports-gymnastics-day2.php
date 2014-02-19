@@ -21,7 +21,7 @@ Template Name: Sports Gymnastics day2
   </ul>
 </div>
 
-	<img src="http://dailybruin.com/images/2014/02/web.pinches.picA_.jpg" class="aligncenter">
+	<img src="http://dailybruin.com/images/2014/02/web.pinches.picA_-686x1024.jpg" class="aligncenter">
 	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><p style="text-align:center;">After competing in the London 2012 Summer Olympics, now-UCLA freshman Jennifer Pinches decided to move on from gymnastics.<p>
 
 <h2>Jennifer Pinches</h2>
