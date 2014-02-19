@@ -48,13 +48,13 @@ Template Name: Sports Gymnastics day2
 
 <p>The British native’s retirement got its first real test on a family ski trip in Austria about a year ago.</p>
 
-<p>Around a half a year from the last day Pinches had competed – or even trained – for gymnastics, she received an email from UCLA coach Valorie Kondos Field. </p>
+<p>Around half a year from the last day Pinches had competed – or even trained – for gymnastics, she received an email from UCLA coach Valorie Kondos Field. </p>
 
 <p>The email was simple enough: It basically said, "Come compete for me."</p>
 
 <p>“We needed a vaulter, so I sent out my feelers,” Kondos Field said.</p>
 
-<p>After the Olympics, Pinches decided to leaveher sport on a high note – a high that was elevatedafter scoring personal bests on vault and floor in the Olympic team finals, what she thought would be her last competition.</p>
+<p>After the Olympics, Pinches decided to leave her sport on a high note – a high that was elevated after scoring personal bests on vault and floor in the Olympic team finals, what she thought would be her last competition.</p>
 
 <p>“I thought, ‘It couldn't really get much better than that,’” she said. "I didn’t think any competition could possibly match the Olympic games in your home country. ... I’d achieved my goal, and I was ready for new challenges.”</p>
 
