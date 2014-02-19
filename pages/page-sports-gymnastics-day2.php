@@ -54,7 +54,7 @@ Template Name: Sports Gymnastics day2
 
 <p>“We needed a vaulter, so I sent out my feelers,” Kondos Field said.</p>
 
-<p>After the Olympics, Pinches decided to leaveher sport on a high note – a high that was elevatedafter scoring personal bests on vault and floor in the Olympic teamfinals,what she thought would be her last competition.</p>
+<p>After the Olympics, Pinches decided to leaveher sport on a high note – a high that was elevatedafter scoring personal bests on vault and floor in the Olympic team finals, what she thought would be her last competition.</p>
 
 <p>“I thought, ‘It couldn't really get much better than that,’” she said. "I didn’t think any competition could possibly match the Olympic games in your home country. ... I’d achieved my goal, and I was ready for new challenges.”</p>
 
@@ -72,7 +72,7 @@ Template Name: Sports Gymnastics day2
 
 <p>“The last thing that I was expecting was to get an email about a genuine possibility of doing gymnastics again after I’d been off for so long,” Pinches said. “I was just like, ‘Why not? I've had a break, L.A. sounds fun, I probably could still do it, so let’s give it a go.'”</p>
 
-<p>But coming to UCLA meant adding another sacrifice – being separated from her family and longtime boyfriend by more than just a train ride– to an already-long list.</p>
+<p>But coming to UCLA meant adding another sacrifice – being separated from her family and longtime boyfriend by more than just a train ride – to an already-long list.</p>
 
 <p>However, being away from her loved ones wasn’t new to Pinches; in the years leading up to the Olympics, she was frequently away from home for international competitions. Even when she wasn’t abroad, what she was able to fit into her schedule was heavily restricted because of training.</p>
 
