@@ -10,15 +10,13 @@ Template Name: Sports Gymnastics day1
 <!--css -->
 <article id="sp-gym">
   <h1>Gymnastics:<br> The Competitive Demands</h1>
-
-  <p style="text-align:center;">With the Winter Olympics in full swing, the Daily Bruin takes a look at the experiences of four former Summer Olympians and current members of the UCLA gymnastics team.</p>
   <div class="pagination pagination-centered">
   <ul>
-    <li class="active"><a>Samantha Peszek</a></li>
-    <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Jennifer Pinches</a></li>
-    <li class="disabled"><a>Jordyn Wieber</a></li>
+    <li class="active"><a href="">Samantha Peszek</a></li>
+    <li class="active"><a href="">Jennifer Pinches</a></li>
+    <li class="active"><a href="">Jordyn Wieber</a></li>
 
-    <li class="disabled"><a>Danusia Francis</a></li>
+    <li class="disabled"><a href="">Danusia Francis</a></li>
   </ul>
 </div>
 
@@ -31,14 +29,14 @@ Template Name: Sports Gymnastics day1
         <p>“The cortisone shot kicked in by this time and you’re just thinking about landing on your feet.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
-            <cite>On her Olympic uneven bars routine</cite>
+            <cite></cite>
           </div>
 
-</div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter step backward. </p>
+</div><p>As her feet pressed into the mat below her, Samantha Peszek took just a small stutter stepbackward. </p>
 
 <p>For a short moment, she raised her arms, signaling the end of her routine on uneven bars and somberly forced her eyes toward the Olympic judges. </p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-1024x649.jpg" class="img-hori"><span class="photocred-inline">Katie Meyers / Daily Bruin senior staff</span></div>
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picB_-1024x649.jpg" class="img-hori"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 
 <p>Then her eyes flicked down, her shoulders slumped and she quickly stepped away from the pad under her feet.</p>
 
@@ -50,7 +48,7 @@ Template Name: Sports Gymnastics day1
 <p>Even though the now-redshirt-junior was originally slated to represent the United States in all four gymnastics events, she showed off her ability to compete through less-than-ideal circumstances and hit the one routine Team USA needed her to hit – a skill she frequently displays as a gymnast at UCLA.</p>
 
 <p>“I asked if I could do the other events and the (coach) was like ‘No, we really just need you to hit (an uneven) bar routine,’” she said. "‘That’s your one job.’”</p>
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-682x1024.jpg" class="img-vert"><span class="photocred-inline">Katie Meyers / Daily Bruin senior staff</span></div>
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.peszek.picC_-682x1024.jpg" class="img-vert"><span class="photocred-inline">Katie Meyers / Daily Bruin</span></div>
 <p>While the women’s gymnastics team, headlined by household names Nastia Liukin and Shawn Johnson, went on to win a silver medal, Peszek later discovered she tore every ligament in her foot and was unable to compete after the preliminary round.</p>
 
 <p>And if the mental turmoil of being held from competition in Beijing wasn’t enough, Peszek was told to hide her despair for the sake of the other girls on the team.</p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
@@ -58,7 +56,7 @@ Template Name: Sports Gymnastics day1
         <p>“It was the most nerve-wracking thing ever, way more nerve-wracking than the actual Olympics.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Samantha Peszek</p>
-            <cite>On her Olympic trials performance</cite>
+            <cite></cite>
           </div>
 </div>
 
@@ -89,7 +87,7 @@ Template Name: Sports Gymnastics day1
         <p>“I think it’s 99 percent (mental). We’ve all been doing these skills for so long that when it’s time to compete, it’s purely just mental.”</p>
     </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Sydney Sawa</p>
-            <cite>UCLA senior gymnast</cite>
+            <cite>UCLA Senior Gymnast</cite>
           </div>
 </div>
 
@@ -105,10 +103,10 @@ Template Name: Sports Gymnastics day1
 
 <ul class="pager">
   <li class="previous disabled">
-    <a>&larr; Previous</a>
+    <a href="">&larr; Previous</a>
   </li>
-  <li class="next">
-    <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Next &rarr;</a>
+  <li class="next disabled">
+    <a href="">Next &rarr;</a>
   </li>
 </ul>
 </p>
