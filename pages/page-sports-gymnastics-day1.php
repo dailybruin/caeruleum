@@ -16,7 +16,7 @@ Template Name: Sports Gymnastics day1
   <ul>
     <li class="active"><a>Samantha Peszek</a></li>
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Jennifer Pinches</a></li>
-    <li class="disabled"><a>Jordyn Wieber</a></li>
+    <li><a href="http://dailybruin.com/features/jordyn-wieber-brings-strength-to-ucla-gymnastics-team/">Jordyn Wieber</a></li>
 
     <li class="disabled"><a>Danusia Francis</a></li>
   </ul>
