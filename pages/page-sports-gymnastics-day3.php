@@ -94,11 +94,11 @@ Template Name: Sports Gymnastics day3
 
 <p>“She brings a strength, an integrity, a humility, a work ethic. I think strength is a real good word to use when describing Jordyn because she is unwavering in her strength in everything she does,” Kondos Field said. “She is a remarkable 18-year-old.”</p>
 
-<p>Redshirt junior Samantha Peszek – who is about four years Wieber's senior – was her unofficial mentor at training camps in the Midwestwhen they were younger. Peszeksaid that Wieber’s experience as an Olympian offers another resource for gymnasts to use.</p>
+<p>Redshirt junior Samantha Peszek – who is about four years Wieber's senior – was her unofficial mentor at training camps in the Midwest when they were younger. Peszek said that Wieber’s experience as an Olympian offers another resource for gymnasts to use.</p>
 
-<p>“Having the type of experiences that she’s had and the type of journey that she’s gone through in gymnastics herself (and) having that wisdom around the gym is just another brain to pick,” said Peszek, a silver medalist for the United States at the2008 Summer Olympics in Beijing.</p>
+<p>“Having the type of experiences that she’s had and the type of journey that she’s gone through in gymnastics herself (and) having that wisdom around the gym is just another brain to pick,” said Peszek, a silver medalist for the United States at the 2008 Summer Olympics in Beijing.</p>
 
-<p>Kondos Fieldsaid Wieber is the only gold medalist who has served as a team manager. She added that other Olympians who have taken up the role of team manager have not been as involved with the team as Wieber has.</p>
+<p>Kondos Field said Wieber is the only gold medalist who has served as a team manager. She added that other Olympians who have taken up the role of team manager have not been as involved with the team as Wieber has.</p>
 
 <div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.wieber.picC_.jpg" class="img-vert">The experience Wieber's gained at the Olympics<br> has allowed her to serve as an invaluable source <br> of expertise and advice for team members.<br><span class="photocred-inline">(Courtesy of Jordyn Wieber)</span></div>
 
@@ -121,7 +121,7 @@ Template Name: Sports Gymnastics day3
 
 <p>Though Wieber has been exposed to the world of elite gymnastics, she has not let her experiences influence her sense of self. Kondos Field said she has embraced the team and does not have a diva attitude that might be expected from an Olympian.</p>
 
-<p>“She is so excited to be a part of this, it’s surprising to me. She got teary-eyed the other day talkingto me about it in the office, just about how much it means to her being a part of this team,” KondosField said. “She’s the antithesis of what you would think a person who’s won a gold medal … the ego they would have. She doesn’t have it. She is one of the most incredible people I have ever personally met.”</p>
+<p>“She is so excited to be a part of this, it’s surprising to me. She got teary-eyed the other day talking to me about it in the office, just about how much it means to her being a part of this team,” Kondos Field said. “She’s the antithesis of what you would think a person who’s won a gold medal … the ego they would have. She doesn’t have it. She is one of the most incredible people I have ever personally met.”</p>
 
 
 <ul class="pager">
