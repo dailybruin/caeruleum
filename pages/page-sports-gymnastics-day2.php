@@ -15,7 +15,11 @@ Template Name: Sports Gymnastics day2
   <ul>
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-samantha-peszek/">Samantha Peszek</a></li>
     <li class="active"><a>Jennifer Pinches</a></li>
+<<<<<<< HEAD
     <li class="active"><a>Jordyn Wieber</a></li>
+=======
+    <li><a href="http://dailybruin.com/features/jordyn-wieber-brings-strength-to-ucla-gymnastics-team/">Jordyn Wieber</a></li>
+>>>>>>> fa8aace3de6b463cf5ced134b47c0475fbecb339
 
     <li class="disabled"><a>Danusia Francis</a></li>
   </ul>
@@ -117,8 +121,8 @@ Template Name: Sports Gymnastics day2
   <li class="previous">
     <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-samantha-peszek/">&larr; Previous</a>
   </li>
-  <li class="next disabled">
-    <a>Next &rarr;</a>
+  <li class="next">
+    <a href="http://dailybruin.com/features/jordyn-wieber-brings-strength-to-ucla-gymnastics-team/">Next &rarr;</a>
   </li>
 </ul>
 </p>
