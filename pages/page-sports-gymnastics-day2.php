@@ -117,7 +117,7 @@ Template Name: Sports Gymnastics day2
   <li class="previous">
     <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-samantha-peszek/">&larr; Previous</a>
   </li>
-  <li class="next disabled">
+  <li class="next">
     <a href="http://dailybruin.com/features/jordyn-wieber-brings-strength-to-ucla-gymnastics-team/">Next &rarr;</a>
   </li>
 </ul>
