@@ -38,7 +38,7 @@ Template Name: Sports Gymnastics day3
 
 <p>Poised as a favorite for the all-around competition, Wieber’s chances of moving on vanished after she did not score high enough in the qualification round, falling behind two fellow American gymnasts who claimed spots in the event, the maximum allowed for any single country.</p>
 
-<p>Though she was not able to participate in the all-around competition, Wieber still played an integral role inthe team competition and contributed to a first-place finish for the United States. </p>
+<p>Though she was not able to participate in the all-around competition, Wieber still played an integral role in the team competition and contributed to a first-place finish for the United States. </p>
 
 <p>“It was the chance I finally got to redeem myself for not making all-around,” Wieber said. “I just kind of changed my mindset and I went in and I wanted to do whatever I could to earn that team gold medal because I knew it was my one shot.”</p>
 
@@ -90,7 +90,7 @@ Template Name: Sports Gymnastics day3
 
 <p>“Seeing her wake up extra early to come in and train was really inspiring,” DeJesus said. “She just kept working out no matter who was there, if she was by herself or not.”</p>
 
-<p>Wieber’s journey from becoming a world-class athlete to becoming a rallying figure for the UCLA gymnastics teamis full of accolades and experiences most people never have, and never will, experience.</p>
+<p>Wieber’s journey from becoming a world-class athlete to becoming a rallying figure for the UCLA gymnastics team is full of accolades and experiences most people never have, and never will, experience.</p>
 
 <p>“She brings a strength, an integrity, a humility, a work ethic. I think strength is a real good word to use when describing Jordyn because she is unwavering in her strength in everything she does,” Kondos Field said. “She is a remarkable 18-year-old.”</p>
 
