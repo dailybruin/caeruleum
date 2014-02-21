@@ -47,7 +47,6 @@ Template Name: Sports Gymnastics day3
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
-           <p>"I recruited (Jordyn) hard. She called me ... (and) she said, ‘My dream has been to come to UCLA and be a part of the team. Could I still do that if I went professional?’ I said, ‘Jordyn, we would want you any way. ... You know we would figure out a place for you.'"</p>
            <p>"(Jordyn) called me ... (and) she said, ‘My dream has been to come to UCLA and be a part of the team. Could I still do that if I went professional?’ I said, ‘Jordyn, we would want you any way. ... You know we would figure out a place for you.'"</p>
        </blockquote><div class="pq-attribution">
             <p class="pq-author"> – Coach Valorie Kondos Field,</p>

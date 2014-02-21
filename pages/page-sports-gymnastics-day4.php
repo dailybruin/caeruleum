@@ -47,11 +47,10 @@ Template Name: Sports Gymnastics day3
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
-           <p>"I recruited (Jordyn) hard. She called me ... (and) she said, ‘My dream has been to come to UCLA and be a part of the team. Could I still do that if I went professional?’ I said, ‘Jordyn, we would want you any way. ... You know we would figure out a place for you.'"</p>
-           <p>"(Jordyn) called me ... (and) she said, ‘My dream has been to come to UCLA and be a part of the team. Could I still do that if I went professional?’ I said, ‘Jordyn, we would want you any way. ... You know we would figure out a place for you.'"</p>
+           <p>"I really, really missed her – missed her so much. She’s the third out of four children. Her younger brother idolizes her, even now, and he missed her so much."</p>
        </blockquote><div class="pq-attribution">
-            <p class="pq-author"> – Coach Valorie Kondos Field,</p>
-            <cite>on her commitment to bringing<br>Jordyn Wieber to UCLA</cite>
+            <p class="pq-author"> – Wanda Tebby, Danusia Francis’ mom,</p>
+            <cite>about her daughter's time <br>in boarding school</cite>
           </div>
 </div>
 
@@ -88,10 +87,10 @@ Template Name: Sports Gymnastics day3
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
-           <p>“(Jordyn) just has a very calm presence and it’s very, it’s very confident. … She has a lot of enthusiasm and a lot of passion for this team only being a freshman.”</p>
+           <p>“I couldn't have done any of this without her. … (She’s) been there every step of the way. … (She’s) the most supportive parent you could ask for.”</p>
        </blockquote><div class="pq-attribution">
-            <p class="pq-author"> – Samantha Peszek,</p>
-            <cite>on some of the personal characteristics Jordyn Wieber has brought to the team</cite>
+            <p class="pq-author"> – Danusia Francis,</p>
+            <cite>on her mother, Wanda Tebby</cite>
           </div>
 </div>
 
@@ -113,10 +112,10 @@ Template Name: Sports Gymnastics day3
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
-           <p>“I really do believe she’s brought in a new dynamic. It’s way stronger and ... it’s a different vibe. I can’t really explain it, but I really like it. It’s great.”</p>
+           <p>“I’m really proud of her. … She’s so determined. I think it’s like the chicken and egg, would she have been as good if she wasn't as determined, or has gymnastics made her more determined?”</p>
        </blockquote><div class="pq-attribution">
-            <p class="pq-author"> – Sophomore Sophina DeJesus,</p>
-            <cite>on the atmosphere change Jordyn Wieber has inspired</cite>
+            <p class="pq-author"> – Wandy Tebby,</p>
+            <cite>on her daughter, Danusia Francis</cite>
           </div>
 </div>
 
