@@ -10,6 +10,7 @@ Template Name: Sports Gymnastics day1
 <!--css -->
 <article id="sp-gym">
   <h1>Gymnastics:<br> The Competitive Demands</h1>
+    <p style="text-align:center;">With the Winter Olympics in full swing, the Daily Bruin takes a look at the experiences of four former Summer Olympians and current members of the UCLA gymnastics team.</p>
   <div class="pagination pagination-centered">
   <ul>
     <li class="active"><a>Samantha Peszek</a></li>
