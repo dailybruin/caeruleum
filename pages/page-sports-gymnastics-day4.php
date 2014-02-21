@@ -29,9 +29,9 @@ Template Name: Sports Gymnastics day4
 
 <p>Whether she's completing an NCAA-first aerial or shooting the audience a broad grin, coach Valorie Kondos Field said Francis is always doing something to draw cheers.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picB_1.jpg" class="img-vert">Danusia Francis left home at<br> age 9 to attend boarding<br> school and continue her <br> competitive gymnastics <br>career.<br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
-
 <p>But amid all the antics, the sophomore's most frequent attention-grabber is one that even the most dedicated UCLA gymnastics fan may have missed, something an outsider would likely find amateurish.</p>
+
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picB_1.jpg" class="img-vert">Danusia Francis left home at<br> age 9 to attend boarding<br> school and continue her <br> competitive gymnastics <br>career.<br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
 
 <p>When Francis spots a camera trained on her, she gives a shout-out to the one pair of eyes she knows is invariably watching her from back home in England.</p>
 
@@ -62,11 +62,11 @@ Template Name: Sports Gymnastics day4
 
 <p>Though Francis was quick to give gymnastics priority over everything else in her life, she said her decision to leave home still came with acute homesickness, particularly in the early years. Tebby recalls receiving phone calls from her daughter regularly during that period.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picC_1.jpg" class="img-vert">Danusia Francis has relied on <br> her mother for support <br>throughout her career. <br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
-
 <p>“She used to ring me every evening, and she just sounded so tiny and young – like a little baby voice on the end of the phone,” Tebby said.</p>
 
 <p>“She was doing what she wanted, she got into a really good school and, you know, it was such a good opportunity. You couldn’t not let her do it really.”</p>
+
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picC_1.jpg" class="img-vert">Danusia Francis has relied on <br> her mother for support <br>throughout her career. <br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
 
 <p>And Francis didn't have to completely sacrifice time with her mother to attend boarding school. Tebby, a single mother of four, said she made the 90-minute drive to see her daughter almost every weekend.</p>
 
@@ -85,8 +85,6 @@ Template Name: Sports Gymnastics day4
 
 <p>When Francis was 16, she was a member of the British World Championships team, fighting her way through a grueling six-week training camp to earn a spot on the team's competing lineup. But when food poisoning unexpectedly sapped her fitness and dropped her weight, Francis said she knew she hadn’t done enough to hold onto the spot.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picD_.jpg" class="img-vert">Danusia Francis, shown here in <br> the 2011 World Championships,<br> was a reserve on the 2012 <br>Great Britian Olympic team.<br><span class="photocred-inline">(Courtesy of Melissa Perenson)</span></div>
-
 <p>Instead of bringing her to the side and quietly informing her of the letdown, the coaches held a vote in front of the entire championship team; something Francis said just exacerbated the pain of being moved to a reserve slot.</p>
 
 <p>But through everything, her mother was the voice of reason, reminding Francis of the then-upcoming 2012 London Olympics and to keep her head in the game – even though an attempt to make the Olympics would certainly result in Francis spending more time away.</p>
@@ -94,6 +92,10 @@ Template Name: Sports Gymnastics day4
 <p>“She’s always the one saying, ‘You can’t give this up now,’ putting it into perspective for me," Francis said.</p>
 
 <p>Francis didn't give up and she ended up securing a reserve spot on the British Olympic team. But after that competition was over, it seemed her gymnastics career might have only a few months left, until her mother once again stepped in.</p>
+
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picD_.jpg" class="img-vert">Danusia Francis, shown here in <br> the 2011 World Championships,<br> was a reserve on the 2012 <br>Great Britian Olympic team.<br><span class="photocred-inline">(Courtesy of Melissa Perenson)</span></div>
+
+<p>Although Francis said she had never seen competing in the NCAA all that appealing, her mother was working behind the scenes to keep her passionate daughter doing what she loved – even though it meant sending Francis a lot farther away than an hour-and-a-half drive.</p>
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
@@ -103,9 +105,6 @@ Template Name: Sports Gymnastics day4
             <cite>on her daughter, Danusia Francis</cite>
           </div>
 </div>
-
-<p>Although Francis said she had never seen competing in the NCAA all that appealing, her mother was working behind the scenes to keep her passionate daughter doing what she loved – even though it meant sending Francis a lot farther away than an hour-and-a-half drive.</p>
-
 
 <p>While she first used an online gymnastics board to procure contact information for the University of Florida's gymnastics coach – the only school other than UCLA that Francis seriously considered – once Francis became interested in competing in the United States, Tebby let her daughter choose whichever American college she wanted to attend.</p>
 
