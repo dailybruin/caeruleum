@@ -37,6 +37,14 @@ Template Name: Sports Gymnastics day4
 
 <p>"Hi Mom."</p>
 
+<p>Throughout Francis' gymnastics career, which began when she was 7 years old and has included her being a member of the British national team, a reserve member of Great Britain's 2012 Olympic team and finally, a Bruin, she has always had at least one spectator.</p>
+
+<p>Wanda Tebby, Francis' mother, stays up as late as 4 a.m. to catch a live stream of her daughter's meets. She doesn't miss a single one – even when she needs to work in the morning.</p>
+
+<p>“She just likes to know that I’m watching or listening, that there’s still that bond,” Tebby said.</p>
+
+<p>And Tebby is a spectator who doesn't "boo" or get upset when Francis isn't at her best – as long as Francis is happy, Tebby is happy.</p>
+
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
            <p>"I really, really missed her – missed her so much. She’s the third out of four children. Her younger brother idolizes her, even now, and he missed her so much."</p>
@@ -46,25 +54,19 @@ Template Name: Sports Gymnastics day4
           </div>
 </div>
 
-<p>Throughout Francis' gymnastics career, which began when she was 7 years old and has included her being a member of the British national team, a reserve member of Great Britain's 2012 Olympic team and finally, a Bruin, she has always had at least one spectator.</p>
-
-<p>Wanda Tebby, Francis' mother, stays up as late as 4 a.m. to catch a live stream of her daughter's meets. She doesn't miss a single one – even when she needs to work in the morning.</p>
-
-<p>“She just likes to know that I’m watching or listening, that there’s still that bond,” Tebby said.</p>
-
-<p>And Tebby is a spectator who doesn't "boo" or get upset when Francis isn't at her best – as long as Francis is happy, Tebby is happy.</p>
-
 <p>However, keeping her daughter's happiness in mind began creating difficult situations for the pair when Francis was 9 years old.</p>
 
 <p>When the aspiring gymnast's local gymnasium was being demolished, Francis faced two options: accept a boarding school’s scholarship and move an hour and a half away from her mom, or give up competitive gymnastics.</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picC_1.jpg" class="img-vert">Danusia Francis has relied on <br> her mother for support <br>throughout her career. <br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
-
 <p>“She just looked at me as if I was mad,” Tebby said. “So I said, ‘We’ll go and have a look.’ … I didn't even get to take her home (from the school). I came back that weekend with her stuff (and) she just stayed there.”</p>
+
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picC_1.jpg" class="img-vert">Danusia Francis has relied on <br> her mother for support <br>throughout her career. <br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
 
 <p>Though Francis was quick to give gymnastics priority over everything else in her life, she said her decision to leave home still came with acute homesickness, particularly in the early years. Tebby recalls receiving phone calls from her daughter regularly during that period.</p>
 
 <p>“She used to ring me every evening, and she just sounded so tiny and young – like a little baby voice on the end of the phone,” Tebby said.</p>
+
+<p>“She was doing what she wanted, she got into a really good school and, you know, it was such a good opportunity. You couldn’t not let her do it really.”</p>
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
@@ -74,8 +76,6 @@ Template Name: Sports Gymnastics day4
             <cite>on her mother, Wanda Tebby</cite>
           </div>
 </div>
-
-<p>“She was doing what she wanted, she got into a really good school and, you know, it was such a good opportunity. You couldn’t not let her do it really.”</p>
 
 <p>And Francis didn't have to completely sacrifice time with her mother to attend boarding school. Tebby, a single mother of four, said she made the 90-minute drive to see her daughter almost every weekend.</p>
 
