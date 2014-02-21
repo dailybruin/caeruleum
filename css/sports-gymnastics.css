@@ -281,6 +281,11 @@ article#sp-gym #page-credit a {
 max-width:auto;
 height:250px;}
 
+.gym-sm {
+    float: right;
+    margin-top: 0.5em;
+}
+
 @media screen and (max-width: 1200px) {
 .img-vert{
   width: auto; 
