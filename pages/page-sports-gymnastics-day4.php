@@ -124,7 +124,7 @@ Template Name: Sports Gymnastics day4
 
 <ul class="pager">
   <li class="previous">
-    <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">&larr; Previous</a>
+    <a href="http://dailybruin.com/features/jordyn-wieber-brings-strength-to-ucla-gymnastics-team/">&larr; Previous</a>
   </li>
   <li class="next disabled">
     <a>Next &rarr;</a>

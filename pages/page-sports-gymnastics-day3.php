@@ -13,10 +13,8 @@ Template Name: Sports Gymnastics day3
   <div class="pagination pagination-centered">
   <ul>
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-samantha-peszek/">Samantha Peszek</a></li>
-    <li class="active"><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Jennifer Pinches</a></li>
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Jennifer Pinches</a></li>
     <li class="active"><a>Jordyn Wieber</a></li>
-
     <li class="disabled"><a>Danusia Francis</a></li>
   </ul>
 </div>
