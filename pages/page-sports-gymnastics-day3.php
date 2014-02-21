@@ -77,7 +77,7 @@ Template Name: Sports Gymnastics day3
 
 <p>To the members of the UCLA gymnastics team, Wieber is an inspiration.</p>
 
-<p>Sophomore Sophina DeJesuscited Wieber’s work ethic as a motivating factor in her own training.</p>
+<p>Sophomore Sophina DeJesus cited Wieber’s work ethic as a motivating factor in her own training.</p>
 <p>Sophomore Sophina DeJesus cited Wieber’s work ethic as a motivating factor in her own training.</p>
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
