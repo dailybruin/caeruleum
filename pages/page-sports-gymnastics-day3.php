@@ -15,7 +15,7 @@ Template Name: Sports Gymnastics day3
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-samantha-peszek/">Samantha Peszek</a></li>
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Jennifer Pinches</a></li>
     <li class="active"><a>Jordyn Wieber</a></li>
-    <li class="disabled"><a>Danusia Francis</a></li>
+    <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-danusia-francis/">Danusia Francis</a></li>
   </ul>
 </div>
 
@@ -135,8 +135,8 @@ Template Name: Sports Gymnastics day3
   <li class="previous">
     <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">&larr; Previous</a>
   </li>
-  <li class="next disabled">
-    <a>Next &rarr;</a>
+  <li class="next">
+    <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-danusia-francis/">Next &rarr;</a>
   </li>
 </ul>
 </p>

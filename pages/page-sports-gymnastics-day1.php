@@ -15,7 +15,7 @@ Template Name: Sports Gymnastics day1
     <li class="active"><a>Samantha Peszek</a></li>
     <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Jennifer Pinches</a></li>
     <li><a href="http://dailybruin.com/features/jordyn-wieber-brings-strength-to-ucla-gymnastics-team/">Jordyn Wieber</a></li>
-    <li class="disabled"><a href="">Danusia Francis</a></li>
+    <li><a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-danusia-francis/">Danusia Francis</a></li>
   </ul>
 </div>
 
@@ -110,8 +110,8 @@ Template Name: Sports Gymnastics day1
   <li class="previous disabled">
     <a href="">&larr; Previous</a>
   </li>
-  <li class="next disabled">
-    <a href="">Next &rarr;</a>
+  <li class="next">
+    <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">Next &rarr;</a>
   </li>
 </ul>
 </p>
