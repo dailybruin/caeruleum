@@ -19,8 +19,8 @@ Template Name: Sports Gymnastics day1
   </ul>
 </div>
 
-	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg">
-	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><p style="text-align:center;">Samantha Peszek has competed at the highest levels of her sport and is currently a top ranked collegiate gymnast. Along the way, she has relied on her mental focus to overcome the pressures of her sport.<p>
+	<img src="http://dailybruin.com/images/2014/02/web.peszek.picA_.jpg" class="aligncenter">
+	<span class="photocred">Katie Meyers / Daily Bruin senior staff</span><br><p style="text-align:center;">Samantha Peszek has competed at the highest levels of her sport and is currently a top ranked collegiate gymnast. The redshirt junior has battled numerous injuries throughout her career, from suffering a season-ending Achilles tear a year ago to tearing every ligament in her foot in warm-ups at the 2008 Beijing Olympics. Through it all, Peszek has relied on her mental focus to overcome the pressures of her sport.<p>
 
 <h2>Samantha Peszek</h2>
 	<p><strong>BY ZACHARY LEMOS</strong></p><div class="pq-wrap-2 pq-style-2"><div class="pq-thumb"></div>
