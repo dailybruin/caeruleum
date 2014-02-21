@@ -124,6 +124,12 @@ Template Name: Sports Gymnastics day3
 <p>“She is so excited to be a part of this, it’s surprising to me. She got teary-eyed the other day talking to me about it in the office, just about how much it means to her being a part of this team,” Kondos Field said. “She’s the antithesis of what you would think a person who’s won a gold medal … the ego they would have. She doesn’t have it. She is one of the most incredible people I have ever personally met.”</p>
 
 
+<div class="sm gym-sm">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
+</div>
+
 <ul class="pager">
   <li class="previous">
     <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-jennifer-pinches/">&larr; Previous</a>

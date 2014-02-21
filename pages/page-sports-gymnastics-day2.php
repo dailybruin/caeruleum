@@ -113,6 +113,12 @@ Template Name: Sports Gymnastics day2
 <p>And though the once-Olympian has returned to making sacrifices for her sport, she has also rediscovered her skill and love for gymnastics, something she never thought would happen after her Olympic finale.  </p>
 
 
+<div class="sm gym-sm">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
+</div>
+
 <ul class="pager">
   <li class="previous">
     <a href="http://dailybruin.com/features/gymnastics-the-competitive-demands-samantha-peszek/">&larr; Previous</a>
