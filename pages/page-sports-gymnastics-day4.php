@@ -60,13 +60,17 @@ Template Name: Sports Gymnastics day4
 
 <p>“She just looked at me as if I was mad,” Tebby said. “So I said, ‘We’ll go and have a look.’ … I didn't even get to take her home (from the school). I came back that weekend with her stuff (and) she just stayed there.”</p>
 
-<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picC_1.jpg" class="img-vert">Danusia Francis has relied on <br> her mother for support <br>throughout her career. <br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
-
 <p>Though Francis was quick to give gymnastics priority over everything else in her life, she said her decision to leave home still came with acute homesickness, particularly in the early years. Tebby recalls receiving phone calls from her daughter regularly during that period.</p>
+
+<div class="thumbnail with-caption-left"><img src="http://dailybruin.com/images/2014/02/web.francis.picC_1.jpg" class="img-vert">Danusia Francis has relied on <br> her mother for support <br>throughout her career. <br><span class="photocred-inline">Erin Ng/Daily Bruin senior staff</span></div>
 
 <p>“She used to ring me every evening, and she just sounded so tiny and young – like a little baby voice on the end of the phone,” Tebby said.</p>
 
 <p>“She was doing what she wanted, she got into a really good school and, you know, it was such a good opportunity. You couldn’t not let her do it really.”</p>
+
+<p>And Francis didn't have to completely sacrifice time with her mother to attend boarding school. Tebby, a single mother of four, said she made the 90-minute drive to see her daughter almost every weekend.</p>
+
+<p>Yet as Francis’ career blossomed and she began competing internationally and earned a spot on the British national team, Tebby got to see her daughter less and less, and she could only afford to see Francis compete as long as the meet was in England.</p>
 
 <div class="pq-wrap-1 pq-style-1"><div class="pq-thumb"></div>
        <blockquote style-"pq-style-1">
@@ -76,10 +80,6 @@ Template Name: Sports Gymnastics day4
             <cite>on her mother, Wanda Tebby</cite>
           </div>
 </div>
-
-<p>And Francis didn't have to completely sacrifice time with her mother to attend boarding school. Tebby, a single mother of four, said she made the 90-minute drive to see her daughter almost every weekend.</p>
-
-<p>Yet as Francis’ career blossomed and she began competing internationally and earned a spot on the British national team, Tebby got to see her daughter less and less, and she could only afford to see Francis compete as long as the meet was in England.</p>
 
 <p>But even as the physical distance between them grew greater and greater, Francis was never tempted by her mother to leave the sport she loved so much, even after a massive letdown.</p>
 
