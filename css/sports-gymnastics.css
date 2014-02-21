@@ -283,7 +283,7 @@ height:250px;}
 
 .gym-sm {
     float: right;
-    margin-top: 0.5em;
+    margin: 2.5em 0;
 }
 
 @media screen and (max-width: 1200px) {

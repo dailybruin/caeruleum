@@ -103,7 +103,7 @@ Template Name: Sports Gymnastics day1
 <p>After all, from a short-lived Olympic appearance to her UCLA gymnastics career, she's come through time and time again.</p>
 
 
-<div class="gym-sm">
+<div class="sm gym-sm">
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <div class="fb-like" data-send="true" data-width="325" data-show-faces="true" data-action="recommend" data-font="lucida grande"></div>
