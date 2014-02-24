@@ -799,6 +799,17 @@ figcaption{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
 }
 
+.sidebar ul.misc {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul.misc > li {
+    padding: 0.1em 0;
+}
+
 .wpp-list {
     list-style: none;
     margin: 0;
