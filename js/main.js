@@ -222,7 +222,7 @@ $(document).ready(function() {
 		}
 		
 		// Phone (Horizontal & Vertical) 
-		if(window.matchMedia("(min-width: 767px)").matches) {
+		if(window.matchMedia("(max-width: 767px)").matches) {
 			// ad code
 			$('#banner-bottom').html('');
 			

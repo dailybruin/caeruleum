@@ -5,23 +5,6 @@
 		<div class="span12 hidden-mobile" id="banner-bottom"
 			><?php // make sure there is no whitespace here for the ad to display correctly ?></div><!-- end div#banner-bottom -->
 	</div>
-	<div class="row hidden-phone" id="paidadvertising">
-		<div class="span12">
-			<h4>Paid Advertising</h4>
-			<ul class="paidadvertising-list">
-				<?php wp_list_bookmarks(array(
-					'title_li'			=>	__(''),
-					'title_before'		=>	'',
-					'title_after'		=>	'',
-					'category_before'	=>	'',
-					'category_after'	=> 	'',
-					'categorize'		=>	0,
-					'before'			=>	'<li class="span3">'
-				)); ?>
-				<br style="clear:both" />
-			</ul>
-		</div><!-- end div.span12 -->
-	</div><!-- end div#paidadvertising -->
 	</div><!-- end div.container -->
 
 					<a href="#" id="backtotop">Top &uarr;</a>
