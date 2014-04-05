@@ -98,6 +98,7 @@ Template Name: Dance Marathon 2014
             color: white;
             background-color: rgba(0,0,0, 0.6);
             padding: 0.4em 0.5em;
+            margin: 0;
             display: inline-block;
         }
 
