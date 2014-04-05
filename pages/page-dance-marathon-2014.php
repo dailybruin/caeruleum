@@ -19,7 +19,7 @@ Template Name: Dance Marathon 2014
     #dm-timeline li {
         display: inline-block;
         opacity: 0.5;
-        width: 2.88%;
+        width: 2.84%;
         height: inherit;
         box-shadow: 1px 0 0 0 white inset;
         text-align: center;
@@ -39,7 +39,7 @@ Template Name: Dance Marathon 2014
         }
 
     #dm-timeline .descriptor {
-        width: 25%;
+        width: 26%;
         float: left;
     }
 
