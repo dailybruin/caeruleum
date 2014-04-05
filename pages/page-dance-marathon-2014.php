@@ -5,9 +5,37 @@ Template Name: Dance Marathon 2014
 
 <style type="text/css">
 
+#dm-timeline {
+    top: 30px; /* STOPGAP: change to zero for prod */
+    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    display: none;
+}
+
+    #dm-timeline .dm-hour {
+        display: inline-block;
+        opacity: 0.5;
+        width: 3.84%;
+        height: inherit;
+        box-shadow: 1px 0 0 0 white inset;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 1.7;
+    }
+
+        #dm-timeline .dm-hour:hover {
+            opacity: 0.75;
+            background-color: rgba(255,255,255, 0.3);
+        }
+
 #dm-banner {
     height: 300px;
-    background: url('http://i.imgur.com/wk1rnn7.jpg');
+    background: url('http://dailybruin.com/images/2014/04/banner.jpg');
     background-size: cover;
     padding: 2em;
     color: white;
@@ -16,8 +44,16 @@ Template Name: Dance Marathon 2014
 }
 
     #dm-banner h1 {
+        text-align: right;
         font-size: 5em;
         text-transform: uppercase;
+    }
+
+    #dm-banner h2 {
+        text-align: right;
+        font-size: 3.5em;
+        margin: 0.5em 0;
+        font-family: Helvetica, Arial, sans-serif;
     }
 
 #dm-blog {
@@ -25,8 +61,26 @@ Template Name: Dance Marathon 2014
 
 </style>
 
+<script>
+    $(document).ready(function(){
+        for (var i = 1; i <=26; i++) {
+            $('<a/>').appendTo('#dm-timeline').addClass('dm-hour').attr('id', i).text(i);
+        }
+
+        $(window).scroll(function(){
+            
+        });
+    });
+</script>
+
+<script src="/js/vendor/jquery.nav.js"></script>
+
+<nav id="dm-timeline">
+</nav>
+
 <div id="dm-banner">
-    <h1>Dance Marathon 2014</h1>
+    <h1>Dance Marathon</h1>
+    <h2>2014</h2>
 </div>
 
 <div class="row">
@@ -36,7 +90,9 @@ Template Name: Dance Marathon 2014
     </div>
 
     <div class="span6" id="dm-blog">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum posuere magna ac eleifend. Pellentesque vel odio quam. Donec at aliquam diam, eu semper arcu. Quisque massa metus, pharetra vitae sem ac, mattis mattis sapien. Nam in ipsum at nisi ultricies ultrices. Praesent egestas justo eget massa semper, vitae feugiat nunc pharetra. Aliquam tempor sapien a venenatis faucibus.</p>
+        <p class="lead">During the 13th Annual Dance Marathon, nearly 900 participants filled the floor of Pauley Pavilion and stayed on their feet for 26 hours straight to take a stand against pediatric HIV and AIDS. Over the years, the event has raised millions of dollars to combat the disease. This year, money raised by students will go to the Elizabeth Glaser Pediatric AIDS Foundation, Project Kindle and the UCLA AIDS Institute.</p>
+        
+        <hr/>
 
         <!-- live blog content -->
         <?php 
