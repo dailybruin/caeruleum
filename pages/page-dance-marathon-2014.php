@@ -64,7 +64,8 @@ Template Name: Dance Marathon 2014
 <script>
     $(document).ready(function(){
         for (var i = 1; i <=26; i++) {
-            $('<a/>').appendTo('#dm-timeline').addClass('dm-hour').attr('id', i).text(i);
+            var $li = $('<li/>').appendTo('#dm-timeline');
+            $('<a/>').appendTo($li).addClass('dm-hour').attr('id', i).text(i);
         }
 
         $(window).scroll(function(){
@@ -75,8 +76,8 @@ Template Name: Dance Marathon 2014
 
 <script src="/js/vendor/jquery.nav.js"></script>
 
-<nav id="dm-timeline">
-</nav>
+<ul id="dm-timeline">
+</ul>
 
 <div id="dm-banner">
     <h1>Dance Marathon</h1>
@@ -90,7 +91,7 @@ Template Name: Dance Marathon 2014
     </div>
 
     <div class="span6" id="dm-blog">
-        <p class="lead">During the 13th Annual Dance Marathon, nearly 900 participants filled the floor of Pauley Pavilion and stayed on their feet for 26 hours straight to take a stand against pediatric HIV and AIDS. Over the years, the event has raised millions of dollars to combat the disease. This year, money raised by students will go to the Elizabeth Glaser Pediatric AIDS Foundation, Project Kindle and the UCLA AIDS Institute.</p>
+        <p class="lead">Nearly 900 people are participating in this year’s 13th annual Dance Marathon – a 26-hour-long fundraising event where students pledge stay on their feet the entire time to take a stand against pediatric AIDS. For the first time this year, the UCLA Pediatric AIDS Coalition is holding Dance Marathon is in Pauley Pavilion. Stay with us for live updates, including videos, dancer profiles and photos.</p>
         
         <hr/>
 
