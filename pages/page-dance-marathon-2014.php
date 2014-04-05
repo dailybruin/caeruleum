@@ -5,37 +5,66 @@ Template Name: Dance Marathon 2014
 
 <style type="text/css">
 
+body {
+    margin-top: 30px !important;
+}
+
 #dm-timeline {
-    top: 30px; /* STOPGAP: change to zero for prod */
+    top: 0;
     right: 0;
     position: fixed;
     width: 100%;
     height: 30px;
     background-color: black;
-    display: none;
 }
 
-    #dm-timeline .dm-hour {
+    #dm-timeline li {
         display: inline-block;
         opacity: 0.5;
-        width: 3.84%;
+        width: 3.07%;
         height: inherit;
         box-shadow: 1px 0 0 0 white inset;
-        color: white;
         text-align: center;
         font-weight: bold;
         font-size: 1.2em;
         line-height: 1.7;
     }
 
-        #dm-timeline .dm-hour:hover {
-            opacity: 0.75;
-            background-color: rgba(255,255,255, 0.3);
+    #dm-timeline li:hover, #dm-timeline .current {
+        opacity: 0.75;
+        background-color: rgba(255,255,255, 0.3);
+    }
+
+        #dm-timeline li a {
+            color: white;
         }
+
+    #dm-timeline .descriptor {
+        width: 20%;
+        float: left;
+    }
+
+    #dm-timeline h1 {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: #666;
+        display: inline-block;
+        line-height: 1;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #dm-timeline .instructions {
+        font-size: 0.8em;
+        color: #999;
+        background-color: rgba(0,0,0, 0.6);
+    }
+
+    
 
 #dm-banner {
     height: 300px;
-    background: url('http://dailybruin.com/images/2014/04/banner.jpg');
+    background: url('http://dailybruin.com/images/2014/04/banner1.jpg');
     background-size: cover;
     padding: 2em;
     color: white;
@@ -61,22 +90,28 @@ Template Name: Dance Marathon 2014
 
 </style>
 
+<script src="/js/vendor/jquery.nav.js"></script>
+
 <script>
     $(document).ready(function(){
         for (var i = 1; i <=26; i++) {
             var $li = $('<li/>').appendTo('#dm-timeline');
-            $('<a/>').appendTo($li).addClass('dm-hour').attr('id', i).text(i);
+            $('<a/>').appendTo($li).addClass('dm-hour').attr('href', '#hour-'+i).text(i);
         }
 
-        $(window).scroll(function(){
-            
+        $('#dm-timeline').onePageNav({
+            scrollOffset: 30,
+            scrollThreshold: 0.1,
+            scrollSpeed: 400,
         });
     });
 </script>
 
-<script src="/js/vendor/jquery.nav.js"></script>
-
 <ul id="dm-timeline">
+    <div class="descriptor">
+        <h1>Dance Marathon</h1>
+        <span class="instructions">Click an hour to navigate:</span>
+    </div>
 </ul>
 
 <div id="dm-banner">
