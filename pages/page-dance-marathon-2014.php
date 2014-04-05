@@ -11,8 +11,9 @@ Template Name: Dance Marathon 2014
     position: fixed;
     width: 100%;
     height: 34px;
-    background-color: black;
+    background-color: #205;
     z-index: 100;
+    box-shadow: 0 0 10px black;
     display: none;
 }
 
@@ -45,7 +46,7 @@ Template Name: Dance Marathon 2014
 
     #dm-timeline h1 {
         text-transform: uppercase;
-        color: #666;
+        color: rgba(255,255,255, 0.6);
         display: inline-block;
         line-height: 1;
         margin-left: 0.5em;
@@ -54,8 +55,7 @@ Template Name: Dance Marathon 2014
     }
 
     #dm-timeline .instructions {
-        color: #999;
-        background-color: rgba(0,0,0, 0.6);
+        color: rgba(255,255,255, 0.8);
     }
 
     
