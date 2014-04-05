@@ -10,7 +10,7 @@ Template Name: Dance Marathon 2014
     right: 0;
     position: fixed;
     width: 100%;
-    height: 30px;
+    height: 34px;
     background-color: black;
     z-index: 100;
     display: none;
@@ -35,25 +35,25 @@ Template Name: Dance Marathon 2014
 
         #dm-timeline li a {
             color: white;
+            font-size: 1.2em;
         }
 
     #dm-timeline .descriptor {
-        width: 20%;
+        width: 25%;
         float: left;
     }
 
     #dm-timeline h1 {
-        font-size: 0.8em;
         text-transform: uppercase;
         color: #666;
         display: inline-block;
         line-height: 1;
         margin-left: 0.5em;
         margin-right: 0.5em;
+        font-size: 1em;
     }
 
     #dm-timeline .instructions {
-        font-size: 0.8em;
         color: #999;
         background-color: rgba(0,0,0, 0.6);
     }
@@ -150,13 +150,13 @@ div[id*='hour-'] {
         }
 
         $('#dm-timeline').onePageNav({
-            scrollOffset: 30,
+            scrollOffset: 40,
             scrollThreshold: 0.1,
             scrollSpeed: 400,
         });
 
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 320) {
+            if ($(this).scrollTop() > 160) {
                 $('#dm-timeline').slideDown();
             }
         });
