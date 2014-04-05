@@ -63,7 +63,7 @@ Template Name: Dance Marathon 2014
 #dm-banner {
     position: relative;
     height: 300px;
-    background: url('http://dailybruin.com/images/2014/04/banner1.jpg');
+    background: url('http://dailybruin.com/images/2014/04/banner2.jpg');
     background-size: cover;
     padding: 2em;
     color: white;
