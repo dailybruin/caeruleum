@@ -93,11 +93,14 @@ div[id*='hour-'] {
     padding: 1em;
     margin: 2em 0;
     border: 1px solid rgba(0,0,0, 0.1);
+    overflow: hidden; /* clearfix */
 }
 
 </style>
 
 <script src="/js/vendor/jquery.nav.js"></script>
+<script src="/js/vendor/jquery.plugin.min.js"></script>
+<script src="/js/vendor/jquery.countdown.min.js"></script>
 
 <script>
     $(document).ready(function(){
