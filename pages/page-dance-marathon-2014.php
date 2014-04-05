@@ -12,6 +12,7 @@ Template Name: Dance Marathon 2014
     width: 100%;
     height: 30px;
     background-color: black;
+    z-index: 100;
     display: none;
 }
 
@@ -151,7 +152,7 @@ div[id*='hour-'] {
         });
 
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 720) {
+            if ($(this).scrollTop() > 320) {
                 $('#dm-timeline').slideDown();
             }
         });
