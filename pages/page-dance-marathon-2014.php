@@ -88,6 +88,13 @@ Template Name: Dance Marathon 2014
     color: #0a0;
 }
 
+div[id*='hour-'] {
+    box-shadow: 0 6px 12px -3px rgba(0,0,0, 0.2);
+    padding: 1em;
+    margin: 2em 0;
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+
 </style>
 
 <script src="/js/vendor/jquery.nav.js"></script>
