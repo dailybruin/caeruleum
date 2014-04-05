@@ -60,6 +60,7 @@ Template Name: Dance Marathon 2014
     
 
 #dm-banner {
+    position: relative;
     height: 300px;
     background: url('http://dailybruin.com/images/2014/04/banner1.jpg');
     background-size: cover;
@@ -81,6 +82,39 @@ Template Name: Dance Marathon 2014
         margin: 0.5em 0;
         font-family: Helvetica, Arial, sans-serif;
     }
+
+    #dm-banner .dm-time-remaining {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+        #dm-banner .dm-time-remaining h3 {
+            font-size: 0.5em;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: white;
+            background-color: rgba(0,0,0, 0.6);
+            padding: 0.4em 0.5em;
+            display: inline-block;
+        }
+
+        #dm-banner .dm-timer {
+            background-color: rgba(0,0,0, 0.6);
+            padding: 0.2em;
+        }
+
+            #dm-banner .dm-timer .countdown-section {
+                display: inline-block;
+                margin-right: 0.5em;
+            }
+
+            #dm-banner .dm-timer .countdown-amount {
+                display: inline-block;
+                margin-right: 0.25em;
+            }
 
 #dm-blog-title {
     font-weight: bold;
@@ -120,6 +154,10 @@ div[id*='hour-'] {
                 $('#dm-timeline').slideDown();
             }
         });
+
+        $('.dm-timer').countdown({ 
+            until: new Date(Date.UTC(2014, 3, 6, 20, 0, 0))
+        }); 
     });
 </script>
 
@@ -133,6 +171,10 @@ div[id*='hour-'] {
 <div id="dm-banner">
     <h1>Dance Marathon</h1>
     <h2>2014</h2>
+    <div class="dm-time-remaining">
+        <h3>Time remaining</h3>
+        <div class="dm-timer"></div>
+    </div>
 </div>
 
 <div class="row">
