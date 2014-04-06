@@ -85,6 +85,7 @@ Template Name: Dance Marathon 2014
     }
 
     #dm-banner .dm-time-remaining {
+        display: none;
         position: absolute;
         bottom: 0;
         left: 0;
