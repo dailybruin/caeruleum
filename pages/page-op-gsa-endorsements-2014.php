@@ -145,15 +145,17 @@ Template Name: GSA Endorsements 2014
             <h3>Hope McCoy</h3>
             <div class="alert alert-success endorsed"><h4><img src="/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
             <section>
+                <p><em>The original version of this article contained an error and has been changed. See the bottom of the article for additional information.</em></p>
                 <p dir="ltr">We endorse Hope McCoy for vice president of internal affairs because she has a firm grasp of the most pressing issues facing graduate students and understands the difficulties of increasing engagement between the graduate population and its student government.</p>
                 <p dir="ltr">Most of all, McCoy has the experience to create change on both fronts.</p>
                 <p dir="ltr">McCoy’s previous involvement in GSA will allow her to bring valuable insight into the office she is seeking. The current vice president of external affairs, McCoy also served as the director of communications for GSA and as a graduate representative on the Campus Programs Committee.</p>
                 <p dir="ltr">Graduate student engagement with GSA has been historically poor – especially during elections – but McCoy has concrete plans to address the problem.</p>
-                <p dir="ltr">Aside from commonly suggested remedies such as marketing and branding, McCoy said she plans to move forum meetings later in the evening to get better participation from graduate students who are tied up with other responsibilities in the afternoon. She also plans to reach out specifically to the population of UCLA students who are also parents to better understand how to engage them in student government.</p>
+                <p dir="ltr">Aside from commonly suggested remedies such as marketing and branding, McCoy said she plans to move forum meetings earlier in the afternoon to get better participation from graduate students who are tied up with other responsibilities in the evening. She also plans to reach out specifically to the population of UCLA students who are also parents to better understand how to engage them in student government.</p>
                 <p dir="ltr">This year, McCoy helped pass a <a href="http://dailybruin.com/2014/03/06/gsa-unanimously-passes-resolution-addressing-racial-campus-climate/">resolution</a> calling for a diversity-related general education requirement, diversity training for teaching assistants and other diversity initiatives at UCLA.</p>
                 <p dir="ltr">The board believes McCoy will be able to work very well with fellow candidates Nicole Robinson and Ivy Onyeador, if elected, as they have similar goals, such as increasing the involvement of smaller graduate student communities in the body.</p>
                 <p dir="ltr">Also, as several candidates are running without previous GSA officer experience, McCoy should make sure to ease the learning curve for the new officers in her role as vice president of internal affairs.</p>
                 <p dir="ltr">With past experience as both a GSA officer and as a higher education administrator at Northwestern University’s Kellogg School of Management, McCoy is poised to be a successful vice president of internal affairs.</p>
+                <p><strong>Correction:</strong> <em>Hope McCoy said she plans to hold GSA meetings later in the evening, not earlier in the afternoon.</em></p>
             </section>
         </div>
     </div>
