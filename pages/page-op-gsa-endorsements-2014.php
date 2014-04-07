@@ -5,7 +5,7 @@ Template Name: GSA Endorsements 2014
 
 <style>
     .thumbnails img {
-        width: inherit;
+        width: 100%;
         height: 240px;
         -webkit-filter: grayscale(100%);
     }
@@ -38,6 +38,8 @@ Template Name: GSA Endorsements 2014
 <div class="container">
     <div class="row thumbnails">
         <div class="span4">
+                <h3>President</h3>
+                <hr>
                 <div class="row">
                     <div class="span2">
                         <a href="#nicole"><img src="/images/gsa-endorsements-2014/web.Nicole.jpg"/>
@@ -52,11 +54,15 @@ Template Name: GSA Endorsements 2014
                 </div>
         </div>
         <div class="span2">
+            <h3>VP Int. Affairs</h3>
+            <hr>
             <a href="#hope"><img src="/images/gsa-endorsements-2014/web.hope.jpg"/>
             <h4>Hope McCoy</h4></a>
             <div class="alert alert-success"><img src="/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
         </div>
         <div class="span4">
+                <h3>VP Ext. Affairs</h3>
+                <hr>
                 <div class="row">
                     <div class="span2">
                         <a href="#andres"><img src="/images/gsa-endorsements-2014/web.andres.jpg"/>
@@ -70,6 +76,8 @@ Template Name: GSA Endorsements 2014
                 </div>
         </div>
         <div class="span2">
+            <h3>VP Ac. Affairs</h3>
+            <hr>
             <a href="#ivy"><img src="/images/gsa-endorsements-2014/web.ivy.jpg"/>
             <h4>Ivy Onyeador</h4></a>
             <div class="alert alert-success"><img src="/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
