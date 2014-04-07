@@ -192,8 +192,28 @@ Template Name: A&E Flavors of Westwood
 
 
 <script type="text/javascript">
+
+$(document).ready(function(){
+    unresponsivize();
+});
+
 var LocsB = [
-        {
+    {
+        lat: 34.060208,
+        lon: -118.445069,
+        title: 'Chilly Ribbons',
+        html: [
+                        '<h3>Chilly Ribbons</h3>',
+                        '<p>"Shaved snow" desserts</p>'
+        ].join(''),
+        fulldesc: [
+                '<h3>Chilly Ribbons</h3>',
+                '<div class="row"><div class="span8"><img src="http://dailybruin.com/images/2014/03/06c106de-f7dc-48f5-a870-b6c504ad4202-640x424.jpg" class="img-responsive"> <span class="photocred">Tamaryn Kong / Daily Bruin</span><br><br><strong>BY ASHLEY YU</strong><br><br>Three years ago, Daniel Kultran sat in a Class 302 Cafe in Rowland Heights and experienced his first bite of what he considers frozen dessert’s newest sensation: shaved snow. <div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/03/74738a37-881e-4b98-b969-87bf9c663ed4-248x300.jpg" width="248"><span class="photocred-inline">Tamaryn Kong / Daily Bruin</span></div> Fast forward three years, and Kultran, with his partner Kyu Kim, has just opened a hotspot for this cold confection in Westwood. Named Chilly Ribbons, the eatery is a shaved snow franchise based in Florida and owned by Scott Colwell. <br/><br/> Chilly Ribbons, located at 1135 Westwood Blvd., offers flavorful options for shaved snow along with free choice of toppings and syrups.<br/><br/> Not quite shaved ice nor frozen yogurt, shaved snow, popular in Taiwan, is relatively new to North America and is produced with machines that shave flavored ice blocks into thin, overlapping waves or “ribbons.”<br/><br/> “Shaved snow (in general) is different in that we actually infuse real fruit and natural flavors with a little bit of cream and sugar into the water before we freeze it,” Kultran said. “If you’re someone who’s looking for a healthier, lower-calorie, lower-sugar option, this is the treat for you.”<br/><br/> Although Kultran grew up helping in his family’s Thai restaurant business, being in the food industry was not his original intention. Having graduated from USC with a master’s degree in electrical engineering in 2005, Kultran worked for an engineering firm for a long time before realizing that owning his own business could be enjoyable.<br/><br/>A conversation about the frozen dessert sparked over dinner two years ago with Kim, his then-neighbor, which led to their agreed partnership in managing the California market for Chilly Ribbons.<br/><br/>“(Shaved snow) could be the next big thing if we can make it for the American palate,” Kultran had said to Kim.<br/><br/>These days, Kultran’s favorite shaved snow flavor is coconut, but it is how he describes his choice of toppings that hints at his flair for flavorful experimentation.<br/><br/>“I put coconut shaved snow with almonds and chocolate drizzle, so it tastes just like frozen Almond Joy, the candy bar,” Kultran said.<br/><br/>As for the customers, the top-five most popular flavors are Thai tea, coconut, green tea, mango and strawberry.<br/><br/><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/03/bd5612f2-df73-4af6-aed8-e72c3c7caee5-300x198.jpg" width="300"><span class="photocred-inline">Tamaryn Kong / Daily Bruin</span></div>Kultran said he hopes that eventually Chilly Ribbons will become a household name. Meanwhile, the main goal is for shaved snow to gain traction among customers. In this effort, Chilly Ribbons has reached out to UCLA students, giving out free samples during Greek Week, donating money to sororities and fraternities and helping fundraise for the campus’ Hooligan Theatre Company.<br/><br/>Even with business expansion and increasing public attention in the works, he said Chilly Ribbons focuses on customer satisfaction.<br/><br/>“What really makes me smile is getting a new customer who’s never had this product before,” Kultran said. “The first time they put it in their mouths, (they say) ‘wow’ since they’ve never had it elsewhere.”</div><div class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 1135 Westwood Blvd, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 270-0926</li>         <li><i class="icon-calendar"></i> Mon-Sun 12 p.m. to 11:00 p.m.</li>          <li><i class="icon-tag"></i> $</li>         <li><i class="icon-info-sign"></i> No Wi-Fi. Street parking.</li> <li><i class="icon-globe"></i> <a href="http://www.chillyribbons.com" target="_blank">chillyribbons.com</a></li></ul> </div></div>'
+                        ].join(''),
+                        icon: 'http://maps.google.com/mapfiles/markerA.png',
+                        zoom: 17
+        },
+    {
           lat: 34.055895,
           lon: -118.44189,
           title: 'Saffron & Rose Ice Cream',
