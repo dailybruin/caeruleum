@@ -6,6 +6,7 @@ Template Name: Radio: About the hosts
 <style type="text/css">
 </style>
 
-<h1>It works!</h1>
+<h1>Radio: About the Hosts</h1>
+
 
 <?php get_footer(); ?>
