@@ -33,6 +33,12 @@ Template Name: Radio: About the hosts
 <hr>
 <img src="http://imgur.com/jMxUraH.jpg" alt="Two sleeping puppies." />
 <h2>Jonaki Mehta</h2>
+<div class="email"><a href="mailto:jmehta@media.ucla.edu">jmehta@media.ucla.edu</a></div>
+<div class=twitter"><a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
+Tweet
+<i class="ticon-twitter" <a></i>
+</a>
+</div>
 <p>Espresso frappuccino body, americano cappuccino brewed latte robusta. Arabica affogato cup americano trifecta cinnamon, doppio filter turkish half and half espresso. Sweet, trifecta, galão flavour, espresso variety café au lait siphon redeye medium. Dark caffeine organic, brewed, espresso aromatic strong caramelization decaffeinated.</p>
     </div>
 </div>
@@ -42,12 +48,24 @@ Template Name: Radio: About the hosts
 <hr>
 <img src="http://imgur.com/zNgSw8Y.jpg" alt="A sleeping puppy with his toy." />
 <h2>Andrew Erickson</h2>
+<div class-"email"><a href="mailto:aerickson@media.ucla.edu">aerickson@media.ucla.edu</a></div>
+<div class=twitter"><a href="https://twitter.com/share" rel = "external" target=_blank" data-via="dailybruin">
+Tweet
+<i class="ticon-twitter" <a></i>
+</a>
+</div>
 <p>Kopi-luwak, turkish, dripper kopi-luwak et irish plunger pot cup cappuccino. Cream, coffee, est mug trifecta instant roast as aromatic. Rich con panna ristretto percolator french press iced acerbic froth.</p>
-    </div>
+</div>
     <div class="span6">
 <hr>
 <img src="http://imgur.com/Pj621JV.jpg" alt="A puppy wearing glasses." />
 <h2>Kevin Bowman</h2>
+<div class="email"><a href="mailto:kbowman@media.ucla.edu">kbowman@media.ucla.edu</a></div>
+<div class=twitter"><a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
+Tweet
+<i class="ticon-twitter" <a></i>
+</a>
+</div>
 <p>Cup, coffee id strong aromatic body latte. Pumpkin spice ristretto single origin arabica, java cultivar fair trade wings lungo. Ut pumpkin spice steamed con panna coffee turkish irish. Cappuccino, redeye, wings foam cup, percolator irish ut in plunger pot.</p>
     </div>
 </div>
