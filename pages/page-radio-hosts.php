@@ -13,12 +13,26 @@ Template Name: Radio: About the hosts
 <hr>
 <img src="http://i.imgur.com/SHzqj4h.jpg" alt="Two puppies in a basket." />
 <h2>Meral Arik</h2>
+<i class="icon-large icon-message-new"></i><div class="email"> <a href="mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
+<div class="twitter">
+<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
+Tweet 
+<i class="ticon-twitter" < a></i>
+</a>
+</div>
 <p>Iced, organic, kopi-luwak, rich ristretto cultivar dark cortado. Carajillo caffeine brewed pumpkin spice grounds seasonal mazagran that variety saucer wings. Espresso medium, robust seasonal french press cup fair trade mug french press barista percolator.</p>
     </div>
     <div class="span6">
 <hr>
 <img src="http://imgur.com/RJjNn9R.jpg" alt="A happy puppy sitting in the grass." />
 <h2>Kathleen McGovern</h2>
+<div class="email"> <a href="mailto:kmcgovern@media.ucla.edu">kmcgovern@media.ucla.edu</a> </div>
+<div class="twitter">
+<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
+Tweet 
+<i class="ticon-twitter" < a></i>
+</a>
+</div>
 <p>Barista, steamed at, whipped fair trade café au lait, coffee strong est et aroma. Froth organic ristretto, at in acerbic barista, plunger pot ristretto breve milk froth.</p>
     </div>
 </div>
@@ -27,6 +41,13 @@ Template Name: Radio: About the hosts
 <hr>
 <img src="http://imgur.com/CC4YycX.jpg" alt="A puppy with daisies." />
 <h2>Sidhaant Shah</h2>
+<div class="email"> <a href="mailto:sshah@media.ucla.edu">sshah@media.ucla.edu</a> </div>
+<div class="twitter">
+<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
+Tweet 
+<i class="ticon-twitter" < a></i>
+</a>
+</div>
 <p>Robusta acerbic french press, carajillo shop viennese espresso blue mountain grounds. Blue mountain flavour cinnamon caramelization lungo et id white single origin white body. French press and flavour, seasonal redeye and breve java. Roast americano, crema cup, galão, chicory aroma rich cup roast.</p>
     </div>
     <div class="span6">
