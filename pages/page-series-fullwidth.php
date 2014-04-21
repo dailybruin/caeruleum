@@ -1,5 +1,5 @@
 <?php/*
-Template Name: Sports Mens Volleyball
+Template Name: Full-width series
 */ ?>
 <?php get_header(); ?>
 <!--<link rel="stylesheet" type="text/css" href="/css/sports-gymnastics.css">-->
@@ -294,6 +294,14 @@ Template Name: Sports Mens Volleyball
   .gym-sm {
       float: right;
       margin: 1.5em 0;
+  }
+
+  .previous {
+    text-align: left;
+  }
+
+  .next {
+    text-align: right;
   }
 
   @media screen and (max-width: 1200px) {
