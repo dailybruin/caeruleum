@@ -304,6 +304,19 @@ Template Name: Full-width series
     text-align: right;
   }
 
+  aside.audio {
+    max-width: 300px;
+    float: right;
+    background-color: rgba(0,0,0, 0.05);
+    padding: 0 1em;
+    margin-left: 1em;
+  }
+
+    aside.audio .credit {
+        font-style: italic;
+        float: right;
+    }
+
   @media screen and (max-width: 1200px) {
   .img-vert{
     width: auto; 
