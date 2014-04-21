@@ -4,7 +4,7 @@
 
 <ul id="gallery">
 	<?php foreach ( $images as $image ) : ?>
-		<li><img src="<?php echo $image->imageURL ?>" alt="<?php echo $image->alttext ?>" data-description="<?php echo $image->description ?>" value="<?php echo $image->tags[0] ?>" /></li>
+		<li><img src="<?php echo $image->imageURL ?>" alt="<?php echo $image->alttext ?>" data-description="<?php echo htmlspecialchars($image->description); ?>" value="<?php echo $image->tags[0] ?>" /></li>
  	<?php endforeach; ?>
 
 </ul>	
