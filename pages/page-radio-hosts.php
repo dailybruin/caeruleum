@@ -29,7 +29,7 @@ Template Name: Radio: About the hosts
 Tweet 
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/BriaBABYBRUINcopy.mp3" preload="auto"  controls> Blah </audio>
+<audio src="http://dailybruin.com/images/2014/04/BriaBABYBRUINcopy.mp3" preload="auto" controls></audio>
 <p>Iced, organic, kopi-luwak, rich ristretto cultivar dark cortado. Carajillo caffeine brewed pumpkin spice grounds seasonal mazagran that variety saucer wings. Espresso medium, robust seasonal french press cup fair trade mug french press barista percolator.</p>
     </div>
     <div class="span6">
@@ -42,6 +42,7 @@ Tweet
 Tweet 
 </a>
 </div>
+<audio src="http://dailybruin.com/images/2014/04/4.17.radio_.mvball.mp3" preload="auto" controls></audio>
 <p>Barista, steamed at, whipped fair trade café au lait, coffee strong est et aroma. Froth organic ristretto, at in acerbic barista, plunger pot ristretto breve milk froth.</p>
     </div>
 </div>
@@ -56,6 +57,7 @@ Tweet
 Tweet 
 </a>
 </div>
+<audio src=http://dailybruin.com/images/2014/04/Mollymann.mp3" preload="auto" controls></audio>
 <p>Robusta acerbic french press, carajillo shop viennese espresso blue mountain grounds. Blue mountain flavour cinnamon caramelization lungo et id white single origin white body. French press and flavour, seasonal redeye and breve java. Roast americano, crema cup, galão, chicory aroma rich cup roast.</p>
     </div>
     <div class="span6">
@@ -68,6 +70,7 @@ Tweet
 Tweet 
 </a>
 </div>
+<audio src="http://dailybruin.com/images/2014/04/oob-4_14.mp3" preload="auto" controls></audio>
 <p>Espresso frappuccino body, americano cappuccino brewed latte robusta. Arabica affogato cup americano trifecta cinnamon, doppio filter turkish half and half espresso. Sweet, trifecta, galão flavour, espresso variety café au lait siphon redeye medium. Dark caffeine organic, brewed, espresso aromatic strong caramelization decaffeinated.</p>
     </div>
 </div>
@@ -83,6 +86,7 @@ Tweet
 Tweet 
 </a>
 </div>
+<audio src="http://dailybruin.com/images/2014/04/lss-4_14.mp3" preload="auto" controls></audio> 
 <p>Kopi-luwak, turkish, dripper kopi-luwak et irish plunger pot cup cappuccino. Cream, coffee, est mug trifecta instant roast as aromatic. Rich con panna ristretto percolator french press iced acerbic froth.</p>
     </div>
     <div class="span6">
@@ -95,6 +99,7 @@ Tweet
 Tweet 
 </a>
 </div>
+<audio src="http://dailybruin.com/images/2014/04/UCLA-VGOC-Acts.mp3" preload="auto" controls></audio>
 <p>Cup, coffee id strong aromatic body latte. Pumpkin spice ristretto single origin arabica, java cultivar fair trade wings lungo. Ut pumpkin spice steamed con panna coffee turkish irish. Cappuccino, redeye, wings foam cup, percolator irish ut in plunger pot.</p>
     </div>
 </div>
