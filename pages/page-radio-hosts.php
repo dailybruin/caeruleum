@@ -9,6 +9,13 @@ Template Name: Radio: About the hosts
     }
 </style>
 
+<script src ="/js/vendor/audioplayer.js"></script>
+<script>
+    $(document).ready(function(){
+        $( 'audio' ).audioPlayer();
+    });
+</script>
+
 <h1>Radio: About the Hosts</h1>
 <h1>Long Story Short</h1>
 <div class="row-fluid">
@@ -22,6 +29,7 @@ Template Name: Radio: About the hosts
 Tweet 
 </a>
 </div>
+<audio src="http://dailybruin.com/images/2014/04/BriaBABYBRUINcopy.mp3" preload="auto"  controls> Blah </audio>
 <p>Iced, organic, kopi-luwak, rich ristretto cultivar dark cortado. Carajillo caffeine brewed pumpkin spice grounds seasonal mazagran that variety saucer wings. Espresso medium, robust seasonal french press cup fair trade mug french press barista percolator.</p>
     </div>
     <div class="span6">
