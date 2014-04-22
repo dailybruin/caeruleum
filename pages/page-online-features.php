@@ -13,7 +13,7 @@
 <script>
 
  var features;
-    $.getJSON('../js/vendor/page-online-features.json', function (data) { 
+    $.getJSON('../js/page-online-features.json', function (data) { 
     features = data.articles; 
     });
 
