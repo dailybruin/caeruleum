@@ -29,8 +29,8 @@ Template Name: Radio: About the hosts
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter"></i>
-<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
-Tweet 
+<a href="https://twitter.com/meralarikk" rel = "external" target="_blank" data-via="dailybruin">
+@meralarikk 
 </a>
 </div>
 <audio src="http://dailybruin.com/images/2014/04/BriaBABYBRUINcopy.mp3" preload="auto" controls></audio>
@@ -42,8 +42,8 @@ Tweet
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
-<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
-Tweet 
+<a href="https://twitter.com/" rel = "external" target="_blank" data-via="dailybruin">
+IMPLEMENT ME 
 </a>
 </div>
 <audio src="http://dailybruin.com/images/2014/04/4.17.radio_.mvball.mp3" preload="auto" controls></audio>
@@ -57,8 +57,8 @@ Tweet
 <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:sshah@media.ucla.edu">sshah@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
-<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
-Tweet 
+<a href="https://twitter.com/sidhaantshah" rel = "external" target="_blank" data-via="dailybruin">
+@sidhaantshah 
 </a>
 </div>
 <audio src="http://dailybruin.com/images/2014/04/Mollymann.mp3" preload="auto" controls></audio>
