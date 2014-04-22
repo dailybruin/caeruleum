@@ -400,7 +400,7 @@
 						<div>
 							 <h3>In the Shadows</h3>
 							 <ul class="sections">
-							 	<li><a href="/features/">Previous features</a></li>
+							 	<li><a href="/features/">More features</a></li>
 							 </ul>
 							 <span style="display:block;width:100%;clear:both;"></span>
 							 <img src="http://dailybruin.com/images/features/THUMBS/malawi_thumb.jpg" />
