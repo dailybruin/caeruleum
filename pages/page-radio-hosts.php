@@ -18,7 +18,7 @@ Template Name: Radio: About the hosts
         $( 'audio' ).audioPlayer();
     });
 </script>
-
+<link rel="stylesheet" href="/css/vendor/audio-player.css">
 <h1 id="rh-title">Radio: About the Hosts</h1>
 
 <h2>Long Story Short</h2>
@@ -28,7 +28,7 @@ Template Name: Radio: About the hosts
 <h3>Meral Arik</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
 <div class="twitter">
-<i class="ticon-twitter" < a></i>
+<i class="ticon-twitter"></i>
 <a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
 Tweet 
 </a>
@@ -41,7 +41,7 @@ Tweet
 <h3>Kathleen McGovern</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
 <div class="twitter">
-<i class="ticon-twitter" < a></i>
+<i class="ticon-twitter" ></i>
 <a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
 Tweet 
 </a>
@@ -56,7 +56,7 @@ Tweet
 <h3>Sidhaant Shah</h3>
 <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:sshah@media.ucla.edu">sshah@media.ucla.edu</a> </div>
 <div class="twitter">
-<i class="ticon-twitter" < a></i>
+<i class="ticon-twitter" ></i>
 <a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
 Tweet 
 </a>
@@ -69,7 +69,7 @@ Tweet
 <h2>Jonaki Mehta</h2>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jmehta@media.ucla.edu">jmehta@media.ucla.edu</a> </div>
 <div class="twitter">
-<i class="ticon-twitter" < a></i>
+<i class="ticon-twitter" ></i>
 <a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
 Tweet 
 </a>
@@ -85,7 +85,7 @@ Tweet
 <h3>Andrew Erickson</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:aerickson@media.ucla.edu">aerickson@media.ucla.edu</a> </div>
 <div class="twitter">
-<i class="ticon-twitter" < a></i>
+<i class="ticon-twitter" ></i>
 <a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
 Tweet 
 </a>
@@ -98,7 +98,7 @@ Tweet
 <h3>Kevin Bowman</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:kbowman@media.ucla.edu">kbowman@media.ucla.edu</a> </div>
 <div class="twitter">
-<i class="ticon-twitter" < a></i>
+<i class="ticon-twitter" ></i>
 <a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
 Tweet 
 </a>
