@@ -70,8 +70,8 @@ Tweet
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jmehta@media.ucla.edu">jmehta@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
-<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
-Tweet 
+<a href="https://twitter.com/jonakimehta" rel = "external" target="_blank" data-via="dailybruin">
+@jonakimehta
 </a>
 </div>
 <audio src="http://dailybruin.com/images/2014/04/oob-4_14.mp3" preload="auto" controls></audio>
@@ -86,8 +86,8 @@ Tweet
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:aerickson@media.ucla.edu">aerickson@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
-<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
-Tweet 
+<a href="https://twitter.com/AndrewRErickson" rel = "external" target="_blank" data-via="dailybruin">
+@AndrewRErickson
 </a>
 </div>
 <audio src="http://dailybruin.com/images/2014/04/lss-4_14.mp3" preload="auto" controls></audio> 
@@ -99,8 +99,8 @@ Tweet
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:kbowman@media.ucla.edu">kbowman@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
-<a href="https://twitter.com/share" rel = "external" target="_blank" data-via="dailybruin">
-Tweet 
+<a href="https://twitter.com/kbo123" rel = "external" target="_blank" data-via="dailybruin">
+@kbo123 
 </a>
 </div>
 <audio src="http://dailybruin.com/images/2014/04/UCLA-VGOC-Acts.mp3" preload="auto" controls></audio>
