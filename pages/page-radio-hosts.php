@@ -15,7 +15,7 @@ Template Name: Radio: About the hosts
         $( 'audio' ).audioPlayer();
     });
 </script>
-
+<link rel="stylesheet" href="css/vendor/audio-player.css">
 <h1>Radio: About the Hosts</h1>
 <h1>Long Story Short</h1>
 <div class="row-fluid">
