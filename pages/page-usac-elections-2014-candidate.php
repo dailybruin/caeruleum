@@ -1,5 +1,5 @@
 <?php/*
-Template Name: USAC Elections Candidate 2013
+Template Name: USAC Elections Candidate 2014
 */ ?>
 
 <?php get_header(); ?>
