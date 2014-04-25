@@ -104,6 +104,19 @@
 					<li><a href="http://mojo.dailybruin.com">Mojo</a></li>
 					</ul>
 					<h3><a href="/classifieds/">Classifieds</a></h3>					
+                    <?php if (is_front_page()): ?>
+                    <ul>
+                        <?php wp_list_bookmarks(array(
+                            'title_li'                      =>      __(''),
+                            'title_before'          =>      '',
+                            'title_after'           =>      '',
+                            'category_before'       =>      '',
+                            'category_after'        =>      '',
+                            'categorize'            =>      0,
+                            'before'                        =>      '<li>'
+                        )); ?>
+                    </ul>
+                    <?php endif; ?>
 				</div>
 				<div class="footer-links span4 about">
 					<h3>About</h3>
