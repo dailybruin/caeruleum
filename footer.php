@@ -1,10 +1,6 @@
 	<span style="width:100%;display:block;clear:both;"></span>
 	<div class="container hidden-phone">
 	<hr />
-	<div class="row">
-		<div class="span12 hidden-mobile" id="banner-bottom"
-			><?php // make sure there is no whitespace here for the ad to display correctly ?></div><!-- end div#banner-bottom -->
-	</div>
 	</div><!-- end div.container -->
 
 					<a href="#" id="backtotop">Top &uarr;</a>
