@@ -251,7 +251,7 @@ $(document).ready(function() {
 			sidebarHeight	= $sidebar.height();
 			var scrollNow = $(this).scrollTop(),
 			topBound	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
-			botBound	= $("#banner-bottom").offset().top;
+			botBound	= $("footer").offset().top;
 		
 			if(scrollNow > topBound && scrollNow < botBound - sidebarHeight - 50) {
 				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});
