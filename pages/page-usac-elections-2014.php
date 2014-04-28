@@ -130,7 +130,7 @@ Template Name: USAC Elections 2014
 <div class='container'>
 
     <div class="navbar">
-      <div class="navbar-inner" style="color:#009999">
+      <div class="navbar-inner" style="color:#3185c0">
         <div class="container-fluid">
           <a class="brand" href="#">USAC Elections 2014</a>
             <ul class="nav">
@@ -152,7 +152,7 @@ Template Name: USAC Elections 2014
 
     <div class="thumbnail">
       <p style="text-align:center">
-      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at 9 a.m. until May 8 at 5 p.m.</b></p>
+      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at 9 a.m. until May 8 at 5 p.m.</b></p>
     </div>
 
     <br/><br/>
@@ -172,10 +172,10 @@ Template Name: USAC Elections 2014
       <br/>
         <div class = "btn-group">
           <a href="/usac-elections-2013/candidates">
-            <button class="btn" style="color:#009999">
+            <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Learn about the candidates</h4>
-                  <h5>23 students are running for 13 seats</h5>
+                  <h5>30 students are running for 13 seats</h5>
               </div>
             </button>
           </a>
@@ -186,7 +186,7 @@ Template Name: USAC Elections 2014
       <br/>
         <div class = "btn-group">
           <a href="#myModal" role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">What is USAC ?</h4>
                   <h5>Basics of your student government  </h5>
@@ -201,7 +201,7 @@ Template Name: USAC Elections 2014
         <div class = "btn-group">
           <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
 " role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Daily Bruin Endorsements</h4>
                   <h5>Check out the selections</h5>
@@ -224,7 +224,7 @@ Template Name: USAC Elections 2014
       <br/>
         <div class = "btn-group">
           <a href="/usac-elections-2013/candidates">
-            <button class="btn" style="color:#009999">
+            <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Learn about the candidates</h4>
                   <h5>23 students are running for 13 seats</h5>
@@ -240,7 +240,7 @@ Template Name: USAC Elections 2014
       <br/>
         <div class = "btn-group">
           <a href="#myModal" role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">What is USAC ?</h4>
                   <h5>Basics of your student government  </h5>
@@ -257,7 +257,7 @@ Template Name: USAC Elections 2014
         <div class = "btn-group">
           <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
 " role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Daily Bruin Endorsements</h4>
                   <h5>Check out the selections</h5>
@@ -372,7 +372,7 @@ Template Name: USAC Elections 2014
     <?php get_template_part('ad','side'); ?>
   </div>
   <div class="thumbnail textcentered">
-    <p><h4 style="color:#009999">Important Dates:</h4>
+    <p><h4 style="color:#3185c0">Important Dates:</h4>
       April 22 - Group endorsement hearing<br />
       April 25 - Meet the candidates event<br />
       May 3 - Candidates debates<br />
