@@ -4,10 +4,27 @@ Template Name: USAC Elections 2014
 
 <?php get_header(); ?>
 
+<link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
 <!-- Le styles -->
     <link href="bootstrap.css" rel="stylesheet">
     <style type="text/css">
-    
+        
+        h2.elections {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-weight: 400;
+          line-height: 30px;
+          font-size: 40px;
+          margin: 0 0 5px 0;
+        }
+
+        h4.elections {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 25px;
+          line-height: 23px;
+          margin: 5px 0 10px 0;
+        }
+
         .ad{
           margin-bottom: 10px;
         }
@@ -136,6 +153,7 @@ Template Name: USAC Elections 2014
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
+              <li><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
               <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
               <li><a href="http://my.ucla.edu/">Vote Here</a></li>
 
@@ -171,7 +189,7 @@ Template Name: USAC Elections 2014
       <div class="span4">
       <br/>
         <div class = "btn-group">
-          <a href="/usac-elections-2013/candidates">
+          <a href="/usac-elections-2014/candidates">
             <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Learn about the candidates</h4>
@@ -188,7 +206,7 @@ Template Name: USAC Elections 2014
           <a href="#myModal" role="button" data-toggle="modal">
             <button class="btn" style="color:#3185c0">
               <div class="caption">
-                  <h4 style="text-align:center">What is USAC ?</h4>
+                  <h4 style="text-align:center">What is USAC?</h4>
                   <h5>Basics of your student government  </h5>
               </div>
             </button>
@@ -280,46 +298,46 @@ Template Name: USAC Elections 2014
       <div class="span12">
         <div class="thumbnail">
           <div class="caption">
-             <h3>Recent Articles<h3>
+             <h2 class="elections">Recent Articles<h2>
            </div>
 
             <div class="articles">
 
-            <h4>News</h4> 
+            <h4 class="elections">News</h4> 
 
             <ul>
               <?php
               $category_id = get_cat_ID('News');
               global $post;
-              $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1', 'category' => $category_id));
+              $myposts = get_posts( array('tag_slug__and'  => 'USAC election 14', 'posts_per_page' => '-1', 'category' => $category_id));
               foreach( $myposts as $post ) :  setup_postdata($post); ?>
               <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
 
-            <h4>Opinion</h4> 
+            <h4 class="elections">Opinion</h4> 
 
             <ul>
               <?php
               $category_id = get_cat_ID('Opinion');
               global $post;
-              $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1', 'category' => $category_id));
+              $myposts = get_posts( array('tag_slug__and'  => 'USAC election 14', 'posts_per_page' => '-1', 'category' => $category_id));
               foreach( $myposts as $post ) :  setup_postdata($post); ?>
               <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
 
-            <h4>Multimedia</h4> 
+            <!-- <h4>Multimedia</h4> 
 
             <ul>
               <?php
               $category_id = get_cat_ID('Multimedia');
               global $post;
-              $myposts = get_posts( array('tag_slug__and'  => 'USAC elections', 'posts_per_page' => '-1', 'category' => $category_id));
+              $myposts = get_posts( array('tag_slug__and'  => 'USAC election 14', 'posts_per_page' => '-1', 'category' => $category_id));
               foreach( $myposts as $post ) :  setup_postdata($post); ?>
               <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
-            </ul>
+            </ul> -->
 
           </div>
         </div>
