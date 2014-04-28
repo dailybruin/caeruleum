@@ -147,7 +147,7 @@ Template Name: USAC Elections 2014
 <div class="row-fluid">
 
   <div class="span9">
-    <a title='USAC Elections' href='#'><img src='http://dailybruin.com/images/features/usac2013/bannercic.jpg' border='0'/></a> 
+    <a title='USAC Elections' href='#'><img src='http://dailybruin.com/images/2014/04/usac-elections14-banner.jpg' border='0'/></a> 
     <br /><br />
 
     <div class="thumbnail">
@@ -372,7 +372,13 @@ Template Name: USAC Elections 2014
     <?php get_template_part('ad','side'); ?>
   </div>
   <div class="thumbnail textcentered">
-    <p><h4 style="color:#009999">Important Dates:</h4>May 1 - Group endorsement hearing<br />May 2 - Meet the candidates event<br />May 4 - Candidates debates<br />May 6 - Voting begins at noon<br />May 9 - Voting ends at 6 p.m.<br /><b> Election results announced at 11 p.m.</b></p>
+    <p><h4 style="color:#009999">Important Dates:</h4>
+      April 22 - Group endorsement hearing<br />
+      April 25 - Meet the candidates event<br />
+      May 3 - Candidates debates<br />
+      May 8 - Voting begins at 5 a.m.
+      <br />May 9 - Voting ends at 6 p.m.<br />
+      <b> Election results announced at 11 p.m.</b></p>
   </div>
   <br />
   <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23USACelections" data-widget-id="328749991814369281">Tweets about "#USACelections"</a>
