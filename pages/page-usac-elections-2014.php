@@ -391,12 +391,12 @@ Template Name: USAC Elections 2014
   </div>
   <div class="thumbnail textcentered">
     <p><h4 style="color:#3185c0">Important Dates:</h4>
-      April 22 - Group endorsement hearing<br />
-      April 25 - Meet the candidates event<br />
+      April 29 -  Endorsement hearing<br />
       May 3 - Candidates debates<br />
-      May 8 - Voting begins at 5 a.m.
-      <br />May 9 - Voting ends at 6 p.m.<br />
-      <b> Election results announced at 11 p.m.</b></p>
+      May 4 - Campus campaigning begins<br />
+      May 6 - Voting begins at 9 a.m.<br />
+      May 9 - Voting ends at 12 p.m.<br />
+      <b>Election results announced at 4 p.m. at Meyerhoff Park.</b></p>
   </div>
   <br />
   <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23USACelections" data-widget-id="328749991814369281">Tweets about "#USACelections"</a>
