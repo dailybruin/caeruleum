@@ -8,10 +8,12 @@ Template Name: USAC Evaluations 2014
 
     #evals aside.box {
         float: right;
-        max-width: 270px;
-        padding: 0.5em 1em;
+        max-width: 320px;
+        padding: 1em;
         background-color: rgba(0,0,0, 0.05);
         margin-left: 1em;
+        font-size: 1.2em;
+        line-height: 1.4;
     }
 
     #evals .intro.row {
