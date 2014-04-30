@@ -11,7 +11,7 @@ Template Name: USAC Evaluations 2014
         max-width: 260px;
         padding: 0.7em 1em;
         background-color: rgba(0,0,0, 0.05);
-        margin-left: 1em;
+        margin: 0 0 0.5em 1em;
         font-size: 1.3em;
         line-height: 1.4;
     }
