@@ -179,7 +179,7 @@ Template Name: USAC Evaluations 2014
                 <p>More than 120 applicants applied to the 34 open academic appointed positions this year because of more active outreach by the AAC office. Ramalho made several academic appointments, which were vetted at the council table for the first time this year &ndash; an institutional change to USAC procedure set in motion by the previous AAC that Ramalho upheld fully this year.</p>
                 <p>This added step within the appointment process showed a commitment to transparency and accountability that was valued highly by this board.</p>
                 <p>In addition to bringing appointments before council, Ramalho was vocally against the summer&rsquo;s stipend increase that marred the council&rsquo;s reputation early on. He fully supported live streaming council meetings. Ramalho came out publicly against secret ballots when the vote took place and issued an official statement at the following council meeting denouncing the secret ballot vote.</p>
-                <p>Overaamalho demonstrated a clear understanding of his role as a commissioner and as a councilmember. He executed his platforms and position duties to the fullest extent of his abilities, given the constraints of his office&rsquo;s budget and resources.</p>
+                <p>Overall, Ramalho demonstrated a clear understanding of his role as a commissioner and as a councilmember. He executed his platforms and position duties to the fullest extent of his abilities, given the constraints of his office&rsquo;s budget and resources.</p>
             </div>
         </span>
     </div>
