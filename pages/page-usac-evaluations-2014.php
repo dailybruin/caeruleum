@@ -52,7 +52,7 @@ Template Name: USAC Evaluations 2014
 
 <div id="evals">
     <div class="intro row">
-        <h1>2014 USAC Evaluations</h1>
+        <h1>2013-2014 USAC Evaluations</h1>
         <p>Each year the Daily Bruin evaluates the Undergraduate Students Association Council members on how they have completed the platforms they set out when running for office. This year, to give our readers a more complete evaluation of the USAC officers, The Bruin’s editorial board has taken into consideration not only platform completion, but also the quality of the councilmembers’ platforms, how well they fulfilled their respective roles as mandated by the USAC bylaws and their commitment to transparency and accountability.</p> 
         <p>For each factor, the board voted to assign councilmembers a score from 1 to 5, 5 being the highest. The final scores represent the majority opinion of the board.</p>
         <ul class="unstyled">
