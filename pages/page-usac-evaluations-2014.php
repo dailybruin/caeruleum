@@ -8,11 +8,11 @@ Template Name: USAC Evaluations 2014
 
     #evals aside.box {
         float: right;
-        max-width: 320px;
-        padding: 1em;
+        max-width: 260px;
+        padding: 0.7em 1em;
         background-color: rgba(0,0,0, 0.05);
         margin-left: 1em;
-        font-size: 1.2em;
+        font-size: 1.3em;
         line-height: 1.4;
     }
 
@@ -63,7 +63,7 @@ Template Name: USAC Evaluations 2014
 <div id="evals">
     <div class="intro row">
         <h1>2013-2014 USAC Evaluations</h1>
-        <aside class="box"><strong><a href="http://dailybruin.com/2014/04/30/editorial-years-politics-begets-question-of-what-usac-role-should-be/">Editorial: Year&rsquo;s politics begets question of what USAC role should be</a></strong></aside>
+        <aside class="box"><strong><a href="http://dailybruin.com/2014/04/30/editorial-years-politics-begets-question-of-what-usac-role-should-be/">Read an editorial evaluating the entire council.</a></strong></aside>
         <p>Each year the Daily Bruin evaluates the Undergraduate Students Association Council members on how they have completed the platforms they set out when running for office. This year, to give our readers a more complete evaluation of the USAC officers, The Bruin’s editorial board has taken into consideration not only platform completion, but also the quality of the councilmembers’ platforms, how well they fulfilled their respective roles as mandated by the USAC bylaws and their commitment to transparency and accountability.</p> 
         <p>For each factor, the board voted to assign councilmembers a score from 1 to 5, 5 being the highest. The final scores represent the majority opinion of the board.</p>
         <ul class="unstyled">
