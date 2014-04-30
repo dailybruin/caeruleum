@@ -46,7 +46,34 @@ Template Name: USAC Evaluations 2014
     <h1>2014 USAC Evaluations</h1>
 
     <div class="row">
+        <p class="lead">To give readers a more complete evaluation of this year’s Undergraduate Students Association Council officers, the Daily Bruin editorial board has taken into consideration not only platform completion, but also the quality of the councilmembers’ platforms, how well they fulfilled their respective roles as mandated by the USAC bylaws and their commitment to transparency and accountability. For each factor, the board voted to assign councilmembers a score from 1 to 5, 5 being the highest. The final scores represent the majority opinion of the board. Also part of this package are the results from a student poll to gauge satisfaction with each councilmember’s performance.</p>
+    </div>
+
+    <div class="row">
         <span class="span6">
+            <p>The Bruin did not evaluate the performance of former Community Service Commissioner Omar Arce because we were not able to interview him about his accomplishments this year as he is no longer in office and faces criminal proceedings on charges of sexual battery, battery and false imprisonment.</p>
+            <ul class="unstyled">
+                <li><strong>Platform quality:</strong> We took into consideration the benefit and feasibility of each councilmember’s goals.</li>
+                <li><strong>Platform completion:</strong> Based on interviews with the councilmembers and outside reporting, we evaluated how well the officers completed their campaign promises.</li>
+                <li><strong>Fulfillment of responsibilities:</strong> Using USAC bylaws, we evaluated how each councilmember fulfilled the responsibilities and expectations of his or her office, aside from his or her platforms.</li>
+                <li><strong>Transparency:</strong> As elected officials, accountability is important. We ranked each councilmember in this category based on his or her actions relating to transparency.</li>
+            </ul>
+            <hr/>
+            <p>The tenure of the 2013-2014 Undergraduate Students Association Council was a boom-and-bust cycle, marked by the highs of successful inter-office projects and the lows of persistent missteps in transparency and procedure.</p>
+            <p>More often than not, it was the failures in decision-making and collaboration that set the tone at the council table. Controversies such as the council's self-approved pay raise or the over-eager allocation of surplus funding to personal projects hindered the council's progress on in-house initiatives andraised hackles among community members.</p>
+            <p>Through the divisions and travails of the two-slate council, this year was important in prompting many onlookers to actively discuss and engage with the question of what USAC's role on campus should be.</p>
+            <p>What standards of transparency should the council be held to? Do USAC resolutions truly embody the "holistic" opinion of the student body, or have they simply become a tool of slate politics? How can councilmembers be held accountable the council table and avoid creating conflicts of interest through their personal decisions?</p>
+            <p>These questions should provide an important starting point for next year's council. Whether it is composed of one or four slates, every candidate would be well advised to think long and hard about this year's controversies and their importance in evaluating what student government's role should be on campus.</p>
+            <p>This year&rsquo;s council often employed resolutions as a tool to stake out political positions and advocate for pet issues. But within USAC&rsquo;s guiding documents, resolutions are described as representations of the student body&rsquo;s &ldquo;holistic&rdquo; opinions.</p>
+            <p>At many points this year, councilmembers tossed this criteria to the wayside, bringing forward resolutions intended to condemn and make demands of Janet Napolitano soon after her tenure began, or presenting symbolic divestment resolutions that deepened resentment and division among councilmembers and students.</p>
+            <p>Another sticking point at this year&rsquo;s council table &ndash; and one that continues to obstruct its progress &ndash; is a repeated failure to adhere to Robert&rsquo;s Rules of Order, commonly adopted guidelines for running open meetings, and USAC&rsquo;s own bylaws and constitution.</p>
+            <p>Most recently, council&rsquo;s inattention to procedure prompted a former elections board member to file two complaints with the judicial board to investigate whether this year&rsquo;s election calendar honored the election board&rsquo;s bylaws and was legitimately approved by the council.</p>
+            <p>Due to numerous procedural errors &ndash; notably missed deadlines for submitting material to be considered at council&rsquo;s weekly meeting and a hasty vote at an inappropriate stage of the meeting &ndash; the council voted to approve an election calendar the judicial board later found to be a violation of the election code.</p>
+            <p>Finally, whether it was councilmembers&rsquo; opting to take expenses-paid trips to foreign countries on the dime of interest groups or voting to approve a personal pay raise, questions of conflict of interest were present throughout the year at the council table. Future councilmembers should take special note of the role these ethical entanglements played in the tone of this year&rsquo;s council.</p>
+            <p>Most importantly, if the next council crosses the line of conflict of interest, it should seek to resolve it quickly and not put the issue off for months, as this year&rsquo;s council did when moving to amend its bylaws to bar self-awarded stipend increases.</p>
+            <p>At several points this year, this board raised the same question in its deliberations on USAC: &nbsp;Do USAC councilmembers consider themselves responsible only for advancing the interests of their constituent student groups or do they believe in a greater duty to represent the interests of the student body as a whole?</p>
+            <p>We encourage next year&rsquo;s council to think heavily on this question and understand the value of a student government that actively seeks to promote programs and statements that serve the student body as a whole.</p>
+            <p>We hope it comes to the realization that the most effective student government is also the most inclusive, and that a council table victory at the cost of other students&rsquo; dignity or sense of belonging is an entirely hollow one.</p>
         </span>
 
         <span class="span6">
