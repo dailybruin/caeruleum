@@ -7,7 +7,7 @@ Template Name: USAC Evaluations 2014
 <style type="text/css">
 
     #evals .intro.row {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
 
     #evals h1 {
