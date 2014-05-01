@@ -242,7 +242,7 @@ Template Name: USAC Evaluations 2014
                 </div>
                 <h4 class="feedback">Student feedback</h4>
                 <img src="http://dailybruin.com/images/2014/04/poll_trumble.png"/>
-                <em>The original version of this article contained an error and has been changed. See the bottom of the article for additional information.</em>
+                <p><em>The original version of this article contained an error and has been changed. See the bottom of the article for additional information.</em></p>
                 <p>Jessica Trumble&rsquo;s performance and programming as Cultural Affairs commissioner this year are emblematic of a commissioner that understands her role within the UCLA community: to consistently plan and run events with a &ldquo;cultural, political or social relevance&rdquo; to students.</p>
                 <p>Trumble&rsquo;s office successfully completed its own rendition of Art Walk, an event that has taken place in downtown Los Angeles for years and featured the artistic talents of many UCLA students in its first year on campus. The Word on Wednesday poetry series moved from the Kerckhoff Art Gallery to the Ackerman Union Global Viewpoint Lounge because of consistent attendance, and UCLA&rsquo;s first-ever slam poetry team reached the semi-finals of the Association of College Unions International Poetry Slam Invitational earlier this year.</p>
                 <p>Other platforms, however, fell short.</p>
