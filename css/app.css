@@ -1021,8 +1021,6 @@ footer {
 	margin:20px auto;
 }
 
-.footer-links h3 {
-}
 .footer-links li {
 	line-height: 14px;
 	margin-bottom: 6px;
@@ -1031,7 +1029,7 @@ footer {
 
 .footer-links h3 {
 	font-family: "Georgia";
-	color: #EEE;
+	color: #DDD;
 	font-weight: normal;
 	margin-top: 23px;
 	margin-bottom: 0px;

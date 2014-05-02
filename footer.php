@@ -97,6 +97,7 @@
 					<li><a href="http://mojo.dailybruin.com">Mojo</a></li>
 					</ul>
 					<h3><a href="/classifieds/">Classifieds</a></h3>					
+					<h3>Links</h3>					
                     <?php if (is_front_page()): ?>
                     <ul>
                         <?php wp_list_bookmarks(array(
