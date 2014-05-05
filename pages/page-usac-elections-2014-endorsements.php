@@ -94,23 +94,24 @@ Template Name: USAC Elections Candidate Endorsements 2014
           text-align: center;
         }
 
-        .bally{
-          background-color: #93BCC4;
-        }
-
         .bunited{
-          background-color: #C2E1F2;
+          border:5px solid #C2E1F2;
         }
 
         .indep{
-          background-color: #A2DEA6;
+          border:5px solid #A2DEA6; 
         }
 
         .letsact
         {
-          background-color: #F7F499;
+          border:5px solid #F7F499;
         }
-
+        .firedup {
+          border:5px solid #dea6a2; 
+        }
+        .bsaty {
+          border:5px solid #93BCC4;
+        }
         .pass
         {
           background-color: green;
@@ -379,7 +380,7 @@ The student body could reject the referendum until its creators present a versio
   <ul class="thumbnails">
 
       <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/murphy.jpg" alt="">
@@ -422,7 +423,7 @@ The student body could reject the referendum until its creators present a versio
       </li>
 
        <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rodriguez.jpg" alt="">
@@ -440,7 +441,7 @@ The student body could reject the referendum until its creators present a versio
   <h2 class="endorsements">Internal Vice President</h2><hr></hr>
   <ul class="thumbnails">
           <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Sadeghi-Movahed.jpg" alt="">
@@ -479,7 +480,7 @@ The student body could reject the referendum until its creators present a versio
       </li>
 
 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/lasher.jpg" alt="">
@@ -499,7 +500,7 @@ The student body could reject the referendum until its creators present a versio
   <ul class="thumbnails">
 
  <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/contreras.jpg" alt="">
@@ -543,7 +544,7 @@ The student body could reject the referendum until its creators present a versio
       </li>
 
 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garfio.jpg" alt="">
@@ -566,7 +567,7 @@ The student body could reject the referendum until its creators present a versio
   <ul class="thumbnails">
 
  <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/williams.jpg" alt="">
@@ -610,7 +611,7 @@ The student body could reject the referendum until its creators present a versio
       </li>
 
 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Kiang.jpg" alt="">
@@ -629,7 +630,7 @@ The student body could reject the referendum until its creators present a versio
   <ul class="thumbnails">
 
  <li class="span12">
-        <div class="endorsement bunited">
+        <div class="endorsement indep">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/greg.jpg" alt="">
@@ -659,7 +660,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   <ul class="thumbnails">
 
  <li class="span12">
-        <div class="endorsement bunited">
+        <div class="endorsement indep">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
@@ -690,7 +691,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   <ul class="thumbnails">
 
  <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/mercier.jpg" alt="">
@@ -732,7 +733,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
       </li>
 
 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Nguyen.jpg" alt="">
@@ -751,7 +752,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   <ul class="thumbnails">
 
  <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Galbadores.jpg" alt="">
@@ -795,7 +796,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
       </li>
 
 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gutierrez.jpg" alt="">
@@ -815,7 +816,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   <ul class="thumbnails">
 
  <li class="span12">
-        <div class="endorsement bunited">
+        <div class="endorsement indep">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt="">
@@ -849,7 +850,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   <ul class="thumbnails">
 
       <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garcia.jpg" alt="">
@@ -904,7 +905,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   </ul>
   <ul class="thumbnails">
         <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
@@ -930,7 +931,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
       </li>    
 
 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement firedup">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/04/placeholder.png" alt="">
@@ -972,7 +973,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
       </li>
 
                 <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement bsaty">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Medhekar.jpg" alt="">
@@ -991,7 +992,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
   <ul class="thumbnails">
 
        <li class="span6">
-        <div class="endorsement bunited">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rebosura.jpg" alt="">
