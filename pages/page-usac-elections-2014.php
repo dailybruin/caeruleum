@@ -165,7 +165,7 @@ Template Name: USAC Elections 2014
 <div class="row-fluid">
 
   <div class="span9">
-    <a title='USAC Elections' href='#'><img src='http://dailybruin.com/images/2014/04/usac-elections14-banner.jpg' border='0'/></a> 
+    <a title='USAC Elections' href='#'><img src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png' border='0'/></a> 
     <br /><br />
 
     <div class="thumbnail">
@@ -240,7 +240,7 @@ Template Name: USAC Elections 2014
       <div class="span12">
       <br/>
         <div class = "btn-group">
-          <a href="/usac-elections-2013/candidates">
+          <a href="/usac-elections-2014/candidates">
             <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Learn about the candidates</h4>
@@ -272,8 +272,7 @@ Template Name: USAC Elections 2014
       <div class="span12">
       <br/>
         <div class = "btn-group">
-          <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
-" role="button" data-toggle="modal">
+          <a href="http://dailybruin.com/usac-elections-2014/endorsements/" role="button" data-toggle="modal">
             <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Daily Bruin Endorsements</h4>
