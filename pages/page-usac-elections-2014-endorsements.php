@@ -997,7 +997,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rebosura.jpg" alt="">
           	<h4 class="endorsementname">Francesca Rebosura</h4>
-          	<h4 class="candinfoend">LET's ACT</h4>
+          	<h4 class="candinfoend">LET'S ACT</h4>
 
             </div>
           
