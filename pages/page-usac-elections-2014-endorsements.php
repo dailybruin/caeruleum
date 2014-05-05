@@ -654,7 +654,38 @@ The student body could reject the referendum until its creators present a versio
 Kalfayan’s strength within the commission will be a solid base for his work next year but, without additional efforts, he may struggle to push the commission beyond its current state.</p>
           </div>
       </li>       
-      </ul>      
+      </ul>     
+
+       <h2 class="endorsements">Community Service Commissioner</h2><hr></hr>
+  <ul class="thumbnails">
+
+ <li class="span12">
+        <div class="endorsement indep">
+          
+          <div class="textcentered">
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong.jpeg" alt="">
+            <h4 class="endorsementname">Cynthia Wong</h4>
+            <h4 class="candinfoend">Independent</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+          
+
+<p>This board endorses Cynthia Wong for Community Service commissioner but warns that her current platforms lack specifics and scope.</p>
+
+<p>Wong’s experience on the commission will help her strengthen service projects and make her a strong resource for the commission. Her emphasis on improving service opportunities for the student community as a whole will direct the majority of her work next year.</p>
+
+<p>Her major goals are to turn CSC into a resource for all service groups, inside or outside the commission, and improve project sustainability. This platform is sound, but the specifics to make it happen are lacking.</p>
+
+<p>The board encourages Wong to look at the work of the Student Wellness Commission and its Student Health Network and model her strategy after this similar success.</p>
+
+<p>Wong also aims to increase student engagement through expanding service opportunities. Once again, this goal sounds worthwhile but currently lacks any tangible steps to make it happen.</p>
+
+<p>Wong’s inexperience on council is also concerning. The board encourages her to learn her way around council as soon as possible so that she can avoid a rough transitionary period when she becomes a councilmember. Wong also needs to solidify her goals as a councilmember to properly serve the student body.
+Experience within the commission makes Wong a qualified candidate, but she needs to fill in the gaps in her vision to build and sustain momentum in office.</p>
+          </div>
+      </li>        
+  </ul>
+ 
 
    <h2 class="endorsements">Cultural Affairs Commissioner</h2><hr></hr>
   <ul class="thumbnails">
