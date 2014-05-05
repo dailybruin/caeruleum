@@ -633,7 +633,7 @@ The student body could reject the referendum until its creators present a versio
         <div class="endorsement indep">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/greg.jpg" alt="">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gregweb.jpg" alt="">
           	<h4 class="endorsementname">Greg Kalfayan</h4>
           	<h4 class="candinfoend">Independent</h4>
 

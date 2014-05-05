@@ -191,7 +191,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
   <img src="http://dailybruin.com/images/2014/05/satyedev.jpg" width="1" height="1"/>; //Picture name
   <img src="http://dailybruin.com/images/2014/05/Sadeghi-Movahed.jpg" width="1" height="1"/>; //Picture name
   <img src="http://dailybruin.com/images/2014/05/murphy.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/2014/05/greg.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/gregweb.jpg" width="1" height="1"/>; //Picture name
   <img src="http://dailybruin.com/images/2014/05/Nguyen.jpg" width="1" height="1"/>; //Picture name
   <img src="http://dailybruin.com/images/2014/05/gutierrez.jpg" width="1" height="1"/>; //Picture name
   <img src="http://dailybruin.com/images/2014/05/garcia.jpg" width="1" height="1"/>; //Picture name
@@ -662,7 +662,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
     o19.lname = "Kalfayan"; //Last name
     o19.slate = SLATE.INDEPENDENT; //Party affiliation
     o19.office = OFFICE.CAMPUSEVENTS; //Office
-    o19.picture = "http://dailybruin.com/images/2014/05/greg.jpg"; //Picture name
+    o19.picture = "http://dailybruin.com/images/2014/05/gregweb.jpg"; //Picture name
     o19.bio = "Lots of info."; //Candidate bio
     o19.major = "Political Science"; //Candidate Major
     o19.year = "Third"; //Year
