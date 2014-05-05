@@ -206,6 +206,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
 <img src="http://dailybruin.com/images/2014/05/contreras.jpg" width="1" height="1"/>; //Picture name
 <img src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" width="1" height="1"/>; //Picture name
 <img src="http://dailybruin.com/images/2014/05/patterson.jpg" width="1" height="1"/>; //Picture name
+<img src="http://dailybruin.com/images/2014/05/xiong.jpg" width="1" height="1"/>; //Picture name
 
 
 </div>
@@ -838,7 +839,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
   o29.lname = "Xiong"; //Last name
   o29.slate = SLATE.FIREDUP; //Party affiliation
   o29.office = OFFICE.GENERALREP; //Office
-  o29.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+  o29.picture = "http://dailybruin.com/images/2014/05/xiong.jpg"; //Picture name
   o29.bio = "Lots of info."; //Candidate bio
   o29.major = "Asian American Studies"; //Candidate Major
   o29.year = "Second"; //Year
