@@ -362,7 +362,7 @@ Template Name: USAC Elections 2014
     <br /><br />
 
     <b>What is a slate?</b><br />
-    Slates are groups of students who pool their resources together and run for USAC office under similar platforms.The slates running candidates in this year’s elections are <i>Bruin Alliance</i>, <i>Bruins United</i> and <i>LET’S ACT</i>! 
+    Slates are groups of students who combine their resources and run on similar platforms, similar to political parties. There are four slates running candidates in this year's elections – <strong>Bruins United</strong>, <strong>¡Bruin Satyrists!</strong>, <strong>FIRED UP!</strong> and <strong>LET'S ACT!</strong>
     <br /><br />
 
     <b>What is on the ballot?</b><br />
@@ -375,7 +375,7 @@ Template Name: USAC Elections 2014
     <br /><br />
 
     <b>When are results announced?</b><br />
-    Students can vote online through MyUCLA starting Tuesday May 6 at 9 a.m. until Friday May 9 at noon. Election results will be announced around 4 p.m. in Meyerhoff Park, in front of Kerckhoff Hall.
+    Students can vote online through MyUCLA starting Tuesday, May 6 at 9 a.m. until Friday, May 9 at noon. Election results will be announced around 4 p.m. in Meyerhoff Park, in front of Kerckhoff Hall.
     <br />
     </p>
     </div>
