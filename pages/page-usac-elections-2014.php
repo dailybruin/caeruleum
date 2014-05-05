@@ -375,7 +375,7 @@ Template Name: USAC Elections 2014
     <br /><br />
 
     <b>When are results announced?</b><br />
-    The USAC Election Board chair will announce the election results on Thursday, May 9 at 11 p.m. on the steps of Kerckhoff. 
+    The USAC Election Board chair will announce the election results on Friday, May 9 at 4 p.m. at Meyerhoff Park. 
     <br />
     </p>
     </div>
