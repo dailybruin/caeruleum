@@ -217,8 +217,7 @@ Template Name: USAC Elections 2014
       <div class="span4">
       <br/>
         <div class = "btn-group">
-          <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
-" role="button" data-toggle="modal">
+          <a href="http://dailybruin.com/usac-elections-2014/endorsements" role="button" data-toggle="modal">
             <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Daily Bruin Endorsements</h4>
