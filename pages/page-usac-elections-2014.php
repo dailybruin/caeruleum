@@ -354,7 +354,7 @@ Template Name: USAC Elections 2014
     <div class="modal-body">
     <p>
     <b>What is USAC?</b><br />
-    The Undergraduate Students Association Council is the governing body for the more than 27,000 undergraduate students at UCLA. It consists of 13 elected officers and seven ex-officio officers, including administrative and alumni representatives, that sit on the council, but do not get a vote. 
+     The Undergraduate Students Association Council is the governing body for the almost 28,000 undergraduate students at UCLA. Every spring, students vote for candidates to fill the 13 elected officer positions and on any ballot initiatives, referendums or amendments brought up that year.
     <br /><br />
 
     <b>What is the USAC Election Board?</b><br />
@@ -366,8 +366,7 @@ Template Name: USAC Elections 2014
     <br /><br />
 
     <b>What is on the ballot?</b><br />
-    The Undergraduate Students Association Council is the governing body for the almost 28,000 undergraduate students at UCLA. Every spring, students vote for candidates to fill the 13 elected officer positions and on any ballot initiatives, referendums or amendments brought up that year. This elections season, there are 30 candidates, a fee referendum and a USAC constitutional amendment on the ballot.
-
+   This elections season, there are 30 candidates, a fee referendum and a USAC constitutional amendment on the ballot.
 
     <br /><br />
 
