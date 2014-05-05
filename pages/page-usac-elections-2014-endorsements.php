@@ -934,7 +934,7 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/xiong.jpg" alt="">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Xiongweb.jpg" alt="">
           	<h4 class="endorsementname">Der Xiong</h4>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
