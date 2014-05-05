@@ -114,13 +114,14 @@ div #preload { display: none; }
 
 
     <div class="navbar">
-      <div class="navbar-inner">
+      <div class="navbar-inner" style="color:#3185c0">
         <div class="container-fluid">
-          <a class="brand" href="#">USAC Elections 2013</a>
+          <a class="brand" href="#">USAC Elections 2014</a>
             <ul class="nav">
-              <li><a href="/usac-elections-2013/">Home</a></li>
-              <li class="active"><a href="#">Candidates</a></li>
-              <li><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
+              <li><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
+              <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
               <li><a href="http://my.ucla.edu/">Vote Here</a></li>
             </ul>
         </div>
@@ -350,7 +351,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
     o2.lname = "Singh"; //Last name
     o2.slate = SLATE.BUNITED; //Party affiliation
     o2.office = OFFICE.PRESIDENT; //Office
-    o2.picture = "http://dailybruin.com/images/2014/05/Singh.jpg"; //Picture name
+    o2.picture = "http://dailybruin.com/images/2014/04/web.Sunny_.Singh_.jpg"; //Picture name
     o2.bio = "Lots of info."; //Candidate bio
     o2.major = "Economics and History"; //Candidate Major
     o2.year = "Third"; //Year
