@@ -170,7 +170,7 @@ Template Name: USAC Elections 2014
 
     <div class="thumbnail">
       <p style="text-align:center">
-      <b>Thirty candidates are running for the 13 elected USAC positions in this year's highly contested elections. The majority of candidates are running with the Bruins United, LET'S ACT! or FIRED UP! slates, and one candidate is running with the slate Â¡Bruin Satyrists! Slates are groups of students who combine their resources and run on similar platforms, similar to political parties.</b></p>
+      <b>Thirty candidates are running for the 13 elected USAC positions in this year's highly contested elections. The majority of candidates are running with the Bruins United, LET'S ACT! or FIRED UP! slates, and one candidate is running with the slate ¡Bruin Satyrists! Slates are groups of students who combine their resources and run on similar platforms, similar to political parties.</b></p>
     </div>
 
     <br/><br/>
