@@ -623,10 +623,410 @@ The student body could reject the referendum until its creators present a versio
 <p>Jazz Kiang’s heart is in the right place, as his ideas for the Academic Affairs Commission show, but the logistics aren’t. He had the least thorough plan for passing the diversity requirement, and his desire to create additional ethnically centered resource centers was pitched with similar vagueness. His ideas for reforming the Expected Cumulative Progress program, especially in regard to unit count and dismissal, deserve to be acknowledged. Jazz Kiang would make a great staffer inside the Academic Affairs Commission should he choose to pursue such a route.</p>
           </div>
       </li>
+</ul>
+
+<h2 class="endorsements">Campus Events Commissioner</h2><hr></hr>
+  <ul class="thumbnails">
+
+ <li class="span12">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/greg.jpg" alt="">
+          	<h4 class="endorsementname">Greg Kalfayan</h4>
+          	<h4 class="candinfoend">Independent</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+          
+
+<p>This board endorses Greg Kalfayan for Campus Events commissioner because his experience and vision can help him improve the already successful commission.</p>
+
+<p>Kalfayan’s platforms aim to continue CEC’s tradition of producing high-quality student events, while also aiming to fix many of the commission’s current weaknesses. Kalfayan emphasized the need to improve professionalism in the commission and tied that into his platform of prioritizing student safety and convenience at events.</p>
+
+<p>His experience with holding events in and out of CEC will serve him well in accomplishing these goals. His knowledge of the commission will push the currently high standards for event quality and safety even higher.</p>
+
+<p>Another of Kalfayan’s platforms is to reach out to transfer students and cater more events to that portion of the UCLA community. We agree that the CEC could do more to reach a too-often-ignored segment of the student body.</p>
+
+<p>This platform, however, is very similar to the current commissioner’s incomplete platform of gearing more events toward international students. This board encourages Kalfayan to learn from the missteps that led to that platform stagnating and avoid similar pitfalls.</p>
+
+<p>Kalfayan will also have to be a sitting member of council next year, and we encourage him to study USAC procedure and bylaws to better grasp his role on the council early in his term.
+Kalfayan’s strength within the commission will be a solid base for his work next year but, without additional efforts, he may struggle to push the commission beyond its current state.</p>
+          </div>
+      </li>       
+      </ul>      
+
+   <h2 class="endorsements">Cultural Affairs Commissioner</h2><hr></hr>
+  <ul class="thumbnails">
+
+ <li class="span12">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
+          	<h4 class="endorsementname">Irmary Garcia</h4>
+          	<h4 class="candinfoend">Independent</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+          
+
+<p>Although at times specifics of her platforms were underwhelming, we endorse Irmary Garcia for Cultural Affairs commissioner. Based on her programming experience with the JazzReggae Festival, this board feels Garcia is fit to make these improvements.</p>
+
+<p>Garcia’s platforms include running a more comprehensive cultural events calendar on the CAC’s website to promote student-run cultural events, but this is a rather one-faceted approach to garnering widespread student interest for cultural programming.</p>
+
+<p>Her idea to implement workshops about programming events effectively for students groups in the Cultural Arts Collective, a loose association of culture-oriented student groups, is a good one. We think this method is more proactive and well-structured than relying on office hours to help students with programming.</p>
+
+<p>Garcia also said she wants to open up the workshops to groups outside the collective. We hope she will reach out widely to relevant student groups that could benefit from these workshops and other resources the Cultural Affairs Commission may be able to provide.</p>
+
+<p>Garcia fell most short on her idea to institutionalize a cultural crisis response team. While Garcia said she had not finalized details about the role of this team, her current vision for the task force, which is meant to be a resource to students who feel they have experienced challenges as a result of their cultural identities, is disappointing, especially in light of how complex issues of culture can be.</p>
+
+<p>The cultural crisis response team would strive to be a safe space for students who are experiencing cultural crises and provide students with information about relevant on-campus resources, such as details on how to file a report with UCPD about hate incidents or crimes. While disseminating these resources is important, the plan in its current form fails to make effective change for students.</p>
+
+<p>We hope Garcia will formulate more effective strategies to implement her platforms, drawing on her experience in the commission.</p>
+          </div>
+      </li>        
+  </ul>
+
+   <h2 class="endorsements">Facilities Commissioner</h2><hr></hr>
+  <ul class="thumbnails">
+
+ <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/mercier.jpg" alt="">
+          	<h4 class="endorsementname">Alex Mercier</h4>
+          	<h4 class="candinfoend">LET'S ACT!</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+          
+
+<p>We endorse Alex Mercier as facilities commissioner because of his solid vision for the office, along with his energetic and feasible platforms.</p>
+
+<p>Specifically, we find his plan to install an urban garden atop one of the school’s buildings effective in promoting greater access to sustainable resources on campus. In addition, his practical ideas for the future of the garden – namely, growing fruits and vegetables that can be sold at discounted rates – show that Mercier plans to use his single year in office to lay the groundwork for long-term change on campus.</p>
+
+<p>His idea to create a UCPD oversight board, wherein student leaders and police administrators can meet to discuss the relationship between the police force and UCLA, demonstrates Mercier’s cognizance of real campus issues.</p>
+
+<p>The idea to create a non-denominational prayer space has been a constant in USAC elections, but Mercier’s decision to try to place it in the Student Activities Center could prove fruitful.</p>
+
+<p>His final platform, to create an easily accessible student space reservation form, is generic across every candidate. However, Mercier’s place on the John Wooden Center Board of Governors does provide him with extra insight when drafting the system’s infrastructure.</p>
+
+<p>Speaking of platforms, Mercier would be wise to adopt his opponent Teri Nguyen’s idea for a payment plan for space use. Renting space on campus can be expensive; Royce Hall costs upward of $20,000 for a night, Nguyen said. Hers is an easy solution to a big problem.</p>
+
+<p>Mercier’s measured demeanor lends him an air of professionalism that has been lacking around the council table this year. His personal qualities, along with his feasible platforms, indicate he could be a productive member of next year’s council.</p>
+          </div>
+      </li>        
+
+<li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/quintanilla.jpg" alt="">
+          	<h4 class="endorsementname">Carlos Quintanilla</h4>
+          	<h4 class="candinfoend">Bruins United</h4>
+
+            </div>
+          
+
+<p>Carlos Quintanilla provided a solid, if generic, platform for his candidacy. He was poised, well spoken and seemed to have a grasp on how to complete his ideas. However, the ideas themselves were lacking. There seemed to be a focus on low impact, one-off programming that would do little to promote any long-term changes on campus. Ultimately, there was nothing wrong with Quintanilla’s candidacy, or his interview, but an underwhelming platform didn’t make him stand out. </p>
+          </div>
+      </li>
+
+<li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Nguyen.jpg" alt="">
+          	<h4 class="endorsementname">Teri Nguyen</h4>
+          	<h4 class="candinfoend">FIRED UP!</h4>
+
+            </div>
+          
+<p>It would be difficult to question Teri Nguyen’s passion or care for other students. However, in evaluating the efficacy and relevance of her platforms, it becomes apparent that Nguyen doesn’t have a clear grasp of what it means to run a student government commission. While her idea for a facilities repayment plan is solid, her other platforms fall flat. She admitted ignorance on how she would accomplish her platforms, claiming she was only a mouthpiece for these issues. If she intends to run in the future, Nguyen should focus on a deeper understanding of the issues she intends to tackle.</p>
+          </div>
+      </li>
+</ul>
 
 
+   <h2 class="endorsements">Financial Supports Commissioner</h2><hr></hr>
+  <ul class="thumbnails">
+
+ <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Galbadores.jpg" alt="">
+          	<h4 class="endorsementname">Winnie Galbadores</h4>
+          	<h4 class="candinfoend">LET'S ACT!</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+          
+
+<p>We endorse Winnie Galbadores for Financial Supports commissioner because, of all the candidates, she is the most likely to tangibly move the office forward in the direction we believe it must progress.</p>
+
+<p>A central concern of the Financial Supports commissioner that Galbadores identified during her interview is to advocate on behalf of students’ financial concerns. To us, this means representing undergraduate students to university administration and other bodies on campus, such as the Campus Retention Committee, and putting a particular focus on those most likely to be in financial need.</p>
+
+<p>While Galbadores does not have a position in the office she is running for, that may be a positive in this race: She is more likely than her in-house opponent to change the priorities of the commission toward advocating for students with the greatest financial need and identifying concrete avenues to address their concerns.</p>
+
+<p>If she completes her platforms, adopts some of her opponents’ platforms and lives up to the spirit of her campaign, we believe she can effectively accomplish that goal in a year’s time.</p>
+
+<p>Galbadores’ platforms are modest but doable. Her intention to increase the visibility of the Scholarship Resource Center will likely help finance the education of students that need it most. In addition, we applaud her plans to work with the Financial Aid Office, implementing measures that will help students manage the money that they borrow or are granted.</p>
+
+<p>But more enticing than her specific will-do’s is the tone of the campaign she has run, promising to expand the scope of an office that has, in recent years, focused on programming and shied away from advocacy.</p>
+
+<p>Under the right stewardship, we believe that, in addition to putting on popular and beneficial programming, the Financial Supports Commission can act as a powerful conduit between students and administrators.</p>
+          </div>
+      </li>        
+
+<li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/rosen.jpg" alt="">
+          	<h4 class="endorsementname">Heather Rosen</h4>
+          	<h4 class="candinfoend">Bruins United</h4>
+
+            </div>
+          
+
+<p> Heather Rosen’s experience in the Financial Supports Commission and her knowledge of the office’s current pursuits make her a qualified candidate for the commissioner spot. However, we fear that if elected to the office, she would do little more than carry on the programming the office currently puts on, with a few adjustments.</p>
+
+<p>This year’s Financial Supports Commission put on popular events and courses, and Rosen is right to seek to continue that momentum. But, as far as we are concerned, such programming is the baseline job of the commissioner, and the office should be capable of accomplishing much more.</p>
+          </div>
+      </li>
+
+<li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gutierrez.jpg" alt="">
+          	<h4 class="endorsementname">Gabriel Gutierrez</h4>
+          	<h4 class="candinfoend">FIRED UP!</h4>
+
+            </div>
+          
+<p>We were impressed by Gabriel Gutierrez’s sincerity and real desire to help students in financial need, but we are not confident in his ability to enact the changes he seeks.</p>
+
+<p>For example, his promise to institute rent control in Westwood is unrealistic for a student government officer. By contrast, his platform to create a scholarship that would pay students’ filing fees for the Deferred Action for Childhood Arrivals program, which allows undocumented individuals to defer deportation in order to pursue an education, is an excellent one. The winning candidate should adopt this platform and, if appropriate, appoint Gutierrez to oversee it. </p>
+          </div>
+      </li>
+</ul>
+
+   <h2 class="endorsements">Student Wellness Commissioner</h2><hr></hr>
+  <ul class="thumbnails">
+
+ <li class="span12">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt="">
+          	<h4 class="endorsementname">Savannah Badalich</h4>
+          	<h4 class="candinfoend">Independent</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+          
+
+<p>This board endorses Savannah Badalich for Student Wellness commissioner.</p>
+
+<p>Badalich served as the Student Wellness commissioner this year and spearheaded 7000 in Solidarity, a campaign to combat sexual violence through education that brought much-needed scrutiny to and constructive dialogue around the issue of sexual assaults at UCLA.</p>
+
+<p>Badalich’s efforts to address sexual violence as a campus issue wisely identified a largely neglected area that could vastly enhance the health and wellness of the student body. Badalich included combating sexual and gender-based violence in her platform for this upcoming election by committing to continue focusing on the 7000 in Solidarity campaign next year.</p>
+
+<p>Badalich said she wants to institutionalize these efforts into the Student Wellness Commission through adopting the Clothesline Project, a student group that promotes gender-based violence education and prevention, with a change in Undergraduate Students Association Council bylaws. We commend her proposal, which would require the Student Wellness Commission to continually address sexual violence in the years following Badalich’s tenure. However, we caution Badalich against devoting too much time to this goal and neglecting her other platforms, as she did this year.</p>
+
+<p>Badalich also aims to educate students on mental health, specifically on the topics of depression, addiction and the stigma surrounding mental illness, and promote positive body image with a focus on eating disorder education.</p>
+
+<p>In addition, Badalich said she wants to start an awareness and education campaign on depression, addiction and stigma, modeled in the spirit of 7000 in Solidarity. Her experience in leading 7000 in Solidarity has given Badalich exceptional qualifications to do more positive work for the wellness of our campus community.</p>
+
+<p>Badalich correctly diagnosed UCLA Counseling and Psychological Services as overutilized and underfunded and said she wanted to start a peer-to-peer counseling program based on a UC Davis equivalent called The House. She also plans to lobby professors to include mental health resource information on class syllabi, which would likely increase students’ understanding of available, on-campus services.</p>
+
+<p>All of these goals are honorable and reflect an excellent understanding of what her office can do. For these reasons, Badalich is a qualified candidate to take up the position of Student Wellness commissioner for a second term.</p>
+          </div>
+      </li>        
+  </ul>
 
 
+ <h2 class="endorsements">General Representatives</h2><hr></hr>
+  <ul class="thumbnails">
+
+      <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garcia.jpg" alt="">
+          	<h4 class="endorsementname">Erineo Garcia</h4>
+          	<h4 class="candinfoend">LET'S ACT!</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+            
+<p>This board endorses Erineo Garcia for general representative for his tangible goals to advocate for underrepresented campus communities through his platforms and at the council table.</p>
+
+<p>His most worthwhile platform is the creation of a “Queer Conference” to help foster a safe space for members of the lesbian, gay, bisexual and transgender communities and discuss relevant issues not always addressed during the annual Ally Week. He proved to have a clear vision of how to connect the conference to high schools around Los Angeles and bring in outside organizations to engage in discussions, such as the AIDS Project Los Angeles.</p>
+
+<p>As an active member of MEChA de UCLA, Garcia gained experience in organizing large-scale events and programing within budgetary boundaries. He also worked within the External Vice President’s office to organize the Student of Color Conference, a large-scale event that brought minority students from across the UC to UCLA.</p>
+
+<p>He identified the need to overhaul the current student group website, which is outdated and hard to navigate. Improvements to the site could greatly benefit numerous student groups who have difficulty recruiting and ensure that all student organizations are represented equally.</p>
+
+<p>Integrating postgraduate resources onto a MyUCLA tab is another needed change that would benefit a vast number of students.</p>
+
+<p>He also plans to create a “text-n-go” ordering system in the UCLA coffeeshops to reduce the amount of time students wait in line. Although it would require more effort from Associated Students UCLA than student government officers, the new system would be a welcomed addition for many students who frequent campuscoffee shops.</p>
+
+<p>Ultimately, Garcia will be an important voice on council for many student groups that do not feel they are being fully represented.</p>
+
+<p>Though his willingness to use a secret ballot calls into question his dedication to student government transparency, this board believes that his vision for the office is a needed addition to USAC.</p>
+          </div>
+      </li>
+
+      <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/patterson.jpg" alt="">
+          	<h4 class="endorsementname">Kevin Patterson</h4>
+          	<h4 class="candinfoend">Bruins United</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+            
+<p>Though several of general representative candidate Kevin Patterson’s platforms include goals that will require the support of other offices and institutions, he earns this board’s endorsement based on a clear understanding of how to use campus space for the betterment of student groups.</p>
+
+<p>Patterson’s idea of “Pauley Concessions Night” specifically would give student groups an opportunity to earn money via working concession stands during sporting events.</p>
+
+<p>This would be beneficial during essentially any UCLA sporting event in Pauley Pavilion. Men’s basketball games would yield a higher volume of sales, while women’s basketball, gymnastics and men’s and women’s volleyball games could provide more concessions variety where options have typically been limited.</p>
+
+<p>After serving as director of Bruin Confidential for the General Representative 2 office, Patterson also said he wanted UCLA students to continue sharing stories with one another via the quarterly “Bruin Story Swap.” The idea, which would give students the chance to communicate with each other at iconic places around Los Angeles, is financially feasible but offers little more than a close resemblance to a field trip at the moment. If elected, Patterson should continue to flesh out this idea to breathe more of a purpose into these events.</p>
+
+<p>Patterson’s platform to introduce UCLrAve, a dance and electronic music-based winter quarter concert, also runs the risk of falling short without a significant jump on sponsorship and co-programming efforts with the Campus Events Commission. Patterson estimated the event at $10,000 to $20,000, making it cheaper than other annual USAC-run music events.</p>
+
+<p>But without proper funding, planning and advertising, UCLrAve could suffer in a winter quarter that already includes the Cultural Affairs Commission’s Hip Hop Explosion concert.</p>
+
+<p>Despite his platform uncertainties, we endorse Patterson for his demonstrated understanding of how a general representative’s office is run, which will serve him well on the USAC council.</p>
+          </div>
+      </li>
+  </ul>
+  <ul class="thumbnails">
+        <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
+          	<h4 class="endorsementname">Manjot Singh</h4>
+          	<h4 class="candinfoend">LET'S ACT!</h4>
+
+            <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
+            
+<p>This board endorses Manjot Singh for general representative for his attention to platforms that could generate broad-based interest among undergraduate students.</p>
+
+<p>The board was particularly impressed with Singh’s attention to communication and promise to engage the student body actively throughout the year.</p>
+
+<p>One of the chief challenges Singh is likely to face with his platforms is attendance. While platforms like a quarterly wellness festival and student-faculty symposiums are well intentioned, similar projects in the past have generated less-than-stellar turnout.</p>
+
+<p>Of Singh’s platforms, his plans to create a permanent student-centered cultural space on the Hill, which he fondly dubbed “The Hub,” was the most original. We believe this plan carries great potential to provide an accessible and well-used venue for students interested in student art, peer-to-peer learning and cross-community dialogue.</p>
+
+<p>It will be vital for Singh to begin working on this platform during the summer in order to identify and find solutions for potential roadblocks to it, such as securing a space and finding adequate funding for programming.</p>
+
+<p>Singh’s platform of creating symposiums to debate campus issues is also one that holds potential for important debates on contentious issues. Singh described his vision for this platform as a “dialogue with an action plan.”</p>
+
+<p>It’s a noble goal, and we hope that Singh’s work on hosting these events is not derailed by the kind of damaging rhetoric thrown around during controversies like the USAC vote on divestment in February. Singh should plan the format of the symposium carefully and develop strategies to keep the dialogue respectful and productive.</p>
+          </div>
+      </li>    
+
+<li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/04/placeholder.png" alt="">
+          	<h4 class="endorsementname">Der Xiong</h4>
+          	<h4 class="candinfoend">FIRED UP!</h4>
+
+            </div>
+          
+
+<p>Der Xiong is running for general representative for the right reason: to try to effect change in a student-run organization that she feels sometimes muffles the voices of students.</p>
+
+<p>That mindset, however, cannot be achieved with platforms that are lofty, largely unattainable and well beyond the financial scope of just one general representative office or even an entire university.</p>
+
+<p>One of Xiong’s platforms is to institute dental coverage within the UCSHIP program, a sweeping change that will likely be lost in bureaucratic red tape. On a more local level, her platform of free daycare for UCLA parents again appears financially and logistically unfeasible.</p>
+
+<p>ven when her platforms are narrower in scope, Xiong’s procedural path has still not been laid out very clearly in front of her.</p>
+
+<p>Xiong’s “Drink, Don’t Drive” idea is one that intends to reform the AlcoholEdu system to give students a clearer picture of the consequences of drinking. The need for change is there, but the plan to act on it is largely absent.</p>
+
+<p>Her platforms show a desire to shape the UCLA community to make it more accepting of transgender, transfer and international students, and while her plans to implement this would likely fall short, more experience within USAC’s offices would give Xiong more of an institutional understanding with which to shape her goals for the future.</p>
+          </div>
+      </li>
+  </ul>
+
+  <ul class="thumbnails">
+ <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt="">
+          	<h4 class="endorsementname">Fabienne Roth</h4>
+          	<h4 class="candinfoend">Bruins United</h4>
+
+            </div>
+          
+
+<p>Fabienne Roth had a good understanding of her role on council and a pragmatic vision for how to act on substantial issues at the council table. However, her platforms could use more elucidation and specifics. Her coffeeshop rewards program platform, while perhaps attractive to some students, would likely have little impact on students’ relationship with ASUCLA. Roth’s plans to assist international students are good in theory, but she presented only a handful of tangible ideas for how to actually create change. Her one concrete suggestion, called the “411 on the 310,” would seek to establish food options on the Hill for students who stay in their dorms over breaks rather than traveling internationally to visit family. While Roth would be a good general representative, it would serve her well to explore projects with broader scope and cross-community impact.p>
+          </div>
+      </li>
+
+                <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Medhekar.jpg" alt="">
+          	<h4 class="endorsementname">Sachin Medhekar</h4>
+          	<h4 class="candinfoend">¡Bruin Satyrists!</h4>
+
+            </div>
+          
+
+<p>Sachin Medhekar’s bid for general representative lends an uncommon levity to this year’s USAC elections. Medhekar’s willingness to acknowledge USAC’s shortcomings through his satirical platforms, for example increasing the student government’s transparency by installing new windows in Kerckhoff’s upper floors, draws out important commentary on USAC that can often be lost in the echo chamber of slate politics. Should Medhekar win sufficient votes to take office (he says he will only accept the office of General Representative 1 for reasons of “self-respect”) we hope he will take on the position with sincerity and sit down at the drawing table to conceive real, tangible plans to put in place during the year.</p>
+          </div>
+      </li>
+
+        </ul>
+  
+  <ul class="thumbnails">
+
+       <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rebosura.jpg" alt="">
+          	<h4 class="endorsementname">Francesca Rebosura</h4>
+          	<h4 class="candinfoend">LET's ACT</h4>
+
+            </div>
+          
+
+<p>Francesca Rebosura did not show a clear vision for how to execute her platforms. Her idea to turn Undie Run into a clothing drive was a very worthwhile idea, although her other goals were not as tangible. A plan for “Bruin Talks,” where community members would come together to share ideas, was not thought out and seemed like a meaningless event. When discussing her plans for a “Womyn’s Empowerment Conference,” she only listed a few student groups she planned to partner with and had vague ideas about what it would accomplish. She also said the conference would be geared more toward educating high school students than undergraduates. Although admirable, the goal of a USAC general representative should be benefiting the current student body.</p>
+          </div>
+      </li> 
+
+
+                <li class="span6">
+        <div class="endorsement bunited">
+          
+          <div class="textcentered">
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt="">
+          	<h4 class="endorsementname">Nihal Satyadev</h4>
+          	<h4 class="candinfoend">Bruins United</h4>
+
+            </div>
+          
+
+<p>Nihal Satyadev has a wealth of USAC experience to draw on, but several of his platforms are too ambitious and unclear to effectively put that knowledge to use.</p>
+
+<p>As the point person for state and university affairs in the External Vice President’s office this year, Satyadev had hands-on experience in planning November’s Student of Color Conference. Still, his “BRUINspired” speech and networking conference will likely experience marketing and attendance problems not seen by the Student of Color Conference.</p>
+
+<p>His Bruin Research Expo fills a need to bring eager, research-minded students in contact with labs, but likewise needs more shape and direction.</p>
+
+<p>We do, however, applaud his idea for a “Lab Coat Loaner Library,” which would significantly reduce student expenditures on outrageously priced lab coats. Whether or not Satyadev is elected, this is a platform that should be implemented for the benefit of students.</p>
+          </div>
+      </li>
+  </ul>
 
 </div>
 <div class="span3">
