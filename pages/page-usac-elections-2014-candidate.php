@@ -479,7 +479,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
     o9.lname = "Bach"; //Last name
     o9.slate = SLATE.BUNITED; //Party affiliation
     o9.office = OFFICE.ACAAFFAIRS; //Office
-    o9.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o9.picture = "http://dailybruin.com/images/2014/05/bach.jpg"; //Picture name
     o9.bio = "Lots of info."; //Candidate bio
     o9.major = "Political Science"; //Candidate Major
     o9.year = "Third"; //Year
