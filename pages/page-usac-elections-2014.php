@@ -149,7 +149,7 @@ Template Name: USAC Elections 2014
     <div class="navbar">
       <div class="navbar-inner" style="color:#3185c0">
         <div class="container-fluid">
-          <a class="brand" href="#">USAC Elections 2014</a>
+          <a class="brand" href="#">USAC Election 2014</a>
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
@@ -366,7 +366,8 @@ Template Name: USAC Elections 2014
     <br /><br />
 
     <b>What is on the ballot?</b><br />
-    There are 23 candidates running for 13 elected offices. Students will also be able to vote on an initiative and a referendum. An initiative is put on the ballot by students when they gather signatures of at least 10 percent of the undergraduate population. A referendum is put on the ballot by a two-thirds vote by USAC. The Bruin Diversity Initiative proposes a $9.93 increase to student fees every quarter to provide funding for various student groups including the Campus Retention Committee, the Student Initiated Access Committee, the American Indian Student Association, the Vietnamese Student Union, the Community Programs Office and the Pacific Islands’ Student Association. The Bruin Bash Referendum proposes a $1.33 increase to quarterly student fees to create a fund to support putting on Bruin Bash, the beginning of the year welcome back concert.
+    The Undergraduate Students Association Council is the governing body for the almost 28,000 undergraduate students at UCLA. Every spring, students vote for candidates to fill the 13 elected officer positions and on any ballot initiatives, referendums or amendments brought up that year. This elections season, there are 30 candidates, a fee referendum and a USAC constitutional amendment on the ballot.
+
 
     <br /><br />
 
