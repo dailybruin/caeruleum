@@ -170,7 +170,7 @@ Template Name: USAC Elections 2014
 
     <div class="thumbnail">
       <p style="text-align:center">
-      <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at 9 a.m. until May 8 at 5 p.m.</b></p>
+      <b>Thirty candidates are running for the 13 elected USAC positions in this year's highly contested elections. The majority of candidates are running with the Bruins United, LET'S ACT! or FIRED UP! slates, and one candidate is running with the slate Â¡Bruin Satyrists! Slates are groups of students who combine their resources and run on similar platforms, similar to political parties.</b></p>
     </div>
 
     <br/><br/>
@@ -217,8 +217,7 @@ Template Name: USAC Elections 2014
       <div class="span4">
       <br/>
         <div class = "btn-group">
-          <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
-" role="button" data-toggle="modal">
+          <a href="http://dailybruin.com/usac-elections-2014/endorsements" role="button" data-toggle="modal">
             <button class="btn" style="color:#3185c0">
               <div class="caption">
                   <h4 style="text-align:center">Daily Bruin Endorsements</h4>
