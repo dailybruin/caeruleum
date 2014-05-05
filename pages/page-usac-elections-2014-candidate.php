@@ -116,7 +116,7 @@ div #preload { display: none; }
     <div class="navbar">
       <div class="navbar-inner" style="color:#3185c0">
         <div class="container-fluid">
-          <a class="brand" href="http://dailybruin.com/usac-elections-2014/">USAC Elections 2014</a>
+          <a class="brand" href="http://dailybruin.com/usac-elections-2014/">USAC Election 2014</a>
             <ul class="nav">
               <li><a href="http://dailybruin.com/usac-elections-2014/">Home</a></li>
               <li class="active"><a href="/usac-elections-2014/candidates">Candidates</a></li>
@@ -132,7 +132,7 @@ div #preload { display: none; }
 
       <div class='span9'>
 
-        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='http://dailybruin.com/images/2014/04/usac-elections14-banner.jpg'/></a>
+        <a title='USAC Elections' href='/usac-elections-2014/'><img id='banner' src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png'/></a>
 
         <!--<h1> USAC Elections 2013: Candidates </h1>-->
 
