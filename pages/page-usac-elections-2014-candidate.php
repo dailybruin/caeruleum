@@ -13,7 +13,7 @@ h3.elections {
   font-weight: 400;
   line-height: 30px;
   font-size: 30px;
-  margin: -25px 0 5px 0;
+  margin: 0 0 5px 0;
 }     
 h4.candinfo {
   color:black;
@@ -86,10 +86,10 @@ li.platforms {
 }
 
 .candimg {
-  width:95px;
-  height:146px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+      max-width:90% !important;
+    height:auto;
+    display:block;
 
   /*border-style:solid;
   border-width:medium;
@@ -136,7 +136,8 @@ div #preload { display: none; }
         <!--<h1> USAC Elections 2013: Candidates </h1>-->
 
         <div class="thumbnail">
-          <p style="text-align:center"><b>This year, 23 candidates are running for the 13 elected USAC positions. Nine positions are contested. Three slates, groups of students who pool their resources together and run on similar platforms, are running candidates in the spring elections. Two new slates emerged for this year's elections: Bruin Alliance and LET'S ACT!. Bruin Alliance is running two candidates and LET'S ACT! is running 10. Bruins United is running eight candidates.</b></p>
+          <p style="text-align:center"><b>
+Thirty candidates are running for the 13 elected USAC positions in this year's highly contested elections. The majority of candidates are running with the Bruins United, LET'S ACT! or FIRED UP! slates, and one candidate is running with the slate ¡Bruin Satyrists! Slates are groups of students who combine their resources and run on similar platforms, similar to political parties.</b></p>
         </div>
         
 
@@ -178,29 +179,34 @@ div #preload { display: none; }
 	
 <div id='preload'>
 
-  <img src="http://dailybruin.com/images/features/usac2013/Taylor Bazley.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/John Joanino.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Carly Yoshida.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Lana Habib El-Farra.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Avi Oved.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Maryssa Hall.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Nicole Fossier.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Sunny Singh.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Sam Haws.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Avinoam Baral.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Charmaine Campbell.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Lizzy Naameh.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Devin Murphy.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Darren Ramalho.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Uyen Hoang.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Jessica Kim.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Omar Arce.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Jessica Trumble.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Armen Hadjimanoukian.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Anthony Montalvo.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Lauren Rogers.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Brenda Gutierrez.jpg" width="1" height="1"/>; //Picture name
-  <img src="http://dailybruin.com/images/features/usac2013/Savannah Dianne Badalich.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/baral.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Badalich.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/rosen.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/mercier.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/garfio.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/wong.jpeg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Singh.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/roth.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/williams.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/satyedev.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Sadeghi-Movahed.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/murphy.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/greg.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Nguyen.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/gutierrez.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/garcia.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Medhekar.jpg" width="1" height="1"/>; //Picture name
+  <img src="hhttp://dailybruin.com/images/2014/05/Galbadores.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/lasher.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Friedman.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Kiang.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/quintanilla.jpg" width="1" height="1"/>; //Picture name
+  <img src="http://dailybruin.com/images/2014/05/Rebosura.jpg" width="1" height="1"/>; //Picture name
+<img src="http://dailybruin.com/images/2014/05/Rodriguez.jpg" width="1" height="1"/>; //Picture name
+<img src="http://dailybruin.com/images/2014/05/contreras.jpg" width="1" height="1"/>; //Picture name
+<img src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" width="1" height="1"/>; //Picture name
+<img src="http://dailybruin.com/images/2014/05/patterson.jpg" width="1" height="1"/>; //Picture name
+
 
 </div>
 
@@ -305,7 +311,7 @@ div #preload { display: none; }
     o0.lname = "Murphy"; //Last name
     o0.slate = SLATE.LETSACT; //Party affiliation
     o0.office = OFFICE.PRESIDENT; //Office
-    o0.picture = "http://dailybruin.com/images/2013/04/IMG_0095-200x300.jpg"; //Picture name
+    o0.picture = "http://dailybruin.com/images/2014/05/murphy.jpg"; //Picture name
     o0.bio = "Lots of info."; //Candidate bio
     o0.major = "Political Science and African American Studies"; //Candidate Major
     o0.year = "Third"; //Year
@@ -323,7 +329,7 @@ div #preload { display: none; }
     o1.lname = "Rodriguez"; //Last name
     o1.slate = SLATE.FIREDUP; //Party affiliation
     o1.office = OFFICE.PRESIDENT; //Office
-    o1.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o1.picture = "http://dailybruin.com/images/2014/05/Rodriguez.jpg"; //Picture name
     o1.bio = "Lots of info."; //Candidate bio
     o1.major = "Spanish and Chicano/a Studies"; //Candidate Major
     o1.year = "Fourth"; //Year
@@ -362,7 +368,7 @@ div #preload { display: none; }
     o3.lname = "Baral"; //Last name
     o3.slate = SLATE.BUNITED; //Party affiliation
     o3.office = OFFICE.INTERNALVP; //Office
-    o3.picture = "http://dailybruin.com/images/2013/05/AvinoamBaral.jpg"; //Picture name
+    o3.picture = "http://dailybruin.com/images/2014/05/baral.jpg"; //Picture name
     o3.bio = "Lots of info."; //Candidate bio
     o3.major = "Human Biology and Society"; //Candidate Major
     o3.year = "Third"; //Year
@@ -380,7 +386,7 @@ div #preload { display: none; }
     o4.lname = "Singh Lasher"; //Last name
     o4.slate = SLATE.FIREDUP; //Party affiliation
     o4.office = OFFICE.INTERNALVP; //Office
-    o4.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o4.picture = "http://dailybruin.com/images/2014/05/lasher.jpg"; //Picture name
     o4.bio = "Lots of info."; //Candidate bio
     o4.major = "Sociology"; //Candidate Major
     o4.year = "Third"; //Year
@@ -399,7 +405,7 @@ div #preload { display: none; }
     o5.lname = "Sadeghi-Movahed"; //Last name
     o5.slate = SLATE.LETSACT; //Party affiliation
     o5.office = OFFICE.INTERNALVP; //Office
-    o5.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o5.picture = "http://dailybruin.com/images/2014/05/Sadeghi-Movahed.jpg"; //Picture name
     o5.bio = "Lots of info."; //Candidate bio
     o5.major = "Political Science"; //Candidate Major
     o5.year = "Third"; //Year
@@ -418,10 +424,9 @@ div #preload { display: none; }
     o6.lname = "Contreras"; //Last name
     o6.slate = SLATE.LETSACT; //Party affiliation
     o6.office = OFFICE.EXTERNALVP; //Office
-    o6.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o6.picture = "http://dailybruin.com/images/2014/05/contreras.jpg"; //Picture name
     o6.bio = "Lots of info."; //Candidate bio
-    o6.major = "Human Biology and Society"; //Candidate Major
-    o6.major2 = "and Asian American Studies";
+    o6.major = "Human Biology and Society and Asian American Studies"; //Candidate Major
     o6.year = "Third"; //Year
 
     o6.plat = [];
@@ -437,7 +442,7 @@ div #preload { display: none; }
     o7.lname = "Friedman"; //Last name
     o7.slate = SLATE.BUNITED; //Party affiliation
     o7.office = OFFICE.EXTERNALVP; //Office
-    o7.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o7.picture = "http://dailybruin.com/images/2014/05/Friedman.jpg"; //Picture name
     o7.bio = "Lots of info."; //Candidate bio
     o7.major = "Political Science"; //Candidate Major
     o7.year = "Second"; //Year
@@ -455,7 +460,7 @@ div #preload { display: none; }
     o8.lname = "Garfio"; //Last name
     o8.slate = SLATE.FIREDUP; //Party affiliation
     o8.office = OFFICE.EXTERNALVP; //Office
-    o8.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o8.picture = "http://dailybruin.com/images/2014/05/garfio.jpg"; //Picture name
     o8.bio = "Lots of info."; //Candidate bio
     o8.major = "History"; //Candidate Major
     o8.year = "Second"; //Year
@@ -491,7 +496,7 @@ div #preload { display: none; }
     o10.lname = "Kiang"; //Last name
     o10.slate = SLATE.FIREDUP; //Party affiliation
     o10.office = OFFICE.ACAAFFAIRS; //Office
-    o10.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o10.picture = "http://dailybruin.com/images/2014/05/Kiang.jpg"; //Picture name
     o10.bio = "Lots of info."; //Candidate bio
     o10.major = "Asian American Studies"; //Candidate Major
     o10.year = "Second"; //Year
@@ -509,7 +514,7 @@ div #preload { display: none; }
     o11.lname = "Williams"; //Last name
     o11.slate = SLATE.LETSACT; //Party affiliation
     o11.office = OFFICE.ACAAFFAIRS; //Office
-    o11.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o11.picture = "http://dailybruin.com/images/2014/05/williams.jpg"; //Picture name
     o11.bio = "Lots of info."; //Candidate bio
     o11.major = "Microbiology, Immunology and Molecular Genetics"; //Candidate Major
     o11.year = "Third"; //Year
@@ -528,7 +533,7 @@ div #preload { display: none; }
     o12.lname = "Mercier"; //Last name
     o12.slate = SLATE.LETSACT; //Party affiliation
     o12.office = OFFICE.FACILITIES; //Office
-    o12.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o12.picture = "http://dailybruin.com/images/2014/05/mercier.jpg"; //Picture name
     o12.bio = "Lots of info."; //Candidate bio
     o12.major = "Political Science"; //Candidate Major
     o12.year = "Third"; //Year
@@ -546,7 +551,7 @@ div #preload { display: none; }
     o13.lname = "Nguyen"; //Last name
     o13.slate = SLATE.FIREDUP; //Party affiliation
     o13.office = OFFICE.FACILITIES; //Office
-    o13.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o13.picture = "http://dailybruin.com/images/2014/05/Nguyen.jpg"; //Picture name
     o13.bio = "Lots of info."; //Candidate bio
     o13.major = "Microbiology, Immunology and Molecular Genetics"; //Candidate Major
     o13.year = "Third"; //Year
@@ -565,7 +570,7 @@ div #preload { display: none; }
     o14.lname = "Quintanilla"; //Last name
     o14.slate = SLATE.BUNITED; //Party affiliation
     o14.office = OFFICE.FACILITIES; //Office
-    o14.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o14.picture = "http://dailybruin.com/images/2014/05/quintanilla.jpg"; //Picture name
     o14.bio = "Lots of info."; //Candidate bio
     o14.major = "History"; //Candidate Major
     o14.year = "Third"; //Year
@@ -582,7 +587,7 @@ div #preload { display: none; }
     o15.lname = "Galbadores"; //Last name
     o15.slate = SLATE.LETSACT; //Party affiliation
     o15.office = OFFICE.FINANCIALSUPPORT; //Office
-    o15.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o15.picture = "http://dailybruin.com/images/2014/05/Galbadores.jpg"; //Picture name
     o15.bio = "Lots of info."; //Candidate bio
     o15.major = "Sociology"; //Candidate Major
     o15.year = "Third"; //Year
@@ -601,7 +606,7 @@ div #preload { display: none; }
     o16.lname = "Gutierrez"; //Last name
     o16.slate = SLATE.FIREDUP; //Party affiliation
     o16.office = OFFICE.FINANCIALSUPPORT; //Office
-    o16.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o16.picture = "http://dailybruin.com/images/2014/05/gutierrez.jpg"; //Picture name
     o16.bio = "Lots of info."; //Candidate bio
     o16.major = "Sociology"; //Candidate Major
     o16.year = "Second"; //Year
@@ -620,7 +625,7 @@ div #preload { display: none; }
     o17.lname = "Rosen"; //Last name
     o17.slate = SLATE.BUNITED; //Party affiliation
     o17.office = OFFICE.FINANCIALSUPPORT; //Office
-    o17.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o17.picture = "http://dailybruin.com/images/2014/05/rosen.jpg"; //Picture name
     o17.bio = "Lots of info."; //Candidate bio
     o17.major = "Political Science"; //Candidate Major
     o17.year = "Second"; //Year
@@ -638,7 +643,7 @@ div #preload { display: none; }
     o18.lname = "Badalich"; //Last name
     o18.slate = SLATE.INDEPENDENT; //Party affiliation
     o18.office = OFFICE.STUDENTWELLNESS; //Office
-    o18.picture = "http://dailybruin.com/images/features/usac2013/Savannah Dianne Badalich.jpg"; //Picture name
+    o18.picture = "http://dailybruin.com/images/2014/05/Badalich.jpg"; //Picture name
     o18.bio = "Lots of info."; //Candidate bio
     o18.major = "Gender Studies"; //Candidate Major
     o18.year = "Third"; //Year
@@ -656,7 +661,7 @@ div #preload { display: none; }
     o19.lname = "Kalfayan"; //Last name
     o19.slate = SLATE.INDEPENDENT; //Party affiliation
     o19.office = OFFICE.CAMPUSEVENTS; //Office
-    o19.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o19.picture = "http://dailybruin.com/images/2014/05/greg.jpg"; //Picture name
     o19.bio = "Lots of info."; //Candidate bio
     o19.major = "Political Science"; //Candidate Major
     o19.year = "Third"; //Year
@@ -673,7 +678,7 @@ div #preload { display: none; }
     o20.lname = "Wong"; //Last name
     o20.slate = SLATE.INDEPENDENT; //Party affiliation
     o20.office = OFFICE.COMMSERV; //Office
-    o20.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o20.picture = "http://dailybruin.com/images/2014/05/wong.jpeg"; //Picture name
     o20.bio = "Lots of info."; //Candidate bio
     o20.major = "Physiological Sciences"; //Candidate Major
     o20.year = "Third"; //Year
@@ -691,7 +696,7 @@ div #preload { display: none; }
     o21.lname = "Garcia"; //Last name
     o21.slate = SLATE.LETSACT; //Party affiliation
     o21.office = OFFICE.CULTURAL; //Office
-    o21.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o21.picture = "http://dailybruin.com/images/2014/05/I.Garcia.jpg"; //Picture name
     o21.bio = "Lots of info."; //Candidate bio
     o21.major = "Political Science"; //Candidate Major
     o21.year = "Third"; //Year
@@ -709,7 +714,7 @@ div #preload { display: none; }
     o22.lname = "Garcia"; //Last name
     o22.slate = SLATE.LETSACT; //Party affiliation
     o22.office = OFFICE.GENERALREP; //Office
-    o22.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o22.picture = "http://dailybruin.com/images/2014/05/garcia.jpg"; //Picture name
     o22.bio = "Lots of info."; //Candidate bio
     o22.major = "International Development Studies and Political Science"; //Candidate Major
     o22.year = "Third"; //Year
@@ -728,7 +733,7 @@ div #preload { display: none; }
     o23.lname = "Priapism Medhekar"; //Last name
     o23.slate = SLATE.BSATYRIST; //Party affiliation
     o23.office = OFFICE.GENERALREP; //Office
-    o23.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+    o23.picture = "http://dailybruin.com/images/2014/05/Medhekar.jpg"; //Picture name
     o23.bio = "Lots of info."; //Candidate bio
     o23.major = "Computer Science"; //Candidate Major
     o23.year = "Third"; //Year
@@ -743,10 +748,10 @@ div #preload { display: none; }
 
   var o24 = {};
   o24.fname = "Kevin"; //First name
-  o24.lname = "Pattinson"; //Last name
+  o24.lname = "Patterson"; //Last name
   o24.slate = SLATE.BUNITED; //Party affiliation
   o24.office = OFFICE.GENERALREP; //Office
-  o24.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+  o24.picture = "http://dailybruin.com/images/2014/05/patterson.jpg"; //Picture name
   o24.bio = "Lots of info."; //Candidate bio
   o24.major = ""; //Candidate Major
   o24.year = ""; //Year
@@ -763,7 +768,7 @@ div #preload { display: none; }
   o25.lname = "Rebosura "; //Last name
   o25.slate = SLATE.LETSACT; //Party affiliation
   o25.office = OFFICE.GENERALREP; //Office
-  o25.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+  o25.picture = "http://dailybruin.com/images/2014/05/Rebosura.jpg"; //Picture name
   o25.bio = "Lots of info."; //Candidate bio
   o25.major = "Communications Studies"; //Candidate Major
   o25.year = "Third"; //Year
@@ -781,7 +786,7 @@ div #preload { display: none; }
   o26.lname = "Roth"; //Last name
   o26.slate = SLATE.BUNITED; //Party affiliation
   o26.office = OFFICE.GENERALREP; //Office
-  o26.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+  o26.picture = "http://dailybruin.com/images/2014/05/roth.jpg"; //Picture name
   o26.bio = "Lots of info."; //Candidate bio
   o26.major = "English and Political Science"; //Candidate Major
   o26.year = "Second"; //Year
@@ -798,7 +803,7 @@ div #preload { display: none; }
   o27.lname = "Satyadev"; //Last name
   o27.slate = SLATE.BUNITED; //Party affiliation
   o27.office = OFFICE.GENERALREP; //Office
-  o27.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+  o27.picture = "http://dailybruin.com/images/2014/05/satyedev.jpg"; //Picture name
   o27.bio = "Lots of info."; //Candidate bio
   o27.major = "Bioengineering"; //Candidate Major
   o27.year = "Second"; //Year
@@ -815,7 +820,7 @@ div #preload { display: none; }
   o28.lname = "Singh"; //Last name
   o28.slate = SLATE.LETSACT; //Party affiliation
   o28.office = OFFICE.GENERALREP; //Office
-  o28.picture = "http://dailybruin.com/images/2014/04/placeholder.png"; //Picture name
+  o28.picture = "http://dailybruin.com/images/2014/05/Singh.jpg"; //Picture name
   o28.bio = "Lots of info."; //Candidate bio
   o28.major = "Global Studies"; //Candidate Major
   o28.year = "Third"; //Year

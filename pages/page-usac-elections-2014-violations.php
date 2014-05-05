@@ -25,10 +25,10 @@ Template Name: USAC Elections Campaign Violations 2014
     <div class="navbar navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">USAC Elections 2013</a>
+          <a class="brand" href="#">USAC Elections 2014</a>
             <ul class="nav">
-              <li><a href="/usac-elections-2013/">Home</a></li>
-              <li><a href="/usac-elections-2013/candidates">Candidates</a></li>
+              <li><a href="/usac-elections-2014/">Home</a></li>
+              <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
               <li class="active"><a href="#">Campaign Violations</a></li>
               <li><a href="http://my.ucla.edu/">Vote Here</a></li>
             </ul>
@@ -40,19 +40,8 @@ Template Name: USAC Elections Campaign Violations 2014
 
       <div class="span9">
 
-        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
+        <a title='USAC Elections' href='/usac-elections-2014/'><img id='banner' src='http://dailybruin.com/images/2014/04/usac-elections14-banner.jpg'/></a>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-        <?php
-        the_content();
-        ?>
-
-        <?php endwhile; else: ?>
-        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-        <?php endif; ?>
-
-      </div>
 
       <div class="span3">
 
