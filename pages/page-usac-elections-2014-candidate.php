@@ -207,7 +207,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
 <img src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" width="1" height="1"/>; //Picture name
 <img src="http://dailybruin.com/images/2014/05/patterson.jpg" width="1" height="1"/>; //Picture name
 <img src="http://dailybruin.com/images/2014/05/Xiongweb.jpg" width="1" height="1"/>; //Picture name
-
+<img src="http://dailybruin.com/images/2014/05/http://dailybruin.com/images/2014/05/singh.jpg" width="1" height="1"/>; //Picture name
 
 </div>
 
@@ -351,7 +351,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
     o2.lname = "Singh"; //Last name
     o2.slate = SLATE.BUNITED; //Party affiliation
     o2.office = OFFICE.PRESIDENT; //Office
-    o2.picture = "http://dailybruin.com/images/2014/04/web.Sunny_.Singh_.jpg"; //Picture name
+    o2.picture = "http://dailybruin.com/images/2014/05/singh.jpg"; //Picture name
     o2.bio = "Lots of info."; //Candidate bio
     o2.major = "Economics and History"; //Candidate Major
     o2.year = "Third"; //Year
