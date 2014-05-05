@@ -375,7 +375,7 @@ Template Name: USAC Elections 2014
     <br /><br />
 
     <b>When are results announced?</b><br />
-    The USAC Election Board chair will announce the election results on Friday, May 9 at 4 p.m. at Meyerhoff Park. 
+    Students can vote online through MyUCLA starting Tuesday May 6 at 9 a.m. until Friday May 9 at noon. Election results will be announced around 4 p.m. in Meyerhoff Park, in front of Kerckhoff Hall.
     <br />
     </p>
     </div>
