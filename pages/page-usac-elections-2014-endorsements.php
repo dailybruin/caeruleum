@@ -691,12 +691,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
   <ul class="thumbnails">
 
  <li class="span12">
-        <div class="endorsement indep">
+        <div class="endorsement letsact">
           
           <div class="textcentered">
           	<img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
           	<h4 class="endorsementname">Irmary Garcia</h4>
-          	<h4 class="candinfoend">Independent</h4>
+          	<h4 class="candinfoend">Let's Act</h4>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
