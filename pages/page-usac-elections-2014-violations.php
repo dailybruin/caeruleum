@@ -295,7 +295,7 @@ Template Name: USAC Elections Campaign Violations 2014
         <div class="container-fluid">
           <a class="brand" href="http://dailybruin.com/usac-elections-2014/">USAC Elections 2014</a>
             <ul class="nav">
-              <li<a href="http://dailybruin.com/usac-elections-2014/">Home</a></li>
+              <li><a href="http://dailybruin.com/usac-elections-2014/">Home</a></li>
               <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
               <li class="active"><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
               <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
