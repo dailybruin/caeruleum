@@ -199,6 +199,21 @@ $(document).ready(function(){
 
 var LocsB = [
     {
+        lat: 34.0609267,
+        lon: -118.4474778,
+        title: 'Bollywood Bites',
+        html: [
+                        '<h3>Bollywood Bites</h3>',
+                        '<p>Indian cuisine</p>'
+        ].join(''),
+        fulldesc: [
+                '<h3>Bollywood Bites</h3>',
+                '<div class="row"><div class="span8"><img src="http://dailybruin.com/images/2014/05/b234607c-df94-4791-b050-e80db2db7686-640x348.jpg" class="img-responsive"> <span class="photocred">Miriam Bribiesca / Daily Bruin</span><br><br><strong>BY ASHER LANDAU</strong><br><p>Bollywood Bites specializes in Indian cuisine, but its owner&nbsp;and head chef Sanjay Patel&rsquo;s cooking style has drawn from and reached places as disparate as Panama, Bombay&nbsp;and Michael Jackson&rsquo;s Neverland Ranch.</p><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/05/89405808-cba6-4f17-a991-fcf6ca166f1a.jpg" width="300"><span class="photocred-inline">Miriam Bribiesca / Daily Bruin</span></div><p>Located at 1051 Gayley Ave., Bollywood Bites serves all the staples of Indian cuisine. Patel said he is especially proud of his chicken tikka masala &ndash; roasted chicken<strong>&nbsp;</strong>in a spicy, creamy orange sauce &ndash; and freshly baked naan bread.</p><p>Yet, Patel said what sets this South Asian eatery apart from many others is Patel&rsquo;s experience studying in multiple cooking schools throughout the world and serving as a longtime celebrity chef.</p><p>Patel immigrated to the U.S. from India in 1988 after attending an Italian culinary school in Panama and then culinary school in India. Working several years as sous chef at the Four Seasons Hotel in Beverly Hills, Patel said he was approached by associates of Michael Jackson<strong>&nbsp;</strong>to become Jackson&rsquo;s personal chef.</p><p>Patel said he was reticent at first, but eventually accepted, preparing meals of various cultures for the Jackson family, including Japanese, American and Italian. Through the Jackson family, Patel gained connections and periodically cooked for celebrities such as Morgan Freeman and Harrison Ford.</p><p>In 2001, Patel said he decided he wanted to go his own way and manage his own eatery. With the support of the Jackson family, who still eats at his restaurant regularly and introduced now-loyal customer Forest Whitaker, Patel founded Bollywood Bites.<strong><br /></strong><strong><br /></strong>Patel said the inspiration for the name came from his family in India, who is involved in the Bollywood film industry. However, the idea for the restaurant came from fast-food chains.</p><p>&ldquo;My goal was to make Bollywood Bites a top Indian fast-food franchise similar to Jack in the Box, but healthy,&rdquo; Patel said.</p><p>For this reason, Patel instituted the $5 Bruin Bowl, which serves a smaller yet still filling portion<strong>&nbsp;</strong>of dishes like chicken curry. Patel said Bollywood Bites is also mobile and spreading, with restaurants in Santa Monica and a food truck. He said he is also working on securing a Bollywood Bites in Las Vegas.</p><p>Despite celebrities frequenting his restaurant and grand economies to scale, Patel said his No. 1 focus is providing customers with an enjoyable experience.</p><p>&ldquo;The moment people come in, they see it is clean and our restaurant is full of happy colors,&rdquo; Patel said. &ldquo;We have the best service, the best food and we always tell our chefs to put their hearts into their food.&rdquo;</p></div><div class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 1051 Gayley Ave, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 824-1046</li>         <li><i class="icon-calendar"></i> Mon-Sun 11 a.m. to 10 p.m.</li>          <li><i class="icon-tag"></i> $$</li>         <li><i class="icon-info-sign"></i> Casual, WiFi, delivery and reservations.</li> <li><i class="icon-globe"></i> <a href="http://thebollywoodbites.com/" target="_blank">thebollywoodbites.com</a></li></ul> </div></div>'
+                        ].join(''),
+                        icon: 'http://maps.google.com/mapfiles/markerA.png',
+                        zoom: 17
+        },
+    {
         lat: 34.0611797,
         lon: -118.4445541,
         title: 'Glendon Bar &amp; Kitchen',
