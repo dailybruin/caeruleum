@@ -199,6 +199,21 @@ $(document).ready(function(){
 
 var LocsB = [
     {
+        lat: 34.0611797,
+        lon: -118.4445541,
+        title: 'Glendon Bar &amp; Kitchen',
+        html: [
+                        '<h3>Glendon Bar &amp; Kitchen</h3>',
+                        '<p>American cuisine bistro and bar</p>'
+        ].join(''),
+        fulldesc: [
+                '<h3>Glendon Bar &amp; Kitchen</h3>',
+                '<div class="row"><div class="span8"><img src="http://dailybruin.com/images/2014/05/0ea946e5-d2f6-44de-b4f2-99120527592e-640x423.jpg" class="img-responsive"> <span class="photocred">The Glendon Bar &amp; Kitchen</span><br><br><strong>BY CASEY KOVARIK</strong><br><p>High end but not intimidating, The Glendon Bar &amp; Kitchen is ideal for blind dates, said owner and executive chef Nick Jacobs.</p><p>&ldquo;I think Tinder (an online dating app) should pay me. We have more first dates in this place, people who don&rsquo;t know each other, than anything I&rsquo;ve experienced in any other restaurant,&rdquo; Jacobs said.</p><p>He says it&rsquo;s because of the romantic atmosphere and moderate prices, with dinner entr&eacute;es ranging from $12 to $20.</p><p>Located at 1071 Glendon Ave., The Glendon is a California bistro offering high-end American cuisine and a full bar. Its signature dishes are its bourbon buffalo wings with a Jack Daniel&rsquo;s barbeque bourbon sauce and jalape&ntilde;o mac and cheese.</p><p>The Glendon has been open in Westwood since April of 2010. Nick Jacobs, current owner and executive chef, opened it with two partners but now is the sole owner.</p><p>Jacobs studied at the Institute of Culinary Education in New York City and later opened a tea party business there. He said he did well for himself throwing parties on the New York Upper East Side for six years and then moved to Los Angeles.</p><p>He opened a similar business in Brentwood through which he met his business partners, who approached him to be an executive chef. Jacobs said<strong>&nbsp;</strong>he liked the idea of an upscale American cuisine restaurant in Westwood so he agreed.</p><p>When Jacobs first bought out the other two owners, he said it was difficult to manage both the business side and the food, but it has become easier since he brought on good management for the business side.</p><p>Jacobs said that since The Glendon serves lunch, dinner and drinks, different times of the day draw different crowds.</p><p>&ldquo;Our happy hour (has an) after-work staff party environment,&rdquo; Jacobs said.<strong>&nbsp;&ldquo;</strong>We have a lot of grad students in here during happy hour<strong>.&rdquo;</strong></p><p>Dinner brings a slightly different crowd of dates, families and other residents of Westwood.</p><p>Jacobs said he enjoys the hospitality aspect of being a restaurant owner and feeling like he is throwing a dinner party every night.</p><p>&ldquo;People have come to the bar and said, &lsquo;We met here on our first date and we just got married,&rsquo;&rdquo; Jacobs said. &ldquo;We give them champagne and celebrate with them.&rdquo;</p></div><div class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 1071 Glendon Ave, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 208-2023</li>         <li><i class="icon-calendar"></i> Mon 11:30 a.m. to 11:30 p.m., Tue-Wed 11:30 a.m. to 12:30 a.m., Thu 11:30 a.m. to 2 a.m., Fri 4 p.m. to 2 a.m., Sat 4 p.m. to 11:30 p.m.</li>          <li><i class="icon-tag"></i> $$</li>         <li><i class="icon-info-sign"></i> Delivery and reservations.</li> <li><i class="icon-globe"></i> <a href="http://www.glendonla.com/" target="_blank">glendonla.com</a></li></ul> </div></div>'
+                        ].join(''),
+                        icon: 'http://maps.google.com/mapfiles/markerA.png',
+                        zoom: 17
+        },
+    {
         lat: 34.060208,
         lon: -118.445069,
         title: 'Chilly Ribbons',
