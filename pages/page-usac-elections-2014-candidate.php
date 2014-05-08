@@ -428,7 +428,7 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
     o6.office = OFFICE.EXTERNALVP; //Office
     o6.picture = "http://dailybruin.com/images/2014/05/contreras.jpg"; //Picture name
     o6.bio = "Lots of info."; //Candidate bio
-    o6.major = "Human Biology and Society and Asian American Studies"; //Candidate Major
+    o6.major = "Human Biology and Society and Communication Studies"; //Candidate Major
     o6.year = "Third"; //Year
 
     o6.plat = [];
