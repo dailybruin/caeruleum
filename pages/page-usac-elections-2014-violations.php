@@ -312,7 +312,245 @@ Template Name: USAC Elections Campaign Violations 2014
     <a title='USAC Elections' href='http://dailybruin.com/usac-elections-2014/'><img src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png' border='0'/></a> 
     <br /><br />
 
+ 
+ <h2 class="endorsements">Complaint #:C09-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Esha Jalota <br/>
+              5/7/2014 7:36pm</h4></div>
     
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>The distribution of flyers outside of leafletting hours at University-owned apartments supporting 
+the following candidates: Devin Murphy, Negeen Sadeghi-Movahed, Conrad Contreras, Janay 
+Williams, Alex Mercier, Winnie Galbadores, Irmary Garcia, Erineo Garcia, Francesca Rebosura 
+and Manjot Singh.</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board finds this complaint to be valid. Election Code holds "campaign literature 
+and endorsement slips may only be distributed to the general campus audience during campus 
+leafleting hours at locations provided for in the University Rules and Regulations for literature 
+distribution" (Election Code VI ,B,1,b,v, d, iii). Evidence submitted to Election Board shows 
+these flyers were distributed outside of leafletting hours.</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board mandates that the following candidates shall refrain from on-campus 
+campaigning from the hours of 11am to 2pm on Thursday, May 8th: Devin Murphy, Negeen 
+Sadeghi-Movahed, Conrad Contreras, Janay Williams, Alex Mercier, Winnie Galbadores, Irmary 
+Garcia, Erineo Garcia, Francesca Rebosura and Manjot Singh.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C08-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Anthony Montalvo<br/>
+              5/7/2014 7:21pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>The distribution of flyers inside Powell Library supporting the following candidates: Sunny 
+Singh, Avinoam Baral, Aurelia Friedman, Allyson Bach, Carlos Quintanilla, Fabienne Roth, 
+Kevin Patterson, Nihal Satyadev and Heather Rosen.</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board finds this complaint to be valid. Election Code holds "campaign material 
+may not be distributed in the following areas....within structural or physical confines of 
+buildings" (Election Code VI ,B,1,b,v, k, i). Evidence submitted to the Election Board shows the 
+stack of flyers placed near other Library materials meant for distribution. The Election Board 
+can only conclude that these flyers were placed there for intended distribution.</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board mandates that the following candidates shall refrain from on-campus 
+campaigning from the hours of 11am to 2pm on Thursday, May 8th: Sunny Singh, Avinoam 
+Baral, Aurelia Friedman, Allyson Bach, Carlos Quintanilla, Fabienne Roth, Kevin Patterson, 
+Nihal Satyadev and Heather Rosen.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C07-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Anthony Montalvo<br/>
+              5/5/2014 10:44pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>Alleged distribution of campaign material within the Court of Sciences Student Center. The 
+distribution campaign material within the "structural or physical confines of buildings" is 
+prohibited by Election Code (Election Code VI, B, 1, b, v, k, i). The campaign material consisted 
+of flyers with the names of candidates Sunny Singh, Aurelia Friedman, Allyson Bach, Avinoam 
+Baral, Nihal Satyadev, Carlos Quintanilla, Heather Rosen, Kevin Patterson and Fabienne Roth.</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board does not find this complaint to be valid. Photos and witness statements do 
+not confirm that the distribution of flyers occurred.</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board shall take no further action regarding complaint C07-2014.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C06-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Andre Jones<br/>
+              5/5/2014 9:16pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>A "Bruins United" A-board, with the names of the organizations Green the Greeks and 
+Moneythink noticeably written below, found in the Court of Sciences on April 30th 2014 before 
+on-campus campaigning was allowed by Election Calendar. Candidates Sunny Singh, Aurelia 
+Friedman, Allyson Bach, Avinoam Baral, Nihal Satyadev, Carlos Quintanilla, Heather Rosen, 
+Kevin Patterson and Fabienne Roth are listed as candidates affiliated with "Bruins United."</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board does not find this complaint to be valid. Although Election Code maintains 
+"each candidate and Designated Campaign Representative is also responsible for the actions of 
+all persons and organizations sponsoring, endorsing, or promoting his/her campaign provided 
+they are operating as an agent of the campaign," further investigation revealed no contact 
+between the candidates listed in the complaint and representatives from the Green the Greeks 
+and Moneythink, showing the organizations were not "operating as an agent of the campaign." 
+Furthermore, both the candidates' and the organizations' representatives stated that the signboard 
+in question was from previous years and were unaware that it was displayed. The candidates and 
+organizations also quickly cooperated to take the board down.</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board shall take no further action regarding complaint C06-2014.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C05-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Anthony Montalvo<br/>
+              5/5/2014 7:55pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>An alleged violation of Election Code which prohibits attaching campaign material to any 
+permanent or fixed structures on-campus (Election Code VI, B, b, v, e). It is claimed that 
+representatives of the candidates Miriam Rodriguez, Harwind Lasher, Teri Nguyen, Gabriel 
+Gutierrez, Der Xiong and Jazz Kiang attached balloons, which the complainant asserts are 
+campaign material, to permanent structures on campus.</p>
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board does not find this complaint to be valid. While Election Code maintains that 
+"campaign material of any sort shall not be attached to vegetation, any campus building, wall, 
+permanent or temporary fixture," the Election Board does not find the balloons to qualify as 
+campaign material. The balloons were a generic blue and had no text written on them; thereby, at 
+this time, Election Board does not consider this campaign material as defined by Election Code 
+(Election Code VI, B, 1, a, ii, a-f). However, the Election Board recognizes that this may be 
+violation of University Rules and Regulations. If similar incidents occur again in the future by 
+any campaign participants, Election Board will refer the complaint to the appropriate university 
+entity.</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board shall take no further action regarding complaint C05-2014.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C04-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Zoe Sheppard<br/>
+                5/5/2014 7:55pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>An alleged violation of a sanction mandated in Complaint C03-2014 that prevented candidates 
+Devin Murphy, Negeen Sadeghi-Movahed, Conrad Contreras, Janay Williams, Alex Mercier, 
+Winnie Galbadores, Irmary Garcia, Erineo Garcia, Francesca Rebosura and Manjot Singh from 
+campaigning from online from 9am to 12pm on Thursday, May 1st.</p>
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board does not find this complaint to be valid. The Election Board interpreted the 
+ban on online campaigning to mean active campaigning including new posts on social media, 
+new emails, etc. As such, the evidence submitted does not show any active campaigning during 
+the time of the mandated sanction</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board shall take no further action regarding complaint C04-2014.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
  <h2 class="endorsements">Complaint #:C03-2014</h2><hr></hr>
 
   <ul class="thumbnails">
