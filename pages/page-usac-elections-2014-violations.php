@@ -313,6 +313,44 @@ Template Name: USAC Elections Campaign Violations 2014
     <br /><br />
 
  
+ <h2 class="endorsements">Complaint #:C10-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Tyler Cherry  <br/>
+              5/8/2014 10:46am</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+<p>An unsolicited email campaigning in favor Teri Nguyen, Angel Garfio, Jazz Kiang, Miriam 
+Rodriguez, Harwind Lasher, Gabriel Gutierrez and Der Xiong.</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+
+<p>The Election Board finds this complaint to be valid. Election Code states that âany email that 
+contains campaign literature or is an endorsement slip may only be sent to: (i) a subscription 
+listserv that the sender is a member of (ii) individuals whom the sender personally knows.â 
+Based on our investigation, Election Board finds that the email in question satisfies neither of 
+these requirements.</p>
+
+    <h4 class="endorsementname">Sanction:</h4>  
+
+<p>The Election Board mandates that the following candidates shall refrain from active online 
+campaigning from the hours of 7 pm to 10 pm on Thursday, May 8th: Teri Nguyen, Angel 
+Garfio, Jazz Kiang, Miriam Rodriguez, Harwind Lasher, Gabriel Gutierrez and Der Xiong.</p>
+
+          </div>
+      </li>
+
+
+  </ul>
  <h2 class="endorsements">Complaint #:C09-2014</h2><hr></hr>
 
   <ul class="thumbnails">
