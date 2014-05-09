@@ -265,7 +265,7 @@ Template Name: USAC Elections 2014
                 <h1 class="pres">President</h2>
                 <h2 class="pres">Devin Murphy</h4>
                 <h4 class="candinfoend">LET'S ACT!</h4>
-                <h3 style="text-transform: lowercase;"class="greyer"></h3>
+                <h3 style="text-transform: lowercase;"class="greyer">50.2%</h3>
               </div>
             </div>
           </div>
@@ -286,7 +286,7 @@ Template Name: USAC Elections 2014
             <h3>Internal Vice President</h3>
             <h4 class="endorsementname">Avinoam Baral</h4>
             <h4 class="candinfoend">Bruins United</h4>
-            <h4 class="greyer"></h4>
+            <h4 class="greyer">53.4%</h4>
 
           </div>
         </div>
@@ -301,7 +301,7 @@ Template Name: USAC Elections 2014
             <h3>External Vice President</h3>
             <h4 class="endorsementname">Conrad Contreras</h4>
             <h4 class="candinfoend">LET'S ACT!</h4>
-            <h4 class="greyer"></h4>
+            <h4 class="greyer">52.4%</h4>
           </div>
         </div>
       </li>
@@ -315,7 +315,7 @@ Template Name: USAC Elections 2014
             <h3>Academic Affairs Commissioner</h3>
              <h4 class="endorsementname">Allyson Bach</h4>
            <h4 class="candinfoend">Bruins United</h4>
-            <h4 class="greyer"></h4>
+            <h4 class="greyer">50.38%</h4>
           </div>
         </div>
       </li>
@@ -329,7 +329,7 @@ Template Name: USAC Elections 2014
             <h3>Campus Events Commissioner</h3>
             <h4 class="endorsementname">Greg Kalfayan</h4>
             <h4 class="candinfoend">Independent</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
@@ -347,7 +347,7 @@ Template Name: USAC Elections 2014
             <h3>Cultural Affairs Commissioner</h3>
             <h4 class="endorsementname">Irmary Garcia</h4>
             <h4 class="candinfoend">LET'S ACT!</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
@@ -402,7 +402,7 @@ Template Name: USAC Elections 2014
             <h3>Community Service Commissioner</h3>
             <h4 class="endorsementname">Cynthia Wong</h4>
             <h4 class="candinfoend">Independent</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
@@ -416,7 +416,7 @@ Template Name: USAC Elections 2014
             <h3>Facilities Commissioner</h3>
             <h4 class="endorsementname">Carlos Quintanilla</h4>
             <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">50.15%</h5>
           </div>
         </div>
       </li>
@@ -430,7 +430,7 @@ Template Name: USAC Elections 2014
             <h3>Financial Supports Commissioner</h3>
             <h4 class="endorsementname">Heather Rosen</h4>
             <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">55%</h5>
           </div>
         </div>
       </li>
@@ -444,7 +444,7 @@ Template Name: USAC Elections 2014
             <h3>Student Wellness Commissioner</h3>
             <h4 class="endorsementname">Savannah Badalich</h4>
             <h4 class="candinfoend">Independent</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
       </li>
