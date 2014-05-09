@@ -361,7 +361,7 @@ Template Name: USAC Elections 2014
             <h3>General Representative 1</h3>
             <h4 class="endorsementname">Manjot Singh</h4>
             <h4 class="candinfoend">LET'S ACT!</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">&nbsp;</h5>
           </div>
       </li>
 
@@ -373,7 +373,7 @@ Template Name: USAC Elections 2014
             <h3>General Representative 2</h3>
             <h4 class="endorsementname">Nihal Satyadev</h4>
             <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">&nbsp;</h5>
           </div>
         </div>
       </li>
@@ -385,7 +385,7 @@ Template Name: USAC Elections 2014
             <h3>General Representative 3</h3>
             <h4 class="endorsementname">Fabienne Roth</h4>
             <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer"></h5>
+            <h5 class="greyer">&nbsp;</h5>
           </div>
       </li>
 
