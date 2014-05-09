@@ -15,8 +15,16 @@ Template Name: USAC Elections 2014
       h3 {
         text-transform: none;
       }
-        h2.pres {
+        h1.pres {
           color: #000000;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          line-height: 30px;
+          font-size: 45px;
+          margin-bottom:25px;
+        }
+        h2.pres {
+          color: #00a5e5;
           font-family: 'Dosis', sans-serif;
           font-weight: 400;
           line-height: 30px;
@@ -250,14 +258,14 @@ Template Name: USAC Elections 2014
 
           <div class="row-fluid">
             <div class="span3">
-              <img class="presphoto" src="/images/features/usac2013/John Joanino.jpg" alt="">
+              <img class="presphoto" src="http://dailybruin.com/images/2014/05/murphy.jpg" alt="">
             </div>
             <div class="span9">
               <div class="box">
-                <h2 class="pres">President</h2>
-                <h4 class="endorsementname">John Joanino</h4>
+                <h1 class="pres">President</h2>
+                <h2 class="pres">Devin Murphy</h4>
                 <h4 class="candinfoend">LET'S ACT!</h4>
-                <h3 style="text-transform: lowercase;"class="greyer">51.8% of the vote</h3>
+                <h3 style="text-transform: lowercase;"class="greyer"></h3>
               </div>
             </div>
           </div>
@@ -273,12 +281,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Avi Oved.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/baral.jpg" alt="">
           <div class="textcentered">
             <h3>Internal Vice President</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="endorsementname">Avinoam Baral</h4>
             <h4 class="candinfoend">Bruins United</h4>
-            <h4 class="greyer">52.6%</h4>
+            <h4 class="greyer"></h4>
 
           </div>
         </div>
@@ -288,12 +296,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Maryssa Hall.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/contreras.jpg" alt="">
           <div class="textcentered">
             <h3>External Vice President</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h4 class="greyer">55%</h4>
+            <h4 class="endorsementname">Conrad Contreras</h4>
+            <h4 class="candinfoend">LET'S ACT!</h4>
+            <h4 class="greyer"></h4>
           </div>
         </div>
       </li>
@@ -302,12 +310,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Darren Ramalho.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/bach.jpg" alt="">
           <div class="textcentered">
             <h3>Academic Affairs Commissioner</h3>
-             <h4 class="endorsementname">Avi Oved</h4>
-           <h4 class="candinfoend">Let's Act!</h4>
-            <h4 class="greyer">53.1%</h4>
+             <h4 class="endorsementname">Allyson Bach</h4>
+           <h4 class="candinfoend">Bruins United</h4>
+            <h4 class="greyer"></h4>
           </div>
         </div>
       </li>
@@ -316,12 +324,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Jessica Kim.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/gregweb.jpg" alt="">
           <div class="textcentered">
             <h3>Campus Events Commissioner</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Greg Kalfayan</h4>
+            <h4 class="candinfoend">Independent</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
@@ -334,12 +342,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Jessica Trumble.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
           <div class="textcentered">
             <h3>Cultural Affairs Commissioner</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Irmary Garcia</h4>
+            <h4 class="candinfoend">LET'S ACT!</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
@@ -347,37 +355,37 @@ Template Name: USAC Elections 2014
       <!--General Representatives-->
 
        <li class="span3">
-        <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Sam Haws.jpg" alt="">
+        <div class="thumbnail letsact">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
           <div class="textcentered">
             <h3>General Representative 1</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Manjot Singh</h4>
+            <h4 class="candinfoend">LET'S ACT!</h4>
+            <h5 class="greyer"></h5>
           </div>
       </li>
 
 
       <li class="span3">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Sunny Singh.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt="">
           <div class="textcentered">
             <h3>General Representative 2</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Nihal Satyadev</h4>
+            <h4 class="candinfoend">Bruins United</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
      
       <li class="span3">
-        <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Lizzy Naameh.jpg" alt="">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt="">
           <div class="textcentered">
             <h3>General Representative 3</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Fabienne Roth</h4>
+            <h4 class="candinfoend">Bruins United</h4>
+            <h5 class="greyer"></h5>
           </div>
       </li>
 
@@ -389,12 +397,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Omar Arce.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong.jpeg" alt="">
           <div class="textcentered">
             <h3>Community Service Commissioner</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Cynthia Wong</h4>
+            <h4 class="candinfoend">Independent</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
@@ -403,12 +411,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/quintanilla.jpg" alt="">
           <div class="textcentered">
             <h3>Facilities Commissioner</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Carlos Quintanilla</h4>
+            <h4 class="candinfoend">Bruins United</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
@@ -417,12 +425,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Lauren Rogers.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/rosen.jpg" alt="">
           <div class="textcentered">
             <h3>Financial Supports Commissioner</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Heather Rosen</h4>
+            <h4 class="candinfoend">Bruins United</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
@@ -431,12 +439,12 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Savannah Dianne Badalich.jpg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt="">
           <div class="textcentered">
             <h3>Student Wellness Commissioner</h3>
-            <h4 class="endorsementname">Avi Oved</h4>
-            <h4 class="candinfoend">Let's Act!</h4>
-            <h5 class="greyer">Uncontested</h5>
+            <h4 class="endorsementname">Savannah Badalich</h4>
+            <h4 class="candinfoend">Independent</h4>
+            <h5 class="greyer"></h5>
           </div>
         </div>
       </li>
@@ -448,17 +456,17 @@ Template Name: USAC Elections 2014
       <li class="span6">
         <div class="thumbnail pass">
           <div class="textcentered">
-            <h1 class="white">PASSED - 60%</h1>
-            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Bruin Bash Referendum</h3></span>
+            <h1 class="white">PASSED</h1>
+            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Transfer Student Representative Referendum</h3></span>
           </div>
         </div>
       </li>
 
       <li class="span6">
-        <div class="thumbnail fail">
+        <div class="thumbnail pass">
           <div class="textcentered">
-            <h1 class="white">FAILED - 47.9%</h1>
-            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif; font-weight:normal;">Bruin Diversity Initiative</h3>
+            <h1 class="white">PASSED</h1>
+            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif; font-weight:normal;">Arts Restoring Community Referendum</h3>
           </div>
         </div>
       </li>
@@ -629,9 +637,9 @@ Template Name: USAC Elections 2014
         </div>
       </div>
 <div class="span6">
-
+<!--
         <script src="//storify.com/dailybruin/usac-elections-2014.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2014" target="_blank">View the story "USAC Elections 2014" on Storify</a>]</noscript>
-
+-->
       </div>
 
 
