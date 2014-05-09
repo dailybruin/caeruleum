@@ -8,6 +8,10 @@ Template Name: USAC Elections 2014
 <!-- Le styles -->
     <link href="bootstrap.css" rel="stylesheet">
     <style type="text/css">
+          p {
+    font-family: 'Open Sans',sans-serif !important;
+    font-size: 15px;
+      }
         
         h2.elections {
           color: #00a5e5;
@@ -73,21 +77,24 @@ Template Name: USAC Elections 2014
           text-align: center;
         }
 
-        .bally{
-          background-color: #93BCC4;
-        }
 
         .bunited{
-          background-color: #C2E1F2;
+          border:5px solid #C2E1F2;
         }
 
         .indep{
-          background-color: #A2DEA6;
+          border:5px solid #A2DEA6; 
         }
 
         .letsact
         {
-          background-color: #F7F499;
+          border:5px solid #F7F499;
+        }
+        .firedup {
+          border:5px solid #dea6a2; 
+        }
+        .bsaty {
+          border:5px solid #93BCC4;
         }
 
         .pass
@@ -135,6 +142,50 @@ Template Name: USAC Elections 2014
             visibility: visible;
             width: 100%;
           }
+                  h4.candinfo {
+          color:black;
+          font-family: 'Open Sans', sans-serif;
+          margin-left: 40px;
+        }
+        h4.candinfoend {
+          font-size:17px;
+          color:black;
+          font-family: 'Open Sans', sans-serif;
+        }
+        .spacer {
+          margin-left: 40px;
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+        }
+        h4.platforms {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+          margin-top:32px;
+        }
+        h4.endorsements {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+          line-height: 35px;
+          padding-top:15px;
+        }
+        h4.endorsementname {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+          margin-top:10px;
+        }
+        li.platforms {
+          line-height:2em;
+          font-family: 'Open Sans', sans-serif;
+          font-size:15px;
+        }
 }
 
 
