@@ -313,6 +313,43 @@ Template Name: USAC Elections Campaign Violations 2014
     <br /><br />
 
  
+ <h2 class="endorsements">Complaint #:C15-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Andrea Chu <br/>
+              5/9/2014 12:35pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+    <p>An alleged violation of the sanction mandated by complaint C14-2014, which prohibited the 
+    following candidates from online campaigning: Sunny Singh, Aurelia Friedman, Allyson Bach, 
+    Avinoam Baral, Nihal Satyadev, Carlos Quintanilla, Heather Rosen, Kevin Patterson and 
+    Fabienne Roth.</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+    <p>The Election Board finds this complaint to be valid. A campaign participant for the candidates 
+    listed above campaigned online in their favor. However, the Election Board finds the effect of 
+    this campaigning was minimal on elections and polls have closed thus eliminating any 
+    effectiveness of a sanction.</p>
+
+
+    <h4 class="endorsementname">Sanction:</h4>  
+    <p>No further action shall be taken regarding C15-2014.</p>
+
+
+          </div>
+      </li>
+
+
+  </ul>
  <h2 class="endorsements">Complaint #:C14-2014</h2><hr></hr>
 
   <ul class="thumbnails">
