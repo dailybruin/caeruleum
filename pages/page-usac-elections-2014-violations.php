@@ -313,6 +313,137 @@ Template Name: USAC Elections Campaign Violations 2014
     <br /><br />
 
  
+ <h2 class="endorsements">Complaint #:C14-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Kateisha Menefield <br/>
+              5/9/2014 9:49am</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+    <p>The distribution of campaign material not reported in expense accounts on Thursday, May 8th and the intent to 
+    distribute materials on Friday, May 9th by the following candidates: Sunny Singh, Aurelia Friedman, Allyson Bach, 
+    Avinoam Baral, Nihal Satyadev, Carlos Quintanilla, Heather Rosen, Kevin Patterson and Fabienne Roth. 
+    The relevant sections of Election Code are:</p>
+    <p>A listing of expenses associated the campaign (whether or not they are used in a campaign). (VI, B, 4, b , i, c) 
+    An original copy of each type of each type of campaign literature (VI, B, 4, b, i, b) 
+    The candidate and Designated Campaign representative will be responsible for declaring in the expense account 
+    forms all campaign material that is publicly or privately displayed or distributed on-or off-campus, by the campaign. 
+    (VI, B, 4, e )</p>
+    <p>Incorrect and/or incomplete information may result in disqualification. A candidate (even after elected) will always be 
+    held accountable for the information declared on the expense account forms. The provision of incorrect and/or 
+    incomplete information by an elected and certified candidate may result in the Election Board recommendation to the 
+    USAC for a petition to recall to begin circulation. (VI, B, 4, g)</p> 
+
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+    <p>The Election Board finds this complaint to be valid. Evidence and admission by the candidates revealed that items not 
+    reported in expense accounts were distributed off-campus. After speaking to the candidates, Election Board believes 
+    the intent of the candidates was not to provide misinformation. The candidates had incorrectly believed that were able 
+    to turn in receipts 2 days after the purchase and did not know they were unable to incur expenses after the final 
+    expense report was due. Upon notification of their mistake the candidates ceased all distribution of campaign material 
+    and cooperated with Election Board.</p>
+
+
+    <h4 class="endorsementname">Sanction:</h4>  
+    <p>The following candidates are banned from from all forms of campaigning, both online and on-campus, from the hours 
+    of 9am to 12pm on Friday, May 9th: Sunny Singh, Aurelia Friedman, Allyson Bach, Avinoam Baral, Nihal Satyadev, 
+    Carlos Quintanilla, Heather Rosen, Kevin Patterson and Fabienne Roth . While Election Board believes this is a very 
+    serious offense, we do not believe that the severity of the offense requires the disqualification of candidates.</p>
+
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C13-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Kamilah Moore <br/>
+              5/8/2014 6:32pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+    <p>The distribution of flyers inside Powell Library supporting the following candidates: Sunny 
+    Singh, Avinoam Baral, Aurelia Friedman, Allyson Bach, Carlos Quintanilla, Fabienne Roth, 
+    Kevin Patterson, Nihal Satyadev and Heather Rosen. The relevant section of Election Code is 
+    "campaign material may not be distributed in the following areas....within structural or physical 
+    confines of buildings" (Election Code VI ,B,1,b,v, k, i). </p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+    <p>The Election Board does not find this complaint to be valid. Election Board considers this to be 
+    same violation reported in complaint C08-2014 which already resulted in a sanction for 
+    candidates listed above. The candidates were informed to remove the materials and did so 
+    immediately.</p>
+
+
+    <h4 class="endorsementname">Sanction:</h4>  
+    <p>The Election Board shall take no further action regarding complaint C13-2014.</p>
+
+
+          </div>
+      </li>
+
+
+  </ul>
+ <h2 class="endorsements">Complaint #:C12-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Esha Jalota <br/>
+              5/8/2014 6:33pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+    <p>Messages written in chalk at University-owned apartments that state "Vote LA!" and "LA!LA!
+    LA!" The complainant suggests candidates Devin Murphy, Negeen Sadeghi-Movahed, Conrad 
+    Contreras, Janay Williams, Alex Mercier, Winnie Galbadores, Irmary Garcia, Erineo Garcia, 
+    Francesca Rebosura and Manjot Singh make up the unofficial group "Let's Act!." The relevant 
+    sections of Election Code state "no campaign statements shall be written on UCLA 
+    structures" (VI, B ,1, b, v, i) and define campaigning as "promotion or criticism of any official or 
+    unofficial group of two or more individuals who are running for USAC office, even if the 
+    candidates are not mentioned by name" (VI, B, 1, a, i, d). </p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+    <p>The Election Board does not find this complaint to be valid. The threshold for evidence does not 
+    match that found in complaint C11-2014. No statements were found supporting individual 
+    candidates. In addition, no candidates or campaign representatives were seen writing the 
+    message or at the location.</p>
+
+
+    <h4 class="endorsementname">Sanction:</h4>  
+    <p>The Election Board shall take no further action regarding complaint C12-2014.</p>
+
+
+          </div>
+      </li>
+
+
+  </ul>
  <h2 class="endorsements">Complaint #:C11-2014</h2><hr></hr>
 
   <ul class="thumbnails">
