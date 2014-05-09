@@ -581,7 +581,7 @@ Template Name: USAC Elections 2014
     
 
     <div class="row-fluid">
-      <div class="span12">
+      <div class="span6">
         <div class="thumbnail">
           <div class="caption">
              <h2 class="elections">Recent Articles<h2>
@@ -628,7 +628,11 @@ Template Name: USAC Elections 2014
           </div>
         </div>
       </div>
+<div class="span6">
 
+        <script src="//storify.com/dailybruin/usac-elections-2014.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2014" target="_blank">View the story "USAC Elections 2014" on Storify</a>]</noscript>
+
+      </div>
 
 
       </div>
