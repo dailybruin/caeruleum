@@ -397,7 +397,7 @@ Template Name: USAC Elections 2014
 
       <li class="span3">
         <div class="thumbnail indep">
-          <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong.jpeg" alt="">
+          <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong2.jpg" alt="">
           <div class="textcentered">
             <h3>Community Service Commissioner</h3>
             <h4 class="endorsementname">Cynthia Wong</h4>
