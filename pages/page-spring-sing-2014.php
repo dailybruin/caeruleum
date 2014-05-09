@@ -9,5 +9,6 @@ Template Name: Spring Spring 2014
 
 
 <h1>Hello World</h1>
+<h1>Hello World</h1>
 
 <?php get_footer(); ?>
