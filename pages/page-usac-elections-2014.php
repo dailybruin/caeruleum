@@ -456,7 +456,7 @@ Template Name: USAC Elections 2014
       <li class="span6">
         <div class="thumbnail pass">
           <div class="textcentered">
-            <h1 class="white">PASSED</h1>
+            <h1 class="white">PASSED - 74.4%</h1>
             <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Transfer Student Representative Referendum</h3></span>
           </div>
         </div>
@@ -465,7 +465,7 @@ Template Name: USAC Elections 2014
       <li class="span6">
         <div class="thumbnail pass">
           <div class="textcentered">
-            <h1 class="white">PASSED</h1>
+            <h1 class="white">PASSED - 54.5%</h1>
             <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif; font-weight:normal;">Arts Restoring Community Referendum</h3>
           </div>
         </div>
