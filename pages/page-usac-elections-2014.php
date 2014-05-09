@@ -265,7 +265,7 @@ Template Name: USAC Elections 2014
                 <h1 class="pres">President</h2>
                 <h2 class="pres">Devin Murphy</h4>
                 <h4 class="candinfoend">LET'S ACT!</h4>
-                <h3 style="text-transform: lowercase;"class="greyer">50.2%</h3>
+                <h3 style="text-transform: lowercase;"class="greyer">50.2% of the vote</h3>
               </div>
             </div>
           </div>
