@@ -313,6 +313,37 @@ Template Name: USAC Elections Campaign Violations 2014
     <br /><br />
 
  
+ <h2 class="endorsements">Complaint #:C11-2014</h2><hr></hr>
+
+  <ul class="thumbnails">
+
+
+      <li class="span12">
+        <div class="endorsement letsact">
+          
+          <div class="textcentered">
+
+            
+            <h4 class="candinfoend">Submitted by: Jas Kirt <br/>
+              5/8/2014 2:38pm</h4></div>
+    
+    <h4 class="endorsementname">Regarding:</h4>        
+    <p>Alleged on-campus campaigning before it was allowed by the Election Calendar on Thursday, May 1st. It is claimed that members of "Bruins United" campaigned on-campus by having student take pictures with whiteboards that read "I am ______ and we are Bruins United." Students were allegedly asked to fill in the blank to describe themselves. Campaign participants and candidates took part by taking photos with the same white- boards. The complainant asserts that this early on-campus campaigning is in violation of Election Code which defines campaigning as "any public acton initiated by (a) campaign participant(s) for any of the following purposes...promotion or criticism of any official or unofficial group of two or more individual who are running for USAC office, even if the individual candidates are not mentioned by name (Election Code VI, B, 1, a, i, d). The complainant argues that "Bruins United" comprises an unofficial group of candidates including Sunny Singh, Aurelia Friedman, Avinoam Baral, Fabienne Roth, Kevin Patterson, Nihal Satyadev, Heather Rosen, Allyson Bach and Carlos Quintanilla.</p>
+
+
+    <h4 class="endorsementname">Finding:</h4>  
+    <p>The Election Board finds the complaint to be valid. Multiple witnesses attest to seeing candidates and affiliated campaign participants on Bruinwalk with the whiteboards in question. Evidence submitted also connects the candidates listed above with the unofficial group Bruins United including an article in Daily Bruin in which all candidates listed above state their affiliation with the group, the website belonging to Bruins United that lists all the above candidates, and candidate statements written by candidates for the Election Board website in which all candidates state their affiliation with Bruins United. We find the fact that campaign representatives held up whiteboards with the phrase "We're Bruins United" on Bruinwalk to fit the definition of campaign as it was a public action whose promotion was clearly meant for candidates.</p>
+
+
+    <h4 class="endorsementname">Sanction:</h4>  
+    <p>The Election Board mandates that the following candidates shall be banned from on-campus campaigning from the hours of 4pm to 5pm on Thursday, May 8th and 9am to 10am on Friday, May 9th: Sunny Singh, Aurelia Friedman, Avinoam Baral, Fabienne Roth, Kevin Patterson, Nihal Satyadev, Heather Rosen, Allyson Bach and Carlos Quintanilla.</p>
+
+
+          </div>
+      </li>
+
+
+  </ul>
  <h2 class="endorsements">Complaint #:C10-2014</h2><hr></hr>
 
   <ul class="thumbnails">
@@ -334,9 +365,9 @@ Rodriguez, Harwind Lasher, Gabriel Gutierrez and Der Xiong.</p>
 
     <h4 class="endorsementname">Finding:</h4>  
 
-<p>The Election Board finds this complaint to be valid. Election Code states that âany email that 
+<p>The Election Board finds this complaint to be valid. Election Code states that "any email that 
 contains campaign literature or is an endorsement slip may only be sent to: (i) a subscription 
-listserv that the sender is a member of (ii) individuals whom the sender personally knows.â 
+listserv that the sender is a member of (ii) individuals whom the sender personally knows." 
 Based on our investigation, Election Board finds that the email in question satisfies neither of 
 these requirements.</p>
 
