@@ -12,7 +12,17 @@ Template Name: USAC Elections 2014
     font-family: 'Open Sans',sans-serif !important;
     font-size: 15px;
       }
-        
+      h3 {
+        text-transform: none;
+      }
+        h2.pres {
+          color: #000000;
+          font-family: 'Dosis', sans-serif;
+          font-weight: 400;
+          line-height: 30px;
+          font-size: 40px;
+          margin-bottom:15px;
+        }
         h2.elections {
           color: #00a5e5;
           font-family: 'Dosis', sans-serif;
@@ -27,6 +37,50 @@ Template Name: USAC Elections 2014
           font-size: 25px;
           line-height: 23px;
           margin: 5px 0 10px 0;
+        }
+                          h4.candinfo {
+          color:black;
+          font-family: 'Open Sans', sans-serif;
+          margin-left: 40px;
+        }
+        h4.candinfoend {
+          font-size:17px;
+          color:black;
+          font-family: 'Open Sans', sans-serif;
+        }
+        .spacer {
+          margin-left: 40px;
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+        }
+        h4.platforms {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+          margin-top:32px;
+        }
+        h4.endorsements {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+          line-height: 35px;
+          padding-top:15px;
+        }
+        h4.endorsementname {
+          color: #00a5e5;
+          font-family: 'Dosis', sans-serif;
+          font-size:25px;
+          font-weight: normal;
+          margin-top:10px;
+        }
+        li.platforms {
+          line-height:2em;
+          font-family: 'Open Sans', sans-serif;
+          font-size:15px;
         }
 
         .ad{
@@ -123,7 +177,10 @@ Template Name: USAC Elections 2014
         }
 
         .greyer{
-          color: #0327AF;
+          color: #696969;
+          line-height:2em;
+          font-family: 'Open Sans', sans-serif;
+          font-size:15px;
         }
 
         .laterbuttons {
@@ -142,50 +199,7 @@ Template Name: USAC Elections 2014
             visibility: visible;
             width: 100%;
           }
-                  h4.candinfo {
-          color:black;
-          font-family: 'Open Sans', sans-serif;
-          margin-left: 40px;
-        }
-        h4.candinfoend {
-          font-size:17px;
-          color:black;
-          font-family: 'Open Sans', sans-serif;
-        }
-        .spacer {
-          margin-left: 40px;
-          color: #00a5e5;
-          font-family: 'Dosis', sans-serif;
-          font-size:25px;
-          font-weight: normal;
-        }
-        h4.platforms {
-          color: #00a5e5;
-          font-family: 'Dosis', sans-serif;
-          font-size:25px;
-          font-weight: normal;
-          margin-top:32px;
-        }
-        h4.endorsements {
-          color: #00a5e5;
-          font-family: 'Dosis', sans-serif;
-          font-size:25px;
-          font-weight: normal;
-          line-height: 35px;
-          padding-top:15px;
-        }
-        h4.endorsementname {
-          color: #00a5e5;
-          font-family: 'Dosis', sans-serif;
-          font-size:25px;
-          font-weight: normal;
-          margin-top:10px;
-        }
-        li.platforms {
-          line-height:2em;
-          font-family: 'Open Sans', sans-serif;
-          font-size:15px;
-        }
+
 }
 
 
@@ -227,6 +241,229 @@ Template Name: USAC Elections 2014
     <br/><br/>
 
 
+
+    <!-- Presidents-->
+
+    <ul class="thumbnails">
+      <li class="span12">
+        <div class="thumbnail letsact">
+
+          <div class="row-fluid">
+            <div class="span3">
+              <img class="presphoto" src="/images/features/usac2013/John Joanino.jpg" alt="">
+            </div>
+            <div class="span9">
+              <div class="box">
+                <h2 class="pres">President</h2>
+                <h4 class="endorsementname">John Joanino</h4>
+                <h4 class="candinfoend">LET'S ACT!</h4>
+                <h3 style="text-transform: lowercase;"class="greyer">51.8% of the vote</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
+    <!-- IVPS-->
+
+
+    <ul class="thumbnails">
+
+      <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Avi Oved.jpg" alt="">
+          <div class="textcentered">
+            <h3>Internal Vice President</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Bruins United</h4>
+            <h4 class="greyer">52.6%</h4>
+
+          </div>
+        </div>
+      </li>
+
+      <!-- EVPS-->
+
+      <li class="span3">
+        <div class="thumbnail letsact">
+          <img class="candphoto" src="/images/features/usac2013/Maryssa Hall.jpg" alt="">
+          <div class="textcentered">
+            <h3>External Vice President</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h4 class="greyer">55%</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- Academic Affairs Commissioner -->
+
+      <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Darren Ramalho.jpg" alt="">
+          <div class="textcentered">
+            <h3>Academic Affairs Commissioner</h3>
+             <h4 class="endorsementname">Avi Oved</h4>
+           <h4 class="candinfoend">Let's Act!</h4>
+            <h4 class="greyer">53.1%</h4>
+          </div>
+        </div>
+      </li>
+
+      <!--Campus Events Commisioner-->
+
+      <li class="span3">
+        <div class="thumbnail indep">
+          <img class="candphoto" src="/images/features/usac2013/Jessica Kim.jpg" alt="">
+          <div class="textcentered">
+            <h3>Campus Events Commissioner</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="thumbnails">
+
+      <!--Cultural Affairs Commissioner-->
+
+      <li class="span3">
+        <div class="thumbnail letsact">
+          <img class="candphoto" src="/images/features/usac2013/Jessica Trumble.jpg" alt="">
+          <div class="textcentered">
+            <h3>Cultural Affairs Commissioner</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+
+      <!--General Representatives-->
+
+       <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Sam Haws.jpg" alt="">
+          <div class="textcentered">
+            <h3>General Representative 1</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Bruins United</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+      </li>
+
+
+      <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Sunny Singh.jpg" alt="">
+          <div class="textcentered">
+            <h3>General Representative 2</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+     
+      <li class="span3">
+        <div class="thumbnail letsact">
+          <img class="candphoto" src="/images/features/usac2013/Lizzy Naameh.jpg" alt="">
+          <div class="textcentered">
+            <h3>General Representative 3</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+      </li>
+
+    </ul>
+
+    <ul class="thumbnails">
+
+      <!-- Community Service Commisioner -->
+
+      <li class="span3">
+        <div class="thumbnail indep">
+          <img class="candphoto" src="/images/features/usac2013/Omar Arce.jpg" alt="">
+          <div class="textcentered">
+            <h3>Community Service Commissioner</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+
+      <!-- Facilities Commissioner -->
+
+      <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
+          <div class="textcentered">
+            <h3>Facilities Commissioner</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+
+      <!-- Financial Commisioner -->
+
+      <li class="span3">
+        <div class="thumbnail bunited">
+          <img class="candphoto" src="/images/features/usac2013/Lauren Rogers.jpg" alt="">
+          <div class="textcentered">
+            <h3>Financial Supports Commissioner</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+
+      <!-- Student Wellness Commissioner -->
+
+      <li class="span3">
+        <div class="thumbnail indep">
+          <img class="candphoto" src="/images/features/usac2013/Savannah Dianne Badalich.jpg" alt="">
+          <div class="textcentered">
+            <h3>Student Wellness Commissioner</h3>
+            <h4 class="endorsementname">Avi Oved</h4>
+            <h4 class="candinfoend">Let's Act!</h4>
+            <h5 class="greyer">Uncontested</h5>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="thumbnails">
+
+      <li class="span6">
+        <div class="thumbnail pass">
+          <div class="textcentered">
+            <h1 class="white">PASSED - 60%</h1>
+            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Bruin Bash Referendum</h3></span>
+          </div>
+        </div>
+      </li>
+
+      <li class="span6">
+        <div class="thumbnail fail">
+          <div class="textcentered">
+            <h1 class="white">FAILED - 47.9%</h1>
+            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif; font-weight:normal;">Bruin Diversity Initiative</h3>
+          </div>
+        </div>
+      </li>
+
+    </ul>
 
 
     
