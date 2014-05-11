@@ -118,6 +118,10 @@ ul {
 	padding: 10px;
 }
 
+.profiles li img {
+	border-radius: 10px;
+}
+
 </style>
 
 
