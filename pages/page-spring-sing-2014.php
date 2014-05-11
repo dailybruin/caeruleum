@@ -5,7 +5,7 @@ Template Name: Spring Spring 2014
 
 <style type="text/css">
 
-@media (min-width: 480px) {
+@media (min-width: 479px) {
 	#tweets {
 		max-width: 47%;
 		float:left;
