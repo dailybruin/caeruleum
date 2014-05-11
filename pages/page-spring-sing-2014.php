@@ -310,7 +310,6 @@ ul {
 			</li>
 		</ul>
 	</div>
-	</div>
 
 	<div id="tweets">
 		<h3> Tweets </h3>
