@@ -9,49 +9,32 @@ Template Name: Spring Spring 2014
 	#tweets {
 		max-width: 47%;
 		float:left;
-		background-color: purple;
-		
-		
 	}
 
 	#videos {
 		max-width: 47%;
-		float: right;
-		background-color: yellow;
-
-		
-		
+		float: right;	
 	}
 }
 
 @media (min-width: 720px) {
-
-	
-
 }
 
 @media (min-width: 980px) {
-	
 	#cards {
 		max-width: 75%;
 		min-height: 100%;
-
-
 	}
 
 	#tweets {
-		max-width: 22%;
-		float: right;
-		top: 70px;
+		max-width: 25%;
+		float: right;	
 	}
 
 	#videos {
-		max-width: 22%;
+		max-width: 25%;
 		float: right;
 	}
-
-	
-
 }
 
 
@@ -62,24 +45,13 @@ Template Name: Spring Spring 2014
 	height: 150px;
 	background: url(https://www.westmont.edu/_student_life/images/Spring-Sing-logo.jpg) no-repeat center center;
 	margin: 25px auto 50px auto;
-	
-}
-
-#solo {
-	width:100%;
-	max-width: 950px;
-	height: 150px;
-	margin: 50px auto 0px;
-	text-align: center;
 }
 
 #content {
 	width: 100%;
-	max-width: 940px;
 	margin: 0 auto;
 	display: block;
-	height: auto;
-	
+	height: auto;	
 }
 
 #cards {
@@ -92,21 +64,17 @@ Template Name: Spring Spring 2014
 }
 
 #tweets {
-	
 	width: 100%;
 	margin: 15px 0;
-	height: 250px;
+	height: auto;
 	display: inline-block;
-	background-color: lightblue;
 }
 
 #videos {
-	
 	width: 100%;
 	margin: 0;
 	height: auto;
 	display: inline-block;
-	background-color: darkred;
 }
 
 .video-container {
@@ -128,9 +96,7 @@ Template Name: Spring Spring 2014
 
 .profiles {
 	list-style-type: none;
-	
 	padding: 20px;
-	
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: wrap;
@@ -164,6 +130,7 @@ ul {
 
 
 <div id="content">
+
 	<div id="cards">
 		<h1>Solo Artists</h1>
 		<ul class="profiles">
@@ -174,20 +141,17 @@ ul {
 	</div>
 
 	<div id="tweets">
+		<h3> Tweets </h3>
 		<a class="twitter-timeline" width="520" href="https://twitter.com/search?q=%23springsing2014" data-widget-id="464609389723140096">Tweets about "#springsing2014"</a>
 	</div>
 
 	<div id="videos">
+		<h3> Video Interviews </h3>
 		<div class="video-container">
-        	<iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="200"></iframe>
-		</div>
-		<div class="video-container">
-        	<iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="200"></iframe>
-		</div>
-		<div class="video-container">
-        	<iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="200"></iframe>
+        	<iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PL0MivrT2vAvA2_eyYvE27mnR2pf9WXi4E" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
+
 </div>
 
 
