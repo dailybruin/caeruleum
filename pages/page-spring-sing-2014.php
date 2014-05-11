@@ -130,6 +130,11 @@ ul {
 
 .profiles li img {
 	border-radius: 10px;
+
+}
+
+.hidden {
+	display: none;
 }
 
 #cards-in i, em { color: #93CDEE; }
@@ -243,7 +248,8 @@ ul {
 			</li>
 
 		</ul>
-<div class="hidden">Talent: Duets</h1>
+<h1 class="hidden">Talent: Duets</h1>
+		<h1 class ="hidden">Talent: Duets</h1>
 		<ul class="profiles, hidden">
 			<li>
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/courtney-beat-rhino.jpg"></img>
@@ -278,8 +284,7 @@ ul {
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/we-are-the-folk.jpg"></img>
 				<h3> We the Folk </h3>
 				<p> Originating from UCLA, We the Folk began as a trio performing impromptu shows in public spaces around campus. Student demand rapidly transformed these “pop up” performances into dance parties and official campus events. Their energetic Euro-gypsy-Latin style, infused with virtuosity, offers an intoxicating blend of world folk, from South and Central America to Spain, France, Ireland and Eastern Europe. </p>
-			</li>
-			<li>
+			
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/street-hearts.jpg"></img>
 				<h3> The Street Hearts </h3>
 				<p> The Street Hearts, formed in fall of 2012, is the collaborative folk n’ soul project of guitarist Andrew Giurgius, double bassist Nicholai Hansen, pianist Nick Valentini, and banjoist Sarah Summers. Recognized for their poetics and vocal diversity, The Street Hearts have performed at L.A. venues The Roxy, The Witzend, Voodoo Lounge, and The Mint in addition to UCLA’s Spring Sing and JazzReggae Fest 2013. They are joined by violinist Yasmeen Al-Mazeedi for the Spring Sing 2014 performance of their original ballad “Darling, Don’t Go,” a story of lovers lost between seasons. </p>
@@ -309,7 +314,7 @@ ul {
 
 	<div id="tweets">
 		<h3> Tweets </h3>
-		<a class="twitter-timeline" width="520" height="600" href="https://twitter.com/search?q=%23springsing2014" data-widget-id="464609389723140096">Tweets about "#springsing2014"</a>
+		<a class="twitter-timeline" width="520" height="400" href="https://twitter.com/search?q=%23springsing2014" data-widget-id="464609389723140096">Tweets about "#springsing2014"</a>
 	</div>
 
 	<div id="videos">
