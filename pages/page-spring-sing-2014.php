@@ -29,11 +29,13 @@ Template Name: Spring Spring 2014
 	#tweets {
 		max-width: 25%;
 		float: right;	
+		position: static;
 	}
 
 	#videos {
 		max-width: 25%;
 		float: right;
+		position: static;
 	}
 }
 
@@ -58,53 +60,9 @@ Template Name: Spring Spring 2014
 	float: left;
 	width: 100%;
 	min-height: auto;
+	display: inline-block;
 	text-align: center;
 	border-radius: 10px;
-}
-#cards {
-	font-family: consolas;
-    	font-size: 0.7em;
-    	color: #454545;
-	box-shadow: 2px 2px 8px #888888
-
-    	overflow: hidden;
-	width: 300px;
-	height: 550px;
-	display: inline-block;
-}
-#cards i, em { 
-color: #93CDEE; 
-}
-#cards img {
-	max-width: 100%;
-    	max-height: 100%;
-}
-
-#cards h2, h3 {
-	font-weight: bold;
-	padding-left: 10px;
-}
-#cards blockquote p {
-  	font-size: 1.2em;    
-  	float: left;
-  	background: url(http://dailybruin.com/images/2014/05/quote-mark.png) 
-  	top left no-repeat;
-}
-
-#cards cite {
-  font-size: 1.2em;
-  float: right; 
-  padding-right: 20px;   
-}
-
-#cards cite a { 
-	padding-left: 40px;
-	color: #6B80A9; 
-}
-#cards cite a:hover { 
-	color: #6DB4DE;
-	text-decoration: normal; 
-	font-weight: bold;
 }
 
 #tweets {
@@ -140,11 +98,11 @@ color: #93CDEE;
 
 .profiles {
 	list-style-type: none;
-	padding: 20px;
+	padding: 10px;
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: wrap;
-	-webkit-justify-content: center;
+	-webkit-justify-content: left;
 }
 
 ul {
@@ -152,19 +110,12 @@ ul {
 }
 
 .profiles li {
-	height: 400px;
-	width: 300px;
+	height: auto;
+	width: 240px;
 	margin: 10px;
 	border-radius: 10px;
-	background: #70968C;
-	color: #FFF;
-}
-
-.profiles a {
-	display: block;
-	padding: 15px;
-	color: inherit;
-	text-decoration: none;
+	background: lightblue;
+	padding: 10px;
 }
 
 </style>
@@ -176,19 +127,86 @@ ul {
 <div id="content">
 
 	<div id="cards">
-		<img src='https://24.media.tumblr.com/fa0cbe4c49c39f2eab9826dddb6a8414/tumblr_mu4cotMVol1rsozsco1_500.jpg' />
-		<h2>Band Name</h2>
-		<h3>Genre: Rock</h3>
-		<ul type = "circle">
-			<li>blah blah blah I'm a fact</li>
-			<li>I'm another fact</li>
-			<li>Man facts are so cool</li>
+		<h1>Talent: Solos</h1>
+		<ul class="profiles">
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
+				<h3> Nessa Rica </h3>
+				<p> Nessa Rica is an Australian-born Filipina singer/songwriter. From her humble beginnings in 2007 of posting YouTube videos and small coffee shop performances, she has since been travelling and sharing her music across the world. In 2011, Nessa Rica released her EP “Journey”, which is out on iTunes, as well as stores worldwide. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
+				<h3> Mia Piciucco </h3>
+				<p> Mia is an artist of many outlets. Her passion for storytelling and creating is explored through music, theater, writing and more. She is a musical theater major, and is currently working on the department's production of Guys and Dolls. Over the past four years, she was involved in a variety of plays, musicals, workshops, concerts, cabarets and classes. Songwriting has been a part of Mia's artistic journey from a very young age, but she has recently pressed into it towards deeper exploration. She feels blessed to be able to tell stories in so many different ways, and knows that wherever she ends up, the joy of creating will always be what's important. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+				<h3> Sienna Moffitt </h3>
+				<p> Second year, Sienna Moffitt, began writing songs in September after meandering into Haight music shop and spontaneously picking up her Taylor last spring. With only a few original songs under her belt, she can’t quite believe she’s been considered worthy of a spot in Spring Sing 2014. Lyrics are real important to Sienna so keep an ear out and feel free to ask about them (or anything for that matter) if you see her wandering around. Sienna is so grateful for the unbelievable amount of support, love and kindness she receives from the people in her life, friends and family alike. However, there truly is no way she would be here if it weren’t for her parents and sisters - she loves them to the moon and back (a googolplex-plus-one times). </p>
+			</li>
+
 		</ul>
-		<blockquote>
-			<p>Every monarch in history has succeeded someone who is dead. Or just about to be. My predecessor's not only alive, but very much so. Bloody mess. Can't even give them a Christmas speech.</p>
-			<cite>-- Not Socrates<br /> <br />
-			<a href="http://www.google.com">Read More...</a></cite>
-		</blockquote>
+		<h1>Talent: Duets</h1>
+		<ul class="profiles">
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
+				<h3> Nessa Rica </h3>
+				<p> Nessa Rica is an Australian-born Filipina singer/songwriter. From her humble beginnings in 2007 of posting YouTube videos and small coffee shop performances, she has since been travelling and sharing her music across the world. In 2011, Nessa Rica released her EP “Journey”, which is out on iTunes, as well as stores worldwide. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
+				<h3> Mia Piciucco </h3>
+				<p> Mia is an artist of many outlets. Her passion for storytelling and creating is explored through music, theater, writing and more. She is a musical theater major, and is currently working on the department's production of Guys and Dolls. Over the past four years, she was involved in a variety of plays, musicals, workshops, concerts, cabarets and classes. Songwriting has been a part of Mia's artistic journey from a very young age, but she has recently pressed into it towards deeper exploration. She feels blessed to be able to tell stories in so many different ways, and knows that wherever she ends up, the joy of creating will always be what's important. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+				<h3> Sienna Moffitt </h3>
+				<p> Second year, Sienna Moffitt, began writing songs in September after meandering into Haight music shop and spontaneously picking up her Taylor last spring. With only a few original songs under her belt, she can’t quite believe she’s been considered worthy of a spot in Spring Sing 2014. Lyrics are real important to Sienna so keep an ear out and feel free to ask about them (or anything for that matter) if you see her wandering around. Sienna is so grateful for the unbelievable amount of support, love and kindness she receives from the people in her life, friends and family alike. However, there truly is no way she would be here if it weren’t for her parents and sisters - she loves them to the moon and back (a googolplex-plus-one times). </p>
+			</li>
+
+		</ul>
+		<h1>Talent: Bands</h1>
+		<ul class="profiles">
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
+				<h3> Nessa Rica </h3>
+				<p> Nessa Rica is an Australian-born Filipina singer/songwriter. From her humble beginnings in 2007 of posting YouTube videos and small coffee shop performances, she has since been travelling and sharing her music across the world. In 2011, Nessa Rica released her EP “Journey”, which is out on iTunes, as well as stores worldwide. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
+				<h3> Mia Piciucco </h3>
+				<p> Mia is an artist of many outlets. Her passion for storytelling and creating is explored through music, theater, writing and more. She is a musical theater major, and is currently working on the department's production of Guys and Dolls. Over the past four years, she was involved in a variety of plays, musicals, workshops, concerts, cabarets and classes. Songwriting has been a part of Mia's artistic journey from a very young age, but she has recently pressed into it towards deeper exploration. She feels blessed to be able to tell stories in so many different ways, and knows that wherever she ends up, the joy of creating will always be what's important. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+				<h3> Sienna Moffitt </h3>
+				<p> Second year, Sienna Moffitt, began writing songs in September after meandering into Haight music shop and spontaneously picking up her Taylor last spring. With only a few original songs under her belt, she can’t quite believe she’s been considered worthy of a spot in Spring Sing 2014. Lyrics are real important to Sienna so keep an ear out and feel free to ask about them (or anything for that matter) if you see her wandering around. Sienna is so grateful for the unbelievable amount of support, love and kindness she receives from the people in her life, friends and family alike. However, there truly is no way she would be here if it weren’t for her parents and sisters - she loves them to the moon and back (a googolplex-plus-one times). </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+				<h3> Sienna Moffitt </h3>
+				<p> Second year, Sienna Moffitt, began writing songs in September after meandering into Haight music shop and spontaneously picking up her Taylor last spring. With only a few original songs under her belt, she can’t quite believe she’s been considered worthy of a spot in Spring Sing 2014. Lyrics are real important to Sienna so keep an ear out and feel free to ask about them (or anything for that matter) if you see her wandering around. Sienna is so grateful for the unbelievable amount of support, love and kindness she receives from the people in her life, friends and family alike. However, there truly is no way she would be here if it weren’t for her parents and sisters - she loves them to the moon and back (a googolplex-plus-one times). </p>
+			</li>
+
+		</ul>
+		<h1>Talent: A Capella</h1>
+		<ul class="profiles">
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
+				<h3> Nessa Rica </h3>
+				<p> Nessa Rica is an Australian-born Filipina singer/songwriter. From her humble beginnings in 2007 of posting YouTube videos and small coffee shop performances, she has since been travelling and sharing her music across the world. In 2011, Nessa Rica released her EP “Journey”, which is out on iTunes, as well as stores worldwide. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
+				<h3> Mia Piciucco </h3>
+				<p> Mia is an artist of many outlets. Her passion for storytelling and creating is explored through music, theater, writing and more. She is a musical theater major, and is currently working on the department's production of Guys and Dolls. Over the past four years, she was involved in a variety of plays, musicals, workshops, concerts, cabarets and classes. Songwriting has been a part of Mia's artistic journey from a very young age, but she has recently pressed into it towards deeper exploration. She feels blessed to be able to tell stories in so many different ways, and knows that wherever she ends up, the joy of creating will always be what's important. </p>
+			</li>
+			<li>
+				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+				<h3> Sienna Moffitt </h3>
+				<p> Second year, Sienna Moffitt, began writing songs in September after meandering into Haight music shop and spontaneously picking up her Taylor last spring. With only a few original songs under her belt, she can’t quite believe she’s been considered worthy of a spot in Spring Sing 2014. Lyrics are real important to Sienna so keep an ear out and feel free to ask about them (or anything for that matter) if you see her wandering around. Sienna is so grateful for the unbelievable amount of support, love and kindness she receives from the people in her life, friends and family alike. However, there truly is no way she would be here if it weren’t for her parents and sisters - she loves them to the moon and back (a googolplex-plus-one times). </p>
+			</li>
+		</ul>
 	</div>
 
 	<div id="tweets">
