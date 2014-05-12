@@ -68,6 +68,59 @@ Template Name: Opinion Blog
 		color: gray;
 	}
 
+	.columnist-row {
+        margin-bottom: 10px;
+    }
+    .columnist-info {
+        display: inline-block;
+        text-align: left;
+    }
+    .columnist-name {
+        font-weight: bold;
+        word-wrap: break-word;
+    }
+    .columnist-line {
+        margin: 5px 10px 10px 10px;
+    }
+    .columnist-line-content {
+        display: inline-block;
+    }
+    .columnist-text {
+        vertical-align: middle;
+    }
+    .columnist-cat {
+        display: inline-block;
+        vertical-align: middle;
+        height: 14px;
+        width: 14px;
+        background-color: yellow;
+    }
+    @media (min-width: 768px) and (max-width: 979px) {
+        .columnist-column {
+            text-align: center;
+        }
+        #columnist-mugshot {
+            width: 100%;
+        }
+        #columnist-info {
+            width: 100%;
+            margin: auto 15px;
+        }
+    }
+    @media (max-width: 767px) {
+        .columnist-column {
+            text-align: left;
+        }
+        #columnist-mugshot {
+            display: inline-block;
+            width: auto;
+        }
+        #columnist-info {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
 </style>
 
 <body>
@@ -154,6 +207,64 @@ Template Name: Opinion Blog
             		<p class="attribution">-Socrates</p>
             		</blockquote>
             	</div>
+
+                <div class="columnist-column">
+                    <h4>Columnists</h4>
+                    <div class="row-fluid columnist-row">
+                        <div id="columnist-mugshot" class="span6">
+                            <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
+                        </div>
+                        <div id="columnist-info" class="span6 columnist-info">
+                            <div class="columnist-name">Harrison Liddiard</div>
+                            <div class="columnist-line">
+                                <div class="columnist-line-content">
+                                    <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
+                                </div>
+                            </div>
+                            <div class="columnist-line">
+                                <div class="columnist-line-content">
+                                    <span class="columnist-cat"></span><span class="columnist-text"> Daily Bruin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid columnist-row">
+                        <div id="columnist-mugshot" class="span6">
+                            <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
+                        </div>
+                        <div id="columnist-info" class="span6 columnist-info">
+                            <div class="columnist-name">Not Harrison Liddiard ablahblahblah</div>
+                            <div class="columnist-line">
+                                <div class="columnist-line-content">
+                                    <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
+                                </div>
+                            </div>
+                            <div class="columnist-line">
+                                <div class="columnist-line-content">
+                                    <span class="columnist-cat"></span><span class="columnist-text"> Daily Bruin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid columnist-row">
+                        <div id="columnist-mugshot" class="span6">
+                            <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
+                        </div>
+                        <div id="columnist-info" class="span6 columnist-info">
+                            <div class="columnist-name">Woah</div>
+                            <div class="columnist-line">
+                                <div class="columnist-line-content">
+                                    <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
+                                </div>
+                            </div>
+                            <div class="columnist-line">
+                                <div class="columnist-line-content">
+                                    <span class="columnist-cat"></span><span class="columnist-text"> Daily Bruin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>   
 
 	     <?php get_sidebar(); ?>
