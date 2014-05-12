@@ -242,7 +242,7 @@ ul {
 				<p>"I'm hoping to get out the experience of being a part of something bigger than myself."</p>
 				<blockquote>
 				<cite>-- Nessa Rica<br /> <br />
-				<a href="http://www.google.com">Read More...</a></cite>
+				<a href="http://dailybruin.com/2014/05/12/spring-sing-profile-nessa-rica/">Read More...</a></cite>
 				</cite>
 				</div>
 			</li>
@@ -259,7 +259,7 @@ ul {
 				<p>"This song is about recognizing I can't change myself for love, and it felt like a release when I was writing it."</p>
 				</blockquote>
 				<cite>-- Mia Joy<br /> <br />
-				<a href="http://www.google.com">Read More...</a></cite>
+				<a href="http://dailybruin.com/2014/05/12/spring-sing-profile-mia-joy/">Read More...</a></cite>
 				</cite>
 				</div>
 			</li>
@@ -276,7 +276,7 @@ ul {
 				<p> "My music is intentional ... every line I say means something from a part of my life."</p>
 				</blockquote>
 				<cite>-- Sienna Moffitt <br /> <br />
-				<a href="http://www.google.com">Read More...</a></cite>
+				<a href="http://dailybruin.com/2014/05/12/spring-sing-profile-sienna-moffitt/">Read More...</a></cite>
 				</cite>
 				</div>
 			</li>
