@@ -45,16 +45,23 @@ Template Name: Spring Spring 2014
 	width: 100%;
 	max-width: 800px;
 	height: 350px;
-	background: url(http://dailybruin.com/images/2014/05/in-nb.jpg) no-repeat top left;
+	background: url(http://dailybruin.com/images/2014/05/in-nb.jpg) no-repeat;
 	border-radius:10px;
-	background-color: white;
+	background-color: black;
 	margin: 25px auto 50px auto;
+	background-size: cover;
+
+
+	
 }
+
 #banner h1 {
+	font-size: 75px;
+	line-height: 70px;
 	text-align: right;
 	padding-right: 10px;
-	padding-top: 60px;
-	color: #000;
+	padding-top: 40px;
+	color: white;
 	text-shadow: 1px 1px 1px #888;
 }
 
@@ -111,7 +118,7 @@ Template Name: Spring Spring 2014
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-flex-wrap: wrap;
-	-webkit-justify-content: left;
+	-webkit-justify-content: space-around;
 }
 
 .hidden {
@@ -127,12 +134,13 @@ ul {
 	width: 240px;
 	margin: 10px;
 	border-radius: 10px;
-	background: #6b9990;
+	background: #CCE9FF;
 	padding: 10px;
-	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+	
 }
 
 .profiles li li {
+	list-style-type: circle;
 	font: #FFFFFF;
 	text-align: left;
 }
@@ -166,22 +174,30 @@ ul {
 	font-weight: bold;
 	padding-left: 10px;
 }
-#cards-in blockquote p {
-  border: 0px;
-  font-size: 0.8em;
-  float: left;
-  background: url(http://dailybruin.com/images/2014/05/quote-mark.png) 
-  	top left no-repeat;
+
+#cards-in blockquote {
+	border: none;
 }
 
+#cards-in blockquote p {
+  border: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  float: left;
+  //*background: url(http://dailybruin.com/images/2014/05/quote-mark.png) 
+  	top left no-repeat;*//
+}
+
+
+
 #cards-in cite {
-  font-size: 0.8em;
+  font-size: 14px;
   float: right;  
   text-align: left;
 }
 #cards-in cite a { 
 	padding-left: 10px;
-	color: #FFF; 
+	color: black; 
 }
 #cards-in cite a:hover { 
 	color: #6DB4DE;
@@ -212,7 +228,7 @@ ul {
 				<div id="cards-in">
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
 				<h3> Nessa Rica </h3>
-				<h4>Genre: acoustic, pop, and R&B</h4>
+				<h4>Genre: Acoustic, Pop, R&B</h4>
 				<ul type = "circle">
 					<li>Fourth-year geography student</li>
 					<li>Will perform an unannounced original song</li>
@@ -236,7 +252,7 @@ ul {
 					<li>Involved in musical theater and dance for most of her life.</li>
 				</ul>
 				<blockquote>
-				<p>This song is about recognizing I can't change myself for love, and it felt like a release when I was writing it.</p>
+				<p>"This song is about recognizing I can't change myself for love, and it felt like a release when I was writing it."</p>
 				</blockquote>
 				<cite>-- Mia Joy<br /> <br />
 				<a href="http://www.google.com">Read More...</a></cite>
@@ -247,7 +263,7 @@ ul {
 				<div id="cards-in">
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
 				<h3> Sienna Moffitt </h3>
-				<h4>Genre: nu-folk, British folk</h4>
+				<h4>Genre: Nu-folk, British folk</h4>
 				<ul type = "circle">
 					<li>Second-year Design | Media Arts student</li>
 					<li>Spring Sing song: "I Shan't Be There (When You Go)"</li>
