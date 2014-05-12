@@ -4,7 +4,7 @@ Template Name: Opinion Blog
 <?php get_header(); ?>
 <style>
 	
-	<!-- Daria's Style -->
+	/*Daria's Style*/
 	.featured-img {margin: 10px 0 10px 0;}
 	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: Open Sans; font-size: 10pt; font-weight: bold;}
 	.c1 {background-color: #15134b; color: #fff;}
@@ -22,7 +22,7 @@ Template Name: Opinion Blog
 	a.title {color: #000;}
 	.illo {margin: 10px 0 10px 0;}
 
-	<!-- Simon's Style -->
+	/*Simon's Style*/
 	    .widget-title {
     		font-family: Decima,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		letter-spacing: 1px;
@@ -96,7 +96,7 @@ Template Name: Opinion Blog
 
 		<div class="row-fluid">
 			<div class="span5">
-				<img class="sub-img" src="http://www.news-world.us/wp-content/uploads/2013/07/Beautiful-Birds-1.jpg"/>
+				<img class="sub-img" src="http://www.news-world.us/wp-content/uploads/2013/07/Beautiful-Birds-1.jpg"/><br/>
 				<a class="sec-head title" href="#">Birds of a feather flock together</a>
 				<div class="date">MAY 11, 2014</div><br/><br/>
 			</div>
@@ -113,7 +113,7 @@ Template Name: Opinion Blog
 
 		<div class="row-fluid">
 			<div class="span5">
-				<img class="sub-img" src="http://martywolff.cdn3.mirahost.com/public/uploads/content/10/turtle-facial.jpg"/>
+				<img class="sub-img" src="http://martywolff.cdn3.mirahost.com/public/uploads/content/10/turtle-facial.jpg"/><br/>
 				<a class="sec-head title" href="#">The secrets of longevity</a>
 				<div class="date">MAY 11, 2014</div><br/><br/>
 			</div>
@@ -130,7 +130,7 @@ Template Name: Opinion Blog
 
 		<div class="row-fluid">
 			<div class="span5">
-				<img class="illo" src="http://bigwol.com/wp-content/uploads/2014/04/abstract-flower-illustration_1600x1200_15393.jpg"/>
+				<img class="illo" src="http://bigwol.com/wp-content/uploads/2014/04/abstract-flower-illustration_1600x1200_15393.jpg"/><br/>
 				<a class="sec-head title" href="#">A garden of hope</a>
 				<div class="date">MAY 11, 2014</div><br/><br/>
 			</div>
