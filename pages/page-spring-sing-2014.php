@@ -212,7 +212,7 @@ ul {
 	color: #33334C;
 	text-align: -webkit-match-parent
 	padding-right:20px;
-	box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+	border: solid 2px white;
 }
 
 </style>
