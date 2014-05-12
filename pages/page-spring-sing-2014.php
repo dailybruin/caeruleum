@@ -199,15 +199,16 @@ ul {
 				<div id="cards-in">
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
 				<h3> Nessa Rica </h3>
+				<h4>Genre: acoustic, pop, and R&B</h4>
 				<ul type = "circle">
-					<li>I'm a fact</li>
-					<li>I'm another fact</li>
-					<li>Man facts are so cool</li>
+					<li>Fourth-year geography student</li>
+					<li>Will perform an unannounced original song</li>
+					<li>Over 11,000 subscribers on her YouTube channel, "52ness."</li>
 				</ul>
 				<blockquote>
-				<p> Nessa Rica is an Australian-born Filipina singer/songwriter. From her humble beginnings in 2007 of posting YouTube videos and small coffee shop performances, she has since been travelling and sharing her music across the world. In 2011, Nessa Rica released her EP “Journey”, which is out on iTunes, as well as stores worldwide. </p>
+				<p>"I'm hoping to get out the experience of being a part of something bigger than myself."</p>
 				<blockquote>
-				<cite>-- The Daily Bruin <br /> <br />
+				<cite>-- Nessa Rica<br /> <br />
 				<a href="http://www.google.com">Read More...</a></cite>
 				</cite>
 				</div>
@@ -215,16 +216,16 @@ ul {
 			<li>
 				<div id="cards-in">
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
-				<h3> Mia Piciucco </h3>
+				<h3> Mia Joy </h3>
 				<ul type = "circle">
-					<li>I'm a fact</li>
-					<li>I'm another fact</li>
-					<li>Man facts are so cool</li>
+					<li>Fourth-year musical theater student</li>
+					<li>Spring Sing song: "Break for You," an original song</li>
+					<li>Involved in musical theater and dance for most of her life.</li>
 				</ul>
 				<blockquote>
-				<p> Mia is an artist of many outlets. Her passion for storytelling and creating is explored through music, theater, writing and more. She is a musical theater major, and is currently working on the department's production of Guys and Dolls. Over the past four years, she was involved in a variety of plays, musicals, workshops, concerts, cabarets and classes. Songwriting has been a part of Mia's artistic journey from a very young age, but she has recently pressed into it towards deeper exploration. She feels blessed to be able to tell stories in so many different ways, and knows that wherever she ends up, the joy of creating will always be what's important. </p>
+				<p>This song is about recognizing I can't change myself for love, and it felt like a release when I was writing it.</p>
 				</blockquote>
-				<cite>-- The Daily Bruin <br /> <br />
+				<cite>-- Mia Joy<br /> <br />
 				<a href="http://www.google.com">Read More...</a></cite>
 				</cite>
 				</div>
@@ -233,15 +234,15 @@ ul {
 				<div id="cards-in">
 				<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
 				<h3> Sienna Moffitt </h3>
+				<h4>Genre: nu-folk, British folk</h4>
 				<ul type = "circle">
-					<li>I'm a fact</li>
-					<li>I'm another fact</li>
-					<li>Man facts are so cool</li>
+					<li>� Second-year Design | Media Arts student</li>
+					<li>� Spring Sing song: "I Shan't Be There (When You Go)"</li>
 				</ul>
 				<blockquote>
-				<p> Second year, Sienna Moffitt, began writing songs in September after meandering into Haight music shop and spontaneously picking up her Taylor last spring. With only a few original songs under her belt, she can’t quite believe she’s been considered worthy of a spot in Spring Sing 2014. Lyrics are real important to Sienna so keep an ear out and feel free to ask about them (or anything for that matter) if you see her wandering around. Sienna is so grateful for the unbelievable amount of support, love and kindness she receives from the people in her life, friends and family alike. However, there truly is no way she would be here if it weren’t for her parents and sisters - she loves them to the moon and back (a googolplex-plus-one times). </p>
+				<p> "My music is intentional ... every line I say means something from a part of my life."</p>
 				</blockquote>
-				<cite>-- The Daily Bruin <br /> <br />
+				<cite>-- Sienna Moffitt <br /> <br />
 				<a href="http://www.google.com">Read More...</a></cite>
 				</cite>
 				</div>
