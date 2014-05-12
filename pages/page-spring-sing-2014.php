@@ -189,8 +189,10 @@ ul {
 	font-weight: bold;
 }
 #cards-in li {
+	max-width: 85%;
 	color: #33334C;
-	text-align: left;
+	text-align: -webkit-match-parent
+	padding-right:20px;
 }
 
 </style>
