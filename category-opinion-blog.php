@@ -24,16 +24,18 @@ Template Name: Opinion Blog
 
 	/*Simon's Style*/
 	    .widget-title {
-    		font-family: Decima,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    		font-family: Open Sans,Arial,Decima,"Helvetica Neue",Helvetica,sans-serif;
 		letter-spacing: 1px;
 		background-color: #222;
 		color: #fefefe;
 		text-transform: uppercase;
 		padding: 7px 0 5px 10px;
-		font-weight: 700;
-		font-size: .9em;
+		font-size: 10pt; 
+		font-weight: bold;
 		line-height: 20px;
 	}
+	
+	#widget-reaction-quote {padding-bottom: 10px;}
 
 	blockquote p {
 		display: inline-block;
@@ -41,6 +43,7 @@ Template Name: Opinion Blog
 		line-height: 1.16667em;
 		margin-left: 1em;
 		margin-right: 1em;
+		font-style: italic;
 	}
 
 	#quotation-mark {
@@ -68,8 +71,9 @@ Template Name: Opinion Blog
 		color: gray;
 	}
 
-	.columnist-row {
-        margin-bottom: 10px;
+    /*Phillip's Style*/
+    .columnist-row {
+        margin-bottom: 20px;
     }
     .columnist-info {
         display: inline-block;
@@ -209,13 +213,13 @@ Template Name: Opinion Blog
             	</div>
 
                 <div class="columnist-column">
-                    <h4>Columnists</h4>
+                    <h2 class="widget-title">Columnists</h2>
                     <div class="row-fluid columnist-row">
-                        <div id="columnist-mugshot" class="span6">
+                        <div id="columnist-mugshot" class="span5">
                             <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
                         </div>
-                        <div id="columnist-info" class="span6 columnist-info">
-                            <div class="columnist-name">Harrison Liddiard</div>
+                        <div id="columnist-info" class="span7 columnist-info">
+                            <div class="columnist-name">Natalie Delgadillo</div>
                             <div class="columnist-line">
                                 <div class="columnist-line-content">
                                     <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
@@ -229,11 +233,11 @@ Template Name: Opinion Blog
                         </div>
                     </div>
                     <div class="row-fluid columnist-row">
-                        <div id="columnist-mugshot" class="span6">
+                        <div id="columnist-mugshot" class="span4">
                             <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
                         </div>
-                        <div id="columnist-info" class="span6 columnist-info">
-                            <div class="columnist-name">Not Harrison Liddiard ablahblahblah</div>
+                        <div id="columnist-info" class="span8 columnist-info">
+                            <div class="columnist-name">Natalie Delgadillo</div>
                             <div class="columnist-line">
                                 <div class="columnist-line-content">
                                     <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
