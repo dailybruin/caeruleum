@@ -213,6 +213,7 @@ ul {
 	text-align: -webkit-match-parent
 	padding-right:20px;
 	border: solid 2px white;
+	background-color: white;
 }
 
 </style>
