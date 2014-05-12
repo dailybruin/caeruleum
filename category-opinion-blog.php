@@ -2,15 +2,16 @@
 Template Name: Opinion Blog
 */ ?>
 <?php get_header(); ?>
-
 <style>
+	
+	<!-- Daria's Style -->
 	.featured-img {margin: 10px 0 10px 0;}
-	.category {margin: 0 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: Open Sans; font-size: 10pt; font-weight: bold;}
+	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: Open Sans; font-size: 10pt; font-weight: bold;}
 	.c1 {background-color: #15134b; color: #fff;}
 	.c2 {background-color: #881e2f; color: #fff;}
 	.c3 {background-color: #19562a; color: #fff;}
 	.c4 {background-color: #c7ba26; color: #fff;}
-	.feature-date {margin-top: 5px; text-align: right; float: right; color: #545454; font-size: 8pt;}
+	.feature-date {margin-top: 15px; text-align: right; float: right; color: #545454; font-size: 8pt;}
 	.date {color: #545454; font-size: 8pt;}
 	a.heading {color: #000; font-family: Georgia; font-size: 18.2pt; font-weight: bold; line-height: 1.1em;}
 	.author {font-family: Arial; margin: 10px 0 5px 0;}
@@ -20,6 +21,53 @@ Template Name: Opinion Blog
 	a.sub-head {font-family: Georgia; font-weight: bold; line-height: 1.1em;}
 	a.title {color: #000;}
 	.illo {margin: 10px 0 10px 0;}
+
+	<!-- Simon's Style -->
+	    .widget-title {
+    		font-family: Decima,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		letter-spacing: 1px;
+		background-color: #222;
+		color: #fefefe;
+		text-transform: uppercase;
+		padding: 7px 0 5px 10px;
+		font-weight: 700;
+		font-size: .9em;
+		line-height: 20px;
+	}
+
+	blockquote p {
+		display: inline-block;
+		margin-bottom: 1em;
+		line-height: 1.16667em;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#quotation-mark {
+		float: left;
+		font-size: 5em;
+		margin-bottom: .1em;
+		position: relative;
+		top: .3em;
+		font-family: "Harriet Display", Georgia, Times, "Times New Roman", serif;
+	}
+
+	blockquote.reaction {
+		border-left: 0;
+	}
+
+	#right-column {
+		border-left: 1px solid #eeeeee;
+		padding-left: 10px;
+		border-right: 1px solid #eee;
+		padding-right: 10px;
+	}
+
+	p.attribution {
+		float: right;
+		color: gray;
+	}
+
 </style>
 
 <body>
@@ -38,8 +86,7 @@ Template Name: Opinion Blog
 			<a class="heading" href="#">Why can't we be friends: The never-ending struggle</a><br/>
 			<div class="author">BY JOE BRUIN</div>
 			<div class="description">
-				<p>It's a widely known that dogs and cats don't mix. But where did this notion of cat-people and dog-people come from? Why do we even care about this? Joe Bruin gives his two cents on the eternal feud of cat-loves and dog-lovers. <a href="#">More >></a>
-</p>
+				<p>It's a widely known that dogs and cats don't mix. But where did this notion of cat-people and dog-people come from? Why do we even care about this? Joe Bruin gives his two cents on the eternal feud of cat-loves and dog-lovers. <a href="#">More >></a></p>
 			</div>
 		</div>
 
@@ -98,9 +145,16 @@ Template Name: Opinion Blog
 
 	     </div>
 
-            <div class="span3">
-
-	     </div>
+            <div class="span3" id="right-column">
+            	<div id="widget-reaction-quote">
+            		<h2 class="widget-title">Recent Reactions</h2>
+            		<blockquote class="reaction">
+            		<span id="quotation-mark">“</span>
+            		<p>True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us.</p>
+            		<p class="attribution">-Socrates</p>
+            		</blockquote>
+            	</div>
+            </div>   
 
 	     <?php get_sidebar(); ?>
 
