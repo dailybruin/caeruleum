@@ -26,7 +26,7 @@ Template Name: Spring Spring 2014
 	}	
 }
 
-@media (min-width:545px) {
+@media (min-width:546px) {
 	#banner h1{
 		text-align: right;
 		padding-right: 10px;
