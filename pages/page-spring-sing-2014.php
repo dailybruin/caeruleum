@@ -41,22 +41,24 @@ Template Name: Spring Spring 2014
 
 
 
+
 #banner {
 	width: 100%;
-	max-width: 950px;
-	height: 150px;
-	background: url(https://31.media.tumblr.com/a96101fbb16b808321cb0cb0d1bfdd0e/tumblr_n5g7wa5R521rtb4z9o1_r1_500.jpg) no-repeat;
+	max-width: 800px;
+	height: 350px;
+	background: url(http://dailybruin.com/images/2014/05/in-nb.jpg) no-repeat;
 	border-radius:10px;
 	background-color: black;
 	margin: 25px auto 50px auto;
-	background-size: cover;	
+	background-size: cover;
+	
 }
 
 #banner h1 {
-	font-size: 35px;
+	font-size: 75px;
 	line-height: 70px;
-	text-align: left;
-	padding-left: 10px;
+	text-align: right;
+	padding-right: 10px;
 	padding-top: 40px;
 	color: white;
 	text-shadow: 1px 1px 1px #888;
@@ -167,6 +169,11 @@ ul {
     border-radius: 10px;
 }
 
+#cards-in h3 {
+	font-size: 25px;
+	text-transform: none;
+}
+
 #cards-in h2, h3 {
 	font-weight: bold;
 	padding-left: 10px;
@@ -181,8 +188,7 @@ ul {
   border-radius: 10px;
   font-size: 20px;
   float: left;
-  //*background: url(http://dailybruin.com/images/2014/05/quote-mark.png) 
-  	top left no-repeat;*//
+ 
 }
 
 
@@ -213,7 +219,7 @@ ul {
 
 
 <div id="banner">
-	<h1>Spring Sing 2014</h1>
+	<h1>Spring<br>Sing<br>2014</h1>
 </div>
 
 
