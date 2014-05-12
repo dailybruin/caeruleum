@@ -43,10 +43,19 @@ Template Name: Spring Spring 2014
 
 #banner {
 	width: 100%;
-	max-width: 950px;
-	height: 150px;
-	background: url(https://www.westmont.edu/_student_life/images/Spring-Sing-logo.jpg) no-repeat center center;
+	max-width: 800px;
+	height: 350px;
+	background: url(http://dailybruin.com/images/2014/05/in-nb.jpg) no-repeat top left;
+	border-radius:10px;
+	background-color: white;
 	margin: 25px auto 50px auto;
+}
+#banner h1 {
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 60px;
+	color: #000;
+	text-shadow: 1px 1px 1px #888;
 }
 
 #content {
@@ -118,9 +127,9 @@ ul {
 	width: 240px;
 	margin: 10px;
 	border-radius: 10px;
-	background: #add8e6;
+	background: #6b9990;
 	padding: 10px;
-	box-shadow: 2px 2px 8px #888;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
 }
 
 .profiles li li {
@@ -187,7 +196,9 @@ ul {
 </style>
 
 
-<div id="banner"></div>
+<div id="banner">
+	<h1>Spring<br>Sing<br>2014</h1>
+</div>
 
 
 <div id="content">
@@ -236,8 +247,8 @@ ul {
 				<h3> Sienna Moffitt </h3>
 				<h4>Genre: nu-folk, British folk</h4>
 				<ul type = "circle">
-					<li>– Second-year Design | Media Arts student</li>
-					<li>– Spring Sing song: "I Shan't Be There (When You Go)"</li>
+					<li>Second-year Design | Media Arts student</li>
+					<li>Spring Sing song: "I Shan't Be There (When You Go)"</li>
 				</ul>
 				<blockquote>
 				<p> "My music is intentional ... every line I say means something from a part of my life."</p>
