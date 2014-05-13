@@ -296,7 +296,7 @@ Template Name: Spring Spring 2014
 						</ul>
 						
 						<p class="artist_quote">"We're both the lead in our performance, and we're excited to put the beatboxing in focus right next to my singing" – Courtney Randall</p>
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/13/spring-sing-profile-courtney-randall-and-beat-rhino/">Read More...</a>
 					</div>
 				</li>
 
@@ -312,7 +312,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"Spring Sing is kind of like our baby" – Brandon Bakhshi</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/13/spring-sing-profile-brandon-bakhshi-and-yasmeen-al-mazeedi/">Read More...</a>
 					</div>
 				</li>
 
@@ -329,7 +329,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"It's just one of those songs that makes me feel good, and I want the audience to feel the same way" – Alex Liu</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/13/spring-sing-profile-alex-liu-and-eric-jung/">Read More...</a>
 					</div>
 				</li>
 			</ul>
