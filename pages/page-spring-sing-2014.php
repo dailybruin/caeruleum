@@ -226,6 +226,7 @@ Template Name: Spring Spring 2014
 
 
 	<div id="cards">
+
 		<h1>Talent: Solos</h1>
 		<ul id="profiles">
 
@@ -278,6 +279,59 @@ Template Name: Spring Spring 2014
 				</div>
 			</li>
 		</ul>
+
+		<div class="hidden">
+			<h1 style="margin-top:50px">Talent: Duets</h1>
+			<ul id="profiles">
+
+				<li>
+					<div class="contestant">
+						<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
+						<h3> Courtney Randall & Beat Rhino </h3>
+						<h5>Genre: Singer-songwriter and Beatboxing</h5>
+						<ul class="facts">
+							<li>Met through Kerckhoff Coffee House performances in fall 2013.</li>
+						</ul>
+						
+						<p class="artist_quote">"We're both the lead in our performance, and we're excited to put the beatboxing in focus right next to my singing" – Courtney Randall</p>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/12/spring-sing-profile-nessa-rica/">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
+						<h3> Brandon + Yasmeen </h3>
+						<h5>Genre: Folk and R&B</h5>
+						<ul class="facts">
+							<li>Spring Sing song: "Young Wedding," an original song</li>
+							<li>Both musicians separately performed in Spring Sing 2013.</li>
+						</ul>
+						
+						<p class="artist_quote">"Spring Sing is kind of like our baby" – Brandon Bakhshi</p>
+
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/12/spring-sing-profile-mia-joy/">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+						<h3> Eric Jung & Alex Liu </h3>
+						<h5>Genre: R&B and Jazz</h5>
+						<ul class="facts">
+							<li>Spring Sing song: "Notice You," an original song</li>
+							<li>Met in 2011 through Omega Sigma Tau fraternity</li>
+						</ul>
+						
+						
+						<p class="artist_quote">"It's just one of those songs that makes me feel good, and I want the audience to feel the same way" – Alex Liu</p>
+
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/12/spring-sing-profile-sienna-moffitt/">Read More...</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<div id="tweets">
