@@ -342,7 +342,7 @@ Template Name: Spring Spring 2014
 	</div>
 
 	<div id="videos">
-		<h3> Videos </h3>
+		<h3> Meet the Performers </h3>
 		<div class="video-container">
         	<iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLFqlb7Y9QntpdfqSU7wt9GtfQbdcL2FrZ" frameborder="0" allowfullscreen></iframe>
 		</div>
