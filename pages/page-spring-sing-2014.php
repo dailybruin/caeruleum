@@ -249,7 +249,8 @@ Template Name: Spring Spring 2014
 			<li>
 				<div class="contestant">
 					<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
-					<h3 style="margin-bottom: 40px"> Mia Joy </h3>
+					<h3> Mia Joy </h3>
+					<h5>Genre: Singer-songwriter</h5>
 					<ul class="facts">
 						<li>Fourth-year musical theater student</li>
 						<li>Spring Sing song: "Break for You," an original song</li>
@@ -269,7 +270,7 @@ Template Name: Spring Spring 2014
 					<h5>Genre: Nu-folk, British folk</h5>
 					<ul class="facts">
 						<li>Second-year Design | Media Arts student</li>
-						<li>Spring Sing song: "I Shan't Be There (When You Go)"</li>
+						<li>Spring Sing song: "I Shan't Be There (When You Go)," an original song</li>
 					</ul>
 					
 					
@@ -280,27 +281,28 @@ Template Name: Spring Spring 2014
 			</li>
 		</ul>
 
-		<div class="hidden">
+		
 			<h1 style="margin-top:50px">Talent: Duets</h1>
 			<ul id="profiles">
 
 				<li>
 					<div class="contestant">
-						<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/nessa-rica.jpg"></img>
+						<img src="http://dailybruin.com/images/2014/05/3b641b1c-ee99-481c-a071-f32f0be8a86a.jpg"></img>
 						<h3> Courtney Randall & Beat Rhino </h3>
-						<h5>Genre: Singer-songwriter and Beatboxing</h5>
+						<h5>Genre: Acoustic, Beatbox, Pop</h5>
 						<ul class="facts">
+							<li>Spring Sing song: "Heaven," an original song</li>
 							<li>Met through Kerckhoff Coffee House performances in fall 2013.</li>
 						</ul>
 						
 						<p class="artist_quote">"We're both the lead in our performance, and we're excited to put the beatboxing in focus right next to my singing" – Courtney Randall</p>
-						<a class="link_to_article" href="http://dailybruin.com/2014/05/12/spring-sing-profile-nessa-rica/">Read More...</a>
+						<a class="link_to_article" href="#">Read More...</a>
 					</div>
 				</li>
 
 				<li>
 					<div class="contestant">
-						<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/mia-joy-2014.jpg"></img>
+						<img src="http://dailybruin.com/images/2014/05/90726604-279f-4d80-b83e-c00518f83ba4.jpg"></img>
 						<h3> Brandon + Yasmeen </h3>
 						<h5>Genre: Folk and R&B</h5>
 						<ul class="facts">
@@ -310,28 +312,28 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"Spring Sing is kind of like our baby" – Brandon Bakhshi</p>
 
-						<a class="link_to_article" href="http://dailybruin.com/2014/05/12/spring-sing-profile-mia-joy/">Read More...</a>
+						<a class="link_to_article" href="#">Read More...</a>
 					</div>
 				</li>
 
 				<li>
 					<div class="contestant">
-						<img src="http://alumni.ucla.edu/events/spring-sing/2014/_images/sienna-moffitt.jpg"></img>
+						<img src="http://dailybruin.com/images/2014/05/a1427a94-8ef0-4999-a19a-4249d3a89382.jpg"></img>
 						<h3> Eric Jung & Alex Liu </h3>
 						<h5>Genre: R&B and Jazz</h5>
 						<ul class="facts">
 							<li>Spring Sing song: "Notice You," an original song</li>
-							<li>Met in 2011 through Omega Sigma Tau fraternity</li>
+							<li>Met in 2011 through Omega Sigma Tau fraternity.</li>
 						</ul>
 						
 						
 						<p class="artist_quote">"It's just one of those songs that makes me feel good, and I want the audience to feel the same way" – Alex Liu</p>
 
-						<a class="link_to_article" href="http://dailybruin.com/2014/05/12/spring-sing-profile-sienna-moffitt/">Read More...</a>
+						<a class="link_to_article" href="#">Read More...</a>
 					</div>
 				</li>
 			</ul>
-		</div>
+		
 	</div>
 
 	<div id="tweets">
