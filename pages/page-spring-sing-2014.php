@@ -66,9 +66,9 @@ Template Name: Spring Spring 2014
 
 #banner {
 	width: 100%;
-	max-width: 850px;
+	max-width: 750px;
 	height: 350px;
-	background: url(http://dailybruin.com/images/2014/05/in-nb.jpg) no-repeat;
+	background: url(http://dailybruin.com/images/2014/05/shb-yf.jpg) no-repeat;
 	background-color: black;
 	margin: 0px auto 50px auto;
 	background-size: cover;
@@ -282,7 +282,7 @@ Template Name: Spring Spring 2014
 
 	<div id="tweets">
 		<h3> Tweets </h3>
-		<a class="twitter-timeline" width="520" height="400" href="https://twitter.com/search?q=%23springsing2014" data-widget-id="464609389723140096">Tweets about "#springsing2014"</a>
+		<a class="twitter-timeline" width="520" height="400" href="https://twitter.com/search?q=%23SpringSing2014" data-widget-id="464609389723140096">Tweets about "#SpringSing2014"</a>
 	</div>
 
 	<div id="videos">
