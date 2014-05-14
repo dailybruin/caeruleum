@@ -333,6 +333,79 @@ Template Name: Spring Spring 2014
 					</div>
 				</li>
 			</ul>
+
+
+			<h1 style="margin-top:50px">Talent: Bands</h1>
+			<ul id="profiles">
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/streethearts.jpg"></img>
+						<h3>The Street Hearts</h3>
+						<h5>Genre: folk and soul</h5>
+						<ul class="facts">
+							<li>Spring Sing song: "Darlin', Don't Go," an original song</li>
+							<li>Performing with a new band lineup</li>
+							<li>Won the Las Donas Award for best band at Spring Sing 2013</li>
+						</ul>
+						
+						<p class="artist_quote">""People should look forward to our harmonies ... I always do" – keyboardist Nick Valentini</p>
+						<a class="link_to_article" href="www.dailybruin.com">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/theprimaries.jpg"></img>
+						<h3>The Primaries</h3>
+						<h5>Genre: R&B and soul</h5>
+						<ul class="facts">
+							<li>10-piece musician collective</li>
+							<li>Spring Sing song: "Two Steps," an original song</li>
+						</ul>
+						
+						<p class="artist_quote">"I'm excited to get on stage and play in front of so many people and, if we start doing an 8-clap, the audience will start doing an 8-clap too" – guitarist Chili Corder</p>
+
+						<a class="link_to_article" href="#">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/wethefolk.jpg"></img>
+						<h3>We the Folk</h3>
+						<h5>Genre: eclectic folk</h5>
+						<ul class="facts">
+							<li>Performing with fourth-year ethnomusicology and music education student Elena Loper</li>
+							<li>Spring Sing song: "Won't You Come Back?" an original song</li>
+							<li>The band plans to release an EP by the summer</li>
+						</ul>
+						
+						
+						<p class="artist_quote">"(It'll be) our moment and the audience's moment to connect. I hope they'll accept the invitation" – frontman David Villafaña</p>
+
+						<a class="link_to_article" href="#">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/theam.jpg"></img>
+						<h3>The AM</h3>
+						<h5>Genre: alternative rock</h5>
+						<ul class="facts">
+							<li>Band members met in their fall 2012 Sigma Nu fraternity class</li>
+							<li>Spring Sing song: "Wake Up," an original song</li>
+							<li>Emulating the style of '90s rock with funk and jazz melodies</li>
+						</ul>
+						
+						
+						<p class="artist_quote">"Most of our songs are pretty upbeat, but ... they're all pretty catchy" – drummer Josh Caine</p>
+
+						<a class="link_to_article" href="#">Read More...</a>
+					</div>
+				</li>
+			</ul>
 		
 	</div>
 
