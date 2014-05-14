@@ -350,7 +350,7 @@ Template Name: Spring Spring 2014
 						</ul>
 						
 						<p class="artist_quote">""People should look forward to our harmonies ... I always do" – keyboardist Nick Valentini</p>
-						<a class="link_to_article" href="www.dailybruin.com">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/14/spring-sing-profile-the-street-hearts/">Read More...</a>
 					</div>
 				</li>
 
@@ -366,7 +366,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"I'm excited to get on stage and play in front of so many people and, if we start doing an 8-clap, the audience will start doing an 8-clap too" – guitarist Chili Corder</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/14/spring-sing-the-primaries/">Read More...</a>
 					</div>
 				</li>
 
@@ -384,7 +384,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"(It'll be) our moment and the audience's moment to connect. I hope they'll accept the invitation" – frontman David Villafaña</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/14/spring-sing-profile-we-the-folk/">Read More...</a>
 					</div>
 				</li>
 
@@ -402,7 +402,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"Most of our songs are pretty upbeat, but ... they're all pretty catchy" – drummer Josh Caine</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/14/spring-sing-profile-the-am/">Read More...</a>
 					</div>
 				</li>
 			</ul>
