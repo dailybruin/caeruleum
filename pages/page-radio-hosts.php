@@ -35,7 +35,7 @@ Template Name: Radio: About the hosts
 @meralarikk 
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/BriaBABYBRUINcopy.mp3" preload="auto" controls></audio>
+<audio src="http://dailybruin.com/images/2014/05/Meral.mp3" preload="auto" controls></audio>
 <p>In addition to being a Long Story Short host, Meral is a Daily Bruin Radio staff reporter. She discovered her passion for writing in elementary school, and has loved both creative writing and news writing ever since. She was vice president and news editor of her high school newspaper “The Talon,” as well as co-president of her high school literary magazine “Wings.” Meral has covered numerous stories for the Daily Bruin, including a recurring series on young UCLA entrepreneurs. She hopes to continue working in radio and journalism and someday become a television news anchor.</p>
     </div>
     <div class="span6">
@@ -48,7 +48,7 @@ Template Name: Radio: About the hosts
 IMPLEMENT ME 
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/4.17.radio_.mvball.mp3" preload="auto" controls></audio>
+<audio src="http://dailybruin.com/images/2014/05/Kathleen.mp3" preload="auto" controls></audio>
 <p>Kathleen is the newest host for Long Story Short, having joined Daily Bruin Radio in Winter 2014. She feels that radio is a valuable medium for diverse media news, culture and human interest stories. As a commuting UCLA student, radio has saved her life on the road. She aspires to make radio a permanent addition to her life as a listener as well as a contributor.</p>
     </div>
 </div>
@@ -63,12 +63,12 @@ IMPLEMENT ME
 @sidhaantshah 
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/Mollymann.mp3" preload="auto" controls></audio>
+<audio src="http://dailybruin.com/images/2014/05/Sidhaant.mp3" preload="auto" controls></audio>
 <p>Sid has been around the Bruin since the fall of 2011 as a photographer and assistant photo editor. For the past three years, he’s been behind the lens and on the photo credits in the newspaper; now, as a radio show host, he puts a voice behind the name. He enjoys hiking, food trucks and exploring the sights and sounds of Los Angeles.</p>
     </div>
     <div class="span6">
 <img src="http://imgur.com/jMxUraH.jpg" alt="Two sleeping puppies." />
-<h2>Jonaki Mehta</h2>
+<h3>Jonaki Mehta</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jmehta@media.ucla.edu">jmehta@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
@@ -76,7 +76,7 @@ IMPLEMENT ME
 @jonakimehta
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/oob-4_14.mp3" preload="auto" controls></audio>
+<audio src="http://dailybruin.com/images/2014/05/Jonaki.mp3" preload="auto" controls></audio>
 <p>Jonaki started off as a reporter for Daily Bruin Radio, covering stories on a variety of subjects, such as inspiring UCLA professors, minimalist wallets and museum curators. Before joining the Long Story Short team, she produced a radio series on contemporary Los Angeles art spaces. Jonaki hopes to pursue investigative journalism after her undergraduate studies.</p>
     </div>
 </div>
@@ -94,7 +94,7 @@ IMPLEMENT ME
 @AndrewRErickson
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/lss-4_14.mp3" preload="auto" controls></audio> 
+<audio src="http://dailybruin.com/images/2014/05/Andrew.mp3" preload="auto" controls></audio> 
 <p>Andrew is a Sports senior staff writer for the Daily Bruin, covering football and men's basketball in the 2013-2014 school year. He was an assistant Sports editor during the 2012-2013 school year and writes sports columns and features for Los Angeles Magazine's CityThink Blog. Fun fact: He and two other Daily Bruin Sports writers once drove to Eugene, Ore. for a football game (it's not as fun as it sounds). </p>
     </div>
     <div class="span6">
@@ -107,9 +107,9 @@ IMPLEMENT ME
 @kbo123 
 </a>
 </div>
-<audio src="http://dailybruin.com/images/2014/04/UCLA-VGOC-Acts.mp3" preload="auto" controls></audio>
-<p>Kevin is the Daily Bruin’s Sports editor. He has covered six different UCLA teams in his three years with the Bruin, including men's basketball and, most recently, football. He considers himself culturally illiterate in all subjects except movies, in which he pretends to know more than he does.
 </p>
+<audio src="http://dailybruin.com/images/2014/05/Kevin.mp3" preload="auto" controls></audio>
+<p>Kevin is the Daily Bruin’s Sports editor. He has covered six different UCLA teams in his three years with the Bruin, including men's basketball and, most recently, football. He considers himself culturally illiterate in all subjects except movies, in which he pretends to know more than he does.
     </div>
 </div>
 <?php get_footer(); ?>
