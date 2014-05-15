@@ -406,6 +406,60 @@ Template Name: Spring Spring 2014
 					</div>
 				</li>
 			</ul>
+
+			<h1 style="margin-top:50px">Talent: A Capella Groups</h1>
+			<ul id="profiles">
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/fcb923e2-1165-4ea7-8c36-ae0bfac2d108.jpg"></img>
+						<h3> Resonance A Cappella </h3>
+						<h5>Co-ed a cappella group</h5>
+						<ul class="facts">
+							<li>Youngest a cappella group performing at Spring Sing</li>
+							<li>Founded in October 2012</li>
+							<li>Spring Sing song: A unannounced R&B medley</li>
+						</ul>
+						
+						<p class="artist_quote">"Queen B might be making an appearance" – Darryn Wong, president of the group</p>
+						<a class="link_to_article" href="http://dailybruin.com/?p=186738">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/793bab00-1930-44b5-8e39-14bab78da1f8-640x429.jpg"></img>
+						<h3> Bruin Harmony </h3>
+						<h5>All-male a cappella group</h5>
+						<ul class="facts">
+							<li>Winners of Spring Sing 2013 awards for best a cappella and best overall entry </li>
+							<li>Founded in 2006</li>
+							<li>Spring Sing song: An unannounced cover</li>
+						</ul>
+						
+						<p class="artist_quote"> "Our goal is to meet the energy of the crowd ... with our sense of height and energy" – Adam Cropper, choreographer and group's next president</p>
+
+						<a class="link_to_article" href="http://dailybruin.com/?p=186750">Read More...</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="contestant">
+						<img src="http://dailybruin.com/images/2014/05/2220426f-4cc8-4505-8101-b079fa6883ec.jpg"></img>
+						<h3> Random Voices A Cappella </h3>
+						<h5>All-female a cappella group</h5>
+						<ul class="facts">
+							<li>Founded in 1999</li>
+							<li>Spring Sing song: A unannounced Madonna song</li>
+						</ul>
+						
+						
+						<p class="artist_quote">"I just want everyone to see how much work we've put into it and how passionate we really are" – Morgan Rose, member of Random Voices</p>
+
+						<a class="link_to_article" href="http://dailybruin.com/?p=186734">Read More...</a>
+					</div>
+				</li>
+			</ul>
 		
 	</div>
 
