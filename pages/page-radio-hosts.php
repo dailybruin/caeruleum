@@ -55,9 +55,6 @@ Template Name: Radio: About the hosts
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
 <div class="twitter">
 <i class="ticon-twitter" ></i>
-<a href="https://twitter.com/" rel = "external" target="_blank" data-via="dailybruin">
-IMPLEMENT ME 
-</a>
 </div>
 <audio src="http://dailybruin.com/images/2014/05/Kathleen.mp3" preload="auto" controls></audio>
 <p>Kathleen is the newest host for Long Story Short, having joined Daily Bruin Radio in Winter 2014. She feels that radio is a valuable medium for diverse media news, culture and human interest stories. As a commuting UCLA student, radio has saved her life on the road. She aspires to make radio a permanent addition to her life as a listener as well as a contributor.</p>
