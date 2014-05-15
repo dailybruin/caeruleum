@@ -10,6 +10,13 @@ Template Name: Radio: About the hosts
 #rh-title {
     margin-bottom: 1em;
 }
+.rh-infobox {
+    float: right;
+    background-color: #FAFAFA;
+    padding: 0.5em 1em;
+    border: 1px solid #DDD;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+}
 </style>
 
 <script src ="/js/vendor/audioplayer.js"></script>
@@ -19,8 +26,12 @@ Template Name: Radio: About the hosts
     });
 </script>
 <link rel="stylesheet" href="/css/vendor/audio-player.css">
+<ul class="rh-infobox unstyled">
+    <li><a href="https://itunes.apple.com/us/podcast/daily-bruin-radio/id352605427?mt=2" target="_blank">Download our podcast</a></li>
+    <li><a href="http://UCLAradio.com" target="_blank">Listen live</a></li>
+    <li><a href="https://twitter.com/dailybruinradio" "external" target="_blank">Follow us on twitter</a></li>
+</ul> 
 <h1 id="rh-title">Radio: About the Hosts</h1>
-
 <h2>Long Story Short</h2>
 <div class="row-fluid">
     <div class="span6">
