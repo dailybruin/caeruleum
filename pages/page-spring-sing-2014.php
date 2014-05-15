@@ -407,7 +407,7 @@ Template Name: Spring Spring 2014
 				</li>
 			</ul>
 
-			<h1 style="margin-top:50px">Talent: A Capella Groups</h1>
+			<h1 style="margin-top:50px">Talent: A Cappella Groups</h1>
 			<ul id="profiles">
 
 				<li>
