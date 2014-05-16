@@ -474,7 +474,7 @@ Template Name: Spring Spring 2014
 						</ul>
 						
 						<p class="artist_quote">"This is really corny, but we all just make each other laugh a lot" – Nathan Galovan, member of Company</p>
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/16/spring-sing-profile-company/">Read More...</a>
 					</div>
 				</li>
 
@@ -490,7 +490,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote"> "We learned and casted it in the same day ... We were making a set on steroids"<br/> – Christina Kim, Creative Assistant of ACA Hip Hop</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/16/spring-sing-profile-aca-hip-hop/">Read More...</a>
 					</div>
 				</li>
 
@@ -507,7 +507,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"I wanted to create a production so that everybody in the audience ... would feel hyped and excited about all of Spring Sing" – Nikki Friedman, director of productions for Delta Gamma & Lambda Chi Alpha</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/16/spring-sing-profile-delta-gamma-and-lambda-chi/">Read More...</a>
 					</div>
 				</li>
 
@@ -523,7 +523,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote"> "We really wanted to load it up with Bruin greatness and fun cameos. Just really bring it home" – Ben Kurzrock, creator of the Zeta Beta Theta production</p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/16/spring-sing-profile-zeta-beta-theta/">Read More...</a>
 					</div>
 				</li>
 
@@ -540,7 +540,7 @@ Template Name: Spring Spring 2014
 						
 						<p class="artist_quote">"Something we try to do is give everyone a purpose; this is why we're all on stage"<br/> – Sara Ashley Beil, co-writer of HOOLIGAN's production </p>
 
-						<a class="link_to_article" href="#">Read More...</a>
+						<a class="link_to_article" href="http://dailybruin.com/2014/05/16/spring-sing-profile-hooligan-theatre-company/">Read More...</a>
 					</div>
 				</li>
 			</ul>
