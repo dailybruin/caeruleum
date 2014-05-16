@@ -14,7 +14,7 @@ Template Name: Opinion Blog
 	.feature-date {margin-top: 15px; text-align: right; float: right; color: #545454; font-size: 8pt;}
 	.date {color: #545454; font-size: 8pt;}
 	a.heading {color: #000; font-family: Georgia; font-size: 18.2pt; font-weight: bold; line-height: 1.1em;}
-	.author {font-family: Arial; margin: 10px 0 5px 0;}
+	.author {text-transform: uppercase;font-weight: bold; font-family: Georgia;text-transform:uppercase;font-size:9pt;margin: 10px 0 5px 0;}
 	.sub-img {margin: 10px 0 10px 0;}
 	.recent-cols {padding: 20px 0 10px 10px;}
 	a.sec-head {font-size: 14pt; font-family: Georgia; font-weight: bold; line-height: 1.1em;}
@@ -153,15 +153,31 @@ Template Name: Opinion Blog
 
 		<div class="row-fluid">
 			<div class="span5">
-				<img class="sub-img" src="http://www.news-world.us/wp-content/uploads/2013/07/Beautiful-Birds-1.jpg"/><br/>
-				<a class="sec-head title" href="#">Birds of a feather flock together</a>
-				<div class="date">MAY 11, 2014</div><br/><br/>
-			</div>
+				<?php
+					$args = array( 'numberposts' => '5', 'category' => 1461);
+					$recent_posts = wp_get_recent_posts( $args );
 
-			<div class="span7 recent-cols">
-				<a class="sub-head title" href="#">10 Things You Need to Know About Birds</a><br/><span class="date">MAY 11, 2014</span><hr/>
-				<a class="sub-head title" href="#">Seagulls and other fearless animals</a><br/><span class="date">MAY 11, 2014</span><hr/>
-				<a class="sub-head title" href="#">10 Things You Don't Need to Know About Birds</a><br/><div class="date">MAY 11, 2014</div><br/>			</div>
+					$i = 0;
+					foreach( $recent_posts as $recent ){
+						if($i == 0) {
+							if(has_post_thumbnail($recent["ID"])){
+								echo '<div class="sub-img">' . get_the_post_thumbnail($recent["ID"], 'medium') . '</div>';
+								if($recent["post_excerpt"] != "") {
+									$excerpt = wp_trim_excerpt($recent["post_excerpt"]);
+								}
+								else {
+									$strings = preg_split('/(\.|!|\?)\s/', strip_tags($recent["post_content"]), 2, PREG_SPLIT_DELIM_CAPTURE);
+									$excerpt = apply_filters('the_content', $strings[0] .  $strings[1]);								}
+							}
+							echo '<a class="sec-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><br/><span class="author">' . get_userdata($recent["post_author"])->display_name . '</span><p>' . $excerpt . ' <a href="' . get_permalink($recent["ID"]) . '">More >></a></p></div><div class="span7 recent-cols">';
+						}
+						else {
+							echo '<a class="sub-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><hr/>';
+						}
+						$i++;
+					}
+				?>
+			</div>		
 		</div>
 
 		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
@@ -170,15 +186,31 @@ Template Name: Opinion Blog
 
 		<div class="row-fluid">
 			<div class="span5">
-				<img class="sub-img" src="http://martywolff.cdn3.mirahost.com/public/uploads/content/10/turtle-facial.jpg"/><br/>
-				<a class="sec-head title" href="#">The secrets of longevity</a>
-				<div class="date">MAY 11, 2014</div><br/><br/>
-			</div>
+				<?php
+					$args = array( 'numberposts' => '5', 'category' => 1427);
+					$recent_posts = wp_get_recent_posts( $args );
 
-			<div class="span7 recent-cols">
-				<a class="sub-head title" href="#">Why are turtles so slow?</a><br/><span class="date">MAY 11, 2014</span><hr/>
-				<a class="sub-head title" href="#">Surf's up dude!</a><br/><span class="date">MAY 11, 2014</span><hr/>
-				<a class="sub-head title" href="#">The struggle for survival</a><br/><span class="date">MAY 11, 2014</span><br/>			</div>
+					$i = 0;
+					foreach( $recent_posts as $recent ){
+						if($i == 0) {
+							if(has_post_thumbnail($recent["ID"])){
+								echo '<div class="sub-img">' . get_the_post_thumbnail($recent["ID"], 'medium') . '</div>';
+								if($recent["post_excerpt"] != "") {
+									$excerpt = wp_trim_excerpt($recent["post_excerpt"]);
+								}
+								else {
+									$strings = preg_split('/(\.|!|\?)\s/', strip_tags($recent["post_content"]), 2, PREG_SPLIT_DELIM_CAPTURE);
+									$excerpt = apply_filters('the_content', $strings[0] .  $strings[1]);								}
+							}
+							echo '<a class="sec-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><br/><span class="author">' . get_userdata($recent["post_author"])->display_name . '</span><p>' . $excerpt . ' <a href="' . get_permalink($recent["ID"]) . '">More >></a></p></div><div class="span7 recent-cols">';
+						}
+						else {
+							echo '<a class="sub-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><hr/>';
+						}
+						$i++;
+					}
+				?>
+			</div>		
 		</div>
 
 		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
@@ -187,16 +219,31 @@ Template Name: Opinion Blog
 
 		<div class="row-fluid">
 			<div class="span5">
-				<img class="illo" src="http://bigwol.com/wp-content/uploads/2014/04/abstract-flower-illustration_1600x1200_15393.jpg"/><br/>
-				<a class="sec-head title" href="#">A garden of hope</a>
-				<div class="date">MAY 11, 2014</div><br/><br/>
-			</div>
+				<?php
+					$args = array( 'numberposts' => '5', 'category' => 1458);
+					$recent_posts = wp_get_recent_posts( $args );
 
-			<div class="span7 recent-cols">
-				<a class="sub-head title" href="#">101 Flowers</a><br/><span class="date">MAY 11, 2014</span><br/><hr/>
-				<a class="sub-head title" href="#">Venus Flytrap and other Carnivorous Plants</a><br/><span class="date">MAY 11, 2014</span><br/><hr/>
-				<a class="sub-head title" href="#">Look at these beautiful flowers</a><br/><span class="date">MAY 11, 2014</span><br/>
-			</div>
+					$i = 0;
+					foreach( $recent_posts as $recent ){
+						if($i == 0) {
+							if(has_post_thumbnail($recent["ID"])){
+								echo '<div class="sub-img">' . get_the_post_thumbnail($recent["ID"], 'medium') . '</div>';
+								if($recent["post_excerpt"] != "") {
+									$excerpt = wp_trim_excerpt($recent["post_excerpt"]);
+								}
+								else {
+									$strings = preg_split('/(\.|!|\?)\s/', strip_tags($recent["post_content"]), 2, PREG_SPLIT_DELIM_CAPTURE);
+									$excerpt = apply_filters('the_content', $strings[0] .  $strings[1]);								}
+							}
+							echo '<a class="sec-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><br/><span class="author">' . get_userdata($recent["post_author"])->display_name . '</span><p>' . $excerpt . ' <a href="' . get_permalink($recent["ID"]) . '">More >></a></p></div><div class="span7 recent-cols">';
+						}
+						else {
+							echo '<a class="sub-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><hr/>';
+						}
+						$i++;
+					}
+				?>
+			</div>		
 		</div>
 
 
