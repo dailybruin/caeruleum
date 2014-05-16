@@ -238,11 +238,28 @@ Template Name: Opinion Blog
             <div class="span3" id="right-column">
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
-            		<blockquote class="reaction">
-            		<span id="quotation-mark">“</span>
-            		<p>True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us.</p>
-            		<p class="attribution">-Socrates</p>
-            		</blockquote>
+                    <?php
+                        // Fill in options
+                        $reaction_cat_id = 7480;
+                        $num_reactions = 3;
+                        $args = array('posts_per_page' => $num_reactions, 'category' => $reaction_cat_id);
+                        $reaction_posts = get_posts($args);
+                        foreach ( $reaction_posts as $post ) :
+                    ?>
+                            <blockquote class="reaction">
+                            <span id="quotation-mark">“</span>
+                            <p><a href="<?php the_permalink(); ?>">
+                            <?php
+                                setup_postdata($post);
+                                $excerpt = get_the_excerpt();
+                                echo $excerpt
+                            ?>
+                            </a></p>
+            		        <p class="attribution">-<?php the_author(); ?></p></blockquote>
+                    <?php
+                        endforeach;
+                        wp_reset_postdata();
+                    ?>
             	</div>
 
                 <div class="columnist-column">
@@ -303,7 +320,6 @@ Template Name: Opinion Blog
                     </div>
                 </div>
             </div>   
-
 	     <?php get_sidebar(); ?>
 
 	</div>
