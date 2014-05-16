@@ -460,7 +460,7 @@ Template Name: Spring Spring 2014
 					</div>
 				</li>
 			</ul>
-			<h1 style="margin-top:50px">Talent: Others</h1>
+			<h1 style="margin-top:50px">Talent: Production</h1>
 			<ul id="profiles">
 
 				<li>
