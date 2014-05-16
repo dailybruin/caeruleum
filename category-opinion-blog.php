@@ -23,8 +23,8 @@ Template Name: Opinion Blog
 	.illo {margin: 10px 0 10px 0;}
 
 	/*Simon's Style*/
-	    .widget-title {
-    		font-family: Open Sans,Arial,Decima,"Helvetica Neue",Helvetica,sans-serif;
+    .widget-title {
+		font-family: Open Sans,Arial,Decima,"Helvetica Neue",Helvetica,sans-serif;
 		letter-spacing: 1px;
 		background-color: #222;
 		color: #fefefe;
@@ -135,7 +135,40 @@ Template Name: Opinion Blog
         <div class="row-fluid">
 
             <div class="span5">
-		<img class="featured-img" src="http://pets4u.info/wp-content/uploads/2013/12/baby-cats-and-dogs-7.jpg"/>
+		<!--<img class="featured-img" src="http://pets4u.info/wp-content/uploads/2013/12/baby-cats-and-dogs-7.jpg"/>-->
+		<?php 
+			$categoryid = 7;
+			$categoryObject = get_category_by_slug('sports');
+			$args = array(
+				'category'			=> $categoryObject->cat_ID,
+				'posts_per_page'  	=> 1,
+				'orderby' 			=> 'post_date',
+				'order'				=> 'DESC',
+				);
+
+			$recent_posts = wp_get_recent_posts($args);
+			foreach( $recent_posts as $recent ){
+				//setup_postdata($recent);
+				echo get_the_post_thumbnail($recent["ID"], 'large');
+				$authorID = $recent["post_author"];
+				$author_info = get_userdata($authorID);
+				echo '<div class="category c1">' . 'OPINION' . '</div>';
+				echo '<div class="feature-date">' . get_the_time('F j, Y') . '</div>';
+				echo '<div class="content">
+					<a class="heading" href=' . get_permalink($recent["ID"]) . '>' . $recent["post_title"] . '</a><br/>';
+					//echo '<div class="author"><a href=' . get_author_posts_url($authorID) . '>BY ' . $author_info->display_name . '</a></div>';
+					echo '<div class="author">BY ' . $author_info->display_name . '</div>';
+					echo '<div class="description">
+						<p>' . $recent["post_excerpt"] . '<a href="#"> More >></a></p>';
+					echo '</div>
+				</div>';
+				// echo "the author is " . get_author_posts_url($authorID);
+
+				//echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+			}
+
+		?>
+		<!-- original static html
 		<div class="category c1">CATS & DOGS</div>
 		<div class="feature-date">MAY 11, 2014</div>
 
@@ -146,7 +179,7 @@ Template Name: Opinion Blog
 				<p>It's a widely known that dogs and cats don't mix. But where did this notion of cat-people and dog-people come from? Why do we even care about this? Joe Bruin gives his two cents on the eternal feud of cat-loves and dog-lovers. <a href="#">More >></a></p>
 			</div>
 		</div>
-
+		-->
 		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
 		<div class="category c2">BIRDS & OTHER WINGED ANIMALS</div>
@@ -252,11 +285,28 @@ Template Name: Opinion Blog
             <div class="span3" id="right-column">
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
-            		<blockquote class="reaction">
-            		<span id="quotation-mark">“</span>
-            		<p>True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us.</p>
-            		<p class="attribution">-Socrates</p>
-            		</blockquote>
+                    <?php
+                        // Fill in options
+                        $reaction_cat_id = 1461;
+                        $num_reactions = 3;
+                        $args = array('posts_per_page' => $num_reactions, 'category' => $reaction_cat_id);
+                        $reaction_posts = get_posts($args);
+                        foreach ( $reaction_posts as $post ) :
+                    ?>
+                            <blockquote class="reaction">
+                            <span id="quotation-mark">“</span>
+                            <p><a href="<?php the_permalink(); ?>">
+                            <?php
+                                setup_postdata($post);
+                                $excerpt = get_the_excerpt();
+                                echo $excerpt
+                            ?>
+                            </a></p>
+            		        <p class="attribution">-<?php the_author(); ?></p></blockquote>
+                    <?php
+                        endforeach;
+                        wp_reset_postdata();
+                    ?>
             	</div>
 
                 <div class="columnist-column">
@@ -317,7 +367,6 @@ Template Name: Opinion Blog
                     </div>
                 </div>
             </div>   
-
 	     <?php get_sidebar(); ?>
 
 	</div>
