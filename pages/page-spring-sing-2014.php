@@ -224,6 +224,7 @@ Template Name: Spring Spring 2014
 
 <div id="content">
 
+    <div class="storify"><iframe src="//storify.com/dailybruin/ucla-spring-sing-2014/embed?border=false" width="100%" height=750 frameborder=no allowtransparency=true></iframe><script src="//storify.com/dailybruin/ucla-spring-sing-2014.js?border=false"></script><noscript>[<a href="//storify.com/dailybruin/ucla-spring-sing-2014" target="_blank">View the story "UCLA Spring Sing 2014" on Storify</a>]</noscript></div>
 
 	<div id="cards">
 
