@@ -211,7 +211,11 @@ Template Name: Spring Spring 2014
 	display: none;
 }
 
-
+.storify {
+    height: 600px;
+    overflow-y: scroll;
+    margin: 0 20px 40px 0;
+}
 
 </style>
 
