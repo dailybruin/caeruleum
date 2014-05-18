@@ -77,7 +77,6 @@ Template Name: Spring Spring 2014
 
 #banner-background {
 	max-width: 940px;
-	background-color: black;
 	border-radius:10px;
 	margin: 0 auto;
 }
