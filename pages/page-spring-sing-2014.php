@@ -68,7 +68,8 @@ Template Name: Spring Spring 2014
 	width: 100%;
 	max-width: 750px;
 	height: 350px;
-	background: url(http://dailybruin.com/images/2014/05/shb-yf.jpg) no-repeat;
+	background: url(http://dailybruin.com/images/galleries/2014-spring-sing/JU4.jpg) no-repeat center center;
+    background-sizing: cover;
 	background-color: black;
 	margin: 0px auto 50px auto;
 	background-size: cover;
