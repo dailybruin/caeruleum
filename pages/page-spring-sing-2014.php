@@ -70,7 +70,6 @@ Template Name: Spring Spring 2014
 	height: 350px;
 	background: url(http://dailybruin.com/images/galleries/2014-spring-sing/JU4.jpg) no-repeat center center;
     background-sizing: cover;
-	background-color: black;
 	margin: 0px auto 50px auto;
 	background-size: cover;
 	
