@@ -86,10 +86,17 @@
 <div class="container">
 	<div class="row" id="ad-sm-row">
 		<div class="span7" id="inthenews">
+            <?php ob_start();
+                wp_nav_menu(array('theme_location' => 'in_the_news',
+                   'container' => '',
+                ));
+                $navmenu = ob_get_contents();
+                ob_end_clean();
+                if($navmenu !== ''):
+            ?>
 			<span>In the news:</span>
-			<?php wp_nav_menu(array('theme_location' => 'in_the_news', 
-						'container' => '',
-						)); ?>
+                <?php echo $navmenu; ?>
+            <?php endif; ?>
 		</div><!-- end div#inthenewscont -->
 		<div class="span5 hidden-phone" id="followus">
 			<a href="https://twitter.com/dailybruin" class="twitter-follow-button" data-show-count="false">Follow @dailybruin</a>
