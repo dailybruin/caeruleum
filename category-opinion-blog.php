@@ -286,9 +286,10 @@ Template Name: Opinion Blog
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
                     <?php
-                        // Fill in options
-                        $reaction_cat_id = 1461;
+                        // TODO fill in appropriate parameters.
+                    	$reaction_slug = 'reactions';
                         $num_reactions = 3;
+                        $reaction_cat_id = get_category_by_slug(reaction_slug)->cat_ID;
                         $args = array('posts_per_page' => $num_reactions, 'category' => $reaction_cat_id);
                         $reaction_posts = get_posts($args);
                         foreach ( $reaction_posts as $post ) :
