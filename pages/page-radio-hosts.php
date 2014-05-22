@@ -79,7 +79,7 @@ IMPLEMENT ME
 <p>Sid has been around the Bruin since the fall of 2011 as a photographer and assistant photo editor. For the past three years, he’s been behind the lens and on the photo credits in the newspaper; now, as a radio show host, he puts a voice behind the name. He enjoys hiking, food trucks and exploring the sights and sounds of Los Angeles.</p>
     </div>
     <div class="span6">
-<img src="http://imgur.com/jMxUraH.jpg" alt="Two sleeping puppies." />
+<img src="http://dailybruin.com/images/2014/05/jonaki.jpg" alt="Jonaki Mehta." />
 <h3>Jonaki Mehta</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jmehta@media.ucla.edu">jmehta@media.ucla.edu</a> </div>
 <div class="twitter">
@@ -97,7 +97,7 @@ IMPLEMENT ME
 <p> For an in-depth look at the UCLA sports scene, tune into Out of Bounds, the Daily Bruin’s weekly sports talk show. The latest and greatest of UCLA Athletics are presented with the show’s famous “Westwood Week in Review,” clips from UCLA coaches and athletes, and a high-stakes prediction segment called “You Better Be Right,” where failure to pick the winning team of the week may result in Taylor Swift showdowns and changing twitter pictures to the hosts’ worst nightmares. </p>
 <div class="row-fluid">
     <div class="span6">
-<img src="http://imgur.com/zNgSw8Y.jpg" alt="A sleeping puppy with his toy." />
+<img src="http://dailybruin.com/images/2014/05/andrew.jpg" alt="Andrew Erickson." />
 <h3>Andrew Erickson</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:aerickson@media.ucla.edu">aerickson@media.ucla.edu</a> </div>
 <div class="twitter">
@@ -110,7 +110,7 @@ IMPLEMENT ME
 <p>Andrew is a Sports senior staff writer for the Daily Bruin, covering football and men's basketball in the 2013-2014 school year. He was an assistant Sports editor during the 2012-2013 school year and writes sports columns and features for Los Angeles Magazine's CityThink Blog. Fun fact: He and two other Daily Bruin Sports writers once drove to Eugene, Ore. for a football game (it's not as fun as it sounds). </p>
     </div>
     <div class="span6">
-<img src="http://imgur.com/Pj621JV.jpg" alt="A puppy wearing glasses." />
+<img src="http://dailybruin.com/images/2014/05/kevin.jpg" alt="Kevin Bowman." />
 <h3>Kevin Bowman</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:kbowman@media.ucla.edu">kbowman@media.ucla.edu</a> </div>
 <div class="twitter">
