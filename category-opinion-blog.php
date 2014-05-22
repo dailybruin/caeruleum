@@ -303,7 +303,7 @@ Template Name: Opinion Blog
                                 echo $excerpt
                             ?>
                             </a></p>
-            		        <p class="attribution">-<?php the_author(); ?></p></blockquote>
+            		        <p class="attribution">&ndash; <?php the_author(); ?></p></blockquote>
                     <?php
                         endforeach;
                         wp_reset_postdata();
