@@ -38,7 +38,7 @@ Template Name: Radio: About the hosts
 <p>Live from the hills of Westwood, the Daily Bruin presents its award-winning weekly news and culture talk show, Long Story Short. The show began airing in the winter of 2011 as a pre-recorded podcast with one broadcast host and single segment stories, eventually evolving into a live show broadcast from the UCLA Radio studio. The show covers all walks of life at UCLA, from science and health to arts and politics to local news and campus buzz. Long Story Short aims to focus on members of the UCLA community and their projects, personalities and perspectives.</p>
 <div class="row-fluid">
     <div class="span6">
-<img src="http://i.imgur.com/SHzqj4h.jpg" alt="Two puppies in a basket." />
+<img src="http://dailybruin.com/images/2014/05/meral.jpg" alt="Meral Arik" />
 <h3>Meral Arik</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
 <div class="twitter">
@@ -51,19 +51,16 @@ Template Name: Radio: About the hosts
 <p>In addition to being a Long Story Short host, Meral is a Daily Bruin Radio staff reporter. She discovered her passion for writing in elementary school, and has loved both creative writing and news writing ever since. She was vice president and news editor of her high school newspaper “The Talon,” as well as co-president of her high school literary magazine “Wings.” Meral has covered numerous stories for the Daily Bruin, including a recurring series on young UCLA entrepreneurs. She hopes to continue working in radio and journalism and someday become a television news anchor.</p>
     </div>
     <div class="span6">
-<img src="http://imgur.com/RJjNn9R.jpg" alt="A happy puppy sitting in the grass." />
+<img src="http://dailybruin.com/images/2014/05/kathleen.jpg" alt="Kathleen McGovern" />
 <h3>Kathleen McGovern</h3>
 <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
-<div class="twitter">
-<i class="ticon-twitter" ></i>
-</div>
 <audio src="http://dailybruin.com/images/2014/05/Kathleen.mp3" preload="auto" controls></audio>
 <p>Kathleen is the newest host for Long Story Short, having joined Daily Bruin Radio in Winter 2014. She feels that radio is a valuable medium for diverse media news, culture and human interest stories. As a commuting UCLA student, radio has saved her life on the road. She aspires to make radio a permanent addition to her life as a listener as well as a contributor.</p>
     </div>
 </div>
 <div class="row-fluid">
     <div class="span6">
-<img src="http://imgur.com/CC4YycX.jpg" alt="A puppy with daisies." />
+<img src="http://dailybruin.com/images/2014/05/sid.jpg" alt="Sidhaant Shah" />
 <h3>Sidhaant Shah</h3>
 <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:sshah@media.ucla.edu">sshah@media.ucla.edu</a> </div>
 <div class="twitter">
