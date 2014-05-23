@@ -137,7 +137,6 @@ Template Name: Opinion Blog
             <div class="span5">
 		<!--<img class="featured-img" src="http://pets4u.info/wp-content/uploads/2013/12/baby-cats-and-dogs-7.jpg"/>-->
 		<?php 
-			$categoryid = 7;
 			$categoryObject = get_category_by_slug('sports');
 			$args = array(
 				'category'			=> $categoryObject->cat_ID,
@@ -159,7 +158,7 @@ Template Name: Opinion Blog
 					//echo '<div class="author"><a href=' . get_author_posts_url($authorID) . '>BY ' . $author_info->display_name . '</a></div>';
 					echo '<div class="author">BY ' . $author_info->display_name . '</div>';
 					echo '<div class="description">
-						<p>' . $recent["post_excerpt"] . '<a href="#"> More >></a></p>';
+						<p>' . get_the_excerpt() . '<a href="' . get_permalink($recent["ID"]) . '"> More >></a></p>';
 					echo '</div>
 				</div>';
 				// echo "the author is " . get_author_posts_url($authorID);
@@ -187,29 +186,39 @@ Template Name: Opinion Blog
 		<div class="row-fluid">
 			<div class="span5">
 				<?php
-					$args = array( 'numberposts' => '5', 'category' => 1461);
-					$recent_posts = wp_get_recent_posts( $args );
+					$categoryObject = get_category_by_slug('sports');
+					$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+					
+					$posts = get_posts( $args );
 
 					$i = 0;
-					foreach( $recent_posts as $recent ){
-						if($i == 0) {
-							if(has_post_thumbnail($recent["ID"])){
-								echo '<div class="sub-img">' . get_the_post_thumbnail($recent["ID"], 'medium') . '</div>';
-								if($recent["post_excerpt"] != "") {
-									$excerpt = wp_trim_excerpt($recent["post_excerpt"]);
-								}
-								else {
-									$strings = preg_split('/(\.|!|\?)\s/', strip_tags($recent["post_content"]), 2, PREG_SPLIT_DELIM_CAPTURE);
-									$excerpt = apply_filters('the_content', $strings[0] .  $strings[1]);								}
-							}
-							echo '<a class="sec-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><br/><span class="author">' . get_userdata($recent["post_author"])->display_name . '</span><p>' . $excerpt . ' <a href="' . get_permalink($recent["ID"]) . '">More >></a></p></div><div class="span7 recent-cols">';
-						}
-						else {
-							echo '<a class="sub-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><hr/>';
-						}
-						$i++;
-					}
-				?>
+					foreach ( $posts as $post ) : setup_postdata( $post );
+						if($i == 0) :
+							if ( '' != get_the_post_thumbnail() ) : ?>
+								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
+							<?php endif; ?>
+
+							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
+
+							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
+
+							<span class="author"><?php the_author(); ?></span>
+
+							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
+
+							</div>
+
+							<div class="span7 recent-cols">
+
+						<?php else : ?>
+							<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
+
+							<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
+	
+						<?php endif; $i++; ?>
+					<?php endforeach; 
+					wp_reset_postdata(); ?>
+
 			</div>		
 		</div>
 
@@ -220,29 +229,39 @@ Template Name: Opinion Blog
 		<div class="row-fluid">
 			<div class="span5">
 				<?php
-					$args = array( 'numberposts' => '5', 'category' => 1427);
-					$recent_posts = wp_get_recent_posts( $args );
+					$categoryObject = get_category_by_slug('community');
+					$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+					
+					$posts = get_posts( $args );
 
 					$i = 0;
-					foreach( $recent_posts as $recent ){
-						if($i == 0) {
-							if(has_post_thumbnail($recent["ID"])){
-								echo '<div class="sub-img">' . get_the_post_thumbnail($recent["ID"], 'medium') . '</div>';
-								if($recent["post_excerpt"] != "") {
-									$excerpt = wp_trim_excerpt($recent["post_excerpt"]);
-								}
-								else {
-									$strings = preg_split('/(\.|!|\?)\s/', strip_tags($recent["post_content"]), 2, PREG_SPLIT_DELIM_CAPTURE);
-									$excerpt = apply_filters('the_content', $strings[0] .  $strings[1]);								}
-							}
-							echo '<a class="sec-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><br/><span class="author">' . get_userdata($recent["post_author"])->display_name . '</span><p>' . $excerpt . ' <a href="' . get_permalink($recent["ID"]) . '">More >></a></p></div><div class="span7 recent-cols">';
-						}
-						else {
-							echo '<a class="sub-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><hr/>';
-						}
-						$i++;
-					}
-				?>
+					foreach ( $posts as $post ) : setup_postdata( $post );
+						if($i == 0) :
+							if ( '' != get_the_post_thumbnail() ) : ?>
+								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
+							<?php endif; ?>
+
+							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
+
+							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
+
+							<span class="author"><?php the_author(); ?></span>
+
+							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
+
+							</div>
+
+							<div class="span7 recent-cols">
+
+						<?php else : ?>
+							<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
+
+							<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
+	
+						<?php endif; $i++; ?>
+					<?php endforeach; 
+					wp_reset_postdata(); ?>
+
 			</div>		
 		</div>
 
@@ -253,29 +272,39 @@ Template Name: Opinion Blog
 		<div class="row-fluid">
 			<div class="span5">
 				<?php
-					$args = array( 'numberposts' => '5', 'category' => 1458);
-					$recent_posts = wp_get_recent_posts( $args );
+					$categoryObject = get_category_by_slug('news');
+					$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+					
+					$posts = get_posts( $args );
 
 					$i = 0;
-					foreach( $recent_posts as $recent ){
-						if($i == 0) {
-							if(has_post_thumbnail($recent["ID"])){
-								echo '<div class="sub-img">' . get_the_post_thumbnail($recent["ID"], 'medium') . '</div>';
-								if($recent["post_excerpt"] != "") {
-									$excerpt = wp_trim_excerpt($recent["post_excerpt"]);
-								}
-								else {
-									$strings = preg_split('/(\.|!|\?)\s/', strip_tags($recent["post_content"]), 2, PREG_SPLIT_DELIM_CAPTURE);
-									$excerpt = apply_filters('the_content', $strings[0] .  $strings[1]);								}
-							}
-							echo '<a class="sec-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><br/><span class="author">' . get_userdata($recent["post_author"])->display_name . '</span><p>' . $excerpt . ' <a href="' . get_permalink($recent["ID"]) . '">More >></a></p></div><div class="span7 recent-cols">';
-						}
-						else {
-							echo '<a class="sub-head title" href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"] . '</a><br/><span class="date">' . get_the_time('M j, Y',$recent["post_date"]) . '</span><hr/>';
-						}
-						$i++;
-					}
-				?>
+					foreach ( $posts as $post ) : setup_postdata( $post );
+						if($i == 0) :
+							if ( '' != get_the_post_thumbnail() ) : ?>
+								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
+							<?php endif; ?>
+
+							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
+
+							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
+
+							<span class="author"><?php the_author(); ?></span>
+
+							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
+
+							</div>
+
+							<div class="span7 recent-cols">
+
+						<?php else : ?>
+							<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
+
+							<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
+	
+						<?php endif; $i++; ?>
+					<?php endforeach; 
+					wp_reset_postdata(); ?>
+
 			</div>		
 		</div>
 
