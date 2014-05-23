@@ -75,30 +75,45 @@ Template Name: Opinion Blog
     .columnist-row {
         margin-bottom: 20px;
     }
+
     .columnist-info {
         display: inline-block;
         text-align: left;
     }
+
     .columnist-name {
         font-weight: bold;
         word-wrap: break-word;
     }
+
     .columnist-line {
         margin: 5px 10px 10px 10px;
     }
+
     .columnist-line-content {
         display: inline-block;
     }
+
     .columnist-text {
         vertical-align: middle;
     }
+
     .columnist-cat {
         display: inline-block;
         vertical-align: middle;
         height: 14px;
         width: 14px;
-        background-color: yellow;
+        background-color: black;
     }
+
+	.columnist-cat.cat-online {
+		background-color: yellow;
+	}
+
+	.columnist-cat.cat-dailybruin {
+		background-color: blue;
+	}
+
     @media (min-width: 768px) and (max-width: 979px) {
         .columnist-column {
             text-align: center;
@@ -111,6 +126,7 @@ Template Name: Opinion Blog
             margin: auto 15px;
         }
     }
+
     @media (max-width: 767px) {
         .columnist-column {
             text-align: left;
@@ -309,63 +325,58 @@ Template Name: Opinion Blog
                         wp_reset_postdata();
                     ?>
             	</div>
-
+				<?php
+					$contributors = array(
+						array(
+							'email' => 'ndelgadillo@media.ucla.edu',
+							'img' => 'http://dailybruin.com/images/userphoto/4684.jpg?1752233920',
+							'cats' => array('Online', 'Daily Bruin')
+							),
+						array(
+							'email' => 'rnelson@media.ucla.edu',
+							'img' => 'http://dailybruin.com/images/userphoto/4771.jpg?1934400204',
+							'cats' => array('Online', 'Daily Bruin')
+							),
+						array(
+							'email' => 'atashman@media.ucla.edu',
+							'img' => 'http://dailybruin.com/images/userphoto/4751.jpg?2076310971',
+							'cats' => array('Online', 'Daily Bruin')
+							)
+						);
+					$cat_to_css = array(
+							'Online' => 'cat-online',
+							'Daily Bruin' => 'cat-dailybruin'
+						);
+				?>
                 <div class="columnist-column">
                     <h2 class="widget-title">Columnists</h2>
+                    <?php
+                    	foreach ($contributors as $cont) :
+	                    	$user = get_user_by('email', $cont['email']);
+	                    	$name = $user->first_name . ' ' . $user->last_name;
+                    ?>
                     <div class="row-fluid columnist-row">
-                        <div id="columnist-mugshot" class="span5">
-                            <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
-                        </div>
-                        <div id="columnist-info" class="span7 columnist-info">
-                            <div class="columnist-name">Natalie Delgadillo</div>
-                            <div class="columnist-line">
-                                <div class="columnist-line-content">
-                                    <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
-                                </div>
-                            </div>
-                            <div class="columnist-line">
-                                <div class="columnist-line-content">
-                                    <span class="columnist-cat"></span><span class="columnist-text"> Daily Bruin</span>
-                                </div>
-                            </div>
+                    	<div id="columnist-mugshot" class="span5">
+                    		<img src="<?php echo $cont['img'] ?>" alt="<?php echo $name ?>">
+                		</div>
+                		<div id="columnist-info" class="span7 columnist-info">
+                			<div class="columnist-name"><?php echo $name ?></div>
+                			<?php 
+                				foreach ($cont['cats'] as $cat) :
+            				?>
+	            				<div class="columnist-line">
+	            					<div class="columnist-line-content">
+	                                    <span class="columnist-cat <?php echo $cat_to_css[$cat]?>"></span><span class="columnist-text"> <?php echo $cat ?></span>
+	                                </div>
+	                            </div>
+                            <?php
+                            	endforeach;
+                            ?>
                         </div>
                     </div>
-                    <div class="row-fluid columnist-row">
-                        <div id="columnist-mugshot" class="span4">
-                            <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
-                        </div>
-                        <div id="columnist-info" class="span8 columnist-info">
-                            <div class="columnist-name">Natalie Delgadillo</div>
-                            <div class="columnist-line">
-                                <div class="columnist-line-content">
-                                    <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
-                                </div>
-                            </div>
-                            <div class="columnist-line">
-                                <div class="columnist-line-content">
-                                    <span class="columnist-cat"></span><span class="columnist-text"> Daily Bruin</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-fluid columnist-row">
-                        <div id="columnist-mugshot" class="span6">
-                            <img src="http://i.imgur.com/SAHUYJU.jpg" alt="Harrison Liddiard">
-                        </div>
-                        <div id="columnist-info" class="span6 columnist-info">
-                            <div class="columnist-name">Woah</div>
-                            <div class="columnist-line">
-                                <div class="columnist-line-content">
-                                    <span class="columnist-cat"></span><span class="columnist-text"> Online</span>
-                                </div>
-                            </div>
-                            <div class="columnist-line">
-                                <div class="columnist-line-content">
-                                    <span class="columnist-cat"></span><span class="columnist-text"> Daily Bruin</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php	
+                    endforeach;
+                    ?>
                 </div>
             </div>   
 	     <?php get_sidebar(); ?>
