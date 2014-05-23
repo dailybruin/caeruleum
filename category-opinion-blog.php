@@ -151,50 +151,38 @@ Template Name: Opinion Blog
         <div class="row-fluid">
 
             <div class="span5">
-		<!--<img class="featured-img" src="http://pets4u.info/wp-content/uploads/2013/12/baby-cats-and-dogs-7.jpg"/>-->
-		<?php 
-			$categoryObject = get_category_by_slug('sports');
-			$args = array(
-				'category'			=> $categoryObject->cat_ID,
-				'posts_per_page'  	=> 1,
-				'orderby' 			=> 'post_date',
-				'order'				=> 'DESC',
-				);
+            <?php 
+				$categoryObject = get_category_by_slug('opinion');
+				$args = array(
+					'posts_per_page'   => 1, 
+					'category' => $categoryObject->cat_ID);
 
-			$recent_posts = wp_get_recent_posts($args);
-			foreach( $recent_posts as $recent ){
-				//setup_postdata($recent);
-				echo get_the_post_thumbnail($recent["ID"], 'large');
-				$authorID = $recent["post_author"];
-				$author_info = get_userdata($authorID);
-				echo '<div class="category c1">' . 'OPINION' . '</div>';
-				echo '<div class="feature-date">' . get_the_time('F j, Y') . '</div>';
-				echo '<div class="content">
-					<a class="heading" href=' . get_permalink($recent["ID"]) . '>' . $recent["post_title"] . '</a><br/>';
-					//echo '<div class="author"><a href=' . get_author_posts_url($authorID) . '>BY ' . $author_info->display_name . '</a></div>';
-					echo '<div class="author">BY ' . $author_info->display_name . '</div>';
-					echo '<div class="description">
-						<p>' . get_the_excerpt() . '<a href="' . get_permalink($recent["ID"]) . '"> More >></a></p>';
-					echo '</div>
-				</div>';
-				// echo "the author is " . get_author_posts_url($authorID);
+				$posts = get_posts($args);
 
-				//echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
-			}
+				foreach ($posts as $post) :
+					setup_postdata($post);
+					echo the_post_thumbnail('large');
+			?>
 
-		?>
-		<!-- original static html
-		<div class="category c1">CATS & DOGS</div>
-		<div class="feature-date">MAY 11, 2014</div>
-
-		<div class="content">
-			<a class="heading" href="#">Why can't we be friends: The never-ending struggle</a><br/>
-			<div class="author">BY JOE BRUIN</div>
-			<div class="description">
-				<p>It's a widely known that dogs and cats don't mix. But where did this notion of cat-people and dog-people come from? Why do we even care about this? Joe Bruin gives his two cents on the eternal feud of cat-loves and dog-lovers. <a href="#">More >></a></p>
+			<div class="category c1">OPINION</div>
+			<div class="feature-date">
+				<?php the_time('F j, Y'); ?>
 			</div>
-		</div>
-		-->
+			<div class="content">
+				<a class="heading" href="<?php the_permalink(); ?>">
+					<?php the_title(); ?>
+				</a>
+			</div>
+			<div class="author">
+					BY <?php the_author(); ?>
+			</div>
+			<div class="description">
+				<p><?php echo get_the_excerpt(); ?>
+				<a href="<?php the_permalink(); ?>">More &#187;</a>
+				</p>
+			</div>
+			<?php endforeach; ?>
+
 		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
 		<div class="category c2">BIRDS & OTHER WINGED ANIMALS</div>
