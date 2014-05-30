@@ -6,7 +6,7 @@ Template Name: Opinion Blog
 	
 	/*Daria's Style*/
 	.featured-img {margin: 10px 0 10px 0;}
-	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: Open Sans; font-size: 10pt; font-weight: bold;}
+	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: "Open Sans", "Helvetica", sans-serif; font-size: 10pt; font-weight: bold;}
 	.c1 {background-color: #15134b; color: #fff;}
 	.c2 {background-color: #881e2f; color: #fff;}
 	.c3 {background-color: #19562a; color: #fff;}
@@ -152,7 +152,7 @@ Template Name: Opinion Blog
 
             <div class="span5">
             <?php 
-				$categoryObject = get_category_by_slug('opinion');
+				$categoryObject = get_category_by_slug('community');
 				$args = array(
 					'posts_per_page'   => 1, 
 					'category' => $categoryObject->cat_ID);
@@ -182,138 +182,6 @@ Template Name: Opinion Blog
 				</p>
 			</div>
 			<?php endforeach; ?>
-
-		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
-
-		<div class="category c2">BIRDS & OTHER WINGED ANIMALS</div>
-
-		<div class="row-fluid">
-			<div class="span5">
-				<?php
-					$categoryObject = get_category_by_slug('sports');
-					$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
-					
-					$posts = get_posts( $args );
-
-					$i = 0;
-					foreach ( $posts as $post ) : setup_postdata( $post );
-						if($i == 0) :
-							if ( '' != get_the_post_thumbnail() ) : ?>
-								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
-							<?php endif; ?>
-
-							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
-
-							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
-
-							<span class="author"><?php the_author(); ?></span>
-
-							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
-
-							</div>
-
-							<div class="span7 recent-cols">
-
-						<?php else : ?>
-							<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
-
-							<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
-	
-						<?php endif; $i++; ?>
-					<?php endforeach; 
-					wp_reset_postdata(); ?>
-
-			</div>		
-		</div>
-
-		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
-
-		<div class="category c3">THE WONDERFUL LIVES OF TURTLES</div>
-
-		<div class="row-fluid">
-			<div class="span5">
-				<?php
-					$categoryObject = get_category_by_slug('community');
-					$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
-					
-					$posts = get_posts( $args );
-
-					$i = 0;
-					foreach ( $posts as $post ) : setup_postdata( $post );
-						if($i == 0) :
-							if ( '' != get_the_post_thumbnail() ) : ?>
-								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
-							<?php endif; ?>
-
-							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
-
-							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
-
-							<span class="author"><?php the_author(); ?></span>
-
-							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
-
-							</div>
-
-							<div class="span7 recent-cols">
-
-						<?php else : ?>
-							<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
-
-							<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
-	
-						<?php endif; $i++; ?>
-					<?php endforeach; 
-					wp_reset_postdata(); ?>
-
-			</div>		
-		</div>
-
-		<hr style="height:2px;border:none;color:#333;background-color:#333;" />
-
-		<div class="category c4">FLOWER POWER</div>
-
-		<div class="row-fluid">
-			<div class="span5">
-				<?php
-					$categoryObject = get_category_by_slug('news');
-					$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
-					
-					$posts = get_posts( $args );
-
-					$i = 0;
-					foreach ( $posts as $post ) : setup_postdata( $post );
-						if($i == 0) :
-							if ( '' != get_the_post_thumbnail() ) : ?>
-								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
-							<?php endif; ?>
-
-							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
-
-							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
-
-							<span class="author"><?php the_author(); ?></span>
-
-							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
-
-							</div>
-
-							<div class="span7 recent-cols">
-
-						<?php else : ?>
-							<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
-
-							<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
-	
-						<?php endif; $i++; ?>
-					<?php endforeach; 
-					wp_reset_postdata(); ?>
-
-			</div>		
-		</div>
-
-
-	     </div>
 
             <div class="span3" id="right-column">
             	<div id="widget-reaction-quote">
