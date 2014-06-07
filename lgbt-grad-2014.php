@@ -15,122 +15,141 @@ Template Name: LGBT Grad Issue 2014
         <div class="span7">
             <article>
                 <section>
+                    <h1>LGBT Grad Issue 2014</h1>
+                    <h5>BY AUTHOR NAME</h5>
 
-                    <?php 
-                        $postid = url_to_postid('http://localhost:8080/?p=161184');
-                        $post_object = get_post($postid);
+			<div id="feature-story">
+			<a name ="story"></a>
+			<div class="story-page" id="story-page-1">
+			                <p>Natalie Kirsten remembers wanting to be straight for most of her teenage years.</p>
 
-                        echo '<h1>' .  $post_object->post_title . '</h1>';
-                        echo $post_object->post_content;
-                    ?>
+                      <p>Growing up in a conservative Colorado town, Kirsten often thought her sexuality had to conform to the strict Christian ideals her community promoted, which included heterosexuality.</p>
 
-<!--<p>She remembers suppressing her emerging sexuality to comply with her own internalized homophobia that was influenced by the strict Christian ideals of her conservative hometown.this is hard to read. you wouldnt talk like this the way it is written right now. try to rephrase so it's more straightforward. you can make it more conversational if you want.</p>
+                      <p>But when she left home for UCLA, she started to feel different. She said she was able to embrace her sexuality for the first time because she felt accepted by other students. With this change, she said she came to the realization that her religion and sexual orientation weren't as conflicting as she thought.</p>
 
-              <p>But when Natalie Kirsten left home for UCLA, she was finally able to accept her sexuality. With this acknowledgement came the realization that these two parts of her weren't as conflicting as she previously thought.</p>
+                      <p>"These two parts of me, they work together," said Kirsten, a first-year undeclared student who identifies as lesbian and Christian. "My Christian identity just means that I love everybody... and my lesbian identity just means that I am attracted to women and I understand things a little differently."</p>
 
-              <p>"These two parts of me, they work together," said Kirsten, a first-year undeclared student who identifies as lesbian and Christian. "My Christian identity just means that I love everybody... and my lesbian identity just means that I am attracted to women and I understand things a little differently."</p>
+                      <p>Kirsten now attends the Metropolitan Community Church in Los Feliz, which focuses on inclusivity of the lesbian, gay, bisexual and transgender community and also caters to a predominantly LGBT congregation.</p>
 
-              <p>Kirsten now attends the Metropolitan Community Church in Los Feliz, which caters to a predominately lesbian, gay, bisexual and transgender congregation and focuses on inclusivity.</p>
+                      <p>Houses of worship that are geared toward the LGBT population are growing in numbers across the nation and signify increasing connections between the religious and LGBT communities, including among UCLA students.</p>
 
-              <p>Houses of worship that are geared toward the LGBT population are popping up across the nation and signify the increasing connections between the religious and LGBT communities.</p>
+                      <p>There are currently more than 6,700 LGBT affirming churches in the U.S., according to a church directory compiled by God’s Agape Love (Put) Into Practice, a nonprofit organization.</p>
 
-              <p>"There has been a huge shift in culture in the last 20 to 30 years and the Church is playing catch up... as we see various denominations accepting people in the church,the quote reads kind of awkwardly, what'd he say where the ... is?" said Reverend Doctor Neil Thomas, the senior pastor at the Metropolitan Community Church.</p>
+                      <p>"During the last 50 years, we see some people being very harsh and bitter," said Father Chris Ponnet, spiritual director for the L.A. Archdiocese Office of Catholic Ministry with Lesbian and Gay Persons. "Now we are in a period of time where in the last eight or 10 years, civil society is beginning to look at what a committed relationship means in the gay and lesbian experience."</p>
 
-              <p>Father Chris Ponnet, the spiritual director for the LA Archdiocese Office of Catholic Ministry with Lesbian and Gay Persons, said that while the Catholic Church does not bless LGBT relationships, the outlook is changing.</p>
+                      <p>Ponnet said that while the Catholic Church does not bless LGBT relationships, he thinks its outlook is changing.</p>
 
-              <p>"During the last 50 years, we see some people being very harsh and bitter and the Church has said that all of that discrimination is contrary to our church teaching," Ponnet said. "Now we are in a period of time where in the last 8 or 10 years, civil society is beginning to look at what a committed relationship means in the gay and lesbian experience.</p>
+                      <p>Reverend Doctor Neil Thomas, senior pastor at the Metropolitan Community Church, said he thinks stereotypes about the religious and LGBT communities being in conflict have roots in American culture.</p>
 
-              <p>Thomas added that he thinks the traditional stereotype that the religious and the LGBT communities are in conflict takes roots in American culture.</p>
+                      <p>"I think that the dominant culture, especially in this country, is one that says 'thou shalt not.' You shalt not be a homosexual and a Christian," Thomas said. "Many LGBT people grow up with that rhetoric both from the Church and from culture."</p>
 
-              <p>"I think that the dominant culture, especially in this country, is one that says 'thou shalt not.' You shalt not be a homosexual and a Christian," Thomas said. "Many LGBT people grow up with that rhetoric both from the Church and from culture."</p>
+                      <p>Reverend Michael Schuenemeyer, the United Church of Christ's executive for health and wholeness advocacy, said he thinks this stereotype is held by some members of the Christian community who have more conservative views. According to God’s Agape Love (Put) Into Practice, the United Church of Christ has the most LGBT affirming churches in the U.S.</p>
 
-              <p>Reverend Michael Schuenemeyer, the United Church of Christ's executive for health and wholeness advocacy, said he thinks this stereotype is held by some members of the Christian community that have more conservative views.</p>
+                      <p>He said many of the LGBT people he has worked with have felt alienated by some church leaders who took a "very rejective and abusive approach" to LGBT inclusion in the church.</p>
 
-              <p>He said that many of the LGBT people he has worked with have been wounded by some church leaders that have taken a "very rejective and abusive approach."</p>
+                      <p>"But the Church is not God. The church is God's agent. It is a human institution, and it does not always get it right," Schuenemeyer said.</p>
 
-              <p>"But the Church is not God. The church is God's agent. It is a human institution, and it does not always get it right," Schuenemeyer said.</p>
+			</div>
+			<div class="story-page" id="story-page-2">
+			 <i>Page 2 of 3 </i><br/><br/>
+                      <p>Some LGBT UCLA students said they have felt rejected by members of the church in campus organizations.</p>
 
-              <p>Some UCLA students said that they have also experienced this less accepting approach, particularly on the UCLA campus.</p>
+                      <p>Steven Mion, a first-year political science student who identifies as gay and Methodist, said the first time he felt uncomfortable being with fellow Christians because of his sexuality was when he got to UCLA.</p>
 
-              <p>Steven Mion, a first-year political science student who identifies as gay and Methodist, said the first time he felt uncomfortable being with fellow Christians because of his sexuality was when he got to UCLA.</p>
+                      <p>Mion signed up for a Christian fellowship in the beginning of the school year without disclosing his sexuality. He said he remembers telling some members about his desire to incorporate more LGBT people in the church.</p>
 
-              <p>Mion signed up for a Christian fellowship in the beginning of the school year, without disclosing his sexuality and said he remembers telling some members about his desire to incorporate more LGBT people in the church.</p>
+                      <p>The responses of the students in the fellowship left him surprised and confused, he said.</p>
 
-              <p>The responses of the students in the fellowship left him surprised and confused, he said.</p>
+                      <p>"That was the first time, I'll never forget it, I ever heard the language of 'love the sinner, hate the sin,'" Mion said. "At that point, they didn't know they were addressing me as an LGBT person... and I had no idea how to respond."</p>
 
-              <p>"That was the first time, I'll never forget it, I ever heard the language of, 'love the sinner, hate the sin,'" Mion said. "At that point, they didn't know they were addressing me as an LGBT person... and I had no idea how to respond."</p>
+                      <p>Despite this instance, Mion continued to attend the group's meetings, hoping to change the fellowship's perspective on being both Christian and gay.</p>
 
-              <p>Despite this instance, Mion continued to attend their meetings hoping to change the fellowship's perspective on being both Christian and gay.</p>
+                      <p>After a few more gatherings, he said he decided to be honest with the fellowship, so he told the lead pastor about his sexuality.</p>
 
-              <p>But after a few more meetings, he decided he had to be honest with the fellowship and he told the lead pastor about his sexuality, he said.</p>
+                      <p>Mion said the pastor responded by telling him that he was "broken."</p>
 
-              <p>Mion said the pastor responded by telling him that he was "broken."</p>
+                      <p>"It caught me off guard and it really scared me," Mion said. "When you say (being gay is) a sin, I can outright disagree with you and we can contest Bible verses. When you say it's broken... that means you are going to try and fix me, and that's scary."</p>
 
-              "It caught me off guard and it really scared me," Mion said. "When you say it's (being gay is) a sin, I can outright disagree with you and we can contest bible verses. When you say it's broken... that means you are going to try and fix me, and that's scary."
+                      <p>Mion said he never returned to the fellowship and instead found other groups on campus that were geared specifically toward the LGBT community.</p>
 
-              Mion said he never returned to the fellowship and instead found Christian groups on campus that were geared specifically toward the LGBT community.
+                      <p>These groups include Cornerstone, a group for LGBT Christians sponsored by the University Catholic Center, and another similar small group sponsored by the InterVarsity Bruin Christian fellowship.</p>
 
-              Those groups include Cornerstone, a small group for LGBT Christians sponsored by the University Catholic Center, and another similar small groupwhat's the name of this group? it's weird to name cornerstone and not this It actually doesn't have a name its just called a LGBT small group sponsored by the InterVarsity Bruin Christian fellowship.
+                      <p>Cornerstone has reached out to some of the other Christian groups on campus to converse with them, but none have accepted the offer so far, said Leiza Castillo, one of the co-leaders of Cornerstone and a third-year English student who identifies as lesbian and Catholic.</p>
 
-              Cornerstone has reached out to some of the Christian groups on campus to connect with them, but none have accepted the offer, said Leiza Castillo, one of the co-leaders of Cornerstone and a third-year English student who identifies as lesbian and Catholic.not even the similar lgbt-geared groups have agreed to connect? Cornerstone is one of the two LGBT groups the people that go to cornerstone and the people that go to the intervarsity small group are the same people so i don't think they didn't reach out to intervarsity.
+                      <p>The Daily Bruin contacted about 25 of the Christian groups on campus to ask about their stances on LGBT inclusion in the church. All but the Christian Social Work Caucus either declined to comment or could not be reached for this article.</p>
 
-              The Daily Bruin contacted many of the Christian groups on campus to ask their stance on LGBT inclusion in the church. All but the Christian Social Work Caucus either declined to comment or could not be reached for this article.
+                      <p>Jenny Rivas, the co-chair of the Christian Social Work Caucus and a graduate student in social welfare, said the club has no official stance on LGBT inclusion in the church and that it is welcoming to everyone, including members of the LGBT community.</p>
 
-              Jenny Rivas, Co-chair of the Christian Social Work Caucus and a graduate student in social work, said that the club has no official stance on LGBT inclusion in the church and that it is welcoming of everyone, including members of the LGBT community.
+                      <p>Students from several different religions said they also struggle with reconciling their faith with their sexuality.</p>
 
-              While many national and campus religious groups and organizations consider LGBT issues taboo, some institutions are changing existing policies to promote inclusion.
-              Kerry Chaplin, a rabbinic intern for Hillel at UCLA who identifies as lesbian and Jewish, is studying to be a rabbi at the Ziegler School of Rabbinic Studies. She began her studies there after a policy change in 2005 allowed applicants from the LGBT community to apply to be a rabbi.
+                      <p>Sam Haws, a third-year economics student who identifies as gay and an agnostic theist, grew up in a strict Mormon household where he woke up every day at 6 a.m. to attend seminary, or Mormon church school.</p>
 
-              Chaplin applied to Rabbinical schools when she graduated college before the policy changed, but said she decided to withdraw her application after realizing she would have to hide a part of herself.
+			</div>
+			<div class="story-page" id="story-page-3">
+			<i>Page 3 of 3 </i><br/><br/>
+                      <p>Haws said he thinks the high standards of the Mormon church made him who he is today, but he still finds some of the values of the Mormon Church limiting.</p>
 
-              "I needed to be grounded in myself and have the freedom to move. I felt like I was grounded, but I didn't have the freedom to move," Chaplin said.
+                      <p>"I got really incredible values from (the Mormon faith) but I think it is very damaging to grow up, especially when you are an LGBT person... in that environment and feel as though you can't explore who you are," Haws said.
+                      He added that he thinks the Mormon faith is becoming more accepting.</p>
 
-              When she made the decision to withdraw her application, she said she found herself straying away from her Jewish faith.
+                      <p>"The Church still has its open stances against same sex marriage and homosexual activity... but the culture in general is changing," Haws said. "And that's what gives me so much hope, because I notice that it's about the people that make up any institution for me."</p>
 
-              But work with a multi-faith organization to help lift people out of difficult life circumstances brought her back to her religion.
+                      <p>Haws said he would be open to returning to the Mormon church one day, but only if he practiced a version of the religion that was more supportive of the LGBT community.</p>
 
-              Chaplin said she realized she had to stop neglecting the religious aspect of her identity that was a large component of who she is.
-              "I decided to stop running from what was clearly the way I intended to bring Torah into this world and bring generative energy into this world," Chaplin said.
+                      <p>While many national and campus religious groups consider LGBT issues taboo, some institutions are changing existing policies to promote inclusion.</p>
+                      
+                      <p>Kerry Chaplin, a rabbinic intern for Hillel at UCLA who identifies as lesbian and Jewish, is studying to be a rabbi at the Ziegler School of Rabbinic Studies. She began her studies there after a policy change in 2005 allowed applicants from the LGBT community to apply to be rabbis.</p>
 
-              Chaplin reapplied in 2008 and has one more year left before completing her studies.
+                      <p>Chaplin applied to rabbinical schools when she graduated college before the policy changed, but said she decided to withdraw her applications after realizing she would have to hide a part of herself.</p>
 
-              But some members of the LGBT community, like Sam Haws, do not always return to their faith.
+                      <p>"I needed to be grounded in myself and have the freedom to move," Chaplin said. "I felt like I was grounded, but I didn't have the freedom to move."</p>
 
-              Haws, a third-year economics student who identifies as gay and an agnostic-theist, grew up in a strict Mormon household where he woke up every day at 6 a.m. to attend Seminary, or Mormon church school.
+                      <p>When she made the decision to withdraw her application, she said she found herself straying away from her Jewish faith.</p>
 
-              Haws said he acknowledged that the high standards of the Mormon church undoubtedly made him who he is today.
+                      <p>But working with a nonprofit multi-faith organization that aims to lift people out of difficult life circumstances brought her back to her religion. Through working with this organization, Chaplin said she realized she had to stop neglecting the religious aspect of her identity.</p>
+                        
+                      <p>"I decided to stop running from what was clearly the way I intended to bring Torah into this world and bring generative energy into this world," Chaplin said.</p>
 
-              Yet, he still found some of the values of the Mormon Church limiting.
+                      <p>Chaplin reapplied to the Ziegler School in 2008 and has one more year left before completing her studies there.</p>
 
-              "I got really incredible values from it but I think it is very damaging to grow up, especially when you are an LGBT person... in that environment and feel as though you can't explore who you are," Haws said. "And you feel like there is a part of you that you need to hide in order to adhere to other standards that you are told are important."
-              He added that he thinks the Mormon faith is becoming more accepting.
+                      <p>For Mion, instead of trying to change the views of student groups that are not inclusive for the LGBT community, he plans to show his dedication to both the Christian and LGBT communities by following the lessons in the Bible and simultaneously embracing his sexuality.</p>
 
-              "The Church still has its open stances against same sex marriage and homosexual activity... but the culture in general is changing," Haws said. "And that's what gives me so much hope, because I notice that it's about the people that make up any institution for me."
-
-              For Mion, instead of trying to convince the various student groups on campus that it is possible to be LGBT and religious, he said he would rather show his dedication to both communities by following the instructions of the Bible while also embracing his sexuality.
-
-              "To me, the genuine form of outreach in ministry is to model it. It's to live as an example of how God can make a difference in your life," Mion said. "If you are living as a model to that, as a testament to God's love... that's a more compelling conversation of what it means to have faith and a relationship with God."-->
-
-              </section>
+                      <p>"To me, the genuine form of outreach in ministry is to model it," Mion said. "If you are living as a model to that, as a testament to God's love... that's a more compelling conversation of what it means to have faith and a relationship with God."</p>
+			</div>
+			</div>
+                </section>
             </article>
+		
+
+	    <div class="pagination" style="text-align: center;">
+                <ul>
+                  <li id="prev" class="disabled"><a style="pointer-events: none;" href="#story" ><<</a></li>
+                <li id="1" class="disabled"><a style="pointer-events: none;" href="#feature-story" >1</a></li>
+                <li id="2"><a href="#story" >2</a></li>
+                <li id="3"><a href="#story">3</a></li>
+                <li id="next"><a href="#story" >>></a></li>
+              </ul>
+            </div>
+
+
         </div>
         <div class="span5">
             <center>
 
                 <h2>Vignettes</h2>
 
-                <a data-toggle="modal" href="#myModal"><img class="vignette" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
 
-                <a data-toggle="modal" href="#myModal2"><img class="vignette" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal2"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
 
-                <a data-toggle="modal" href="#myModal3"><img class="vignette" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal3"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
 
-                <a data-toggle="modal" href="#myModal4"><img class="vignette" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal4"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
 
-                <a data-toggle="modal" href="#myModal5"><img class="vignette" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal5"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
 
-                <a data-toggle="modal" href="#myModal6"><img class="vignette" src="http://placehold.it/200x200"></a>
-                <a data-toggle="modal" href="#myModal6"><img class="vignette" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal6"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
+                <a data-toggle="modal" href="#myModal6"><img class="vignette img-polaroid" src="http://placehold.it/200x200"></a>
 
             </center>
 
@@ -248,6 +267,57 @@ Template Name: LGBT Grad Issue 2014
 	<!-- end modal content-->
     </div>
 </div>
+</div>
 </body>
+
+<script type="text/javascript">
+  /* feature story */
+  $(".story-page").hide();
+  $("#story-page-1").show();
+  var currPage = 1;
+  
+  $(".pagination li a").click(function(event){
+  $(".story-page").hide();
+  $(".pagination li").removeClass('disabled');
+  $(".pagination li a").css('pointer-events', '');
+      var id = $(this).parent().attr('id')
+  
+  if( id.localeCompare( "prev" ) == 0 ) {
+    currPage--;
+    $("#story-page-" + currPage.toString()).fadeIn(200);
+    $("#" + currPage.toString() ).addClass('disabled');
+    $("#" + currPage.toString() + " a").css('pointer-events', 'none');
+    if( currPage == 1 ) {
+        $("#prev").addClass('disabled');
+      $("#prev a").css('pointer-events', 'none');
+    }
+       }
+  else if( id.localeCompare( "next" ) == 0 ) {
+    currPage++;
+      $("#" + currPage.toString()).addClass('disabled');
+    $("#" + currPage.toString() + " a").css('pointer-events', 'none');
+    $("#story-page-" + currPage.toString()).fadeIn(200);
+    if( currPage == 3 ) {
+      $("#next").addClass('disabled');
+      $("#next a").css('pointer-events', 'none');
+    }
+  }
+       else {
+    currPage = parseInt(id);
+    $("#" + id).addClass('disabled');
+    $("#" + id + " a").css('pointer-events', 'none');
+    $("#story-page-" + id).fadeIn(200);
+
+    if( parseInt( id ) == 3 ) {
+      $("#next").addClass('disabled');
+      $("#next a").css('pointer-events', 'none');
+              }
+    else if( parseInt( id ) == 1 ) {
+      $("#prev").addClass('disabled');
+      $("#prev a").css('pointer-events', 'none');
+              }
+       }
+  });
+</script>
 
 <?php get_footer(); ?>
