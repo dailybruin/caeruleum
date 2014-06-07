@@ -151,6 +151,11 @@ h2 span {
         </div>
         <div class="span5">
 
+		<center>
+		<h1>Vignettes</h1>
+		<h5>(Click images to view)</h5>
+		</center>
+
                 <a data-toggle="modal" href="#myModal">
       <div class="vignette-photo img-polaroid" style="text-align: right;">
         <img src="http://dailybruin.com/images/2014/06/leiza_castillo_mug.jpg">
