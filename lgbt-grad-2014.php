@@ -427,7 +427,7 @@ h2 span {
       $("#" + currPage.toString()).addClass('disabled');
     $("#" + currPage.toString() + " a").css('pointer-events', 'none');
     $("#story-page-" + currPage.toString()).fadeIn(200);
-    if( currPage == 3 ) {
+    if( currPage == 2 ) {
       $("#next").addClass('disabled');
       $("#next a").css('pointer-events', 'none');
     }
@@ -438,7 +438,7 @@ h2 span {
     $("#" + id + " a").css('pointer-events', 'none');
     $("#story-page-" + id).fadeIn(200);
 
-    if( parseInt( id ) == 3 ) {
+    if( parseInt( id ) == 2 ) {
       $("#next").addClass('disabled');
       $("#next a").css('pointer-events', 'none');
               }
