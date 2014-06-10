@@ -301,7 +301,7 @@ Template Name: USAC Elections 2014
             <h3>External Vice President</h3>
             <h4 class="endorsementname">Conrad Contreras</h4>
             <h4 class="candinfoend">LET'S ACT!</h4>
-            <h4 class="greyer">52.4%</h4>
+            <h4 class="greyer">54.9%</h4>
           </div>
         </div>
       </li>
