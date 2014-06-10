@@ -44,25 +44,26 @@ h2 span {
                     <h5>BY TALA AHMADI</h5>
 
       <div class="story-page" id="story-page-1">
+        <p><em>The original version of this article contained multiple errors and has been changed. See the bottom of the article for more information.</em></p>
         <p>Natalie Kirsten remembers wanting to be straight for most of her teenage years.</p>
 
         <p>Growing up in a conservative Colorado town, Kirsten often thought her sexuality had to comply with the strict Christian ideals her community promoted, which included heterosexuality.</p>
 
-        <p>But when she left home for UCLA, she started to feel different.She said she was able to embrace her sexualityfor the first timebecause she felt accepted by other students.With this change, she came to the realization that her religion and sexual orientation were not as conflicting as she thought.</p>
+        <p>But when she left home for UCLA, she started to feel different. She said she was able to embrace her sexuality for the first time because she felt accepted by other students. With this change, she came to the realization that her religion and sexual orientation were not as conflicting as she thought.</p>
 
-        <p>"These two parts of me, they work together,"said Kirsten, a first-year undeclared student who identifies as lesbian and Christian."My Christian identity just means that I love everybody ... and my lesbian identity just means that I am attracted to women and I understand things a little differently."</p>
+        <p>"These two parts of me, they work together," said Kirsten, a first-year undeclared student who identifies as lesbian and Christian. "My Christian identity just means that I love everybody ... and my lesbian identity just means that I am attracted to women and I understand things a little differently."</p>
 
         <p>Kirsten now attends the Founders Metropolitan Community Church in Los Feliz, which focuses on inclusivity of the lesbian, gay, bisexual, transgender, queer and intersex community and also caters to a predominantly LGBT congregation.</p>
 
-        <p>Houses of worship that are geared toward the LGBT population are growing in number across the nationand signify increasing connections between the religious and LGBT communities.</p>
+        <p>Houses of worship that are geared toward the LGBT population are growing in number across the nation and signify increasing connections between the religious and LGBT communities.</p>
 
-        <p>There are currently more than 6,700 LGBT-affirming churches in the U.S., according toa church directory compiled by God's Agape Love (Put) Into Practice, a nonprofit organization.</p>
+        <p>There are currently more than 6,700 LGBT-affirming churches in the U.S., according to a church directory compiled by God's Agape Love (Put) Into Practice, a nonprofit organization.</p>
 
-        <p>"During the last 50 years, we see some people being very harsh and bitter," saidFather Chris Ponnet, spiritual director for the Archdiocese of Los Angeles Office of Catholic Ministry with Lesbian and Gay Persons. "Now we are in a period of time where, in the last eight or 10 years, civil society is beginning to look at what a committed relationship means in the gay and lesbian experience."</p>
+        <p>"During the last 50 years, we see some people being very harsh and bitter," said Father Chris Ponnet, spiritual director for the Archdiocese of Los Angeles Office of Catholic Ministry with Lesbian and Gay Persons. "Now we are in a period of time where, in the last eight or 10 years, civil society is beginning to look at what a committed relationship means in the gay and lesbian experience."</p>
 
         <p>Ponnet said that while the Catholic Church does not bless LGBT relationships, he thinks the church's outlook on LGBT inclusion is changing.</p>
 
-        <p>Reverend Doctor Neil Thomas,senior pastor at the Metropolitan Community Church, saidhe thinks that stereotypes about religious and LGBT communities being in conflict have roots in American culture.</p>
+        <p>Reverend Doctor Neil Thomas, senior pastor at the Metropolitan Community Church, said he thinks that stereotypes about religious and LGBT communities being in conflict have roots in American culture.</p>
 
         <p>"I think that the dominant culture, especially in this country, is one that says, 'Thou shalt not. You shalt not be a homosexual and a Christian,'" Thomas said. "Many LGBT people grow up with that rhetoric, both from the church and from culture."</p>
 
@@ -74,13 +75,13 @@ h2 span {
 
         <p>Some LGBT UCLA students said they have felt rejected by members of the church in campus organizations.</p>
 
-        <p>Steven Mion, a first-year political science student who identifies as gay and Methodist, said the first time he felt uncomfortable being with fellow Christians because of his sexuality was when he arrived at UCLA.</p>
+        <p>Steven Mion, a first-year political science student who identifies as queer and Methodist, said the first time he felt uncomfortable being with fellow Christians because of his sexuality was when he arrived at UCLA.</p>
 
         <p>Mion signed up for a Christian fellowship in the beginning of the school year without disclosing his sexuality. He said he remembers telling some members about his desire to incorporate more LGBT people in the church.</p>
 
         <p>The responses of the students in the fellowship left him surprised and confused, he said.</p>
 
-        <p>"That was the first time - I'll never forget it - I ever heard the language of 'love the sinner, hate the sin,'"Mionsaid. "At that point, they didn't know they were addressing me as an LGBT person ... and I had no idea how to respond."</p>
+        <p>"That was the first time - I'll never forget it - I ever heard the language of 'love the sinner, hate the sin,'"Mion said. "At that point, they didn't know they were addressing me as an LGBT person ... and I had no idea how to respond."</p>
 
         <p>Despite this instance, Mion continued to attend the group's meetings, hoping to change the fellowship's perspective on being both Christian and gay</p>
         <p>After a few more gatherings, he said he decided to be honest with the fellowship, so he told the lead pastor about his sexuality.</p></p>
@@ -105,7 +106,7 @@ h2 span {
        <i>Page 2 of 2 </i><br/><br/>
           <p>Sam Haws, a third-year economics student who identifies as gay and an agnostic theist, grew up in a strict Mormon household where he woke up every day at 6 a.m. to attend seminary, or Mormon church school.</p>
 
-          <p>Haws said he thinks the high standards of the Mormon Church made him who he is today, buthe still finds some of the values of the Mormon Church limiting.</p>
+          <p>Haws said he thinks the high standards of the Mormon Church made him who he is today, but he still finds some of the values of the Mormon Church limiting.</p>
 
           <p>"I got really incredible values from (the Mormon faith), but I think it is very damaging to grow up, especially when you are an LGBT person ... in that environment and feel as though you can't explore who you are," Haws said.
           He added that he thinks the Mormon faith is becoming more accepting.</p>
@@ -119,18 +120,19 @@ h2 span {
 
           <p>Chaplin applied to rabbinical schools when she graduated college before the policy change, but said she decided to withdraw her applications after realizing she would have to hide a part of herself.</p>
 
-          <p>"I needed to be grounded in myself and have the freedom to move,"Chaplin said. "I felt like I was grounded, but I didn't have the freedom to move."</p>
+          <p>"I needed to be grounded in myself and have the freedom to move," Chaplin said. "I felt like I was grounded, but I didn't have the freedom to move."</p>
 
           <p>When she made the decision to withdraw her application, she said she found herself straying away from her Jewish faith.</p>
 
           <p>But working with California Faith for Equality, a nonprofit multifaith organization that aims to lift people out of difficult life circumstances, brought her back to her religion. Through working with this organization, Chaplin said she realized she had to stop neglecting the religious aspect of her identity.</p>
-          <p>"I decided to stop running from what was clearly the way I intended to bring Torah  into this world and bring generative energy into this world," Chaplin said.</p>
+          <p>"I decided to stop running from what was clearly the way I intended to bring Torah into this world and bring generative energy into this world," Chaplin said.</p>
 
           <p>Chaplin reapplied to the Ziegler School in 2010, and has one more year left before completing her studies there.</p>
 
           <p>For Mion, instead of trying to change the views of student groups that are not inclusive for the LGBT community, he plans to show his dedication to both the Christian and LGBT communities by following the lessons in the Bible and simultaneously embracing his sexuality.</p>
 
           <p>"To me, the genuine form of outreach in ministry is to model it," Mion said. "If you are living as a model to that, as a testament to God's love ... that's a more compelling conversation of what it means to have faith and a relationship with God."</p>
+          <p><strong>Correction:</strong> <em>Heckel identifies as a straight transgender man. Mion identifies as queer. Heckel wanted to run away from his emerging gender identity.</em></p>
       </div>
       </div>
                 </section>
@@ -217,7 +219,7 @@ h2 span {
 
               <p>Castillo, a third-year English student who identifies as lesbian and Catholic, immigrated from the Philippines to the United States when she was 5 years old. She said she was raised Catholic, but her family lost touch with their faith when they got to the U.S.</p>
 
-              <p>About a year ago, she returned to her faith after attending a Biblestudy at UCLA, where the story of Jesus inspired her.</p>
+              <p>About a year ago, she returned to her faith after attending a Bible study at UCLA, where the story of Jesus inspired her.</p>
 
               <p>"I didn't feel so loved growing up, and hearing the story of Jesus Christ dying on the cross for human beings - for us - stirred up something in me ... that I really could be loved by this person," Castillo said.</p>
 
@@ -241,9 +243,9 @@ h2 span {
             </div>
             <div class="modal-body">
               <img src="http://dailybruin.com/images/2014/06/kerry_chaplin.jpg"><br/><br/>
-              <p>Kerry Chaplin still remembers picking up the phone about 10 years ago to break the news to two rabbinical schools she desperately wanted to attend. She told them she needed to withdraw her application becauseshe was gay and wasn't allowed to apply.</p>
+              <p>Kerry Chaplin still remembers picking up the phone about 10 years ago to break the news to two rabbinical schools she desperately wanted to attend. She told them she needed to withdraw her application because she was gay and wasn't allowed to apply.</p>
 
-              <p>Even when the Ziegler School of Rabbinic Studies changed its policy in 2005 to allow applications from members of the LGBT community, Chaplin, a rabbinic intern for Hillel at UCLA,distanced herself from her faith.</p>
+              <p>Even when the Ziegler School of Rabbinic Studies changed its policy in 2005 to allow applications from members of the LGBT community, Chaplin, a rabbinic intern for Hillel at UCLA, distanced herself from her faith.</p>
 
               <p>Chaplin said she spent the next few years after withdrawing her application trying to answer some of her biggest questions in life.</p>
 
@@ -269,7 +271,7 @@ h2 span {
               <img src="http://dailybruin.com/images/2014/06/merry_drake.jpg"><br/><br/>
               <p><i>Editor's note: At Merry Drake's request, the Daily Bruin refers to Drake as "they."</i></p>
 
-              <p>Merry Drake sleeps on the floor of their friend's dorm some nights to attend the late-night meetings for the three campus Christian groups they area part of.</p>
+              <p>Merry Drake sleeps on the floor of their friend's dorm some nights to attend the late-night meetings for the three campus Christian groups they are a part of.</p>
 
               <p>Achieving this comfort with their religion took Drake, a third-year mathematics student who identifies as bisexual and genderqueer, a while to achieve. </p>
 
@@ -297,11 +299,11 @@ h2 span {
 
               <p>Just a few years later, he told them he was gay.</p>
 
-              <p>Haws, a third-year economics student who identifies as gay and an agnostic theist, grew up in a strict Mormon household that, while he said was unconditionally loving, haddifficulty accepting his sexuality.</p>
+              <p>Haws, a third-year economics student who identifies as gay and an agnostic theist, grew up in a strict Mormon household that, while he said was unconditionally loving, had difficulty accepting his sexuality.</p>
 
               <p>Haws said his sister came out to his parents when he was 12 years old, and her experience helped pave the way for him.</p>
 
-              <p>"Having her example definitely was a big part of me learning how to accept myself," Haws said."Seeing what she had done and how hard it was for her, it was easier for me to navigate."</p>
+              <p>"Having her example definitely was a big part of me learning how to accept myself," Haws said. "Seeing what she had done and how hard it was for her, it was easier for me to navigate."</p>
 
               <p>Haws said he has learned to not let any environment suppress his identity if he wants to be totally comfortable with who he is.</p>
 
@@ -324,9 +326,9 @@ h2 span {
             <div class="modal-body">
               <img src="http://dailybruin.com/images/2014/06/shen_heckel.jpg"><br/><br/>
     
-              <p>For Shen Heckel, abandoning his faith was never an option. It was his emerging sexuality that he wanted to run away from. </p>
+              <p>For Shen Heckel, abandoning his faith was never an option. It was his emerging gender identity that he wanted to run away from. </p>
 
-              <p>Heckel, a UCLA alumnus who identifies as Catholic and a transgender man, said he wondered if he still belonged in the church after realizing his true identity. </p>
+              <p>Heckel, a UCLA alumnus who identifies as Catholic and a straight transgender man, said he wondered if he still belonged in the church after realizing his true identity. </p>
 
               <p>Despite Heckel's perceived divide between the Catholic and transgender communities, he said he eventually found peace by connecting with someone who was going through a similar experience.</p>
 
@@ -358,7 +360,7 @@ h2 span {
 
               <p>She said her solid dedication to her faith manifested itself after undergoing a life-threatening experience when she was younger.</p>   
 
-              <p>When she was 13, Kirstenwas hit by a car and spent 12 days in the hospital because of a severe brain injury. Her stay included three days in the intensive care unit.</p>
+              <p>When she was 13, Kirsten was hit by a car and spent 12 days in the hospital because of a severe brain injury. Her stay included three days in the intensive care unit.</p>
 
               <p>"Over my healing process, I discovered that I was healing really quickly and really well and I could feel God's presence in my life at that point, so my faith was something I could never abandon," she said.</p>
 
@@ -380,9 +382,9 @@ h2 span {
             </div>
             <div class="modal-body">
               <img src="http://dailybruin.com/images/2014/06/steven_mion.jpg"><br/><br/>
-              <p>When Steven Mioncame out in high school he had the full support of his family and church, who he said were overwhelmingly accepting of the LGBT community.</p>
+              <p>When Steven Mion came out in high school he had the full support of his family and church, who he said were overwhelmingly accepting of the LGBT community.</p>
 
-              <p>"I don't think I appreciated that I got a huge burden off my shoulders at the time. ... A lot of people found resistance there, and I could find support. I could find affirmation there," said Mion, afirst-year political science student who identifies as gay andMethodist.</p>
+              <p>"I don't think I appreciated that I got a huge burden off my shoulders at the time. ... A lot of people found resistance there, and I could find support. I could find affirmation there," said Mion, a first-year political science student who identifies as queer and Methodist.</p>
 
               <p>Mion said that his experience with some members of Christian groups on campus who said they wanted to "fix" or "help" him because of his sexuality presented a stark contrast to the environment he grew up in. </p>
 
