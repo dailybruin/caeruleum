@@ -75,7 +75,7 @@ h2 span {
 
         <p>Some LGBT UCLA students said they have felt rejected by members of the church in campus organizations.</p>
 
-        <p>Steven Mion, a first-year political science student who identifies as queer and Methodist, said the first time he felt uncomfortable being with fellow Christians because of his sexuality was when he arrived at UCLA.</p>
+        <p>Steven Mion, a first-year political science student who identifies as gay and Methodist, said the first time he felt uncomfortable being with fellow Christians because of his sexuality was when he arrived at UCLA.</p>
 
         <p>Mion signed up for a Christian fellowship in the beginning of the school year without disclosing his sexuality. He said he remembers telling some members about his desire to incorporate more LGBT people in the church.</p>
 
@@ -104,7 +104,7 @@ h2 span {
     </div>
       <div class="story-page" id="story-page-2">
        <i>Page 2 of 2 </i><br/><br/>
-          <p>Sam Haws, a third-year economics student who identifies as gay and an agnostic theist, grew up in a strict Mormon household where he woke up every day at 6 a.m. to attend seminary, or Mormon church school.</p>
+          <p>Sam Haws, a third-year economics student who identifies as queer and an agnostic theist, grew up in a strict Mormon household where he woke up every day at 6 a.m. to attend seminary, or Mormon church school.</p>
 
           <p>Haws said he thinks the high standards of the Mormon Church made him who he is today, but he still finds some of the values of the Mormon Church limiting.</p>
 
@@ -132,7 +132,7 @@ h2 span {
           <p>For Mion, instead of trying to change the views of student groups that are not inclusive for the LGBT community, he plans to show his dedication to both the Christian and LGBT communities by following the lessons in the Bible and simultaneously embracing his sexuality.</p>
 
           <p>"To me, the genuine form of outreach in ministry is to model it," Mion said. "If you are living as a model to that, as a testament to God's love ... that's a more compelling conversation of what it means to have faith and a relationship with God."</p>
-          <p><strong>Correction:</strong> <em>Heckel identifies as a straight transgender man. Mion identifies as queer. Heckel wanted to run away from his emerging gender identity.</em></p>
+          <p><strong>Correction:</strong> <em>Heckel identifies as a straight transgender man. Haws identifies as queer. Heckel wanted to run away from his emerging gender identity.</em></p>
       </div>
       </div>
                 </section>
@@ -297,9 +297,9 @@ h2 span {
               <img src="http://dailybruin.com/images/2014/06/sam_haws.jpg"><br/><br/>
               <p>Sam Haws remembers campaigning with his family to ban gay marriage in California in 2008.</p>
 
-              <p>Just a few years later, he told them he was gay.</p>
+              <p>Just a few years later, he told them he was queer.</p>
 
-              <p>Haws, a third-year economics student who identifies as gay and an agnostic theist, grew up in a strict Mormon household that, while he said was unconditionally loving, had difficulty accepting his sexuality.</p>
+              <p>Haws, a third-year economics student who identifies as queer and an agnostic theist, grew up in a strict Mormon household that, while he said was unconditionally loving, had difficulty accepting his sexuality.</p>
 
               <p>Haws said his sister came out to his parents when he was 12 years old, and her experience helped pave the way for him.</p>
 
@@ -384,7 +384,7 @@ h2 span {
               <img src="http://dailybruin.com/images/2014/06/steven_mion.jpg"><br/><br/>
               <p>When Steven Mion came out in high school he had the full support of his family and church, who he said were overwhelmingly accepting of the LGBT community.</p>
 
-              <p>"I don't think I appreciated that I got a huge burden off my shoulders at the time. ... A lot of people found resistance there, and I could find support. I could find affirmation there," said Mion, a first-year political science student who identifies as queer and Methodist.</p>
+              <p>"I don't think I appreciated that I got a huge burden off my shoulders at the time. ... A lot of people found resistance there, and I could find support. I could find affirmation there," said Mion, a first-year political science student who identifies as gay and Methodist.</p>
 
               <p>Mion said that his experience with some members of Christian groups on campus who said they wanted to "fix" or "help" him because of his sexuality presented a stark contrast to the environment he grew up in. </p>
 
