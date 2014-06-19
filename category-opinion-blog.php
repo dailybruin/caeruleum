@@ -6,7 +6,7 @@ Template Name: Opinion Blog
 	
 	/*Daria's Style*/
 	.featured-img {margin: 10px 0 10px 0;}
-	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: "Open Sans", "Helvetica", sans-serif; font-size: 10pt; font-weight: bold;}
+	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: "Open Sans", sans-serif; font-size: 10pt; font-weight: bold; color: #fff; text-transform: uppercase;}
 	.c1 {background-color: #15134b; color: #fff;}
 	.c2 {background-color: #881e2f; color: #fff;}
 	.c3 {background-color: #19562a; color: #fff;}
@@ -106,14 +106,6 @@ Template Name: Opinion Blog
         background-color: black;
     }
 
-	.columnist-cat.cat-online {
-		background-color: yellow;
-	}
-
-	.columnist-cat.cat-dailybruin {
-		background-color: blue;
-	}
-
     @media (min-width: 768px) and (max-width: 979px) {
         .columnist-column {
             text-align: center;
@@ -141,10 +133,45 @@ Template Name: Opinion Blog
         }
     }
 
+	.cat-sports {
+		background-color: #881e2f;
+	}
+
+	.cat-community {
+		background-color: #19562a;
+	}
+
+	.cat-news {
+		background-color: #c7ba26;
+	}
 </style>
 
-<body>
+<?php
+	$slug_to_cat = array(
+			'sports' => array('name' => 'Sports', 'css' => 'cat-sports'),
+			'community' => array('name' => 'Community', 'css' => 'cat-community'),
+			'news' => array('name' => 'News', 'css' => 'cat-news')
+		);
 
+	$contributors = array(
+		array(
+			'email' => 'ndelgadillo@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4684.jpg?1752233920',
+			'slugs' => array('sports', 'community')
+			),
+		array(
+			'email' => 'rnelson@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4771.jpg?1934400204',
+			'slugs' => array('news', 'fake')
+			),
+		array(
+			'email' => 'atashman@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4751.jpg?2076310971',
+			'slugs' => array('community', 'community')
+			)
+		);
+?>
+<body>
 <h1>Opinion Blog</h1>
         
     <div class="container-fluid">
@@ -164,7 +191,7 @@ Template Name: Opinion Blog
 					echo the_post_thumbnail('large');
 			?>
 
-			<div class="category c1">OPINION</div>
+			<div class="category <?php echo $slug_to_cat['community']['css'] ?>">OPINION</div>
 			<div class="feature-date">
 				<?php the_time('F j, Y'); ?>
 			</div>
@@ -182,6 +209,56 @@ Template Name: Opinion Blog
 				</p>
 			</div>
 			<?php endforeach; ?>
+		
+		<?php
+			foreach ( $slug_to_cat as $slug => $cat) :
+		?>
+			<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+
+			<div class="category <?php echo $cat['css'] ?>"><?php echo $cat['name'] ?></div>
+
+			<div class="row-fluid">
+				<div class="span5">
+					<?php
+						$categoryObject = get_category_by_slug($slug);
+						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+						
+						$posts = get_posts( $args );
+
+						$i = 0;
+						foreach ( $posts as $post ) : setup_postdata( $post );
+							if($i == 0) :
+								if ( '' != get_the_post_thumbnail() ) : ?>
+									<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
+								<?php endif; ?>
+
+								<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
+
+								<span class="date"><?php the_time('M j, Y'); ?></span><br/>
+
+								<span class="author"><?php the_author(); ?></span>
+
+								<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
+
+								</div>
+
+								<div class="span7 recent-cols">
+
+							<?php else : ?>
+								<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
+
+								<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
+		
+							<?php endif; $i++; ?>
+						<?php endforeach; 
+						wp_reset_postdata(); ?>
+
+				</div>		
+			</div>
+		<?php
+			endforeach;
+		?>
+	     </div>
 
             <div class="span3" id="right-column">
             	<div id="widget-reaction-quote">
@@ -210,48 +287,26 @@ Template Name: Opinion Blog
                         wp_reset_postdata();
                     ?>
             	</div>
-				<?php
-					$contributors = array(
-						array(
-							'email' => 'ndelgadillo@media.ucla.edu',
-							'img' => 'http://dailybruin.com/images/userphoto/4684.jpg?1752233920',
-							'cats' => array('Online', 'Daily Bruin')
-							),
-						array(
-							'email' => 'rnelson@media.ucla.edu',
-							'img' => 'http://dailybruin.com/images/userphoto/4771.jpg?1934400204',
-							'cats' => array('Online', 'Daily Bruin')
-							),
-						array(
-							'email' => 'atashman@media.ucla.edu',
-							'img' => 'http://dailybruin.com/images/userphoto/4751.jpg?2076310971',
-							'cats' => array('Online', 'Daily Bruin')
-							)
-						);
-					$cat_to_css = array(
-							'Online' => 'cat-online',
-							'Daily Bruin' => 'cat-dailybruin'
-						);
-				?>
                 <div class="columnist-column">
                     <h2 class="widget-title">Columnists</h2>
                     <?php
-                    	foreach ($contributors as $cont) :
-	                    	$user = get_user_by('email', $cont['email']);
+                    	foreach ($contributors as $contributor) :
+	                    	$user = get_user_by('email', $contributor['email']);
 	                    	$name = $user->first_name . ' ' . $user->last_name;
                     ?>
                     <div class="row-fluid columnist-row">
                     	<div id="columnist-mugshot" class="span5">
-                    		<img src="<?php echo $cont['img'] ?>" alt="<?php echo $name ?>">
+                    		<img src="<?php echo $contributor['img'] ?>" alt="<?php echo $name ?>">
                 		</div>
                 		<div id="columnist-info" class="span7 columnist-info">
                 			<div class="columnist-name"><?php echo $name ?></div>
                 			<?php 
-                				foreach ($cont['cats'] as $cat) :
+                				foreach ($contributor['slugs'] as $contributor_slug) :
+                					$contributor_cat = $slug_to_cat[$contributor_slug];
             				?>
 	            				<div class="columnist-line">
 	            					<div class="columnist-line-content">
-	                                    <span class="columnist-cat <?php echo $cat_to_css[$cat]?>"></span><span class="columnist-text"> <?php echo $cat ?></span>
+	                                    <span class="columnist-cat <?php echo $contributor_cat['css'] ?>"></span><span class="columnist-text"> <?php echo $contributor_cat['name'] ?></span>
 	                                </div>
 	                            </div>
                             <?php
