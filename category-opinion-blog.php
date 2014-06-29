@@ -134,24 +134,30 @@ Template Name: Opinion Blog
         }
     }
 
+	.cat-idle-thoughts {
+		background-color: #660066;
+	}
+
+	.cat-political-commentary {
+		background-color: #19562a;
+	}
+
+	.cat-social-commentary {
+		background-color: #c7ba26;
+	}
+
 	.cat-sports {
 		background-color: #881e2f;
 	}
 
-	.cat-community {
-		background-color: #19562a;
-	}
-
-	.cat-news {
-		background-color: #c7ba26;
-	}
 </style>
 
 <?php
 	$slug_to_cat = array(
-			'sports' => array('name' => 'Sports', 'css' => 'cat-sports'),
-			'community' => array('name' => 'Community', 'css' => 'cat-community'),
-			'news' => array('name' => 'News', 'css' => 'cat-news')
+			'idle-thoughts' => array('name' => 'Idle Thoughts', 'css' => 'cat-idle-thoughts'),
+			'political-commentary' => array('name' => 'Political Commentary', 'css' => 'cat-political-commentary'),
+			'social-commentary' => array('name' => 'Social Commentary', 'css' => 'cat-social-commentary'),
+			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports')
 		);
 
 	$contributors = array(
@@ -173,7 +179,7 @@ Template Name: Opinion Blog
 		);
 ?>
 <body>
-<h1>Opinion Blog</h1>
+<h1>Two Cents</h1>
         
     <div class="container-fluid">
         <div class="row-fluid">
