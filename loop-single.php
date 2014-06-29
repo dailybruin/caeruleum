@@ -42,6 +42,19 @@
         	case "Video":
         		$videoStory = true;
         		break(2);
+			case "Idle Thoughts":
+				the_blog_banner('two-cents-idle-thoughts');
+				break(2);
+			case "Political Commentary":
+				the_blog_banner('two-cents-political-commentary');
+				break(2);
+			case "Social Commentary":
+				the_blog_banner('two-cents-social-commentary');
+				break(2);
+		}
+		if ($cat->slug == "sports-two-cents")
+		{
+			the_blog_banner('two-cents-sports');
 		}
 	}
 	// Find out if this is a video story

@@ -32,9 +32,25 @@
                 	case "Timestamp":
                 		the_blog_banner('timestamp');
                 		break;
+                  case "Idle Thoughts":
+                    the_blog_banner('two-cents-idle-thoughts');
+                    break;
+                  case "Political Commentary":
+                    the_blog_banner('two-cents-political-commentary');
+                    break;
+                  case "Social Commentary":
+                    the_blog_banner('two-cents-social-commentary');
+                    break;
                 	default:
                 		echo $categoryTitle;
-                }				
+                }		
+                foreach(get_the_category() as $cat)
+                {
+                  if ($cat->slug == "sports-two-cents")
+                  {
+                    the_blog_banner('two-cents-sports');
+                  }
+                }
               }
             ?>
           </h1>

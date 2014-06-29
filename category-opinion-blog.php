@@ -133,24 +133,30 @@ Template Name: Opinion Blog
         }
     }
 
+	.cat-idle-thoughts {
+		background-color: #660066;
+	}
+
+	.cat-political-commentary {
+		background-color: #19562a;
+	}
+
+	.cat-social-commentary {
+		background-color: #c7ba26;
+	}
+
 	.cat-sports {
 		background-color: #881e2f;
 	}
 
-	.cat-community {
-		background-color: #19562a;
-	}
-
-	.cat-news {
-		background-color: #c7ba26;
-	}
 </style>
 
 <?php
 	$slug_to_cat = array(
-			'sports' => array('name' => 'Sports', 'css' => 'cat-sports'),
-			'community' => array('name' => 'Community', 'css' => 'cat-community'),
-			'news' => array('name' => 'News', 'css' => 'cat-news')
+			'idle-thoughts' => array('name' => 'Idle Thoughts', 'css' => 'cat-idle-thoughts'),
+			'political-commentary' => array('name' => 'Political Commentary', 'css' => 'cat-political-commentary'),
+			'social-commentary' => array('name' => 'Social Commentary', 'css' => 'cat-social-commentary'),
+			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports')
 		);
 
 	$contributors = array(
@@ -172,26 +178,33 @@ Template Name: Opinion Blog
 		);
 ?>
 <body>
-<h1>Opinion Blog</h1>
+<h1>Two Cents</h1>
         
     <div class="container-fluid">
         <div class="row-fluid">
 
             <div class="span5">
             <?php 
-				$categoryObject = get_category_by_slug('community');
 				$args = array(
 					'posts_per_page'   => 1, 
-					'category' => $categoryObject->cat_ID);
+					'tag' => 'op-feature');
 
 				$posts = get_posts($args);
 
 				foreach ($posts as $post) :
 					setup_postdata($post);
+					$categories = get_the_category($post->ID);
 					echo the_post_thumbnail('large');
+
+				foreach ($categories as $cat) {
+					if($cat->name == 'Idle Thoughts' || $cat->name == 'Political Commentary' || $cat->name == 'Social Commentary' || $cat->name == 'Sports'){
+						$category = $cat->slug;
+						break;
+					}
+				}
 			?>
 
-			<div class="category <?php echo $slug_to_cat['community']['css'] ?>">OPINION</div>
+			<div class="category <?php echo $slug_to_cat[$category]['css'] ?>"><?php echo $slug_to_cat[$category]['name'] ?></div>
 			<div class="feature-date">
 				<?php the_time('F j, Y'); ?>
 			</div>
@@ -220,8 +233,9 @@ Template Name: Opinion Blog
 			<div class="row-fluid">
 				<div class="span5">
 					<?php
+						$featureTags = array('7484');
 						$categoryObject = get_category_by_slug($slug);
-						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID, 'tag__not_in' => $featureTags);
 						
 						$posts = get_posts( $args );
 
