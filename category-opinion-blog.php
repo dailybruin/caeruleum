@@ -186,19 +186,26 @@ Template Name: Opinion Blog
 
             <div class="span5">
             <?php 
-				$categoryObject = get_category_by_slug('community');
 				$args = array(
 					'posts_per_page'   => 1, 
-					'category' => $categoryObject->cat_ID);
+					'tag' => 'op-feature');
 
 				$posts = get_posts($args);
 
 				foreach ($posts as $post) :
 					setup_postdata($post);
+					$categories = get_the_category($post->ID);
 					echo the_post_thumbnail('large');
+
+				foreach ($categories as $cat) {
+					if($cat->name == 'Idle Thoughts' || $cat->name == 'Political Commentary' || $cat->name == 'Social Commentary' || $cat->name == 'Sports'){
+						$category = $cat->slug;
+						break;
+					}
+				}
 			?>
 
-			<div class="category <?php echo $slug_to_cat['community']['css'] ?>">OPINION</div>
+			<div class="category <?php echo $slug_to_cat[$category]['css'] ?>"><?php echo $slug_to_cat[$category]['name'] ?></div>
 			<div class="feature-date">
 				<?php the_time('F j, Y'); ?>
 			</div>
@@ -227,8 +234,9 @@ Template Name: Opinion Blog
 			<div class="row-fluid">
 				<div class="span5">
 					<?php
+						$featureTags = array('7484');
 						$categoryObject = get_category_by_slug($slug);
-						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID, 'tag__not_in' => $featureTags);
 						
 						$posts = get_posts( $args );
 
