@@ -32,6 +32,15 @@
                 	case "Timestamp":
                 		the_blog_banner('timestamp');
                 		break;
+                  case "Idle Thoughts":
+                    the_blog_banner('two-cents-idle-thoughts');
+                    break;
+                  case "Political Commentary":
+                    the_blog_banner('two-cents-political-commentary');
+                    break;
+                  case "Social Commentary":
+                    the_blog_banner('two-cents-social-commentary');
+                    break;
                 	default:
                 		echo $categoryTitle;
                 }				

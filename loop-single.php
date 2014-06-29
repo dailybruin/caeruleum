@@ -42,6 +42,15 @@
         	case "Video":
         		$videoStory = true;
         		break(2);
+			case "Idle Thoughts":
+				the_blog_banner('two-cents-idle-thoughts');
+				break(2);
+			case "Political Commentary":
+				the_blog_banner('two-cents-political-commentary');
+				break(2);
+			case "Social Commentary":
+				the_blog_banner('two-cents-social-commentary');
+				break(2);
 		}
 	}
 	// Find out if this is a video story
