@@ -43,7 +43,14 @@
                     break;
                 	default:
                 		echo $categoryTitle;
-                }				
+                }		
+                foreach(get_the_category() as $cat)
+                {
+                  if ($cat->slug == "sports-two-cents")
+                  {
+                    the_blog_banner('two-cents-sports');
+                  }
+                }
               }
             ?>
           </h1>

@@ -52,6 +52,10 @@
 				the_blog_banner('two-cents-social-commentary');
 				break(2);
 		}
+		if ($cat->slug == "sports-two-cents")
+		{
+			the_blog_banner('two-cents-sports');
+		}
 	}
 	// Find out if this is a video story
 	// Expand this to do something better for multimedia/gallery display
