@@ -381,6 +381,5 @@ Template Name: Opinion Blog
 	</div>
     </div>
 </body>
-<script type="text/javascript" src="http://funbutlearn.disqus.com/recent_comments_widget.js?num_items=25&hide_avatars=0&avatar_size=40&excerpt_length=200"></script>
 
 <?php get_footer(); ?>
