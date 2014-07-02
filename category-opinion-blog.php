@@ -238,7 +238,7 @@ Template Name: Opinion Blog
 					echo the_post_thumbnail('large');
 
 				foreach ($categories as $cat) {
-					if($cat->name == 'Idle Thoughts' || $cat->name == 'Political Commentary' || $cat->name == 'Social Commentary' || $cat->name == 'Sports'){
+					if($cat->name == 'Idle Thoughts' || $cat->name == 'Political Commentary' || $cat->name == 'Social Commentary' || $cat->name == 'Sports' || $cat->name == "Two Cents"){
 						$category = $cat->slug;
 						break;
 					}
@@ -382,5 +382,6 @@ Template Name: Opinion Blog
 	</div>
     </div>
 </body>
+<script type="text/javascript" src="http://funbutlearn.disqus.com/recent_comments_widget.js?num_items=25&hide_avatars=0&avatar_size=40&excerpt_length=200"></script>
 
 <?php get_footer(); ?>
