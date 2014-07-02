@@ -72,6 +72,10 @@ Template Name: Opinion Blog
 		color: gray;
 	}
 
+	#blog-title {
+		font-family: Playfair Display SC;	
+	}
+
     /*Phillip's Style*/
     .columnist-row {
         margin-bottom: 20px;
@@ -150,6 +154,8 @@ Template Name: Opinion Blog
 		background-color: #881e2f;
 	}
 
+
+
 </style>
 
 <?php
@@ -162,24 +168,58 @@ Template Name: Opinion Blog
 
 	$contributors = array(
 		array(
+			'name' => 'Natalie Delgadillo',
 			'email' => 'ndelgadillo@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4684.jpg?1752233920',
-			'slugs' => array('sports', 'community')
+			'img' => 'http://dailybruin.com/images/userphoto/4783.jpg',
+			'slugs' => array('sports', 'community'),
+			'position' => 'Opinion Editor'
 			),
 		array(
+			'name' => 'Julia McCarthy',
+			'email' => 'jmccarthy@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4930.jpg',
+			'slugs' => array('sports'),
+			'position' => 'Assistant Opinion Editor'
+			),
+		array(
+			'name' => 'Aram Ghoogasian',
+			'email' => 'aghoogasian@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4894.jpg',
+			'slugs' => array('sports', 'community'),
+			'position' => 'Opinion Staff Writer'
+			),
+		array(
+			'name' => 'Jordan Lee',
+			'email' => 'jlee2@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4844.jpg',
+			'slugs' => array('sports', 'community'),
+			'position' => 'Sports Staff Writer'
+			),
+		array(
+			'name' => 'Chloe Lew',
+			'email' => 'clew@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/userphoto/4875.jpg',
+			'slugs' => array('sports', 'community'),
+			'position' => 'Opinion Staff Writer'
+			),
+		array(
+			'name' => 'Ryan Nelson',
 			'email' => 'rnelson@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4771.jpg?1934400204',
-			'slugs' => array('news', 'fake')
+			'img' => 'http://dailybruin.com/images/userphoto/4771.jpg',
+			'slugs' => array('news', 'fake'),
+			'position' => 'Opinion Staff Writer'
 			),
 		array(
+			'name' => 'Alexandra Tashman',
 			'email' => 'atashman@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4751.jpg?2076310971',
-			'slugs' => array('community', 'community')
+			'img' => 'http://dailybruin.com/images/userphoto/4751.jpg',
+			'slugs' => array('community', 'community'),
+			'position' => 'Prime Editor'
 			)
 		);
 ?>
 <body>
-<h1>Two Cents</h1>
+<h1 id="blog-title">Two Cents</h1>
         
     <div class="container-fluid">
         <div class="row-fluid">
@@ -311,21 +351,24 @@ Template Name: Opinion Blog
                     ?>
                     <div class="row-fluid columnist-row">
                     	<div id="columnist-mugshot" class="span5">
-                    		<img src="<?php echo $contributor['img'] ?>" alt="<?php echo $name ?>">
+                    		<img src="<?php echo $contributor['img'] ?>" alt="<?php echo $contributor['name'] ?>">
                 		</div>
                 		<div id="columnist-info" class="span7 columnist-info">
-                			<div class="columnist-name"><?php echo $name ?></div>
+                			<div class="columnist-name"><?php echo $contributor['name'] ?></div>
                 			<?php 
-                				foreach ($contributor['slugs'] as $contributor_slug) :
-                					$contributor_cat = $slug_to_cat[$contributor_slug];
+                				// foreach ($contributor['slugs'] as $contributor_slug) :
+                				// 	$contributor_cat = $slug_to_cat[$contributor_slug];
             				?>
 	            				<div class="columnist-line">
 	            					<div class="columnist-line-content">
-	                                    <span class="columnist-cat <?php echo $contributor_cat['css'] ?>"></span><span class="columnist-text"> <?php echo $contributor_cat['name'] ?></span>
+	                                    <span class="columnist-cat <?php echo $contributor_cat['css'] ?>"></span><span class="columnist-text"> 
+	                                    <?php echo $contributor['position'] ?>
+	                                    <!--<?php echo $contributor_cat['name'] ?>-->
+	                                    </span>
 	                                </div>
 	                            </div>
                             <?php
-                            	endforeach;
+                            	// endforeach;
                             ?>
                         </div>
                     </div>
