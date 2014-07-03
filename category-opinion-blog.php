@@ -2,6 +2,7 @@
 Template Name: Opinion Blog
 */ ?>
 <?php get_header(); ?>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
 <style>
 	
 	/*Daria's Style*/
