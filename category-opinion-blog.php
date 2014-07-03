@@ -6,7 +6,6 @@ Template Name: Opinion Blog
 	
 	/*Daria's Style*/
 	.featured-img {margin: 10px 0 10px 0;}
-	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: "Open Sans", "Helvetica", sans-serif; font-size: 10pt; font-weight: bold;}
 	.category {margin: 10px 0 5px 0; height: 24px; display: inline-block; padding: 2px 20px 0 20px; font-family: "Open Sans", sans-serif; font-size: 10pt; font-weight: bold; color: #fff; text-transform: uppercase;}
 	.c1 {background-color: #15134b; color: #fff;}
 	.c2 {background-color: #881e2f; color: #fff;}
@@ -154,8 +153,6 @@ Template Name: Opinion Blog
 		background-color: #881e2f;
 	}
 
-
-
 </style>
 
 <?php
@@ -163,7 +160,7 @@ Template Name: Opinion Blog
 			'idle-thoughts' => array('name' => 'Idle Thoughts', 'css' => 'cat-idle-thoughts'),
 			'political-commentary' => array('name' => 'Political Commentary', 'css' => 'cat-political-commentary'),
 			'social-commentary' => array('name' => 'Social Commentary', 'css' => 'cat-social-commentary'),
-			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports')
+			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports'),
 		);
 
 	$contributors = array(
