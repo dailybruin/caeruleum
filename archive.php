@@ -44,14 +44,12 @@
                 	default:
                 		echo $categoryTitle;
                 }
-                foreach(get_the_category() as $cat)
+                // Separate case for sports as its name is the same as several other categories
+                $cat = get_category(get_query_var('cat'));
+                if ($cat->slug == 'sports-two-cents')
                 {
-                  if ($cat->slug == "sports-two-cents")
-                  {
-                    the_blog_banner('two-cents-sports');
-                  }
+                  the_blog_banner('two-cents-sports');
                 }
-
               }
             ?>
           </h1>

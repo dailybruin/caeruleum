@@ -153,8 +153,6 @@ Template Name: Opinion Blog
 		background-color: #881e2f;
 	}
 
-
-
 </style>
 
 <?php
@@ -162,7 +160,7 @@ Template Name: Opinion Blog
 			'idle-thoughts' => array('name' => 'Idle Thoughts', 'css' => 'cat-idle-thoughts'),
 			'political-commentary' => array('name' => 'Political Commentary', 'css' => 'cat-political-commentary'),
 			'social-commentary' => array('name' => 'Social Commentary', 'css' => 'cat-social-commentary'),
-			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports')
+			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports'),
 		);
 
 	$contributors = array(
