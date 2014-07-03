@@ -2,8 +2,7 @@
 Template Name: Opinion Blog
 */ ?>
 <?php get_header(); ?>
-<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
-<style>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'><style>
 	
 	/*Daria's Style*/
 	.featured-img {margin: 10px 0 10px 0;}
@@ -73,7 +72,7 @@ Template Name: Opinion Blog
 	}
 
 	#blog-title {
-		font-family: Playfair Display SC;	
+		font-family: 'Playfair Display SC', serif;	
 	}
 
     /*Phillip's Style*/
