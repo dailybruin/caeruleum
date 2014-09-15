@@ -168,14 +168,14 @@ Template Name: Opinion Blog
 			'name' => 'Natalie Delgadillo',
 			'email' => 'ndelgadillo@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4783.jpg',
-			'slugs' => array('sports', 'community'),
+			'slugs' => array('idle-thoughts'),
 			'position' => 'Opinion Editor'
 			),
 		array(
 			'name' => 'Julia McCarthy',
 			'email' => 'jmccarthy@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4930.jpg',
-			'slugs' => array('sports'),
+			'slugs' => array('sports-two-cents'),
 			'position' => 'Assistant Opinion Editor'
 			),
 		array(
@@ -313,6 +313,7 @@ Template Name: Opinion Blog
 	     </div>
 
             <div class="span3" id="right-column">
+				<!-- 
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
                     <?php
@@ -339,6 +340,7 @@ Template Name: Opinion Blog
                         wp_reset_postdata();
                     ?>
             	</div>
+            	-->
                 <div class="columnist-column">
                     <h2 class="widget-title">Columnists</h2>
                     <?php
@@ -353,8 +355,8 @@ Template Name: Opinion Blog
                 		<div id="columnist-info" class="span7 columnist-info">
                 			<div class="columnist-name"><?php echo $contributor['name'] ?></div>
                 			<?php 
-                				// foreach ($contributor['slugs'] as $contributor_slug) :
-                				// 	$contributor_cat = $slug_to_cat[$contributor_slug];
+                				foreach ($contributor['slugs'] as $contributor_slug) ;
+                					$contributor_cat = $slug_to_cat[$contributor_slug];
             				?>
 	            				<div class="columnist-line">
 	            					<div class="columnist-line-content">
