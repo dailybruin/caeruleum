@@ -175,43 +175,36 @@ Template Name: Opinion Blog
 			'name' => 'Julia McCarthy',
 			'email' => 'jmccarthy@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4930.jpg',
-			'slugs' => array('sports-two-cents'),
+			'slugs' => array('social-commentary'),
 			'position' => 'Assistant Opinion Editor'
 			),
 		array(
 			'name' => 'Aram Ghoogasian',
 			'email' => 'aghoogasian@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4894.jpg',
-			'slugs' => array('sports', 'community'),
+			'slugs' => array('political-commentary'),
 			'position' => 'Opinion Staff Writer'
 			),
 		array(
 			'name' => 'Jordan Lee',
 			'email' => 'jlee2@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4844.jpg',
-			'slugs' => array('sports', 'community'),
+			'slugs' => array('sports-two-cents'),
 			'position' => 'Sports Staff Writer'
 			),
 		array(
 			'name' => 'Chloe Lew',
 			'email' => 'clew@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4875.jpg',
-			'slugs' => array('sports', 'community'),
+			'slugs' => array('social-commentary'),
 			'position' => 'Opinion Staff Writer'
 			),
 		array(
 			'name' => 'Ryan Nelson',
 			'email' => 'rnelson@media.ucla.edu',
 			'img' => 'http://dailybruin.com/images/userphoto/4771.jpg',
-			'slugs' => array('news', 'fake'),
+			'slugs' => array('idle-thoughts'),
 			'position' => 'Opinion Staff Writer'
-			),
-		array(
-			'name' => 'Alexandra Tashman',
-			'email' => 'atashman@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4751.jpg',
-			'slugs' => array('community', 'community'),
-			'position' => 'Prime Editor'
 			)
 		);
 ?>
