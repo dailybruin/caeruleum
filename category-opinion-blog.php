@@ -11,7 +11,7 @@ Template Name: Opinion Blog
 	.c2 {background-color: #881e2f; color: #fff;}
 	.c3 {background-color: #19562a; color: #fff;}
 	.c4 {background-color: #c7ba26; color: #fff;}
-	.feature-date {margin-top: 15px; text-align: right; float: right; color: #545454; font-size: 8pt;}
+	.feature-date {margin-top: 50px; text-align: right; float: right; color: #545454; font-size: 8pt;}
 	.date {color: #545454; font-size: 8pt;}
 	a.heading {color: #000; font-family: Georgia; font-size: 18.2pt; font-weight: bold; line-height: 1.1em;}
 	.author {text-transform: uppercase;font-weight: bold; font-family: Georgia;text-transform:uppercase;font-size:9pt;margin: 10px 0 5px 0;}
