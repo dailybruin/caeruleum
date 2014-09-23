@@ -75,6 +75,16 @@ Template Name: Opinion Blog
 		font-family: 'Playfair Display SC', serif;	
 	}
 
+	.header img {
+	  float: left;
+	  height: 70px;
+	}
+
+	.header h1 {
+	  position: relative;
+	  left: 10px;
+	}
+
     /*Phillip's Style*/
     .columnist-row {
         margin-bottom: 20px;
@@ -209,9 +219,15 @@ Template Name: Opinion Blog
 		);
 ?>
 <body>
-<h1 id="blog-title">Two Cents</h1>
+
         
     <div class="container-fluid">
+
+
+		<div class="row-fluid header">
+			<img src="http://dailybruin.com/images/2014/09/2centsblog-cropped.jpg" alt="logo">
+			<h1 id="blog-title">Two Cents</h1>
+		</div>
         <div class="row-fluid">
 
             <div class="span5">
