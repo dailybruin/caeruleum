@@ -42,7 +42,7 @@ Template Name: Registration Issue 2014
 
     .sidebar a {
         box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
-        margin-top: 4px;
+        margin-top: 5px;
         position: relative;
         display: block;
     }
@@ -242,9 +242,29 @@ Template Name: Registration Issue 2014
                 <h2>Nothing But Net</h2>
             </div>
             </a>
-            <div class="span4">
-                <a class="twitter-timeline" href="https://twitter.com/hashtag/myturn" data-widget-id="515986078524649473">#myturn Tweets</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <div class="span4 sidebar">
+                <a href="http://dailybruin.com/2014/09/28/ucla-lecturers-work-on-prison-program-allows-inmates-exposure-to-arts/">
+                <div class="feature-img-2">
+                    <img src="http://dailybruin.com/images/2014/09/web.ns_.reg_.skelly.onlineonly.jpg">
+                    <h5>Prison Arts Program</h5>
+                </div>
+                </a>
+                <a href="http://dailybruin.com/2014/09/28/fans-pay-homage-to-marilyn-monroe-at-westwood-village-memorial-park/">
+                <div class="feature-img-2">
+                    <img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.westwoodmemorial.picB_-640x4801.jpg">
+                    <h5>Radio: Westwood Village Memorial Park</h5>
+                </div>
+                </a>
+
+                <a href="http://dailybruin.com/2014/09/28/ucla-footballs-nate-iese-shuffles-through-many-positions-finds-niche/">
+                <div class="feature-img-2">
+                    <img src="http://dailybruin.com/images/2014/09/web.sp_.regissue.nateiese-640x427.jpg">
+                    <h5>Strong Side Story</h5>
+                </div>
+                </a>
+
+
+
             </div>
         </div>
         <div class="row-fluid">
