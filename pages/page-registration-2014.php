@@ -55,11 +55,15 @@ Template Name: Registration Issue 2014
         padding-top:4px;
         position: relative;
     }
-    .feature-img-2 h4 {
+    .feature-img-2 h4, h5 {
         position: absolute;
         top: 10px;
         padding: 10px 20px;
         background-color: rgba(255,255,255,0.6);
+    }
+
+    a:hover h2, a:hover h3, a:hover h4, a:hover h5{
+        text-decoration: underline;
     }
 
     #feature-stories {
@@ -257,19 +261,19 @@ Template Name: Registration Issue 2014
                 <a href="http://dailybruin.com/2014/09/28/students-faculty-continue-to-push-for-diversity-requirement/">
                 <div class="feature-img-2">
                     <img src="http://dailybruin.com/images/2014/02/5891eb04-18c1-4e3d-9efa-242fb4fd8fb8-640x426.jpg">
-                    <h4>Timeline: Diversity Requirement Proposal</h4>
+                    <h5>Timeline: Diversity Requirement Proposal</h5>
                 </div>
                 </a>
                 <a href="http://dailybruin.com/features/flavors-of-westwood/">
                 <div class="feature-img-2">
                     <img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.meatballs.picA_.AYU_.jpg">
-                    <h4>Map: Flavors of Westwood</h4>
+                    <h5>Map: Flavors of Westwood</h5>
                 </div>
                 </a>
                 <a href="http://dailybruin.com/2014/09/28/fans-pay-homage-to-marilyn-monroe-at-westwood-village-memorial-park/">
                 <div class="feature-img-2">
                     <img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.westwoodmemorial.picB_-640x4801.jpg">
-                    <h4>Radio: Marilyn Monroe's Grave</h4>
+                    <h5>Radio: Westwood Village Memorial Park</h5>
                 </div>
                 </a>
             </div>
