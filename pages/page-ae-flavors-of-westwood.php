@@ -535,6 +535,121 @@ var LocsB = [
                 icon: 'http://maps.google.com/mapfiles/markerQ.png',
                 zoom: 17,
         },
+        {
+          lat: 34.060823,
+          lon: -118.446740,
+          title: 'House of Meatballs',
+          html: [
+                  '<h3>House of Meatballs</h3>',
+                  '<p>Customers create Italian meals from a multitude of meatballs</p>'
+                ].join(''),
+          fulldesc: [
+                '<h3>House of Meatballs</h3>',
+                '<div class="row"><div class="span8">',
+                '<img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.meatballs.picA_.AYU_-640x389.jpg" class="img-responsive" alt="houseofmeatballs"><span class="photocred">',
+                 'Austin Yu / Daily Bruin',
+                 '</span><br><br><strong>',
+                 'BY YAZMINE MIHOJEVICH',
+                 '</strong><br><br>',
+                '<p>Slightly lost in the exotic land of Beverly Hills, I turned to the first person I spotted and asked directions to Da PasqualeTrattoria Italiana. This woman did not hesitate to steer metheright way before declaring that I would find the best Italian food I would ever have in that direction.</p>',
+
+                '<p>Originally from Naples, Italy, Pasquale Morra, the owner of Da Pasquale, and his wife came to theU.S.for their honeymoon in 1983and ended up staying permanentlybecause of the economic opportunities that the U.S. had to offer. Now, about30years after openingits first restauranton MelroseAvenuein 1984, the Morra family anditsItalian restaurant business have thrived.</p>',
+
+                '<p>“We were born and raised in Italy, so we grew up with Italian food,”Morra said.“We have the flavor of Italian food in our mouth.”</p>',
+
+                '<div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.meatballs.picB_.AYU_.jpg" width="210"><span class="photocred-inline">(Austin Yu/Daily Bruin)</span></div>',
+
+                '<p>Having opened a variety of Italian restaurants around the Los Angeles area, the Morra familywill soon bring itsauthentic Italian food to Westwood throughitsbrand-new venture, House of Meatballs, which is projected to openon Gayley Avenuethe first week of October.</p>',
+
+                '<p>“Now it’s time for me to retire, and that is the reason why I am (opening House of Meatballs)," Morra said. “This is for the next generation."</p>',
+
+                '<p>Soon to be run by Morra’s two sons, his daughter-in-law, a brother and niece,House of Meatballs will differ from the Morra family’sother current establishments in its simplicity of selectionandmore affordable prices.</p>',
+
+                '<p>"I know that most of my business will come from UCLA and I know the students cannot afford to go out and spend $40or $50 on dinner,”Morra said.</p>',
+
+                '<p>With a self-service checklist, the House of Meatballs menu allows each customer to customize his or her meal by choosing from an arrangement of meatballs, sauces, cheeses, sides and drinks, including speciality wine and draft beer. With a selection of types of meatballs – from "Just Like Mama," made up of beef, garlic and basil, to "Bubba’s Secret," which includes crab, sole and lemon pepper – the House of Meatballs menu, from the meatballs to its sauce, is the result of a working collaboration between Morra family members.</p>',
+
+                '<p>"Together, we try every single meatball,” Morra said. “The sauce is our sauce because it’s 100 percent Italian. We don’t Americanize our sauce."</p>',
+
+                '<p>In addition to options like vegetarian meatballs, the House of Meatballs will also offer gluten-freemeatballs and pasta. Even though Morra has been in the business for more than30years, hesaid he is still open to menu suggestions and feedback, particularly when it comes to critiquing the family’s newest recipes for meatballs, which are inspired by different Asian cuisines and contain ingredients like spicy pork, wasabi and miso.</p>',
+
+                '<p>“We would be willing to change our menu,“ Morra said.“As long as we please the people coming into the restaurant, that’s the reason why we are there. To please people, not to please ourselves.”</p>',
+                 '</div>',
+                 '<div class="span4">',
+                 '<ul class="icons-ul">',
+                 '<li><i class="icon-map-marker"></i> 1076 Gayley Ave, Los Angeles, CA 90024</li>',         
+                 '</ul></div></div>'
+              ].join(''),
+          icon: 'http://maps.google.com/mapfiles/markerR.png',
+          zoom: 17,
+        },
+        {
+          lat: 34.061866,
+          lon: -118.444043,
+          title: 'Garlo&#39;s Aussie Pie Shop',
+          html: [
+                  '<h3>Garlo&#39;s Aussie Pie Shop</h3>',
+                  '<p>Australian meat pies bring a "taste down under" to Westwood</p>'
+                ].join(''),
+          fulldesc: [
+                '<h3>Garlo&#39;s Aussie Pie Shop</h3>',
+                '<div class="row"><div class="span8">',
+                '<img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.garlos.picA_-640x426.jpg" class="img-responsive" alt="maryrobbcafe"><span class="photocred">',
+                 'Angie Wang / Daily Bruin',
+                 '</span><br><br><strong>',
+                 'BY AALHAD PATANKAR',
+                 '</strong><br><br>',
+                '<p>Upon entering Garlo’s Aussie Pie Shop, everything – from the decor to the scents – seems to lift you out of Westwood.</p>',
+
+                '<p>As the friendly voice of shop owner Sean Garlick welcomes you in, a short flight of stairs downward and the sign next to it guides the customer “to your table down under,” an eating area that’s appropriately south of street level. Beyond the novelties of kangaroos and hulking rugby players on the wall, Garlo’s brings to Westwood something authentically and undeniably Aussie: pies.</p>',
+
+                '<div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.garlos.picC_.AW_.jpg" width="210"><span class="photocred-inline">(Angie Wang/Daily Bruin)</span></div>',
+
+                '<p>“Pies in Australia are very similar to what burgers are to Americans: They’re a staple diet,” said Garlick, a retired professional rugby player who started the first Garlo’s Pies in 2001 with his brother Nathan Garlick, a pastry chef.</p>',
+
+                '<p>Since its founding, Garlo’s Pies has grown to serve about 35,000 pies a day through a handful of franchise stores in Australia as well as a warehouse and export business for grocery stores and airlines. Westwood will be the franchise’s first international location.</p>',
+
+                '<p>“We’ve always had a love affair with America,” Sean Garlick said. “We grew up on American television and probably know far more about American culture than you guys know about ours. So there’s still that novelty factor.”</p>',
+
+                '<div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.garlos.picB_.AW_.jpg" width="210"><span class="photocred-inline">(Angie Wang/Daily Bruin)</span></div>',
+
+                '<p>Knowing that they couldn’t rely on native Australians and tourists as their sole customer base, Garlick said they chose Westwood for its younger college crowd, hoping for a more open audience.</p>',
+
+                '<p>Unlike the Garlo’s Pies locations back home, Garlick said the Westwood branch is focused on introducing Americans to savory pies with an Aussie dining experience.</p>',
+
+                '<p>With ingredients imported directly from Australia to Westwood, each pie is crafted by Nathan Garlick and his team in front of customers, who can choose from a selection of about 10 savory pies and a few sweet pies, as well as an assortment of side dishes, desserts and Australian coffee. Among the list of fillings are chicken and vegetables, classic steak and curry lean beef.</p>',
+
+                '<p>Unlike some traditional American pot pies, each Aussie pie has a pastry base, allowing for better portability and making a knife and fork unnecessary. The Aussie way to eat a pie, Garlick said, is oftentimes on the go and almost always with some tomato sauce – or as we call it, ketchup.</p>',
+
+                '<div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.garlos.picD_.AW_.jpg" width="210"><span class="photocred-inline">(Angie Wang/Daily Bruin)</span></div>',
+
+                '<p>The menu, condensed from its original form to ease in newcomers, also comes with a few local touches, including the fajita chicken pie and the mac and cheese pie slider.</p>',
+
+                '<p>For the Westwood location’s barista and head of retail operations Donna Stoilova, who moved to Los Angeles from Australia to pursue acting, Garlo’s Pies brought a piece of home to the city.</p>',
+
+                '“This was the food I grew up on,” Stoilova said. “In the morning, when you smell it, you know to line up at the canteen to get your daily fix.”</p>',
+
+                '<p>Her favorite part of the job, Stoilova said, is recommending a pie to first-time visitors.</p>',
+
+                '“When you see people that have never had a pie, and you recommend something and they like it, it’s cool,” Stoilova said. “Americans are kind of getting Australia.”</p>',
+                 '</div>',
+                 '<div class="span4">',
+                 '<ul class="icons-ul">',
+                 '<li><i class="icon-map-marker"></i> 1010 Glendon Ave, Los Angeles, CA 90024</li>',         
+                 '<li><i class="icon-bell"></i> (310) 208-7777</li>',         
+                 '<li><i class="icon-calendar"></i> M-F: 6 a.m. to 9 p.m., Sat, Sun: 8 a.m. to 9 p.m.</li>',  
+                 '<li><i class="icon-briefcase"></i> Delivery: No</li>',        
+                 '<li><i class="icon-tag"></i> $</li>',         
+                 '<li><i class="icon-info-sign"></i> Street parking, lot</li>', 
+                 '<li><i class="icon-globe"></i> <a href="http://www.garlosaussiepies.com" target="_blank">http://www.garlosaussiepies.com</a></li>',
+                 '</ul></div></div>'
+              ].join(''),
+          icon: 'http://maps.google.com/mapfiles/markerS.png',
+          zoom: 17,
+        },
+
+
+
 ];
 
 $(document).ready(function(){
