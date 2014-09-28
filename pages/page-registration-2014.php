@@ -270,10 +270,10 @@ Template Name: Registration Issue 2014
                     <h5>Map: Flavors of Westwood</h5>
                 </div>
                 </a>
-                <a href="http://dailybruin.com/2014/09/28/fans-pay-homage-to-marilyn-monroe-at-westwood-village-memorial-park/">
+                <a href="http://dailybruin.com/2014/09/28/bruins-talk-reasons-why-they-use-youtube-as-creative-outlet/">
                 <div class="feature-img-2">
-                    <img src="http://dailybruin.com/images/2014/09/web.ae_.reg_.westwoodmemorial.picB_-640x4801.jpg">
-                    <h5>Radio: Westwood Village Memorial Park</h5>
+                    <img src="http://dailybruin.com/images/2014/09/Screen-Shot-2014-09-27-at-11.38.50-PM.png">
+                    <h5>Radio: Bruins talk reasons why they use YouTube as creative outlet</h5>
                 </div>
                 </a>
             </div>
