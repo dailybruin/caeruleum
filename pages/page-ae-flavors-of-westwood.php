@@ -577,7 +577,9 @@ var LocsB = [
                  '</div>',
                  '<div class="span4">',
                  '<ul class="icons-ul">',
-                 '<li><i class="icon-map-marker"></i> 1076 Gayley Ave, Los Angeles, CA 90024</li>',         
+                 '<li><i class="icon-map-marker"></i> 1076 Gayley Ave, Los Angeles, CA 90024</li>',   
+                 '<li><i class="icon-info-sign"></i> Opening Soon', 
+
                  '</ul></div></div>'
               ].join(''),
           icon: 'http://maps.google.com/mapfiles/markerR.png',
