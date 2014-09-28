@@ -40,6 +40,13 @@ Template Name: Registration Issue 2014
         padding-top: 60%;
     }
 
+    .sidebar a {
+        box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
+        margin-top: 4px;
+        position: relative;
+        display: block;
+    }
+
     .feature-img-1 {
         position: relative;
     }
@@ -51,10 +58,6 @@ Template Name: Registration Issue 2014
         background-color: rgba(255,255,255,0.6);
     }
 
-    .feature-img-2 {
-        padding-top:4px;
-        position: relative;
-    }
     .feature-img-2 h4, h5 {
         position: absolute;
         top: 10px;
@@ -257,7 +260,7 @@ Template Name: Registration Issue 2014
                 <h2>Lighting Up LA</h2>
             </div>
             </a>
-            <div class="span4">
+            <div class="span4 sidebar">
                 <a href="http://dailybruin.com/2014/09/28/students-faculty-continue-to-push-for-diversity-requirement/">
                 <div class="feature-img-2">
                     <img src="http://dailybruin.com/images/2014/02/5891eb04-18c1-4e3d-9efa-242fb4fd8fb8-640x426.jpg">
