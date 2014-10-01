@@ -238,7 +238,7 @@ Template Name: Registration Issue 2014
             </a>   
             <a href="http://dailybruin.com/2014/09/28/reily-buechlers-father-grows-from-volleyball-coach-to-her-biggest-fan/">
             <div class="span4 feature-img-1">
-                <img src="http://dailybruin.com/images/2014/09/Sports-CoverPhoto.jpg">
+                <img src="http://dailybruin.com/images/2014/10/regissue-sports.jpg">
                 <h2>Nothing But Net</h2>
             </div>
             </a>
