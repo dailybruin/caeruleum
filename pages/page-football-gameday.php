@@ -38,6 +38,28 @@ Template Name: Football Gameday
 
 	}
 
+	#nonfeature-stories {
+		margin: 10px;
+		position: relative;
+		margin-left: 0px;
+	}
+
+	.nonfeature-stories-author {
+		margin: 5px 0px;
+		font-weight: bold;
+	}
+	.nonfeature-stories-content {
+	}
+	.nonfeature-stories-title {
+		color: black;
+		font-size: 1.5em;
+	}
+
+	.thumbnail {
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
 
 
 </style>
@@ -85,7 +107,7 @@ Template Name: Football Gameday
 				?>
 			</div>
 
-			<div class="span12">
+			<div class="span12" id="nonfeature-stories">
 	            <?php 
 					$args = array(
 						'tag' => $stories_tag);
@@ -95,39 +117,48 @@ Template Name: Football Gameday
 					foreach ($posts as $post) :
 						setup_postdata($post);
 						$categories = get_the_category($post->ID);
-						echo the_post_thumbnail('large');
 
 				?>
-				<div class="feature-date">
-					<?php the_time('F j, Y'); ?>
-				</div>
-				<div class="content">
-					<a class="heading" href="<?php the_permalink(); ?>">
-						<?php the_title(); ?>
-					</a>
-				</div>
-				<div class="author">
-						BY <?php the_author(); ?>
-				</div>
-				<div class="description">
-					<p><?php echo get_the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>">More &#187;</a>
-					</p>
-				</div>
+				<div class="nonfeature-stories">
+					<div class="content">
 
+					<?php if ( has_post_thumbnail() ): ?>
+						<div class="thumbnail">
+						<?php 
+							echo the_post_thumbnail('medium');
+							endif;
+						?>
+						</div>
+						<div class="nonfeature-stories-content">
+							<a class="nonfeature-stories-title" href="<?php the_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+							</div>
+							<div class="nonfeature-stories-author">
+									By <?php the_author(); ?>
+							</div>
+							<div class="nonfeature-stories-description">
+								<p><?php echo get_the_excerpt(); ?>
+								<a href="<?php the_permalink(); ?>">More &#187;</a>
+								</p>
+							</div>
+						</div>
+				</div>
+				<hr style="clear:both;" >
 				<?php
 					endforeach; 
 				?>
 			</div>
-		</div>
+
 		<div class="span4">
 			<div class="row-fluid">
 				<div class="span12">
 					<h2>Graphic of the Week</h2>
 					<img src=<?php echo $graphic_of_the_week; ?> > 
 				</div>
+
 				<div class="span12">
-					<h2>Comparing Stats</h2>
+					<!-- <h2>Comparing Stats</h2> -->
 					<img src=<?php echo $comparing_stats_graphic; ?> > 
 
 				</div>
