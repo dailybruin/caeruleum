@@ -20,7 +20,26 @@ Template Name: Football Gameday
 		position: absolute;
 		bottom: 20px;
         background-color: rgba(255,255,255,0.6);
+        display: inline;
+        padding: 5px 10px;
 	}
+
+	.feature-content a {
+		color: black;
+	}
+	.feature-author {
+		float: left;
+		text-align: left;
+	}
+
+	.feature-title a {
+		float: left;
+		text-align: left;
+
+	}
+
+
+
 </style>
 
 <div class="container">
@@ -45,26 +64,22 @@ Template Name: Football Gameday
 						echo the_post_thumbnail('large');
 
 				?>
-				<!--
-				<div class="feature-date">
-					<?php the_time('F j, Y'); ?>
-				</div>
-				-->
 				<div class="feature-content">
-				<div class="feature-title">
+					<h4>
+					<span class="feature-author">
+							By <?php the_author(); ?>
+					</span>
+					</h4>
+					<div class="feature-title">
+					<h2>
 					<a class="heading" href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
 					</a>
+					</h2>
+
+					</div>
 				</div>
-				<div class="author">
-						BY <?php the_author(); ?>
-				</div>
-				<div class="description">
-					<p><?php echo get_the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>">More &#187;</a>
-					</p>
-				</div>
-				</div>
+				<hr style="clear:both;"/>
 				<?php
 					endforeach; 
 				?>
