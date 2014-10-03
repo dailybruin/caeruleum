@@ -71,7 +71,7 @@ Template Name: Football Gameday
 		</div>
 	</div>
 	<div class="row-fluid">
-		<div class="span8">
+		<div class="span7">
 			<div class="span12" id="feature-story">
 	            <?php 
 					$args = array(
@@ -123,34 +123,37 @@ Template Name: Football Gameday
 					<div class="content">
 
 					<?php if ( has_post_thumbnail() ): ?>
+						<a href="<?php the_permalink(); ?>">
 						<div class="thumbnail">
 						<?php 
 							echo the_post_thumbnail('medium');
-							endif;
 						?>
 						</div>
+						</a>
+					<?php endif; ?>
 						<div class="nonfeature-stories-content">
 							<a class="nonfeature-stories-title" href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>
-							</div>
-							<div class="nonfeature-stories-author">
-									By <?php the_author(); ?>
-							</div>
-							<div class="nonfeature-stories-description">
-								<p><?php echo get_the_excerpt(); ?>
-								<a href="<?php the_permalink(); ?>">More &#187;</a>
-								</p>
-							</div>
 						</div>
+						<div class="nonfeature-stories-author">
+								By <?php the_author(); ?>
+						</div>
+						<div class="nonfeature-stories-description">
+							<p><?php echo get_the_excerpt(); ?>
+							<a href="<?php the_permalink(); ?>">More &#187;</a>
+							</p>
+						</div>
+					</div>
 				</div>
 				<hr style="clear:both;" >
 				<?php
 					endforeach; 
 				?>
 			</div>
+		</div>
 
-		<div class="span4">
+		<div class="span5">
 			<div class="row-fluid">
 				<div class="span12">
 					<h2>Graphic of the Week</h2>
