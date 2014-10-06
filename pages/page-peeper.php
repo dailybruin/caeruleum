@@ -8,15 +8,11 @@ get_header(); ?>
     <?php roots_main_before(); ?>
       <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
         <?php roots_loop_before(); ?>
-        <?php get_template_part('loop', 'page'); ?>
-        <?php roots_loop_after(); ?>
-        <!--h1>Westwood Peeping Trend Continues</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non felis venenatis, molestie augue vitae, lacinia tellus. Aliquam molestie non ipsum scelerisque tempor. Aliquam orci neque, iaculis vel convallis non, consequat nec ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque et mauris sit amet sem fringilla vulputate eu in ante. Duis accumsan nulla nec facilisis pharetra. Etiam cursus, justo et dictum interdum, dui neque bibendum velit, in mattis lorem nisi ac nibh.</p-->
         <raw id="peeper">
             <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
             <link rel="stylesheet" href="/css/peeper-map/marker-cluster.css">
             <link rel="stylesheet" href="/css/peeper-map/marker-cluster-default.css">
-            <link rel="stylesheet" href="css/peeper-map/peeper.css">
+            <link rel="stylesheet" href="/css/peeper-map/peeper.css">
 
             <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
             <script src="/js/vendor/marker-cluster.js"></script>
@@ -26,6 +22,8 @@ get_header(); ?>
                 <div id="map"></div>
             </body>
         </raw>
+        <?php get_template_part('loop', 'page'); ?>
+        <?php roots_loop_after(); ?>
       </div><!-- /#main -->
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
