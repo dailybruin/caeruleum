@@ -7,9 +7,6 @@ get_header(); ?>
     <div id="content" class="<?php echo CONTAINER_CLASSES; ?>">
     <?php roots_main_before(); ?>
       <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
-        <?php roots_loop_before(); ?>
-        <?php get_template_part('loop', 'page'); ?>
-        <?php roots_loop_after(); ?>
         <raw id="peeper">
             <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
             <link rel="stylesheet" href="/css/peeper-map/marker-cluster.css">
@@ -24,6 +21,9 @@ get_header(); ?>
                 <div id="map"></div>
             </body>
         </raw>
+        <?php roots_loop_before(); ?>
+        <?php get_template_part('loop', 'page'); ?>
+        <?php roots_loop_after(); ?>
       </div><!-- /#main -->
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
