@@ -1,7 +1,8 @@
 #map {
     height: 500px;
     margin: auto;
-    width: 400px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 /* Override default colors: */
