@@ -11,7 +11,7 @@ get_header(); ?>
             <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
             <link rel="stylesheet" href="/css/peeper-map/marker-cluster.css">
             <link rel="stylesheet" href="/css/peeper-map/marker-cluster-default.css">
-            <link rel="stylesheet" href="css/peeper-map/peeper.css">
+            <link rel="stylesheet" href="/css/peeper-map/peeper.css">
 
             <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
             <script src="/js/vendor/marker-cluster.js"></script>
