@@ -1,0 +1,19 @@
+#map {
+    height: 500px;
+    margin: auto;
+    width: 400px;
+}
+
+/* Override default colors: */
+.marker-cluster-medium, .leaflet-oldie .marker-cluster-medium  { background-color: rgba(255, 80, 77, 0.8); }
+.marker-cluster-medium div, .leaflet-oldie .marker-cluster-medium div {
+    background-color: rgba(240, 100, 100, 0.8);
+    border-radius: 30px;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 60px;
+    height: 60px;
+}
+.marker-cluster-medium span {
+    line-height: 60px;
+}
