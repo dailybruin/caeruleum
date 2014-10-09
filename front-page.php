@@ -398,14 +398,14 @@
 				<div class="row" id="featuredProject">
 					<div class="span8">
 						<div>
-							 <h3>In the Shadows</h3>
+							 <h3>Wake of the Storm</h3>
 							 <ul class="sections">
 							 	<li><a href="/features/">More features</a></li>
 							 </ul>
 							 <span style="display:block;width:100%;clear:both;"></span>
-							 <img src="http://dailybruin.com/images/features/THUMBS/malawi_thumb.jpg" />
-                             <p>Read our feature series about the lesbian, gay, bisexual and transgender community in Malawi, a country that outlaws homosexuality and in which UCLA has a strong research presence. The Daily Bruin spent 24 days in Malawi talking to LGBT Malawians, activists and researchers about the health care and human rights challenges the community faces. The reporting in Malawi was made possible by the Bridget O&rsquo;Brien Scholarship Foundation, which is in its sixth year of funding UCLA journalism with global reach and local impact.</p>
-							 <a href="http://malawi.dailybruin.com/" class="featuredlink">Read the story, watch videos, and more&nbsp;&raquo;</a>
+							 <img src="http://dailybruin.com/images/features/THUMBS/yolanda_thumb.jpg" />
+                             <p>Read our feature series about recovery efforts in the Philippines, which was devastated by a super typhoon last November. UCLA student donations played a part in the relief missions of several aid agencies in the wake of the storm. The Daily Bruin spent 19 days in the Philippines talking to typhoon survivors and relief organizations. The reporting in the Philippines was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which is in its seventh year of funding UCLA journalism with global reach and local impact.</p>
+							 <a href="http://yolanda.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
 							 <span style="display:block;width:100%;clear:both"></span>
 						</div>
 					</div><!-- end div#featuredProject -->
