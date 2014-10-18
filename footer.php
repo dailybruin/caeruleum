@@ -1,11 +1,4 @@
 	<span style="width:100%;display:block;clear:both;"></span>
-	<div class="container hidden-phone">
-	<hr />
-	<div class="row">
-		<div class="span12 hidden-mobile" id="banner-bottom"
-			><?php // make sure there is no whitespace here for the ad to display correctly ?></div><!-- end div#banner-bottom -->
-	</div>
-	</div><!-- end div.container -->
 
 					<a href="#" id="backtotop">Top &uarr;</a>
 
@@ -104,6 +97,20 @@
 					<li><a href="http://mojo.dailybruin.com">Mojo</a></li>
 					</ul>
 					<h3><a href="/classifieds/">Classifieds</a></h3>					
+					<h3>Links</h3>					
+                    <?php if (is_front_page()): ?>
+                    <ul>
+                        <?php wp_list_bookmarks(array(
+                            'title_li'                      =>      __(''),
+                            'title_before'          =>      '',
+                            'title_after'           =>      '',
+                            'category_before'       =>      '',
+                            'category_after'        =>      '',
+                            'categorize'            =>      0,
+                            'before'                        =>      '<li>'
+                        )); ?>
+                    </ul>
+                    <?php endif; ?>
 				</div>
 				<div class="footer-links span4 about">
 					<h3>About</h3>

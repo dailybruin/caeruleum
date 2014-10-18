@@ -31,7 +31,7 @@
 				the_title();
 				?>
 			</a></h1> 
-
+			<?php if(function_exists('the_audio')) the_audio(); ?>
 			<?php the_content(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 			<p class="photoblog-sm">

@@ -180,7 +180,7 @@ Template Name: USAC Elections 2013
             </div>
             <div class="span9">
               <div class="box">
-                <h1>President</h1>
+                <h1>President</h1><br/><br/>
                 <h2 style="font-family:sans-serif;">John Joanino</h2>
                 <h3>LET'S ACT!</h3>
                 <h3 style="text-transform: lowercase;"class="greyer">51.8% of the vote</h3>

@@ -38,7 +38,7 @@
   */?>
 <div class="row" id="howewo-container">
 	<?php foreach ( $images as $image ) : ?>
-		<img src="<?php echo $image->imageURL ?>" alt="<?php echo $image->alttext ?>" data-description="<?php echo $image->description ?>" value="<?php echo $image->tags[0] ?>" />
+		<img src="<?php echo $image->imageURL ?>" alt="<?php echo $image->alttext ?>" data-description="<?php echo htmlspecialchars($image->description); ?>" value="<?php echo $image->tags[0] ?>" />
  	<?php endforeach; ?>
 </div>
 

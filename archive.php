@@ -32,9 +32,24 @@
                 	case "Timestamp":
                 		the_blog_banner('timestamp');
                 		break;
+                  case "Idle Thoughts":
+                    the_blog_banner('two-cents-idle-thoughts');
+                    break;
+                  case "Political Commentary":
+                    the_blog_banner('two-cents-political-commentary');
+                    break;
+                  case "Social Commentary":
+                    the_blog_banner('two-cents-social-commentary');
+                    break;
                 	default:
                 		echo $categoryTitle;
-                }				
+                }
+                // Separate case for sports as its name is the same as several other categories
+                $cat = get_category(get_query_var('cat'));
+                if ($cat->slug == 'sports-two-cents')
+                {
+                  the_blog_banner('two-cents-sports');
+                }
               }
             ?>
           </h1>

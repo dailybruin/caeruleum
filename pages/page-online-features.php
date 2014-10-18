@@ -13,7 +13,7 @@
 <script>
 
  var features;
-    $.getJSON('../js/vendor/page-online-features.json', function (data) { 
+    $.getJSON('../js/page-online-features.json', function (data) { 
     features = data.articles; 
     });
 
@@ -54,10 +54,7 @@ function filterByYr(feature_year) {
                 var obj = features[i];
 
                 fhtml = fhtml + '<div class="item">'
-                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span class="caption slide-caption"><p class="authors">' + obj.author
-                + '</p><p class="ellipsis">' + obj.description
-                + '</p></span></a></div>';
-          
+                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/></a></div>';
             }
         }
 
@@ -147,9 +144,7 @@ function filterByCat() {
                 var obj = features[i];
 
                 fhtml = fhtml + '<div class="item">'
-                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span class="caption slide-caption"><p class="authors">' + obj.author
-                + '</p><p class="ellipsis">' + obj.description
-                + '</p></span></a></div>';
+                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/></a></div>';
             }
 
         }
@@ -233,9 +228,7 @@ function renderAll() {
                 + '</i></span></div></a>';*/
 
         fhtml = fhtml + '<div class="item">'
-                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/><span class="caption slide-caption"><p class="authors">' + obj.author
-                + '</p><p class="ellipsis">' + obj.description
-                + '</p></span></a></div>';
+                + '<a href="' + obj.web + '"><h5>' + obj.fname + '</h5><img src="' + obj.picture + '" style="width: 300px; padding: 5px; background-color: #fff;"/></div>';
     }
 
     var $items = $(fhtml);
@@ -293,7 +286,7 @@ function checkAll(formname, checktoggle)
 
 <h1 class="feature_title">ONLINE FEATURES</h1>
 
-<p>Lorem ipsum...</p>
+<p>Special online features by the Daily Bruin</p>
 
 <div style="display: inline-block; margin: 10px; padding: 5px;">
 <h5>Year</h5>

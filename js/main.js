@@ -159,13 +159,13 @@ $(document).ready(function() {
 $(document).ready(function() {
 	// Get the ad-loading code from the page
 	var ads = [];
-	ads['banner_large'] = $('#ad-banner-top').text();
-	ads['banner_small'] = $('#ad-banner-small').text();
-	ads['square_1'] = $('#side-ad').text();
-	ads['square_2'] = $('#side-ad-low1').text();
-	ads['square_3'] = $('#side-ad-low2').text();
-	ads['house'] = $('#ad-house').text();
-	ads['tower'] = $('#ad-tower').text();
+	ads['banner_large'] = $('#ad-banner-top').html();
+	ads['banner_small'] = $('#ad-banner-small').html();
+	ads['square_1'] = $('#side-ad').html();
+	ads['square_2'] = $('#side-ad-low1').html();
+	ads['square_3'] = $('#side-ad-low2').html();
+	ads['house'] = $('#ad-house').html();
+	ads['tower'] = $('#ad-tower').html();
 
 
 	function responsive()
@@ -251,7 +251,7 @@ $(document).ready(function() {
 			sidebarHeight	= $sidebar.height();
 			var scrollNow = $(this).scrollTop(),
 			topBound	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
-			botBound	= $("#banner-bottom").offset().top;
+			botBound	= $("footer").offset().top;
 		
 			if(scrollNow > topBound && scrollNow < botBound - sidebarHeight - 50) {
 				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});

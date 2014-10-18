@@ -33,7 +33,15 @@
 
 		<a href="<?php the_permalink(); ?>">
 			<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
-			echo do_shortcode('[singlepic id='.$singlepicture.']');
+			$image = do_shortcode('[singlepic id='.$singlepicture.']');
+            
+            $permalink = get_permalink();
+            $start_of_href = strpos($image, 'href');
+            $start_of_url = strpos($image, '"', $start_of_href);
+            $end_of_url = strpos($image, '"', $start_of_url+1);
+
+            $final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
+            echo $final_tag;
 			?>
 		</a>
 		
