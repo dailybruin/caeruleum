@@ -2,6 +2,7 @@
 Template Name: USC Football Rivalry 2014
 */ ?>
 <?php get_header(); ?>
+<<<<<<< HEAD
 
 <?php 
 	//Hardcode values
@@ -198,4 +199,7 @@ Template Name: USC Football Rivalry 2014
 	});
 </script>
 
+=======
+hello world
+>>>>>>> 26cda262c61f66dd40d6c228959efc192783e04b
 <?php get_footer(); ?>
