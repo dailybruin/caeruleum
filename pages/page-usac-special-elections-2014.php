@@ -120,7 +120,7 @@ div #preload { display: none; }
           <a class="brand" href="http://dailybruin.com/usac-special-election-2014/">USAC Special Election 2014</a>
             <ul class="nav">
               <li class="active"><a href="/usac-special-election-2014/">Candidates</a></li>
-              <li><a href="http://dailybruin.com/usac-special-elections-2014/endorsements">Endorsements</a></li>
+              <li><a href="http://dailybruin.com/usac-special-election-2014/endorsements">Endorsements</a></li>
             </ul>
         </div>
       </div>
@@ -142,10 +142,10 @@ div #preload { display: none; }
         <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 12 p.m.</p>
 
         <h4>When are results announced?</h4>
-        <p>The USAC Election Board will announce the election results at 7 p.m. Friday. </p>
+        <p>The USAC Election Board will announce the election results tentatively at 7 p.m. Friday at Meyerhoff Park.  </p>
 
         <h4>What is the USAC Election Board?</h4>
-        <p>The Election Board is appointed by USAC and is tasked with running USAC elections. The board, which is meant to be an unbiased body, holds events to promote the election and educate students about the candidates and measures on the election ballot. Election Board members also sanctions candidates if they violate campaigning rules. </p>
+        <p>The Election Board is appointed by USAC and is tasked with running USAC elections. The board, which is meant to be an unbiased body, holds events to promote the election and educate students about the candidates and measures on the election ballot. Election Board members also sanction candidates if they violate campaigning rules. </p>
         <b>
   		  </div>
 		  
@@ -201,6 +201,8 @@ div #preload { display: none; }
       case OFFICE.GENERAL_REP:
         return "GENERAL REPRESENTATIVE 2";
 		break;
+      case BALLOT.MEASURE:
+        return "BALLOT MEASURE";
       default:
         return "DEFAULT";
     }
@@ -218,10 +220,8 @@ div #preload { display: none; }
     o0.year = "Fourth"; //Year
 
     o0.plat = [];
-    o0.plat.push("Increase collaboration between student groups - The Perspectives Showcase");
-    o0.plat.push("Advocate for more resources regarding outside opportunities: ");
-	o0.plat.push("1) create resources to guide students through the study abroad process");
-	o0.plat.push("2) revamp BruinView");
+    o0.plat.push("Increase collaboration between student groups through The Perspectives Showcase");
+    o0.plat.push("Advocate for more resources regarding outside opportunities by creating resources to guide students through the study abroad process and revamp BruinView");
 
   c.push(o0);
 
@@ -236,11 +236,10 @@ div #preload { display: none; }
     //o1.winner = true;
 
     o1.plat = [];
-    o1.plat.push("After Hours: Extend Van Service hours");
-    o1.plat.push("Come Through: Extend Van Service hours");
-    o1.plat.push("Take it to the Hill: Provide resources on the Hill that all students can utilize");
+    o1.plat.push("After Hours: Extend van service hours");
+    o1.plat.push("Take it to The Hill: Provide resources on The Hill that all students can utilize");
     o1.plat.push("International Love: Create quarterly multicultural festivals");
-    o1.plat.push("Welcome to LA: Provide a monthly guide to life in LA");
+    o1.plat.push("Welcome to L.A.: provide a monthly guide to life in L.A,");
 
   c.push(o1);
 
@@ -257,7 +256,7 @@ div #preload { display: none; }
     o2.plat.push("Reinvest in transfer resources");
     o2.plat.push("Create an organized transfer community");
     o2.plat.push("Establish a venue for transfers to have their voices heard");
-    o2.plat.push("Revitalize the connection between transfer student orgs and USAC");
+    o2.plat.push("Revitalize the connection between transfer student organizations and USAC");
 
   c.push(o2);
 
@@ -273,7 +272,7 @@ div #preload { display: none; }
     o3.plat = [];
     o3.plat.push("Transfer Success Guide: Compilation of resources");
     o3.plat.push("Transfers Go To Work: Put on transfer-specific workshops");
-    o3.plat.push("Transfer Themed Housing: Consolidate transfer dorms into transfer themed floors ");
+    o3.plat.push("Transfer-Themed Housing: Consolidate transfer dorms into transfer-themed floors ");
 
   c.push(o3);
 
@@ -288,9 +287,9 @@ div #preload { display: none; }
     //o4.winner = true;
 
     o4.plat = [];
-    o4.plat.push("Invest in Transfer Success: Create academic advising guide & advocate for Transfer Center");
-    o4.plat.push("Late Night Bruin Bus: Extend hours of 2 stops");
-    o4.plat.push("Toast to Transfers: Host quarterly mixers & Transfer Graduation");
+    o4.plat.push("Invest in Transfer Success: Create an academic advising guide and advocate for a transfer center");
+    o4.plat.push("Late Night Bruin Bus: Extend hours of two stops");
+    o4.plat.push("Toast to Transfers: Host quarterly mixers and a transfer graduation");
 
   c.push(o4);
 
