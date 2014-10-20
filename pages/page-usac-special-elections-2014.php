@@ -3,7 +3,7 @@ Template Name: USAC Special Election 2014
 */ ?>
 
 <?php get_header(); ?>
-<meta property="og:image" content="http://dailybruin.com/images/2014/10/usac-special-election-banner.png" />
+<meta property="og:image" content="http://dailybruin.com/images/2014/10/og-usac-special-election.png" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
 
 <style type='text/css'>
