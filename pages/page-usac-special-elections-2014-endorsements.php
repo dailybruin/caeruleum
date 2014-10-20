@@ -326,7 +326,7 @@ Template Name: USAC Special Election Endorsements 2014
       <li class="span6">
         <div class="endorsement firedup">
           <div class="textcentered">
-            <h4 class="endorsements">Bruin Diversity Referendum of 2014</h4></div>
+            <h4 class="endorsements">Bruin Diversity Referendum</h4></div>
             <p>Although the Bruin Diversity Referendum commendably aims to provide resources for some student organizations and institutional bodies that support campus diversity, its efforts are ultimately misdirected and fail to solve the real funding problem facing its beneficiaries.</p>
 
             <p>For that reason, this board does not endorse the Bruin Diversity Referendum for the special election ballot.</p>
@@ -343,9 +343,10 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>This referendum fails to address the problem of student group accountability &ndash; it asks for nearly $30 per student per year in student fees to a system that does not accurately assess need.</p>
 
-            <p>Moreover, this is not even the referendum that its authors really wanted. The referendum had to be brought forward quickly to make it onto the special election ballot, and the authors had to borrow language from a similar initiative that failed in 2013, the Bruin Diversity Initiative. This last-minute throwing together of the referendum language lends less credibility to the referendum and begs the question of why its authors didn&rsquo;t wait for the spring to propose a better referendum.</p>
+            <p>Moreover, this is not even the referendum that its authors really wanted. The referendum had to be brought forward quickly to make it onto the special election ballot, and the authors had to borrow language from a similar initiative that failed in 2013, the Bruin Diversity Initiative. This last-minute throwing together of the referendum language lends less credibility to the referendum and begs the question of why its authors didn&rsquo;t wait for spring to propose a better referendum.</p>
 
-            <p>Ultimately, the referendum is a messy and inefficient solution to a complex problem, and students should save the fee increase for a referendum that acknowledges the real funding issues that face student groups and other bodies on campus. </p>
+            <p>Ultimately, the referendum is a messy and inefficient solution to a complex problem, and students should save the fee increase for a referendum that acknowledges the real funding issues that face student groups and other bodies on-campus.</p>
+
         </div>
 
       </li>
@@ -355,11 +356,11 @@ Template Name: USAC Special Election Endorsements 2014
       <li class="span6">
         <div class="endorsement firedup">
           <div class="textcentered">
-            <h4 class="endorsements">The Green Initiative Fund Extension</h4></div>
+            <h4 class="endorsements">The Green Initiative Fund</h4></div>
 
             <p>Although the Green Initiative Fund referendum would extend an important fund past its 2018 expiration date, we do not support the current referendum on the ballot because its language fails to address the fund&rsquo;s massive surplus.</p>
 
-            <p>TGIF was passed in 2008 as a $4-per-quarter increase in student fees that goes toward student-initiated sustainability projects on campus like the bike-powered Ecochella music festival and the solar panels that sit atop Ackerman Union</p>
+            <p>TGIF was passed in 2008 as a $4-per-quarter increase in student fees that goes toward student-initiated sustainability projects on campus like the bike-powered Ecochella music festival and the solar panels that sit atop Ackerman Union.</p>
 
             <p>The expense to students has increased since the fund&rsquo;s original approval, with incremental raises written into the original referendum. The referendum on the upcoming special election ballot would indefinitely extend the fund and tie the student fee charge to inflation.</p>
 
@@ -369,21 +370,21 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>Part of this is a marketing problem, as student groups are often not aware of the fund and the wide range of projects it could help pay for. But regardless, a fund paid into by the students should actually finance the things that it was meant to.</p>
 
-            <p>Changing the language of the referendum to make sure 80 percent of the fund is in use, before tying fee raises into inflation would help to guarantee that students aren&rsquo;t voting to pay for unnecessary additional charges.</p>
+            <p>Changing the language of the referendum to make sure 80 percent of the fund is in use, before tying fee raises to inflation would help to guarantee that students aren&rsquo;t voting to pay for unnecessary additional charges.</p>
 
-            <p>With another four years before the expiration of the original referendum, supporters of TGIF owe it to fee-paying students to take the time necessary to craft a measure that will help meet UCLA&rsquo;s sustainability goals long-term.</p>        
+            <p>With another four years before the expiration of the original referendum, supporters of TGIF owe it to fee-paying students to take the time necessary to craft a measure that will help meet UCLA&rsquo;s sustainability goals long-term.</p>                  
           </div>
       </li>
 
       <li class="span6">
         <div class="endorsement indep">
           <div class="textcentered">
-            <h4 class="endorsements">Temporary Vacancy Constitutional Amendment</h4>
+            <h4 class="endorsements">Vacancy Amendment</h4>
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
 
             <p>This board endorses the Vacancy Amendment &ndash; a clear and simple solution to a glaring flaw in the Undergraduate Students Association Council constitution. However, we do have reservations about whether future councils will actually obey the document.</p>
 
-            <p>The current USAC constitution does not provide guidelines on how to fill a completely new office, as the council had to do with the new transfer representative position. The council also had to fill a vacancy in the general representative 2 office with unclear and unfeasible constitutional guidelines after Nihal Satyadev resigned in the beginning of the summer. </p>
+            <p>The current USAC constitution does not provide guidelines on how to fill a completely new office, as the council had to do with the new transfer representative position. The council also had to fill a vacancy in the General Representative 2 office with unclear and unfeasible constitutional guidelines after Nihal Satyadev resigned in the beginning of the summer. </p>
 
             <p>The current wording of the constitution requires that vacant positions like the general representative 2 vacancy be filled in 15 days, an incredibly unrealistic deadline.</p>
 
@@ -391,7 +392,7 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>This board does have reservations about the effectiveness of such an amendment without any repercussions for failing to follow its set guidelines. The council removed a clause that would have halted all of its powers if it failed to meet the four-week deadline. </p>
 
-            <p>Ramifications for failing to follow the constitution would have kept the council accountable to their constitution and forced them to treat the amendment as more than a suggested guideline. If the amendment passes, we urge this council and councils to come to treat their guiding documents with the seriousness and respect they deserve.</p>          
+            <p>Ramifications for failing to follow the constitution would have kept the council accountable to their constitution and forced them to treat the amendment as more than a suggested guideline. If the amendment passes, we urge this council and councils to come to treat their guiding documents with the seriousness and respect they deserve.</p>
         </div>
       </li>
 
@@ -407,12 +408,11 @@ Template Name: USAC Special Election Endorsements 2014
             <h4 class="endorsementname">Youmun Alhlou</h4>
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
-
             <p>Youmun Alhlou has worked in five different Undergraduate Students Association Council offices, establishing relationships with councilmembers and office management that would serve her well during a shortened term in office.</p>
 
             <p>Her platforms, however, are quite narrow in scope. Alhlou chose platforms that would likely be accomplished during a shortened term in office, but her challenge would be finding ways to institutionalize these programs in the coming years.</p>
 
-            <p>Her first proposed platform is to introduce the Perspective Showcase &ndash; a program that started at UC Berkeley and encourages cultural groups to team up and put on a collaborative performance &ndash; to Ackerman Grand Ballroom later in the school year.</p>
+            <p>Her first proposed platform is to introduce the Perspectives Showcase &ndash; a program that started at UC Berkeley and encourages cultural groups to team up and put on a collaborative performance &ndash; to Ackerman Grand Ballroom later in the school year.</p>
 
             <p>While the board does not doubt Alhlou&rsquo;s ability to run the event as planned winter or spring quarter, preserving it in coming years and making it appeal to a wider range of students will be a significant challenge.</p>
 
@@ -422,7 +422,7 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>To this end, Alhlou has laid some groundwork, setting up meetings with the Career Center&rsquo;s Brian Guerrero and Financial Supports Commissioner Heather Rosen. Both ideas have the potential to serve portions of the student population, particularly upper-level students looking to enter the job or internship market, but could fizzle out after her tenure without significant planning and marketing.</p>
 
-            <p>We also take issue with Alhlou&rsquo;s absence from the special election endorsement hearing on Oct. 9. While we agree these hearings have often devolved to little more than canned questions from slate supporters, Alhlou is still running for a popularly elected position and should have attended to demonstrate accountability to the student body.</p>
+            <p>We also take issue with Alhlou&rsquo;s absence from the special election endorsement hearing on Oct. 9. While we agree these hearings have often devolved to little more than canned questions from slate supporters, Alhlou is still running for a popularly elected position and should have attended to demonstrate accountability to the student body. </p>            
           </div>
       </li>
 
@@ -437,7 +437,7 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>However, her platforms as a whole were underwhelming, and she failed to sufficiently explain how she would execute them, such as bringing back peer learning to the Hill after its funding was cut three years ago. She also failed to explain how she would ensure that her platforms, such as a multicultural fair, would go beyond simple programming and include groups or students that traditionally do not participate in USAC activities. </p>
 
-            <p>One of her platforms, a monthly guide to L.A., would be redundant as a number of media outlets already publish similar material. As a whole, Haq has the enthusiasm and leadership needed for the position, but her platforms don&rsquo;t make the cut.</p>      
+            <p>One of her platforms, a monthly guide to L.A., would be redundant as a number of media outlets already publish similar material. As a whole, Haq has the enthusiasm and leadership needed for the position, but her platforms don&rsquo;t make the cut.</p>                
       </li>
 
       </ul>
@@ -453,14 +453,13 @@ Template Name: USAC Special Election Endorsements 2014
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
-
             <p>While all candidates discussed creating better unity among transfer students, Negeen Sadeghi-Movahed appeared most in touch with the diverse transfer student community and its needs. She also stood out in her institutional knowledge of transfer student issues. </p>
 
             <p>For these reasons, we endorse Sadeghi-Movahed for transfer student representative.</p>
 
             <p>Sadeghi-Movahed said she would develop an academic advising guide for counselors. This guide, along with coordinated training sessions, would aid counselors to improve their response to transfer student needs.</p>
 
-            <p>We agree with Sadeghi-Movahed&rsquo;s idea to place the obligation on counselors to provide effective guidance on how to plan classes and transfer units from the transfer students' previous college. Her plan would help improve institutional resources rather than relying on students to address their academic needs on their own.</p>
+            <p>We agree with Sadeghi-Movahed&rsquo;s idea to place the obligation on counselors to provide effective guidance on how to plan classes and transfer units from the transfer students' previous colleges. Her plan would help improve institutional resources rather than relying on students to address their academic needs on their own.</p>
 
             <p>Sadeghi-Movahed&rsquo;s plan to create a transfer center was the most feasible. She said she intends to advocate to administrators who often need student initiation to get such projects started, focusing on securing space in the following school year as a first step to establishing a transfer center.</p>
 
@@ -468,7 +467,7 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>We hope that if elected, Sadeghi-Movahed will work with the internal vice president and the facilities commissioner, who both sit on the transportation services council along with the transfer student representative. Collaborated advocacy efforts between three offices should amplify the student voice for administrators who make the final call.</p>
 
-            <p>The first student to fill the position of transfer student representative will have the responsibility of shaping the new office and establishing its priorities. We believe Sadeghi-Movahed is most fit to answer that call.</p>          
+            <p>The first student to fill the position of transfer student representative will have the responsibility of shaping the new office and establishing its priorities. We believe Sadeghi-Movahed is most fit to answer that call.</p>
           </div>
       </li>        
 
@@ -485,7 +484,7 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>Although we do not support her for the position, we do applaud her platform to consolidate transfers who cannot be housed in Gardenia onto themed floors in other residence halls to foster a sense of community. We highly suggest that the elected transfer representative or any other councilmember who wants to serve the transfer community take on this project. </p>
 
-            <p>Her other platforms consist of one-time events with a transfer focus, like a transfer alumni mixer, but those goals would fail to serve the transfer community in a lasting way after this year&rsquo;s term. Balatbat&rsquo;s platforms seem to focus on traditional transfer students and overlook opportunities to serve nontraditional transfers who commute, have children or come from other nontraditional backgrounds.</p>
+            <p>Her other platforms consist of one-time events with a transfer focus, like a transfer alumni mixer, but those goals would fail to serve the transfer community in a lasting way after this year&rsquo;s term. Balatbat&rsquo;s platforms seem to focus on traditional transfer students and overlook opportunities to serve nontraditional transfers who commute, have children or come from other nontraditional backgrounds.</p>          
           </div>
       </li>
 
@@ -507,7 +506,7 @@ Template Name: USAC Special Election Endorsements 2014
 
             <p>Being absent of partisan biases is an important qualification for a transfer representative, as they must strive to represent the transfer community regardless of ideology or background.</p>
 
-            <p>But his inexperience is also what makes him most unqualified. USAC council members must contend with a highly bureaucratic system which requires an intricate and intimate knowledge of its procedures and methods. Putting on a town hall or establishing a mentorship program requires the coordination of numerous moving parts, something Kew is ill-equipped to handle.</p>
+            <p>But his inexperience is also what makes him most unqualified. USAC councilmembers must contend with a highly bureaucratic system which requires an intricate and intimate knowledge of its procedures and methods. Putting on a town hall or establishing a mentorship program requires the coordination of numerous moving parts, something Kew is ill-equipped to handle.</p>
           </div>
       </li>
 </ul>
