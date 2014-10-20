@@ -119,7 +119,7 @@ div #preload { display: none; }
         <div class="container-fluid">
           <a class="brand" href="http://dailybruin.com/usac-special-election-2014/">USAC Special Election 2014</a>
             <ul class="nav">
-              <li class="active"><a href="/usac-special-election-2014/">Candidates</a></li>
+              <li class="active"><a href="/usac-special-election-2014/">Ballot Measures & Candidates</a></li>
               <li><a href="http://dailybruin.com/usac-special-election-2014/endorsements">Endorsements</a></li>
             </ul>
         </div>
@@ -130,7 +130,7 @@ div #preload { display: none; }
 
       <div class='span8' style="margin-right: 10px">
 
-        <a title='USAC Elections' href='/usac-elections-2014/'><img id='banner' src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png'/></a>
+        <a title='USAC Elections' href='http://dailybruin.com/usac-special-election-2014'><img id='banner' src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png'/></a>
 
         <div class="thumbnail">
         <h4>Introduction</h4>
@@ -146,13 +146,27 @@ div #preload { display: none; }
 
         <h4>What is the USAC Election Board?</h4>
         <p>The Election Board is appointed by USAC and is tasked with running USAC elections. The board, which is meant to be an unbiased body, holds events to promote the election and educate students about the candidates and measures on the election ballot. Election Board members also sanction candidates if they violate campaigning rules. </p>
-        <b>
+        
   		  </div>
-		  
+		    <br>
+        <div class="thumbnail">
+        <h2>Ballot Measures</h2>
+        <hr>
+        <h3>The Bruin Diversity Referendum of 2014</h3>
+        <p>The referendum would raise student fees by $9.93 per quarter to help fund certain diversity, retention and outreach programs on campus. If it passes with a majority vote, the referendum would take effect in spring.</p>
+        <h3>The Green Initiative Fund Extension</h3>
+        <p>The Green Initiative Fund, which uses funds from quarterly student fees to support environmental sustainability projects on campus, is currently set to expire in the spring of 2018. Each student currently pays about $4 per quarter for the fund, but the referendum would extend the fee indefinitely.</p>
+        <h3>Temporary vacancy constitutional amendment</h3>
+        <p>The constitutional amendment would clarify how vacancies on USAC are filled, extend the timeline for council to hold special elections and prevent special elections from taking place during school breaks. Constitutional amendments require the approval of two-thirds of voting students.</p>
+        <b>
+        </div>
+
+
 		    <div class="span12" id='display'>
           <div>
-            <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
+            <h4 style='font-style:italic' class='grey'> (Candidates: click category below to expand) </h4>
           </div> 
+
 		    </div>
        
       </div>

@@ -295,7 +295,7 @@ Template Name: USAC Special Election Endorsements 2014
         <div class="container-fluid">
           <a class="brand" href="http://dailybruin.com/usac-special-election-2014/">USAC Special Election 2014</a>
             <ul class="nav">
-              <li><a href="http://dailybruin.com/usac-special-election-2014/">Candidates</a></li>
+              <li><a href="http://dailybruin.com/usac-special-election-2014/">Ballot Measures & Candidates</a></li>
               <li class="active"><a href="http://dailybruin.com/usac-special-elections-2014/endorsements">Endorsements</a></li>
             </ul>
         </div>
@@ -305,7 +305,7 @@ Template Name: USAC Special Election Endorsements 2014
 <div class="row-fluid">
 
   <div class="span8">
-    <a title='USAC Elections' href='http://dailybruin.com/usac-elections-2014/'><img src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png' border='0'/></a> 
+    <a title='USAC Elections' href='http://dailybruin.com/usac-special-election-2014/'><img src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png' border='0'/></a> 
     <br /><br />
 
     <div class="endorsement">
