@@ -117,11 +117,10 @@ div #preload { display: none; }
     <div class="navbar">
       <div class="navbar-inner" style="color:#3185c0">
         <div class="container-fluid">
-          <a class="brand" href="http://dailybruin.com/usac-special-elections-2014/">USAC Special Election 2014</a>
+          <a class="brand" href="http://dailybruin.com/usac-special-election-2014/">USAC Special Election 2014</a>
             <ul class="nav">
-              <li class="active"><a href="/usac-special-elections-2014/candidates">Candidates</a></li>
-              <li><a href="http://dailybruin.com/usac-special-elections-2014/">Endorsements</a></li>
-              <li><a href="/usac-special-elections-2014/articles">Articles</a></li>
+              <li class="active"><a href="/usac-special-election-2014/">Candidates</a></li>
+              <li><a href="http://dailybruin.com/usac-special-elections-2014/endorsements">Endorsements</a></li>
             </ul>
         </div>
       </div>
@@ -134,25 +133,27 @@ div #preload { display: none; }
         <a title='USAC Elections' href='/usac-elections-2014/'><img id='banner' src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png'/></a>
 
         <div class="thumbnail">
-          <p style="text-align:center"><b>
-			Very basic information about the election is here
-		  </div>
+        <h4>Introduction</h4>
+        <p>The Undergraduate Students Association Council is the representative body for more than 28,000 UCLA undergraduate students. This week, USAC will hold a special election to fill two of 14 councilmember seats. Special elections, as well as elections without any formal slate participation, are a rare event in UCLA history.</p>
+
+        <p>USAC manages about $4 million in student fees each year, appoints students to campus committees and aims to advocate for students at the university, local and national levels.</p>
+
+        <h4>How can I vote in the special election?</h4>
+        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 12 p.m.</p>
+
+        <h4>When are results announced?</h4>
+        <p>The USAC Election Board will announce the election results at 7 p.m. Friday. </p>
+
+        <h4>What is the USAC Election Board?</h4>
+        <p>The Election Board is appointed by USAC and is tasked with running USAC elections. The board, which is meant to be an unbiased body, holds events to promote the election and educate students about the candidates and measures on the election ballot. Election Board members also sanctions candidates if they violate campaigning rules. </p>
+        <b>
+  		  </div>
 		  
-		<div class="span12" id='display'>
-		</div>
-        <!--<div>
-          <h4>Sort by: </h4>
-        </div>
-
-        <div class="btn-group">
-          <button id="Office" class="btn-large btn-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
-          <button id="Slate" class="btn-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
-        </div>-->
-
-        <div>
-          <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
-        </div> 
-
+		    <div class="span12" id='display'>
+          <div>
+            <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
+          </div> 
+		    </div>
        
       </div>
 
