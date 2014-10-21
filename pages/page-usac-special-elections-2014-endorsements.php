@@ -278,7 +278,6 @@ Template Name: USAC Special Election Endorsements 2014
         .endorsement{
         	margin:0;
         	padding: 0 15px 15px 15px;
-        	text-align: justify;
         }
 
 
