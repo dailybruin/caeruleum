@@ -139,10 +139,10 @@ div #preload { display: none; }
         <p>USAC manages about $4 million in student fees each year, appoints students to campus committees and aims to advocate for students at the university, local and national levels.</p>
 
         <h4>How can I vote in the special election?</h4>
-        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 12 p.m.</p>
+        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 11:59 p.m.</p>
 
         <h4>When are results announced?</h4>
-        <p>The USAC Election Board will announce the election results tentatively at 7 p.m. Friday at Meyerhoff Park.  </p>
+        <p>The USAC Election Board will announce the election results tentatively at 12:30 p.m. Friday at Meyerhoff Park.  </p>
 
         <h4>What is the USAC Election Board?</h4>
         <p>The Election Board is appointed by USAC and is tasked with running USAC elections. The board, which is meant to be an unbiased body, holds events to promote the election and educate students about the candidates and measures on the election ballot. Election Board members also sanction candidates if they violate campaigning rules. </p>
