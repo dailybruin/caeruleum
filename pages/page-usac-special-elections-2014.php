@@ -139,7 +139,7 @@ div #preload { display: none; }
         <p>USAC manages about $4 million in student fees each year, appoints students to campus committees and aims to advocate for students at the university, local and national levels.</p>
 
         <h4>How can I vote in the special election?</h4>
-        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 11:59 p.m.</p>
+        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 12 p.m.</p>
 
         <h4>When are results announced?</h4>
         <p>The USAC Election Board will announce the election results tentatively at 12:30 p.m. Friday at Meyerhoff Park.  </p>
@@ -158,9 +158,15 @@ div #preload { display: none; }
         <p>The Green Initiative Fund, which uses funds from quarterly student fees to support environmental sustainability projects on campus, is currently set to expire in the spring of 2018. Each student currently pays about $4 per quarter for the fund, but the referendum would extend the fee indefinitely.</p>
         <h3>Temporary vacancy constitutional amendment</h3>
         <p>The constitutional amendment would clarify how vacancies on USAC are filled, extend the timeline for council to hold special elections and prevent special elections from taking place during school breaks. Constitutional amendments require the approval of two-thirds of voting students.</p>
-        <b>
         </div>
+        <br>
+        <div class='thumbnail'>
+        <h3>Sanctions</h3>
+        <hr>
+        <p>Negeen Sadeghi-Movahed and Sofia Moreno Haq were barred from fliering on campus from 12-3 p.m. Monday for turning in their campaign expense accounts late. </p>
+        <b>
 
+        </div>
 
 		    <div class="span12" id='display'>
           <div>
@@ -183,6 +189,7 @@ div #preload { display: none; }
       <!-- Candidate Display Generated Through Script -->
 
       </div>
+
 
     </div>
 
@@ -245,7 +252,7 @@ div #preload { display: none; }
     o1.office = OFFICE.GENERAL_REP; //Office
     o1.picture = "http://dailybruin.com/images/2014/10/web.SofiaMoreno1-200x300.jpg"; //Picture name
     o1.bio = "Lots of info."; //Candidate bio
-    o1.major = "Gender Studies"; //Candidate Major
+    o1.major = "Gender Studies Student"; //Candidate Major
     o1.year = "Fifth"; //Year
     //o1.winner = true;
 
