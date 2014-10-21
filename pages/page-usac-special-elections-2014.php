@@ -245,7 +245,7 @@ div #preload { display: none; }
     o1.office = OFFICE.GENERAL_REP; //Office
     o1.picture = "http://dailybruin.com/images/2014/10/web.SofiaMoreno1-200x300.jpg"; //Picture name
     o1.bio = "Lots of info."; //Candidate bio
-    o1.major = "Gender Studies Student"; //Candidate Major
+    o1.major = "Gender Studies"; //Candidate Major
     o1.year = "Fifth"; //Year
     //o1.winner = true;
 
