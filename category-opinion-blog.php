@@ -72,7 +72,10 @@ Template Name: Opinion Blog
 	}
 
 	#blog-title {
-		font-family: 'Playfair Display SC', serif;	
+		margin-top: 30px;
+		font-family: 'Playfair Display SC', serif;
+		font-size: 5em;
+		line-height: 90%;	
 	}
 
 	.header img {
@@ -146,6 +149,9 @@ Template Name: Opinion Blog
             width: auto;
         }
     }
+	.cat-two-cents {
+		background-color: black;
+	}
 
 	.cat-idle-thoughts {
 		background-color: #660066;
@@ -167,10 +173,15 @@ Template Name: Opinion Blog
 
 <?php
 	$slug_to_cat = array(
+			'two-cents' => array('name' => 'Two Cents', 'css' => 'cat-two-cents'),
 			'idle-thoughts' => array('name' => 'Idle Thoughts', 'css' => 'cat-idle-thoughts'),
 			'political-commentary' => array('name' => 'Political Commentary', 'css' => 'cat-political-commentary'),
 			'social-commentary' => array('name' => 'Social Commentary', 'css' => 'cat-social-commentary'),
-			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports'),
+			'sports-two-cents' => array('name' => 'Sports', 'css' => 'cat-sports')
+		);
+
+	$cats = array(
+			'Two Cents', 'Idle Thoughts', 'Political Commentary', 'Social Commentary', 'Sports'
 		);
 
 	$contributors = array(
@@ -225,103 +236,56 @@ Template Name: Opinion Blog
 
 
 		<div class="row-fluid header">
-			<img src="http://dailybruin.com/images/2014/09/2centsblog-cropped.jpg" alt="logo">
+			<img src="http://dailybruin.com/images/2014/09/2centsblog-cropped.jpg" alt="logo" style="width: 200px; height: 100%;">
 			<h1 id="blog-title">Two Cents</h1>
 		</div>
         <div class="row-fluid">
 
-            <div class="span5">
-            <?php 
-				$args = array(
-					'posts_per_page'   => 1, 
-					'tag' => 'op-feature');
-
-				$posts = get_posts($args);
-
-				foreach ($posts as $post) :
-					setup_postdata($post);
-					$categories = get_the_category($post->ID);
-					echo the_post_thumbnail('large');
-
-				foreach ($categories as $cat) {
-					if($cat->name == 'Idle Thoughts' || $cat->name == 'Political Commentary' || $cat->name == 'Social Commentary' || $cat->name == 'Sports' || $cat->name == "Two Cents"){
-						$category = $cat->slug;
-						break;
-					}
-				}
-			?>
-
-			<div class="category <?php echo $slug_to_cat[$category]['css'] ?>"><?php echo $slug_to_cat[$category]['name'] ?></div>
-			<div class="feature-date">
-				<?php the_time('F j, Y'); ?>
-			</div>
-			<div class="content">
-				<a class="heading" href="<?php the_permalink(); ?>">
-					<?php the_title(); ?>
-				</a>
-			</div>
-			<div class="author">
-					BY <?php the_author(); ?>
-			</div>
-			<div class="description">
-				<p><?php echo get_the_excerpt(); ?>
-				<a href="<?php the_permalink(); ?>">More &#187;</a>
-				</p>
-			</div>
-			<?php endforeach; ?>
-		
-		<?php
-			foreach ( $slug_to_cat as $slug => $cat) :
-		?>
-			<hr style="height:2px;border:none;color:#333;background-color:#333;" />
-
-			<div class="category <?php echo $cat['css'] ?>"><?php echo $cat['name'] ?></div>
+            <div class="span8">
 
 			<div class="row-fluid">
-				<div class="span5">
+				<div class="span12">
 					<?php
-						$featureTags = array('7484');
-						$categoryObject = get_category_by_slug($slug);
-						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID, 'tag__not_in' => $featureTags);
+						$categoryObject = get_category_by_slug('two-cents');
+
+						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
 						
 						$posts = get_posts( $args );
 
-						$i = 0;
-						foreach ( $posts as $post ) : setup_postdata( $post );
-							if($i == 0) :
-								if ( '' != get_the_post_thumbnail() ) : ?>
-									<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
-								<?php endif; ?>
+						foreach ($posts as $post) : setup_postdata($post);
 
-								<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
+							if ( '' != get_the_post_thumbnail() ) : ?>
+								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
+							<?php endif; ?>
 
-								<span class="date"><?php the_time('M j, Y'); ?></span><br/>
+							<?php $categories = get_the_category();
 
-								<span class="author"><?php the_author(); ?></span>
+							foreach ($categories as $cat){
+								if(in_array($cat->cat_name,$cats)) {
+									echo "<div class=\"category " . $slug_to_cat[$cat->slug]['css'] . "\">" . $slug_to_cat[$cat->slug]['name'] . "</div><br/>";
+									break;
+								}
+							}
+							?>
 
-								<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
+							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
 
-								</div>
+							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
 
-								<div class="span7 recent-cols">
+							<span class="author"><?php the_author(); ?></span>
 
-							<?php else : ?>
-								<a class="sub-head title" href="<?php the_permalink() ?>"><?php the_title(); ?></a><br/>
+							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
 
-								<span class="date"><?php the_time('M j, Y'); ?></span><hr/>				
-		
-							<?php endif; $i++; ?>
-						<?php endforeach; 
-						wp_reset_postdata(); ?>
 
-				</div>		
+						<?php endforeach;
+				
+						wp_reset_postdata(); 
+					?>
+				</div>
 			</div>
-		<?php
-			endforeach;
-		?>
 	     </div>
 
-            <div class="span3" id="right-column">
+            <div class="span4" id="right-column">
 				<!-- 
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
@@ -385,7 +349,6 @@ Template Name: Opinion Blog
                     ?>
                 </div>
             </div>   
-	     <?php get_sidebar(); ?>
 
 	</div>
     </div>
