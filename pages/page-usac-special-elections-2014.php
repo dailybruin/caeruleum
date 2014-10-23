@@ -166,7 +166,6 @@ div #preload { display: none; }
         <ul>
         <li>10/19/14: Negeen Sadeghi-Movahed and Sofia Moreno Haq were barred from fliering on campus from 12-3 p.m. Monday for turning in their campaign expense accounts late. </li>
         <li>10/23/14: Negeen Sadeghi-Movahed and Sofia Moreno Haq were barred from fliering on campus the all of Thursday for turning in their campaign expense accounts late. </li>
-        <li>
         </ul>
         <b>
 
