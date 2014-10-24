@@ -152,13 +152,35 @@ div #preload { display: none; }
         <div class="thumbnail">
         <h2>Ballot Measures</h2>
         <hr>
-        <h3>The Bruin Diversity Referendum of 2014</h3>
+        <h3 style="color:red">The Bruin Diversity Referendum of 2014</h3>
         <p>The referendum would raise student fees by $9.93 per quarter to help fund certain diversity, retention and outreach programs on campus. If it passes with a majority vote, the referendum would take effect in spring.</p>
+        <p><strong>Results</strong>:</p>
+        <ul>
+          <li>YES: 2112 votes (58.7%)</li>
+          <li>NO: 1483 votes (41.3%)</li>
+        </ul>
+        <p style="color:red">Because the election did not reach the 20 percent voter turnout threshold, the referendum fails.</p>
 
-        <h3>The Green Initiative Fund Extension</h3>
+
+
+        <h3 style="color:red">The Green Initiative Fund Extension</h3>
         <p>The Green Initiative Fund, which uses funds from quarterly student fees to support environmental sustainability projects on campus, is currently set to expire in the spring of 2018. Each student currently pays about $4 per quarter for the fund, but the referendum would extend the fee indefinitely.</p>
-        <h3>Temporary vacancy constitutional amendment</h3>
+
+        <p><strong>Results</strong>:</p>
+        <ul>
+          <li>YES: 2112 votes (58.7%)</li>
+          <li>NO: 1483 votes (41.3%)</li>
+        </ul>
+        <p style="color:red">Because the election did not reach the 20 percent voter turnout threshold, the referendum fails.</p>
+
+        <h3 style="color:green">Temporary vacancy constitutional amendment</h3>
         <p>The constitutional amendment would clarify how vacancies on USAC are filled, extend the timeline for council to hold special elections and prevent special elections from taking place during school breaks. Constitutional amendments require the approval of two-thirds of voting students.</p>
+        <p><strong>Results</strong>:</p>
+        <ul>
+          <li style="color:green">YES: 2827 votes (86.9%)</li>
+          <li>NO: 427 votes (13.1%)</li>
+
+        </ul>
         </div>
         <br>
         <div class='thumbnail'>
