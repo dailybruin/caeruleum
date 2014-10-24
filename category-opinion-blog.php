@@ -89,6 +89,22 @@ Template Name: Opinion Blog
 	}
 
     /*Phillip's Style*/
+
+	.video-wrapper {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 25px;
+		height: 0;
+	}
+
+	.video-wrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
     .columnist-row {
         margin-bottom: 20px;
     }
@@ -286,6 +302,21 @@ Template Name: Opinion Blog
 	     </div>
 
             <div class="span4" id="right-column">
+	            <div class="video-wrapper">
+		            <?php
+						$video_category = get_category_by_slug('two-cents-video');
+
+						$video_args = array('posts_per_page' => 1, 'category' => $video_category->cat_ID);
+
+						$video_posts = get_posts( $video_args );
+
+						foreach ($video_posts as $video_post) : setup_postdata($video_post);
+							echo html_entity_decode(get_the_content());
+						endforeach;
+
+						wp_reset_postdata();
+					?>
+	            </div>
 				<!-- 
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
