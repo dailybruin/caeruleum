@@ -139,7 +139,7 @@ div #preload { display: none; }
         <p>USAC manages about $4 million in student fees each year, appoints students to campus committees and aims to advocate for students at the university, local and national levels.</p>
 
         <h4>How can I vote in the special election?</h4>
-        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 11:59 p.m.</p>
+        <p>Students can vote by logging in to MyUCLA from Tuesday at 12 p.m. to Thursday at 12 p.m.</p>
 
         <h4>When are results announced?</h4>
         <p>The USAC Election Board will announce the election results tentatively at 12:30 p.m. Friday at Meyerhoff Park.  </p>
@@ -154,6 +154,7 @@ div #preload { display: none; }
         <hr>
         <h3>The Bruin Diversity Referendum of 2014</h3>
         <p>The referendum would raise student fees by $9.93 per quarter to help fund certain diversity, retention and outreach programs on campus. If it passes with a majority vote, the referendum would take effect in spring.</p>
+
         <h3>The Green Initiative Fund Extension</h3>
         <p>The Green Initiative Fund, which uses funds from quarterly student fees to support environmental sustainability projects on campus, is currently set to expire in the spring of 2018. Each student currently pays about $4 per quarter for the fund, but the referendum would extend the fee indefinitely.</p>
         <h3>Temporary vacancy constitutional amendment</h3>
@@ -163,10 +164,7 @@ div #preload { display: none; }
         <div class='thumbnail'>
         <h3>Sanctions</h3>
         <hr>
-        <ul>
-        <li>10/19/14: Negeen Sadeghi-Movahed and Sofia Moreno Haq were barred from fliering on campus from 12-3 p.m. Monday for turning in their campaign expense accounts late. </li>
-        <li>10/23/14: Negeen Sadeghi-Movahed and Sofia Moreno Haq were barred from fliering on campus the all of Thursday for turning in their campaign expense accounts late. </li>
-        </ul>
+        <p>Negeen Sadeghi-Movahed and Sofia Moreno Haq were barred from fliering on campus from 12-3 p.m. Monday for turning in their campaign expense accounts late. </p>
         <b>
 
         </div>
@@ -242,6 +240,7 @@ div #preload { display: none; }
     o0.bio = "Lots of info."; //Candidate bio
     o0.major = "International Development Studies"; //Candidate Major
     o0.year = "Fourth"; //Year
+    o0.votes = "1438 (41.5%)";
 
     o0.plat = [];
     o0.plat.push("Increase collaboration between student groups through The Perspectives Showcase");
@@ -257,13 +256,15 @@ div #preload { display: none; }
     o1.bio = "Lots of info."; //Candidate bio
     o1.major = "Gender Studies Student"; //Candidate Major
     o1.year = "Fifth"; //Year
-    //o1.winner = true;
+    o1.winner = true;
+    o1.votes = "2026 (58.5%)";
 
     o1.plat = [];
     o1.plat.push("After Hours: Extend van service hours");
     o1.plat.push("Take it to The Hill: Provide resources on The Hill that all students can utilize");
     o1.plat.push("International Love: Create quarterly multicultural festivals");
     o1.plat.push("Welcome to L.A.: provide a monthly guide to life in L.A,");
+
 
   c.push(o1);
 
@@ -275,6 +276,7 @@ div #preload { display: none; }
     o2.bio = "Lots of info."; //Candidate bio
     o2.major = "Political Science"; //Candidate Major
     o2.year = "Third"; //Year
+    o2.votes = "405 (11.8%)";
 
     o2.plat = [];
     o2.plat.push("Reinvest in transfer resources");
@@ -292,6 +294,7 @@ div #preload { display: none; }
     o3.bio = "Lots of info."; //Candidate bio
     o3.major = "Political Science"; //Candidate Major
     o3.year = "Fourth"; //Year
+    o3.votes = "1214 (35.5%)";
 
     o3.plat = [];
     o3.plat.push("Transfer Success Guide: Compilation of resources");
@@ -308,7 +311,8 @@ div #preload { display: none; }
     o4.bio = "Lots of info."; //Candidate bio
     o4.major = "Political Science"; //Candidate Major
     o4.year = "Fourth"; //Year
-    //o4.winner = true;
+    o4.winner = true;
+    o4.votes = "1803 (52.7%)";
 
     o4.plat = [];
     o4.plat.push("Invest in Transfer Success: Create an academic advising guide and advocate for a transfer center");
@@ -370,6 +374,7 @@ div #preload { display: none; }
     if (o.major2 != undefined)
       string +=     "<h4 class='spacer'>" + o.major2 + "</h4>";
       string +=     "<h4 class='spacer'>Year:</h4><h4 class='candinfo'>  " + o.year + "</h4>";
+      string +=     "<h4 class='spacer'>Votes:</h4><h4 class='candinfo'>  " + o.votes + "</h4>";
 
       string += "</div>";
 
