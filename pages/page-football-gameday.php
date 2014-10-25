@@ -71,7 +71,7 @@ Template Name: Football Gameday
 		</div>
 	</div>
 	<div class="row-fluid">
-		<div class="span7">
+		<div class="span8">
 			<div class="span12" id="feature-story">
 	            <?php 
 					$args = array(
@@ -152,7 +152,7 @@ Template Name: Football Gameday
 				?>
 			</div>
 		</div>
-
+<!--
 		<div class="span5">
 			<div class="row-fluid">
 				<div class="span12">
@@ -161,12 +161,14 @@ Template Name: Football Gameday
 				</div>
 
 				<div class="span12">
-					<!-- <h2>Comparing Stats</h2> -->
+					<!-- <h2>Comparing Stats</h2> --> <!--
 					<img src=<?php echo $comparing_stats_graphic; ?> > 
 
 				</div>
 			</div>
 		</div>
+-->
+	<?php get_sidebar(); ?>
 	</div>
 </div>
 
