@@ -156,8 +156,8 @@ div #preload { display: none; }
         <p>The referendum would raise student fees by $9.93 per quarter to help fund certain diversity, retention and outreach programs on campus. If it passes with a majority vote, the referendum would take effect in spring.</p>
         <p><strong>Results</strong>:</p>
         <ul>
-          <li>YES: 2112 votes (58.7%)</li>
-          <li>NO: 1483 votes (41.3%)</li>
+          <li>YES: 2217 votes (58.2%)</li>
+          <li>NO: 1594 votes (41.8%)</li>
         </ul>
         <p style="color:red">Because the election did not reach the 20 percent voter turnout threshold, the referendum fails.</p>
 
