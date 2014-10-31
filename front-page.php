@@ -205,6 +205,18 @@
                                 </a>
                             </li>
 							<?php endforeach; ?>
+							<?php
+							$args = array( 'numberposts' => 1, 'tag' => 'sponsored-post' );
+							$lastposts = get_posts( $args );
+							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+	                        <li>
+	                            <a href="<?php the_permalink(); ?>">
+	                                <span class="headline-d"><?php the_headline(); ?></span></a>
+	                                <p><?php echo get_the_excerpt(); ?></p>
+	                            </a>
+	                        </li>
+							<?php endforeach; ?>
+
 						</ul><!-- end ul#d-stories-desktop -->						
 					</div><!-- end div#front-secondarycol -->
 				</div><!-- end div.row  inner row -->
@@ -239,6 +251,7 @@
 							<span class="headline-d"><?php the_headline(); ?></span>
 						</a>
 						<?php endforeach; ?>
+
 					</div><!-- end div.span8 -->
 				</div><!-- end div.row -->
 				
