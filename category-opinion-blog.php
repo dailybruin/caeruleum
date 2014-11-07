@@ -327,7 +327,9 @@ Template Name: Opinion Blog
 						$lastposts = get_posts( $args );
 						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 		                 <span><?php the_content(); ?></span>
-					<?php endforeach; ?>
+					<?php endforeach; 
+					wp_reset_postdata();
+					?>
 
 <!-- 		            <?php
 						$video_category = get_category_by_slug('two-cents-video');
