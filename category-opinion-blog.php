@@ -23,6 +23,16 @@ Template Name: Opinion Blog
 	.illo {margin: 10px 0 10px 0;}
 
 	/*Simon's Style*/
+	.blog-posts {
+		font-size: 1.2em;
+	}
+
+	.two-cents-post {
+		border-top: 1px solid gray;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+
     .widget-title {
 		font-family: Open Sans,Arial,Decima,"Helvetica Neue",Helvetica,sans-serif;
 		letter-spacing: 1px;
@@ -74,16 +84,16 @@ Template Name: Opinion Blog
 	#blog-title {
 		margin-top: 30px;
 		font-family: 'Playfair Display SC', serif;
-		font-size: 5em;
+		font-size: 5.5em;
 		line-height: 90%;	
 	}
 
-	.header img {
+	.blog-header img {
 	  float: left;
 	  height: 70px;
 	}
 
-	.header h1 {
+	.blog-header h1 {
 	  position: relative;
 	  left: 10px;
 	}
@@ -112,6 +122,7 @@ Template Name: Opinion Blog
     .columnist-info {
         display: inline-block;
         text-align: left;
+		font-size: 1.4em;
     }
 
     .columnist-name {
@@ -204,43 +215,50 @@ Template Name: Opinion Blog
 		array(
 			'name' => 'Natalie Delgadillo',
 			'email' => 'ndelgadillo@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4783.jpg',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Natalie.Delgadillo-212x300.jpg',
 			'slugs' => array('idle-thoughts'),
 			'position' => 'Opinion Editor'
 			),
 		array(
 			'name' => 'Julia McCarthy',
 			'email' => 'jmccarthy@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4930.jpg',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Julia_.McCarthy-211x300.jpg',
 			'slugs' => array('social-commentary'),
 			'position' => 'Assistant Opinion Editor'
 			),
 		array(
 			'name' => 'Aram Ghoogasian',
 			'email' => 'aghoogasian@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4894.jpg',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Aram_.Ghoogasian-211x300.jpg',
 			'slugs' => array('political-commentary'),
 			'position' => 'Opinion Staff Writer'
 			),
 		array(
 			'name' => 'Jordan Lee',
 			'email' => 'jlee2@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4844.jpg',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Jordan.Lee_-211x300.jpg',
 			'slugs' => array('sports-two-cents'),
 			'position' => 'Sports Staff Writer'
 			),
 		array(
 			'name' => 'Chloe Lew',
 			'email' => 'clew@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4875.jpg',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Chloe_.Lew_-211x300.jpg',
 			'slugs' => array('social-commentary'),
 			'position' => 'Opinion Staff Writer'
 			),
 		array(
 			'name' => 'Ryan Nelson',
 			'email' => 'rnelson@media.ucla.edu',
-			'img' => 'http://dailybruin.com/images/userphoto/4771.jpg',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Ryan_.Nelson-212x300.jpg',
 			'slugs' => array('idle-thoughts'),
+			'position' => 'Opinion Staff Writer'
+			),
+		array(
+			'name' => 'Travis Fife',
+			'email' => 'tfife@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Travis.Fife_-211x300.jpg',
+			'slugs' => array('political-commentary'),
 			'position' => 'Opinion Staff Writer'
 			)
 		);
@@ -251,25 +269,27 @@ Template Name: Opinion Blog
     <div class="container-fluid">
 
 
-		<div class="row-fluid header">
+		<div class="row-fluid blog-header">
+			<div class="span12">
 			<img src="http://dailybruin.com/images/2014/09/2centsblog-cropped.jpg" alt="logo" style="width: 200px; height: 100%;">
 			<h1 id="blog-title">Two Cents</h1>
+			</div>
 		</div>
         <div class="row-fluid">
 
-            <div class="span8">
+            <div class="span7 blog-posts">
 
 			<div class="row-fluid">
 				<div class="span12">
 					<?php
 						$categoryObject = get_category_by_slug('two-cents');
 
-						$args = array('posts_per_page'   => 5, 'category' => $categoryObject->cat_ID);
+						$args = array('posts_per_page'   => 8, 'category' => $categoryObject->cat_ID);
 						
 						$posts = get_posts( $args );
 
 						foreach ($posts as $post) : setup_postdata($post);
-
+							echo "<div class=\"two-cents-post\">";
 							if ( '' != get_the_post_thumbnail() ) : ?>
 								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
 							<?php endif; ?>
@@ -291,7 +311,7 @@ Template Name: Opinion Blog
 							<span class="author"><?php the_author(); ?></span>
 
 							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
-
+							</div>
 
 						<?php endforeach;
 				
@@ -301,9 +321,18 @@ Template Name: Opinion Blog
 			</div>
 	     </div>
 
-            <div class="span4" id="right-column">
-	            <div class="video-wrapper">
+            <div class="span5" id="right-column">
+            	<div class="video-section">
+            		<h2 class="widget-title">Bruins on the Street</h2>
+	            	<div class="video-wrapper">
 		            <?php
+						$args = array( 'numberposts' => 1, 'tag' => 'two-cents-video' );
+						$lastposts = get_posts( $args );
+						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+		                 <span><?php the_content(); ?></span>
+					<?php endforeach; ?>
+
+<!-- 		            <?php
 						$video_category = get_category_by_slug('two-cents-video');
 
 						$video_args = array('posts_per_page' => 1, 'category' => $video_category->cat_ID);
@@ -316,7 +345,8 @@ Template Name: Opinion Blog
 
 						wp_reset_postdata();
 					?>
-	            </div>
+ -->	            </div>
+ 				</div>
 				<!-- 
             	<div id="widget-reaction-quote">
             		<h2 class="widget-title">Recent Reactions</h2>
@@ -353,10 +383,10 @@ Template Name: Opinion Blog
 	                    	$name = $user->first_name . ' ' . $user->last_name;
                     ?>
                     <div class="row-fluid columnist-row">
-                    	<div id="columnist-mugshot" class="span5">
+                    	<div id="columnist-mugshot" class="span4">
                     		<img src="<?php echo $contributor['img'] ?>" alt="<?php echo $contributor['name'] ?>">
                 		</div>
-                		<div id="columnist-info" class="span7 columnist-info">
+                		<div id="columnist-info" class="span8 columnist-info">
                 			<div class="columnist-name"><?php echo $contributor['name'] ?></div>
                 			<?php 
                 				foreach ($contributor['slugs'] as $contributor_slug) ;
