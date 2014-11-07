@@ -323,12 +323,11 @@ Template Name: Opinion Blog
             		<h2 class="widget-title">Bruins on the Street</h2>
 	            	<div class="video-wrapper">
 		            <?php
-						$args = array( 'numberposts' => 1, 'tag' => 'two-cents-video' );
+						$args = array( 'posts_per_page' => 1, 'tag' => 'two-cents-video' );
 						$lastposts = get_posts( $args );
 						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 		                 <span><?php the_content(); ?></span>
 					<?php endforeach; 
-					wp_reset_postdata();
 					?>
 
 <!-- 		            <?php
