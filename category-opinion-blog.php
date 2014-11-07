@@ -289,10 +289,7 @@ Template Name: Opinion Blog
 						$posts = get_posts( $args );
 
 						foreach ($posts as $post) : setup_postdata($post);
-							echo "<div class=\"two-cents-post\">";
-							if ( '' != get_the_post_thumbnail() ) : ?>
-								<div class="sub-img"> <?php the_post_thumbnail('medium'); ?> </div>
-							<?php endif; ?>
+							echo "<div class=\"two-cents-post\">"; ?>
 
 							<?php $categories = get_the_category();
 
@@ -310,7 +307,7 @@ Template Name: Opinion Blog
 
 							<span class="author"><?php the_author(); ?></span>
 
-							<p> <?php the_excerpt(); ?> <a href="<?php get_permalink(the_ID()); ?>">More >></a></p>
+							<p> <?php the_excerpt(); ?> <a href="<?php the_permalink(the_ID()); ?>">More >></a></p>
 							</div>
 
 						<?php endforeach;
