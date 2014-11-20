@@ -2,7 +2,6 @@
 Template Name: USC Football Rivalry 2014
 */ ?>
 <?php get_header(); ?>
-<<<<<<< HEAD
 
 <?php 
 	//Hardcode values
@@ -55,6 +54,7 @@ Template Name: USC Football Rivalry 2014
 	.nonfeature-stories-content {
 	}
 	.nonfeature-stories-title {
+		margin-top: 10px;
 		color: black;
 		font-size: 1.5em;
 	}
@@ -65,13 +65,12 @@ Template Name: USC Football Rivalry 2014
 		margin-bottom: 10px;
 	}
 
-	/*.right-image {
-		float: left;
-		padding: 128px;
-	}*/
+	.image {
+		padding: 40px;
+	}
 
 	.slick-prev:before, .slick-next:before { 
-  	  color:red !important;
+  	  color:blue !important;
 	}
 </style>
 
@@ -82,17 +81,29 @@ Template Name: USC Football Rivalry 2014
 		</div>
 	</div>
 	<div class="slick-slideshow">
-		<div>
+		<div class="image">
 			<img src="http://placekitten.com/512/512">
-			<div class="right-image"
-			<img src="http://placekitten.com/128/128">
+			<div class="nonfeature-stories-title">
+				UCLA vs USC Football
 			</div>
 		</div>
-		<div>
-			<img src="http://placekitten.com/128/128">
+		<div class="image">
+			<img src="http://placekitten.com/512/512">
+			<div class="nonfeature-stories-title">
+				UCLA vs USC Football
+			</div>
 		</div>
-		<div>
+		<div class="image">
 			<img src="http://placekitten.com/256/256">
+			<div class="nonfeature-stories-title">
+				UCLA vs USC Football
+			</div>
+		</div>
+		<div class="image">
+			<img src="http://placekitten.com/256/256">
+			<div class="nonfeature-stories-title">
+				UCLA vs USC Football
+			</div>
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -192,14 +203,9 @@ Template Name: USC Football Rivalry 2014
 			dots: true,
 			infinite: true,
 			speed: 500,
-			fade: true,
-			slide: 'div',
-			cssEase: 'linear'
+			slidesToShow: 2,
+			slidesToScroll: 2
 		});
 	});
 </script>
-
-=======
-hello world
->>>>>>> 26cda262c61f66dd40d6c228959efc192783e04b
 <?php get_footer(); ?>
