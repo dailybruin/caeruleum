@@ -105,7 +105,7 @@ Template Name: USC Football Rivalry 2014
 		background-color: rgba(30, 30, 30, 0.9);  
     	position: relative;  
     	color: white;  
-    	z-index: 100;  
+    	z-index: 110;  
     	-webkit-transition: all 300ms ease-out;  
     	-moz-transition: all 300ms ease-out;  
     	-o-transition: all 300ms ease-out;  
@@ -134,14 +134,13 @@ Template Name: USC Football Rivalry 2014
     	opacity: 1;  
     	/*cursor: pointer;*/
 	}  
-	/*.versus {
-		position: absolute;
-		margin-top: 320px;
-		z-index:200;
-		left: 50%;
-    	margin-right: -50%;
-    	transform: translate(-50%, -50%) }
-	}*/
+	.portrait {
+		position:absolute;
+		height:400px;
+		z-index:105;
+		bottom:115px;
+		margin-left:215px;
+	}
 	
 	
 
@@ -154,9 +153,6 @@ Template Name: USC Football Rivalry 2014
 
 		</div>
 	</div>
-	<!-- <div class="versus">
-		<img src="http://placehold.it/200x200">
-	</div> -->
 	<div class="row-fluid">
 		<div class="span8">
 			<h1 style="padding-bottom: 15px">Scenes from Rivalry Week</h1>
@@ -169,7 +165,8 @@ Template Name: USC Football Rivalry 2014
 					</span>
 				</div>
 				<div class="box">
-					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.shirts.AYEO_.jpg">
+					<img class="image" src="http://dailybruin.com/images/2014/11/black-screene.jpg">
+					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.shirts.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>2. Beat UCLA Shirts</h4>
 						<p>The Pertusati University Bookstore at USC sold shirts with the words "BEAT UCLA" in anticipation of Saturday's big game. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
@@ -183,7 +180,8 @@ Template Name: USC Football Rivalry 2014
 					</span>
 				</div>
 				<div class="box">
-					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.tommyjoe.AYEO_.jpg">
+					<img class="image" src="http://dailybruin.com/images/2014/11/black-screene.jpg">
+					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.tommyjoe.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>4. Tommy Trojan Duct Taped</h4>
 						<p>Similar to how the Bruin Bear was covered in a black box to preempt vandalism, USC's Tommy Trojan was covered in duct tape to ward off would-be vandals. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
@@ -211,11 +209,12 @@ Template Name: USC Football Rivalry 2014
 					</span>
 				</div>
 				<div class="box">
-						<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.sucshirt.AYEO_.jpg">
-						<span class="box-caption">
-							<h4>8. Trojans SUC</h4>
-							<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA marching band. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
-						</span>
+					<img class="image" src="http://dailybruin.com/images/2014/11/black-screene.jpg">
+					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.sucshirt.AYEO_.jpg">
+					<span class="box-caption">
+						<h4>8. Trojans SUC</h4>
+						<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA marching band. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.football.pre_.FILE_.picB_.jpg">
