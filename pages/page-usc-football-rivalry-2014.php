@@ -213,7 +213,7 @@ Template Name: USC Football Rivalry 2014
 					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.sucshirt.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>8. Trojans SUC</h4>
-						<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA marching band. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
+						<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA Bruin Marching Band. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
