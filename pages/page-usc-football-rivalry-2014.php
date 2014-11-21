@@ -161,7 +161,7 @@ Template Name: USC Football Rivalry 2014
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uclastorefront.AYeo_.jpg">
 					<span class="box-caption">
 						<h4>1. UCLA Store Banner</h4>
-						<p>During rivalry week, the UCLA store hung a banner to promote the football game against USC at the Rose Bowl. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>) </p>
+						<p>During rivalry week, the UCLA Store hung a banner to promote the football game against USC at the Rose Bowl. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>) </p>
 					</span>
 				</div>
 				<div class="box">
