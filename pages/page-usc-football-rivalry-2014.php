@@ -149,7 +149,7 @@ Template Name: USC Football Rivalry 2014
 <div class="container">
 	<div class="row-fluid">
 		<div class="span12">
-		<img src= "http://dailybruin.com/images/2014/11/Web_banner.jpg" style="padding-bottom: 15px"> 
+		<img src= "http://dailybruin.com/images/2014/11/Web_banner-copy.jpg" style="padding-bottom: 15px"> 
 
 		</div>
 	</div>
@@ -161,7 +161,7 @@ Template Name: USC Football Rivalry 2014
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uclastorefront.AYeo_.jpg">
 					<span class="box-caption">
 						<h4>1. UCLA Store Banner</h4>
-						<p>During rivalry week, the UCLA store hung a banner to promote the football game against USC at the Rose Bowl. (Aubrey Yeo/Daily Bruin Senior Staff) </p>
+						<p>During rivalry week, the UCLA store hung a banner to promote the football game against USC at the Rose Bowl. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>) </p>
 					</span>
 				</div>
 				<div class="box">
@@ -169,14 +169,14 @@ Template Name: USC Football Rivalry 2014
 					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.shirts.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>2. Beat UCLA Shirts</h4>
-						<p>The Pertusati University Bookstore at USC sold shirts with the words "BEAT UCLA" in anticipation of Saturday's big game. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>The Pertusati University Bookstore at USC sold shirts with the words "BEAT UCLA" in anticipation of Saturday's big game. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.hibernatebearAYeo.jpg">
 					<span class="box-caption">
 						<h4>3. Hibernating Bruin Bear</h4>
-						<p>During rivalry week, the Bruin Bear "hibernates" in a black box which wards off attempts at vandalizing the statue. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>During rivalry week, the Bruin Bear "hibernates" in a black box which wards off attempts at vandalizing the statue. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
@@ -184,28 +184,28 @@ Template Name: USC Football Rivalry 2014
 					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.tommyjoe.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>4. Tommy Trojan Duct Taped</h4>
-						<p>Similar to how the Bruin Bear was covered in a black box to preempt vandalism, USC's Tommy Trojan was covered in duct tape to ward off would-be vandals. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>Similar to how the Bruin Bear was covered in a black box to preempt vandalism, USC's Tommy Trojan was covered in duct tape to ward off would-be vandals. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picA_.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>5. Hanging Teddy Bears</h4>
-						<p>The Pertusati University Bookstore at USC was decorated with teddy bears dressed in UCLA t-shirts hung by their legs from the ceiling. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>The Pertusati University Bookstore at USC was decorated with teddy bears dressed in UCLA t-shirts hung by their legs from the ceiling. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uscballoon.AYeo_.jpg">
 					<span class="box-caption">
 						<h4>6. USC Balloons</h4>
-						<p>The Ronald Tutor Campus Center at USC was decorated with cardinal and gold balloons during rivalry week. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>The Ronald Tutor Campus Center at USC was decorated with cardinal and gold balloons during rivalry week. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picB_.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>7. More Hanging Teddy Bears</h4>
-						<p>More teddy bears were hung from the Trojan branded tailgating merchandise displays at the Pertusati University Bookstore at USC. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>More teddy bears were hung from the Trojan branded tailgating merchandise displays at the Pertusati University Bookstore at USC. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
@@ -213,28 +213,28 @@ Template Name: USC Football Rivalry 2014
 					<img class="portrait" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.sucshirt.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>8. Trojans SUC</h4>
-						<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA marching band. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA marching band. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.football.pre_.FILE_.picB_.jpg">
 					<span class="box-caption">
 						<h4>9. UCLA - 2, USC - 0</h4>
-						<p>The annual UCLA v. USC football game happens this Staurday. The Bruins are on a two-year winning streak that started two years ago after a 38-28 victory over a Matt Barkley (pictured) led Trojan team. (Daily Bruin File Photo)</p>
+						<p>The annual UCLA v. USC football game happens this Staurday. The Bruins are on a two-year winning streak that started two years ago after a 38-28 victory over a Matt Barkley (pictured) led Trojan team. (<em>Daily Bruin File Photo</em>)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.2013bonfire.jpg">
 					<span class="box-caption">
 						<h4>10. Beat 'SC Bonfire</h4>
-						<p>Despite the fact that the Beat 'SC bonfire didn't happen this year due to protests, the annual event is an integral part of UCLA tradition. (Daily Bruin File Photo)</p>
+						<p>Despite the fact that the Beat 'SC bonfire didn't happen this year due to protests, the annual event is an integral part of UCLA tradition. (<em>Daily Bruin File Photo</em>)</p>
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="span4">
 			<div class="vertical-graphic">
-				<img src="http://dailybruin.com/images/2014/11/11.21.sports.football.FORWEB.edit1_.jpg">
+				<img src="http://dailybruin.com/images/2014/11/photofootball.png">
 			</div>
 		</div>
 	</div>
