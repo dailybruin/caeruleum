@@ -205,7 +205,7 @@ Template Name: USC Football Rivalry 2014
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picB_.AYEO_.jpg">
 					<span class="box-caption">
 						<h4>7. More Hanging Teddy Bears</h4>
-						<p>More teddy bears were hung from the Trojan branded tailgating merchandise displays at the Pertusati Bookstore at USC. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
+						<p>More teddy bears were hung from the Trojan-branded tailgating merchandise displays at the Pertusati Bookstore at USC. (<em>Aubrey Yeo/Daily Bruin Senior Staff</em>)</p>
 					</span>
 				</div>
 				<div class="box">
