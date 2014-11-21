@@ -71,7 +71,7 @@ Template Name: USC Football Rivalry 2014
 		padding-top: 80px;
 		margin-top:20px;
 		/*background-color:#E7E8E7;*/
-		background-image: url("http://i.imgur.com/qucc7HL.jpg");
+		background-image: url("http://i.imgur.com/XLCRFaY.jpg");
 	}
 	.image {
 		-webkit-box-shadow: 1px 1px 1px 1px #ccc;  
@@ -91,14 +91,14 @@ Template Name: USC Football Rivalry 2014
 
 	.storify {
 		width: 100%;
-		height: 800px;
+		height: 1000px;
 		overflow-y: scroll;
 	}
 
 	.box-caption {
 		margin: 0 auto;
 
-		background-color: rgba(105,105,105,0.8);  
+		background-color: rgba(30, 30, 30, 0.9);  
     	position: relative;  
     	color: white;  
     	z-index: 100;  
@@ -110,16 +110,20 @@ Template Name: USC Football Rivalry 2014
     	
     	padding-top: 5px;
 
-    	height: 70px;  
+    	height: 100px;  
     	width: 100%;  
     	display: block;  
-    	bottom: 80px;  
+    	bottom: 110px;  
     	line-height: 25pt;  
     	text-align: center;
     	border-left: 5px solid #fff; 
     	border-bottom: 5px solid #fff;
     	border-right: 5px solid #fff;
     	opacity: 0.8;
+	}
+
+	.vertical-graphic {
+		padding-top: 95px;
 	}
 
 	.box-caption:hover {  
@@ -150,76 +154,89 @@ Template Name: USC Football Rivalry 2014
 		<img src="http://placehold.it/200x200">
 	</div> -->
 	<div class="row-fluid">
-		<div class="span10 offset1">
+		<div class="span8">
+			<h1>Scenes from Rivalry Week</h1>
 			<div class="slick-slideshow">
 				<div class="box">
-					<img class="image" src="http://placehold.it/350x150">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uclastorefront.AYeo_.jpg">
 					<span class="box-caption">
-						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-						<p>asdfa;sdf</p>
+						<h4>1. UCLA Store Banner</h4>
+						<p>During rivalry week, the UCLA store hung a banner to promote the football game against USC at the Rose Bowl. (Aubrey Yeo/Daily Bruin Senior Staff) </p>
 					</span>
 				</div>
 				<div class="box">
-					<img class="image" src="http://placekitten.com/512/512">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.shirts.AYEO_.jpg">
 					<span class="box-caption">
-						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-						<p>asdfa;sdf</p>
+						<h4>2. Beat UCLA Shirts</h4>
+						<p>The Pertusati University Bookstore at USC sold shirts with the words "BEAT UCLA" in anticipation of Saturday's big game. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
 				<div class="box">
-					<img class="image" src="http://placekitten.com/512/512">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.hibernatebearAYeo.jpg">
 					<span class="box-caption">
-						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-						<p>asdfa;sdf</p>
+						<h4>3. Hibernating Bruin Bear</h4>
+						<p>During rivalry week, the Bruin Bear "hibernates" in a black box which wards off attempts at vandalizing the statue. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
 				<div class="box">
-					<img class="image" src="http://placekitten.com/512/512">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.tommyjoe.AYEO_.jpg">
 					<span class="box-caption">
-						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-						<p>asdfa;sdf</p>
+						<h4>4. Tommy Trojan</h4>
+						<p>Similar to how the Bruin Bear was covered in a black box to preempt vandalism, USC's Tommy Trojan was covered in duct tape to ward off would-be vandals. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
+				<div class="box">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picA_.AYEO_.jpg">
+					<span class="box-caption">
+						<h4>5. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>The Pertusati University Bookstore at USC was decorated with teddy bears dressed in UCLA t-shirts hung by their legs from the ceiling. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+					</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uscballoon.AYeo_.jpg">
+					<span class="box-caption">
+						<h4>6. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>The Ronald Tutor Campus Center at USC was decorated with cardinal and gold balloons during rivalry week. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+					</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picB_.AYEO_.jpg">
+					<span class="box-caption">
+						<h4>7. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>More teddy bears were hung from the Trojan branded tailgating merchandise displays at the Pertusati University Bookstore at USC. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+					</span>
+				</div>
+				<div class="box">
+						<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.sucshirt.AYEO_.jpg">
+						<span class="box-caption">
+							<h4>8. Trojans SUC</h4>
+							<p>Fifth-year mechanical engineering student Derek Wun was interviewed by second-year undeclared student Ashley Gomez about selling 'Trojans SUC' shirts to raise funds for the UCLA marching band. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
+						</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.football.pre_.FILE_.picB_.jpg">
+					<span class="box-caption">
+						<h4>9. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>The annual UCLA v. USC football game happens this Staurday. The Bruins are on a two-year winning streak that started two years ago after a 38-28 victory over a Matt Barkley (pictured) led Trojan team. (Daily Bruin File Photo)</p>
+					</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.2013bonfire.jpg">
+					<span class="box-caption">
+						<h4>10. Bonfire</h4>
+						<p>Despite the fact that the Beat 'SC bonfire didn't happen this year due to protests, the annual event is an integral part of UCLA tradition. (Daily Bruin File Photo)</p>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<div class="vertical-graphic">
+				<img src="http://dailybruin.com/images/2014/11/11.21.sports.football.FORWEB.edit1_.jpg">
 			</div>
 		</div>
 	</div>
 	<div class="row-fluid">
 		<div class="span8">
-			<div class="span12" id="feature-story">
-	            <?php 
-					$args = array(
-						'posts_per_page' => 1, 
-						'tag' => $feature_tag);
-
-					$posts = get_posts($args);
-
-					foreach ($posts as $post) :
-						setup_postdata($post);
-						$categories = get_the_category($post->ID);
-						echo the_post_thumbnail('large');
-
-				?>
-				<div class="feature-content">
-					<h4>
-					<span class="feature-author">
-							By <?php the_author(); ?>
-					</span>
-					</h4>
-					<div class="feature-title">
-					<h2>
-					<a class="heading" href="<?php the_permalink(); ?>">
-						<?php the_title(); ?>
-					</a>
-					</h2>
-
-					</div>
-				</div>
-				<hr style="clear:both;"/>
-				<?php
-					endforeach; 
-				?>
-			</div>
-
 			<div class="span12" id="nonfeature-stories">
 	            <?php 
 					$args = array(
@@ -264,6 +281,7 @@ Template Name: USC Football Rivalry 2014
 					endforeach; 
 				?>
 			</div>
+			<img src="http://dailybruin.com/images/2014/11/v3.11.21.sports.football.SCInsert.Pac12SouthScenarios.FORWEB..jpg">
 		</div>
 		<div class="span4" id="vertical-graphic">
 			<div class="storify">
@@ -274,10 +292,6 @@ Template Name: USC Football Rivalry 2014
 				</script>
 				<noscript>[<a href="//storify.com/dailybruin/name-the-usc-ucla-rivalry-game" target="_blank">View the story "Name the USC-UCLA Rivalry Game " on Storify</a>]</noscript>
 			</div>
-
-		</div>
-		<div class="span12">
-			<img src="http://placehold.it/1000x300">
 		</div>
 	</div>
 </div>
