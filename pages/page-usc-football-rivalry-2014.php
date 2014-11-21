@@ -71,8 +71,12 @@ Template Name: USC Football Rivalry 2014
 		padding-top: 80px;
 		margin-top:20px;
 		/*background-color:#E7E8E7;*/
-		background-image: url("http://i.imgur.com/XLCRFaY.jpg");
 	}
+
+	.slick-slideshow {
+		background-image: url("http://i.imgur.com/l7W8aUG.jpg");
+	}
+
 	.image {
 		-webkit-box-shadow: 1px 1px 1px 1px #ccc;  
     	-moz-box-shadow: 1px 1px 1px 1px #ccc;  
@@ -123,7 +127,7 @@ Template Name: USC Football Rivalry 2014
 	}
 
 	.vertical-graphic {
-		padding-top: 95px;
+		padding-top: 102px;
 	}
 
 	.box-caption:hover {  
@@ -146,7 +150,7 @@ Template Name: USC Football Rivalry 2014
 <div class="container">
 	<div class="row-fluid">
 		<div class="span12">
-		<img src= "http://dailybruin.com/images/2014/11/Web_banner.jpg" > 
+		<img src= "http://dailybruin.com/images/2014/11/Web_banner.jpg" style="padding-bottom: 15px"> 
 
 		</div>
 	</div>
@@ -155,7 +159,7 @@ Template Name: USC Football Rivalry 2014
 	</div> -->
 	<div class="row-fluid">
 		<div class="span8">
-			<h1>Scenes from Rivalry Week</h1>
+			<h1 style="padding-bottom: 15px">Scenes from Rivalry Week</h1>
 			<div class="slick-slideshow">
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uclastorefront.AYeo_.jpg">
@@ -181,28 +185,28 @@ Template Name: USC Football Rivalry 2014
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.tommyjoe.AYEO_.jpg">
 					<span class="box-caption">
-						<h4>4. Tommy Trojan</h4>
+						<h4>4. Tommy Trojan Duct Taped</h4>
 						<p>Similar to how the Bruin Bear was covered in a black box to preempt vandalism, USC's Tommy Trojan was covered in duct tape to ward off would-be vandals. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picA_.AYEO_.jpg">
 					<span class="box-caption">
-						<h4>5. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<h4>5. Hanging Teddy Bears</h4>
 						<p>The Pertusati University Bookstore at USC was decorated with teddy bears dressed in UCLA t-shirts hung by their legs from the ceiling. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.uscballoon.AYeo_.jpg">
 					<span class="box-caption">
-						<h4>6. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<h4>6. USC Balloons</h4>
 						<p>The Ronald Tutor Campus Center at USC was decorated with cardinal and gold balloons during rivalry week. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.bears_.picB_.AYEO_.jpg">
 					<span class="box-caption">
-						<h4>7. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<h4>7. More Hanging Teddy Bears</h4>
 						<p>More teddy bears were hung from the Trojan branded tailgating merchandise displays at the Pertusati University Bookstore at USC. (Aubrey Yeo/Daily Bruin Senior Staff)</p>
 					</span>
 				</div>
@@ -216,14 +220,14 @@ Template Name: USC Football Rivalry 2014
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.football.pre_.FILE_.picB_.jpg">
 					<span class="box-caption">
-						<h4>9. asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<h4>9. UCLA - 2, USC - 0</h4>
 						<p>The annual UCLA v. USC football game happens this Staurday. The Bruins are on a two-year winning streak that started two years ago after a 38-28 victory over a Matt Barkley (pictured) led Trojan team. (Daily Bruin File Photo)</p>
 					</span>
 				</div>
 				<div class="box">
 					<img class="image" src="http://dailybruin.com/images/2014/11/web.sp_.11.21.2013bonfire.jpg">
 					<span class="box-caption">
-						<h4>10. Bonfire</h4>
+						<h4>10. Beat 'SC Bonfire</h4>
 						<p>Despite the fact that the Beat 'SC bonfire didn't happen this year due to protests, the annual event is an integral part of UCLA tradition. (Daily Bruin File Photo)</p>
 					</span>
 				</div>
@@ -281,7 +285,7 @@ Template Name: USC Football Rivalry 2014
 					endforeach; 
 				?>
 			</div>
-			<img src="http://dailybruin.com/images/2014/11/v3.11.21.sports.football.SCInsert.Pac12SouthScenarios.FORWEB..jpg">
+			<img src="http://dailybruin.com/images/2014/11/v3.11.21.sports.football.SCInsert.Pac12SouthScenarios.LOGOS_.web_.png">
 		</div>
 		<div class="span4" id="vertical-graphic">
 			<div class="storify">
