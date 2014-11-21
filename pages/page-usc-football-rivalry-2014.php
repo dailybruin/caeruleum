@@ -65,45 +65,112 @@ Template Name: USC Football Rivalry 2014
 		margin-bottom: 10px;
 	}
 
+	.box {
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-top: 80px;
+		margin-top:20px;
+		background-color:#E7E8E7;
+	}
 	.image {
-		padding: 40px;
+		-webkit-box-shadow: 1px 1px 1px 1px #ccc;  
+    	-moz-box-shadow: 1px 1px 1px 1px #ccc;  
+    	box-shadow: 1px 1px 1px 1px #ccc; 
+    	border: 5px solid #fff; 
+
+    	width: 600px;
+    	height: 400px;
 	}
 
-	.slick-prev:before, .slick-next:before { 
+
+	.slick-prev:before { 
+  	  color:gold !important;
+	}
+	.slick-next:before { 
   	  color:blue !important;
 	}
+
+	.box-caption {
+		margin: 0 auto;
+
+		background-color: rgba(105,105,105,0.8);  
+    	position: relative;  
+    	color: white;  
+    	z-index: 100;  
+    	-webkit-transition: all 300ms ease-out;  
+    	-moz-transition: all 300ms ease-out;  
+    	-o-transition: all 300ms ease-out;  
+    	-ms-transition: all 300ms ease-out;  
+    	transition: all 300ms ease-out;  
+    	
+    	padding-top: 5px;
+
+    	height: 70px;  
+    	width: 100%;  
+    	display: block;  
+    	bottom: 80px;  
+    	line-height: 25pt;  
+    	text-align: center;
+    	border-left: 5px solid #fff; 
+    	border-bottom: 5px solid #fff;
+    	border-right: 5px solid #fff;
+    	opacity: 0.8;
+	}
+
+	.box-caption:hover {  
+    	opacity: 1;  
+    	/*cursor: pointer;*/
+	}  
+	/*.versus {
+		position: absolute;
+		margin-top: 320px;
+		z-index:200;
+		left: 50%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%) }
+	}*/
+	
+	
 </style>
 
 <div class="container">
 	<div class="row-fluid">
 		<div class="span12">
-		<img src=<?php echo $banner_image_url; ?> > 
+		<img src="http://placehold.it/1300x150">
+		<!-- <img src=<?php echo $banner_image_url; ?> >  -->
 		</div>
 	</div>
+	<!-- <div class="versus">
+		<img src="http://placehold.it/200x200">
+	</div> -->
 	<div class="slick-slideshow">
-		<div class="image">
-			<img src="http://placekitten.com/512/512">
-			<div class="nonfeature-stories-title">
-				UCLA vs USC Football
-			</div>
+		<div class="box">
+			<img class="image" src="http://placekitten.com/512/512">
+			<span class="box-caption">
+				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+				<p>asdfa;sdf</p>
+			</span>
 		</div>
-		<div class="image">
-			<img src="http://placekitten.com/512/512">
-			<div class="nonfeature-stories-title">
-				UCLA vs USC Football
-			</div>
+		<div class="box">
+			<img class="image" src="http://placekitten.com/512/512">
+			<span class="box-caption">
+				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+				<p>asdfa;sdf</p>
+			</span>
 		</div>
-		<div class="image">
-			<img src="http://placekitten.com/256/256">
-			<div class="nonfeature-stories-title">
-				UCLA vs USC Football
-			</div>
+		<div class="box">
+			<img class="image" src="http://placekitten.com/512/512">
+			<span class="box-caption">
+				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+				<p>asdfa;sdf</p>
+			</span>
 		</div>
-		<div class="image">
-			<img src="http://placekitten.com/256/256">
-			<div class="nonfeature-stories-title">
-				UCLA vs USC Football
-			</div>
+		<div class="box">
+			<img class="image" src="http://placekitten.com/512/512">
+			<span class="box-caption">
+				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+				<p>asdfa;sdf</p>
+			</span>
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -200,7 +267,7 @@ Template Name: USC Football Rivalry 2014
 	$(document).ready(function() {
 		$('.slick-slideshow').slick({
 			arrows: true,
-			dots: true,
+			// dots: true,
 			infinite: true,
 			speed: 500,
 			slidesToShow: 2,
