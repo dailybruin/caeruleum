@@ -70,7 +70,8 @@ Template Name: USC Football Rivalry 2014
 		padding-right: 45px;
 		padding-top: 80px;
 		margin-top:20px;
-		background-color:#E7E8E7;
+		/*background-color:#E7E8E7;*/
+		background-image: url("http://i.imgur.com/qucc7HL.jpg");
 	}
 	.image {
 		-webkit-box-shadow: 1px 1px 1px 1px #ccc;  
@@ -78,16 +79,13 @@ Template Name: USC Football Rivalry 2014
     	box-shadow: 1px 1px 1px 1px #ccc; 
     	border: 5px solid #fff; 
 
-    	width: 600px;
+    	width: 100%;
     	height: 400px;
 	}
 
 
-	.slick-prev:before { 
-  	  color:gold !important;
-	}
-	.slick-next:before { 
-  	  color:blue !important;
+	.slick-prev:before, .slick-next:before { 
+  	  color:grey !important;
 	}
 
 
@@ -151,34 +149,38 @@ Template Name: USC Football Rivalry 2014
 	<!-- <div class="versus">
 		<img src="http://placehold.it/200x200">
 	</div> -->
-	<div class="slick-slideshow">
-		<div class="box">
-			<img class="image" src="http://placekitten.com/512/512">
-			<span class="box-caption">
-				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-				<p>asdfa;sdf</p>
-			</span>
-		</div>
-		<div class="box">
-			<img class="image" src="http://placekitten.com/512/512">
-			<span class="box-caption">
-				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-				<p>asdfa;sdf</p>
-			</span>
-		</div>
-		<div class="box">
-			<img class="image" src="http://placekitten.com/512/512">
-			<span class="box-caption">
-				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-				<p>asdfa;sdf</p>
-			</span>
-		</div>
-		<div class="box">
-			<img class="image" src="http://placekitten.com/512/512">
-			<span class="box-caption">
-				<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
-				<p>asdfa;sdf</p>
-			</span>
+	<div class="row-fluid">
+		<div class="span10 offset1">
+			<div class="slick-slideshow">
+				<div class="box">
+					<img class="image" src="http://placehold.it/350x150">
+					<span class="box-caption">
+						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>asdfa;sdf</p>
+					</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://placekitten.com/512/512">
+					<span class="box-caption">
+						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>asdfa;sdf</p>
+					</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://placekitten.com/512/512">
+					<span class="box-caption">
+						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>asdfa;sdf</p>
+					</span>
+				</div>
+				<div class="box">
+					<img class="image" src="http://placekitten.com/512/512">
+					<span class="box-caption">
+						<h4>asdfasdkl;fjals;dasdffdfjl;asdf</h4>
+						<p>asdfa;sdf</p>
+					</span>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -289,8 +291,8 @@ Template Name: USC Football Rivalry 2014
 			// dots: true,
 			infinite: true,
 			speed: 500,
-			slidesToShow: 2,
-			slidesToScroll: 2
+			slidesToShow: 1,
+			slidesToScroll: 1
 		});
 	});
 </script>
