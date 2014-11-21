@@ -72,12 +72,18 @@ Template Name: USC Football Rivalry 2014
 	.slick-prev:before, .slick-next:before { 
   	  color:blue !important;
 	}
+
+	.storify {
+		width: 100%;
+		height: 800px;
+		overflow-y: scroll;
+	}
 </style>
 
 <div class="container">
 	<div class="row-fluid">
 		<div class="span12">
-		<img src=<?php echo $banner_image_url; ?> > 
+		<img src= "http://dailybruin.com/images/2014/11/Web_banner.jpg" > 
 		</div>
 	</div>
 	<div class="slick-slideshow">
@@ -189,7 +195,18 @@ Template Name: USC Football Rivalry 2014
 			</div>
 		</div>
 		<div class="span4" id="vertical-graphic">
-			<!--  ............  -->
+			<div class="storify">
+				<iframe src="//storify.com/dailybruin/name-the-usc-ucla-rivalry-game/embed?border=false" 
+					 frameborder="no" allowtransparency="true">
+				</iframe>
+				<script src="//storify.com/dailybruin/name-the-usc-ucla-rivalry-game.js?border=false">
+				</script>
+				<noscript>[<a href="//storify.com/dailybruin/name-the-usc-ucla-rivalry-game" target="_blank">View the story "Name the USC-UCLA Rivalry Game " on Storify</a>]</noscript>
+			</div>
+
+		</div>
+		<div class="span12">
+			<img src="http://placehold.it/1000x300">
 		</div>
 	</div>
 </div>
