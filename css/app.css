@@ -25,6 +25,13 @@ hr {
 }
 
 blockquote {
+	width: 30%;
+    font-size: 150%;
+    font-style: italic;
+    float: right;
+    border-left: solid #767676;
+    margin: 1%;
+    padding-left: 2%;
 	
 }
 
