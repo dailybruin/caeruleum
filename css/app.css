@@ -35,6 +35,12 @@ blockquote {
 	
 }
 
+@media (max-width: 480px) {
+	blockquote {
+		width: 95%;
+		margin-bottom: 1em;
+	}
+}
 
 p {
 	margin: 0 0 15px;
