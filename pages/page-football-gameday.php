@@ -152,8 +152,8 @@ Template Name: Football Gameday
 				?>
 			</div>
 		</div>
-<!--
-		<div class="span5">
+
+		<div class="span4">
 			<div class="row-fluid">
 				<div class="span12">
 					<h2>Graphic of the Week</h2>
@@ -168,7 +168,7 @@ Template Name: Football Gameday
 			</div>
 		</div>
 -->
-	<?php get_sidebar(); ?>
+	<!-- <?php get_sidebar(); ?>-->
 	</div>
 </div>
 
