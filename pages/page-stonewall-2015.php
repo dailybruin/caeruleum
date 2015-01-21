@@ -3,6 +3,8 @@ Template Name: UCLA stonewall
 */ ?>
 <?php get_header(); ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,9 +89,9 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNO
 		$.each(data.feed.entry, function(i,entry) {	
 
 			var dis = entry.gsx$description.$t
-			$('div#stonewall').append('<div id = "s'+i+'" class="stone"><div id = "t'+i+'" class = "texts"><a id="a'+i+'" href = "#" original-title="Hello world" > </a> </div> </div>');
-			var pic = '<span style="display:none">' + entry.id.$t + '</span>';	
-			pic += '<img src="http://dailybruin.com/images/2015/01/stone'+(i%4+1)+'.png" style="width:300px; height:120px;"/>';
+			$('div#stonewall').append('<div id = "s'+i+'" class="stone" title = "'+dis+'">  <div id = "t'+i+'" class = "texts">  </div> </div>');
+			//var pic = '<span style="display:none">' + entry.id.$t + '</span>';	
+			var pic = '<img src="http://dailybruin.com/images/2015/01/stone'+(i%4+1)+'.png" style="width:300px; height:120px; "/>';
 
 			if (entry.gsx$date.$t)
 			{
@@ -99,7 +101,7 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNO
 
 			$('#s'+i+'').append(pic);
 			$('#t'+i+'').append(item);
-			$('#a'+i+'').tipsy({gravity: $.fn.tipsy.autoNS});
+			$('#s'+i+'').tipsy({fade: true});
 
 			});
 			console.log(data);
@@ -111,7 +113,6 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNO
 
 });
 </script>
-
 
 <?php get_footer(); ?>
 
