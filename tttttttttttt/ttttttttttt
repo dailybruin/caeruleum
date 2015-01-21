@@ -1,7 +1,3 @@
-<?php/*
-Template Name: UCLA stonewall
-*/ ?>
-<?php get_header(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -87,7 +83,7 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNO
 		$.each(data.feed.entry, function(i,entry) {	
 
 			var dis = entry.gsx$description.$t
-			$('div#stonewall').append('<div id = "s'+i+'" class="stone"><div id = "t'+i+'" class = "texts"><a id="a'+i+'" href = "#" original-title="Hello world" > </a> </div> </div>');
+			$('div#stonewall').append('<div id = "s'+i+'" class="stone"><div id = "t'+i+'" class = "texts"><a id="a'+i+'" href="#" original-title="'dis'"> </a> </div> </div>');
 			var pic = '<span style="display:none">' + entry.id.$t + '</span>';	
 			pic += '<img src="http://dailybruin.com/images/2015/01/stone'+(i%4+1)+'.png" style="width:300px; height:120px;"/>';
 
@@ -113,7 +109,6 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNO
 </script>
 
 
-<?php get_footer(); ?>
 
 
 
