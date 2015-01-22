@@ -23,18 +23,18 @@ Template Name: Stonewall
     width: 100%;
     border-radius: 25px;
     font-size: 20px;
+    margin-bottom: 2px;
 }
 #blurb p {
+	padding-left: 15px;
 	padding: 10px;
-	margin-top: 5px;
-
 }
 
 .stone
 {    
     float:left;
     position:relative;
-    width:100/3%;
+    width:390px;
     height:100%;
     text-align: center;
 }
@@ -44,6 +44,7 @@ Template Name: Stonewall
 	position: absolute;
 	color: white;
 	display: inline-block;
+	padding-top: 20%;
 	width:100%;
 }
 
