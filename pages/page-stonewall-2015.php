@@ -12,7 +12,7 @@ Template Name: Stonewall
 <title>Stonewall</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
 <script type='text/javascript' src='/js/vendor/jquery.tipsy.js'></script>
-<link rel="stylesheet" href="/stylesheets/tipsy.css" type="text/css" />
+<link rel="stylesheet" href="/css/vendor/tipsy.css" type="text/css" />
 
 <style>
 
@@ -37,6 +37,7 @@ Template Name: Stonewall
     width:390px;
     height:100%;
     text-align: center;
+    z-index: 1;
 }
 
 .texts
@@ -48,10 +49,6 @@ Template Name: Stonewall
 	width:100%;
 }
 
-#stonegraphic {
-	width:100%; 
-	height:100%;
-}
 
 </style>
 </head> 
