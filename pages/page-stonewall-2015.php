@@ -44,6 +44,7 @@ Template Name: Stonewall
 	position: absolute;
 	color: white;
 	display: inline-block;
+	width:100%;
 }
 
 #stonegraphic {
