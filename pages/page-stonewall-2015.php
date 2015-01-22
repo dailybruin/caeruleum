@@ -1,5 +1,5 @@
 <?php/*
-Template Name: UCLA stonewall
+Template Name: Stonewall
 */ ?>
 <?php get_header(); ?>
 
@@ -11,7 +11,7 @@ Template Name: UCLA stonewall
 <meta charset="utf-8" />
 <title>Stonewall</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-<script type='text/javascript' src='/javascripts/jquery.tipsy.js'></script>
+<script type='text/javascript' src='/js/vendor/jquery.tipsy.js'></script>
 <link rel="stylesheet" href="/stylesheets/tipsy.css" type="text/css" />
 
 <style>
