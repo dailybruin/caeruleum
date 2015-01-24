@@ -1,4 +1,7 @@
-# Gryphondor Wordpress theme
+##Foundation Daily Bruin 
+##Modifications for Wordpress integration
+
+
 ## Installation/FAQ
 Please see our [wiki](https://github.com/daily-bruin/gryphondor/wiki).
 
