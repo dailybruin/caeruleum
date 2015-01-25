@@ -29,6 +29,17 @@ blockquote {
 	text-align: center;
 }
 
+.db-infobox {
+    background-color: white;
+    /*border: 1px solid #dbdbdb;*/
+    background-color: #F9F9F9;
+    width: 200px;
+	float: right;
+	padding: 10px;
+	margin-left:10px;
+	clear:both;
+}
+
 /* ===== Classifieds ========================================================
    Author:
    ========================================================================== */

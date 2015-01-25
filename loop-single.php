@@ -103,6 +103,7 @@
 						<?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?>
 					<?php endif; ?>
 				</p>
+				<hr>
 			<?php endif; ?>
 			<?php if($video_story): ?>
 				<div class="video-story">
@@ -110,7 +111,7 @@
 				</div><!-- end div.video-story -->
 			<?php endif; ?>
 		</div>
-		<hr>
+		
 
 		<div class="row">
           <div class="medium-3 columns">
