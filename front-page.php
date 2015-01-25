@@ -294,188 +294,205 @@
             </div>
           </div>
     <div class="row db-divide"></div>
-		
-				<div class="row">
 
-					<div class="span8 front-section" id="front-news">
-						<a href="/category/news/"><h3>News &raquo;</h3></a>
-						<ul class="sections">
-							<li><a href="/category/news/student-government/">Student gov</a></li>
-							<li><a href="/category/news/campus/">Campus</a></li>
-							<li><a href="/category/news/crime/">Crime</a></li>
-						</ul>
-						<div class="row front-section-content clearfix">
-							<div class="span5 front-section-main">
-								<?php
-								$args = array( 'numberposts' => 1, 'tag' => 'db-story-ns' );
-								$lastposts = get_posts( $args );
-								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-								<a href="<?php the_permalink(); ?>">
-									<span class="headline-d hidden-desktop"><?php the_headline(); ?></span>
-									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
-									<span class="headline-d visible-desktop"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
+	<div class="row db-story">
+            <div class="large-3 medium-6 columns">
+              <div>
+                <h1><i class="fa fa-newspaper-o fa-fw fa-lg"></i>&nbsp;News</h1>
+              </div>
+			<?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ns' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div class="db-story-ns row">
+                <div class="small-6 columns">
+                  <h3>
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                  </h3>
+                </div>
+                <div class="small-6 columns db-image">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
+                </div>
+              </div>
+            <?php endforeach; ?>
+            <?php
+			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div>
+                <h3>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+              </div>
+            <?php endforeach; ?>
+            </div>
 
-								</a>
-								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-								<?php endforeach; ?>
-							</div><!-- end div.front-section-main -->
-							<div class="span3 front-section-more">
-								<ul class="section-list large-section-list">
-								<?php
-									$args = array( 'numberposts' => 4, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
-									$lastposts = get_posts( $args );
-									foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-									<li><a href="<?php the_permalink(); ?>">
-										<span class="headline-d"><?php the_headline(); ?></span></a>
-									<span class="section-date"><?php the_time('M j'); ?></span>
-									</li>
-								<?php endforeach; ?>
-								</ul>
-							</div><!-- end div.front-section-more -->
-						</div><!-- end div.front-section-content -->
-					</div><!-- end div#front-news -->
-					
-                    
-					<div class="span8 front-section" id="front-sports">
-						<a href="/category/sports/"><h3>Sports &raquo;</h3></a>
-						<ul class="sections">
-							<li><a href="/category/sports/football/">Football</a></li>
-							<li><a href="/category/sports/mens-basketball/">Men's Basketball</a></li>
-							<li><a href="/category/sports/womens-basketball/">Women's Basketball</a></li>
-						</ul>
-						<div class="row front-section-content clearfix">
-							<div class="span5 front-section-main">
-								<a class="visible-phone" id="phone-football-refer" href="https://itunes.apple.com/lb/app/bruin-football-by-ucla-daily/id548832108?mt=8&ign-mpt=uo%3D2">
-									<span>Download the Bruin Football iPhone app &raquo;</span>
-								</a>
+            <div class="large-3 medium-6 columns">
+              <div>
+                <h1><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>&nbsp;Opinion</h1>
+              </div>
+              <div class="db-story-op row">
+             <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-op' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+                <div class="small-6 columns">
+                  <h3>
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                  </h3>
+                </div>
+                <div class="small-6 columns db-image">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
+                </div>
+              </div>
+            <?php endforeach; ?>
+            <?php
+			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div>
+                <h3>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+              </div>
+            <?php endforeach; ?>
+            </div>
 
-								<?php
-								$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
-								$lastposts = get_posts( $args );
-								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?>
-									<span class="headline-d"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
-								</a>
-								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-								<?php endforeach; ?>
-							</div><!-- end div.front-section-main -->
-							<div class="span3 front-section-more">
-								<ul class="section-list large-section-list">
-								<?php
-									$args = array( 'numberposts' => 4, 'cat' => $sports_cat, 'tag__not_in' => $frontPageTags );
-									$lastposts = get_posts( $args );
-									foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-									<li><a href="<?php the_permalink(); ?>">
-										<span class="headline-d"><?php the_headline(); ?></span></a>
-									<span class="section-date"><?php the_time('M j'); ?></span>
-									</li>
-								<?php endforeach; ?>
-								</ul>
-							</div><!-- end div.front-section-more -->
-						</div><!-- end div.front-section-content -->
-					</div><!-- end div#front-sports -->
-					
-					
-					<div class="span4 front-section" id="front-ae">
-						<a href="/category/arts-entertainment/"><h3>A&E &raquo;</h3></a>
-						<ul class="sections">
-							<li><a href="/category/arts-entertainment/">All A&E stories</a></li>
-						</ul>
-						<div class="clearfix front-section-main">
-							<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-ae' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-							<a href="<?php the_permalink(); ?>">
-								<?php the_post_thumbnail('db-section-cover-small', array('class'=>'section-cover-small')); ?>
-								<span class="headline-d"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
-							</a>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-							<?php endforeach; ?>
-						</div><!--end div.front-section-main -->
-						<div class="front-section-more">
-							<ul class="section-list small-section-list">
-							<?php
-								$args = array( 'numberposts' => 2, 'cat' => $ae_cat, 'tag__not_in' => $frontPageTags );
-								$lastposts = get_posts( $args );
-								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-								<li><a href="<?php the_permalink(); ?>">
-									<span class="headline-d"><?php the_headline(); ?></span></a>
-								<span class="section-date"><?php the_time('M j'); ?></span>
-								</li>
-							<?php endforeach; ?>
-							</ul>
-						</div><!-- end div.front-section-more -->
-					</div><!-- end div#front-ae -->
+            <div class="large-3 medium-6 columns">
+              <div>
+                <h1><i class="fa fa-film fa-fw fa-lg"></i>&nbsp;A&amp;E</h1>
+              </div>
+              <div class="db-story-ae row">
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ae' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+                <div class="small-6 columns">
+                  <h3>
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                  </h3>
+                </div>
+                <div class="small-6 columns db-image">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
+                </div>
+              </div>
+            <?php endforeach; ?>
+            <?php
+			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div>
+                <h3>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+              </div>
+            <?php endforeach; ?>
+            </div>
 
+            <div class="large-3 medium-6 columns">
+              <div>
+                <h1><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>&nbsp;Sports</h1>
+              </div>
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
+              <div class="db-story-sp row">
+                <div class="small-6 columns">
+                  <h3>
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                  </h3>
+                </div>
+                <div class="small-6 columns db-image">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
+                </div>
+              </div>
+            <?php endforeach; ?>  
+            <?php
+			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div>
+                <h3>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+              </div>
+            <?php endforeach; ?>
+          </div>
 
-					<div class="span4 front-section" id="front-opinion">
-						<a href="/category/opinion/"><h3>Opinion &raquo;</h3></a>
-						<ul class="sections">
-							<li><a href="/category/opinion">All opinion stories</a></li>
-						</ul>
-						<div class="clearfix front-section-main">
-							<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-op' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-							<a href="<?php the_permalink(); ?>">
-								<?php the_post_thumbnail('db-section-cover-opinion', array('class'=>'section-cover-opinion')); ?>
-								<span class="headline-d"><?php the_headline(); ?></span><span class="section-date"><?php the_time('M j'); ?></span>
-							</a>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-							<?php endforeach; ?>
-						</div><!--end div.front-section-main -->
-						
-						<div class="front-section-more">
-							<ul class="section-list small-section-list">
-							<?php
-								$args = array( 'numberposts' => 3, 'cat' => $opinion_cat, 'tag__not_in' => $frontPageTags );
-								$lastposts = get_posts( $args );
-								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-								<li><a href="<?php the_permalink(); ?>">
-									<span class="headline-d"><?php the_headline(); ?></span></a>
-								<span class="section-date"><?php the_time('M j'); ?></span>
-								</li>
-							<?php endforeach; ?>
-								<li id="front-cartoon-link"><a href="/category/editorial-cartoons/">View this week&rsquo;s editorial cartoon</a></li>
-							</ul>
-						</div><!-- end div.front-section-more -->
-					</div><!-- end div#front-opinion -->
-				</div><!-- end div.row -->
+<div class="row db-story">
+            <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
+              <div class="db-ad-banner hide-for-medium hide-for-small">
+                <img src="http://placehold.it/468x60">
+              </div>
+              <div>
+                <h1><i class="fa fa-exclamation fa-fw fa-lg"></i>&nbsp;Featured Stories</h1>
+              </div>
+              <div class="db-image db-story-fe1">
+                <img src="http://placehold.it/1024x768">
+                <h2>Wake Of The Storm</h2>
+              </div>
+              <div class="row">
+                <div class="medium-4 columns db-image db-story-fe2">
+                  <img src="http://placehold.it/1024x768">
+                  <h3>Wake Of The Storm</h3>
+                </div>
+                <div class="medium-4 columns db-image db-story-fe3">
+                  <img src="http://placehold.it/1024x768">
+                  <h3>Wake Of The Storm</h3>
+                </div>
+                <div class="medium-4 columns db-image db-story-fe4">
+                  <img src="http://placehold.it/1024x768">
+                  <h3>Wake Of The Storm</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="db-divide"></div>
+
+            <div class="db-poll large-4 large-pull-8 columns">
+              <div class="row">
+                <div class="large-12 medium-6 columns">
+                  <div>
+                    <h1><i class="fa fa-question fa-fw fa-lg"></i>&nbsp;Opinion Poll</h1>
+                  </div>
+                  <hr>
+                  <div class="db-poll-description">
+                    <p>
+                      In the wake of the deaths of both Michael Brown and
+                      Eric Garner, many demonstrations and protests have
+                      taken place in Berkeley and the surrounding areas.
+                      Meanwhile, the UCLA community has not played a
+                      significant role in these large scale protests. How do
+                      you feel about this matter?
+                    </p>
+                  </div>
+                  <div class="db-poll-options">
+                    <ul>
+                      <li>UCLA needs to amplify its student activism in order to
+                        have a larger voice in national issues.
+                      </li>
+                      <li>While student activism can influence national issues, the
+                        protests in Berkeley have yet to result in concrete change.
+                      </li>
+                      <li>Student activism has a limited impact on influencing
+                        national issues and the UCLA community should focus on
+                        tackling campus issues.
+                      </li>
+                      <li>I don't know how I feel about this matter.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr class="hide-for-medium">
+                <div class="large-12 medium-6 columns text-center">
+                  <img src="http://placehold.it/320x250">
+                </div>
+              </div>
+            </div>
 				
 				<?php wp_reset_query(); ?>
-
-				<div class="row" id="featuredProject">
-					<div class="span8">
-						<div>
-							 <h3>Wake of the Storm</h3>
-							 <ul class="sections">
-							 	<li><a href="/features/">More features</a></li>
-							 </ul>
-							 <span style="display:block;width:100%;clear:both;"></span>
-							 <img src="http://dailybruin.com/images/features/THUMBS/yolanda_thumb.jpg" />
-                             <p>Read our feature series about recovery efforts in the Philippines, which was devastated by a super typhoon last November. UCLA student donations played a part in the relief missions of several aid agencies in the wake of the storm. The Daily Bruin spent 19 days in the Philippines talking to typhoon survivors and relief organizations. The reporting in the Philippines was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which is in its seventh year of funding UCLA journalism with global reach and local impact.</p>
-							 <a href="http://yolanda.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
-							 <span style="display:block;width:100%;clear:both"></span>
-						</div>
-					</div><!-- end div#featuredProject -->
-				</div><!-- end div.row -->
-			</div><!-- end div#front-maincol -->	
-							
-				
-				
-				
-				
-			<?php get_template_part('sidebar'); ?>			
-		</div><!-- end div#topcontent -->
-
-
-
-
-
-		
 	</div><!-- end div.container -->
 
 <?php get_footer(); ?>
