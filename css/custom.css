@@ -1,0 +1,17 @@
+blockquote {
+	width: 30%;
+    font-size: 150%;
+    font-style: italic;
+    float: right;
+    border-left: solid #767676;
+    margin: 1%;
+    padding-left: 2%;
+	
+}
+
+@media (max-width: 480px) {
+	blockquote {
+		width: 95%;
+		margin-bottom: 1em;
+	}
+}
