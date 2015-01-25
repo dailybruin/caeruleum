@@ -1,7 +1,8 @@
-<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
+
     
 
 <header id="topinfo">
+<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
 	    <div class="fixed">
 	      <nav class="tab-bar">
@@ -51,7 +52,9 @@
             </ul>
           </div>
         </aside>
-<div class="db-wrapper db-content">
+
+	<div class="db-wrapper db-content">
+	
 	    <div class="row">
 	        <div class="db-ad-leaderboard">
 	          <img src="http://placehold.it/728x90">
