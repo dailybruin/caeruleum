@@ -2,7 +2,7 @@
 <div class="row db-story">
     <div class="large-8 columns db-story-post">
         <div class="page-header">
-          <h1 class="text-center">
+          <h1>
             <?php
               $sectionPage = false;
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
@@ -64,7 +64,7 @@
 				);
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
-					<dl class="sub-nav text-center">
+					<dl class="sub-nav">
 					<?php wp_list_categories($cat_args); ?>
 					</dl>
 				<?php endif;
