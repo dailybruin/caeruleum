@@ -84,7 +84,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-a">
                 <span class="db-section-date">
-	              <h4><a href='/category/<?php the_category_text(get_the_category()); ?>'><?php the_category_text(get_the_category()); ?></a></h4> 
+	              <h4><?php the_category_text(get_the_category()); ?></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -103,7 +103,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-b">
                 <span class="db-section-date">
-	              <h4><a href='/category/<?php the_category_text(get_the_category()); ?>'><?php the_category_text(get_the_category()); ?></a></h4> 
+	              <h4><?php the_category_text(get_the_category()); ?></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -116,29 +116,92 @@
                 </p>
               </div>
             <?php endforeach; ?>
+             <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-d">
                 <span class="db-section-date">
-                  <h4>A&amp;E</h4>
-                  <h4>|</h4>
-                  <h5>Dec 8, 9:18PM</h5>
+	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4>|</h4> 
+	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h3>
-                  Torture Report Puts Politicians Eyeing 2016 in Quiet Mode
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
+            <?php endforeach; ?>
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-e">
                 <span class="db-section-date">
-                  <h4>Opinion</h4>
-                  <h4>|</h4>
-                  <h5>Dec 8, 9:18PM</h5>
+	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4>|</h4> 
+	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h3>
-                  Torture Report Puts Politicians Eyeing 2016 in Quiet Mode
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
             </div>
+            <?php endforeach; ?>
 
+            <div class="large-4 columns db-story-breaking">
+              <div>
+                <h1><i class="fa fa-bolt fa-fw fa-lg"></i>&nbsp;Breaking</h1>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="db-story-breaking-1 large-12 medium-6 columns">
+                  <span class="db-section-date">
+                    <h4>News</h4>
+                    <h4>|</h4>
+                    <h5>Dec 8, 9:18PM</h5>
+                  </span>
+                  <h3>
+                    UC announces plans to expand educational outreach at the White House
+                  </h3>
+                </div>
+                <div class="db-story-breaking-2 large-12 medium-6 columns">
+                  <span class="db-section-date">
+                    <h4>News</h4>
+                    <h4>|</h4>
+                    <h5>Dec 8, 9:18PM</h5>
+                  </span>
+                  <h3>
+                    Graduate student-workers union passes resolution to support BDS movement
+                  </h3>
+                </div>
+                <div class="db-story-breaking-3 large-12 medium-6 columns">
+                  <span class="db-section-date">
+                    <h4>News</h4>
+                    <h4>|</h4>
+                    <h5>Dec 8, 9:18PM</h5>
+                  </span>
+                  <h3>
+                    State senator proposes amendment to strip UC’s constitutional autonomy
+                  </h3>
+                </div>
+                <div class="db-story-breaking-4 large-12 medium-6 columns">
+                  <span class="db-section-date">
+                    <h4>News</h4>
+                    <h4>|</h4>
+                    <h5>Dec 8, 9:18PM</h5>
+                  </span>
+                  <h3>
+                    Graduate student-workers union passes resolution to support BDS movement
+                  </h3>
+                </div>
+              </div>
+              <hr class="hide-for-medium hide-for-small">
+              <div class="db-ad-rectangle hide-for-medium hide-for-small">
+                <img src="http://placehold.it/320x250">
+              </div>
+            </div>
     </div>
+    
 	<div class="container">		
 
 		<div class="row" id="topcontent">
