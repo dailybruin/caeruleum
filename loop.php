@@ -9,7 +9,7 @@
 
 <?php /* Start loop */ ?>
 <?php $firstArticle = true; ?>
-<?php // Breaking posts
+<?php
         $args = array( 'tag' => 'db-story-sp' );
         $i=0;
         $lastposts = get_posts( $args );

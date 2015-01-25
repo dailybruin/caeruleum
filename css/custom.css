@@ -50,6 +50,60 @@ blockquote {
   padding-top: 0.25rem;
 }
 
+/*HEADER */
+
+.db-off-canvas-wrap .db-content {
+background-color: white;
+margin: 0 auto;
+padding: 0.625rem;
+padding-top: 8rem !important;
+}
+
+.db-off-canvas-wrap .tab-bar {
+border-bottom: none !important;
+}
+
+.tab-bar {
+-webkit-backface-visibility: hidden;
+background: #FFFFFF;
+color: #FFFFFF;
+height: 8rem !important;
+line-height: 5rem;
+position: relative;
+}
+
+.tab-bar .menu-icon {
+text-indent: 2.1875rem;
+width: 5rem;
+height: 8.625rem !important;
+display: block;
+padding: 0;
+color: #333333;
+position: relative;
+transform: translate3d(0, 0, 0);
+}
+
+.tab-bar-section.middle {
+left: 5rem;
+right: 5rem;
+top: 1rem !important;
+}
+
+.db-top-date p {
+	color: grey;
+	font-size: 1rem;
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 3px solid lightgrey; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+.db-top-date p span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
 /* ===== Classifieds ========================================================
    Author:
    ========================================================================== */

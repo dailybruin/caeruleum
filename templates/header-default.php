@@ -9,11 +9,10 @@
 	        </section>
 	        <section class="middle tab-bar-section">
 	          <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"></a>
-<!-- 	         <div class="spandate hidden-phone">
+	          <div class="db-top-date text-center">
 				<?php date_default_timezone_set('America/Los_Angeles'); ?>
-				<span id="date-month"><?php echo date('F'); ?></span><br />
-				<span id="date-day"><?php echo date('j'); ?></span>
-			</div> -->
+				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
+			</div> 
 	        </section>
 <!--         	<form action="/" method="GET" id="search-mobile">
 				<input type="search" placeholder="Search..." name="s"></input>
@@ -58,10 +57,11 @@
         </aside>
 
 	<div class="db-wrapper db-content">
-	
+
 	    <div class="row">
 	    	<div class="db-ad-leaderboard">
 				<?php get_template_part('ad','banner'); ?>
 			</div>
 		</div>
+	<hr>
 <!-- TODO in the news! -->
