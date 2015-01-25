@@ -1,6 +1,13 @@
 ##Foundation Daily Bruin 
-##Modifications for Wordpress integration
+Modifications for Wordpress integration
+Finished:
+- Header
+- Footer
 
+Todo: 
+- Post
+- Pages
+- Sidebars
 
 ## Installation/FAQ
 Please see our [wiki](https://github.com/daily-bruin/gryphondor/wiki).
