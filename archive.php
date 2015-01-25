@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<div class="row" id="archive-content">
-	<div class="span8" id="post-listing">
+<div class="row db-story">
+    <div class="large-8 columns db-story-post">
         <div class="page-header">
-          <h1>
+          <h1 class="text-center">
             <?php
               $sectionPage = false;
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
@@ -64,12 +64,12 @@
 				);
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
-					<ul class="categories">
+					<dl class="sub-nav text-center">
 					<?php wp_list_categories($cat_args); ?>
-					</ul>
+					</dl>
 				<?php endif;
 			endif; ?>
-          <span style="display:block;width:100%;clear:both"></span>
+          
           <?php if(is_author()): ?>
 			<p><?php the_author_meta('description'); ?></p>
 			<?php if(!get_the_author_meta('graduated')) : ?>					

@@ -43,6 +43,13 @@ blockquote {
 .video-story p {
 	text-align: left;
 }
+
+.db-image-caption {
+  font-size: 0.625rem;
+  color: #666666;
+  padding-top: 0.25rem;
+}
+
 /* ===== Classifieds ========================================================
    Author:
    ========================================================================== */

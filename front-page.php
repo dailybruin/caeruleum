@@ -1,16 +1,6 @@
 <?php get_header(); ?>
 
 <?php
-	function the_post_thumbnail_caption() {
-	  global $post;
-
-	  $thumbnail_id    = get_post_thumbnail_id($post->ID);
-	  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
-
-	  if ($thumbnail_image && isset($thumbnail_image[0])) {
-	    echo '<span>'.$thumbnail_image[0]->post_excerpt.'</span>';
-	  }
-	}
 	// IMPORTANT: set these for your particular wordpress installation
 	// This includes db-story-a, db-story-b, db-story-c1, db-story-c2,
 	// db-story-c3, db-story-c4, db-story-m1, db-story-m2, db-story-d1,
