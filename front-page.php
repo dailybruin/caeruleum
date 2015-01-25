@@ -167,7 +167,7 @@
 	              	<h5><?php the_time('F j, g:i a');?> </h5>
                   </span>
                   <h3>
-                    <?php the_headline(); ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
                 </div>
 				<?php endforeach; ?>
@@ -179,55 +179,71 @@
             </div>
     </div>
     <div class="row db-divide"></div>
-              <div class="row db-story">
+         <div class="row db-story">
             <div class="db-story-m large-5 medium-8 columns">
               <div>
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
               </div>
+			<?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-m1">
                 <span class="db-section-date">
-                  <h4>Sports</h4>
-                  <h4>|</h4>
-                  <h5>Dec 8, 9:18PM</h5>
+                    <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              	<h4>|</h4> 
+	              	<h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <div class="db-image">
-                  <img class="db-image-no-margin" src="http://placehold.it/1024x768">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
                 </div>
                 <h2>
-                  UC announces plans to expand educational outreach at the White House
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
               </div>
+            <?php endforeach; ?>
             </div>
             <div class="db-story-m large-3 medium-4 columns">
               <div class="row">
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m2' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
                 <div class="db-story-m2 medium-12 small-6 columns">
-                  <span class="db-section-date">
-                    <h4>Radio</h4>
-                    <h4>|</h4>
-                    <h5>Dec 8, 9:18PM</h5>
-                  </span>
-                  <div class="db-image">
-                    <img class="db-image-no-margin" src="http://placehold.it/1024x768">
-                  </div>
-                  <h3>
-                    Joe Bruin Rallies Support from Students for Mascot Challenge
-                  </h3>
+                <span class="db-section-date">
+                    <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              	<h4>|</h4> 
+	              	<h5><?php the_time('F j, g:i a');?> </h5>
+                </span>
+                <div class="db-image">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
                 </div>
+                <h2>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h2>
+              <?php endforeach; ?>
+              </div>
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m3' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
                 <div class="db-story-m3 medium-12 small-6 columns">
                   <span class="db-section-date">
-                    <h4>Video</h4>
-                    <h4>|</h4>
-                    <h5>Dec 8, 9:18PM</h5>
+                    <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              	<h4>|</h4> 
+	              	<h5><?php the_time('F j, g:i a');?> </h5>
                   </span>
-                  <div class="db-image">
-                    <img class="db-image-no-margin" src="http://placehold.it/1024x768">
-                  </div>
-                  <h3>
-                    Joe Bruin Rallies Support from Students for Mascot Challenge
-                  </h3>
+                <div class="db-image">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
                 </div>
+                <h2>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h2>
+              <?php endforeach; ?>
+              </div>
               </div>
             </div>
+            <?php the_widget('WP_Widget_Classifieds_widget'); ?>
             <div class="large-4 show-for-large-up columns db-classifieds">
               <div class="db-classifieds-header">
                 <h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
@@ -277,161 +293,8 @@
               </div>
             </div>
           </div>
-
-          <div class="row db-divide"></div>
-						<div id="front-multimedia">
-							<a href="/category/multimedia/"><h3>Multimedia &raquo;</h3></a>
-							<ul class="sections">
-								<li><a href="/category/spectrum/">Photos</a></li>
-								<li><a href="/category/multimedia/video/">Videos</a></li>
-								<li><a href="/category/multimedia/radio/">Radio</a></li>
-							</ul>
-							<div class="multimedia-item" id="multimedia-item-1">
-								<?php
-								$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
-								$lastposts = get_posts( $args );
-								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('db-multimedia'); ?>
-									<span class="multimedia-title"><?php the_headline(); ?></span>
-								</a>
-								<?php endforeach; ?>
-							</div><!-- end div#multimedia-item-1 -->
-							<div class="multimedia-item" id="multimedia-item-2">
-								<?php
-								$args = array( 'numberposts' => 1, 'tag' => 'db-story-m2' );
-								$lastposts = get_posts( $args );
-								foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('db-multimedia'); ?>
-									<span class="multimedia-title"><?php the_headline(); ?></span>
-								</a>
-								<?php endforeach; ?>
-							</div><!-- end div#multimedia-item-2 -->
-							<span style="width:100%;display:block;clear:both;"></span>
-							<a id="spectrum-refer" href="/spectrum/">
-    						    <span id="spectrum-refer-explain">Photojournalism by the Daily Bruin.</span>
-    						    <img id="spectrum-refer-logo" src="/img/spectrum-shadow.png" />
-    						    <br style="width:100%; clear:both; display:block;" />
-    						</a><!-- end a#spectrum-refer -->
-						</div><!-- end div#front-multimedia -->
-					</div><!-- end div.span5 -->
-					<div class="span3" id="front-secondarycol">
-						<!-- story tag db-story-a -->
-						<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<article>
-							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-							<a href="<?php the_permalink(); ?>"><h1 class="headline-a"><?php the_headline(); ?></h1></a>
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-							<span style="display:block;clear:both" />
-						</article>
-						<?php endforeach; ?>
-						
-						
-						<!-- story tag db-story-b -->
-						<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-b' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<article>
-							<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-							<a href="<?php the_permalink(); ?>"><h1 class="headline-b"><?php the_headline(); ?></h1></a>
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
-							<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-							<span style="display:block;clear:both" />
-						</article>
-						<?php endforeach; ?>
-
-						<ul id="d-stories-desktop" class="visible-desktop">
-							<!-- stories tagged db-story-d1 through db-story-d3 -->
-							<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                            <li>
-                                <span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-                                <a href="<?php the_permalink(); ?>">
-                                    <span class="headline-d"><?php the_headline(); ?></span>
-                                </a>
-                            </li>
-							<?php endforeach; ?>
-							<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                            <li>
-                                <span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-                                <a href="<?php the_permalink(); ?>">
-                                    <span class="headline-d"><?php the_headline(); ?></span>
-                                </a>
-                            </li>
-							<?php endforeach; ?>
-							<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                            <li>
-                                <span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-                                <a href="<?php the_permalink(); ?>">
-                                    <span class="headline-d"><?php the_headline(); ?></span>
-                                </a>
-                            </li>
-							<?php endforeach; ?>
-							<?php
-							$args = array( 'numberposts' => 1, 'tag' => 'sponsored-post' );
-							$lastposts = get_posts( $args );
-							foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-	                        <li>
-	                            <a href="<?php the_permalink(); ?>">
-	                                <span class="headline-d"><?php the_headline(); ?></span></a>
-	                                <p><?php echo get_the_excerpt(); ?></p>
-	                            </a>
-	                        </li>
-							<?php endforeach; ?>
-
-						</ul><!-- end ul#d-stories-desktop -->						
-					</div><!-- end div#front-secondarycol -->
-				</div><!-- end div.row  inner row -->
-				
-				<div class="row hidden-desktop">
-					<div class="span8">
-						<!-- stories tagged db-story-d1 through db-story-d3 -->
-						<?php
-						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-						<a href="<?php the_permalink(); ?>">
-							<span class="headline-d"><?php the_headline(); ?></span>
-						</a>
-						<?php endforeach; ?>
-						<?php
-						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-						<a href="<?php the_permalink(); ?>">
-							<span class="headline-d"><?php the_headline(); ?></span>
-						</a>
-						<?php endforeach; ?>
-						<?php
-						$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
-						$lastposts = get_posts( $args );
-						foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-						<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-						<a href="<?php the_permalink(); ?>">
-							<span class="headline-d"><?php the_headline(); ?></span>
-						</a>
-						<?php endforeach; ?>
-
-					</div><!-- end div.span8 -->
-				</div><!-- end div.row -->
-				
-				
+    <div class="row db-divide"></div>
+		
 				<div class="row">
 
 					<div class="span8 front-section" id="front-news">

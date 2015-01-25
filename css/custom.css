@@ -24,3 +24,42 @@ blockquote {
 #side-ad {
 	text-align: center;
 }
+
+
+#classifieds-container {
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: -7px;
+    margin-bottom: 0;
+    margin-top: -14px;
+}
+#classifieds-container > div {
+    padding-top: 12px;
+}
+#classifieds-container p {
+    border-bottom: 1px solid #adadad;
+    padding-bottom: 10px;
+}
+#classifieds-container p:last-child {
+	padding-bottom:0;
+	border-bottom:none;
+}
+a.classifieds-button {
+	color:white;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 6px;
+
+	width: calc(100% - 15px);
+	width: -webkit-calc(100% - 15px);
+	width: -moz-calc(100% - 15px);
+}
+.classifieds-button-group {
+	width:100%;
+	text-align:center;
+	margin-bottom:13px;
+}
