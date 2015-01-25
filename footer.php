@@ -1,4 +1,4 @@
-<footer>
+
 <div class="row db-divide"></div>
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
 <div class="row db-footer text-center">
@@ -7,9 +7,9 @@
 	</div>
 </div><!-- end div.container -->
 </div>
-    
+ <a class="exit-off-canvas"></a>   
     <!-- END DB FOOTER -->
-  </footer>
+
   <!-- closing off-canvas-wrap db-off-canvas-wrap db-wrapper db-content inner wrap-->
 		</div>
 	</div>

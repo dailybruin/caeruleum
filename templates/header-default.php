@@ -77,9 +77,9 @@
 		</div><!-- end div#inthenewscont -->
 	</div><!-- end div#ad-sm-row -->
 	<div class="row visible-desktop" id="adrow">
-
-		<div class="span6" id="adrow-out">
+<!-- TODO PUT THIS AD IN FRONT LOWER -->
+<!-- 		<div class="span6" id="adrow-out">
 			<?php get_template_part('ad','smallbanner'); ?>
-		</div><!-- end div.span6 -->
+		</div><!-- end div.span6 --> 
 	</div><!-- end div.row -->
 </div><!-- end div.container -->
