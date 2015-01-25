@@ -1,6 +1,16 @@
 <?php get_header(); ?>
 
 <?php
+	function the_post_thumbnail_caption() {
+	  global $post;
+
+	  $thumbnail_id    = get_post_thumbnail_id($post->ID);
+	  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+
+	  if ($thumbnail_image && isset($thumbnail_image[0])) {
+	    echo '<span>'.$thumbnail_image[0]->post_excerpt.'</span>';
+	  }
+	}
 	// IMPORTANT: set these for your particular wordpress installation
 	// This includes db-story-a, db-story-b, db-story-c1, db-story-c2,
 	// db-story-c3, db-story-c4, db-story-m1, db-story-m2, db-story-d1,
@@ -13,7 +23,122 @@
 	$sports_cat = get_category_by_slug('sports')->term_id;
 	$opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
+						
+	<div class="row db-story">
+        <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center">
+		<?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+          <div class="db-story-c1">
+            <div class="db-image">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+              <p class="db-image-caption">
+                <?php the_post_thumbnail_caption() ?>
+              </p>
+            </div>
+            <span class="db-section-date">
+              <h4><?php the_category_text(get_the_category()); ?></h4> 
+              <h4>|</h4> 
+              <h5><?php the_time('F j, g:i a');?> </h5>
+            </span>
+            <h2>
+              <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+            </h2>
+            <p>
+              <?php echo get_the_excerpt();  ?>
+            </p>
+          </div>
+        <?php endforeach; ?>
+          <hr class="show-for-small-only">
+          <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c2' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+          <div class="row db-story-c2">
+            <div class="db-image small-5 columns">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+            </div>
+            <div class="small-7 columns">
+              <span class="db-section-date">
+	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4>|</h4> 
+	              <h5><?php the_time('F j, g:i a');?> </h5>
+              </span>
+              <h2>
+                <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+              </h2>
+              <p>
+                <?php echo get_the_excerpt();  ?>
+              </p>
+            </div>
+          </div>
+          <?php endforeach; ?>    
+        </div>
 
+            <hr class="show-for-small-only">
+            <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side">
+           	<?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div class="db-story-a">
+                <span class="db-section-date">
+	              <h4><a href='/category/<?php the_category_text(get_the_category()); ?>'><?php the_category_text(get_the_category()); ?></a></h4> 
+	              <h4>|</h4> 
+	              <h5><?php the_time('F j, g:i a');?> </h5>
+                </span>
+                <h2>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h2>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+                <p>
+                  <?php echo get_the_excerpt();  ?>
+                </p>
+              </div>
+            <?php endforeach; ?>
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-b' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
+              <div class="db-story-b">
+                <span class="db-section-date">
+	              <h4><a href='/category/<?php the_category_text(get_the_category()); ?>'><?php the_category_text(get_the_category()); ?></a></h4> 
+	              <h4>|</h4> 
+	              <h5><?php the_time('F j, g:i a');?> </h5>
+                </span>
+                <h2>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h2>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+                <p>
+                  <?php echo get_the_excerpt();  ?>
+                </p>
+              </div>
+            <?php endforeach; ?>
+              <div class="db-story-d">
+                <span class="db-section-date">
+                  <h4>A&amp;E</h4>
+                  <h4>|</h4>
+                  <h5>Dec 8, 9:18PM</h5>
+                </span>
+                <h3>
+                  Torture Report Puts Politicians Eyeing 2016 in Quiet Mode
+                </h3>
+              </div>
+              <div class="db-story-e">
+                <span class="db-section-date">
+                  <h4>Opinion</h4>
+                  <h4>|</h4>
+                  <h5>Dec 8, 9:18PM</h5>
+                </span>
+                <h3>
+                  Torture Report Puts Politicians Eyeing 2016 in Quiet Mode
+                </h3>
+              </div>
+            </div>
+
+    </div>
 	<div class="container">		
 
 		<div class="row" id="topcontent">

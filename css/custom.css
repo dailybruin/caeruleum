@@ -15,3 +15,8 @@ blockquote {
 		margin-bottom: 1em;
 	}
 }
+
+.thumbnail-a {
+	float: right;
+	margin-left: 10px;
+}

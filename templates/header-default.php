@@ -58,28 +58,4 @@
 				<?php get_template_part('ad','banner'); ?>
 			</div>
 
-
-	
-<div class="container">
-	<div class="row" id="ad-sm-row">
-		<div class="span7" id="inthenews">
-            <?php ob_start();
-                wp_nav_menu(array('theme_location' => 'in_the_news',
-                   'container' => '',
-                ));
-                $navmenu = ob_get_contents();
-                ob_end_clean();
-                if($navmenu !== ''):
-            ?>
-			<span>In the news:</span>
-                <?php echo $navmenu; ?>
-            <?php endif; ?>
-		</div><!-- end div#inthenewscont -->
-	</div><!-- end div#ad-sm-row -->
-	<div class="row visible-desktop" id="adrow">
-<!-- TODO PUT THIS AD IN FRONT LOWER -->
-<!-- 		<div class="span6" id="adrow-out">
-			<?php get_template_part('ad','smallbanner'); ?>
-		</div><!-- end div.span6 --> 
-	</div><!-- end div.row -->
-</div><!-- end div.container -->
+<!-- TODO in the news! -->
