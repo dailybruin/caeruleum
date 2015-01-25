@@ -25,14 +25,21 @@ blockquote {
 	text-align: center;
 }
 
+#ad-banner-small {
+	text-align: center;
+}
+
+/* ===== Classifieds ========================================================
+   Author:
+   ========================================================================== */
 
 #classifieds-container {
-    height: 250px;
+    height: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
-    margin-right: -7px;
+    margin-left: -10px;
     margin-bottom: 0;
-    margin-top: -14px;
+    margin-top: -5px;
 }
 #classifieds-container > div {
     padding-top: 12px;
@@ -63,3 +70,90 @@ a.classifieds-button {
 	text-align:center;
 	margin-bottom:13px;
 }
+
+/* ===== Poll ========================================================
+   Author:
+   ========================================================================== */
+.poll-question {
+	font-family:"Helvetica", sans-serif;
+	font-size: 0.8em;
+	display: block;
+	margin-bottom: 10px;
+}
+.wp-polls-form, .wp-polls {
+    font-family:"Helvetica", sans-serif;
+}
+.wp-polls-form > submit {
+	text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wp-polls-ul {
+	list-style: none;
+	margin: 0;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+.wp-polls-ul > li {
+	padding:10px;
+}
+.wp-polls-ul > li:nth-child(2n-1) {
+	background-color: #F2F2F2;
+}
+.poll-view-results {
+    color: #333;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+a#poll-past, span.multimedia-more {
+    font-family: "Helvetica Neue";
+    font-size: 0.8em;
+    font-weight: normal;
+    padding-left: 11px;
+}
+
+
+div#poll h2 img {
+    position: relative;
+    bottom: 5px;
+    padding-left: 10px;
+    opacity:0.3;
+}
+
+div#poll form {
+/*     padding: 0 15px; */
+}
+
+.wp-polls-form label {
+	font-size: 0.75em;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+div#poll form label.radio {
+	margin-bottom:13px;
+}
+
+.radio, .checkbox {
+min-height: 20px;
+padding-left: 20px;
+}
+
+/* css3 for coloring each pollbars */
+.wp-polls-ul li:nth-child(01) .pollbar{ background:#BF0C43}
+/*
+.wp-polls-ul li:nth-child(01) .pollbar{ background:#BF0C43}
+.wp-polls-ul li:nth-child(02) .pollbar{ background:#F9BA15}
+.wp-polls-ul li:nth-child(03) .pollbar{ background:#8EAC00}
+.wp-polls-ul li:nth-child(04) .pollbar{ background:#127A97}
+.wp-polls-ul li:nth-child(05) .pollbar{ background:#452B72}
+.wp-polls-ul li:nth-child(06) .pollbar{ background:#BF0C43}
+.wp-polls-ul li:nth-child(07) .pollbar{ background:#F9BA15}
+.wp-polls-ul li:nth-child(08) .pollbar{ background:#8EAC00}
+.wp-polls-ul li:nth-child(09) .pollbar{ background:#127A97}
+.wp-polls-ul li:nth-child(10) .pollbar{ background:#452B72}
+*/

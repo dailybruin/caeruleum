@@ -57,5 +57,5 @@
 	    	<div class="db-ad-leaderboard">
 				<?php get_template_part('ad','banner'); ?>
 			</div>
-
+		</div>
 <!-- TODO in the news! -->

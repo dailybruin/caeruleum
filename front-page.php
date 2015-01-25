@@ -33,7 +33,7 @@
           <div class="db-story-c1">
             <div class="db-image text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-              <p class="db-image-caption">
+              <p class="db-image-caption text-left">
                 <?php the_post_thumbnail_caption() ?>
               </p>
             </div>
@@ -150,7 +150,7 @@
 
             <div class="large-4 columns db-story-breaking">
               <div>
-                <h1><i class="fa fa-bolt fa-fw fa-lg"></i>&nbsp;Breaking</h1>
+                <h1>Breaking</h1>
               </div>
               <hr>
               <div class="row">
@@ -239,60 +239,21 @@
                 <h2>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
-              <?php endforeach; ?>
-              </div>
+            </div>
+            <?php endforeach; ?>
               </div>
             </div>
-            <?php the_widget('WP_Widget_Classifieds_widget'); ?>
+            
             <div class="large-4 show-for-large-up columns db-classifieds">
-              <div class="db-classifieds-header">
-                <h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
-              </div>
-              <hr>
-              <div>
-                <h6>
-                  IVY LEAGUE ACHIEVERS Private in-home tutoring-all
-                  subjects available! Browse through several tutors and
-                  find the perfect candidate. Call us today 310-582-5931! •
-                  Tutoring Offered
-                </h6>
-                <hr>
-                <h6>
-                  15k in Compensation We are a professional gay couple
-                  looking for an educated egg donor between the ages of
-                  20-30. You must be healthy, physically fit, attractive, and
-                  a non-smoker. If you feel that you meet these requirements
-                  and are interested please send pictures and a bio
-                  to interestedeggdonor@gmail.com. All information to
-                  remain confidential. • Sperm/Egg Donors
-                </h6>
-                <hr>
-                <h6>
-                  IVY LEAGUE ACHIEVERS Private in-home tutoring-all
-                  subjects available! Browse through several tutors and
-                  find the perfect candidate. Call us today 310-582-5931! •
-                  Tutoring Offered
-                </h6>
-                <hr>
-                <h6>
-                  15k in Compensation We are a professional gay couple
-                  looking for an educated egg donor between the ages of
-                  20-30. You must be healthy, physically fit, attractive, and
-                  a non-smoker. If you feel that you meet these requirements
-                  and are interested please send pictures and a bio
-                  to interestedeggdonor@gmail.com. All information to
-                  remain confidential. • Sperm/Egg Donors
-                </h6>
-                <hr>
-                <h6>
-                  IVY LEAGUE ACHIEVERS Private in-home tutoring-all
-                  subjects available! Browse through several tutors and
-                  find the perfect candidate. Call us today 310-582-5931! •
-                  Tutoring Offered
-                </h6>
-              </div>
-            </div>
-          </div>
+           		<div class="db-classifieds-header">
+                	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
+            	</div>
+            	  <ul>
+				      <?php
+				      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('test-sidebar') ) :
+				      endif; ?>
+				   </ul>
+			</div>
     <div class="row db-divide"></div>
 
 	<div class="row db-story">
@@ -422,11 +383,13 @@
 
 		<div class="row db-story">
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
+            <div class="row">
               <div class="db-ad-banner hide-for-medium hide-for-small">
                 <?php get_template_part('ad','smallbanner'); ?>
               </div>
+          </div>
               <div>
-                <h1></i>&nbsp;Featured Stories</h1>
+                <h1>Featured Stories</h1>
               </div>
               <div class="db-image db-story-fe1">
                 <img src="http://placehold.it/1024x682">
@@ -440,35 +403,10 @@
               <div class="row">
                 <div class="large-12 medium-6 columns">
                   <div>
-                    <h1><i class="fa fa-question fa-fw fa-lg"></i>&nbsp;Opinion Poll</h1>
+                    <h1>Opinion Poll</h1>
                   </div>
                   <hr>
-                  <div class="db-poll-description">
-                    <p>
-                      In the wake of the deaths of both Michael Brown and
-                      Eric Garner, many demonstrations and protests have
-                      taken place in Berkeley and the surrounding areas.
-                      Meanwhile, the UCLA community has not played a
-                      significant role in these large scale protests. How do
-                      you feel about this matter?
-                    </p>
-                  </div>
-                  <div class="db-poll-options">
-                    <ul>
-                      <li>UCLA needs to amplify its student activism in order to
-                        have a larger voice in national issues.
-                      </li>
-                      <li>While student activism can influence national issues, the
-                        protests in Berkeley have yet to result in concrete change.
-                      </li>
-                      <li>Student activism has a limited impact on influencing
-                        national issues and the UCLA community should focus on
-                        tackling campus issues.
-                      </li>
-                      <li>I don't know how I feel about this matter.
-                      </li>
-                    </ul>
-                  </div>
+                  	<?php the_widget('WP_Widget_Polls'); ?>
                 </div>
 
                 <hr class="hide-for-medium">
