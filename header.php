@@ -11,13 +11,13 @@
   <?php if (current_theme_supports('bootstrap-responsive')) { ?><meta name="viewport" content="width=device-width, initial-scale=1.0"><?php } ?>
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.5.3.min.js"></script>
-  
    
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script> 
-  <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script> 
+  <!--<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>-->
   
 	<link rel="shortcut icon" href="/img/favicon.ico"/>
 	
@@ -64,5 +64,4 @@
   <?php roots_wrap_before(); ?>
   <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
   <!-- close these in footer -->
-  <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
-    <div class="db-wrapper db-content">
+

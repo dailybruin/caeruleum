@@ -1,3 +1,6 @@
+<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
+    
+
 <header id="topinfo">
 	<div class="inner-wrap">
 	    <div class="fixed">
@@ -6,9 +9,53 @@
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 	        </section>
 	        <section class="middle tab-bar-section">
-	          <img src="img/db_logo.svg">
+	          <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"></a>
 	        </section>
 	      </nav>
+	    </div>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li class="text-center">
+            	<a href="<?php echo home_url('/'); ?>"><img class="db-mobile-nav-logo" src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_icon.svg" /></a>
+            	</li>
+            <li><div class="row collapse postfix-round ">
+              <div class="small-10 columns">
+                <input type="text" placeholder="Search">
+              </div>
+              <div class="small-2 columns">
+                <span class="button postfix"><i class="fa fa-search"></i></span>
+              </div>
+            </div></li>
+          </ul>
+          <div class="db-nav-links">
+            <ul class="off-canvas-list">
+              <li><label>Sections</label></li>
+              <li><a href="#"><i class="fa fa-newspaper-o fa-fw fa-lg"></i>News</a></li>
+              <li><a href="#"><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>Sports</a></li>
+              <li><a href="#"><i class="fa fa-film fa-fw fa-lg"></i>A&amp;E</a></li>
+              <li><a href="#"><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>Opinion</a></li>
+              <li><a href="#"><i class="fa fa-video-camera fa-fw fa-lg"></i>Video</a></li>
+              <li><a href="#"><i class="fa fa-camera fa-fw fa-lg"></i>Photo</a></li>
+              <li><a href="#"><i class="fa fa-bullhorn fa-fw fa-lg"></i>Radio</a></li>
+              <li><a href="#"><i class="fa fa-wifi fa-fw fa-lg"></i>Mojo</a></li>
+              <li><a href="#"><i class="fa fa-book fa-fw fa-lg"></i>Prime</a></li>
+              <li><a href="#"><i class="fa fa-globe fa-fw fa-lg"></i>Online</a></li>
+              <li><a href="#"><i class="fa fa-comments-o fa-fw fa-lg"></i>Classifieds</a></li>
+            </ul>
+            <ul class="off-canvas-list">
+              <li><label>Follow Us</label></li>
+              <li><a href="#"><i class="fa fa-facebook fa-fw fa-lg"></i>Facebook</a></li>
+              <li><a href="#"><i class="fa fa-instagram fa-fw fa-lg"></i>Instagram</a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-fw fa-lg"></i>Twitter</a></li>
+            </ul>
+          </div>
+        </aside>
+<div class="db-wrapper db-content">
+	    <div class="row">
+	        <div class="db-ad-leaderboard">
+	          <img src="http://placehold.it/728x90">
+	        </div>
 	    </div>
 
 	<div class="container">
