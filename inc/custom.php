@@ -302,8 +302,6 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Add an RSS button to the end of the top menu
 function db_nav_menu_filter($items, $args) {
 	$feed_url = get_bloginfo('rss2_url');
-	if($args->theme_location == 'top_navigation')
-		$items .="<li><a href='".$feed_url."'><i class='smicon-rss'></i></a> <a href=\"http://www.youtube.com/ucladailybruin\"><i class=\"smicon-youtube\"></i></a> <a href=\"http://www.twitter.com/dailybruin\"><i class=\"smicon-twitter\"></i></a> <a href=\"http://www.facebook.com/dailybruin\"><i class=\"smicon-fb\"></i></a></li>";
 	return $items;
 }
 add_filter('wp_nav_menu_items', 'db_nav_menu_filter', 10, 2);

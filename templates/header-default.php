@@ -42,6 +42,12 @@
 							'container' => '',
 							'menu_id' => 'topMenu',
 							)); ?>
+			<ul class="off-canvas-list"><li><label>Pages</label></li></ul>
+  				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
+							'menu_class' => 'off-canvas-list',
+							'container' => '',
+							'menu_id' => 'topMenu',
+							)); ?>
 			<ul class="off-canvas-list"><li><label>Follow Us</label></li></ul>
   				<?php wp_nav_menu(array('theme_location' => 'share_footer', 
 							'menu_class' => 'off-canvas-list',
