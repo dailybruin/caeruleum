@@ -73,33 +73,45 @@
 
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
-      <div id="post-top">
-		<h1 class="entry-title"><?php the_headline(); ?></h1>
+
+		<h1 ><?php the_headline(); ?></h1>
+		<hr>
 		<?php $subhead = get_post_custom_values('db_subhead');
 			if(isset($subhead) && $subhead[0] != ''): ?>
 			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
 		<?php endif; ?>
-		<?php if(has_post_thumbnail() && !$video_story) : ?>
-			<?php the_post_thumbnail('db-category-full'); ?>
-			<?php 
-			// We don't do media credits like this any more
-			if(get_the_time('U') < 1391744168): ?>
-				<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
-			<?php endif; ?>
-			<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
-		<?php endif; ?>
-		<?php if($video_story): ?>
-			<div class="video-story">
-				<?php the_content(); ?>
-			</div><!-- end div.video-story -->
-		<?php endif; ?>
-		<div class="infobar">
-			<span class="infobar-day"><i class="ticon-calendar ticon-white"></i> <?php the_time('F j, Y'); ?></span>
-			<span class="infobar-time"><i class="ticon-clock ticon-white"></i> <?php the_time('g:i a'); ?></span>
-			<span class="infobar-categories">More stories in <?php the_category(", "); ?></span>
-			<br style="clear:both" />
+		<div class="row">
+			<div class="small-8 columns">
+				<h4> <?php the_byline(); ?> </h4>
+				<h4> | </h4>
+				<h5> <?php the_time('F j, Y'); ?></h5>
+				<h5> <?php the_time('g:i a'); ?></h5>
+			</div>
+			<div class="small-4 columns text-right">
+				<h4><?php the_category(", "); ?></h4>
+				<br style="clear:both" />
+			</div>
 		</div>
-       </div><!-- end div#post-top -->
+		<div class="db-image text-center">
+			<?php if(has_post_thumbnail() && !$video_story) : ?>
+				<?php the_post_thumbnail('db-category-full'); ?>		
+				<p class="db-image-caption">
+					<?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?>
+					<?php 
+					// We don't do media credits like this any more
+					if(get_the_time('U') < 1391744168): ?>
+						<?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?>
+					<?php endif; ?>
+				</p>
+			<?php endif; ?>
+			<?php if($video_story): ?>
+				<div class="video-story">
+					<?php the_content(); ?>
+				</div><!-- end div.video-story -->
+			<?php endif; ?>
+		</div>
+
+
 		<div class="row entry-content">
 			<div class="span2 post-extra visible-desktop">
 				<ul id="post-extra-actions">

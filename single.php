@@ -16,11 +16,13 @@ foreach(get_the_category() as $cat)
 if($spectrum) :
     get_template_part('loop', 'photoblog');
 else : ?>
-	<div class="span8" id="post">
+<div class="row db-story">
+	<div class="large-8 columns">
 		<?php get_template_part('loop', 'single'); ?>
 	</div><!-- end div#post -->
-			<?php get_sidebar(); ?>
 
+			<?php get_sidebar(); ?>
+</div>
 <?php endif; ?>
 </div><!-- end div#single-post -->      
 

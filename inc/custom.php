@@ -164,7 +164,7 @@ function the_byline($displayBy=true) {
     $by = "By ";
     if(!$displayBy)
     	$by = "";
-    $link = '<span class="byline">'.$by.$coauthors.'</span>';
+    $link = '<h4>'.$by.$coauthors.'</h4>';
     echo apply_filters( 'the_byline', $link );
 }
 
