@@ -16,18 +16,12 @@
  */
 
 function roots_scripts() {
-  wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/css/bootstrap.css', false, null);
   wp_enqueue_style('galleryview_css', get_template_directory_uri() . '/css/jquery.galleryview-3.0-dev.css', false, null );
-
-  if (current_theme_supports('bootstrap-responsive')) {
-    wp_enqueue_style('roots_bootstrap_responsive', get_template_directory_uri() . '/css/bootstrap-responsive.css', array('roots_bootstrap'), null);
-  }
-
+  wp_enqueue_style('custom_css', get_template_directory_uri() . '/css/custom.css', false);
   // If you're not using Bootstrap, include HTML5 Boilerplate's main.css:
   // wp_enqueue_style('roots_h5bp', get_template_directory_uri() . '/css/main.css', false, null);
 
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/css/app.css', false, "1412878052");
-  wp_enqueue_style('roots_app_responsive', get_template_directory_uri() . '/css/app-responsive.css', false, "1384982172");
   
 
   // Load style.css from child theme
