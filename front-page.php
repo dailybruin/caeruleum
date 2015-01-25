@@ -31,7 +31,7 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
           <div class="db-story-c1">
-            <div class="db-image">
+            <div class="db-image text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
               <p class="db-image-caption">
                 <?php the_post_thumbnail_caption() ?>
@@ -154,143 +154,131 @@
               </div>
               <hr>
               <div class="row">
+              <?php // Breaking posts
+				$args = array( 'tag' => 'breaking' );
+				$i=0;
+				$lastposts = get_posts( $args );
+				foreach( $lastposts as $post ) : 	setup_postdata($post); 
+				if(++$i > 4) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
-                    <h4>News</h4>
-                    <h4>|</h4>
-                    <h5>Dec 8, 9:18PM</h5>
+                    <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              	<h4>|</h4> 
+	              	<h5><?php the_time('F j, g:i a');?> </h5>
                   </span>
                   <h3>
-                    UC announces plans to expand educational outreach at the White House
+                    <?php the_headline(); ?>
                   </h3>
                 </div>
-                <div class="db-story-breaking-2 large-12 medium-6 columns">
-                  <span class="db-section-date">
-                    <h4>News</h4>
-                    <h4>|</h4>
-                    <h5>Dec 8, 9:18PM</h5>
-                  </span>
-                  <h3>
-                    Graduate student-workers union passes resolution to support BDS movement
-                  </h3>
-                </div>
-                <div class="db-story-breaking-3 large-12 medium-6 columns">
-                  <span class="db-section-date">
-                    <h4>News</h4>
-                    <h4>|</h4>
-                    <h5>Dec 8, 9:18PM</h5>
-                  </span>
-                  <h3>
-                    State senator proposes amendment to strip UC’s constitutional autonomy
-                  </h3>
-                </div>
-                <div class="db-story-breaking-4 large-12 medium-6 columns">
-                  <span class="db-section-date">
-                    <h4>News</h4>
-                    <h4>|</h4>
-                    <h5>Dec 8, 9:18PM</h5>
-                  </span>
-                  <h3>
-                    Graduate student-workers union passes resolution to support BDS movement
-                  </h3>
-                </div>
+				<?php endforeach; ?>
               </div>
               <hr class="hide-for-medium hide-for-small">
               <div class="db-ad-rectangle hide-for-medium hide-for-small">
-                <img src="http://placehold.it/320x250">
+                <?php get_template_part('ad','side'); ?>
               </div>
             </div>
     </div>
-    
-	<div class="container">		
+    <div class="row db-divide"></div>
+              <div class="row db-story">
+            <div class="db-story-m large-5 medium-8 columns">
+              <div>
+                <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
+              </div>
+              <div class="db-story-m1">
+                <span class="db-section-date">
+                  <h4>Sports</h4>
+                  <h4>|</h4>
+                  <h5>Dec 8, 9:18PM</h5>
+                </span>
+                <div class="db-image">
+                  <img class="db-image-no-margin" src="http://placehold.it/1024x768">
+                </div>
+                <h2>
+                  UC announces plans to expand educational outreach at the White House
+                </h2>
+              </div>
+            </div>
+            <div class="db-story-m large-3 medium-4 columns">
+              <div class="row">
+                <div class="db-story-m2 medium-12 small-6 columns">
+                  <span class="db-section-date">
+                    <h4>Radio</h4>
+                    <h4>|</h4>
+                    <h5>Dec 8, 9:18PM</h5>
+                  </span>
+                  <div class="db-image">
+                    <img class="db-image-no-margin" src="http://placehold.it/1024x768">
+                  </div>
+                  <h3>
+                    Joe Bruin Rallies Support from Students for Mascot Challenge
+                  </h3>
+                </div>
+                <div class="db-story-m3 medium-12 small-6 columns">
+                  <span class="db-section-date">
+                    <h4>Video</h4>
+                    <h4>|</h4>
+                    <h5>Dec 8, 9:18PM</h5>
+                  </span>
+                  <div class="db-image">
+                    <img class="db-image-no-margin" src="http://placehold.it/1024x768">
+                  </div>
+                  <h3>
+                    Joe Bruin Rallies Support from Students for Mascot Challenge
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="large-4 show-for-large-up columns db-classifieds">
+              <div class="db-classifieds-header">
+                <h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
+              </div>
+              <hr>
+              <div>
+                <h6>
+                  IVY LEAGUE ACHIEVERS Private in-home tutoring-all
+                  subjects available! Browse through several tutors and
+                  find the perfect candidate. Call us today 310-582-5931! •
+                  Tutoring Offered
+                </h6>
+                <hr>
+                <h6>
+                  15k in Compensation We are a professional gay couple
+                  looking for an educated egg donor between the ages of
+                  20-30. You must be healthy, physically fit, attractive, and
+                  a non-smoker. If you feel that you meet these requirements
+                  and are interested please send pictures and a bio
+                  to interestedeggdonor@gmail.com. All information to
+                  remain confidential. • Sperm/Egg Donors
+                </h6>
+                <hr>
+                <h6>
+                  IVY LEAGUE ACHIEVERS Private in-home tutoring-all
+                  subjects available! Browse through several tutors and
+                  find the perfect candidate. Call us today 310-582-5931! •
+                  Tutoring Offered
+                </h6>
+                <hr>
+                <h6>
+                  15k in Compensation We are a professional gay couple
+                  looking for an educated egg donor between the ages of
+                  20-30. You must be healthy, physically fit, attractive, and
+                  a non-smoker. If you feel that you meet these requirements
+                  and are interested please send pictures and a bio
+                  to interestedeggdonor@gmail.com. All information to
+                  remain confidential. • Sperm/Egg Donors
+                </h6>
+                <hr>
+                <h6>
+                  IVY LEAGUE ACHIEVERS Private in-home tutoring-all
+                  subjects available! Browse through several tutors and
+                  find the perfect candidate. Call us today 310-582-5931! •
+                  Tutoring Offered
+                </h6>
+              </div>
+            </div>
+          </div>
 
-		<div class="row" id="topcontent">
-			<?php // Get ready for the C stories!! 
-				$cstory[0] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c1' ) );
-				$cstory[1] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c2' ) );
-				$cstory[2] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c3' ) );
-				$cstory[3] = get_posts( array( 'numberposts' => 1, 'tag' => 'db-story-c4' ) );
-			?>
-			<div class="span8" id="front-maincol">
-
-				<?php
-					// Set up livestream post
-					$livestream_post = get_posts( array('numberposts' => 1, 'tag' => 'db-story-livestream'));
-					if(!empty($livestream_post)):
-						setup_postdata($livestream_post[0]);
-				?>
-					<style type="text/css">
-						#front-livestream {
-							margin-bottom:10px;
-						}
-						#front-livestream span.livestream-head {
-						    font-size: 2.5em;
-						    font-weight: bold;
-						    line-height: 1em;
-						    margin-bottom:10px;
-						    display:block;
-						}
-						#front-livestream iframe {
-							-moz-transform: scale(0.9);
-							-webkit-transform: scale(0.9);
-						}
-						@media (min-width: 1200px) { 
-							#front-livestream iframe {
-								-moz-transform: scale(1);
-								-webkit-transform: scale(1);
-							}
-						}
-						@media (max-width: 979px) { 
-							#front-livestream iframe {
-								-moz-transform: scale(0.75);
-								-moz-transform-origin: 0 0;
-								-webkit-transform: scale(0.75);
-								-webkit-transform-origin: 0 0;
-								margin-bottom: -97px;							}
-						}
-					</style>
-					<div id="front-livestream">
-						<span class="livestream-head"><?php the_headline(); ?></span>
-						<?php the_content(); ?>
-					</div>
-				<?php endif; ?>
-
-				<?php // Breaking posts
-				$args = array( 'tag' => 'breaking' );
-				$lastposts = get_posts( $args );
-				foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-				<div id="breaking">
-					<a href="<?php the_permalink(); ?>"><span class="breaking-title"><?php the_headline(); ?></span></a> <span class="breaking-timestamp"><?php the_time('F j'); echo " at "; the_time('g:i a'); ?></span>
-				</div><!-- end div#breaking -->
-				<?php endforeach; ?>
-				
-				<div class="row">
-					<div class="span5" id="front-primarycol">
-						<div id="topcontent-rotator">
-							<div id="topcontent-rotator-nav">
-								<ul id="rotate-controls">
-									<li id="rotate-label-1" class="rotate-current"><a href="#">1</a></li>
-									<li id="rotate-label-2"><a href="#">2</a></li>
-									<li id="rotate-label-3"><a href="#">3</a></li>
-									<li id="rotate-label-4"><a href="#">4</a></li>
-								</ul><!-- end div#rotate-controls -->
-								<div id="rotate-prevnext-controls">
-									<a href="#" class="topcontent-rotator-control-forward">Next &raquo;</a>
-									<a href="#" class="topcontent-rotator-control-back">&laquo; Previous</a>
-								</div>
-							</div><!-- end div#topcontent-rotator-nav -->
-							
-							<?php global $post; ?>
-							<?php foreach ($cstory as $i=>$story) : $post = $story[0]; setup_postdata($post); ?>
-							<div class="topcontent-rotator-content" id="topcontent-rotator-content-<?php echo $i+1; ?>" <?php if($i > 0) : ?>style="display:none"<?php endif; ?>>
-								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-								<span class="story-info"><span class="story-info-category"><?php the_category_text(get_the_category()); ?></span> | <?php the_time('F j, g:i a');?> </span>
-								<a href="<?php the_permalink(); ?>"><h1 class="headline-c"><?php the_headline(); ?></h1></a>
-								<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More&nbsp;&raquo;</a></p>
-							</div><!-- end div.topcontent-rotator-content -->
-							<?php endforeach; ?>
-						</div><!-- end div#topcontent-rotator -->
-
+          <div class="row db-divide"></div>
 						<div id="front-multimedia">
 							<a href="/category/multimedia/"><h3>Multimedia &raquo;</h3></a>
 							<ul class="sections">
