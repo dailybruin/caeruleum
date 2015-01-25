@@ -38,52 +38,52 @@ Template Name: Radio: About the hosts
 <p>Live from the hills of Westwood, the Daily Bruin presents its award-winning weekly news and culture talk show, Long Story Short. The show began airing in the winter of 2011 as a pre-recorded podcast with one broadcast host and single segment stories, eventually evolving into a live show broadcast from the UCLA Radio studio. The show covers all walks of life at UCLA, from science and health to arts and politics to local news and campus buzz. Long Story Short aims to focus on members of the UCLA community and their projects, personalities and perspectives.</p>
 <div class="row-fluid">
     <div class="span6">
-        <img src="http://dailybruin.com/images/2014/05/meral.jpg" alt="Meral Arik" />
-        <h3>Meral Arik</h3>
-            <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:marik@media.ucla.edu">marik@media.ucla.edu</a> </div>
+        <img src="http://dailybruin.com/images/2015/01/Alex-Hyun.jpg" alt="Alex Hyun" />
+        <h3>Alex Hyun</h3>
+            <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:ahyun@media.ucla.edu">ahyun@media.ucla.edu</a> </div>
                 <div class="twitter">
                     <i class="ticon-twitter"></i>
-                        <a href="https://twitter.com/meralarikk" rel = "external" target="_blank" data-via="dailybruin">
-                            @meralarikk 
+                        <a href="https://twitter.com/alexhyunDB" rel = "external" target="_blank" data-via="dailybruin">
+                            @alexhyunDB
                         </a>
                 </div>
-                <audio src="http://dailybruin.com/images/2014/05/Meral.mp3" preload="auto" controls></audio>
-                <p>In addition to being a Long Story Short host, Meral is a Daily Bruin Radio staff reporter. She discovered her passion for writing in elementary school, and has loved both creative writing and news writing ever since. She was vice president and news editor of her high school newspaper “The Talon,” as well as co-president of her high school literary magazine “Wings.” Meral has covered numerous stories for the Daily Bruin, including a recurring series on young UCLA entrepreneurs. She hopes to continue working in radio and journalism and someday become a television news anchor.</p>
+                <audio src="http://dailybruin.com/images/2015/01/alexs-bio.mp3" preload="auto" controls></audio>
+            <p>In addition to being a Long Story Short host, Alex is a Daily Bruin sports writer. He covered the UCLA women's and men's track teams last year, and this year he is covering the women's and men's golf teams. He is an avid fan of sports radio and was inspired by various talk shows to join Long Story Short. He hopes to pursue a career in sports journalism or a career in the film industry as a writer or critic.</p>
             </div>
     <div class="span6">
-        <img src="http://dailybruin.com/images/2014/05/kathleen.jpg" alt="Kathleen McGovern" />
-        <h3>Kathleen McGovern</h3>
-            <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:kmcgovern@media.ucla.edu">kmcgovern@media.ucla.edu</a> </div>
-                <audio src="http://dailybruin.com/images/2014/05/Kathleen.mp3" preload="auto" controls></audio>
-                <p>Kathleen is the newest host for Long Story Short, having joined Daily Bruin Radio in Winter 2014. She feels that radio is a valuable medium for diverse media news, culture and human interest stories. As a commuting UCLA student, radio has saved her life on the road. She aspires to make radio a permanent addition to her life as a listener as well as a contributor.</p>
+        <img src="http://dailybruin.com/images/2015/01/Chirag-Govardhan.jpg" alt="Chirag Govardhan" />
+        <h3>Chirag Govardhan</h3>
+            <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:cgovardhan@media.ucla.edu">cgovardhan@media.ucla.edu</a> </div>
+                <div class="twitter">
+                    <i class="ticon-twitter"></i>
+                        <a href="https://twitter.com/chiraggovardhan" rel = "external" target="_blank" data-via="dailybruin">
+                            @ChiragGovardhan
+                        </a>
+                </div>
+                <audio src="http://dailybruin.com/images/2015/01/chirags-bio.mp3" preload="auto" controls></audio>
+                <p>Chirag joined Daily Bruin Radio as a reporter in winter 2014, inspired after having grown up listening to legends like Garrison Keillor and the Magliozzi brothers. When he's not studying to survive his pre-med classes, you can find him scouring the campus looking for new and exciting stories for the show.</p>
                 </div>
     </div>
 <div class="row-fluid">
     <div class="span6">
-        <img src="http://dailybruin.com/images/2014/05/sid.jpg" alt="Sidhaant Shah" />
-    <h3>Sidhaant Shah</h3>
-        <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:sshah@media.ucla.edu">sshah@media.ucla.edu</a> </div>
-            <div class="twitter">
-                <i class="ticon-twitter" ></i>
-                <a href="https://twitter.com/sidhaantshah" rel = "external" target="_blank" data-via="dailybruin">
-                @sidhaantshah 
-                </a>
-            </div>
-        <audio src="http://dailybruin.com/images/2014/05/Sidhaant.mp3" preload="auto" controls></audio>
-        <p>Sid has been around the Bruin since the fall of 2011 as a photographer and assistant photo editor. For the past three years, he’s been behind the lens and on the photo credits in the newspaper; now, as a radio show host, he puts a voice behind the name. He enjoys hiking, food trucks and exploring the sights and sounds of Los Angeles.</p>
+        <img src="http://dailybruin.com/images/2015/01/Sharon-Lin.jpg" alt="Sharon Lin" />
+    <h3>Sharon Lin</h3>
+        <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:slin@media.ucla.edu">slin@media.ucla.edu</a> </div>
+        <audio src="http://dailybruin.com/images/2015/01/Sharons-bio.mp3" preload="auto" controls></audio>
+        <p>Sharon started out as a Mojo blogger for the Daily Bruin but started working with Long Story Short over the summer. Before UCLA, she worked as an associate editor for the online component of a national fashion magazine, where she was given the opportunity to interview various fashion bloggers and designers. Her most memorable interview was with Althea Harper, the runner-up designer of "Project Runway" Season 6. Sharon is interested in pursuing a career in public health and using her background in journalism to effectively communicate health campaign messages.</p>
     </div>
     <div class="span6">
-        <img src="http://dailybruin.com/images/2014/05/jonaki.jpg" alt="Jonaki Mehta." />
-        <h3>Jonaki Mehta</h3>
-        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jmehta@media.ucla.edu">jmehta@media.ucla.edu</a> </div>
+        <img src="http://dailybruin.com/images/2015/01/Jennifer-Crane.jpg" alt="Jonaki Mehta." />
+        <h3>Jennifer Crane</h3>
+        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jcrane@media.ucla.edu">jcrane@media.ucla.edu</a> </div>
             <div class="twitter">
             <i class="ticon-twitter" ></i>
-            <a href="https://twitter.com/jonakimehta" rel = "external" target="_blank" data-via="dailybruin">
-            @jonakimehta
+            <a href="https://twitter.com/Jenn_Crane" rel = "external" target="_blank" data-via="dailybruin">
+            @Jenn_Crane
             </a>
         </div>
-    <audio src="http://dailybruin.com/images/2014/05/Jonaki.mp3" preload="auto" controls></audio>
-    <p>Jonaki started off as a reporter for Daily Bruin Radio, covering stories on a variety of subjects, such as inspiring UCLA professors, minimalist wallets and museum curators. Before joining the Long Story Short team, she produced a radio series on contemporary Los Angeles art spaces. Jonaki hopes to pursue investigative journalism after her undergraduate studies.</p>
+    <audio src="http://dailybruin.com/images/2015/01/jenns-bio-.mp3" preload="auto" controls></audio>
+    <p>Jennifer launched her career at the Daily Bruin in 2012 as a campus news reporter. She fell in love with obituary and feature writing, having covered multiple events and written several pieces on students, professors and artists. After trying her hand as the Community Engagement Director, she branched out into Radio and has been a part of the Radio team ever since. In 2013, Crane co-hosted "Long Story Short" for a quarter before becoming a Radio reporter. This year, she hopes to bring a little more spunk to the show as well as report on interesting Bruins across campus. In her free time, she enjoys writing, traveling and eating olives.</p>
     </div>
 </div>
 <h2>Out of Bounds</h2>
@@ -120,3 +120,4 @@ Template Name: Radio: About the hosts
 </div>
 <?php get_footer(); ?>
 <!--Designed and made by: Daniel Yao and Alisha Rosenweinnoss-->
+<!--Updated by Daniel Yao 1/25/2015-->
