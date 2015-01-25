@@ -1,5 +1,5 @@
     
-<header id="topinfo">
+
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
 	    <div class="fixed">
@@ -57,46 +57,9 @@
 	    	<div class="db-ad-leaderboard">
 				<?php get_template_part('ad','banner'); ?>
 			</div>
-	    </div>
-	</div>
 
-	<div class="container">
-
-		<div class="row">
-
-<!-- end ad div (span8) -->
-
-		</div><!-- end div.row (header row) -->
-		<div class="row visible-phone mobile-nav">
-			<img id="nameplate-mobile" src="/img/nameplate-mobile.png" />
-			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<nav id="nav-collapse" class="accordion-body collapse">
-
-				<?php wp_nav_menu(array('theme_location' => 'mobile_navigation')); ?>
-			</nav>
-		</div>
-	</div><!-- end div.container -->
-</div>
-</header>
-<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
 
 	
-<div id="firstnav-container-back" class="hidden-phone">
-	<div class="container" id="firstnav-container">
-		<nav class="row" id="firstnav">
-			<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
-									'menu_class' => 'navlist span12',
-									'container' => '',
-									'menu_id' => 'topMenu',
-									)); ?>
-		</nav><!-- end nav#firstnav -->
-	</div><!-- end div#firstnav-container -->
-</div><!-- end div#firstnav-container-back -->
-		
 <div class="container">
 	<div class="row" id="ad-sm-row">
 		<div class="span7" id="inthenews">
@@ -114,9 +77,7 @@
 		</div><!-- end div#inthenewscont -->
 	</div><!-- end div#ad-sm-row -->
 	<div class="row visible-desktop" id="adrow">
-		<div class="span6" id="adrow-house">
-			<?php get_template_part('ad','housebanner'); ?>
-		</div><!-- end div.span6 -->
+
 		<div class="span6" id="adrow-out">
 			<?php get_template_part('ad','smallbanner'); ?>
 		</div><!-- end div.span6 -->
