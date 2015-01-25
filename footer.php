@@ -20,7 +20,7 @@
   <?php roots_footer(); ?>
 	<span style="clear:both;display:block;"></span>
 
-	  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script> 
 </body>

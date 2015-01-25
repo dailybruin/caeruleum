@@ -420,31 +420,17 @@
             <?php endforeach; ?>
           </div>
 
-<div class="row db-story">
+		<div class="row db-story">
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
               <div class="db-ad-banner hide-for-medium hide-for-small">
-                <img src="http://placehold.it/468x60">
+                <?php get_template_part('ad','smallbanner'); ?>
               </div>
               <div>
-                <h1><i class="fa fa-exclamation fa-fw fa-lg"></i>&nbsp;Featured Stories</h1>
+                <h1></i>&nbsp;Featured Stories</h1>
               </div>
               <div class="db-image db-story-fe1">
-                <img src="http://placehold.it/1024x768">
-                <h2>Wake Of The Storm</h2>
-              </div>
-              <div class="row">
-                <div class="medium-4 columns db-image db-story-fe2">
-                  <img src="http://placehold.it/1024x768">
-                  <h3>Wake Of The Storm</h3>
-                </div>
-                <div class="medium-4 columns db-image db-story-fe3">
-                  <img src="http://placehold.it/1024x768">
-                  <h3>Wake Of The Storm</h3>
-                </div>
-                <div class="medium-4 columns db-image db-story-fe4">
-                  <img src="http://placehold.it/1024x768">
-                  <h3>Wake Of The Storm</h3>
-                </div>
+                <img src="http://placehold.it/1024x682">
+                <h2>Featured stories slider here.</h2>
               </div>
             </div>
 
@@ -487,7 +473,7 @@
 
                 <hr class="hide-for-medium">
                 <div class="large-12 medium-6 columns text-center">
-                  <img src="http://placehold.it/320x250">
+                  <img src="http://placehold.it/320x300">
                 </div>
               </div>
             </div>
