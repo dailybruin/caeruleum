@@ -114,12 +114,15 @@
 		
 
 		<div class="row">
+			
           <div class="medium-3 columns">
+          	<?php if(!$video_story): ?>
             <div class="row text-center">
               <h4 class="small-6 columns"><i class="fa fa-facebook fa-lg"></i>&nbsp;Share</h4>
               <h4 class="small-6 columns"><i class="fa fa-twitter fa-lg"></i>&nbsp;Tweet</h4>
             </div>
             <hr>
+            <?php endif; ?>
             <p>
               <!-- TODO: NEW CORRECTION STYLE <b>Correction</b>: -->
             </p>
