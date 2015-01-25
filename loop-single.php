@@ -95,7 +95,7 @@
 		<div class="db-image text-center">
 			<?php if(has_post_thumbnail() && !$video_story) : ?>
 				<?php the_post_thumbnail('db-category-full'); ?>		
-				<p class="db-image-caption">
+				<p class="db-image-caption text-left">
 					<?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?>
 					<?php 
 					// We don't do media credits like this any more
@@ -110,35 +110,24 @@
 				</div><!-- end div.video-story -->
 			<?php endif; ?>
 		</div>
+		<hr>
 
-
-		<div class="row entry-content">
-			<div class="span2 post-extra visible-desktop">
-				<ul id="post-extra-actions">
-					<li><a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">Tweet <i class="ticon-twitter"</a></i></li>
-					<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://dailybruin.com<?php the_permalink(); ?>" target="_blank" >Share <i class="ticon-facebook">	</a></i></li>
-					<!--<li class="list-space"></li>
-					<li class="post-extra-unimportant"><a href="#">Print <i class="ticon-printer"></a></i></li>
-					<li class="post-extra-unimportant"><a href="#">Email <i class="ticon-email"></a></i></li>-->
-					<br style="clear:both" />
-				</ul>
-			</div><!-- end div.post-extra -->
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			<div class="span6 post-content">
+		<div class="row">
+          <div class="medium-3 columns">
+            <div class="row text-center">
+              <h4 class="small-6 columns"><i class="fa fa-facebook fa-lg"></i>&nbsp;Share</h4>
+              <h4 class="small-6 columns"><i class="fa fa-twitter fa-lg"></i>&nbsp;Tweet</h4>
+            </div>
+            <hr>
+            <p>
+              <!-- TODO: NEW CORRECTION STYLE <b>Correction</b>: -->
+            </p>
+          </div>
+		  <div class="medium-9 columns">
 				<?php 
 					if(function_exists('the_audio'))
 						the_audio();
 				?>
-				<div class="span2 post-extra hidden-desktop">
-					<ul id="post-extra-actions">
-						<li><a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">Tweet <i class="ticon-twitter"</a></i></li>
-						<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://dailybruin.com<?php the_permalink(); ?>" target="_blank" >Share <i class="ticon-facebook">	</a></i></li>
-						<!--<li class="list-space"></li>
-						<li class="post-extra-unimportant"><a href="#">Print <i class="ticon-printer"></a></i></li>
-						<li class="post-extra-unimportant"><a href="#">Email <i class="ticon-email"></a></i></li>-->
-						<br style="clear:both" />
-					</ul>
-				</div><!-- end div.post-extra -->
 				<?php // Display the columnist's mugshot
 				    if($displayMugshot && $displayAuthor)
 				    {
@@ -148,18 +137,10 @@
     					$thumbnail = ob_get_contents();
     					$thumbnail_class = "";
     					ob_end_clean();
-    					if(!isset($thumbnail) || $thumbnail == "")
-    						the_byline(false);
-    					else 
+    					if(isset($thumbnail) || !($thumbnail == ""))
     					{
         					?><div class="author-photo"><?php echo $thumbnail; ?></div><?php
-        					the_byline(false);
-        					echo "<hr style='margin:5px 0;' />";
         				}
-				    }
-				    else
-				    {
-				        the_byline();
 				    }
 				?>
 				<?php if(!empty($customFields['db_infobox'][0])) : ?>
