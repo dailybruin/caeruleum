@@ -1,4 +1,16 @@
 <header id="topinfo">
+	<div class="inner-wrap">
+	    <div class="fixed">
+	      <nav class="tab-bar">
+	        <section class="left-small">
+	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+	        </section>
+	        <section class="middle tab-bar-section">
+	          <img src="img/db_logo.svg">
+	        </section>
+	      </nav>
+	    </div>
+
 	<div class="container">
 	
 		<div class="row visible-tablet">

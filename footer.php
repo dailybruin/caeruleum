@@ -8,7 +8,8 @@
     
     <!-- END DB FOOTER -->
   </footer>
-  <!-- closing off-canvas-wrap db-off-canvas-wrap db-wrapper db-content-->
+  <!-- closing off-canvas-wrap db-off-canvas-wrap db-wrapper db-content inner wrap-->
+		</div>
 	</div>
 </div>
   <?php roots_footer_after(); ?>
