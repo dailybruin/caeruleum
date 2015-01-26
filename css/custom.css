@@ -1,3 +1,18 @@
+a {
+	color: #0080c6 !important;
+}
+a:hover {
+	opacity: 0.8;
+}
+
+h4 {
+	color: black !important;
+}
+
+.off-canvas-list a{
+	color: #FFFFFF !important;
+}
+
 blockquote {
 	width: 30%;
     font-size: 150%;

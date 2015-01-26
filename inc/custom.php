@@ -181,7 +181,20 @@ function the_byline($displayBy=true) {
 
 // Theme hook to allow getting a list of categories
 function the_category_text($category_array) {
+	$i=0;
+	$name_array=[];
 	foreach($category_array as $category) {
+		$name_array[$i]=$category->cat_name;
+	}
+
+	foreach($category_array as $category) {
+		// adding stuff for multimedia
+		if($category->cat_name == "Blogs") {
+			continue;
+		}
+		if($category->cat_name == "Multimedia") {
+			continue;
+		}
 		if($category->parent == 0) {
 			echo $category->cat_name;
 			return;
