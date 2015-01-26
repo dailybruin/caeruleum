@@ -299,7 +299,7 @@
               </div>
             <?php endforeach; ?>
             <?php
-			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$args = array( 'numberposts' => 3, 'cat' => $opinion_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
@@ -330,7 +330,7 @@
               </div>
             <?php endforeach; ?>
             <?php
-			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$args = array( 'numberposts' => 3, 'cat' => $ae_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
@@ -361,7 +361,7 @@
               </div>
             <?php endforeach; ?>  
             <?php
-			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
+			$args = array( 'numberposts' => 3, 'cat' => $sports_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
@@ -371,7 +371,6 @@
               </div>
             <?php endforeach; ?>
           </div>
-
 		<div class="row db-story">
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
             <div class="row">
@@ -387,7 +386,7 @@
                 <h2>Featured stories slider here.</h2>
               </div>
             </div>
-
+            </br>
             <div class="db-divide"></div>
 
             <div class="db-poll large-4 large-pull-8 columns">

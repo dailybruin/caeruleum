@@ -106,8 +106,8 @@
 				<hr>
 			<?php endif; ?>
 			<?php if($video_story): ?>
-				<div class="video-story">
-					<?php the_content(); ?>
+				<div class="video-story">					
+						<?php the_content(); ?>
 				</div><!-- end div.video-story -->
 			<?php endif; ?>
 		</div>
@@ -167,7 +167,7 @@
 						?>
 					</div>
 				<?php endif; ?>
-				<?php if(!$video_story) { the_content(); } ?>
+				<?php if(!$video_story) {  the_content();  } ?>
 				<p class="author-contact">
 				    <?php 
 				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))
@@ -212,9 +212,6 @@
 				    }?>
 				</p>
 
-			</div><!-- end div.post-content -->
-
-		</div><!-- end div.entry-content -->
 		<div class="row" id="entry-bottom">
 			<div class="span2 about-post">
 				<div class="post-tags">
@@ -254,6 +251,10 @@
 				<?php endif; ?>
 			</div>
 		</div><!-- end div#entry-bottom -->
+	</div><!-- end div.post-content -->
+</div><!-- end div.entry-content -->
+
+		<hr>
 		<p id="comment-policy">Comments are supposed to create a forum for thoughtful, respectful community discussion. Please be nice. <a href="<?php echo get_permalink( get_page_by_path( 'comment-policy' ) ); ?>">View our full comments policy here.</a></p>
       <?php comments_template(); ?>
     </article>

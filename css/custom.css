@@ -50,6 +50,19 @@ blockquote {
   padding-top: 0.25rem;
 }
 
+#comment-policy {
+	font-style: italic;
+	font-size: 0.75em;
+	margin-top: 10px;
+}
+
+figure, figure.alignnone {
+	float: right;
+	margin-left: 10px;
+	margin-right:0;
+	font-size: 0.75rem;
+}
+
 /*HEADER */
 
 .left-off-canvas-menu {
@@ -61,6 +74,8 @@ background-color: white;
 margin: 0 auto;
 padding: 0.625rem;
 padding-top: 0rem !important;
+/*added font size*/
+font-size: 0.75rem;
 }
 
 .db-off-canvas-wrap .tab-bar {
