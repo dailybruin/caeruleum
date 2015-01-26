@@ -7,7 +7,7 @@
 /***** STICK HEADER ON SCROLL *****/
 $(function(){
     // Check the initial Poistion of the Sticky Header
-    var stickyHeaderTop = 100;
+    var stickyHeaderTop = 130;
 
     $(window).scroll(function(){
             if( $(window).scrollTop() > stickyHeaderTop ) {

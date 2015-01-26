@@ -16,7 +16,7 @@
 	        </section>
 	        <section class="middle tab-bar-section">
 	          <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"></a>
-	          <div class="db-top-date text-center">
+	          <div class="db-top-date text-center hide-for-small">
 				<?php date_default_timezone_set('America/Los_Angeles'); ?>
 				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 			</div> 

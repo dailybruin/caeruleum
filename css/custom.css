@@ -52,6 +52,10 @@ blockquote {
 
 /*HEADER */
 
+.left-off-canvas-menu {
+	position: fixed !important;
+}
+
 .db-off-canvas-wrap .db-content {
 background-color: white;
 margin: 0 auto;

@@ -5,6 +5,8 @@
           <h1>
             <?php
               $sectionPage = false;
+              $mainSection = false;
+              $sectionTag = "";
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
               $categoryTitle = single_cat_title('',false);
               if ($term) {
@@ -44,6 +46,27 @@
                 	default:
                 		echo $categoryTitle;
                 }
+                switch ($categoryTitle)
+                {
+                  case "News":
+                    $sectionTag = "db-story-ns";
+                    $mainSection = true;
+                    break;
+                  case "Sports":
+                    $sectionTag = "db-story-sp";
+                    $mainSection = true;
+                    break;
+                  case "Opinion":
+                    $sectionTag = "db-story-op";
+                    $mainSection = true;
+                    break;
+                  case "A&amp;E":
+                    $sectionTag = "db-story-ae";
+                    $mainSection = true;
+                    break;
+                  default:
+                    break;
+                }
                 // Separate case for sports as its name is the same as several other categories
                 $cat = get_category(get_query_var('cat'));
                 if ($cat->slug == 'sports-two-cents')
@@ -81,10 +104,62 @@
 			<?php endif; ?>
           
           
-          
-          
-          
+              
           <?php endif; ?>
+
+    <?php
+          if($mainSection): ?>
+<?php $firstArticle = true; ?>
+<?php
+        $args = array( 'tag' => $sectionTag );
+        $i=0;
+        $lastposts = get_posts( $args );
+        foreach( $lastposts as $post ) :  setup_postdata($post); 
+        if(++$i > 3) break;?>
+    <?php if ($firstArticle): ?>
+      <div class="db-story-m medium-8 columns">
+        <div class="db-story-m1">
+          <span class="db-section-date">
+            <h4><?php the_category(', ');?></h4> 
+            <h4>|</h4> 
+            <h5><?php the_time('F j, g:i a');?> </h5>
+          </span>
+          <div class="db-image">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
+                <p class="db-image-caption"><?php the_post_thumbnail_caption() ?>
+                      </p>
+          </div>
+          <h2>
+            <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+          </h2>
+          <p>
+            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+          </p>
+        </div>
+      </div>
+      <?php $firstArticle = false; ?>
+    <?php else :?>
+      <div class="db-story-m medium-4 columns">
+        <div class="row">
+          <div class="db-story-m2 medium-12 small-6 columns">
+            <span class="db-section-date">
+              <h4><?php the_category(', ');?></h4> 
+              <h4>|</h4> 
+              <h5><?php the_time('F j, g:i a');?> </h5>
+            </span>
+            <div class="db-image">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
+            </div>
+            <h3>
+              <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+
+<?php endforeach; ?>
+<?php endif; ?>
         </div><!-- end div.page-header -->
         <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->

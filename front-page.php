@@ -238,6 +238,7 @@
            		<div class="db-classifieds-header">
                 	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
             	</div>
+            	<hr>
             	  <ul>
 				      <?php
 				      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('test-sidebar') ) :
