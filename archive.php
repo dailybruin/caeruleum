@@ -115,10 +115,7 @@
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				<?php endif; ?>
 				<a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
-			<?php endif; ?>
-          
-          
-              
+			<?php endif; ?>   
           <?php endif; ?>
 
 <!-- Main writing section centerpiece -->
@@ -186,7 +183,8 @@
         if(++$i > 1) break;?>
       <div class="db-story-m medium-10 columns">
       <h1>
-        <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+        Featured Post:&nbsp;
+        <a href="<?php the_permalink(); ?>"> <?php the_headline(); ?></a>
       </h1>
         <div class="db-story-m1">
           <span class="db-section-date">
