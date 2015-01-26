@@ -1,6 +1,16 @@
 a {
 	color: #0080c6 !important;
 }
+h2 a{
+	color: black !important;
+}
+h3 a{
+	color: black !important;
+}
+h4 a{
+	color: grey !important;
+}
+
 a:hover {
 	opacity: 0.8;
 }
@@ -85,7 +95,22 @@ figure, figure.alignnone {
 
 .db-sum {
 	border-left: thin solid lightgrey;
+	/*TODO FIX THIS HEIGHT THING*/
+	min-height: 600px;
 	/*border-right: thin solid lightgrey;*/
+}
+
+.db-sum img{
+	margin-bottom: 0.5rem;
+}
+
+.db-poll {
+	border-right: thin solid lightgrey;
+	/*TODO FIX THIS HEIGHT THING*/
+}
+
+.caption {
+	color: grey;
 }
 
 /*HEADER */
@@ -104,7 +129,7 @@ font-size: 0.75rem;
 }
 
 .db-off-canvas-wrap .tab-bar {
-border-bottom: none !important;
+border-bottom: thin solid lightgrey !important;*/
 }
 
 .tab-bar {
@@ -164,6 +189,18 @@ top: 0rem !important;
    Author:
    ========================================================================== */
 
+/*new additions*/
+.classifieds-page {
+	margin-top: 20px;
+}
+
+#classifieds-ads {
+	margin-top: 20px;
+	border-left: thin solid lightgrey;
+	border-right: thin solid lightgrey;
+}
+
+/*from old code*/
 #classifieds-container {
     height: 400px;
     overflow-y: scroll;

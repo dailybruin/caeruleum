@@ -1,23 +1,22 @@
 <?php /* Start loop */ ?>
 <div class="row">
-	<div class="span2" id="classified-categories">
-		<h4>Ads by classification</h4>
+	<div class="small-3 columns" id="classified-categories">
+		<h1>Ads by classification</h1>
 		<?php wp_list_categories(array(
 				'taxonomy' => 'classification',
 				'hierarchical' => false,
 				'title_li' => ''
 			)); ?>
-		<?php get_template_part('ad','tower'); ?>
+		
 	</div><!-- end div#classified-categories -->
 
-	<div class="span6" id="classified-ads">
+	<div class="small-9 columns" id="classified-ads">
 	
 		<?php // FRONT PAGE ?>
 		<?php if (!is_tax()) : ?>
-		<div class="page-header">
 			<h1>Daily Bruin Classified Ads</h1>
-		</div>	
-		<strong style="display:block;margin-bottom:10px;">Featured ads:</strong>
+			<hr>
+		<h1 style="display:block;margin-top:20px;margin-bottom:10px;">Featured ads:</h1>
 		
 			<?php
 			$args = array(
@@ -38,8 +37,9 @@
 		<?php // CATEGORIES ?>
 		<?php else : ?>
 		<div class="page-header">
-			<h1><a href="/classifieds/">&laquo; Daily Bruin Classified Ads</a></h1>
-			<h3><?php wp_title(''); ?></h3>
+			<h1><?php wp_title(''); ?><a href="/classifieds/" class="right">&laquo; Daily Bruin Classified Ads</a></h1>
+			<hr>
+		</br>
 		</div>
 
         <?php global $query_string; ?>
@@ -48,8 +48,9 @@
 		    <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		    	<?php $customFields = get_post_custom(); ?>
 				<div class="row entry-content">
-					<div class="span6">
+					<div class="small-12 columns">
 						<?php the_content(); ?>
+						<hr>
 					</div><!-- end div.span6 -->
 		
 				</div><!-- end div.entry-content -->

@@ -121,6 +121,7 @@
 <!-- Main writing section centerpiece -->
     <?php
           if($mainSection): ?>
+          <h1>Featured Posts:</h1>
 <?php $firstArticle = true; ?>
 <?php
         $args = array( 'tag' => $sectionTag );
@@ -128,6 +129,7 @@
         $lastposts = get_posts( $args );
         foreach( $lastposts as $post ) :  setup_postdata($post); 
         if(++$i > 3) break;?>
+
     <?php if ($firstArticle): ?>
       <div class="db-story-m medium-8 columns">
         <div class="db-story-m1">

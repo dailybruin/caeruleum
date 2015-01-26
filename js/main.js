@@ -84,9 +84,10 @@ $(document).ready(function() {
 
 
 /***** TOGGLE DROPDOWNS *****/
-$(document).ready(function() {
-	$('.dropdown-toggle').dropdown();
-});
+// No more drop down menus!
+// $(document).ready(function() {
+// 	$('.dropdown-toggle').dropdown();
+// });
 
 /***** GET RID OF HARD IMAGE SIZES *****/
 $(document).ready(function() {

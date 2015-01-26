@@ -15,7 +15,6 @@
 ?>
 						
 	<div class="row db-story">
-		<hr>
         <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center">
 		<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
@@ -255,8 +254,9 @@
             <div class="large-4 show-for-large-up columns db-classifieds">
            		<div class="db-classifieds-header">
                 	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
+            		<div class="row db-divide"></div>
             	</div>
-            	<div class="row db-divide"></div>
+            	
             	  <ul>
 				      <?php
 				      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('test-sidebar') ) :
@@ -276,25 +276,34 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-ns row">
-                <div class="small-6 columns">
-                  <h3>
+              	<div class="text-center">
+	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+	            </div>
+                <!-- <div class="small-6 columns"> -->
+                  <h4>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h3>
-                </div>
-                <div class="small-6 columns db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
-                </div>
+                  </h4>
+                  <p>
+                  	<?php echo get_the_excerpt();  ?>
+                  </p>
+                <!-- </div> -->
+                <!-- <div class="small-6 columns db-image"> -->
+                  
+                <!-- </div> -->
+
               </div>
             <?php endforeach; ?>
+            <hr>
             <?php
 			$args = array( 'numberposts' => 3, 'cat' => $news_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h3>
+                <h4>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h3>
+                </h4>
               </div>
+              <hr>
             <?php endforeach; ?>
             </div>
 
@@ -307,25 +316,33 @@
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-op' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                <div class="small-6 columns">
-                  <h3>
+				<div class="text-center">
+	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+	            </div>
+                <!-- <div class="small-6 columns"> -->
+                  <h4>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h3>
-                </div>
-                <div class="small-6 columns db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
-                </div>
+                  </h4>
+                  <p>
+                  	<?php echo get_the_excerpt();  ?>
+                  </p>
+                <!-- </div> -->
+                <!-- <div class="small-6 columns db-image"> -->
+                  
+                <!-- </div> -->
               </div>
             <?php endforeach; ?>
+            <hr>
             <?php
 			$args = array( 'numberposts' => 3, 'cat' => $opinion_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h3>
+                <h4>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h3>
+                </h4>
               </div>
+              <hr>
             <?php endforeach; ?>
             </div>
 
@@ -338,25 +355,33 @@
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ae' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                <div class="small-6 columns">
-                  <h3>
+				<div class="text-center">
+	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+	            </div>
+                <!-- <div class="small-6 columns"> -->
+                  <h4>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h3>
-                </div>
-                <div class="small-6 columns db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
-                </div>
+                  </h4>
+                  <p>
+                  	<?php echo get_the_excerpt();  ?>
+                  </p>
+                <!-- </div> -->
+                <!-- <div class="small-6 columns db-image"> -->
+                  
+                <!-- </div> -->
               </div>
             <?php endforeach; ?>
+            <hr>
             <?php
 			$args = array( 'numberposts' => 3, 'cat' => $ae_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h3>
+                <h4>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h3>
+                </h4>
               </div>
+              <hr>
             <?php endforeach; ?>
             </div>
 
@@ -369,24 +394,32 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-sp row">
-                <div class="small-6 columns">
-                  <h3>
+				<div class="text-center">
+	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+	            </div>
+                <!-- <div class="small-6 columns"> -->
+                  <h4>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h3>
-                </div>
-                <div class="small-6 columns db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-section-cover', array('class'=>'section-cover')); ?></a>
-                </div>
+                  </h4>
+                  <p>
+                  	<?php echo get_the_excerpt();  ?>
+                  </p>
+                <!-- </div> -->
+                <!-- <div class="small-6 columns db-image"> -->
+                  
+                <!-- </div> -->
               </div>
             <?php endforeach; ?>  
+            <hr>
             <?php
 			$args = array( 'numberposts' => 3, 'cat' => $sports_cat, 'tag__not_in' => $frontPageTags );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h3>
+                <h4>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h3>
+                </h4>
+                <hr>
               </div>
             <?php endforeach; ?>
           </div>
@@ -394,7 +427,7 @@
 
 		<div class="row db-story">
 			<div class="db-divide"></div>
-            <div class="db-story-fe large-8 large-push-4 hide-for-small columns db-sum">
+            <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
             <div class="row">
               <div class="db-ad-banner hide-for-medium hide-for-small">
                 <?php get_template_part('ad','smallbanner'); ?>
@@ -411,7 +444,7 @@
             </br>
             
 
-            <div class="db-poll large-4 large-pull-8 columns">
+            <div class="db-poll large-4 large-pull-8 columns db-poll">
               <div class="row">
                 <div class="large-12 medium-6 columns">
                   <div>
