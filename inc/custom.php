@@ -179,22 +179,40 @@ function the_byline($displayBy=true) {
     echo apply_filters( 'the_byline', $link );
 }
 
+//For the front page
+function the_byline_front($displayBy=true) {
+	global $post, $authordata, $wpdb;
+	$authorid = $post->post_author;
+		
+	$articleFormats = wp_get_post_terms($post->ID,'article-format');
+	if(isset($articleFormats[0]))
+		$articleFormat = $articleFormats[0]->slug;
+	
+	if(empty($articleFormat) || $articleFormat === 'normal')
+		$articleFormat = get_field('db_article_format');
+		
+    if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief"
+    	|| (get_field('db_article_format') == 'default' && in_array('hide_byline', get_field('db_display_options'))))
+            return false;
+
+	// Get coauthors
+	ob_start();
+	coauthors_posts_links();
+	$coauthors = ob_get_contents();
+	ob_end_clean();
+	
+
+	// Code modified from WordPress core, wp-includes/author-template.php
+    $by = "By ";
+    if(!$displayBy)
+    	$by = "";
+    $link = '<h5 style="text-transform:uppercase">'.$by.$coauthors.'</h5>';
+    echo apply_filters( 'the_byline', $link );
+}
+
 // Theme hook to allow getting a list of categories
 function the_category_text($category_array) {
-	$i=0;
-	$name_array=[];
 	foreach($category_array as $category) {
-		$name_array[$i]=$category->cat_name;
-	}
-
-	foreach($category_array as $category) {
-		// adding stuff for multimedia
-		if($category->cat_name == "Blogs") {
-			continue;
-		}
-		if($category->cat_name == "Multimedia") {
-			continue;
-		}
 		if($category->parent == 0) {
 			echo $category->cat_name;
 			return;

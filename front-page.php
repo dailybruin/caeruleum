@@ -36,6 +36,7 @@
             <h2>
               <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
             </h2>
+            <?php the_byline_front(); ?>
             <p>
               <?php echo get_the_excerpt();  ?>
             </p>
@@ -60,6 +61,7 @@
               <h2>
                 <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
               </h2>
+              <?php the_byline_front(); ?>
               <p>
                 <?php echo get_the_excerpt();  ?>
               </p>
@@ -84,6 +86,7 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+                <?php the_byline_front(); ?>
                 <p>
                   <?php echo get_the_excerpt();  ?>
                 </p>
@@ -104,6 +107,7 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+                <?php the_byline_front(); ?>
                 <p>
                   <?php echo get_the_excerpt();  ?>
                 </p>
@@ -197,6 +201,10 @@
                 <h2>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
+                <?php the_byline_front(); ?>
+                <p>
+                  <?php echo get_the_excerpt();  ?>
+                </p>
               </div>
             <?php endforeach; ?>
             </div>
@@ -218,6 +226,7 @@
                 <h2>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
+                <?php the_byline_front(); ?>
               <?php endforeach; ?>
               </div>
             <?php
@@ -236,10 +245,12 @@
                 <h2>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h2>
+                <?php the_byline_front(); ?>
             </div>
             <?php endforeach; ?>
               </div>
             </div>
+
             
             <div class="large-4 show-for-large-up columns db-classifieds">
            		<div class="db-classifieds-header">
@@ -252,6 +263,7 @@
 				      endif; ?>
 				   </ul>
 			</div>
+	</div>
     <div class="row db-divide"></div>
 
 	<div class="row db-story">
@@ -378,7 +390,10 @@
               </div>
             <?php endforeach; ?>
           </div>
+      </div>
+
 		<div class="row db-story">
+			<div class="db-divide"></div>
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns db-sum">
             <div class="row">
               <div class="db-ad-banner hide-for-medium hide-for-small">
@@ -394,7 +409,7 @@
               </div>
             </div>
             </br>
-            <div class="db-divide"></div>
+            
 
             <div class="db-poll large-4 large-pull-8 columns">
               <div class="row">
@@ -412,7 +427,7 @@
                 </div>
               </div>
             </div>
-				
+				</div>
 				<?php wp_reset_query(); ?>
 	</div><!-- end div.container -->
 
