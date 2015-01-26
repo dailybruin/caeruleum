@@ -21,7 +21,7 @@ Template Name: Stonewall
     border: 2px solid #a1a1a1;
     background: #dddddd;
     width: 100%;
-    border-radius: 25px;
+/*    border-radius: 25px;*/
     font-size: 20px;
     margin-bottom: 2px;
 }
@@ -38,15 +38,33 @@ Template Name: Stonewall
     height:100%;
     text-align: center;
     z-index: 1;
+    /*via stackoverflow: http://stackoverflow.com/questions/311990/how-do-i-get-a-div-to-float-to-the-bottom-of-its-container;*/
+    /*rotates stones*/
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+
 }
 
 .texts
 {
+	font-size: 15px;
 	position: absolute;
 	color: white;
 	display: inline-block;
 	padding-top: 20%;
 	width:100%;
+}
+#stonewall{
+	/*rotates stone container*/
+	float:left;
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 
@@ -54,10 +72,10 @@ Template Name: Stonewall
 </head> 
 
 <body>
-	<div id = "banner"> Stonewall </div> 
-	<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can click on each stone in the wall to read about why it's there. </p></div>
-	<div id="stonewall">
-	</div> 
+	<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there. </p></div>
+	<div id="stonewall"></div> 
+	<div id = "banner"><img src="http://dailybruin.com/images/2015/01/stonewall.jpg"></div> 
+	
 </body>
 </html>
 
@@ -88,7 +106,10 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQU
 
 			$('#s'+i+'').append(pic);
 			$('#t'+i+'').append(item);
-			$('#s'+i+'').tipsy({fade: true});
+			$('#s'+i+'').tipsy({
+				fade: true,
+				gravity: $.fn.tipsy.autoNS
+			});
 		}
 			});
 			console.log(data);
