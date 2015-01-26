@@ -8,41 +8,96 @@
 <?php } ?>
 
 <?php /* Start loop */ ?>
-<div class="row">
+<div class="row"></div>
 
+<?php 
+    $categoryTitle = single_cat_title('',false);
+    $multSection = false;
+    switch ($categoryTitle)
+                  {
+                    case "Video":
+                      $multSection = true;
+                      break;
+                    case "Radio":
+                      $multSection = true;
+                      break;
+                    default:
+                      break;
+                  }
+  ?>
 
-</div>
-<hr>
-<?php while (have_posts()) : the_post(); ?>
-  <div class="row">
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      <?php if(has_post_thumbnail()): ?>
-        <div class="small-4 columns">
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+<div class="row db-divide"></div>
+<!-- NORMAL CATEGORY STORY LIST -->
+<?php if(!($multSection)): ?>
+    <?php while (have_posts()) : the_post(); ?>
+      <div class="row">
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <?php if(has_post_thumbnail()): ?>
+            <div class="small-4 columns">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+            <div class="small-8 columns" style="padding-left:0">
+          <?php endif; ?>
+          
+              <span class="db-section-date">
+                      <h4><?php the_category(', ');?></h4> 
+                      <h4>|</h4> 
+                      <h5><?php the_time('F j, g:i a');?> </h5>
+                      </span>
+            	<h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+          
+          <div class="entry-content">
+          	<?php the_audio(); ?>
+    		<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+
+        <?php if(has_post_thumbnail()): ?>
+        <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
+                          </p>
+        <?php endif; ?>
         </div>
-        <div class="small-8 columns" style="padding-left:0">
-      <?php endif; ?>
-      
-          <span class="db-section-date">
-                  <h4><?php the_category(', ');?></h4> 
-                  <h4>|</h4> 
-                  <h5><?php the_time('F j, g:i a');?> </h5>
-                  </span>
-        	<h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-      
-      <div class="entry-content">
-      	<?php the_audio(); ?>
-		<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+        </article>
+      </div>
+      <hr>
+    <?php endwhile; /* End loop */ ?>
 
-    <?php if(has_post_thumbnail()): ?>
-    <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
-                      </p>
-    <?php endif; ?>
+<!-- MULTIMEDIA CATEGORY STORY LIST -->
+<?php else: ?>
+    <div class="row">
+    <?php while (have_posts()) : the_post(); ?>
+      
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <?php if(has_post_thumbnail()): ?>
+          <div class="small-4 columns">
+            <div class="row">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+            <div class="row" style="padding-left:0">
+          <?php endif; ?>
+          
+              <span class="db-section-date">
+                      <h4><?php the_category(', ');?></h4> 
+                      <h4>|</h4> 
+                      <h5><?php the_time('F j, g:i a');?> </h5>
+                      </span>
+              <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+          
+          <div class="entry-content">
+            <?php the_audio(); ?>
+              <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+            <?php if(has_post_thumbnail()): ?>
+            <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?></p>
+          </div>
+          </div>
+        <?php endif; ?>
+        </div>
+        </article>
+
+      <!-- <hr> -->
+    <?php endwhile; /* End loop */ ?>
     </div>
-    </article>
-  </div>
-  <hr>
-<?php endwhile; /* End loop */ ?>
+<?php endif; ?>
+
+
 </br>
 <?php        
 $total_pages = $wp_query->max_num_pages;  

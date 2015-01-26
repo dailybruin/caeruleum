@@ -6,6 +6,7 @@
             <?php
               $sectionPage = false;
               $mainSection = false;
+              $multSection = false;
               $sectionTag = "";
               $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
               $categoryTitle = single_cat_title('',false);
@@ -67,6 +68,19 @@
                   default:
                     break;
                 }
+                switch ($categoryTitle)
+                {
+                  case "Video":
+                    $sectionTag = "db-story-m2";
+                    $multSection = true;
+                    break;
+                  case "Radio":
+                    $sectionTag = "db-story-m3";
+                    $multSection = true;
+                    break;
+                  default:
+                    break;
+                }
                 // Separate case for sports as its name is the same as several other categories
                 $cat = get_category(get_query_var('cat'));
                 if ($cat->slug == 'sports-two-cents')
@@ -107,6 +121,7 @@
               
           <?php endif; ?>
 
+<!-- Main writing section centerpiece -->
     <?php
           if($mainSection): ?>
 <?php $firstArticle = true; ?>
@@ -160,6 +175,33 @@
 
 <?php endforeach; ?>
 <?php endif; ?>
+
+<!-- Multimedia section centerpiece -->
+<?php if($multSection): ?>
+<?php
+        $args = array( 'tag' => $sectionTag );
+        $i=0;
+        $lastposts = get_posts( $args );
+        foreach( $lastposts as $post ) :  setup_postdata($post); 
+        if(++$i > 1) break;?>
+      <div class="db-story-m medium-10 columns">
+      <h1>
+        <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+      </h1>
+        <div class="db-story-m1">
+          <span class="db-section-date">
+            <h4><?php the_category(', ');?></h4> 
+            <h4>|</h4> 
+            <h5><?php the_time('F j, g:i a');?> </h5>
+          </span>
+            <?php the_content(); ?>
+        </div>
+      </div>
+      <?php $firstArticle = false; ?>
+<?php endforeach; ?>
+<?php endif; ?>
+
+
         </div><!-- end div.page-header -->
         <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
