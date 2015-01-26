@@ -67,7 +67,7 @@ border-bottom: none !important;
 -webkit-backface-visibility: hidden;
 background: #FFFFFF;
 color: #FFFFFF;
-height: 8rem !important;
+height: 7rem !important;
 line-height: 5rem;
 position: relative !important;
 }
@@ -75,7 +75,7 @@ position: relative !important;
 .tab-bar .menu-icon {
 text-indent: 2.1875rem;
 width: 5rem;
-height: 8.625rem !important;
+height: 7.625rem !important;
 display: block;
 padding: 0;
 color: #333333;
@@ -86,7 +86,7 @@ transform: translate3d(0, 0, 0);
 .tab-bar-section.middle {
 left: 5rem;
 right: 5rem;
-top: 1rem !important;
+top: 0rem !important;
 }
 
 .db-top-date p {
@@ -106,14 +106,14 @@ top: 1rem !important;
 
 #stickyheader {
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     background: white;
     z-index: 1000;
 }
 
 #stickyalias {
   display: none;
-  height: 8rem;
+  height: 7rem;
 }
 
 /* ===== Classifieds ========================================================
