@@ -433,17 +433,19 @@
                 <?php get_template_part('ad','smallbanner'); ?>
               </div>
           </div>
-              <div>
-                <h1>Featured Stories</h1>
-              </div>
-              <div class="db-image db-story-fe1">
-                <img src="http://placehold.it/1024x682">
-                <h2>Featured stories slider here.</h2>
-              </div>
-            </div>
-            </br>
-            
-
+		<div class="row" id="featuredProject">
+			<div style="padding: 5px 20px;">
+				 <h1>Wake of the Storm</h1>
+				 <a href="/features/" class="right"><h4>More features</h4></a>
+				 <span style="display:block;width:100%;clear:both;"></span>
+				 <img src="http://dailybruin.com/images/features/THUMBS/yolanda_thumb.jpg" />
+                 <p>Read our feature series about recovery efforts in the Philippines, which was devastated by a super typhoon last November. UCLA student donations played a part in the relief missions of several aid agencies in the wake of the storm. The Daily Bruin spent 19 days in the Philippines talking to typhoon survivors and relief organizations. The reporting in the Philippines was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which is in its seventh year of funding UCLA journalism with global reach and local impact.</p>
+				 <a href="http://yolanda.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
+				 <span style="display:block;width:100%;clear:both"></span>
+			</div>
+		</div><!-- end div#featuredProject -->
+       </div>
+        </br>        
             <div class="db-poll large-4 large-pull-8 columns db-poll">
               <div class="row">
                 <div class="large-12 medium-6 columns">
@@ -452,11 +454,6 @@
                   </div>
                   <hr>
                   	<?php the_widget('WP_Widget_Polls'); ?>
-                </div>
-
-                <hr class="hide-for-medium">
-                <div class="large-12 medium-6 columns text-center">
-                  <img src="http://placehold.it/320x300">
                 </div>
               </div>
             </div>
