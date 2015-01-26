@@ -12,7 +12,7 @@ Template Name: Stonewall
 <title>Stonewall</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
 <script type='text/javascript' src='/js/vendor/jquery.tipsy.js'></script>
-<link rel="stylesheet" href="/stylesheets/tipsy.css" type="text/css" />
+<link rel="stylesheet" href="/css/vendor/tipsy.css" type="text/css" />
 
 <style>
 
@@ -37,6 +37,7 @@ Template Name: Stonewall
     width:390px;
     height:100%;
     text-align: center;
+    z-index: 1;
 }
 
 .texts
@@ -48,10 +49,6 @@ Template Name: Stonewall
 	width:100%;
 }
 
-#stonegraphic {
-	width:100%; 
-	height:100%;
-}
 
 </style>
 </head> 
@@ -71,7 +68,7 @@ $(document).ready(function() {
 
 $(function showstones() {	
 
-$.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNOxqNPSKRMOMK3jISLjIY/od6/public/values?alt=json",
+$.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQUK1Ty6PqyGgkqMf4W7h4/od6/public/values?alt=json",
 
 	function (data) {	
 
@@ -79,22 +76,20 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13bucW1zrZjEfI2GibmJk6pNO
 		//$('div#stonewall').append('<div class="stone"></div>');
 
 		$.each(data.feed.entry, function(i,entry) {	
-
+		if (entry.gsx$date.$t)
+		{
 			var dis = entry.gsx$description.$t
 			$('div#stonewall').append('<div id = "s'+i+'" class="stone" title = "'+dis+'">  <div id = "t'+i+'" class = "texts">  </div> </div>');
 			//var pic = '<span style="display:none">' + entry.id.$t + '</span>';	
 			var pic = '<img src="http://dailybruin.com/images/2015/01/stone'+(i%4+1)+'.png" id = "stonegraphic"/>';
 
-			if (entry.gsx$date.$t)
-			{
-				var item =entry.gsx$date.$t + '<br/>';	
-				item += entry.gsx$reason.$t;
-			}
+			var item =entry.gsx$date.$t + '<br/>';	
+			item += entry.gsx$reason.$t;
 
 			$('#s'+i+'').append(pic);
 			$('#t'+i+'').append(item);
 			$('#s'+i+'').tipsy({fade: true});
-
+		}
 			});
 			console.log(data);
 
