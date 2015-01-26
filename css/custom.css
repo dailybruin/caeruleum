@@ -63,6 +63,16 @@ figure, figure.alignnone {
 	font-size: 0.75rem;
 }
 
+.db-story-center {
+	border-left: thin solid lightgrey;
+	border-right: thin solid lightgrey;
+}
+
+.db-sum {
+	border-left: thin solid lightgrey;
+	/*border-right: thin solid lightgrey;*/
+}
+
 /*HEADER */
 
 .left-off-canvas-menu {

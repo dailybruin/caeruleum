@@ -15,6 +15,7 @@
 ?>
 						
 	<div class="row db-story">
+		<hr>
         <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center">
 		<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
@@ -39,6 +40,7 @@
               <?php echo get_the_excerpt();  ?>
             </p>
           </div>
+          <hr style="border-top: medium double lightgrey;">
         <?php endforeach; ?>
           <hr class="show-for-small-only">
           <?php
@@ -86,6 +88,7 @@
                   <?php echo get_the_excerpt();  ?>
                 </p>
               </div>
+              <hr>
             <?php endforeach; ?>
             <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-b' );
@@ -105,6 +108,7 @@
                   <?php echo get_the_excerpt();  ?>
                 </p>
               </div>
+              <hr>
             <?php endforeach; ?>
              <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
@@ -120,6 +124,7 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
+              <hr>
             <?php endforeach; ?>
             <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
@@ -136,14 +141,15 @@
                 </h3>
               </div>
             </div>
+
             <?php endforeach; ?>
 
             <div class="large-4 columns db-story-breaking">
               <div>
                 <h1>Breaking</h1>
               </div>
-              <hr>
-              <div class="row">
+              <div class="row db-divide"></div>
+             <div class="row">
               <?php // Breaking posts
 				$args = array( 'tag' => 'breaking' );
 				$i=0;
@@ -159,10 +165,11 @@
                   <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
+                  <hr>
                 </div>
 				<?php endforeach; ?>
               </div>
-              <hr class="hide-for-medium hide-for-small">
+              <div class="row db-divide hide-for-medium hide-for-small"></div>
               <div class="db-ad-rectangle hide-for-medium hide-for-small">
                 <?php get_template_part('ad','side'); ?>
               </div>
@@ -238,7 +245,7 @@
            		<div class="db-classifieds-header">
                 	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
             	</div>
-            	<hr>
+            	<div class="row db-divide"></div>
             	  <ul>
 				      <?php
 				      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('test-sidebar') ) :
@@ -248,7 +255,7 @@
     <div class="row db-divide"></div>
 
 	<div class="row db-story">
-            <div class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns db-sum">
               <div>
                 <h1><i class="fa fa-newspaper-o fa-fw fa-lg"></i>&nbsp;News</h1>
               </div>
@@ -279,7 +286,7 @@
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns db-sum">
               <div>
                 <h1><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>&nbsp;Opinion</h1>
               </div>
@@ -310,7 +317,7 @@
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns db-sum">
               <div>
                 <h1><i class="fa fa-film fa-fw fa-lg"></i>&nbsp;A&amp;E</h1>
               </div>
@@ -341,7 +348,7 @@
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns db-sum">
               <div>
                 <h1><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>&nbsp;Sports</h1>
               </div>
@@ -372,7 +379,7 @@
             <?php endforeach; ?>
           </div>
 		<div class="row db-story">
-            <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
+            <div class="db-story-fe large-8 large-push-4 hide-for-small columns db-sum">
             <div class="row">
               <div class="db-ad-banner hide-for-medium hide-for-small">
                 <?php get_template_part('ad','smallbanner'); ?>
