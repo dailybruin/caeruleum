@@ -1,8 +1,14 @@
     
 
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
-	    <div class="fixed">
+  <div class="inner-wrap">
+	<div class="row">
+    	<div class="db-ad-leaderboard text-center">
+			<?php get_template_part('ad','banner'); ?>
+		</div>
+	</div>
+	<hr>
+  	<div id="stickyheader">
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -18,7 +24,6 @@
 				<input type="search" placeholder="Search..." name="s"></input>
 			</form> -->
 	      </nav>
-	    </div>
 
         <aside class="left-off-canvas-menu">
           <ul class="off-canvas-list">
@@ -55,13 +60,10 @@
 							)); ?>
           </div>
         </aside>
-
+	</div>
+    <div id="stickyalias"></div>
+        
 	<div class="db-wrapper db-content">
 
-	    <div class="row">
-	    	<div class="db-ad-leaderboard">
-				<?php get_template_part('ad','banner'); ?>
-			</div>
-		</div>
-	<hr>
+
 <!-- TODO in the news! -->

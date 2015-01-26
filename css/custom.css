@@ -56,7 +56,7 @@ blockquote {
 background-color: white;
 margin: 0 auto;
 padding: 0.625rem;
-padding-top: 8rem !important;
+padding-top: 0rem !important;
 }
 
 .db-off-canvas-wrap .tab-bar {
@@ -69,7 +69,7 @@ background: #FFFFFF;
 color: #FFFFFF;
 height: 8rem !important;
 line-height: 5rem;
-position: relative;
+position: relative !important;
 }
 
 .tab-bar .menu-icon {
@@ -102,6 +102,18 @@ top: 1rem !important;
 .db-top-date p span { 
     background:#fff; 
     padding:0 10px; 
+}
+
+#stickyheader {
+    width: 100%;
+    height: 8rem;
+    background: white;
+    z-index: 1000;
+}
+
+#stickyalias {
+  display: none;
+  height: 8rem;
 }
 
 /* ===== Classifieds ========================================================

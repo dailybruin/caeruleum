@@ -1,6 +1,24 @@
 /* Author: 
 	Byron Lutz
+	With additions by: Neil Bedi :D
 */
+
+
+/***** STICK HEADER ON SCROLL *****/
+$(function(){
+    // Check the initial Poistion of the Sticky Header
+    var stickyHeaderTop = 100;
+
+    $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                    $('#stickyheader').css({position: 'fixed', top: '0px'});
+                    $('#stickyalias').css('display', 'block');
+            } else {
+                    $('#stickyheader').css({position: 'static', top: '0px'});
+                    $('#stickyalias').css('display', 'none');
+            }
+    });
+  });
 
 /***** ALLOW PAGES TO MAKE PAGE UN-RESPONSIVE *****/
 function unresponsivize() {
@@ -40,6 +58,7 @@ $(document).ready(function() {
 		$.pressplus.f.pop('plans');
 	});
 });
+
 
 
 /***** CONTROL SIDEBAR POPULAR STORIES TABS *****/
