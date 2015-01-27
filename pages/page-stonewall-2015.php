@@ -80,7 +80,7 @@ Template Name: Stonewall
 </head> 
 
 <body>
-	<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there. </p></div>
+	<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there.  </p></div>
 	<div id="stonewall"></div> 
 	<div id = "banner"><img src="http://dailybruin.com/images/2015/01/stonewall.jpg"></div> 
 	
@@ -120,7 +120,6 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQU
 			});
 		}
 			});
-			console.log(data);
 
 		});
 
