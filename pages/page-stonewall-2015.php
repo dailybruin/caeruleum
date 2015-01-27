@@ -50,12 +50,20 @@ Template Name: Stonewall
 
 .texts
 {
-	font-size: 15px;
+/*	white-space: pre-wrap;        
+	white-space: -moz-pre-wrap;   
+	white-space: -pre-wrap;     
+	white-space: -o-pre-wrap;      
+	word-wrap: break-word;*/      
 	position: absolute;
 	color: white;
-	display: inline-block;
-	padding-top: 20%;
-	width:100%;
+/*	display: inline-block;*/
+	text-align: center;
+	font-size: 17px;
+	top: 25%;
+    bottom: 20%;
+    left: 15%;
+    right: 15%;
 }
 #stonewall{
 	/*rotates stone container*/
