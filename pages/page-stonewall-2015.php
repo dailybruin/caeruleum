@@ -100,9 +100,8 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQU
 
 
 		//$('div#stonewall').append('<div class="stone"></div>');
-
 		$.each(data.feed.entry, function(i,entry) {	
-		if (entry.gsx$date.$t)
+		if (entry.gsx$date.$t && entry.gsx$copystatus.$t)
 		{
 			var dis = entry.gsx$description.$t
 			$('div#stonewall').append('<div id = "s'+i+'" class="stone" title = "'+dis+'">  <div id = "t'+i+'" class = "texts">  </div> </div>');
