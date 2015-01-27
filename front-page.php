@@ -22,7 +22,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
           <div class="db-story-c1">
             <div class="db-image text-center">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-category-full'); ?></a>
               <p class="db-image-caption text-left">
                 <?php the_post_thumbnail_caption() ?>
               </p>

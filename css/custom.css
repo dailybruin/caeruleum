@@ -129,32 +129,31 @@ font-size: 0.75rem;
 }
 
 .db-off-canvas-wrap .tab-bar {
-border-bottom: thin solid lightgrey !important;*/
+border-bottom: none !important;*/
 }
 
 .tab-bar {
 -webkit-backface-visibility: hidden;
 background: #FFFFFF;
 color: #FFFFFF;
-height: 7rem !important;
 line-height: 5rem;
 position: relative !important;
 }
 
 .tab-bar .menu-icon {
-text-indent: 2.1875rem;
-width: 5rem;
-height: 7.625rem !important;
-display: block;
-padding: 0;
-color: #333333;
-position: relative;
-transform: translate3d(0, 0, 0);
+	width: 10rem !important;
+}
+
+.tab-bar .menu-icon h1 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-left: 25px;
+	line-height: 5.3rem;
 }
 
 .tab-bar-section.middle {
-left: 5rem;
-right: 5rem;
+left: 7rem !important;
+right: 7rem !important;
 top: 0rem !important;
 }
 
@@ -182,7 +181,26 @@ top: 0rem !important;
 
 #stickyalias {
   display: none;
-  height: 7rem;
+  z-index: 1000;
+  border-bottom: thin solid lightgrey !important;
+}
+
+#stickyalias img {
+  height: 2.7rem;
+  z-index: 1000;
+}
+#stickyalias .tab-bar{
+	height: 4rem !important;
+	line-height: 4rem !important;
+}
+#stickyalias .menu-icon{
+	height: 4rem !important;
+}
+#stickyalias .menu-icon h1 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-left: 25px;
+	line-height: 3.8rem !important;
 }
 
 /* ===== Special features (default styles) ================================== */

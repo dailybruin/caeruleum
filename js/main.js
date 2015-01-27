@@ -7,14 +7,15 @@
 /***** STICK HEADER ON SCROLL *****/
 $(function(){
     // Check the initial Poistion of the Sticky Header
-    var stickyHeaderTop = 130;
+    var stickyHeaderTop = 200;
 
     $(window).scroll(function(){
             if( $(window).scrollTop() > stickyHeaderTop ) {
-                    $('#stickyheader').css({position: 'fixed', top: '0px'});
+                    // $('#stickyheader').css({position: 'fixed', top: '0px'});
                     $('#stickyalias').css('display', 'block');
+                    $('#stickyalias').css({position: 'fixed', top: '0px', width: '100%'});
             } else {
-                    $('#stickyheader').css({position: 'static', top: '0px'});
+                    // $('#stickyheader').css({position: 'static', top: '0px'});
                     $('#stickyalias').css('display', 'none');
             }
     });
