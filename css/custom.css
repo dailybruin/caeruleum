@@ -3,12 +3,23 @@ a {
 }
 h2 a{
 	color: black !important;
+	font-weight: 400 !important;
+	font-family: 'Lora', serif;
 }
 h3 a{
 	color: black !important;
+	font-weight: 400 !important;
+	font-family: 'Lora', serif;
 }
-h4 a{
-	color: grey !important;
+.db-sum h4 a{
+	color: black !important;
+}
+
+.db-story-a h2 a,
+.db-story-b h2 a,
+.db-story-d h3 a,
+.db-story-e h3 a{
+	font-weight: 700 !important;
 }
 
 a:hover {
@@ -183,6 +194,7 @@ top: 0rem !important;
   display: none;
   z-index: 1000;
   border-bottom: thin solid lightgrey !important;
+  box-shadow: 0px 1px 10px rgba(0,0,0, 0.5);
 }
 
 #stickyalias img {
@@ -266,6 +278,32 @@ top: 0rem !important;
 .side-ads {
     margin: 30px 0;
 }
+
+.lsSlideWrapper img{
+	text-align: center !important;
+}
+
+.db-story-m {
+	padding-right: 40px !important;
+	display:none;
+}
+
+#multSlider li {
+	position: relative;
+
+}
+
+.front-mult {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	margin: 0;
+	color: white;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
 /* ===== Classifieds ========================================================
    Author:
    ========================================================================== */
@@ -283,7 +321,7 @@ top: 0rem !important;
 
 /*from old code*/
 #classifieds-container {
-    height: 400px;
+    height: 380px;
     overflow-y: scroll;
     overflow-x: hidden;
     margin-left: -10px;

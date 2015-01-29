@@ -21,6 +21,21 @@ $(function(){
     });
   });
 
+$(document).ready(function() {
+	$('#multSlider').lightSlider({
+      gallery:true,
+      item:1,
+      vertical:true,
+      verticalHeight:390,
+      vThumbWidth:125,
+      thumbItem:5,
+      thumbMargin:0,
+      slideMargin:0,
+      keyPress: true
+    });
+    $('.db-story-m').css('display', 'block');  
+  });
+
 /***** ALLOW PAGES TO MAKE PAGE UN-RESPONSIVE *****/
 function unresponsivize() {
     $('meta[name="viewport"]').attr('content','width=980, initial-scale=0.1');
@@ -290,13 +305,15 @@ $(document).ready(function() {
 	$(document).ready(function(){
 		gallerywidth = $('.span9').width();
 		galleryheight = gallerywidth * 0.7;
-	 	$("#gallery").galleryView({
-		    enable_overlays: true,
-		    panel_width: gallerywidth,         
-		    panel_height: galleryheight, 
-		    panel_scale: 'fit',
-		    show_filmstrip_nav: false,
-	 	});
+		if (gallerywidth) {
+		 	$("#gallery").galleryView({
+			    enable_overlays: true,
+			    panel_width: gallerywidth,         
+			    panel_height: galleryheight, 
+			    panel_scale: 'fit',
+			    show_filmstrip_nav: false,
+		 	});
+		 }
 	});
 
 

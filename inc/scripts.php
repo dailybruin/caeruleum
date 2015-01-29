@@ -17,6 +17,7 @@
 
 function roots_scripts() {
   wp_enqueue_style('galleryview_css', get_template_directory_uri() . '/css/jquery.galleryview-3.0-dev.css', false, null );
+  wp_enqueue_style('lightSlider_css', get_template_directory_uri() . '/css/vendor/lightSlider.css', false, null );
   wp_enqueue_style('custom_css', get_template_directory_uri() . '/css/custom.css', false);
   // If you're not using Bootstrap, include HTML5 Boilerplate's main.css:
   // wp_enqueue_style('roots_h5bp', get_template_directory_uri() . '/css/main.css', false, null);
@@ -47,6 +48,7 @@ function roots_scripts() {
   wp_register_script('galleryview_main', get_template_directory_uri() . '/js/vendor/jquery.galleryview-3.0-dev.js', false, null, false);
   wp_register_script('galleryview_easing', get_template_directory_uri() . '/js/vendor/jquery.easing.1.3.js', false, null, false);
   wp_register_script('galleryview_timers', get_template_directory_uri() . '/js/vendor/jquery.timers-1.2.js', false, null, false);
+
   wp_enqueue_script('roots_plugins');
   wp_enqueue_script('roots_main');
   wp_enqueue_script('galleryview_main');

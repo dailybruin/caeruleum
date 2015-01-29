@@ -70,7 +70,7 @@
         </div>
 
             <hr class="show-for-small-only">
-            <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side">
+        <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side">
            	<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
 			$lastposts = get_posts( $args );
@@ -143,10 +143,27 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
-            </div>
+            <hr>
 
             <?php endforeach; ?>
+            <?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
+              <div class="db-story-e">
+                <span class="db-section-date">
+	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4>|</h4> 
+	              <h5><?php the_time('F j, g:i a');?> </h5>
+                </span>
+                <h3>
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+              </div>
+            
 
+            <?php endforeach; ?>
+            </div>
             <div class="large-4 columns db-story-breaking">
               <div>
                 <h1>Breaking</h1>
@@ -179,79 +196,38 @@
             </div>
     </div>
     <div class="row db-divide"></div>
-         <div class="row db-story">
-            <div class="db-story-m large-5 medium-8 columns">
-              <div>
+      <div class="row">
+         <div class="db-story-m large-9 medium-12 columns">
+         	<span>
+         	<div class="left">
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
-              </div>
-			<?php
-			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
+            </div>
+            <div class="right" style="line-height:3rem">
+            	<h4 style="margin-left:15px"><a href="/category/news">&nbsp;Video</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/news">&nbsp;Radio</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/news">&nbsp;Photo</a></h4>
+            </div>
+        </span>
+            <hr>
+	        <ul id="multSlider">
+	        <?php
+			$args = array( 'numberposts' => 5, 'tag' => 'db-story-m1' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-              <div class="db-story-m1">
-                <span class="db-section-date">
-                    <h4><?php the_category_text(get_the_category()); ?></h4> 
-	              	<h4>|</h4> 
-	              	<h5><?php the_time('F j, g:i a');?> </h5>
-                </span>
-                <div class="db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-                </div>
-                <h2>
-                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h2>
-                <?php the_byline_front(); ?>
-                <p>
-                  <?php echo get_the_excerpt();  ?>
-                </p>
-              </div>
-            <?php endforeach; ?>
-            </div>
-            <div class="db-story-m large-3 medium-4 columns">
-              <div class="row">
-            <?php
-			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m2' );
-			$lastposts = get_posts( $args );
-			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                <div class="db-story-m2 medium-12 small-6 columns">
-                <span class="db-section-date">
-                    <h4><?php the_category_text(get_the_category()); ?></h4> 
-	              	<h4>|</h4> 
-	              	<h5><?php the_time('F j, g:i a');?> </h5>
-                </span>
-                <div class="db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-                </div>
-                <h2>
-                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h2>
-                <?php the_byline_front(); ?>
-              <?php endforeach; ?>
-              </div>
-            <?php
-			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m3' );
-			$lastposts = get_posts( $args );
-			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-                <div class="db-story-m3 medium-12 small-6 columns">
-                  <span class="db-section-date">
-                    <h4><?php the_category_text(get_the_category()); ?></h4> 
-	              	<h4>|</h4> 
-	              	<h5><?php the_time('F j, g:i a');?> </h5>
-                  </span>
-                <div class="db-image">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-                </div>
-                <h2>
-                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h2>
-                <?php the_byline_front(); ?>
-            </div>
-            <?php endforeach; ?>
-              </div>
-            </div>
+			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(250,50) ); 
+			$url = $thumb['0']; ?>
+			  <li class="center" data-thumb="<?php echo $url; ?>">
+			  	<!-- 732px x 390px for mult -->
+			    <?php the_post_thumbnail('db-mult-full'); ?>
+			    <h1 class="front-mult"><?php the_headline(); ?></h1>
+			  </li>
+			 <?php endforeach; ?>
+			</ul>
+			<hr>
+		</div>
 
-            
-            <div class="large-4 show-for-large-up columns db-classifieds">
+        <div class="db-story">
+            <div class="large-3 show-for-large-up columns db-classifieds">
            		<div class="db-classifieds-header">
                 	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
             		<div class="row db-divide"></div>
@@ -263,13 +239,14 @@
 				      endif; ?>
 				   </ul>
 			</div>
+		</div>
 	</div>
     <div class="row db-divide"></div>
 
 	<div class="row db-story">
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><i class="fa fa-newspaper-o fa-fw fa-lg"></i>&nbsp;News</h1>
+                <h1><a href="/category/news"><i class="fa fa-newspaper-o fa-fw fa-lg"></i>&nbsp;News</a></h1>
               </div>
 			<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ns' );
@@ -286,11 +263,6 @@
                   <p>
                   	<?php echo get_the_excerpt();  ?>
                   </p>
-                <!-- </div> -->
-                <!-- <div class="small-6 columns db-image"> -->
-                  
-                <!-- </div> -->
-
               </div>
             <?php endforeach; ?>
             <hr>
@@ -309,7 +281,7 @@
 
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>&nbsp;Opinion</h1>
+                <h1><a href="/category/news"><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>&nbsp;Opinion</a></h1>
               </div>
               <div class="db-story-op row">
              <?php
@@ -348,7 +320,7 @@
 
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><i class="fa fa-film fa-fw fa-lg"></i>&nbsp;A&amp;E</h1>
+                <h1><a href="/category/arts-entertainment"><i class="fa fa-film fa-fw fa-lg"></i>&nbsp;A&amp;E</a></h1>
               </div>
               <div class="db-story-ae row">
             <?php
@@ -387,7 +359,7 @@
 
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>&nbsp;Sports</h1>
+                <h1><a href="/category/sports"><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>&nbsp;Sports</a></h1>
               </div>
             <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );

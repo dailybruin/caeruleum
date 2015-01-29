@@ -133,16 +133,17 @@
     <?php if ($firstArticle): ?>
       <div class="db-story-m medium-8 columns">
         <div class="db-story-m1">
-          <span class="db-section-date">
-            <h4><?php the_category(', ');?></h4> 
-            <h4>|</h4> 
-            <h5><?php the_time('F j, g:i a');?> </h5>
-          </span>
+
           <div class="db-image">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
                 <p class="db-image-caption"><?php the_post_thumbnail_caption() ?>
                       </p>
           </div>
+          <span class="db-section-date">
+            <h4><?php the_category(', ');?></h4> 
+            <h4>|</h4> 
+            <h5><?php the_time('F j, g:i a');?> </h5>
+          </span>
           <h2>
             <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
           </h2>
@@ -156,14 +157,14 @@
       <div class="db-story-m medium-4 columns">
         <div class="row">
           <div class="db-story-m2 medium-12 small-6 columns">
+            <div class="db-image">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
+            </div>
             <span class="db-section-date">
               <h4><?php the_category(', ');?></h4> 
               <h4>|</h4> 
               <h5><?php the_time('F j, g:i a');?> </h5>
             </span>
-            <div class="db-image">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
-            </div>
             <h3>
               <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
             </h3>
