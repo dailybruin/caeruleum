@@ -107,7 +107,7 @@ figure, figure.alignnone {
 .db-sum {
 	border-left: thin solid lightgrey;
 	/*TODO FIX THIS HEIGHT THING*/
-	min-height: 600px;
+	min-height: 560px;
 	/*border-right: thin solid lightgrey;*/
 }
 
@@ -299,9 +299,13 @@ top: 0rem !important;
 	left: 0;
 	padding: 1em;
 	margin: 0;
-	color: white;
 	width: 100%;
 	background-color: rgba(0,0,0,0.6);
+}
+.front-mult h1 a,
+.front-mult h4,
+.front-mult h5{
+	color: white !important;
 }
 
 /* ===== Classifieds ========================================================

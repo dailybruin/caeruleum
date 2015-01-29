@@ -219,7 +219,9 @@
 			  <li class="center" data-thumb="<?php echo $url; ?>">
 			  	<!-- 732px x 390px for mult -->
 			    <?php the_post_thumbnail('db-mult-full'); ?>
-			    <h1 class="front-mult"><?php the_headline(); ?></h1>
+			    <div class="front-mult">
+				    <h1><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h1>
+				</div>
 			  </li>
 			 <?php endforeach; ?>
 			</ul>
@@ -261,7 +263,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo get_the_excerpt();  ?>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
                   </p>
               </div>
             <?php endforeach; ?>
@@ -296,7 +298,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo get_the_excerpt();  ?>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
@@ -335,7 +337,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo get_the_excerpt();  ?>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
@@ -374,7 +376,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo get_the_excerpt();  ?>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
