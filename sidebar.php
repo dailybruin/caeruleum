@@ -5,9 +5,5 @@
 					<?php dynamic_sidebar('sidebar-primary'); ?>
 				</ul><!-- end div#sidebar-list -->
 				
-				<?php if(!is_home()): 
-					get_template_part('ad','side1');
-					get_template_part('ad','side2');
-				endif; ?>
 			</div><!-- end div#sidebar-main -->
 			

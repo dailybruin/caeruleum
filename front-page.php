@@ -198,7 +198,7 @@
     <div class="row db-divide"></div>
       <div class="row">
          <div class="db-story-m large-9 medium-12 columns">
-         	<span>
+         <span>
          	<div class="left">
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
             </div>
@@ -211,7 +211,7 @@
             <hr>
 	        <ul id="multSlider">
 	        <?php
-			$args = array( 'numberposts' => 5, 'tag' => 'db-story-m1' );
+			$args = array( 'numberposts' => 4, 'tag' => 'db-story-m1' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(250,50) ); 
@@ -232,7 +232,6 @@
             <div class="large-3 show-for-large-up columns db-classifieds">
            		<div class="db-classifieds-header">
                 	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
-            		<div class="row db-divide"></div>
             	</div>
             	
             	  <ul>
@@ -400,26 +399,26 @@
       </div>
 
 		<div class="row db-story">
-			<div class="db-divide"></div>
+		<div class="db-divide"></div>
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
-            <div class="row">
-              <div class="db-ad-banner hide-for-medium hide-for-small">
-                <?php get_template_part('ad','smallbanner'); ?>
-              </div>
-          </div>
-		<div class="row" id="featuredProject">
-			<div style="padding: 5px 20px;">
-				 <h1>Wake of the Storm</h1>
-				 <a href="/features/" class="right"><h4>More features</h4></a>
-				 <span style="display:block;width:100%;clear:both;"></span>
-				 <img src="http://dailybruin.com/images/features/THUMBS/yolanda_thumb.jpg" />
-                 <p>Read our feature series about recovery efforts in the Philippines, which was devastated by a super typhoon last November. UCLA student donations played a part in the relief missions of several aid agencies in the wake of the storm. The Daily Bruin spent 19 days in the Philippines talking to typhoon survivors and relief organizations. The reporting in the Philippines was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which is in its seventh year of funding UCLA journalism with global reach and local impact.</p>
-				 <a href="http://yolanda.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
-				 <span style="display:block;width:100%;clear:both"></span>
-			</div>
-		</div><!-- end div#featuredProject -->
-       </div>
-        </br>        
+				<div class="row" id="featuredProject">
+					<div style="padding: 5px 20px;">
+						 <h1>Wake of the Storm</h1>
+						 <a href="/features/" class="right"><h4>More features</h4></a>
+						 <span style="display:block;width:100%;clear:both;"></span>
+						 <img src="http://dailybruin.com/images/features/THUMBS/yolanda_thumb.jpg" />
+		                 <p>Read our feature series about recovery efforts in the Philippines, which was devastated by a super typhoon last November. UCLA student donations played a part in the relief missions of several aid agencies in the wake of the storm. The Daily Bruin spent 19 days in the Philippines talking to typhoon survivors and relief organizations. The reporting in the Philippines was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which is in its seventh year of funding UCLA journalism with global reach and local impact.</p>
+						 <a href="http://yolanda.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
+						 <span style="display:block;width:100%;clear:both"></span>
+					</div>
+				</div><!-- end div#featuredProject -->
+				<div class="row">
+		            <div class="db-ad-banner hide-for-medium hide-for-small">
+		                <?php get_template_part('ad','smallbanner'); ?>
+		            </div>
+		        </div>
+       		</div>
+        	</br>        
             <div class="db-poll large-4 large-pull-8 columns db-poll">
               <div class="row">
                 <div class="large-12 medium-6 columns">

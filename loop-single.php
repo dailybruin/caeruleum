@@ -74,7 +74,7 @@
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
 
-		<h1 ><?php the_headline(); ?></h1>
+		<div class="db-post-headline"><h1 ><?php the_headline(); ?></h1></div>
 		<hr>
 		<?php $subhead = get_post_custom_values('db_subhead');
 			if(isset($subhead) && $subhead[0] != ''): ?>
@@ -83,7 +83,9 @@
 		<div class="row">
 			<div class="small-8 columns">
 				<h4> <?php the_byline(); ?> </h4>
-				<h4> | </h4>
+				<?php if (get_field('db_article_format') != 'brief'): ?>
+					<h4> | </h4>
+				<?php endif; ?>
 				<h5> <?php the_time('F j, Y'); ?></h5>
 				<h5> <?php the_time('g:i a'); ?></h5>
 			</div>
@@ -106,9 +108,11 @@
 				<hr>
 			<?php endif; ?>
 			<?php if($video_story): ?>
+			<div class="db-post-content">
 				<div class="video-story">					
 						<?php the_content(); ?>
 				</div><!-- end div.video-story -->
+			</div>
 			<?php endif; ?>
 		</div>
 		
@@ -167,7 +171,9 @@
 						?>
 					</div>
 				<?php endif; ?>
-				<?php if(!$video_story) {  the_content();  } ?>
+				<div class="db-post-content">
+					<?php if(!$video_story) {  the_content();  } ?>
+				</div>
 				<p class="author-contact">
 				    <?php 
 				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))

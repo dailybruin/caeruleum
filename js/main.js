@@ -28,10 +28,13 @@ $(document).ready(function() {
       vertical:true,
       verticalHeight:390,
       vThumbWidth:125,
-      thumbItem:5,
+      thumbItem:4,
       thumbMargin:0,
       slideMargin:0,
-      keyPress: true
+      keyPress: true,
+      auto: true,
+      loop: true,
+      pause: 4000
     });
     $('.db-story-m').css('display', 'block');  
   });
