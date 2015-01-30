@@ -166,7 +166,7 @@
             </div>
             <div class="large-4 columns db-story-breaking">
               <div>
-                <h1>Breaking</h1>
+                <h2 class="text-center">Breaking</h2>
               </div>
               <div class="row db-divide"></div>
              <div class="row">

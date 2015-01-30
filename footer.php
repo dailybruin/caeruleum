@@ -1,9 +1,13 @@
 
 <div class="row db-divide"></div>
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
-<div class="row db-footer text-center">
-	<?php wp_nav_menu(array('theme_location'=>'about_footer')); ?>
-	<p>Content copyright &copy; <?php echo date('Y'); ?> the Daily Bruin</p>
+  <div class="row db-footer">
+    <div class="left">
+    	<?php wp_nav_menu(array('theme_location'=>'about_footer')); ?>
+    </div>
+    <div class="right">
+    	Content copyright &copy; <?php echo date('Y'); ?> the Daily Bruin
+    </div>
 	</div>
 </div><!-- end div.container -->
 </div>

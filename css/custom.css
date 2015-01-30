@@ -7,6 +7,12 @@ h2 a{
 	font-family: 'Roboto Slab', serif;
 }
 
+h2{
+	color: black !important;
+	font-weight: 400 !important;
+	font-family: 'Roboto Slab', serif !important;
+}
+
 h3 a{
 	color: black !important;
 	font-weight: 400 !important;
@@ -63,6 +69,12 @@ h4 {
 	border-bottom: 2pt solid black;
 	padding-bottom: 10px;
 }
+
+.db-footer {
+	color: grey;
+	line-height: 3;
+}
+
 
 blockquote {
 	width: 30%;
