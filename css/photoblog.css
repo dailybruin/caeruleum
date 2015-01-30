@@ -77,6 +77,21 @@ body,
 	min-height: 700px;
 }
 
+.pagination-centered {
+	color: lightgrey;
+}
+.pagination-centered a {
+	color: white !important;
+}
+
+.db-footer {
+	border-top: thin solid lightgrey;
+}
+
+.db-footer a {
+	color: lightgrey !important;
+}
+
 /*THE POSTS*/
 
 #photoblog-post-block{

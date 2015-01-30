@@ -140,59 +140,6 @@ $(document).ready(function() {
 });
 
 
-
-/****** ROTATOR *******/
-
-$(document).ready(function() {
-	var rotator = $('#topcontent-rotator');
-	if(rotator.length > 0) {
-		var rotator_index = 0;
-		var rotator_stories = 4;
-		
-		function changeRotator(eventData) {
-			eventData.preventDefault();
-			var forward = eventData.data.forward; // direction of the rotator
-			var changeToStory = eventData.data.changeToStory;
-			
-			if (!changeToStory && ((forward && (rotator_index+1 >= rotator_stories)) || (!forward && rotator_index == 0))) {
-				return;
-			}
-			(forward) ? rotator_index++ : rotator_index--;
-			
-			if(changeToStory)
-				rotator_index = changeToStory-1;
-			
-			// Change slug
-			$('.rotate-current').removeClass('rotate-current');
-			$('#rotate-label-'+(rotator_index+1)).addClass('rotate-current');
-			
-			// Set button enabled/disabled state
-			$('.topcontent-rotator-control-back.disabled').removeClass('disabled'); // Set all enabled
-			$('.topcontent-rotator-control-forward.disabled').removeClass('disabled'); // Set all enabled
-			if(rotator_index == 0)
-				$('.topcontent-rotator-control-back').addClass('disabled');
-			else if(rotator_index == (rotator_stories -1))
-				$('.topcontent-rotator-control-forward').addClass('disabled');						
-			
-			// Change story
-			$('.topcontent-rotator-content').hide();
-			$('#topcontent-rotator-content-'+(rotator_index+1)).show();
-		}
-		
-		// Bind buttons
-		$('.topcontent-rotator-control-back').on("click", {    forward: false }, changeRotator);
-		$('.topcontent-rotator-control-forward').on("click", { forward: true }, changeRotator);
-		// Bind top links
-		$('#rotate-label-1 a').on("click", { changeToStory: 1 }, changeRotator).click();
-		$('#rotate-label-2 a').on("click", { changeToStory: 2 }, changeRotator);
-		$('#rotate-label-3 a').on("click", { changeToStory: 3 }, changeRotator);
-		$('#rotate-label-4 a').on("click", { changeToStory: 4 }, changeRotator);
-	}
-});
-
-
-
-
 /****** RESPONSIVE STYLES *******/
 
 $(document).ready(function() {
@@ -290,10 +237,10 @@ $(document).ready(function() {
 			sidebarHeight	= $sidebar.height();
 			var scrollNow = $(this).scrollTop(),
 			topBound	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
-			botBound	= $("footer").offset().top;
+			botBound	= $(".db-footer").offset().top;
 		
 			if(scrollNow > topBound && scrollNow < botBound - sidebarHeight - 50) {
-				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});
+				$sidebar.css({'position':'fixed','top':'55px','bottom':'auto','width':'250px'});
 			}
 			else if(scrollNow > topBound && scrollNow > botBound - sidebarHeight - 50){
 				$sidebar.css({'position':'absolute','top': botBound - sidebarHeight - 50});
