@@ -128,6 +128,11 @@
             <hr>
             <?php endif; ?>
             <p>
+            <?php 
+				if(get_field('corrections') != ''):?>
+				<b>Correction: </b> 
+				<?php echo get_field('corrections')?>
+			<?php endif; ?>
               <!-- TODO: NEW CORRECTION STYLE <b>Correction</b>: -->
             </p>
           </div>

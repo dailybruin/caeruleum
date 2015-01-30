@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row" id="archive-content">
-	<div class="span8" id="post-listing">
+	<div class="large-8 columns db-story-tag" id="post-listing">
         <div class="page-header">
           <h1>
             <?php
