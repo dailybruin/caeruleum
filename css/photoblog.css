@@ -60,9 +60,17 @@ nav#firstnav ul li.open a{
 }
 body,
 .db-wrapper,
-.db-content {
+.db-content,
+#stickyheader,
+.tab-bar,
+.db-top-date span {
 	background-color: #181818 !important;
 	/*background-image: url(micro-carbon.png);*/
+}
+.db-top-date p,
+.menu-icon h1,
+.menu-icon span{
+	color: white;
 }
 
 #post-listing {
@@ -91,7 +99,7 @@ body,
 a.photoblog-post-tag {
 	background-color: #DE1518;
 	border-radius: 0px 0px 0px 0px;
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 	display: block;
 	font-family: 'Helvetica';
 	font-size: 12px;
