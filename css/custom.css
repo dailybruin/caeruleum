@@ -620,3 +620,24 @@ padding-left: 20px;
 .jp-current-time, .jp-duration {display: inline;}	 
 .jp-play-time-all {position: absolute; bottom: -3px; right: 5px; display: block; text-align: right;
  	font: bold 12px/12px arial;}
+
+
+/* ====== 404 ===== */
+.f-title {
+	display: block;
+	font-size: 8em;
+	line-height: 1.4em;
+}
+.f-desc {
+    display: block;
+    font-size: 1.5em;
+    line-height: 2;
+}
+.fourohfour > p {
+	width: 90%;
+
+	text-align: left;
+}
+.f-search {
+	text-align: center;
+}
