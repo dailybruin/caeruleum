@@ -35,7 +35,6 @@
 			<?php the_content(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 			<p class="photoblog-sm">
-			    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo get_permalink(); ?>" data-text="<?php echo get_the_title(); ?>" data-via="dailybruin" data-related="dailybruin">Tweet</a>
 			    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
 			</p>
 

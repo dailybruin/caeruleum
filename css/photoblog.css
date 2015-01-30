@@ -7,9 +7,9 @@
   }
 }
   
-.page-header h1{
+.page-header h1,
+.page-header h1 a{
 	color: white;
-	font-family: 'Palatino Linotype';
 	font-size: 50px;
 	font-weight: normal;
 	opacity: 1.0;
@@ -17,11 +17,10 @@
 	
 }
 .page-header h2{
-	color: white;
-	font-family: 'Palatino Linotype';
+	color: white !important;
 	font-size: 14px;
-	font-weight: normal;
-	font-style: italic;
+	font-weight: normal !important;
+	margin-bottom: 5%;
 	opacity: 1.0;
 	margin-top: -10px;
 	padding-top: 0px;
@@ -59,8 +58,10 @@ nav#firstnav ul li.open a{
 #topsearch button:hover{
 	opacity: 1.0;
 }
-body {
-	background-color: #181818;
+body,
+.db-wrapper,
+.db-content {
+	background-color: #181818 !important;
 	/*background-image: url(micro-carbon.png);*/
 }
 
@@ -171,7 +172,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	font-size: 30px;
 }
 .photoblog-text a, .photblog-text a:visited {
-	color: #FFFFFF;
+	color: white !important;
 }
 .photoblog-text a:hover {
 	/*text-decoration: none;*/
@@ -217,7 +218,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 .sidebar-menu{
 	width: 250px;
-
+}
+.sidebar-menu a {
+	color: white!important;
 }
 #sidebar-menu ul{
 	color: #549053;
@@ -226,7 +229,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 .sidebar-menu .sidebar-link {
 	color: #999999;
-	/*font-family: "Palatino Linotype";*/
 	font-size: 16px;
 	font-style: italic;
 	line-height:20px;
