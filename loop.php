@@ -64,7 +64,7 @@
 <?php else: ?>
   <div class="row">
     <?php $storycount = 0?>
-    <?php while (have_posts()) : the_post(); ?>
+    <?php $j=0; while (have_posts()&& $j < 6) : the_post(); ?>
       <div class="small-4 columns">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
@@ -96,7 +96,7 @@
           <div class="row">
         <?php endif; ?>
       <!-- <hr> -->
-    <?php endwhile; /* End loop */ ?>
+    <?php $j++; endwhile; /* End loop */ ?>
   </div>
 <?php endif; ?>
 
