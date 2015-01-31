@@ -146,7 +146,7 @@ Template Name: USAC Elections 2013
 
 <div class="row-fluid">
 
-  <div class="span9">
+  <div class="large-9 columns">
     <a title='USAC Elections' href='#'><img src='/images/features/usac2013/bannercic.jpg' border='0'/></a> 
     <br /><br />
 
@@ -171,14 +171,14 @@ Template Name: USAC Elections 2013
     <!-- Presidents-->
 
     <ul class="thumbnails">
-      <li class="span12">
+      <li class="large-12 columns">
         <div class="thumbnail letsact">
 
           <div class="row-fluid">
-            <div class="span3">
+            <div class="large-3 columns">
               <img class="presphoto" src="/images/features/usac2013/John Joanino.jpg" alt="">
             </div>
-            <div class="span9">
+            <div class="large-9 columns">
               <div class="box">
                 <h1>President</h1><br/><br/>
                 <h2 style="font-family:sans-serif;">John Joanino</h2>
@@ -197,7 +197,7 @@ Template Name: USAC Elections 2013
 
     <ul class="thumbnails">
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Avi Oved.jpg" alt="">
           <div class="textcentered">
@@ -212,7 +212,7 @@ Template Name: USAC Elections 2013
 
       <!-- EVPS-->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail letsact">
           <img class="candphoto" src="/images/features/usac2013/Maryssa Hall.jpg" alt="">
           <div class="textcentered">
@@ -226,7 +226,7 @@ Template Name: USAC Elections 2013
 
       <!-- Academic Affairs Commissioner -->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Darren Ramalho.jpg" alt="">
           <div class="textcentered">
@@ -240,7 +240,7 @@ Template Name: USAC Elections 2013
 
       <!--Campus Events Commisioner-->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail indep">
           <img class="candphoto" src="/images/features/usac2013/Jessica Kim.jpg" alt="">
           <div class="textcentered">
@@ -258,7 +258,7 @@ Template Name: USAC Elections 2013
 
       <!--Cultural Affairs Commissioner-->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail letsact">
           <img class="candphoto" src="/images/features/usac2013/Jessica Trumble.jpg" alt="">
           <div class="textcentered">
@@ -272,7 +272,7 @@ Template Name: USAC Elections 2013
 
       <!--General Representatives-->
 
-       <li class="span3">
+       <li class="large-3 columns">
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Sam Haws.jpg" alt="">
           <div class="textcentered">
@@ -284,7 +284,7 @@ Template Name: USAC Elections 2013
       </li>
 
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Sunny Singh.jpg" alt="">
           <div class="textcentered">
@@ -296,7 +296,7 @@ Template Name: USAC Elections 2013
         </div>
       </li>
      
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail letsact">
           <img class="candphoto" src="/images/features/usac2013/Lizzy Naameh.jpg" alt="">
           <div class="textcentered">
@@ -313,7 +313,7 @@ Template Name: USAC Elections 2013
 
       <!-- Community Service Commisioner -->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail indep">
           <img class="candphoto" src="/images/features/usac2013/Omar Arce.jpg" alt="">
           <div class="textcentered">
@@ -327,7 +327,7 @@ Template Name: USAC Elections 2013
 
       <!-- Facilities Commissioner -->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
           <div class="textcentered">
@@ -341,7 +341,7 @@ Template Name: USAC Elections 2013
 
       <!-- Financial Commisioner -->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail bunited">
           <img class="candphoto" src="/images/features/usac2013/Lauren Rogers.jpg" alt="">
           <div class="textcentered">
@@ -355,7 +355,7 @@ Template Name: USAC Elections 2013
 
       <!-- Student Wellness Commissioner -->
 
-      <li class="span3">
+      <li class="large-3 columns">
         <div class="thumbnail indep">
           <img class="candphoto" src="/images/features/usac2013/Savannah Dianne Badalich.jpg" alt="">
           <div class="textcentered">
@@ -371,7 +371,7 @@ Template Name: USAC Elections 2013
 
     <ul class="thumbnails">
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="thumbnail pass">
           <div class="textcentered">
             <h1 class="white">PASSED - 60%</h1>
@@ -380,7 +380,7 @@ Template Name: USAC Elections 2013
         </div>
       </li>
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="thumbnail fail">
           <div class="textcentered">
             <h1 class="white">FAILED - 47.9%</h1>
@@ -398,7 +398,7 @@ Template Name: USAC Elections 2013
 
       <div class="initbuttons">
 
-      <div class="span4">
+      <div class="large-4 columns">
       <br/>
         <div class = "btn-group">
           <a href="/usac-elections-2013/candidates">
@@ -412,7 +412,7 @@ Template Name: USAC Elections 2013
         </div>
       </div>
 
-      <div class="span4">
+      <div class="large-4 columns">
       <br/>
         <div class = "btn-group">
           <a href="#myModal" role="button" data-toggle="modal">
@@ -426,7 +426,7 @@ Template Name: USAC Elections 2013
         </div>
       </div>
 
-      <div class="span4">
+      <div class="large-4 columns">
       <br/>
         <div class = "btn-group">
           <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
@@ -450,7 +450,7 @@ Template Name: USAC Elections 2013
       <div class="laterbuttons">
 
       <div class="row-fluid">
-      <div class="span12">
+      <div class="large-12 columns">
       <br/>
         <div class = "btn-group">
           <a href="/usac-elections-2013/candidates">
@@ -466,7 +466,7 @@ Template Name: USAC Elections 2013
       </div>
 
       <div class="row-fluid">
-      <div class="span12">
+      <div class="large-12 columns">
       <br/>
         <div class = "btn-group">
           <a href="#myModal" role="button" data-toggle="modal">
@@ -482,7 +482,7 @@ Template Name: USAC Elections 2013
       </div>
 
       <div class="row-fluid">
-      <div class="span12">
+      <div class="large-12 columns">
       <br/>
         <div class = "btn-group">
           <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
@@ -507,7 +507,7 @@ Template Name: USAC Elections 2013
     
 
     <div class="row-fluid">
-      <div class="span6">
+      <div class="large-6 columns">
         <div class="thumbnail">
           <div class="caption">
              <h3>Recent Articles<h3>
@@ -555,7 +555,7 @@ Template Name: USAC Elections 2013
         </div>
       </div>
 
-      <div class="span6">
+      <div class="large-6 columns">
 
         <script src="//storify.com/dailybruin/usac-elections-2013.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2013" target="_blank">View the story "USAC Elections 2013" on Storify</a>]</noscript>
 
@@ -601,7 +601,7 @@ Template Name: USAC Elections 2013
 
 </div><!--/span9-->
 
-<div class="span3">
+<div class="large-3 columns">
   <div class='ad'>
     <?php get_template_part('ad','side'); ?>
   </div>

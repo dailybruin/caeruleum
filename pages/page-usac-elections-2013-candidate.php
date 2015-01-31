@@ -101,7 +101,7 @@ div #preload { display: none; }
 
     <div id='content' class='row-fluid navigation'>
 
-      <div class='span9'>
+      <div class='large-9 columns'>
 
         <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
 
