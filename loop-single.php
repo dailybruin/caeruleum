@@ -73,60 +73,74 @@
 
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     	<?php $customFields = get_post_custom(); ?>
-      <div id="post-top">
-		<h1 class="entry-title"><?php the_headline(); ?></h1>
+
+		<div class="db-post-headline"><h1 ><?php the_headline(); ?></h1></div>
+		<hr>
 		<?php $subhead = get_post_custom_values('db_subhead');
 			if(isset($subhead) && $subhead[0] != ''): ?>
 			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
 		<?php endif; ?>
-		<?php if(has_post_thumbnail() && !$video_story) : ?>
-			<?php the_post_thumbnail('db-category-full'); ?>
-			<?php 
-			// We don't do media credits like this any more
-			if(get_the_time('U') < 1391744168): ?>
-				<span class="photocredit photocredit-single"><?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?></span>
-			<?php endif; ?>
-			<span class="photocaption"><?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?></span>
-		<?php endif; ?>
-		<?php if($video_story): ?>
-			<div class="video-story">
-				<?php the_content(); ?>
-			</div><!-- end div.video-story -->
-		<?php endif; ?>
-		<div class="infobar">
-			<span class="infobar-day"><i class="ticon-calendar ticon-white"></i> <?php the_time('F j, Y'); ?></span>
-			<span class="infobar-time"><i class="ticon-clock ticon-white"></i> <?php the_time('g:i a'); ?></span>
-			<span class="infobar-categories">More stories in <?php the_category(", "); ?></span>
-			<br style="clear:both" />
+		<div class="row">
+			<div class="small-8 columns">
+				<h4> <?php the_byline(); ?> </h4>
+				<?php if (get_field('db_article_format') != 'brief'): ?>
+					<h4> | </h4>
+				<?php endif; ?>
+				<h5> <?php the_time('F j, Y'); ?></h5>
+				<h5> <?php the_time('g:i a'); ?></h5>
+			</div>
+			<div class="small-4 columns text-right">
+				<h4><?php the_category(", "); ?></h4>
+				<br style="clear:both" />
+			</div>
 		</div>
-       </div><!-- end div#post-top -->
-		<div class="row entry-content">
-			<div class="span2 post-extra visible-desktop">
-				<ul id="post-extra-actions">
-					<li><a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">Tweet <i class="ticon-twitter"</a></i></li>
-					<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://dailybruin.com<?php the_permalink(); ?>" target="_blank" >Share <i class="ticon-facebook">	</a></i></li>
-					<!--<li class="list-space"></li>
-					<li class="post-extra-unimportant"><a href="#">Print <i class="ticon-printer"></a></i></li>
-					<li class="post-extra-unimportant"><a href="#">Email <i class="ticon-email"></a></i></li>-->
-					<br style="clear:both" />
-				</ul>
-			</div><!-- end div.post-extra -->
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			<div class="span6 post-content">
+		<div class="db-image text-center">
+			<?php if(has_post_thumbnail() && !$video_story) : ?>
+				<?php the_post_thumbnail('db-category-full'); ?>		
+				<p class="db-image-caption text-left">
+					<?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?>
+					<?php 
+					// We don't do media credits like this any more
+					if(get_the_time('U') < 1391744168): ?>
+						<?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?>
+					<?php endif; ?>
+				</p>
+				<hr>
+			<?php endif; ?>
+			<?php if($video_story): ?>
+			<div class="db-post-content">
+				<div class="video-story">					
+						<?php the_content(); ?>
+				</div><!-- end div.video-story -->
+			</div>
+			<?php endif; ?>
+		</div>
+		
+
+		<div class="row">
+			
+          <div class="medium-3 columns">
+          	<?php if(!$video_story): ?>
+            <div class="row text-center">
+              <h4 class="small-6 columns"><i class="fa fa-facebook fa-lg"></i>&nbsp;Share</h4>
+              <h4 class="small-6 columns"><i class="fa fa-twitter fa-lg"></i>&nbsp;Tweet</h4>
+            </div>
+            <hr>
+            <?php endif; ?>
+            <p>
+            <?php 
+				if(get_field('corrections') != ''):?>
+				<b>Correction: </b> 
+				<?php echo get_field('corrections')?>
+			<?php endif; ?>
+              <!-- TODO: NEW CORRECTION STYLE <b>Correction</b>: -->
+            </p>
+          </div>
+		  <div class="medium-9 columns">
 				<?php 
 					if(function_exists('the_audio'))
 						the_audio();
 				?>
-				<div class="span2 post-extra hidden-desktop">
-					<ul id="post-extra-actions">
-						<li><a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">Tweet <i class="ticon-twitter"</a></i></li>
-						<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://dailybruin.com<?php the_permalink(); ?>" target="_blank" >Share <i class="ticon-facebook">	</a></i></li>
-						<!--<li class="list-space"></li>
-						<li class="post-extra-unimportant"><a href="#">Print <i class="ticon-printer"></a></i></li>
-						<li class="post-extra-unimportant"><a href="#">Email <i class="ticon-email"></a></i></li>-->
-						<br style="clear:both" />
-					</ul>
-				</div><!-- end div.post-extra -->
 				<?php // Display the columnist's mugshot
 				    if($displayMugshot && $displayAuthor)
 				    {
@@ -136,18 +150,10 @@
     					$thumbnail = ob_get_contents();
     					$thumbnail_class = "";
     					ob_end_clean();
-    					if(!isset($thumbnail) || $thumbnail == "")
-    						the_byline(false);
-    					else 
+    					if(isset($thumbnail) || !($thumbnail == ""))
     					{
         					?><div class="author-photo"><?php echo $thumbnail; ?></div><?php
-        					the_byline(false);
-        					echo "<hr style='margin:5px 0;' />";
         				}
-				    }
-				    else
-				    {
-				        the_byline();
 				    }
 				?>
 				<?php if(!empty($customFields['db_infobox'][0])) : ?>
@@ -170,7 +176,9 @@
 						?>
 					</div>
 				<?php endif; ?>
-				<?php if(!$video_story) { the_content(); } ?>
+				<div class="db-post-content">
+					<?php if(!$video_story) {  the_content();  } ?>
+				</div>
 				<p class="author-contact">
 				    <?php 
 				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))
@@ -215,9 +223,6 @@
 				    }?>
 				</p>
 
-			</div><!-- end div.post-content -->
-
-		</div><!-- end div.entry-content -->
 		<div class="row" id="entry-bottom">
 			<div class="span2 about-post">
 				<div class="post-tags">
@@ -257,6 +262,10 @@
 				<?php endif; ?>
 			</div>
 		</div><!-- end div#entry-bottom -->
+	</div><!-- end div.post-content -->
+</div><!-- end div.entry-content -->
+
+		<hr>
 		<p id="comment-policy">Comments are supposed to create a forum for thoughtful, respectful community discussion. Please be nice. <a href="<?php echo get_permalink( get_page_by_path( 'comment-policy' ) ); ?>">View our full comments policy here.</a></p>
       <?php comments_template(); ?>
     </article>

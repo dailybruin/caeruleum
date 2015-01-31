@@ -1,6 +1,6 @@
 <?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
-<div class="span9" id="post">
+<div class="small-9 columns" id="post">
 	<?php the_post();
 	$cats = get_the_category();
 	if ($cats) {
@@ -35,7 +35,6 @@
 			<?php the_content(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 			<p class="photoblog-sm">
-			    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo get_permalink(); ?>" data-text="<?php echo get_the_title(); ?>" data-via="dailybruin" data-related="dailybruin">Tweet</a>
 			    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
 			</p>
 
@@ -44,4 +43,6 @@
 	</div> <!--photoblog-post-block-->
 
 </div><!-- end div#post -->
+<div class="small-3 columns">
 <?php get_template_part('sidebar','photoblog'); ?>
+</div>

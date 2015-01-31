@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row" id="archive-content">
-	<div class="span8" id="post-listing">
+	<div class="small-9 columns" id="post-listing">
     <div class="page-header">
    		<?php /*if(is_category("sports-spectrum") ||
 		  is_category("campus-spectrum") ||
@@ -17,8 +17,8 @@
     <?php get_template_part('loop', 'category-photoblog'); ?>
     
   </div><!-- end div#post-listing -->
-
+  <div class="small-3 columns">
   <?php get_template_part('sidebar','photoblog'); ?>
-  
+  </div>
 </div><!-- end div#archive-content -->
 <?php get_footer(); ?>

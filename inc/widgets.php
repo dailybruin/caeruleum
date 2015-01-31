@@ -11,6 +11,15 @@ function roots_widgets_init() {
     'after_title' => '</h4>',
   ));
   
+  register_sidebar(array(
+    'name' => __('Test Sidebar', 'db'),
+    'id' => 'sidebar-test',
+    'before_widget' => '<li>',
+    'after_widget' => '</li>',
+    'before_title' => '<h4>',
+    'after_title' => '</h4>',
+  ));
+  
 
   // Register widgets
   register_widget('DB_Text_More_Link');

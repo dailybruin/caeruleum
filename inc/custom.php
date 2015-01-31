@@ -2,6 +2,17 @@
 
 // Custom functions
 
+	function the_post_thumbnail_caption() {
+	  global $post;
+
+	  $thumbnail_id    = get_post_thumbnail_id($post->ID);
+	  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+
+	  if ($thumbnail_image && isset($thumbnail_image[0])) {
+	    echo '<span>'.$thumbnail_image[0]->post_excerpt.'</span>';
+	  }
+	}
+	
 // Adds a link to the WordPress web production doc from the admin bar
 function uploading_doc_link()
 {
@@ -164,7 +175,38 @@ function the_byline($displayBy=true) {
     $by = "By ";
     if(!$displayBy)
     	$by = "";
-    $link = '<span class="byline">'.$by.$coauthors.'</span>';
+    $link = '<h4>'.$by.$coauthors.'</h4>';
+    echo apply_filters( 'the_byline', $link );
+}
+
+//For the front page
+function the_byline_front($displayBy=true) {
+	global $post, $authordata, $wpdb;
+	$authorid = $post->post_author;
+		
+	$articleFormats = wp_get_post_terms($post->ID,'article-format');
+	if(isset($articleFormats[0]))
+		$articleFormat = $articleFormats[0]->slug;
+	
+	if(empty($articleFormat) || $articleFormat === 'normal')
+		$articleFormat = get_field('db_article_format');
+		
+    if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief"
+    	|| (get_field('db_article_format') == 'default' && in_array('hide_byline', get_field('db_display_options'))))
+            return false;
+
+	// Get coauthors
+	ob_start();
+	coauthors_posts_links();
+	$coauthors = ob_get_contents();
+	ob_end_clean();
+	
+
+	// Code modified from WordPress core, wp-includes/author-template.php
+    $by = "By ";
+    if(!$displayBy)
+    	$by = "";
+    $link = '<h5 style="text-transform:uppercase">'.$by.$coauthors.'</h5>';
     echo apply_filters( 'the_byline', $link );
 }
 
@@ -302,8 +344,6 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Add an RSS button to the end of the top menu
 function db_nav_menu_filter($items, $args) {
 	$feed_url = get_bloginfo('rss2_url');
-	if($args->theme_location == 'top_navigation')
-		$items .="<li><a href='".$feed_url."'><i class='smicon-rss'></i></a> <a href=\"http://www.youtube.com/ucladailybruin\"><i class=\"smicon-youtube\"></i></a> <a href=\"http://www.twitter.com/dailybruin\"><i class=\"smicon-twitter\"></i></a> <a href=\"http://www.facebook.com/dailybruin\"><i class=\"smicon-fb\"></i></a></li>";
 	return $items;
 }
 add_filter('wp_nav_menu_items', 'db_nav_menu_filter', 10, 2);

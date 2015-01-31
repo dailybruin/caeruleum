@@ -1,6 +1,43 @@
 /* Author: 
 	Byron Lutz
+	With additions by: Neil Bedi :D
 */
+
+
+/***** STICK HEADER ON SCROLL *****/
+$(function(){
+    // Check the initial Poistion of the Sticky Header
+    var stickyHeaderTop = 200;
+
+    $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                    // $('#stickyheader').css({position: 'fixed', top: '0px'});
+                    $('#stickyalias').css('display', 'block');
+                    $('#stickyalias').css({position: 'fixed', top: '0px', width: '100%'});
+            } else {
+                    // $('#stickyheader').css({position: 'static', top: '0px'});
+                    $('#stickyalias').css('display', 'none');
+            }
+    });
+  });
+
+$(document).ready(function() {
+	$('#multSlider').lightSlider({
+      gallery:true,
+      item:1,
+      vertical:true,
+      verticalHeight:390,
+      vThumbWidth:125,
+      thumbItem:4,
+      thumbMargin:0,
+      slideMargin:0,
+      keyPress: true,
+      auto: true,
+      loop: true,
+      pause: 4000
+    });
+    $('.db-story-m').css('display', 'block');  
+  });
 
 /***** ALLOW PAGES TO MAKE PAGE UN-RESPONSIVE *****/
 function unresponsivize() {
@@ -42,6 +79,7 @@ $(document).ready(function() {
 });
 
 
+
 /***** CONTROL SIDEBAR POPULAR STORIES TABS *****/
 $(document).ready(function() {
 	$('#popular-select').click(sidebarChange);
@@ -65,9 +103,10 @@ $(document).ready(function() {
 
 
 /***** TOGGLE DROPDOWNS *****/
-$(document).ready(function() {
-	$('.dropdown-toggle').dropdown();
-});
+// No more drop down menus!
+// $(document).ready(function() {
+// 	$('.dropdown-toggle').dropdown();
+// });
 
 /***** GET RID OF HARD IMAGE SIZES *****/
 $(document).ready(function() {
@@ -99,59 +138,6 @@ $(document).ready(function() {
 		$(this).addClass('popularlist-comments');
 	});
 });
-
-
-
-/****** ROTATOR *******/
-
-$(document).ready(function() {
-	var rotator = $('#topcontent-rotator');
-	if(rotator.length > 0) {
-		var rotator_index = 0;
-		var rotator_stories = 4;
-		
-		function changeRotator(eventData) {
-			eventData.preventDefault();
-			var forward = eventData.data.forward; // direction of the rotator
-			var changeToStory = eventData.data.changeToStory;
-			
-			if (!changeToStory && ((forward && (rotator_index+1 >= rotator_stories)) || (!forward && rotator_index == 0))) {
-				return;
-			}
-			(forward) ? rotator_index++ : rotator_index--;
-			
-			if(changeToStory)
-				rotator_index = changeToStory-1;
-			
-			// Change slug
-			$('.rotate-current').removeClass('rotate-current');
-			$('#rotate-label-'+(rotator_index+1)).addClass('rotate-current');
-			
-			// Set button enabled/disabled state
-			$('.topcontent-rotator-control-back.disabled').removeClass('disabled'); // Set all enabled
-			$('.topcontent-rotator-control-forward.disabled').removeClass('disabled'); // Set all enabled
-			if(rotator_index == 0)
-				$('.topcontent-rotator-control-back').addClass('disabled');
-			else if(rotator_index == (rotator_stories -1))
-				$('.topcontent-rotator-control-forward').addClass('disabled');						
-			
-			// Change story
-			$('.topcontent-rotator-content').hide();
-			$('#topcontent-rotator-content-'+(rotator_index+1)).show();
-		}
-		
-		// Bind buttons
-		$('.topcontent-rotator-control-back').on("click", {    forward: false }, changeRotator);
-		$('.topcontent-rotator-control-forward').on("click", { forward: true }, changeRotator);
-		// Bind top links
-		$('#rotate-label-1 a').on("click", { changeToStory: 1 }, changeRotator).click();
-		$('#rotate-label-2 a').on("click", { changeToStory: 2 }, changeRotator);
-		$('#rotate-label-3 a').on("click", { changeToStory: 3 }, changeRotator);
-		$('#rotate-label-4 a').on("click", { changeToStory: 4 }, changeRotator);
-	}
-});
-
-
 
 
 /****** RESPONSIVE STYLES *******/
@@ -251,10 +237,13 @@ $(document).ready(function() {
 			sidebarHeight	= $sidebar.height();
 			var scrollNow = $(this).scrollTop(),
 			topBound	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
-			botBound	= $("footer").offset().top;
-		
+			botBound	= $(".db-footer").offset().top;
+			
+			$(".db-logo").css({'display':'none'});
+			$(".db-logo-spectrum").css({'display':'block'})
+			
 			if(scrollNow > topBound && scrollNow < botBound - sidebarHeight - 50) {
-				$sidebar.css({'position':'fixed','top':'0','bottom':'auto','width':'250px'});
+				$sidebar.css({'position':'fixed','top':'55px','bottom':'auto','width':'250px'});
 			}
 			else if(scrollNow > topBound && scrollNow > botBound - sidebarHeight - 50){
 				$sidebar.css({'position':'absolute','top': botBound - sidebarHeight - 50});
@@ -269,13 +258,15 @@ $(document).ready(function() {
 	$(document).ready(function(){
 		gallerywidth = $('.span9').width();
 		galleryheight = gallerywidth * 0.7;
-	 	$("#gallery").galleryView({
-		    enable_overlays: true,
-		    panel_width: gallerywidth,         
-		    panel_height: galleryheight, 
-		    panel_scale: 'fit',
-		    show_filmstrip_nav: false,
-	 	});
+		if (gallerywidth) {
+		 	$("#gallery").galleryView({
+			    enable_overlays: true,
+			    panel_width: gallerywidth,         
+			    panel_height: galleryheight, 
+			    panel_scale: 'fit',
+			    show_filmstrip_nav: false,
+		 	});
+		 }
 	});
 
 

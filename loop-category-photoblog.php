@@ -58,7 +58,6 @@
 			<?php the_excerpt(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 			<p class="photoblog-sm">
-			    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo get_permalink(); ?>" data-text="<?php echo get_the_title(); ?>" data-via="dailybruin" data-related="dailybruin">Tweet</a>
 			    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
 			</p>
 		</div>
@@ -69,7 +68,7 @@
 $total_pages = $wp_query->max_num_pages;  
 if ($total_pages > 1) {  
   $current_page = max(1, get_query_var('paged'));  ?>
-  <div class="pager pager-pb"> 
+  <div class="pagination-centered"> 
   <?php echo paginate_links(array(  
       'base' => get_pagenum_link(1) . '%_%',  
       'format' => '/page/%#%',  
