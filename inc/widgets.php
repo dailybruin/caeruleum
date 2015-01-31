@@ -24,6 +24,7 @@ function roots_widgets_init() {
   // Register widgets
   register_widget('DB_Text_More_Link');
   register_widget('Facebook_Recommends');
+  register_widget('Facebook_Likes');
 }
 add_action('widgets_init', 'roots_widgets_init');
 
@@ -108,6 +109,30 @@ class Facebook_Recommends extends WP_Widget {
 		<li class="sidebar-clean">
 			<div class="fb-recommendations" data-site="dailybruin.com"  data-height="300" data-header="true"></div>
 		</li><!-- end li.sidebar-clean -->
+	<?php
+	}
+
+	function update( $new_instance, $old_instance ) {
+		return $new_instance;
+	}
+
+	function form( $instance ) {
+	}
+}
+
+
+class Facebook_Likes extends WP_Widget {
+
+	function __construct() {
+		$widget_ops = array('classname' => 'widget_fb_likes', 'description' => __('Facebook Likes box'));
+		$control_ops = array();
+		parent::__construct('fb_likes', __('Facebook Likes box'), $widget_ops, $control_ops);
+	}
+
+	function widget( $args, $instance ) {
+	?>
+		<li class="sidebar-clean">
+			<div class="fb-like-box" data-href="https://www.facebook.com/dailybruin" data-width="370" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>	</li><!-- end li.sidebar-clean -->
 	<?php
 	}
 
