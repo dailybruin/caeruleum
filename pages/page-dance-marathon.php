@@ -307,7 +307,7 @@ jQuery(document).ready(function() {
     }
 </style>
 <div class="row dm-2013-page">
-	<div class="span8" id="post">
+	<div class="large-7 columns" id="post">
 	    
 	    <div id="dm-collage">
 	        <span id="dm-collage-title">Dance Marathon</span>
@@ -333,94 +333,94 @@ jQuery(document).ready(function() {
         
         
         <div class="row">
-            <div class="span8">
+            <div class="large-8 columns">
                 <h3>Read about the marathon:</h3>
             </div>
-            <div class="span4" id="dm-wraplink">
+            <div class="large-4 columns" id="dm-wraplink">
                 <a href="http://dailybruin.com/2013/02/18/after-26-hours-dancers-find-relief-in-cause/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     After 26 hours, dancers find relief in cause</a>
             </div><!-- end div.span4 -->
-            <a class="span4" id="dm-spectrumrefer" href="http://dailybruin.com/2013/02/17/dance-marathon-portraits/">
+            <a class="large-4 columns" id="dm-spectrumrefer" href="http://dailybruin.com/2013/02/17/dance-marathon-portraits/">
                 <div class="dm-spectrum-title">
                     Photo gallery: Portraits of dancers
                 </div><!-- end div.dm-spectrum-title -->
                 <img src="/images/features/dm-2013/DSC_5134.jpg" />
             </a><!-- end div.span4 -->
             
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/19/kohli-calling-cause-makes-third-dance-marathon-worthwhile/" class="dm-story dm-story-column">
                     <span class="dm-pubdate">Feb 19</span>
                     Kohli Calling: Cause makes third Dance Marathon worthwile</a>
             </div><!-- end div.span2 -->
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/19/dance-marathon-2013-kindle-ambassadors/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     Video: Kindle Ambassadors</a>
             </div><!-- end div.span2 -->
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/19/dance-marathon-2013-kinetic-dance-floor/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     Video: Kinetic dance floor</a>
             </div><!-- end div.span2 -->
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/19/dance-marathon-2013-the-characters-on-the-dance-floor/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     Video: Characters on the dance floor</a>
             </div><!-- end div.span2 -->
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/19/dance-marathon-raised-thousands-to-fight-pediatric-aids/" class="dm-story">
                     <span class="dm-pubdate">Feb 19</span>
                     Dance Marathon raised thousands to fight pediatric AIDS [Graphic]</a>
             </div><!-- end div.span2 -->
             
-            <div class="span2">
+            <div class="large-4 columns">
                 <a href="http://dailybruin.com/2013/02/17/student-shows-off-her-props-costumes/" class="dm-story">
                     <span class="dm-pubdate">Feb 17</span>
                     Student shows off props, costumes</a>
             </div><!-- end div.span2 -->
-            <div class="span2" style="float:right">
+            <div class="large-2 columns" style="float:right">
                 <a href="http://dailybruin.com/2013/02/16/cause-room-aims-to-eliminate-stigma/" class="dm-story">
                     <span class="dm-pubdate">Feb 16</span>
                     &ldquo;Cause Room&rdquo; aims to eliminate stigma</a>
             </div><!-- end div.span2 -->
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/16/ucla-alumna-sells-dance-marathon-merchandise/" class="dm-story">
                     <span class="dm-pubdate">Feb 16</span>
                     UCLA alumna sells Dance Marathon merchandise</a>
             </div><!-- end div.span2 -->
-            <div class="span2">
+            <div class="large-2 columns">
                 <a href="http://dailybruin.com/2013/02/15/dance-marathon-changes-name-to-include-generous-donor/" class="dm-story">
                     <span class="dm-pubdate">Feb 15</span>
                     Dance Marathon changes name to include generous donor</a>
             </div><!-- end div.span2 -->
             
-            <a id="dm-liveblog" href="/2013/02/16/live-blog-dance-marathon-2013/" class="span4">
+            <a id="dm-liveblog" href="/2013/02/16/live-blog-dance-marathon-2013/" class="large-4 columns">
                 <span class="dmwhite biglink">Click here to view our live blog from the 2013 Dance Marathon&nbsp;&raquo;</span>
             </a><!-- end #dm-liveblog -->
     	    
         </div><!-- end div.row -->
         
         <div class="row" id="dm-top">
-            <div class="span3">
+            <div class="large-3 columns">
                 <!-- SnapWidget -->
                 <h3>Instagram #ucladm13</h3>
                 <iframe src="http://snapwidget.com/in/?h=dWNsYWRtMTN8aW58MTAwfDJ8M3x8eWVzfDV8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 345px" ></iframe>
                 
             </div><!-- end div.span3 -->
-            <div class="span5">
+            <div class="large-5 columns">
                 <a class="twitter-timeline" href="https://twitter.com/search?q=%23ucladm13" data-widget-id="303120684165496834">Tweets about "#ucladm13"</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div><!-- end div.row -->
         
         <div class="row" id="dm-byline-row">
-            <span class="dm-online-byline span8">Online page/design by <a href="mailto:blutz@media.ucla.edu">Byron Lutz</a></span>
+            <span class="dm-online-byline large-8 columns">Online page/design by <a href="mailto:blutz@media.ucla.edu">Byron Lutz</a></span>
         </div><!-- end div.row#dm-byline-row -->
         
 	</div><!-- end div#post -->
 	
-	<div class="span4 dm-2013-page">
+	<div class="large-4 columns dm-2013-page">
 	    <?php get_template_part('ad','side'); ?>
 	    <hr />
         
