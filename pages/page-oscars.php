@@ -158,7 +158,7 @@ $(document).ready(function(){
     }
 </style>
 <div class="row" id="single-post">
-	<div class="span8" id="post">
+	<div class="large-8 columns" id="post">
 	    <div class="oscars-title">
 	        <span>The 2013</span>
     	    <h3>Academy Awards</h3>
