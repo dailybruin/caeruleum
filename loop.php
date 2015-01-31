@@ -48,9 +48,9 @@
           
           <div class="entry-content">
           	<?php the_audio(); ?>
-    		<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+    		<p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
 
-        <?php if(has_post_thumbnail()): ?>
+        <?php if(has_post_thumbnail_caption()): ?>
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
         <?php endif; ?>
@@ -70,11 +70,6 @@
           <?php if(has_post_thumbnail()): ?>
               <div class="row">
                 <a href="<?php the_permalink(); ?>">
-                  <style scoped>
-                      img {
-                        border-radius:5px;-moz-border-radius: 5px;
-                      }
-                  </style>
                     <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
                 </a>
               </div>
@@ -91,10 +86,8 @@
             <div class="entry-content">
               <?php the_audio(); ?>
                 <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
-              <?php if(has_post_thumbnail()): ?>
             </div>
             </div>
-          <?php endif; ?>
           </article>
           </div>
         <?php if(++$i > 2): 
