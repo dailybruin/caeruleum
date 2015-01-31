@@ -15,7 +15,14 @@
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span><h1>MENU</h1></a>
 	        </section>
 	        <section class="middle tab-bar-section">
-	          <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"></a>
+	          <a href="<?php echo home_url('/'); ?>">
+		          <div class="db-logo">
+		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+		          </div>
+		          <div class="db-logo-spectrum">
+		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+		          </div>
+	          </a>
 	          <div class="db-top-date text-center hide-for-small">
 				<?php date_default_timezone_set('America/Los_Angeles'); ?>
 				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
@@ -69,7 +76,12 @@
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span><h1>MENU</h1></a>
 	        </section>
 	        <section class="middle tab-bar-section">
-	          <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"></a>
+	          	 <div class="db-logo">
+		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+		         </div>
+		         <div class="db-logo-spectrum">
+		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+		         </div>
 	        </section>
 <!--         	<form action="/" method="GET" id="search-mobile">
 				<input type="search" placeholder="Search..." name="s"></input>

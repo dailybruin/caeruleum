@@ -238,7 +238,10 @@ $(document).ready(function() {
 			var scrollNow = $(this).scrollTop(),
 			topBound	= $("#sidebar-reference").offset().top + $("#sidebar-reference").height(),
 			botBound	= $(".db-footer").offset().top;
-		
+			
+			$(".db-logo").css({'display':'none'});
+			$(".db-logo-spectrum").css({'display':'block'})
+			
 			if(scrollNow > topBound && scrollNow < botBound - sidebarHeight - 50) {
 				$sidebar.css({'position':'fixed','top':'55px','bottom':'auto','width':'250px'});
 			}

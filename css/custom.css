@@ -18,6 +18,10 @@ h3 a{
 	font-family: 'Roboto Slab', serif;
 }
 
+.db-logo-spectrum {
+	display: none;
+}
+
 .db-post-content,
 .db-post-content p {
 	font-size: 0.9rem !important;
