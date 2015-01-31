@@ -75,6 +75,7 @@ Template Name: Dance Marathon 2014
         text-align: right;
         font-size: 5em;
         text-transform: uppercase;
+        color:white;
     }
 
     #dm-banner h2 {
@@ -82,6 +83,7 @@ Template Name: Dance Marathon 2014
         font-size: 3.5em;
         margin: 0.5em 0;
         font-family: Helvetica, Arial, sans-serif;
+        /*color:white;*/
     }
 
     #dm-banner .dm-time-remaining {
@@ -177,7 +179,7 @@ div[id*='hour-'] {
 
 <div id="dm-banner">
     <h1>Dance Marathon</h1>
-    <h2>2014</h2>
+    <h1>2014</h1>
     <div class="dm-time-remaining">
         <h3>Time remaining</h3>
         <div class="dm-timer"></div>
