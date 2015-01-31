@@ -185,12 +185,12 @@ div[id*='hour-'] {
 </div>
 
 <div class="row">
-    <div class="span3" id="dm-twitter">
+    <div class="large-3 columns" id="dm-twitter">
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23KnowTheCause+OR+%23UCLADM2014+OR+%23FortheKidsFortheCure" data-widget-id="452216958230872064">Tweets about "#KnowTheCause OR #UCLADM2014 OR #FortheKidsFortheCure"</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
 
-    <div class="span6" id="dm-blog">
+    <div class="large-6 columns" id="dm-blog">
         <p class="lead">Nearly 900 people are participating in this year’s 13th annual Dance Marathon – a 26-hour-long fundraising event where students pledge to stay on their feet the entire time to take a stand against pediatric AIDS. For the first time this year, the UCLA Pediatric AIDS Coalition is holding Dance Marathon is in Pauley Pavilion. Stay with us for live updates, including videos, dancer profiles and photos.</p>
         
         <div id="dm-blog-title">Live Blog</div>
@@ -211,7 +211,7 @@ div[id*='hour-'] {
         <!-- end live blog content -->
     </div>
 
-    <div class="span3" id="dm-instagram">
+    <div class="large-3 columns" id="dm-instagram">
         <h2>#UCLADM2014</h2>
         <!-- SnapWidget -->
         <iframe src="http://snapwidget.com/bd/?h=dWNsYWRtMjAxNHxpbnwyMDB8MXw0fHx5ZXN8MjB8bm9uZXxvblN0YXJ0fHllcw==&v=4414" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:222px; height:1388px"></iframe>
