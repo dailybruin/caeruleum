@@ -11,13 +11,13 @@ $(document).ready(function() {
   $(".story-page").hide();
   $("#story-page-1").show();
   var currPage = 1;
-  
+
   $(".pagination li a").click(function(event){
 	$(".story-page").hide();
 	$(".pagination li").removeClass('disabled');
 	$(".pagination li a").css('pointer-events', '');
     	var id = $(this).parent().attr('id')
-	
+
 	if( id.localeCompare( "prev" ) == 0 ) {
 		currPage--;
 		$("#story-page-" + currPage.toString()).fadeIn(200);
@@ -58,11 +58,11 @@ $(document).ready(function() {
   /* writing samples */
   $(".sample-previews").hover( function() {
 	var id = $(this).data("id");
-	if(id!==undefined) 
+	if(id!==undefined)
          $("#arrow-container ." + id).css('opacity', 1);
     }, function() {
 	var id = $(this).data("id");
-	if(id!==undefined) 
+	if(id!==undefined)
  	$("#arrow-container ." + id).css('opacity', 0.85);
    });
 
@@ -71,13 +71,13 @@ $(document).ready(function() {
    	event.preventDefault();
 	$(".hl-region").css('opacity','0');
     	var id = $(this).data("id");
-    	
+
 	if( !$("." + id).is(':hidden')) {
 		$("." + id).hide();
 		$("#space").show();
     	} else {
       		$(".writing-samples").hide();
-      		
+
 		if(id!==undefined) {
 			$("#arrow-container ." + id ).show();
        		$("." + id).fadeIn(500);
@@ -96,7 +96,7 @@ $(document).ready(function() {
        },function(){
 		$(this).popover('destroy');
 	$(this).css('opacity','0');
-  });        
+  });
 
   $('.hl-btn').hover( function() {
   	$('.hl-region').css('opacity','1');
@@ -112,7 +112,7 @@ $(document).ready(function() {
     height: "280px", // height of the slider
     display: 1, // num of slides displaying
     loop:false// disable looping on slides
-  }); 
+  });
 
   var currSlide = 1;
 
@@ -125,18 +125,18 @@ $(document).ready(function() {
     }
     else if( currSlide > 1 ){
          currSlide--;
-    } 
+    }
     $(".slider").diyslider("move", "back");
   });
 
   $(".prev").hover( function() {
-    if( currSlide > 1 ) $(this).css('font-weight', 'bold' );     
-    }, function() { $(this).css('font-weight', 'normal' );  
+    if( currSlide > 1 ) $(this).css('font-weight', 'bold' );
+    }, function() { $(this).css('font-weight', 'normal' );
   });
 
   $(".next").hover( function() {
-    if( currSlide < 4 ) $(this).css('font-weight', 'bold' ); 
-    }, function() { $(this).css('font-weight', 'normal' );  
+    if( currSlide < 4 ) $(this).css('font-weight', 'bold' );
+    }, function() { $(this).css('font-weight', 'normal' );
   });
 
   $(".next").click( function() {
@@ -175,7 +175,7 @@ $(document).ready(function() {
 	border: 1px dashed #ccc;
 }
 #prime-graphology div.center {
-	text-align: center; 
+	text-align: center;
 }
 #prime-graphology .color-bg {
 	background-color: #F7F7F7;
@@ -191,7 +191,7 @@ $(document).ready(function() {
 }
 #prime-graphology #feature-prime {
 	width: 130px;
-	float: left; 
+	float: left;
 	margin-right: 10px;
 	margin-bottom: -5px;
 }
@@ -205,10 +205,10 @@ $(document).ready(function() {
 	margin-left: 100px;
 }
 #prime-graphology #feature-story .story-page img {
-	float: left; 
-	width: 300px; 
+	float: left;
+	width: 300px;
 	margin: 0px 20px 20px 20px;
-} 
+}
 
 /* writing samples preview */
 #prime-graphology #writing-sample-intro {
@@ -224,6 +224,7 @@ $(document).ready(function() {
 	font-weight: normal;
 	font-size: medium;
 	margin-left: 5px;
+    text-transform: none;
 }
 #prime-graphology .preview-div {
 	height: 180px;
@@ -265,7 +266,7 @@ $(document).ready(function() {
 }
 #prime-graphology .sample-previews {
       font-size: 22px;
-      display: inline-block;    
+      display: inline-block;
 }
 #prime-graphology #arrow-container {
 	margin-top: -5px;
@@ -315,7 +316,7 @@ $(document).ready(function() {
 	height: 570px;
 }
 #prime-graphology #jw-title {
-	width: 400px; 
+	width: 400px;
 	margin-right:-30px;
 	margin-top: -20px;
 	margin-left: -20px;
@@ -325,7 +326,7 @@ $(document).ready(function() {
 	margin-top: -20px;
 }
 #prime-graphology #ad-title {
-	width: 300px; 
+	width: 300px;
 	margin-top:-20px;
 	margin-bottom: -10px;
 }
@@ -350,13 +351,13 @@ $(document).ready(function() {
 	background-repeat: no-repeat;
 }
 #prime-graphology .main-bg-image {
-	opacity: 0.5;   
+	opacity: 0.5;
 }
 #prime-graphology #jw-container {
        height:470px;
        width:435px;
 }
-#prime-graphology #jw-container .bg-image {      
+#prime-graphology #jw-container .bg-image {
 	background-image:url('/images/features/prime-graphology/jw-writing-sample.jpg');
 	background-size: 435px 430px;
        height:430px;
@@ -584,7 +585,7 @@ $(document).ready(function() {
 	border-bottom-color: #bec9fa;
 }
 
-/* graphology 101 */	
+/* graphology 101 */
 #prime-graphology #g-101 {
 	max-width: 930px;
 	margin: 0 auto;
@@ -597,14 +598,14 @@ $(document).ready(function() {
     border-radius: 5px;
     margin: 3px;
     padding: 5px 10px;
-    float: left; 
-    height: 250px;  
+    float: left;
+    height: 250px;
 }
 #prime-graphology #g-101-title {
        color: #748AF5;
 	opacity: 0.8;
 	font-size: 480%;
-	margin: 15px 0px;	
+	margin: 15px 0px;
 }
 #prime-graphology #g-101-intro {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -697,16 +698,16 @@ $(document).ready(function() {
 }
 
 </style>
-<div class="row-fluid">
-<div class="span12 border center" id="prime-graphology">
+<div class="row">
+<div class="large-9 large-centered columns border center" id="prime-graphology">
 
 <!-- feature story -->
 <div id="feature-story">
-	<div class="row-fluid">
-	<div class="span7 center">
+	<div class="row">
+    <div class="large-7 columns center">
 		<img id="feature-title" src="/images/features/prime-graphology/title.png" />
 	</div>
-	<div class="span5">
+    <div class="large-4 columns">
 		<div class="paid-ad-warning visible-desktop">Paid Advertisement</div>
 		<?php get_template_part('ad','side'); ?>
 		<div class="border color-bg" id="feature-side">
@@ -771,13 +772,13 @@ $(document).ready(function() {
 		<p>From my handwriting, Poizner correctly identified my work ethic, my occasional hesitancy to trust and what I would want from a career. Our interview was over the phone, so her accuracy cannot be attributed to judgments based on my appearance. At this point, though, I would feel uncomfortable making decisions, like employment, based on handwriting. </p>
 		<p>So graphology, to me, and to people like Poizner, is a supplement to other information. </p>
 		<p>As of yet we do not have time machines, so I'll never really get to know the historical figures I've read about or imagined I'd like to meet. But I'd like to think that we leave something more than ink behind when we commit to something or sign our name. </p>
-		<p>As a journalist, I guess part of me likes the idea that our writing might tell our own story as much as it tells the story we are trying to share. And if it might be that we leave a piece of ourselves behind in the slope of our letters, I'll buy it. </p>	
+		<p>As a journalist, I guess part of me likes the idea that our writing might tell our own story as much as it tells the story we are trying to share. And if it might be that we leave a piece of ourselves behind in the slope of our letters, I'll buy it. </p>
 		<p><i>Email Daskalakis at <a href="mailto:adaskalakis@media.ucla.edu">adaskalakis@media.ucla.edu.</a></i></p>
 		<p><strong>Clarification:</strong> <em>Poizner is a graphologist and clinical social worker.</em></p>
 	</div> <!-- end page three -->
-	
-	<div class="pagination center">
-  		<ul>
+
+	<div class="pagination-centered">
+  		<ul class="pagination">
   	  	<li id="prev" class="disabled"><a style="pointer-events: none;" href="#story" ><<</a></li>
   	 	<li id="1" class="disabled"><a style="pointer-events: none;" href="#feature-story" >1</a></li>
    		<li id="2"><a href="#story" >2</a></li>
@@ -791,7 +792,7 @@ $(document).ready(function() {
 <hr />
 
 
-<div class="row-fluid"><div class="span12"><div class="center" id="g-101">
+<div class="row"><div class="large-12 columns"><div class="center" id="g-101">
 	<h2 class="normal" id="g-101-title">Graphology 101</h2><br />
 	<span id="g-101-intro">What does your handwriting say about you?<br />Here are graphological interpretation principles that readers can use to think about their own handwriting: </span>
 	<br />
@@ -799,64 +800,64 @@ $(document).ready(function() {
 	<div class="slider center"><!-- slider -->
 		<div><!-- mandatory div used by the slider -->
 		<div>
-			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline &mdash; the line of the text as it moves 
-        			across the page &mdash; is firm and straight, the person writing tends to have a strong work ethic. 
-        			A wavy baseline indicates moodiness, potential difficulties with discipline and possible 
-        			medical issues.</p></div>	
-			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more 
-        			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or 
-        			beautifying the environment. These people tend to shape letters by being very true to the 
-        			letter form. They honor how something should look; they want their writing to look nice. These 
+			<div class="g-101-item" id="g-101-sb"><div>Strong baseline</div><p>When the baseline &mdash; the line of the text as it moves
+        			across the page &mdash; is firm and straight, the person writing tends to have a strong work ethic.
+        			A wavy baseline indicates moodiness, potential difficulties with discipline and possible
+        			medical issues.</p></div>
+			<div class="g-101-item" id="g-101-rw"><div>Rounded writing</div><p>The more loops you see in the handwriting, the more
+        			emotionality in the personality. Also, rounded writing shows more visual interest in beauty or
+        			beautifying the environment. These people tend to shape letters by being very true to the
+        			letter form. They honor how something should look; they want their writing to look nice. These
         			people often have a sensitivity for dressing well, interior design, art appreciation, etc.</p></div>
-        		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright 
-       	 		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer 
-       	 		is reserved. He or she looks at a situation from a detached perspective, then decides what 
+        		<div class="g-101-item" id="g-101-us"><div>Upright slant</div><p>Some writers write a script that has an upright
+       	 		(vertical) slant. This writer is objective, formal, and poised. The upright slant writer
+       	 		is reserved. He or she looks at a situation from a detached perspective, then decides what
         			degree of emotional involvement will be appropriate.</p></div>
 		</div> <!-- end row 1 -->
       		<div>
-			<div class="g-101-item" id="g-101-aw"><div>Angular writing</div><p>Angular writing shows someone who is rational above all 
-        			else, emotionally detached, analytical and objective. It's usually the writing of engineers, 
-       			scientists, and people who are tough-minded and think about issues without troubling over 
+			<div class="g-101-item" id="g-101-aw"><div>Angular writing</div><p>Angular writing shows someone who is rational above all
+        			else, emotionally detached, analytical and objective. It's usually the writing of engineers,
+       			scientists, and people who are tough-minded and think about issues without troubling over
         			emotions. These writers strip down their handwriting and don't care about the form of the
-        			letters that much. They abbreviate the letters. They tend to be black-or-white thinkers 
-        			&mdash; an &ldquo;all-or-nothing&rdquo; approach.</p></div>	
-			<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even 
-       			more strongly reserved than one whose writing shows an upright slant. This person is usually 
+        			letters that much. They abbreviate the letters. They tend to be black-or-white thinkers
+        			&mdash; an &ldquo;all-or-nothing&rdquo; approach.</p></div>
+			<div class="g-101-item" id="g-101-lsl"><div>Left slant</div><p>Writing that leans to the left reveals a writer even
+       			more strongly reserved than one whose writing shows an upright slant. This person is usually
         			introverted, reserved and highly private.</p></div>
-			<div class="g-101-item" id="g-101-tlw"><div>Tiny little writing</div><p>Very small writing expresses introversion. It is the 
-       			writing of somebody with strong concentration skills, increased intelligence (concentration 
+			<div class="g-101-item" id="g-101-tlw"><div>Tiny little writing</div><p>Very small writing expresses introversion. It is the
+       			writing of somebody with strong concentration skills, increased intelligence (concentration
         			always improves intelligence) and humility. If the writing is extremely narrow or tight-looking,
-        			it might indicate some type of repression or inhibition.</p></div>		
+        			it might indicate some type of repression or inhibition.</p></div>
 		</div> <!-- end row 2 -->
        	<div>
 			<div class="g-101-item" id="g-101-ps"><div>Print-script</div><p>Print-script occurs when the writer sometimes prints
-        			and sometimes writes in cursive. This writing style indicates the writer who is both 
-        			intuitive and logical, and also indicates writing ability. When I assess journalists, most 
-        			use print-script.</p></div>	
-			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid 
-        			and perfectionist, that looks like it came right out of the typewriter. These people are 
-       			 demonstrating through their handwriting a repressive nature, which has them potentially 
-        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others.' 
+        			and sometimes writes in cursive. This writing style indicates the writer who is both
+        			intuitive and logical, and also indicates writing ability. When I assess journalists, most
+        			use print-script.</p></div>
+			<div class="g-101-item" id="g-101-lt"><div>Looks typewritten/perfectly printed</div><p>Sometimes we see a handwriting that is fairly rigid
+        			and perfectionist, that looks like it came right out of the typewriter. These people are
+       			 demonstrating through their handwriting a repressive nature, which has them potentially
+        			suffering from compulsive symptoms and otherwise over-focused on 'how it will look to others.'
         			These are the perfectionists. They love to do things right, and tend to be very control-oriented
-        			and have difficulty being spontaneous. They tend to suffer from muscular tension.</p></div>		
-		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by 
-        			spaces of less than one character width, may reveal an individual who is needy. This is the 
+        			and have difficulty being spontaneous. They tend to suffer from muscular tension.</p></div>
+		<div class="g-101-item" id="g-101-ss"><div>Small spaces</div><p>Words that are spaced too close together, separated by
+        			spaces of less than one character width, may reveal an individual who is needy. This is the
         			writing of a person who craves extra close contact with others.</p></div>
-		
+
 		</div> <!-- end row 3 -->
        	<div>
 			<div class="g-101-item" id="g-101-ls"><div>Large spaces</div><p>Normally there should be only one character width
         			between one word and the next; more than this implies somebody who has difficulty bridging the
-       			gap between themselves and others, socially and emotionally. These people might be emotionally 
+       			gap between themselves and others, socially and emotionally. These people might be emotionally
         			detached from their own feelings and those of others.</p></div>
-  			<div class="g-101-item" id="g-101-s"><div>Speed</div><p>How fast is the handwriting written? Carefully formed 
-        			letters, and strong attention to diacritics and other details indicate a writer who prefers 
-        			to be slow and thorough. Messy writing that races across the page indicates the individual 
-        			who works at a fast tempo. Less interested in detail, they prefer to be busy, dynamic, 
+  			<div class="g-101-item" id="g-101-s"><div>Speed</div><p>How fast is the handwriting written? Carefully formed
+        			letters, and strong attention to diacritics and other details indicate a writer who prefers
+        			to be slow and thorough. Messy writing that races across the page indicates the individual
+        			who works at a fast tempo. Less interested in detail, they prefer to be busy, dynamic,
         			multitasking. They like lots going on.</p></div>
-			<div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line 
-        			intermingles with the upper zone of the line below.the bottom loop of a cursive &lsquo;f&rsquo; would hit 
-        			the top of a cursive &lsquo;h&rsquo; in the line below it. This is called crashing and is indicative of 
+			<div class="g-101-item" id="g-101-c"><div>Crashing</div><p>For some writers, the lower zone of one line
+        			intermingles with the upper zone of the line below.the bottom loop of a cursive &lsquo;f&rsquo; would hit
+        			the top of a cursive &lsquo;h&rsquo; in the line below it. This is called crashing and is indicative of
         			an individual who daydreams, often watching an internal TV.</p></div>
 		</div> <!-- end row 4 -->
     		</div> <!-- end mandatory div -->
@@ -875,7 +876,7 @@ $(document).ready(function() {
 <div>
     <a class="sample-previews" data-id="writing-jw" href="#">
         <div id="jw-preview" class="preview-div"></div>
-    </a> 
+    </a>
     <a class="sample-previews" data-id="writing-jm" href="#">
         <div id="jm-preview" class="preview-div"></div>
     </a>
@@ -908,7 +909,7 @@ $(document).ready(function() {
             <div class="bg-image main-bg-image border"></div>
             <div class="hl-region bg-image border hl-region-large" id="jw-capital" rel="popover" data-placement="top" data-content="His capitals are fairly elaborate and sometimes even decorative and formal. This is an expression of dignity. Capital letters represent first impressions. If a person believes it's important to make a good first impression they do so by putting a bit of a bow tie on their capital letter. Something a little dressier versus something plain."></div>
             <div class="hl-region bg-image border" id="jw-t" rel="popover" data-placement="left" data-content="Retracing is interpreted as a sign of privacy or discretion around personal matters. And that is consistent with the copybook script writer, somebody who has a sense of grace, privacy, discretion, dignity, a sense of what is appropriate for public consumption versus what is personal."></div>
-            <div class="hl-region bg-image border" id="jw-oo" rel="popover" data-content="This writer often does not seal the letter o. When these little middle zone letters are left open at the top graphologists often interpret somebody who likes to communicate. So if he was a very private man, he was also engaged with others and enjoyed sharing ideas." data-original-title="Unsealed letter o"></div>	
+            <div class="hl-region bg-image border" id="jw-oo" rel="popover" data-content="This writer often does not seal the letter o. When these little middle zone letters are left open at the top graphologists often interpret somebody who likes to communicate. So if he was a very private man, he was also engaged with others and enjoyed sharing ideas." data-original-title="Unsealed letter o"></div>
 	     <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
 </div> <!-- end right div -->
 
@@ -927,7 +928,7 @@ $(document).ready(function() {
             <div class="hl-region bg-image border" id="jm-ibe" rel="popover" data-placement="left" data-content="The last three letters of that word are so nicely joined to each other showing a trait that we call 'simplification.'"></div>
             <button class="hl-btn btn"><i class="icon-eye-open"></i> View all highlights</button>
         </div>
-	
+
 	<p >In this handwriting, the overall impression is that it was written by a child. Childish-looking handwriting, unless it is specifically the result of a physical problem like visual, cognitive or muscular difficulties, would suggest immaturity. This writing looks like it was written by a child given irregularities like spacing that varies tremendously, poorly formed letters or an overall messiness that implies inner chaos. We anticipate a writer who is impulsive, needy and moody.</p>
 	<p>Note the difference between the writing style of the sample and the writing style of the signature. The signature looks rather sophisticated. It doesn't look like it was written by a child. In other words, when it comes to expressing his image (represented by his signature) he was able to radiate an image that didn't necessarily imply the level of neediness he was experiencing.</p>
 	<p>Notice that in his signature he truncates his first name, his private name representing his private/personal self, by just writing the first initial of his first name. In doing so, the focus is on his last name, his professional self/identity. So his preference would be to maintain some degree of privacy, trying to be discreet about the degree to which he suffered from moodiness, confusion, rigidity and an overall lack of discipline.</p>
@@ -958,7 +959,7 @@ $(document).ready(function() {
 
 <!-- carol burnett -->
 <div class="writing-samples writing-cb ws-container">
-	<h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>       
+	<h2><img src="/images/features/prime-graphology/Carol_Burnett.png" id="cb-title" /><span class="normal">| multi-talented</span></h2>
 	<div id="cb-container" class="right-div">
        	<div class="main-bg-image bg-image border"></div>
                <div class="hl-region bg-image border" id="cb-dw" rel="popover" data-placement="left" data-content="The writing is also print-script which means she sometimes connects letters and sometimes leaves them disconnected. Print-script is a sign of somebody with literary ability. Somebody who loves to write and who is a good writer."></div>
@@ -978,12 +979,12 @@ $(document).ready(function() {
 
 
 
-<div class="row-fluid">
-	<div class="center span12" id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
+<div class="row">
+	<div class="center large-12 columns" id="footer">Page created by Connie Chiou and Jeffrey Wang. Handwritten title illustrations by Maddie Isaacs.</div>
 </div>
 
 </div> <!-- end div#prime-graphology -->
 
-</div> <!-- end row-fluid -->
+</div> <!-- end row -->
 
 <?php get_footer(); ?>
