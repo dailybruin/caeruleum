@@ -35,7 +35,7 @@ h2 span {
 
 <div class"container-fluid">
     <div class="row-fluid">
-        <div class="span7">
+        <div class="large-7 columns">
             <article>
                 <section>
   <div id="feature-story">
@@ -150,7 +150,7 @@ h2 span {
 
 
         </div>
-        <div class="span5">
+        <div class="large-5 columns">
 
     <center>
     <h1>Vignettes</h1>
