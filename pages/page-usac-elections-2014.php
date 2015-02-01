@@ -207,7 +207,6 @@ Template Name: USAC Elections 2014
             visibility: visible;
             width: 100%;
           }
-
 }
 
 
@@ -219,29 +218,31 @@ Template Name: USAC Elections 2014
 
 <div class='container'>
 
-    <div class="navbar">
-      <div class="navbar-inner" style="color:#3185c0">
-        <div class="container-fluid">
-          <a class="brand" href="#">USAC Election 2014</a>
-            <ul class="nav">
+    <nav class="navbar top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">USAC Election 2014</a></h1>
+            </li>
+        </ul> 
+
+        <section class="top-bar-section">
+            <ul class="left">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
               <li><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
               <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
               <li><a href="http://my.ucla.edu/">Vote Here</a></li>
-
             </ul>
-        </div>
-      </div>
-    </div>
+        </section>
+    </nav>
 
-<div class="row-fluid">
+<div class="row">
 
-  <div class="span9">
+  <div class="large-8 columns">
     <a title='USAC Elections' href='#'><img src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png' border='0'/></a> 
     <br /><br />
 
-    <div class="thumbnail">
+    <div class="th">
       <p style="text-align:center">
       <b>Thirty candidates are running for the 13 elected USAC positions in this year's highly contested elections. The majority of candidates are running with the Bruins United, LET'S ACT! or FIRED UP! slates, and one candidate is running with the slate ¡Bruin Satyrists! Slates are groups of students who combine their resources and run on similar platforms, similar to political parties.</b></p>
     </div>
@@ -252,15 +253,15 @@ Template Name: USAC Elections 2014
 
     <!-- Presidents-->
 
-    <ul class="thumbnails">
-      <li class="span12">
-        <div class="thumbnail letsact">
+    <ul>
+      <li class="large-12 columns">
+        <div class="letsact">
 
-          <div class="row-fluid">
-            <div class="span3">
+          <div class="row">
+            <div class="large-3 columns">
               <img class="presphoto" src="http://dailybruin.com/images/2014/05/murphy.jpg" alt="">
             </div>
-            <div class="span9">
+            <div class="large-9 columns">
               <div class="box">
                 <h1 class="pres">President</h2>
                 <h2 class="pres">Devin Murphy</h4>
@@ -277,10 +278,10 @@ Template Name: USAC Elections 2014
     <!-- IVPS-->
 
 
-    <ul class="thumbnails">
+    <ul>
 
-      <li class="span3">
-        <div class="thumbnail bunited">
+      <li class="large-3 columns">
+        <div class="bunited">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/baral.jpg" alt="">
           <div class="textcentered">
             <h3>Internal Vice President</h3>
@@ -294,8 +295,8 @@ Template Name: USAC Elections 2014
 
       <!-- EVPS-->
 
-      <li class="span3">
-        <div class="thumbnail letsact">
+      <li class="large-3 columns">
+        <div class="letsact">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/contreras.jpg" alt="">
           <div class="textcentered">
             <h3>External Vice President</h3>
@@ -308,8 +309,8 @@ Template Name: USAC Elections 2014
 
       <!-- Academic Affairs Commissioner -->
 
-      <li class="span3">
-        <div class="thumbnail bunited">
+      <li class="large-3 columns">
+        <div class="bunited">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/bach.jpg" alt="">
           <div class="textcentered">
             <h3>Academic Affairs Commissioner</h3>
@@ -322,8 +323,8 @@ Template Name: USAC Elections 2014
 
       <!--Campus Events Commisioner-->
 
-      <li class="span3">
-        <div class="thumbnail indep">
+      <li class="large-3 columns">
+        <div class="indep">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/gregweb.jpg" alt="">
           <div class="textcentered">
             <h3>Campus Events Commissioner</h3>
@@ -336,12 +337,12 @@ Template Name: USAC Elections 2014
 
     </ul>
 
-    <ul class="thumbnails">
+    <ul>
 
       <!--Cultural Affairs Commissioner-->
 
-      <li class="span3">
-        <div class="thumbnail letsact">
+      <li class="large-3 columns">
+        <div class="letsact">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
           <div class="textcentered">
             <h3>Cultural Affairs Commissioner</h3>
@@ -354,8 +355,8 @@ Template Name: USAC Elections 2014
 
       <!--General Representatives-->
 
-       <li class="span3">
-        <div class="thumbnail letsact">
+       <li class="large-3 columns">
+        <div class="letsact">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
           <div class="textcentered">
             <h3>General Representative 1</h3>
@@ -366,8 +367,8 @@ Template Name: USAC Elections 2014
       </li>
 
 
-      <li class="span3">
-        <div class="thumbnail bunited">
+      <li class="large-3 columns">
+        <div class="bunited">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt="">
           <div class="textcentered">
             <h3>General Representative 2</h3>
@@ -378,8 +379,8 @@ Template Name: USAC Elections 2014
         </div>
       </li>
      
-      <li class="span3">
-        <div class="thumbnail bunited">
+      <li class="large-3 columns">
+        <div class="bunited">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt="">
           <div class="textcentered">
             <h3>General Representative 3</h3>
@@ -391,12 +392,12 @@ Template Name: USAC Elections 2014
 
     </ul>
 
-    <ul class="thumbnails">
+    <ul>
 
       <!-- Community Service Commisioner -->
 
-      <li class="span3">
-        <div class="thumbnail indep">
+      <li class="large-3 columns">
+        <div class="indep">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong2.jpg" alt="">
           <div class="textcentered">
             <h3>Community Service Commissioner</h3>
@@ -409,8 +410,8 @@ Template Name: USAC Elections 2014
 
       <!-- Facilities Commissioner -->
 
-      <li class="span3">
-        <div class="thumbnail bunited">
+      <li class="large-3 columns">
+        <div class="bunited">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/quintanilla.jpg" alt="">
           <div class="textcentered">
             <h3>Facilities Commissioner</h3>
@@ -423,8 +424,8 @@ Template Name: USAC Elections 2014
 
       <!-- Financial Commisioner -->
 
-      <li class="span3">
-        <div class="thumbnail bunited">
+      <li class="large-3 columns">
+        <div class="bunited">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/rosen.jpg" alt="">
           <div class="textcentered">
             <h3>Financial Supports Commissioner</h3>
@@ -437,8 +438,8 @@ Template Name: USAC Elections 2014
 
       <!-- Student Wellness Commissioner -->
 
-      <li class="span3">
-        <div class="thumbnail indep">
+      <li class="large-3 columns">
+        <div class="indep">
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt="">
           <div class="textcentered">
             <h3>Student Wellness Commissioner</h3>
@@ -451,19 +452,19 @@ Template Name: USAC Elections 2014
 
     </ul>
 
-    <ul class="thumbnails">
+    <ul>
 
-      <li class="span6">
-        <div class="thumbnail pass">
+      <li class="large-6 columns">
+        <div class="pass">
           <div class="textcentered">
             <h1 class="white">PASSED - 74.4%</h1>
-            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Transfer Student Representative Referendum</h3></span>
+            <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Transfer Student Representative Referendum</h3></large>
           </div>
         </div>
       </li>
 
-      <li class="span6">
-        <div class="thumbnail pass">
+      <li class="large-6 columns">
+        <div class="pass">
           <div class="textcentered">
             <h1 class="white">PASSED - 54.5%</h1>
             <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif; font-weight:normal;">Arts Restoring Community Referendum</h3>
@@ -478,11 +479,11 @@ Template Name: USAC Elections 2014
 
     
 
-    <div class="row-fluid">
+    <div class="row">
 
       <div class="initbuttons">
 
-      <div class="span4">
+      <div class="large-4 columns">
       <br/>
         <div class = "btn-group">
           <a href="/usac-elections-2014/candidates">
@@ -496,7 +497,7 @@ Template Name: USAC Elections 2014
         </div>
       </div>
 
-      <div class="span4">
+      <div class="large-4 columns">
       <br/>
         <div class = "btn-group">
           <a href="#myModal" role="button" data-toggle="modal">
@@ -510,7 +511,7 @@ Template Name: USAC Elections 2014
         </div>
       </div>
 
-      <div class="span4">
+      <div class="large-4 columns">
       <br/>
         <div class = "btn-group">
           <a href="http://dailybruin.com/usac-elections-2014/endorsements" role="button" data-toggle="modal">
@@ -528,12 +529,12 @@ Template Name: USAC Elections 2014
         
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
 
       <div class="laterbuttons">
 
-      <div class="row-fluid">
-      <div class="span12">
+      <div class="row">
+      <div class="large-12 columns">
       <br/>
         <div class = "btn-group">
           <a href="/usac-elections-2014/candidates">
@@ -548,8 +549,8 @@ Template Name: USAC Elections 2014
       </div>
       </div>
 
-      <div class="row-fluid">
-      <div class="span12">
+      <div class="row">
+      <div class="large-12 columns">
       <br/>
         <div class = "btn-group">
           <a href="#myModal" role="button" data-toggle="modal">
@@ -564,8 +565,8 @@ Template Name: USAC Elections 2014
       </div>
       </div>
 
-      <div class="row-fluid">
-      <div class="span12">
+      <div class="row">
+      <div class="large-12 columns">
       <br/>
         <div class = "btn-group">
           <a href="http://dailybruin.com/usac-elections-2014/endorsements/" role="button" data-toggle="modal">
@@ -588,9 +589,9 @@ Template Name: USAC Elections 2014
 
     
 
-    <div class="row-fluid">
-      <div class="span6">
-        <div class="thumbnail">
+    <div class="row">
+      <div class="large-6 columns">
+        <div class="th">
           <div class="caption">
              <h2 class="elections">Recent Articles<h2>
            </div>
@@ -636,7 +637,7 @@ Template Name: USAC Elections 2014
           </div>
         </div>
       </div>
-<div class="span6">
+<div class="large-6 columns">
 <!--
         <script src="//storify.com/dailybruin/usac-elections-2014.js"></script><noscript>[<a href="//storify.com/dailybruin/usac-elections-2014" target="_blank">View the story "USAC Elections 2014" on Storify</a>]</noscript>
 -->
@@ -681,13 +682,13 @@ Template Name: USAC Elections 2014
     </div>
 </div>
 
-</div><!--/span9-->
+</div><!--/large9-->
 
-<div class="span3">
+<div class="large-3 columns">
   <div class='ad'>
     <?php get_template_part('ad','side'); ?>
   </div>
-  <div class="thumbnail textcentered">
+  <div class="textcentered">
     <p><h4 style="color:#3185c0">Important Dates:</h4>
       April 29 -  Endorsement hearing<br />
       May 3 - Candidates debates<br />
@@ -699,7 +700,7 @@ Template Name: USAC Elections 2014
   <br />
   <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23USACelections" data-widget-id="328749991814369281">Tweets about "#USACelections"</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div><!--/span3-->
+</div><!--/large-3 columns-->
 
 </div><!--/row-->
 
