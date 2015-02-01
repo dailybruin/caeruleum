@@ -289,7 +289,7 @@ Template Name: Opinion Blog
 							}
 							?>
 
-							<a class="sec-head title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br/>
+							<h2><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 							<span class="date"><?php the_time('M j, Y'); ?></span><br/>
 
