@@ -4,6 +4,8 @@ Template Name: A&E Flavors of Westwood
 
 <?php get_header(); ?>
 
+</div>
+</div>
 <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
 <script src="/js/vendor/maplace.min.js"></script>
 <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
@@ -14,9 +16,9 @@ Template Name: A&E Flavors of Westwood
         max-width: 1150px;
         margin: 0 auto;
     }
-    article#fow #background {
+    article#fow .background {
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         margin-top: -280px;
         opacity: 0.3;
     }
@@ -178,11 +180,10 @@ Template Name: A&E Flavors of Westwood
     }
 </style>
 
-</div>
-<div>
+
 <article id="fow">
 
-<img id="background" src="http://dailybruin.com/images/2014/01/bg7_2.png"/>
+<img class="background" src="http://dailybruin.com/images/2014/01/bg7_2.png"/>
 
 <h1>Flavors of Westwood</h1>
 <p class="lead">Throughout this past year, A&amp;E reporters have been venturing into the world of Westwood dining to dig up the stories behind the creation and the flavor of each eatery. Explore the flavors of Westwood through our interactive map.</p>
@@ -681,4 +682,6 @@ $(document).ready(function(){
 
 </article>
 
+<div class="db-wrapper db-content">
+<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
 <?php get_footer(); ?>
