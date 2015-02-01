@@ -43,6 +43,8 @@ Template Name: Opinion Blog
 		font-size: 10pt; 
 		font-weight: bold;
 		line-height: 20px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
 	}
 	
 	#widget-reaction-quote {padding-bottom: 10px;}
@@ -116,7 +118,8 @@ Template Name: Opinion Blog
 	}
 
     .columnist-row {
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
+        width: 100% !important;
     }
 
     .columnist-info {
@@ -139,44 +142,29 @@ Template Name: Opinion Blog
     }
 
     .columnist-text {
+        font-size: 14px;
         vertical-align: middle;
     }
 
     .columnist-cat {
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: 1px;
         height: 14px;
         width: 14px;
         background-color: black;
     }
 
-    @media (min-width: 768px) and (max-width: 979px) {
-        .columnist-column {
-            text-align: center;
-        }
-        #columnist-mugshot {
-            width: 100%;
-        }
-        #columnist-info {
-            width: 100%;
-            margin: auto 15px;
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        .columnist-text {
+            font-size: 10px;
+        } 
+        
+        .columnist-cat {
+           vertical-align: 2px; 
         }
     }
 
-    @media (max-width: 767px) {
-        .columnist-column {
-            text-align: left;
-        }
-        #columnist-mugshot {
-            display: inline-block;
-            width: auto;
-        }
-        #columnist-info {
-            display: inline-block;
-            width: auto;
-        }
-    }
-	.cat-two-cents {
+  .cat-two-cents {
 		background-color: black;
 	}
 
@@ -269,18 +257,18 @@ Template Name: Opinion Blog
     <div class="container-fluid">
 
 
-		<div class="row-fluid blog-header">
-			<div class="span12">
+		<div class="row blog-header">
+			<div class="small-12 large-12 columns">
 			<img src="http://dailybruin.com/images/2014/09/2centsblog-cropped.jpg" alt="logo" style="width: 200px; height: 100%;">
 			<h1 id="blog-title">Two Cents</h1>
 			</div>
 		</div>
-        <div class="row-fluid">
+        <div class="row">
 
-            <div class="span7 blog-posts">
+            <div class="medium-7 columns blog-posts">
 
-			<div class="row-fluid">
-				<div class="span12">
+			<div class="row">
+				<div class="small-12 large-12 columns">
 					<?php
 						$categoryObject = get_category_by_slug('two-cents');
 
@@ -318,9 +306,9 @@ Template Name: Opinion Blog
 			</div>
 	     </div>
 
-            <div class="span5" id="right-column">
+            <div class="medium-5 columns" id="right-column">
             	<div class="video-section">
-            		<h2 class="widget-title">Bruins on the Street</h2>
+            		<div class="widget-title">Bruins on the Street</div>
 	            	<div class="video-wrapper">
 		            <?php
 						$video_category = get_category_by_slug('two-cents-video');
@@ -377,25 +365,27 @@ Template Name: Opinion Blog
             	</div>
             	-->
                 <div class="columnist-column">
-                    <h2 class="widget-title">Columnists</h2>
+                    <div class="widget-title">Columnists</div>
                     <?php
                     	foreach ($contributors as $contributor) :
 	                    	$user = get_user_by('email', $contributor['email']);
 	                    	$name = $user->first_name . ' ' . $user->last_name;
                     ?>
-                    <div class="row-fluid columnist-row">
-                    	<div id="columnist-mugshot" class="span4">
+                    <div class="row columnist-row <?php if ($contributor === end($contributors)) echo 'end'; ?>">
+                    	<div id="columnist-mugshot" class="small-4 large-4 columns">
                     		<img src="<?php echo $contributor['img'] ?>" alt="<?php echo $contributor['name'] ?>">
                 		</div>
-                		<div id="columnist-info" class="span8 columnist-info">
+                		<div id="columnist-info" class="small-8 large-8 columns columnist-info">
                 			<div class="columnist-name"><?php echo $contributor['name'] ?></div>
                 			<?php 
                 				foreach ($contributor['slugs'] as $contributor_slug) ;
                 					$contributor_cat = $slug_to_cat[$contributor_slug];
             				?>
-	            				<div class="columnist-line">
+	            				<div class="columnist-line end">
 	            					<div class="columnist-line-content">
-	                                    <span class="columnist-cat <?php echo $contributor_cat['css'] ?>"></span><span class="columnist-text"> 
+                            <span class="columnist-cat <?php echo $contributor_cat['css'] ?>"></span>
+                            <span class="columnist-text"> 
+                                      &nbsp; 
 	                                    <?php echo $contributor['position'] ?>
 	                                    <!--<?php echo $contributor_cat['name'] ?>-->
 	                                    </span>
