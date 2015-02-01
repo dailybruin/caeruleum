@@ -145,8 +145,14 @@ Template Name: Registration Issue 2013
         background-image: url('http://dailybruin.com/images/2013/09/vd_feature.png');
     }
 
-</style>
+    .reg-2013 {
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+</style>
+<div class ="reg-2013">
 <img class="reg-banner" src="http://dailybruin.com/images/2013/09/regissue-2013_cover.png"/>
 <div class="reg-section-wrap">
     <div class="reg-section" id="reg-ns">
@@ -209,5 +215,5 @@ Template Name: Registration Issue 2013
 <div class="reg-credit">
     Leading illustration by Madeline Isaacs. News and A&amp;E section photos by Brandon Choe, Bruin senior staff. Sports section photo by Neil Bedi, Bruin senior staff. Opinion section photo Daily Bruin file photo. Registration Issue online pages by Harrison Liddiard.
 </div>
-
+</div>
 <?php get_footer(); ?>
