@@ -216,8 +216,15 @@ Template Name: Spring Spring 2014
     margin: 0 20px 40px 0;
 }
 
+#spring-sing-2014 {
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 </style>
 
+<div id="spring-sing-2014">
 <div id="banner-background">
 	<div id="banner">
 		<h1>Spring<br>Sing<br>2014</h1>
@@ -569,7 +576,7 @@ Template Name: Spring Spring 2014
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
-
+</div>
 
 
 <?php get_footer(); ?>
