@@ -203,9 +203,9 @@
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
             </div>
             <div class="right" style="line-height:3rem">
-            	<h4 style="margin-left:15px"><a href="/category/news">&nbsp;Video</a></h4>
-            	<h4 style="margin-left:15px"><a href="/category/news">&nbsp;Radio</a></h4>
-            	<h4 style="margin-left:15px"><a href="/category/news">&nbsp;Photo</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/video">&nbsp;Video</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/radio">&nbsp;Radio</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/spectrum">&nbsp;Photo</a></h4>
             </div>
         </span>
             <hr>
@@ -262,7 +262,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
               </div>
             <?php endforeach; ?>
@@ -297,7 +297,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
@@ -336,7 +336,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
@@ -375,7 +375,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h4>
                   <p>
-                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more >></a>
+                  	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->

@@ -2,6 +2,24 @@
 
 // Custom functions
 
+
+	function has_post_thumbnail_caption() {
+	  global $post;
+
+	  $thumbnail_id    = get_post_thumbnail_id($post->ID);
+	  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+
+	  if ($thumbnail_image && isset($thumbnail_image[0])) {
+	  	if ($thumbnail_image[0]->post_excerpt!='')
+	  		return true;
+	  }
+	  else
+	  {
+	  	return false;
+	  }
+	}
+
+
 	function the_post_thumbnail_caption() {
 	  global $post;
 

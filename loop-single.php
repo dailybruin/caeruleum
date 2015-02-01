@@ -122,8 +122,16 @@
           <div class="medium-3 columns">
           	<?php if(!$video_story): ?>
             <div class="row text-center">
-              <h4 class="small-6 columns"><i class="fa fa-facebook fa-lg"></i>&nbsp;Share</h4>
-              <h4 class="small-6 columns"><i class="fa fa-twitter fa-lg"></i>&nbsp;Tweet</h4>
+              <h4 class="small-6 columns">
+              	<a href="https://www.facebook.com/sharer/sharer.php?u=http://dailybruin.com<?php the_permalink(); ?>" target="_blank" >
+              		<i class="fa fa-facebook fa-lg"></i>&nbsp;Share
+              	</a>
+              </h4>
+              <h4 class="small-6 columns">
+              	<a href="https://twitter.com/share" rel="external" target="_blank" data-via="dailybruin">
+              		<i class="fa fa-twitter fa-lg"></i>&nbsp;Tweet
+              	</a>
+              </h4>
             </div>
             <hr>
             <?php endif; ?>
@@ -133,7 +141,6 @@
 				<b>Correction: </b> 
 				<?php echo get_field('corrections')?>
 			<?php endif; ?>
-              <!-- TODO: NEW CORRECTION STYLE <b>Correction</b>: -->
             </p>
           </div>
 		  <div class="medium-9 columns">
