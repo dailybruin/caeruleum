@@ -4,7 +4,7 @@ Template Name: Major_Stats_2013
 
 <?php get_header(); ?>
 <div class="row" id="single-post">
-	<div class="span12" style="
+	<div class="large-12 columns" style="
 				background-color: #d6f2f5;
 				background-image: linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
 				background-image: -o-linear-gradient(left , #d6f2f5 0%, #6ecfdb 75%);
@@ -20,7 +20,7 @@ Template Name: Major_Stats_2013
 				);">
 		<br>
 		<img src="/images/features/major-stats-2013/assets/banner.png" alt="a major choice">
-	<div class="span11" style="padding: 20px;">
+	<div class="large-11 columns" style="padding: 20px;">
 		<br><br>
 		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students to rate their expected salary one year out of college. 
 			This interactive graphic compares UCLA undergraduates' predictions of their expected salaries to national salary data for recent graduates 
@@ -32,7 +32,7 @@ Template Name: Major_Stats_2013
 		<hr>
 	</div>
 	</div>
-	<div class="span12">
+	<div class="large-12 columns">
 		<style>
 			#poll div {
 				margin: 0;
@@ -1050,7 +1050,7 @@ Template Name: Major_Stats_2013
 						var tempLeft = xLoc+Math.floor(Math.random()*15);
 					this.collection.people[i].dom_id = 'person'+i;
 					//FIX: classes should not be space delimited
-					var string = '<img class="people" major="'+this.collection.people[i].major+'" id="person'+i+'" src="/images/features/major-stats-2013/assets/silhouettes/males/'+number+'.png" grid="'+gridLoc+'" style="top:'+(yLoc+Math.floor(Math.random()*20)+20)+'px; left:'+tempLeft+'px;"/>'
+					var string = '<img class="people" major="'+this.collection.people[i].major+'" id="person'+i+'" src="//dailybruin.com/images/features/major-stats-2013/assets/silhouettes/males/'+number+'.png" grid="'+gridLoc+'" style="top:'+(yLoc+Math.floor(Math.random()*20)+20)+'px; left:'+tempLeft+'px;"/>'
 					this.dom.innerHTML += string;
 				}
 			}
@@ -1126,7 +1126,7 @@ Template Name: Major_Stats_2013
 			var mySelection;
 
 			function getData(){
-				$.getJSON("/images/features/major-stats-2013/data/StatsSurveyTentative.JSON", function(data){
+				$.getJSON("//dailybruin.com/images/features/major-stats-2013/data/StatsSurveyTentative.JSON", function(data){
 					for(x in data){
 						Stats.push(data[x]);
 					}
@@ -1223,7 +1223,7 @@ Template Name: Major_Stats_2013
 			};
 		</script>
 	</div>
-	<div class="span12">
+	<div class="large-12 columns">
 		<br>
 		<hr>
 		<br>
@@ -1231,14 +1231,14 @@ Template Name: Major_Stats_2013
 		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students if they had switched majors during their college career. Click below to see how respondents have moved throughout North and South Campus.</p>
 		<br>
 		<div id="graphcontainer" class="row">
-	    	<div class="span1">
+	    	<div class="large-11 columns">
 	      </div>
-	    	<div id="graph" class="span10" style="text-align:center; position:relative">
-	        <img id="royce" src="/images/features/major-stats-2013/assets/dd/royce.png" style="width:50%; z-index:10;">
-	        <img id="boelter" src="/images/features/major-stats-2013/assets/dd/engrV.png" style="width:50%; z-index:10;">
-	        <img id="move" src="/images/features/major-stats-2013/assets/dd/onload.png" style="position:absolute; left:0; top:0; z-index:-10;">
+	    	<div id="graph" class="large-10 columns" style="text-align:center; position:relative">
+	        <img id="royce" src="//dailybruin.com/images/features/major-stats-2013/assets/dd/royce.png" style="width:50%; z-index:10;">
+	        <img id="boelter" src="//dailybruin.com/images/features/major-stats-2013/assets/dd/engrV.png" style="width:50%; z-index:10;">
+	        <img id="move" src="//dailybruin.com/images/features/major-stats-2013/assets/dd/onload.png" style="position:absolute; left:0; top:0; z-index:-10;">
 	    	</div>
-	      <div class="span1">
+	      <div class="large-11 columns">
 	      </div>
 	    </div>
 	    
@@ -1268,12 +1268,12 @@ Template Name: Major_Stats_2013
 	    </script>
 	<br><br>
 	</div>
-	<div class="span12"><hr><br><em><p style="font-size: 30pt; text-align: center;">Related Articles</p></em></div>
-	<div class="span1"></div>
-	<a href="http://dailybruin.com/2013/06/06/a-major-choice-decision-comes-down-to-interests-finances/"><div class="span3 relatedArticlesDoe"><h3>A Major Choice: Decision comes down to interests, finances</h3><em>by Kylie Reynolds</em></div></a>
-	<a href="http://dailybruin.com/2013/06/06/ucla-alumni-creates-job-search-site-based-on-majors/"><div class="span3 relatedArticlesDoe"><h3>UCLA alumni creates job search site based on majors</h3><em>by Lawrence Han</em></div></a>
-	<a href="http://dailybruin.com/2013/06/06/graduate-degree-higher-salary-does-not-always-connect/"><div class="span3 relatedArticlesDoe"><h3>Graduate degree, higher salary does not always connect</h3><em>by Alexia Boyarsky</em></div></a>
-	<div class="span12"><br>
+	<div class="large-12 columns"><hr><br><em><p style="font-size: 30pt; text-align: center;">Related Articles</p></em></div>
+	<div class="large-1 columns"></div>
+	<a href="http://dailybruin.com/2013/06/06/a-major-choice-decision-comes-down-to-interests-finances/"><div class="large-3 columns relatedArticlesDoe"><h3>A Major Choice: Decision comes down to interests, finances</h3><em>by Kylie Reynolds</em></div></a>
+	<a href="http://dailybruin.com/2013/06/06/ucla-alumni-creates-job-search-site-based-on-majors/"><div class="large-3 columns relatedArticlesDoe"><h3>UCLA alumni creates job search site based on majors</h3><em>by Lawrence Han</em></div></a>
+	<a href="http://dailybruin.com/2013/06/06/graduate-degree-higher-salary-does-not-always-connect/"><div class="large-3 columns relatedArticlesDoe"><h3>Graduate degree, higher salary does not always connect</h3><em>by Alexia Boyarsky</em></div></a>
+	<div class="large-12 columns"><br>
 	<hr>
 	<em style="margin-top: 20px;"><br><p>Salary Interactive by Calvin Chan and Jimmy Yang, Bruin Contributors.</p><p>Campus Interactive by Daniel Duan, Bruin Contributor</p><p>Illustration by Kristen Fong, Bruin Senior Staff.</p><p>Campus Graphics by  Jonathan Solichin and Daniel Duan.</p></em>
 	</div>

@@ -86,8 +86,14 @@ Template Name: Coaches and Companions
     margin-top: 2em;
 }
 
-</style>
+#coaches-page {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+</style>
+<div id="coaches-page">
 <div id="cc-banner">
 <img class="cc-round" src="http://dailybruin.com/images/2014/02/coaches.jpg" alt=""></img>
 <p class="cc-note">UCLA women's basketball coach Cori Close (left) and UCLA women's soccer coach Amanda Cromwell (right) have a friendship dating back nearly two decades after the two met volunteering as coaches at a camp for female high school athletes.</p>
@@ -291,4 +297,6 @@ Your browser does not support the audio element.
 <br><br>
 </div>
 <div id="cc-footer">Photos by Erin Ng. Page created by Phillip Chen and Steven Ly.</div>
+</div>
 <?php get_footer(); ?>
+

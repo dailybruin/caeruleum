@@ -37,66 +37,66 @@ Template Name: GSA Endorsements 2014
 <hr>
 <div class="container">
     <div class="row thumbnails">
-        <div class="span4">
+        <div class="large-4 columns">
                 <h3>President</h3>
                 <hr>
                 <div class="row">
-                    <div class="span2">
-                        <a href="#nicole"><img src="/images/gsa-endorsements-2014/web.Nicole.jpg"/>
+                    <div class="large-6 columns">
+                        <a href="#nicole"><img src="//dailybruin.com/images/gsa-endorsements-2014/web.Nicole.jpg"/>
                         <h4>Nicole Robinson</h4></a>
                         <div class="alert alert-success"><img src="/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
                     </div>
-                    <div class="span2">
-                        <a href="#michael"><img src="/images/gsa-endorsements-2014/web.Michael.jpg"/>
+                    <div class="large-6 columns">
+                        <a href="#michael"><img src="//dailybruin.com/images/gsa-endorsements-2014/web.Michael.jpg"/>
                         <h4>Michael Hirshman</h4>
                         </a>
                     </div>
                 </div>
         </div>
-        <div class="span2">
+        <div class="large-2 columns">
             <h3>VP Int. Affairs</h3>
             <hr>
-            <a href="#hope"><img src="/images/gsa-endorsements-2014/web.hope.jpg"/>
+            <a href="#hope"><img src="//dailybruin.com/images/gsa-endorsements-2014/web.hope.jpg"/>
             <h4>Hope McCoy</h4></a>
-            <div class="alert alert-success"><img src="/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
+            <div class="alert alert-success"><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
         </div>
-        <div class="span4">
+        <div class="large-4 columns">
                 <h3>VP Ext. Affairs</h3>
                 <hr>
                 <div class="row">
-                    <div class="span2">
-                        <a href="#andres"><img src="/images/gsa-endorsements-2014/web.andres.jpg"/>
+                    <div class="large-6 columns">
+                        <a href="#andres"><img src="//dailybruin.com/images/gsa-endorsements-2014/web.andres.jpg"/>
                         <h4>Andrés Schneider</h4></a>
-                        <div class="alert alert-success"><img src="/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
+                        <div class="alert alert-success"><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
                     </div>
-                    <div class="span2">
-                        <a href="#vaheh"><img src="/images/gsa-endorsements-2014/web.vaheh.jpg"/>
+                    <div class="large-6 columns">
+                        <a href="#vaheh"><img src="//dailybruin.com/images/gsa-endorsements-2014/web.vaheh.jpg"/>
                         <h4>Vaheh Shirvanian</h4></a>
                     </div>
                 </div>
         </div>
-        <div class="span2">
+        <div class="large-2 columns">
             <h3>VP Ac. Affairs</h3>
             <hr>
-            <a href="#ivy"><img src="/images/gsa-endorsements-2014/web.ivy.jpg"/>
+            <a href="#ivy"><img src="//dailybruin.com/images/gsa-endorsements-2014/web.ivy.jpg"/>
             <h4>Ivy Onyeador</h4></a>
-            <div class="alert alert-success"><img src="/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
+            <div class="alert alert-success"><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check"> Endorsed</div>
         </div>
     </div>
     <br>
     <br>
     <div class="row">
-        <div class="span12"><h2>President</h2></div>
+        <div class="large-12 columns"><h2>President</h2></div>
     </div>
     <hr>
     
     <div class="row" id="nicole">
-        <div class="span3">
-            <img src="/images/gsa-endorsements-2014/web.Nicole.jpg"/>
+        <div class="large-3 columns">
+            <img src="//dailybruin.com/images/gsa-endorsements-2014/web.Nicole.jpg"/>
         </div>
-        <div class="span9">
+        <div class="large-9 columns">
             <h3>Nicole Robinson</h3>
-            <div class="alert alert-success endorsed"><h4><img src="/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
+            <div class="alert alert-success endorsed"><h4><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
             <section>
                 <p dir="ltr">Both presidential candidates for next year’s Graduate Students Association expressed ambitious goals for the organization, including an expansion of financial support for graduate students and measures to increase diversity and inclusion.</p>
                 <p dir="ltr">This board endorses current GSA President Nicole Robinson for re-election because her combination of experience and vision makes her the most qualified to accomplish these goals.</p>
@@ -114,10 +114,10 @@ Template Name: GSA Endorsements 2014
     </div>
 
     <div class="row" id="michael">
-        <div class="span3">
-            <img src="/images/gsa-endorsements-2014/web.Michael.jpg"/>
+        <div class="large-3 columns">
+            <img src="//dailybruin.com/images/gsa-endorsements-2014/web.Michael.jpg"/>
         </div>
-        <div class="span9">
+        <div class="large-9 columns">
             <h3>Michael Hirshman</h3>
             <section>
                 <p dir="ltr">The role of Graduate Students Association president requires reliable connections and vast knowledge of the organization’s procedures – experience that candidate Michael Hirshman lacks.</p>
@@ -133,17 +133,17 @@ Template Name: GSA Endorsements 2014
     </div>
     <br>
     <div class="row">
-        <div class="span12"><h2>Vice President of Internal Affairs</h2></div>
+        <div class="large-12 columns"><h2>Vice President of Internal Affairs</h2></div>
     </div>
     <hr>
 
     <div class="row" id="hope">
-        <div class="span3">
-            <img src="/images/gsa-endorsements-2014/web.hope.jpg"/>
+        <div class="large-3 columns">
+            <img src="//dailybruin.com/images/gsa-endorsements-2014/web.hope.jpg"/>
         </div>
-        <div class="span9">
+        <div class="large-9 columns">
             <h3>Hope McCoy</h3>
-            <div class="alert alert-success endorsed"><h4><img src="/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
+            <div class="alert alert-success endorsed"><h4><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
             <section>
                 <p><em>The original version of this article contained an error and has been changed. See the bottom of the article for additional information.</em></p>
                 <p dir="ltr">We endorse Hope McCoy for vice president of internal affairs because she has a firm grasp of the most pressing issues facing graduate students and understands the difficulties of increasing engagement between the graduate population and its student government.</p>
@@ -161,17 +161,17 @@ Template Name: GSA Endorsements 2014
     </div>
     <br>
     <div class="row">
-        <div class="span12"><h2>Vice President of External Affairs</h2></div>
+        <div class="large-12 columns"><h2>Vice President of External Affairs</h2></div>
     </div>
     <hr>
 
     <div class="row" id="andres">
-        <div class="span3">
-            <img src="/images/gsa-endorsements-2014/web.andres.jpg"/>
+        <div class="large-3 columns">
+            <img src="//dailybruin.com/images/gsa-endorsements-2014/web.andres.jpg"/>
         </div>
-        <div class="span9">
+        <div class="large-9 columns">
             <h3>Andrés Schneider</h3>
-            <div class="alert alert-success endorsed"><h4><img src="/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
+            <div class="alert alert-success endorsed"><h4><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
             <section>
                 <p dir="ltr">This board endorses Andrés Schneider for vice president of external affairs because of his great enthusiasm for service and plans to involve a greater number of his peers in student government.</p>
                 <p dir="ltr">Schneider, a graduate student in economics, previously worked as the Graduate Students Association’s discretionary funding director – experience we believe will equip him to succeed in opening up GSA funds to a greater number of student groups.</p>
@@ -189,10 +189,10 @@ Template Name: GSA Endorsements 2014
     </div>
 
     <div class="row" id="vaheh">
-        <div class="span3">
-            <img src="/images/gsa-endorsements-2014/web.vaheh.jpg"/>
+        <div class="large-3 columns">
+            <img src="//dailybruin.com/images/gsa-endorsements-2014/web.vaheh.jpg"/>
         </div>
-        <div class="span9">
+        <div class="large-9 columns">
             <h3>Vaheh Shirvanian</h3>
             <section>
                 <p dir="ltr">Perhaps the most pressing task of the Graduate Students Association vice president of external affairs is understanding the concerns of the organization’s constituents and communicating them to audiences both internal and external.</p>
@@ -208,17 +208,17 @@ Template Name: GSA Endorsements 2014
     </div>
     <br>
     <div class="row">
-        <div class="span12"><h2>Vice President of Academic Affairs</h2></div>
+        <div class="large-12 columns"><h2>Vice President of Academic Affairs</h2></div>
     </div>
     <hr>
 
     <div class="row" id="ivy">
-        <div class="span3">
-            <img src="/images/gsa-endorsements-2014/web.ivy.jpg"/>
+        <div class="large-3 columns">
+            <img src="//dailybruin.com/images/gsa-endorsements-2014/web.ivy.jpg"/>
         </div>
-        <div class="span9">
+        <div class="large-9 columns">
             <h3>Ivy Onyeador</h3>
-            <div class="alert alert-success endorsed"><h4><img src="/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
+            <div class="alert alert-success endorsed"><h4><img src="//dailybruin.com/images/gsa-endorsements-2014/check.png" class="check-big"> Endorsed</h4></div>
             <section>
                 <p dir="ltr">This board endorses Ivy Onyeador for vice president of academic affairs for her comprehensive vision to foster a sense of community among graduate students and her enthusiastic approach to securing more funding resources to support graduate students.</p>
                 <p dir="ltr">One of Onyeador’s most crucial platforms for next year is fostering the growth of diverse communities and bringing them into closer cooperation with the Graduate Students Association – in the process improving the academic experience of underrepresented students at UCLA. This board believes that with her past experience, she can make great strides toward that goal.</p>
@@ -234,7 +234,7 @@ Template Name: GSA Endorsements 2014
     </div>
 
     <div class="row">
-        <div class="span12">
+        <div class="large-12 columns">
         </div>
     </div>
 

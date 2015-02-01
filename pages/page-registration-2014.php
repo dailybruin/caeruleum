@@ -93,6 +93,12 @@ Template Name: Registration Issue 2014
         text-decoration: underline;
     }
 
+    #main-page-wrapper {
+        max-width: 940px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     #videos-section {
         margin-top: 20px;
     }
@@ -101,14 +107,14 @@ Template Name: Registration Issue 2014
 <div id="main-page-wrapper">
 
     <div id="regissue-cover">
-        <div class="row-fluid">
-            <div class="span6">
+        <div class="row">
+            <div class="large-6 columns">
                 <div id="cover-title">
                     <h1>Registration Issue 2014</h1>
                     <h2>your turn.</h2>
                 </div>
             </div>
-            <div class="span6">
+            <div class="large-6 columns">
                 <div id="editors-note">
                 <p>The start of a year at UCLA brings with it many opportunities
                     – more than 1,000 clubs, 120 majors and hundreds of on- and 
@@ -122,8 +128,8 @@ Template Name: Registration Issue 2014
                 </div>
             </div>
         </div>
-        <div class="row-fluid" id="sections">
-            <div class="span3 reg-section">
+        <div class="row" id="sections">
+            <div class="large-3 columns reg-section">
             <h2 class="reg-section-title">News</h2>
             <ul>
                 <li>
@@ -148,7 +154,7 @@ Template Name: Registration Issue 2014
                 </li>
             </ul>
             </div>
-            <div class="span3 reg-section">
+            <div class="large-3 columns reg-section">
             <h2 class="reg-section-title">Sports</h2>
             <ul>
                 <li>
@@ -173,7 +179,7 @@ Template Name: Registration Issue 2014
                 </li>
             </ul>
             </div>
-            <div class="span3 reg-section">
+            <div class="large-3 columns reg-section">
             <h2 class="reg-section-title">A&E</h2>
             <ul>
                 <li>
@@ -198,7 +204,7 @@ Template Name: Registration Issue 2014
                 </li>
             </ul>
             </div>
-            <div class="span3 reg-section">
+            <div class="large-3 columns reg-section">
             <h2 class="reg-section-title">Opinion</h2>
             <ul>
                 <li>
@@ -225,24 +231,24 @@ Template Name: Registration Issue 2014
             </div>
         </div>
 
-        <div class="row-fluid" id="read-all">
+        <div class="row" id="read-all">
             <span><a href="http://dailybruin.com/tag/reg2014/">Read all registration issue stories &rarr;</a></span>
         </div>
 
-        <div class="row-fluid" id="feature-stories" >
+        <div class="row" id="feature-stories" >
             <a href="http://dailybruin.com/2014/09/28/persistence-proves-instrumental-to-sixth-year-bruins-success/">
-            <div class="span4 feature-img-1">
+            <div class="large-4 columns feature-img-1">
                 <img src="http://dailybruin.com/images/2014/09/News-CoverPhoto.jpg">
                 <h2>Playing His Forte</h2>
             </div>   
             </a>   
             <a href="http://dailybruin.com/2014/09/28/reily-buechlers-father-grows-from-volleyball-coach-to-her-biggest-fan/">
-            <div class="span4 feature-img-1">
+            <div class="large-4 columns feature-img-1">
                 <img src="http://dailybruin.com/images/2014/10/regissue-sports.jpg">
                 <h2>Nothing But Net</h2>
             </div>
             </a>
-            <div class="span4 sidebar">
+            <div class="large-4 columns sidebar">
                 <a href="http://dailybruin.com/2014/09/28/ucla-lecturers-work-on-prison-program-allows-inmates-exposure-to-arts/">
                 <div class="feature-img-2">
                     <img src="http://dailybruin.com/images/2014/09/web.ns_.reg_.skelly.onlineonly.jpg">
@@ -267,20 +273,20 @@ Template Name: Registration Issue 2014
 
             </div>
         </div>
-        <div class="row-fluid">
+        <div class="row">
             <a href="http://dailybruin.com/2014/09/28/samah-pirzada-positive-dialogue-about-mental-health-necessary-to-erase-stigma/">
-            <div class="span4 feature-img-1">
+            <div class="large-4 columns feature-img-1">
                 <img src="http://dailybruin.com/images/2014/09/Opinion-CoverPhoto.jpg">
                 <h2>On Mental Health</h2>
             </div>
             </a>
             <a href="http://dailybruin.com/2014/09/28/ucla-alum-creates-music-light-show-at-walt-disney-concert-hall/">
-            <div class="span4 feature-img-1">
+            <div class="large-4 columns feature-img-1">
                 <img src="http://dailybruin.com/images/2014/09/AE-CoverPhoto.jpg">
                 <h2>Lighting Up LA</h2>
             </div>
             </a>
-            <div class="span4 sidebar">
+            <div class="large-4 columns sidebar">
                 <a href="http://dailybruin.com/2014/09/28/students-faculty-continue-to-push-for-diversity-requirement/">
                 <div class="feature-img-2">
                     <img src="http://dailybruin.com/images/2014/02/5891eb04-18c1-4e3d-9efa-242fb4fd8fb8-640x426.jpg">
@@ -301,12 +307,12 @@ Template Name: Registration Issue 2014
                 </a>
             </div>
         </div> <!-- end of row -->
-        <div class="row-fluid" id="videos-section">
-            <div class="span6">
+        <div class="row" id="videos-section">
+            <div class="large-6 columns">
                 <h3>UCLA engineering implements 3-D printers</h3>
                 <iframe width="100%" height="315" src="//www.youtube.com/embed/dPAYMjRFwmA" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="span6">
+            <div class="large-6 columns">
                 <h3>UCLA Pronunciation Guide</h3>
                 <iframe width="100%" height="315" src="//www.youtube.com/embed/MCM3xz4QDQc" frameborder="0" allowfullscreen></iframe>
             </div>
