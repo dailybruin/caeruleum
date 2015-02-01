@@ -19,6 +19,11 @@ Template Name: Radio: About the hosts
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
 }
 
+.row-fluid {
+    overflow:auto;
+    margin-bottom:5px;
+}
+
 #subtitle {
     font-size:25px;
 }
@@ -47,6 +52,7 @@ Template Name: Radio: About the hosts
         <h1>Mondays, 6:00-6:30 p.m.</h1>
 <p>Live from the hills of Westwood, the Daily Bruin presents its award-winning weekly news and culture talk show, Long Story Short. The show began airing in the winter of 2011 as a pre-recorded podcast with one broadcast host and single segment stories, eventually evolving into a live show broadcast from the UCLA Radio studio. The show covers all walks of life at UCLA, from science and health to arts and politics to local news and campus buzz. Long Story Short aims to focus on members of the UCLA community and their projects, personalities and perspectives.</p>
 
+
 <div class="row-fluid">
     <div class="large-6 columns">
         <img src="http://dailybruin.com/images/2015/01/Alex-Hyun.jpg" alt="Alex Hyun" />
@@ -73,9 +79,9 @@ Template Name: Radio: About the hosts
                 </div>
                 <audio src="http://dailybruin.com/images/2015/01/chirags-bio.mp3" preload="auto" controls></audio>
                 <p>Chirag joined Daily Bruin Radio as a reporter in winter 2014, inspired after having grown up listening to legends like Garrison Keillor and the Magliozzi brothers. When he's not studying to survive his pre-med classes, you can find him scouring the campus looking for new and exciting stories for the show.</p>
-                <br>
     </div>
 </div>
+
 
 <div class="row-fluid">
     <div class="large-6 columns">
@@ -84,7 +90,6 @@ Template Name: Radio: About the hosts
         <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:slin@media.ucla.edu">slin@media.ucla.edu</a> </div>
         <audio src="http://dailybruin.com/images/2015/01/Sharons-bio.mp3" preload="auto" controls></audio>
         <p>Sharon started out as a Mojo blogger for the Daily Bruin but started working with Long Story Short over the summer. Before UCLA, she worked as an associate editor for the online component of a national fashion magazine, where she was given the opportunity to interview various fashion bloggers and designers. Her most memorable interview was with Althea Harper, the runner-up designer of "Project Runway" Season 6. Sharon is interested in pursuing a career in public health and using her background in journalism to effectively communicate health campaign messages.</p>
-        <br> <br> 
     </div>
     <div class="large-6 columns">
         <img src="http://dailybruin.com/images/2015/01/Jennifer-Crane.jpg" alt="Jonaki Mehta." />
@@ -119,7 +124,7 @@ Template Name: Radio: About the hosts
         <audio src="http://dailybruin.com/images/2014/05/Andrew.mp3" preload="auto" controls></audio> 
         <p>Andrew is a Sports senior staff writer for the Daily Bruin, covering football and men's basketball in the 2013-2014 school year. He was an assistant Sports editor during the 2012-2013 school year and writes sports columns and features for Los Angeles Magazine's CityThink Blog. Fun fact: He and two other Daily Bruin Sports writers once drove to Eugene, Ore. for a football game (it's not as fun as it sounds). </p>
     </div>
-</div>
+
 <div class="large-6 columns">
     <img src="http://dailybruin.com/images/2014/05/kevin.jpg" alt="Kevin Bowman." />
     <h1>Kevin Bowman</h1>
@@ -134,6 +139,7 @@ Template Name: Radio: About the hosts
         <audio src="http://dailybruin.com/images/2014/05/Kevin.mp3" preload="auto" controls></audio>
         <p>Kevin is the Daily Bruin’s Sports editor. He has covered six different UCLA teams in his three years with the Bruin, including men's basketball and, most recently, football. He considers himself culturally illiterate in all subjects except movies, in which he pretends to know more than he does.
     </div>
+</div>
 </div>
 
 
