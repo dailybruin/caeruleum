@@ -325,11 +325,18 @@ Template Name: Full-width series
   max-width:auto;
   height:200px;}
   }
+
+  .full-series {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 </style>
 
 <!--css -->
 
 <article>
+  <div class= "full-series">
 	<?php 
 		if ( have_posts() ) {
 			while ( have_posts() ) {
@@ -338,6 +345,7 @@ Template Name: Full-width series
 			} // end while
 		} // end if
 	?>
+</div>
 </article> 
 
 <?php get_footer(); ?>
