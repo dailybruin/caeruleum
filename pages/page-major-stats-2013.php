@@ -19,7 +19,7 @@ Template Name: Major_Stats_2013
 					color-stop(0.75, #6ecfdb)
 				);">
 		<br>
-		<img src="/images/features/major-stats-2013/assets/banner.png" alt="a major choice">
+		<img src="//dailybruin.com/images/features/major-stats-2013/assets/banner.png" alt="a major choice">
 	<div class="large-11 columns" style="padding: 20px;">
 		<br><br>
 		<p>The Daily Bruin/UCLA Department of Statistics survey asked undergraduate students to rate their expected salary one year out of college. 
@@ -867,12 +867,12 @@ Template Name: Major_Stats_2013
 			// Usage:
 
 			preload([
-			    '/images/features/major-stats-2013/assets/dd/move2.gif'
+			    '//dailybruin.com/images/features/major-stats-2013/assets/dd/move2.gif'
 			]);
 
 			$(document).ready(function(){
 				unresponsivize();
-				window.application = new view('/images/features/major-stats-2013/data/undergrad.json',function(){
+				window.application = new view('//dailybruin.com/images/features/major-stats-2013/data/undergrad.json',function(){
 					this.createGrid(1,this.render);
 				});
 				getData();
@@ -1249,7 +1249,7 @@ Template Name: Major_Stats_2013
 	        var divWidth = $("#graph").width();
 	        if (toggle==0) {
 	          $("#move").fadeOut('fast', function() {
-	            $("#move").attr("src","/images/features/major-stats-2013/assets/dd/move2.gif");
+	            $("#move").attr("src","//dailybruin.com/images/features/major-stats-2013/assets/dd/move2.gif");
 	            $("#move").fadeIn('fast');
 	          });
 	          $('#royce').animate({width:divWidth*0.45+1+"px"}, 'slow');
@@ -1257,7 +1257,7 @@ Template Name: Major_Stats_2013
 	          toggle=1;
 	        } else {
 	          $("#move").fadeOut('fast', function() {
-	            $("#move").attr("src","/images/features/major-stats-2013/assets/dd/onload.png");
+	            $("#move").attr("src","//dailybruin.com/images/features/major-stats-2013/assets/dd/onload.png");
 	            $("#move").fadeIn('fast');
 	          });
 	          $('#royce').animate({width:divWidth*0.5+1+"px"}, 'slow');
