@@ -74,16 +74,23 @@ Template Name: Stonewall
 	-ms-transform:rotate(180deg);
 	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
+#stonewall-wrap {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 </style>
 </head> 
 
 <body>
-	<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there.  </p></div>
-	<div id="stonewall"></div> 
-	<div id = "banner"><img src="http://dailybruin.com/images/2015/01/stonewall.jpg"></div> 
-	
+	<div id="stonewall-wrap">
+		<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there.  </p></div>
+		<div id="stonewall"></div> 
+		<div id = "banner"><img src="http://dailybruin.com/images/2015/01/stonewall.jpg"></div> 
+	</div>
 </body>
 </html>
 
