@@ -10,6 +10,12 @@ body {
   font-family: 'Droid Sans',sans-serif;
 }
 
+article#sp-gym {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
 article#sp-gym p {
   font-family: 'Droid Sans',sans-serif;
 }
