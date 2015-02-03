@@ -233,6 +233,21 @@ position: relative !important;
 	line-height: 5.3rem;
 }
 
+.tab-bar .search-icon{
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 5.3rem;
+	margin-right: 25px;
+	color: black !important;
+}
+
+.tab-bar .search-icon i {
+	display: inline;
+	font-size: 1.2rem;
+	line-height: 5.3rem;
+	color: black !important;
+}
+
 .tab-bar-section.middle {
 left: 7rem !important;
 right: 7rem !important;
@@ -284,6 +299,37 @@ top: 0rem !important;
 	font-size: 1.2rem;
 	margin-left: 25px;
 	line-height: 3.8rem !important;
+}
+
+#stickyalias .search-icon{
+	height: 4rem !important;
+	color: black !important;
+	line-height: 3.8rem !important;
+}
+
+#stickyalias .search-icon i {
+	display: inline;
+	font-size: 1.2rem;
+	line-height: 5.3rem;
+	color: black !important;
+}
+
+.gsc-search-button input {
+	background-image: inherit;
+	box-sizing: content-box;
+}
+
+.gsc-inline-block .gsc-selected-option-container {
+	width: auto !important;
+}
+
+.gsc-control-cse table {
+	border: none;
+	margin-bottom: 0;
+}
+
+.reveal-modal-bg{
+	position: fixed !important;
 }
 
 /* ===== Special features (default styles) ================================== */

@@ -1,5 +1,3 @@
-    
-
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
   </br>
@@ -28,9 +26,12 @@
 				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 			</div> 
 	        </section>
-<!--         	<form action="/" method="GET" id="search-mobile">
-				<input type="search" placeholder="Search..." name="s"></input>
-			</form> -->
+	       	<section class="text-right">
+	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>
+	        </section>
+	        <div id="search" class="reveal-modal" data-reveal>
+			  <gcse:search></gcse:search>	
+			</div>
 	      </nav>
 
         <aside class="left-off-canvas-menu">
@@ -38,14 +39,6 @@
             <li class="text-center">
             	<a href="<?php echo home_url('/'); ?>"><img class="db-mobile-nav-logo" src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_icon.svg" /></a>
             	</li>
-            <li><div class="row collapse postfix-round ">
-              <div class="small-10 columns">
-                <input type="text" placeholder="Search">
-              </div>
-              <div class="small-2 columns">
-                <span class="button postfix"><i class="fa fa-search"></i></span>
-              </div>
-            </div></li>
           </ul>
           <div class="db-nav-links">
           	<ul class="off-canvas-list"><li><label>Sections</label></li></ul>
@@ -83,10 +76,12 @@
 		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
 		         </div>
 	        </section>
-<!--         	<form action="/" method="GET" id="search-mobile">
-				<input type="search" placeholder="Search..." name="s"></input>
-			</form> -->
-
+	       	<section class="text-right">
+	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>
+	        </section>
+	        <div id="search" class="reveal-modal" data-reveal>
+			  <gcse:search></gcse:search>	
+			</div>
 	      </nav>
 
         <aside class="left-off-canvas-menu">
