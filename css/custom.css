@@ -304,6 +304,7 @@ top: 0rem !important;
 #stickyalias .search-icon{
 	height: 4rem !important;
 	color: black !important;
+	line-height: 3.8rem !important;
 }
 
 #stickyalias .search-icon i {
@@ -325,6 +326,10 @@ top: 0rem !important;
 .gsc-control-cse table {
 	border: none;
 	margin-bottom: 0;
+}
+
+.reveal-modal-bg{
+	position: fixed !important;
 }
 
 /* ===== Special features (default styles) ================================== */
