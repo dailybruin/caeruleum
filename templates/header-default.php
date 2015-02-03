@@ -29,9 +29,6 @@
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>
 	        </section>
-	        <div id="search" class="reveal-modal" data-reveal>
-			  <gcse:search></gcse:search>	
-			</div>
 	      </nav>
 
         <aside class="left-off-canvas-menu">
@@ -63,6 +60,10 @@
         </aside>
 
 	</div>
+		    <div id="search" class="reveal-modal" data-reveal>
+		    	<label>Powered by Google Custom Search:</label>
+			  <gcse:search></gcse:search>
+			</div>
     <div id="stickyalias">
 	      <nav class="tab-bar">
 	        <section class="left-small">
@@ -79,9 +80,6 @@
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>
 	        </section>
-	        <div id="search" class="reveal-modal" data-reveal>
-			  <gcse:search></gcse:search>	
-			</div>
 	      </nav>
 
         <aside class="left-off-canvas-menu">

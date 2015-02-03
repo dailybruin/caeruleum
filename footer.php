@@ -29,7 +29,7 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.lightSlider.js"></script> 
 
-  <script>
+<script>
   (function() {
     var cx = '002413520122245547453:nxniuwc5kuk';
     var gcse = document.createElement('script');

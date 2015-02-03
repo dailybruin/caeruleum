@@ -323,7 +323,8 @@ top: 0rem !important;
 	width: auto !important;
 }
 
-.gsc-control-cse table {
+.gsc-control-cse table,
+.gsc-input .gsc-input-box  {
 	border: none;
 	margin-bottom: 0;
 }
@@ -331,6 +332,7 @@ top: 0rem !important;
 .reveal-modal-bg{
 	position: fixed !important;
 }
+
 
 /* ===== Special features (default styles) ================================== */
 #featuredProject > div {
