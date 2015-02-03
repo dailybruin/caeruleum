@@ -333,6 +333,11 @@ top: 0rem !important;
 	position: fixed !important;
 }
 
+#search {
+	max-height: 80vh;
+	overflow-y: scroll;
+}
+
 
 /* ===== Special features (default styles) ================================== */
 #featuredProject > div {
