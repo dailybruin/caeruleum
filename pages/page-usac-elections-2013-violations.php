@@ -14,6 +14,14 @@ Template Name: USAC Elections Campaign Violations 2013
       {
         margin-top: 30px;
       }
+       .usac-2013 {
+          max-width: 940px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #banner {
+          margin-bottom: 10px;
+        }
     </style>
     <link href="bootstrap-responsive.css" rel="stylesheet">
 
@@ -21,26 +29,21 @@ Template Name: USAC Elections Campaign Violations 2013
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-
-    <div class="navbar navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="#">USAC Elections 2013</a>
-            <ul class="nav">
-              <li><a href="/usac-elections-2013/">Home</a></li>
-              <li><a href="/usac-elections-2013/candidates">Candidates</a></li>
-              <li class="active"><a href="#">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+<div class='usac-2013'>
+    <dl class="sub-nav">
+      <dt>USAC Elections 2013</dt>
+        <dd><a href="/">Home</a></dd>
+          <dd><a href="/usac-elections-2013/candidates">Candidates</a></dd>
+          <dd class="active"><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></dd>
+          <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
+    </dl>
+  </br>
 
     <div class="row-fluid">
 
       <div class="span9">
 
-        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
+        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='//dailybruin.com/images/features/usac2013/bannercic.jpg'/></a>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -61,6 +64,6 @@ Template Name: USAC Elections Campaign Violations 2013
       </div>
 
     </div> <!-- /container -->
-
+</div>
 
 <?php get_footer(); ?>
