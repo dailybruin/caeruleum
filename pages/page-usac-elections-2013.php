@@ -6,12 +6,13 @@ Template Name: USAC Elections 2013
 
 <!-- Le styles -->
     <style type="text/css">
+
     
         .ad{
           margin-bottom: 10px;
         }
 
-        .btn-group{
+        .button-group{
           text-align: center;
           display: block; 
         }
@@ -29,9 +30,9 @@ Template Name: USAC Elections 2013
         .candphoto
         {
           margin-top: 10px;
-          margin-left: 10px;
+          margin-left: auto;
           margin-bottom: 10px;
-          margin-right: 10px;
+          margin-right: auto;
           width: 120px;
         }
 
@@ -61,15 +62,19 @@ Template Name: USAC Elections 2013
 
         .bunited{
           background-color: #C2E1F2;
+          height: 300px;
         }
 
         .indep{
           background-color: #A2DEA6;
+          height: 300px;
         }
 
         .letsact
         {
           background-color: #F7F499;
+          overflow: hidden;
+          height: 300px;
         }
 
         .pass
@@ -112,6 +117,10 @@ Template Name: USAC Elections 2013
           margin-right: auto;
         }
 
+        .panels {
+          list-style-type: none;
+        }
+
         @media (max-width: 1200px) {
           .initbuttons {
             display:none;
@@ -142,13 +151,13 @@ Template Name: USAC Elections 2013
           <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
     </dl>
 </br>
-<div class="row-fluid">
+<div class="row">
 
   <div class="large-12 columns">
     <a title='USAC Elections' href='#'><img src='//dailybruin.com/images/features/usac2013/bannercic.jpg' border='0'/></a> 
     <br /><br />
 
-    <div class="thumbnail">
+    <div class="panel">
       <p style="text-align:center">
       <b>The Undergraduate Students Association Council is the governing body for the undergraduate student population. Each spring, students   vote on MyUCLA for the 13 elected positions on the council and any proposed ballot referendums or initiatives. Students can vote on MyUCLA starting May 6 at noon until May 9 at 6 p.m.</b></p>
     </div>
@@ -165,11 +174,11 @@ Template Name: USAC Elections 2013
     <div class="large-9 columns">
     <!-- Presidents-->
 
-    <ul class="thumbnails">
+    <ul class="panels">
       <li class="large-12 columns">
-        <div class="thumbnail letsact">
+        <div class="panel letsact">
 
-          <div class="row-fluid">
+          <div class="row">
             <div class="large-3 columns">
               <img class="presphoto" src="//dailybruin.com/images/features/usac2013/John Joanino.jpg" alt="">
             </div>
@@ -190,15 +199,15 @@ Template Name: USAC Elections 2013
     <!-- IVPS-->
 
 
-    <ul class="thumbnails">
+    <ul class="panels">
 
       <li class="large-3 columns">
-        <div class="thumbnail bunited">
+        <div class="panel bunited">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Avi Oved.jpg" alt="">
           <div class="textcentered">
-            <h4>Internal Vice President</h4>
-            <h5>Avi Oved</h5>
-            <h5>Bruins United</h5>
+            <h4>Internal Vice President</h4></br>
+            <h5>Avi Oved</h5></br>
+            <h5>Bruins United</h5></br>
             <h4 class="greyer">52.6%</h4>
 
           </div>
@@ -208,12 +217,12 @@ Template Name: USAC Elections 2013
       <!-- EVPS-->
 
       <li class="large-3 columns">
-        <div class="thumbnail letsact">
+        <div class="panel letsact">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Maryssa Hall.jpg" alt="">
           <div class="textcentered">
-            <h4>External Vice President</h4>
-            <h5>Maryssa Hall</h5>
-            <h5>LET'S ACT!</h5>
+            <h4>External Vice President</h4></br>
+            <h5>Maryssa Hall</h5></br>
+            <h5>LET'S ACT!</h5></br>
             <h4 class="greyer">55%</h4>
           </div>
         </div>
@@ -222,12 +231,12 @@ Template Name: USAC Elections 2013
       <!-- Academic Affairs Commissioner -->
 
       <li class="large-3 columns">
-        <div class="thumbnail bunited">
+        <div class="panel bunited">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Darren Ramalho.jpg" alt="">
           <div class="textcentered">
-            <h4>Academic Affairs Commissioner</h4>
-            <h5>Darren Ramalho</h5>
-            <h5>Bruins United</h5>
+            <h4>Academic Affairs Commissioner</h4></br>
+            <h5>Darren Ramalho</h5></br>
+            <h5>Bruins United</h5></br>
             <h4 class="greyer">53.1%</h4>
           </div>
         </div>
@@ -236,7 +245,7 @@ Template Name: USAC Elections 2013
       <!--Campus Events Commisioner-->
 
       <li class="large-3 columns">
-        <div class="thumbnail indep">
+        <div class="panel indep">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Jessica Kim.jpg" alt="">
           <div class="textcentered">
             <h4>Campus Events Commissioner</h4>
@@ -249,17 +258,17 @@ Template Name: USAC Elections 2013
 
     </ul>
 
-    <ul class="thumbnails">
+    <ul class="panels">
 
       <!--Cultural Affairs Commissioner-->
 
       <li class="large-3 columns">
-        <div class="thumbnail letsact">
+        <div class="panel letsact">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Jessica Trumble.jpg" alt="">
           <div class="textcentered">
-            <h4>Cultural Affairs Commissioner</h4>
-            <h5>Jessica Trumble</h5>
-            <h5>LET'S ACT!</h5>
+            <h4>Cultural Affairs Commissioner</h4></br>
+            <h5>Jessica Trumble</h5></br>
+            <h5>LET'S ACT!</h5></br>
             <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
@@ -268,35 +277,35 @@ Template Name: USAC Elections 2013
       <!--General Representatives-->
 
        <li class="large-3 columns">
-        <div class="thumbnail bunited">
+        <div class="panel bunited">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Sam Haws.jpg" alt="">
           <div class="textcentered">
-            <h4>General Representative 1</h4>
-            <h5>Sam Haws</h5>
-            <h5>Bruins United</h5>
+            <h4>General Representative 1</h4></br>
+            <h5>Sam Haws</h5></br>
+            <h5>Bruins United</h5></br>
             <h4>&nbsp;</h4>
           </div>
       </li>
 
 
       <li class="large-3 columns">
-        <div class="thumbnail bunited">
+        <div class="panel bunited">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Sunny Singh.jpg" alt="">
           <div class="textcentered">
-            <h4>General Representative 2</h4>
-            <h5>Sunny Singh</h5>
-            <h5>Bruins United</h5>
+            <h4>General Representative 2</h4></br>
+            <h5>Sunny Singh</h5></br>
+            <h5>Bruins United</h5></br>
             <h4>&nbsp;</h4>
           </div>
         </div>
       </li>
      
       <li class="large-3 columns">
-        <div class="thumbnail letsact">
+        <div class="panel letsact">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Lizzy Naameh.jpg" alt="">
           <div class="textcentered">
-            <h4>General Representative 3</h4>
-            <h5>Lizzy Naameh</h5>
+            <h4>General Representative 3</h4></br>
+            <h5>Lizzy Naameh</h5></br>
             <h5>LET'S ACT!</h5>
             <h4>&nbsp;</h4>
           </div>
@@ -304,15 +313,15 @@ Template Name: USAC Elections 2013
 
     </ul>
 
-    <ul class="thumbnails">
+    <ul class="panels">
 
       <!-- Community Service Commisioner -->
 
       <li class="large-3 columns">
-        <div class="thumbnail indep">
+        <div class="panel indep">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Omar Arce.jpg" alt="">
           <div class="textcentered">
-            <h4>Community Service Commissioner</h4>
+            <h4>Community Service Commissioner</h4></br>
             <h5>Omar Arce</h5>
             <h5>Independent</h5>
             <h5 class="greyer">Uncontested</h5>
@@ -323,12 +332,12 @@ Template Name: USAC Elections 2013
       <!-- Facilities Commissioner -->
 
       <li class="large-3 columns">
-        <div class="thumbnail bunited">
+        <div class="panel bunited">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
           <div class="textcentered">
-            <h4>Facilities Commissioner</h4>
-            <h5>Armen Hadjimanoukian</h5>
-            <h5>Bruins United</h5>
+            <h4>Facilities Commissioner</h4></br>
+            <h5>Armen Hadjimanoukian</h5></br>
+            <h5>Bruins United</h5></br>
             <h4 class="greyer">50.9%</h4>
           </div>
         </div>
@@ -337,12 +346,12 @@ Template Name: USAC Elections 2013
       <!-- Financial Commisioner -->
 
       <li class="large-3 columns">
-        <div class="thumbnail bunited">
+        <div class="panel bunited">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Lauren Rogers.jpg" alt="">
           <div class="textcentered">
-            <h4>Financial Supports Commissioner</h4>
-            <h5>Lauren Rogers</h5>
-            <h5>Bruins United</h5>
+            <h4>Financial Supports Commissioner</h4></br>
+            <h5>Lauren Rogers</h5></br>
+            <h5>Bruins United</h5></br>
             <h4 class="greyer">54.1%</h4>
           </div>
         </div>
@@ -351,12 +360,12 @@ Template Name: USAC Elections 2013
       <!-- Student Wellness Commissioner -->
 
       <li class="large-3 columns">
-        <div class="thumbnail indep">
+        <div class="panel indep">
           <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Savannah Dianne Badalich.jpg" alt="">
           <div class="textcentered">
-            <h4>Student Wellness Commissioner</h4>
-            <h5>Savannah Dianne Badalich</h5>
-            <h5>Independent</h5>
+            <h4>Student Wellness Commissioner</h4></br>
+            <h5>Savannah Badalich</h5></br>
+            <h5>Independent</h5></br>
             <h5 class="greyer">Uncontested</h5>
           </div>
         </div>
@@ -364,10 +373,10 @@ Template Name: USAC Elections 2013
 
     </ul>
 
-    <ul class="thumbnails">
+    <ul class="panels">
 
       <li class="large-6 columns">
-        <div class="thumbnail pass">
+        <div class="panel pass">
           <div class="textcentered">
             <h1 class="white">PASSED - 60%</h1>
             <h3>Bruin Bash Referendum</h3></span>
@@ -376,7 +385,7 @@ Template Name: USAC Elections 2013
       </li>
 
       <li class="large-6 columns">
-        <div class="thumbnail fail">
+        <div class="panel fail">
           <div class="textcentered">
             <h1 class="white">FAILED - 47.9%</h1>
             <h3>Bruin Diversity Initiative</h3>
@@ -389,17 +398,17 @@ Template Name: USAC Elections 2013
 
     
 
-    <div class="row-fluid">
+    <div class="row">
 
       <div class="initbuttons">
 
       <div class="large-4 columns">
       <br/>
-        <div class = "btn-group">
+        <div class = "button-group">
           <a href="/usac-elections-2013/candidates">
-            <button class="btn" style="color:#009999">
+            <button class="button" style="color:#009999">
               <div class="caption">
-                  <h4 style="text-align:center">Learn about the candidates</h4>
+                  <h4 style="text-align:center">Learn about the candidates</h4></br>
                   <h5>23 students are running for 13 seats</h5>
               </div>
             </button>
@@ -409,11 +418,11 @@ Template Name: USAC Elections 2013
 
       <div class="large-4 columns">
       <br/>
-        <div class = "btn-group">
+        <div class = "button-group">
           <a href="#myModal" role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="button" style="color:#009999">
               <div class="caption">
-                  <h4 style="text-align:center">What is USAC ?</h4>
+                  <h4 style="text-align:center">What is USAC ?</h4></br>
                   <h5>Basics of your student government  </h5>
               </div>
             </button>
@@ -423,12 +432,12 @@ Template Name: USAC Elections 2013
 
       <div class="large-4 columns">
       <br/>
-        <div class = "btn-group">
+        <div class = "button-group">
           <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
 " role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="button" style="color:#009999">
               <div class="caption">
-                  <h4 style="text-align:center">Daily Bruin Endorsements</h4>
+                  <h4 style="text-align:center">Daily Bruin Endorsements</h4></br>
                   <h5>Check out the selections</h5>
               </div>
             </button>
@@ -440,18 +449,18 @@ Template Name: USAC Elections 2013
         
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
 
       <div class="laterbuttons">
 
-      <div class="row-fluid">
+      <div class="row">
       <div class="large-12 columns">
       <br/>
-        <div class = "btn-group">
+        <div class = "button-group">
           <a href="/usac-elections-2013/candidates">
-            <button class="btn" style="color:#009999">
+            <button class="button" style="color:#009999">
               <div class="caption">
-                  <h4 style="text-align:center">Learn about the candidates</h4>
+                  <h4 style="text-align:center">Learn about the candidates</h4></br>
                   <h5>23 students are running for 13 seats</h5>
               </div>
             </button>
@@ -460,15 +469,15 @@ Template Name: USAC Elections 2013
       </div>
       </div>
 
-      <div class="row-fluid">
+      <div class="row">
       <div class="large-12 columns">
       <br/>
-        <div class = "btn-group">
+        <div class = "button-group">
           <a href="#myModal" role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="button" style="color:#009999">
               <div class="caption">
-                  <h4 style="text-align:center">What is USAC ?</h4>
-                  <h5>Basics of your student government  </h5>
+                  <h4 style="text-align:center">What is USAC ?</h4></br>
+                  <h5> Basics of your student government </h5>
               </div>
             </button>
           </a>
@@ -476,13 +485,13 @@ Template Name: USAC Elections 2013
       </div>
       </div>
 
-      <div class="row-fluid">
+      <div class="row">
       <div class="large-12 columns">
       <br/>
-        <div class = "btn-group">
+        <div class = "button-group">
           <a href="http://dailybruin.com/2013/05/06/editorial-board-2013-2014-usac-candidate-endorsements/
 " role="button" data-toggle="modal">
-            <button class="btn" style="color:#009999">
+            <button class="button" style="color:#009999">
               <div class="caption">
                   <h4 style="text-align:center">Daily Bruin Endorsements</h4>
                   <h5>Check out the selections</h5>
@@ -501,9 +510,9 @@ Template Name: USAC Elections 2013
 
     
 
-    <div class="row-fluid">
+    <div class="row">
       <div class="large-6 columns">
-        <div class="thumbnail">
+        <div class="panel">
           <div class="caption">
              <h3>Recent Articles<h3>
            </div>
@@ -600,8 +609,8 @@ Template Name: USAC Elections 2013
   <div class='ad'>
     <?php get_template_part('ad','side'); ?>
   </div>
-  <div class="thumbnail textcentered">
-    <p><h4 style="color:#009999">Important Dates:</h4>May 1 - Group endorsement hearing<br />May 2 - Meet the candidates event<br />May 4 - Candidates debates<br />May 6 - Voting begins at noon<br />May 9 - Voting ends at 6 p.m.<br /><b> Election results announced at 11 p.m.</b></p>
+  <div class="panel textcentered">
+    <p><h4 style="color:#009999">Important Dates:</br></h4>May 1 - Group endorsement hearing<br />May 2 - Meet the candidates event<br />May 4 - Candidates debates<br />May 6 - Voting begins at noon<br />May 9 - Voting ends at 6 p.m.<br /><b> Election results announced at 11 p.m.</b></p>
   </div>
   <br />
   <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23USACelections" data-widget-id="328749991814369281">Tweets about "#USACelections"</a>
