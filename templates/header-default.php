@@ -42,7 +42,7 @@
   				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
 							'menu_class' => 'off-canvas-list',
 							'container' => '',
-							'menu_id' => 'topMenu',
+							'menu_id' => 'topMenu'
 							)); ?>
 			<ul class="off-canvas-list"><li><label>Pages</label></li></ul>
   				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
@@ -70,12 +70,14 @@
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span><h1>MENU</h1></a>
 	        </section>
 	        <section class="middle tab-bar-section">
-	          	 <div class="db-logo">
-		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
-		         </div>
-		         <div class="db-logo-spectrum">
-		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
-		         </div>
+	        	<a href="<?php echo home_url('/'); ?>">
+		          	 <div class="db-logo">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+			         </div>
+			         <div class="db-logo-spectrum">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+			         </div>
+			     </a>
 	        </section>
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>

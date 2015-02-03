@@ -184,7 +184,7 @@
         $lastposts = get_posts( $args );
         foreach( $lastposts as $post ) :  setup_postdata($post); 
         if(++$i > 1) break;?>
-      <div class="db-story-m medium-10 columns">
+      <div class="db-story-m medium-12 columns">
       <h1>
         Featured Post:&nbsp;
         <a href="<?php the_permalink(); ?>"> <?php the_headline(); ?></a>
