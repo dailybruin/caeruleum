@@ -231,11 +231,11 @@
 				</p>
 
 		<div class="row" id="entry-bottom">
-			<div class="span2 about-post">
+<!-- 			<div class="span2 about-post">
 				<div class="post-tags">
 					<p><?php the_tags(); ?></p>
-				</div><!-- end div.post-tags -->
-			</div>
+				</div>
+			</div> -->
 			<div class="span6 about-author">
 				<div class="sm">
 					<a href="https://twitter.com/share" class="twitter-share-button" data-via="dailybruin" data-related="dailybruin">Tweet</a>

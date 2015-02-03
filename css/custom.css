@@ -165,9 +165,40 @@ figure, figure.alignnone {
 }
 
 /*HEADER */
-
+.off-canvas-fixed {
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    height:100%;
+}
+.move-right > .off-canvas-fixed {
+    -webkit-transform: translate3d(15.625rem, 0, 0);
+    transform: translate3d(15.625rem, 0, 0);
+    height:100%;
+}
 .left-off-canvas-menu {
-	position: fixed !important;
+    -webkit-transform: none;
+    transform: none;
+    height: 100%;
+}
+.main-section {
+    padding:45px 0 0;
+}
+.tab-bar {
+    width:100%;
+}
+@media only screen and (orientation:landscape) and (max-width: 64em){
+    .main-section {
+        padding:0 0 0 2.8125rem;
+    }
+    .off-canvas-fixed {
+        width:2.8125rem;
+        height:100%;
+        background:#333333;
+    }
+     section.left-small{
+        border:none;
+        box-shadow:none;
+    }
 }
 
 .db-off-canvas-wrap .db-content {

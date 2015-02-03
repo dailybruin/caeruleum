@@ -130,6 +130,15 @@ p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 </style>
+<style>
+.hacking {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<div class="hacking">
 
 <div id="eh-cover">
 </div>
@@ -243,3 +252,5 @@ p {
 
 <p style="clear:both" class="eh-credit">Leading illustration by Madeline Isaacs.</p>
 <?php get_footer(); ?>
+
+</div>

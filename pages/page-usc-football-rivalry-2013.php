@@ -39,19 +39,19 @@ h3 {
 </style>
 <div id="main-page-wrapper">
 
-	<div class="row-fluid">
-		<div class="span12" id="banner">
+	<div class="row">
+		<div class="large-12 columns" id="banner">
 			<img src="http://dailybruin.com/images/2013/11/onlinebanner.jpg">
 		</div>
 	</div>
 	
-	<div class="row-fluid">
-		<div class="span8">
-			<div class="row-fluid">
+	<div class="row">
+		<div class="large-8 columns" style="padding-right:30px">
+			<div class="row">
 				<a href="http://dailybruin.com/2013/11/25/victory-bell-resonates-with-bruins-past-and-present/"><h2 class="headline-a">Victory Bell resonates with Bruins past and present</h2>
 				<img src="http://dailybruin.com/images/2013/11/80851f22-b618-4a8c-affc-2944b29dfd53.jpg"></a>
 			</div>
-			<div class="row-fluid">
+			<div class="row">
 				<div class="story">
 					<a href="http://dailybruin.com/2013/11/23/ucla-loses-pac-12-title-to-asu-38-33/">
 					<img class="story-thumbnail" src="http://dailybruin.com/images/2013/11/IMG_9977.jpg">
@@ -102,20 +102,20 @@ h3 {
                 </div>
 			</div>
 		</div>
-		<div class="span4">
-			<div class="row-fluid side">
+		<div class="large-4 columns">
+			<div class="row side">
 				<a href="http://dailybruin.com/2013/11/25/special-bond-with-sister-keeps-brett-hundley-grounded/"><h2 class="headline-b">Special bond with sister keeps Brett Hundley grounded</h2>
 				<img src="http://dailybruin.com/images/2013/11/hundley_edited.jpg"></a>
 			</div>
-			<div class="row-fluid side">
+			<div class="row side">
 				<a href="http://dailybruin.com/2013/11/25/end-of-an-era-ucla-alumni-cheerleader-geof-strand-retires/"><h2 class="headline-b">End of an era: UCLA alumni cheerleader Geof Strand retires</h2>
 				<img src="http://dailybruin.com/images/2013/11/geof-640x640.jpg"></a>
 			</div>
-			<div class="row-fluid side">
+			<div class="row side">
 				<a href="http://dailybruin.com/2013/11/25/recalling-ucla-usc-rivalry-heading-into-2013-game/"><h2 class="headline-b">Recalling UCLA-USC rivalry heading into 2013 game</h2>
 				<img src="http://dailybruin.com/images/2013/11/rivalry_timeline.jpg"></a>
 			</div>
-			<div class="row-fluid side">
+			<div class="row side">
 				<a class="twitter-timeline" href="https://twitter.com/search?q=%23victorybell" data-widget-id="404848229688160256">Tweets about "#victorybell"</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>	

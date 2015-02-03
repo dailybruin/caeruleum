@@ -147,14 +147,14 @@ Template Name: USC Football Rivalry 2014
 </style>
 
 <div class="container">
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="large-12 columns">
 		<img src= "http://dailybruin.com/images/2014/11/Web_banner-copy.jpg" style="padding-bottom: 15px">
 
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span8">
+	<div class="row">
+		<div class="large-8 columns">
 			<h1 style="padding-bottom: 15px">Scenes from Rivalry Week</h1>
 			<div class="slick-slideshow">
 				<div class="box">
@@ -232,15 +232,15 @@ Template Name: USC Football Rivalry 2014
 				</div>
 			</div>
 		</div>
-		<div class="span4">
+		<div class="large-4 columns">
 			<div class="vertical-graphic">
 				<img src="http://dailybruin.com/images/2014/11/photofootball.png">
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span8">
-			<div class="span12" id="nonfeature-stories">
+	<div class="row">
+		<div class="large-8 columns">
+			<div class="large-12 columns" id="nonfeature-stories">
 	            <?php
 					$args = array(
 						'tag' => $stories_tag);
@@ -286,7 +286,7 @@ Template Name: USC Football Rivalry 2014
 			</div>
 			<img src="http://dailybruin.com/images/2014/11/v3.11.21.sports.football.SCInsert.Pac12SouthScenarios.LOGOS_.web_.png">
 		</div>
-		<div class="span4" id="vertical-graphic">
+		<div class="large-4 columns" id="vertical-graphic">
 			<div class="storify">
 				<iframe src="//storify.com/dailybruin/name-the-usc-ucla-rivalry-game/embed?border=false"
 					 frameborder="no" allowtransparency="true">

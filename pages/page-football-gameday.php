@@ -65,14 +65,14 @@ Template Name: Football Gameday
 </style>
 
 <div class="container">
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="large-12 columns">
 		<img src=<?php echo $banner_image_url; ?> > 
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span8">
-			<div class="span12" id="feature-story">
+	<div class="row">
+		<div class="large-8 columns">
+			<div class="large-12 columns" id="feature-story">
 	            <?php 
 					$args = array(
 						'posts_per_page' => 1, 
@@ -107,7 +107,7 @@ Template Name: Football Gameday
 				?>
 			</div>
 
-			<div class="span12" id="nonfeature-stories">
+			<div class="large-12 columns" id="nonfeature-stories">
 	            <?php 
 					$args = array(
 						'tag' => $stories_tag);
@@ -153,14 +153,14 @@ Template Name: Football Gameday
 			</div>
 		</div>
 
-		<div class="span4">
-			<div class="row-fluid">
-				<div class="span12">
+		<div class="large-4 columns">
+			<div class="row">
+				<div class="large-12 columns">
 					<h2>Graphic of the Week</h2>
 					<img src=<?php echo $graphic_of_the_week; ?> > 
 				</div>
 
-				<div class="span12">
+				<div class="large-12 columns">
 					<!-- <h2>Comparing Stats</h2> --> <!--
 					<img src=<?php echo $comparing_stats_graphic; ?> > 
 
