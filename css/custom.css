@@ -301,6 +301,32 @@ top: 0rem !important;
 	line-height: 3.8rem !important;
 }
 
+#stickyalias .search-icon{
+	height: 4rem !important;
+	color: black !important;
+}
+
+#stickyalias .search-icon i {
+	display: inline;
+	font-size: 1.2rem;
+	line-height: 5.3rem;
+	color: black !important;
+}
+
+.gsc-search-button input {
+	background-image: inherit;
+	box-sizing: content-box;
+}
+
+.gsc-inline-block .gsc-selected-option-container {
+	width: auto !important;
+}
+
+.gsc-control-cse table {
+	border: none;
+	margin-bottom: 0;
+}
+
 /* ===== Special features (default styles) ================================== */
 #featuredProject > div {
 	margin-top:10px;
