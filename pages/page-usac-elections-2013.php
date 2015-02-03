@@ -5,7 +5,6 @@ Template Name: USAC Elections 2013
 <?php get_header(); ?>
 
 <!-- Le styles -->
-    <link href="bootstrap.css" rel="stylesheet">
     <style type="text/css">
     
         .ad{
@@ -107,6 +106,12 @@ Template Name: USAC Elections 2013
             visibility: hidden;
           }
 
+        .usac-2013 {
+          max-width: 940px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         @media (max-width: 1200px) {
           .initbuttons {
             display:none;
@@ -127,27 +132,20 @@ Template Name: USAC Elections 2013
 <script> $('#navbar').scrollspy()</script>
 <script>$('#myModal').modal('toggle')</script>
 
+<div class='usac-2013'>
 <div class='container'>
-
-    <div class="navbar">
-      <div class="navbar-inner" style="color:#009999">
-        <div class="container-fluid">
-          <a class="brand" href="#">USAC Elections 2013</a>
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="/usac-elections-2013/candidates">Candidates</a></li>
-              <li><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
-
-            </ul>
-        </div>
-      </div>
-    </div>
-
+    <dl class="sub-nav">
+      <dt>USAC Elections 2013</dt>
+        <dd class="active"><a href="/">Home</a></dd>
+          <dd><a href="/usac-elections-2013/candidates">Candidates</a></dd>
+          <dd><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></dd>
+          <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
+    </dl>
+</br>
 <div class="row-fluid">
 
-  <div class="large-9 columns">
-    <a title='USAC Elections' href='#'><img src='/images/features/usac2013/bannercic.jpg' border='0'/></a> 
+  <div class="large-12 columns">
+    <a title='USAC Elections' href='#'><img src='//dailybruin.com/images/features/usac2013/bannercic.jpg' border='0'/></a> 
     <br /><br />
 
     <div class="thumbnail">
@@ -156,10 +154,7 @@ Template Name: USAC Elections 2013
     </div>
 
     <br/><br/>
-
-
-
-
+  </div>
     <!--
 
     <h2 style="text-align:center;">USAC Election Results:</h2>
@@ -167,7 +162,7 @@ Template Name: USAC Elections 2013
     <br/>
 
     -->
-
+    <div class="large-9 columns">
     <!-- Presidents-->
 
     <ul class="thumbnails">
@@ -176,7 +171,7 @@ Template Name: USAC Elections 2013
 
           <div class="row-fluid">
             <div class="large-3 columns">
-              <img class="presphoto" src="/images/features/usac2013/John Joanino.jpg" alt="">
+              <img class="presphoto" src="//dailybruin.com/images/features/usac2013/John Joanino.jpg" alt="">
             </div>
             <div class="large-9 columns">
               <div class="box">
@@ -199,7 +194,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Avi Oved.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Avi Oved.jpg" alt="">
           <div class="textcentered">
             <h4>Internal Vice President</h4>
             <h5>Avi Oved</h5>
@@ -214,7 +209,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Maryssa Hall.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Maryssa Hall.jpg" alt="">
           <div class="textcentered">
             <h4>External Vice President</h4>
             <h5>Maryssa Hall</h5>
@@ -228,7 +223,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Darren Ramalho.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Darren Ramalho.jpg" alt="">
           <div class="textcentered">
             <h4>Academic Affairs Commissioner</h4>
             <h5>Darren Ramalho</h5>
@@ -242,7 +237,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Jessica Kim.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Jessica Kim.jpg" alt="">
           <div class="textcentered">
             <h4>Campus Events Commissioner</h4>
             <h5>Jessica Kim</h5>
@@ -260,7 +255,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Jessica Trumble.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Jessica Trumble.jpg" alt="">
           <div class="textcentered">
             <h4>Cultural Affairs Commissioner</h4>
             <h5>Jessica Trumble</h5>
@@ -274,7 +269,7 @@ Template Name: USAC Elections 2013
 
        <li class="large-3 columns">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Sam Haws.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Sam Haws.jpg" alt="">
           <div class="textcentered">
             <h4>General Representative 1</h4>
             <h5>Sam Haws</h5>
@@ -286,7 +281,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Sunny Singh.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Sunny Singh.jpg" alt="">
           <div class="textcentered">
             <h4>General Representative 2</h4>
             <h5>Sunny Singh</h5>
@@ -298,7 +293,7 @@ Template Name: USAC Elections 2013
      
       <li class="large-3 columns">
         <div class="thumbnail letsact">
-          <img class="candphoto" src="/images/features/usac2013/Lizzy Naameh.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Lizzy Naameh.jpg" alt="">
           <div class="textcentered">
             <h4>General Representative 3</h4>
             <h5>Lizzy Naameh</h5>
@@ -315,7 +310,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Omar Arce.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Omar Arce.jpg" alt="">
           <div class="textcentered">
             <h4>Community Service Commissioner</h4>
             <h5>Omar Arce</h5>
@@ -329,7 +324,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Armen Hadjimanoukian.jpg" alt="">
           <div class="textcentered">
             <h4>Facilities Commissioner</h4>
             <h5>Armen Hadjimanoukian</h5>
@@ -343,7 +338,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail bunited">
-          <img class="candphoto" src="/images/features/usac2013/Lauren Rogers.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Lauren Rogers.jpg" alt="">
           <div class="textcentered">
             <h4>Financial Supports Commissioner</h4>
             <h5>Lauren Rogers</h5>
@@ -357,7 +352,7 @@ Template Name: USAC Elections 2013
 
       <li class="large-3 columns">
         <div class="thumbnail indep">
-          <img class="candphoto" src="/images/features/usac2013/Savannah Dianne Badalich.jpg" alt="">
+          <img class="candphoto" src="//dailybruin.com/images/features/usac2013/Savannah Dianne Badalich.jpg" alt="">
           <div class="textcentered">
             <h4>Student Wellness Commissioner</h4>
             <h5>Savannah Dianne Badalich</h5>
@@ -617,5 +612,6 @@ Template Name: USAC Elections 2013
 
 </div><!--/container-->
 
+</div>
 
 <?php get_footer(); ?>
