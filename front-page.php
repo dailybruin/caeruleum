@@ -28,7 +28,7 @@
               </p>
             </div>
             <span class="db-section-date">
-              <h4><?php the_category_text(get_the_category()); ?></h4> 
+              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
               <h4>|</h4> 
               <h5><?php the_time('F j, g:i a');?> </h5>
             </span>
@@ -53,7 +53,7 @@
             </div>
             <div class="small-7 columns">
               <span class="db-section-date">
-	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
               </span>
@@ -77,7 +77,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-a">
                 <span class="db-section-date">
-	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -98,7 +98,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-b">
                 <span class="db-section-date">
-	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -119,7 +119,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-d">
                 <span class="db-section-date">
-	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -135,7 +135,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-e">
                 <span class="db-section-date">
-	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -152,7 +152,7 @@
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-e">
                 <span class="db-section-date">
-	              <h4><?php the_category_text(get_the_category()); ?></h4> 
+	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
 	              <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
@@ -178,7 +178,7 @@
 				if(++$i > 4) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
-                    <h4><?php the_category_text(get_the_category()); ?></h4> 
+                    <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              	<h4>|</h4> 
 	              	<h5><?php the_time('F j, g:i a');?> </h5>
                   </span>

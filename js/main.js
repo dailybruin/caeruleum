@@ -2,6 +2,7 @@
 	Byron Lutz
 	With additions by: Neil Bedi :D
 */
+
 /***** STICK HEADER ON SCROLL *****/
 $(function(){
     // Check the initial Poistion of the Sticky Header

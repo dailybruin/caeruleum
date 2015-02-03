@@ -63,8 +63,7 @@
 <!-- MULTIMEDIA CATEGORY STORY LIST -->
 <?php else: ?>
   <div class="row">
-    <?php $storycount = 0?>
-    <?php $j=0; while (have_posts()&& $j < 6) : the_post(); ?>
+    <?php $i=0; while (have_posts()) : the_post(); ?>
       <div class="small-4 columns">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
@@ -96,7 +95,7 @@
           <div class="row">
         <?php endif; ?>
       <!-- <hr> -->
-    <?php $j++; endwhile; /* End loop */ ?>
+    <?php endwhile; /* End loop */ ?>
   </div>
 <?php endif; ?>
 
@@ -108,13 +107,14 @@ if ($total_pages > 1) {
   $current_page = max(1, get_query_var('paged'));  ?>
 <div class="pagination-centered"> 
   <?php echo paginate_links(array(
+      'posts_per_page' => 6,
       'base' => get_pagenum_link(1) . '%_%',  
       'format' => '/page/%#%',  
       'current' => $current_page,  
       'total' => $total_pages,  
-      'prev_text' => '&larr; Prev',  
-      'next_text' => 'Next &rarr;'  
-    ));  ?>
+      'prev_text' => 'Prev',  
+      'next_text' => 'Next'  
+    )); ?>
   </div><!-- end div.pager -->
 <?php
 } 

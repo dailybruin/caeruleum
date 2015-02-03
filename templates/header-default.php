@@ -60,10 +60,10 @@
         </aside>
 
 	</div>
-		    <div id="search" class="reveal-modal" data-reveal>
-		    	<label>Powered by Google Custom Search:</label>
-			  <gcse:search></gcse:search>
-			</div>
+    <div id="search" class="reveal-modal" data-reveal>
+    	<label>Powered by Google Custom Search:</label>
+	  <gcse:search></gcse:search>
+	</div>
     <div id="stickyalias">
 	      <nav class="tab-bar">
 	        <section class="left-small">
