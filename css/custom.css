@@ -302,9 +302,8 @@ top: 0rem !important;
 }
 
 #stickyalias .search-icon{
-	height: 4rem !important;
-	color: black !important;
-	line-height: 3.8rem !important;
+	position: relative;
+	top: -0.7rem;
 }
 
 #stickyalias .search-icon i {
