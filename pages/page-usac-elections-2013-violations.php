@@ -32,9 +32,9 @@ Template Name: USAC Elections Campaign Violations 2013
 <div class='usac-2013'>
     <dl class="sub-nav">
       <dt>USAC Elections 2013</dt>
-        <dd class="active"><a href="/">Home</a></dd>
+        <dd><a href="/">Home</a></dd>
           <dd><a href="/usac-elections-2013/candidates">Candidates</a></dd>
-          <dd><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></dd>
+          <dd class="active"><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></dd>
           <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
     </dl>
   </br>

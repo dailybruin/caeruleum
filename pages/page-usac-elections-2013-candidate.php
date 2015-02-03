@@ -78,36 +78,37 @@ Template Name: USAC Elections Candidate 2013
 
 div #preload { display: none; }
 
+.usac-2013 {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 </style>
 
+<div class='usac-2013'>
 <div id="usac page candidates">
 
 <div class='container'>
 
 
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="brand" href="#">USAC Elections 2013</a>
-            <ul class="nav">
-              <li><a href="/usac-elections-2013/">Home</a></li>
-              <li class="active"><a href="#">Candidates</a></li>
-              <li><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+    <dl class="sub-nav">
+      <dt>USAC Elections 2013</dt>
+        <dd><a href="/">Home</a></dd>
+          <dd class="active"><a href="/usac-elections-2013/candidates">Candidates</a></dd>
+          <dd><a href="/usac-elections-2013/campaign-violations">Campaign Violations</a></dd>
+          <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
+    </dl>
 
-    <div id='content' class='row-fluid navigation'>
+    <div id='content' class='row navigation'>
 
       <div class='large-9 columns'>
 
-        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='/images/features/usac2013/bannercic.jpg'/></a>
+        <a title='USAC Elections' href='/usac-elections-2013/'><img id='banner' src='//dailybruin.com/images/features/usac2013/bannercic.jpg'/></a>
 
         <!--<h1> USAC Elections 2013: Candidates </h1>-->
 
-        <div class="thumbnail">
+        <div class="panel">
           <p style="text-align:center"><b>This year, 23 candidates are running for the 13 elected USAC positions. Nine positions are contested. Three slates, groups of students who pool their resources together and run on similar platforms, are running candidates in the spring elections. Two new slates emerged for this year's elections: Bruin Alliance and LET'S ACT!. Bruin Alliance is running two candidates and LET'S ACT! is running 10. Bruins United is running eight candidates.</b></p>
         </div>
         
@@ -116,27 +117,28 @@ div #preload { display: none; }
           <h4>Sort by: </h4>
         </div>
 
-        <div class="btn-group">
-          <button id="Office" class="btn-large btn-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
-          <button id="Slate" class="btn-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
+        <div class="button-group">
+          <button id="Office" class="button-large button-success" onclick='setDisplay(SORTYPE.OFFICE);'>Office</button>
+          <button id="Slate" class="button-large" onclick='setDisplay(SORTYPE.SLATE);'>Slate</button>
         </div>
 
         <div>
-          <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
+          <!-- Foundation according having issues... -->
+          <!-- <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4> -->
         </div> 
 
        
       </div>
 
-      <div class="span3">
+      <div class="large-3 columns">
         <?php get_template_part('ad','side'); ?>
       </div>
 
     </div>
 
-    <div id='content' class='row-fluid'>
+    <div id='content' class='row'>
 
-      <div class='span12' id='display'>
+      <div class='large-12 columns' id='display'>
 
       <!-- Candidate Display Generated Through Script -->
 
@@ -150,33 +152,34 @@ div #preload { display: none; }
 	
 <div id='preload'>
 
-  <img src="/images/features/usac2013/Taylor Bazley.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/John Joanino.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Carly Yoshida.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Lana Habib El-Farra.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Avi Oved.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Maryssa Hall.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Nicole Fossier.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Sunny Singh.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Sam Haws.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Avinoam Baral.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Charmaine Campbell.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Lizzy Naameh.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Devin Murphy.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Darren Ramalho.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Uyen Hoang.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Jessica Kim.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Omar Arce.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Jessica Trumble.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Armen Hadjimanoukian.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Anthony Montalvo.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Lauren Rogers.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Brenda Gutierrez.jpg" width="1" height="1"/>; //Picture name
-  <img src="/images/features/usac2013/Savannah Dianne Badalich.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Taylor Bazley.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/John Joanino.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Carly Yoshida.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Lana Habib El-Farra.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Avi Oved.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Maryssa Hall.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Nicole Fossier.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Sunny Singh.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Sam Haws.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Avinoam Baral.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Charmaine Campbell.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Lizzy Naameh.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Devin Murphy.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Darren Ramalho.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Uyen Hoang.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Jessica Kim.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Omar Arce.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Jessica Trumble.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Armen Hadjimanoukian.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Anthony Montalvo.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Lauren Rogers.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Brenda Gutierrez.jpg" width="1" height="1"/>; //Picture name
+  <img src="//dailybruin.com/images/features/usac2013/Savannah Dianne Badalich.jpg" width="1" height="1"/>; //Picture name
 
 </div>
 
-</div><!-- end div#usac page candidates -->  
+</div>
+</div> <!-- end div#usac page candidates -->  
 
 <script type="text/javascript">
 
@@ -271,7 +274,7 @@ div #preload { display: none; }
     o0.lname = "Bazley"; //Last name
     o0.slate = SLATE.BALLY; //Party affiliation
     o0.office = OFFICE.PRESIDENT; //Office
-    o0.picture = "/images/features/usac2013/Taylor Bazley.jpg"; //Picture name
+    o0.picture = "//dailybruin.com/images/features/usac2013/Taylor Bazley.jpg"; //Picture name
     o0.bio = "Lots of info."; //Candidate bio
     o0.major = "Political Science"; //Candidate Major
     o0.year = "Third"; //Year
@@ -289,7 +292,7 @@ div #preload { display: none; }
     o1.lname = "Joanino"; //Last name
     o1.slate = SLATE.LETSACT; //Party affiliation
     o1.office = OFFICE.PRESIDENT; //Office
-    o1.picture = "/images/features/usac2013/John Joanino.jpg"; //Picture name
+    o1.picture = "//dailybruin.com/images/features/usac2013/John Joanino.jpg"; //Picture name
     o1.bio = "Lots of info."; //Candidate bio
     o1.major = "Sociology"; //Candidate Major
     o1.year = "Third"; //Year
@@ -310,7 +313,7 @@ div #preload { display: none; }
     o2.lname = "Yoshida"; //Last name
     o2.slate = SLATE.BUNITED; //Party affiliation
     o2.office = OFFICE.PRESIDENT; //Office
-    o2.picture = "/images/features/usac2013/Carly Yoshida.jpg"; //Picture name
+    o2.picture = "//dailybruin.com/images/features/usac2013/Carly Yoshida.jpg"; //Picture name
     o2.bio = "Lots of info."; //Candidate bio
     o2.major = "English"; //Candidate Major
     o2.year = "Third"; //Year
@@ -327,7 +330,7 @@ div #preload { display: none; }
     o3.lname = "Habib El-Farra"; //Last name
     o3.slate = SLATE.LETSACT; //Party affiliation
     o3.office = OFFICE.INTERNALVP; //Office
-    o3.picture = "/images/features/usac2013/Lana Habib El-Farra.jpg"; //Picture name
+    o3.picture = "//dailybruin.com/images/features/usac2013/Lana Habib El-Farra.jpg"; //Picture name
     o3.bio = "Lots of info."; //Candidate bio
     o3.major = "Political Science"; //Candidate Major
     o3.year = "Third"; //Year
@@ -346,7 +349,7 @@ div #preload { display: none; }
     o4.lname = "Oved"; //Last name
     o4.slate = SLATE.BUNITED; //Party affiliation
     o4.office = OFFICE.INTERNALVP; //Office
-    o4.picture = "/images/features/usac2013/Avi Oved.jpg"; //Picture name
+    o4.picture = "//dailybruin.com/images/features/usac2013/Avi Oved.jpg"; //Picture name
     o4.bio = "Lots of info."; //Candidate bio
     o4.major = "Economics"; //Candidate Major
     o4.year = "Second"; //Year
@@ -365,7 +368,7 @@ div #preload { display: none; }
     o5.lname = "Hall"; //Last name
     o5.slate = SLATE.LETSACT; //Party affiliation
     o5.office = OFFICE.EXTERNALVP; //Office
-    o5.picture = "/images/features/usac2013/Maryssa Hall.jpg"; //Picture name
+    o5.picture = "//dailybruin.com/images/features/usac2013/Maryssa Hall.jpg"; //Picture name
     o5.bio = "Lots of info."; //Candidate bio
     o5.major = "Political Science and"; //Candidate Major
     o5.major2 = "Afro-American Studies"
@@ -385,7 +388,7 @@ div #preload { display: none; }
     o6.lname = "Fossier"; //Last name
     o6.slate = SLATE.BALLY; //Party affiliation
     o6.office = OFFICE.EXTERNALVP; //Office
-    o6.picture = "/images/features/usac2013/Nicole Fossier.jpg"; //Picture name
+    o6.picture = "//dailybruin.com/images/features/usac2013/Nicole Fossier.jpg"; //Picture name
     o6.bio = "Lots of info."; //Candidate bio
     o6.major = "Political Science and"; //Candidate Major
     o6.major2 = "Psychology";
@@ -406,7 +409,7 @@ div #preload { display: none; }
     o7.lname = "Singh"; //Last name
     o7.slate = SLATE.BUNITED; //Party affiliation
     o7.office = OFFICE.GENERALREP; //Office
-    o7.picture = "/images/features/usac2013/Sunny Singh.jpg"; //Picture name
+    o7.picture = "//dailybruin.com/images/features/usac2013/Sunny Singh.jpg"; //Picture name
     o7.bio = "Lots of info."; //Candidate bio
     o7.major = "History and"; //Candidate Major
     o7.major2 = "Economics";
@@ -425,7 +428,7 @@ div #preload { display: none; }
     o8.lname = "Haws"; //Last name
     o8.slate = SLATE.BUNITED; //Party affiliation
     o8.office = OFFICE.GENERALREP; //Office
-    o8.picture = "/images/features/usac2013/Sam Haws.jpg"; //Picture name
+    o8.picture = "//dailybruin.com/images/features/usac2013/Sam Haws.jpg"; //Picture name
     o8.bio = "Lots of info."; //Candidate bio
     o8.major = "Political Science"; //Candidate Major
     o8.major2 = "and Economics";
@@ -444,7 +447,7 @@ div #preload { display: none; }
     o9.lname = "Baral"; //Last name
     o9.slate = SLATE.BUNITED; //Party affiliation
     o9.office = OFFICE.GENERALREP; //Office
-    o9.picture = "/images/features/usac2013/Avinoam Baral.jpg"; //Picture name
+    o9.picture = "//dailybruin.com/images/features/usac2013/Avinoam Baral.jpg"; //Picture name
     o9.bio = "Lots of info."; //Candidate bio
     o9.major = "Human Biology and"; //Candidate Major
     o9.major2 = "Society";
@@ -462,7 +465,7 @@ div #preload { display: none; }
     o10.lname = "Campbell"; //Last name
     o10.slate = SLATE.LETSACT; //Party affiliation
     o10.office = OFFICE.GENERALREP; //Office
-    o10.picture = "/images/features/usac2013/Charmaine Campbell.jpg"; //Picture name
+    o10.picture = "//dailybruin.com/images/features/usac2013/Charmaine Campbell.jpg"; //Picture name
     o10.bio = "Lots of info."; //Candidate bio
     o10.major = "Sociology"; //Candidate Major
     o10.year = "Third"; //Year
@@ -479,7 +482,7 @@ div #preload { display: none; }
     o11.lname = "Naameh"; //Last name
     o11.slate = SLATE.LETSACT; //Party affiliation
     o11.office = OFFICE.GENERALREP; //Office
-    o11.picture = "/images/features/usac2013/Lizzy Naameh.jpg"; //Picture name
+    o11.picture = "//dailybruin.com/images/features/usac2013/Lizzy Naameh.jpg"; //Picture name
     o11.bio = "Lots of info."; //Candidate bio
     o11.major = "International Development Studies"; //Candidate Major
     o11.year = "Third"; //Year
@@ -498,7 +501,7 @@ div #preload { display: none; }
     o12.lname = "Murphy"; //Last name
     o12.slate = SLATE.LETSACT; //Party affiliation
     o12.office = OFFICE.GENERALREP; //Office
-    o12.picture = "/images/features/usac2013/Devin Murphy.jpg"; //Picture name
+    o12.picture = "//dailybruin.com/images/features/usac2013/Devin Murphy.jpg"; //Picture name
     o12.bio = "Lots of info."; //Candidate bio
     o12.major = "Political Science"; //Candidate Major
     o12.year = "Second"; //Year
@@ -516,7 +519,7 @@ div #preload { display: none; }
     o13.lname = "Ramalho"; //Last name
     o13.slate = SLATE.BUNITED; //Party affiliation
     o13.office = OFFICE.ACAAFFAIRS; //Office
-    o13.picture = "/images/features/usac2013/Darren Ramalho.jpg"; //Picture name
+    o13.picture = "//dailybruin.com/images/features/usac2013/Darren Ramalho.jpg"; //Picture name
     o13.bio = "Lots of info."; //Candidate bio
     o13.major = "Political Science"; //Candidate Major
     o13.major2 = "and English";
@@ -536,7 +539,7 @@ div #preload { display: none; }
     o14.lname = "Hoang"; //Last name
     o14.slate = SLATE.LETSACT; //Party affiliation
     o14.office = OFFICE.ACAAFFAIRS; //Office
-    o14.picture = "/images/features/usac2013/Uyen Hoang.jpg"; //Picture name
+    o14.picture = "//dailybruin.com/images/features/usac2013/Uyen Hoang.jpg"; //Picture name
     o14.bio = "Lots of info."; //Candidate bio
     o14.major = "International Development Studies"; //Candidate Major
     o14.year = "Third"; //Year
@@ -554,7 +557,7 @@ div #preload { display: none; }
     o15.lname = "Kim"; //Last name
     o15.slate = SLATE.INDEPENDENT; //Party affiliation
     o15.office = OFFICE.CAMPUSEVENTS; //Office
-    o15.picture = "/images/features/usac2013/Jessica Kim.jpg"; //Picture name
+    o15.picture = "//dailybruin.com/images/features/usac2013/Jessica Kim.jpg"; //Picture name
     o15.bio = "Lots of info."; //Candidate bio
     o15.major = "Anthropology"; //Candidate Major
     o15.year = "Third"; //Year
@@ -573,7 +576,7 @@ div #preload { display: none; }
     o16.lname = "Arce"; //Last name
     o16.slate = SLATE.INDEPENDENT; //Party affiliation
     o16.office = OFFICE.COMMSERV; //Office
-    o16.picture = "/images/features/usac2013/Omar Arce.jpg"; //Picture name
+    o16.picture = "//dailybruin.com/images/features/usac2013/Omar Arce.jpg"; //Picture name
     o16.bio = "Lots of info."; //Candidate bio
     o16.major = "International Development Studies"; //Candidate Major
     o16.year = "Third"; //Year
@@ -591,7 +594,7 @@ div #preload { display: none; }
     o17.lname = "Trumble"; //Last name
     o17.slate = SLATE.LETSACT; //Party affiliation
     o17.office = OFFICE.CULTURAL; //Office
-    o17.picture = "/images/features/usac2013/Jessica Trumble.jpg"; //Picture name
+    o17.picture = "//dailybruin.com/images/features/usac2013/Jessica Trumble.jpg"; //Picture name
     o17.bio = "Lots of info."; //Candidate bio
     o17.major = "English"; //Candidate Major
     o17.year = "Third"; //Year
@@ -610,7 +613,7 @@ div #preload { display: none; }
     o18.lname = "Hadjimanoukian"; //Last name
     o18.slate = SLATE.BUNITED; //Party affiliation
     o18.office = OFFICE.FACILITIES; //Office
-    o18.picture = "/images/features/usac2013/Armen Hadjimanoukian.jpg"; //Picture name
+    o18.picture = "//dailybruin.com/images/features/usac2013/Armen Hadjimanoukian.jpg"; //Picture name
     o18.bio = "Lots of info."; //Candidate bio
     o18.major = "Economics and"; //Candidate Major
     o18.major2= "International Development Studies";
@@ -629,7 +632,7 @@ div #preload { display: none; }
     o19.lname = "Montalvo"; //Last name
     o19.slate = SLATE.LETSACT; //Party affiliation
     o19.office = OFFICE.FACILITIES; //Office
-    o19.picture = "/images/features/usac2013/Anthony Montalvo.jpg"; //Picture name
+    o19.picture = "//dailybruin.com/images/features/usac2013/Anthony Montalvo.jpg"; //Picture name
     o19.bio = "Lots of info."; //Candidate bio
     o19.major = "English"; //Candidate Major
     o19.year = "Third"; //Year
@@ -647,7 +650,7 @@ div #preload { display: none; }
     o20.lname = "Rogers"; //Last name
     o20.slate = SLATE.BUNITED; //Party affiliation
     o20.office = OFFICE.FINANCIALSUPPORT; //Office
-    o20.picture = "/images/features/usac2013/Lauren Rogers.jpg"; //Picture name
+    o20.picture = "//dailybruin.com/images/features/usac2013/Lauren Rogers.jpg"; //Picture name
     o20.bio = "Lots of info."; //Candidate bio
     o20.major = "Psychology and"; //Candidate Major
     o20.major2 = "Communication Studies";
@@ -666,7 +669,7 @@ div #preload { display: none; }
     o21.lname = "Gutierrez"; //Last name
     o21.slate = SLATE.LETSACT; //Party affiliation
     o21.office = OFFICE.FINANCIALSUPPORT; //Office
-    o21.picture = "/images/features/usac2013/Brenda Gutierrez.jpg"; //Picture name
+    o21.picture = "//dailybruin.com/images/features/usac2013/Brenda Gutierrez.jpg"; //Picture name
     o21.bio = "Lots of info."; //Candidate bio
     o21.major = "Sociology and"; //Candidate Major
     o21.major2 = "English";
@@ -685,7 +688,7 @@ div #preload { display: none; }
     o22.lname = "Dianne Badalich"; //Last name
     o22.slate = SLATE.INDEPENDENT; //Party affiliation
     o22.office = OFFICE.STUDENTWELLNESS; //Office
-    o22.picture = "/images/features/usac2013/Savannah Dianne Badalich.jpg"; //Picture name
+    o22.picture = "//dailybruin.com/images/features/usac2013/Savannah Dianne Badalich.jpg"; //Picture name
     o22.bio = "Lots of info."; //Candidate bio
     o22.major = "Global Studies"; //Candidate Major
     o22.year = "Second"; //Year
@@ -762,19 +765,16 @@ function randArray(myArray)
 
     var href = "collapse" + c;
 
-    var header = "<h3 class='headers'>" + getString(x) + "</h3>";
+    var header = "<h1 class='headers'>" + getString(x) + "</h1>";
 
     var string = "";
 
-    string += "<div class='accordion' id='" + id + "'>";
-    string +=   "<div class='accordion-group'>";
-    string +=   "<div class='accordion-heading'>";
-    string +=     "<a class='accordion-toggle' data-toggle='collapse' data-parent='#" + id + "' href='#" + href + "'>";
+    string += "<ul class='accordion' id='" + id + "' data-accordion='accordian-group'>";
+    string +=   "<li class='accordion-navigation'>";
+    // string +=     "<a href='#" + href + "'>";
     string +=     header;
-    string +=     "</a>";
-    string +=   "</div>";
-    string +=   "<div id='" + href + "' class='accordion-body collapse out'>";
-    string +=   "<div class='accordion-inner'>";
+    // string +=     "</a>";
+    string +=   "<div id='" + href + "' class='content active'>";
 
     return string;
   }
@@ -803,33 +803,33 @@ function randArray(myArray)
     else  
       string += "<div class='row candidate'>";
 
-      string +=   "<div class='offset1 span2'>";
+      string +=   "<div class='large-2 columns'>";
 
       string +=     "<img class='candimg' src='" + o.picture + "' style='border-color:#0011FF;'/>";
       string +=   "</div>";
 
-      string +=   "<div class='span3'>";
+      string +=   "<div class='large-3 columns'>";
 
     if (o.winner)
-      string +=     "<h3 style='font-style:italic;'>" + o.fname + " " + o.lname + "</h3>";
+      string +=     "<h2 style='font-style:italic;'>" + o.fname + " " + o.lname + "</h2>";
     else
-      string +=     "<h3 style='font-style:italic; margin-bottom:30px;'>" + o.fname + " " + o.lname + "</h3>";
+      string +=     "<h2 style='font-style:italic; margin-bottom:30px;'>" + o.fname + " " + o.lname + "</h2>";
 
     
 
     if (outersort == SORTYPE.OFFICE)
-      string +=     "<h4 class='spacer'><u>Slate:</u> " + getString(o.slate) + "</h4>";
+      string +=     "<h3><u>Slate:</u> " + getString(o.slate) + "</h3>";
     else
-      string +=     "<h4 class='spacer'><u>Office:</u> " + getString(o.office) + "</h4>";
+      string +=     "<h3><u>Office:</u> " + getString(o.office) + "</h3>";
 
-    string +=     "<h4 class='spacer'><u>Major:</u> " + o.major + "</h4>";
+    string +=     "<h3><u>Major:</u> " + o.major + "</h3>";
     if (o.major2 != undefined)
-      string +=     "<h4 class='spacer'>" + o.major2 + "</h4>";
-      string +=     "<h4 class='spacer'><u>Year:</u> " + o.year + "</h4>";
+      string +=     "<h3>" + o.major2 + "</h3>";
+      string +=     "<h3><u>Year:</u> " + o.year + "</h3>";
 
       string += "</div>";
 
-      string +=  "<div class='span6'>";
+      string +=  "<div class='large-6 columns'>";
 
       if (o.winner)
         string +=     "<h3 style='font-style:bold; color: #0327AF;'><u>ELECTED</u></h3>";
@@ -866,7 +866,6 @@ function randArray(myArray)
       //string +=       o.bio; 
       //string +=     "</div></div></div></div></div></div>";
       string +=     "</div></div>";
-
     return string;
   }
 
@@ -903,7 +902,7 @@ function randArray(myArray)
     var counter = 0;
     var collector = "";
     var inCollector = "";
-    var headerclose = "</div></div></div></div>";
+    var headerclose = "</div></div></li></ul>";
 
     if (outersort == SORTYPE.OFFICE)
     {
