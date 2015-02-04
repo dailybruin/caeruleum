@@ -2,7 +2,7 @@
 <div class="row db-story">
     <div class="large-8 columns db-story-post">
         <div class="page-header">
-          <h1>
+          <h2>
             <?php
               $sectionPage = false;
               $mainSection = false;
@@ -47,40 +47,6 @@
                 	default:
                 		echo $categoryTitle;
                 }
-                switch ($categoryTitle)
-                {
-                  case "News":
-                    $sectionTag = "db-story-ns";
-                    $mainSection = true;
-                    break;
-                  case "Sports":
-                    $sectionTag = "db-story-sp";
-                    $mainSection = true;
-                    break;
-                  case "Opinion":
-                    $sectionTag = "db-story-op";
-                    $mainSection = true;
-                    break;
-                  case "A&amp;E":
-                    $sectionTag = "db-story-ae";
-                    $mainSection = true;
-                    break;
-                  default:
-                    break;
-                }
-                switch ($categoryTitle)
-                {
-                  case "Video":
-                    $sectionTag = "db-story-m2";
-                    $multSection = true;
-                    break;
-                  case "Radio":
-                    $sectionTag = "db-story-m3";
-                    $multSection = true;
-                    break;
-                  default:
-                    break;
-                }
                 // Separate case for sports as its name is the same as several other categories
                 $cat = get_category(get_query_var('cat'));
                 if ($cat->slug == 'sports-two-cents')
@@ -101,9 +67,15 @@
 				);
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
-					<dl class="sub-nav">
-					<?php wp_list_categories($cat_args); ?>
-					</dl>
+        <?php if(count($categories)>8): ?>
+        <div class="db-sub-list-col">
+        <?php else: ?>
+        <div class="db-sub-list">
+        <?php endif; ?>
+					<ul>
+          <?php wp_list_categories($cat_args); ?>
+          </ul>
+        </div>
 				<?php endif;
 			endif; ?>
           
@@ -118,98 +90,12 @@
 			<?php endif; ?>   
           <?php endif; ?>
 
-<!-- Main writing section centerpiece -->
-    <?php
-          if($mainSection): ?>
-          <h1>Featured Posts:</h1>
-<?php $firstArticle = true; ?>
-<?php
-        $args = array( 'tag' => $sectionTag );
-        $i=0;
-        $lastposts = get_posts( $args );
-        foreach( $lastposts as $post ) :  setup_postdata($post); 
-        if(++$i > 3) break;?>
-
-    <?php if ($firstArticle): ?>
-      <div class="db-story-m medium-8 columns">
-        <div class="db-story-m1">
-
-          <div class="db-image">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
-                <p class="db-image-caption"><?php the_post_thumbnail_caption() ?>
-                      </p>
-          </div>
-          <span class="db-section-date">
-            <h4><?php the_category(', ');?></h4> 
-            <h4>|</h4> 
-            <h5><?php the_time('F j, g:i a');?> </h5>
-          </span>
-          <h2>
-            <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-          </h2>
-          <p>
-            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
-          </p>
-        </div>
-      </div>
-      <?php $firstArticle = false; ?>
-    <?php else :?>
-      <div class="db-story-m medium-4 columns">
-        <div class="row">
-          <div class="db-story-m2 medium-12 small-6 columns">
-            <div class="db-image">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-rotator'); ?></a>
-            </div>
-            <span class="db-section-date">
-              <h4><?php the_category(', ');?></h4> 
-              <h4>|</h4> 
-              <h5><?php the_time('F j, g:i a');?> </h5>
-            </span>
-            <h3>
-              <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-            </h3>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
-
-<?php endforeach; ?>
-<?php endif; ?>
-
-<!-- Multimedia section centerpiece -->
-<?php if($multSection): ?>
-<?php
-        $args = array( 'tag' => $sectionTag );
-        $i=0;
-        $lastposts = get_posts( $args );
-        foreach( $lastposts as $post ) :  setup_postdata($post); 
-        if(++$i > 1) break;?>
-      <div class="db-story-m medium-10 columns">
-      <h1>
-        Featured Post:&nbsp;
-        <a href="<?php the_permalink(); ?>"> <?php the_headline(); ?></a>
-      </h1>
-        <div class="db-story-m1">
-          <span class="db-section-date">
-            <h4><?php the_category(', ');?></h4> 
-            <h4>|</h4> 
-            <h5><?php the_time('F j, g:i a');?> </h5>
-          </span>
-            <?php the_content(); ?>
-        </div>
-      </div>
-      <?php $firstArticle = false; ?>
-<?php endforeach; ?>
-<?php endif; ?>
-
-
+          <hr>
         </div><!-- end div.page-header -->
         <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
-      
-      
-      
-<?php get_template_part('sidebar'); ?>      
-      
+
+<?php get_template_part('sidebar'); ?>  
+
     </div><!-- end div#archive-content -->
 <?php get_footer(); ?>

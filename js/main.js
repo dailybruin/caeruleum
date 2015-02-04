@@ -3,6 +3,11 @@
 	With additions by: Neil Bedi :D
 */
 
+$(function(){
+  $("#search").on("opened", function(){
+  	$("#gsc-i-id1").focus();
+  });
+});
 
 /***** STICK HEADER ON SCROLL *****/
 $(function(){

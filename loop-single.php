@@ -81,15 +81,16 @@
 			<h2 class="subhead"><?php echo $subhead[0]; ?></h2>
 		<?php endif; ?>
 		<div class="row">
-			<div class="small-8 columns">
+			<div class="small-7 columns">
 				<h4> <?php the_byline(); ?> </h4>
 				<?php if (get_field('db_article_format') != 'brief'): ?>
-					<h4> | </h4>
+					</br>
 				<?php endif; ?>
+				<h5> Posted: </h5>
 				<h5> <?php the_time('F j, Y'); ?></h5>
 				<h5> <?php the_time('g:i a'); ?></h5>
 			</div>
-			<div class="small-4 columns text-right">
+			<div class="small-5 columns text-right">
 				<h4><?php the_category(", "); ?></h4>
 				<br style="clear:both" />
 			</div>

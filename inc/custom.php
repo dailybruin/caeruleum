@@ -2,6 +2,14 @@
 
 // Custom functions
 
+//
+// youtube embeds should FLEXXXX
+add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
+function my_embed_oembed_html($html, $url, $attr, $post_id) {
+  return '<div class="flex-video">' . $html . '</div>';
+}
+
+//featured photo caption stuff
 
 	function has_post_thumbnail_caption() {
 	  global $post;
@@ -98,7 +106,7 @@ add_filter( 'post_link' , 'db_link_stories');
 
 function the_blog_banner($blog_name)
 {
-	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";
+	echo "<div class='text-center'><a href='".get_category_link(get_category_by_slug($blog_name))."'><img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' /></a></div>";
 }
 
 
@@ -233,6 +241,16 @@ function the_category_text($category_array) {
 	foreach($category_array as $category) {
 		if($category->parent == 0) {
 			echo $category->cat_name;
+			return;
+		}
+	}
+	echo trim(get_category_parents($category_array[0]->term_id, false, ', '),', ');
+}
+
+function the_category_link($category_array) {
+	foreach($category_array as $category) {
+		if($category->parent == 0) {
+			echo get_category_link(get_cat_ID($category->cat_name));
 			return;
 		}
 	}
