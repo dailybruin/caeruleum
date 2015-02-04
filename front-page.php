@@ -228,7 +228,7 @@
 
 		<div class="db-story-m large-9 medium-12 columns show-for-small">
          <span>
-         	<div class="left">
+         	<div class="left" style="margin-bottom:10px">
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
             </div>
             <div class="right hide-for-small" style="line-height:3rem">
@@ -238,20 +238,20 @@
             </div>
          </span>
          	<?php
-			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
+			$args = array( 'numberposts' => 2, 'tag' => 'db-story-m1' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-ns row">
-              	<div class="text-center">
+              	<div class="text-center" style="margin-top:20px;">
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	              </br>
-	              <h4>
-                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
 	            </div>
+	            <h3 class="text-center">
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                 </h3>
                 <!-- <div class="small-6 columns"> -->
-
               </div>
+              <hr>
             <?php endforeach; ?>
 		</div>
 
