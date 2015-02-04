@@ -66,12 +66,10 @@
         break;
       case "Spotlight":
         $section_cat = $ae_cat;
-        $first_side = array( 'numberposts' => 2, 'cat' => $spotlight_cat);
-        $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('ae-columns')->term_id  );
-        $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('music')->term_id  );
-        $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('film-tv')->term_id  );
-        $side_names = array("In the Spotlight", "From the Columnists", "Latest in Music", "Latest in Film/TV");
-        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        $first_side = array( 'numberposts' => 2, 'category__and' => array($spotlight_cat, get_category_by_slug('music')->term_id) );
+        $second_side = array( 'numberposts' => 2, 'category__and' => array($spotlight_cat, get_category_by_slug('film-tv')->term_id) );
+        $side_names = array("Spotlight on Music", "Spotlight on Film/TV");
+        $side_args = array($first_side,$second_side);
         break;
       default:
         $sectionTag = "";
@@ -110,14 +108,14 @@
       foreach( $lastposts as $post ) :  setup_postdata($post); ?>
       <div class="db-story-c1">
         <span class="db-section-date">
-          <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
+          <h4><?php the_category(', ');?></h4> 
           <h4>|</h4> 
           <h5><?php the_time('F j, g:i a');?> </h5>
         </span>
         <h2>
           <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
         </h2>
-        <div class="db-image text-center">
+        <div class="db-image db-section-cp text-center">
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-category-full'); ?></a>
           <p class="db-image-caption text-left">
             <?php the_post_thumbnail_caption() ?>
@@ -194,9 +192,6 @@
       <div class="row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
-            <div class="small-4 columns">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
-            </div>
             <div class="small-8 columns" style="padding-left:0">
           <?php endif; ?>
           
@@ -214,8 +209,14 @@
         <?php if(has_post_thumbnail_caption()): ?>
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
+            </div>
+          <?php if(has_post_thumbnail()): ?>
+            </div>
+            <div class="small-4 columns">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+          <?php endif; ?>
         <?php endif; ?>
-        </div>
         </article>
       </div>
       <hr>
@@ -224,6 +225,7 @@
 
 <!-- MULTIMEDIA CATEGORY STORY LIST -->
 <?php else: ?>
+  <? if ($categoryTitle == "Video"): ?>
   <div class="row">
     <?php $i=0; 
           $j=0;
@@ -250,7 +252,7 @@
       <?php endif; ?>
         <div class="small-4 columns">
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <?php if(has_post_thumbnail()): ?>
+            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
                 <div class="row">
                   <a href="<?php the_permalink(); ?>">
                       <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
@@ -268,7 +270,9 @@
                   <?php the_audio(); ?>
                     <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
                 </div>
+            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
               </div>
+            <?php endif; ?>
             </article>
             </div>
           <?php if(++$i > 2): 
@@ -279,6 +283,74 @@
     <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
   </div>
+<? elseif ($categoryTitle == "Radio"): ?>
+  <div class="row">
+    <?php $i=0; 
+          $j=0;
+    while (have_posts()) : the_post(); ?>
+    <?php if ($j==0): ?>
+      <div class="db-story-c1">
+        <span class="db-section-date">
+          <h4><?php the_category(', ');?></h4> 
+          <h4>|</h4> 
+          <h5><?php the_time('F j, g:i a');?> </h5>
+        </span>
+        <h2>
+          <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+        </h2>
+        <div class="db-image db-section-cp text-center">
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-mult-full'); ?></a>
+          <p class="db-image-caption text-left">
+            <?php the_post_thumbnail_caption() ?>
+          </p>
+        </div>
+        <?php the_byline_front(); ?>
+        <?php the_audio(); ?>
+      </br>
+        <p>
+          <?php echo get_the_excerpt();  ?>
+        </p>
+      </div>
+        <hr>
+      <?php ++$j; ?>
+    <?php else: ?>
+      <?php if ($i==0): ?>
+        <div class="row">
+      <?php endif; ?>
+        <div class="small-6 columns">
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
+                <div class="row">
+                  <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
+                  </a>
+                </div>
+                <div class="row" style="padding-left:0">
+            <?php endif; ?>
+                <span class="db-section-date">
+                        <h4><?php the_category(', ');?></h4> 
+                        <h4>|</h4> 
+                        <h5><?php the_time('F j, g:i a');?> </h5>
+                </span>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                <div class="entry-content">
+                  <?php the_audio(); ?>
+                    <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+                </div>
+            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
+              </div>
+            <?php endif; ?>
+            </article>
+            </div>
+          <?php if(++$i > 1): 
+            $i=0;?>
+            </div>
+          <?php endif; ?>
+        <!-- <hr> -->
+    <?php endif; ?>
+    <?php endwhile; /* End loop */ ?>
+  </div>
+  <?php endif; ?>
 <?php endif; ?>
 
 

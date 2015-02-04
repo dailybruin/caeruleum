@@ -23,12 +23,23 @@ h3{
 	font-family: 'Roboto Slab', serif !important;
 }
 
+.page-header h2 {
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+
 .section-left {
 	border-right: lightgrey thin solid;
 }
 
 .db-section-side h2{
 	font-size: 0.9rem;
+}
+
+.db-section-cp img {
+	max-height: 300px;
 }
 
 .db-logo-spectrum {
@@ -584,7 +595,7 @@ a.classifieds-button {
    ========================================================================== */
 .poll-question {
 	font-family:"Helvetica", sans-serif;
-	font-size: 0.8em;
+	font-size: 1em;
 	display: block;
 	margin-bottom: 10px;
 }
@@ -614,12 +625,12 @@ a.classifieds-button {
     display: block;
     text-align: center;
     font-style: italic;
-    font-size: 0.75em;
+    font-size: 1em;
 }
 
 a#poll-past, span.multimedia-more {
     font-family: "Helvetica Neue";
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: normal;
     padding-left: 11px;
 }
@@ -637,7 +648,7 @@ div#poll form {
 }
 
 .wp-polls-form label {
-	font-size: 0.75em;
+	font-size: 1em;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -648,7 +659,6 @@ div#poll form label.radio {
 
 .radio, .checkbox {
 min-height: 20px;
-padding-left: 20px;
 }
 
 /* css3 for coloring each pollbars */

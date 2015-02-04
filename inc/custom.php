@@ -106,7 +106,7 @@ add_filter( 'post_link' , 'db_link_stories');
 
 function the_blog_banner($blog_name)
 {
-	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";
+	echo "<div class='text-center'><a href='".get_category_link(get_category_by_slug($blog_name))."'><img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' /></a></div>";
 }
 
 

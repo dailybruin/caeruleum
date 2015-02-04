@@ -2,7 +2,7 @@
 <div class="row db-story">
     <div class="large-8 columns db-story-post">
         <div class="page-header">
-          <h1>
+          <h2>
             <?php
               $sectionPage = false;
               $mainSection = false;
@@ -67,9 +67,7 @@
 				);
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
-					<dl class="sub-nav">
-					<?php wp_list_categories($cat_args); ?>
-					</dl>
+					
 				<?php endif;
 			endif; ?>
           
@@ -84,7 +82,7 @@
 			<?php endif; ?>   
           <?php endif; ?>
 
-
+          <hr>
         </div><!-- end div.page-header -->
         <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
