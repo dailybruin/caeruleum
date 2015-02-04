@@ -8,7 +8,6 @@
 <?php } ?>
 
 <?php /* Start loop */ ?>
-<div class="row"></div>
 
 <?php 
     $categoryTitle = single_cat_title('',false);
@@ -65,6 +64,15 @@
         $side_names = array("In the Spotlight", "From the Columnists", "Latest in Music", "Latest in Film/TV");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side);
         break;
+      case "Spotlight":
+        $section_cat = $ae_cat;
+        $first_side = array( 'numberposts' => 2, 'cat' => $spotlight_cat);
+        $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('ae-columns')->term_id  );
+        $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('music')->term_id  );
+        $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('film-tv')->term_id  );
+        $side_names = array("In the Spotlight", "From the Columnists", "Latest in Music", "Latest in Film/TV");
+        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        break;
       default:
         $sectionTag = "";
         $first_side = array( 'numberposts' => 3, 'tag' => 'breaking' );
@@ -90,8 +98,9 @@
 <?php 
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
 
-<!-- NORMAL CATEGORY FRONT PAGE -->
+
 <?php if(!$multSection): ?>
+  <!-- NORMAL CATEGORY FRONT PAGE -->
   <?php if($paged == 1): ?>
   <div class="large-8 columns section-left">
     <?php
@@ -220,31 +229,34 @@
           $j=0;
     while (have_posts()) : the_post(); ?>
     <?php if ($j==0): ?>
-      <div class="medium-12 columns">
-      <h1>
-        <a href="<?php the_permalink(); ?>"> <?php the_headline(); ?></a>
-      </h1>
-        <div class="db-story-m1">
-          <span class="db-section-date">
-            <h4><?php the_category(', ');?></h4> 
-            <h4>|</h4> 
-            <h5><?php the_time('F j, g:i a');?> </h5>
-          </span>
-            <?php the_content(); ?>
+        <div class="medium-12 columns">
+        <h1>
+          <a href="<?php the_permalink(); ?>"> <?php the_headline(); ?></a>
+        </h1>
+          <div class="db-story-m1">
+            <span class="db-section-date">
+              <h4><?php the_category(', ');?></h4> 
+              <h4>|</h4> 
+              <h5><?php the_time('F j, g:i a');?> </h5>
+            </span>
+              <?php the_content(); ?>
+          </div>
         </div>
-      </div>
-      <hr>
-    <?php ++$j; ?>
+        <hr>
+      <?php ++$j; ?>
     <?php else: ?>
-      <div class="small-4 columns">
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <?php if(has_post_thumbnail()): ?>
-              <div class="row">
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
-                </a>
-              </div>
-              <div class="row" style="padding-left:0">
+      <?php if ($i==0): ?>
+        <div class="row">
+      <?php endif; ?>
+        <div class="small-4 columns">
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <?php if(has_post_thumbnail()): ?>
+                <div class="row">
+                  <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
+                  </a>
+                </div>
+                <div class="row" style="padding-left:0">
             <?php endif; ?>
                 <span class="db-section-date">
                         <h4><?php the_category(', ');?></h4> 
@@ -252,20 +264,19 @@
                         <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-            <div class="entry-content">
-              <?php the_audio(); ?>
-                <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+                <div class="entry-content">
+                  <?php the_audio(); ?>
+                    <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
+                </div>
+              </div>
+            </article>
             </div>
+          <?php if(++$i > 2): 
+            $i=0;?>
             </div>
-          </article>
-          </div>
-        <?php if(++$i > 2): 
-          $i=0;?>
-          </div>
-          <div class="row">
-        <?php endif; ?>
-      <!-- <hr> -->
-      <?php endif; ?>
+          <?php endif; ?>
+        <!-- <hr> -->
+    <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
   </div>
 <?php endif; ?>

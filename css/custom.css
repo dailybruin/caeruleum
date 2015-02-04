@@ -15,7 +15,12 @@ h2{
 h3 a{
 	color: black !important;
 	font-weight: 400 !important;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif !important;
+}
+
+h3{
+	color: black !important;
+	font-family: 'Roboto Slab', serif !important;
 }
 
 .section-left {
@@ -253,8 +258,11 @@ position: relative !important;
 	color: black !important;
 }
 
-.tab-bar-section.middle {
-top: 0rem !important;
+#stickyheader .tab-bar-section.middle,
+#stickyalias .tab-bar-section.middle {
+	top: 0rem;
+	left: 9rem;
+	right: 9rem;
 }
 
 .db-top-date {

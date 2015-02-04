@@ -160,8 +160,6 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
-            
-
             <?php endforeach; ?>
             </div>
             <div class="large-4 columns db-story-breaking">
