@@ -146,9 +146,6 @@ figure, figure.alignnone {
 
 .db-sum {
 	border-left: thin solid lightgrey;
-	/*TODO FIX THIS HEIGHT THING*/
-	min-height: 560px;
-	/*border-right: thin solid lightgrey;*/
 }
 
 .db-sum img{

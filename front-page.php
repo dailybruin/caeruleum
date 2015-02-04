@@ -244,8 +244,8 @@
 	</div>
     <div class="row db-divide"></div>
 
-	<div class="row db-story">
-            <div class="large-3 medium-6 columns db-sum">
+	<div class="row db-story" data-equalizer>
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
                 <h1><a href="/category/news">&nbsp;News</a></h1>
               </div>
@@ -280,7 +280,7 @@
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns db-sum">
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
                 <h1><a href="/category/news">&nbsp;Opinion</a></h1>
               </div>
@@ -319,7 +319,7 @@
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns db-sum">
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
                 <h1><a href="/category/arts-entertainment">&nbsp;A&amp;E</a></h1>
               </div>
@@ -358,7 +358,7 @@
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns db-sum">
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
                 <h1><a href="/category/sports">&nbsp;Sports</a></h1>
               </div>
