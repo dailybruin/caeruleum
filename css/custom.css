@@ -246,9 +246,12 @@ position: relative !important;
 }
 
 .tab-bar-section.middle {
-left: 7rem !important;
-right: 7rem !important;
 top: 0rem !important;
+}
+
+.db-top-date {
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 .db-top-date p {

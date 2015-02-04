@@ -11,7 +11,7 @@
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span>
-	          	<h1 class="hide-for-medium hide-for-small">MENU</h1>
+	          	<h1 class="hide-for-medium hide-for-small">&nbsp;MENU</h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -23,16 +23,18 @@
 		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
 		          </div>
 	          </a>
-	          <div class="db-top-date text-center hide-for-small">
+
+	        </section>
+	       	<section class="text-right">
+	          <a class="search-icon" href="#" data-reveal-id="search">
+	          	<span class="hide-for-medium hide-for-small">SEARCH&nbsp;</span> <i class="fa fa-search"></i>
+	          </a>
+	        </section>
+	        <div class="db-top-date text-center hide-for-small">
 				<?php date_default_timezone_set('America/Los_Angeles'); ?>
 				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 			</div> 
-	        </section>
-	       	<section class="text-right">
-	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>
-	          	<span class="hide-for-medium hide-for-small">&nbsp;SEARCH</span>
-	          </a>
-	        </section>
+		</br>
 	      </nav>
 
         <aside class="left-off-canvas-menu">
@@ -72,7 +74,7 @@
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span>
-	          	<h1 class="hide-for-small">MENU</h1>
+	          	<h1 class="hide-for-small">&nbsp;MENU</h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -86,8 +88,8 @@
 			     </a>
 	        </section>
 	       	<section class="text-right">
-	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>
-	          	<span class="hide-for-small">&nbsp;SEARCH</span>
+	          <a class="search-icon" href="#" data-reveal-id="search">
+	          	<span class="hide-for-medium hide-for-small">SEARCH&nbsp;</span> <i class="fa fa-search"></i>
 	          </a>
 	        </section>
 	      </nav>

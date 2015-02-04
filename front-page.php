@@ -197,7 +197,7 @@
     </div>
     <div class="row db-divide"></div>
       <div class="row">
-         <div class="db-story-m large-9 medium-12 columns">
+         <div class="db-story-m large-9 medium-12 columns hide-for-small">
          <span>
          	<div class="left">
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
@@ -226,6 +226,35 @@
 			 <?php endforeach; ?>
 			</ul>
 			<hr>
+		</div>
+
+		<div class="db-story-m large-9 medium-12 columns show-for-small">
+         <span>
+         	<div class="left">
+                <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
+            </div>
+            <div class="right hide-for-small" style="line-height:3rem">
+            	<h4 style="margin-left:15px"><a href="/category/video">&nbsp;Video</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/radio">&nbsp;Radio</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/spectrum">&nbsp;Photo</a></h4>
+            </div>
+         </span>
+         	<?php
+			$args = array( 'numberposts' => 1, 'tag' => 'db-story-m1' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div class="db-story-ns row">
+              	<div class="text-center">
+	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+	              </br>
+	              <h4>
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                  </h4>
+	            </div>
+                <!-- <div class="small-6 columns"> -->
+
+              </div>
+            <?php endforeach; ?>
 		</div>
 
         <div class="db-story">
