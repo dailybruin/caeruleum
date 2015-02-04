@@ -100,7 +100,7 @@
 <?php if(!$multSection): ?>
   <!-- NORMAL CATEGORY FRONT PAGE -->
   <?php if($paged == 1): ?>
-  <div class="large-8 columns section-left">
+  <div class="medium-8 columns section-left">
     <?php
       if ($sectionTag != "") :
       $args = array( 'numberposts' => 1, 'tag' => $sectionTag );
@@ -157,7 +157,7 @@
       <hr>
     <?php endwhile; /* End loop */ ?>
     </div>
-    <div class="large-4 columns db-section-side">
+    <div class="medium-4 columns db-section-side hide-for-small">
       
       <?php
       foreach( $side_args as $index => $args ) : ?>
@@ -189,7 +189,7 @@
   <?php else: ?>
   <!-- LIST -->
     <?php while (have_posts()) : the_post(); ?>
-      <div class="row">
+      <div class="db-list row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
             <div class="small-8 columns" style="padding-left:0">
@@ -372,12 +372,7 @@ $total_pages = $wp_query->max_num_pages;
 if ($total_pages > 1) {  
   $current_page = max(1, get_query_var('paged'));  ?>
 
- <?php if($paged == 1): ?>
-<div class="large-8 columns db-pagination pagination-centered"> 
-<?php else: ?>
-  <div class="large-12 columns db-pagination pagination-centered"> 
-  <?php endif; ?>
-  <?php echo paginate_links(array(
+  <?php $pages = paginate_links(array(
       'posts_per_page' => 7,
       'base' => get_pagenum_link(1) . '%_%',  
       'format' => '/page/%#%',  
@@ -386,6 +381,13 @@ if ($total_pages > 1) {
       'prev_text' => '&laquo; Prev',  
       'next_text' => 'Next &raquo;'  
     )); ?>
+
+ <?php if($paged == 1): ?>
+<div class="large-8 columns db-pagination pagination-centered"> 
+<?php else: ?>
+  <div class="large-12 columns db-pagination pagination-centered"> 
+  <?php endif; ?>
+    <?php echo $pages; ?>
   </div><!-- end div.pager -->
 <?php
 } 

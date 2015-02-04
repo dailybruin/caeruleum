@@ -14,8 +14,8 @@
 	$opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
 						
-	<div class="row db-story">
-        <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center">
+	<div class="row db-story" data-equalizer>
+        <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center" data-equalizer-watch>
 		<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
 			$lastposts = get_posts( $args );
@@ -70,7 +70,7 @@
         </div>
 
             <hr class="show-for-small-only">
-        <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side">
+        <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side" data-equalizer-watch>
            	<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
 			$lastposts = get_posts( $args );
@@ -162,7 +162,7 @@
               </div>
             <?php endforeach; ?>
             </div>
-            <div class="large-4 columns db-story-breaking">
+            <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
                 <h1 class="text-center">Breaking</h1>
               </div>
@@ -188,7 +188,7 @@
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-              <div class="db-ad-rectangle hide-for-medium hide-for-small">
+              <div class="db-ad hide-for-medium hide-for-small">
                 <?php get_template_part('ad','side'); ?>
               </div>
             </div>
@@ -258,7 +258,7 @@
         <div class="db-story">
             <div class="large-3 show-for-large-up columns db-classifieds">
            		<div class="db-classifieds-header">
-                	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
+                	<h1>Featured Classifieds</h1>
             	</div>
             	
             	  <ul>
@@ -428,6 +428,9 @@
 		<div class="row db-story">
 		<div class="db-divide"></div>
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
+            	<div class="row text-center">
+            		<img src="http://placehold.it/850x125"/>
+            	</div>
 				<div class="row" id="featuredProject">
 					<div style="padding: 5px 20px;">
 						 <h1>Wake of the Storm</h1>
@@ -440,13 +443,13 @@
 					</div>
 				</div><!-- end div#featuredProject -->
 				<div class="row">
-		            <div class="db-ad-banner hide-for-medium hide-for-small">
+		            <div class="text-center hide-for-medium hide-for-small">
 		                <?php get_template_part('ad','smallbanner'); ?>
 		            </div>
 		        </div>
        		</div>
         	</br>        
-            <div class="db-poll large-4 large-pull-8 columns db-poll">
+            <div class="db-poll large-4 large-pull-8 columns db-poll hide-for-medium">
               <div class="row">
                 <div class="large-12 medium-6 columns">
                   <div>

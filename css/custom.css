@@ -64,6 +64,10 @@ h3{
 	max-height: 200px;
 }
 
+.db-story .db-list img {
+	margin-bottom: 0.625rem;
+}
+
 .db-logo-spectrum {
 	display: none;
 }
@@ -187,6 +191,10 @@ figure, figure.alignnone {
 .db-story-center {
 	border-left: thin solid lightgrey;
 	border-right: thin solid lightgrey;
+}
+
+.db-ad #side-ad {
+	margin-top: 20%;
 }
 
 .db-sum {
@@ -422,7 +430,7 @@ position: relative !important;
 	margin-bottom: 10px;
 }
 #featuredProject p {
-	line-height: 1.7rem;
+	line-height: 1.45rem;
 	font-size: 0.80rem;
 }
 
