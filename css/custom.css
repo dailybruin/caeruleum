@@ -18,6 +18,14 @@ h3 a{
 	font-family: 'Roboto Slab', serif;
 }
 
+.section-left {
+	border-right: lightgrey thin solid;
+}
+
+.db-section-side h2{
+	font-size: 0.9rem;
+}
+
 .db-logo-spectrum {
 	display: none;
 }
