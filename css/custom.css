@@ -399,6 +399,57 @@ position: relative !important;
 }
 
 
+
+#topMenu > li span:before {
+	display: inline-block;
+	font-family: FontAwesome;
+    margin-right: 6px;
+    font-weight: normal;
+    font-size: 0.85rem;
+    width: 16px;
+}
+
+.menu-news span:before {
+	content: "\f1ea";
+}
+
+.menu-opinion span:before {
+	content: "\f059";
+}
+
+.menu-sports span:before {
+	content: "\f1e3";
+}
+
+.menu-ae span:before {
+	content: "\f008";
+}
+
+.menu-photo span:before {
+	content: "\f030";
+}
+
+.menu-radio span:before {
+	content: "\f0a1";
+}
+
+.menu-video span:before {
+	content: "\f03d";
+}
+
+.menu-prime span:before {
+	content: "\f10d";
+}
+
+.menu-mojo span:before {
+	content: "\f1eb";
+}
+
+.menu-classifieds span:before {
+	content: "\f075";
+}
+
+
 /* ===== Special features (default styles) ================================== */
 #featuredProject > div {
 	margin-top:10px;

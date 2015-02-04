@@ -92,10 +92,8 @@
                       break;
                   }
   ?>
-
 <?php 
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
-
 
 <?php if(!$multSection): ?>
   <!-- NORMAL CATEGORY FRONT PAGE -->
@@ -188,6 +186,7 @@
     </div>
   <?php else: ?>
   <!-- LIST -->
+
     <?php while (have_posts()) : the_post(); ?>
       <div class="db-list row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -382,7 +381,7 @@ if ($total_pages > 1) {
       'next_text' => 'Next &raquo;'  
     )); ?>
 
- <?php if($paged == 1): ?>
+ <?php if($paged == 1 && !$multSection ): ?>
 <div class="large-8 columns db-pagination pagination-centered"> 
 <?php else: ?>
   <div class="large-12 columns db-pagination pagination-centered"> 

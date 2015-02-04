@@ -48,7 +48,8 @@
   				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
 							'menu_class' => 'off-canvas-list',
 							'container' => '',
-							'menu_id' => 'topMenu'
+							'menu_id' => 'topMenu',
+							'link_before' => '<span></span>'
 							)); ?>
 			<ul class="off-canvas-list"><li><label>Pages</label></li></ul>
   				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
