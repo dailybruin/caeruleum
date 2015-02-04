@@ -34,6 +34,15 @@ h3{
 	padding-bottom: 0.5rem;
 }
 
+.db-pagination a,
+.db-pagination span {
+	display: inline-block;
+	width: auto;
+	padding: 5px 15px;
+	margin: 10px 10px;
+	border: thin solid lightgrey;
+}
+
 .section-left {
 	border-right: lightgrey thin solid;
 }
@@ -94,8 +103,7 @@ a:hover {
 }
 
 .pagination-centered{
-	font-size: 1.5rem;
-	margin-bottom: 5% !important;
+	font-size: 1rem;
 }
 
 h4 {

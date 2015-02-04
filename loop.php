@@ -371,9 +371,14 @@
 $total_pages = $wp_query->max_num_pages;  
 if ($total_pages > 1) {  
   $current_page = max(1, get_query_var('paged'));  ?>
-<div class="large-12 columns pagination-centered"> 
+
+ <?php if($paged == 1): ?>
+<div class="large-8 columns db-pagination pagination-centered"> 
+<?php else: ?>
+  <div class="large-12 columns db-pagination pagination-centered"> 
+  <?php endif; ?>
   <?php echo paginate_links(array(
-      'posts_per_page' => 6,
+      'posts_per_page' => 7,
       'base' => get_pagenum_link(1) . '%_%',  
       'format' => '/page/%#%',  
       'current' => $current_page,  
