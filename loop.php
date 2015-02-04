@@ -232,9 +232,9 @@
     while (have_posts()) : the_post(); ?>
     <?php if ($j==0): ?>
         <div class="medium-12 columns">
-        <h1>
+        <h2 class="db-large-title">
           <a href="<?php the_permalink(); ?>"> <?php the_headline(); ?></a>
-        </h1>
+        </h2>
           <div class="db-story-m1">
             <span class="db-section-date">
               <h4><?php the_category(', ');?></h4> 
@@ -252,7 +252,7 @@
       <?php endif; ?>
         <div class="small-4 columns">
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
+            <?php if(has_post_thumbnail()): ?>
                 <div class="row">
                   <a href="<?php the_permalink(); ?>">
                       <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
@@ -265,12 +265,18 @@
                         <h4>|</h4> 
                         <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
+                <?php if(has_post_thumbnail()): ?>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+              <?php else: ?>
+                <h2 class="db-large-title text-center" style="margin: 1rem 0;">
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h2>
+                <?php endif; ?>
                 <div class="entry-content">
                   <?php the_audio(); ?>
                     <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
                 </div>
-            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
+            <?php if(has_post_thumbnail()): ?>
               </div>
             <?php endif; ?>
             </article>
@@ -295,7 +301,7 @@
           <h4>|</h4> 
           <h5><?php the_time('F j, g:i a');?> </h5>
         </span>
-        <h2>
+        <h2 class="db-large-title">
           <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
         </h2>
         <div class="db-image db-section-cp text-center">
@@ -319,8 +325,8 @@
       <?php endif; ?>
         <div class="small-6 columns">
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
-                <div class="row">
+            <?php if(has_post_thumbnail()): ?>
+                <div class="db-section-thumb row text-center">
                   <a href="<?php the_permalink(); ?>">
                       <?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?>
                   </a>
@@ -332,12 +338,18 @@
                         <h4>|</h4> 
                         <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
+              <?php if(has_post_thumbnail()): ?>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+              <?php else: ?>
+                <h2 class="db-large-title text-center" style="margin: 2rem 0;">
+                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h2>
+                <?php endif; ?>
                 <div class="entry-content">
                   <?php the_audio(); ?>
                     <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">More &raquo;</a></p>
                 </div>
-            <?php if(has_post_thumbnail() && $categoryTitle != "Radio"): ?>
+            <?php if(has_post_thumbnail()): ?>
               </div>
             <?php endif; ?>
             </article>

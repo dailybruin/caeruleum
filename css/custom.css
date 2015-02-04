@@ -5,22 +5,26 @@ h2 a{
 	color: black !important;
 	font-weight: 400 !important;
 	font-family: 'Roboto Slab', serif;
+	line-height: 1.3;
 }
 
 h2{
 	color: black !important;
 	font-family: 'Roboto Slab', serif !important;
+	line-height: 1.3;
 }
 
 h3 a{
 	color: black !important;
 	font-weight: 400 !important;
 	font-family: 'Roboto Slab', serif !important;
+	line-height: 1.3;
 }
 
 h3{
 	color: black !important;
 	font-family: 'Roboto Slab', serif !important;
+	line-height: 1.3;
 }
 
 .page-header h2 {
@@ -34,12 +38,21 @@ h3{
 	border-right: lightgrey thin solid;
 }
 
+.db-large-title {
+	font-size: 2rem;
+	line-height: 1.3;
+}
+
 .db-section-side h2{
 	font-size: 0.9rem;
 }
 
 .db-section-cp img {
 	max-height: 300px;
+}
+
+.db-section-thumb img {
+	max-height: 200px;
 }
 
 .db-logo-spectrum {
