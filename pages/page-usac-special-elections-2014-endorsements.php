@@ -301,7 +301,6 @@ Template Name: USAC Special Election Endorsements 2014
     <dl class="sub-nav">
       <dt>USAC Special Election 2014</dt>
         <dd><a href="/">Ballot Measures & Candidates</a></dd>
-          <dd><a href="/usac-elections-2013/candidates">Candidates</a></dd>
           <dd class="active"><a href="/usac-elections-2013/campaign-violations">Endorsements</a></dd>
     </dl>
 
