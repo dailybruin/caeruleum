@@ -33,7 +33,7 @@ h4.platforms {
   font-family: 'Dosis', sans-serif;
   font-size:25px;
   font-weight: normal;
-  margin-top:32px;
+  margin-top:10%;
 }
 li.platforms {
   line-height:2em;
@@ -105,6 +105,11 @@ li.platforms {
   float: right;
 }
 
+.panel {
+  text-align: center;
+}
+
+
 div #preload { display: none; }
 
 </style>
@@ -113,30 +118,23 @@ div #preload { display: none; }
 
 <div class='container'>
 
+    <div id='content' class='row'>
 
-    <div class="navbar">
-      <div class="navbar-inner" style="color:#3185c0">
-        <div class="container-fluid">
-          <a class="brand" href="http://dailybruin.com/usac-elections-2014/">USAC Election 2014</a>
-            <ul class="nav">
-              <li><a href="http://dailybruin.com/usac-elections-2014/">Home</a></li>
-              <li class="active"><a href="/usac-elections-2014/candidates">Candidates</a></li>
-              <li><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
-              <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+      <dl class="sub-nav">
+        <dt>USAC Election 2014</dt>
+        <dd><a href="/usac-elections-2014">Home</a></dd>
+        <dd class="active"><a href="#">Candidates</a></dd>
+        <dd><a href="/usac-elections-2014/endorsements">Endorsements</a></dd>
+        <dd><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></dd>
+        <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
+    </dl>
 
-    <div id='content' class='row-fluid navigation'>
-
-      <div class='span9'>
+      <div class='large-9 columns'>
 
         <a title='USAC Elections' href='/usac-elections-2014/'><img id='banner' src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png'/></a>
 
 
-        <div class="thumbnail">
+        <div class="panel">
           <p style="text-align:center"><b>
 Thirty candidates are running for the 13 elected USAC positions in this year's highly contested elections. The majority of candidates are running with the Bruins United, LET'S ACT! or FIRED UP! slates, and one candidate is running with the slate ¡Bruin Satyrists! Slates are groups of students who combine their resources and run on similar platforms, similar to political parties.</b></p>
         </div>
@@ -152,21 +150,20 @@ Thirty candidates are running for the 13 elected USAC positions in this year's h
         </div>
 
         <div>
-          <h4 style='font-style:italic' class='grey'> (Click category below to expand) </h4>
         </div> 
 
        
       </div>
 
-      <div class="span3">
+      <div class="large-3 columns">
         <?php get_template_part('ad','side'); ?>
       </div>
 
     </div>
 
-    <div id='content' class='row-fluid'>
+    <div id='content' class='row'>
 
-      <div class='span12' id='display'>
+      <div class='large-12 columns' id='display'>
 
       <!-- Candidate Display Generated Through Script -->
 
@@ -915,19 +912,13 @@ function randArray(myArray)
 
     var href = "collapse" + c;
 
-    var header = "<h3 class='headers'>" + getString(x) + "</h3>";
+    var header = "<h2 class='headers'>" + getString(x) + "</h2>";
 
     var string = "";
 
-    string += "<div class='accordion' id='" + id + "'>";
-    string +=   "<div class='accordion-group'>";
-    string +=   "<div class='accordion-heading'>";
-    string +=     "<a class='accordion-toggle' data-toggle='collapse' data-parent='#" + id + "' href='#" + href + "'>";
+    string += "<div class='panel' id='" + id + "'>";
     string +=     header;
-    string +=     "</a>";
     string +=   "</div>";
-    string +=   "<div id='" + href + "' class='accordion-body collapse out'>";
-    string +=   "<div class='accordion-inner'>";
 
     return string;
   }
@@ -958,33 +949,33 @@ function randArray(myArray)
     else  
       string += "<div class='row candidate'>";
 
-      string +=   "<div class='offset1 span2'>";
+      string +=   "<div class='offset1 large-2 columns'>";
 
       string +=     "<p align='center'><img class='candimg' src='" + o.picture + "' style='border-color:#0011FF;'/><h3 class='elections' style='text-align:center;'>" + o.fname + " " + o.lname;
       string +=   "</p></h3></div>";
 
-      string +=   "<div class='span3' style='margin-top:32px;'>";
+      string +=   "<div class='large-3 columns' style='margin-top:32px;'>";
 
     
 
     if (outersort == SORTYPE.OFFICE)
-      string +=     "<h4 class='spacer'>Slate:</h4><h4 class='candinfo'> " + getString(o.slate) + "</h4>";
+      string +=     "<h4 class='spacer'>Slate:</h4></br><h4 class='candinfo'> " + getString(o.slate) + "</h4></br>";
     else
-      string +=     "<h4 class='spacer'>Office:</h4><h4 class='candinfo'>  " + getString(o.office) + "</h4>";
+      string +=     "<h4 class='spacer'>Office:</h4></br><h4 class='candinfo'>  " + getString(o.office) + "</h4></br>";
 
-    string +=     "<h4 class='spacer'>Major:</h4><h4 class='candinfo'>  " + o.major + "</h4>";
+    string +=     "<h4 class='spacer'>Major:</h4></br><h4 class='candinfo'>  " + o.major + "</h4></br>";
     if (o.major2 != undefined)
       string +=     "<h4 class='spacer'>" + o.major2 + "</h4>";
-      string +=     "<h4 class='spacer'>Year:</h4><h4 class='candinfo'>  " + o.year + "</h4>";
+      string +=     "<h4 class='spacer'>Year:</h4></br><h4 class='candinfo'>  " + o.year + "</h4></br>";
 
       string += "</div>";
 
-      string +=  "<div class='span6'>";
+      string +=  "<div class='large-6 columns'>";
 
       if (o.winner)
         string +=     "<h3 style='font-style:bold; color: #0327AF;'><u>ELECTED</u></h3>";
 
-      string += "<h4 class='platforms'>Platforms</h4>"
+      string += "</br><h4 class='platforms'>Platforms</h4>"
 
       string += "<ul>"
 
