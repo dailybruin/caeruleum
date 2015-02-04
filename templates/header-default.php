@@ -10,7 +10,7 @@
   	<div id="stickyheader">
 	      <nav class="tab-bar">
 	        <section class="left-small">
-	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span><h1>MENU</h1></a>
+	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span><h1 class="hide-for-medium">MENU</h1></a>
 	        </section>
 	        <section class="middle tab-bar-section">
 	          <a href="<?php echo home_url('/'); ?>">
@@ -27,7 +27,9 @@
 			</div> 
 	        </section>
 	       	<section class="text-right">
-	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>
+	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>
+	          	<span class="hide-for-medium">&nbsp;SEARCH</span>
+	          </a>
 	        </section>
 	      </nav>
 
@@ -67,7 +69,9 @@
     <div id="stickyalias">
 	      <nav class="tab-bar">
 	        <section class="left-small">
-	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span><h1>MENU</h1></a>
+	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span>
+	          	<h1 class="hide-for-small">MENU</h1>
+	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
 	        	<a href="<?php echo home_url('/'); ?>">
@@ -80,7 +84,9 @@
 			     </a>
 	        </section>
 	       	<section class="text-right">
-	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>&nbsp;SEARCH</a>
+	          <a class="search-icon" href="#" data-reveal-id="search"><i class="fa fa-search"></i>
+	          	<span class="hide-for-small">&nbsp;SEARCH</span>
+	          </a>
 	        </section>
 	      </nav>
 

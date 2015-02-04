@@ -166,7 +166,7 @@
             </div>
             <div class="large-4 columns db-story-breaking">
               <div>
-                <h2 class="text-center">Breaking</h2>
+                <h1 class="text-center">Breaking</h1>
               </div>
               <div class="row db-divide"></div>
              <div class="row">
@@ -247,7 +247,7 @@
 	<div class="row db-story">
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><a href="/category/news"><i class="fa fa-newspaper-o fa-fw fa-lg"></i>&nbsp;News</a></h1>
+                <h1><a href="/category/news">&nbsp;News</a></h1>
               </div>
 			<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ns' );
@@ -282,7 +282,7 @@
 
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><a href="/category/news"><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>&nbsp;Opinion</a></h1>
+                <h1><a href="/category/news">&nbsp;Opinion</a></h1>
               </div>
               <div class="db-story-op row">
              <?php
@@ -321,7 +321,7 @@
 
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><a href="/category/arts-entertainment"><i class="fa fa-film fa-fw fa-lg"></i>&nbsp;A&amp;E</a></h1>
+                <h1><a href="/category/arts-entertainment">&nbsp;A&amp;E</a></h1>
               </div>
               <div class="db-story-ae row">
             <?php
@@ -360,7 +360,7 @@
 
             <div class="large-3 medium-6 columns db-sum">
               <div>
-                <h1><a href="/category/sports"><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>&nbsp;Sports</a></h1>
+                <h1><a href="/category/sports">&nbsp;Sports</a></h1>
               </div>
             <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
