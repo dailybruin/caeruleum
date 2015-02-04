@@ -105,6 +105,12 @@ li.platforms {
   float: right;
 }
 
+.container {
+          max-width: 940px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
 div #preload { display: none; }
 
 </style>
@@ -114,25 +120,20 @@ div #preload { display: none; }
 <div class='container'>
 
 
-    <div class="navbar">
-      <div class="navbar-inner" style="color:#3185c0">
-        <div class="container-fluid">
-          <a class="brand" href="http://dailybruin.com/usac-special-election-2014/">USAC Special Election 2014</a>
-            <ul class="nav">
-              <li class="active"><a href="/usac-special-election-2014/">Ballot Measures & Candidates</a></li>
-              <li><a href="http://dailybruin.com/usac-special-election-2014/endorsements">Endorsements</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
 
-    <div id='content' class='row-fluid navigation'>
+    <dl class="sub-nav">
+      <dt>USAC Elections 2013</dt>
+        <dd class="active"><a href="/">Ballot Measures & Candidates</a></dd>
+          <dd><a href="/usac-elections-2013/candidates">Endorsements</a></dd>
+    </dl>
 
-      <div class='span8' style="margin-right: 10px">
+    <div id='content' class='row navigation'>
+
+      <div class='large-8 columns' style="margin-right: 10px">
 
         <a title='USAC Elections' href='http://dailybruin.com/usac-special-election-2014'><img id='banner' src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png'/></a>
 
-        <div class="thumbnail">
+        <div class="panel">
         <h4>Introduction</h4>
         <p>The Undergraduate Students Association Council is the representative body for more than 28,000 UCLA undergraduate students. This week, USAC will hold a special election to fill two of 14 councilmember seats. Special elections, as well as elections without any formal slate participation, are a rare event in UCLA history.</p>
 
@@ -149,7 +150,7 @@ div #preload { display: none; }
         
   		  </div>
 		    <br>
-        <div class="thumbnail">
+        <div class="panel">
         <h2>Ballot Measures</h2>
         <hr>
         <h3 style="color:red">The Bruin Diversity Referendum of 2014</h3>
@@ -183,7 +184,7 @@ div #preload { display: none; }
         </ul>
         </div>
         <br>
-        <div class='thumbnail'>
+        <div class='panel'>
         <h3>Sanctions</h3>
         <hr>
         <ul>
@@ -194,7 +195,7 @@ div #preload { display: none; }
 
         </div>
 
-		    <div class="span12" id='display'>
+		    <div class="large-12 columns" id='display'>
           <div>
             <h4 style='font-style:italic' class='grey'> (Candidates: click category below to expand) </h4>
           </div> 
@@ -208,9 +209,9 @@ div #preload { display: none; }
 
     </div>
      
-    <div id='content' class='row-fluid'>
+    <div id='content' class='row'>
 
-      <div class='span8' id='display'>
+      <div class='large-8 columns' id='display'>
 
       <!-- Candidate Display Generated Through Script -->
 
@@ -362,15 +363,12 @@ div #preload { display: none; }
 
     var string = "";
 
-    string += "<div class='accordion' id='" + id + "'>";
-    string +=   "<div class='accordion-group'>";
-    string +=   "<div class='accordion-heading'>";
-    string +=     "<a class='accordion-toggle' data-toggle='collapse' data-parent='#" + id + "' href='#" + href + "'>";
+    string += "<dl class='accordion' data-accordion id='" + id + "'>";
+    string +=   "<di class='accordion-navigation'>";
+    string +=     "<a class='href='#panel1a" + href + "'>";
     string +=     header;
     string +=     "</a>";
-    string +=   "</div>";
-    string +=   "<div id='" + href + "' class='accordion-body collapse out'>";
-    string +=   "<div class='accordion-inner'>";
+    string +=   "<div id='panella' class='content active'>";
 
     return string;
   }
@@ -388,12 +386,12 @@ div #preload { display: none; }
       //string += "<div class='row candidate' style='background-color: #65A0CF;'>"; 
       string += "<div class='row candidate'>";
 
-      string +=   "<div class='offset1 span2'>";
+      string +=   "<div class='offset1 large-2 columns'>";
 
       string +=     "<p align='center'><img class='candimg' src='" + o.picture + "' style='border-color:#0011FF;'/><h3 class='elections' style='text-align:center;'>" + o.fname + " " + o.lname;
       string +=   "</p></h3></div>";
 
-      string +=   "<div class='span3' style='margin-top:32px;'>";
+      string +=   "<div class='large-3 columns' style='margin-top:32px;'>";
 
     string +=     "<h4 class='spacer'>Major:</h4><h4 class='candinfo'>  " + o.major + "</h4>";
     if (o.major2 != undefined)
@@ -403,7 +401,7 @@ div #preload { display: none; }
 
       string += "</div>";
 
-      string +=  "<div class='span6'>";
+      string +=  "<div class='large-6 columns'>";
 
       if (o.winner)
         string +=     "<h3 style='font-style:bold; color: #0327AF;'><u>ELECTED</u></h3>";
@@ -425,7 +423,7 @@ div #preload { display: none; }
         }
       }     
       string += "</ul>"
-      string +=     "</div></div>";
+      string += "</div></div>";
 
     return string;
   }
@@ -461,7 +459,7 @@ div #preload { display: none; }
     var counter = 0;
     var collector = "";
     var inCollector = "";
-    var headerclose = "</div></div></div></div>";
+    var headerclose = "</div></di></dl>";
 
     for(var j=0; j < outer.length; j++)
     {
