@@ -225,6 +225,9 @@ figure, figure.alignnone {
 	display: block;
 	padding: 0 0.5rem;
 }
+.db-sub-list-col li a{
+	color: grey !important;
+}
 .db-sub-list ul{
 	list-style-type: none;
 	text-align: center;
@@ -233,6 +236,9 @@ figure, figure.alignnone {
 	display: inline-block;
 	padding: 0 0.5rem;
 	border-right: lightgrey thin solid;
+}
+.db-sub-list li a{
+	color: grey !important;
 }
 .db-sub-list li:last-child{
 	border-right: none;
