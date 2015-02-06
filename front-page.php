@@ -188,9 +188,13 @@
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-              <div class="db-ad hide-for-medium hide-for-small">
-                <?php get_template_part('ad','side'); ?>
-              </div>
+            <div class="row text-center">
+        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
+        	</div>
+        	<hr style="margin: 1rem 0">
+            <div class="db-ad hide-for-medium hide-for-small">
+            	<?php get_template_part('ad','side'); ?>
+            </div>
             </div>
     </div>
     <div class="row db-divide"></div>

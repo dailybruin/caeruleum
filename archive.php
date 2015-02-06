@@ -67,7 +67,9 @@
 				);
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
-					
+					<ul class="categories">
+          <?php wp_list_categories($cat_args); ?>
+          </ul>
 				<?php endif;
 			endif; ?>
           
