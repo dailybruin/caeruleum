@@ -210,7 +210,35 @@ figure, figure.alignnone {
 	color: grey;
 }
 
-/*HEADER */
+.db-sub-list-col ul{
+	list-style-type: none;
+	text-align: left;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+
+    -webkit-column-rule: thin outset lightgrey; /* Chrome, Safari, Opera */
+    -moz-column-rule: thin outset lightgrey; /* Firefox */
+    column-rule: thin outset lightgrey;
+}
+.db-sub-list-col li{
+	display: block;
+	padding: 0 0.5rem;
+}
+.db-sub-list ul{
+	list-style-type: none;
+	text-align: center;
+}
+.db-sub-list li{
+	display: inline-block;
+	padding: 0 0.5rem;
+	border-right: lightgrey thin solid;
+}
+.db-sub-list li:last-child{
+	border-right: none;
+}
+
+/* ===== HEADER ================================== */
 .off-canvas-fixed {
     -webkit-transition: -webkit-transform 500ms ease;
     transition: transform 500ms ease;
@@ -252,7 +280,6 @@ background-color: white;
 margin: 0 auto;
 padding: 0.625rem;
 padding-top: 0rem !important;
-/*added font size*/
 font-size: 0.75rem;
 }
 

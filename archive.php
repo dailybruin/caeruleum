@@ -67,9 +67,15 @@
 				);
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
-					<ul class="categories">
+        <?php if(count($categories)>8): ?>
+        <div class="db-sub-list-col">
+        <?php else: ?>
+        <div class="db-sub-list">
+        <?php endif; ?>
+					<ul>
           <?php wp_list_categories($cat_args); ?>
           </ul>
+        </div>
 				<?php endif;
 			endif; ?>
           
