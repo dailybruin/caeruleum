@@ -433,7 +433,7 @@
 		<div class="db-divide"></div>
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
             	<div class="row text-center">
-            		<img src="http://placehold.it/850x125"/>
+            		<a href="//graphics.dailybruin.com/prime"><img src="/img/prime-webbanner.jpg"/></a>
             	</div>
 				<div class="row" id="featuredProject">
 					<div style="padding: 5px 20px;">

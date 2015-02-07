@@ -110,6 +110,7 @@ a:hover {
 }
 
 h4 {
+	/*delete blue rule in sass*/
 	color: black !important;
 }
 
