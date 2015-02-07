@@ -433,7 +433,7 @@ position: relative !important;
 	line-height: 0;
 }
 
-.db-nav-links {
+#stickyalias .db-nav-links {
 	padding: 1rem 1rem 0 0;
 }
 
