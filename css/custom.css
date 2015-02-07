@@ -418,7 +418,7 @@ position: relative !important;
 	padding: 1rem 1rem 0 0;
 }
 
-.db-nav-links ul li a{
+#stickyalias .db-nav-links ul li a{
 	font-size: 0.85rem;
 	font-family: 'Roboto Slab', serif;
 }
