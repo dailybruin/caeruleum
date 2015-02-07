@@ -16,10 +16,11 @@ h3.elections {
   font-size: 30px;
   margin: 0 0 5px 0;
 }     
-h4.candinfo {
+.candidate h4.candinfo {
   color:black;
   font-family: 'Open Sans', sans-serif;
   margin-left: 40px;
+  display: block;
 }
 .spacer {
   margin-left: 40px;
@@ -87,7 +88,7 @@ li.platforms {
 }
 
 .candimg {
-  margin-top: 20px;
+  margin-top: 10px;
       max-width:90% !important;
     height:auto;
     display:block;
@@ -106,7 +107,6 @@ li.platforms {
 }
 
 .container {
-          max-width: 940px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -119,6 +119,7 @@ div #preload { display: none; }
 
 <div class='container'>
 
+    <div id='content' class='row navigation'>
 
 
     <dl class="sub-nav">
@@ -127,9 +128,7 @@ div #preload { display: none; }
           <dd><a href="/usac-elections-2013/candidates">Endorsements</a></dd>
     </dl>
 
-    <div id='content' class='row navigation'>
-
-      <div class='large-8 columns' style="margin-right: 10px">
+      <div class='large-7 columns' style="margin-right: 10px">
 
         <a title='USAC Elections' href='http://dailybruin.com/usac-special-election-2014'><img id='banner' src='http://dailybruin.com/images/2014/10/usac-special-election-banner.png'/></a>
 
@@ -197,15 +196,14 @@ div #preload { display: none; }
 
 		    <div class="large-12 columns" id='display'>
           <div>
-            <h4 style='font-style:italic' class='grey'> (Candidates: click category below to expand) </h4>
           </div> 
 
 		    </div>
        
       </div>
 
-       <?php get_sidebar(); ?>
-
+       
+      <?php get_sidebar(); ?>
 
     </div>
      
@@ -216,6 +214,7 @@ div #preload { display: none; }
       <!-- Candidate Display Generated Through Script -->
 
       </div>
+      
 
 
     </div>
@@ -365,9 +364,7 @@ div #preload { display: none; }
 
     string += "<dl class='accordion' data-accordion id='" + id + "'>";
     string +=   "<di class='accordion-navigation'>";
-    string +=     "<a class='href='#panel1a" + href + "'>";
     string +=     header;
-    string +=     "</a>";
     string +=   "<div id='panella' class='content active'>";
 
     return string;
