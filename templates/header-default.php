@@ -74,16 +74,21 @@
     <div id="stickyalias">
 	      <nav class="tab-bar">
 	      <div class="alias-bar">
-	       	<div class="small-10 columns">
+	       	<div class="small-11 columns">
 	       	  <div class="db-nav-links">
 	  				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
 								'menu_class' => 'alias-list',
 								'container' => '',
 								'menu_id' => 'topMenu',
 								)); ?>
+					<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
+							'menu_class' => 'alias-listb',
+							'container' => '',
+							'menu_id' => 'topMenu',
+							)); ?>
 	          </div>
 	        </div>
-	        <div class="search-alias small-2 columns text-right">
+	        <div class="search-alias small-1 columns text-right">
 		      	<a class="search-icon" href="#" data-reveal-id="search">
 		          	<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
 		        </a>

@@ -385,6 +385,7 @@ position: relative !important;
 #stickyalias .tab-bar{
 	overflow: hidden;
 	height: 3.3rem !important;
+	line-height: 0;
 }
 #stickyalias .tab-bar .alias-bar{
 	margin-left: auto;
@@ -395,11 +396,25 @@ position: relative !important;
 #stickyalias .alias-list {
 	list-style-type: none;
 	text-align: left;	
+	display: inline-block;
 }
 
 #stickyalias .alias-list li{
 	display: inline-block;
 	padding: 0 0.5rem 1rem 0rem;
+}
+
+#stickyalias .alias-listb {
+	list-style-type: none;
+	text-align: left;	
+	display: inline-block;
+
+}
+
+#stickyalias .alias-listb li{
+	display: inline-block;
+	padding: 0 0.5rem 1rem 0rem;
+
 }
 
 #stickyalias .search-alias {
@@ -414,12 +429,21 @@ position: relative !important;
 	text-align: right;
 }
 
+#stickyalias .search-icon i{
+	line-height: 0;
+}
+
 .db-nav-links {
 	padding: 1rem 1rem 0 0;
 }
 
-#stickyalias .db-nav-links ul li a{
-	font-size: 0.85rem;
+#stickyalias .db-nav-links .alias-list li a{
+	font-size: 0.95rem;
+	font-family: 'Roboto Slab', serif;
+}
+
+#stickyalias .db-nav-links .alias-listb li a{
+	font-size: 0.65rem;
 	font-family: 'Roboto Slab', serif;
 }
 
