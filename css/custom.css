@@ -16,7 +16,6 @@ h2{
 
 h3 a{
 	color: black !important;
-	font-weight: 400 !important;
 	font-family: 'Roboto Slab', serif !important;
 	line-height: 1.2;
 }
@@ -41,6 +40,10 @@ h3{
 	padding: 5px 15px;
 	margin: 5px 5px;
 	border: thin solid lightgrey;
+}
+
+.db-story-breaking-1 h3 a {
+	font-weight: normal;
 }
 
 .section-left {
@@ -89,10 +92,6 @@ h3{
 	line-height: 1.2;
 	text-transform: none !important;
 	font-weight: 400 !important;
-}
-
-.db-sum h4 a{
-	color: black !important;
 }
 
 .db-story-a h2 a,
@@ -203,6 +202,11 @@ figure, figure.alignnone {
 
 .db-sum img{
 	margin-bottom: 0.5rem;
+}
+
+.db-sum h3{
+	font-weight: bold;
+	font-size: 0.85rem;
 }
 
 .db-poll {

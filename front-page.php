@@ -289,9 +289,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -303,9 +303,9 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
               </div>
               <hr>
             <?php endforeach; ?>
@@ -324,9 +324,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -342,9 +342,9 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
               </div>
               <hr>
             <?php endforeach; ?>
@@ -363,9 +363,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -381,9 +381,9 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
               </div>
               <hr>
             <?php endforeach; ?>
@@ -402,9 +402,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -420,9 +420,9 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
                 <hr>
               </div>
             <?php endforeach; ?>
