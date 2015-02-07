@@ -146,6 +146,12 @@ Template Name: USAC Special Election Endorsements 2014
             visibility: hidden;
           }
 
+        .container { 
+          max-width: 1040px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
         @media (max-width: 1200px) {
           .initbuttons {
             display:none;
@@ -289,17 +295,12 @@ Template Name: USAC Special Election Endorsements 2014
 
 <div class='container'>
 
-    <div class="navbar">
-      <div class="navbar-inner" style="color:#3185c0">
-        <div class="container-fluid">
-          <a class="brand" href="http://dailybruin.com/usac-special-election-2014/">USAC Special Election 2014</a>
-            <ul class="nav">
-              <li><a href="http://dailybruin.com/usac-special-election-2014/">Ballot Measures & Candidates</a></li>
-              <li class="active"><a href="http://dailybruin.com/usac-special-elections-2014/endorsements">Endorsements</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+    <dl class="sub-nav">
+      <dt>USAC Special Election 2014</dt>
+        <dd><a href="/">Ballot Measures & Candidates</a></dd>
+          <dd class="active"><a href="/usac-elections-2013/candidates">Candidates</a></dd>
+          <dd><a href="/usac-elections-2013/campaign-violations">Endorsements</a></dd>
+    </dl>
 
 <div class="row-fluid">
 
