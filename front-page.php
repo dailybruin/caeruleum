@@ -13,8 +13,24 @@
 	$sports_cat = get_category_by_slug('sports')->term_id;
 	$opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
-						
 	<div class="row db-story" data-equalizer>
+        <div class="row db-story" style='margin:0;'>
+			<div class="small-12 columns hide-for-small" style="margin:0;">
+			    <?php ob_start();
+			        wp_nav_menu(array('theme_location' => 'in_the_news',
+			           'container' => '',
+			           'menu_class' => 'in-the-news',
+			        ));
+			        $navmenu = ob_get_contents();
+			        ob_end_clean();
+			        if($navmenu !== ''):
+			    ?>
+				<h3 class="in-the-news">In the News: </h3>
+			        <?php echo $navmenu; ?>
+			    <?php endif; ?>
+			</div>
+		</div>
+		
         <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center" data-equalizer-watch>
 		<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
@@ -173,7 +189,7 @@
 				$i=0;
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) : 	setup_postdata($post); 
-				if(++$i > 4) break;?>
+				if(++$i > 3) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
                     <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
@@ -183,18 +199,17 @@
                   <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
-                  <hr>
                 </div>
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-            <div class="row text-center">
-        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
-        	</div>
-        	<hr style="margin: 1rem 0">
-            <div class="db-ad hide-for-medium hide-for-small">
-            	<?php get_template_part('ad','side'); ?>
-            </div>
+	            <div class="row text-center">
+	        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
+	        	</div>
+	        	<hr style="margin: 1rem 0">
+	            <div class="db-ad hide-for-medium hide-for-small">
+	            	<?php get_template_part('ad','side'); ?>
+	            </div>
             </div>
     </div>
     <div class="row db-divide"></div>

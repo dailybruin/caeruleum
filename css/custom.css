@@ -42,6 +42,26 @@ h3{
 	border: thin solid lightgrey;
 }
 
+.in-the-news {
+	list-style-type: none;
+	text-align: left;	
+	display: inline-block;
+	margin: 0;
+}
+
+.in-the-news li{
+	display: inline-block;
+	font-family: 'Roboto Slab', serif;
+	margin-left: 0.5rem;
+}
+
+
+.db-story-breaking-1 {
+	border-bottom: thin lightgrey solid;
+}
+.db-story-breaking-1:last-child {
+	border-bottom: none;
+}
 .db-story-breaking-1 h3 a {
 	font-weight: normal;
 }
