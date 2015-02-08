@@ -444,9 +444,9 @@
           </div>
       </div>
 
-		<div class="row db-story">
+		<div class="row db-story" data-equalizer>
 		<div class="db-divide"></div>
-            <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
+            <div class="db-story-fe large-8 large-push-4 hide-for-small columns" data-equalizer-watch>
             	<div class="row text-center">
             		<a href="//graphics.dailybruin.com/prime"><img src="/img/prime-webbanner.jpg"/></a>
             	</div>
@@ -468,7 +468,7 @@
 		        </div>
        		</div>
         	</br>        
-            <div class="db-poll large-4 large-pull-8 columns db-poll hide-for-medium">
+            <div class="db-poll large-4 large-pull-8 columns db-poll hide-for-medium" data-equalizer-watch>
               <div class="row">
                 <div class="large-12 medium-6 columns">
                   <div>
