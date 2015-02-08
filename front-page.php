@@ -328,7 +328,7 @@
 
             <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
-                <h1><a href="/category/news">&nbsp;Opinion</a></h1>
+                <h1><a href="/category/opinion">&nbsp;Opinion</a></h1>
               </div>
               <div class="db-story-op row">
              <?php
