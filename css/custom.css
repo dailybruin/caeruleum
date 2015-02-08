@@ -80,6 +80,10 @@ h3{
 	line-height: 1.4;
 }
 
+#menu-in-the-news li a{
+	font-size: 0.9375rem;
+}
+
 .db-off-canvas-wrap .db-content .db-story .db-story-c1,
 .db-off-canvas-wrap .db-content .db-story .db-story-c1 img {
 	margin-top:0;
