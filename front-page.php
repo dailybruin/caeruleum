@@ -189,7 +189,7 @@
 				$i=0;
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) : 	setup_postdata($post); 
-				if(++$i > 3) break;?>
+				if(++$i > 4) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
                     <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
@@ -203,7 +203,7 @@
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-	            <div class="row text-center">
+	            <div class="row text-center hide-for-medium hide-for-small">
 	        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
 	        	</div>
 	        	<hr style="margin: 1.5rem 0">
