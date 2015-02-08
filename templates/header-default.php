@@ -62,6 +62,7 @@
 	      </nav>
     </div>
     <div id="search" class="reveal-modal" data-reveal>
+    	<a href="#" class="close-reveal-modal text-right">&#10005;</a>
     	<label>Powered by Google Custom Search:</label>
 	  <gcse:search></gcse:search>
 	</div>

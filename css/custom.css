@@ -450,6 +450,11 @@ position: relative !important;
 	overflow-y: scroll;
 }
 
+#search a {
+	color: grey !important;
+	font-size: 1.5rem;
+}
+
 #menu {
 	border-radius: 0;
 	height: 100vh;
