@@ -104,6 +104,7 @@ h3{
 .db-post-content p {
 	font-size: 0.9rem !important;
 	line-height: 1.5 !important;
+	margin-bottom: 0.9rem;
 }
 
 .db-image-caption{
