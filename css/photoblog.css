@@ -69,8 +69,12 @@ body,
 }
 .db-top-date p,
 .menu-icon h1,
-.menu-icon span{
-	color: white;
+.menu-icon span,
+#stickyheader .search-icon,
+#stickyalias .search-icon,
+#stickyheader .search-icon i,
+#stickyalias .search-icon i{
+	color: white !important;
 }
 
 #post-listing {
@@ -101,7 +105,6 @@ body,
 	border-color: #303030;
 	border-radius: 0px 0px 0px 0px;
 	color: #BBBBBB;
-	font-family: 'Palatino Linotype';
 	height: auto;
 	margin-bottom: 20px;
 	text-align: left;
