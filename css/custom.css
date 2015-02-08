@@ -75,6 +75,11 @@ h3{
 	line-height: 1.3;
 }
 
+.db-story-c1 h2 {
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+
 .db-off-canvas-wrap .db-content .db-story .db-story-c1,
 .db-off-canvas-wrap .db-content .db-story .db-story-c1 img {
 	margin-top:0;
