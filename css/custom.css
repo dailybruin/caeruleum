@@ -235,9 +235,8 @@ figure, figure.alignnone {
 	font-size: 0.85rem;
 }
 
-.db-poll {
-	border-right: thin solid lightgrey;
-	/*TODO FIX THIS HEIGHT THING*/
+.db-story-fe {
+	border-left: thin solid lightgrey;
 }
 
 .caption {
