@@ -15,15 +15,16 @@
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
-	          <a href="<?php echo home_url('/'); ?>">
 		          <div class="db-logo">
-		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+		          	<a href="<?php echo home_url('/'); ?>">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+			        </a>
 		          </div>
 		          <div class="db-logo-spectrum">
-		          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+		          	<a href="<?php echo home_url('/'); ?>">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+			        </a>
 		          </div>
-	          </a>
-
 	        </section>
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search">

@@ -446,11 +446,13 @@ position: relative !important;
 }
 
 #search {
+	position: fixed;
+	top: 10% !important;
 	max-height: 80vh;
 	overflow-y: scroll;
 }
 
-#search a {
+#search .close-reveal-modal {
 	color: grey !important;
 	font-size: 1.5rem;
 }
