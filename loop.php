@@ -29,7 +29,7 @@
         $section_cat = $news_cat;
         $first_side = array( 'numberposts' => 2, 'cat' => $section_cat, 'tag' => 'breaking' );
         $second_side = array( 'numberposts' => 2, 'category__and' => array($section_cat, $video_cat) );
-        $third_side = array( 'numberposts' => 2, 'category__and' => array($section_cat, $radio_cat) );
+        $third_side = array( 'numberposts' => 1, 'tag' => 'long-story-short' );
         $fourth_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
         $side_names = array("Breaking News", "News in Video", "Radio Show: Long Story Short", "News in Photo");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side);
@@ -39,7 +39,7 @@
         $section_cat = $sports_cat;
         $first_side = array( 'numberposts' => 2, 'cat' => $section_cat, 'tag' => 'breaking' );
         $second_side = array( 'numberposts' => 2, 'category__and' => array($section_cat, $video_cat) );
-        $third_side = array( 'numberposts' => 1, 'cat' => get_category_by_slug('out-of-bounds')->term_id );
+        $third_side = array( 'numberposts' => 2, 'tag' => 'out-of-bounds' );
         $fourth_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('sports-spectrum')->term_id) );
         $side_names = array("Breaking Sports", "Sports in Video", "Radio Show: Out of Bounds", "Sports in Photo");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side);
