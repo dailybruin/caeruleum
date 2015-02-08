@@ -235,7 +235,7 @@
 			$url = $thumb['0']; ?>
 			  <li class="center" data-thumb="<?php echo $url; ?>">
 			  	<!-- 705px x 390px for mult -->
-			    <?php the_post_thumbnail('db-mult-full'); ?>
+			    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-mult-full'); ?></a>
 			    <div class="front-mult">
 				    <h1><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h1>
 				</div>
