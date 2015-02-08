@@ -75,10 +75,9 @@
         $sectionTag = "";
         $first_side = array( 'numberposts' => 3, 'tag' => 'breaking' );
         $second_side =array( 'numberposts' => 2, 'cat' => get_category_by_slug('spectrum')->term_id  );
-        $third_side =array( 'numberposts' => 2, 'cat' => get_category_by_slug('spotlight')->term_id  );
-        $fourth_side =array( 'numberposts' => 2, 'cat' => get_category_by_slug('two-cents')->term_id  );
-        $side_names = array("Breaking Stories in the Bruin", "Latest in Photo", 'In the Spotlight', 'Our Two Cents');
-        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        $third_side =array( 'numberposts' => 2, 'cat' => get_category_by_slug('two-cents')->term_id  );
+        $side_names = array("Breaking Stories in the Bruin", "Latest in Photo", 'Our Two Cents');
+        $side_args = array($first_side,$second_side,$third_side);
         break;
     }
     switch ($categoryTitle)
