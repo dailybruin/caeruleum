@@ -134,10 +134,6 @@ h4 {
 	color: black !important;
 }
 
-.off-canvas-list a{
-	color: #FFFFFF !important;
-}
-
 .db-classifieds-header h1 {
 	border-bottom: 2pt solid black;
 	padding-bottom: 10px;
@@ -275,20 +271,10 @@ figure, figure.alignnone {
 
 /* ===== HEADER ================================== */
 
-.off-canvas-fixed {
-    -webkit-transition: -webkit-transform 500ms ease;
-    transition: transform 500ms ease;
-    height:100%;
-}
 .move-right > .off-canvas-fixed {
     -webkit-transform: translate3d(15.625rem, 0, 0);
     transform: translate3d(15.625rem, 0, 0);
     height:100%;
-}
-.left-off-canvas-menu {
-    -webkit-transform: none;
-    transform: none;
-    height: 100%;
 }
 .main-section {
     padding:45px 0 0;
@@ -299,11 +285,6 @@ figure, figure.alignnone {
 @media only screen and (orientation:landscape) and (max-width: 64em){
     .main-section {
         padding:0 0 0 2.8125rem;
-    }
-    .off-canvas-fixed {
-        width:2.8125rem;
-        height:100%;
-        background:#333333;
     }
      section.left-small{
         border:none;
@@ -331,15 +312,21 @@ line-height: 5rem;
 position: relative !important;
 }
 
+#menu a img {
+	height: 5.5rem;
+	margin-top: 0.8rem;
+}
+
 .tab-bar .menu-icon {
 	width: 10rem !important;
 }
 
-.tab-bar .menu-icon h1 {
+.tab-bar .menu-icon h1{
 	font-weight: bold;
 	font-size: 1.2rem;
 	margin-left: 25px;
 	line-height: 5.3rem;
+	color: black !important;
 }
 
 .tab-bar .search-icon{
@@ -457,6 +444,54 @@ position: relative !important;
 	overflow-y: scroll;
 }
 
+#menu {
+	border-radius: 0;
+	height: 100vh;
+	overflow-y: scroll;
+	top: 0px !important;
+	position: fixed;
+	border: none;
+	right: initial;
+	width: 200px;
+	background-color: #222;
+	padding:0.5rem 1.5rem 0 0.4rem;
+}
+
+#menu .close-reveal-modal {
+	font-size: 1.5rem;
+}
+
+#menu .close-reveal-modal i {
+	color: lightgrey;
+}
+
+#menu label {
+	color: white;
+}
+#menu ul {
+	border-bottom: solid thin grey;
+	padding-top: 0.8rem;
+	margin-bottom: 0;
+}
+#menu ul:nth-child(2) {
+	padding-top: 1rem;
+}
+
+#menu li {
+	
+}
+#menu hr {
+	color: lightgrey;
+}
+#menu li a {
+	display: block;
+	margin-right: 1rem;
+	padding: 0rem;
+	padding-bottom: 0.8rem;
+	font-size: 0.85rem;
+	border-bottom: none;
+	color: white !important;
+}
 
 
 #topMenu > li span:before {

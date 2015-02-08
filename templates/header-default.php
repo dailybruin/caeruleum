@@ -10,8 +10,8 @@
   	<div id="stickyheader">
 	      <nav class="tab-bar">
 	        <section class="left-small">
-	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span>
-	          	<h1 class="hide-for-medium hide-for-small">&nbsp;MENU</h1>
+	          <a class="menu-icon" href="#" data-reveal-id="menu">
+	          	<span></span><h1 class="hide-for-small">MENU</h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -36,46 +36,12 @@
 			</div> 
 		</br>
 	      </nav>
-
-        <aside class="left-off-canvas-menu">
-          <ul class="off-canvas-list">
-            <li class="text-center">
-            	<a href="<?php echo home_url('/'); ?>"><img class="db-mobile-nav-logo" src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_icon.svg" /></a>
-            	</li>
-          </ul>
-          <div class="db-nav-links">
-          	<ul class="off-canvas-list"><li><label>Sections</label></li></ul>
-  				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
-							'menu_class' => 'off-canvas-list',
-							'container' => '',
-							'menu_id' => 'topMenu',
-							'link_before' => '<span></span>'
-							)); ?>
-			<ul class="off-canvas-list"><li><label>Pages</label></li></ul>
-  				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
-							'menu_class' => 'off-canvas-list',
-							'container' => '',
-							'menu_id' => 'topMenu',
-							)); ?>
-			<ul class="off-canvas-list"><li><label>Follow Us</label></li></ul>
-  				<?php wp_nav_menu(array('theme_location' => 'share_footer', 
-							'menu_class' => 'off-canvas-list',
-							'container' => '',
-							'menu_id' => 'topMenu',
-							)); ?>
-          </div>
-        </aside>
-
-	</div>
-    <div id="search" class="reveal-modal" data-reveal>
-    	<label>Powered by Google Custom Search:</label>
-	  <gcse:search></gcse:search>
 	</div>
     <div id="stickyalias">
 	      <nav class="tab-bar">
 	        <section class="left-small">
-	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span>
-	          	<h1 class="hide-for-small">&nbsp;MENU</h1>
+	          <a class="menu-icon" href="#" data-reveal-id="menu">
+	          	<span></span><h1 class="hide-for-small">MENU</h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -94,25 +60,33 @@
 	          </a>
 	        </section>
 	      </nav>
-
-        <aside class="left-off-canvas-menu">
-          <ul class="off-canvas-list">
-            <li class="text-center">
-            	<a href="<?php echo home_url('/'); ?>"><img class="db-mobile-nav-logo" src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_icon.svg" /></a>
-            	</li>
-            <li><div class="row collapse postfix-round ">
-              <div class="small-10 columns">
-                <input type="text" placeholder="Search">
-              </div>
-              <div class="small-2 columns">
-                <span class="button postfix"><i class="fa fa-search"></i></span>
-              </div>
-            </div></li>
-          </ul>
-
-        </aside>
-
     </div>
+    <div id="search" class="reveal-modal" data-reveal>
+    	<label>Powered by Google Custom Search:</label>
+	  <gcse:search></gcse:search>
+	</div>
+	<div id="menu" class="reveal-modal" data-reveal>
+
+          <div class="db-nav-links">
+          	<a href="#" class="close-reveal-modal text-right"><i class="fa fa-angle-left"></i></a>
+  				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
+							'menu_class' => '',
+							'container' => '',
+							'menu_id' => 'topMenu',
+							'link_before' => '<span></span>'
+							)); ?>
+  				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
+							'menu_class' => '',
+							'container' => '',
+							'menu_id' => 'topMenu',
+							)); ?>
+  				<?php wp_nav_menu(array('theme_location' => 'share_footer', 
+							'menu_class' => '',
+							'container' => '',
+							'menu_id' => 'topMenu',
+							)); ?>
+          </div>
+	</div>
         
 	<div class="db-wrapper db-content">
 
