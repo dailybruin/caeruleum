@@ -73,28 +73,44 @@
 	</div>
     <div id="stickyalias">
 	      <nav class="tab-bar">
-	      <div class="alias-bar">
-	       	<div class="small-11 columns">
-	       	  <div class="db-nav-links">
-	  				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
-								'menu_class' => 'alias-list',
-								'container' => '',
-								'menu_id' => 'topMenu',
-								)); ?>
-					<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
-							'menu_class' => 'alias-listb',
-							'container' => '',
-							'menu_id' => 'topMenu',
-							)); ?>
-	          </div>
-	        </div>
-	        <div class="search-alias small-1 columns text-right">
-		      	<a class="search-icon" href="#" data-reveal-id="search">
-		          	<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
-		        </a>
-	        </div>
-	       </div>
+	        <section class="left-small">
+	          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span>
+	          	<h1 class="hide-for-small">&nbsp;MENU</h1>
+	          </a>
+	        </section>
+	        <section class="middle tab-bar-section">
+	        	<a href="<?php echo home_url('/'); ?>">
+		          	 <div class="db-logo">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+			         </div>
+			         <div class="db-logo-spectrum">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+			         </div>
+			     </a>
+	        </section>
+	       	<section class="text-right">
+	          <a class="search-icon" href="#" data-reveal-id="search">
+	          	<span class="hide-for-medium hide-for-small">SEARCH&nbsp;</span> <i class="fa fa-search"></i>
+	          </a>
+	        </section>
 	      </nav>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li class="text-center">
+            	<a href="<?php echo home_url('/'); ?>"><img class="db-mobile-nav-logo" src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_icon.svg" /></a>
+            	</li>
+            <li><div class="row collapse postfix-round ">
+              <div class="small-10 columns">
+                <input type="text" placeholder="Search">
+              </div>
+              <div class="small-2 columns">
+                <span class="button postfix"><i class="fa fa-search"></i></span>
+              </div>
+            </div></li>
+          </ul>
+
+        </aside>
 
     </div>
         
