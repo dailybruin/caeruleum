@@ -646,6 +646,10 @@ position: relative !important;
     margin: 0;
     padding: 0;
 }
+.db-classifieds li{
+	list-style-type: none;
+}
+
 .db-classifieds .sidebar-more {
 	padding-top:10px;
     margin-bottom: 0px;
