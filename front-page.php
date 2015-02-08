@@ -64,10 +64,10 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
           <div class="row db-story-c2">
-            <div class="db-image small-5 columns">
+            <div class="db-image medium-5 columns small-12">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
             </div>
-            <div class="small-7 columns">
+            <div class="medium-7 columns small-12">
               <span class="db-section-date">
 	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 

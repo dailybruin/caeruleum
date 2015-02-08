@@ -355,8 +355,6 @@ position: relative !important;
 #stickyheader .tab-bar-section.middle,
 #stickyalias .tab-bar-section.middle {
 	top: 0rem;
-	left: 9rem;
-	right: 9rem;
 }
 
 .db-top-date {

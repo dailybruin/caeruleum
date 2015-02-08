@@ -11,7 +11,7 @@
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
-	          	<span></span><h1 class="hide-for-small">MENU</h1>
+	          	<span></span><h1 class="hide-for-medium hide-for-small">MENU</h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -41,7 +41,7 @@
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
-	          	<span></span><h1 class="hide-for-small">MENU</h1>
+	          	<span></span><h1 class="hide-for-medium  hide-for-small">MENU</h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
