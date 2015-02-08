@@ -902,10 +902,9 @@ min-height: 20px;
  
 .jp-player {width: 0; height: 0} 
 .list-playlist .jp-playlist-player {margin-bottom: 20px}
-.jp-interface {position: relative; display: block; width: 100%; height: 50px}
+.jp-interface {position: relative; display: block; width: 100%; height: auto}
 
-.now-playing {width: 75%; overflow: hidden; display: block; 
-	position: absolute; top: 0; left: 0; font: bold 12px/15px arial}
+.now-playing {width: 75%; min-height: 50px; display: block; top: 0; left: 0; font: bold 12px/15px arial}
 .now-playing span {text-transform: none; display: block; font: 16px/21px arial}
 .now-playing span.audio-songartist {display:none;} /* Custom CSS rule! -BL */
 
