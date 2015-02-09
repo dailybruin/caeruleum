@@ -68,7 +68,7 @@
 				$categories = get_categories($cat_args);
 				if(!empty($categories)): ?>
         <?php if(count($categories)>8): ?>
-        <div class="db-sub-list-col">
+        <div class="db-sub-list-col hide-for-small">
         <?php else: ?>
         <div class="db-sub-list">
         <?php endif; ?>
