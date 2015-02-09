@@ -129,9 +129,12 @@
   <?php endif; ?>
     <?php while (have_posts()) : the_post(); ?>
       <div class="row">
-        <?php if(has_post_thumbnail()): ?>
-            <div class="small-8 columns" style="padding-left:0">
-        <?php endif; ?>
+          <?php if(has_post_thumbnail()): ?>
+            <div class="small-12 hide-for-large hide-for-medium text-center">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+            <div class="medium-8 small-12 columns" style="padding-left:0">
+          <?php endif; ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
               <span class="db-section-date">
                       <h4><?php the_category(', ');?></h4> 
@@ -146,7 +149,7 @@
         </div>
         <?php if(has_post_thumbnail()): ?>
         </div>
-          <div class="small-4 columns">
+          <div class="medium-4 hide-for-small">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
           </div>
         <?php endif; ?>
@@ -193,7 +196,10 @@
       <div class="db-list row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
-            <div class="small-8 columns" style="padding-left:0">
+            <div class="small-12 hide-for-large hide-for-medium text-center">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+            <div class="medium-8 small-12 columns" style="padding-left:0">
           <?php endif; ?>
           
               <span class="db-section-date">
@@ -213,7 +219,7 @@
             </div>
           <?php if(has_post_thumbnail()): ?>
             </div>
-            <div class="small-4 columns">
+            <div class="medium-4 hide-for-small">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
           <?php endif; ?>
