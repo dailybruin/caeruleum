@@ -130,7 +130,7 @@
     <?php while (have_posts()) : the_post(); ?>
       <div class="row">
           <?php if(has_post_thumbnail()): ?>
-            <div class="small-12 hide-for-large hide-for-medium text-center">
+            <div class="small-12 columns hide-for-large hide-for-medium text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
             <div class="medium-8 small-12 columns" style="padding-left:0">
@@ -149,7 +149,7 @@
         </div>
         <?php if(has_post_thumbnail()): ?>
         </div>
-          <div class="medium-4 hide-for-small">
+          <div class="medium-4 columns hide-for-small">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
           </div>
         <?php endif; ?>
@@ -219,7 +219,7 @@
             </div>
           <?php if(has_post_thumbnail()): ?>
             </div>
-            <div class="medium-4 hide-for-small">
+            <div class="medium-4 columns hide-for-small">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
           <?php endif; ?>
