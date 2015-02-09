@@ -128,7 +128,7 @@
     <?php endforeach; ?>   
   <?php endif; ?>
     <?php while (have_posts()) : the_post(); ?>
-      <div class="row">
+      <div class="row db-list">
           <?php if(has_post_thumbnail()): ?>
             <div class="small-12 columns hide-for-large hide-for-medium text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
