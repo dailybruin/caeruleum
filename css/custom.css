@@ -274,6 +274,7 @@ figure, figure.alignnone {
 .db-sub-list ul{
 	list-style-type: none;
 	text-align: center;
+	margin-left: 0;
 }
 .db-sub-list li{
 	display: inline-block;

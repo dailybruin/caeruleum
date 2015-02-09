@@ -12,6 +12,7 @@
 <?php 
     $categoryTitle = single_cat_title('',false);
     $multSection = false;
+    $hasSidebar = true;
 
     $news_cat = get_category_by_slug('news')->term_id;
     $ae_cat = get_category_by_slug('arts-entertainment')->term_id;
@@ -72,12 +73,7 @@
         $side_args = array($first_side,$second_side);
         break;
       default:
-        $sectionTag = "";
-        $first_side = array( 'numberposts' => 3, 'tag' => 'breaking' );
-        $second_side =array( 'numberposts' => 2, 'cat' => get_category_by_slug('spectrum')->term_id  );
-        $third_side =array( 'numberposts' => 2, 'cat' => get_category_by_slug('two-cents')->term_id  );
-        $side_names = array("Breaking Stories in the Bruin", "Latest in Photo", 'Our Two Cents');
-        $side_args = array($first_side,$second_side,$third_side);
+        $hasSidebar = false;
         break;
     }
     switch ($categoryTitle)
@@ -98,7 +94,11 @@
 <?php if(!$multSection): ?>
   <!-- NORMAL CATEGORY FRONT PAGE -->
   <?php if($paged == 1): ?>
+  <?php if ($hasSidebar): ?>
   <div class="medium-8 columns section-left">
+  <?php else: ?>
+  <div class="small-12 columns section-left">
+  <?php endif; ?>
     <?php
       if ($sectionTag != "") :
       $args = array( 'numberposts' => 1, 'tag' => $sectionTag );
@@ -154,7 +154,8 @@
       </div>
       <hr>
     <?php endwhile; /* End loop */ ?>
-    </div>
+    </div> 
+    <?php if ($hasSidebar): ?>
     <div class="medium-4 columns db-section-side hide-for-small">
       
       <?php
@@ -184,6 +185,7 @@
       <hr style="border-top: medium double lightgrey;">
       <?php endforeach; ?>
     </div>
+  <?php endif; ?>
   <?php else: ?>
   <!-- LIST -->
 
@@ -381,7 +383,7 @@ if ($total_pages > 1) {
       'next_text' => 'Next &raquo;'  
     )); ?>
 
- <?php if($paged == 1 && !$multSection ): ?>
+ <?php if($paged == 1 && $hasSidebar ): ?>
 <div class="large-8 columns db-pagination pagination-centered"> 
 <?php else: ?>
   <div class="large-12 columns db-pagination pagination-centered"> 
