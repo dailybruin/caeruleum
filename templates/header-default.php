@@ -93,7 +93,7 @@
         
 	<div class="db-wrapper db-content">
 		<div class="row db-story">
-			<div class="small-12 columns hide-for-small" style="margin:0;">
+			<div class="small-6 columns hide-for-small" style="margin:0;">
 			    <?php ob_start();
 			        wp_nav_menu(array('theme_location' => 'in_the_news',
 			           'container' => '',
@@ -107,7 +107,12 @@
 			        <?php echo $navmenu; ?>
 			    <?php endif; ?>
 			</div>
+			<div class="small-6 columns hide-for-small text-right social-right" style="margin:0;">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-youtube-play"></i></a>
+				<a href=""><i class="fa fa-github"></i></a>
+				<a href=""><i class="fa fa-rss"></i></a>
+			</div>
 		</div>
 
-
-<!-- TODO in the news! -->

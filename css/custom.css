@@ -589,6 +589,11 @@ position: relative !important;
 	content: "\f143";
 }
 
+.social-right i {
+	padding-left: 0.5rem;
+	font-size:1rem;
+}
+
 
 /* ===== Special features (default styles) ================================== */
 #featuredProject > div {
