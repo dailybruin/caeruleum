@@ -569,6 +569,26 @@ position: relative !important;
 	content: "\f075";
 }
 
+.menu-facebook span:before {
+	content: "\f082";
+}
+
+.menu-twitter span:before {
+	content: "\f081";
+}
+
+.menu-github span:before {
+	content: "\f092";
+}
+
+.menu-youtube span:before {
+	content: "\f16a";
+}
+
+.menu-rss span:before {
+	content: "\f143";
+}
+
 
 /* ===== Special features (default styles) ================================== */
 #featuredProject > div {

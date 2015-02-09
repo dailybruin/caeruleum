@@ -86,6 +86,7 @@
 							'menu_class' => '',
 							'container' => '',
 							'menu_id' => 'topMenu',
+							'link_before' => '<span></span>'
 							)); ?>
           </div>
 	</div>
