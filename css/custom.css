@@ -682,10 +682,13 @@ position: relative !important;
 	width: 100%;
 	background-color: rgba(0,0,0,0.6);
 }
-.front-mult h1 a,
+.front-mult h2 a,
 .front-mult h4,
 .front-mult h5{
 	color: white !important;
+}
+.front-mult h2 {
+	font-size: 1.5rem;
 }
 
 /* ===== Sidebar ========================================================
