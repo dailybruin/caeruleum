@@ -103,7 +103,10 @@
       if ($sectionTag != "") :
       $args = array( 'numberposts' => 1, 'tag' => $sectionTag );
       $lastposts = get_posts( $args );
-      foreach( $lastposts as $post ) :  setup_postdata($post); ?>
+
+      foreach( $lastposts as $post ) :  
+        setup_postdata($post); 
+        $excludePostId = get_the_ID(); ?>
       <div class="db-story-c1">
         <span class="db-section-date">
           <h4><?php the_category(', ');?></h4> 
@@ -128,6 +131,7 @@
     <?php endforeach; ?>   
   <?php endif; ?>
     <?php while (have_posts()) : the_post(); ?>
+    <?php if ($post->ID !== $excludePostId): ?>
       <div class="row db-list">
           <?php if(has_post_thumbnail()): ?>
             <div class="small-12 columns hide-for-large hide-for-medium text-center">
@@ -156,6 +160,7 @@
         </article>
       </div>
       <hr>
+    <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
     </div> 
     <?php if ($hasSidebar): ?>
@@ -193,6 +198,7 @@
   <!-- LIST -->
 
     <?php while (have_posts()) : the_post(); ?>
+    <?php if ($post->ID !== $excludePostId): ?>
       <div class="db-list row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
@@ -227,6 +233,7 @@
         </article>
       </div>
       <hr>
+    <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
   <?php endif; ?>
 
