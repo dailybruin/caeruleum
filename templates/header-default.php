@@ -92,6 +92,22 @@
 	</div>
         
 	<div class="db-wrapper db-content">
+		<div class="row db-story">
+			<div class="small-12 columns hide-for-small" style="margin:0;">
+			    <?php ob_start();
+			        wp_nav_menu(array('theme_location' => 'in_the_news',
+			           'container' => '',
+			           'menu_class' => 'in-the-news',
+			        ));
+			        $navmenu = ob_get_contents();
+			        ob_end_clean();
+			        if($navmenu !== ''):
+			    ?>
+				<h3 class="in-the-news">In the news: </h3>
+			        <?php echo $navmenu; ?>
+			    <?php endif; ?>
+			</div>
+		</div>
 
 
 <!-- TODO in the news! -->

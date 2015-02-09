@@ -14,23 +14,6 @@
 	$opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
 	<div class="row db-story" data-equalizer>
-        <div class="row db-story" style='margin:0;'>
-			<div class="small-12 columns hide-for-small" style="margin:0;">
-			    <?php ob_start();
-			        wp_nav_menu(array('theme_location' => 'in_the_news',
-			           'container' => '',
-			           'menu_class' => 'in-the-news',
-			        ));
-			        $navmenu = ob_get_contents();
-			        ob_end_clean();
-			        if($navmenu !== ''):
-			    ?>
-				<h3 class="in-the-news">In the news: </h3>
-			        <?php echo $navmenu; ?>
-			    <?php endif; ?>
-			</div>
-		</div>
-		
         <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center" data-equalizer-watch>
 		<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
