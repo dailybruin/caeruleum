@@ -459,7 +459,7 @@ position: relative !important;
 	position: fixed;
 	top: 10% !important;
 	max-height: 80vh;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #search .close-reveal-modal {
@@ -470,7 +470,7 @@ position: relative !important;
 #menu {
 	border-radius: 0;
 	height: 100vh;
-	overflow-y: scroll;
+	overflow-y: auto;
 	top: 0px !important;
 	position: fixed;
 	border: none;
