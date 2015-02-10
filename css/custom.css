@@ -288,6 +288,10 @@ figure, figure.alignnone {
 	border-right: none;
 }
 
+.author-contact {
+	margin-top: 1rem;
+}
+
 /* ===== HEADER ================================== */
 
 .move-right > .off-canvas-fixed {
