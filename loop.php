@@ -80,7 +80,7 @@
         $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('political-commentary')->term_id );
         $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('idle-thoughts')->term_id );
         $fifth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('sports-two-cents')->term_id );
-        $side_names = array("Bruins on the Street", "Idle Thoughts", "Political Commentary", "Social Commentary", "Sports");
+        $side_names = array("Bruins on the Street", "Political Commentary", "Social Commentary", "Idle Thoughts", "Sports");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side,$fifth_side);
         break;
       default:
