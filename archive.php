@@ -95,7 +95,36 @@
         <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
 
+<?php if($categoryTitle == "Two Cents"): 
+$two_cents_contributors = get_two_cents_contributors(); 
+?>
+<div class="large-4 columns">
+  <div class="row">
+    <h2 class='text-center hide-for-medium hide-for-small'>Meet the Columnists</h2>
+<?php 
+$i = 0;
+foreach ($two_cents_contributors as $contributor): 
+  ?>
+<div class="medium-3 columns hide-for-medium hide-for-small">
+  <img data-tooltip class="has-tip tip-left" 
+          title="<?php echo $contributor['name']?></br><?php echo $contributor['position']?>" 
+          src=<?php echo $contributor['img'] ?> />
+</div>
+<?php $i++; endforeach ?>
+<?php while($i%4!=0): ?>
+<div class="medium-3 columns hide-for-medium hide-for-small">
+</div>
+<?php $i++; endwhile; ?>
+
+</div>
+<div class="db-divide hide-for-medium hide-for-small"></div>
+<ul id="sidebar-list">
+  <?php dynamic_sidebar('sidebar-primary'); ?>
+</ul><!-- end div#sidebar-list -->
+</div>
+<?php else: ?>
 <?php get_template_part('sidebar'); ?>  
+<?php endif; ?>
 
     </div><!-- end div#archive-content -->
 <?php get_footer(); ?>

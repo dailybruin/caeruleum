@@ -1,10 +1,8 @@
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if (!have_posts()) { ?>
-  <div class="alert alert-block fade in">
-    <a class="close" data-dismiss="alert">&times;</a>
-    <p><?php _e('Sorry, no results were found.', 'roots'); ?></p>
+  <div class="medium-8 columns">
+    <h3><?php _e('Sorry, no results were found.', 'roots'); ?></h3>
   </div>
-  <?php get_search_form(); ?>
 <?php } ?>
 
 <?php /* Start loop */ ?>
