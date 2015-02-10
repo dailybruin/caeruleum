@@ -73,7 +73,8 @@ body,
 #stickyheader .search-icon,
 #stickyalias .search-icon,
 #stickyheader .search-icon i,
-#stickyalias .search-icon i{
+#stickyalias .search-icon i,
+.in-the-news{
 	color: white !important;
 }
 
