@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <div class="classifieds-page">
 <div class="row" id="single-post">
-	<div class="small-8 columns" id="post">
+	<div class="large-8 columns" id="post">
 		<?php get_template_part('loop', 'classified'); ?>
 	</div><!-- end div#post -->
 	
-	<aside class="small-4 columns" id="sidebar" role="complementary">
+	<aside class="large-4 columns" id="sidebar" role="complementary">
 		<div id="sidebar-inside">
 		
 			<div id="place-ad">
