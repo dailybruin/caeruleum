@@ -888,14 +888,18 @@ div#poll form {
 	font-size: 1em;
 	margin-left: 15px;
 	margin-right: 15px;
+	margin-bottom: 1rem;
 }
 
 div#poll form label.radio {
 	margin-bottom:13px;
 }
 
-.radio, .checkbox {
+.radio input, .checkbox {
 min-height: 20px;
+margin-left: -17px !important;
+margin-right: 5px !important;
+margin-bottom: 0 !important;
 }
 
 /* css3 for coloring each pollbars */
