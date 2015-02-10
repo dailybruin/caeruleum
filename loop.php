@@ -145,7 +145,7 @@
     <?php if ($post->ID !== $excludePostId): ?>
       <div class="row db-list">
           <?php if(has_post_thumbnail()): ?>
-            <div class="small-12 columns hide-for-large hide-for-medium text-center">
+            <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
             <div class="medium-8 small-12 columns" style="padding-left:0">
