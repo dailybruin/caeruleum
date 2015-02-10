@@ -247,6 +247,25 @@ function the_category_text($category_array) {
 	echo trim(get_category_parents($category_array[0]->term_id, false, ', '),', ');
 }
 
+function the_category_text_mult($category_array) {
+	foreach ($category_array as $category) {
+		switch ($category->cat_name) {
+			case 'Video':
+				echo "Video";
+				return;
+			case 'Radio':
+				echo "Radio";
+				return;
+			case 'Spectrum':
+				echo "Photo";
+				return;
+			default:
+				continue;
+		}
+	}
+	return;
+}
+
 function the_category_link($category_array) {
 	foreach($category_array as $category) {
 		if($category->parent == 0) {
