@@ -95,26 +95,7 @@
         <?php get_template_part('loop', 'category'); ?>
       </div><!-- end div#post-listing -->
 
-<?php if($categoryTitle == "Two Cents"): 
-$two_cents_contributors = get_two_cents_contributors(); 
-?>
-<div class="large-4 columns">
-<?php foreach ($two_cents_contributors as $contributor): ?>
-<div class="small-3 columns">
-  <img src=<?php $contributor->img ?> />
-</div>
-<?php endforeach ?>
-
-<div class="hide-for-medium hide-for-small">
-<?php get_template_part('ad','side'); ?>    
-</div>    
-<ul id="sidebar-list">
-  <?php dynamic_sidebar('sidebar-primary'); ?>
-</ul><!-- end div#sidebar-list -->
-</div>
-<?php else: ?>
 <?php get_template_part('sidebar'); ?>  
-<?php endif; ?>
 
     </div><!-- end div#archive-content -->
 <?php get_footer(); ?>
