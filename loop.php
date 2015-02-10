@@ -79,6 +79,7 @@
         $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('idle-thoughts')->term_id );
         $fifth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('sports-two-cents')->term_id );
         $side_names = array("Bruins on the Street", "Political Commentary", "Social Commentary", "Idle Thoughts", "Sports");
+        $name_flare = array("cornflowerblue","purple","green","cadetblue","orange");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side,$fifth_side);
         break;
       default:
@@ -177,7 +178,13 @@
       
       <?php
       foreach( $side_args as $index => $args ) : ?>
-      <h4><?php echo $side_names[$index] ?></h4>
+      <?php if($name_flare){
+        $color = $name_flare[$index];
+      } else {
+        $color = 'black';
+      }?>
+
+      <h4 style="color:<?php echo $name_flare[$index] ?>!important"><?php echo $side_names[$index] ?></h4>
       <?php
       $lastposts = get_posts( $args );
       foreach( $lastposts as $indexP => $post ) :  
