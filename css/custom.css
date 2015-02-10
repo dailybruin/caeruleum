@@ -156,12 +156,15 @@ h4 {
 .db-classifieds-header h1 {
 	border-bottom: 2pt solid black;
 	padding-bottom: 10px;
-	margin-bottom: 0px;
 }
 
 .db-footer {
 	color: grey;
 	line-height: 3;
+}
+
+.db-off-canvas-wrap .db-content .db-story #db-classifieds {
+	border: 1px solid grey;
 }
 
 

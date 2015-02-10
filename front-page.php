@@ -259,7 +259,7 @@
 		</div>
 
         <div class="db-story">
-            <div class="large-3 show-for-large-up columns db-classifieds">
+            <div class="large-3 show-for-large-up columns db-classifieds" id="db-classifieds">
            		<div class="db-classifieds-header">
                 	<h1>Featured Classifieds</h1>
             	</div>
