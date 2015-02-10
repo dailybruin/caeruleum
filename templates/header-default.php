@@ -108,11 +108,11 @@
 			    <?php endif; ?>
 			</div>
 			<div class="small-6 columns hide-for-small text-right social-right" style="margin:0;">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-youtube-play"></i></a>
-				<a href=""><i class="fa fa-github"></i></a>
-				<a href=""><i class="fa fa-rss"></i></a>
+				<a href="http://www.facebook.com/dailybruin"><i class="fa fa-facebook"></i></a>
+				<a href="http://www.twitter.com/dailybruin"><i class="fa fa-twitter"></i></a>
+				<a href="http://youtube.com/ucladailybruin"><i class="fa fa-youtube-play"></i></a>
+				<a href="http://www.github.com/daily-bruin"><i class="fa fa-github"></i></a>
+				<a href="http://dailybruin.com/feed"><i class="fa fa-rss"></i></a>
 			</div>
 		</div>
 
