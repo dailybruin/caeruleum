@@ -81,7 +81,7 @@
         $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('social-commentary')->term_id );
         $fifth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('sports-two-cents')->term_id );
         $side_names = array("Bruins on the Street", "Idle Thoughts", "Political Commentary", "Social Commentary", "Sports");
-        $side_args = array($first_side,$second_side);
+        $side_args = array($first_side,$second_side,$third_side,$fourth_side,$fifth_side);
         break;
       default:
         $hasSidebar = false;
