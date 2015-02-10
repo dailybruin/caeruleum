@@ -22,6 +22,7 @@
     $radio_cat = get_category_by_slug('radio')->term_id;
     $photo_cat = get_category_by_slug('spectrum')->term_id;
     $spotlight_cat = get_category_by_slug('spotlight')->term_id;
+    $twocents_cat = get_category_by_slug('two-cents')->term_id;
 
     switch ($categoryTitle)
     {
@@ -66,10 +67,20 @@
         $side_args = array($first_side,$second_side,$third_side,$fourth_side);
         break;
       case "Spotlight":
-        $section_cat = $ae_cat;
+        $section_cat = $spotlight_cat;
         $first_side = array( 'numberposts' => 2, 'category__and' => array($spotlight_cat, get_category_by_slug('music')->term_id) );
         $second_side = array( 'numberposts' => 2, 'category__and' => array($spotlight_cat, get_category_by_slug('film-tv')->term_id) );
         $side_names = array("Spotlight on Music", "Spotlight on Film/TV");
+        $side_args = array($first_side,$second_side);
+        break;
+      case "Two Cents":
+        $section_cat = $twocents_cat;
+        $first_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('two-cents-video')->term_id );
+        $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('idle-thoughts')->term_id );
+        $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('political-commentary')->term_id );
+        $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('social-commentary')->term_id );
+        $fifth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('sports-two-cents')->term_id );
+        $side_names = array("Bruins on the Street", "Idle Thoughts", "Political Commentary", "Social Commentary", "Sports");
         $side_args = array($first_side,$second_side);
         break;
       default:
