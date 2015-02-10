@@ -31,6 +31,7 @@
 	          	<span class="hide-for-medium hide-for-small">SEARCH&nbsp;</span> <i class="fa fa-search"></i>
 	          </a>
 	        </section>
+	        <hr class="show-for-small">
 	        <div class="db-top-date text-center hide-for-small">
 				<?php date_default_timezone_set('America/Los_Angeles'); ?>
 				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
