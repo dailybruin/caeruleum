@@ -453,15 +453,9 @@
        		</div>
         	</br>        
             <div class="db-poll large-4 large-pull-8 columns db-poll hide-for-medium" data-equalizer-watch>
-              <div class="row">
-                <div class="large-12 medium-6 columns">
-                  <div>
                     <h1>Opinion Poll</h1>
-                  </div>
                   <hr>
                   	<?php the_widget('WP_Widget_Polls'); ?>
-                </div>
-              </div>
             </div>
 				</div>
 				<?php wp_reset_query(); ?>
