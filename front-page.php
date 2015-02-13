@@ -172,7 +172,7 @@
 				$i=0;
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) : 	setup_postdata($post); 
-				if(++$i > 4) break;?>
+				if(++$i > 3) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
                     <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
