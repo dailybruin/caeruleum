@@ -22,6 +22,7 @@ Template Name: Full-width series
 
   article p {
     font-family: 'Droid Sans',sans-serif;
+	font-size: 0.85rem !important;
   }
 
   article h1 {
@@ -46,6 +47,7 @@ Template Name: Full-width series
       float:right;
       display:inline-block;
       height: 215px;
+	  margin-bottom: 7% !important;
   }
 
   article .pq-wrap-2 p{
@@ -58,6 +60,10 @@ Template Name: Full-width series
       padding: 0;
       position: relative;
       border-left: none !important;
+  }
+  
+  blockquote {
+	  width: 100% !important;
   }
    
   article .pq-wrap-2 cite {
@@ -305,7 +311,7 @@ Template Name: Full-width series
   }
 
   aside.audio {
-    max-width: 300px;
+    max-width: 400px;
     float: right;
     background-color: rgba(0,0,0, 0.05);
     padding: 0 1em;

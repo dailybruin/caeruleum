@@ -196,6 +196,20 @@ Template Name: USAC Elections 2014
             visibility: hidden;
           }
 
+        .usac-2014 ul {
+          list-style-type: none;
+        }
+
+        .usac-2014 li {
+          padding: 10px;
+          text-align: center;
+        }
+        .pass li {
+          margin:10px;
+          padding: 2px;
+        }
+
+
         @media (max-width: 1200px) {
           .initbuttons {
             display:none;
@@ -207,6 +221,7 @@ Template Name: USAC Elections 2014
             visibility: visible;
             width: 100%;
           }
+
 }
 
 
@@ -218,27 +233,20 @@ Template Name: USAC Elections 2014
 
 <div class='container'>
 
-    <nav class="navbar top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="#">USAC Election 2014</a></h1>
-            </li>
-        </ul> 
 
-        <section class="top-bar-section">
-            <ul class="left">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
-              <li><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
-              <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
-            </ul>
-        </section>
-    </nav>
+<div class="row usac-2014">
+  
+      <dl class="sub-nav">
+        <dt>USAC Election 2014</dt>
+        <dd class="active"><a href="#">Home</a></dd>
+        <dd><a href="/usac-elections-2014/candidates">Candidates</a></dd>
+        <dd><a href="/usac-elections-2014/endorsements">Endorsements</a></dd>
+        <dd><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></dd>
+        <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
+    </dl>
 
-<div class="row">
 
-  <div class="large-8 columns">
+  <div class="large-9 columns">
     <a title='USAC Elections' href='#'><img src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png' border='0'/></a> 
     <br /><br />
 
@@ -278,25 +286,21 @@ Template Name: USAC Elections 2014
     <!-- IVPS-->
 
 
-    <ul>
+    <ul data-equalizer>
 
-      <li class="large-3 columns">
-        <div class="bunited">
+      <li class="large-3 columns bunited" data-equalizer-watch>
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/baral.jpg" alt="">
           <div class="textcentered">
             <h3>Internal Vice President</h3>
             <h4 class="endorsementname">Avinoam Baral</h4>
             <h4 class="candinfoend">Bruins United</h4>
             <h4 class="greyer">53.4%</h4>
-
           </div>
-        </div>
       </li>
 
       <!-- EVPS-->
 
-      <li class="large-3 columns">
-        <div class="letsact">
+      <li class="large-3 columns letsact" data-equalizer-watch>
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/contreras.jpg" alt="">
           <div class="textcentered">
             <h3>External Vice President</h3>
@@ -304,13 +308,12 @@ Template Name: USAC Elections 2014
             <h4 class="candinfoend">LET'S ACT!</h4>
             <h4 class="greyer">54.9%</h4>
           </div>
-        </div>
       </li>
 
       <!-- Academic Affairs Commissioner -->
 
-      <li class="large-3 columns">
-        <div class="bunited">
+      <li class="large-3 columns bunited" data-equalizer-watch>
+
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/bach.jpg" alt="">
           <div class="textcentered">
             <h3>Academic Affairs Commissioner</h3>
@@ -318,13 +321,11 @@ Template Name: USAC Elections 2014
            <h4 class="candinfoend">Bruins United</h4>
             <h4 class="greyer">50.38%</h4>
           </div>
-        </div>
       </li>
 
       <!--Campus Events Commisioner-->
 
-      <li class="large-3 columns">
-        <div class="indep">
+      <li class="large-3 columns indep" data-equalizer-watch>
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/gregweb.jpg" alt="">
           <div class="textcentered">
             <h3>Campus Events Commissioner</h3>
@@ -332,86 +333,78 @@ Template Name: USAC Elections 2014
             <h4 class="candinfoend">Independent</h4>
             <h5 class="greyer">Uncontested</h5>
           </div>
-        </div>
       </li>
 
     </ul>
 
-    <ul>
+ 
 
       <!--Cultural Affairs Commissioner-->
-
-      <li class="large-3 columns">
-        <div class="letsact">
-          <img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
-          <div class="textcentered">
-            <h3>Cultural Affairs Commissioner</h3>
-            <h4 class="endorsementname">Irmary Garcia</h4>
-            <h4 class="candinfoend">LET'S ACT!</h4>
-            <h5 class="greyer">Uncontested</h5>
-          </div>
-        </div>
-      </li>
+    <ul data-equalizer>
+      <div class="row">
+        <li class="large-3 columns letsact" data-equalizer-watch>
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
+            <div class="textcentered">
+              <h3>Cultural Affairs Commissioner</h3>
+              <h4 class="endorsementname">Irmary Garcia</h4>
+              <h4 class="candinfoend">LET'S ACT!</h4>
+              <h5 class="greyer">Uncontested</h5>
+            </div>
+        </li>
 
       <!--General Representatives-->
 
-       <li class="large-3 columns">
-        <div class="letsact">
-          <img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
-          <div class="textcentered">
-            <h3>General Representative 1</h3>
-            <h4 class="endorsementname">Manjot Singh</h4>
-            <h4 class="candinfoend">LET'S ACT!</h4>
-            <h5 class="greyer">&nbsp;</h5>
-          </div>
-      </li>
+         <li class="large-3 columns letsact" data-equalizer-watch>
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
+            <div class="textcentered">
+              <h3>General Representative 1</h3>
+              <h4 class="endorsementname">Manjot Singh</h4>
+              <h4 class="candinfoend">LET'S ACT!</h4>
+              <h5 class="greyer">&nbsp;</h5>
+            </div>
+        </li>
 
 
-      <li class="large-3 columns">
-        <div class="bunited">
-          <img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt="">
-          <div class="textcentered">
-            <h3>General Representative 2</h3>
-            <h4 class="endorsementname">Nihal Satyadev</h4>
-            <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer">&nbsp;</h5>
-          </div>
-        </div>
-      </li>
-     
-      <li class="large-3 columns">
-        <div class="bunited">
-          <img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt="">
-          <div class="textcentered">
-            <h3>General Representative 3</h3>
-            <h4 class="endorsementname">Fabienne Roth</h4>
-            <h4 class="candinfoend">Bruins United</h4>
-            <h5 class="greyer">&nbsp;</h5>
-          </div>
-      </li>
+        <li class="large-3 columns bunited" data-equalizer-watch>
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt="">
+            <div class="textcentered">
+              <h3>General Representative 2</h3>
+              <h4 class="endorsementname">Nihal Satyadev</h4>
+              <h4 class="candinfoend">Bruins United</h4>
+              <h5 class="greyer">&nbsp;</h5>
+            </div>
+        </li>
+       
+        <li class="large-3 columns bunited" data-equalizer-watch>
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt="">
+            <div class="textcentered">
+              <h3>General Representative 3</h3>
+              <h4 class="endorsementname">Fabienne Roth</h4>
+              <h4 class="candinfoend">Bruins United</h4>
+              <h5 class="greyer">&nbsp;</h5>
+            </div>
+        </li>
+       </div> 
 
-    </ul>
+      </ul>
 
-    <ul>
+      <ul data-equalizer>
 
-      <!-- Community Service Commisioner -->
+        <!-- Community Service Commisioner -->
 
-      <li class="large-3 columns">
-        <div class="indep">
-          <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong2.jpg" alt="">
-          <div class="textcentered">
-            <h3>Community Service Commissioner</h3>
-            <h4 class="endorsementname">Cynthia Wong</h4>
-            <h4 class="candinfoend">Independent</h4>
-            <h5 class="greyer">Uncontested</h5>
-          </div>
-        </div>
-      </li>
+        <li class="large-3 columns indep" data-equalizer-watch>
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong2.jpg" alt="">
+            <div class="textcentered">
+              <h3>Community Service Commissioner</h3>
+              <h4 class="endorsementname">Cynthia Wong</h4>
+              <h4 class="candinfoend">Independent</h4>
+              <h5 class="greyer">Uncontested</h5>
+            </div>
+        </li>
 
       <!-- Facilities Commissioner -->
 
-      <li class="large-3 columns">
-        <div class="bunited">
+      <li class="large-3 columns bunited" data-equalizer-watch>
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/quintanilla.jpg" alt="">
           <div class="textcentered">
             <h3>Facilities Commissioner</h3>
@@ -419,13 +412,11 @@ Template Name: USAC Elections 2014
             <h4 class="candinfoend">Bruins United</h4>
             <h5 class="greyer">50.15%</h5>
           </div>
-        </div>
       </li>
 
       <!-- Financial Commisioner -->
 
-      <li class="large-3 columns">
-        <div class="bunited">
+      <li class="large-3 columns bunited" data-equalizer-watch>
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/rosen.jpg" alt="">
           <div class="textcentered">
             <h3>Financial Supports Commissioner</h3>
@@ -433,13 +424,11 @@ Template Name: USAC Elections 2014
             <h4 class="candinfoend">Bruins United</h4>
             <h5 class="greyer">55%</h5>
           </div>
-        </div>
       </li>
 
       <!-- Student Wellness Commissioner -->
 
-      <li class="large-3 columns">
-        <div class="indep">
+      <li class="large-3 columns indep" data-equalizer-watch>
           <img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt="">
           <div class="textcentered">
             <h3>Student Wellness Commissioner</h3>
@@ -447,29 +436,24 @@ Template Name: USAC Elections 2014
             <h4 class="candinfoend">Independent</h4>
             <h5 class="greyer">Uncontested</h5>
           </div>
-        </div>
       </li>
 
     </ul>
 
-    <ul>
+    <ul data-equalizer>
 
-      <li class="large-6 columns">
-        <div class="pass">
+      <li class="large-6 columns pass" data-equalizer-watch>
           <div class="textcentered">
             <h1 class="white">PASSED - 74.4%</h1>
             <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif;font-weight:normal">Transfer Student Representative Referendum</h3></large>
           </div>
-        </div>
       </li>
 
-      <li class="large-6 columns">
-        <div class="pass">
+      <li class="large-6 columns pass" data-equalizer-watch>
           <div class="textcentered">
             <h1 class="white">PASSED - 54.5%</h1>
             <h3 style="color:#ffffff;font-family: 'Dosis', sans-serif; font-weight:normal;">Arts Restoring Community Referendum</h3>
           </div>
-        </div>
       </li>
 
     </ul>
@@ -590,14 +574,14 @@ Template Name: USAC Elections 2014
     
 
     <div class="row">
-      <div class="large-6 columns">
-        <div class="th">
+      <div class="large-12 columns">
+        <div class="panel">
           <div class="caption">
              <h2 class="elections">Recent Articles<h2>
            </div>
 
             <div class="articles">
-
+          <div class="large-6 columns">
             <h4 class="elections">News</h4> 
 
             <ul>
@@ -609,7 +593,8 @@ Template Name: USAC Elections 2014
               <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
-
+          </div>
+          <div class="large-6 columns">
             <h4 class="elections">Opinion</h4> 
 
             <ul>
@@ -621,7 +606,7 @@ Template Name: USAC Elections 2014
               <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
               <?php endforeach; ?>
             </ul>
-
+          </div>
             <!-- <h4>Multimedia</h4> 
 
             <ul>

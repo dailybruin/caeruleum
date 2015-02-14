@@ -36,6 +36,8 @@ Template Name: USAC Elections Candidate Endorsements 2014
           font-weight: 400;
           line-height: 30px;
           font-size: 40px;
+          text-align: center;
+          margin-top: 20px;
         }
 
         h4.elections {
@@ -198,13 +200,14 @@ Template Name: USAC Elections Candidate Endorsements 2014
           font-weight: normal;
           line-height: 35px;
           padding-top:15px;
+          padding-bottom: 15px;
+          margin-top: 10px;
         }
         h4.endorsementname {
           color: #00a5e5;
           font-family: 'Dosis', sans-serif;
           font-size:25px;
           font-weight: normal;
-          margin-top:10px;
         }
         li.platforms {
           line-height:2em;
@@ -281,6 +284,10 @@ Template Name: USAC Elections Candidate Endorsements 2014
         	text-align: justify;
         }
 
+        .panels {
+          list-style-type: none;
+        }
+
 
    </style>
 
@@ -290,25 +297,17 @@ Template Name: USAC Elections Candidate Endorsements 2014
 
 <div class='container'>
 
-    <div class="navbar">
-      <div class="navbar-inner" style="color:#3185c0">
-        <div class="container-fluid">
-          <a class="brand" href="http://dailybruin.com/usac-elections-2014/">USAC Election 2014</a>
-            <ul class="nav">
-              <li><a href="http://dailybruin.com/usac-elections-2014/">Home</a></li>
-              <li><a href="/usac-elections-2014/candidates">Candidates</a></li>
-              <li class="active"><a href="/usac-elections-2014/endorsements">Endorsements</a></li>
-              <li><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></li>
-              <li><a href="http://my.ucla.edu/">Vote Here</a></li>
+  <div class="row">
+    <dl class="sub-nav">
+        <dt>USAC Election 2014</dt>
+        <dd><a href="/usac-elections-2014">Home</a></dd>
+        <dd><a href="#">Candidates</a></dd>
+        <dd class="active"><a href="/usac-elections-2014/endorsements">Endorsements</a></dd>
+        <dd><a href="/usac-elections-2014/campaign-violations">Campaign Violations</a></dd>
+        <dd><a href="http://my.ucla.edu/">Vote Here</a></dd>
+    </dl>
 
-            </ul>
-        </div>
-      </div>
-    </div>
-
-<div class="row-fluid">
-
-  <div class="span9">
+  <div class="large-9 columns">
     <a title='USAC Elections' href='http://dailybruin.com/usac-elections-2014/'><img src='http://dailybruin.com/images/2014/05/usac-elections14-banner2.png' border='0'/></a> 
     <br /><br />
 
@@ -325,9 +324,9 @@ Template Name: USAC Elections Candidate Endorsements 2014
     </div>
  <h2 class="endorsements">Referendums</h2><hr></hr>
 
-       <ul class="thumbnails">
+       <ul class="panels">
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="endorsement bunited">
           <div class="textcentered">
             <h4 class="endorsements">Transfer Student Representative Referendum</h4></div>
@@ -353,10 +352,10 @@ Template Name: USAC Elections Candidate Endorsements 2014
 
       <!-- EVPS-->
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="endorsement bunited">
           <div class="textcentered">
-            <h4 class="endorsements">Arts Restoring Community Referendum</h4>
+            <h4 class="endorsements">Arts Restoring Community Referendum</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
 
@@ -376,16 +375,16 @@ The student body could reject the referendum until its creators present a versio
       </li>
   </ul>
 
-  <h2 class="endorsements">President</h2><hr></hr>
-  <ul class="thumbnails">
+  <h2 class="large-12 columns endorsements">President</h2><hr></hr>
+  <ul class="panels">
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/murphy.jpg" alt="">
-          	<h4 class="endorsementname">Devin Murphy</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/murphy.jpg" alt=""></br>
+          	<h4 class="endorsementname">Devin Murphy</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
             
@@ -407,12 +406,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>
 
- <li class="span6">
+ <li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/singh.jpg" alt="">
-          	<h4 class="endorsementname">Sunny Singh</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/singh.jpg" alt=""></br>
+          	<h4 class="endorsementname">Sunny Singh</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -422,12 +421,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>
 
-       <li class="span6">
+       <li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rodriguez.jpg" alt="">
-          	<h4 class="endorsementname">Miriam Rodriguez</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rodriguez.jpg" alt=""></br>
+          	<h4 class="endorsementname">Miriam Rodriguez</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -438,15 +437,15 @@ The student body could reject the referendum until its creators present a versio
       </li>
       </ul>
 
-  <h2 class="endorsements">Internal Vice President</h2><hr></hr>
-  <ul class="thumbnails">
-          <li class="span6">
+  <h2 class="large-12 columns endorsements">Internal Vice President</h2><hr></hr>
+  <ul class="panels">
+          <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Sadeghi-Movahed.jpg" alt="">
-          	<h4 class="endorsementname">Negeen Sadeghi-Movahed</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Sadeghi-Movahed.jpg" alt=""></br>
+          	<h4 class="endorsementname">Negeen Sadeghi-Movahed</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -465,12 +464,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>        
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/baral.jpg" alt="">
-          	<h4 class="endorsementname">Avinoam Baral</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/baral.jpg" alt=""></br>
+          	<h4 class="endorsementname">Avinoam Baral</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -479,12 +478,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/lasher.jpg" alt="">
-          	<h4 class="endorsementname">Harwind Lasher</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/lasher.jpg" alt=""></br>
+          	<h4 class="endorsementname">Harwind Lasher</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -496,16 +495,16 @@ The student body could reject the referendum until its creators present a versio
 </ul>
 
 
-  <h2 class="endorsements">External Vice President</h2><hr></hr>
-  <ul class="thumbnails">
+  <h2 class="large-12 columns endorsements">External Vice President</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span6">
+ <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/contreras.jpg" alt="">
-          	<h4 class="endorsementname">Conrad Contreras</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/contreras.jpg" alt=""></br>
+          	<h4 class="endorsementname">Conrad Contreras</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -524,12 +523,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>        
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Friedman.jpg" alt="">
-          	<h4 class="endorsementname">Aurelia Friedman</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Friedman.jpg" alt=""></br>
+          	<h4 class="endorsementname">Aurelia Friedman</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -543,12 +542,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garfio.jpg" alt="">
-          	<h4 class="endorsementname">Angel Garfio</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garfio.jpg" alt=""></br>
+          	<h4 class="endorsementname">Angel Garfio</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -563,16 +562,16 @@ The student body could reject the referendum until its creators present a versio
       </li>
   </ul>
 
-   <h2 class="endorsements">Academic Affairs Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+   <h2 class="large-12 columns endorsements">Academic Affairs Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span6">
+ <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/williams.jpg" alt="">
-          	<h4 class="endorsementname">Janay Williams</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/williams.jpg" alt=""></br>
+          	<h4 class="endorsementname">Janay Williams</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -595,12 +594,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>        
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/bach.jpg" alt="">
-          	<h4 class="endorsementname">Allyson Bach</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/bach.jpg" alt=""></br>
+          	<h4 class="endorsementname">Allyson Bach</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -610,12 +609,12 @@ The student body could reject the referendum until its creators present a versio
           </div>
       </li>
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Kiang.jpg" alt="">
-          	<h4 class="endorsementname">Jazz Kiang</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Kiang.jpg" alt=""></br>
+          	<h4 class="endorsementname">Jazz Kiang</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -626,16 +625,16 @@ The student body could reject the referendum until its creators present a versio
       </li>
 </ul>
 
-<h2 class="endorsements">Campus Events Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+<h2 class="large-12 columns endorsements">Campus Events Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span12">
+ <li class="large-12 columns">
         <div class="endorsement indep">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gregweb.jpg" alt="">
-          	<h4 class="endorsementname">Greg Kalfayan</h4>
-          	<h4 class="candinfoend">Independent</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gregweb.jpg" alt=""></br>
+          	<h4 class="endorsementname">Greg Kalfayan</h4></br>
+          	<h4 class="candinfoend">Independent</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -656,16 +655,16 @@ Kalfayan’s strength within the commission will be a solid base for his work ne
       </li>       
       </ul>     
 
-       <h2 class="endorsements">Community Service Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+       <h2 class="large-12 columns endorsements">Community Service Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span12">
+ <li class="large-12 columns">
         <div class="endorsement indep">
           
           <div class="textcentered">
-            <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong.jpeg" alt="">
-            <h4 class="endorsementname">Cynthia Wong</h4>
-            <h4 class="candinfoend">Independent</h4>
+            <img class="candphoto" src="http://dailybruin.com/images/2014/05/wong.jpeg" alt=""></br>
+            <h4 class="endorsementname">Cynthia Wong</h4></br>
+            <h4 class="candinfoend">Independent</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -687,16 +686,16 @@ Experience within the commission makes Wong a qualified candidate, but she needs
   </ul>
  
 
-   <h2 class="endorsements">Cultural Affairs Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+   <h2 class="large-12 columns endorsements">Cultural Affairs Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span12">
+ <li class="large-12 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt="">
-          	<h4 class="endorsementname">Irmary Garcia</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/I.Garcia.jpg" alt=""></br>
+          	<h4 class="endorsementname">Irmary Garcia</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -718,16 +717,16 @@ Experience within the commission makes Wong a qualified candidate, but she needs
       </li>        
   </ul>
 
-   <h2 class="endorsements">Facilities Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+   <h2 class="large-12 columns endorsements">Facilities Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span6">
+ <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/mercier.jpg" alt="">
-          	<h4 class="endorsementname">Alex Mercier</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/mercier.jpg" alt=""></br>
+          	<h4 class="endorsementname">Alex Mercier</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -748,12 +747,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>        
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/quintanilla.jpg" alt="">
-          	<h4 class="endorsementname">Carlos Quintanilla</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/quintanilla.jpg" alt=""></br>
+          	<h4 class="endorsementname">Carlos Quintanilla</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -763,12 +762,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Nguyen.jpg" alt="">
-          	<h4 class="endorsementname">Teri Nguyen</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Nguyen.jpg" alt=""></br>
+          	<h4 class="endorsementname">Teri Nguyen</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -779,16 +778,16 @@ Experience within the commission makes Wong a qualified candidate, but she needs
 </ul>
 
 
-   <h2 class="endorsements">Financial Supports Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+   <h2 class="large-12 columns endorsements">Financial Supports Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span6">
+ <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Galbadores.jpg" alt="">
-          	<h4 class="endorsementname">Winnie Galbadores</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Galbadores.jpg" alt=""></br>
+          	<h4 class="endorsementname">Winnie Galbadores</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -809,12 +808,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>        
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/rosen.jpg" alt="">
-          	<h4 class="endorsementname">Heather Rosen</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/rosen.jpg" alt=""></br>
+          	<h4 class="endorsementname">Heather Rosen</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -826,12 +825,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gutierrez.jpg" alt="">
-          	<h4 class="endorsementname">Gabriel Gutierrez</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/gutierrez.jpg" alt=""></br>
+          	<h4 class="endorsementname">Gabriel Gutierrez</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -843,16 +842,16 @@ Experience within the commission makes Wong a qualified candidate, but she needs
       </li>
 </ul>
 
-   <h2 class="endorsements">Student Wellness Commissioner</h2><hr></hr>
-  <ul class="thumbnails">
+   <h2 class="large-12 columns endorsements">Student Wellness Commissioner</h2><hr></hr>
+  <ul class="panels">
 
- <li class="span12">
+ <li class="large-12 columns">
         <div class="endorsement indep">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt="">
-          	<h4 class="endorsementname">Savannah Badalich</h4>
-          	<h4 class="candinfoend">Independent</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Badalich.jpg" alt=""></br>
+          	<h4 class="endorsementname">Savannah Badalich</h4></br>
+          	<h4 class="candinfoend">Independent</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
           
@@ -877,16 +876,16 @@ Experience within the commission makes Wong a qualified candidate, but she needs
   </ul>
 
 
- <h2 class="endorsements">General Representatives</h2><hr></hr>
-  <ul class="thumbnails">
+ <h2 class="large-12 columns endorsements">General Representatives</h2><hr></hr>
+  <ul class="panels">
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garcia.jpg" alt="">
-          	<h4 class="endorsementname">Erineo Garcia</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/garcia.jpg" alt=""></br>
+          	<h4 class="endorsementname">Erineo Garcia</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
             
@@ -908,13 +907,13 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>
 
-      <li class="span6">
+      <li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/patterson.jpg" alt="">
-          	<h4 class="endorsementname">Kevin Patterson</h4>
-          	<h4 class="candinfoend">Bruins United</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/patterson.jpg" alt=""></br>
+          	<h4 class="endorsementname">Kevin Patterson</h4></br>
+          	<h4 class="candinfoend">Bruins United</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
             
@@ -934,14 +933,14 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>
   </ul>
-  <ul class="thumbnails">
-        <li class="span6">
+  <ul class="panels">
+        <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt="">
-          	<h4 class="endorsementname">Manjot Singh</h4>
-          	<h4 class="candinfoend">LET'S ACT!</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Singh.jpg" alt=""></br>
+          	<h4 class="endorsementname">Manjot Singh</h4></br>
+          	<h4 class="candinfoend">LET'S ACT!</h4></br>
 
             <button class="btn disabled endorsed"><img class="check-big" src="http://dailybruin.com/images/2014/05/check.png"></img> Endorsed</button><br/></div>
             
@@ -961,12 +960,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>    
 
-<li class="span6">
+<li class="large-6 columns">
         <div class="endorsement firedup">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Xiongweb.jpg" alt="">
-          	<h4 class="endorsementname">Der Xiong</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Xiongweb.jpg" alt=""></br>
+          	<h4 class="endorsementname">Der Xiong</h4></br>
           	<h4 class="candinfoend">FIRED UP!</h4>
 
             </div>
@@ -987,13 +986,13 @@ Experience within the commission makes Wong a qualified candidate, but she needs
       </li>
   </ul>
 
-  <ul class="thumbnails">
- <li class="span6">
+  <ul class="panels">
+ <li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt="">
-          	<h4 class="endorsementname">Fabienne Roth</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/roth.jpg" alt=""></br>
+          	<h4 class="endorsementname">Fabienne Roth</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -1003,12 +1002,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
           </div>
       </li>
 
-                <li class="span6">
+                <li class="large-6 columns">
         <div class="endorsement bsaty">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Medhekar.jpg" alt="">
-          	<h4 class="endorsementname">Sachin Medhekar</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Medhekar.jpg" alt=""></br>
+          	<h4 class="endorsementname">Sachin Medhekar</h4></br>
           	<h4 class="candinfoend">¡Bruin Satyrists!</h4>
 
             </div>
@@ -1020,14 +1019,14 @@ Experience within the commission makes Wong a qualified candidate, but she needs
 
         </ul>
   
-  <ul class="thumbnails">
+  <ul class="panels">
 
-       <li class="span6">
+       <li class="large-6 columns">
         <div class="endorsement letsact">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rebosura.jpg" alt="">
-          	<h4 class="endorsementname">Francesca Rebosura</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/Rebosura.jpg" alt=""></br>
+          	<h4 class="endorsementname">Francesca Rebosura</h4></br>
           	<h4 class="candinfoend">LET'S ACT</h4>
 
             </div>
@@ -1038,12 +1037,12 @@ Experience within the commission makes Wong a qualified candidate, but she needs
       </li> 
 
 
-                <li class="span6">
+                <li class="large-6 columns">
         <div class="endorsement bunited">
           
           <div class="textcentered">
-          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt="">
-          	<h4 class="endorsementname">Nihal Satyadev</h4>
+          	<img class="candphoto" src="http://dailybruin.com/images/2014/05/satyedev.jpg" alt=""></br>
+          	<h4 class="endorsementname">Nihal Satyadev</h4></br>
           	<h4 class="candinfoend">Bruins United</h4>
 
             </div>
@@ -1061,11 +1060,11 @@ Experience within the commission makes Wong a qualified candidate, but she needs
   </ul>
 
 </div>
-<div class="span3">
+<div class="large-3 columns">
   <div class='ad'>
     <?php get_template_part('ad','side'); ?>
   </div>
-  <div class="thumbnail textcentered">
+  <div class="panel textcentered">
     <p><h4 style="color:#3185c0">Important Dates:</h4>
       April 29 -  Endorsement hearing<br />
       May 3 - Candidates debates<br />

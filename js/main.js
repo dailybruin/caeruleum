@@ -7,6 +7,9 @@ $(function(){
   $("#search").on("opened", function(){
   	$("#gsc-i-id1").focus();
   });
+  $("#menu").on("open", function(){
+  	$(this).css("top","0 !important");
+  });
 });
 
 /***** STICK HEADER ON SCROLL *****/

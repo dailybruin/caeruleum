@@ -13,9 +13,8 @@
 	$sports_cat = get_category_by_slug('sports')->term_id;
 	$opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
-						
-	<div class="row db-story">
-        <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center">
+	<div class="row db-story" data-equalizer>
+        <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center" data-equalizer-watch>
 		<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
 			$lastposts = get_posts( $args );
@@ -48,10 +47,10 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
           <div class="row db-story-c2">
-            <div class="db-image small-5 columns">
+            <div class="db-image medium-5 columns small-12">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
             </div>
-            <div class="small-7 columns">
+            <div class="medium-7 columns small-12">
               <span class="db-section-date">
 	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
 	              <h4>|</h4> 
@@ -70,7 +69,7 @@
         </div>
 
             <hr class="show-for-small-only">
-        <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side">
+        <div class="large-2 medium-4 large-pull-6 medium-pull-8 columns db-story-side" data-equalizer-watch>
            	<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-a' );
 			$lastposts = get_posts( $args );
@@ -160,13 +159,11 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
-            
-
             <?php endforeach; ?>
             </div>
-            <div class="large-4 columns db-story-breaking">
+            <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
-                <h2 class="text-center">Breaking</h2>
+                <h1 class="text-center">Breaking</h1>
               </div>
               <div class="row db-divide"></div>
              <div class="row">
@@ -175,7 +172,7 @@
 				$i=0;
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) : 	setup_postdata($post); 
-				if(++$i > 4) break;?>
+				if(++$i > 3) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
                     <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
@@ -185,19 +182,22 @@
                   <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
-                  <hr>
                 </div>
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-              <div class="db-ad-rectangle hide-for-medium hide-for-small">
-                <?php get_template_part('ad','side'); ?>
-              </div>
+	           	<div class="db-ad hide-for-medium hide-for-small">
+	            	<?php get_template_part('ad','side'); ?>
+	            </div>
+	            <hr style="margin: 1.5rem 0">
+	            <div class="row text-center hide-for-medium hide-for-small">
+	        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
+	        	</div>
             </div>
     </div>
     <div class="row db-divide"></div>
       <div class="row">
-         <div class="db-story-m large-9 medium-12 columns">
+         <div class="db-story-m large-9 medium-12 columns hide-for-small">
          <span>
          	<div class="left">
                 <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
@@ -218,9 +218,10 @@
 			$url = $thumb['0']; ?>
 			  <li class="center" data-thumb="<?php echo $url; ?>">
 			  	<!-- 705px x 390px for mult -->
-			    <?php the_post_thumbnail('db-mult-full'); ?>
+			    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-mult-full'); ?></a>
 			    <div class="front-mult">
-				    <h1><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h1>
+				    <h2><a href="<?php the_permalink(); ?>"><?php the_category_text_mult(get_the_category()); ?>: 
+				    <?php the_headline(); ?></a></h2>
 				</div>
 			  </li>
 			 <?php endforeach; ?>
@@ -228,10 +229,39 @@
 			<hr>
 		</div>
 
+		<div class="db-story-m large-9 medium-12 columns show-for-small">
+         <span>
+         	<div class="left" style="margin-bottom:10px">
+                <h1><i class="fa fa-youtube-play fa-fw fa-lg"></i>&nbsp;Multimedia</h1>
+            </div>
+            <div class="right hide-for-small" style="line-height:3rem">
+            	<h4 style="margin-left:15px"><a href="/category/video">&nbsp;Video</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/radio">&nbsp;Radio</a></h4>
+            	<h4 style="margin-left:15px"><a href="/category/spectrum">&nbsp;Photo</a></h4>
+            </div>
+         </span>
+         	<?php
+			$args = array( 'numberposts' => 2, 'tag' => 'db-story-m1' );
+			$lastposts = get_posts( $args );
+			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
+              <div class="db-story-ns row">
+              	<div class="text-center" style="margin-top:20px;">
+	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+	              </br>
+	            </div>
+	            <h3 class="text-center">
+                    <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                 </h3>
+                <!-- <div class="small-6 columns"> -->
+              </div>
+              <hr>
+            <?php endforeach; ?>
+		</div>
+
         <div class="db-story">
-            <div class="large-3 show-for-large-up columns db-classifieds">
+            <div class="large-3 show-for-large-up columns db-classifieds" id="db-classifieds">
            		<div class="db-classifieds-header">
-                	<h1><i class="fa fa-comments-o fa-fw fa-lg"></i>&nbsp;Featured Classifieds</h1>
+                	<h1>Featured Classifieds</h1>
             	</div>
             	
             	  <ul>
@@ -244,10 +274,10 @@
 	</div>
     <div class="row db-divide"></div>
 
-	<div class="row db-story">
-            <div class="large-3 medium-6 columns db-sum">
+	<div class="row db-story" data-equalizer>
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
-                <h1><a href="/category/news"><i class="fa fa-newspaper-o fa-fw fa-lg"></i>&nbsp;News</a></h1>
+                <h1><a href="/category/news">&nbsp;News</a></h1>
               </div>
 			<?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ns' );
@@ -258,9 +288,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -272,17 +302,17 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
               </div>
               <hr>
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns db-sum">
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
-                <h1><a href="/category/news"><i class="fa fa-lightbulb-o fa-fw fa-lg"></i>&nbsp;Opinion</a></h1>
+                <h1><a href="/category/opinion">&nbsp;Opinion</a></h1>
               </div>
               <div class="db-story-op row">
              <?php
@@ -293,9 +323,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -311,17 +341,17 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
               </div>
               <hr>
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns db-sum">
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
-                <h1><a href="/category/arts-entertainment"><i class="fa fa-film fa-fw fa-lg"></i>&nbsp;A&amp;E</a></h1>
+                <h1><a href="/category/arts-entertainment">&nbsp;A&amp;E</a></h1>
               </div>
               <div class="db-story-ae row">
             <?php
@@ -332,9 +362,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -350,17 +380,17 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
               </div>
               <hr>
             <?php endforeach; ?>
             </div>
 
-            <div class="large-3 medium-6 columns db-sum">
+            <div class="large-3 medium-6 columns db-sum" data-equalizer-watch>
               <div>
-                <h1><a href="/category/sports"><i class="fa fa-soccer-ball-o fa-fw fa-lg"></i>&nbsp;Sports</a></h1>
+                <h1><a href="/category/sports">&nbsp;Sports</a></h1>
               </div>
             <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
@@ -371,9 +401,9 @@
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
-                  <h4>
+                  <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                  </h4>
+                  </h3>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>
@@ -389,18 +419,21 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div>
-                <h4>
+                <h3>
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h4>
+                </h3>
                 <hr>
               </div>
             <?php endforeach; ?>
           </div>
       </div>
 
-		<div class="row db-story">
+		<div class="row db-story" data-equalizer>
 		<div class="db-divide"></div>
-            <div class="db-story-fe large-8 large-push-4 hide-for-small columns">
+            <div class="db-story-fe large-8 large-push-4 hide-for-small columns" data-equalizer-watch>
+            	<div class="row text-center">
+            		<a href="//graphics.dailybruin.com/prime"><img src="/img/prime-webbanner.jpg"/></a>
+            	</div>
 				<div class="row" id="featuredProject">
 					<div style="padding: 5px 20px;">
 						 <h1>Wake of the Storm</h1>
@@ -413,22 +446,16 @@
 					</div>
 				</div><!-- end div#featuredProject -->
 				<div class="row">
-		            <div class="db-ad-banner hide-for-medium hide-for-small">
+		            <div class="text-center hide-for-medium hide-for-small">
 		                <?php get_template_part('ad','smallbanner'); ?>
 		            </div>
 		        </div>
        		</div>
         	</br>        
-            <div class="db-poll large-4 large-pull-8 columns db-poll">
-              <div class="row">
-                <div class="large-12 medium-6 columns">
-                  <div>
+            <div class="db-poll large-4 large-pull-8 columns db-poll hide-for-medium" data-equalizer-watch>
                     <h1>Opinion Poll</h1>
-                  </div>
                   <hr>
                   	<?php the_widget('WP_Widget_Polls'); ?>
-                </div>
-              </div>
             </div>
 				</div>
 				<?php wp_reset_query(); ?>

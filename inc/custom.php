@@ -38,7 +38,8 @@ function my_embed_oembed_html($html, $url, $attr, $post_id) {
 	    echo '<span>'.$thumbnail_image[0]->post_excerpt.'</span>';
 	  }
 	}
-	
+
+
 // Adds a link to the WordPress web production doc from the admin bar
 function uploading_doc_link()
 {
@@ -106,7 +107,7 @@ add_filter( 'post_link' , 'db_link_stories');
 
 function the_blog_banner($blog_name)
 {
-	echo "<img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' />";
+	echo "<div class='text-center'><a href='".get_category_link(get_category_by_slug($blog_name))."'><img src='/img/".$blog_name.".jpeg' alt='".single_cat_title('',false)."' /></a></div>";
 }
 
 
@@ -245,6 +246,25 @@ function the_category_text($category_array) {
 		}
 	}
 	echo trim(get_category_parents($category_array[0]->term_id, false, ', '),', ');
+}
+
+function the_category_text_mult($category_array) {
+	foreach ($category_array as $category) {
+		switch ($category->cat_name) {
+			case 'Video':
+				echo "Video";
+				return;
+			case 'Radio':
+				echo "Radio";
+				return;
+			case 'Spectrum':
+				echo "Photo";
+				return;
+			default:
+				continue;
+		}
+	}
+	return;
 }
 
 function the_category_link($category_array) {
@@ -415,3 +435,58 @@ function ww_new_subcat_hierarchy() {
 }
 
 add_filter( 'category_template', 'ww_new_subcat_hierarchy' );
+
+//Opinion blog
+function get_two_cents_contributors() {
+	return array(
+		array(
+			'name' => 'Natalie Delgadillo',
+			'email' => 'ndelgadillo@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Natalie.Delgadillo-212x300.jpg',
+			'slugs' => array('idle-thoughts'),
+			'position' => 'Opinion Editor'
+			),
+		array(
+			'name' => 'Julia McCarthy',
+			'email' => 'jmccarthy@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Julia_.McCarthy-211x300.jpg',
+			'slugs' => array('social-commentary'),
+			'position' => 'Assistant Opinion Editor'
+			),
+		array(
+			'name' => 'Aram Ghoogasian',
+			'email' => 'aghoogasian@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Aram_.Ghoogasian-211x300.jpg',
+			'slugs' => array('political-commentary'),
+			'position' => 'Opinion Staff Writer'
+			),
+		array(
+			'name' => 'Jordan Lee',
+			'email' => 'jlee2@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Jordan.Lee_-211x300.jpg',
+			'slugs' => array('sports-two-cents'),
+			'position' => 'Sports Staff Writer'
+			),
+		array(
+			'name' => 'Chloe Lew',
+			'email' => 'clew@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Chloe_.Lew_-211x300.jpg',
+			'slugs' => array('social-commentary'),
+			'position' => 'Opinion Staff Writer'
+			),
+		array(
+			'name' => 'Ryan Nelson',
+			'email' => 'rnelson@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Ryan_.Nelson-212x300.jpg',
+			'slugs' => array('idle-thoughts'),
+			'position' => 'Opinion Staff Writer'
+			),
+		array(
+			'name' => 'Travis Fife',
+			'email' => 'tfife@media.ucla.edu',
+			'img' => 'http://dailybruin.com/images/2014/11/web.Travis.Fife_-211x300.jpg',
+			'slugs' => array('political-commentary'),
+			'position' => 'Opinion Staff Writer'
+			)
+		);
+}
