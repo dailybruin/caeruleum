@@ -251,7 +251,7 @@ Template Name: A&E Flavors of Westwood 2
 	</div>
 </script>
 
-
+<div class="section-container auto">
 <article id="fow">
 
 <img class="background" src="http://dailybruin.com/images/2014/01/bg7_2.png"/>
@@ -266,7 +266,7 @@ Template Name: A&E Flavors of Westwood 2
 <div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
 
 </article>
-
+</div>
 
 
 <script>
@@ -284,15 +284,21 @@ $args = array('tag' => 'flavors-of-westwood');
 $posts = get_posts( $args );
 $data = array();
 
+// removed in article picture, was causing problems.
+$pattern = '/\[caption [^\[]*\[\/caption]/';
+$replace = '';
 foreach ($posts as $post) : setup_postdata($post);
-	$post_data = array();
-	$post_id = get_the_ID();
-	$post_data['author'] = get_the_author();
-	$post_data['content'] = wpautop(get_the_content());
-	$post_data['featured'] = wp_get_attachment_url( get_post_thumbnail_id() );
-	$post_data['photo-credit'] = get_post(get_post_thumbnail_id())->post_excerpt; 
-	$data[$post_id] = $post_data;
+  $post_data = array();
+  $post_id = get_the_ID();
+  $post_data['author'] = get_the_author();
+  $content = get_the_content();
+  $realcontent = preg_replace($pattern, $replace, $content);
+  $post_data['content'] = wpautop($realcontent);
+  $post_data['featured'] = wp_get_attachment_url( get_post_thumbnail_id() );
+  $post_data['photo-credit'] = get_post(get_post_thumbnail_id())->post_excerpt; 
+  $data[$post_id] = $post_data;
 endforeach;
+
 echo "var post_json = ". json_encode($data);
 wp_reset_postdata(); 
 ?>
