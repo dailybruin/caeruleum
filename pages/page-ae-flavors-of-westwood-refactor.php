@@ -279,7 +279,7 @@ $(document).ready(function(){
 });
 
 <?php
-$args = array('tag' => 'flavors');
+$args = array('tag' => 'flavors-of-westwood');
 
 $posts = get_posts( $args );
 $data = array();
