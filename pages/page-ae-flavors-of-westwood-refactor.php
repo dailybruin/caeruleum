@@ -157,6 +157,40 @@ Template Name: A&E Flavors of Westwood 2
       display: inline-block;
       color: #999;
     }
+
+    article#fow dl {
+      display: inline-block;
+      background: #f5f5f5;
+      float: right;
+      text-align: center;
+      margin-left: 5px;
+    }
+    article#fow dl {
+      padding-top: 0.5em;
+    }
+
+    article#fow dd {
+      display: inline;
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    article#fow dl dt img {
+      padding: 5px;
+    }
+
+	@media (min-width: 480px) {
+		article#fow dl {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		article#fow dl {
+			width: 40%;
+		}
+	}
+
     article#fow .gmnoprint {
       display: none !important;
     }
@@ -189,16 +223,29 @@ Template Name: A&E Flavors of Westwood 2
 	<h3><%= restaurant.restaurantname %></h3>
 	<div class="row">
 		<div class="large-8 columns">
+		<img src="<%= restaurant.image %>" class="img-responsive" alt="<%=restaurant.restaurantname%>">
+		<br />
+		<br />
+
+		<span class="photocred">
+			<%= restaurant["photo-credit"] %>
+		</span>
+		<br />
+		<br />
+		<h2>
+			BY <%= restaurant.author %>
+		</h2>
+		<p><%= restaurant.content %></p>
 		</div>
 		<div class="large-4 columns">
 		<ul class="icons-ul">
-			<li><i class="fa fa-map-marker"></i><%= restaurant.address %></li>         
-			<li><i class="fa fa-phone"></i> <%= restaurant.phone %></li>
-			<li><i class="fa fa-calendar"></i> <%= restaurant.hours %></li>  
-			<li><i class="fa fa-briefcase"></i> Delivery: <%= restaurant.delivery %></li>        
-			<li><i class="fa fa-tag"></i> <%= restaurant.cost %></li>         
-			<li><i class="fa fa-info"></i> <%= restaurant.info %></li> 
-			<li><i class="fa fa-globe"></i> <a href="<%= restaurant.website %>" target="_blank"><%= restaurant.website %></a></li>
+			<li><i class="fa fa-fw fa-map-marker"></i><%= restaurant.address %></li>         
+			<li><i class="fa fa-fw fa-phone"></i> <%= restaurant.phone %></li>
+			<li><i class="fa fa-fw fa-calendar"></i> <%= restaurant.hours %></li>  
+			<li><i class="fa fa-fw fa-briefcase"></i> Delivery: <%= restaurant.delivery %></li>        
+			<li><i class="fa fa-fw fa-tag"></i> <%= restaurant.cost %></li>         
+			<li><i class="fa fa-fw fa-info"></i> <%= restaurant.info %></li> 
+			<li><i class="fa fa-fw fa-globe"></i> <a href="<%= restaurant.website %>" target="_blank"><%= restaurant.website %></a></li>
 		</ul>
 		</div>
 	</div>
@@ -212,57 +259,75 @@ Template Name: A&E Flavors of Westwood 2
 <h1>Flavors of Westwood</h1>
 <p class="lead">Throughout this past year, A&amp;E reporters have been venturing into the world of Westwood dining to dig up the stories behind the creation and the flavor of each eatery. Explore the flavors of Westwood through our interactive map.</p>
 
-<div id="controls-tabs" style="height: 415px; overflow-y: scroll;"></div>
+<div id="controls-tabs" style="height: 400px; overflow-y: scroll;"></div>
 <div id="gmap-tabs" class="gmap" style="position: relative; overflow: hidden;"></div>
 <div id="info"></div>
-
-
-
 
 <div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
 
 </article>
 
 
+
+<script>
+
+</script>
+
 <script type="text/javascript">
 $(document).ready(function(){
     unresponsivize();
 });
 
-var url = "https://spreadsheets.google.com/feeds/list/1yuMJRF0CisMIAsO20eaLM5Pn5pI_6kuj7tdwF5R30p0/od6/public/values?alt=json";
+<?php
+$args = array('tag' => 'flavors');
 
-$.getJSON(url, function(data){
-	var json = googleSheetToJSON(data);
-	console.log(json);
-	var LocsB = toMapJSON(json);
-	console.log(LocsB);
-    $(function() {
-        new Maplace({
-        locations: LocsB,
-        map_div: '#gmap-tabs',
-        controls_div: '#controls-tabs',
-        controls_type: 'list',
-        controls_on_map: false,
-        show_infowindow: false,
-        afterShow: function(index, location, marker) {
-            $('#info').html(location.fulldesc);
-    },
-            map_options: {
-            set_center: [34.059646, -118.443498],
-            zoom: 15
-            },
-            controls_on_map: false
-        }).Load();
-    });
-});
+$posts = get_posts( $args );
+$data = array();
+
+foreach ($posts as $post) : setup_postdata($post);
+	$post_data = array();
+	$post_id = get_the_ID();
+	$post_data['author'] = get_the_author();
+	$post_data['content'] = wpautop(get_the_content());
+	$post_data['featured'] = wp_get_attachment_url( get_post_thumbnail_id() );
+	$post_data['photo-credit'] = get_post(get_post_thumbnail_id())->post_excerpt; 
+	$data[$post_id] = $post_data;
+endforeach;
+echo "var post_json = ". json_encode($data);
+wp_reset_postdata(); 
+?>
+
+var url = "https://spreadsheets.google.com/feeds/list/1yuMJRF0CisMIAsO20eaLM5Pn5pI_6kuj7tdwF5R30p0/od6/public/values?alt=json";
+$(document).ready(function(){
+	$.getJSON(url, function(data){
+		var json = googleSheetToJSON(data);
+		console.log(json);
+		var LocsB = toMapJSON(json);
+		console.log(LocsB);
+	    $(function() {
+	        new Maplace({
+	        locations: LocsB,
+	        map_div: '#gmap-tabs',
+	        controls_div: '#controls-tabs',
+	        controls_type: 'list',
+	        controls_on_map: false,
+	        show_infowindow: false,
+	        afterShow: function(index, location, marker) {
+	            $('#info').html(location.fulldesc);
+	    },
+	            map_options: {
+	            set_center: [34.059646, -118.443498],
+	            zoom: 15
+	            },
+	            controls_on_map: false
+	        }).Load();
+	    });
+	});
+})
 </script>
 
 
 <script type="text/javascript">
-
-	function getContentFromPostID(id){
-		<?php echo get_post_field('post-content', id);?>
-	}
 
 	function to_tooltip_html(data_element){
 		var tooltip_template = _.template($('#tooltip_template').html());
@@ -277,14 +342,7 @@ $.getJSON(url, function(data){
 			'restaurant': data_element
 		});
 	}
-	// takes in JSON object from google sheets and turns into a json formatted 
-	// this way based on the original google Doc
-	// [
-	// 	{
-	// 		'column1': info1,
-	// 		'column2': info2,
-	// 	}
-	// ]
+
 
 function toMapJSON(json) {
 	var result = [];
@@ -305,6 +363,14 @@ function toMapJSON(json) {
 	return result;
 }
 
+// takes in JSON object from google sheets and turns into a json formatted 
+// this way based on the original google Doc
+// [
+// 	{
+// 		'column1': info1,
+// 		'column2': info2,
+// 	}
+// ]
 function googleSheetToJSON(data){
 	var formatted_json = [];
 	var elem = {};
@@ -320,9 +386,16 @@ function googleSheetToJSON(data){
 				real_keyname = key.substring(4); 
 				elem[real_keyname] = value['$t'];
 			}
-			elem['content'] = getContentFromPostID(elem['postid']);
 		});
+		var postid = elem['postid'];
+		if (_.has(post_json, postid)){
+			elem['author'] = post_json[postid]['author'].toUpperCase();
+			elem['image'] = post_json[postid]['featured'];
+			elem['content'] = post_json[postid]['content'];
+			elem['photo-credit'] = post_json[postid]['photo-credit'];
+		}
 		formatted_json.push(elem);
+
 	});
 	return formatted_json;
 }
