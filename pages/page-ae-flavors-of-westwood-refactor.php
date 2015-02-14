@@ -316,3 +316,11 @@ function googleSheetToJSON(data){
 	return formatted_json;
 }
 </script>
+
+<div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
+
+</article>
+
+<div class="db-wrapper db-content">
+<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
+<?php get_footer(); ?>
