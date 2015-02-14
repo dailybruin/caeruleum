@@ -180,6 +180,30 @@ Template Name: A&E Flavors of Westwood 2
     }
 </style>
 
+<script id="tooltip_template" type="text/template">
+	<h3><%= restaurant.restaurantname %></h3>
+	<p><%= restaurant.tagline %></p>
+</script>
+
+<script id="content_template" type="text/template">
+	<h3><%= restaurant.restaurantname %></h3>
+	<div class="row">
+		<div class="large-8 columns">
+		</div>
+		<div class="large-4 columns">
+		<ul class="icons-ul">
+			<li><i class="fa fa-map-marker"></i><%= restaurant.address %></li>         
+			<li><i class="fa fa-phone"></i> <%= restaurant.phone %></li>
+			<li><i class="fa fa-calendar"></i> <%= restaurant.hours %></li>  
+			<li><i class="fa fa-briefcase"></i> Delivery: <%= restaurant.delivery %></li>        
+			<li><i class="fa fa-tag"></i> <%= restaurant.cost %></li>         
+			<li><i class="fa fa-info"></i> <%= restaurant.info %></li> 
+			<li><i class="fa fa-globe"></i> <a href="<%= restaurant.website %>" target="_blank"><%= restaurant.website %></a></li>
+		</ul>
+		</div>
+	</div>
+</script>
+
 
 <article id="fow">
 
@@ -191,6 +215,14 @@ Template Name: A&E Flavors of Westwood 2
 <div id="controls-tabs" style="height: 415px; overflow-y: scroll;"></div>
 <div id="gmap-tabs" class="gmap" style="position: relative; overflow: hidden;"></div>
 <div id="info"></div>
+
+
+
+
+<div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
+
+</article>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -205,77 +237,54 @@ $.getJSON(url, function(data){
 	var LocsB = toMapJSON(json);
 	console.log(LocsB);
     $(function() {
-            new Maplace({
-            locations: LocsB,
-            map_div: '#gmap-tabs',
-            controls_div: '#controls-tabs',
-            controls_type: 'list',
-            controls_on_map: false,
-            show_infowindow: false,
-            afterShow: function(index, location, marker) {
-                    $('#info').html(location.fulldesc);
+        new Maplace({
+        locations: LocsB,
+        map_div: '#gmap-tabs',
+        controls_div: '#controls-tabs',
+        controls_type: 'list',
+        controls_on_map: false,
+        show_infowindow: false,
+        afterShow: function(index, location, marker) {
+            $('#info').html(location.fulldesc);
+    },
+            map_options: {
+            set_center: [34.059646, -118.443498],
+            zoom: 15
             },
-                    map_options: {
-                    set_center: [34.059646, -118.443498],
-                    zoom: 15
-                    },
-                    controls_on_map: false
-            }).Load();
+            controls_on_map: false
+        }).Load();
     });
 });
-
-
 </script>
 
-
-
-
-<script id="tooltip_template" type="text/template">
-<h3><%= restaurant.restaurantname %></h3>
-<p><%= restaurant.tagline %></p>
-</script>
-
-<script id="content_template" type="text/template">
-<h3><%= restaurant.restaurantname %></h3>
-<div class="row">
-	<div class="large-8 columns">
-	</div>
-	<div class="large-4 columns">
-	<ul class="icons-ul">
-		<li><i class="icon-map-marker"></i><%= restaurant.address %></li>         
-		<li><i class="icon-bell"></i> <%= restaurant.phone %></li>
-		<li><i class="icon-calendar"></i> <%= restaurant.hours %></li>  
-		<li><i class="icon-briefcase"></i> Delivery: <%= restaurant.delivery %></li>        
-		<li><i class="icon-tag"></i> <%= restaurant.cost %></li>         
-		<li><i class="icon-info-sign"></i> <%= restaurant.info %></li> 
-		<li><i class="icon-globe"></i> <a href="<%= restaurant.website %>" target="_blank">%= restaurant.website %></a></li>
-	</ul>
-	</div>
-</div>
-</script>
 
 <script type="text/javascript">
-function to_tooltip_html(data_element){
-	var tooltip_template = _.template($('#tooltip_template').html());
-	return tooltip_template({
-		'restaurant': data_element
-	});
-}
 
-function to_content_html(data_element){
-	var content_template = _.template($('#content_template').html());
-	return content_template({
-		'restaurant': data_element
-	});
-}
-// takes in JSON object from google sheets and turns into a json formatted 
-// this way based on the original google Doc
-// [
-// 	{
-// 		'column1': info1,
-// 		'column2': info2,
-// 	}
-// ]
+	function getContentFromPostID(id){
+		<?php echo get_post_field('post-content', id);?>
+	}
+
+	function to_tooltip_html(data_element){
+		var tooltip_template = _.template($('#tooltip_template').html());
+		return tooltip_template({
+			'restaurant': data_element
+		});
+	}
+
+	function to_content_html(data_element){
+		var content_template = _.template($('#content_template').html());
+		return content_template({
+			'restaurant': data_element
+		});
+	}
+	// takes in JSON object from google sheets and turns into a json formatted 
+	// this way based on the original google Doc
+	// [
+	// 	{
+	// 		'column1': info1,
+	// 		'column2': info2,
+	// 	}
+	// ]
 
 function toMapJSON(json) {
 	var result = [];
@@ -289,6 +298,7 @@ function toMapJSON(json) {
 		elem['icon'] = 'http://maps.google.com/mapfiles/marker' + data.marker + '.png';
 		elem['zoom'] = 17;
 		elem['title'] = data.restaurantname;
+		elem['website'] = data.website;
 		result.push(elem);
 	});
 
@@ -310,6 +320,7 @@ function googleSheetToJSON(data){
 				real_keyname = key.substring(4); 
 				elem[real_keyname] = value['$t'];
 			}
+			elem['content'] = getContentFromPostID(elem['postid']);
 		});
 		formatted_json.push(elem);
 	});
@@ -317,9 +328,6 @@ function googleSheetToJSON(data){
 }
 </script>
 
-<div id="page-credit">Page created by <a href="http://aeiny.com">Aein Hope</a> and <a href="mailto:afarhangi@media.ucla.edu">Arman Farhangi</a></div>
-
-</article>
 
 <div class="db-wrapper db-content">
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
