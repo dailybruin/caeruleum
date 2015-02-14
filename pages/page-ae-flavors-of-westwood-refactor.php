@@ -35,7 +35,7 @@ Template Name: A&E Flavors of Westwood 2
     }
     article#fow h3 {
       font: 100 30px/1.3 'Lobster Two', Helvetica, sans-serif;
-      color: #2685bb;
+      color: #2685bb !important;
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
       text-transform: none;
     }
@@ -179,6 +179,9 @@ Template Name: A&E Flavors of Westwood 2
       padding: 5px;
     }
 
+    article#fow #info {
+      margin-top: 10px;
+    }
 	@media (min-width: 480px) {
 		article#fow dl {
 			width: 100%;
@@ -220,8 +223,8 @@ Template Name: A&E Flavors of Westwood 2
 </script>
 
 <script id="content_template" type="text/template">
+  <div class="row">
 	<h3><%= restaurant.restaurantname %></h3>
-	<div class="row">
 		<div class="large-8 columns">
 		<img src="<%= restaurant.image %>" class="img-responsive" alt="<%=restaurant.restaurantname%>">
 		<br />
