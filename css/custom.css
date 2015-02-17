@@ -427,11 +427,11 @@ position: relative !important;
   z-index: 1000;
 }
 #stickyalias .tab-bar{
-	height: 4rem !important;
-	line-height: 4rem !important;
+	height: 3.5rem !important;
+	line-height: 3.5rem !important;
 }
 #stickyalias .menu-icon{
-	height: 4rem !important;
+	height: 3.8rem !important;
 }
 #stickyalias .menu-icon h1 {
 	font-weight: bold;
@@ -442,13 +442,13 @@ position: relative !important;
 
 #stickyalias .search-icon{
 	position: relative;
-	top: -0.7rem;
+	top: -0.9rem;
 }
 
 #stickyalias .search-icon i {
 	display: inline;
 	font-size: 1.2rem;
-	line-height: 5.3rem;
+	line-height: 4.3rem;
 	color: black !important;
 }
 
