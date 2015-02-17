@@ -190,7 +190,7 @@
 	            	<?php get_template_part('ad','side'); ?>
 	            </div>
 	            <hr style="margin: 1.5rem 0">
-	            <div class="row text-center hide-for-medium hide-for-small">
+	            <div class="row db-image text-center hide-for-medium hide-for-small">
 	        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
 	        	</div>
             </div>
@@ -262,8 +262,7 @@
             <div class="large-3 show-for-large-up columns db-classifieds" id="db-classifieds">
            		<div class="db-classifieds-header">
                 	<h1>Featured Classifieds</h1>
-            	</div>
-            	
+            	</div>            	
             	  <ul>
 				      <?php
 				      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('test-sidebar') ) :
@@ -284,7 +283,7 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-ns row">
-              	<div class="text-center">
+              	<div class="db-image text-center">
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
@@ -319,7 +318,7 @@
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-op' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-				<div class="text-center">
+				<div class="db-image text-center">
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
@@ -358,7 +357,7 @@
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-ae' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-				<div class="text-center">
+				<div class="db-image text-center">
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
@@ -397,7 +396,7 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
               <div class="db-story-sp row">
-				<div class="text-center">
+				<div class="db-image text-center">
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
 	            </div>
                 <!-- <div class="small-6 columns"> -->
