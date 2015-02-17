@@ -26,6 +26,10 @@ h3{
 	line-height: 1.2;
 }
 
+.db-off-canvas-wrap .db-content .db-divide {
+	border-bottom: thin solid #222222 !important;
+}
+
 .page-header h2 {
 	font-size: 3rem;
 	font-weight: 400;
