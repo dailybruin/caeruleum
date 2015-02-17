@@ -47,14 +47,16 @@
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
-	        	<a href="<?php echo home_url('/'); ?>">
-		          	 <div class="db-logo">
+	          	 <div class="db-logo">
+	          	 	<a href="<?php echo home_url('/'); ?>">
 			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
-			         </div>
-			         <div class="db-logo-spectrum">
+			        </a>
+		         </div>
+		         <div class="db-logo-spectrum">
+		         	<a href="<?php echo home_url('/'); ?>">
 			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
-			         </div>
-			     </a>
+			        </a>
+		         </div>
 	        </section>
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search">
