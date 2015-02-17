@@ -73,6 +73,7 @@
 	<div id="menu" class="reveal-modal" data-reveal>
 
           <div class="db-nav-links">
+          	<a href="../"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_icon.svg"/></a>
           	<a href="#" class="close-reveal-modal text-right"><i class="fa fa-angle-left"></i></a>
   				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
 							'menu_class' => '',
