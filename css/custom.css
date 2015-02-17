@@ -26,6 +26,10 @@ h3{
 	line-height: 1.2;
 }
 
+.db-story-m hr {
+	border: white;
+}
+
 .db-off-canvas-wrap .db-content .db-divide {
 	border-bottom: thin solid #222222 !important;
 }
