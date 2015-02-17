@@ -474,6 +474,7 @@ position: relative !important;
 	position: fixed;
 	top: 10% !important;
 	max-height: 80vh;
+	min-height: 0;
 	overflow-y: auto;
 }
 
