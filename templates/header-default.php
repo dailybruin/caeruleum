@@ -11,7 +11,7 @@
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
-	          	<span></span><h1 class="hide-for-medium hide-for-small">MENU</h1>
+	          	<span></span><h1 class="hide-for-medium hide-for-small"></h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -28,7 +28,7 @@
 	        </section>
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search">
-	          	<span class="hide-for-medium hide-for-small">SEARCH&nbsp;</span> <i class="fa fa-search"></i>
+	          	<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
 	          </a>
 	        </section>
 	        <hr class="show-for-small">
@@ -43,7 +43,7 @@
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
-	          	<span></span><h1 class="hide-for-medium  hide-for-small">MENU</h1>
+	          	<span></span><h1 class="hide-for-medium  hide-for-small"></h1>
 	          </a>
 	        </section>
 	        <section class="middle tab-bar-section">
@@ -58,7 +58,7 @@
 	        </section>
 	       	<section class="text-right">
 	          <a class="search-icon" href="#" data-reveal-id="search">
-	          	<span class="hide-for-medium hide-for-small">SEARCH&nbsp;</span> <i class="fa fa-search"></i>
+	          	<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
 	          </a>
 	        </section>
 	      </nav>
