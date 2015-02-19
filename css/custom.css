@@ -32,6 +32,7 @@ h3{
 
 .db-off-canvas-wrap .db-content .db-divide {
 	border-bottom: thin solid #222222 !important;
+	margin: ;
 }
 
 .page-header h2 {
@@ -421,8 +422,6 @@ position: relative !important;
 #stickyalias {
   display: none;
   z-index: 1000;
-  border-bottom: thin solid lightgrey !important;
-  box-shadow: 0px 1px 10px rgba(0,0,0, 0.5);
 }
 
 #stickyalias img {

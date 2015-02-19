@@ -1,13 +1,13 @@
 <div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
   </br>
-	<div class="row">
+	<div class="row hide-for-small">
     	<div class="db-ad-leaderboard text-center">
 			<?php get_template_part('ad','banner'); ?>
 		</div>
 	</div>
-	<hr>
-  	<div id="stickyheader">
+	<hr class="hide-for-small">
+  	<div class="hide-for-small" id="stickyheader">
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
@@ -31,7 +31,6 @@
 	          	<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
 	          </a>
 	        </section>
-	        <hr class="show-for-small">
 	        <div class="db-top-date text-center hide-for-small">
 				<?php date_default_timezone_set('America/Los_Angeles'); ?>
 				<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
@@ -39,7 +38,7 @@
 		</br>
 	      </nav>
 	</div>
-    <div id="stickyalias">
+    <div class="show-for-small" id="stickyalias">
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
