@@ -22,7 +22,8 @@ $(function(){
                     // $('#stickyheader').css({position: 'fixed', top: '0px'});
                     $('#stickyalias').css('display', 'block');
                     $('#stickyalias').css({position: 'fixed', top: '0px', width: '100%', boxShadow: '0px 1px 10px rgba(0,0,0, 0.5)'});
-            } else {
+            }
+            else {
                     // $('#stickyheader').css({position: 'static', top: '0px'});
                     $('#stickyalias').css('display', 'none');
                     $('#stickyalias').css({position: 'relative', top: '0px', width: '100%', boxShadow: 'none'});

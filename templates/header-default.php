@@ -38,7 +38,33 @@
 		</br>
 	      </nav>
 	</div>
-    <div class="show-for-small" id="stickyalias">
+	<div class="show-for-small" id="stickyheader-small">
+	      <nav class="tab-bar">
+	        <section class="left-small">
+	          <a class="menu-icon" href="#" data-reveal-id="menu">
+	          	<span></span>
+	          </a>
+	        </section>
+	        <section class="middle tab-bar-section">
+	          	 <div class="db-logo">
+	          	 	<a href="<?php echo home_url('/'); ?>">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+			        </a>
+		         </div>
+		         <div class="db-logo-spectrum">
+		         	<a href="<?php echo home_url('/'); ?>">
+			          	<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+			        </a>
+		         </div>
+	        </section>
+	       	<section class="text-right">
+	          <a class="search-icon" href="#" data-reveal-id="search">
+	          	<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
+	          </a>
+	        </section>
+	      </nav>
+    </div>
+    <div id="stickyalias">
 	      <nav class="tab-bar">
 	        <section class="left-small">
 	          <a class="menu-icon" href="#" data-reveal-id="menu">
