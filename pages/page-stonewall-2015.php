@@ -10,71 +10,73 @@ Template Name: Stonewall
 <head>
 <meta charset="utf-8" />
 <title>Stonewall</title>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-<script type='text/javascript' src='/js/vendor/jquery.tipsy.js'></script>
-<link rel="stylesheet" href="/css/vendor/tipsy.css" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <style>
+.accordion .accordion-navigation > a {
+	background: none;
+	color: #222222 !important;
+	display: block;
+	font-family: "Roboto Slab", serif;
+	font-size: 1.5rem;
+}
+
+.accordion .accordion-navigation.active > a {
+	background: none;
+}
+
+.accordion .accordion-navigation {
+	margin-bottom: 1rem !important;
+}
+
+#title h2 {
+	font-size: 6rem;
+	text-align: center;
+	font-weight: 400;
+	color: #333 !important;
+	/*text-transform: uppercase;*/
+}
+#title h3 {
+	text-align: center;
+	font-weight: 400;
+	color: #555 !important;
+	line-height: 2;
+	/*text-transform: uppercase;*/
+}
+
+#stonewall-wrap ul {
+	list-style-type: none;
+	margin-right: 1.1rem;
+	font-size: 1rem;
+}
+
+.stone-title {
+	font-size: 1.5rem;
+}
 
 #blurb {
 	text-indent: 70px;
-    border: 2px solid #a1a1a1;
-    background: #dddddd;
+    background: #EEE;
     width: 100%;
-/*    border-radius: 25px;*/
-    font-size: 20px;
+    
     margin-bottom: 2px;
 }
 #blurb p {
 	padding-left: 15px;
 	padding: 10px;
+	font-size: 1rem;
 }
 
-.stone
-{    
-    float:left;
-    position:relative;
-    width:390px;
-    height:100%;
-    text-align: center;
-    z-index: 1;
-    /*via stackoverflow: http://stackoverflow.com/questions/311990/how-do-i-get-a-div-to-float-to-the-bottom-of-its-container;*/
-    /*rotates stones*/
-	-moz-transform:rotate(180deg);
-	-webkit-transform:rotate(180deg);
-	-o-transform:rotate(180deg);
-	-ms-transform:rotate(180deg);
-	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-
+.stone {
+	margin-bottom: 1rem;
+	background-image: url('http://dailybruin.com/images/2015/02/stonewall.jpg');
+	background-size: 50%;
 }
 
-.texts
-{
-/*	white-space: pre-wrap;        
-	white-space: -moz-pre-wrap;   
-	white-space: -pre-wrap;     
-	white-space: -o-pre-wrap;      
-	word-wrap: break-word;*/      
-	position: absolute;
-	color: white;
-/*	display: inline-block;*/
-	text-align: center;
-	font-size: 17px;
-	top: 25%;
-    bottom: 20%;
-    left: 15%;
-    right: 15%;
-}
-#stonewall{
-	/*rotates stone container*/
-	float:left;
-	-moz-transform:rotate(180deg);
-	-webkit-transform:rotate(180deg);
-	-o-transform:rotate(180deg);
-	-ms-transform:rotate(180deg);
-	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-}
 #stonewall-wrap {
+
+	font-family: 'Roboto Slab', serif;
+	margin-top: 2rem;
 	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
@@ -87,9 +89,9 @@ Template Name: Stonewall
 
 <body>
 	<div id="stonewall-wrap">
-		<div id = "blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there.  </p></div>
-		<div id="stonewall"></div> 
-		<div id = "banner"><img src="http://dailybruin.com/images/2015/01/stonewall.jpg"></div> 
+		<div id="title"><h2>Stonewall</h2><h3>From the Daily Bruin</h3></div>
+		<div id="blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there.  </p></div>
+		<ul id="stonewall" class="accordion" data-accordion></ul> 
 	</div>
 </body>
 </html>
@@ -100,35 +102,26 @@ $(document).ready(function() {
 //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE	
 
 $(function showstones() {	
-
 $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQUK1Ty6PqyGgkqMf4W7h4/od6/public/values?alt=json",
 
 	function (data) {	
-
-
 		//$('div#stonewall').append('<div class="stone"></div>');
-		$.each(data.feed.entry, function(i,entry) {	
+		$.each(data.feed.entry.reverse(), function(i,entry) {	
 		if (entry.gsx$date.$t && entry.gsx$copystatus.$t)
 		{
-			var dis = entry.gsx$description.$t
-			$('div#stonewall').append('<div id = "s'+i+'" class="stone" title = "'+dis+'">  <div id = "t'+i+'" class = "texts">  </div> </div>');
-			//var pic = '<span style="display:none">' + entry.id.$t + '</span>';	
-			var pic = '<img src="http://dailybruin.com/images/2015/01/stone'+(i%4+1)+'.png" id = "stonegraphic"/>';
-
-			var item =entry.gsx$date.$t + '<br/>';	
-			item += entry.gsx$reason.$t;
-
-			$('#s'+i+'').append(pic);
-			$('#t'+i+'').append(item);
-			$('#s'+i+'').tipsy({
-				fade: true,
-				gravity: $.fn.tipsy.autoNS
-			});
+			var append = '<li class="accordion-navigation stone">';
+			append += '<a href="#panel'+i+'a" class="stone-title" id="t'+i+'"></a>';
+			append += '<div id="panel'+i+'a" class="content stone-desc" id="desc'+i+'"></div>';
+			append += '</li>';
+			$('ul#stonewall').append(append);
+			var title = '<b>' + entry.gsx$date.$t + ':</b> ' + entry.gsx$reason.$t;
+			var desc = entry.gsx$description.$t;
+			$('#t'+i+'').append(title);
+			$('#panel'+i+'a').append(desc);
 		}
 			});
-
 		});
-
+  
 	});
 	
 
