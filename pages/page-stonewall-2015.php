@@ -90,7 +90,7 @@ Template Name: Stonewall
 <body>
 	<div id="stonewall-wrap">
 		<div id="title"><h2>Stonewall</h2><h3>From the Daily Bruin</h3></div>
-		<div id="blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can hover over each stone in the wall to read about why it's there.  </p></div>
+		<div id="blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can click each stone to read about why it's there.  </p></div>
 		<ul id="stonewall" class="accordion" data-accordion></ul> 
 	</div>
 </body>
