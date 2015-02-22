@@ -69,8 +69,22 @@ Template Name: Stonewall
 
 .stone {
 	margin-bottom: 1rem;
-	background-image: url('http://dailybruin.com/images/2015/02/stonewall.jpg');
 	background-size: 50%;
+}
+
+.s1 {
+	background-image: url('http://dailybruin.com/images/2015/02/stonewall.jpg');
+	background-position: top;
+}
+
+.s2 {
+	background-image: url('http://dailybruin.com/images/2015/02/stonewall.jpg');
+	background-position: bottom;
+}
+
+.s3 {
+		background-image: url('http://dailybruin.com/images/2015/02/stonewall.jpg');
+	background-position: center;
 }
 
 #stonewall-wrap {
@@ -99,6 +113,7 @@ Template Name: Stonewall
 <script type="text/javascript"> 
 $(document).ready(function() {	
 
+var position = ["top","center","bottom"];
 //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE	
 
 $(function showstones() {	
@@ -109,7 +124,7 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQU
 		$.each(data.feed.entry.reverse(), function(i,entry) {	
 		if (entry.gsx$date.$t && entry.gsx$copystatus.$t)
 		{
-			var append = '<li class="accordion-navigation stone">';
+			var append = '<li class="accordion-navigation stone s'+(i%3+1)+'">';
 			append += '<a href="#panel'+i+'a" class="stone-title" id="t'+i+'"></a>';
 			append += '<div id="panel'+i+'a" class="content stone-desc" id="desc'+i+'"></div>';
 			append += '</li>';
