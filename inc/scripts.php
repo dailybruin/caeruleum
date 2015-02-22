@@ -18,7 +18,6 @@
 function roots_scripts() {
   wp_enqueue_style('galleryview_css', get_template_directory_uri() . '/css/jquery.galleryview-3.0-dev.css', false, null );
   wp_enqueue_style('lightSlider_css', get_template_directory_uri() . '/css/vendor/lightSlider.css', false, null );
-  wp_enqueue_style('custom_css', get_template_directory_uri() . '/css/custom.css', false);
   // If you're not using Bootstrap, include HTML5 Boilerplate's main.css:
   // wp_enqueue_style('roots_h5bp', get_template_directory_uri() . '/css/main.css', false, null);
 
