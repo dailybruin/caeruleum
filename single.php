@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="row" id="single-post">
+<div class="row db-story" id="single-post">
 <?php 
 $spectrum = false;
 foreach(get_the_category() as $cat)

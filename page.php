@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="row" id="single-post">
+<div class="row db-story" id="single-post">
 	<div class="large-8 columns">
         <?php get_template_part('loop', 'page'); ?>
 	</div><!-- end div#post -->
