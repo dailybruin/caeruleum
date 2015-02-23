@@ -139,7 +139,9 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQU
 		$.each(data.feed.entry.reverse(), function(i,entry) {	
 		if (entry.gsx$date.$t && entry.gsx$copystatus.$t)
 		{
-			var append = '<li class="accordion-navigation stone s'+(i%3+1)+'">';
+			var delay = (data.feed.entry.length - i + 1) * 0.15;
+			var append = '<li class="accordion-navigation animated fadeInDownBig stone s'+(i%3+1)+'"';
+			append += 'style="-webkit-animation-delay:'+delay+'s;-moz-animation-delay: '+delay+'s;-ms-animation-delay: '+delay+'s;">'
 			append += '<a href="#panel'+i+'a" class="stone-title" id="t'+i+'"></a>';
 			append += '<div id="panel'+i+'a" class="content stone-desc" id="desc'+i+'"></div>';
 			append += '</li>';
