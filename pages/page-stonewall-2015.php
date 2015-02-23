@@ -28,16 +28,18 @@ Template Name: Stonewall
 .accordion .accordion-navigation {
 	margin-bottom: 1rem !important;
 }
+#title {
+	text-align: center;
+}
 
 #title h2 {
 	font-size: 6rem;
-	text-align: center;
 	font-weight: 400;
 	color: #333 !important;
+	display: inline-block;
 	/*text-transform: uppercase;*/
 }
 #title h3 {
-	text-align: center;
 	font-weight: 400;
 	color: #555 !important;
 	line-height: 2;
@@ -96,6 +98,10 @@ Template Name: Stonewall
 	margin-right: auto;
 }
 
+.db-next {
+	display: none !important;
+}
+
 
 
 </style>
@@ -103,7 +109,16 @@ Template Name: Stonewall
 
 <body>
 	<div id="stonewall-wrap">
-		<div id="title"><h2>Stonewall</h2><h3>From the Daily Bruin</h3></div>
+		<div id="title"><h2 class="animated fadeInDown">S</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 0.3s;-moz-animation-delay: 0.3s;-ms-animation-delay: 0.3s;">t</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 0.6s;-moz-animation-delay: 0.6s;-ms-animation-delay: 0.6s;">o</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 0.9s;-moz-animation-delay: 0.9s;-ms-animation-delay: 0.9s;">n</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 1.2s;-moz-animation-delay: 1.2s;-ms-animation-delay: 1.2s;">e</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 1.5s;-moz-animation-delay: 1.5s;-ms-animation-delay: 1.5s;">w</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 1.8s;-moz-animation-delay: 1.8s;-ms-animation-delay: 1.8s;">a</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 2.1s;-moz-animation-delay: 2.1s;-ms-animation-delay: 2.1s;">l</h2>
+						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 2.4s;-moz-animation-delay: 2.4s;-ms-animation-delay: 2.4s;">l</h2>
+			<h3>From the Daily Bruin</h3></div>
 		<div id="blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can click each stone to read about why it's there.  </p></div>
 		<ul id="stonewall" class="accordion" data-accordion></ul> 
 	</div>
