@@ -70,7 +70,7 @@
         $second_side = array( 'numberposts' => 2, 'category__and' => array($spotlight_cat, get_category_by_slug('film-tv')->term_id) );
         $third_side = array( 'numberposts' => 2, 'category__and' => array($spotlight_cat, get_category_by_slug('theater-arts')->term_id) );
         $side_names = array("Spotlight on Music", "Spotlight on Film/TV", "Spotlight on Theater/Arts");
-        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        $side_args = array($first_side,$second_side,$third_side);
         break;
       case "Two Cents":
         $section_cat = $twocents_cat;
