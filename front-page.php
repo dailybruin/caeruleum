@@ -145,7 +145,7 @@
             <hr>
 
             <?php endforeach; ?>
-            <?php
+<!--             <?php
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
@@ -159,7 +159,7 @@
                   <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                 </h3>
               </div>
-            <?php endforeach; ?>
+            <?php endforeach; ?> -->
             </div>
             <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
