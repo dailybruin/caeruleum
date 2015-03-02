@@ -20,7 +20,7 @@ Template Name: Next 2015
 					<div class="row">
 						<div class="large-7 columns">
 							<h3>Developing on the Stack</h3>
-							<p>We want to have a space where our developers are free to create and experiment with online journalism. Digital managing editor Harrison Liddiard and senior staff developer Neil Bedi are creating the Stack, a blog to do just that. The Stack will be a constant feed from our Online department with creations – small and large – and a behind-the-scenes view of how we are making digital content. We are focusing on providing a restriction-free environment so developers can build what they want, when they want, and pursue projects that push the boundaries of modern journalism.</p></div>
+							<p>We want to have a space where our developers are free to create and experiment with online journalism. The Daily Bruin Online department is creating the Stack, a blog to do just that. The Stack will be a constant feed from our Online department with creations – small and large – and a behind-the-scenes view of how we are making digital content. We are focusing on providing a restriction-free environment so developers can build what they want, when they want, and pursue projects that push the boundaries of modern journalism.</p></div>
 						<div class="large-5 columns"><img src="http://dailybruin.com/images/2015/03/stackss.png"/></div>
 					</div>
 					<div class="row">
