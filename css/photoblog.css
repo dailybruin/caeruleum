@@ -353,11 +353,17 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	border-radius: 5px;
 	*/
 	color: #BBBBBB;
-	font-family: 'Palatino Linotype';
 	height: auto;
 	margin-bottom: 20px;
+	text-align: center;
+}
+#pb-gallery-block p,
+#pb-gallery-block h2{
 	text-align: left;
-	width: 90%;
+}
+#pb-image-block {
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 #pb-gallery-image {
 	/*
