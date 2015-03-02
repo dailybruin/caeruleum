@@ -94,7 +94,7 @@
     					if(isset($thumbnail) || !($thumbnail == ""))
     					{
         					?>
-        						<div class="author-photo"><img src="http://dailybruin.com/images/userphoto/4771.thumbnail.jpg"/><?php echo $thumbnail; ?></div>
+        						<div class="author-photo"><?php echo $thumbnail; ?></div>
         						<?php
         				}
 				    }
