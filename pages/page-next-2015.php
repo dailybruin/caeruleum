@@ -48,7 +48,7 @@ Template Name: Next 2015
 
 <style>
 a {
-	color: #0080c6 !important;
+	color: #0080c6;
 }
 .main-video {
 	max-width: 60rem;
