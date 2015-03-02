@@ -369,6 +369,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin-right: auto;
 	margin-top: 2%;
 	width: 100%;
+
+}
+#pb-gallery-image img {
 	max-height: 500px;
 }
 
