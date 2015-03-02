@@ -29,10 +29,10 @@
 				?>
 			</a></h1> 
 						<?php $gallery = get_post_meta($post->ID, 'gallery', true);
-			if ($gallery != '-1') //THIS PART DONE BY NEIL
-				echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
+			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
+				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
 				global $nggdb;
-				$galleryt = $nggdb->get_gallery(8, 'sortorder', 'ASC', true, 0, 0);
+				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
 				    echo '<img src="'.$image->imageURL.'"/>';
 				    echo '<p>'.$image->description.' (Photo by: '. $image->alttext.')</p>';
