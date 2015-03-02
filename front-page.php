@@ -445,9 +445,23 @@
 					</div>
 				</div><!-- end div#featuredProject -->
 				<div class="row">
-		            <div class="text-center hide-for-medium hide-for-small">
-		                <?php get_template_part('ad','smallbanner'); ?>
-		            </div>
+            <div class="large-4 columns advertisment featured-ads">
+                <h4>Sponsored Links:</h4>
+                <ul style="list-style-type:none">
+                    <?php wp_list_bookmarks(array(
+                        'title_li'                      =>      __(''),
+                        'title_before'          =>      '',
+                        'title_after'           =>      '',
+                        'category_before'       =>      '',
+                        'category_after'        =>      '',
+                        'categorize'            =>      0,
+                        'before'                        =>      '<li>'
+                    )); ?>
+                </ul>
+            </div>
+            <div class="large-8 columns hide-for-medium hide-for-small">
+                <?php get_template_part('ad','smallbanner'); ?>
+            </div>
 		        </div>
        		</div>
         	</br>        
