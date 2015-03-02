@@ -218,9 +218,10 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*text-decoration: none;*/
 }
 .photoblog-text p {
-	font-family: 'Helvetica';
-	line-height: 18px;
-	font-size: 14px;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 1rem;
 }
 #photoblog-post-author {
 	font-style: italic;
