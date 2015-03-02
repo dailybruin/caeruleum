@@ -1,6 +1,3 @@
-<div class="off-canvas-wrap db-off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-  </br>
 	<div class="row hide-for-small">
     	<div class="db-ad-leaderboard text-center">
 			<?php get_template_part('ad','banner'); ?>
@@ -120,7 +117,53 @@
 	</div>
         
 	<div class="db-wrapper db-content">
-		<div class="row db-story">
+		<style>
+			.db-next {
+				text-align: center;
+				/*border-top: 1px solid #EEE;*/
+				/*border-bottom: 1px solid #EEE;*/
+				margin-top: 0.5rem;
+				margin-bottom: 0.1rem;
+				padding-top: 0.5rem;
+				/*padding-bottom: 0.5rem;*/
+			}
+			.db-next .fadeInLeft {
+				  -webkit-animation-delay: 0.6s;
+				  -moz-animation-delay: 0.6s;
+				  -ms-animation-delay: 0.6s;
+			}
+			.db-next .fadeInUp {
+				  -webkit-animation-delay: 2s;
+				  -moz-animation-delay: 2s;
+				  -ms-animation-delay: 2s;
+			}
+			.db-next h2 {
+				display: inline-block;
+				font-size: 1.5rem;
+			}
+			.db-next button {
+				margin-right: 0rem;
+				margin-left: 2.5rem;
+				font-size: 1.2rem;
+				padding: 1rem 1rem 1.0625rem 1rem;
+				background-color: #0080c6;
+				font-family: 'Roboto Slab', serif;
+			}
+			.db-next button:hover {
+				background-color: rgba(0, 128, 198, 0.7);
+			}
+		</style>
+		
+		<div class="row db-story below-header db-next hide-for-small">
+			<a href="/next">
+				<div class="small-12 columns">
+					<h2 class="animated fadeInLeft">The Daily Bruin is changing.&nbsp;</h2>
+					<button class="animated fadeInUp">&nbsp;Learn more &raquo;</button>
+				</div>
+			</a>
+		</div>
+		
+		<div class="row db-story below-header">
 			<div class="small-6 columns hide-for-small" style="margin:0;">
 			    <?php ob_start();
 			        wp_nav_menu(array('theme_location' => 'in_the_news',
@@ -143,4 +186,3 @@
 				<a href="http://dailybruin.com/feed" title="RSS"><i class="fa fa-rss"></i></a>
 			</div>
 		</div>
-

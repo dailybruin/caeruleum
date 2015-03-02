@@ -65,6 +65,8 @@ $(document).ready(function() {
 $(function showgraphics() {	
 $.getJSON("https://spreadsheets.google.com/feeds/list/16YS2FEIazhZZQGmZvyGDWrgXXtcKRhs6hk647TZCfcc/od6/public/values?alt=json",
 	function (data) {	
+		console.log(data);
+		alert("HI");
 		$.each(data.feed.entry.reverse(), function(i,entry) {	
 		if (entry.gsx$complete.$t){
 			var append = '<a href="#" data-reveal-id="modal'+i+'"><div class="graphic">';

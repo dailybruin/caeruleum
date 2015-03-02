@@ -20,7 +20,6 @@ $db-masthead-subcategory-size: rem-calc(36);
 
 // Daily Bruin additions
 
-.db-off-canvas-wrap {
   .tab-bar {
     -webkit-backface-visibility: hidden;
     background: #FFFFFF;
@@ -185,14 +184,6 @@ $db-masthead-subcategory-size: rem-calc(36);
       }
     }
 
-    .db-ad-leaderboard {
-      width: $db-ad-leaderboard-width;
-      margin: $db-ad-padding auto;
-      @media only screen and (max-width: $db-ad-leaderboard-width + ($db-ad-padding * 2)) {
-        display: none;
-      }
-    }
-
     .db-ad-banner {
       width: $db-ad-banner-width;
       margin: $db-ad-padding auto;
@@ -331,6 +322,14 @@ $db-masthead-subcategory-size: rem-calc(36);
       }
     }
   }
+
+  .db-ad-leaderboard {
+  width: $db-ad-leaderboard-width;
+  margin: $db-ad-padding auto;
+  margin-top: 1rem;
+  @media only screen and (max-width: $db-ad-leaderboard-width + ($db-ad-padding * 2)) {
+    display: none;
+  }
 }
 
 .page-header h2 {
@@ -368,8 +367,8 @@ $db-masthead-subcategory-size: rem-calc(36);
   line-height: 1.3;
 }
 
-.db-off-canvas-wrap .db-content .db-story .db-story-c1,
-.db-off-canvas-wrap .db-content .db-story .db-story-c1 img {
+.db-content .db-story .db-story-c1,
+.db-content .db-story .db-story-c1 img {
   margin-top:0;
 }
 
@@ -411,7 +410,7 @@ $db-masthead-subcategory-size: rem-calc(36);
   line-height: 3;
 }
 
-.db-off-canvas-wrap .db-content .db-story #db-classifieds {
+.db-content .db-story #db-classifieds {
   border: 1px solid grey;
 }
 
@@ -519,6 +518,12 @@ figure, figure.alignnone {
   top: 0rem;
 }
 
+#stickyheader .tab-bar {
+    max-width: 85rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .db-top-date {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -563,6 +568,9 @@ figure, figure.alignnone {
 #stickyalias .tab-bar{
   height: 3.5rem;
   line-height: 3.5rem;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 #stickyalias .menu-icon{
   height: 3.8rem;
@@ -823,7 +831,7 @@ figure, figure.alignnone {
   width: 100%;
   background-color: rgba(0,0,0,0.6);
 }
-.db-off-canvas-wrap .db-content {
+.db-content {
     .front-mult h2 a,
     .front-mult h4,
     .front-mult h5{
