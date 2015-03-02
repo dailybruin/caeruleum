@@ -9,6 +9,11 @@
 .db-next h2{
 	color: white !important;
 }
+
+#pb-gallery-text {
+	color: #DDD;
+	margin: 1rem 0;
+}
   
 .page-header h1,
 .page-header h1 a{
@@ -196,7 +201,10 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin-right: auto;
 	margin-top: 10px;
 	width: 95%;
+}
 
+.photoblog-text h2 {
+	font-size: 2rem;
 }
 .photoblog-text#pb-gallery-text h1 a{
 	font-size: 30px;
@@ -361,6 +369,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin-right: auto;
 	margin-top: 2%;
 	width: 100%;
+	max-height: 500px;
 }
 
 /*BEHIND THE BLOG */

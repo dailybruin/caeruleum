@@ -47,13 +47,13 @@
 		
 		</div>
 		<div class="photoblog-text" id="photoblog-post-text">
-				<h1>
+				<h2>
 				<a href="<?php the_permalink() ?>">
 					<?php /*echo $the_cat->name;
 					echo (": "); */
 					the_title();
 					?>
-				</a></h1> 
+				</a></h2> 
 
 			<?php the_excerpt(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>

@@ -16,24 +16,23 @@
     	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>
     	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
-	<!-- <div id="pb-gallery-block"> -->
-
-		<div class="photoblog-text" id="pb-gallery-text">
-			<h1>
+	<div id="pb-gallery-block">
+		<div class="photoblog-text">
+			<h2>
 			<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
 				<?php /*echo $the_cat->name;
 				echo (": "); */
 				the_title();
 				?>
-			</a></h1> 
+			</a></h2> 
 						<?php $gallery = get_post_meta($post->ID, 'gallery', true);
 			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
 				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
 				global $nggdb;
 				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
-				    echo '<img src="'.$image->imageURL.'"/>';
-				    echo '<p>'.$image->description.' (Photo by: '. $image->alttext.')</p>';
+				    echo '<div id="pb-gallery-image"><img src="'.$image->imageURL.'"/></div>';
+				    echo '<p id="pb-gallery-text">'.$image->description.' (Photo by: '. $image->alttext.')</p>';
 				 }
 			?>
 			<?php if(function_exists('the_audio')) the_audio(); ?>
@@ -46,7 +45,7 @@
 
 			<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 		</div>
-	<!-- </div> photoblog-post-block -->
+	</div> <!--photoblog-post-block-->
 
 </div><!-- end div#post -->
 <div class="small-3 columns">
