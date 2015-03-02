@@ -82,13 +82,32 @@
 		<?php endif; ?>
 		<div class="row">
 			<div class="small-7 columns">
-				<h4> <?php the_byline(); ?> </h4>
-				<?php if (get_field('db_article_format') != 'brief'): ?>
-					</br>
-				<?php endif; ?>
-				<h5> Posted: </h5>
-				<h5> <?php the_time('F j, Y'); ?></h5>
-				<h5> <?php the_time('g:i a'); ?></h5>
+				<?php // Display the columnist's mugshot
+				    if($displayMugshot && $displayAuthor)
+				    {
+				        ob_start();
+    					if(function_exists('userphoto_the_author_thumbnail'))
+    						userphoto_the_author_thumbnail();
+    					$thumbnail = ob_get_contents();
+    					$thumbnail_class = "";
+    					ob_end_clean();
+    					if(isset($thumbnail) || !($thumbnail == ""))
+    					{
+        					?>
+        						<div class="author-photo"><img src="http://dailybruin.com/images/userphoto/4771.thumbnail.jpg"/><?php echo $thumbnail; ?></div>
+        						<?php
+        				}
+				    }
+				?>
+				<div class="db-byline">
+					<h4> <?php the_byline(); ?> </h4>
+					<?php if (get_field('db_article_format') != 'brief'): ?>
+						</br>
+					<?php endif; ?>
+					<h5> Posted: </h5>
+					<h5> <?php the_time('F j, Y'); ?></h5>
+					<h5> <?php the_time('g:i a'); ?></h5>
+				</div>
 			</div>
 			<div class="small-5 columns text-right">
 				<h4><?php the_category(", "); ?></h4>
@@ -148,21 +167,6 @@
 				<?php 
 					if(function_exists('the_audio'))
 						the_audio();
-				?>
-				<?php // Display the columnist's mugshot
-				    if($displayMugshot && $displayAuthor)
-				    {
-				        ob_start();
-    					if(function_exists('userphoto_the_author_thumbnail'))
-    						userphoto_the_author_thumbnail();
-    					$thumbnail = ob_get_contents();
-    					$thumbnail_class = "";
-    					ob_end_clean();
-    					if(isset($thumbnail) || !($thumbnail == ""))
-    					{
-        					?><div class="author-photo"><?php echo $thumbnail; ?></div><?php
-        				}
-				    }
 				?>
 				<?php if(!empty($customFields['db_infobox'][0])) : ?>
 					<div class="db-infobox">
