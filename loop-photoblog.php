@@ -16,10 +16,8 @@
     	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>
     	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
-	<div id="pb-gallery-block">
-		<div id="pb-gallery-image">
+	<!-- <div id="pb-gallery-block"> -->
 
-		</div>
 		<div class="photoblog-text" id="pb-gallery-text">
 			<h1>
 			<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
@@ -48,7 +46,7 @@
 
 			<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 		</div>
-	</div> <!--photoblog-post-block-->
+	<!-- </div> photoblog-post-block -->
 
 </div><!-- end div#post -->
 <div class="small-3 columns">
