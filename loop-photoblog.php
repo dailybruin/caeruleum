@@ -18,10 +18,7 @@
     </div><!-- end div.page-header -->
 	<div id="pb-gallery-block">
 		<div id="pb-gallery-image">
-			<?php $gallery = get_post_meta($post->ID, 'gallery', true);
-			if ($gallery != '-1') //THIS PART DONE BY NEIL
-				echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
-			?>
+
 		</div>
 		<div class="photoblog-text" id="pb-gallery-text">
 			<h1>
@@ -31,7 +28,18 @@
 				the_title();
 				?>
 			</a></h1> 
+						<?php $gallery = get_post_meta($post->ID, 'gallery', true);
+			if ($gallery != '-1') //THIS PART DONE BY NEIL
+				echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
+				global $nggdb;
+				$galleryt = $nggdb->get_gallery(8, 'sortorder', 'ASC', true, 0, 0);
+				foreach($galleryt as $image) {
+				    echo '<img src="'.$image->imageURL.'"/>';
+				    echo '<p>'.$image->description.' (Photo by: '. $image->alttext.')</p>';
+				 }
+			?>
 			<?php if(function_exists('the_audio')) the_audio(); ?>
+			<hr>
 			<?php the_content(); ?>
 			<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 			<p class="photoblog-sm">
