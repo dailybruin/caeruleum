@@ -201,6 +201,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin-right: auto;
 	margin-top: 10px;
 	width: 95%;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 .photoblog-text h2 {
@@ -363,7 +365,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 #pb-image-block {
 	padding-bottom: 1rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 #pb-gallery-image {
 	/*
