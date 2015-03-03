@@ -143,23 +143,7 @@
                 </h3>
               </div>
             <hr>
-
             <?php endforeach; ?>
-<!--             <?php
-			$args = array( 'numberposts' => 1, 'tag' => 'db-story-d3' );
-			$lastposts = get_posts( $args );
-			foreach( $lastposts as $post ) :	setup_postdata($post); ?>  
-              <div class="db-story-e">
-                <span class="db-section-date">
-	              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-	              <h4>|</h4> 
-	              <h5><?php the_time('F j, g:i a');?> </h5>
-                </span>
-                <h3>
-                  <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
-                </h3>
-              </div>
-            <?php endforeach; ?> -->
             </div>
             <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
@@ -283,16 +267,23 @@
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
               <div class="db-story-ns row">
+                <?php if(has_post_thumbnail()): ?>
               	<div class="db-image text-center">
 	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-	            </div>
-                <!-- <div class="small-6 columns"> -->
-                  <h3>
+	              </div>
+                <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+                <?php else: ?>
+                <div class="no-img">
+                  <h3>
+                      <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
-                  <p>
+                </div>
+                <?php endif; ?>
+                <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
-                  </p>
+                </p>
               </div>
             <?php endforeach; ?>
             <hr>
@@ -318,13 +309,20 @@
 			$args = array( 'numberposts' => 1, 'tag' => 'db-story-op' );
 			$lastposts = get_posts( $args );
 			foreach( $lastposts as $post ) :	setup_postdata($post); ?>
-				<div class="db-image text-center">
-	              	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
-	            </div>
-                <!-- <div class="small-6 columns"> -->
-                  <h3>
+				        <?php if(has_post_thumbnail()): ?>
+                <div class="db-image text-center">
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
+                </div>
+                <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
+                </h3>
+                <?php else: ?>
+                <div class="no-img">
+                  <h3>
+                      <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
+                </div>
+                <?php endif; ?>
                   <p>
                   	<?php echo wp_trim_words( get_the_content(), 25, '... ' );  ?><a href="<?php the_permalink(); ?>">Read more &raquo;</a>
                   </p>

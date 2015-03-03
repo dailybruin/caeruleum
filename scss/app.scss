@@ -125,6 +125,14 @@ $db-masthead-subcategory-size: rem-calc(36);
       font-weight: 700;
       font-size: 0.85rem;
     }
+    .db-sum .no-img h3{
+      padding-top: 10%;
+      min-height: 213px;
+    }
+    .db-sum .no-img h3 a {
+      font-weight: normal;
+      font-size: 2rem;
+    }
 
     h4 {
       text-transform: uppercase;
