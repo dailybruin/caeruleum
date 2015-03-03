@@ -32,7 +32,7 @@
 				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
 				    echo '<div id="pb-image-block"><div id="pb-gallery-image"><img src="'.$image->imageURL.'"/></div>';
-				    echo '<p id="pb-gallery-text">'.$image->description.' (Photo by: '. $image->alttext.')</p></div>';
+				    echo '<p id="pb-gallery-text">'.$image->description.' (Photo by '. $image->alttext.')</p></div>';
 				 }
 			?>
 			<?php if(function_exists('the_audio')) the_audio(); ?>
