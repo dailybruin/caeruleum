@@ -405,9 +405,11 @@ $total_pages = $wp_query->max_num_pages;
 if ($total_pages > 1) {  
   $current_page = max(1, get_query_var('paged'));  ?>
 
-  <?php $pages = paginate_links(array(
+  <?php
+$big = 999999999; // need an unlikely integer
+   $pages = paginate_links(array(
       'posts_per_page' => 7,
-      'base' => get_pagenum_link(1) . '%_%',  
+      'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),  
       'format' => '/page/%#%',  
       'current' => $current_page,  
       'total' => $total_pages,  
