@@ -127,12 +127,14 @@
         <h2>
           <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
         </h2>
+        <?php if(has_post_thumbnail()): ?>
         <div class="db-image db-section-cp text-center">
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-category-full'); ?></a>
           <p class="db-image-caption text-left">
             <?php the_post_thumbnail_caption() ?>
           </p>
         </div>
+        <?php endif; ?>
         <?php the_byline_front(); ?>
         <p>
           <?php echo get_the_excerpt();  ?>
