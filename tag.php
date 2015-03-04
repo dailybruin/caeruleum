@@ -56,6 +56,9 @@
               }
             ?>
           </h1>
+          <h2>
+             <?php echo tag_description(); ?> 
+          </h2>
           <?php
           if($categoryTitle == "News" | $categoryTitle == "Sports" | $categoryTitle == "A&amp;E" | $categoryTitle == "Opinion" ):
                 $categoryID = get_query_var('cat');
