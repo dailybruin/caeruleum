@@ -443,7 +443,7 @@
 					</div>
 				</div><!-- end div#featuredProject -->
 				<div class="row">
-            <div class="large-4 columns advertisment featured-ads">
+            <div class="large-12 columns advertisment featured-ads">
                 <h4>Sponsored Links:</h4>
                 <ul style="list-style-type:none">
                     <?php wp_list_bookmarks(array(
@@ -457,9 +457,9 @@
                     )); ?>
                 </ul>
             </div>
-            <div class="large-8 columns hide-for-medium hide-for-small">
+            <!-- <div class="large-8 columns hide-for-medium hide-for-small">
                 <?php get_template_part('ad','smallbanner'); ?>
-            </div>
+            </div> -->
 		        </div>
        		</div>
         	</br>        
