@@ -457,9 +457,9 @@
                     )); ?>
                 </ul>
             </div>
-            <!-- <div class="large-8 columns hide-for-medium hide-for-small">
-                <?php get_template_part('ad','smallbanner'); ?>
-            </div> -->
+            <div class="large-8 columns hide-for-medium hide-for-small">
+                <?php  ?>
+            </div>
 		        </div>
        		</div>
         	</br>        
