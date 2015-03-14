@@ -57,14 +57,16 @@ Template Name: LA Elections 2013
 								top: 0px;
 								z-index: 15;
 								}
-								h1, h2, h3 {
+								#la-elections-2013 h1, 
+								#la-elections-2013 h2, 
+								#la-elections-2013 h3 {
 								font-family: 'Oswald', sans-serif;
 								font-weight: 700;
 								text-transform: uppercase;
 								font-size: 35px;
 								color: #540000;
 								}
-								h1 {
+								#la-elections-2013 h1 {
 								font-size: 100px;
 								margin-top: 20px;
 								line-height: 1;
