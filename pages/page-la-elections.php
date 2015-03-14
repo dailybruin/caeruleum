@@ -143,6 +143,9 @@ Template Name: LA Elections 2013
 								clear: both;
 								}
 								#la-elections-2013 p {
+								max-width: 940px;
+								margin-left: auto;
+								margin-right: auto;
 								line-height: 1.5;
 								text-indent: 25px;
 								}
