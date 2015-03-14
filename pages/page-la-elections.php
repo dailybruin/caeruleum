@@ -143,7 +143,7 @@ Template Name: LA Elections 2013
 								clear: both;
 								}
 								#la-elections-2013 {
-									max-width: 940px;
+								  max-width: 1150px;
 								margin-left: auto;
 								margin-right: auto;
 								}
