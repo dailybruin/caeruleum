@@ -55,6 +55,13 @@
 		'debug':0
 	}</script>
 
+  <!-- Wordpress Open Graph -->
+  <?php if(has_post_thumbnail()) :
+    $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+    <meta property="og:image" content="<?php echo $url; ?>" />
+  <?php else: ?>
+    <meta property="og:image" content="http://dailybruin.com/images/2014/01/facebook_default.jpg" />
+  <?php endif; ?>
 
 </head>
 
