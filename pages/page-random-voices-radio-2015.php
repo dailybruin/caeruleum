@@ -118,7 +118,9 @@ a {
 	margin-right: auto;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
-	line-height: 1.5;
+}
+.main-video h2{
+	margin-bottom: 1rem;
 }
 .header-text h2{
 	font-size: 1.2rem;
