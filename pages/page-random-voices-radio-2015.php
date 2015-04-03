@@ -118,6 +118,7 @@ a {
 	margin-right: auto;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
+	line-height: 1.5;
 }
 .header-text h2{
 	font-size: 1.2rem;
