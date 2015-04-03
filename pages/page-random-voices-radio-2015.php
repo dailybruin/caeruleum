@@ -19,19 +19,19 @@ Template Name: Random Voices Radio 2015
 							<img src="http://dailybruin.com/images/2015/04/bucko.jpg"/>
 							<h3>Hannah Bucko - Alto</h3>
 							<p>Fourth-year microbiology, immunology and molecular genetics student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/HannahBucko.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 							<img src="http://dailybruin.com/images/2015/04/summers.jpg"/>
 							<h3>Sarah Summers - Alto</h3>
 							<p>Third-year dance student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/SarahSummers.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 							<img src="http://dailybruin.com/images/2015/04/london.jpg"/>
 							<h3>Olivia London - Bass</h3>
 							<p>Second-year musical theater student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/OliviaLondon.wav" controls></audio>
 						</div>
 					</div>
 					<div class="row">
@@ -39,19 +39,19 @@ Template Name: Random Voices Radio 2015
 							<img src="http://dailybruin.com/images/2015/04/rose.jpg"/>
 							<h3>Morgan Rose - Soprano</h3>
 							<p>Second-year international development studies student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/MorganRose.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 							<img src="http://dailybruin.com/images/2015/04/walcott.jpg"/>
 							<h3>Rianna Walcott - Bass</h3>
 							<p>Third-year English exchange student from London</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/RiannaWalcott.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 							<img src="http://dailybruin.com/images/2015/04/ramos.jpg"/>
 							<h3>Julia Ramos - Vocal Percussion</h3>
 							<p>Fourth-year Design | Media Arts student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/JuliaRamos.wav" controls></audio>
 						</div>
 					</div>
 					<div class="row">
@@ -59,7 +59,7 @@ Template Name: Random Voices Radio 2015
 							<img src="http://dailybruin.com/images/2015/04/horton.jpg"/>
 							<h3>Hannah Horton - Alto</h3>
 							<p>Third-year economics student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/HannahHorton.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 							<img src="http://dailybruin.com/images/2015/04/gunter.jpg"/>
@@ -71,7 +71,7 @@ Template Name: Random Voices Radio 2015
 							<img src="http://dailybruin.com/images/2015/04/rudnicki.jpg"/>
 							<h3>Amelia Rudnicki - Soprano</h3>
 							<p>Fourth-year psychobiology student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/AmeliaRudnicki.wav" controls></audio>
 						</div>
 					</div>
 					<div class="row">
@@ -79,13 +79,13 @@ Template Name: Random Voices Radio 2015
 							<img src="http://dailybruin.com/images/2015/04/gaumond.jpg"/>
 							<h3>Megan Gaumond - Soprano</h3>
 							<p>Third-year psychology student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/MeganGaumond.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 							<img src="http://dailybruin.com/images/2015/04/zetterberg.jpg"/>
 							<h3>Emily Zetterberg - Soprano</h3>
 							<p>Third-year musical theater student</p>
-							<audio src="http://dailybruin.com/images/2015/04/TriciaGunter.wav" controls></audio>
+							<audio src="http://dailybruin.com/images/2015/04/EmilyZetterberg.wav" controls></audio>
 						</div>
 						<div class="large-4 columns">
 						</div>
