@@ -242,13 +242,14 @@
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
             </div>
+          <?php endif; ?>
           <?php if(has_post_thumbnail()): ?>
             </div>
             <div class="medium-4 columns hide-for-small">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
           <?php endif; ?>
-        <?php endif; ?>
+        
         </article>
       </div>
       <hr>
