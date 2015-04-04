@@ -238,7 +238,7 @@
             <?php the_audio(); ?>
         <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
 
-        <?php if(has_post_thumbnail_caption()): ?>
+        <?php if(has_post_thumbnail() && has_post_thumbnail_caption()): ?>
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
           <?php endif; ?>  
