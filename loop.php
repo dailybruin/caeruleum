@@ -221,7 +221,7 @@
       <div class="db-list row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
-            <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+            <div class="hide-for-large hide-for-medium show-for-small text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
             <div class="medium-8 small-12 columns" style="padding-left:0">
@@ -241,9 +241,9 @@
         <?php if(has_post_thumbnail_caption()): ?>
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
-            </div>
-          <?php endif; ?>
+          <?php endif; ?>  
           <?php if(has_post_thumbnail()): ?>
+          </div>
             </div>
             <div class="medium-4 columns hide-for-small">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
