@@ -30,11 +30,12 @@ Template Name: USAC Elections 2015
 .db-next {
     display: none !important;
     }
+a.anchor{display: block; position: relative; top: -56px; visibility: hidden;}
 </style>
 </head>
 <body>
     <div class="container"><div class="row">
-        <div class="medium-3 columns" style="position: fixed">
+        <div class="small-3 columns hide-for-small-only" style="position: fixed">
             <dl class="side-nav">
                 <dd><a href="#president">President</a></dd>
                 <dd><a href="#ivp">Internal Vice President</a></dd>
@@ -50,9 +51,9 @@ Template Name: USAC Elections 2015
                 <dd><a href="#tsr">Transfer Student Representative</a></dd>
             </dl>
         </div>
-        <div class="medium-9 columns content">
+        <div class="small-9 columns content">
 
-            <a name="president"></a>
+            <a class="anchor" name="president"></a>
             <h3>President</h3>
             <br>
             <br>
@@ -61,7 +62,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="ivp"></a>
+            <a class="anchor" name="ivp"></a>
             <h3>Internal Vice President</h3>
             <br>
             <br>
@@ -69,7 +70,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="evp"></a>
+            <a class="anchor" name="evp"></a>
             <h3>External Vice President</h3>
             <br>
             <br>
@@ -77,7 +78,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="genrep"></a>
+            <a class="anchor" name="genrep"></a>
             <h3>General Representative</h3>
             <br>
             <br>
@@ -85,7 +86,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="aac"></a>
+            <a class="anchor" name="aac"></a>
             <h3>Academic Affairs Commissioner</h3>
             <br>
             <br>
@@ -93,7 +94,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="cec"></a>
+            <a class="anchor" name="cec"></a>
             <h3>Campus Event Commissioner</h3>
             <br>
             <br>
@@ -101,7 +102,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="csc"></a>
+            <a class="anchor" name="csc"></a>
             <h3>Community Service Commissioner</h3>
             <br>
             <br>
@@ -109,7 +110,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="cac"></a>
+            <a class="anchor" name="cac"></a>
             <h3>Cultural Affairs Commissioner</h3>
             <br>
             <br>
@@ -117,7 +118,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="fac"></a>
+            <a class="anchor" name="fac"></a>
             <h3>Facilities Commissioner</h3>
             <br>
             <br>
@@ -125,7 +126,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="fsc"></a>
+            <a class="anchor" name="fsc"></a>
             <h3>Financial Support Commissioner</h3>
             <br>
             <br>
@@ -133,7 +134,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="swc"></a>
+            <a class="anchor" name="swc"></a>
             <h3>Student Wellness Commissioner</h3>
             <br>
             <br>
@@ -141,7 +142,7 @@ Template Name: USAC Elections 2015
             <br>
             <br>
     
-            <a name="tsr"></a>
+            <a class="anchor" name="tsr"></a>
             <h3>Transfer Student Representative</h3>
             <br>
             <br>
