@@ -33,12 +33,12 @@ Template Name: USAC Elections 2015
 	    </ul>
 	  </section>
 	</nav>
-    <div class="medium-3 columns" style="position: fixed">
+    <div class="small-3 columns" style="position: fixed">
         <dl class="side-nav">
             <dd><a href="#President">President</a></dd>
             <dd><a href="#IVP">Internal Vice President</a></dd>
             <dd><a href="#EVP">External Vice President</a></dd>
-            <dd><a href="#Gen-rep">General Representative</a></dd>
+            <dd><a href="#Gen-Rep">General Representative</a></dd>
             <dd><a href="#AAC">Academic Affairs Commissioner</a></dd>
             <dd><a href="#CEC">Campus Event Commissioner</a></dd>
             <dd><a href="#CSC">Community Service Commissioner</a></dd>
@@ -49,15 +49,16 @@ Template Name: USAC Elections 2015
             <dd><a href="#TSR">Transfer Student Representative</a></dd>
         </dl>
     </div>
-    <div class="medium-9 columns content">
+    <div class="small-9 columns content">
         <h3>President</h3>
         <div class="candidates-content" id="President"></div>
+
 		<h3>Internal Vice President</h3>
         <div class="candidates-content" id="IVP"></div>
 		<h3>External Vice President</h3>
         <div class="candidates-content" id="EVP"></div>
 		<h3>General Representative</h3>
-        <a id="Gen-Rep"></a>
+        <div class="candidates-content" id="Gen-Rep"></div>
 		<h3>Academic Affairs Commissioner</h3>
         <div class="candidates-content" id="AAC"></div>
 		<h3>Campus Event Commissioner</h3>
