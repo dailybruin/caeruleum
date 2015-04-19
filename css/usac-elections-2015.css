@@ -13,3 +13,10 @@ body {
 .db-content .candidate div {
   margin-top: 2em;
 }
+
+.candidates-content {
+    display: block; 
+    position: relative; 
+    top: -120px; 
+    visibility: hidden;
+}
