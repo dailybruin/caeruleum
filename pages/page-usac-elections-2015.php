@@ -7,7 +7,7 @@ Template Name: USAC Elections 2015
 <script src="../js/usac-2015/main.js"></script>
 
 <script type="text/template" class="template">
-	<% _.each(candidates, function(candidate){ %>
+	<% _.each(input, function(candidate){ %>
 		<div class="candidate">
 			<h2><%- candidate.Name %></h2>
 			<ul>
@@ -21,136 +21,59 @@ Template Name: USAC Elections 2015
 </script>
 <?php get_header(); ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>USAC Elections 2015</title>
-<style>
-.db-next {
-    display: none !important;
-    }
-a.anchor{display: block; position: relative; top: -56px; visibility: hidden;}
-</style>
-</head>
-<body>
-    <div class="container"><div class="row">
-        <div class="small-3 columns hide-for-small-only" style="position: fixed">
-            <dl class="side-nav">
-                <dd><a href="#president">President</a></dd>
-                <dd><a href="#ivp">Internal Vice President</a></dd>
-                <dd><a href="#evp">External Vice President</a></dd>
-                <dd><a href="#genrep">General Representative</a></dd>
-                <dd><a href="#aac">Academic Affairs Commissioner</a></dd>
-                <dd><a href="#cec">Campus Event Commissioner</a></dd>
-                <dd><a href="#csc">Community Service Commissioner</a></dd>
-                <dd><a href="#cac">Cultural Affairs Commissioner</a></dd>
-                <dd><a href="#fac">Facilities Commissioner</a></dd>
-                <dd><a href="#fsc">Financial Support Commissioner</a></dd>
-                <dd><a href="#swc">Student Wellness Commissioner</a></dd>
-                <dd><a href="#tsr">Transfer Student Representative</a></dd>
-            </dl>
-        </div>
-        <div class="small-9 columns content">
+<div class="container"><div class="row">
+    <div class="small-3 columns" style="position: fixed">
+        <dl class="side-nav">
+            <dd><a href="#President">President</a></dd>
+            <dd><a href="#IVP">Internal Vice President</a></dd>
+            <dd><a href="#EVP">External Vice President</a></dd>
+            <dd><a href="#Gen-Rep">General Representative</a></dd>
+            <dd><a href="#AAC">Academic Affairs Commissioner</a></dd>
+            <dd><a href="#CEC">Campus Event Commissioner</a></dd>
+            <dd><a href="#CSC">Community Service Commissioner</a></dd>
+            <dd><a href="#CAC">Cultural Affairs Commissioner</a></dd>
+            <dd><a href="#FAC">Facilities Commissioner</a></dd>
+            <dd><a href="#FSC">Financial Support Commissioner</a></dd>
+            <dd><a href="#SWC">Student Wellness Commissioner</a></dd>
+            <dd><a href="#TSR">Transfer Student Representative</a></dd>
+        </dl>
+    </div>
+    <div class="small-9 columns content">
+        <h3>President</h3>
+        <div class="candidates-content" id="President"></div>
 
-            <a class="anchor" name="president"></a>
-            <h3>President</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="ivp"></a>
-            <h3>Internal Vice President</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="evp"></a>
-            <h3>External Vice President</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="genrep"></a>
-            <h3>General Representative</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="aac"></a>
-            <h3>Academic Affairs Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="cec"></a>
-            <h3>Campus Event Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="csc"></a>
-            <h3>Community Service Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="cac"></a>
-            <h3>Cultural Affairs Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="fac"></a>
-            <h3>Facilities Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="fsc"></a>
-            <h3>Financial Support Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="swc"></a>
-            <h3>Student Wellness Commissioner</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-    
-            <a class="anchor" name="tsr"></a>
-            <h3>Transfer Student Representative</h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
+		<h3>Internal Vice President</h3>
+        <div class="candidates-content" id="IVP"></div>
+        
+		<h3>External Vice President</h3>
+        <div class="candidates-content" id="EVP"></div>
+        
+		<h3>General Representative</h3>
+        <div class="candidates-content" id="Gen-Rep"></div>
+        
+		<h3>Academic Affairs Commissioner</h3>
+        <div class="candidates-content" id="AAC"></div>
+        
+		<h3>Campus Event Commissioner</h3>
+        <div class="candidates-content" id="CEC"></div>
+        
+		<h3>Community Service Commissioner</h3>
+        <div class="candidates-content" id="CSC"></div>
+        
+		<h3>Cultural Affairs Commissioner</h3>  
+        <div class="candidates-content" id="CAC"></div>
+         
+		<h3>Facilities Commissioner</h3>
+        <div class="candidates-content" id="FAC"></div>
+
+		<h3>Financial Support Commissioner</h3>
+        <div class="candidates-content" id="FSC"></div>
+        
+		<h3>Student Wellness Commissioner</h3>
+        <div class="candidates-content" id="SWC"></div>
+        
+		<h3>Transfer Student Representative</h3>
+        <div class="candidates-content" id="TSR"></div>
+    </div>
 </div></div>
-</body>
-</html>
 <?php get_footer(); ?>
