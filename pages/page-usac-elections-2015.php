@@ -11,7 +11,7 @@ Template Name: USAC Elections 2015
 	<% _.each(input, function(candidate){ %>
 		<div class="row candidate <%- candidate.Slate %>">
       <div class="small-4 columns">
-        <img src="http://dailybruin.com/images/2015/04/web.news_.usacCandidates2015.HeatherRosen.AYu_.jpg"/>
+        <img src="<%- candidate.Mug %>"/>
       </div>
       <div class="small-8 columns">
 			  <h2><%- candidate.Name %></h2>
