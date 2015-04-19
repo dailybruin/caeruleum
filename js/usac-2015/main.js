@@ -1,7 +1,7 @@
 var candidates, keys;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 document.addEventListener("DOMContentLoaded", function(event) {
-	$(".in-the-news").hide();  // TODO: REMOVE THIS BEFORE PRODUCTION!
+	$(".db-next.hide-for-small").remove();  // TODO: REMOVE THIS BEFORE PRODUCTION!
 	$.getJSON("../js/usac-2015/candidates.json", function(data) {
 		candidates = data;
 		keys = _.keys(candidates[0]);

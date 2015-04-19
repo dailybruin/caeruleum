@@ -11,7 +11,6 @@ Template Name: USAC Elections 2015
 		<div class="candidate">
 			<h2><%- candidate.Name %></h2>
 			<ul>
-				<li><%- candidate.Position %></li>
 				<li><%- candidate.YearMajor %></li>
 				<li><%- candidate.Slate %></li>
 				<li><%- candidate.Platforms %></li>
@@ -19,9 +18,21 @@ Template Name: USAC Elections 2015
 		</div>
 	<% }); %>
 </script>
+
+<!-- THE PAGE STARTS HERE -->
 <?php get_header(); ?>
 
 <div class="container"><div class="row">
+	<nav class="top-bar" data-topbar role="navigation">
+	  <section class="top-bar-section">
+	    <!-- Right Nav Section -->
+	    <ul class="right">
+		    <li class="active"><a href="#">Profiles</a></li>
+		    <li><a href="#">Violations</a></li>
+			<li><a href="#">News</a></li>
+	    </ul>
+	  </section>
+	</nav>
     <div class="medium-3 columns" style="position: fixed">
         <dl class="side-nav">
             <dd><a href="#President">President</a></dd>
@@ -39,53 +50,30 @@ Template Name: USAC Elections 2015
         </dl>
     </div>
     <div class="medium-9 columns content">
-
         <h3>President</h3>
         <div class="candidates-content" id="President"></div>
 		<h3>Internal Vice President</h3>
         <div class="candidates-content" id="IVP"></div>
-        
 		<h3>External Vice President</h3>
         <div class="candidates-content" id="EVP"></div>
-        
-
 		<h3>General Representative</h3>
         <a id="Gen-Rep"></a>
-        
-
 		<h3>Academic Affairs Commissioner</h3>
         <div class="candidates-content" id="AAC"></div>
-        
-    
 		<h3>Campus Event Commissioner</h3>
         <div class="candidates-content" id="CEC"></div>
-        
-        
 		<h3>Community Service Commissioner</h3>
         <div class="candidates-content" id="CSC"></div>
-        
-        
 		<h3>Cultural Affairs Commissioner</h3>  
         <div class="candidates-content" id="CAC"></div>
-         
 		<h3>Facilities Commissioner</h3>
         <div class="candidates-content" id="FAC"></div>
-        
-
 		<h3>Financial Support Commissioner</h3>
         <div class="candidates-content" id="FSC"></div>
-        
-        
-
 		<h3>Student Wellness Commissioner</h3>
         <div class="candidates-content" id="SWC"></div>
-        
-        
 		<h3>Transfer Student Representative</h3>
-        <div class="candidates-content" id="TSR"></div>
-        
-
-        
-    </div>
+        <div class="candidates-content" id="TSR"></div>    
+    </div>  <!-- column-9 ends -->
 </div></div>
 <?php get_footer(); ?>
