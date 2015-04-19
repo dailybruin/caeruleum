@@ -40,7 +40,7 @@ Template Name: USAC Elections 2015
 	    </ul>
 	  </section>
 	</nav>
-    <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: absolute">
+    <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: relative top: 30px">
         <form id="filter">
             <label>Filter By Slate</label>
             <div>
