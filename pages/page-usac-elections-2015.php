@@ -8,7 +8,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
-		<div class="candidate">
+		<div class="candidate <%- candidate.Slate %>">
 			<h2><%- candidate.Name %></h2>
 			<ul>
 				<li><%- candidate.YearMajor %></li>
@@ -34,6 +34,21 @@ Template Name: USAC Elections 2015
 	  </section>
 	</nav>
     <div class="small-3 columns" style="position: fixed">
+        <form id="filter">
+            <label>Filter By Slate</label>
+            <div>
+                <input id="Bruins United" type="checkbox" checked="yes"><label for="Bruins United">Bruins United</label>
+            </div>
+            <div>
+                <input id="Let's Act" type="checkbox" checked="yes"><label for="Let's Act">Let's Act</label><br>
+            </div>
+            <div>
+                <input id="The After Party" type="checkbox" checked="yes"><label for="The After Party">The After Party</label>
+            </div>
+            <div>
+                <input id="Independent" type="checkbox" checked="yes"><label for="Independent">Independent</label>
+            </div>
+        </form>
         <dl class="side-nav">
             <dd><a href="#President">President</a></dd>
             <dd><a href="#IVP">Internal Vice President</a></dd>

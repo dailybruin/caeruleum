@@ -11,4 +11,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			$("#"+positions[i]).after(template({input: c}));
 		}
 	});
+    $("input:checkbox").on("click", function() {
+        $(".candidate").hide();
+        $("input:checked").each(function() {
+            $("." + $(this).attr("id").replace(/ /g, ".").replace("'", "\\'")).show();
+        });
+    });
 });
+
+
+function showSlate(slateName) {
+    $(".candidate").hide();   
+    $(slateName).show();
+}
