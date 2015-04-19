@@ -14,6 +14,10 @@ body {
   margin-top: 2em;
 }
 
+.db-content .candidate .candidateinfo div {
+  margin-top: 0.3em;
+}
+
 .candidates-content {
     display: block; 
     position: relative; 
