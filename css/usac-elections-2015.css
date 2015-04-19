@@ -9,3 +9,10 @@ body {
     visibility: hidden;
 }
 
+.side-nav {
+	/*position: sticky;*/
+}
+
+.position-title {
+	/*font-weight: 500;*/
+}

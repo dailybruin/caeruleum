@@ -4,6 +4,7 @@ Template Name: USAC Elections 2015
 
 <link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<!-- <script src="../js/usac-2015/jquery.sticky-kit.min.js"></script> -->
 <script src="../js/usac-2015/main.js"></script>
 
 <script type="text/template" class="template">
@@ -50,30 +51,29 @@ Template Name: USAC Elections 2015
         </dl>
     </div>
     <div class="small-9 columns content">
-        <h3>President</h3>
+        <h2 class="position-title">President</h3>
         <div class="candidates-content" id="President"></div>
-
-		<h3>Internal Vice President</h3>
+		<h2 class="position-title">Internal Vice President</h3>
         <div class="candidates-content" id="IVP"></div>
-		<h3>External Vice President</h3>
+		<h2 class="position-title">External Vice President</h3>
         <div class="candidates-content" id="EVP"></div>
-		<h3>General Representative</h3>
+		<h2 class="position-title">General Representative</h3>
         <div class="candidates-content" id="Gen-Rep"></div>
-		<h3>Academic Affairs Commissioner</h3>
+		<h2 class="position-title">Academic Affairs Commissioner</h3>
         <div class="candidates-content" id="AAC"></div>
-		<h3>Campus Event Commissioner</h3>
+		<h2 class="position-title">Campus Event Commissioner</h3>
         <div class="candidates-content" id="CEC"></div>
-		<h3>Community Service Commissioner</h3>
+		<h2 class="position-title">Community Service Commissioner</h3>
         <div class="candidates-content" id="CSC"></div>
-		<h3>Cultural Affairs Commissioner</h3>  
+		<h2 class="position-title">Cultural Affairs Commissioner</h3>  
         <div class="candidates-content" id="CAC"></div>
-		<h3>Facilities Commissioner</h3>
+		<h2 class="position-title">Facilities Commissioner</h3>
         <div class="candidates-content" id="FAC"></div>
-		<h3>Financial Support Commissioner</h3>
+		<h2 class="position-title">Financial Support Commissioner</h3>
         <div class="candidates-content" id="FSC"></div>
-		<h3>Student Wellness Commissioner</h3>
+		<h2 class="position-title">Student Wellness Commissioner</h3>
         <div class="candidates-content" id="SWC"></div>
-		<h3>Transfer Student Representative</h3>
+		<h2 class="position-title">Transfer Student Representative</h3>
         <div class="candidates-content" id="TSR"></div>    
     </div>  <!-- column-9 ends -->
 </div></div>

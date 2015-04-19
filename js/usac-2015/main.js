@@ -3,6 +3,7 @@ var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC
 document.addEventListener("DOMContentLoaded", function(event) {
 	$(".db-next.hide-for-small").remove();  // TODO: REMOVE THIS BEFORE PRODUCTION!
 	$.getJSON("../js/usac-2015/candidates.json", function(data) {
+		// $(".side-nav").stick_in_parent();
 		candidates = data;
 		keys = _.keys(candidates[0]);
 		var template = _.template($("script.template").html());
