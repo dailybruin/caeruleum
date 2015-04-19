@@ -8,13 +8,19 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
-		<div class="candidate">
-			<h2><%- candidate.Name %></h2>
+		<div class="row candidate">
+      <div class="small-4 columns">
+        <img src="http://i.huffpost.com/gen/964776/images/o-CATS-KILL-BILLIONS-facebook.jpg"/>
+      </div>
+      <div class="small-8 columns">
+			  <h2><%- candidate.Name %></h2>
+        <hr>
 			<ul>
 				<li><%- candidate.YearMajor %></li>
 				<li><%- candidate.Slate %></li>
 				<li><%- candidate.Platforms %></li>
 			</ul>
+      </div>
 		</div>
 	<% }); %>
 </script>
@@ -33,7 +39,7 @@ Template Name: USAC Elections 2015
 	    </ul>
 	  </section>
 	</nav>
-    <div class="small-3 columns" style="position: fixed">
+    <div class="small-3 columns hide-for-small-only" style="position: fixed">
         <dl class="side-nav">
             <dd><a href="#President">President</a></dd>
             <dd><a href="#IVP">Internal Vice President</a></dd>
@@ -49,8 +55,8 @@ Template Name: USAC Elections 2015
             <dd><a href="#TSR">Transfer Student Representative</a></dd>
         </dl>
     </div>
-    <div class="small-9 columns content">
-        <h3>President</h3>
+    <div class="small-12 medium-9 columns content">
+    <h3>President</h3>
         <div class="candidates-content" id="President"></div>
 
 		<h3>Internal Vice President</h3>
