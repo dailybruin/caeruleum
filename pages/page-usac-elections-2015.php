@@ -5,16 +5,23 @@ Template Name: USAC Elections 2015
 <link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Raleway:800,700,900,400,200' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
-		<div class="candidate <%- candidate.Slate %>">
-			<h2><%- candidate.Name %></h2>
+		<div class="row candidate <%- candidate.Slate %>">
+      <div class="small-4 columns">
+        <img src="http://dailybruin.com/images/2015/04/web.news_.usacCandidates2015.HeatherRosen.AYu_.jpg"/>
+      </div>
+      <div class="small-8 columns">
+			  <h2><%- candidate.Name %></h2>
+        <hr>
 			<ul>
 				<li><%- candidate.YearMajor %></li>
 				<li><%- candidate.Slate %></li>
 				<li><%- candidate.Platforms %></li>
 			</ul>
+      </div>
 		</div>
 	<% }); %>
 </script>
@@ -33,7 +40,7 @@ Template Name: USAC Elections 2015
 	    </ul>
 	  </section>
 	</nav>
-    <div class="small-3 columns" style="position: fixed">
+    <div class="small-3 columns hide-for-small-only" style="position: fixed">
         <form id="filter">
             <label>Filter By Slate</label>
             <div>
@@ -64,8 +71,8 @@ Template Name: USAC Elections 2015
             <dd><a href="#TSR">Transfer Student Representative</a></dd>
         </dl>
     </div>
-    <div class="small-9 columns content">
-        <h3>President</h3>
+    <div class="small-12 medium-9 columns candidates">
+    <h3>President</h3>
         <div class="candidates-content" id="President"></div>
 
 		<h3>Internal Vice President</h3>
