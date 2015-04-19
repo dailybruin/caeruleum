@@ -4,25 +4,25 @@ Template Name: USAC Elections 2015
 
 <link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<!-- <script src="../js/usac-2015/jquery.sticky-kit.min.js"></script> -->
 <script src="../js/usac-2015/main.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Raleway:800,700,900,400,200' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
 		<div class="row candidate">
-			<div class="small-4 columns">
-        		<img src="http://i.huffpost.com/gen/964776/images/o-CATS-KILL-BILLIONS-facebook.jpg"/>
-			</div>
-			<div class="small-8 columns">
-				<h2><%- candidate.Name %></h2>
-		        <hr>
-				<ul>
-					<li><%- candidate.YearMajor %></li>
-					<li><%- candidate.Slate %></li>
-					<li><%- candidate.Platforms %></li>
-				</ul>
-	      	</div>
-      	</div>
+      <div class="small-4 columns">
+        <img src="http://dailybruin.com/images/2015/04/web.news_.usacCandidates2015.HeatherRosen.AYu_.jpg"/>
+      </div>
+      <div class="small-8 columns">
+			  <h2><%- candidate.Name %></h2>
+        <hr>
+			<ul>
+				<li><%- candidate.YearMajor %></li>
+				<li><%- candidate.Slate %></li>
+				<li><%- candidate.Platforms %></li>
+			</ul>
+      </div>
+		</div>
 	<% }); %>
 </script>
 
@@ -56,30 +56,31 @@ Template Name: USAC Elections 2015
             <dd><a href="#TSR">Transfer Student Representative</a></dd>
         </dl>
     </div>
-    <div class="small-12 medium-9 columns content">
-    	<h2 class="position-title">President</h3>
+    <div class="small-12 medium-9 columns candidates">
+    <h3>President</h3>
         <div class="candidates-content" id="President"></div>
-		<h2 class="position-title">Internal Vice President</h3>
+
+		<h3>Internal Vice President</h3>
         <div class="candidates-content" id="IVP"></div>
-		<h2 class="position-title">External Vice President</h3>
+		<h3>External Vice President</h3>
         <div class="candidates-content" id="EVP"></div>
-		<h2 class="position-title">General Representative</h3>
+		<h3>General Representative</h3>
         <div class="candidates-content" id="Gen-Rep"></div>
-		<h2 class="position-title">Academic Affairs Commissioner</h3>
+		<h3>Academic Affairs Commissioner</h3>
         <div class="candidates-content" id="AAC"></div>
-		<h2 class="position-title">Campus Event Commissioner</h3>
+		<h3>Campus Event Commissioner</h3>
         <div class="candidates-content" id="CEC"></div>
-		<h2 class="position-title">Community Service Commissioner</h3>
+		<h3>Community Service Commissioner</h3>
         <div class="candidates-content" id="CSC"></div>
-		<h2 class="position-title">Cultural Affairs Commissioner</h3>  
+		<h3>Cultural Affairs Commissioner</h3>  
         <div class="candidates-content" id="CAC"></div>
-		<h2 class="position-title">Facilities Commissioner</h3>
+		<h3>Facilities Commissioner</h3>
         <div class="candidates-content" id="FAC"></div>
-		<h2 class="position-title">Financial Support Commissioner</h3>
+		<h3>Financial Support Commissioner</h3>
         <div class="candidates-content" id="FSC"></div>
-		<h2 class="position-title">Student Wellness Commissioner</h3>
+		<h3>Student Wellness Commissioner</h3>
         <div class="candidates-content" id="SWC"></div>
-		<h2 class="position-title">Transfer Student Representative</h3>
+		<h3>Transfer Student Representative</h3>
         <div class="candidates-content" id="TSR"></div>    
     </div>  <!-- column-9 ends -->
 </div></div>

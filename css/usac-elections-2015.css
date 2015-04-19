@@ -1,18 +1,15 @@
 body {
-	
+
 }
 
-.candidates-content {
-    display: block; 
-    position: relative; 
-    top: -90px; 
-    visibility: hidden;
+.db-content .candidates h3 {
+  font-family: 'Raleway';
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 1em;
 }
 
-.side-nav {
-	/*position: sticky;*/
-}
-
-.position-title {
-	/*font-weight: 500;*/
+.db-content .candidate div {
+  margin-top: 2em;
 }
