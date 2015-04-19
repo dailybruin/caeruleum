@@ -9,7 +9,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
-		<div class="row candidate">
+		<div class="row candidate"> 
 			<div class="small-4 columns">
         		<img src="http://i.huffpost.com/gen/964776/images/o-CATS-KILL-BILLIONS-facebook.jpg"/>
 			</div>
