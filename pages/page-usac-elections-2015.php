@@ -40,14 +40,14 @@ Template Name: USAC Elections 2015
 	    </ul>
 	  </section>
 	</nav>
-    <div class="small-3 columns hide-for-small-only" style="position: fixed">
+    <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: absolute">
         <form id="filter">
             <label>Filter By Slate</label>
             <div>
                 <input id="Bruins United" type="checkbox" checked="yes"><label for="Bruins United">Bruins United</label>
             </div>
             <div>
-                <input id="Let's Act" type="checkbox" checked="yes"><label for="Let's Act">Let's Act</label><br>
+                <input id="LET'S ACT" type="checkbox" checked="yes"><label for="LET'S ACT">LET'S ACT</label><br>
             </div>
             <div>
                 <input id="The After Party" type="checkbox" checked="yes"><label for="The After Party">The After Party</label>

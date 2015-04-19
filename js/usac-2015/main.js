@@ -18,10 +18,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             $("." + $(this).attr("id").replace(/ /g, ".").replace("'", "\\'")).show();
         });
     });
+    $(window).scroll(function() {
+        $el = $("#scrollbar");
+        if($(this).scrollTop() > 195 && $el.css('position') != "fixed") {
+            $("#scrollbar").css({"position": "fixed", "top": "80px"});
+        }
+        if($(this).scrollTop() < 195 && $el.css('position') == "fixed") {
+            $("#scrollbar").css({"position": "relative", "top": "30px"});
+        }
+    });
 });
-
-
-function showSlate(slateName) {
-    $(".candidate").hide();   
-    $(slateName).show();
-}
