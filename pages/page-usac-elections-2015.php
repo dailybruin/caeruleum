@@ -133,7 +133,7 @@ Template Name: USAC Elections 2015
     <div class="usac-section" id="news-container">
         In case you don't know, I'm the news-container.
     </div>
-    <div class="usac-section" id="endorsement-cotainer">
+    <div class="usac-section" id="endorsement-container">
         In case you don't know, I'm the endorsement-container.
     </div>
     <div class="usac-section" id="violations-container">
