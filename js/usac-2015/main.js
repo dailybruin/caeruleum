@@ -54,3 +54,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
    	 	$("[href=#"+id+"]").addClass('active');
     });
 });
+
+function switchSection(sender) {
+	$(".usac-section").hide();
+	$("#" + sender.innerHTML.toLowerCase() + "-container").show();
+	$(".top-bar-section>.right>li.active").removeClass('active');
+	$(sender.parentElement).addClass('active');
+}
