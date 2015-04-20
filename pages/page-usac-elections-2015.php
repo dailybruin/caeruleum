@@ -8,6 +8,7 @@ Template Name: USAC Elections 2015
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
+<script src="../js/usac-2015/jquery-labelauty.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="template">
@@ -57,18 +58,18 @@ Template Name: USAC Elections 2015
 	</nav>
     <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: relative top: 30px">
         <form id="filter">
-            <label>Filter By Slate</label>
+            <h3>Filter By Slate</h3>
             <div>
-                <input id="Bruins United" type="checkbox" checked="yes"><label for="Bruins United">Bruins United</label>
+                <input id="Bruins United" type="checkbox" checked="yes" data-labelauty="Bruins United"/>
             </div>
             <div>
-                <input id="LET'S ACT" type="checkbox" checked="yes"><label for="LET'S ACT">LET'S ACT</label><br>
+                <input id="LetsAct" type="checkbox" checked="yes" data-labelauty="LET'S ACT"/>
             </div>
             <div>
-                <input id="The After Party" type="checkbox" checked="yes"><label for="The After Party">The After Party</label>
+                <input id="The After Party" type="checkbox" checked="yes" data-labelauty="The After Party"/>
             </div>
             <div>
-                <input id="Independent" type="checkbox" checked="yes"><label for="Independent">Independent</label>
+                <input id="Independent" type="checkbox" checked="yes" data-labelauty="Independent"/>
             </div>
         </form>
         <dl class="side-nav">
