@@ -14,30 +14,32 @@ Template Name: USAC Elections 2015
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
 		<div class="row candidate <%- candidate.Slate %>">
-      <div class="small-4 columns">
-        <img src="<%- candidate.Mug %>"/>
-      </div>
-      <div class="small-8 columns">
-        <h2><%- candidate.Name %></h2>
-        <hr>
-        <p><%- candidate.YearMajor %></p>
-         <div class="row">
+            <div class="small-4 columns">
+            <img src="<%- candidate.Mug %>"/>
+            </div>
+            <div class="small-8 columns">
+                        <img style="width: 7%; float:left; margin-right: .1em;" src="https://dl-web.dropbox.com/get/_Daily%20Bruin/USAC%2015/cmyk.letsact.logo.jpg?_subject_uid=1391304&w=AABaaE5bGVdITeKBgx0suWoVGnLrnKkbk4-VQRu94ZPajw"/>
+                        <h2 style="vertical-align:middle;"><%- candidate.Name %></h2>
+                <hr>
+                <p><%- candidate.YearMajor %></p>
+                <div class="row">
+                    <div class="large-5 columns platforms"
+                        <h2>Platform Goals</h2>
+                        <ul>
+                            <% _.each(candidate.Platforms, function(p) { %>
+                            <li><%- p %></li>  
+                            <% }); %>			
+                        </ul>
+                    </div>
+              
+                    <div class="large-7 columns">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/ZZ5LpwO-An4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
           
-          <div class="small-8 columns platforms"
-            <h2>Platform Goals</h2>
-            <ul>
-            <% _.each(candidate.Platforms, function(p) { %>
-              <li><%- p %></li>  
-            <% }); %>			
-            </ul>
-          </div>
-          
-          <div class="small-4 columns">
-            <img src="https://dl-web.dropbox.com/get/_Daily%20Bruin/USAC%2015/cmyk.letsact.logo.jpg?_subject_uid=1391304&w=AABaaE5bGVdITeKBgx0suWoVGnLrnKkbk4-VQRu94ZPajw"/>
-          </div>
-          
-        </div>
-      </div>
+                </div>
+            </div>
 		</div>
 	<% }); %>
 </script>

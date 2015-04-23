@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	e=a.label;!0===e&&(null==d||0===d.length?(b=[],b[0]=a.unchecked_label,b[1]=a.checked_label):(b=d.split(a.separator),2<b.length?(e=!1,g(a.development,"There's more than two labels. LABELAUTY will not use labels.")):1===b.length&&g(a.development,"There's just one label. LABELAUTY will use this one for both cases.")));c.css({display:"none"});c.removeAttr("data-labelauty");d=c.attr("id");if(a.force_random_id||null==d||""===d.trim()){var h=1+Math.floor(1024E3*Math.random());for(d="labelauty-"+h;0!==f(d).length;)h++,
 	d="labelauty-"+h,g(a.development,"Holy crap, between 1024 thousand numbers, one raised a conflict. Trying again.");c.attr("id",d)}c.after(l(d,b,e));!1!==a.minimum_width&&c.next("label[for="+d+"]").css({"min-width":a.minimum_width});0!=a.same_width&&1==a.label&&(c=c.next("label[for="+d+"]"),e=k(c.find("span.labelauty-unchecked")),b=k(c.find("span.labelauty-checked")),e>b?c.find("span.labelauty-checked").width(e):c.find("span.labelauty-unchecked").width(b))})}})(jQuery);
 	$(".db-next.hide-for-small").remove();  // TODO: REMOVE THIS BEFORE PRODUCTION!
+    $("#news-container").hide();
+    $("#endorsement-container").hide();
+    $("#violations-container").hide();
+    setSidebar();
 	$.getJSON("../js/usac-2015/candidates.json", function(data) {
 		// $(".side-nav").stick_in_parent();
 		$(":checkbox").labelauty();
@@ -34,14 +38,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     $(window).scroll(function() {
-        $el = $("#scrollbar");
-        if($(this).scrollTop() > 200 && $el.css('position') != "fixed") {
-            $("#scrollbar").css({"position": "fixed", "top": "80px"});
-        }
-        if($(this).scrollTop() < 200 && $el.css('position') == "fixed") {
-            $("#scrollbar").css({"position": "relative", "top": "30px"});
-        }
-
+        setSidebar();
         var currentScroll = $(this).scrollTop() + 100, currentSection;
     	$(".candidates-content").each(function(){
     		if ($(this).offset().top - 1 < currentScroll)
@@ -54,6 +51,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
    	 	$("[href=#"+id+"]").addClass('active');
     });
 });
+
+function setSidebar() {
+    $el = $("#scrollbar");
+    if($(this).scrollTop() > 200 && $el.css('position') != "fixed") {
+        $el.css({"position": "fixed", "top": "80px"});
+    }
+    if($(this).scrollTop() < 200 && $el.css('position') == "fixed") {
+        $el.css({"position": "relative", "top": "30px"});
+    }
+}
 
 function switchSection(sender) {
 	$(".usac-section").hide();
