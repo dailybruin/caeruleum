@@ -334,7 +334,8 @@ $db-masthead-subcategory-size: rem-calc(36);
 
     .db-divide {
       border-bottom: thin solid #222222;
-      margin-top: rem-calc(10);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 
       .postfix {
         border: none;
