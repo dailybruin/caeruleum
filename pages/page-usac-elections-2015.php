@@ -14,10 +14,10 @@ Template Name: USAC Elections 2015
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
 		<div class="row element candidate <%- candidate.Slate %>">
-            <div class="small-4 columns">
+            <div class="small-3 columns">
             <img src="<%- candidate.Mug %>"/>
             </div>
-            <div class="small-8 columns">
+            <div class="small-9 columns">
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.Slate %>.logo.svg"/>
                         <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.Name %></h2>
                 <hr>
