@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $(window).scroll(function() {
         setSidebar();
         var currentScroll = $(this).scrollTop() + 100, currentSection;
-    	$(".candidates-content").each(function(){
+    	$(".content").each(function(){
     		if ($(this).offset().top - 1 < currentScroll)
     			currentSection = $(this);
     	});

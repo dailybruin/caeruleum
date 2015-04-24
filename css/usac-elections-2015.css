@@ -18,13 +18,6 @@ body {
   margin-top: 0.3em;
 }
 
-.candidates-content {
-    /*display: block; */
-    /*position: relative; */
-    /*top: -120px; */
-    /*visibility: hidden;*/
-}
-
 .side-nav .active {
 	font-weight: 800;
 }
@@ -229,50 +222,27 @@ input.labelauty[disabled] + label
 }
 
 /* Add a background to (un)checked images */
-input.labelauty + label > span.labelauty-unchecked-image
+input.labelauty + label > span[class$=-image]
 {
   background-size: 16px 16px;
 }
 
-input.labelauty + label > span.labelauty-checked-image
-{
-  background-size: 16px 16px;
-}
-
-input.labelauty + label[for=BU] > span.labelauty-unchecked-image
+input.labelauty + label[for=BU] > span[class$=-image]
 {
   background-image: url(/img/usac-2015.BU.logo.svg);
 }
 
-input.labelauty + label[for=BU] > span.labelauty-checked-image
-{
-  background-image: url(/img/usac-2015.BU.logo.svg);
-}
-
-input.labelauty + label[for=LA] > span.labelauty-unchecked-image
+input.labelauty + label[for=LA] > span[class$=-image]
 {
   background-image: url(/img/usac-2015.LA.logo.svg);
 }
 
-input.labelauty + label[for=LA] > span.labelauty-checked-image
-{
-  background-image: url(/img/usac-2015.LA.logo.svg);
-}
-input.labelauty + label[for=IND] > span.labelauty-unchecked-image
+input.labelauty + label[for=IND] > span[class$=-image]
 {
   background-image: url(/img/usac-2015.IND.logo.svg);
 }
 
-input.labelauty + label[for=IND] > span.labelauty-checked-image
-{
-  background-image: url(/img/usac-2015.IND.logo.svg);
-}
-input.labelauty + label[for=TAP] > span.labelauty-unchecked-image
-{
-  background-image: url(/img/usac-2015.TAP.logo.svg);
-}
-
-input.labelauty + label[for=TAP] > span.labelauty-checked-image
+input.labelauty + label[for=TAP] > span[class$=-image]
 {
   background-image: url(/img/usac-2015.TAP.logo.svg);
 }
