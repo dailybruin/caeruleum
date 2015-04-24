@@ -23,7 +23,7 @@ Template Name: USAC Elections 2015
                 <hr>
                 <p><%- candidate.YearMajor %></p>
                 <div class="row">
-                    <div class="large-5 columns platforms"
+                    <div class="large-5 columns platforms">
                         <h2>Platform Goals</h2>
                         <ul>
                             <% _.each(candidate.Platforms, function(p) { %>

@@ -46,6 +46,11 @@ body {
     background: transparent;
     margin-top: 1em;
     height: auto;
+    text-align: center;
+}
+
+.top-bar-section {
+    display: inline-block;
 }
 
 .top-bar-section ul {
@@ -53,7 +58,7 @@ body {
 }
 
 .top-bar-section ul li {
-    display: inline-block;
+   /* display: inline-block; */
     background: transparent;
 }
 
@@ -63,10 +68,11 @@ body {
 
 .top-bar-section ul li > a {
     color: black;
+    border-bottom: 3px solid transparent;
 }
 
 .top-bar-section ul li > a:hover {
-    border-bottom: 3px solid #0080c6;
+    border-color: #4b9bc7; 
 }
 
 .top-bar-section ul li.active > a {
@@ -112,6 +118,7 @@ input.labelauty + label
 {
   display: table;
   font-size: 11px;
+  width: 120px;
   padding: 10px;
   background-color: #efefef;
   color: #b3b3b3;
