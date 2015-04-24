@@ -12,8 +12,8 @@ Template Name: USAC Elections 2015
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="template">
-	<% _.each(input, function(candidate){ %>
-		<div class="row element candidate <%- candidate.Slate %>">
+    <% _.each(input, function(candidate){ %>
+        <div class="row element candidate <%- candidate.Slate %>">
             <div class="small-3 columns">
             <img src="<%- candidate.Mug %>"/>
             </div>
@@ -28,7 +28,7 @@ Template Name: USAC Elections 2015
                         <ul>
                             <% _.each(candidate.Platforms, function(p) { %>
                             <li><%- p %></li>  
-                            <% }); %>			
+                            <% }); %>
                         </ul>
                     </div>
               
@@ -40,8 +40,8 @@ Template Name: USAC Elections 2015
           
                 </div>
             </div>
-		</div>
-	<% }); %>
+        </div>
+    <% }); %>
 </script>
 
 <script type="text/template" id="violations_main_template">
@@ -70,17 +70,17 @@ Template Name: USAC Elections 2015
 <!-- THE PAGE STARTS HERE -->
 
 <div class="container"><div class="row">
-	<nav class="top-bar" data-topbar role="navigation">
-	  <section class="top-bar-section">
-	    <!-- Right Nav Section -->
-	    <ul class="right">
-		    <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
-		    <li><a href="#" onclick="switchSection(this)">Violations</a></li>
-			<li><a href="#" onclick="switchSection(this)">News</a></li>
-			<li><a href="#" onclick="switchSection(this)">Endorsement</a></li>
-	    </ul>
-	  </section>
-	</nav>
+    <nav class="top-bar" data-topbar role="navigation">
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
+            <li><a href="#" onclick="switchSection(this)">Violations</a></li>
+            <li><a href="#" onclick="switchSection(this)">News</a></li>
+            <li><a href="#" onclick="switchSection(this)">Endorsement</a></li>
+        </ul>
+      </section>
+    </nav>
     <div class="row">
         <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: relative top: 30px">
             <form id="filter">
@@ -170,10 +170,10 @@ Template Name: USAC Elections 2015
             <div class="usac-section violations-container" id="violations-content">
             </div>
  
-        </div>  
+        </div>
         <!-- Main content column ends -->
     </div>
-   
+
 </div>
 </div>
 
