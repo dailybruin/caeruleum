@@ -2,6 +2,9 @@ var candidates, keys;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
 
+function test() {
+	alert("test");
+}
 document.addEventListener("DOMContentLoaded", function(event) {
 	/*!
 	 * LABELAUTY jQuery Plugin
@@ -25,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	setSidebar();
 	$.getJSON("../js/usac-2015/candidates.json", function(data) {
-		// $(".side-nav").stick_in_parent();
 		$(":checkbox").labelauty();
 		candidates = data;
 		keys = _.keys(candidates[0]);
@@ -34,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			c = _.where(candidates, {Position: positions[i]});
 			$("#"+positions[i]).append(template({input: c}));
 		}
+		var layzr = new Layzr({ 
+			selector: '[data-layzr]', 
+			attr: 'data-layzr', 
+			retinaAttr: 'data-layzr', 
+			bgAttr: 'data-layzr-bg', 
+			threshold: 50, 
+			callback: 'test'
+		});
 	});
 	
 	$("input:checkbox").on("click", function() {
@@ -61,10 +71,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 function scrollFunction() {
 	setSidebar();
 	if ($(this).scrollTop() < 100) {
-        $('#scrollup').hide();
-    } else {
-        $('#scrollup').show();  // TODO: this doesn't work
-    }
+		$('#scrollup').hide();
+	} else {
+		$('#scrollup').show();  // TODO: this doesn't work
+	}
 
 	var currentScroll = $(this).scrollTop() + 100, currentSection;
 

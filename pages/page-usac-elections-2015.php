@@ -7,6 +7,7 @@ Template Name: USAC Elections 2015
 <link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
+<script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
 <script src="../js/usac-2015/jquery-labelauty.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
@@ -15,7 +16,7 @@ Template Name: USAC Elections 2015
     <% _.each(input, function(candidate){ %>
         <div class="row element candidate <%- candidate.Slate %>">
             <div class="small-3 columns">
-            <img src="<%- candidate.Mug %>"/>
+            <img src="http://placehold.it/200x300&text=Mug" data-layzr="<%- candidate.Mug %>"/>
             </div>
             <div class="small-9 columns">
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.Slate %>.logo.svg"/>
