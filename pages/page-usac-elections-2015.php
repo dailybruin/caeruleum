@@ -18,7 +18,7 @@ Template Name: USAC Elections 2015
             <img src="<%- candidate.Mug %>"/>
             </div>
             <div class="small-8 columns">
-                        <img style="width: 7%; float:left; margin-right: .1em;" src="https://dl-web.dropbox.com/get/_Daily%20Bruin/USAC%2015/cmyk.letsact.logo.jpg?_subject_uid=1391304&w=AABaaE5bGVdITeKBgx0suWoVGnLrnKkbk4-VQRu94ZPajw"/>
+                        <img style="width: 7%; float:left; margin-right: .1em;" src="/img/usac-2015.<%- candidate.Slate %>.logo.svg"/>
                         <h2 style="vertical-align:middle;"><%- candidate.Name %></h2>
                 <hr>
                 <p><%- candidate.YearMajor %></p>

@@ -238,10 +238,48 @@ input.labelauty[disabled] + label
 /* Add a background to (un)checked images */
 input.labelauty + label > span.labelauty-unchecked-image
 {
-  background-image: url( images/input-unchecked.png );
+  background-size: 16px 16px;
 }
 
 input.labelauty + label > span.labelauty-checked-image
 {
-  background-image: url( images/input-checked.png );
+  background-size: 16px 16px;
+}
+
+input.labelauty + label[for=BU] > span.labelauty-unchecked-image
+{
+  background-image: url(/img/usac-2015.BU.logo.svg);
+}
+
+input.labelauty + label[for=BU] > span.labelauty-checked-image
+{
+  background-image: url(/img/usac-2015.BU.logo.svg);
+}
+
+input.labelauty + label[for=LA] > span.labelauty-unchecked-image
+{
+  background-image: url(/img/usac-2015.LA.logo.svg);
+}
+
+input.labelauty + label[for=LA] > span.labelauty-checked-image
+{
+  background-image: url(/img/usac-2015.LA.logo.svg);
+}
+input.labelauty + label[for=IND] > span.labelauty-unchecked-image
+{
+  background-image: url(/img/usac-2015.IND.logo.svg);
+}
+
+input.labelauty + label[for=IND] > span.labelauty-checked-image
+{
+  background-image: url(/img/usac-2015.IND.logo.svg);
+}
+input.labelauty + label[for=TAP] > span.labelauty-unchecked-image
+{
+  background-image: url(/img/usac-2015.TAP.logo.svg);
+}
+
+input.labelauty + label[for=TAP] > span.labelauty-checked-image
+{
+  background-image: url(/img/usac-2015.TAP.logo.svg);
 }
