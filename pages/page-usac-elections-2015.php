@@ -124,13 +124,8 @@ Template Name: USAC Elections 2015
         <!-- Main content column, resizes to full on mobile -->
         <div class="small-12 medium-9 columns">
             <div class="usac-section profiles-container candidates">
-<<<<<<< HEAD
-                <div class="candidates-content" id="President">
-                    <h3 style="margin-top: 0em">President</h3>
-=======
                 <div class="content" id="President">
-                    <h3>President</h3>
->>>>>>> 2614173355f62f28fac8ed14fd4b672714544ef0
+                    <h3 style="margin-top: 0em">President</h3>
                 </div>
                 <div class="content" id="IVP">
                     <h3>Internal Vice President</h3>
