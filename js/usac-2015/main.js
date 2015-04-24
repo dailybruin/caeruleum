@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
     
     $("input:checkbox").on("click", function() {
-        $(".candidate").hide();
+        $(".element").hide();
         $("input:checked").each(function() {
-            $("." + $(this).attr("id").replace(/ /g, ".").replace("'", "\\'")).show();
+            $("." + $(this).attr("id")).show();
         });
     });
 
@@ -49,6 +49,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     	var id = currentSection.attr('id');
    	 	$(".side-nav .active").removeClass('active');
    	 	$("[href=#"+id+"]").addClass('active');
+    });
+
+    var url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+    $.getJSON(url, function(json) {
+        var data = clean_google_sheet_json(json);
+        compile_and_insert_html('#violations_main_template', '#violations-container', data);
     });
 });
 
@@ -67,4 +73,43 @@ function switchSection(sender) {
 	$("#" + sender.innerHTML.toLowerCase() + "-container").show();
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(sender.parentElement).addClass('active');
+}
+
+// Takes in template id, compiles the template to html using data json object
+// and then inserts it into given div id
+function compile_and_insert_html(template_id, div_id, data) {
+    var template = _.template($(template_id).html());
+    var template_html = template({
+        'rows': data
+    });
+    $(div_id).html(template_html);
+}
+ 
+ 
+// takes in JSON object from google sheets and turns into a json formatted 
+// this way based on the original google Doc
+// [
+//  {
+//      'column1': info1,
+//      'column2': info2,
+//  }
+// ]
+function clean_google_sheet_json(data){
+    var formatted_json = [];
+    var elem = {};
+    var real_keyname = '';
+    $.each(data.feed.entry, function(i, entry) {
+        elem = {};
+        $.each(entry, function(key, value){
+            // fields that were in the spreadsheet start with gsx$
+            if (key.indexOf("gsx$") == 0) 
+            {
+                // get everything after gsx$
+                real_keyname = key.substring(4); 
+                elem[real_keyname] = value['$t'];
+            }
+        });
+        formatted_json.push(elem);
+    });
+    return formatted_json;
 }

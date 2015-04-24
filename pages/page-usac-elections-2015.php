@@ -13,7 +13,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" class="template">
 	<% _.each(input, function(candidate){ %>
-		<div class="row candidate <%- candidate.Slate %>">
+		<div class="row element candidate <%- candidate.Slate %>">
             <div class="small-4 columns">
             <img src="<%- candidate.Mug %>"/>
             </div>
@@ -44,6 +44,23 @@ Template Name: USAC Elections 2015
 	<% }); %>
 </script>
 
+<script type="text/template" id="violations_main_template">
+    <% _.each(rows, function(violation) { %>
+        <div class = "element violation <%- violation.slates %>" id="<%- violation.id %>">
+            <h2>Complaint #:<%- violation.id %></h2>
+            <hr>
+            <p>Submitted By: <%- violation.submitter %></p>
+            <p><%- violation.date %></p>
+            <h3>Regarding:</h3>
+            <p><%- violation.regarding %></p>
+            <h3>Finding:</h3>
+            <p><%- violation.finding %></p>
+            <h3>Sanction:</h3>
+            <p><%- violation.sanction %></p>
+        </div>
+    <% }); %>
+</script>
+
 <!-- THE PAGE STARTS HERE -->
 
 <div class="container"><div class="row">
@@ -63,16 +80,16 @@ Template Name: USAC Elections 2015
             <form id="filter">
                 <h3>Filter By Slate</h3>
                 <div>
-                    <input id="Bruins United" type="checkbox" checked="yes" data-labelauty="Bruins United"/>
+                    <input id="BU" type="checkbox" checked="yes" data-labelauty="Bruins United"/>
                 </div>
                 <div>
-                    <input id="LetsAct" type="checkbox" checked="yes" data-labelauty="LET'S ACT"/>
+                    <input id="LA" type="checkbox" checked="yes" data-labelauty="LET'S ACT"/>
                 </div>
                 <div>
-                    <input id="The After Party" type="checkbox" checked="yes" data-labelauty="The After Party"/>
+                    <input id="TAP" type="checkbox" checked="yes" data-labelauty="The After Party"/>
                 </div>
                 <div>
-                    <input id="Independent" type="checkbox" checked="yes" data-labelauty="Independent"/>
+                    <input id="IND" type="checkbox" checked="yes" data-labelauty="Independent"/>
                 </div>
             </form>
             <dl class="side-nav">
