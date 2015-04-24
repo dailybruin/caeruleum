@@ -63,7 +63,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="violations_sidebar_template">
     <% _.each(rows, function(violation) { %>
-        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #:<%- violation.id %></a></dd>
+        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #<%- violation.id %></a></dd>
     <% }); %>
 </script>
 
@@ -168,7 +168,6 @@ Template Name: USAC Elections 2015
                 In case you don't know, I'm the endorsement-container.
             </div>
             <div class="usac-section violations-container" id="violations-content">
-                In case you don't know, I'm the violation-container.
             </div>
  
         </div>  

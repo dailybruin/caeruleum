@@ -1,5 +1,6 @@
 var candidates, keys;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
+var currentContainer;
 document.addEventListener("DOMContentLoaded", function(event) {
 	/*!
 	 * LABELAUTY jQuery Plugin
@@ -14,9 +15,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	e=a.label;!0===e&&(null==d||0===d.length?(b=[],b[0]=a.unchecked_label,b[1]=a.checked_label):(b=d.split(a.separator),2<b.length?(e=!1,g(a.development,"There's more than two labels. LABELAUTY will not use labels.")):1===b.length&&g(a.development,"There's just one label. LABELAUTY will use this one for both cases.")));c.css({display:"none"});c.removeAttr("data-labelauty");d=c.attr("id");if(a.force_random_id||null==d||""===d.trim()){var h=1+Math.floor(1024E3*Math.random());for(d="labelauty-"+h;0!==f(d).length;)h++,
 	d="labelauty-"+h,g(a.development,"Holy crap, between 1024 thousand numbers, one raised a conflict. Trying again.");c.attr("id",d)}c.after(l(d,b,e));!1!==a.minimum_width&&c.next("label[for="+d+"]").css({"min-width":a.minimum_width});0!=a.same_width&&1==a.label&&(c=c.next("label[for="+d+"]"),e=k(c.find("span.labelauty-unchecked")),b=k(c.find("span.labelauty-checked")),e>b?c.find("span.labelauty-checked").width(e):c.find("span.labelauty-unchecked").width(b))})}})(jQuery);
 	$(".db-next.hide-for-small").remove();  // TODO: REMOVE THIS BEFORE PRODUCTION!
-    $(".news-container").hide();
-    $(".endorsement-container").hide();
-    $(".violations-container").hide();
+
+	// Show only the profiles
+    $(".usac-section").hide();
+    $(".profiles-container").show();
+    currentContainer = ".profiles-container";
+
     setSidebar();
 	$.getJSON("../js/usac-2015/candidates.json", function(data) {
 		// $(".side-nav").stick_in_parent();
@@ -37,19 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     });
 
-    $(window).scroll(function() {
-        setSidebar();
-        var currentScroll = $(this).scrollTop() + 100, currentSection;
-    	$(".candidates-content").each(function(){
-    		if ($(this).offset().top - 1 < currentScroll)
-    			currentSection = $(this);
-    	});
-    	if (!currentSection)
-    		return;
-    	var id = currentSection.attr('id');
-   	 	$(".side-nav .active").removeClass('active');
-   	 	$("[href=#"+id+"]").addClass('active');
-    });
+    $(window).scroll(scrollFunction);
 
     var url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
     $.getJSON(url, function(json) {
@@ -58,6 +50,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
         compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
     });
 });
+
+function scrollFunction() {
+	setSidebar();
+    var currentScroll = $(this).scrollTop() + 100, currentSection;
+
+    var content;
+    if (currentContainer == ".profiles-container")
+    	content = ".candidates-content";
+    else if (currentContainer == ".violations-container")
+    	content = ".element.violation";
+    else
+    	console.log("scroll highlighting not ready")  // TODO: implement this
+	$(content).each(function(){
+		if ($(this).offset().top - 1 < currentScroll)
+			currentSection = $(this);
+	});
+	if (!currentSection)
+		return;
+	var id = currentSection.attr('id');
+	 	$(".side-nav .active").removeClass('active');
+	 	$("[href=#"+id+"]").addClass('active');
+}
 
 function setSidebar() {
     $el = $("#scrollbar");
@@ -70,8 +84,9 @@ function setSidebar() {
 }
 
 function switchSection(sender) {
-	$(".usac-section").hide();
-	$("." + sender.innerHTML.toLowerCase() + "-container").show();
+	$(currentContainer).hide();
+	currentContainer = "." + sender.innerHTML.toLowerCase() + "-container";
+	$(currentContainer).show();
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(sender.parentElement).addClass('active');
 }
