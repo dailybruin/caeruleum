@@ -46,7 +46,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="violations_main_template">
     <% _.each(rows, function(violation) { %>
-        <div class = "element content violation <%- violation.slates %>" id="<%- violation.id %>">
+        <div class = "element violation <%- violation.slates %>" id="<%- violation.id %>">
             <h2>Complaint #:<%- violation.id %></h2>
             <hr>
             <p>Submitted By: <%- violation.submitter %></p>
@@ -124,40 +124,40 @@ Template Name: USAC Elections 2015
         <!-- Main content column, resizes to full on mobile -->
         <div class="small-12 medium-9 columns">
             <div class="usac-section profiles-container candidates">
-                <div class="content" id="President">
+                <div class="candidates-content" id="President">
                     <h3 style="margin-top: 0em">President</h3>
                 </div>
-                <div class="content" id="IVP">
+                <div class="candidates-content" id="IVP">
                     <h3>Internal Vice President</h3>
                 </div>
-                <div class="content" id="EVP">
+                <div class="candidates-content" id="EVP">
                     <h3>External Vice President</h3>
                 </div>
-                <div class="content" id="Gen-Rep">
+                <div class="candidates-content" id="Gen-Rep">
                     <h3>General Representative</h3>
                 </div>
-                <div class="content" id="AAC">
+                <div class="candidates-content" id="AAC">
                     <h3>Academic Affairs Commissioner</h3>
                 </div>
-                <div class="content" id="CEC">
+                <div class="candidates-content" id="CEC">
                     <h3>Campus Event Commissioner</h3>
                 </div>
-                <div class="content" id="CSC">
+                <div class="candidates-content" id="CSC">
                     <h3>Community Service Commissioner</h3>
                 </div>
-                <div class="content" id="CAC">
+                <div class="candidates-content" id="CAC">
                     <h3>Cultural Affairs Commissioner</h3>
                 </div>
-                <div class="content" id="FAC">
+                <div class="candidates-content" id="FAC">
                     <h3>Facilities Commissioner</h3>
                 </div>
-                <div class="content" id="FSC">
+                <div class="candidates-content" id="FSC">
                     <h3>Financial Support Commissioner</h3>
                 </div>
-                <div class="content" id="SWC">
+                <div class="candidates-content" id="SWC">
                     <h3>Student Wellness Commissioner</h3>
                 </div>
-                <div class="content" id="TSR">
+                <div class="candidates-content" id="TSR">
                     <h3>Transfer Student Representative</h3>
                 </div>
             </div>
