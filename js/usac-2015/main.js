@@ -44,6 +44,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 	$(window).scroll(scrollFunction);
+	$("#scrollup").click(function(event){
+		event.preventDefault();
+		$("html, body").animate({scrollTop: 0}, 600);
+		return false;
+	});
 
 	var url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
 	$.getJSON(url, function(json) {
@@ -55,6 +60,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function scrollFunction() {
 	setSidebar();
+	if ($(this).scrollTop() < 100) {
+        $('#scrollup').hide();
+    } else {
+        $('#scrollup').show();  // TODO: this doesn't work
+    }
+
 	var currentScroll = $(this).scrollTop() + 100, currentSection;
 
 	var content;

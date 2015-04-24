@@ -129,6 +129,15 @@ body {
     padding-bottom: 30px;
 }
 
+#scrollup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid;  /* TODO: remove border and set bkg */
+    z-index: 9999;
+}
 
 /*!
  * LABELAUTY jQuery Plugin Styles

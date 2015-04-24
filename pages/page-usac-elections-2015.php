@@ -69,6 +69,7 @@ Template Name: USAC Elections 2015
 
 <!-- THE PAGE STARTS HERE -->
 
+<a class="fi-arrow-up show-for-small-only" id="scrollup" href="#">TOP</a>
 <div class="container"><div class="row">
     <nav class="top-bar" data-topbar role="navigation">
       <section class="top-bar-section">
