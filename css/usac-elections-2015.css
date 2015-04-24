@@ -49,6 +49,50 @@ body {
     height:100%;
 }
 
+.top-bar {
+    background: transparent;
+    margin-top: 1em;
+    height: auto;
+}
+
+.top-bar-section ul {
+    text-align: center;
+}
+
+.top-bar-section ul li {
+    display: inline-block;
+    background: transparent;
+}
+
+.top-bar-section ul li > a {
+    padding: 1em 2em;
+}
+
+.top-bar-section ul li > a {
+    color: black;
+}
+
+.top-bar-section ul li > a:hover {
+    border-bottom: 3px solid #0080c6;
+}
+
+.top-bar-section ul li.active > a {
+    background: transparent;
+    color: black;
+    border-bottom: 3px solid #0080c6;
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: initial;
+    color: initial;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+    background-color: initial;
+    background: initial;
+    color: initial;
+}
+
 
 
 /*!
