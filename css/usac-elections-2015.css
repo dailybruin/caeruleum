@@ -18,6 +18,16 @@ body {
   margin-top: 0.3em;
 }
 
+.candidate .slate-logo {
+    width: 7%; 
+    margin-right: .1em;
+}
+
+.candidate .candidate-name {
+    display: inline;
+    font-size: 2em;
+}
+
 .candidates-content {
     /*display: block; */
     /*position: relative; */
@@ -76,6 +86,27 @@ body {
 .top-bar-section ul li > a {
     color: black;
     border-bottom: 3px solid transparent;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .top-bar-section li:not(.has-form) a:not(.button)
+    {
+        background: transparent;
+    }
+    .top-bar-section li:hover:not(.has-form) a:not(.button)
+    {
+        background: transparent;
+    }
+    .top-bar-section li.active:not(.has-form) a:not(.button)
+    {
+        color: black;
+        background: transparent;
+    }
+    .top-bar-section li.active:hover:not(.has-form) a:not(.button)
+    {
+        color: initial;
+        background: transparent;
+    }
 }
 
 .top-bar-section ul li > a:hover {

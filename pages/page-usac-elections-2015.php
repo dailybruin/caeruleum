@@ -18,8 +18,8 @@ Template Name: USAC Elections 2015
             <img src="<%- candidate.Mug %>"/>
             </div>
             <div class="small-8 columns">
-                        <img style="width: 7%; float:left; margin-right: .1em;" src="/img/usac-2015.<%- candidate.Slate %>.logo.svg"/>
-                        <h2 style="vertical-align:middle;"><%- candidate.Name %></h2>
+                        <img class="slate-logo" src="/img/usac-2015.<%- candidate.Slate %>.logo.svg"/>
+                        <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.Name %></h2>
                 <hr>
                 <p><%- candidate.YearMajor %></p>
                 <div class="row">
@@ -125,7 +125,7 @@ Template Name: USAC Elections 2015
         <div class="small-12 medium-9 columns">
             <div class="usac-section profiles-container candidates">
                 <div class="candidates-content" id="President">
-                    <h3>President</h3>
+                    <h3 style="margin-top: 0em">President</h3>
                 </div>
                 <div class="candidates-content" id="IVP">
                     <h3>Internal Vice President</h3>

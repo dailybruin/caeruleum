@@ -65,7 +65,7 @@ function setSidebar() {
         $el.css({"position": "fixed", "top": "80px"});
     }
     if($(this).scrollTop() < 200 && $el.css('position') == "fixed") {
-        $el.css({"position": "relative", "top": "30px"});
+        $el.css({"position": "relative", "top": "0px"});
     }
 }
 
