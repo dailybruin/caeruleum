@@ -48,15 +48,15 @@ Template Name: USAC Elections 2015
 <script type="text/template" id="violations_main_template">
     <% _.each(rows, function(violation) { %>
         <div class = "element violation <%- violation.slates %>" id="<%- violation.id %>">
-            <h2>Complaint #<%- violation.id %></h2>
+            <h1>Complaint #<%- violation.id %></h1>
             <hr>
             <p>Submitted By: <%- violation.submitter %></p>
             <p><%- violation.date %></p>
-            <h3>Regarding:</h3>
+            <h2>Regarding:</h2>
             <p><%- violation.regarding %></p>
-            <h3>Finding:</h3>
+            <h2>Finding:</h2>
             <p><%- violation.finding %></p>
-            <h3>Sanction:</h3>
+            <h2>Sanction:</h2>
             <p><%- violation.sanction %></p>
         </div>
     <% }); %>
