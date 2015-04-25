@@ -6,6 +6,7 @@ function test() {
 	alert("test");
 }
 document.addEventListener("DOMContentLoaded", function(event) {
+
 	/*!
 	 * LABELAUTY jQuery Plugin
 	 *
@@ -36,13 +37,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			c = _.where(candidates, {Position: positions[i]});
 			$("#"+positions[i]).append(template({input: c}));
 		}
+
 		var layzr = new Layzr({ 
 			selector: '[data-layzr]', 
 			attr: 'data-layzr', 
 			retinaAttr: 'data-layzr', 
 			bgAttr: 'data-layzr-bg', 
 			threshold: 50, 
-			callback: 'test'
+			callback: null
 		});
 	});
 	
@@ -55,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	$(window).scroll(scrollFunction);
 	$("#scrollup").click(function(event){
-		event.preventDefault();
 		$("html, body").animate({scrollTop: 0}, 600);
 		return false;
 	});
@@ -91,9 +92,9 @@ function scrollFunction() {
 	});
 	if (!currentSection)
 		return;
-	var id = currentSection.attr('id');
-		$(".side-nav .active").removeClass('active');
-		$("[href=#"+id+"]").addClass('active');
+	
+	$(".side-nav .active").removeClass('active');
+	$("[href=#" + currentSection.attr('id') + "]").addClass('active');
 }
 
 function setSidebar() {
