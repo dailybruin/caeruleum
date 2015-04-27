@@ -68,25 +68,32 @@ Template Name: USAC Elections 2015
 </script>
 
 <script type="text/template" id="endorsements_main_template">
-    <% _.each(rows, function(endorsement) { %>
-        <div class = "element endorsement <%- endorsement.Position %>">
+    <% _.each(rows, function(candidate) { %>
+        <% _.each( (_.where(candidate, {endorsed: "1"})), function(endorsed) { %>
+            <div class = "element endorsement <%- endorsed.position %> <%- endorsed.name %>">
             <div class="row endorsed">
                 <h2>Endorsed:</h2>
                 <div class="small-3 columns">
-                   <img src="<%- endorsement.yesMug %>"/>
+                   <img src="<%- endorsed.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <h2 class="endorsed-name"><%- endorsement.yesName %></h2>
+                    <h2 class="endorsed-name"><%- endorsed.name %></h2>
                     <hr>
-                    <% _.each(endorsement.yesMain, function(para) { %>
+                    <% _.each(endorsed.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
                     <% }); %>
                 </div>
             </div> 
+            </div>
+        <% }); %>
+        
+        <% _.each( (_.where(candidate, {endorsed: "0"})), function(notendorsed) { %>
+           
             
+            <div class = "element notendorsement <%- notendorsed.position %> <%- notendorsed.name %>">
+            <div class="row notendorsed">
             <h2>Not Endorsed:</h2>
 
-            <% _.each(endorsement.noList, function(notendorsed) { %>
             <div class="row notendorsed <%- notendorsed.name  %>">
                 <div class="small-2 columns">
                    <img src="<%- notendorsed.mug %>"/>
@@ -94,13 +101,14 @@ Template Name: USAC Elections 2015
                 <div class="small-10 columns">
                     <h2 class="notendorsed-name"><%- notendorsed.name %></h2>
                     <hr>
-                    <% _.each(notendorsed.main, function(para) { %>
+                    <% _.each(notendorsed.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
                     <% }); %>
                 </div>
             </div>
-            <% }); %>
-        </div>
+            </div>
+            </div>
+        <% }); %>
     <% }); %>
 </script>
 

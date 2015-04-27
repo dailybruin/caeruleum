@@ -1,4 +1,4 @@
-var candidates, keys, pos;
+var candidates, keys, endcandidates;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
 
@@ -61,10 +61,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // LOAD DATA FOR ENDORSEMENTS PAGE
 
-    $.getJSON("../js/usac-2015/endorsements.json", function(data) {
-       pos = data;
-       var template = _.template($("#endorsements_main_template").html());
-       $(".endorsements #President").append(template({rows: data})); 
+	var endorsementsdata = "https://spreadsheets.google.com/feeds/list/1cFFXOuZyKa6hAHtI-1SEPPlQ2LzrXlzwIt6bwRNkRxU/od6/public/values?alt=json";
+    $.getJSON(endorsementsdata, function(data) {
+        var endorsetable = clean_google_sheet_json(data);
+        var template = _.template($("#endorsements_main_template").html());
+        for (var i = 0; i < positions.length; i ++) {
+            var cand  = _.where(endorsetable, {position: positions[i]});
+            $("#endorsements-"+positions[i]).append(template({rows: cand}));
+        }
     });
 
     $("input:checkbox").on("click", function() {
