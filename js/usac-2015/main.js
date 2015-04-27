@@ -1,4 +1,4 @@
-var candidates, keys;
+var candidates, keys, pos;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// Show only the profiles
 	$(".usac-section").hide();
 	$(".profiles-container").show();
-	currentContainer = ".profiles-container";
+	currentContainer = "profiles";
 
 	setSidebar();
 
@@ -35,24 +35,39 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		$(":checkbox").labelauty();
 		candidates = data;
 		keys = _.keys(candidates[0]);
-		var template = _.template($("script.template").html());
+		var template = _.template($("script.candidates_main_template").html());
 		for (var i = 0; i < positions.length; i ++) {
 			c = _.where(candidates, {position: positions[i]});
-			console.log(c);
-			$("#"+positions[i]).append(template({input: c}));
+			$("#profiles-"+positions[i]).append(template({input: c}));
 		}
 
 		var layzr = new Layzr({ 
-			selector: '[data-layzr]', 
-			attr: 'data-layzr', 
-			retinaAttr: 'data-layzr', 
-			bgAttr: 'data-layzr-bg', 
-			threshold: 50, 
+			selector: '[data-layzr]',
+			attr: 'data-layzr',
+			retinaAttr: 'data-layzr',
+			bgAttr: 'data-layzr-bg',
+			threshold: 50,
 			callback: null
 		});
 	});
-	
-	$("input:checkbox").on("click", function() {
+
+    // LOAD DATA FOR VIOLATIONS PAGE
+	var violationsdata = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+	$.getJSON(violationsdata, function(json) {
+		var data = clean_google_sheet_json(json);
+		compile_and_insert_html('#violations_main_template', '#violations-content', data);
+		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
+	});
+
+    // LOAD DATA FOR ENDORSEMENTS PAGE
+
+    $.getJSON("../js/usac-2015/endorsements.json", function(data) {
+       pos = data;
+       var template = _.template($("#endorsements_main_template").html());
+       $(".endorsements #President").append(template({rows: data})); 
+    });
+
+    $("input:checkbox").on("click", function() {
 		$(".element").hide();
 		$("input:checked").each(function() {
 			$("." + $(this).attr("id")).show();
@@ -63,13 +78,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	$("#scrollup").click(function(event){
 		$("html, body").animate({scrollTop: 0}, 600);
 		return false;
-	});
-
-	url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
-	$.getJSON(url, function(json) {
-		var data = clean_google_sheet_json(json);
-		compile_and_insert_html('#violations_main_template', '#violations-content', data);
-		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
 	});
 });
 
@@ -84,11 +92,11 @@ function scrollFunction() {
 	var currentScroll = $(this).scrollTop() + 100, currentSection;
 
 	var content;
-	if (currentContainer == ".profiles-container")
-		content = ".candidates-content";
-	else if (currentContainer == ".violations-container")
+	if (currentContainer == "profiles")
+		content = ".profiles-content";
+	else if (currentContainer == "violations")
 		content = ".element.violation";
-	else
+	else if (currentContainer == "endorsements")
 		console.log("scroll highlighting not ready")  // TODO: implement this
 	$(content).each(function(){
 		if ($(this).offset().top - 1 < currentScroll)
@@ -112,9 +120,9 @@ function setSidebar() {
 }
 
 function switchSection(sender) {
-	$(currentContainer).hide();
-	currentContainer = "." + sender.innerHTML.toLowerCase() + "-container";
-	$(currentContainer).show();
+	$("." + currentContainer + "-container").hide();
+	currentContainer = sender.innerHTML.toLowerCase();
+	$("." + currentContainer + "-container").show();
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(sender.parentElement).addClass('active');
 }
