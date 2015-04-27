@@ -28,13 +28,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	currentContainer = ".profiles-container";
 
 	setSidebar();
-	$.getJSON("../js/usac-2015/candidates.json", function(data) {
+
+	var url = "https://spreadsheets.google.com/feeds/list/1QxpROQiv4EMUfWMTdaxyiX3PiY0M2wJdPHa18-lILdc/od6/public/values?alt=json";
+	$.getJSON(url, function(data) {
+		data = clean_google_sheet_json(data);
 		$(":checkbox").labelauty();
 		candidates = data;
 		keys = _.keys(candidates[0]);
 		var template = _.template($("script.template").html());
 		for (var i = 0; i < positions.length; i ++) {
-			c = _.where(candidates, {Position: positions[i]});
+			c = _.where(candidates, {position: positions[i]});
+			console.log(c);
 			$("#"+positions[i]).append(template({input: c}));
 		}
 
@@ -61,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		return false;
 	});
 
-	var url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+	url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
 	$.getJSON(url, function(json) {
 		var data = clean_google_sheet_json(json);
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);

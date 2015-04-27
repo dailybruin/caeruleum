@@ -14,20 +14,20 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" class="template">
     <% _.each(input, function(candidate){ %>
-        <div class="row element candidate <%- candidate.Slate %>">
+        <div class="row element candidate <%- candidate.slate %>">
             <div class="small-3 columns">
-            <img src="http://placehold.it/200x300&text=Mug" data-layzr="<%- candidate.Mug %>"/>
+            <img src="http://placehold.it/200x300&text=Mug" data-layzr="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
-                        <img class="slate-logo" src="/img/usac-2015.<%- candidate.Slate %>.logo.svg"/>
-                        <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.Name %></h2>
+                        <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                        <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                 <hr>
-                <p><%- candidate.YearMajor %></p>
+                <p><%- candidate.yearmajor %></p>
                 <div class="row">
                     <div class="large-5 columns platforms">
                         <h2>Platform Goals</h2>
                         <ul>
-                            <% _.each(candidate.Platforms, function(p) { %>
+                            <% _.each(candidate.platforms.split("\n"), function(p) { %>
                             <li><%- p %></li>  
                             <% }); %>
                         </ul>
