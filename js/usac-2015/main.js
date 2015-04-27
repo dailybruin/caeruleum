@@ -57,15 +57,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		});
 	});
 
-    // LOAD DATA FOR VIOLATIONS PAGE
-	/*
-  var violationsdata;
+ 
+  var violationsdata = "https://spreadsheets.google.com/feeds/list/19YcaBCjht0rm42LyE3yeFSun-dEwqnrR_4jaR8aU1xo/od6/public/values?alt=json";
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);
 		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
 	});
-  */
+ 
     // LOAD DATA FOR ENDORSEMENTS PAGE
 
 	var endorsementsdata = "https://spreadsheets.google.com/feeds/list/1cFFXOuZyKa6hAHtI-1SEPPlQ2LzrXlzwIt6bwRNkRxU/od6/public/values?alt=json";
