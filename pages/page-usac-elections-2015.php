@@ -77,7 +77,8 @@ Template Name: USAC Elections 2015
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <h2 class="endorsed-name"><%- candidate.name %></h2>
+                    <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                    <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
@@ -97,6 +98,7 @@ Template Name: USAC Elections 2015
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
+                    <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
                     <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
@@ -121,7 +123,7 @@ Template Name: USAC Elections 2015
         <ul class="right">
             <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
             <li><a href="#" onclick="switchSection(this)">Violations</a></li>
-            <li><a href="#" onclick="switchSection(this)">News</a></li>
+            <!-- <li><a href="#" onclick="switchSection(this)">News</a></li> -->
             <li><a href="#" onclick="switchSection(this)">Endorsements</a></li>
         </ul>
       </section>
@@ -167,18 +169,18 @@ Template Name: USAC Elections 2015
 
             <div class="usac-section endorsements-container">
                 <dl class="side-nav" id="endorsements-sidebar">
-                    <dd><a href="#endorsement-President" onclick="$('#President').animatescroll({padding: 80})">President</a></dd>
-                    <dd><a href="#endorsement-IVP" onclick="$('#IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
-                    <dd><a href="#endorsement-EVP" onclick="$('#EVP').animatescroll({padding: 80})">External Vice President</a></dd>
-                    <dd><a href="#endorsement-Gen-Rep" onclick="$('#Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
-                    <dd><a href="#endorsement-AAC" onclick="$('#AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#endorsement-CEC" onclick="$('#CEC').animatescroll({padding: 80})">Campus Event Commissioner</a></dd>
-                    <dd><a href="#endorsement-CSC" onclick="$('#CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
-                    <dd><a href="#endorsement-CAC" onclick="$('#CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
-                    <dd><a href="#endorsement-FAC" onclick="$('#FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
-                    <dd><a href="#endorsement-FSC" onclick="$('#FSC').animatescroll({padding: 80})">Financial Support Commissioner</a></dd>
-                    <dd><a href="#endorsement-SWC" onclick="$('#SWC').animatescroll({padding: 80})">Student Wellness Commissioner</a></dd>
-                    <dd><a href="#endorsement-TSR" onclick="$('#TSR').animatescroll({padding: 80})">Transfer Student Representative</a></dd>
+                    <dd><a href="#endorsements-President" onclick="$('#endorsements-President').animatescroll({padding: 80})">President</a></dd>
+                    <dd><a href="#endorsements-IVP" onclick="$('#endorsements-IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
+                    <dd><a href="#endorsements-EVP" onclick="$('#endorsements-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
+                    <dd><a href="#endorsements-Gen-Rep" onclick="$('#endorsements-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
+                    <dd><a href="#endorsements-AAC" onclick="$('#endorsements-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
+                    <dd><a href="#endorsements-CEC" onclick="$('#endorsements-CEC').animatescroll({padding: 80})">Campus Event Commissioner</a></dd>
+                    <dd><a href="#endorsements-CSC" onclick="$('#endorsements-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
+                    <dd><a href="#endorsements-CAC" onclick="$('#endorsements-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
+                    <dd><a href="#endorsements-FAC" onclick="$('#endorsements-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
+                    <dd><a href="#endorsements-FSC" onclick="$('#endorsements-FSC').animatescroll({padding: 80})">Financial Support Commissioner</a></dd>
+                    <dd><a href="#endorsements-SWC" onclick="$('#endorsements-SWC').animatescroll({padding: 80})">Student Wellness Commissioner</a></dd>
+                    <dd><a href="#endorsements-TSR" onclick="$('#endorsements-TSR').animatescroll({padding: 80})">Transfer Student Representative</a></dd>
                 </dl>
             </div>
         </div>
