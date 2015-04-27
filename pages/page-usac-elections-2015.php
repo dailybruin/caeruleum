@@ -12,7 +12,7 @@ Template Name: USAC Elections 2015
 <script src="../js/usac-2015/jquery-labelauty.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
-<script type="text/template" class="template">
+<script type="text/template" class="candidates_main_template">
     <% _.each(input, function(candidate){ %>
         <div class="row element candidate <%- candidate.Slate %>">
             <div class="small-3 columns">
@@ -25,7 +25,7 @@ Template Name: USAC Elections 2015
                 <p><%- candidate.YearMajor %></p>
                 <div class="row">
                     <div class="large-5 columns platforms">
-                        <h2>Platform Goals</h2>
+                        <h2>Platforms</h2>
                         <ul>
                             <% _.each(candidate.Platforms, function(p) { %>
                             <li><%- p %></li>  
@@ -35,7 +35,7 @@ Template Name: USAC Elections 2015
               
                     <div class="large-7 columns">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/ZZ5LpwO-An4" frameborder="0" allowfullscreen></iframe>
+                            <!--  <iframe src="https://www.youtube.com/embed/ZZ5LpwO-An4" frameborder="0" allowfullscreen></iframe> -->
                         </div>
                     </div>
           
@@ -68,18 +68,56 @@ Template Name: USAC Elections 2015
     <% }); %>
 </script>
 
+<script type="text/template" id="endorsements_main_template">
+    <% _.each(rows, function(endorsement) { %>
+        <div class = "element endorsement <%- endorsement.Position %>">
+            <div class="row endorsed">
+                <h2>Endorsed:</h2>
+                <div class="small-3 columns">
+                   <img src="<%- endorsement.yesMug %>"/>
+                </div>
+                <div class="small-9 columns">
+                    <h2 class="endorsed-name"><%- endorsement.yesName %></h2>
+                    <hr>
+                    <% _.each(endorsement.yesMain, function(para) { %>
+                        <p><%- para %></p>  
+                    <% }); %>
+                </div>
+            </div> 
+            
+            <h2>Not Endorsed:</h2>
+
+            <% _.each(endorsement.noList, function(notendorsed) { %>
+            <div class="row notendorsed <%- notendorsed.name  %>">
+                <div class="small-2 columns">
+                   <img src="<%- notendorsed.mug %>"/>
+                </div>
+                <div class="small-10 columns">
+                    <h2 class="notendorsed-name"><%- notendorsed.name %></h2>
+                    <hr>
+                    <% _.each(notendorsed.main, function(para) { %>
+                        <p><%- para %></p>  
+                    <% }); %>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    <% }); %>
+</script>
+
 <!-- THE PAGE STARTS HERE -->
 
 <a class="fi-arrow-up show-for-small-only" id="scrollup" href="#">TOP</a>
-<div class="container"><div class="row">
+<div class="container">
+    <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
       <section class="top-bar-section">
-        <!-- Right Nav Section -->
+        <!-- TOP Nav Section -->
         <ul class="right">
             <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
             <li><a href="#" onclick="switchSection(this)">Violations</a></li>
             <li><a href="#" onclick="switchSection(this)">News</a></li>
-            <li><a href="#" onclick="switchSection(this)">Endorsement</a></li>
+            <li><a href="#" onclick="switchSection(this)">Endorsements</a></li>
         </ul>
       </section>
     </nav>
@@ -122,8 +160,8 @@ Template Name: USAC Elections 2015
                 </dl>
             </div>
 
-            <div class="usac-section endorsement-container">
-                <dl class="side-nav" id="profiles-sidebar">
+            <div class="usac-section endorsements-container">
+                <dl class="side-nav" id="endorsements-sidebar">
                     <dd><a href="#President" onclick="$('#President').animatescroll({padding: 80})">President</a></dd>
                     <dd><a href="#IVP" onclick="$('#IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
                     <dd><a href="#EVP" onclick="$('#EVP').animatescroll({padding: 80})">External Vice President</a></dd>
@@ -193,55 +231,54 @@ Template Name: USAC Elections 2015
         </div>
  
         <!-- ENDORSEMENTS PAGE IS HERE  -->
-        
-        <div class="usac-section endorsement-container" id="endorsement-content">
-            <div class="endorsements-content" id="President">                                                                                     
-                 <h3 style="margin-top: 0em">President</h3>
-                </div>
-                <div class="candidates-content" id="IVP">
-                    <h3>Internal Vice President</h3>
-                </div>              
-                <div class="candidates-content" id="EVP">
-                    <h3>External Vice President</h3>    
-                </div>
-                <div class="candidates-content" id="Gen-Rep">
-                    <h3>General Representative</h3>
-                </div>
-                <div class="candidates-content" id="AAC">
-                    <h3>Academic Affairs Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="CEC">
-                    <h3>Campus Event Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="CSC">
-                    <h3>Community Service Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="CAC">
-                    <h3>Cultural Affairs Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="FAC">
-                    <h3>Facilities Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="FSC">
-                    <h3>Financial Support Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="SWC">
-                    <h3>Student Wellness Commissioner</h3>
-                </div>
-                <div class="candidates-content" id="TSR">
-                    <h3>Transfer Student Representative</h3>
-                </div>
+     
+        <div class="usac-section endorsements-container endorsements">
+            <div class="endorsements-content" id="President">
+                <h3 style="margin-top: 0em">President</h3>
             </div>
-        </div>
+            <div class="endorsements-content" id="IVP">
+                <h3>Internal Vice President</h3>
+            </div>
+            <div class="endorsements-content" id="EVP">
+                <h3>External Vice President</h3>
+            </div>
+            <div class="endorsements-content" id="Gen-Rep">
+                <h3>General Representative</h3>
+            </div>
+            <div class="endorsements-content" id="AAC">
+                <h3>Academic Affairs Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="CEC">
+                <h3>Campus Event Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="CSC">
+                <h3>Community Service Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="CAC">
+                <h3>Cultural Affairs Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="FAC">
+                <h3>Facilities Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="FSC">
+                <h3>Financial Support Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="SWC">
+                <h3>Student Wellness Commissioner</h3>
+            </div>
+            <div class="endorsements-content" id="TSR">
+                <h3>Transfer Student Representative</h3>
+            </div>
+        </div> 
             
         <!-- VIOLATIONS PAGE IS HERE  -->
             
         <div class="usac-section violations-container" id="violations-content">
         </div>
  
+    <!-- MAIN CONTENT  DIV END  -->
     </div>
-        <!-- Main content column ends -->
-    </div>
+</div>
 
 </div>
 </div>

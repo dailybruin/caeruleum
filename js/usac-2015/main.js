@@ -1,4 +1,4 @@
-var candidates, keys;
+var candidates, keys, pos;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
 
@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		$(":checkbox").labelauty();
 		candidates = data;
 		keys = _.keys(candidates[0]);
-		var template = _.template($("script.template").html());
+		var template = _.template($("script.candidates_main_template").html());
 		for (var i = 0; i < positions.length; i ++) {
 			c = _.where(candidates, {Position: positions[i]});
-			$("#"+positions[i]).append(template({input: c}));
+			$(".candidates #"+positions[i]).append(template({input: c}));
 		}
 
 		var layzr = new Layzr({ 
@@ -68,6 +68,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);
 		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
 	});
+
+    // LOAD DATA FOR ENDORSEMENTS PAGE
+
+    $.getJSON("../js/usac-2015/endorsements.json", function(data) {
+        pos = data;
+        var template = _.template($("#endorsements_main_template").html());
+       console.log("HIHIHI"); 
+       $(".endorsements #President").append(template({rows: data})); 
+/* 
+        for (var i = 0; i < positions.length; i ++) {
+            c = _.where(pos, {Position: positions[i]});
+            $("#"+positions[i]).append(template({rows: c}));
+        }
+*/
+    });
 });
 
 function scrollFunction() {
