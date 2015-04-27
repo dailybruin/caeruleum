@@ -117,7 +117,7 @@ Template Name: USAC Elections 2015
 <a class="fi-arrow-up show-for-small-only" id="scrollup" href="#">TOP</a>
 <div class="container">
     <div class="row banner">
-      <img src="http://dailybruin.com/images/2015/04/Elections-Banner.jpg"/>
+      <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
     </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
