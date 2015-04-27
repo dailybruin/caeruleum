@@ -34,7 +34,7 @@ Template Name: USAC Elections 2015
               
                     <div class="large-7 columns">
                         <div class="video-container">
-                            <!--  <iframe src="https://www.youtube.com/embed/ZZ5LpwO-An4" frameborder="0" allowfullscreen></iframe> -->
+                            <!-- <iframe src="<%- candidate.video %>" frameborder="0" allowfullscreen></iframe> -->
                         </div>
                     </div>
           
@@ -69,46 +69,44 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="endorsements_main_template">
     <% _.each(rows, function(candidate) { %>
-        <% _.each( (_.where(candidate, {endorsed: "1"})), function(endorsed) { %>
-            <div class = "element endorsement <%- endorsed.position %> <%- endorsed.name %>">
+        <% if (candidate.endorsed == "1") { %>
+            <div class = "element endorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row endorsed">
                 <h2>Endorsed:</h2>
                 <div class="small-3 columns">
-                   <img src="<%- endorsed.mug %>"/>
+                   <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <h2 class="endorsed-name"><%- endorsed.name %></h2>
+                    <h2 class="endorsed-name"><%- candidate.name %></h2>
                     <hr>
-                    <% _.each(endorsed.text.split("\n"), function(para) { %>
+                    <% _.each(candidate.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
                     <% }); %>
                 </div>
             </div> 
             </div>
-        <% }); %>
         
-        <% _.each( (_.where(candidate, {endorsed: "0"})), function(notendorsed) { %>
-           
-            
-            <div class = "element notendorsement <%- notendorsed.position %> <%- notendorsed.name %>">
+        <% } else { %>
+                    
+            <div class = "element notendorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row notendorsed">
             <h2>Not Endorsed:</h2>
 
-            <div class="row notendorsed <%- notendorsed.name  %>">
+            <div class="row notendorsed <%- candidate.name  %>">
                 <div class="small-2 columns">
-                   <img src="<%- notendorsed.mug %>"/>
+                   <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
-                    <h2 class="notendorsed-name"><%- notendorsed.name %></h2>
+                    <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
-                    <% _.each(notendorsed.text.split("\n"), function(para) { %>
+                    <% _.each(candidate.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
                     <% }); %>
                 </div>
             </div>
             </div>
             </div>
-        <% }); %>
+        <% } %>
     <% }); %>
 </script>
 
