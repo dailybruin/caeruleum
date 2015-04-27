@@ -34,7 +34,7 @@ Template Name: USAC Elections 2015
               
                     <div class="large-7 columns">
                         <div class="video-container">
-                            <!-- <iframe src="<%- candidate.video %>" frameborder="0" allowfullscreen></iframe> -->
+                            <iframe src="<%- candidate.video %>" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
           
