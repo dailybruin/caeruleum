@@ -48,7 +48,7 @@ Template Name: USAC Elections 2015
 <script type="text/template" id="violations_main_template">
     <% _.each(rows, function(violation) { %>
         <div class = "element violation <%- violation.slates %>" id="<%- violation.id %>">
-            <h1>Complaint <%- violation.id %></h1>
+            <h1>Complaint #<%- violation.id %></h1>
             <hr>
             <p>Submitted By: <%- violation.submitter %></p>
             <p><%- violation.date %></p>
@@ -64,7 +64,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="violations_sidebar_template">
     <% _.each(rows, function(violation) { %>
-        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint <%- violation.id %></a></dd>
+        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #<%- violation.id %></a></dd>
     <% }); %>
 </script>
 
