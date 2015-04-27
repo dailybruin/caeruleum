@@ -9,6 +9,7 @@ Template Name: USAC Elections 2015
 <script src="../js/usac-2015/main.js"></script>
 <script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
@@ -114,10 +115,10 @@ Template Name: USAC Elections 2015
 
 <!-- THE PAGE STARTS HERE -->
 
-<a class="fi-arrow-up show-for-small-only" id="scrollup" href="#">TOP</a>
+<a class="fi-arrow-up show-for-small-only" href="#" id="scrollup"><img src="../img/usac-2015.uparrow.svg"/></a>
 <div class="container">
     <div class="row banner">
-      <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
+     <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
     </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">

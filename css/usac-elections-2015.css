@@ -2,6 +2,10 @@ body {
 
 }
 
+.db-content .notendorsed img {
+    margin-left: 10px;
+}
+
 .db-content .profiles h3 {
   font-family: 'Raleway';
   font-size: 2.5em;
@@ -172,7 +176,6 @@ body {
     right: 0;
     height: 50px;
     width: 50px;
-    border: 1px solid;  /* TODO: remove border and set bkg */
     z-index: 9999;
 }
 
