@@ -21,7 +21,7 @@ Template Name: USAC Elections 2015
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
                         <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                 <hr>
-                <p><%- candidate.yearmajor %></p>
+                <!-- <p><%- candidate.yearmajor %></p> -->
                 <div class="row">
                     <div class="large-5 columns platforms">
                         <h2>Platforms</h2>
@@ -72,7 +72,7 @@ Template Name: USAC Elections 2015
         <% if (candidate.endorsed == "1") { %>
             <div class = "element endorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row endorsed">
-                <h2>Endorsed:</h2>
+                <h2 class="yesno">Endorsed:</h2>
                 <div class="small-3 columns">
                    <img src="<%- candidate.mug %>"/>
                 </div>
@@ -91,7 +91,7 @@ Template Name: USAC Elections 2015
                     
             <div class = "element notendorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row notendorsed">
-            <h2>Not Endorsed:</h2>
+            <h2 class="yesno">Not Endorsed:</h2>
 
             <div class="row notendorsed <%- candidate.name  %>">
                 <div class="small-2 columns">
@@ -116,13 +116,16 @@ Template Name: USAC Elections 2015
 
 <a class="fi-arrow-up show-for-small-only" id="scrollup" href="#">TOP</a>
 <div class="container">
+    <div class="row banner">
+      <img src="http://dailybruin.com/images/2015/04/Elections-Banner.jpg"/>
+    </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
       <section class="top-bar-section">
         <!-- TOP Nav Section -->
         <ul class="right">
             <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
-            <li><a href="#" onclick="switchSection(this)">Violations</a></li>
+            <!-- <li><a href="#" onclick="switchSection(this)">Violations</a></li> -->
             <!-- <li><a href="#" onclick="switchSection(this)">News</a></li> -->
             <li><a href="#" onclick="switchSection(this)">Endorsements</a></li>
         </ul>
@@ -227,7 +230,6 @@ Template Name: USAC Elections 2015
             </div>
             <!-- NEWS PAGE IS HERE  -->
             <div class="usac-section news-container" id="news-content">
-                In case you don't know, I'm the news-container.
             </div>
             <!-- ENDORSEMENTS PAGE IS HERE  -->
             <div class="usac-section endorsements-container endorsements">

@@ -52,13 +52,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
     // LOAD DATA FOR VIOLATIONS PAGE
-	var violationsdata = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+	/*
+  var violationsdata;
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);
 		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
 	});
-
+  */
     // LOAD DATA FOR ENDORSEMENTS PAGE
 
 	var endorsementsdata = "https://spreadsheets.google.com/feeds/list/1cFFXOuZyKa6hAHtI-1SEPPlQ2LzrXlzwIt6bwRNkRxU/od6/public/values?alt=json";
@@ -115,10 +116,10 @@ function scrollFunction() {
 
 function setSidebar() {
 	$el = $("#scrollbar");
-	if ($(this).scrollTop() > 200 && $el.css('position') != "fixed") {
+	if ($(this).scrollTop() > 600 && $el.css('position') != "fixed") {
 		$el.css({"position": "fixed", "top": "80px"});
 	}
-	if ($(this).scrollTop() < 200 && $el.css('position') == "fixed") {
+	if ($(this).scrollTop() < 600 && $el.css('position') == "fixed") {
 		$el.css({"position": "relative", "top": "0px"});
 	}
 }
