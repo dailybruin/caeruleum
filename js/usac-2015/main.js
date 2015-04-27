@@ -127,6 +127,8 @@ function setSidebar() {
 function switchSection(sender) {
 	$("." + currentContainer + "-container").hide();
 	currentContainer = sender.innerHTML.toLowerCase();
+    $(".endorsement").show();
+    $(".notendorsement").show();
 	$("." + currentContainer + "-container").show();
  
    if (currentContainer === "endorsements") {
