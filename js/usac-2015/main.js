@@ -2,9 +2,6 @@ var candidates, keys, endcandidates;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
 
-function test() {
-	alert("test");
-}
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	/*!
@@ -22,11 +19,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	$(".db-next.hide-for-small").remove();  // TODO: REMOVE THIS BEFORE PRODUCTION! <- f that
 
+
 	// Show only the profiles
 	$(".usac-section").hide();
 	$(".profiles-container").show();
 	currentContainer = "profiles";
-
+/*
+    $(window).hashchange( function(){
+       var hash = location.hash;
+       if (hash === ("#endorsements"))
+       {
+          switchSection("endorsements");
+       }
+    });
+*/
 	setSidebar();
 
 	var url = "https://spreadsheets.google.com/feeds/list/1QxpROQiv4EMUfWMTdaxyiX3PiY0M2wJdPHa18-lILdc/od6/public/values?alt=json";
