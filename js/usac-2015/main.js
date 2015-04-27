@@ -61,8 +61,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		return false;
 	});
 
-	var url = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
-	$.getJSON(url, function(json) {
+    // LOAD DATA FOR VIOLATIONS PAGE
+	var violationsdata = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);
 		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
