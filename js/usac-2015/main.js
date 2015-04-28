@@ -108,7 +108,7 @@ function scrollFunction() {
 	else if (currentContainer == "violations")
 		content = ".element.violation";
 	else if (currentContainer == "endorsements")
-		content = ".endorsements-container";  // TODO: implement this
+		content = ".endorsements-content";  // TODO: implement this
 	$(content).each(function(){
 		if ($(this).offset().top - 1 < currentScroll)
 			currentSection = $(this);
@@ -137,11 +137,11 @@ function switchSection(sender) {
     $(".notendorsement").show();
 	$("." + currentContainer + "-container").show();
  
-   if (currentContainer === "endorsements") {
-     $("#filter").hide();
-   } else {
-     $("#filter").show();
-   }
+	if (currentContainer === "endorsements") {
+	 $("#filter").hide();
+	} else {
+	 $("#filter").show();
+	}
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(sender.parentElement).addClass('active');
 }
