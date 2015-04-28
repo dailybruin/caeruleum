@@ -6,17 +6,17 @@ Template Name: USAC Elections 2015
 
 <link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
 <script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
     <% _.each(input, function(candidate){ %>
         <div class="row element candidate <%- candidate.slate %>">
             <div class="small-3 columns">
-            <img src="http://placehold.it/200x300&text=Mug" data-layzr="<%- candidate.mug %>"/>
+            <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -75,7 +75,7 @@ Template Name: USAC Elections 2015
             <div class="row endorsed">
                 <h2 class="yesno">Endorsed:</h2>
                 <div class="small-3 columns">
-                   <img src="<%- candidate.mug %>"/>
+                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -96,7 +96,7 @@ Template Name: USAC Elections 2015
 
             <div class="row notendorsed <%- candidate.name  %>">
                 <div class="small-2 columns">
-                   <img src="<%- candidate.mug %>"/>
+                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -115,20 +115,20 @@ Template Name: USAC Elections 2015
 
 <!-- THE PAGE STARTS HERE -->
 
-<a class="fi-arrow-up show-for-small-only" href="#" id="scrollup"><img src="../img/usac-2015.uparrow.svg"/></a>
+<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2015.uparrow.svg"/></a>
 <div class="container">
     <div class="row banner">
-     <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
+      <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
     </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
       <section class="top-bar-section">
         <!-- TOP Nav Section -->
         <ul class="right">
-            <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
-            <!-- <li><a href="#" onclick="switchSection(this)">Violations</a></li> -->
-            <!-- <li><a href="#" onclick="switchSection(this)">News</a></li> -->
-            <li><a href="#" onclick="switchSection(this)">Endorsements</a></li>
+            <li class="active"><a href="#profiles">Profiles</a></li>
+            <li><a href="#violations">Violations</a></li>
+            <!-- <li><a href="#news">News</a></li> -->
+            <li><a href="#endorsements">Endorsements</a></li>
         </ul>
       </section>
     </nav>
