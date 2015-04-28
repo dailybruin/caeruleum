@@ -16,7 +16,7 @@ Template Name: USAC Elections 2015
     <% _.each(input, function(candidate){ %>
         <div class="row element candidate <%- candidate.slate %>">
             <div class="small-3 columns">
-            <img src="http://placehold.it/200x300&text=Mug" data-layzr="<%- candidate.mug %>"/>
+            <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -75,7 +75,7 @@ Template Name: USAC Elections 2015
             <div class="row endorsed">
                 <h2 class="yesno">Endorsed:</h2>
                 <div class="small-3 columns">
-                   <img src="<%- candidate.mug %>"/>
+                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -96,7 +96,7 @@ Template Name: USAC Elections 2015
 
             <div class="row notendorsed <%- candidate.name  %>">
                 <div class="small-2 columns">
-                   <img src="<%- candidate.mug %>"/>
+                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -125,10 +125,10 @@ Template Name: USAC Elections 2015
       <section class="top-bar-section">
         <!-- TOP Nav Section -->
         <ul class="right">
-            <li class="active"><a href="#" onclick="switchSection(this)">Profiles</a></li>
-            <!-- <li><a href="#" onclick="switchSection(this)">Violations</a></li> -->
-            <!-- <li><a href="#" onclick="switchSection(this)">News</a></li> -->
-            <li><a href="#" onclick="switchSection(this)">Endorsements</a></li>
+            <li class="active"><a href="#profiles">Profiles</a></li>
+            <!-- <li><a href="#violations">Violations</a></li> -->
+            <!-- <li><a href="#news">News</a></li> -->
+            <li><a href="#endorsements">Endorsements</a></li>
         </ul>
       </section>
     </nav>

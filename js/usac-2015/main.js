@@ -18,21 +18,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	d="labelauty-"+h,g(a.development,"Holy crap, between 1024 thousand numbers, one raised a conflict. Trying again.");c.attr("id",d)}c.after(l(d,b,e));!1!==a.minimum_width&&c.next("label[for="+d+"]").css({"min-width":a.minimum_width});0!=a.same_width&&1==a.label&&(c=c.next("label[for="+d+"]"),e=k(c.find("span.labelauty-unchecked")),b=k(c.find("span.labelauty-checked")),e>b?c.find("span.labelauty-checked").width(e):c.find("span.labelauty-unchecked").width(b))})}})(jQuery);
 	
 	$(".db-next.hide-for-small").remove();
-
-
 	// Show only the profiles
 	$(".usac-section").hide();
 	$(".profiles-container").show();
 	currentContainer = "profiles";
-/*
-    $(window).hashchange( function(){
-       var hash = location.hash;
-       if (hash === ("#endorsements"))
-       {
-          switchSection("endorsements");
-       }
+
+    $(window).hashchange(function(){
+		var hash = location.hash;
+		// is substring
+		if (hash.indexOf("#endorsements") > -1)
+			switchSection("endorsements");
+		else if (hash.indexOf("#profiles") > -1)
+			switchSection("profiles");
+		else if (hash.indexOf("#news") > -1)
+			switchSection("news");
+		else if (hash.indexOf("#violations") > -1)
+			switchSection("violations");
     });
-*/
+
 	setSidebar();
 
 	var url = "https://spreadsheets.google.com/feeds/list/1QxpROQiv4EMUfWMTdaxyiX3PiY0M2wJdPHa18-lILdc/od6/public/values?alt=json";
@@ -46,15 +49,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			c = _.where(candidates, {position: positions[i]});
 			$("#profiles-"+positions[i]).append(template({input: c}));
 		}
-
-		var layzr = new Layzr({ 
-			selector: '[data-layzr]',
-			attr: 'data-layzr',
-			retinaAttr: 'data-layzr',
-			bgAttr: 'data-layzr-bg',
-			threshold: 50,
-			callback: null
-		});
 	});
 
     // LOAD DATA FOR VIOLATIONS PAGE
@@ -76,6 +70,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var cand  = _.where(endorsetable, {position: positions[i]});
             $("#endorsements-"+positions[i]).append(template({rows: cand}));
         }
+
+        var layzr = new Layzr({ 
+			selector: '[data-layzr]',
+			attr: 'data-layzr',
+			retinaAttr: 'data-layzr',
+			bgAttr: 'data-layzr-bg',
+			threshold: 50,
+			callback: null
+		});
     });
 
     $("input:checkbox").on("click", function() {
@@ -90,6 +93,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		$("html, body").animate({scrollTop: 0}, 600);
 		return false;
 	});
+
+	$(window).hashchange();
 });
 
 function scrollFunction() {
@@ -130,20 +135,19 @@ function setSidebar() {
 	}
 }
 
-function switchSection(sender) {
+function switchSection(section) {
+	// section must be either profiles, violations, news, or endorsements
 	$("." + currentContainer + "-container").hide();
-	currentContainer = sender.innerHTML.toLowerCase();
-    $(".endorsement").show();
-    $(".notendorsement").show();
+	currentContainer = section;
 	$("." + currentContainer + "-container").show();
  
 	if (currentContainer === "endorsements") {
-	 $("#filter").hide();
+		$("#filter").hide();
 	} else {
-	 $("#filter").show();
+		$("#filter").show();
 	}
 	$(".top-bar-section>.right>li.active").removeClass('active');
-	$(sender.parentElement).addClass('active');
+	$(".top-bar-section a[href='#" + currentContainer + "']").parent().addClass('active');
 }
 
 // Takes in template id, compiles the template to html using data json object
