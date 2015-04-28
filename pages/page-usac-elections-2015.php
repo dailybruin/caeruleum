@@ -71,7 +71,7 @@ Template Name: USAC Elections 2015
 <script type="text/template" id="endorsements_main_template">
     <% _.each(rows, function(candidate) { %>
         <% if (candidate.endorsed == "1") { %>
-            <div class = "element endorsement <%- candidate.position %> <%- candidate.name %>">
+            <div class = "endorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row endorsed">
                 <h2 class="yesno">Endorsed:</h2>
                 <div class="small-3 columns">
@@ -90,7 +90,7 @@ Template Name: USAC Elections 2015
         
         <% } else { %>
                     
-            <div class = "element notendorsement <%- candidate.position %> <%- candidate.name %>">
+            <div class = "notendorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row notendorsed">
             <h2 class="yesno">Not Endorsed:</h2>
 
