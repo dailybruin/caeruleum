@@ -6,10 +6,10 @@ Template Name: USAC Elections 2015
 
 <link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
 <script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
@@ -48,7 +48,7 @@ Template Name: USAC Elections 2015
 <script type="text/template" id="violations_main_template">
     <% _.each(rows, function(violation) { %>
         <div class = "element violation <%- violation.slates %>" id="<%- violation.id %>">
-            <h1>Complaint #<%- violation.id %></h1>
+            <h1>Complaint <%- violation.id %></h1>
             <hr>
             <p>Submitted By: <%- violation.submitter %></p>
             <p><%- violation.date %></p>
@@ -64,7 +64,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="violations_sidebar_template">
     <% _.each(rows, function(violation) { %>
-        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #<%- violation.id %></a></dd>
+        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint <%- violation.id %></a></dd>
     <% }); %>
 </script>
 
@@ -118,7 +118,7 @@ Template Name: USAC Elections 2015
 <a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2015.uparrow.svg"/></a>
 <div class="container">
     <div class="row banner">
-     <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
+      <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
     </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
@@ -126,7 +126,7 @@ Template Name: USAC Elections 2015
         <!-- TOP Nav Section -->
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
-            <!-- <li><a href="#violations">Violations</a></li> -->
+            <li><a href="#violations">Violations</a></li>
             <!-- <li><a href="#news">News</a></li> -->
             <li><a href="#endorsements">Endorsements</a></li>
         </ul>

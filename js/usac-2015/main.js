@@ -1,6 +1,7 @@
 var candidates, keys, endcandidates;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
+var asyncCompleted = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -49,17 +50,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			c = _.where(candidates, {position: positions[i]});
 			$("#profiles-"+positions[i]).append(template({input: c}));
 		}
+		if (asyncCompleted) {
+			var layzr = new Layzr({ 
+				selector: '[data-layzr]',
+				attr: 'data-layzr',
+				retinaAttr: 'data-layzr',
+				bgAttr: 'data-layzr-bg',
+				threshold: 50,
+				callback: null
+			});
+		}
+		asyncCompleted = true;
 	});
 
-    // LOAD DATA FOR VIOLATIONS PAGE
-	/*
-  var violationsdata;
+ 
+  var violationsdata = "https://spreadsheets.google.com/feeds/list/19YcaBCjht0rm42LyE3yeFSun-dEwqnrR_4jaR8aU1xo/od6/public/values?alt=json";
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);
 		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
 	});
-  */
+ 
     // LOAD DATA FOR ENDORSEMENTS PAGE
 
 	var endorsementsdata = "https://spreadsheets.google.com/feeds/list/1cFFXOuZyKa6hAHtI-1SEPPlQ2LzrXlzwIt6bwRNkRxU/od6/public/values?alt=json";
@@ -71,14 +82,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
             $("#endorsements-"+positions[i]).append(template({rows: cand}));
         }
 
-        var layzr = new Layzr({ 
-			selector: '[data-layzr]',
-			attr: 'data-layzr',
-			retinaAttr: 'data-layzr',
-			bgAttr: 'data-layzr-bg',
-			threshold: 50,
-			callback: null
-		});
+        if (asyncCompleted) {
+			var layzr = new Layzr({ 
+				selector: '[data-layzr]',
+				attr: 'data-layzr',
+				retinaAttr: 'data-layzr',
+				bgAttr: 'data-layzr-bg',
+				threshold: 50,
+				callback: null
+			});
+		}
+		asyncCompleted = true;
     });
 
     $("input:checkbox").on("click", function() {
