@@ -81,6 +81,7 @@ Template Name: USAC Elections 2015
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
                     <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
+                    <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
                     <% }); %>
@@ -102,6 +103,7 @@ Template Name: USAC Elections 2015
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
                     <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
+                    <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
                         <p><%- para %></p>  
                     <% }); %>

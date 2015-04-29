@@ -6,6 +6,10 @@ body {
     margin-left: 10px;
 }
 
+.db-content .endorsements-content .note {
+    font-style: italic;
+}
+
 .db-content .profiles h3 {
   font-family: 'Raleway';
   font-size: 2.5em;
