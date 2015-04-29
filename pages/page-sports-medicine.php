@@ -1,5 +1,5 @@
 <?php/*
-Template Name: Full-width series
+Template Name: sports-medicine
 */ ?>
 <?php get_header(); ?>
 <!--<link rel="stylesheet" type="text/css" href="/css/sports-gymnastics.css">-->
@@ -10,20 +10,37 @@ Template Name: Full-width series
 
   /* -------------------------------------------------------
 
-    Description: Gymnastics Feature for Daily Bruin
+    Description: Sport Medicine Feature for Daily Bruin
     Version: 1.0
-    Author: Aein Hope and Christina Yang
+    Author: Anthony Rivera and Jennifer Tan
     Author URI: http://aeiny.com
 
   ------------------------------------------------------- */
-  body {
-    font-family: 'Droid Sans',sans-serif;
-  }
 
-  article p {
+footer {
+    color: black;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: right;
+}
+
+body {
     font-family: 'Droid Sans',sans-serif;
-	font-size: 0.85rem !important;
-  }
+}
+
+article p {
+  font-family: 'Droid Sans',sans-serif;
+ font-size: 0.85rem !important;
+}
 
   article h1 {
     font-family: 'Raleway',Helvetica,Arial,sans-serif;
@@ -70,7 +87,7 @@ Template Name: Full-width series
       font-style: normal;
   }
 
-  article .pq-style-2 blockquote{
+  article .pq-style-2 blockquote {
       padding-top: 57px;
   }
   article .pq-style-2 blockquote:after {
@@ -297,39 +314,12 @@ Template Name: Full-width series
   max-width:auto;
   height:250px;}
 
-  .gym-sm {
-      float: right;
-      margin: 1.5em 0;
-  }
-
   .previous {
     text-align: left;
   }
 
   .next {
     text-align: right;
-  }
-
-  aside.audio {
-    max-width: 400px;
-    float: right;
-    background-color: rgba(0,0,0, 0.05);
-    padding: 0 1em;
-    margin-left: 1em;
-  }
-
-    aside.audio .credit {
-        font-style: italic;
-        float: right;
-    }
-
-  @media screen and (max-width: 1200px) {
-  .img-vert{
-    width: auto; 
-    max-height: 300px;}
-  .img-hori {
-  max-width:auto;
-  height:200px;}
   }
 
   .full-series {
