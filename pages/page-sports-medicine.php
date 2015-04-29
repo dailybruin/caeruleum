@@ -37,6 +37,11 @@ ul.tabs li {
     display: inline-block;
 }
 
+.tabs dd.active a, .tabs .tab-title.active a{
+  background-color: #4169e1;
+  color: white;
+}
+
 li {
     display: inline;
     float: right;
