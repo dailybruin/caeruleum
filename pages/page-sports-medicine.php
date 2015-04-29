@@ -28,6 +28,15 @@ ul {
     padding: 0;
 }
 
+ul.tabs {
+    text-align: center;
+}
+
+ul.tabs li {
+    float: none !important;
+    display: inline-block;
+}
+
 li {
     display: inline;
     float: right;
@@ -37,12 +46,12 @@ body {
     font-family: 'Droid Sans',sans-serif;
 }
 
-article p {
+p {
   font-family: 'Droid Sans',sans-serif;
  font-size: 0.85rem !important;
 }
 
-  article h1 {
+h1 {
     font-family: 'Raleway',Helvetica,Arial,sans-serif;
     font-size: 80px;
     line-height: 90px;
