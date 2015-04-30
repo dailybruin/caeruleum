@@ -25,7 +25,11 @@ footer {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+
+}
+
+ .tab-title > a  {
+  background-color: white !important;
 }
 
 ul.tabs {
@@ -37,9 +41,16 @@ ul.tabs li {
     display: inline-block;
 }
 
-.tabs dd.active a, .tabs .tab-title.active a{
-  background-color: #4169e1;
-  color: white;
+.tab-title.active > a {
+    background: transparent;
+    color: black;
+    border-bottom: 3px solid #0080c6;
+}
+
+.tab-title.active > a:hover {
+    background: transparent !important; 
+    color: black !important;
+    border-bottom: 3px solid #0080c6 !important;
 }
 
 li {
@@ -52,8 +63,9 @@ body {
 }
 
 p {
-  font-family: 'Droid Sans',sans-serif;
- font-size: 0.85rem !important;
+    text-indent: 50px;
+    font-family: 'Droid Sans',sans-serif;
+    font-size: 0.85rem !important;
 }
 
 h1 {
@@ -142,116 +154,6 @@ h1 {
       text-shadow: 0 1px 1px rgba(255,255,255,0.5);
       line-height: 23px;
   }
-  article .pq-style-2 .pq-attribution {
-      text-align: right;
-  }
-   
-  article .pq-style-2 .pq-author{
-      text-transform: uppercase;
-      font-size: 15px;
-      padding-top: 10px;
-      font-weight: bold;
-      color: gray;
-      text-shadow: 0 1px 1px rgba(255,255,255,0.1);
-  }
-   
-  article .pq-style-2 cite a{
-      color: #d7aa94;
-      font-style: italic;
-  }
-   
-  article .pq-style-2 cite a:hover{
-      color: #d48158;
-  }
-
-  article .pq-wrap-1 {
-      width: 250px;
-      margin: 20px 10px;
-      padding: 5px 20px 20px 50px;
-      position: relative;
-      float:right;
-      display:inline-block;
-      height: 350px;
-  }
-
-  article .pq-wrap-1 p{
-      margin: 0;
-      padding: 0;
-  }
-   
-  article .pq-wrap-1 blockquote {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      border-left: none !important;
-  }
-   
-  article .pq-wrap-1 cite {
-      font-style: normal;
-  }
-
-  article .pq-style-1 blockquote{
-      padding-top: 57px;
-  }
-  article .pq-style-1 blockquote:after {
-      font-family: 'icons';
-      background: rgba(0,0,0,0.9);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      content: '\275e';
-      position: absolute;
-      font-size: 40px;
-      line-height: 60px;
-      text-align: center;
-      top: 0px;
-      left: 50%;
-      margin-left: -65px;
-      color: rgba(255,255,255,0.5);
-      text-shadow: 0 1px 1px rgba(255,255,255,0.1);
-  }
-  article .pq-style-1 blockquote:before{
-      content: '';
-      width: 250px;
-      height: 300px;
-      border-radius: 50%;
-      border-left: 5px solid rgba(0,0,0,0.1);
-      position: absolute;
-      top: 0px;
-      left: -35px;
-      z-index: -1;
-  }
-  article .pq-style-1 blockquote p {
-      font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      font-style: italic;
-      background: rgba(255,255,255,0.5);
-      display: inline;
-      color: rgba(0,0,0,0.7);
-      text-shadow: 0 1px 1px rgba(255,255,255,0.5);
-      line-height: 25px;
-  }
-  article .pq-style-1 .pq-attribution {
-      text-align: right;
-  }
-   
-  article .pq-style-1 .pq-author{
-      text-transform: uppercase;
-      font-size: 15px;
-      padding-top: 10px;
-      font-weight: bold;
-      color: gray;
-      text-shadow: 0 1px 1px rgba(255,255,255,0.1);
-  }
-   
-  article .pq-style-1 cite a{
-      color: #d7aa94;
-      font-style: italic;
-  }
-   
-  article .pq-style-1 cite a:hover{
-      color: #d48158;
-  }
 
   article .photocred {
     float: right;
@@ -315,11 +217,7 @@ h1 {
     border-top: 1px solid #bebebe;
     padding-top: 0.5em;
     font-size: 0.9em;
-  }
-  article #page-credit a {
-    color: #000;
-    text-decoration: none;
-  }
+}
   .img-vert {
     width: auto; 
     max-height: 400px;}
