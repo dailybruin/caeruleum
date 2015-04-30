@@ -63,7 +63,6 @@ body {
 }
 
 p {
-    text-indent: 50px;
     font-family: 'Droid Sans',sans-serif;
     font-size: 0.85rem !important;
 }
