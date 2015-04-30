@@ -55,7 +55,6 @@ ul.tabs li {
 
 li {
     display: inline;
-    float: right;
 }
 
 body {
