@@ -1,5 +1,5 @@
 <?php/*
-Template Name: sports-medicine
+Template Name: Sports Medicine
 */ ?>
 <?php get_header(); ?>
 <!--<link rel="stylesheet" type="text/css" href="/css/sports-gymnastics.css">-->
