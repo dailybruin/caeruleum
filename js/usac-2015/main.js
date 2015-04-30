@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			});
 		}
 		asyncCompleted = true;
+        $('.lazyYT').lazyYT();
 	});
 
  

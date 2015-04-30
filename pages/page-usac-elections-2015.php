@@ -10,6 +10,7 @@ Template Name: USAC Elections 2015
 <script src="../js/usac-2015/main.js"></script>
 <script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
+<script src="../js/usac-2015/lazyYT.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
@@ -34,9 +35,7 @@ Template Name: USAC Elections 2015
                     </div>
               
                     <div class="large-7 columns">
-                        <div class="video-container">
-                            <iframe src="<%- candidate.video %>" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                        <div class="lazyYT" data-youtube-id="<%- candidate.lazyvideo %>" data-ratio="16:9">Loading Video...</div>
                     </div>
           
                 </div>
