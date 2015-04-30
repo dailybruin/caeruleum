@@ -59,11 +59,11 @@ li {
 }
 
 body {
-    font-family: 'Droid Sans',sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
-    font-family: 'Droid Sans',sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.85rem !important;
 }
 
