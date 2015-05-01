@@ -288,7 +288,7 @@ Template Name: USAC Elections 2015
     </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
-        <ul class="small-block-grid-5">
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
             <li id="results-President">
                 <h2 class="results-position">President</h2>
                 <div class="results-content">
@@ -329,8 +329,6 @@ Template Name: USAC Elections 2015
                     <p class="results-percent">--%</p>
                 </div>
             </li>
-        </ul>
-        <ul class="small-block-grid-5">
             <li id="results-Gen-Rep1">
                 <h2 class="results-position">General Representative 1</h2>
                 <div class="results-content">
@@ -371,8 +369,6 @@ Template Name: USAC Elections 2015
                     <p class="results-percent">--%</p>
                 </div>
             </li>
-        </ul>
-        <ul class="small-block-grid-5">
             <li id="results-FAC">
                 <h2 class="results-position">Facilities Commissioner</h2>
                 <div class="results-content">
