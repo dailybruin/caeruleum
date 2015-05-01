@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("endorsements");
 		else if (hash.indexOf("#profiles") > -1)
 			switchSection("profiles");
-		else if (hash.indexOf("#news") > -1)
-			switchSection("news");
+		else if (hash.indexOf("#results") > -1)
+			switchSection("results");
 		else if (hash.indexOf("#violations") > -1)
 			switchSection("violations");
     });
@@ -64,7 +64,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         $('.lazyYT').lazyYT();
 	});
 
- 
+    var resultsData = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+    $.getJSON(resultsData, function(candidates) {
+        candidates = clean_google_sheet_json(candidates);
+        var resultsTemplate = _.template($("#results_candidates_template").html());
+        var c = _.where(candidates, {elected: "1"});
+        for (var i = 0; i < c.length; i++) {
+            $("#results-"+c[i].position+c[i].genrepnumber+" .results-content").html(resultsTemplate({rows: c[i]}));
+        }
+	});
+
   var violationsdata = "https://spreadsheets.google.com/feeds/list/19YcaBCjht0rm42LyE3yeFSun-dEwqnrR_4jaR8aU1xo/od6/public/values?alt=json";
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
@@ -151,7 +160,7 @@ function setSidebar() {
 }
 
 function switchSection(section) {
-	// section must be either profiles, violations, news, or endorsements
+	// section must be either profiles, violations, results, or endorsements
 	$("." + currentContainer + "-container").hide();
 	currentContainer = section;
 	$("." + currentContainer + "-container").show();
@@ -161,6 +170,12 @@ function switchSection(section) {
 	} else {
 		$("#filter").show();
 	}
+
+    if(currentContainer === "results") {
+        $("#PVE").hide();
+    } else {
+        $("#PVE").show();
+    }
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(".top-bar-section a[href='#" + currentContainer + "']").parent().addClass('active');
 }

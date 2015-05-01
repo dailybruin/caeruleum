@@ -114,6 +114,15 @@ Template Name: USAC Elections 2015
     <% }); %>
 </script>
 
+<script type="text/template" id="results_candidates_template">
+    <% candidate = rows; %>
+        <img src="<%- candidate.mug %>"/>
+        <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+        <p class="results-name"><%- candidate.name %></p>
+        <p class="results-percent"><%- candidate.percent %>%</p>
+</script>
+
+
 <!-- THE PAGE STARTS HERE -->
 
 <a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2015.uparrow.svg"/></a>
@@ -128,12 +137,13 @@ Template Name: USAC Elections 2015
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
             <li><a href="#violations">Violations</a></li>
-            <!-- <li><a href="#news">News</a></li> -->
             <li><a href="#endorsements">Endorsements</a></li>
+            <li><a href="#results">Results</a></li>
         </ul>
       </section>
     </nav>
-    <div class="row">
+    <!-- Profiles/Violations/Endorsements -->
+    <div class="row" id="PVE">
         <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: relative top: 30px">
             <form id="filter">
                 <h3>Filter By Slate</h3>
@@ -230,9 +240,6 @@ Template Name: USAC Elections 2015
                     <h3>Transfer Student Representative</h3>
                 </div>
             </div>
-            <!-- NEWS PAGE IS HERE  -->
-            <div class="usac-section news-container" id="news-content">
-            </div>
             <!-- ENDORSEMENTS PAGE IS HERE  -->
             <div class="usac-section endorsements-container endorsements">
                 <div class="endorsements-content" id="endorsements-President">
@@ -277,6 +284,136 @@ Template Name: USAC Elections 2015
             </div>
     <!-- MAIN CONTENT  DIV END  -->
         </div>
+    <!-- PROFILES/VIOLATIONS/ENDORSEMENTS -->
+    </div>
+    <!-- RESULTS PAGE IS HERE  -->
+    <div class="usac-section results-container">
+        <ul class="small-block-grid-5">
+            <li id="results-President">
+                <h2 class="results-position">President</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-IVP">
+                <h2 class="results-position">Internal Vice President</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-EVP">
+                <h2 class="results-position">External Vice President</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-AAC">
+                <h2 class="results-position">Academic Affairs Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-CEC">
+                <h2 class="results-position">Campus Event Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="small-block-grid-5">
+            <li id="results-Gen-Rep1">
+                <h2 class="results-position">General Representative 1</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-Gen-Rep2">
+                <h2 class="results-position">General Representative 2</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-Gen-Rep3">
+                <h2 class="results-position">General Representative 3</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-CSC">
+                <h2 class="results-position">Community Service Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-CAC">
+                <h2 class="results-position">Cultural Affairs Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="small-block-grid-5">
+            <li id="results-FAC">
+                <h2 class="results-position">Facilities Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-FSC">
+                <h2 class="results-position">Financial Support Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-SWC">
+                <h2 class="results-position">Student Wellness Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-TSR">
+                <h2 class="results-position">Transfer Student Representative</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-REF">
+                <h2 class="results-position">INSERT REFERENDUM TITLE HERE</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+        </ul>
     </div>
 </div></div>
 

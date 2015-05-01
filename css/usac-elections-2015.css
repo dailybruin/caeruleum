@@ -74,6 +74,16 @@ body {
     vertical-align:middle;
 }
 
+.results.slate-logo {
+    width: 7%; 
+    margin-right: .1em;
+}
+
+.results-name {
+    display: inline;
+    vertical-align:middle;
+}
+
 .side-nav .active {
 	font-weight: 800;
 }
