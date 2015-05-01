@@ -2,6 +2,12 @@ body {
 
 }
 
+h2.results-position {
+    height: 2.625rem;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
 .db-content .notendorsed img {
     margin-left: 10px;
 }
