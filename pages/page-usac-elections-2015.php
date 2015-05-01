@@ -118,10 +118,10 @@ Template Name: USAC Elections 2015
     <% candidate = rows; %>
         <img src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
-            <div class="small-3 columns">
+            <div class="small-2 columns">
                 <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
             </div>
-            <div class="small-9 columns">
+            <div class="small-10 columns">
                 <p class="results-name"><%- candidate.name %></p>
             </div>
         </div>

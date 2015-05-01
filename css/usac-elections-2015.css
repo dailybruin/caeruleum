@@ -2,6 +2,21 @@ body {
 
 }
 
+.row.result-nameslate {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+h2.results-position {
+  font-family: Raleway;
+  text-transform: uppercase;
+}
+
+.results-content img {
+    display: block;
+}
+
 .db-content .notendorsed img {
     margin-left: 10px;
 }
@@ -72,11 +87,6 @@ body {
     display: inline;
     font-size: 2em;
     vertical-align:middle;
-}
-
-.results.slate-logo {
-    width: 7%; 
-    margin-right: .1em;
 }
 
 .results-name {
