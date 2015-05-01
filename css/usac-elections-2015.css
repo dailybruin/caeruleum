@@ -189,6 +189,10 @@ h2.results-position {
     z-index: 9999;
 }
 
+.results-container ul li {
+  margin-bottom: 20px;
+}
+
 /*!
  * LABELAUTY jQuery Plugin Styles
  *

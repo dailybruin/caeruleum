@@ -417,13 +417,16 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
         </ul>
-        <div class="results-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1500, "wrapAround": true }'>
-            <img src="http://thecatapi.com/api/images/get" alt="">
-            <img src="http://thecatapi.com/api/images/get" alt="">
-            <img src="http://thecatapi.com/api/images/get" alt="">
-            <img src="http://thecatapi.com/api/images/get" alt="">
-            <img src="http://thecatapi.com/api/images/get" alt="">
+        <div class="row">
+            <div class="results-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1500, "wrapAround": true }'>
+                <img src="http://thecatapi.com/api/images/get" alt="">
+                <img src="http://thecatapi.com/api/images/get" alt="">
+                <img src="http://thecatapi.com/api/images/get" alt="">
+                <img src="http://thecatapi.com/api/images/get" alt="">
+                <img src="http://thecatapi.com/api/images/get" alt="">
+            </div>
         </div>
+        
     </div>
     <div class="usac-section news-container">
         NEWS NEWS NEWS
