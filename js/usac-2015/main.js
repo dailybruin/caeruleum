@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function scrollFunction() {
 	setSidebar();
-	if ($(this).scrollTop() < 100) {
+	if ($(this).scrollTop() < 200) {
 		$('#scrollup').hide();
 	} else {
 		$('#scrollup').show();

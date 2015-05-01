@@ -416,7 +416,6 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
         </ul>
-        </div>
         <div class="results-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1500, "wrapAround": true }'>
             <img src="http://thecatapi.com/api/images/get" alt="">
             <img src="http://thecatapi.com/api/images/get" alt="">
