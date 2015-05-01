@@ -300,6 +300,11 @@ Template Name: USAC Elections 2015
     </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
+        <div class="results-video-container">
+            <div class="flex-video widescreen">
+                <iframe  src="https://www.youtube.com/embed/G88kSCCxZU8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
         <div class="results-head row">
             <h1 id="news-title">2015-16 USAC COUNCILMEMBERS</h1>
         </div>
@@ -428,13 +433,13 @@ Template Name: USAC Elections 2015
        
     </div>
     <div class="usac-section news-container">
-        <!--
          <div class="row">
             <div class="results-gallery gallery">
             </div>
             <p class="caption" id="results-gallery-caption">&nbsp;</p>
-        </div> -->
-        <h1 id="news-title">Election News Coverage</h1>
+        </div> 
+
+        <h1 id="news-title">USAC Election Coverage</h1>
         <div id="stories">
             <?php
             global $post;
