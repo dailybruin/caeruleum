@@ -1,7 +1,6 @@
 var candidates, keys, endcandidates;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
-var asyncCompleted = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -50,17 +49,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			c = _.where(candidates, {position: positions[i]});
 			$("#profiles-"+positions[i]).append(template({input: c}));
 		}
-		if (asyncCompleted) {
-			var layzr = new Layzr({ 
-				selector: '[data-layzr]',
-				attr: 'data-layzr',
-				retinaAttr: 'data-layzr',
-				bgAttr: 'data-layzr-bg',
-				threshold: 50,
-				callback: null
-			});
-		}
-		asyncCompleted = true;
         $('.lazyYT').lazyYT();
 	});
 
@@ -91,18 +79,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var cand  = _.where(endorsetable, {position: positions[i]});
             $("#endorsements-"+positions[i]).append(template({rows: cand}));
         }
-
-        if (asyncCompleted) {
-			var layzr = new Layzr({ 
-				selector: '[data-layzr]',
-				attr: 'data-layzr',
-				retinaAttr: 'data-layzr',
-				bgAttr: 'data-layzr-bg',
-				threshold: 50,
-				callback: null
-			});
-		}
-		asyncCompleted = true;
     });
 
     $("input:checkbox").on("click", function() {
@@ -123,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function scrollFunction() {
 	setSidebar();
-	if ($(this).scrollTop() < 100) {
+	if ($(this).scrollTop() < 200) {
 		$('#scrollup').hide();
 	} else {
 		$('#scrollup').show();
