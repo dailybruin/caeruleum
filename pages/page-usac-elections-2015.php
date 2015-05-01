@@ -132,6 +132,11 @@ Template Name: USAC Elections 2015
         <p class="results-percent"><%- candidate.percent %>%</p>
 </script>
 
+<script type="text/template" id="results_gallery_template">
+    <% _.each(rows, function(image) { %>
+        <img src="<%- image.link %>" alt="<%- image.caption %>"/>
+    <% }); %>
+</script>
 
 <!-- THE PAGE STARTS HERE -->
 
@@ -425,13 +430,9 @@ Template Name: USAC Elections 2015
     </div>
     <div class="usac-section news-container">
          <div class="row">
-            <div class="results-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1500, "wrapAround": true }'>
-                <img src="http://thecatapi.com/api/images/get" alt="">
-                <img src="http://thecatapi.com/api/images/get" alt="">
-                <img src="http://thecatapi.com/api/images/get" alt="">
-                <img src="http://thecatapi.com/api/images/get" alt="">
-                <img src="http://thecatapi.com/api/images/get" alt="">
+            <div class="results-gallery gallery">
             </div>
+            <p class="caption" id="results-gallery-caption">&nbsp;</p>
         </div>
         <div class="row">
               <ul>

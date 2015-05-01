@@ -97,6 +97,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 	$(window).hashchange();
+
+    // LOAD DATA FOR RESULTS GALLERY 
+
+    var gallerydata = "https://spreadsheets.google.com/feeds/list/1jZXS1s1Ibe4nqbCj0CEBzfWwHwoWqjm5p5zWjWhQgkc/od6/public/values?alt=json";
+    $.getJSON(gallerydata, function(galleryjson) {
+        var data = clean_google_sheet_json(galleryjson);
+        var template = _.template($("#results_gallery_template").html());
+        $(".results-gallery").html(template({rows: data}));        
+    
+        var $gallery = $('.gallery').flickity({
+        cellSelector: 'img', 
+        imagesLoaded: true, 
+        percentPosition: false, 
+        autoPlay: 2500, 
+        wrapAround: true
+        });
+    var $caption = $('.caption');
+    // Flickity instance
+    var flkty = $gallery.data('flickity');
+    
+    $gallery.on('cellSelect', function() {
+        // set image caption using img's alt
+        $caption.text(flkty.selectedElement.alt)
+    });    
+});
+
+    
 });
 
 function scrollFunction() {

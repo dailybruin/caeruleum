@@ -2,6 +2,29 @@ body {
 
 }
 
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.results-gallery img {
+    padding-right: 15px;
+    height: 240px;
+}
+
+@media screen and ( min-width: 768px ) {
+    .results-gallery img {
+        height: 500px;
+    }
+}
+
+#results-gallery-caption {
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .row.result-nameslate {
   padding-left: 10px;
   padding-right: 10px;
@@ -487,12 +510,6 @@ http://flickity.metafizzy.co
   height: 100%;
 }
 
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 /* draggable */
 
 .flickity-enabled.is-draggable {
@@ -586,7 +603,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: -30px;
   padding: 0;
   margin: 0;
   list-style: none;
