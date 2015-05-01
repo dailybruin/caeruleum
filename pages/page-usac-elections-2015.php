@@ -11,7 +11,7 @@ Template Name: USAC Elections 2015
 <script src="../js/usac-2015/animatescroll.min.js"></script>
 <script src="../js/usac-2015/lazyYT.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:800|Asap' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
     <% _.each(input, function(candidate){ %>
@@ -116,20 +116,14 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="results_candidates_template">
     <% candidate = rows; %>
-        <img src="<%- candidate.mug %>"/>
+        <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
             <% if(candidate.position != "REF") {%>
-            <div class="small-2 columns">
-                <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
-            </div>
-            <div class="small-10 columns">
-            <% } else { %>
-            <div class="small-12 columns">
+            <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
             <% } %>
-                <p class="results-name"><%- candidate.name %></p>
-            </div>
+            <h2 class="results-name"><%- candidate.name %></h2>
+            <p class="results-percent"><%- candidate.percent %>% of the vote</p>
         </div>
-        <p class="results-percent"><%- candidate.percent %>%</p>
 </script>
 
 <script type="text/template" id="results_gallery_template">
