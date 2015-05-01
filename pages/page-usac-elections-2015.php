@@ -117,8 +117,14 @@ Template Name: USAC Elections 2015
 <script type="text/template" id="results_candidates_template">
     <% candidate = rows; %>
         <img src="<%- candidate.mug %>"/>
-        <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
-        <p class="results-name"><%- candidate.name %></p>
+        <div class="row result-nameslate">
+            <div class="small-3 columns">
+                <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+            </div>
+            <div class="small-9 columns">
+                <p class="results-name"><%- candidate.name %></p>
+            </div>
+        </div>
         <p class="results-percent"><%- candidate.percent %>%</p>
 </script>
 
