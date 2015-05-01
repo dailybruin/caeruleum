@@ -2,9 +2,16 @@ body {
 
 }
 
+#stories .row {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
 #news-title {
     text-align: center;
     font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .flickity-slider {
@@ -50,7 +57,7 @@ h2.results-position {
 }
 
 p.results-percent {
-    margin-left: 0.3em;
+    padding-top: 0.3em;
     font-family: Asap;
     font-size: 1.3em;
 }

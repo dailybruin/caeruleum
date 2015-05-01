@@ -119,10 +119,12 @@ Template Name: USAC Elections 2015
         <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
             <% if(candidate.position != "REF") {%>
-            <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
             <% } %>
             <h2 class="results-name"><%- candidate.name %></h2>
-            <p class="results-percent"><%- candidate.percent %>% of the vote</p>
+            <% if(candidate.position != "Gen-Rep") {%>
+                <p class="results-percent"><%- candidate.percent %>% of the vote</p>
+            <% } %>
         </div>
 </script>
 
@@ -177,7 +179,7 @@ Template Name: USAC Elections 2015
                     <dd><a href="#profiles-EVP" onclick="$('#profiles-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
                     <dd><a href="#profiles-Gen-Rep" onclick="$('#profiles-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
                     <dd><a href="#profiles-AAC" onclick="$('#profiles-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#profiles-CEC" onclick="$('#profiles-CEC').animatescroll({padding: 80})">Campus Event Commissioner</a></dd>
+                    <dd><a href="#profiles-CEC" onclick="$('#profiles-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
                     <dd><a href="#profiles-CSC" onclick="$('#profiles-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
                     <dd><a href="#profiles-CAC" onclick="$('#profiles-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
                     <dd><a href="#profiles-FAC" onclick="$('#profiles-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
@@ -199,7 +201,7 @@ Template Name: USAC Elections 2015
                     <dd><a href="#endorsements-EVP" onclick="$('#endorsements-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
                     <dd><a href="#endorsements-Gen-Rep" onclick="$('#endorsements-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
                     <dd><a href="#endorsements-AAC" onclick="$('#endorsements-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#endorsements-CEC" onclick="$('#endorsements-CEC').animatescroll({padding: 80})">Campus Event Commissioner</a></dd>
+                    <dd><a href="#endorsements-CEC" onclick="$('#endorsements-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
                     <dd><a href="#endorsements-CSC" onclick="$('#endorsements-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
                     <dd><a href="#endorsements-CAC" onclick="$('#endorsements-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
                     <dd><a href="#endorsements-FAC" onclick="$('#endorsements-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
@@ -229,7 +231,7 @@ Template Name: USAC Elections 2015
                     <h3>Academic Affairs Commissioner</h3>
                 </div>
                 <div class="profiles-content" id="profiles-CEC">
-                    <h3>Campus Event Commissioner</h3>
+                    <h3>Campus Events Commissioner</h3>
                 </div>
                 <div class="profiles-content" id="profiles-CSC">
                     <h3>Community Service Commissioner</h3>
@@ -268,7 +270,7 @@ Template Name: USAC Elections 2015
                     <h3>Academic Affairs Commissioner</h3>
                 </div>
                 <div class="endorsements-content" id="endorsements-CEC">
-                    <h3>Campus Event Commissioner</h3>
+                    <h3>Campus Events Commissioner</h3>
                 </div>
                 <div class="endorsements-content" id="endorsements-CSC">
                     <h3>Community Service Commissioner</h3>
@@ -298,6 +300,9 @@ Template Name: USAC Elections 2015
     </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
+        <div class="results-head row">
+            <h1 id="news-title">2015-16 USAC COUNCILMEMBERS</h1>
+        </div>
         <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
             <li id="results-President">
                 <h2 class="results-position">President</h2>
@@ -332,7 +337,7 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
             <li id="results-CEC">
-                <h2 class="results-position">Campus Event Commissioner</h2>
+                <h2 class="results-position">Campus Events Commissioner</h2>
                 <div class="results-content">
                     <img src="http://placehold.it/200x300"/>
                     <p class="results-name">Pending</p>
@@ -412,7 +417,7 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
             <li id="results-REF">
-                <h2 class="results-position">INSERT REFERENDUM TITLE HERE</h2>
+                <h2 class="results-position">REFERENDUM</h2>
                 <div class="results-content">
                     <img src="http://placehold.it/200x300"/>
                     <p class="results-name">Pending</p>
@@ -423,40 +428,47 @@ Template Name: USAC Elections 2015
        
     </div>
     <div class="usac-section news-container">
+        <!--
          <div class="row">
             <div class="results-gallery gallery">
             </div>
             <p class="caption" id="results-gallery-caption">&nbsp;</p>
-        </div>
-        <hr>
+        </div> -->
         <h1 id="news-title">Election News Coverage</h1>
-        <hr>
         <div id="stories">
             <?php
             global $post;
-            $myposts = get_posts( array('tag_slug__and'  => 'db-story-c4', 'posts_per_page' => '-1'));
+            $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2015', 'posts_per_page' => '-1'));
             foreach( $myposts as $post ) :  
                 setup_postdata($post); ?>
-                <div class="row">
-                    <article class="story" id="<?php the_ID(); ?>">
-                        <span>
-                            <h4>
-                                <?php the_category(', '); ?>
-                            </h4>
-                            <h4>|</h4>
-                            <h5><?php the_date(); ?>
-                        </span>
-                        <h2>
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        </h2>
-                        <div>
-                                <?php the_excerpt(); ?>
-                                <a href="<?php the_permalink(); ?>">Read More...</a>     
-                        </div>
-                    </article>
-                </div>
-                <hr>
-           <?php endforeach; ?>
+      <div class="row db-list">
+          <?php if(has_post_thumbnail()): ?>
+            <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+            <div class="medium-8 small-12 columns" style="padding-left:0">
+          <?php endif; ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+              <span class="db-section-date">
+                      <h4><?php the_category(', ');?></h4> 
+                      <h4>|</h4> 
+                      <h5><?php the_time('F j, g:i a');?> </h5>
+                      </span>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+          
+          <div class="entry-content">
+            <?php the_audio(); ?>
+                <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+        </div>
+        <?php if(has_post_thumbnail()): ?>
+        </div>
+          <div class="medium-4 columns hide-for-small">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+          </div>
+        <?php endif; ?>
+        </article>
+      </div>
+        <?php endforeach; ?>
         </div>
     </div>
 </div></div>
