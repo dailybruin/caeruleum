@@ -118,10 +118,14 @@ Template Name: USAC Elections 2015
     <% candidate = rows; %>
         <img src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
+            <% if(candidate.position != "REF") {%>
             <div class="small-2 columns">
                 <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
             </div>
             <div class="small-10 columns">
+            <% } else { %>
+            <div class="small-12 columns">
+            <% } %>
                 <p class="results-name"><%- candidate.name %></p>
             </div>
         </div>
@@ -417,7 +421,10 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
         </ul>
-        <div class="row">
+       
+    </div>
+    <div class="usac-section news-container">
+         <div class="row">
             <div class="results-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1500, "wrapAround": true }'>
                 <img src="http://thecatapi.com/api/images/get" alt="">
                 <img src="http://thecatapi.com/api/images/get" alt="">
@@ -426,10 +433,17 @@ Template Name: USAC Elections 2015
                 <img src="http://thecatapi.com/api/images/get" alt="">
             </div>
         </div>
-        
-    </div>
-    <div class="usac-section news-container">
-        NEWS NEWS NEWS
+        <div class="row">
+              <ul>
+                  <?php
+                  $category_id = get_cat_ID('News');
+                  global $post;
+                  $myposts = get_posts( array('tag_slug__and'  => 'usac election 15', 'posts_per_page' => '-1', 'category' => $category_id));
+                  foreach( $myposts as $post ) :  setup_postdata($post); ?>
+                  <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                  <?php endforeach; ?>
+            </ul>
+        </div>
     </div>
 </div></div>
 
