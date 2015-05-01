@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("results");
 		else if (hash.indexOf("#violations") > -1)
 			switchSection("violations");
+		else if (hash.indexOf("#news") > -1)
+			switchSection("news");
     });
 
 	setSidebar();
@@ -114,6 +116,8 @@ function scrollFunction() {
 		content = ".element.violation";
 	else if (currentContainer == "endorsements")
 		content = ".endorsements-content";
+	else
+		return;  // No scroll highlight for news&result
 	$(content).each(function(){
 		if ($(this).offset().top - 1 < currentScroll)
 			currentSection = $(this);
@@ -147,7 +151,7 @@ function switchSection(section) {
 		$("#filter").show();
 	}
 
-    if(currentContainer === "results") {
+    if(currentContainer === "results" || currentContainer === "news") {
         $("#PVE").hide();
     } else {
         $("#PVE").show();

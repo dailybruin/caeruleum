@@ -145,6 +145,7 @@ Template Name: USAC Elections 2015
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
             <li><a href="#results">Results</a></li>
+            <li><a href="#news">News</a></li>
         </ul>
       </section>
     </nav>
@@ -423,6 +424,9 @@ Template Name: USAC Elections 2015
             <img src="http://thecatapi.com/api/images/get" alt="">
             <img src="http://thecatapi.com/api/images/get" alt="">
         </div>
+    </div>
+    <div class="usac-section news-container">
+        NEWS NEWS NEWS
     </div>
 </div></div>
 
