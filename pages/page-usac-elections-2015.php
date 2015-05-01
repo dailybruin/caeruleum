@@ -8,16 +8,16 @@ Template Name: USAC Elections 2015
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
-<script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
 <script src="../js/usac-2015/lazyYT.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
     <% _.each(input, function(candidate){ %>
         <div class="row element candidate <%- candidate.slate %>">
             <div class="small-3 columns">
-            <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
+            <img src="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -74,7 +74,7 @@ Template Name: USAC Elections 2015
             <div class="row endorsed">
                 <h2 class="yesno">Endorsed:</h2>
                 <div class="small-3 columns">
-                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
+                   <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -96,7 +96,7 @@ Template Name: USAC Elections 2015
 
             <div class="row notendorsed <%- candidate.name  %>">
                 <div class="small-2 columns">
-                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
+                   <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -416,6 +416,14 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
         </ul>
+        </div>
+        <div class="results-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": 1500, "wrapAround": true }'>
+            <img src="http://thecatapi.com/api/images/get" alt="">
+            <img src="http://thecatapi.com/api/images/get" alt="">
+            <img src="http://thecatapi.com/api/images/get" alt="">
+            <img src="http://thecatapi.com/api/images/get" alt="">
+            <img src="http://thecatapi.com/api/images/get" alt="">
+        </div>
     </div>
 </div></div>
 
