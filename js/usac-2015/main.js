@@ -1,7 +1,6 @@
 var candidates, keys, endcandidates;
 var positions = ["President", "IVP", "EVP", "Gen-Rep", "AAC", "CEC", "CSC", "CAC", "FAC", "FSC", "SWC", "TSR"];
 var currentContainer;
-var asyncCompleted = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -31,10 +30,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("endorsements");
 		else if (hash.indexOf("#profiles") > -1)
 			switchSection("profiles");
-		else if (hash.indexOf("#news") > -1)
-			switchSection("news");
+		else if (hash.indexOf("#results") > -1)
+			switchSection("results");
 		else if (hash.indexOf("#violations") > -1)
 			switchSection("violations");
+		else if (hash.indexOf("#news") > -1)
+			switchSection("news");
     });
 
 	setSidebar();
@@ -50,21 +51,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			c = _.where(candidates, {position: positions[i]});
 			$("#profiles-"+positions[i]).append(template({input: c}));
 		}
-		if (asyncCompleted) {
-			var layzr = new Layzr({ 
-				selector: '[data-layzr]',
-				attr: 'data-layzr',
-				retinaAttr: 'data-layzr',
-				bgAttr: 'data-layzr-bg',
-				threshold: 50,
-				callback: null
-			});
-		}
-		asyncCompleted = true;
         $('.lazyYT').lazyYT();
 	});
 
- 
+    var resultsData = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+    $.getJSON(resultsData, function(candidates) {
+        candidates = clean_google_sheet_json(candidates);
+        var resultsTemplate = _.template($("#results_candidates_template").html());
+        var c = _.where(candidates, {elected: "1"});
+        for (var i = 0; i < c.length; i++) {
+            $("#results-"+c[i].position+c[i].genrepnumber+" .results-content").html(resultsTemplate({rows: c[i]}));
+        }
+	});
+
   var violationsdata = "https://spreadsheets.google.com/feeds/list/19YcaBCjht0rm42LyE3yeFSun-dEwqnrR_4jaR8aU1xo/od6/public/values?alt=json";
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
@@ -82,18 +81,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var cand  = _.where(endorsetable, {position: positions[i]});
             $("#endorsements-"+positions[i]).append(template({rows: cand}));
         }
-
-        if (asyncCompleted) {
-			var layzr = new Layzr({ 
-				selector: '[data-layzr]',
-				attr: 'data-layzr',
-				retinaAttr: 'data-layzr',
-				bgAttr: 'data-layzr-bg',
-				threshold: 50,
-				callback: null
-			});
-		}
-		asyncCompleted = true;
     });
 
     $("input:checkbox").on("click", function() {
@@ -110,11 +97,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 	$(window).hashchange();
+
+    // LOAD DATA FOR RESULTS GALLERY 
+
+    var gallerydata = "https://spreadsheets.google.com/feeds/list/1jZXS1s1Ibe4nqbCj0CEBzfWwHwoWqjm5p5zWjWhQgkc/od6/public/values?alt=json";
+    $.getJSON(gallerydata, function(galleryjson) {
+        var data = clean_google_sheet_json(galleryjson);
+        var template = _.template($("#results_gallery_template").html());
+        $(".results-gallery").html(template({rows: data}));        
+    
+        var $gallery = $('.gallery').flickity({
+        cellSelector: 'img', 
+        imagesLoaded: true, 
+        percentPosition: false, 
+        autoPlay: 2500, 
+        wrapAround: true
+        });
+    var $caption = $('.caption');
+    // Flickity instance
+    var flkty = $gallery.data('flickity');
+    
+    $gallery.on('cellSelect', function() {
+        // set image caption using img's alt
+        $caption.text(flkty.selectedElement.alt)
+    });    
+});
+
+    
 });
 
 function scrollFunction() {
 	setSidebar();
-	if ($(this).scrollTop() < 100) {
+	if ($(this).scrollTop() < 200) {
 		$('#scrollup').hide();
 	} else {
 		$('#scrollup').show();
@@ -129,6 +143,8 @@ function scrollFunction() {
 		content = ".element.violation";
 	else if (currentContainer == "endorsements")
 		content = ".endorsements-content";
+	else
+		return;  // No scroll highlight for news&result
 	$(content).each(function(){
 		if ($(this).offset().top - 1 < currentScroll)
 			currentSection = $(this);
@@ -151,7 +167,7 @@ function setSidebar() {
 }
 
 function switchSection(section) {
-	// section must be either profiles, violations, news, or endorsements
+	// section must be either profiles, violations, results, or endorsements
 	$("." + currentContainer + "-container").hide();
 	currentContainer = section;
 	$("." + currentContainer + "-container").show();
@@ -161,6 +177,12 @@ function switchSection(section) {
 	} else {
 		$("#filter").show();
 	}
+
+    if(currentContainer === "results" || currentContainer === "news") {
+        $("#PVE").hide();
+    } else {
+        $("#PVE").show();
+    }
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(".top-bar-section a[href='#" + currentContainer + "']").parent().addClass('active');
 }

@@ -8,16 +8,16 @@ Template Name: USAC Elections 2015
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 <script src="../js/usac-2015/main.js"></script>
-<script src="../js/usac-2015/layzr.min.js"></script>
 <script src="../js/usac-2015/animatescroll.min.js"></script>
 <script src="../js/usac-2015/lazyYT.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Raleway:800|Asap' rel='stylesheet' type='text/css'>
 
 <script type="text/template" class="candidates_main_template">
     <% _.each(input, function(candidate){ %>
         <div class="row element candidate <%- candidate.slate %>">
             <div class="small-3 columns">
-            <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
+            <img src="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
                         <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -74,7 +74,7 @@ Template Name: USAC Elections 2015
             <div class="row endorsed">
                 <h2 class="yesno">Endorsed:</h2>
                 <div class="small-3 columns">
-                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
+                   <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -96,7 +96,7 @@ Template Name: USAC Elections 2015
 
             <div class="row notendorsed <%- candidate.name  %>">
                 <div class="small-2 columns">
-                   <img src="http://placehold.it/200x300" data-layzr="<%- candidate.mug %>"/>
+                   <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
                     <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
@@ -114,6 +114,26 @@ Template Name: USAC Elections 2015
     <% }); %>
 </script>
 
+<script type="text/template" id="results_candidates_template">
+    <% candidate = rows; %>
+        <img id="results-mug" src="<%- candidate.mug %>"/>
+        <div class="row result-nameslate">
+            <% if(candidate.position != "REF") {%>
+                <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+            <% } %>
+            <h2 class="results-name"><%- candidate.name %></h2>
+            <% if(candidate.position != "Gen-Rep") {%>
+                <p class="results-percent"><%- candidate.percent %>% of the vote</p>
+            <% } %>
+        </div>
+</script>
+
+<script type="text/template" id="results_gallery_template">
+    <% _.each(rows, function(image) { %>
+        <img src="<%- image.link %>" alt="<%- image.caption %>"/>
+    <% }); %>
+</script>
+
 <!-- THE PAGE STARTS HERE -->
 
 <a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2015.uparrow.svg"/></a>
@@ -128,12 +148,14 @@ Template Name: USAC Elections 2015
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
             <li><a href="#violations">Violations</a></li>
-            <!-- <li><a href="#news">News</a></li> -->
             <li><a href="#endorsements">Endorsements</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#news">News</a></li>
         </ul>
       </section>
     </nav>
-    <div class="row">
+    <!-- Profiles/Violations/Endorsements -->
+    <div class="row" id="PVE">
         <div class="small-3 columns hide-for-small-only" id="scrollbar" style="position: relative top: 30px">
             <form id="filter">
                 <h3>Filter By Slate</h3>
@@ -157,7 +179,7 @@ Template Name: USAC Elections 2015
                     <dd><a href="#profiles-EVP" onclick="$('#profiles-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
                     <dd><a href="#profiles-Gen-Rep" onclick="$('#profiles-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
                     <dd><a href="#profiles-AAC" onclick="$('#profiles-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#profiles-CEC" onclick="$('#profiles-CEC').animatescroll({padding: 80})">Campus Event Commissioner</a></dd>
+                    <dd><a href="#profiles-CEC" onclick="$('#profiles-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
                     <dd><a href="#profiles-CSC" onclick="$('#profiles-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
                     <dd><a href="#profiles-CAC" onclick="$('#profiles-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
                     <dd><a href="#profiles-FAC" onclick="$('#profiles-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
@@ -179,7 +201,7 @@ Template Name: USAC Elections 2015
                     <dd><a href="#endorsements-EVP" onclick="$('#endorsements-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
                     <dd><a href="#endorsements-Gen-Rep" onclick="$('#endorsements-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
                     <dd><a href="#endorsements-AAC" onclick="$('#endorsements-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#endorsements-CEC" onclick="$('#endorsements-CEC').animatescroll({padding: 80})">Campus Event Commissioner</a></dd>
+                    <dd><a href="#endorsements-CEC" onclick="$('#endorsements-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
                     <dd><a href="#endorsements-CSC" onclick="$('#endorsements-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
                     <dd><a href="#endorsements-CAC" onclick="$('#endorsements-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
                     <dd><a href="#endorsements-FAC" onclick="$('#endorsements-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
@@ -209,7 +231,7 @@ Template Name: USAC Elections 2015
                     <h3>Academic Affairs Commissioner</h3>
                 </div>
                 <div class="profiles-content" id="profiles-CEC">
-                    <h3>Campus Event Commissioner</h3>
+                    <h3>Campus Events Commissioner</h3>
                 </div>
                 <div class="profiles-content" id="profiles-CSC">
                     <h3>Community Service Commissioner</h3>
@@ -230,9 +252,6 @@ Template Name: USAC Elections 2015
                     <h3>Transfer Student Representative</h3>
                 </div>
             </div>
-            <!-- NEWS PAGE IS HERE  -->
-            <div class="usac-section news-container" id="news-content">
-            </div>
             <!-- ENDORSEMENTS PAGE IS HERE  -->
             <div class="usac-section endorsements-container endorsements">
                 <div class="endorsements-content" id="endorsements-President">
@@ -251,7 +270,7 @@ Template Name: USAC Elections 2015
                     <h3>Academic Affairs Commissioner</h3>
                 </div>
                 <div class="endorsements-content" id="endorsements-CEC">
-                    <h3>Campus Event Commissioner</h3>
+                    <h3>Campus Events Commissioner</h3>
                 </div>
                 <div class="endorsements-content" id="endorsements-CSC">
                     <h3>Community Service Commissioner</h3>
@@ -276,6 +295,180 @@ Template Name: USAC Elections 2015
             <div class="usac-section violations-container" id="violations-content">
             </div>
     <!-- MAIN CONTENT  DIV END  -->
+        </div>
+    <!-- PROFILES/VIOLATIONS/ENDORSEMENTS -->
+    </div>
+    <!-- RESULTS PAGE IS HERE  -->
+    <div class="usac-section results-container">
+        <div class="results-head row">
+            <h1 id="news-title">2015-16 USAC COUNCILMEMBERS</h1>
+        </div>
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
+            <li id="results-President">
+                <h2 class="results-position">President</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-IVP">
+                <h2 class="results-position">Internal Vice President</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-EVP">
+                <h2 class="results-position">External Vice President</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-AAC">
+                <h2 class="results-position">Academic Affairs Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-CEC">
+                <h2 class="results-position">Campus Events Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-Gen-Rep1">
+                <h2 class="results-position">General Representative 1</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-Gen-Rep2">
+                <h2 class="results-position">General Representative 2</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-Gen-Rep3">
+                <h2 class="results-position">General Representative 3</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-CSC">
+                <h2 class="results-position">Community Service Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-CAC">
+                <h2 class="results-position">Cultural Affairs Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-FAC">
+                <h2 class="results-position">Facilities Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-FSC">
+                <h2 class="results-position">Financial Support Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-SWC">
+                <h2 class="results-position">Student Wellness Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-TSR">
+                <h2 class="results-position">Transfer Student Representative</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-REF">
+                <h2 class="results-position">REFERENDUM</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+        </ul>
+       
+    </div>
+    <div class="usac-section news-container">
+        <!--
+         <div class="row">
+            <div class="results-gallery gallery">
+            </div>
+            <p class="caption" id="results-gallery-caption">&nbsp;</p>
+        </div> -->
+        <h1 id="news-title">Election News Coverage</h1>
+        <div id="stories">
+            <?php
+            global $post;
+            $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2015', 'posts_per_page' => '-1'));
+            foreach( $myposts as $post ) :  
+                setup_postdata($post); ?>
+      <div class="row db-list">
+          <?php if(has_post_thumbnail()): ?>
+            <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            </div>
+            <div class="medium-8 small-12 columns" style="padding-left:0">
+          <?php endif; ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+              <span class="db-section-date">
+                      <h4><?php the_category(', ');?></h4> 
+                      <h4>|</h4> 
+                      <h5><?php the_time('F j, g:i a');?> </h5>
+                      </span>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+          
+          <div class="entry-content">
+            <?php the_audio(); ?>
+                <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+        </div>
+        <?php if(has_post_thumbnail()): ?>
+        </div>
+          <div class="medium-4 columns hide-for-small">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+          </div>
+        <?php endif; ?>
+        </article>
+      </div>
+        <?php endforeach; ?>
         </div>
     </div>
 </div></div>
