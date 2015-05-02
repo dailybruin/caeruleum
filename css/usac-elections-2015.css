@@ -2,6 +2,11 @@ body {
 
 }
 
+.results-video-container {
+    max-width: 700px;
+    margin: auto;
+}
+
 #stories .row {
     max-width: 800px;
     margin: auto;
@@ -48,7 +53,7 @@ img.results.slate-logo {
 }
 
 h2.results-position {
-  height: 3.8rem;
+  height: 4.5rem;
   display: table-cell;
   vertical-align: bottom;
   font-family: Raleway;
