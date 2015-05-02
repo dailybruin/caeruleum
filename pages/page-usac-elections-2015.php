@@ -434,16 +434,35 @@ Template Name: USAC Elections 2015
             </div>
             <p class="caption" id="results-gallery-caption">&nbsp;</p>
         </div>
-        <div class="row">
-              <ul>
-                  <?php
-                  $category_id = get_cat_ID('News');
-                  global $post;
-                  $myposts = get_posts( array('tag_slug__and'  => 'usac election 15', 'posts_per_page' => '-1', 'category' => $category_id));
-                  foreach( $myposts as $post ) :  setup_postdata($post); ?>
-                  <li class="lid"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                  <?php endforeach; ?>
-            </ul>
+        <hr>
+        <h1 id="news-title">Election News Coverage</h1>
+        <hr>
+        <div id="stories">
+            <?php
+            global $post;
+            $myposts = get_posts( array('tag_slug__and'  => 'db-story-c4', 'posts_per_page' => '-1'));
+            foreach( $myposts as $post ) :  
+                setup_postdata($post); ?>
+                <div class="row">
+                    <article class="story" id="<?php the_ID(); ?>">
+                        <span>
+                            <h4>
+                                <?php the_category(', '); ?>
+                            </h4>
+                            <h4>|</h4>
+                            <h5><?php the_date(); ?>
+                        </span>
+                        <h2>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h2>
+                        <div>
+                                <?php the_excerpt(); ?>
+                                <a href="<?php the_permalink(); ?>">Read More...</a>     
+                        </div>
+                    </article>
+                </div>
+                <hr>
+           <?php endforeach; ?>
         </div>
     </div>
 </div></div>
