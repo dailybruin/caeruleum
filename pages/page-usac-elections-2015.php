@@ -300,9 +300,16 @@ Template Name: USAC Elections 2015
     </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
-        <div class="results-video-container">
+        <div class="row results-video-container">
+            <div class="medium-6 columns">
             <div class="flex-video widescreen">
                 <iframe  src="https://www.youtube.com/embed/G88kSCCxZU8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="medium-6 columns">
+            <div class="flex-video widescreen">
+                <iframe  src="https://www.youtube.com/embed/qqDqmPoeJpg" frameborder="0" allowfullscreen></iframe>
+            </div>
             </div>
         </div>
         <div class="results-head row">
