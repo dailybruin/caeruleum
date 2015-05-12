@@ -92,17 +92,6 @@ Template Name: Radio: About the hosts
         <p>Dariane Nabor, an avid consumer of podcasts, public radio and all things media, began as a radio reporter at the Daily Bruin in fall 2014. This is her first and last quarter as a host of Long Story Short.</p>
     </div>
     <div class="large-6 columns">
-        <img src="http://dailybruin.com/images/2015/05/web.lss_.JoshGreenberg.AD_.jpg" />
-        <h1>Josh Greenberg</h1>
-        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jgreenberg@media.ucla.edu">jgreenberg@media.ucla.edu</a> </div>
-            <div class="twitter">
-            <i class="ticon-twitter" ></i>
-            <a href="https://twitter.com/joshdgreenberg" rel = "external" target="_blank" data-via="dailybruin">
-            @joshdgreenberg
-            </a>
-        </div>
-    <audio src="http://dailybruin.com/images/2015/05/josh-greenburg-audio-blurb.mp3" preload="auto" controls></audio>
-    <p>Josh Greenberg joined The Bruin in fall 2014. He wrote "Balloon and Panel," an indie comic book column, in winter 2015. He writes for A&amp;E when he's not doing essays for history classes. Outside, he runs tabletop games and acts for money.</p>
     </div>
 </div>
 
