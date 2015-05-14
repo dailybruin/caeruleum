@@ -171,7 +171,7 @@
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
               <div class="row db-image text-center hide-for-medium hide-for-small">
-                <a href="https://spark.ucla.edu/project/54bef1e414bdf76515083d63"><img src="http://dailybruin.com/images/2015/04/spark-web-ad.png"/></a>
+                <a href="http//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg/></a>
               </div>
 
               <hr style="margin: 1.5rem 0">
