@@ -86,7 +86,7 @@ Template Name: Radio: About the hosts
 <div class="row-fluid">
     <div class="large-6 columns">
         <img src="http://dailybruin.com/images/2015/05/web.lss_.DarianeNabor.AD_.jpg" alt="Sharon Lin" />
-    <h1>Darianne Nabor</h1>
+    <h1>Dariane Nabor</h1>
         <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:dnabor@media.ucla.edu">dnabor@media.ucla.edu</a> </div>
         <audio src="http://dailybruin.com/images/2015/05/Dariane-Nabor-audio-blurb-.mp3" preload="auto" controls></audio>
         <p>Dariane Nabor, an avid consumer of podcasts, public radio and all things media, began as a radio reporter at the Daily Bruin in fall 2014. This is her first and last quarter as a host of Long Story Short.</p>
