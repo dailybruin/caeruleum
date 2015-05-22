@@ -234,7 +234,7 @@ section audio {
     transition: all ease-in 0.3s;
 }
 
-section:hover {
+.audio-section:hover {
 	background-color: #C2D6D6;
 	-webkit-transition: all ease-in 0.3s;
     -moz-transition: all ease-in 0.3s;
