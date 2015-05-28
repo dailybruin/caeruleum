@@ -171,7 +171,7 @@
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
               <div class="row db-image text-center hide-for-medium hide-for-small">
-                <a href="http//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
+                <a href="http://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
               </div>
 
               <hr style="margin: 1.5rem 0">
