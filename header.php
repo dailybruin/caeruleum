@@ -56,7 +56,7 @@
 	}</script>
 
   <!-- Wordpress Open Graph -->
-  <?php if(has_post_thumbnail()) :
+  <?php if(has_post_thumbnail() && !(is_front_page())) :
     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
     <meta property="og:image" content="<?php echo $url; ?>" />
   <?php else: ?>
