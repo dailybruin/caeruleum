@@ -207,6 +207,13 @@ $db-masthead-subcategory-size: rem-calc(36);
         color: $steel;
       }
     }
+    
+    .db-story-ns .db-image img,
+    .db-story-op .db-image img,
+    .db-story-sp .db-image img,
+    .db-story-ae .db-image img {
+      max-height: 13.5rem;
+    }
 
     .db-ad-banner {
       width: $db-ad-banner-width;
