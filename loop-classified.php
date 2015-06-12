@@ -18,7 +18,7 @@
 		<p>You can also order over the phone by calling <a href="tel:3108252221">310-825-2221</a>.</p>
 		</br>
 		<div class="side-head">
-			<a href="http://adpro.media.ucla.edu/online" class="text-center" target="_blank">
+			<a href="https://host6.eclipseservices.com/ucla/online" class="text-center" target="_blank">
 				<button class="success expand">Place a Classified Ad</button>
 			</a>
 		</div><!-- end div.side-head -->
