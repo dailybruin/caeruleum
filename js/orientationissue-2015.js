@@ -42,7 +42,7 @@ function switchSection(section) {
 	$("." + currentContainer).show();
  
 	$('html, body').animate({
-        scrollTop: $("#belowbanner").offset().top
+        scrollTop: ($("#belowbanner").offset().top - 56)
     }, 800);
 
 

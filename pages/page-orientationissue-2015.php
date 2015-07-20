@@ -81,18 +81,165 @@ Template Name: Orientation Issue 2015
             
             <div class="main-section opinion">
                 <h1>Opinion</h1>
+
+                <div id="stories">
+                    <?php
+                    global $post;
+                    $myposts = get_posts( array('tag_slug__and'  => 'db-story-op', 'posts_per_page' => '-1'));
+                    foreach( $myposts as $post ) :  
+                    setup_postdata($post); ?>
+                    <div class="row db-list">
+                      <?php if(has_post_thumbnail()): ?>
+                        <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+                          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                        </div>
+                        <div class="medium-8 small-12 columns" style="padding-left:0">
+                      <?php endif; ?>
+                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                          <span class="db-section-date">
+                                  <h4><?php the_category(', ');?></h4> 
+                                  <h4>|</h4> 
+                                  <h5><?php the_time('F j, g:i a');?> </h5>
+                                  </span>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                      
+                      <div class="entry-content">
+                        <?php the_audio(); ?>
+                            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+                    </div>
+                    <?php if(has_post_thumbnail()): ?>
+                    </div>
+                      <div class="medium-4 columns hide-for-small">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                      </div>
+                    <?php endif; ?>
+                    </article>
+                  </div>
+                    <?php endforeach; ?>
+                    </div>
+                </div>
             </div>
 
             <div class="main-section ae">
                 <h1>Arts &amp; Entertainment</h1>
+
+                <div id="stories">
+                    <?php
+                    global $post;
+                    $myposts = get_posts( array('tag_slug__and'  => 'db-story-ae', 'posts_per_page' => '-1'));
+                    foreach( $myposts as $post ) :  
+                    setup_postdata($post); ?>
+                    <div class="row db-list">
+                      <?php if(has_post_thumbnail()): ?>
+                        <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+                          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                        </div>
+                        <div class="medium-8 small-12 columns" style="padding-left:0">
+                      <?php endif; ?>
+                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                          <span class="db-section-date">
+                                  <h4><?php the_category(', ');?></h4> 
+                                  <h4>|</h4> 
+                                  <h5><?php the_time('F j, g:i a');?> </h5>
+                                  </span>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                      
+                      <div class="entry-content">
+                        <?php the_audio(); ?>
+                            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+                    </div>
+                    <?php if(has_post_thumbnail()): ?>
+                    </div>
+                      <div class="medium-4 columns hide-for-small">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                      </div>
+                    <?php endif; ?>
+                    </article>
+                  </div>
+                    <?php endforeach; ?>
+                    </div>
+                </div>
             </div>
 
             <div class="main-section sports">
                 <h1>Sports</h1>
+                <div id="stories">
+                    <?php
+                    global $post;
+                    $myposts = get_posts( array('tag_slug__and'  => 'db-story-sp', 'posts_per_page' => '-1'));
+                    foreach( $myposts as $post ) :  
+                    setup_postdata($post); ?>
+                    <div class="row db-list">
+                      <?php if(has_post_thumbnail()): ?>
+                        <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+                          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                        </div>
+                        <div class="medium-8 small-12 columns" style="padding-left:0">
+                      <?php endif; ?>
+                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                          <span class="db-section-date">
+                                  <h4><?php the_category(', ');?></h4> 
+                                  <h4>|</h4> 
+                                  <h5><?php the_time('F j, g:i a');?> </h5>
+                                  </span>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                      
+                      <div class="entry-content">
+                        <?php the_audio(); ?>
+                            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+                    </div>
+                    <?php if(has_post_thumbnail()): ?>
+                    </div>
+                      <div class="medium-4 columns hide-for-small">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                      </div>
+                    <?php endif; ?>
+                    </article>
+                  </div>
+                    <?php endforeach; ?>
+                    </div>
+                </div>
             </div>
 
             <div class="main-section multimedia">
                 <h1>Multimedia</h1>
+
+                <div id="stories">
+                    <?php
+                    global $post;
+                    $myposts = get_posts( array('tag_slug__and'  => 'multimedia', 'posts_per_page' => '-1'));
+                    foreach( $myposts as $post ) :  
+                    setup_postdata($post); ?>
+                    <div class="row db-list">
+                      <?php if(has_post_thumbnail()): ?>
+                        <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+                          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                        </div>
+                        <div class="medium-8 small-12 columns" style="padding-left:0">
+                      <?php endif; ?>
+                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                          <span class="db-section-date">
+                                  <h4><?php the_category(', ');?></h4> 
+                                  <h4>|</h4> 
+                                  <h5><?php the_time('F j, g:i a');?> </h5>
+                                  </span>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                      
+                      <div class="entry-content">
+                        <?php the_audio(); ?>
+                            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+                    </div>
+                    <?php if(has_post_thumbnail()): ?>
+                    </div>
+                      <div class="medium-4 columns hide-for-small">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                      </div>
+                    <?php endif; ?>
+                    </article>
+                  </div>
+                    <?php endforeach; ?>
+                    </div>
+                </div>
             </div>
 
 </div>
