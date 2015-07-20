@@ -22,10 +22,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("ae");
 		else if (hash.indexOf("#sports") > -1)
 			switchSection("sports");
-		else if (hash.indexOf("#video") > -1)
-			switchSection("video");
-		else if (hash.indexOf("#radio") > -1)
-			switchSection("radio");
+		else if (hash.indexOf("#multimedia") > -1)
+			switchSection("multimedia");
     });
 
 

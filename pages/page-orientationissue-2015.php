@@ -29,8 +29,7 @@ Template Name: Orientation Issue 2015
                     <li><a href="#opinion">Opinion</a></li>
                     <li><a href="#ae">A&amp;E</a></li>
                     <li><a href="#sports">Sports</a></li>
-                    <li><a href="#video">Video</a></li>
-                    <li><a href="#radio">Radio</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
                 </ul>
             </section>
         </nav>
@@ -41,7 +40,7 @@ Template Name: Orientation Issue 2015
             
             
             <div class="main-section news">
-                <h2>News</h2>
+                <h1>News</h1>
                 <div id="stories">
                     <?php
                     global $post;
@@ -81,23 +80,19 @@ Template Name: Orientation Issue 2015
             </div>
             
             <div class="main-section opinion">
-                <h2>Opinion</h2>
+                <h1>Opinion</h1>
             </div>
 
             <div class="main-section ae">
-                <h2>Arts &amp; Entertainment</h2>
+                <h1>Arts &amp; Entertainment</h1>
             </div>
 
             <div class="main-section sports">
-                <h2>Sports</h2>
+                <h1>Sports</h1>
             </div>
 
-            <div class="main-section video">
-                <h2>Video</h2>
-            </div>
-
-            <div class="main-section radio">
-                <h2>Radio</h2>
+            <div class="main-section multimedia">
+                <h1>Multimedia</h1>
             </div>
 
 </div>
