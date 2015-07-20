@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	$(window).hashchange();
 
-});
-
     
 });
 
