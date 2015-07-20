@@ -1,0 +1,76 @@
+.main-section h1 {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 3rem;
+}
+
+.top-bar {
+    background: transparent;
+    margin-top: 1em;
+    height: auto;
+    text-align: center;
+}
+
+.top-bar-section {
+    display: inline-block;
+}
+
+.top-bar-section ul {
+    text-align: center;
+}
+
+.top-bar-section ul li {
+   /* display: inline-block; */
+    background: transparent;
+}
+
+.top-bar-section ul li > a {
+    padding: 1em 2em;
+}
+
+.top-bar-section ul li > a {
+    color: black;
+    border-bottom: 3px solid transparent;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .top-bar-section li:not(.has-form) a:not(.button)
+    {
+        background: transparent;
+    }
+    .top-bar-section li:hover:not(.has-form) a:not(.button)
+    {
+        background: transparent;
+    }
+    .top-bar-section li.active:not(.has-form) a:not(.button)
+    {
+        color: black;
+        background: transparent;
+    }
+    .top-bar-section li.active:hover:not(.has-form) a:not(.button)
+    {
+        color: initial;
+        background: transparent;
+    }
+}
+
+.top-bar-section ul li > a:hover {
+    border-color: #4b9bc7; 
+}
+
+.top-bar-section ul li.active > a {
+    background: transparent;
+    color: black;
+    border-bottom: 3px solid #0080c6;
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: initial;
+    color: initial;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+    background-color: initial;
+    background: initial;
+    color: initial;
+}
