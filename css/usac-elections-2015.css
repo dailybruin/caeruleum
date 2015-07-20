@@ -1,0 +1,668 @@
+body {
+
+}
+
+#stories .row {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#news-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.results-gallery img {
+    padding-right: 15px;
+    height: 240px;
+}
+
+@media screen and ( min-width: 768px ) {
+    .results-gallery img {
+        height: 500px;
+    }
+}
+
+#results-gallery-caption {
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img.results.slate-logo {
+    width: 10%;
+    margin-right: 0.3em;
+}
+
+.row.result-nameslate {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2.results-position {
+  height: 4.5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  font-family: Raleway;
+  text-transform: uppercase;
+  padding-top: 1.7em;
+}
+
+p.results-percent {
+    padding-top: 0.3em;
+    font-family: Asap;
+    font-size: 1.3em;
+}
+
+.results-container li {
+  padding-bottom: 0px;
+}
+
+.results-content .result-nameslate .results-name {
+    vertical-align: middle;
+}
+
+#results-mug {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.db-content .notendorsed img {
+    margin-left: 10px;
+}
+
+.db-content .endorsements-content .note {
+    font-style: italic;
+}
+
+.db-content .profiles h3 {
+  font-family: 'Raleway';
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.db-content .endorsements-container .yesno {
+  margin-left: 10px;
+  margin-bottom: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.db-content .endorsements-container h3 {
+  font-family: 'Raleway';
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.db-content .candidate {
+  margin-top: 2em;
+}
+
+.db-content .candidate .candidateinfo div {
+  margin-top: 0.3em;
+}
+
+.endorsed .slate-logo {
+    width: 7%; 
+    margin-right: .1em;
+}
+
+.endorsed .endorsed-name {
+    display: inline;
+    font-size: 2em;
+    vertical-align:middle;
+}
+
+.notendorsed .slate-logo {
+    width: 7%; 
+    margin-right: .1em;
+}
+
+.notendorsed .notendorsed-name {
+    display: inline;
+    font-size: 2em;
+    vertical-align:middle;
+}
+
+.candidate .slate-logo {
+    width: 7%; 
+    margin-right: .1em;
+}
+
+.candidate .candidate-name {
+    display: inline;
+    font-size: 2em;
+    vertical-align:middle;
+}
+
+.results-name {
+    display: inline;
+    vertical-align:middle;
+}
+
+.side-nav .active {
+  font-weight: 800;
+}
+
+#filter>div {
+  margin-bottom: 10px;
+}
+
+.top-bar {
+    background: transparent;
+    margin-top: 1em;
+    height: auto;
+    text-align: center;
+}
+
+.top-bar-section {
+    display: inline-block;
+}
+
+.top-bar-section ul {
+    text-align: center;
+}
+
+.top-bar-section ul li {
+   /* display: inline-block; */
+    background: transparent;
+}
+
+.top-bar-section ul li > a {
+    padding: 1em 2em;
+}
+
+.top-bar-section ul li > a {
+    color: black;
+    border-bottom: 3px solid transparent;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .top-bar-section li:not(.has-form) a:not(.button)
+    {
+        background: transparent;
+    }
+    .top-bar-section li:hover:not(.has-form) a:not(.button)
+    {
+        background: transparent;
+    }
+    .top-bar-section li.active:not(.has-form) a:not(.button)
+    {
+        color: black;
+        background: transparent;
+    }
+    .top-bar-section li.active:hover:not(.has-form) a:not(.button)
+    {
+        color: initial;
+        background: transparent;
+    }
+}
+
+.top-bar-section ul li > a:hover {
+    border-color: #4b9bc7; 
+}
+
+.top-bar-section ul li.active > a {
+    background: transparent;
+    color: black;
+    border-bottom: 3px solid #0080c6;
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: initial;
+    color: initial;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+    background-color: initial;
+    background: initial;
+    color: initial;
+}
+
+.row.element.candidate {
+    border-bottom: 1px solid #4b9bc7;
+    padding-bottom: 30px;
+}
+
+#scrollup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 9999;
+}
+
+.results-container ul li {
+  // margin-bottom: 20px;
+}
+
+/*!
+ * LABELAUTY jQuery Plugin Styles
+ *
+ * @file: jquery-labelauty.css
+ * @author: Francisco Neves (@fntneves)
+ * @site: www.francisconeves.com
+ * @license: MIT License
+ */
+
+/* Prevent text and blocks selection */
+input.labelauty + label ::selection { background-color: rgba(255, 255, 255, 0); }
+input.labelauty + label ::-moz-selection { background-color: rgba(255, 255, 255, 0); }
+
+/* Hide original checkboxes. They are ugly! */
+input.labelauty { display: none !important; }
+
+/*
+ * Let's style the input
+ * Feel free to work with it as you wish!
+ */
+input.labelauty + label
+{
+  display: table;
+  font-size: 11px;
+  width: 120px;
+  padding: 10px;
+  background-color: #efefef;
+  color: #b3b3b3;
+  cursor: pointer;
+
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+
+
+  transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+/* Stylish text inside label */
+
+input.labelauty + label > span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked
+{
+  display: inline-block;
+  line-height: 16px;
+  vertical-align: bottom;
+}
+
+/* Stylish icons inside label */
+
+input.labelauty + label > span.labelauty-unchecked-image,
+input.labelauty + label > span.labelauty-checked-image
+{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: bottom;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  transition: background-image 0.5s linear;
+  -moz-transition: background-image 0.5s linear;
+  -webkit-transition: background-image 0.5s linear;
+  -o-transition: background-image 0.5s linear;
+}
+
+/* When there's a label, add a little margin to the left */
+input.labelauty + label > span.labelauty-unchecked-image + span.labelauty-unchecked,
+input.labelauty + label > span.labelauty-checked-image + span.labelauty-checked
+{
+  margin-left: 7px;
+}
+
+/* When not Checked */
+input.labelauty:not(:checked):not([disabled]) + label:hover
+{
+  background-color: #eaeaea;
+  color: #a7a7a7;
+}
+input.labelauty:not(:checked) + label > span.labelauty-checked-image
+{
+  display: none;
+}
+
+input.labelauty:not(:checked) + label > span.labelauty-checked
+{
+  display: none;
+}
+
+/* When Checked */
+input.labelauty:checked + label
+{
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+input.labelauty:checked:not([disabled]) + label:hover
+{
+  background-color: #72c5fd;
+}
+input.labelauty:checked + label > span.labelauty-unchecked-image
+{
+  display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-unchecked
+{
+  display: none;
+}
+
+input.labelauty:checked + label > span.labelauty-checked
+{
+  display: inline-block;
+}
+
+input.labelauty.no-label:checked + label > span.labelauty-checked
+{
+  display: block;
+}
+
+/* When Disabled */
+input.labelauty[disabled] + label
+{
+  opacity: 0.5;
+}
+
+/* Add a background to (un)checked images */
+input.labelauty + label > span[class$=-image]
+{
+  background-size: 16px 16px;
+}
+
+input.labelauty + label[for=BU] > span[class$=-image]
+{
+  background-image: url(/img/usac-2015.BU.logo.svg);
+}
+
+input.labelauty + label[for=LA] > span[class$=-image]
+{
+  background-image: url(/img/usac-2015.LA.logo.svg);
+}
+
+input.labelauty + label[for=IND] > span[class$=-image]
+{
+  background-image: url(/img/usac-2015.IND.logo.svg);
+}
+
+input.labelauty + label[for=TAP] > span[class$=-image]
+{
+  background-image: url(/img/usac-2015.TAP.logo.svg);
+}
+
+/*!
+* lazyYT (lazy load YouTube videos)
+* v1.0.1 - 2014-12-30
+* (CC) This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+* http://creativecommons.org/licenses/by-sa/4.0/
+* Contributors: https://github.com/tylerpearson/lazyYT/graphs/contributors || https://github.com/daugilas/lazyYT/graphs/contributors
+*/
+
+.lazyYT-container {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0 0 56.25% 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.lazyYT-container iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*
+ * Video Title (YouTube style)
+ */
+
+.lazyYT-container .html5-info-bar {
+  position: absolute;
+  top: 0;
+  z-index: 935;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+     -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.lazyYT-container .html5-title {
+  padding-right: 6px;
+  padding-left: 12px;
+}
+
+.lazyYT-container .html5-title-text-wrapper {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.lazyYT-container .html5-title-text {
+  width: 100%;
+  font-size: 13px;
+  line-height: 30px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.lazyYT-container .html5-title-text:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*
+ * Thumbnail
+ */
+
+.ytp-thumbnail {
+  padding-bottom: inherit;
+  cursor: pointer;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+/*
+ * Play button (YouTube style)
+ */
+
+.ytp-large-play-button {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  width: 86px !important;
+  height: 60px !important;
+  padding: 0 !important;
+  margin: -29px 0 0 -42px !important;
+  font-size: normal !important;
+  font-weight: normal !important;
+  line-height: 1 !important;
+  opacity: .9;
+}
+
+.ytp-large-play-button-svg {
+  opacity: .9;
+  fill: #1f1f1f;
+}
+
+.lazyYT-image-loaded:hover .ytp-large-play-button-svg,
+.ytp-large-play-button:focus .ytp-large-play-button-svg {
+  opacity: 1;
+  fill: #cc181e;
+}
+
+
+/*! Flickity v1.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+          tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  /*border-radius: 50%;*/
+  background: transparent;
+  // background: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.flickity-prev-next-button:hover { 
+    background: black;
+    opacity: 0.6;
+}
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F;
+}
+
+.flickity-prev-next-button:active {
+  filter: alpha(opacity=60); /* IE8 */
+  opacity: 0.6;
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button:disabled {
+  filter: alpha(opacity=30); /* IE8 */
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+.flickity-prev-next-button.no-svg {
+  color: #333;
+  font-size: 26px;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  filter: alpha(opacity=25); /* IE8 */
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  filter: alpha(opacity=100); /* IE8 */
+  opacity: 1;
+}
