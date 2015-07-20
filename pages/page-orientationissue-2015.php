@@ -20,7 +20,7 @@ Template Name: Orientation Issue 2015
         <img src="http://dailybruin.com/images/2015/07/oissue-coverillo-final-web.jpg"/>
     </div>
 
-    <div class="row">
+    <div id="belowbanner" class="row">
         <nav class="top-bar" data-topbar role="navigation">
             <section class="top-bar-section">
                 <!-- TOP Nav Section -->

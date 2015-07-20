@@ -41,7 +41,11 @@ function switchSection(section) {
 	currentContainer = section;
 	$("." + currentContainer).show();
  
-	
+	$('html, body').animate({
+        scrollTop: $("#belowbanner").offset().top
+    }, 800);
+
+
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(".top-bar-section a[href='#" + currentContainer + "']").parent().addClass('active');
 }
