@@ -16,8 +16,13 @@ Template Name: Orientation Issue 2015
 <!-- PAGE STARTS HERE -->
 
 <div class="container">
+    <h3 class="subhead">Orientation Issue 2015</h3>
     <div class="row banner">
         <img src="http://dailybruin.com/images/2015/07/oissue-coverillo-final-web.jpg"/>
+        <span class="title">
+            <h1>First Steps</h1>
+            <p>Starting the UCLA experience can be daunting, nerve-wracking and exciting at the same time. We hope you'll let the Daily Bruin guide you through your time on campus, keeping you informed as news breaks in the area and beyond. We're UCLA's student-run daily newspaper, and we're here to serve you. Welcome to Westwood.</p>
+        </span>
     </div>
 
     <div id="belowbanner" class="row">
@@ -36,9 +41,7 @@ Template Name: Orientation Issue 2015
     
         <!-- Main content column -->
         <div class="small-12 columns">
-            
-            
-            
+                                 
             <div class="main-section news">
                 <h1>News</h1>
                 <div id="stories">
