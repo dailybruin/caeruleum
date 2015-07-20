@@ -10,22 +10,23 @@ Template Name: Orientation Issue 2015
 <script src="../js/orientationissue-2015.js"></script>
 
 
-<link href='http://fonts.googleapis.com/css?family=Raleway:800|Asap' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Biryani:700|Raleway:800|Open+Sans' rel='stylesheet' type='text/css'>
 
 
 <!-- PAGE STARTS HERE -->
 
-<div class="container">
-    <h3 class="subhead">Orientation Issue 2015</h3>
-    <div class="row banner">
+<div class="row">
+    <h1 class="subhead">Orientation Issue 2015</h1>
+    <div class="small-12 columns text-center banner">
         <img src="http://dailybruin.com/images/2015/07/oissue-coverillo-final-web.jpg"/>
-        <span class="title">
+        <p class="caption">"(Kelly Brennan/Daily Bruin senior staff)"</p>
+        <div class="title">
             <h1>First Steps</h1>
             <p>Starting the UCLA experience can be daunting, nerve-wracking and exciting at the same time. We hope you'll let the Daily Bruin guide you through your time on campus, keeping you informed as news breaks in the area and beyond. We're UCLA's student-run daily newspaper, and we're here to serve you. Welcome to Westwood.</p>
-        </span>
+        </div>
     </div>
 
-    <div id="belowbanner" class="row">
+    <div id="belowbanner" class="small-12 columns">
         <nav class="top-bar" data-topbar role="navigation">
             <section class="top-bar-section">
                 <!-- TOP Nav Section -->
@@ -47,7 +48,7 @@ Template Name: Orientation Issue 2015
                 <div id="stories">
                     <?php
                     global $post;
-                    $myposts = get_posts( array('tag_slug__and'  => 'college-world-series', 'posts_per_page' => '-1'));
+                    $myposts = get_posts( array('tag_slug__and'  => 'oissue-2015-news', 'posts_per_page' => '-1'));
                     foreach( $myposts as $post ) :  
                     setup_postdata($post); ?>
                     <div class="row db-list">
@@ -88,7 +89,7 @@ Template Name: Orientation Issue 2015
                 <div id="stories">
                     <?php
                     global $post;
-                    $myposts = get_posts( array('tag_slug__and'  => 'db-story-op', 'posts_per_page' => '-1'));
+                    $myposts = get_posts( array('tag_slug__and'  => 'oissue-2015-opinion', 'posts_per_page' => '-1'));
                     foreach( $myposts as $post ) :  
                     setup_postdata($post); ?>
                     <div class="row db-list">
@@ -129,7 +130,7 @@ Template Name: Orientation Issue 2015
                 <div id="stories">
                     <?php
                     global $post;
-                    $myposts = get_posts( array('tag_slug__and'  => 'db-story-ae', 'posts_per_page' => '-1'));
+                    $myposts = get_posts( array('tag_slug__and'  => 'oissue-2015-ae', 'posts_per_page' => '-1'));
                     foreach( $myposts as $post ) :  
                     setup_postdata($post); ?>
                     <div class="row db-list">
@@ -169,7 +170,7 @@ Template Name: Orientation Issue 2015
                 <div id="stories">
                     <?php
                     global $post;
-                    $myposts = get_posts( array('tag_slug__and'  => 'db-story-sp', 'posts_per_page' => '-1'));
+                    $myposts = get_posts( array('tag_slug__and'  => 'oissue-2015-sports', 'posts_per_page' => '-1'));
                     foreach( $myposts as $post ) :  
                     setup_postdata($post); ?>
                     <div class="row db-list">
@@ -210,7 +211,7 @@ Template Name: Orientation Issue 2015
                 <div id="stories">
                     <?php
                     global $post;
-                    $myposts = get_posts( array('tag_slug__and'  => 'multimedia', 'posts_per_page' => '-1'));
+                    $myposts = get_posts( array('tag_slug__and'  => '', 'posts_per_page' => '-1'));
                     foreach( $myposts as $post ) :  
                     setup_postdata($post); ?>
                     <div class="row db-list">
