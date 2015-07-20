@@ -45,7 +45,7 @@ Template Name: Orientation Issue 2015
                 <div id="stories">
                     <?php
                     global $post;
-                    $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2015', 'posts_per_page' => '-1'));
+                    $myposts = get_posts( array('tag_slug__and'  => 'college-world-series', 'posts_per_page' => '-1'));
                     foreach( $myposts as $post ) :  
                     setup_postdata($post); ?>
                     <div class="row db-list">

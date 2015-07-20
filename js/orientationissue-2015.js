@@ -4,7 +4,7 @@ var currentContainer;
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	
-	$(".db-next.hide-for-small").remove();
+	//$(".db-next.hide-for-small").remove();
 
 	// Show only the profiles
 	$(".main-section").hide();
