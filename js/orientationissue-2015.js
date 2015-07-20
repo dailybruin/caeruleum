@@ -5,24 +5,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	
 	$(".db-next.hide-for-small").remove();
+
 	// Show only the profiles
-	$(".usac-section").hide();
-	$(".profiles-container").show();
-	currentContainer = "profiles";
+	$(".main-section").hide();
+	$(".news").show();
+	currentContainer = "news";
 
     $(window).hashchange(function(){
 		var hash = location.hash;
 		// is substring
-		if (hash.indexOf("#endorsements") > -1)
-			switchSection("endorsements");
-		else if (hash.indexOf("#profiles") > -1)
-			switchSection("profiles");
-		else if (hash.indexOf("#results") > -1)
-			switchSection("results");
-		else if (hash.indexOf("#violations") > -1)
-			switchSection("violations");
-		else if (hash.indexOf("#news") > -1)
+		if (hash.indexOf("#news") > -1)
 			switchSection("news");
+		else if (hash.indexOf("#opinion") > -1)
+			switchSection("opinion");
+		else if (hash.indexOf("#ae") > -1)
+			switchSection("ae");
+		else if (hash.indexOf("#sports") > -1)
+			switchSection("sports");
+		else if (hash.indexOf("#video") > -1)
+			switchSection("video");
+		else if (hash.indexOf("#radio") > -1)
+			switchSection("radio");
     });
 
 
@@ -38,21 +41,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function switchSection(section) {
 	// section must be either profiles, violations, results, or endorsements
-	$("." + currentContainer + "-container").hide();
+	$("." + currentContainer).hide();
 	currentContainer = section;
-	$("." + currentContainer + "-container").show();
+	$("." + currentContainer).show();
  
-	if (currentContainer === "endorsements") {
-		$("#filter").hide();
-	} else {
-		$("#filter").show();
-	}
-
-    if(currentContainer === "results" || currentContainer === "news") {
-        $("#PVE").hide();
-    } else {
-        $("#PVE").show();
-    }
+	
 	$(".top-bar-section>.right>li.active").removeClass('active');
 	$(".top-bar-section a[href='#" + currentContainer + "']").parent().addClass('active');
 }
