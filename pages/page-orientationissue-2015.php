@@ -17,7 +17,7 @@ Template Name: Orientation Issue 2015
 
 <div class="container">
     <div class="row banner">
-        <img src="http://dailybruin.com/images/2015/07/oissue-coverillo-final.jpg"/>
+        <img src="http://dailybruin.com/images/2015/07/oissue-coverillo-final-web.jpg"/>
     </div>
 
     <div class="row">
