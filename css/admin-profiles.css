@@ -1,0 +1,48 @@
+.content .person img {
+	margin-bottom: 20px;
+}
+.mug-container{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#cg{
+	background-image: url('http://dailybruin.com/images/2015/09/1.jpg');
+}
+
+#jm{
+	background-image: url('http://dailybruin.com/images/2015/09/2.jpg');
+}
+
+#jk{
+	background-image: url('http://dailybruin.com/images/2015/09/3.jpg');
+}
+
+#jm2{
+	background-image: url('http://dailybruin.com/images/2015/09/4.jpg');
+}
+
+#je{
+	background-image: url('http://dailybruin.com/images/2015/09/5.jpg');
+}
+#gb{
+	background-image: url('http://dailybruin.com/images/2015/09/6.jpg');
+}
+
+#so{
+	background-image: url('http://dailybruin.com/images/2015/09/7.jpg');
+}
+
+#kr{
+	background-image: url('http://dailybruin.com/images/2015/09/8.jpg');
+}
+#rt{
+	background-image: url('http://dailybruin.com/images/2015/09/9.jpg');
+}
+#sw{
+	background-image: url('http://dailybruin.com/images/2015/09/10.jpg');
+}
+
+footer{	text-align: center;
+}
