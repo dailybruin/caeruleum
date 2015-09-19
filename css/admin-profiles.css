@@ -7,6 +7,18 @@
 	background-position: center center;
 }
 
+#main-title {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.intro p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 #cg{
 	background-image: url('http://dailybruin.com/images/2015/09/1.jpg');
 }
