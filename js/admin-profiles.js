@@ -5,8 +5,10 @@ var currentmug = null;
 doc.setAttribute('data-useragent', navigator.userAgent);
 
 $(document).ready(function() {
-	$(".content .person").hide();
-
+	$(".db-next.hide-for-small").remove();
+ 
+  $(".content .person").hide();
+  
 	//$(".mugs li").hover(function() { $(this).fadeTo("fast", 0.7); }, function() { $(this).fadeTo("fast", 1.0); });
 
 	$(".mugs li").click(function() {

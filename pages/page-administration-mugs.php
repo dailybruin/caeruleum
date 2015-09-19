@@ -4,7 +4,7 @@ Template Name: UCLA Administration Profiles
 
 <?php get_header(); ?>
 
-    <title>UCLA Administration Profiles</title>
+    <title>Introduction to UCLA Leadership</title>
   <meta name="description" content="Learn more about what each UCLA chancellor does in this Daily Bruin introduction of UCLA&#39;s administration."/>
   <meta name="author" content="Daily Bruin"/>
   <meta name="copyright" content="UCLA Student Media. Copyright 2015."/>
@@ -12,12 +12,9 @@ Template Name: UCLA Administration Profiles
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"/>
   <link rel="stylesheet" href="../css/admin-profiles.css"/>
   <!-- <script src="../assets/js/modernizr.js"></script> -->
-</head>
-
-<body>
 
   <div class="row intro">
-    <h1 id="main-title">Profiles of UCLA&#39;s Administration</h1>
+    <h1 id="main-title">Introduction to UCLA Leadership</h1>
     <p>Vice chancellors and the chancellor are the highest levels of UCLA&#39;s administrative structure. Chancellor Gene Block is at the top of the hierarchy and is in charge of fulfilling the university&#39;s mission. Below Block is Executive Vice Chancellor and Provost Scott Waugh who directly oversees the nine vice chancellors. Each of the nine vice chancellor positions supervise a specific aspect of campus, with some doing behind-the-scenes work, such as legal affairs, and others doing work that engages students directly, such as in student affairs.</p>
   </div>
 
