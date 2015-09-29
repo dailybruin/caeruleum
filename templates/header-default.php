@@ -154,14 +154,14 @@
 			}
 		</style>
 		
-<!-- 		<div class="row db-story below-header db-next hide-for-small">
-			<a href="/next">
+ 		<div class="row db-story below-header db-next hide-for-small">
+			<a href="http://recruiting.dailybruin.com/">
 				<div class="small-12 columns">
-					<h2 class="animated fadeInLeft">The Daily Bruin is changing.&nbsp;</h2>
-					<button class="animated fadeInUp">&nbsp;Learn more &raquo;</button>
+					<h2 class="animated fadeInLeft">Join the Daily Bruin, UCLA&#39;s student newspaper since 1919.&nbsp;</h2>
+					<button class="animated fadeInUp">&nbsp;Apply here&raquo;</button>
 				</div>
 			</a>
-		</div> -->
+		</div>
 		
 		<div class="row db-story below-header">
 			<div class="small-6 columns hide-for-small" style="margin:0;">
