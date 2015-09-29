@@ -158,7 +158,7 @@
 			<a href="http://recruiting.dailybruin.com/">
 				<div class="small-12 columns">
 					<h2 class="animated fadeInLeft">Join the Daily Bruin, UCLA&#39;s student newspaper since 1919.&nbsp;</h2>
-					<button class="animated fadeInUp">&nbsp;Apply here&raquo;</button>
+					<button class="animated fadeInUp">&nbsp;Apply here &raquo;</button>
 				</div>
 			</a>
 		</div>
