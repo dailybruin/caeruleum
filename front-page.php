@@ -435,7 +435,7 @@
             	</div>
 				<div class="row" id="featuredProject">
 					<div style="padding: 5px 20px;">
-						 <h1>Wake of the Storm</h1>
+						 <h1>give a man a fish</h1>
 						 <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
 						 <span style="display:block;width:100%;clear:both;"></span>
 						 <img src="http://dailybruin.com/images/2015/10/bob-cover.jpg" />
