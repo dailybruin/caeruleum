@@ -438,7 +438,7 @@
 						 <h1>give a man a fish</h1>
 						 <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
 						 <span style="display:block;width:100%;clear:both;"></span>
-						 <img src="http://dailybruin.com/?attachment_id=236355" />
+						 <img src="http://dailybruin.com/images/2015/10/bob-cover.jpg" />
 		                 		<p>Radio reporter Jonaki Mehta, photographer Sonja Bartlett and an external translator, Ravindranath Chandran, spent nine days in Vadamanappakkam covering the progress and effectiveness of Project RISHI’s initiatives and exploring the complexities of this rural village and its residents. This project was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which has funded UCLA’s student journalists for eight years to cover stories of a global reach and local impact.</p>
 						 <a href="http://india.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
 						 <span style="display:block;width:100%;clear:both"></span>
