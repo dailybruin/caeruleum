@@ -44,7 +44,7 @@
                   case "Social Commentary":
                     the_blog_banner('two-cents-social-commentary');
                     break;
-                  case "Quad":
+                  case "The Quad":
                     echo '<img src="http://dailybruin.com/images/2015/10/quad_logo_initial.png"></img>';
                     break;
                 	default:
