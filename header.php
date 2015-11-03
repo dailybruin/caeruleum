@@ -62,7 +62,7 @@
   <?php else: ?>
     <meta property="og:image" content="http://dailybruin.com/images/2014/01/facebook_default.jpg" />
   <?php endif; ?>
-  	<meta property="og:description" content="<?php echo wp_trim_words($post->post_content); ?>"/>
+  	<meta property="og:description" content="<?php echo wp_trim_words(($post->post_content),30); ?>"/>
 
 </head>
 
