@@ -13,6 +13,7 @@
     $hasSidebar = true;
 
     $news_cat = get_category_by_slug('news')->term_id;
+    $quad_cat = get_category_by_slug('Quad')->term_id;
     $ae_cat = get_category_by_slug('arts-entertainment')->term_id;
     $sports_cat = get_category_by_slug('sports')->term_id;
     $opinion_cat = get_category_by_slug('opinion')->term_id;
@@ -24,6 +25,16 @@
 
     switch ($categoryTitle)
     {
+      case "The Quad":
+        $sectionTag = "db-story-quad";
+        $section_cat = $quad_cat;
+        $first_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
+        $second_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
+        $third_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
+        $fourth_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
+        $side_names = array("Campus", "Humans of Westwood", "Sports", "Westwood/LA");
+        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        break;
       case "News":
         $sectionTag = "db-story-ns";
         $section_cat = $news_cat;
