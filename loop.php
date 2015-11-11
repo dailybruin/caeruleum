@@ -29,9 +29,9 @@
         $sectionTag = "db-story-quad";
         $section_cat = $quad_cat;
         $first_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
-        $second_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
-        $third_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
-        $fourth_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('campus-spectrum')->term_id) );
+        $second_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('humans-of-westwood')->term_id) );
+        $third_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('sports-spectrum')->term_id) );
+        $fourth_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('westwoodla')->term_id) );
         $side_names = array("Campus", "Humans of Westwood", "Sports", "Westwood/LA");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side);
         break;
