@@ -147,12 +147,12 @@
             </div>
             <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
+              <?php $quadid = get_cat_ID( 'The Quad' ); ?>
                 <h1 class="text-center">The Quad</h1>
               </div>
               <div class="row db-divide"></div>
              <div class="row">
               <?php // Breaking posts
-                $quadid = get_cat_ID( 'The Quad' );
 				$args = array( 'category' => $quadid );
 				$i=0;
 				$lastposts = get_posts( $args );
