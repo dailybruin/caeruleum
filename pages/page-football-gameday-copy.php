@@ -3,6 +3,7 @@ Template Name: Football Gameday Copy
 */ ?>
 <?php get_header(); ?>
 <?php 
+
 $banner_image_url = get_field('banner_image');
 $stories_tag = get_field('gameday_stories_tag');
 $feature_tag = get_field('featured_story_tag'); 
@@ -19,6 +20,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 
 <!-- 2. Add images to <div class="fotorama"></div>. -->
 
+
 <style>
 	#feature-story {
 		margin-top: 10px;
@@ -31,6 +33,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		background-color: rgba(255,255,255,0.6);
 		display: inline;
 		padding: 5px 10px;
+
 	}
 
 	.feature-content a {
@@ -69,6 +72,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
+
 	.lef{
 		float: left;
 		margin-left: -10px;
@@ -105,17 +109,21 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		height: 240px;
 	}
 
+
 </style>
 
 <div class="container">
 	<div class="row">
+
 		<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">
 		<div class="large-12 columns">
 			<img src=<?php echo $banner_image_url; ?> > 
+
 		</div>
 	</div>
 	<div class="row">
 		<div class="large-8 columns">
+
 			<br>
 			<div class="fotorama">
 				<img src="http://s.fotorama.io/1.jpg">
@@ -242,6 +250,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 			<div class="large-12 columns">
 					<!--<h2>Graphic of the Week</h2>
 					<img src=<?php echo $graphic_of_the_week; ?> > -->
+
 				</div>
 
 				<div class="large-12 columns">
@@ -251,9 +260,11 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 				</div>
 			</div>
 		</div>
+
 	-->
 	<!-- <?php get_sidebar(); ?>-->
 </div>
+
 </div>
 
 
