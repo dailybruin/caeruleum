@@ -1,4 +1,4 @@
-php get_header(); ?>
+<?php get_header(); ?>
 <div class="row db-story">
     <div class="large-8 columns db-story-post">
         <div class="page-header">
