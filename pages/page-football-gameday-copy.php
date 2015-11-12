@@ -4,12 +4,13 @@ Template Name: Football Gameday Copy
 <?php get_header(); ?>
 <?php 
 
-$banner_image_url = get_field('banner_image');
-$stories_tag = get_field('gameday_stories_tag');
+$banner_image = get_field('banner_image');
+$stories_tag = get_field('gameday_story');
 $feature_tag = get_field('featured_story_tag'); 
 $graphic_of_the_week = get_field('graphic_of_the_week');
 $comparing_stats_graphic = get_field('comparing_stats_graphic');
 ?>
+
 <!-- 1. Link to jQuery (1.8 or later), -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 
@@ -104,17 +105,37 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		background-color: #40BCD8;
 	}
 
-	.cardimg{
-		background: url("http://dailybruin.com/images/2015/10/AYEO4256-1024x589.jpg") no-repeat fixed;
+	#cardimg{
+		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYEO0740.jpg") no-repeat fixed;
 		height: 240px;
 	}
 
+	#cardimg1{
+		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYU_0703.jpg") no-repeat fixed;
+		height: 240px;
+	}
+
+	#cardimg2{
+		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYEO0755.jpg") no-repeat fixed;
+		height: 240px;
+	}
+
+	#cardimg3{
+		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYU_1481.jpg") no-repeat fixed;
+		height: 240px;
+	}
+
+	.aft_game{
+		display:;
+	}
 
 </style>
 
 <div class="container">
 	<div class="row">
 
+<!--h
+		<img src=<?php echo $banner_image; ?> >-->
 		<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">
 		<div class="large-12 columns">
 			<img src=<?php echo $banner_image_url; ?> > 
@@ -130,141 +151,42 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 				<img src="http://s.fotorama.io/2.jpg">
 				<img src="http://s.fotorama.io/3.jpg">
 			</div>
-			
+			<?php $args= array(
+			'tag' => $stories_tag) ?>
 			<div class="large-12 columns" id="feature-story">
 				<div class="card ctop lef">
 					<div class="titlecard">
+					<?php the_title(); ?>
 					</div>
-					<div class="cardimg">
+					<div id="cardimg">
 						
 					</div>
 				</div>
-				<div class="card ctop righ">
+				<div class="card ctop righ ">
 					<div class="titlecard">
 					</div>
-					<div class="cardimg">
+					<div id="cardimg1">
 						
 					</div>
 				</div>
 				<br><br>
-				<div class="card cbot lef">
+				<div class="card cbot lef aft_game">
 					<div class="titlecard">
 					</div>
-					<div class="cardimg">
+					<div id="cardimg2">
 						
 					</div>
 				</div>
-				<div class="card cbot righ">
+				<div class="card cbot righ aft_game">
 					<div class="titlecard">
 					</div>
-					<div class="cardimg">
-						
-					</div>
-				</div>
-				<?php 
-				$args = array(
-					'posts_per_page' => 1, 
-					'tag' => $feature_tag);
-
-				$posts = get_posts($args);
-
-				foreach ($posts as $post) :
-					setup_postdata($post);
-				$categories = get_the_category($post->ID);
-				echo the_post_thumbnail('large');
-
-				?>
-
-				
-				<!--<div class="feature-content">
-					<h4>
-						<span class="feature-author">
-							By <?php the_author(); ?>
-						</span>
-					</h4>
-					<div class="feature-title">
-						<h2>
-							<a class="heading" href="<?php the_permalink(); ?>">
-								<?php the_title(); ?>
-							</a>
-						</h2>
-
-					</div>
-				</div>
-			-->
-			<hr style="clear:both;"/>
-			<?php
-			endforeach; 
-			?>
-		</div>
-
-		<div class="large-12 columns" id="nonfeature-stories">
-			<?php 
-			$args = array(
-				'tag' => $stories_tag);
-
-			$posts = get_posts($args);
-
-			foreach ($posts as $post) :
-				setup_postdata($post);
-			$categories = get_the_category($post->ID);
-
-			?>
-
-			<div class="nonfeature-stories">
-				<div class="content">
-
-					<?php if ( has_post_thumbnail() ): ?>
-						<a href="<?php the_permalink(); ?>">
-							<div class="thumbnail">
-								<?php 
-								echo the_post_thumbnail('medium');
-								?>
-							</div>
-						</a>
-					<?php endif; ?>
-					<div class="nonfeature-stories-content">
-						<a class="nonfeature-stories-title" href="<?php the_permalink(); ?>">
-							<?php the_title(); ?>
-						</a>
-					</div>
-					<div class="nonfeature-stories-author">
-						By <?php the_author(); ?>
-					</div>
-					<div class="nonfeature-stories-description">
-						<p><?php echo get_the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>">More &#187;</a>
-						</p>
+					<div id="cardimg3">	
 					</div>
 				</div>
 			</div>
-			<hr style="clear:both;" >
-			<?php
-			endforeach; 
-			?>
+			<br><br>
 		</div>
 	</div>
-
-	<div class="large-4 columns">
-		<div class="row">
-			<div class="large-12 columns">
-					<!--<h2>Graphic of the Week</h2>
-					<img src=<?php echo $graphic_of_the_week; ?> > -->
-
-				</div>
-
-				<div class="large-12 columns">
-					<!-- <h2>Comparing Stats</h2> --> <!--
-					<img src=<?php echo $comparing_stats_graphic; ?> > 
-
-				</div>
-			</div>
-		</div>
-
-	-->
-	<!-- <?php get_sidebar(); ?>-->
-</div>
-
 </div>
 
 
@@ -272,5 +194,6 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 
 
 
-<?php get_footer(); ?>
+
+
 
