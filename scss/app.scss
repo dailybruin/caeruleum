@@ -494,6 +494,14 @@ blockquote {
   clear:both;
 }
 
+@media #{ $small-only } {
+  .columns div .db-infobox {
+      float:none;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
 .video-story p {
   text-align: left;
 }
