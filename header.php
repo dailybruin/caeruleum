@@ -62,8 +62,7 @@
   <?php else: ?>
     <meta property="og:image" content="http://dailybruin.com/images/2014/01/facebook_default.jpg" />
   <?php endif; ?>
-  
-  <?php	$excerpt = get_the_excerpt(); ?>
+    <?php $excerpt = wp_trim_words(($post->post_content),30)?>
   	<meta property="og:description" content="<?php echo $excerpt; ?>"/>
 
 </head>

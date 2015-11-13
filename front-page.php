@@ -147,12 +147,13 @@
             </div>
             <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
-                <h1 class="text-center">Breaking</h1>
+              <?php $quadid = get_cat_ID( 'The Quad' ); ?>
+                <h1 class="text-center">The Quad</h1>
               </div>
               <div class="row db-divide"></div>
              <div class="row">
               <?php // Breaking posts
-				$args = array( 'tag' => 'breaking' );
+				$args = array( 'category' => $quadid );
 				$i=0;
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) : 	setup_postdata($post); 
@@ -166,13 +167,22 @@
                   <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
+                  <?php if ($i == 1): ?>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
+                  <?php the_byline_front(); ?>
+                  <p>
+                  <?php echo get_the_excerpt();  ?>
+                  </p>
+                  <?php endif ?>
                 </div>
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
+              
+              <!--  this used to be a MOJO refer
               <div class="row db-image text-center hide-for-medium hide-for-small">
                 <a href="http://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
-              </div>
+              </div> -->
 
               <hr style="margin: 1.5rem 0">
 	           	
