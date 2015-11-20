@@ -3,11 +3,6 @@ Template Name: A&E Halftime Signatures
 */ ?>
 <?php get_header(); ?>
 
-<meta property="og:title" content="Halftime Signatures | Daily Bruin" />
-<meta property="og:description" content="In anticipation of the UCLA-USC football matchup Thanksgiving weekend, Daily Bruin A&E features members of the UCLA Bruin Marching Band." />
-<meta property="og:image" content="http://dailybruin.com/images/2015/11/ae-marching-band-illo.png" />
-
-
 <!--<link rel="stylesheet" type="text/css" href="/css/sports-gymnastics.css">-->
 <link href="//fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
