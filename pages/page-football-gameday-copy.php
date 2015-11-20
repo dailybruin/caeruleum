@@ -14,6 +14,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 <!-- 1. Link to jQuery (1.8 or later), -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <!-- fotorama.css & fotorama.js. -->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
@@ -76,7 +77,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 
 	.card{
 		width:374px;
-		height: 360px;
+		height: 390px;
 		margin-top: 30px;
 		display: inline-block;
 	}
@@ -87,7 +88,6 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 
 	.cbot{
 		background-color: #384E77;
-
 	}
 
 	.titlecard{
@@ -101,7 +101,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		margin-left: 10px;
 		padding-top: 10px;
 		margin-right: 10px;
-		font-weight: lighter;
+		font-weight: bolder;
 	}
 
 	#cardimg{
@@ -117,6 +117,26 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		display:;
 	}
 
+	.cont{
+		margin-right: 10px; 
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-family: 'Roboto Slab';
+		font-size: 1em;
+		color: white;
+		text-align: justify;
+		font-weight: 400;
+		
+	}
+	.link{
+		color: white !important;
+		border-bottom: none;
+	}
+
+	.link:hover{
+
+	}
 </style>
 
 <div class="container">
@@ -144,30 +164,39 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 
 		<div class="large-12 columns" id="feature-story">
 			<?php 
-					$args = array(
-						'posts_per_page' => 4, 
-						'tag' => $stories_tag);
+			$args = array(
+				'posts_per_page' => 4, 
+				'tag' => $stories_tag);
 
-					$posts = get_posts($args);
-					foreach ($posts as $post) :
-						setup_postdata($post);
-					$categories = get_the_category($post->ID);
-					
-					?>
+			$posts = get_posts($args);
+			foreach ($posts as $post) :
+				setup_postdata($post);
+			$categories = get_the_category($post->ID);
+
+			?>
 			<div class="card ctop">
 				<div class="titlecard">
-				
+
 					<div class="title"><?php the_title(); ?></div>
 				</div>
 				<div id="cardimg">
 					<?php echo the_post_thumbnail('large'); ?>
 				</div>
+				<p class="cont" >
+					<?php $t = get_the_excerpt(); 
+					echo  $t = substr($t, 0, strpos($t, '.'));?>...
+					<a href="<?php the_permalink(); ?>" class = "link">More &#187;</a>
+				</p>
+				
+				
 			</div>
 			<?php 
 			endforeach; 
 			?>
 
-</div>
+		</div>
+	</div>
+
 </div>
 
 
