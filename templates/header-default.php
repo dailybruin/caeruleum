@@ -123,7 +123,7 @@
 				/*border-top: 1px solid #EEE;*/
 				/*border-bottom: 1px solid #EEE;*/
 				margin-top: 0.5rem;
-				margin-bottom: 0.1rem;
+				margin-bottom: 1rem;
 				padding-top: 0.5rem;
 				/*padding-bottom: 0.5rem;*/
 			}
@@ -141,27 +141,55 @@
 				display: inline-block;
 				font-size: 1.5rem;
 			}
-			.db-next button {
+			/*.db-next button {
 				margin-right: 0rem;
 				margin-left: 2.5rem;
 				font-size: 1.2rem;
 				padding: 1rem 1rem 1.0625rem 1rem;
 				background-color: #0080c6;
 				font-family: 'Roboto Slab', serif;
-			}
+			}*/
 			.db-next button:hover {
 				background-color: rgba(0, 128, 198, 0.7);
 			}
+      #play-store-logo {
+        
+        display: inline-block;
+        margin: 0;
+        margin-left: 1rem;
+      }
+      #app-store-logo {
+        display: inline-block;
+        margin: 0;
+        margin-left: 1rem;
+      }
+      #play-store-logo img {
+          width: 136px;
+      }
+      #app-store-logo img {
+          width: 140px;
+      }
 		</style>
 		
- 		<!-- <div class="row db-story below-header db-next hide-for-small">
-			<a href="http://recruiting.dailybruin.com/">
-				<div class="small-12 columns">
-					<h2 class="animated fadeInLeft">Join the Daily Bruin, UCLA&#39;s student newspaper since 1919.&nbsp;</h2>
-					<button class="animated fadeInUp">&nbsp;Apply here &raquo;</button>
+ 		<div class="row db-story below-header db-next">
+			
+				<div class="medium-8 small-12 columns">
+					<h2 class="animated fadeInLeft">Get the Daily Bruin app on your phone or tablet.</h2>
 				</div>
-			</a>
-		</div> -->
+        
+        <div class="medium-4 small-12 columns">
+        <div id="play-store-logo">
+          <a href="https://play.google.com/store/apps/details?id=com.bruinmobile.dailybruin&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" /></a>
+          </div>
+          <div id="app-store-logo">
+              <a href="https://geo.itunes.apple.com/us/app/the-ucla-daily-bruin/id784097181?mt=8">
+                  <img alt="Download on the App Store" src="http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg"/>
+              </a>
+          </div>
+        </div>
+          
+		
+		</div>
 		
 		<div class="row db-story below-header">
 			<div class="small-6 columns hide-for-small" style="margin:0;">
