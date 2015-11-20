@@ -13,7 +13,7 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 
 <!-- 1. Link to jQuery (1.8 or later), -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
-
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 <!-- fotorama.css & fotorama.js. -->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
@@ -74,21 +74,11 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		margin-bottom: 10px;
 	}
 
-	.lef{
-		float: left;
-		margin-left: -10px;
-	}
-
-	.righ{
-		float: right;
-		margin-right: -10px;
-	}
 	.card{
 		width:374px;
 		height: 360px;
-
 		margin-top: 30px;
-
+		display: inline-block;
 	}
 
 	.ctop{
@@ -104,25 +94,23 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 		height:60px;
 		background-color: #40BCD8;
 	}
+	.title{
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.2em;
+		color: white; 
+		margin-left: 10px;
+		padding-top: 10px;
+		margin-right: 10px;
+		font-weight: lighter;
+	}
 
 	#cardimg{
-		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYEO0740.jpg") no-repeat fixed;
+		/*background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYEO0740.jpg") no-repeat fixed;*/
 		height: 240px;
-	}
-
-	#cardimg1{
-		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYU_0703.jpg") no-repeat fixed;
-		height: 240px;
-	}
-
-	#cardimg2{
-		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYEO0755.jpg") no-repeat fixed;
-		height: 240px;
-	}
-
-	#cardimg3{
-		background: url("http://dailybruin.com/images/galleries/ucla-reks-cal/AYU_1481.jpg") no-repeat fixed;
-		height: 240px;
+		width: auto;
+		overflow: hidden;
+		border-left: solid 5px #2E86AB;
+		border-right: solid 5px #2E86AB;
 	}
 
 	.aft_game{
@@ -132,61 +120,54 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 </style>
 
 <div class="container">
+
 	<div class="row">
 
 <!--h
-		<img src=<?php echo $banner_image; ?> >-->
-		<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">
-		<div class="large-12 columns">
-			<img src=<?php echo $banner_image_url; ?> > 
+	<img src=<?php echo $banner_image; ?> >-->
+	<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">
+	<div class="large-12 columns">
+		<img src=<?php echo $banner_image_url; ?> > 
 
-		</div>
 	</div>
-	<div class="row">
-		<div class="large-8 columns">
+</div>
+<div class="row">
+	<div class="large-8 columns">
 
-			<br>
-			<div class="fotorama">
-				<img src="http://s.fotorama.io/1.jpg">
-				<img src="http://s.fotorama.io/2.jpg">
-				<img src="http://s.fotorama.io/3.jpg">
-			</div>
-			<?php $args= array(
-			'tag' => $stories_tag) ?>
-			<div class="large-12 columns" id="feature-story">
-				<div class="card ctop lef">
-					<div class="titlecard">
-					<?php the_title(); ?>
-					</div>
-					<div id="cardimg">
-						
-					</div>
+		<br>
+		<div class="fotorama">
+			<img src="http://s.fotorama.io/1.jpg">
+			<img src="http://s.fotorama.io/2.jpg">
+			<img src="http://s.fotorama.io/3.jpg">
+		</div>
+
+
+		<div class="large-12 columns" id="feature-story">
+			<?php 
+					$args = array(
+						'posts_per_page' => 4, 
+						'tag' => $stories_tag);
+
+					$posts = get_posts($args);
+					foreach ($posts as $post) :
+						setup_postdata($post);
+					$categories = get_the_category($post->ID);
+					
+					?>
+			<div class="card ctop">
+				<div class="titlecard">
+				
+					<div class="title"><?php the_title(); ?></div>
 				</div>
-				<div class="card ctop righ ">
-					<div class="titlecard">
-					</div>
-					<div id="cardimg1">
-						
-					</div>
-				</div>
-				<br><br>
-				<div class="card cbot lef aft_game">
-					<div class="titlecard">
-					</div>
-					<div id="cardimg2">
-						
-					</div>
-				</div>
-				<div class="card cbot righ aft_game">
-					<div class="titlecard">
-					</div>
-					<div id="cardimg3">	
-					</div>
+				<div id="cardimg">
+					<?php echo the_post_thumbnail('large'); ?>
 				</div>
 			</div>
-			<br><br>
-		</div>
-	</div>
+			<?php 
+			endforeach; 
+			?>
+
+</div>
 </div>
 
 
