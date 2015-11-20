@@ -30,6 +30,7 @@ ul {
 
  .tab-title > a  {
   background-color: white !important;
+  padding: 1rem 1rem !important;
 }
 
 ul.tabs {
@@ -75,8 +76,7 @@ h1 {
   }
   article h2 {
     font-family: 'Raleway',Helvetica,Arial,sans-serif;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 2.5rem;
     text-shadow: 0 2px 2px rgba(0,0,0,0.2);
   }
 
