@@ -7,9 +7,16 @@ Template Name: Football Gameday Copy
 $banner_image = get_field('banner_image');
 $stories_tag = get_field('gameday_story');
 $feature_tag = get_field('featured_story_tag'); 
+$gallery = get_field('gallery');
 $graphic_of_the_week = get_field('graphic_of_the_week');
 $comparing_stats_graphic = get_field('comparing_stats_graphic');
+global $nggdb;
+$gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
+
 ?>
+<!--Links for data charts-->
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <!-- 1. Link to jQuery (1.8 or later), -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
@@ -18,10 +25,32 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 <!-- fotorama.css & fotorama.js. -->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-
-
 <!-- 2. Add images to <div class="fotorama"></div>. -->
+<script type="text/javascript">
+	google.load("visualization", "1.1", {packages:["bar"]});
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['', 'Offense', 'Defense'],
+			['RZ Scoring %', 37, 89],
+			['3D Conversion %', 50, 50],
+			['4D Conversion %', 81, 41],
+			]);
 
+		var options = {
+			chart: {
+				title: 'Overall Statistics',
+				subtitle: 'Some sort of subheader',
+			},
+          bars: 'horizontal', // Required for Material Bar Charts.
+          colors: ['#3284BF', '#FFE800']
+      };
+
+      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+      chart.draw(data, options);
+  }
+</script>
 
 <style>
 	#feature-story {
@@ -78,12 +107,15 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 	.card{
 		width:374px;
 		height: 390px;
-		margin-top: 30px;
+		margin-top: inherit;
+		margin-bottom: auto;
 		display: inline-block;
+		float: left;
+		margin-left: 5px;
 	}
 
 	.ctop{
-		background-color: #2E86AB;
+		background-color: rgb(50, 132, 191);
 	}
 
 	.cbot{
@@ -137,67 +169,105 @@ $comparing_stats_graphic = get_field('comparing_stats_graphic');
 	.link:hover{
 
 	}
+
+	#gamedaystats{
+		float: right;
+		max-width: 380px;
+		max-height: 600px;
+		min-width: 380px;
+		min-height: 600px;
+	}
+
+	#gamedaychart{
+		background: white;
+		border: black 1px solid;
+		padding: 3px;
+		max-height: 600px;
+		overflow: scroll;
+		overflow-x: hidden;
+		padding:20px;
+	}
+
+	#statsTitle {
+		font-size: 25px;
+		color: white;
+		background-color: black;
+		padding: 10px;
+		margin: -2px;
+	}
+
+	.sectionChart{
+		width: 70%;
+		max-width: 90%;
+		margin-left: 20px;
+		display: block;
+	}
+
+	.main{
+		display: inline-block;
+	}
+
 </style>
 
 <div class="container">
+	<div class="row">
+		<!--<img src=<?php echo $banner_image; ?> >-->
+		<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">
+		<div class="large-12 columns">
+			<img src=<?php echo $banner_image_url; ?> > 
+		</div>
+	</div>
 
 	<div class="row">
-
-<!--h
-	<img src=<?php echo $banner_image; ?> >-->
-	<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">
-	<div class="large-12 columns">
-		<img src=<?php echo $banner_image_url; ?> > 
-
-	</div>
-</div>
-<div class="row">
-	<div class="large-8 columns">
-
-		<br>
-		<div class="fotorama">
-			<img src="http://s.fotorama.io/1.jpg">
-			<img src="http://s.fotorama.io/2.jpg">
-			<img src="http://s.fotorama.io/3.jpg">
-		</div>
-
-
-		<div class="large-12 columns" id="feature-story">
-			<?php 
-			$args = array(
-				'posts_per_page' => 4, 
-				'tag' => $stories_tag);
-
-			$posts = get_posts($args);
-			foreach ($posts as $post) :
-				setup_postdata($post);
-			$categories = get_the_category($post->ID);
-
-			?>
-			<div class="card ctop">
-				<div class="titlecard">
-
-					<div class="title"><?php the_title(); ?></div>
-				</div>
-				<div id="cardimg">
-					<?php echo the_post_thumbnail('large'); ?>
-				</div>
-				<p class="cont" >
-					<?php $t = get_the_excerpt(); 
-					echo  $t = substr($t, 0, strpos($t, '.'));?>...
-					<a href="<?php the_permalink(); ?>" class = "link">More &#187;</a>
-				</p>
-				
-				
+		<div class="large-8 columns main">
+			<br>
+			<div class="fotorama">
+				<?php 
+				foreach($gallery1 as $image) {
+					echo "<img src='".$image->imageURL."'>";
+				}?>
 			</div>
-			<?php 
-			endforeach; 
-			?>
 
+			<div class="large-12 columns" id="feature-story">
+				<?php 
+				$args = array(
+					'posts_per_page' => 4, 
+					'tag' => $stories_tag);
+
+				$posts = get_posts($args);
+				foreach ($posts as $post) :
+					setup_postdata($post);
+				$categories = get_the_category($post->ID);
+				?>
+
+				<div class="card ctop">
+					<div class="titlecard">
+						<div class="title"><?php the_title(); ?></div>
+					</div>
+					<div id="cardimg">
+						<?php echo the_post_thumbnail('large'); ?>
+					</div>
+					<p class="cont" >
+						<?php $t = get_the_excerpt(); 
+						echo  $t = substr($t, 0, strpos($t, '.'));?>...
+						<a href="<?php the_permalink(); ?>" class = "link">More &#187;</a>
+					</p>
+				</div>
+				<?php 
+				endforeach; 
+				?>
+			</div>
+		</div>
+
+		<div class="large-4 columns">
+			<br>
+			<div id="gamedaystats">
+				<div id="gamedaychart">
+					<div id="barchart_material" style="width: 340px; height: 325px;"></div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-</div>
 
 
 
