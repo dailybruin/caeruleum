@@ -206,6 +206,10 @@ $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 	.main{
 		display: inline-block;
 	}
+	.overlay{
+		float:left;
+		position: relative;
+	}
 
 </style>
 
@@ -224,9 +228,12 @@ $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 			<div class="fotorama">
 				<?php 
 				foreach($gallery1 as $image) {
-					echo "<img src='".$image->imageURL."'>";
-				}?>
+					echo "<img src='".$image->imageURL."' data-caption='".$image->description."'>";
+					
+				}
+				?>
 			</div>
+			
 
 			<div class="large-12 columns" id="feature-story">
 				<?php 
