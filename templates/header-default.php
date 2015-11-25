@@ -182,6 +182,7 @@
         	margin: 0 0 0 0;
         	position: relative;
         	bottom: 3px;
+        	margin-right: 5px;
         }
 
         #war-fb-badge {
