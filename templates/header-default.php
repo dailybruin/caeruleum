@@ -171,8 +171,19 @@
 				}
         #war-twitter-badge {
           display: inline-block;  
-          margin: 0;      
         }
+        #war-inst-badge {
+          display: inline-block;  
+          margin: 0;   
+          bottom: 5px; 
+        }
+
+        #war-inst-badge span div {
+        	margin: 0 0 0 0;
+        	position: relative;
+        	bottom: 3px;
+        }
+
         #war-fb-badge {
           display: inline-block;  
           margin: 0;    
@@ -189,13 +200,19 @@
 					<div id="war-sometext">
 						<h2 class="animated fadeInLeft">Help us beat the Daily Trojan in our <a href="https://twitter.com/search?q=%23BeatSC">#BeatSC</a> Social Media Showdown!</h2>
 					</div>
-
-					<div id="war-twitter-badge">
-						<a href="https://twitter.com/dailybruin" class="twitter-follow-button" data-show-count="true">Follow @dailybruin</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>					
-					</div>
-     
 					<div id="war-fb-badge" class="fb-like" data-href="https://www.facebook.com/dailybruin" data-width="400px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+					<div id="war-twitter-badge">
+					<a href="https://twitter.com/dailybruin" class="twitter-follow-button" data-show-count="true" data-size="small">
+						Follow @dailybruin
+     				</a>
+					</div>
+					<div id="war-inst-badge">
+						<span class="ig-follow" data-id="eb43700450" data-handle="dailybruin" data-count="true" data-size="small" data-username="true"></span>
+					</div>
+						<!-- twitter button script -->
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>					
+						<!-- instagram button script -->
+						<script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
 				</div>
 
