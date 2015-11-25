@@ -311,11 +311,11 @@ function generateCharts(i){
 
 <div class="container">
 	<div class="row">
-		<img src="<?php echo $banner_image; ?>" >
+		<img src="<?php echo $banner_image[0]; ?>" >
 		<!--<img src="http://dailybruin.com/images/2014/10/colorado-banner.jpg">-->
-		<div class="large-12 columns">
+<!-- 		<div class="large-12 columns">
 			<img src=<?php echo $banner_image_url; ?> > 
-		</div>
+		</div> -->
 	</div>
 
 	<div class="row">
