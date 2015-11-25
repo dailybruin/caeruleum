@@ -27,29 +27,117 @@ $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 <!-- 2. Add images to <div class="fotorama"></div>. -->
 <script type="text/javascript">
-	google.load("visualization", "1.1", {packages:["bar"]});
-	google.setOnLoadCallback(drawChart);
-	function drawChart() {
-		var data = google.visualization.arrayToDataTable([
-			['', 'Offense', 'Defense'],
-			['RZ Scoring %', 37, 89],
-			['3D Conversion %', 50, 50],
-			['4D Conversion %', 81, 41],
-			]);
+/* dataprocessor.js */
+// Processes input data so that it can be used with google charts
+function processData(data){
+    data = data.categories;
 
-		var options = {
-			chart: {
-				title: 'Overall Statistics',
-				subtitle: 'Some sort of subheader',
-			},
-          bars: 'horizontal', // Required for Material Bar Charts.
-          colors: ['#3284BF', '#FFE800']
-      };
+    var processedData = [];
 
-      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+    for (var i = 0; i < data.length; i++) {
+        var temp = {};
 
-      chart.draw(data, options);
-  }
+        var currObj = {};
+        processedData[i] = currObj;
+
+        currObj["title"] = data[i].name;
+
+        var currArray = [];
+        currObj["data"] = currArray;
+
+        temp["offense"] = sepOffenseDefenseObjs(data[i].offense);
+        temp["defense"] = sepOffenseDefenseObjs(data[i].defense);
+
+        currArray[0] = ['', 'Offense', 'Defense'];
+        var labelCount = temp["offense"]["percentLabels"].length;
+        for(var j = 0; j < labelCount; j++)
+        {
+            currArray[j+1] = [temp["offense"]["percentLabels"][j], temp["offense"]["percent"][j],  temp["defense"]["percent"][j]];
+        }
+    }
+
+    return processedData;
+}
+
+// Seperates percent and non-percent values
+function sepOffenseDefenseObjs(data){
+    var percentValues = [];
+    var valuesValues = [];
+    var percentLabels = [];
+    var valueLabels = [];
+
+    var objKeys = Object.keys(data);
+    var percentIndex = 0, valueIndex = 0;
+    for (var i = 0; i < objKeys.length; i++) {
+        if(objKeys[i].indexOf("%") >= 0){
+            percentValues[percentIndex] = parseFloat(data[objKeys[i]]);
+            percentLabels[percentIndex++] = objKeys[i];
+        } else {
+            valuesValues[valueIndex] = parseFloat(data[objKeys[i]]);
+            valueLabels[valueIndex++] = objKeys[i];
+        }
+    }
+
+    var processedData = {};
+    processedData["percent"] = percentValues;
+    processedData["percentLabels"] = percentLabels;
+    processedData["values"] = valuesValues;
+    processedData["valueLabels"] = valueLabels;
+
+    return processedData;
+}
+
+/* chartgenerator.js */
+var dataString = '{"categories": [{"offense": {"3D Conversion %": "41.38%", "4D Conversion %": "50.00%", "Points/Game": "35.5", "RZ Scoring %": "89.19%", "Yards/Game": "468.6", "Points/Play": "0.469", "Yards/Play": "6.2"}, "defense": {"Opp Yards/Game": "416.5", "Opp Points/Play": "0.325", "Opp Points/Game": "27.6", "Opp RZ Scoring %": "81.25%", "Opp Yards/Play": "4.9", "Opp 4D Conv %": "50.00%", "Opp 3D Conv %": "37.41%"}, "name": "Overall Statistics"}, {"offense": {"Rushes/Game": "36.6", "Yards/Rush": "5.1", "Rush Play %": "48.43%", "Rush Yards/Game": "186.1"}, "defense": {"Opp Rush Yards/Game": "208.5", "Opp Yards/Rush": "4.6", "Opp Rush Play %": "53.31%", "Opp Rushes/Game": "45.2"}, "name": "Rushing Statistics"}, {"offense": {"Passes/Game": "37.8", "Pass Yards/Game": "282.5", "Completion %": "59.27%", "QB Sacked %": "3.21%", "Int Thrown %": "2.98%", "Yards/Pass": "7.5", "Pass Play %": "51.57%"}, "defense": {"Opp Yards/Pass": "5.5", "Opp Completion %": "56.25%", "Opp Passes/Game": "38.0", "Opp Pass Play %": "46.69%", "Opp Int Thrown %": "2.63%", "Sack %": "4.10%", "Opp Pass Yards/Game": "208.0"}, "name": "Passing Statistics"}, {"offense": {"FG Conversion %": "92.86%"}, "defense": {"Opp FG Conv %": "82.35%"}, "name": "Kicking Statistics"}, {"offense": {"Takeaways/Game": "1.4", "TO Margin/Game": "-0.1", "Int Thrown %": "2.98%", "Giveaways/Game": "1.5"}, "defense": {"Takeaways/Game": "1.4", "Opp Int Thrown %": "2.63%", "Giveaways/Game": "1.5", "Opp TO Margin/Game": "+0.1"}, "name": "Turnovers Statistics"}, {"offense": {"TOP % (net OT)": "42.86%"}, "defense": {"Opp TOP % (net OT)": "57.14%"}, "name": "Other Statistics"}]}';
+var data = processData(JSON.parse(dataString));
+
+google.load("visualization", "1.1", {packages:["corechart", "bar"]});
+google.setOnLoadCallback(function() {
+    generateChartDivs();
+    generateCharts(0);
+});
+
+// Disable respnsiveness for now
+// causing weird bugs
+/*$(window).resize(function(){
+  generateCharts(0);
+});*/
+
+function generateChartDivs() {
+    for(var i = 0; i < data.length; i++)
+    {
+        var key = data[i].title.replace(/\W/g, '');
+        var currSection = '<div class="section" id="' + key + 'Section">'
+        var currCanvas = '<div id="' + key + 'Chart" class="sectionChart"></div>';
+        //debugger;
+        $("#gamedaychart").append(currSection);
+        $("#" + key + "Section").append(currCanvas);
+    }
+}
+
+function generateCharts(i){
+    var options = {
+        chart : {
+            title : data[i].title,
+            subtitle: '',
+        },
+        bars: 'horizontal', // Required for Material Bar Charts.
+        colors: ['#3284BF', '#FFE800'],
+        height: data[i].data.length * 70,
+        legend: {position: 'none'}
+    };
+
+    var key = data[i].title.replace(/\W/g, '');
+    var chart = new google.charts.Bar(document.getElementById(key + 'Chart'));
+    chart.draw(google.visualization.arrayToDataTable(data[i].data), options);
+    if(i+1 != data.length){
+        $('#' + key + 'Section svg').bind("DOMNodeInserted", function(e) {
+            if($(e.target).prop("tagName") == "defs")
+                generateCharts(i+1);
+        });
+    }
+}
+
 </script>
 
 <style>
@@ -173,28 +261,36 @@ $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 	#gamedaystats{
 		float: right;
 		max-width: 380px;
-		max-height: 600px;
 		min-width: 380px;
-		min-height: 600px;
+		max-height: 600px;
 	}
 
 	#gamedaychart{
-		background: white;
-		border: black 1px solid;
+		background-color: white;
+		border: #A3A3A3 1px solid;
 		padding: 3px;
-		max-height: 600px;
+		max-height: 500px;
 		overflow: scroll;
 		overflow-x: hidden;
 		padding:20px;
+		margin-bottom: 20px;
 	}
 
 	#statsTitle {
-		font-size: 25px;
+		font-size: 22px;
 		color: white;
-		background-color: black;
+		background-color: #3284BF;
 		padding: 10px;
 		margin: -2px;
+		text-transform: uppercase;
+		font-family: 'Palatino Linotype', serif;
 	}
+
+	h1{
+		text-align: center;
+		font-family: 'Roboto Slab', serif;
+		font-size: 22px;
+	}	
 
 	.sectionChart{
 		width: 70%;
@@ -246,7 +342,7 @@ $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 					setup_postdata($post);
 				$categories = get_the_category($post->ID);
 				?>
-
+				<a href="<?php the_permalink(); ?>" class = "link">
 				<div class="card ctop">
 					<div class="titlecard">
 						<div class="title"><?php the_title(); ?></div>
@@ -260,20 +356,29 @@ $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 						<a href="<?php the_permalink(); ?>" class = "link">More &#187;</a>
 					</p>
 				</div>
+				</a>
 				<?php 
 				endforeach; 
 				?>
 			</div>
 		</div>
-
+		<br/>
 		<div class="large-4 columns">
-			<br>
 			<div id="gamedaystats">
+				<div id="statsTitleBox">
+					<h1 id="statsTitle"> Season Stats </h1>
+				</div>
 				<div id="gamedaychart">
-					<div id="barchart_material" style="width: 340px; height: 325px;"></div>
 				</div>
 			</div>
 		</div>
+		<br/>
+		<div class = "large-4 columns">
+			<a class="twitter-timeline" href="https://twitter.com/DBSports" data-widget-id="669315758501949440">Tweets by @DBSports</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			</script>
+		</div>
+
 	</div>
 
 
