@@ -274,8 +274,6 @@ function generateCharts(i){
 	    min-height:100%
 	}
 
-	}
-
 	.aft_game{
 		display:;
 	}
@@ -349,6 +347,16 @@ function generateCharts(i){
 		float:left;
 		position: relative;
 	}
+/*
+	@media only screen and (max-width: 500px) {
+		#gamedaystats{
+			float: none;
+			padding-top:20px;
+			max-width: 380px;
+			min-width: 380px;
+			max-height: 600px;
+		}
+	}*/
 
 </style>
 
