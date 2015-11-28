@@ -14,6 +14,8 @@ global $nggdb;
 $gallery1 = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 
 ?>
+<meta property="og:image" content = "<?php echo $banner_image; ?>" />
+
 <!--Links for data charts-->
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
