@@ -3,7 +3,7 @@ Template Name: Football Gameday Copy
 */ ?>
 <?php get_header(); ?>
 <?php 
-
+$posts_per_page = get_field('posts_per_page');
 $banner_image = get_field('banner_image');
 $stories_tag = get_field('gameday_story');
 $feature_tag = get_field('featured_story_tag'); 
@@ -363,7 +363,7 @@ function generateCharts(i){
 			<div class="large-12 columns" id="feature-story">
 				<?php 
 				$args = array(
-					'posts_per_page' => 4, 
+					'posts_per_page' => $posts_per_page, 
 					'tag' => $stories_tag);
 
 				$posts = get_posts($args);
