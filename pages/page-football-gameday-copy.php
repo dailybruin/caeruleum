@@ -262,6 +262,18 @@ function generateCharts(i){
 		overflow: hidden;
 		border-left: solid 5px #2E86AB;
 		border-right: solid 5px #2E86AB;
+	    display:flex;
+	    justify-content:center;
+	    align-items:center;
+	    overflow:hidden
+	}
+
+	#cardimg img {
+	    flex-shrink:0;
+	    min-width:100%;
+	    min-height:100%
+	}
+
 	}
 
 	.aft_game{
