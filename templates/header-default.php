@@ -195,7 +195,7 @@
 				</style>
 
 
-
+				<!-- 
 				<div class="row db-story below-header db-next">
 					<div id="war-sometext">
 						<h2 class="animated fadeInLeft">Help us beat the Daily Trojan in our <a href="https://twitter.com/search?q=%23BeatSC">#BeatSC</a> Social Media Showdown!</h2>
@@ -209,12 +209,11 @@
 					<div id="war-inst-badge">
 						<span class="ig-follow" data-id="eb43700450" data-handle="dailybruin" data-count="true" data-size="small" data-username="true"></span>
 					</div>
-						<!-- twitter button script -->
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>					
-						<!-- instagram button script -->
 						<script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
-				</div>
+				</div> 
+				-->
 
 				<div class="row db-story below-header">
 					<div class="small-6 columns hide-for-small" style="margin:0;">
