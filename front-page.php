@@ -148,7 +148,11 @@
             <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
               <?php $quadid = get_cat_ID( 'The Quad' ); ?>
-                <h1 class="text-center">The Quad</h1>
+                <div>
+                  <a href="http://dailybruin.com/category/quad/">
+                    <img src="http://dailybruin.com/img/quad.svg">
+                  </a>
+                </div>
               </div>
               <div class="row db-divide"></div>
              <div class="row">
