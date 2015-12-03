@@ -150,7 +150,7 @@
               <?php $quadid = get_cat_ID( 'The Quad' ); ?>
                 <div>
                   <a href="http://dailybruin.com/category/quad/">
-                    <img src="http://dailybruin.com/img/quad.svg">
+                    <img src="http://dailybruin.com/images/2015/12/quad-no-explainer-01.png">
                   </a>
                 </div>
               </div>
