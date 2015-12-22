@@ -3,6 +3,13 @@
 			<?php get_template_part('ad','banner'); ?>
 		</div>
 	</div>
+
+	<div class="row show-for-small-only">
+		<div class="db-ad-leaderboard text-center">
+			<?php get_template_part('ad','smallbanner'); ?>
+		</div>
+	</div>
+
 	<hr class="hide-for-small">
 	<div class="hide-for-small" id="stickyheader">
 		<nav class="tab-bar">

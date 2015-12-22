@@ -361,7 +361,7 @@ $db-masthead-subcategory-size: rem-calc(36);
   margin: $db-ad-padding auto;
   margin-top: 1rem;
   @media only screen and (max-width: $db-ad-leaderboard-width + ($db-ad-padding * 2)) {
-    display: none;
+    width: 100%;
   }
 }
 
