@@ -148,17 +148,18 @@
 			display: inline-block;
 			font-size: 1.5rem;
 		}
-			/*.db-next button {
+			.db-next button {
 				margin-right: 0rem;
 				margin-left: 2.5rem;
 				font-size: 1.2rem;
 				padding: 1rem 1rem 1.0625rem 1rem;
 				background-color: #0080c6;
 				font-family: 'Roboto Slab', serif;
-				}*/
+				}
 				.db-next button:hover {
 					background-color: rgba(0, 128, 198, 0.7);
 				}
+				/*
 				#play-store-logo {
 
 					display: inline-block;
@@ -198,11 +199,11 @@
         }
         #war-sometext {
 			    margin: 0 0 0.7rem 0;
-        }
+        }*/
 				</style>
 
 
-				<!-- 
+				<!-- social media war
 				<div class="row db-story below-header db-next">
 					<div id="war-sometext">
 						<h2 class="animated fadeInLeft">Help us beat the Daily Trojan in our <a href="https://twitter.com/search?q=%23BeatSC">#BeatSC</a> Social Media Showdown!</h2>
@@ -221,6 +222,15 @@
 
 				</div> 
 				-->
+
+				<div class="row db-story below-header db-next hide-for-small">
+					<a href="http://recruiting.dailybruin.com/">
+					<div class="small-12 columns">
+						<h2 class="animated fadeInLeft">Join the Daily Bruin, UCLA&#39;s student newspaper since 1919.&nbsp;</h2>
+						<button class="animated fadeInUp">&nbsp;Apply here&raquo;</button>
+					</div>
+					</a>
+				</div>
 
 				<div class="row db-story below-header">
 					<div class="small-6 columns hide-for-small" style="margin:0;">
