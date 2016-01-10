@@ -222,7 +222,8 @@
 
 				</div> 
 				-->
-
+				
+				<!--
 				<div class="row db-story below-header db-next hide-for-small">
 					<a href="http://recruiting.dailybruin.com/">
 					<div class="small-12 columns">
@@ -231,7 +232,8 @@
 					</div>
 					</a>
 				</div>
-
+				-->
+				
 				<div class="row db-story below-header">
 					<div class="small-6 columns hide-for-small" style="margin:0;">
 						<?php ob_start();
