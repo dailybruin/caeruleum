@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+*{
+	 -webkit-font-smoothing: antialiased;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.demo-image{
+	cursor: url("/Users/localadmin/Desktop/intense-images/demo/img/plus_cursor.png") 25 25, pointer;
+}
+
+h1{
+		text-align: center;
+		font-family: 'Oswald', Arial, Helvetica, sans-serif;		
+		font-size: 3em;
+		line-height: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-transform:none !important;
+}	
+
+h2{
+	text-align: center;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;		
+	font-size: .75rem;
+	padding: .5em 0 .5em 0;
+}
+
+
+p{
+	font-size:1rem;
+	line-height: 2em;
+	color: black;
+	font-family: 'Open Sans',Arial, sans-serif;
+	margin-top: 0em;
+  	margin-bottom: 2em;
+} 
+
+p.first-paragraph{
+	margin-bottom: 3em;
+}
+
+p.quote{
+	font-size:1.8rem;
+	font-weight: 300;
+	line-height: 2em;
+	color: #0080c6;
+	font-family: 'Open Sans',Arial, sans-serif;
+	font-style: italic;
+	margin-top: 0em;
+  	margin-bottom: 2em;
+}
+
+.dropcap { 
+	float: left;
+	color: #0080c6;
+	font-size: 5em;
+	line-height: 60px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 0px;
+	font-family: 'Open Sans',Arial, sans-serif;
+}
+
+figure {
+	padding-bottom: 2em;
+}
+
+figcaption{
+	padding-top: .25em;
+}
+
+ul{
+	list-style-type: none;
+	margin:0;
+}
+
+.tab-title > a{
+	background-color:white !important;
+}
+
+.tab-title >a:hover{
+	color: black !important;
+}
+.tab-title:hover{
+	background-color:white !important;
+}
+
+section.top-bar-section{
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul.tabs li {
+	float: none !important;
+	display: inline-block;
+}
+
+.tab-title.active > a {
+	background: transparent !important;
+	color: black !important;
+	border-bottom: 2px solid #0080c6;
+}
+
+.tab-title.active {
+	background: transparent !important;
+}
+
+.tab-title.active > a:hover{
+	background: transparent !important;
+	color: black !important;
+	border-bottom: 2px solid #0080c6;
+}
+
+li{
+	display: inline;
+}
+
+.header-area{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.content{
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
