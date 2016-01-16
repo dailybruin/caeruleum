@@ -6,9 +6,6 @@
   box-sizing: border-box; 
 }
 
-.demo-image{
-	cursor: url("/Users/localadmin/Desktop/intense-images/demo/img/plus_cursor.png") 25 25, pointer;
-}
 
 h1{
 		text-align: center;
