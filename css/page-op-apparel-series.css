@@ -12,16 +12,29 @@ h1{
 		font-family: 'Oswald', Arial, Helvetica, sans-serif;		
 		font-size: 3em;
 		line-height: 1em;
-		padding-top: 1em;
-		padding-bottom: 1em;
 		text-transform:none !important;
-}	
+}
+	
 
 h2{
 	text-align: center;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;		
-	font-size: .75rem;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;		
+	font-size: 1rem;
 	padding: .5em 0 .5em 0;
+}
+
+h2 a{
+	color: #0080c6 !important;
+}
+
+h3.part1, h3.part2, h3.part3{
+	text-align: center;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
+	font-size: 2.4em;
+	line-height: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-transform:none !important;
 }
 
 
@@ -47,7 +60,7 @@ p.quote{
 }
 
 figure {
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 figcaption{
