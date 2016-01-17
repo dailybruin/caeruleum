@@ -34,9 +34,6 @@ p{
   	margin-bottom: 2em;
 } 
 
-p.first-paragraph{
-	margin-bottom: 3em;
-}
 
 p.quote{
 	font-size:1.8rem;
@@ -47,17 +44,6 @@ p.quote{
 	font-style: italic;
 	margin-top: 0em;
   	margin-bottom: 2em;
-}
-
-.dropcap { 
-	float: left;
-	color: #0080c6;
-	font-size: 5em;
-	line-height: 60px;
-	padding-top: 4px;
-	padding-right: 8px;
-	padding-left: 0px;
-	font-family: 'Open Sans',Arial, sans-serif;
 }
 
 figure {
