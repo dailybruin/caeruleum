@@ -9,8 +9,9 @@ Template Name: Opinion Apparel Series
 	<div class="row">
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
-				<!-- <h2>By  <a class="author" title="Posts by Anastasia Lukianchikov" href="http://dailybruin.com/author/anastasia-lukianchikov/" rel="author">
-					Anastasia Lukianchikov</a></h2> -->
+				<h1>Here is an overarching title</h1>
+				<h2>By  <a class="author" title="Posts by Anastasia Lukianchikov" href="http://dailybruin.com/author/anastasia-lukianchikov/" rel="author">
+					Anastasia Lukianchikov</a></h2>
 				<section class="top-bar-section">
 	                <ul class="tabs" data-tab data-options="deep_linking:true; scroll_to_content: false">
 	                  <li class="tab-title active"><a href="#article-1">Part I</a></li>
@@ -21,7 +22,7 @@ Template Name: Opinion Apparel Series
          	</div>
              <div class="tabs-content">
 				  <div class="content active" id="article-1">
-				  <h1 class="part1"> UC should hold licensees responsible to higher ethical standards </h1>
+				  <h3 class="part1"> UC should hold licensees responsible to higher ethical standards </h1>
 				  	<figure>
 				  		<img class="feature-image .intense" src="http://dailybruin.com/images/2016/01/1-11-16_jansportedit_KB.jpg"/>
 				  		<figcaption>(Kelly Brennan/Daily Bruin senior staff)</figcaption>
@@ -124,7 +125,7 @@ Template Name: Opinion Apparel Series
 					<p>Drop the Alliance and perhaps we can redeem that chance.</p>
 				  </div>
 				  <div class="content" id="article-2">
-				  <h1 class="part2"> UCLA Athletics must examine brand accountability in apparel deals </h1>
+				  <h3 class="part2"> UCLA Athletics must examine brand accountability in apparel deals </h1>
 				    <p>UCLA Athletics has a huge decision to make. And it has nothing to do with athletes.</p>
 
 					<p>In 2017, the licensing contract between Adidas and UCLA Athletics is set to be renewed or terminated.</p>
@@ -259,7 +260,7 @@ Template Name: Opinion Apparel Series
 						  we must practice it too. And that responsibility only grows with this school.</p>
 				  </div>
 				  <div class="content" id="article-3">
-				  <h1 class="part3"> <?php echo get_the_title(); ?> </h1>
+				  <h3 class="part3"> <?php echo get_the_title(); ?> </h1>
 				    <p>
 				    	<?php 
 						if ( have_posts() ) {
