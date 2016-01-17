@@ -26,7 +26,7 @@ Template Name: Opinion Apparel Series
 				  		<img class="feature-image .intense" src="http://dailybruin.com/images/2016/01/1-11-16_jansportedit_KB.jpg"/>
 				  		<figcaption>(Kelly Brennan/Daily Bruin senior staff)</figcaption>
 					</figure>
-				    <p class="first-paragraph"><span class="dropcap">T</span>he University of California has a listening problem.</p>
+				    <p>The University of California has a listening problem.</p>
 					
 					<p>Last summer, the opportunity to commit UC apparel licensees to more stringent labor codes arose. 
 						Instead of doing so, policymakers made a commitment of passive leniency. And what’s worse, 
@@ -125,7 +125,7 @@ Template Name: Opinion Apparel Series
 				  </div>
 				  <div class="content" id="article-2">
 				  <h1 class="part2"> UCLA Athletics must examine brand accountability in apparel deals </h1>
-				    <p class="first-paragraph"><span class="dropcap">U</span>CLA Athletics has a huge decision to make. And it has nothing to do with athletes.</p>
+				    <p>UCLA Athletics has a huge decision to make. And it has nothing to do with athletes.</p>
 
 					<p>In 2017, the licensing contract between Adidas and UCLA Athletics is set to be renewed or terminated.</p>
 
@@ -259,7 +259,7 @@ Template Name: Opinion Apparel Series
 						  we must practice it too. And that responsibility only grows with this school.</p>
 				  </div>
 				  <div class="content" id="article-3">
-				  <h1 class="part3"> Grab title somehow or insert manually </h1>
+				  <h1 class="part3"> <?php echo get_the_title(); ?> </h1>
 				    <p>
 				    	<?php 
 						if ( have_posts() ) {
