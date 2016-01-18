@@ -4,7 +4,6 @@ Template Name: Opinion Apparel Series
 <?php get_header(); ?>
 
 <link href='../css/page-op-apparel-series.css' rel='stylesheet' type='text/css'>
-
 <div class="container">
 	<div class="row">
 		<div class="large-12 columns" id="content">
@@ -126,6 +125,7 @@ Template Name: Opinion Apparel Series
 				  </div>
 				  <div class="content" id="article-2">
 				  <h3 class="part2"> UCLA Athletics must examine brand accountability in apparel deals </h1>
+				  	<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1jJpIK4nOPzSbDe0L51SuRjyj7U55PiHgi6bzyZRoTaw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
 				    <p>UCLA Athletics has a huge decision to make. And it has nothing to do with athletes.</p>
 
 					<p>In 2017, the licensing contract between Adidas and UCLA Athletics is set to be renewed or terminated.</p>
