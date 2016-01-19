@@ -147,8 +147,11 @@ Template Name: Opinion Apparel Series
 </div>
 
 <script>
-	var iframe = document.getElementById('timeline-frame');
-	iframe.src = iframe.src;
+	(function() {
+		var iframe = document.getElementById('timeline-frame');
+		iframe.src = iframe.src;
+	})();
+	
 </script>
 
 <?php get_footer(); ?>
