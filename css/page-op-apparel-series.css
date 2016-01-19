@@ -35,14 +35,12 @@
 
 h1{
 
-	position: relative;
 	  font-family: "Oswald";
 	  color: #fff;
 	  font-size: 8em;
 	  -webkit-text-stroke: 7px #00a1f9;
 	  letter-spacing: 15px;
 	  -webkit-filter: drop-shadow(8px 10px 0 #98B5CC);
-	  width: 1000px;
 	  text-align: center;
 	  line-height: 1.2;
 	  z-index: 2;
@@ -86,7 +84,7 @@ p{
 	font-family: 'Open Sans',Arial, sans-serif;
 	margin-top: 0em;
   	margin-bottom: 2em;
-  	
+
 } 
 
 p.first-paragraph{
@@ -175,4 +173,29 @@ ul.tabs li {
     max-width: 90%;
     margin: 0 auto;
   }
+  h1{
+
+	  font-family: "Oswald";
+	  color: #fff;
+	  font-size: 5em;
+	  -webkit-text-stroke: 4px #00a1f9;
+	  letter-spacing: 10px;
+	  -webkit-filter: drop-shadow(6px 8px 0 #98B5CC);
+	  text-align: center;
+	  line-height: 1.2;
+	  z-index: 2;
+}
+
+h3.part1, h3.part2, h3.part3{
+	text-align: center;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
+	letter-spacing: 1px;
+	font-size: 2.5em;
+	line-height: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	max-width: 90%;
+	margin: 0 auto;
+	text-transform:none !important;
+}
 }
