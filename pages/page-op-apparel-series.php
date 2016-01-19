@@ -8,15 +8,24 @@ Template Name: Opinion Apparel Series
 	<div class="row">
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
-				<h1>Here is an overarching title</h1>
+				<!-- <h1>Here is an overarching title</h1> -->
+				  <h1 class="title-primary">
+				    <span>
+				      <span>Labor Intensive</span>
+				    </span>
+				  </h1>
 				<h2>By  <a class="author" title="Posts by Anastasia Lukianchikov" href="http://dailybruin.com/author/anastasia-lukianchikov/" rel="author">
 					Anastasia Lukianchikov</a></h2>
 				<section class="top-bar-section">
 	                <ul class="tabs" data-tab data-options="deep_linking:true; scroll_to_content: false">
-	                  <li class="tab-title active"><a href="#article-1">Part I</a></li>
-	                  <li class="tab-title"><a href="#article-2">Part II</a></li>
-	                  <li class="tab-title"><a href="#article-3">Part III</a></li>
-	                </ul>
+		                <div class="wrap">
+		                	<ul class="tabs" data-tab data-options="deep_linking:true; scroll_to_content: false">
+							  <li class="tab-title active"><a href="#article-1" class="button" >Part I</a></li>
+							  <li class="tab-title"><a href="#article-2" class="button" >Part II</a></li>
+							  <li class="tab-title"><a href="#article-3" class="button">Part III</a></li>
+							</ul>
+						</div>
+					</ul>
 	             </section>
          	</div>
              <div class="tabs-content">
@@ -26,7 +35,7 @@ Template Name: Opinion Apparel Series
 				  		<img class="feature-image .intense" src="http://dailybruin.com/images/2016/01/1-11-16_jansportedit_KB.jpg"/>
 				  		<figcaption>(Kelly Brennan/Daily Bruin senior staff)</figcaption>
 					</figure>
-				    <p>The University of California has a listening problem.</p>
+				    <p class="first-paragraph"><span class="dropcap">T</span>he University of California has a listening problem.</p>
 					
 					<p>Last summer, the opportunity to commit UC apparel licensees to more stringent labor codes arose. 
 						Instead of doing so, policymakers made a commitment of passive leniency. And what’s worse, 
@@ -126,7 +135,7 @@ Template Name: Opinion Apparel Series
 				  <div class="content" id="article-2">
 				  <h3 class="part2"> UCLA Athletics must examine brand accountability in apparel deals </h1>
 				  	<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1jJpIK4nOPzSbDe0L51SuRjyj7U55PiHgi6bzyZRoTaw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
-				    <p>UCLA Athletics has a huge decision to make. And it has nothing to do with athletes.</p>
+				    <p class="first-paragraph"><span class="dropcap">U</span>CLA Athletics has a huge decision to make. And it has nothing to do with athletes.</p>
 
 					<p>In 2017, the licensing contract between Adidas and UCLA Athletics is set to be renewed or terminated.</p>
 
