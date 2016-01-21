@@ -64,7 +64,7 @@
             ?>
           </h1>
           <?php
-          if($sectionPage):Students are welcome to submit blog posts at <a href="mailto:quad@media.ucla.edu">quad@media.ucla.edu</a>. Submissions are subject to the same <a href="/submit">guidelines for opinion content</a>, with the exception of increased flexibility for word count (300-900 words).
+          if($sectionPage):
                 $categoryID = get_query_var('cat');
   	    		$cat_args = array(
 					'parent' => $categoryID,
