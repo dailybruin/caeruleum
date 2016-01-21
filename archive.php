@@ -46,7 +46,9 @@
                     break;
                   case "The Quad":
                     $directoryurl = get_stylesheet_directory_uri();
-                    $result = '<img src="' . $directoryurl . '/img/quad.svg">';
+                    $result = '<img src="' . $directoryurl . '/img/quad.svg">
+                    <p class="quad-explainer">Royce Quad was once an epicenter of student life UCLA. Now, in the digital age, the Quad is an attempt to recreate these discussion spaces online. Come to the Quad for analysis, explanation and student narratives about life on and off campus, within and without Westwood.</p>
+                    <p class="quad-explainer">Students are welcome to submit blog posts quad@media.ucla.edu. Submissions are subject to the same guidelines for opinion content (http://dailybruin.com/submit/), with the exception of increased flexibility for word count (300-900 words).</p>';
                     echo $result;
                     break;
                 	default:
