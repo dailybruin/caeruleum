@@ -4,18 +4,10 @@ Template Name: Opinion Apparel Series
 <?php get_header(); ?>
 
 <link href='../css/page-op-apparel-series.css' rel='stylesheet' type='text/css'>
- <script type="text/javascript">
-        window.onload = function(){
-           var iframe = document.getElementById('timeline-frame');
-           console.log(iframe);
-            iframe.src = "//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1jJpIK4nOPzSbDe0L51SuRjyj7U55PiHgi6bzyZRoTaw&font=Default&lang=en&initial_zoom=2&height=650";
-        }
-  </script>
 <div class="container">
 	<div class="row">
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
-				<!-- <h1>Here is an overarching title</h1> -->
 				  <h1 class="title-primary">
 				      <span>Labor Intensive</span>
 				  </h1>
