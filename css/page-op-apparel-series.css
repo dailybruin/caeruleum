@@ -177,10 +177,10 @@ ul.tabs li {
 
 	  font-family: "Oswald";
 	  color: #fff;
-	  font-size: 5em;
+	  font-size: 3.5em;
 	  -webkit-text-stroke: 4px #00a1f9;
-	  letter-spacing: 10px;
-	  -webkit-filter: drop-shadow(6px 8px 0 #98B5CC);
+	  letter-spacing: 8px;
+	  -webkit-filter: drop-shadow(4px 3px 0 #98B5CC);
 	  text-align: center;
 	  line-height: 1.2;
 	  z-index: 2;
@@ -190,12 +190,23 @@ h3.part1, h3.part2, h3.part3{
 	text-align: center;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
 	letter-spacing: 1px;
-	font-size: 2.5em;
+	font-size: 2em;
 	line-height: 1em;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	max-width: 90%;
 	margin: 0 auto;
 	text-transform:none !important;
-}
+	}
+
+	p.quote{
+	font-size:1.2rem;
+	font-weight: 300;
+	line-height: 1.3em;
+	color: #00a1f9;
+	font-family: 'Open Sans',Arial, sans-serif;
+	font-style: italic;
+	margin-top: 0em;
+  	margin-bottom: 2em;
+	}
 }
