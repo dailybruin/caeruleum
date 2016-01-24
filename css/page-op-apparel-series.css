@@ -6,7 +6,6 @@
   box-sizing: border-box; 
 }
 
-
 .wrap ul li a {
 	-webkit-transition: all 350ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	-moz-transition: all 350ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
@@ -46,6 +45,18 @@ h1{
 	  z-index: 2;
 }
 
+@-moz-document url-prefix() { 
+  h1{
+	  font-family: "Oswald";
+	  color: #fff;
+	  font-size: 8em;
+	  background: #00a1f9;
+	  letter-spacing: 15px;
+	  text-align: center;
+	  line-height: 1.2;
+	  z-index: 2;
+	}
+}
 
 
 
@@ -115,8 +126,8 @@ p.quote{
 
 figure {
 	padding-bottom: 1em;
-	/*width: 90%;
-	height: auto;*/
+ 	max-width: 100%;
+ 	height: auto;
 }
 
 figcaption{
@@ -173,6 +184,11 @@ ul.tabs li {
     max-width: 90%;
     margin: 0 auto;
   }
+
+ img {
+ 	max-width: 100%;
+ 	height: auto;
+ }
   h1{
 
 	  font-family: "Oswald";

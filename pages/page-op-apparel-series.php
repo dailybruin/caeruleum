@@ -130,7 +130,7 @@ Template Name: Opinion Apparel Series
 				  <div class="content" id="article-3">
 				  <h3 class="part3"> Student voices must drive ethical licensing, consumerism </h3>
 				  	<figure>
-				  		<img class="feature-image .intense" src="http://dailybruin.com/images/2016/01/opclothingilloedit_VC.jpg"/>
+				  		<img class="feature-image" src="http://dailybruin.com/images/2016/01/opclothingilloedit_VC.jpg"/>
 				  		<figcaption>(Kelly Brennan/Daily Bruin senior staff)</figcaption>
 					</figure>
 				    <p class="first-paragraph"><b></b><span class="dropcap">W</span>hen it comes to consumerism, the ethical standards of UCLA may be higher than those of its own students. <br /></p><p><b></b>In the past two weeks I have written columns exploring UCLA's licensing agreements and the labor violations behind these licensed apparel companies. The garment industry has a rampant history of worker rights infringements &#8211; incidents that still persist today. In past years, UCLA has continuously worked with these companies to hold them to higher moral standards and labor codes.</p>
