@@ -30,7 +30,7 @@
 
 .top-bar{
   height: 500px;
-  background-image: url("HeaderGradient.jpg");
+  background-image: url("http://dailybruin.com/images/2016/01/HeaderGradient.jpg");
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -58,7 +58,7 @@
     font-family: 'Roboto Slab', serif;
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     color: #ccc;
     font-size: 30px;
     font-weight: normal;
