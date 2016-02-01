@@ -11,7 +11,7 @@ Template Name: A&E Ralph Series
 </div>
 <div class="tabs full-width">
   <!-- Radio button and lable for #tab-content1 -->
-  <input type="radio" name="tabs" id="tab1" checked >
+  <input type="radio" name="tabs" id="tab1">
   <label for="tab1">
     PRODUCE
   </label>
@@ -43,9 +43,9 @@ Template Name: A&E Ralph Series
         <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.JHan_.PicB_-640x4341.jpg" />
       </div>
       <div class="large-6 columns">
-        <p class="class="small-picture-title"">
+        <figcaption class="caption wp-caption-text">
           Rudy Carrillo works as a produce clerk and assistant to the produce manager at Westwood Ralphs. The employees help customers with their requests and fill gaps among the fruits and vegetables. (Jintak Han/Daily Bruin)
-        </p>
+        </figcaption>
       </div>
     </div>
 
@@ -63,20 +63,22 @@ Template Name: A&E Ralph Series
       "You're left alone kind of, and your success hinges on yourself; you don't necessarily have someone watching over you all the time," Warden said. "You have to have that intrinsic motivation to get things done."
     </p>
 
-    <div class="row full-width">
+    <div class="row image-snippet full-width">
       <div class="large-6 columns">
         <div class = "row">
           <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.JHan_.PicA_-215x3001.jpg" />
         </div>
-        <div class = "row small-picture-caption">
-          <p>Carrillo juggles his 48-hour workweek at the Westwood Ralphs with a second job at LAX as a baggage handler. (Jintak Han/Daily Bruin)</p>
+        <div class = "row">
+          <figcaption class="caption wp-caption-text">
+            Carrillo juggles his 48-hour workweek at the Westwood Ralphs with a second job at LAX as a baggage handler. (Jintak Han/Daily Bruin)
+          </figcaption>
         </div>
       </div>
 
-      <div class="large-6 columns small-picture-title">
-        <h2>
-        "I don't think about it," Carrillo said. "I just do it, I don't stress about it, it's like a routine."
-        </h2>
+      <div class="large-6 columns">
+        <p class="small-picture-title">
+        On a typical day, Carrillo gets home from his shift at LAX at 2:15 a.m. His alarm for his shift at Ralphs rings at 4:30 a.m.
+        </p>
       </div>
     </div>
 
@@ -141,7 +143,7 @@ Template Name: A&E Ralph Series
       </div>
 
       <div class="large-6 columns">
-        <h2>Behind the Counter: Westwood Ralphs bakery</h2>
+        <h2>Behind the Counter: at Westwood Ralphs bakery</h2>
         <br />
         <h2>By: Shreya Aiyar </h2>
       </div>
@@ -151,9 +153,9 @@ Template Name: A&E Ralph Series
         <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.ZH_-640x4161.jpg" />
       </div>
       <div class="large-6 columns">
-        <p class="caption-text">
+        <figcaption class="caption wp-caption-text">
           (Zoe Hessler/Daily Bruin)
-        </p>
+        </figcaption>
       </div>
     </div>
 
@@ -177,13 +179,15 @@ Template Name: A&E Ralph Series
       Castellon arrives at the store at 3:30 a.m. to begin decorating the cakes and cupcakes. In anticipation of the holiday season, Valentine's Day, Halloween and Mother's Day, she arrives at 2 in the morning to accommodate the increased demand.
     </p>
 
-    <div class="row full-width">
+    <div class="row image-snippet full-width">
       <div class="large-6 columns">
         <div class = "row">
           <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.ZH_.PicA_-300x2001.jpg"  />
         </div>
-        <div class="row small-picture-caption">
-          <p>Ralphs bakery employee Jasmine Melendez showcases the specialty cakes designed each morning by main cake decorator Brenda Castellon. Melendez has been working in the bakery for six years. (Zoe Hessler/Daily Bruin)</p>
+        <div class="row">
+          <figcaption class="caption wp-caption-text">
+            Ralphs bakery employee Jasmine Melendez showcases the specialty cakes designed each morning by main cake decorator Brenda Castellon. Melendez has been working in the bakery for six years. (Zoe Hessler/Daily Bruin)
+          </figcaption>
         </div>
       </div>
 
@@ -252,8 +256,9 @@ Template Name: A&E Ralph Series
         <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli.JH_-640x4261.jpg" />
       </div>
       <div class="large-6 columns">
-        <p class="caption-text">
-          The employees at Westwood Ralphs deli work with pastas, salads, meats and cheeses for the lunch rush. Timothy Kauthen (left) hopes to perform theater in New York someday, while his coworkers are passionate about horror literature, family counseling, photography and fashion. (Jennifer Hu/Daily Bruin)             </p>
+        <figcaption class="caption wp-caption-text">
+          The employees at Westwood Ralphs deli work with pastas, salads, meats and cheeses for the lunch rush. Timothy Kauthen (left) hopes to perform theater in New York someday, while his coworkers are passionate about horror literature, family counseling, photography and fashion. (Jennifer Hu/Daily Bruin)
+        </figcaption>
       </div>
     </div>
     <div class="row content-text">
@@ -270,13 +275,15 @@ Template Name: A&E Ralph Series
       Kauthen said he began in the performing arts in middle school, singing with his class. After entering high school, he participated in choir groups, drama classes and musicals like "Little Shop of Horrors" and "Legally Blonde."
     </p>
 
-    <div class="row full-width">
+    <div class="row image-snippet full-width">
       <div class="large-6 columns">
         <div class = "row">
           <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli2.JH_-300x2001.jpg" />
         </div>
-        <div class = "row small-picture-caption">
-          <p>Timothy Kauthen (far right), has worked at the Ralphs deli since April. Beyond the deli, Kauthen has dreams of performing in a musical production in New York City. (Jennifer Hu/Daily Bruin)</p>
+        <div class = "row">
+          <figcaption class="caption wp-caption-text">
+            Timothy Kauthen (far right), has worked at the Ralphs deli since April. Beyond the deli, Kauthen has dreams of performing in a musical production in New York City. (Jennifer Hu/Daily Bruin)
+          </figcaption>
         </div>
       </div>
       <div class="large-6 columns">
@@ -324,16 +331,12 @@ Template Name: A&E Ralph Series
       Outside of the meat department, Claribel Mata, a Ralphs employee since August, finishes her shift around 2 p.m. by making one last Holy Pepper Inferno grilled cheese, a spicy customer favorite among those who come to Ralphs deli for lunch.
     </p>
 
-    <div class="row three-images">
-      <div class="large-6 columns">
-          <img class="center-image"src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli4.JH_-300x2001.jpg" />
-          <img style="margin-top: 20px"class="center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli3.JH_-300x2001.jpg" />
-      </div>
-
-      <div class="large-6 columns">
-          <img class="" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli5.JH_-300x2001.jpg" />
-          <p style="margin-top: 25%;">Photos taken by: (Jennifer Hu/Daily Bruin)</p>
-      </div>
+    <div class="row image-snippet">
+      <img style="margin-left:14%;" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli5.JH_-300x2001.jpg" />
+      <img style="margin-right:12%;" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli3.JH_-300x2001.jpg" />
+      <figcaption class="caption wp-caption-text center-text">
+        Photos taken by: (Jennifer Hu/Daily Bruin)
+      </figcaption>
     </div>
 
     <p>
@@ -351,16 +354,16 @@ Template Name: A&E Ralph Series
     </p>
     </div>
 
+    <p class="footer">
+      Page design by Howard Huang, Jennifer Tan, and Michael Zhang &copy; Daily Bruin 2016
+    </p>
   </div>
 
   <div id="tab-content4" class="tab-content">
       <h3 class="tab-title tab-title4 full-width">Upcoming...</h3>
       <p class="content-text">To be replaced!</p>
   </div>
-</div>
 
-<p class="footer">
-  Page design by Howard Huang, Jennifer Tan, and Michael Zhang &copy; Daily Bruin 2016
-</p>
+</div>
 
 <?php get_footer(); ?>
