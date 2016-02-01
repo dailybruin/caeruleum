@@ -354,9 +354,6 @@ Template Name: A&E Ralph Series
     </p>
     </div>
 
-    <p class="footer">
-      Page design by Howard Huang, Jennifer Tan, and Michael Zhang &copy; Daily Bruin 2016
-    </p>
   </div>
 
   <div id="tab-content4" class="tab-content">
@@ -365,5 +362,9 @@ Template Name: A&E Ralph Series
   </div>
 
 </div>
+
+  <p class="footer">
+    Page design by Howard Huang, Jennifer Tan, and Michael Zhang &copy; Daily Bruin 2016
+  </p>
 
 <?php get_footer(); ?>

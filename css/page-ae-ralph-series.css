@@ -44,7 +44,7 @@
     list-style: none;
     padding: 0;
     margin: 0px 0px 75px;
-    border-bottom: 4px solid #ccc;
+
 }
 .tabs:after {
     content: '';
@@ -220,6 +220,7 @@
 }
 
 .footer{
+  margin-top: 20px;
   text-align: center;
   font-size: 1.2em
 }
