@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Yesteryear);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 /*STYLES*/
@@ -20,7 +19,7 @@
 }
 
 .main-title-second{
-  font-family: 'Yesteryear' !important;
+  font-family: 'Yesteryear', cursive;
   text-align: center;
   color: white;
   font-size: 15em;

@@ -3,7 +3,10 @@ Template Name: A&E Ralph Series
 */ ?>
 <?php get_header(); ?>
 
-<link href='../css/page-ae-ralph-series.css' rel='stylesheet' type='text/css'>
+<head>
+  <link href='../css/page-ae-ralph-series.css' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+</head>
 
 <div class="row top-bar full-width">
   <h1 class="main-title-first">Behind The</h1><br />
@@ -11,7 +14,7 @@ Template Name: A&E Ralph Series
 </div>
 <div class="tabs full-width">
   <!-- Radio button and lable for #tab-content1 -->
-  <input type="radio" name="tabs" id="tab1">
+  <input type="radio" name="tabs" id="tab1" checked>
   <label for="tab1">
     PRODUCE
   </label>
