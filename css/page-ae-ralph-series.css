@@ -22,7 +22,7 @@
   font-family: 'Yesteryear', cursive;
   text-align: center;
   color: white;
-  font-size: 15em;
+  font-size: 20em;
   width: 100%;
   margin-top: -50px;
 }
@@ -243,7 +243,7 @@ h2{
 
 /*RESPONSIVE*/
 /* Smartphones (portrait and landscape) ----------- */
-@media (max-width: 800px){
+@media (max-width: 680px){
   .tabs i {
     padding: 5px;
     margin-right: 10px;
@@ -253,7 +253,7 @@ h2{
   }
   .tabs {
   max-width: 100%;
-  margin: -75px auto 75px;
+  margin: 0px auto 75px;
   }
   .main-title-first{
     font-size: 4em;
@@ -263,7 +263,30 @@ h2{
   }
 
   .title-picture{
-    margin-top: -150px;
+    margin-top: -30px;
   }
 
+  .top-bar{
+    height: 300px;
+  }
+
+  .tabs label{
+    width: 23%;
+  }
+}
+
+@media (min-width:680px) and (max-width:1000px){
+  .tabs label{
+    width: 23%;
+  }
+
+  .title-picture{
+    margin-top: -50px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1300px){
+  .tabs label{
+    width: 23%;
+  }
 }

@@ -9,8 +9,8 @@ Template Name: A&E Ralph Series
 </head>
 
 <div class="row top-bar full-width">
-  <h1 class="main-title-first">Behind The</h1><br />
-  <h1 class="main-title-second">Counter</h1>
+  <p class="main-title-first">Behind The</p><br />
+  <p class="main-title-second">Counter</p>
 </div>
 <div class="tabs full-width">
   <!-- Radio button and lable for #tab-content1 -->
@@ -26,9 +26,9 @@ Template Name: A&E Ralph Series
   <label for="tab3">
     DELI
   </label>
-  <input type="radio" name="tabs" id="tab4">
+  <input type="radio" name="tabs">
   <label for="tab4">
-    TBD
+    Coming Soon
   </label>
   <div id="tab-content1" class="tab-content">
     <div class="row tab-title tab-title1 full-width">
