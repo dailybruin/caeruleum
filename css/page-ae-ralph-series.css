@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+/*STYLES*/
+.full-width {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+/*HEADER*/
+.main-title-first{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 7em;
+}
+
+.main-title-second{
+  font-family: 'Yesteryear', cursive;
+  text-align: center;
+  color: white;
+  font-size: 20em;
+  width: 100%;
+  margin-top: -50px;
+}
+
+.top-bar{
+  height: 500px;
+  background-image: url("http://dailybruin.com/images/2016/01/HeaderGradient.jpg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/*TABS*/
+
+.tabs {
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 0px 0px 75px;
+
+}
+.tabs:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tabs input[type=radio] {
+    display:none;
+}
+
+.tabs label {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: 'Roboto Slab', serif;
+    display: block;
+    width: 24.82%;
+    color: #ccc;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    color: black;
+    box-shadow: inset 0 4px #ccc;
+    border-bottom: 4px solid #ccc;
+    border-right: 4px solid #ccc;
+    border-left: 4px solid #ccc;
+    -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+}
+
+.tabs label span {
+    display: none;
+}
+.tabs label i {
+    padding: 5px;
+    margin-right: 0;
+}
+.tabs label:hover {
+    color: #3498db;
+    box-shadow: inset 0 4px #3498db;
+    border-bottom: 4px solid #3498db;
+    border-right: 4px solid #3498db;
+    border-left: 4px solid #3498db;
+}
+.tab-content {
+    display: none;
+    width: 100%;
+    float: left;
+    background-color:#ffffff;
+}
+
+.content-text{
+    -webkit-animation: scale 1.0s ease-in-out;
+    -moz-animation: scale 1.0s ease-in-out;
+    animation: scale 1.0s ease-in-out;
+    margin-top: 2%;
+    padding: 0% 10% 5% 10%;
+}
+
+/*animation*/
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+    }
+  50% {
+    transform: scale(1.01);
+    opacity: 0.5;
+    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.tabs [id^="tab"]:checked + label {
+    box-shadow: inset 0 4px #3498db;
+    border-bottom: 4px solid #3498db;
+    color: #FFF;
+}
+
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3,
+#tab4:checked ~ #tab-content4 {
+    display: block;
+}
+/* 4 TABS */
+.tabs [id^="tab1"]:checked + label {
+  border-bottom: 4px solid #00B537;
+  border-right: 4px solid #3498db;
+  border-left: 4px solid #3498db;
+  background-color: #00B537;
+}
+
+.tab-title1{
+  background-color: #00B537;
+}
+
+.tabs [id^="tab2"]:checked + label {
+  border-bottom: 4px solid #900E00;
+  border-right: 4px solid #3498db;
+  border-left: 4px solid #3498db;
+  background-color: #900E00;
+}
+
+.tab-title2{
+  background-color: #900E00;
+}
+
+.tabs [id^="tab3"]:checked + label {
+  border-bottom: 4px solid #FFCC00;
+  border-right: 4px solid #3498db;
+  border-left: 4px solid #3498db;
+  background-color: #FFCC00;
+}
+
+.tab-title3{
+  background-color: #FFCC00;
+}
+
+.tabs [id^="tab4"]:checked + label {
+  border-right: 4px solid #3498db;
+  border-left: 4px solid #3498db;
+  border-bottom: 4px solid #368BFF;
+  background-color: #368BFF;
+}
+
+.tab-title4{
+  background-color: #368BFF;
+}
+
+.tab-title{
+  font-family: 'Roboto Slab', serif;
+  color:white;
+  padding: 2% 5% 0% 5%;
+  height: 340px;
+  margin-top: 0px;
+}
+
+.title-picture{
+  margin-top: -300px;
+}
+
+.caption-text{
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  padding-top: 2%;
+  opacity: .9;
+}
+
+.small-picture-title{
+  padding: 3%;
+  opacity: .8;
+  font-size: 3em;
+}
+
+.small-picture-caption{
+  padding: 1%;
+  font-size: .7em;
+}
+
+.center-image{
+  display: block;
+  margin: 0 auto;
+}
+
+.three-images{
+  margin: 2% 0px;
+}
+
+.footer{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em
+}
+
+p{
+  font-size: 1.5em;
+}
+
+h2{
+  font-size: 3em;
+  color: white !important;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.image-snippet{
+  margin: 15px 0px !important;
+}
+
+/*RESPONSIVE*/
+/* Smartphones (portrait and landscape) ----------- */
+@media (max-width: 680px){
+  .tabs i {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .tabs label{
+      font-size: 18px;
+  }
+  .tabs {
+  max-width: 100%;
+  margin: 0px auto 75px;
+  }
+  .main-title-first{
+    font-size: 4em;
+  }
+  .main-title-second{
+    font-size: 12em;
+  }
+
+  .title-picture{
+    margin-top: -30px;
+  }
+
+  .top-bar{
+    height: 300px;
+  }
+
+  .tabs label{
+    width: 23%;
+  }
+}
+
+@media (min-width:680px) and (max-width:1000px){
+  .tabs label{
+    width: 23%;
+  }
+
+  .title-picture{
+    margin-top: -50px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1300px){
+  .tabs label{
+    width: 23%;
+  }
+}
