@@ -22,6 +22,17 @@
                 printf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
               } elseif (is_author()) {
                 printf(__('Author Archives: %s', 'roots'), get_the_author());
+                if(true){ //check to see if user has box bio stuff
+                  ?>
+                  <!-- <div class="author-box">
+                    <img src="http://121clicks.com/wp-content/uploads/2012/04/portrait_eyes_23.jpg"> 
+                    <h4> <?php printf(get_the_author()) ?>| <h4><h4 class="title"> Design Director</h4>
+                    <p class="description">Emaan Baqai is the Design director at the Daily Bruin. She has been on staff since 2013, and works
+                    as an Arts & Entertainment reporter, photographer, and designer.</p>
+                  </div> -->
+
+                  <?php
+                }
               } else {
                 $sectionPage = true;
                 switch ($categoryTitle)
@@ -43,6 +54,13 @@
                     break;
                   case "Social Commentary":
                     the_blog_banner('two-cents-social-commentary');
+                    break;
+                  case "The Quad":
+                    $directoryurl = get_stylesheet_directory_uri();
+                    $result = '<img src="' . $directoryurl . '/img/quad.svg">
+                    <p class="quad-explainer">Royce Quad was once an epicenter of student life at UCLA. Now, in the digital age, the Quad is an attempt to recreate these discussion spaces online. Come to the Quad for analysis, explanation and student narratives about life on and off campus, within and without Westwood.</p>
+                    <p class="quad-explainer">Students are welcome to submit blog posts at <a href="mailto:quad@media.ucla.edu" style="color: #0080c6">quad@media.ucla.edu</a>. Submissions are subject to the same <a href="/submit" style="color: #0080c6">guidelines for opinion content</a>, with the exception of increased flexibility for word count (300-900 words).</p>';
+                    echo $result;
                     break;
                 	default:
                 		echo $categoryTitle;
