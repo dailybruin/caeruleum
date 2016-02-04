@@ -13,6 +13,8 @@
 .main-title-first{
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  padding-top: 50px;
+  margin-bottom: -40px;
   color: white;
   width: 100%;
   font-size: 7em;
@@ -136,47 +138,47 @@
 }
 /* 4 TABS */
 .tabs [id^="tab1"]:checked + label {
-  border-bottom: 4px solid #00B537;
+  border-bottom: 4px solid #4CCB73;
   border-right: 4px solid #3498db;
   border-left: 4px solid #3498db;
-  background-color: #00B537;
+  background-color: #4CCB73;
 }
 
 .tab-title1{
-  background-color: #00B537;
+  background-color: #4CCB73;
 }
 
 .tabs [id^="tab2"]:checked + label {
-  border-bottom: 4px solid #900E00;
+  border-bottom: 4px solid #B1564C;
   border-right: 4px solid #3498db;
   border-left: 4px solid #3498db;
-  background-color: #900E00;
+  background-color: #B1564C;
 }
 
 .tab-title2{
-  background-color: #900E00;
+  background-color: #B1564C;
 }
 
 .tabs [id^="tab3"]:checked + label {
-  border-bottom: 4px solid #FFCC00;
+  border-bottom: 4px solid #FFDE5A;
   border-right: 4px solid #3498db;
   border-left: 4px solid #3498db;
-  background-color: #FFCC00;
+  background-color: #FFDE5A;
 }
 
 .tab-title3{
-  background-color: #FFCC00;
+  background-color: #FFDE5A;
 }
 
 .tabs [id^="tab4"]:checked + label {
   border-right: 4px solid #3498db;
   border-left: 4px solid #3498db;
-  border-bottom: 4px solid #368BFF;
-  background-color: #368BFF;
+  border-bottom: 4px solid #5EA2FF;
+  background-color: #5EA2FF;
 }
 
 .tab-title4{
-  background-color: #368BFF;
+  background-color: #5EA2FF;
 }
 
 .tab-title{
@@ -189,6 +191,10 @@
 
 .title-picture{
   margin-top: -300px;
+}
+
+.title-picture4{
+  margin-top: -280px;
 }
 
 .caption-text{
@@ -241,6 +247,10 @@ h2{
   margin: 15px 0px !important;
 }
 
+.byline{
+  font-size: 2em;
+}
+
 /*RESPONSIVE*/
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width: 680px){
@@ -249,7 +259,7 @@ h2{
     margin-right: 10px;
   }
   .tabs label{
-      font-size: 18px;
+      font-size: 13px;
   }
   .tabs {
   max-width: 100%;
@@ -263,7 +273,11 @@ h2{
   }
 
   .title-picture{
-    margin-top: -30px;
+    margin-top: -85px;
+  }
+
+  .title-picture4{
+    margin-top: -85px;
   }
 
   .top-bar{
@@ -273,6 +287,14 @@ h2{
   .tabs label{
     width: 23%;
   }
+
+  h2{
+    font-size: 2em;
+  }
+
+  .main-title-first{
+    margin-bottom: -20px;
+  }
 }
 
 @media (min-width:680px) and (max-width:1000px){
@@ -281,6 +303,10 @@ h2{
   }
 
   .title-picture{
+    margin-top: -50px;
+  }
+
+  .title-picture4{
     margin-top: -50px;
   }
 }

@@ -26,9 +26,9 @@ Template Name: A&E Ralph Series
   <label for="tab3">
     DELI
   </label>
-  <input type="radio" name="tabs">
+  <input type="radio" name="tabs" id="tab4">
   <label for="tab4">
-    Coming Soon
+    SUSHI
   </label>
   <div id="tab-content1" class="tab-content">
     <div class="row tab-title tab-title1 full-width">
@@ -38,7 +38,7 @@ Template Name: A&E Ralph Series
       <div class="large-6 columns">
         <h2>Behind the Counter: Employees of Ralphs produce department discuss their busy schedules</h2>
         <br />
-        <h2>By: Erin Nyren</h2>
+        <p class="byline">By: Erin Nyren</p>
       </div>
     </div>
     <div class="row">
@@ -148,7 +148,7 @@ Template Name: A&E Ralph Series
       <div class="large-6 columns">
         <h2>Behind the Counter: at Westwood Ralphs bakery</h2>
         <br />
-        <h2>By: Shreya Aiyar </h2>
+        <p class="byline">By: Shreya Aiyar </p>
       </div>
     </div>
     <div class="row">
@@ -251,7 +251,7 @@ Template Name: A&E Ralph Series
       <div class="large-6 columns">
         <h2>Behind the Counter: Ralphs deli employees dish on aspirations, artistic passions</h2>
         <br />
-        <h2>By: Nate Nickolai</h2>
+        <p  class="byline">By: Nate Nickolai</p>
       </div>
     </div>
     <div class="row">
@@ -360,8 +360,50 @@ Template Name: A&E Ralph Series
   </div>
 
   <div id="tab-content4" class="tab-content">
-      <h3 class="tab-title tab-title4 full-width">Upcoming...</h3>
-      <p class="content-text">To be replaced!</p>
+    <div class="row tab-title tab-title4 full-width">
+      <div class="large-6 columns">
+      </div>
+
+      <div class="large-6 columns">
+        <h2>Behind the Counter: Internationally trained chefs roll out sushi at Ralphs</h2>
+        <br />
+        <p class="byline">By: Sarah Ahern</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 columns">
+        <img class="title-picture4" src="http://dailybruin.com/images/2016/02/web.news_.sushi_.JST_-640x3601.jpg" />
+      </div>
+      <div class="large-6 columns">
+        <figcaption class="caption wp-caption-text">
+          The sushi chefs at the Ralphs in Westwood trained at international culinary institutes and now serve up sushi rolls of rice and fish to local customers. (Justine Sto.Tomas/Daily Bruin senior staff)
+        </figcaption>
+      </div>
+    </div>
+    <div class="row content-text">
+      <p>Customers saunter<b> </b>around<b> </b>the sushi counter, eyeing moist slices of fresh salmon and tuna<b> </b>resting upon fluffy mountains of rice. While the customers deliberate on what they will choose for the day&#8217;s lunch, the chefs work swiftly behind the counter preparing the fish, cooking the rice and diligently fashioning the sushi to maintain an inviting presentation.</p>
+      <p>But chefs had to travel far to put the sushi on the shelves. Min Mynt, the sous chef at the Westwood Ralphs sushi counter, traveled nearly 8,000 miles from his home in Myanmar to take his culinary skills to the United States.</p>
+      <p>Mynt has been working at Ralphs for <b></b>six months, but has been crafting sushi for much longer. He attended culinary school in Yangon, Myanmar, where he focused on Asian cuisine.</p>
+      <div class="flex-video">
+        <div class="entry-content-asset"><iframe width="620" height="349" src="https://www.youtube.com/embed/5apZ4dzGE_8?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+      <p>“I know a lot about Asian food by now, but sushi is my favorite thing to make,” Mynt said.</p>
+      <p>Mynt<b> </b>worked as a sous chef at the Geisha House in West Hollywood. His next endeavor was Westwood&#8217;s Ralphs, where he hopes to acquire<b> </b>the necessary skills to become the next franchisee for the Advanced Fresh Concepts Franchise Corporation, the store&#8217;s sushi supplier. Mynt said AFC will soon be looking for a new franchisee.</p>
+      <p>“I have a lot of friends that are already franchisees so I know a lot about how it works,” Mynt said. “But for me, there is a lot more I want to learn about how to run a sushi bar, especially management. I want to learn every single possible thing before I take that position.”</p>
+      <p><b></b>Running the sushi bar begins with adhering to a rigid and consistent sushi-making schedule on a day-to-day basis. When employees come in each morning, the first thing they do is make rice. They test the<b> </b>pH <b></b>of the rice to ensure a perfect balance of rice and water, giving the rice its sticky consistency and serving as the structure for a sushi roll.</p>
+      <p>At 6 a.m., <b></b>the employees pull out their rolling mats and put on their chefs&#8217; hats.<b> </b>Preparation ranges from quicker rolls such as the California roll, to more complex ones such as hybrid sushi, which is served on a large platter and consists of a rainbow of<b> </b>fish including yellowtail, halibut and salmon. Mynt said the platters require the most effort to make, which makes the process longer.</p>
+      <p>“There are so many items here, I can’t even remember all the names,” Mynt said as he pointed to drawers full of sushi labels<b></b>. A tablet rests next to the drawers, which is used exclusively for making the labels on the sushi boxes.</p>
+      <p>Mynt said he impresses upon his team that one of the most important aspects of making<b> </b>sushi is to craft it the sushi as visually appealing as possible.</p>
+      <p>“A lot of people come to the bar, but my question is,<b> </b>&#8216;What do you do first?&#8217; You’re going to look at the sushi,” Mynt said. “You want a beautiful presentation, or you won’t buy it. The way it looks is going to make you pick it up.”</p>
+      <p>Yasutaka Kawamura, a sushi chef, started working at Ralphs in May, but is no stranger to the art of sushi making. Kawamura went to a sushi institute culinary school in Japan, and placed third in the World Sushi Cup in 2012. While he also has his teaching credentials and a black belt in karate, Kawamura said his true passion derives from the challenges that come with making sushi.<b> </b></p>
+      <p>“Every year there is a new favorite sushi that people like, so it’s always challenge, challenge, challenge, and that’s good,” Kawamura said.</p>
+      <p>Mynt prepared California rolls with one of the newly filed knives<b>, </b>which is key to cutting the sushi for an aesthetic display. He carefully spread the sticky rice onto the nori, <b></b>sprinkled on the sesame seeds and added slices of imitation crab, cucumber and avocado, then rolled the sushi<b> </b>using a bamboo mat to firmly shape the roll before slicing. Finally, the last step before packaging: He sliced the roll into eight pieces, which were all the same size to allow for a neat presentation.</p>
+      <p>Antonio Gonzales, a manager at Ralphs, said<b> </b>the employees at the sushi counter work conscientiously to preserve the appearance of the sushi.</p>
+      <p>&#8220;These guys are like machines,&#8221; Gonzales said. &#8220;It&#8217;s definitely amazing to see how fast they work to produce the sushi and how organized they are while doing so.&#8221;</p>
+      <p>Until Mynt eventually reaches his goal of becoming a franchisee, he will continue to appreciate serving customers, and said they have been the source of some of his best memories at the store.</p>
+      <p>“I just really like to make sushi,” Mynt said. “That is my living job and I respect it.”</p>
+    </div>
+
   </div>
 
 </div>
