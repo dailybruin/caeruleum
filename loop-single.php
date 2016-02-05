@@ -158,8 +158,8 @@
             <p>
             <?php 
 				if(get_field('corrections') != ''):?>
-				<b>Correction: </b> 
-				<?php echo get_field('corrections')?>
+                <!-- <b>Correction: </b> -->				
+                <?php echo get_field('corrections')?>
 			<?php endif; ?>
             </p>
           </div>
@@ -234,8 +234,58 @@
 				        }
 				    }?>
 				</p>
-	</div><!-- end div.post-content -->
-</div><!-- end div.entry-content -->
+
+				<!--Author Box -->
+			    <div class="author-wrapper">
+	                <div class="row author-box">
+	                  <div class="large-12 medium-12 small-12 columns author-title">
+	                    <div class="author-header">
+	                    	<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>">
+	                    		<?php echo get_the_author() ?>
+	                    	</a> | 
+	                    </div>
+	                    <div class="author-position">Design Director</div>
+	                  </div>
+	                </div>
+	              <div class="bio row">
+	                <div class="image large-2 small-4 medium-2 columns">     
+	                  <?php echo get_avatar( get_the_author_meta( 'ID' ) ); ?>
+	                </div>
+	                <div class="description large-10 small-8 medium-10 columns">
+	                  <?php if (get_the_author_meta('description')): ?>
+	                    <p class="bio-text">Emaan Baqai is the Design director at the Daily Bruin. 
+	                        She has been on staff since 2013, and works as an Arts & Entertainment reporter, photographer, and designer.
+	                        <?php echo get_the_author_meta('description') ?>
+	                    </p>
+	                  <?php endif; ?>
+	                  <div class="row contact-info-wrapper">
+	                    <?php if ( get_the_author_meta('user_email') || get_the_author_meta( 'twitter' ) ): ?>
+	                    <div class="contact large-2 medium-2 columns show-for-medium-up">
+	                      <p class="contact">contact</p>
+	                    </div>
+	                    <?php endif; ?>
+	                    <div class="email large-4 medium-5 small-12 columns">
+	                      <?php if ( get_the_author_meta('user_email')): ?>
+	                      <p><span class="entypo-mail"></span>
+	                       <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
+	                        <?php the_author_meta('user_email'); ?>
+	                      </a></p>
+	                      <?php endif; ?>
+	                    </div>
+	                    <div class="twitter large-6 medium-5 small-12 columns">
+	                      <?php if ( get_the_author_meta( 'twitter' )): ?>
+	                        <p><span class="entypo-twitter"></span>  
+	                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
+	                          <?php the_author_meta('twitter' );?>
+	                        </a>
+	                      <?php endif; ?>
+	                    </div>
+	                  </div>
+	                </div>                   
+	              </div>
+            	</div>
+			</div><!-- end div.post-content -->
+		</div><!-- end div.entry-content -->
 
 		<hr>
 		<p id="comment-policy">Comments are supposed to create a forum for thoughtful, respectful community discussion. Please be nice. <a href="<?php echo get_permalink( get_page_by_path( 'comment-policy' ) ); ?>">View our full comments policy here.</a></p>
