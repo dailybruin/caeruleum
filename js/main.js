@@ -188,21 +188,13 @@ $(document).ready(function() {
 		}
 		// All mobile sizes
 		if(window.matchMedia("(max-width: 979px)").matches) {
-			$('#ad-banner-top').html(ads['banner_small']);
-			$('#ad-banner-small').html(ads['banner_small']);
-			$('#side-ad').html(ads['square_1']);
-			$('#side-ad-low1').html(ads['square_2']);
-			$('#side-ad-low2').html(ads['square_3']);
-			$('#ad-house').html(ads['house']);
-			$('#banner-bottom').html(ads['banner_large']);
-			$('#ad-tower').html(ads['tower']);
-			// $('#ad-banner-top').html('');
-			// $('#ad-banner-small').html('');
-			// $('#side-ad').html('');
-			// $('#side-ad-low1').html('');
-			// $('#side-ad-low2').html('');
-			// $('#ad-house').html('');
-			// $('#ad-tower').html('');
+			$('#ad-banner-top').html('');
+			$('#ad-banner-small').html('');
+			$('#side-ad').html('');
+			$('#side-ad-low1').html('');
+			$('#side-ad-low2').html('');
+			$('#ad-house').html('');
+			$('#ad-tower').html('');
 		}
 	
 	
