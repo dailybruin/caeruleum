@@ -1,5 +1,6 @@
 .medal {
-  max-width: 22vw;
+  width: 22vw;
+  max-width: 18rem;
   margin-right: 3vw;
 }
 
@@ -27,7 +28,13 @@
 
 #maintitle {
   display: inline;
-  font-size: 7vw;
+  font-size: 5.5rem;
+}
+
+@media only screen and (max-width: 70em) { 
+  #maintitle {
+    font-size: 6.5vw;
+  }
 }
 
 footer {
