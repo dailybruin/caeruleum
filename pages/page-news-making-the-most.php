@@ -25,8 +25,8 @@ Template Name: News - Making the Most
     <p class="explainer">The Daily Bruin interviews the five True Bruin Distinguished Senior Scholarship Award winners, who were chosen based on their ability to embody integrity, excellence, accountability, respect and service.</p>
 
     <ul class="tabs" data-tab="" data-options="deep_linking:true; scroll_to_content: false">
-      <li class="tab-title"><a href="#Arami-Walker">Arami Walker</a></li>
-      <li class="tab-title active"><a href="#Michael-Anderson">Michael Anderson</a></li>
+      <li class="tab-title active"><a href="#Arami-Walker">Arami Walker</a></li>
+      <li class="tab-title"><a href="#Michael-Anderson">Michael Anderson</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
