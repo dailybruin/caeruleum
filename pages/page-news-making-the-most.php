@@ -207,6 +207,10 @@ Template Name: News - Making the Most
 
     // Force a window resize -- fixes problems with the gallery lol
     window.dispatchEvent(new Event('resize'));
+    
+    $(".tab-title").first().children().click(function() {
+      window.dispatchEvent(new Event('resize'));
+    });
   })();
 </script>
 
