@@ -8,6 +8,14 @@
   
 }
 
+#andersonmedal {
+    float: right;
+    width: 50%;
+    max-width: 20rem;
+    text-align: right;
+    margin-left: 1rem;
+}
+
 .gallerycaption {
   margin-top: 2rem;
   margin-bottom: 2rem;

@@ -49,7 +49,7 @@ Template Name: News - Making the Most
           <img class="gallery-img" src="http://dailybruin.com/images/2016/02/web.news_.walkerB.OE_.jpg">
 
         </div>
-        <p class="gallerycaption">Armi Walker, a fifth-year world arts and cultures student, worked to create a bilingual poetry and song album driven by her experiences. Walker is a winner of the True Bruin Distinguished Senior Award given to students who have demonstrated excellence and service through leadership on and off campus. (Owen Emerson/Daily Bruin senior staff)</p>
+        <p class="gallerycaption">Arami Walker, a fifth-year world arts and cultures student, worked to create a bilingual poetry and song album driven by her experiences. Walker is a winner of the True Bruin Distinguished Senior Award given to students who have demonstrated excellence and service through leadership on and off campus. (Owen Emerson/Daily Bruin senior staff)</p>
         <!-- STORY GOES HERE -->
         <div class="article">
           <p>In March, Arami Walker took the stage to perform with a popular Argentinian band at a crowded Buenos Aires club. She spoke to the audience of locals in Spanish, a language she only learned a couple months before.</p>
@@ -118,8 +118,12 @@ Template Name: News - Making the Most
           <p class="gallerycaption">Michael Anderson, a fourth-year applied mathematics student, helped create a satellite that will go into space next year. Anderson is one of five students to win the True Bruin Distinguished Senior Award. (Owen Emerson/Daily Bruin senior staff)</p>
 
          <div class="article">
+         <div id="andersonmedal">
+           <img src="http://dailybruin.com/images/2016/02/news-anderson-medal.jpg">
+           <p>(Rachel Zhu/Daily Bruin)</p>
+         </div>
          <p>  In 2017, Michael Anderson will watch the UCLA Mission Operations Center launch his satellite into space.</p>
-
+         
          <p> Anderson, a fourth-year applied mathematics student, was the chief engineer for the Electron Losses and Fields Investigation CubeSat, or ELFIN, the first satellite built by UCLA students. The satellite, about the size of a loaf of bread, will collect data on how electrons in Earth's radiation belts are scattered by different electromagnetic waves.</p>
 
          <p> "It was kind of crazy to think in a couple of years I’m going to be putting something into space," Anderson said.</p>
