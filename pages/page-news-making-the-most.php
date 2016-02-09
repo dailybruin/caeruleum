@@ -25,8 +25,8 @@ Template Name: News - Making the Most
     <p class="explainer">The Daily Bruin interviews the five True Bruin Distinguished Senior Scholarship Award winners, who were chosen based on their ability to embody integrity, excellence, accountability, respect and service.</p>
 
     <ul class="tabs" data-tab="" data-options="deep_linking:true; scroll_to_content: false">
-      <li class="tab-title active"><a href="#Arami-Walker">Arami Walker</a></li>
-      <li class="tab-title"><a href="#Michael-Anderson">Michael Anderson</a></li>
+      <li class="tab-title"><a href="#Arami-Walker">Arami Walker</a></li>
+      <li class="tab-title active"><a href="#Michael-Anderson">Michael Anderson</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
@@ -112,65 +112,65 @@ Template Name: News - Making the Most
         </div>
       </div>
 
-      <div id="#Michael-Anderson" class="content">
-        <img class="gallery-img" src="http://dailybruin.com/images/2016/02/web.news_.walkerB.OE_.jpg">
+      <div id="Michael-Anderson" class="content">
+          <img class="header-img" src="http://dailybruin.com/images/2016/02/web.ns_.anderson.OE_.PicA_-640x426.jpg">
 
-        <p class="gallerycaption">Michael Anderson, a fourth-year applied mathematics student, helped create a satellite that will go into space next year. Anderson is one of five students to win the True Bruin Distinguished Senior Award. (Owen Emerson/Daily Bruin senior staff)</p>
+          <p class="gallerycaption">Michael Anderson, a fourth-year applied mathematics student, helped create a satellite that will go into space next year. Anderson is one of five students to win the True Bruin Distinguished Senior Award. (Owen Emerson/Daily Bruin senior staff)</p>
 
          <div class="article">
-        <p>  In 2017, Michael Anderson will watch the UCLA Mission Operations Center launch his satellite into space.</p>
+         <p>  In 2017, Michael Anderson will watch the UCLA Mission Operations Center launch his satellite into space.</p>
 
- <p> Anderson, a fourth-year applied mathematics student, was the chief engineer for the Electron Losses and Fields Investigation CubeSat, or ELFIN, the first satellite built by UCLA students. The satellite, about the size of a loaf of bread, will collect data on how electrons in Earth's radiation belts are scattered by different electromagnetic waves.</p>
+         <p> Anderson, a fourth-year applied mathematics student, was the chief engineer for the Electron Losses and Fields Investigation CubeSat, or ELFIN, the first satellite built by UCLA students. The satellite, about the size of a loaf of bread, will collect data on how electrons in Earth's radiation belts are scattered by different electromagnetic waves.</p>
 
- <p> "It was kind of crazy to think in a couple of years I’m going to be putting something into space," Anderson said.</p>
+         <p> "It was kind of crazy to think in a couple of years I’m going to be putting something into space," Anderson said.</p>
 
- <p> Anderson recently won the True Bruin Distinguished Senior Award scholarship, which is given to five seniors who demonstrate leadership in service and academia, according to the award's website.</p>
+         <p> Anderson recently won the True Bruin Distinguished Senior Award scholarship, which is given to five seniors who demonstrate leadership in service and academia, according to the award's website.</p>
 
- <p> Lydia Bingley, project leader for ELFIN and a graduate student in geophysics and space physics, said ELFIN team members consider Anderson one of the founders of the project, and credit him for helping turn the idea into a reality.</p>
+         <p> Lydia Bingley, project leader for ELFIN and a graduate student in geophysics and space physics, said ELFIN team members consider Anderson one of the founders of the project, and credit him for helping turn the idea into a reality.</p>
 
- <p> As a first year, Anderson noticed a lot of renewed activity in the commercial space sector, which made him consider focusing his studies on aerospace engineering.</p>
+         <p> As a first year, Anderson noticed a lot of renewed activity in the commercial space sector, which made him consider focusing his studies on aerospace engineering.</p>
 
- <p> “I was watching a live-streamed spacewalk on my phone, and I thought it might be a good time to switch over to a south campus major," Anderson said. “I was hesitant to switch ... but when I did, I never looked back.”</p>
+         <p> “I was watching a live-streamed spacewalk on my phone, and I thought it might be a good time to switch over to a south campus major," Anderson said. “I was hesitant to switch ... but when I did, I never looked back.”</p>
 
- <p> As a second year, Anderson joined the UCLA Rocket Project, which cemented his decision to pursue aerospace sciences.</p>
+         <p> As a second year, Anderson joined the UCLA Rocket Project, which cemented his decision to pursue aerospace sciences.</p>
 
- <p> "The first day I showed up at the lab, I was making carbon fiber parts for the rocket body," Anderson said. "I thought, 'This is what I want to do for the next three years.'"</p>
+         <p> "The first day I showed up at the lab, I was making carbon fiber parts for the rocket body," Anderson said. "I thought, 'This is what I want to do for the next three years.'"</p>
 
- <p> Anderson said he had a difficult time fitting in at UCLA until he joined the Rocket Project.</p>
+         <p> Anderson said he had a difficult time fitting in at UCLA until he joined the Rocket Project.</p>
 
- <p> “That was when I first felt like I had a family on campus, and a community I connected with,” Anderson said. “I loved building rockets, and the people I was working with became my best friends.”</p>
+         <p> “That was when I first felt like I had a family on campus, and a community I connected with,” Anderson said. “I loved building rockets, and the people I was working with became my best friends.”</p>
 
- <p> Alan Anderson, Michael's father, said Michael was always focused on academics but never considered his interest in space as anything more than a hobby.</p>
+         <p> Alan Anderson, Michael's father, said Michael was always focused on academics but never considered his interest in space as anything more than a hobby.</p>
 
- <p> “He has always had an affinity for space,” Alan Anderson said. “The idea was always there, but it wasn’t until he got to UCLA that it could really thrive.”</p>
+         <p> “He has always had an affinity for space,” Alan Anderson said. “The idea was always there, but it wasn’t until he got to UCLA that it could really thrive.”</p>
 
- <p> After joining the Rocket Project, Anderson learned about the ELFIN project, which was nothing more than a concept at the time. Faculty members had repeatedly proposed the project since 2009, but there was no funding to get the project off the ground, Anderson said.</p>
+         <p> After joining the Rocket Project, Anderson learned about the ELFIN project, which was nothing more than a concept at the time. Faculty members had repeatedly proposed the project since 2009, but there was no funding to get the project off the ground, Anderson said.</p>
 
- <p> By 2013, Anderson and a group of fellow students had taken over the ELFIN project, developing plans for the satellite and hoping they would raise enough money to build it. In 2014, the NASA and the National Science Foundation awarded the ELFIN project a $1.2 million grant.</p>
+         <p> By 2013, Anderson and a group of fellow students had taken over the ELFIN project, developing plans for the satellite and hoping they would raise enough money to build it. In 2014, the NASA and the National Science Foundation awarded the ELFIN project a $1.2 million grant.</p>
 
- <p> “When you look at space, there’s so much stuff we haven’t even begun to explore yet,” Anderson said. "I wanted to be a part of those missions, out on the edge of pure exploration."</p>
+         <p> “When you look at space, there’s so much stuff we haven’t even begun to explore yet,” Anderson said. "I wanted to be a part of those missions, out on the edge of pure exploration."</p>
 
- <p> At the end of his second year, Anderson traveled with Bingley and the ELFIN team to Albuquerque, New Mexico, to present the project to an Air Force review board. Bingley said their project manager, who planned to give the presentation, fell ill the day before.</p>
+         <p> At the end of his second year, Anderson traveled with Bingley and the ELFIN team to Albuquerque, New Mexico, to present the project to an Air Force review board. Bingley said their project manager, who planned to give the presentation, fell ill the day before.</p>
 
- <p> "We were desperate and terrified, but Michael and I stayed up all night and prepared in eight hours for a presentation other students finished in two months," Bingley said. "It was an incredible experience, lifting each other up and supporting each other like that."</p>
+         <p> "We were desperate and terrified, but Michael and I stayed up all night and prepared in eight hours for a presentation other students finished in two months," Bingley said. "It was an incredible experience, lifting each other up and supporting each other like that."</p>
 
- <p> Anderson said his work on ELFIN led him to an eight-month aerospace engineering internship at Planetary Resources, Inc., where he worked on a spacecraft called the Arkyd 3. The spacecraft, named after a droid from Star Wars, exploded 15 seconds after its initial launch, Anderson said.</p>
+         <p> Anderson said his work on ELFIN led him to an eight-month aerospace engineering internship at Planetary Resources, Inc., where he worked on a spacecraft called the Arkyd 3. The spacecraft, named after a droid from Star Wars, exploded 15 seconds after its initial launch, Anderson said.</p>
 
- <p> "I saw it go up in flames (while I watched) the live stream from the ELFIN lab," Anderson said. "But luckily, we made multiple copies of everything."</p>
+         <p> "I saw it go up in flames (while I watched) the live stream from the ELFIN lab," Anderson said. "But luckily, we made multiple copies of everything."</p>
 
- <p> Last July, the Arkyd 3 Reflight was successfully deployed from the International Space Station. Scott Kelly, an astronaut aboard the International Space Station, took photos of the spacecraft and sent them to the company's team.</p>
+         <p> Last July, the Arkyd 3 Reflight was successfully deployed from the International Space Station. Scott Kelly, an astronaut aboard the International Space Station, took photos of the spacecraft and sent them to the company's team.</p>
 
- <p> "It’s really cool to see something you’ve worked on in space, with Earth in the background," Anderson said.</p>
+         <p> "It’s really cool to see something you’ve worked on in space, with Earth in the background," Anderson said.</p>
 
- <p> Anderson, now in his last quarter at UCLA, has applied to six graduate schools with aerospace engineering programs.</p>
+         <p> Anderson, now in his last quarter at UCLA, has applied to six graduate schools with aerospace engineering programs.</p>
 
- <p> “He’s going to get to do some things he’s always dreamed about,” Alan Anderson said. “For a lot of kids those are just dreams, but Michael’s going to make those dreams reality.”</p>
+         <p> “He’s going to get to do some things he’s always dreamed about,” Alan Anderson said. “For a lot of kids those are just dreams, but Michael’s going to make those dreams reality.”</p>
 
- <p> Anderson is currently working as an intern with The Aerospace Corporation, a nonprofit organization that provides technical advice and assessments to space missions. He said he uses his experience engineering ELFIN to develop satellite performance simulations.</p>
+         <p> Anderson is currently working as an intern with The Aerospace Corporation, a nonprofit organization that provides technical advice and assessments to space missions. He said he uses his experience engineering ELFIN to develop satellite performance simulations.</p>
 
- <p> Bingley said she thinks Anderson will be a leader, whether he ends up at a small company or a big one.</p>
+         <p> Bingley said she thinks Anderson will be a leader, whether he ends up at a small company or a big one.</p>
 
- <p> “He’s going to be inspiring a younger crowd, educating them and building them up,” Bingley said.</p>
+         <p> “He’s going to be inspiring a younger crowd, educating them and building them up,” Bingley said.</p>
          </div> <!--end of article-->
       </div> <!--end of micheal anderson tab-->
 
