@@ -187,6 +187,12 @@ ul.tabs li {
     margin-bottom: 30px;
 }
 
+.post-headline{
+	margin-top: 30px;
+	font-size: 3em;
+	text-align: center;
+}
+
 @media (max-width: 600px) {
   .content {
     max-width: 90%;
@@ -226,4 +232,5 @@ h3.part1, h3.part2, h3.part3{
 	margin-top: 0em;
   	margin-bottom: 2em;
 	}
+
 }
