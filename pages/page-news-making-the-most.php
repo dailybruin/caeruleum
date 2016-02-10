@@ -27,7 +27,7 @@ Template Name: News - Making the Most
     <ul class="tabs" data-tab="" data-options="deep_linking:true; scroll_to_content: false">
       <li class="tab-title active"><a href="#Arami-Walker">Arami Walker</a></li>
       <li class="tab-title"><a href="#Michael-Anderson">Michael Anderson</a></li>
-      <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
+      <li class="tab-title"><a href="#Christina-Springer">Christina Springer</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
       <li class="tab-title comingsoon"><a href="">Coming Soon</a></li>
     </ul>
@@ -177,6 +177,56 @@ Template Name: News - Making the Most
          <p> “He’s going to be inspiring a younger crowd, educating them and building them up,” Bingley said.</p>
          </div> <!--end of article-->
       </div> <!--end of micheal anderson tab-->
+
+
+
+
+      <div id="Christina-Springer" class="content">
+          <img class="header-img" src="http://dailybruin.com/images/2016/02/web.news_.springer.HY_-640x432.jpg">
+
+          <p class="gallerycaption">Christina Springer, a fourth-year political science student, has a knack for analyzing political data. (Hannah Ye/Daily Bruin senior staff)</p>
+
+         <div class="article">
+         <div id="andersonmedal">
+           <img src="http://dailybruin.com/images/2016/02/illo-christina-springer.png">
+           <p>(Rachel Zhu/Daily Bruin)</p>
+         </div>
+         <p> As a child, Christina Springer stayed up late to watch TV newscasts on election night with her parents, writing the number of electoral votes in her pink Minnie Mouse notebook as they increased one by one, using them to make her own predictions. </p> She was fascinated by the idea that the individual votes of people across the country could determine who would become the President of the United States.</p>
+
+<p>Springer, a fourth-year political science student, has since maintained her interest for political data. She now advocates for civic engagement among college students, despite witnessing what she calls dismal voting numbers among her peers.</p>
+
+<p>Springer works with UCLA&rsquo;s BruinsVOTE! Campaign, which aims to encourage civic engagement among students, and interns with local political leaders to encourage UCLA students to vote. She added she thinks it&rsquo;s important for students to partake in government decisions.</p>
+
+<p>&ldquo;If we don&rsquo;t start to vote as young people, older politicians will make our decisions for us &ndash; decisions that will impact us in our lifetimes, not them in theirs,&rdquo; she said.</p>
+
+<p>Springer is one of five students who won the <a href="https://alumni.ucla.edu/scholarships/prospective-students/true-bruin-distinguished-senior-award/" target="_blank" rel="nofollow">True Bruin Distinguished Senior Scholarship</a> Award, a sum of up to $5,000 given to students who exemplify integrity and service, according to the award’s website.</p>
+<p> Although eager to participate in the election process, she said she was dismayed by the level of cynicism regarding voting among the student population.</p>
+
+<p>Springer said she thinks her work at UCLA and her research on congressional primaries has effectively prepared her to work in election polling after college.</p>
+
+<p>Alongside her interest in politics, Springer is particularly passionate about helping transfer students like herself.</p>
+
+<p>More than a year ago, Springer came to UCLA from a community college with few student organizations and what she called a nearly nonexistent social community.</p>
+
+<p>During her first year at UCLA, Springer said she relied on the Bruin Resource Center for Transfer Students to help her navigate through UCLA after coming from a smaller collegiate setting.</p>
+
+<p>Springer said the transfer community has become a family for her. She added she hopes to help transfer students connect to UCLA by referring them to other resources on campus.</p>
+
+<p>Springer said she tries to support other transfers by interning at the Transfer Student Program to ease their transitions into UCLA and help them make the most out of their time at UCLA, the same way the Bruin Resource Center did for her.</p>
+
+<p>&ldquo;(People assume) we know how to navigate UCLA because we&rsquo;ve navigated community college,&rdquo; Springer said. &ldquo;But that&rsquo;s not the case &ndash; it&rsquo;s a transition.&rdquo;</p>
+
+<p>Heather Adams, a Transfer Student Program director, said Springer was willing to sacrifice her own time to mentor a student who came into the office feeling lost.</p>
+
+<p>&ldquo;She spent as long as it took to work out (the student&rsquo;s) issues, mentored her and took her on as an extra mentee,&rdquo; Adams said. &ldquo;She&rsquo;s very giving of her time.&rdquo;</p>
+
+<p>Springer mentors new transfer students and helps them find their place on campus as part of the Show Me the Ropes program, hosted by the USAC Office of the Transfer Student Representative.</p>
+
+<p>Springer said she struggles to balance her academic career with extracurricular opportunities every day, but she&rsquo;s thankful to be able to learn about politics and support her community at the same time.</p>
+
+<p>&ldquo;(Being at UCLA) has allowed me to do all these things,&rdquo; she said. &ldquo;The way that I found that they all work together has been really important to my developmental experience.&rdquo;</p>
+         </div> <!--end of article-->
+      </div> <!--end of springer tab-->
 
     </div>
 
