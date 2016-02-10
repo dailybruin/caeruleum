@@ -205,11 +205,40 @@ ul.tabs li {
 	text-align: center !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .content {
     max-width: 90%;
     margin: 0 auto;
   }
+
+	.centered-div {
+	    width: 465px; /* you have to have a size or this method doesn't work */
+	    height: 262px; /* think about making these max-width instead - might give you some more responsiveness */
+
+	    top: 0; right: 0; /* confuse it i guess */
+	    bottom: 0; left: 0;
+	    margin: auto; /* make em equal */
+	    margin-bottom: 30px;
+	}
+
+
+	.main-title{
+		font-size: 8em;
+	  color: #999900;
+	  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+	  padding: 50px;
+	  border-top: dashed 15px #ffffff;
+	  border-bottom: dashed 15px #ffffff;
+	}
+
+	ul.tabs li {
+	  background-color: white !important;
+		float: none !important;
+		display: inline-block;
+		width: 100px;
+		height: 60px;
+	}
+
 
  img {
  	max-width: 100%;
@@ -217,6 +246,7 @@ ul.tabs li {
  }
 
   h1{
+		font-size: 3em !important;
     color: rgba(0,0,0,0.6);
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
   }
@@ -245,4 +275,16 @@ h3.part1, h3.part2, h3.part3{
   	margin-bottom: 2em;
 	}
 
+}
+
+@media (max-width: 500px) {
+	.centered-div {
+			width: 263px; /* you have to have a size or this method doesn't work */
+			height: 145px; /* think about making these max-width instead - might give you some more responsiveness */
+
+			top: 0; right: 0; /* confuse it i guess */
+			bottom: 0; left: 0;
+			margin: auto; /* make em equal */
+			margin-bottom: 30px;
+	}
 }

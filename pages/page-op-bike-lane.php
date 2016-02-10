@@ -115,7 +115,11 @@ Template Name: Opinion Bike Lane
 						<div class="centered-div">
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/UFrul7xWbws" frameborder="0" allowfullscreen></iframe>
 						</div>
-
+						<br />
+						<br />
+						<p class="author-contact">
+							Email Feliciano at <a href='mailto:cfeliciana@media.ucla.edu'>cfeliciana@media.ucla.edu</a>
+						</p>
 						</div> <!-- content for tabs -->
 		   </div> <!-- end all content -->
 	   </div> <!-- end row -->
