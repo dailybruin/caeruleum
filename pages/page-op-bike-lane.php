@@ -9,7 +9,7 @@ Template Name: Opinion Bike Lane
 		   <div class="large-12 columns" id="content">
 			      <div class="header-area">
                 <div class="title-wrap">
-  			           <h1 class="title-primary">
+  			           <h1 class="title-primary main-title">
   				               <span>Bike Lanes</span>
     				      </h1>
                 </div>
@@ -19,7 +19,7 @@ Template Name: Opinion Bike Lane
 		                	<ul class="tabs" data-tab data-options="deep_linking:true; scroll_to_content: false">
 							           <li class="tab-title active"><a href="#article-1" class="button" >Opinion</a></li>
 							           <li class="tab-title"><a href="#article-2" class="button">Tips and Tricks</a></li>
-												 <li class="tab-title"><a href="#article-3" class="button">Student's Opinions</a></li>
+												 <li class="tab-title"><a href="#article-3" class="button">Student Opinions</a></li>
 							        </ul>
 						        </div>
 					        </ul>
@@ -36,7 +36,7 @@ Template Name: Opinion Bike Lane
                </h2>
 							 <div class="db-image text-center">
 						 	 	<img width="640" height="352" src="http://dailybruin.com/images/2016/02/2.10.op_.bikes_.1-640x352.jpeg" class="attachment-db-category-full wp-post-image" alt="(Nicole Santos/Daily Bruin)">
-			 					<p class="db-image-caption text-left">
+			 					<p class="db-image-caption text-left centered-txt">
 				 					(Nicole Santos/Daily Bruin)
 									</p>
 			 					<hr>
@@ -45,7 +45,9 @@ Template Name: Opinion Bike Lane
 							 <p>Between 2002 and 2013, there have been 52 bicycle accidents on the stretch of Westwood Boulevard where Los Angeles City Councilmember Paul Koretz, with pressure from some of his constituents, has been opposing the development of a bicycle lane.</p>
 							 <p>UCLA students know the daily commute in Westwood too well. For students who live south of Wilshire Boulevard, biking to campus is perilous because of the lack of bicycle lanes, which encourage drivers to look over their shoulders before making a right turn.</p>
 							 <p>However, some Westwood residents, who have been the most vocal to Koretz, want a different location for the bike lane planned on Westwood Boulevard, such as Sepulveda Boulevard or Gayley Avenue. What these residents need to understand is that Westwood Boulevard is far safer than other options because of slower vehicle speeds. The greater amount of stoplights and pedestrian traffic on Westwood Boulevard causes much slower speeds among drivers, leading to safer cycling conditions.</p>
-							 <p><a href="http://dailybruin.com/images/2016/02/2.10.op_.bikelanes.graphic.FORWEB.png" rel="attachment wp-att-251099"><img alt="2.10.op.bikelanes.graphic.FORWEB.png" src="http://dailybruin.com/images/2016/02/2.10.op_.bikelanes.graphic.FORWEB-300x283.png" data-uniq-id="c21bc" width="300" height="283" class="aligncenter wp-image-251099" /></a></p>
+							 <p><a href="http://dailybruin.com/images/2016/02/2.10.op_.bikelanes.graphic.FORWEB.png" rel="attachment wp-att-251099">
+								 <img class="centered-img" alt="2.10.op.bikelanes.graphic.FORWEB.png" src="http://dailybruin.com/images/2016/02/2.10.op_.bikelanes.graphic.FORWEB-300x283.png" data-uniq-id="c21bc" width="300" height="283" class="aligncenter wp-image-251099"/>
+							 </a></p>
 							 <p>However, Koretz abandoned an engineering study on potential bike lanes on Westwood Boulevard before it determined whether a bike lane would hinder traffic. In an <a target="_blank" rel="nofollow" href="http://dailybruin.com/2016/01/27/council-members-emails-show-inconsistencies-with-stance-against-bike-lanes/">email to some of his constituents</a> Nov. 11, 2013, Koretz said, &#8220;I can&#8217;t see any way that I wind up supporting the bike lane on Westwood (Boulevard) anyway, I am just going to kill it now, rather than waiting for a study.&#8221;<span class="inline-comment-control" contenteditable="false"></span></p>
 							 <p>Koretz should give the bike lane on Westwood Boulevard a chance by letting the engineering study proceed instead of <a target="_blank" rel="nofollow" href="http://dailybruin.com/2015/08/05/city-committees-to-vote-on-future-of-wetswood-boulevard-bike-lanes/">proposing an amendment</a> to remove it from the Los Angeles Mobility Plan 2035.<b> </b></p>
 							 <p><b></b>Without bike lanes, drivers feel less obligated to share the road and often forget that cyclists are on the roadways too. Drivers conduct themselves in a much safer manner around bike lanes, which give them a constant reminder to check over their shoulder before merging into the right turn lane.<b><br /></b></p>
@@ -75,7 +77,7 @@ Template Name: Opinion Bike Lane
             </h2>
 						<div class="db-image text-center">
 							<img width="514" height="640" src="http://dailybruin.com/images/2016/02/web.quad_.bikes_.courtesy-514x640.jpg" class="attachment-db-category-full wp-post-image" alt="(Daily Bruin file photo)">
-								<p class="db-image-caption text-left">
+								<p class="db-image-caption text-left centered-txt">
 									(Daily Bruin file photo)
 								</p>
 								<hr>
@@ -102,12 +104,14 @@ Template Name: Opinion Bike Lane
 						</p>
           </div>
 					<div class="content" id="article-3">
+						<div class="db-post-headline"><h1>Bruin Talk: Bike Lanes</h1></div>
 						<h2>
 							Video by
-								<a class="author" title="Posts by Jonathan Friedland" href="http://dailybruin.com/author/jonathan-friedland/" rel="author">
+								<a class="author" title="Posts by Jonathan Friedland" href="http://dailybruin.com/author/catherine-liberty-feliciano/" rel="author">
 									Catherine Liberty Feliciano
 								</a>
 						</h2>
+						<p>The Los Angeles Mobility Plan proposes a bike lane on Westwood Boulevard from Le Conte Avenue to Wellworth Avenue. We asked Bruins with bikes what they think about biking and bike lanes on the busy street, which they share with cars, buses and pedestrians alike. </p>
 						<div class="centered-div">
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/UFrul7xWbws" frameborder="0" allowfullscreen></iframe>
 						</div>
