@@ -31,15 +31,17 @@
 	box-shadow: #000 0 0px 0px 40px inset;
 }
 
+.main-title{
+	font-size: 8em;
+  color: #999900;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+  padding: 50px;
+  border-top: dashed 35px #ffffff;
+  border-bottom: dashed 35px #ffffff;
+}
 
 h1{
   text-align: center;
-  font-size: 8em;
-  color: #999900;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-  padding: 20px;
-  border-top: dashed 25px #ffffff;
-  border-bottom: dashed 25px #ffffff;
 }
 
 .title-wrap{
@@ -178,8 +180,8 @@ ul.tabs li {
 }
 
 .centered-div {
-    width: 560px; /* you have to have a size or this method doesn't work */
-    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+    width: 620px; /* you have to have a size or this method doesn't work */
+    height: 349px; /* think about making these max-width instead - might give you some more responsiveness */
 
     top: 0; right: 0; /* confuse it i guess */
     bottom: 0; left: 0;
@@ -191,6 +193,16 @@ ul.tabs li {
 	margin-top: 30px;
 	font-size: 3em;
 	text-align: center;
+}
+
+.centered-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.centered-txt{
+	text-align: center !important;
 }
 
 @media (max-width: 600px) {
