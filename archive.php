@@ -35,8 +35,7 @@
                     </div>
                     <div class="description large-10 small-8 medium-10 columns">
                       <?php if (get_the_author_meta('description')): ?>
-                        <p class="bio-text">Emaan Baqai is the Design director at the Daily Bruin. 
-                            She has been on staff since 2013, and works as an Arts & Entertainment reporter, photographer, and designer.
+                        <p class="bio-text">
                             <?php echo get_the_author_meta('description') ?>
                         </p>
                       <?php endif; ?>
@@ -46,7 +45,7 @@
                           <p class="contact">contact</p>
                         </div>
                         <?php endif; ?>
-                        <div class="email large-4 medium-5 small-12 columns">
+                        <div class="email large-5 medium-5 small-12 columns">
                           <?php if ( get_the_author_meta('user_email')): ?>
                           <p><span class="entypo-mail"></span>
                            <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
@@ -54,7 +53,7 @@
                           </a></p>
                           <?php endif; ?>
                         </div>
-                        <div class="twitter large-6 medium-5 small-12 columns">
+                        <div class="twitter large-5 medium-5 small-12 columns">
                           <?php if ( get_the_author_meta( 'twitter' )): ?>
                             <p><span class="entypo-twitter"></span>  
                             <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
