@@ -4,6 +4,24 @@
         <div class="page-header">
           <h2>
             <?php
+              $articleFormat = $articleFormats[0]->slug;
+              if(empty($articleFormat) || $articleFormat === 'normal')
+                $articleFormat = get_field('db_article_format');
+              $displayMugshot = false;
+              if($articleFormat)
+              {
+                switch($articleFormat)
+                {
+                  case 'brief':
+                    $displayAuthor = false;
+                    break;
+                  case 'column':
+                    $displayMugshot = true;
+                    break;
+                  case 'default':
+                    $displayMugshot = in_array('mugshot', get_field('db_display_options'));
+                }
+              }
               $sectionPage = false;
               $mainSection = false;
               $multSection = false;
@@ -25,15 +43,43 @@
                  <div class="author-wrapper">
                    <div class="row author-box">
                       <div class="large-12 medium-12 small-12 columns author-title">
-                        <div class="author-header"><?php echo get_the_author() ?> | </div>
-                        <div class="author-position">Design Director</div>
+                        <div class="author-header"><?php echo get_the_author() ?> 
+                        <?php if ( get_the_author_meta('position')): ?>
+                            |
+                        <? endif; ?> 
+                        </div>
+                        <?php if ( get_the_author_meta('position', get_the_author_meta( 'ID' ))): ?>
+                            <div class="author-position"> <?php echo get_the_author_meta('position') ?> </div>
+                        <?php endif; ?>
                       </div>
                     </div>
                   <div class="bio row">
-                    <div class="image large-2 small-4 medium-2 columns">     
-                      <?php echo get_avatar( get_the_author_meta( 'ID' ) ); ?>
-                    </div>
-                    <div class="description large-10 small-8 medium-10 columns">
+                  <?php // Display the columnist's mugshot
+                      if($displayMugshot)
+                      {
+                        ?>
+                        <div class="image large-2 small-3 medium-2 columns"> 
+                        <?php
+                          ob_start();
+                        if(function_exists('userphoto_the_author_photo'))
+                          userphoto_the_author_photo();
+                        $thumbnail = ob_get_contents();
+                        $thumbnail_class = "";
+                        ob_end_clean();
+                        if(isset($thumbnail) || !($thumbnail == ""))
+                        {
+                            ?>
+                              <div class="author-photo"> <?php userphoto_the_author_photo(); ?></div>
+                              </div>
+                              <?php
+                          }
+                      }
+                  ?>
+                    <?php if ( !$displayMugshot): ?>
+                        <div class="description large-12 small-8 medium-10 columns">
+                      <?php else: ?>
+                        <div class="description large-10 small-9 medium-10 columns">
+                    <?php endif; ?>
                       <?php if (get_the_author_meta('description')): ?>
                         <p class="bio-text">
                             <?php echo get_the_author_meta('description') ?>
@@ -45,7 +91,7 @@
                           <p class="contact">contact</p>
                         </div>
                         <?php endif; ?>
-                        <div class="email large-5 medium-5 small-12 columns">
+                        <div class="email large-6 medium-6 small-12 columns">
                           <?php if ( get_the_author_meta('user_email')): ?>
                           <p><span class="entypo-mail"></span>
                            <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
@@ -53,11 +99,11 @@
                           </a></p>
                           <?php endif; ?>
                         </div>
-                        <div class="twitter large-5 medium-5 small-12 columns">
+                        <div class="twitter large-4 medium-4 small-12 columns">
                           <?php if ( get_the_author_meta( 'twitter' )): ?>
                             <p><span class="entypo-twitter"></span>  
                             <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
-                              <?php the_author_meta('twitter' );?> 
+                              <?php the_author_meta('twitter' );?>
                             </a>
                           <?php endif; ?>
                         </div>
