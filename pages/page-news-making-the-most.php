@@ -49,9 +49,11 @@ Template Name: News - Making the Most
           <img class="gallery-img" src="http://dailybruin.com/images/2016/02/web.news_.walkerB.OE_.jpg">
 
         </div>
+        <div class="large-6 large-offset-3">
         <p class="gallerycaption">Arami Walker, a fifth-year world arts and cultures student, worked to create a bilingual poetry and song album driven by her experiences. Walker is a winner of the True Bruin Distinguished Senior Award given to students who have demonstrated excellence and service through leadership on and off campus. (Owen Emerson/Daily Bruin senior staff)</p>
+        </div>
         <!-- STORY GOES HERE -->
-        <div class="article">
+        <div class="article large-6 large-offset-3">
           <p>In March, Arami Walker took the stage to perform with a popular Argentinian band at a crowded Buenos Aires club. She spoke to the audience of locals in Spanish, a language she only learned a couple months before.</p>
 
           <p>Walker, a fifth-year world arts and cultures student, ran into the band in a bar earlier that night. Once band members learned Walker had singing experience, they invited her to perform their last song of the concert with them.</p>
@@ -114,10 +116,11 @@ Template Name: News - Making the Most
 
       <div id="Michael-Anderson" class="content">
           <img class="header-img" src="http://dailybruin.com/images/2016/02/web.ns_.anderson.OE_.PicA_-640x426.jpg">
+          <div class="large-6 large-offset-3">
 
           <p class="gallerycaption">Michael Anderson, a fourth-year applied mathematics student, helped create a satellite that will go into space next year. Anderson is one of five students to win the True Bruin Distinguished Senior Award. (Owen Emerson/Daily Bruin senior staff)</p>
-
-         <div class="article">
+          </div>
+         <div class="article large-6 large-offset-3">
          <div id="andersonmedal">
            <img src="http://dailybruin.com/images/2016/02/news-anderson-medal.jpg">
            <p>(Rachel Zhu/Daily Bruin)</p>
@@ -183,10 +186,11 @@ Template Name: News - Making the Most
 
       <div id="Christina-Springer" class="content">
           <img class="header-img" src="http://dailybruin.com/images/2016/02/web.news_.springer.HY_-640x432.jpg">
+          <div class="large-6 large-offset-3">
 
           <p class="gallerycaption">Christina Springer, a fourth-year political science student, has a knack for analyzing political data. (Hannah Ye/Daily Bruin senior staff)</p>
-
-         <div class="article">
+          </div>
+         <div class="article large-6 large-offset-3">
          <div id="andersonmedal">
            <img src="http://dailybruin.com/images/2016/02/illo-christina-springer.png">
            <p>(Rachel Zhu/Daily Bruin)</p>
