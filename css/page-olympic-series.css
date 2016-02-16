@@ -35,7 +35,7 @@
 h1{
   font-family: "Oswald";
   color: #000;
-  font-size: 8em;
+  font-size: 7em;
   letter-spacing: 15px;
   text-align: center;
   line-height: 1.2;
@@ -94,23 +94,6 @@ p.first-paragraph{
 	font-family: 'Open Sans',Arial, sans-serif;
 }
 
-p.quote{
-	font-size:1.8rem;
-	font-weight: 300;
-	line-height: 2em;
-	color: #00a1f9;
-	font-family: 'Open Sans',Arial, sans-serif;
-	font-style: italic;
-	margin-top: 0em;
-  	margin-bottom: 2em;
-}
-
-figure {
-	padding-bottom: 1em;
- 	max-width: 100%;
- 	height: auto;
-}
-
 figcaption{
 	padding-top: .25em;
 }
@@ -135,8 +118,6 @@ section.top-bar-section{
 ul.tabs li {
 	float: none !important;
 	display: inline-block;
-	/*width: 33%;*/
-
 }
 
 .tab-title.active > a {
@@ -146,7 +127,6 @@ ul.tabs li {
 
 .tab-title.active > a:hover{
 	color: #fff !important;
-	/*border-bottom: 2px solid #0080c6;*/
 }
 
 
@@ -173,11 +153,8 @@ ul.tabs li {
   h1{
 
 	  font-family: "Oswald";
-	  color: #fff;
+	  color: #000;
 	  font-size: 3.5em;
-	  -webkit-text-stroke: 4px #00a1f9;
-	  letter-spacing: 8px;
-	  -webkit-filter: drop-shadow(4px 3px 0 #98B5CC);
 	  text-align: center;
 	  line-height: 1.2;
 	  z-index: 2;
