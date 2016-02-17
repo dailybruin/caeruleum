@@ -11,8 +11,6 @@ Template Name: Olympic Series
 				  <h1 class="title-primary">
 				      <span>Overarching Title</span>
 				  </h1>
-				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
-					Author</a></h2>
 				<section class="top-bar-section">
 	                <ul class="tabs" data-tab data-options="deep_linking:true; scroll_to_content: false">
 		                <div class="wrap">
@@ -27,7 +25,11 @@ Template Name: Olympic Series
          	</div>
              <div class="tabs-content">
 				<div class="content active" id="article-1">
-					<h3 class="part1">  Title 1 </h3>
+					<h3 class="part1">  Headline Here Thanks Here </h3>
+					<h4>By  <a class="author" title="Posts by Author" href="#" rel="author">
+						Firstname Lastname</a>
+					</h4>
+					<h2>Daily Bruin Senior Staff</h2>
 
 					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 						Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
