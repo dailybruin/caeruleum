@@ -5,11 +5,12 @@ Template Name: Olympic Series
 
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
 <div class="container">
+	<div style="float:left; width:10vw; background-color:black; height:100%;"></div>
 	<div class="row">
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
 				  <h1 class="title-primary">
-				      <span>Overarching Title</span>
+				      <span>Olympic Series</span>
 				  </h1>
 				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
 					Author</a></h2>
