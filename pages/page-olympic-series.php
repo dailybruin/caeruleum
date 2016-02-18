@@ -40,11 +40,14 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
-						<p class="pullquote">
-						  Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
-						  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno. 
-						  What even is gothic rock? This lotion makes me smell like jasmine <br> tea.
-						</p>
+						<div class="pullquote">
+							<p class="pullquotetext">
+							  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
+							  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno. 
+							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -91,11 +94,14 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
-						<p class="pullquote2">
-						  Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts. 
-						  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic. 
-						  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad. 
-						</p>
+						<div class="pullquote2">
+							<p class="pullquote2text">
+							  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts. 
+							  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic. 
+							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -133,11 +139,14 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
-						<p class="pullquote">
-						  Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
-						  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno. 
-						  What even is gothic rock? This lotion makes me smell like jasmine <br> tea.
-						</p>
+						<div class="pullquote">
+							<p class="pullquotetext">
+							  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
+							  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno. 
+							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -184,11 +193,14 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
-						<p class="pullquote2">
-						  Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts. 
-						  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic. 
-						  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad. 
-						</p>
+						<div class="pullquote2">
+							<p class="pullquote2text">
+							  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts. 
+							  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic. 
+							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -226,11 +238,14 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
-						<p class="pullquote">
-						  Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
-						  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno. 
-						  What even is gothic rock? This lotion makes me smell like jasmine <br> tea.
-						</p>
+						<div class="pullquote">
+							<p class="pullquotetext">
+							  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
+							  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno. 
+							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -277,11 +292,14 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
-						<p class="pullquote2">
-						  Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts. 
-						  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic. 
-						  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad. 
-						</p>
+						<div class="pullquote2">
+							<p class="pullquote2text">
+							  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts. 
+							  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic. 
+							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 

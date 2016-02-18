@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100,700,900);
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 *{
 	 -webkit-font-smoothing: antialiased;
@@ -9,48 +9,35 @@
 /*pull quote*/
 
 .pullquote2 {
-  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  padding: 1rem 1rem 1rem 3.5rem;
   width: 28rem;
   position: relative;
   margin: 0 2rem 2rem 0;
   float: right;
-  font-family: Questrial, Helvetica, sans-serif;
+}
+
+.pullquotetext, .pullquote2text
+{
+  font-family: Georgia, serif;
+  font-style: italic;
   font-size: 1.6rem;
-  line-height: 1.4;
-  color: #00a1f9;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .pullquote {
-  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  padding: 1rem 2.5rem 1rem 1rem;
   width: 28rem;
   position: relative;
-  margin: 0 2rem 2rem 0;
   float: left;
-  font-family: Questrial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  color: #00a1f9;
-  text-transform: uppercase;
 }
 
-.pullquote:before, .pullquote:after ,.pullquote2:before, .pullquote2:after { 
-  content: "“";
-  font-family: Georgia;
-  font-size: 400%;
-  position: absolute;
-  color: #000;
+.quote-author{
+	font-family: Georgia, serif;
+  	font-style: italic;
+  	color: #424242;
 }
-.pullquote:before, .pullquote2:before { 
-  top: .25rem;
-  left: .5rem;
-}
-.pullquote:after, .pullquote2:after { 
-  content: "”";
-  bottom: -3rem;
-  right: 3rem;
-}
+
 .pullquote br, .pullquote2 br { display: none; }
 @media screen and (max-width: 700px){ 
 	.pullquote, .pullquote2 { 
@@ -62,12 +49,11 @@
 }
 
 @media screen and (max-width: 480px) { 
-.pullquote:before, .pullquote:after,.pullquote2:before, .pullquote2:after { font-size: 200%; }
-.pullquote, .pullquote2 { 
-  font-size: 1.4rem;
-  padding: 1.6rem 1.2rem 1rem 2rem;
-}
-.pullquote:after, .pullquote2:after { bottom: 0; }
+
+	.pullquote, .pullquote2 { 
+	  font-size: 1.4rem;
+	  padding: 1.6rem 1.2rem 1rem 2rem;
+	}
 }
 
 
@@ -189,10 +175,6 @@ ul.tabs li {
 	max-width: 80%;
 	margin: 0 auto;
 }
-
-/*.content{
-	max-width: 100%;
-}*/
 
 div.first-article{
 	margin: 0 20% 0 0;
