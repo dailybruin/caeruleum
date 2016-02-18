@@ -219,11 +219,11 @@ h3.part1, h3.part2, h3.part3{
 /*Header Styling*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-.explainer-text{width:100%;}
+/*.explainer-text{width:100%;}*/
 }
 /*Desktops*/
 @media only screen and (min-device-width : 1000px) {
-.explainer-text{width:80%;}
+/*.explainer-text{width:80%;}*/
 }
 .title-primary{
 	background-color:yellow;
