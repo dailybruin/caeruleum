@@ -76,6 +76,12 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
+						<figure>
+					  		<img class="body-image" src="http://dailybruin.com/images/2014/02/web.wieber.picB_1.jpg"/>
+					  		<figcaption>Here is a caption probably about a person. This person did something for 
+					  			UCLA woohoo. yep. (Kelly Brennan/Daily Bruin senior staff)</figcaption>
+						</figure>
+
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
 							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
@@ -102,6 +108,15 @@ Template Name: Olympic Series
 							</p>
 							<p class="quote-author">Author Lastname</p>
 						</div>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque 
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -166,6 +181,12 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
+						<figure>
+					  		<img class="body-image" src="http://dailybruin.com/images/2014/02/web.wieber.picD_.jpg"/>
+					  		<figcaption>Here is a caption probably about a person. This person did something for 
+					  			UCLA woohoo. yep.(Kelly Brennan/Daily Bruin senior staff)</figcaption>
+						</figure>
+
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
 							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
@@ -211,6 +232,12 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
+						<figure>
+					  		<img class="body-image" src="http://dailybruin.com/images/2014/02/web.wieber.picC_.jpg"/>
+					  		<figcaption>Here is a caption probably about a person. This person did something for 
+					  			UCLA woohoo. yep.(Kelly Brennan/Daily Bruin senior staff)</figcaption>
+						</figure>
+
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
 							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
@@ -219,6 +246,17 @@ Template Name: Olympic Series
 							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque 
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque 
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+
 					  </div>
 				  </div>
 
@@ -265,6 +303,12 @@ Template Name: Olympic Series
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
 
+						<figure>
+					  		<img class="body-image" src="http://dailybruin.com/images/2014/02/web.peszek.picB_-1024x649.jpg"/>
+					  		<figcaption>Here is a caption probably about a person. This person did something for 
+					  			UCLA woohoo. yep.(Kelly Brennan/Daily Bruin senior staff)</figcaption>
+						</figure>
+
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
 							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
@@ -282,6 +326,12 @@ Template Name: Olympic Series
 							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque 
 							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 							 facilisis luctus, metus</p>
+
+						<figure>
+					  		<img class="body-image" src="http://dailybruin.com/images/2014/02/web.peszek.picC_-682x1024.jpg"/>
+					  		<figcaption>Here is a caption probably about a person. This person did something for 
+					  			UCLA woohoo. yep.(Kelly Brennan/Daily Bruin senior staff)</figcaption>
+						</figure>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
@@ -300,6 +350,15 @@ Template Name: Olympic Series
 							</p>
 							<p class="quote-author">Author Lastname</p>
 						</div>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est 
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque 
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
 							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit 

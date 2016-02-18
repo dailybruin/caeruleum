@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,900);
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 *{
 	 -webkit-font-smoothing: antialiased;
@@ -9,7 +9,7 @@
 /*pull quote*/
 
 .pullquote2 {
-  padding: 1rem 1rem 1rem 3.5rem;
+  padding: 1rem 1rem 0 3.5rem;
   width: 28rem;
   position: relative;
   margin: 0 2rem 2rem 0;
@@ -20,13 +20,13 @@
 {
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   margin-bottom: 0;
 }
 
 .pullquote {
-  padding: 1rem 2.5rem 1rem 1rem;
+  padding: 1rem 2.5rem 0rem 1rem;
   width: 28rem;
   position: relative;
   float: left;
@@ -38,22 +38,16 @@
   	color: #424242;
 }
 
-.pullquote br, .pullquote2 br { display: none; }
-@media screen and (max-width: 700px){ 
-	.pullquote, .pullquote2 { 
-	  float: none;
-	  width: 80%;
-	  margin: 0 auto;
-	}
-	.pullquote br, .pullquote2 br { display: block; }
+figure{
+	max-width: 50%;
+	padding: .5rem 0 .5rem .5rem;
 }
 
-@media screen and (max-width: 480px) { 
-
-	.pullquote, .pullquote2 { 
-	  font-size: 1.4rem;
-	  padding: 1.6rem 1.2rem 1rem 2rem;
-	}
+figcaption{
+	font-family: "Roboto", Arial, sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: .8rem;
 }
 
 
@@ -190,46 +184,34 @@ div.third-article{
 }
 
 @media (max-width: 600px) {
-  .content {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
- img {
- 	max-width: 100%;
- 	height: auto;
- }
-  h1{
-
-	  font-family: "Oswald";
-	  color: #000;
-	  font-size: 3.5em;
-	  text-align: center;
-	  line-height: 1.2;
-	  z-index: 2;
-}
-
-h3.part1, h3.part2, h3.part3{
-	text-align: center;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
-	letter-spacing: 1px;
-	font-size: 2em;
-	line-height: 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	max-width: 90%;
-	margin: 0 auto;
-	text-transform:none !important;
+	figure {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
 	}
 
-	p.quote{
-	font-size:1.2rem;
-	font-weight: 300;
-	line-height: 1.3em;
-	color: #00a1f9;
-	font-family: 'Open Sans',Arial, sans-serif;
-	font-style: italic;
-	margin-top: 0em;
-  	margin-bottom: 2em;
+	div.second-article, div.first-article, div.third-article{
+		margin: 0 auto !important;
+		max-width: 95%;
 	}
+
+	h3.part1, h3.part2, h3.part3{
+		text-align: center;
+		font-size: 3.7em;
+
+	}
+
+	.pullquote, .pullquote2 { 
+	  float: none !important;
+	  width: 100% !important;
+	  margin: 0 auto !important;
+	}
+
+	.pullquote2text, .pullquotetext{
+		font-size:1.2rem;
+	}
+
+	.pullquote br, .pullquote2 br { display: block; }
+
+
 }
