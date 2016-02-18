@@ -7,11 +7,17 @@ Template Name: Olympic Series
 <div class="container">
 	<div style="float:left; width:10vw; background-color:black; height:100%;"></div>
 	<div class="row">
+		<div id="side-bar"></div>
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
 				  <h1 class="title-primary">
 				      <span>Olympic Series</span>
 				  </h1>
+				  <div class="explainer-text">
+				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
+				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
+				  	</span>
+				  </div>
 				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
 					Author</a></h2>
 				<section class="top-bar-section">
