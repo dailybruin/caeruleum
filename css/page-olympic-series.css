@@ -1,10 +1,82 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,400italic,300);
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
 *{
 	 -webkit-font-smoothing: antialiased;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
+
+/*pull quote*/
+
+.pullquote2 {
+  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  width: 28rem;
+  position: relative;
+  margin: 0 2rem 2rem 0;
+  float: right;
+  font-family: Questrial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  color: #00a1f9;
+  text-transform: uppercase;
+}
+
+
+
+.pullquote {
+  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  width: 28rem;
+  position: relative;
+  margin: 0 2rem 2rem 0;
+  float: left;
+  font-family: Questrial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  color: #00a1f9;
+  text-transform: uppercase;
+}
+
+.pullquote:before, .pullquote:after ,.pullquote2:before, .pullquote2:after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 400%;
+  position: absolute;
+  color: #000;
+}
+.pullquote:before, .pullquote2:before {
+  top: .25rem;
+  left: .5rem;
+}
+.pullquote:after, .pullquote2:after {
+  content: "”";
+  bottom: -3rem;
+  right: 3rem;
+}
+.pullquote br, .pullquote2 br { display: none; }
+@media screen and (max-width: 700px){
+	.pullquote, .pullquote2 {
+	  float: none;
+	  width: 80%;
+	  margin: 0 auto;
+	}
+	.pullquote br, .pullquote2 br { display: block; }
+}
+
+@media screen and (max-width: 480px) {
+.pullquote:before, .pullquote:after,.pullquote2:before, .pullquote2:after { font-size: 200%; }
+.pullquote, .pullquote2 {
+  font-size: 1.4rem;
+  padding: 1.6rem 1.2rem 1rem 2rem;
+}
+.pullquote:after, .pullquote2:after { bottom: 0; }
+}
+
+
+/*end pq*/
+
 
 .wrap ul li a {
 	-webkit-transition: all 350ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
@@ -35,7 +107,7 @@
 h1{
   font-family: "Oswald";
   color: #000;
-  font-size: 7em;
+  font-size: 6em;
   letter-spacing: 15px;
   text-align: center;
   line-height: 1.2;
@@ -43,8 +115,8 @@ h1{
 
 h2{
 	text-align: center;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;		
-	font-size: 1.2rem;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+	font-size: 1rem;
 	padding: .5em 0 .5em 0;
 	font-style: italic;
 }
@@ -57,7 +129,7 @@ h2 a{
 
 h3.part1, h3.part2, h3.part3{
 	text-align: center;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
+	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
 	letter-spacing: 1px;
 	font-size: 3em;
 	line-height: 1em;
@@ -71,27 +143,12 @@ h3.part1, h3.part2, h3.part3{
 
 p{
 	font-size:1rem;
-	line-height: 2em;
+	line-height: 1.8em;
 	color: black;
 	font-family: 'Open Sans',Arial, sans-serif;
 	margin-top: 0em;
   	margin-bottom: 2em;
 
-} 
-
-p.first-paragraph{
-	margin-bottom: 3em;
-}
-
-.dropcap { 
-	float: left;
-	color: #00a1f9;
-	font-size: 5em;
-	line-height: 60px;
-	padding-top: 4px;
-	padding-right: 8px;
-	padding-left: 0px;
-	font-family: 'Open Sans',Arial, sans-serif;
 }
 
 figcaption{
@@ -135,17 +192,7 @@ ul.tabs li {
 	margin: 0 auto;
 }
 
-.content{
-	max-width: 75%;
-	margin: 0 auto;
-}
-
 @media (max-width: 600px) {
-  .content {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
  img {
  	max-width: 100%;
  	height: auto;
@@ -162,7 +209,7 @@ ul.tabs li {
 
 h3.part1, h3.part2, h3.part3{
 	text-align: center;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
+	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
 	letter-spacing: 1px;
 	font-size: 2em;
 	line-height: 1em;
@@ -183,4 +230,36 @@ h3.part1, h3.part2, h3.part3{
 	margin-top: 0em;
   	margin-bottom: 2em;
 	}
+}
+
+/* SLIDER */
+.slide-wrapper {
+	overflow: hidden;
+}
+
+.content-carousel {
+	display: flex;
+	transform: translateX(100%);
+	align-items: flex-start;
+	transition: max-height 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.content-carousel.reverse {
+	transform: translateX(-100%);
+}
+
+.content-carousel.set {
+  transform: none;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), max-height 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.content-carousel > .content {
+	flex: 1 0 100%;
+	display: flex;
+	justify-content: center;
+	order: 2;
+}
+
+.content.active {
+	order: 1;
 }
