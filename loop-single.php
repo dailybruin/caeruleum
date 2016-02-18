@@ -266,7 +266,7 @@
 			                    </p>
 			                  <?php endif; ?>
 			                  <div class="row contact-info-wrapper">
-			                    <?php if ( get_the_author_meta('user_email', $author->ID) || get_the_author_meta( 'twitter', $author->ID ) ): ?>
+			                    <?php if ( get_the_author_meta('user_email', $author->ID) || get_the_author_meta( 'twitter_handle', $author->ID ) ): ?>
 			                    <div class="contact large-2 medium-2 columns show-for-medium-up">
 			                      <p class="contact">contact</p>
 			                    </div>
@@ -280,10 +280,10 @@
 			                      <?php endif; ?>
 			                    </div>
 			                    <div class="twitter large-4 medium-4 small-5 columns">
-			                      <?php if ( get_the_author_meta( 'twitter', $author->ID )): ?>
+			                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID )): ?>
 			                        <p><span class="entypo-twitter"></span>  
 			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-			                          <?php echo get_the_author_meta( 'twitter' ); ?>
+			                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?>
 			                        </a>
 			                      <?php endif; ?>
 			                    </div>
