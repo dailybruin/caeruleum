@@ -3,7 +3,7 @@
 *{
 	 -webkit-font-smoothing: antialiased;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /*pull quote*/
@@ -39,8 +39,8 @@
 }
 
 .pullquote br, .pullquote2 br { display: none; }
-@media screen and (max-width: 700px){ 
-	.pullquote, .pullquote2 { 
+@media screen and (max-width: 700px){
+	.pullquote, .pullquote2 {
 	  float: none;
 	  width: 80%;
 	  margin: 0 auto;
@@ -48,9 +48,9 @@
 	.pullquote br, .pullquote2 br { display: block; }
 }
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 480px) {
 
-	.pullquote, .pullquote2 { 
+	.pullquote, .pullquote2 {
 	  font-size: 1.4rem;
 	  padding: 1.6rem 1.2rem 1rem 2rem;
 	}
@@ -98,7 +98,7 @@ h1{
 
 h3.part1, h3.part2, h3.part3{
 	text-align: left;
-	font-family: 'Roboto', Arial, sans-serif !important;		
+	font-family: 'Roboto', Arial, sans-serif !important;
 	font-weight: 900;
 	font-size: 5em;
 	padding-top: 1em;
@@ -109,7 +109,7 @@ h3.part1, h3.part2, h3.part3{
 
 h2{
 	text-align: left;
-	font-family: 'Roboto', Arial, sans-serif !important;		
+	font-family: 'Roboto', Arial, sans-serif !important;
 	font-weight: 400;
 	font-size: 1.6em;
 	text-transform:uppercase; !important;
@@ -118,7 +118,7 @@ h2{
 
 h4{
 	text-align: left;
-	font-family: 'Roboto', Arial, sans-serif !important;		
+	font-family: 'Roboto', Arial, sans-serif !important;
 	font-weight: 400;
 	font-size: 1.7em;
 	padding-bottom: 1em;
@@ -137,7 +137,7 @@ p{
 	font-weight: 400;
 	margin-top: 0em;
   	margin-bottom: 2em;
-} 
+}
 
 ul{
 	list-style-type: none;
@@ -190,11 +190,6 @@ div.third-article{
 }
 
 @media (max-width: 600px) {
-  .content {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
  img {
  	max-width: 100%;
  	height: auto;
@@ -211,7 +206,7 @@ div.third-article{
 
 h3.part1, h3.part2, h3.part3{
 	text-align: center;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;		
+	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
 	letter-spacing: 1px;
 	font-size: 2em;
 	line-height: 1em;
@@ -232,4 +227,36 @@ h3.part1, h3.part2, h3.part3{
 	margin-top: 0em;
   	margin-bottom: 2em;
 	}
+}
+
+/* SLIDER */
+.slide-wrapper {
+	overflow: hidden;
+}
+
+.content-carousel {
+	display: flex;
+	transform: translateX(100%);
+	align-items: flex-start;
+	transition: max-height 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.content-carousel.reverse {
+	transform: translateX(-100%);
+}
+
+.content-carousel.set {
+  transform: none;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), max-height 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.content-carousel > .content {
+	flex: 1 0 100%;
+	display: flex;
+	justify-content: center;
+	order: 2;
+}
+
+.content.active {
+	order: 1;
 }
