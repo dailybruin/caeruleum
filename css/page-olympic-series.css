@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,400italic,300);
-@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100,700,900);
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 *{
 	 -webkit-font-smoothing: antialiased;
@@ -10,51 +9,35 @@
 /*pull quote*/
 
 .pullquote2 {
-  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  padding: 1rem 1rem 1rem 3.5rem;
   width: 28rem;
   position: relative;
   margin: 0 2rem 2rem 0;
   float: right;
-  font-family: Questrial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  color: #00a1f9;
-  text-transform: uppercase;
 }
 
-
+.pullquotetext, .pullquote2text
+{
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
 
 .pullquote {
-  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  padding: 1rem 2.5rem 1rem 1rem;
   width: 28rem;
   position: relative;
-  margin: 0 2rem 2rem 0;
   float: left;
-  font-family: Questrial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  color: #00a1f9;
-  text-transform: uppercase;
 }
 
-.pullquote:before, .pullquote:after ,.pullquote2:before, .pullquote2:after {
-  content: "“";
-  font-family: Georgia;
-  font-size: 400%;
-  position: absolute;
-  color: #000;
+.quote-author{
+	font-family: Georgia, serif;
+  	font-style: italic;
+  	color: #424242;
 }
-.pullquote:before, .pullquote2:before {
-  top: .25rem;
-  left: .5rem;
-}
-.pullquote:after, .pullquote2:after {
-  content: "”";
-  bottom: -3rem;
-  right: 3rem;
-}
+
 .pullquote br, .pullquote2 br { display: none; }
 @media screen and (max-width: 700px){
 	.pullquote, .pullquote2 {
@@ -66,12 +49,11 @@
 }
 
 @media screen and (max-width: 480px) {
-.pullquote:before, .pullquote:after,.pullquote2:before, .pullquote2:after { font-size: 200%; }
-.pullquote, .pullquote2 {
-  font-size: 1.4rem;
-  padding: 1.6rem 1.2rem 1rem 2rem;
-}
-.pullquote:after, .pullquote2:after { bottom: 0; }
+
+	.pullquote, .pullquote2 {
+	  font-size: 1.4rem;
+	  padding: 1.6rem 1.2rem 1rem 2rem;
+	}
 }
 
 
@@ -113,46 +95,48 @@ h1{
   line-height: 1.2;
 }
 
-h2{
-	text-align: center;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
-	font-size: 1rem;
-	padding: .5em 0 .5em 0;
-	font-style: italic;
-}
-
-h2 a{
-	color: #00a1f9 !important;
-	font-weight: 400;
-	font-style: italic;
-}
 
 h3.part1, h3.part2, h3.part3{
-	text-align: center;
-	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
-	letter-spacing: 1px;
-	font-size: 3em;
-	line-height: 1em;
+	text-align: left;
+	font-family: 'Roboto', Arial, sans-serif !important;
+	font-weight: 900;
+	font-size: 5em;
 	padding-top: 1em;
-	padding-bottom: 1em;
-	max-width: 90%;
+	padding-bottom: .1em;
 	margin: 0 auto;
-	text-transform:none !important;
+	text-transform:uppercase; !important;
 }
 
+h2{
+	text-align: left;
+	font-family: 'Roboto', Arial, sans-serif !important;
+	font-weight: 400;
+	font-size: 1.6em;
+	text-transform:uppercase; !important;
+	padding-bottom: 1em;
+}
+
+h4{
+	text-align: left;
+	font-family: 'Roboto', Arial, sans-serif !important;
+	font-weight: 400;
+	font-size: 1.7em;
+	padding-bottom: 1em;
+	text-transform:uppercase; !important;
+}
+
+h4 a{
+	color:black !important;
+}
 
 p{
 	font-size:1rem;
-	line-height: 1.8em;
+	line-height: 1.5em;
 	color: black;
-	font-family: 'Open Sans',Arial, sans-serif;
+	font-family: 'Roboto',Arial, sans-serif;
+	font-weight: 400;
 	margin-top: 0em;
   	margin-bottom: 2em;
-
-}
-
-figcaption{
-	padding-top: .25em;
 }
 
 ul{
@@ -190,6 +174,19 @@ ul.tabs li {
 .header-area{
 	max-width: 80%;
 	margin: 0 auto;
+}
+
+div.first-article{
+	margin: 0 20% 0 0;
+}
+
+div.second-article{
+	margin: 0 auto !important;
+	max-width: 75%;
+}
+
+div.third-article{
+	margin: 0 0 0 20%;
 }
 
 @media (max-width: 600px) {

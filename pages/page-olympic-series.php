@@ -13,8 +13,6 @@ Template Name: Olympic Series
 				  <h1 class="title-primary">
 				      <span>Overarching Title</span>
 				  </h1>
-				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
-					Author</a></h2>
 				<section class="top-bar-section">
 	        <ul class="tabs">
 		        <div class="wrap">
@@ -32,121 +30,310 @@ Template Name: Olympic Series
 						</div>
 					</ul>
 	             </section>
-      </div>
+         	</div>
 			<div class="slide-wrapper">
 				<div class="content-carousel set">
-					<div class="content active" id="article-1" data-index="1">
-						<div class="medium-10 columns">
-							<h3 class="part1">  Title 1 </h3>
+				<div class="content active" id="article-1" data-index="1">
+					<div class="medium-10 columns">
+											<h3 class="part1">  Headline Here Thanks Here </h3>
+					<h4>By  <a class="author" title="Posts by Author" href="#" rel="author">
+						Firstname Lastname</a>
+					</h4>
+					<h2>Daily Bruin Senior Staff</h2>
+					<div class="first-article">
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<p class="pullquote">
-							  Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
+						<div class="pullquote">
+							<p class="pullquotetext">
+							  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
 							  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno.
-							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea.
+							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
 							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p class="pullquote2">
-							  Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts.
+						<div class="pullquote2">
+							<p class="pullquote2text">
+							  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts.
 							  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic.
-							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad.
+							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
 							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-						 </div>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 					</div>
+				</div>
+				</div>
 
-					<div class="content" id="article-2" data-index="2">
-						  <h3 class="part2">Coming Soon</h3>
-						  	<figure>
-						  		<img class="feature-image .intense" src=""/>
-						  		<figcaption></figcaption>
-							</figure>
-						    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+ 				  <div class="content" id="article-2" data-index="2">
+						<div class="medium-10 columns">
+					  	<div class="second-article">
+						  <h3 class="part2">here is another title yipee</h3>
+						  <h4>By  <a class="author" title="Posts by Author" href="#" rel="author">
+							Firstname Lastname</a>
+						  </h4>
+						  <h2>Daily Bruin Senior Staff</h2>
+						    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
 
-					<div class="content" id="article-3" data-index="3">
-						  <h3 class="part3"> Coming Soon </h3>
-						  	<figure>
-						  		<img class="feature-image" src=""/>
-						  		<figcaption></figcaption>
-							</figure>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<div class="pullquote">
+							<p class="pullquotetext">
+							  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
+							  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno.
+							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
 							</p>
-					</div>
+							<p class="quote-author">Author Lastname</p>
+						</div>
 
-				</div> <!-- end content carousel -->
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<div class="pullquote2">
+							<p class="pullquote2text">
+							  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts.
+							  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic.
+							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+					  </div>
+					</div>
+				  </div>
+
+ 				  <div class="content" id="article-3" data-index="3">
+					  <div class="third-article">
+						  <h3 class="part3">here is another title yipee</h3>
+						  <h4>By  <a class="author" title="Posts by Author" href="#" rel="author">
+							Firstname Lastname</a>
+						  </h4>
+						  <h2>Daily Bruin Senior Staff</h2>
+						   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<div class="pullquote">
+							<p class="pullquotetext">
+							  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
+							  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno.
+							  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<div class="pullquote2">
+							<p class="pullquote2text">
+							  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts.
+							  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic.
+							  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+							</p>
+							<p class="quote-author">Author Lastname</p>
+						</div>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+							amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+							et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+							Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+							Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+							egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+							 facilisis luctus, metus</p>
+					  </div>
+				  </div>
+				</div> <!-- end content-carousel -->
 			</div> <!-- end wrapper -->
 		</div> <!-- end all content -->
 	</div> <!-- end row -->
