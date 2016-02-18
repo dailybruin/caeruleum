@@ -3,6 +3,7 @@ Template Name: Olympic Series
 */ ?>
 <?php get_header(); ?>
 <!-- fullPage.js CSS -->
+<meta name="viewport" content="width=device-width" /> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css">
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
 <div class="container">
@@ -37,7 +38,7 @@ Template Name: Olympic Series
 				<div class="content-carousel set">
 				<div class="content active" id="article-1" data-index="1">
 					<div class="row" data-equalizer="b">
-						<div class="small-12 medium-9 large-7 medium-push-1 columns" data-equalizer-watch="b">
+						<div class="small-12 medium-9 large-8 medium-push-1 columns" data-equalizer-watch="b">
 							<img src="http://www.fillmurray.com/800/500"/>
 							<div class="img-credits columns">
 								PHOTO BY THIS PERSON <!-- font-variant smallcaps look fugly -->
@@ -50,7 +51,7 @@ Template Name: Olympic Series
 						</div></a>
 					</div>
 					<div class="row">
-						<div class="small-12 medium-9 large-7 medium-push-1 columns">
+						<div class="small-12 medium-9 large-9 medium-push-1 columns">
 						<h3 class="part1">  Headline Here Thanks Here </h3>
 						<h4>By
 							<a class="author" title="Posts by Author" href="#" rel="author">
@@ -72,7 +73,7 @@ Template Name: Olympic Series
 								<p class="pullquotetext">
 								  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
 								  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno.
-								  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
+								  What even is gothic rock? This lotion makes me smell like jasmine tea."
 								</p>
 								<p class="quote-author">Author Lastname</p>
 							</div>
@@ -126,7 +127,7 @@ Template Name: Olympic Series
 								<p class="pullquote2text">
 								  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts.
 								  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic.
-								  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+								  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very rad."
 								</p>
 								<p class="quote-author">Author Lastname</p>
 							</div>
@@ -151,13 +152,13 @@ Template Name: Olympic Series
 						</div>
 					</div>
 				</div>
-				</div>
+			</div>
 
  				  <div class="content" id="article-2" data-index="2">
 						<div class="row" data-equalizer="b">
 							<a class="carousel-prev"><div class="medium-1 medium-push-1 columns chevron chevron-left hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
-							<div class="small-12 medium-9 medium-push-1 large-7 columns" data-equalizer-watch="b">
+							<div class="small-12 medium-9 medium-push-1 large-8 columns" data-equalizer-watch="b">
 								<img src="http://www.fillmurray.com/800/500"/>
 								<div class="img-credits columns">
 									PHOTO BY THIS PERSON <!-- font-variant smallcaps look fugly -->
@@ -170,7 +171,7 @@ Template Name: Olympic Series
 							</div></a>
 						</div>
 						<div class="row">
-							<div class="small-12 medium-9 large-7 medium-push-2 columns">
+							<div class="small-12 medium-9 large-9 medium-push-2 columns">
 						  	<div class="second-article">
 							  <h3 class="part2">here is another title yipee</h3>
 							  <h4>By  <a class="author" title="Posts by Author" href="#" rel="author">
@@ -190,7 +191,7 @@ Template Name: Olympic Series
 								<p class="pullquotetext">
 								  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
 								  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno.
-								  What even is gothic rock? This lotion makes me smell like jasmine <br> tea."
+								  What even is gothic rock? This lotion makes me smell like jasmine tea."
 								</p>
 								<p class="quote-author">Author Lastname</p>
 							</div>
@@ -242,9 +243,9 @@ Template Name: Olympic Series
 
 							<div class="pullquote2">
 								<p class="pullquote2text">
-								  "Legend of Zelda Wind Waker was amazing ok. I liked the art style. You nutsos who didn't like it... you're nuts.
+								  "Legend of Zelda Wind Waker was amazing ok. I liked the art style.
 								  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic.
-								  What's another cool game, ... probably Okami. Yeah. I got Yokai Watch for Christmas. Very fun. Very <br>rad."
+								  What's another cool game, ... probably Okami. Very fun. Very rad."
 								</p>
 								<p class="quote-author">Author Lastname</p>
 							</div>
@@ -275,7 +276,7 @@ Template Name: Olympic Series
 						<div class="row" data-equalizer="b">
 							<a class="carousel-prev"><div class="medium-1 medium-push-1 columns chevron chevron-left hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
-							<div class="small-12 medium-9 medium-push-1 large-7 columns coming-soon-wrapper" data-equalizer-watch="b">
+							<div class="small-12 medium-9 medium-push-1 large-9 columns coming-soon-wrapper" data-equalizer-watch="b">
 								<h2 class="coming-soon">COMING SOON</h2>
 							</div>
 						</div>
@@ -286,7 +287,6 @@ Template Name: Olympic Series
 			</div> <!-- end wrapper -->
 		</div> <!-- end all content -->
 	</div> <!-- end row -->
-</div>
 <!-- JS -->
 <script>
 	$(document).ready(function(){

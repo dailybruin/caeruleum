@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,900);
-@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,700);
 *{
 	 -webkit-font-smoothing: antialiased;
   -moz-box-sizing: border-box;
@@ -9,18 +9,18 @@
 /*pull quote*/
 
 .pullquote2 {
-  padding: 1rem 1rem 0 3.5rem;
+  padding: 1rem 1rem 0 3rem;
   width: 28rem;
   position: relative;
-  margin: 0 2rem 2rem 0;
+  margin: 0 2rem 1rem 0;
   float: right;
 }
 
 .pullquotetext, .pullquote2text
 {
-  font-family: Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -33,9 +33,10 @@
 }
 
 .quote-author{
-	font-family: Georgia, serif;
-  	font-style: italic;
-  	color: #424242;
+	font-family: "Lora", Georgia, serif;
+  	font-weight:700;
+  	color: #FFEB4A;
+  	font-size: 2.5em;
 }
 
 figure{
@@ -133,6 +134,7 @@ p{
   	margin-bottom: 2em;
 }
 
+
 ul{
 	list-style-type: none;
 	margin:0;
@@ -170,7 +172,7 @@ ul.tabs li {
 	margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media all and (min-width: 320px) and (max-width: 500px) {
 	figure {
 		max-width: 100%;
 		height: auto;
@@ -178,31 +180,44 @@ ul.tabs li {
 	}
 
 	div.second-article, div.first-article, div.third-article{
-		margin: 0 auto !important;
-		max-width: 95%;
+		margin: 0 auto;
 	}
 
 	h3.part1, h3.part2, h3.part3{
-		font-size: 3.7em;
+		font-size: 3.3em;
 	}
 
-	.pullquote2 {
-	  padding: 0;
-	  position: relative;
+	.pullquote2, .pullquote {
+	  padding: 0 0 0 0;
+	  position: static;
 	  margin: 0 auto;
 	  float: none;
-	  max-width: 95%;
 	}
+
 
 	.pullquotetext, .pullquote2text
 	{
-	  font-family: Georgia, serif;
+	  font-family: "Lora", Georgia, serif;
 	  font-style: italic;
-	  font-size: 1.2rem;
+	  font-size: 1rem;
 	  text-transform: uppercase;
 	  margin-bottom: 0;
 	}
+
+	.quote-author{
+		font-size: 1.8em;
+	}
+
+	h1{
+		font-size: 1em;
+	}
+
+	p{
+		font-size: 1.2em;
+	}
 }
+
+
 
 /* SUB-HEADER */
 
