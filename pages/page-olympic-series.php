@@ -7,31 +7,22 @@ Template Name: Olympic Series
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css">
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
 <div class="container">
+	<div style="float:left; width:10vw; background-color:black; height:100%;"></div>
 	<div class="row">
 		<div class="black-border hide-for-small-only">
 		</div>
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
-				<section class="top-bar-section">
-					<ul class="tabs">
-						<div class="wrap">
-							<ul class="tabs">
-								<li class="tab-title active"><a href="#article-1" class="button">Title 1</a></li>
-								<li class="tab-title"><a href="#article-2" class="button" >Title 2</a></li>
-								<li class="tab-title"><a href="#article-3" class="button">Title 3</a></li>
-								<li class="tab-title">
-									<a class="button" id="carousel-next">Next</a>
-								</li>
-								<li class="tab-title">
-									<a class="button" id="carousel-prev">Prev</a>
-								</li>
-							</ul>
-						</div>
-					</ul>
-				</section>
 				  <h1 class="title-primary">
-				      <span>Overarching Title</span>
+				      <span>Olympic Series</span>
 				  </h1>
+				  <div class="explainer-text">
+				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
+				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
+				  	</span>
+				  </div>
+				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
+					Author</a></h2>
       </div>
 
 			<div class="slide-wrapper">
