@@ -196,22 +196,33 @@ div.third-article{
 	}
 
 	h3.part1, h3.part2, h3.part3{
-		text-align: center;
 		font-size: 3.7em;
-
 	}
 
-	.pullquote, .pullquote2 { 
-	  float: none !important;
-	  width: 100% !important;
-	  margin: 0 auto !important;
+	.pullquote2 {
+	  padding: 0;
+	  position: relative;
+	  margin: 0 auto;
+	  float: none;
+	  max-width: 95%;
 	}
 
-	.pullquote2text, .pullquotetext{
-		font-size:1.2rem;
+	.pullquotetext, .pullquote2text
+	{
+	  font-family: Georgia, serif;
+	  font-style: italic;
+	  font-size: 1.2rem;
+	  text-transform: uppercase;
+	  margin-bottom: 0;
 	}
 
-	.pullquote br, .pullquote2 br { display: block; }
+	.pullquote {
+	  padding: 0;
+	  position: relative;
+	  float: none;
+	  max-width: 95%;
+	  margin: 0 auto;
+	}
 
 
 }
