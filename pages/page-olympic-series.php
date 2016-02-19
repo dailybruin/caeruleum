@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php/*
 Template Name: Olympic Series
 */ ?>
@@ -7,16 +6,15 @@ Template Name: Olympic Series
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css">
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
 <div class="container">
-	<div style="float:left; width:10vw; background-color:black; height:100%;"></div>
 	<div class="row">
 		<div class="black-border hide-for-small-only">
 		</div>
 		<div class="large-12 columns" id="content">
 			<div class="header-area">
-				  <h1 class="title-primary">
+				  <h1 class="title-primary large-10 medium-10 small-12 column">
 				      <span>Olympic Series</span>
 				  </h1>
-				  <div class="explainer-text">
+				  <div class="explainer-text large-10 medium-10 small-12 column">
 				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
 				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
 				  	</span>
