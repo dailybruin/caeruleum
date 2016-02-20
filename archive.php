@@ -49,7 +49,7 @@
                         <? endif; ?> 
                         </div>
                         <?php if ( get_the_author_meta('position', get_the_author_meta( 'ID' ))): ?>
-                            <div class="author-position"> <?php echo get_the_author_meta('position') ?> </div>
+                            <div class="author-position"> <?php echo get_the_author_meta('position') ?> Writer</div>
                         <?php endif; ?>
                       </div>
                     </div>
@@ -58,7 +58,7 @@
                       if($displayMugshot)
                       {
                         ?>
-                        <div class="image large-2 small-3 medium-2 columns"> 
+                        <div class="image large-2 small-3 medium-3 columns"> 
                         <?php
                           ob_start();
                         if(function_exists('userphoto_the_author_photo'))
