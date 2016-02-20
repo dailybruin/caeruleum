@@ -147,17 +147,12 @@
             </div>
             <div class="large-4 columns db-story-breaking" data-equalizer-watch>
               <div>
-              <?php $quadid = get_cat_ID( 'The Quad' ); ?>
-                <div>
-                  <a href="http://dailybruin.com/category/quad/">
-                    <img src="http://dailybruin.com/images/2015/12/Quad-explainerbelow-01.png">
-                  </a>
-                </div>
+                <h1 class="text-center">Breaking</h1>
               </div>
               <div class="row db-divide"></div>
              <div class="row">
               <?php // Breaking posts
-				$args = array( 'category' => $quadid );
+				$args = array( 'tag' => 'breaking' );
 				$i=0;
 				$lastposts = get_posts( $args );
 				foreach( $lastposts as $post ) : 	setup_postdata($post); 
@@ -171,28 +166,17 @@
                   <h3>
                     <a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a>
                   </h3>
-                  <?php if ($i == 1): ?>
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-front', array('class'=>'thumbnail-a')); ?></a>
-                  <?php the_byline_front(); ?>
-                  <p>
-                  <?php echo get_the_excerpt();  ?>
-                  </p>
-                  <?php endif ?>
                 </div>
 				<?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-              
-              <!--  this used to be a MOJO refer
-              <div class="row db-image text-center hide-for-medium hide-for-small">
-                <a href="http://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
-              </div> -->
-
-              <hr style="margin: 1.5rem 0">
-	           	
-              <div class="db-ad">
+	           	<div class="db-ad hide-for-medium hide-for-small">
 	            	<?php get_template_part('ad','side'); ?>
 	            </div>
+	            <hr style="margin: 1.5rem 0">
+	            <div class="row db-image text-center hide-for-medium hide-for-small">
+	        		<a href="//mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
+	        	</div>
             </div>
     </div>
     <div class="row db-divide"></div>
@@ -449,12 +433,12 @@
             	</div>
 				<div class="row" id="featuredProject">
 					<div style="padding: 5px 20px;">
-						 <h1>give a man a fish</h1>
+						 <h1>Wake of the Storm</h1>
 						 <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
 						 <span style="display:block;width:100%;clear:both;"></span>
-						 <img src="http://dailybruin.com/images/2015/10/bob-cover-300x199.jpg" />
-		                 		<p>Radio reporter Jonaki Mehta, photographer Sonja Bartlett and an external translator, Ravindranath Chandran, spent nine days in Vadamanappakkam covering the progress and effectiveness of Project RISHI’s initiatives and exploring the complexities of this rural village and its residents. This project was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which has funded UCLA’s student journalists for eight years to cover stories of a global reach and local impact.</p>
-						 <a href="http://india.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
+						 <img src="http://dailybruin.com/images/features/THUMBS/yolanda_thumb.jpg" />
+		                 <p>Read our feature series about recovery efforts in the Philippines, which was devastated by a super typhoon last November. UCLA student donations played a part in the relief missions of several aid agencies in the wake of the storm. The Daily Bruin spent 19 days in the Philippines talking to typhoon survivors and relief organizations. The reporting in the Philippines was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which is in its seventh year of funding UCLA journalism with global reach and local impact.</p>
+						 <a href="http://yolanda.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
 						 <span style="display:block;width:100%;clear:both"></span>
 					</div>
 				</div><!-- end div#featuredProject -->

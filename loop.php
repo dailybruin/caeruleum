@@ -13,7 +13,6 @@
     $hasSidebar = true;
 
     $news_cat = get_category_by_slug('news')->term_id;
-    $quad_cat = get_category_by_slug('Quad')->term_id;
     $ae_cat = get_category_by_slug('arts-entertainment')->term_id;
     $sports_cat = get_category_by_slug('sports')->term_id;
     $opinion_cat = get_category_by_slug('opinion')->term_id;
@@ -25,16 +24,6 @@
 
     switch ($categoryTitle)
     {
-      case "The Quad":
-        $sectionTag = "db-story-quad";
-        $section_cat = $quad_cat;
-        $first_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('press-pass')->term_id);
-        $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('throwback-thursday')->term_id);
-        $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('multimedia-quad')->term_id);
-        $fourth_side = array( 'numberposts' => 2, 'category__and' => array($photo_cat, get_category_by_slug('spectrum')->term_id) );
-        $side_names = array("Press Pass", "Throwback Thursday", "Multimedia", "Spectrum");
-        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
-        break;
       case "News":
         $sectionTag = "db-story-ns";
         $section_cat = $news_cat;
@@ -232,7 +221,7 @@
       <div class="db-list row">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php if(has_post_thumbnail()): ?>
-            <div class="hide-for-large hide-for-medium show-for-small text-center">
+            <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
             <div class="medium-8 small-12 columns" style="padding-left:0">
@@ -249,18 +238,17 @@
             <?php the_audio(); ?>
         <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
 
-        <?php if(has_post_thumbnail() && has_post_thumbnail_caption()): ?>
+        <?php if(has_post_thumbnail_caption()): ?>
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
-          <?php endif; ?>  
+            </div>
           <?php if(has_post_thumbnail()): ?>
-          </div>
             </div>
             <div class="medium-4 columns hide-for-small">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
           <?php endif; ?>
-        
+        <?php endif; ?>
         </article>
       </div>
       <hr>

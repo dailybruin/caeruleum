@@ -109,9 +109,9 @@ body,
 
 #photoblog-post-block{
 	/*background-image: url(dark-tire.png) !important;*/
-	background-color: #050505;
+	/*background-color: #050505;
 	border: solid;
-	border-color: #303030;
+	border-color: #303030;*/
 	border-radius: 0px 0px 0px 0px;
 	color: #BBBBBB;
 	height: auto;
@@ -184,8 +184,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	max-height: 384px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 2%;
-	max-width: 95%;
+	/*margin-top: 2%;*/
+	/*max-width: 95%;*/
 	/*max-height: 384px;*/
 	/*padding: 5px 5px 5px 5px;*/
 	/*width: 95%;*/
@@ -613,4 +613,13 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 #lightbox-container div#lb-close:hover {
 	opacity: 0.9;
+}
+.grid-item { 
+	width: 33%; 
+}
+.grid-item--width2 { 
+	width: 50%; 
+}
+.picOverlay {
+	display: none;
 }
