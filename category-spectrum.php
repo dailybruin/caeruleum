@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+
+<div class="row">
+<?php get_template_part('sidebar','photoblog'); ?>
+</div>
+
 <div class="row" id="archive-content">
 	<div class="small-9 columns" id="post-listing">
     <div class="page-header">
@@ -15,10 +20,7 @@
       <h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
     <?php get_template_part('loop', 'category-photoblog'); ?>
-    
+
   </div><!-- end div#post-listing -->
-  <div class="small-3 columns">
-  <?php get_template_part('sidebar','photoblog'); ?>
-  </div>
 </div><!-- end div#archive-content -->
 <?php get_footer(); ?>

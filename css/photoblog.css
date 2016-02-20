@@ -258,7 +258,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 
 .sidebar-menu{
-	width: 250px;
+	width: 100%;
 }
 .sidebar-menu a {
 	color: white!important;
@@ -289,13 +289,13 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 #menu-spectrum-filter li {
 	color: #FFFFFF;
-	display: block;
+	display: inline-block;
 	font-family: 'Arial';
 	font-size: 16px;
 	height: 40px;
 	line-height: 40px;
 	text-indent: 20px;
-	width: 100%;
+	/*width: 25%;*/
 }/*
 #menu-sidebar-filter li:hover{
 	background-color: #605000;
