@@ -239,7 +239,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .pager-pb .page-numbers.current:hover {
 	color: #FFFFFF;
 }
+
 /*THE SIDEBAR*/
+/*
 #sidebar-reference{
 	width: 100%;
 	display: block;
@@ -263,6 +265,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .sidebar-menu a {
 	color: white!important;
 }
+
 #sidebar-menu ul{
 	color: #549053;
 	list-style: none;
@@ -279,7 +282,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
     color: #FFFFFF;
 
     text-decoration: none;
-}
+}*/
 
 
 
@@ -319,6 +322,13 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #menu-spectrum-filter li a:hover,
 #menu-spectrum-filter li.active a{
 	color: #FFFFFF;
+}
+
+/* SPECTRUM REDESIGN NEW CSS */
+
+.sidebar-category {
+	color: lightgreen!important;
+	text-align: center;
 }
 
 /*END DELETE*/
