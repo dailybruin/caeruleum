@@ -1,5 +1,13 @@
 <?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
+<!-- 1. Link to jQuery (1.8 or later), -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+<!-- fotorama.css & fotorama.js. -->
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+
 <div class="small-9 columns" id="post">
 	<?php the_post();
 	$cats = get_the_category();
@@ -25,16 +33,20 @@
 				the_title();
 				?>
 			</a></h2> 
-						<?php $gallery = get_post_meta($post->ID, 'gallery', true);
+			<div class="fotorama" data-nav="thumbs" data-width="100%"
+     data-height="100%">
+	 		 <?php $gallery = get_post_meta($post->ID, 'gallery', true);
 			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
 				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
 				global $nggdb;
 				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
-				    echo '<div id="pb-image-block"><div id="pb-gallery-image"><img src="'.$image->imageURL.'"/></div>';
-				    echo '<p id="pb-gallery-text">'.$image->description.' (Photo by '. $image->alttext.')</p></div>';
+				    echo '<div id="pb-gallery-image"><img src="'.$image->imageURL.'"  data-caption="'.$image->description.'"></div>';
+				
 				 }
 			?>
+			</div>
+						
 			<?php if(function_exists('the_audio')) the_audio(); ?>
 			<hr>
 			<?php the_content(); ?>
