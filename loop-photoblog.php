@@ -1,5 +1,7 @@
 <?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
+<?php get_template_part('sidebar','photoblog'); ?>
+
 <div class="small-9 columns" id="post">
 	<?php the_post();
 	$cats = get_the_category();
@@ -48,6 +50,3 @@
 	</div> <!--photoblog-post-block-->
 
 </div><!-- end div#post -->
-<div class="small-3 columns">
-<?php get_template_part('sidebar','photoblog'); ?>
-</div>
