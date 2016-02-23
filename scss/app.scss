@@ -980,8 +980,6 @@ div.twitter{
 
 .bio{
   padding-bottom: .3em;
-  // border-bottom: 1px solid black;
-
 }
 
 .contact-info-wrapper{
@@ -1000,9 +998,30 @@ p.contact{
   margin:0;
 }
 
+.author-title{
+  border-top: 1px solid black;
+  margin-top: 6px !important;
+}
+
+.author-box{
+  border-top: 2px solid black;
+}
+
+div.description{
+  margin-top:0 !important;
+  padding-left: 0px !important;
+}
+
+div.image {
+  margin-top: 2px !important;
+  padding-right: 0px !important;
+}
+
+div.email.small-6.columns{
+  padding-left: 10px !important;
+}
 .author-wrapper{
   padding-bottom: .1em;
-  // border-bottom: 2px solid black;
 }
 
 @media (max-width: 480px) {
