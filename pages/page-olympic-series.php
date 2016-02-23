@@ -16,11 +16,15 @@ Template Name: Olympic Series
 				  <h1 class="title-primary">
 				      <span>Olympic Series</span>
 				  </h1>
-				  <div class="explainer-text small-12 large-8 medium-9">
+				  <div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
 				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
 				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
 				  	</span>
-				</div>
+				  </div>
+
+				  <div class="mobile-navigation show-for-small-only">
+				   
+				  </div>
       		</div>
 
 			<div class="slide-wrapper">
