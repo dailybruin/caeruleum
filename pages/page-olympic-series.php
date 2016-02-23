@@ -12,17 +12,15 @@ Template Name: Olympic Series
 		<div class="black-border hide-for-small-only">
 		</div>
 		<div class="large-12 columns" id="content">
-			<div class="header-area">
+			<div class="header-area small-12">
 				  <h1 class="title-primary">
 				      <span>Olympic Series</span>
 				  </h1>
-				  <div class="explainer-text">
+				  <div class="explainer-text small-12 large-8 medium-9">
 				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
 				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
 				  	</span>
-				  </div>
-				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
-					Author</a></h2>
+				</div>
       		</div>
 
 			<div class="slide-wrapper">
