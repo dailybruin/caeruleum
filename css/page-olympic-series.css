@@ -10,7 +10,7 @@
 
 .pullquote2 {
   padding: 1rem 1rem 0 3rem;
-  width: 28rem;
+  max-width: 28rem;
   position: relative;
   margin: 0 2rem 1rem 0;
   float: right;
@@ -27,7 +27,7 @@
 
 .pullquote {
   padding: 1rem 2.5rem 0rem 1rem;
-  width: 28rem;
+  max-width: 28rem;
   position: relative;
   float: left;
 }
@@ -175,10 +175,6 @@ ul.tabs li {
 	figure {
 		max-width: 100%;
 		height: auto;
-		margin: 0 auto;
-	}
-
-	div.second-article, div.first-article, div.third-article{
 		margin: 0 auto;
 	}
 
