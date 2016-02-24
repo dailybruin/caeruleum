@@ -217,6 +217,13 @@
 
 				        ?>
 						<!--Author Box -->
+						<?php
+						//Author Box Variables
+						$position= get_the_author_meta('position', $author->ID);
+						$description = get_the_author_meta('description', $authour->ID);
+						$email = get_the_author_meta('user_email', $author->ID);
+						$twitter = get_the_author_meta( 'twitter_handle', $author->ID );
+						?>
 					    <div class="author-wrapper">
 			                <div class="row author-box">
 			                  <div class="large-12 medium-12 small-12 columns author-title">
@@ -224,12 +231,12 @@
 			                    	<a href="<?php echo get_author_posts_url( $author->ID, get_the_author_meta( 'user_nicename',$author->ID ) ); ?>">
 			                    		<?php echo "$firstName $lastName"; ?>
 			                    	</a> 
-			                    	<?php if ( get_the_author_meta('position', $author->ID) || true ): ?>
+			                    	<?php if ( $position ): ?>
 			                    	|
 			                    	<? endif; ?>
 			                    </div>
-			                    <?php if ( get_the_author_meta('position', $author->ID) || true ): ?>
-			                    	<div class="author-position"> <?php echo get_the_author_meta('position', $author->ID) ?> Writer</div>
+			                    <?php if ( $position ): ?>
+			                    	<div class="author-position"> <?php echo $position ?> </div>
 			                	<?php endif; ?>
 			                  </div>
 			                </div>
@@ -246,46 +253,53 @@
 			    					$thumbnail = ob_get_contents();
 			    					$thumbnail_class = "";
 			    					ob_end_clean();
-			    					if(isset($thumbnail) || !($thumbnail == ""))
+			    					if(!empty($thumbnail))
 			    					{
 			        					?>
 			        						<div class="author-photo"><?php userphoto_the_author_photo(); ?></div>
 			        						</div>
 			        						<?php
+			        				}else{
+			        					$displayMugshot=false;
+			        					?>
+			        					</div>
+			        					<?php
 			        				}
 							    }
 								?>
-							<?php if ( !$displayMugshot): ?>
-			                	<div class="description large-12 small-12 medium-12 columns">
-			                <?php else: ?>
-			                	<div class="description large-10 small-9 medium-10 columns">
-			            	<?php endif; ?>
-			                  <?php if (get_the_author_meta('description', $author->ID) || true): ?>
+							<?php if ( !$displayMugshot && !$description): ?>
+		                        <div class="description large-12 small-12 medium-12 columns">
+		                      <?php elseif ( !$displayMugshot): ?>
+		                        <div class="description large-12 small-9 medium-10 columns">
+		                    <?php endif; ?>
+		                      <?php if ($description): ?>
 			                    <p class="bio-text">
-			            			<?php echo get_the_author_meta('description', $author->ID) ?>
-			            			Hello this is filler description yay hello this is filler description yay whoohoo.
-			            			yipiyip yipyi hhehe uiou greeone gjrkelgj slimy.
+			            			<?php echo $description ?>
 			                    </p>
 			                  <?php endif; ?>
-			                  <div class="row contact-info-wrapper show-for-medium-up">
-			                    <?php if ( get_the_author_meta('user_email', $author->ID) || get_the_author_meta( 'twitter_handle', $author->ID ) ): ?>
-			                    <div class="contact large-2 medium-2 columns show-for-medium-up">
-			                      <p class="contact">contact</p>
-			                    </div>
-			                    <?php endif; ?>
-			                    <div class="email large-6 medium-6 columns">
-			                      <?php if ( get_the_author_meta('user_email', $author->ID)): ?>
+			                  <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
+		                        <div class="row contact-info-wrapper-smaller-margin">
+		                      <?php else: ?>
+		                      <div class="row contact-info-wrapper">
+		                      <?php endif; ?>
+		                        <?php if ( $email || $twitter ): ?>
+		                        <div class="contact large-2 medium-2 columns show-for-medium-up">
+		                          <p class="contact">contact</p>
+		                        </div>
+		                        <?php endif; ?>
+			                    <div class="email large-6 medium-6 columns show-for-medium-up">
+			                      <?php if ( $email): ?>
 			                      <p><span class="entypo-mail"></span>
 			                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
 			                        <?php echo "$author->user_email"; ?>
 			                      </a></p>
 			                      <?php endif; ?>
 			                    </div>
-			                    <div class="twitter large-4 medium-4 columns">
-			                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID ) || true): ?>
+			                    <div class="twitter large-4 medium-4 columns show-for-medium-up">
+			                      <?php if ( $twitter): ?>
 			                        <p><span class="entypo-twitter"></span>  
 			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-			                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> @brmibien
+			                          <?php echo $twitter; ?>
 			                        </a>
 			                      <?php endif; ?>
 			                    </div>
@@ -293,7 +307,7 @@
 			              </div>  
 			              		<div class="row contact-info-wrapper show-for-small-only">
 				                    <div class="email small-7 columns">
-				                      <?php if ( get_the_author_meta('user_email', $author->ID)): ?>
+				                      <?php if ( $email): ?>
 				                      <p><span class="entypo-mail"></span>
 				                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
 				                        <?php echo "$author->user_email"; ?>
@@ -301,10 +315,10 @@
 				                      <?php endif; ?>
 				                    </div>
 				                    <div class="twitter small-5 columns">
-				                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID ) || true): ?>
+				                      <?php if ( $twitter): ?>
 				                        <p><span class="entypo-twitter"></span>  
 				                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> @brmibien
+				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> 
 				                        </a>
 				                      <?php endif; ?>
 			                    </div>                 

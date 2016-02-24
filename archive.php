@@ -4,6 +4,24 @@
         <div class="page-header">
           <h2>
             <?php
+              $articleFormat = $articleFormats[0]->slug;
+              if(empty($articleFormat) || $articleFormat === 'normal')
+                $articleFormat = get_field('db_article_format');
+              $displayMugshot = false;
+              if($articleFormat)
+              {
+                switch($articleFormat)
+                {
+                  case 'brief':
+                    $displayAuthor = false;
+                    break;
+                  case 'column':
+                    $displayMugshot = true;
+                    break;
+                  case 'default':
+                    $displayMugshot = in_array('mugshot', get_field('db_display_options'));
+                }
+              }
               $sectionPage = false;
               $mainSection = false;
               $multSection = false;
@@ -21,7 +39,88 @@
               } elseif (is_year()) {
                 printf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
               } elseif (is_author()) {
-                  echo get_the_author();
+                  ?>
+                 <div class="author-wrapper">
+                   <div class="row author-box">
+                      <div class="large-12 medium-12 small-12 columns author-title">
+                        <div class="author-header"><?php echo get_the_author() ?> 
+                        <?php if ( get_the_author_meta('position')): ?>
+                            |
+                        <? endif; ?> 
+                        </div>
+                        <?php if ( get_the_author_meta('position', get_the_author_meta( 'ID' ))): ?>
+                            <div class="author-position"> <?php echo get_the_author_meta('position') ?></div>
+                        <?php endif; ?>
+                      </div>
+                    </div>
+                  <div class="bio row">
+                  <?php // Display the columnist's mugshot
+                      if($displayMugshot)
+                      {
+                        ?>
+                        <div class="image large-2 small-3 medium-3 columns"> 
+                        <?php
+                          ob_start();
+                        if(function_exists('userphoto_the_author_photo'))
+                          userphoto_the_author_photo();
+                        $thumbnail = ob_get_contents();
+                        $thumbnail_class = "";
+                        ob_end_clean();
+                        if(!empty($thumbnail))
+                        {
+                            ?>
+                              <div class="author-photo"> <?php userphoto_the_author_photo(); ?></div>
+                              </div>
+                              <?php
+                        }else{
+                          ?>
+                        </div>
+                          <?php
+                          $displayMugshot=false;
+                        }
+                      }
+                  ?>
+                    <?php if ( !$displayMugshot && !get_the_author_meta('description')): ?>
+                        <div class="description large-12 small-12 medium-12 columns">
+                      <?php elseif ( !$displayMugshot): ?>
+                        <div class="description large-12 small-9 medium-12 columns">
+                    <?php endif; ?>
+                      <?php if (get_the_author_meta('description') || true): ?>
+                        <p class="bio-text">
+                            <?php echo get_the_author_meta('description') ?>
+                        </p>
+                      <?php endif; ?>
+                      <?php if (!get_the_author_meta('description') && !$displayMugshot): ?> <!-- Don't make margin so large -->
+                        <div class="row contact-info-wrapper-smaller-margin">
+                      <?php else: ?>
+                      <div class="row contact-info-wrapper">
+                      <?php endif; ?>
+                        <?php if ( get_the_author_meta('user_email') || get_the_author_meta( 'twitter_handle' ) ): ?>
+                        <div class="contact large-2 medium-2 columns show-for-medium-up">
+                          <p class="contact">contact</p>
+                        </div>
+                        <?php endif; ?>
+                        <div class="email large-6 medium-5 small-12 columns">
+                          <?php if ( get_the_author_meta('user_email')): ?>
+                          <p><span class="entypo-mail"></span>
+                           <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
+                            <?php the_author_meta('user_email'); ?>
+                          </a></p>
+                          <?php endif; ?>
+                        </div>
+                        <div class="twitter large-4 medium-4 small-12 columns">
+                          <?php if ( get_the_author_meta( 'twitter_handle' )): ?>
+                            <p><span class="entypo-twitter"></span>  
+                            <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
+                              <?php the_author_meta('twitter_handle' );?>
+                            </a>
+                          <?php endif; ?>
+                        </div>
+                      </div>
+                    </div>                   
+                  </div>
+                </div>
+                <?php
               } else {
                 $sectionPage = true;
                 switch ($categoryTitle)
