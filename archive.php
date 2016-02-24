@@ -49,7 +49,7 @@
                         <? endif; ?> 
                         </div>
                         <?php if ( get_the_author_meta('position', get_the_author_meta( 'ID' ))): ?>
-                            <div class="author-position"> <?php echo get_the_author_meta('position') ?> Writer</div>
+                            <div class="author-position"> <?php echo get_the_author_meta('position') ?></div>
                         <?php endif; ?>
                       </div>
                     </div>
@@ -66,13 +66,18 @@
                         $thumbnail = ob_get_contents();
                         $thumbnail_class = "";
                         ob_end_clean();
-                        if(isset($thumbnail) || !($thumbnail == ""))
+                        if(!empty($thumbnail))
                         {
                             ?>
                               <div class="author-photo"> <?php userphoto_the_author_photo(); ?></div>
                               </div>
                               <?php
-                          }
+                        }else{
+                          ?>
+                        </div>
+                          <?php
+                          $displayMugshot=false;
+                        }
                       }
                   ?>
                     <?php if ( !$displayMugshot): ?>

@@ -224,12 +224,12 @@
 			                    	<a href="<?php echo get_author_posts_url( $author->ID, get_the_author_meta( 'user_nicename',$author->ID ) ); ?>">
 			                    		<?php echo "$firstName $lastName"; ?>
 			                    	</a> 
-			                    	<?php if ( get_the_author_meta('position', $author->ID) || true ): ?>
+			                    	<?php if ( get_the_author_meta('position', $author->ID) ): ?>
 			                    	|
 			                    	<? endif; ?>
 			                    </div>
-			                    <?php if ( get_the_author_meta('position', $author->ID) || true ): ?>
-			                    	<div class="author-position"> <?php echo get_the_author_meta('position', $author->ID) ?> Writer</div>
+			                    <?php if ( get_the_author_meta('position', $author->ID) ): ?>
+			                    	<div class="author-position"> <?php echo get_the_author_meta('position', $author->ID) ?> </div>
 			                	<?php endif; ?>
 			                  </div>
 			                </div>
@@ -246,12 +246,17 @@
 			    					$thumbnail = ob_get_contents();
 			    					$thumbnail_class = "";
 			    					ob_end_clean();
-			    					if(isset($thumbnail) || !($thumbnail == ""))
+			    					if(!empty($thumbnail))
 			    					{
 			        					?>
 			        						<div class="author-photo"><?php userphoto_the_author_photo(); ?></div>
 			        						</div>
 			        						<?php
+			        				}else{
+			        					$displayMugshot=false;
+			        					?>
+			        					</div>
+			        					<?php
 			        				}
 							    }
 								?>
@@ -260,11 +265,9 @@
 			                <?php else: ?>
 			                	<div class="description large-10 small-9 medium-10 columns">
 			            	<?php endif; ?>
-			                  <?php if (get_the_author_meta('description', $author->ID) || true): ?>
+			                  <?php if (get_the_author_meta('description', $author->ID)): ?>
 			                    <p class="bio-text">
 			            			<?php echo get_the_author_meta('description', $author->ID) ?>
-			            			Hello this is filler description yay hello this is filler description yay whoohoo.
-			            			yipiyip yipyi hhehe uiou greeone gjrkelgj slimy.
 			                    </p>
 			                  <?php endif; ?>
 			                  <div class="row contact-info-wrapper show-for-medium-up">
@@ -282,10 +285,10 @@
 			                      <?php endif; ?>
 			                    </div>
 			                    <div class="twitter large-4 medium-4 columns">
-			                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID ) || true): ?>
+			                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID )): ?>
 			                        <p><span class="entypo-twitter"></span>  
 			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-			                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> @brmibien
+			                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?>
 			                        </a>
 			                      <?php endif; ?>
 			                    </div>
@@ -301,10 +304,10 @@
 				                      <?php endif; ?>
 				                    </div>
 				                    <div class="twitter small-5 columns">
-				                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID ) || true): ?>
+				                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID )): ?>
 				                        <p><span class="entypo-twitter"></span>  
 				                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> @brmibien
+				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> 
 				                        </a>
 				                      <?php endif; ?>
 			                    </div>                 
