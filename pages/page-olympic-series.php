@@ -172,117 +172,11 @@ Template Name: Olympic Series
 							<a class="carousel-prev"><div class="medium-1 medium-push-1 columns chevron chevron-left hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
 							<div class="small-12 medium-9 medium-push-1 large-8 columns" data-equalizer-watch="b">
-								<img src="http://www.fillmurray.com/800/500"/>
-								<div class="img-credits columns">
-									PHOTO BY THIS PERSON <!-- font-variant smallcaps look fugly -->
-								</div>
-								<div class="img-caption columns">
-									Some caption here. This is an important caption. Why am I typing this. Omg.
-								</div>
+								<h2 class="coming-soon-center">COMING SOON</h2>
 							</div>
 							<a class="carousel-next"><div class="medium-1 medium-push-1 columns end chevron hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
 						</div>
-						<div class="row">
-							<div class="small-12 medium-9 large-9 medium-push-2 columns">
-						  	<div class="second-article">
-							  <h3 class="part2">here is another title yipee</h3>
-							  <h4>By  <a class="author" title="Posts by Author" href="#" rel="author">
-								Firstname Lastname</a>
-							  </h4>
-							  <h2>Daily Bruin Senior Staff</h2>
-							    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<div class="pullquote">
-								<p class="pullquotetext">
-								  "Here's a list of my favorite songs from The Cure in order of coolness. The Love Cats, Friday I'm In Love, Boys Don't Cry,
-								  In Between Days, Pictures of You, Close To Me, and Just Like Heaven. How is The Cure's genre gothic rock. I dunno.
-								  What even is gothic rock? This lotion makes me smell like jasmine tea."
-								</p>
-								<p class="quote-author">Author Lastname</p>
-							</div>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<div class="pullquote2">
-								<p class="pullquote2text">
-								  "Legend of Zelda Wind Waker was amazing ok. I liked the art style.
-								  Other favorite Zelda games, all of them. I like A Link to the Past a lot too. Guessing Game House makes me nostalic.
-								  What's another cool game, ... probably Okami. Very fun. Very rad."
-								</p>
-								<p class="quote-author">Author Lastname</p>
-							</div>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-								Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-								amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
-								et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-								Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
-								Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
-								egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-								 facilisis luctus, metus</p>
-						  </div>
-						</div>
-					</div>
 				  </div>
 
  				  <div class="content" id="article-3" data-index="3">
@@ -293,7 +187,7 @@ Template Name: Olympic Series
 								<h2 class="coming-soon">COMING SOON</h2>
 							</div>
 						</div>
-					</div>
+				</div>
 
 				  </div>
 				</div> <!-- end content-carousel -->

@@ -306,6 +306,15 @@ h2.coming-soon {
 
 }
 
+h2.coming-soon-center {
+	font-size: 5em;
+	padding-bottom: 0;
+	font-weight: 600;
+	text-align: center;
+	color: #444444;
+
+}
+
 /* SLIDER */
 .slide-wrapper {
 	overflow: hidden;
