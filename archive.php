@@ -85,7 +85,7 @@
                       <?php elseif ( !$displayMugshot): ?>
                         <div class="description large-12 small-9 medium-12 columns">
                     <?php endif; ?>
-                      <?php if (get_the_author_meta('description') || true): ?>
+                      <?php if (get_the_author_meta('description')): ?>
                         <p class="bio-text">
                             <?php echo get_the_author_meta('description') ?>
                         </p>
