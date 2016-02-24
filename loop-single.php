@@ -270,7 +270,7 @@
 							<?php if ( !$displayMugshot && !$description): ?>
 		                        <div class="description large-12 small-12 medium-12 columns">
 		                      <?php elseif ( !$displayMugshot): ?>
-		                        <div class="description large-10 small-9 medium-10 columns">
+		                        <div class="description large-12 small-9 medium-10 columns">
 		                    <?php endif; ?>
 		                      <?php if ($description): ?>
 			                    <p class="bio-text">

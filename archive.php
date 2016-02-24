@@ -83,7 +83,7 @@
                     <?php if ( !$displayMugshot && !get_the_author_meta('description')): ?>
                         <div class="description large-12 small-12 medium-12 columns">
                       <?php elseif ( !$displayMugshot): ?>
-                        <div class="description large-10 small-9 medium-10 columns">
+                        <div class="description large-12 small-9 medium-12 columns">
                     <?php endif; ?>
                       <?php if (get_the_author_meta('description') || true): ?>
                         <p class="bio-text">
@@ -100,7 +100,7 @@
                           <p class="contact">contact</p>
                         </div>
                         <?php endif; ?>
-                        <div class="email large-6 medium-6 small-12 columns">
+                        <div class="email large-6 medium-5 small-12 columns">
                           <?php if ( get_the_author_meta('user_email')): ?>
                           <p><span class="entypo-mail"></span>
                            <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
