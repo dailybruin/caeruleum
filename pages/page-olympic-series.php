@@ -17,13 +17,21 @@ Template Name: Olympic Series
 				      <span>Olympic Series</span>
 				  </h1>
 				  <div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
-				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
-				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
+				  	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics, 
+				  		Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
+				  		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold. 
+				  		 The following series profiles three such members of UCLA women's water polo.
 				  	</span>
 				  </div>
 
-				  <div class="mobile-navigation show-for-small-only">
-				   
+				  <div class="mobile-navigation small-12 show-for-small-only">
+				   <nav>
+				    <ul>
+				        <span class="bubble"><li><a href="#"><span>Adam Krikorian</span></a></li></span>
+				        <span class="bubble"><li><a href="#"><span>Coming Soon</span></a></li></span>
+				        <span class="bubble"><li><a href="#"><span>Coming Soon</span></a></li></span>
+				    </ul>
+					</nav>
 				  </div>
       		</div>
 
@@ -32,12 +40,13 @@ Template Name: Olympic Series
 				<div class="content active" id="article-1" data-index="1">
 					<div class="row" data-equalizer="b">
 						<div class="small-12 medium-9 large-8 medium-push-1 columns" data-equalizer-watch="b">
-							<img src="http://www.fillmurray.com/800/500"/>
+							<img src="http://dailybruin.com/images/2016/02/web.sp_.olympic.feat_.KC_.PicA_.jpg"/>
 							<div class="img-credits columns">
-								PHOTO BY THIS PERSON <!-- font-variant smallcaps look fugly -->
+								KATHY CHEN/DAILY BRUIN <!-- font-variant smallcaps look fugly -->
 							</div>
 							<div class="img-caption columns">
-								Some caption here. This is an important caption. Why am I typing this. Omg.
+								A framed version of John Wooden's Pyramid of Success hangs in Adam Krikorian's
+								 home office, a relic of UCLA's lingering impact on the coach's career. 
 							</div>
 						</div>
 						<a class="carousel-next"><div class="medium-1 medium-push-1 columns end chevron hide-for-small-only" data-equalizer-watch="b">
@@ -97,6 +106,17 @@ Template Name: Olympic Series
 									Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
 									egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 									 facilisis luctus, metus</p>
+
+								<div class="pullimage">
+									<img src="http://dailybruin.com/images/2016/02/web.sp_.olympic.feat_.KC_.PicB_.jpg"/>
+									<div class="img-credits columns">
+										DAILY BRUIN FILE PHOTO 
+									</div>
+									<div class="img-caption columns">
+										Adam Krikorian was a four-year letterman and two-time captain for the men’s team during his collegiate playing career, 
+										contributing to UCLA's first national championship since 1972 in 1995. 
+									</div>
+								</div>
 
 								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 									Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit

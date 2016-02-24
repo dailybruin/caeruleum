@@ -51,9 +51,58 @@ figcaption{
 	font-size: .8rem;
 }
 
+.pullimage {
+  padding: 1rem 2.5rem 1.5rem 1rem;
+  max-width: 28rem;
+  position: relative;
+  float: left;
+}
 
 /*end pq*/
 
+/*Mobile Navigation*/
+
+
+div.mobile-navigation nav{
+  margin-top: 20px;
+}
+div.mobile-navigation nav ul li {
+  cursor: pointer;
+  list-style: none;
+  width: 60px;
+  overflow: visible;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #FFF044;
+}
+div.mobile-navigation nav ul li a {
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position:absolute;
+  color: black;
+  font-size: .9em;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bubble {
+	margin: 1.4%;
+}
+
+
+
+/*End Mobile Navigation*/
 
 .wrap ul li a {
 	-webkit-transition: all 350ms cubic-bezier(0.390, 0.500, 0.150, 1.360);

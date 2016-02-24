@@ -82,7 +82,7 @@
 		<?php endif; ?>
 		<div class="row">
 			<div class="small-7 columns">
-				<?php // Display the columnist's mugshot
+				<!--<?php // Display the columnist's mugshot
 				    if($displayMugshot && $displayAuthor)
 				    {
 				        ob_start();
@@ -99,6 +99,7 @@
         				}
 				    }
 				?>
+				-->
 				<div class="db-byline">
 					<h4> <?php the_byline(); ?> </h4>
 					<?php if (get_field('db_article_format') != 'brief'): ?>
@@ -211,27 +212,106 @@
 				        {
 				            $lastAuthor = ($finalAuthorKey == $key);
 				            $lastName = get_the_author_meta('last_name', $author->ID);
+				            $firstName = get_the_author_meta('first_name', $author->ID);
 				            $graduated = get_the_author_meta('graduated', $author->ID);
-				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated || substr($author->user_email,-12) == '@camayak.com') // camayak generates gross-looking author emails that we don't want to display
-				                continue;
-				            if($firstAuthor)
-				                echo "Email ";
-				            else
-				            {
-				                if($lastAuthor && $key == 1)
-				                    echo " and email ";
-				                else if($lastAuthor)
-				                    echo ", and email ";
-				                else
-				                    echo ", email ";
-				            }
-			                echo $lastName . " at <a href='mailto:"
-			                    . $author->user_email . "'>" . $author->user_email 
-			                    . "</a>";
-			                if($lastAuthor)
-			                    echo ".";
-			                $firstAuthor = false;
-				        }
+
+				        ?>
+						<!--Author Box -->
+					    <div class="author-wrapper">
+			                <div class="row author-box">
+			                  <div class="large-12 medium-12 small-12 columns author-title">
+			                    <div class="author-header">
+			                    	<a href="<?php echo get_author_posts_url( $author->ID, get_the_author_meta( 'user_nicename',$author->ID ) ); ?>">
+			                    		<?php echo "$firstName $lastName"; ?>
+			                    	</a> 
+			                    	<?php if ( get_the_author_meta('position', $author->ID) || true ): ?>
+			                    	|
+			                    	<? endif; ?>
+			                    </div>
+			                    <?php if ( get_the_author_meta('position', $author->ID) || true ): ?>
+			                    	<div class="author-position"> <?php echo get_the_author_meta('position', $author->ID) ?> Writer</div>
+			                	<?php endif; ?>
+			                  </div>
+			                </div>
+			              <div class="bio row">       
+			                  	<?php // Display the columnist's mugshot
+							    if($displayMugshot && $displayAuthor)
+							    {
+							    	?>
+							    	<div class="image large-2 small-3 medium-2 columns"> 
+							    	<?php
+							        ob_start();
+			    					if(function_exists('userphoto_the_author_photo'))
+			    						userphoto_the_author_photo();
+			    					$thumbnail = ob_get_contents();
+			    					$thumbnail_class = "";
+			    					ob_end_clean();
+			    					if(isset($thumbnail) || !($thumbnail == ""))
+			    					{
+			        					?>
+			        						<div class="author-photo"><?php userphoto_the_author_photo(); ?></div>
+			        						</div>
+			        						<?php
+			        				}
+							    }
+								?>
+							<?php if ( !$displayMugshot): ?>
+			                	<div class="description large-12 small-12 medium-12 columns">
+			                <?php else: ?>
+			                	<div class="description large-10 small-9 medium-10 columns">
+			            	<?php endif; ?>
+			                  <?php if (get_the_author_meta('description', $author->ID) || true): ?>
+			                    <p class="bio-text">
+			            			<?php echo get_the_author_meta('description', $author->ID) ?>
+			            			Hello this is filler description yay hello this is filler description yay whoohoo.
+			            			yipiyip yipyi hhehe uiou greeone gjrkelgj slimy.
+			                    </p>
+			                  <?php endif; ?>
+			                  <div class="row contact-info-wrapper show-for-medium-up">
+			                    <?php if ( get_the_author_meta('user_email', $author->ID) || get_the_author_meta( 'twitter_handle', $author->ID ) ): ?>
+			                    <div class="contact large-2 medium-2 columns show-for-medium-up">
+			                      <p class="contact">contact</p>
+			                    </div>
+			                    <?php endif; ?>
+			                    <div class="email large-6 medium-6 columns">
+			                      <?php if ( get_the_author_meta('user_email', $author->ID)): ?>
+			                      <p><span class="entypo-mail"></span>
+			                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
+			                        <?php echo "$author->user_email"; ?>
+			                      </a></p>
+			                      <?php endif; ?>
+			                    </div>
+			                    <div class="twitter large-4 medium-4 columns">
+			                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID ) || true): ?>
+			                        <p><span class="entypo-twitter"></span>  
+			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
+			                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> @brmibien
+			                        </a>
+			                      <?php endif; ?>
+			                    </div>
+			               </div> <!--end bio-row-->
+			              </div>  
+			              		<div class="row contact-info-wrapper show-for-small-only">
+				                    <div class="email small-7 columns">
+				                      <?php if ( get_the_author_meta('user_email', $author->ID)): ?>
+				                      <p><span class="entypo-mail"></span>
+				                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
+				                        <?php echo "$author->user_email"; ?>
+				                      </a></p>
+				                      <?php endif; ?>
+				                    </div>
+				                    <div class="twitter small-5 columns">
+				                      <?php if ( get_the_author_meta( 'twitter_handle', $author->ID ) || true): ?>
+				                        <p><span class="entypo-twitter"></span>  
+				                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
+				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> @brmibien
+				                        </a>
+				                      <?php endif; ?>
+			                    </div>                 
+			            </div>
+		           	  </div>
+		            	<?php
+		            	}
 				    }?>
 				</p>
 			</div><!-- end div.post-content -->
