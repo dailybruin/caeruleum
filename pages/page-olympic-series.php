@@ -10,7 +10,7 @@ Template Name: Olympic Series
 		<div class="black-border hide-for-small-only">
 		</div>
 		<div class="large-12 columns" id="content">
-			<div class="header-area">
+			<div class="header-area row">
 				  <h1 class="title-primary large-10 medium-10 small-12 column">
 				      <span>Olympic Series</span>
 				  </h1>
@@ -21,7 +21,7 @@ Template Name: Olympic Series
 				  </div>
 				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
 					Author</a></h2>
-      </div>
+      		</div>
 
 			<div class="slide-wrapper">
 				<div class="content-carousel set">
