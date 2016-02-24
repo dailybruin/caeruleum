@@ -982,8 +982,11 @@ div.twitter{
   padding-bottom: .3em;
 }
 
-.contact-info-wrapper{
-  width:100%;
+.contact-info-wrapper-smaller-margin{
+  margin-top: -0.5rem !important;
+  .contact-info-wrapper{
+    padding-left: 10px;
+  }
 }
 
 div.contact, div.email, div.twitter{
@@ -1009,7 +1012,7 @@ p.contact{
 
 div.description{
   margin-top:0 !important;
-  padding-left: 0px !important;
+  padding-left: 10px !important;
 }
 
 div.image {
@@ -1017,19 +1020,25 @@ div.image {
   padding-right: 0px !important;
 }
 
-div.email.small-6.columns{
-  padding-left: 10px !important;
+div.email.large-6.medium-6.small-12.columns, {
+  margin-left: 10px !important;
 }
 .author-wrapper{
   padding-bottom: .1em;
 }
 
+div.email.small-7.columns{
+  margin-left: 10px !important;
+}
+
 @media (max-width: 480px) {
   p.twitter{
     font-size:.6rem;
+    text-align: left;
   }
   p.email{
     font-size:.6rem;
+    text-align: left;
   }
 
   .author-header {
@@ -1041,9 +1050,6 @@ div.email.small-6.columns{
   }
   .bio-text {
     width: 100%;
-  }
-  .contact-info-wrapper{
-    width:100%;
   }
 
 }

@@ -80,17 +80,21 @@
                         }
                       }
                   ?>
-                    <?php if ( !$displayMugshot): ?>
-                        <div class="description large-12 small-8 medium-10 columns">
-                      <?php else: ?>
+                    <?php if ( !$displayMugshot && !get_the_author_meta('description')): ?>
+                        <div class="description large-12 small-12 medium-12 columns">
+                      <?php elseif ( !$displayMugshot): ?>
                         <div class="description large-10 small-9 medium-10 columns">
                     <?php endif; ?>
-                      <?php if (get_the_author_meta('description')): ?>
+                      <?php if (get_the_author_meta('description') || true): ?>
                         <p class="bio-text">
                             <?php echo get_the_author_meta('description') ?>
                         </p>
                       <?php endif; ?>
+                      <?php if (!get_the_author_meta('description') && !$displayMugshot): ?> <!-- Don't make margin so large -->
+                        <div class="row contact-info-wrapper-smaller-margin">
+                      <?php else: ?>
                       <div class="row contact-info-wrapper">
+                      <?php endif; ?>
                         <?php if ( get_the_author_meta('user_email') || get_the_author_meta( 'twitter_handle' ) ): ?>
                         <div class="contact large-2 medium-2 columns show-for-medium-up">
                           <p class="contact">contact</p>
