@@ -14,7 +14,7 @@ Template Name: Olympic Series
 		<div class="large-12 columns" id="content">
 			<div class="header-area small-12">
 				  <h1 class="title-primary">
-				      Olympic Series
+				      Uncharted Waters
 				  </h1>
 				  <div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
 				  	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
