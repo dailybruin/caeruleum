@@ -17,7 +17,6 @@ $db-masthead-description-size: rem-calc(10);
 $db-masthead-subcategory-size: rem-calc(36);
 
 
-
 // Daily Bruin additions
 
   .quad-explainer {
@@ -913,11 +912,131 @@ figure, figure.alignnone {
 /* =============================================================
    Author Box:
    ============================================================= */
+
+.entypo-twitter, .entypo-mail {
+  color: #00B2E2;
+  font-size: 1.5em;
+  margin-right:2px;
+}
+
+.author-email-inside, .twitter-follow-button{
+  font-size:.88em;
+  position:relative;
+  bottom: 2px;
+}
+
+div.email p, div.twitter p {
+  float:left;
+}
+
+div.twitter{
+  float:left;
+}
+
 .author-box{
-  img{
-    width: 50px;
-    height: auto;
+  margin:0;
+  padding:0;
+}
+
+.author-header {
+  display:inline-block;
+  font-size:1.5rem;
+  padding-top:0.25rem; 
+  float:left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  a{
+    color:black;
   }
+  a:hover{
+    color:$db-blue;
+  }
+} 
+.author-position {
+  display:inline-block;
+  float:left;
+  color:$db-blue;
+  padding: { top:0.46rem; left:0.45rem;}
+  font-size:1.4rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+
+.bio-text {
+  line-height: 1.5em;
+  text-align: left;
+  font-size: .85rem;
+  width: 75%;
+}
+
+.bio{
+  padding-bottom: .3em;
+}
+
+.contact-info-wrapper{
+  width:100%;
+}
+
+div.contact, div.email, div.twitter{
+  padding:0;
+}
+
+p.contact{
+  font-size: 1rem;
+  font-weight:400;
+  text-align: left;
+  padding:0;
+  margin:0;
+}
+
+.author-title{
+  border-top: 1px solid black;
+  margin-top: 6px !important;
+}
+
+.author-box{
+  border-top: 2px solid black;
+}
+
+div.description{
+  margin-top:0 !important;
+  padding-left: 0px !important;
+}
+
+div.image {
+  margin-top: 2px !important;
+  padding-right: 0px !important;
+}
+
+div.email.small-6.columns{
+  padding-left: 10px !important;
+}
+.author-wrapper{
+  padding-bottom: .1em;
+}
+
+@media (max-width: 480px) {
+  p.twitter{
+    font-size:.6rem;
+  }
+  p.email{
+    font-size:.6rem;
+  }
+
+  .author-header {
+    font-size:1.3rem;
+  } 
+  .author-position {
+    font-size:1.2rem;
+    font-weight: 300;
+  }
+  .bio-text {
+    width: 100%;
+  }
+  .contact-info-wrapper{
+    width:100%;
+  }
+
 }
 
 
