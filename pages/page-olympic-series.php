@@ -3,7 +3,7 @@ Template Name: Olympic Series
 */ ?>
 <?php get_header(); ?>
 <!-- fullPage.js CSS -->
-<meta name="viewport" content="width=device-width" /> 
+<meta name="viewport" content="width=device-width" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css">
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
 <div class="container">
@@ -14,12 +14,12 @@ Template Name: Olympic Series
 		<div class="large-12 columns" id="content">
 			<div class="header-area small-12">
 				  <h1 class="title-primary">
-				      <span>Olympic Series</span>
+				      Olympic Series
 				  </h1>
 				  <div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
-				  	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics, 
+				  	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
 				  		Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
-				  		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold. 
+				  		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold.
 				  		 The following series profiles three such members of UCLA women's water polo.
 				  	</span>
 				  </div>
@@ -27,9 +27,9 @@ Template Name: Olympic Series
 				  <div class="mobile-navigation small-12 show-for-small-only">
 				   <nav>
 				    <ul>
-				        <span class="bubble"><li><a href="#"><span>Adam Krikorian</span></a></li></span>
-				        <span class="bubble"><li><a href="#"><span>Coming Soon</span></a></li></span>
-				        <span class="bubble"><li><a href="#"><span>Coming Soon</span></a></li></span>
+				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="1"><span>Adam Krikorian</span></a></li></span>
+				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="2"><span>Coming Soon</span></a></li></span>
+				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="3"><span>Coming Soon</span></a></li></span>
 				    </ul>
 					</nav>
 				  </div>
@@ -46,7 +46,7 @@ Template Name: Olympic Series
 							</div>
 							<div class="img-caption columns">
 								A framed version of John Wooden's Pyramid of Success hangs in Adam Krikorian's
-								 home office, a relic of UCLA's lingering impact on the coach's career. 
+								 home office, a relic of UCLA's lingering impact on the coach's career.
 							</div>
 						</div>
 						<a class="carousel-next"><div class="medium-1 medium-push-1 columns end chevron hide-for-small-only" data-equalizer-watch="b">
@@ -110,11 +110,11 @@ Template Name: Olympic Series
 								<div class="pullimage">
 									<img src="http://dailybruin.com/images/2016/02/web.sp_.olympic.feat_.KC_.PicB_.jpg"/>
 									<div class="img-credits columns">
-										DAILY BRUIN FILE PHOTO 
+										DAILY BRUIN FILE PHOTO
 									</div>
 									<div class="img-caption columns">
-										Adam Krikorian was a four-year letterman and two-time captain for the men’s team during his collegiate playing career, 
-										contributing to UCLA's first national championship since 1972 in 1995. 
+										Adam Krikorian was a four-year letterman and two-time captain for the men’s team during his collegiate playing career,
+										contributing to UCLA's first national championship since 1972 in 1995.
 									</div>
 								</div>
 
@@ -274,10 +274,16 @@ Template Name: Olympic Series
 				$blackborder.css('height',$('#content').height());
 			}, 350);
 		};
-		$(window).resize(setBorderHeight);
+		$(window).resize(function(){
+			articleCarousel.setHeight($('.content.active').height());
+		});
 		setBorderHeight();
 		$blackborder.on('border:rs', function() {
 			setBorderHeight();
+		});
+
+		$('.navi-btn').click(function(){
+			articleCarousel.setActive($(this).data("id"));
 		});
 
 	});

@@ -267,20 +267,17 @@ ul.tabs li {
 }
 .title-primary{
 	background-color:#FFF044;
-	padding-top: 2%;
 	color:black;
-	position:relative;
 	z-index:2;
-	margin-left:2%;
-	margin-top:-10%;
 	text-align: left;
-	padding-left:1%;
+	padding-left: 0.4em;
+	margin-left: 2%;
 }
 .explainer-text{
 	background-color:black;
 	color:#FFF044;
 	font-size:1.3em;
-	padding:2%;
+	padding: 2em 2em 2em 3em;
 	margin-left:2%;
 }
 }
