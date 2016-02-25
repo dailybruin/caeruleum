@@ -5,7 +5,7 @@
 </div>
 
 <div class="row" id="archive-content">
-	<div class="small-9 columns" id="post-listing">
+	<div class="small-12 columns" id="post-listing">
     <div class="page-header">
    		<?php /*if(is_category("sports-spectrum") ||
 		  is_category("campus-spectrum") ||
@@ -16,8 +16,8 @@
       	<?php else : ?>
       	  <a id="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
       	<?php endif */?>
-      	<a id="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a>
-      <h2>Exploring the UCLA experience through photojournalism</h2>
+      	<!-- <a id="pb-logo" href="/category/spectrum"><img src="/img/spectrumlogo.png"  /></a> -->
+      <!-- <h2>Exploring the UCLA experience through photojournalism</h2> -->
     </div><!-- end div.page-header -->
     <?php get_template_part('loop', 'category-photoblog'); ?>
 

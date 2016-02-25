@@ -21,10 +21,10 @@
 	}
 
 	?>
-	<div class="page-header">
+	<!-- <div class="page-header">
     	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>
     	<h2>Exploring the UCLA experience through photojournalism</h2>
-    </div><!-- end div.page-header -->
+    </div> --><!-- end div.page-header -->
 	<div id="pb-gallery-block">
 		
 			<h2>
