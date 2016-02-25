@@ -382,11 +382,12 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	border: solid;
 	border-color: #303030;
 	border-radius: 5px;
-	*/
+	
 	color: #BBBBBB;
 	height: auto;
 	margin-bottom: 20px;
 	text-align: center;
+	*/
 }
 #pb-gallery-block p,
 #pb-gallery-block h2{

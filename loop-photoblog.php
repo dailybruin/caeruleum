@@ -9,7 +9,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
 
-<div class="small-9 columns" id="post">
+<div class="small-12 columns" id="post">
 	<?php the_post();
 	$cats = get_the_category();
 	if ($cats) {
@@ -26,7 +26,7 @@
     	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div><!-- end div.page-header -->
 	<div id="pb-gallery-block">
-		<div class="photoblog-text">
+		
 			<h2>
 			<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
 				<?php /*echo $the_cat->name;
@@ -34,15 +34,14 @@
 				the_title();
 				?>
 			</a></h2> 
-			<div class="fotorama" data-nav="thumbs" data-width="100%"
-     data-height="100%">
+			<div class="fotorama" data-nav="thumbs" data-height="100%" data-width="100%">
 	 		 <?php $gallery = get_post_meta($post->ID, 'gallery', true);
 			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
 				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
 				global $nggdb;
 				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
-				    echo '<div id="pb-gallery-image"><img src="'.$image->imageURL.'"  data-caption="'.$image->description.'"></div>';
+				    echo '<img src="'.$image->imageURL.'" data-caption="'.$image->description.'">';
 				
 				 }
 			?>
@@ -57,7 +56,10 @@
 			</p>
 
 			<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
-		</div>
+		
 	</div> <!--photoblog-post-block-->
 
 </div><!-- end div#post -->
+<!-- <div class="small-3 columns">
+<?php get_template_part('sidebar','photoblog'); ?>
+</div> -->
