@@ -19,7 +19,6 @@
 			}
 		}
 	}
-
 	?>
 	<!-- <div class="page-header">
     	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>

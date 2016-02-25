@@ -3,7 +3,6 @@
 
 <div class="grid">
 	<?php while (have_posts() ): the_post(); 
-
 		$cats = get_the_category();
 		//$the_cat = get_the_category()[0];
 		if ($cats) {
@@ -26,7 +25,6 @@
 		            $start_of_href = strpos($image, 'href');
 		            $start_of_url = strpos($image, '"', $start_of_href);
 		            $end_of_url = strpos($image, '"', $start_of_url+1);
-
 		            $final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
 		            echo $final_tag;
 					?>
@@ -64,7 +62,6 @@
 							} else {
 								echo $t;
 							}
-
 							?>
 						
 						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
@@ -101,21 +98,17 @@ if ($total_pages > 1) {
 <script type="text/javascript">
 	 /* Isotope
   * ==================== */
-
 var elem = document.querySelector('.grid');
 var iso = new Isotope( elem, {
   // options
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
-
 });
-
 // element argument can be a selector string
 //   for an individual element
 var iso = new Isotope( '.grid', {
   // options
 });
-
 $("div.grid-item").hover(
 	function () {
 		$(this).find(".picOverlay").fadeIn();
@@ -124,5 +117,4 @@ $("div.grid-item").hover(
 		$(this).find(".picOverlay").fadeOut();
 	}
 );
-
 </script>
