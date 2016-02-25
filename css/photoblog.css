@@ -115,7 +115,7 @@ body,
 	border-radius: 0px 0px 0px 0px;
 	color: #BBBBBB;
 	height: auto;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	text-align: left;
 }
 #photoblog-post-block h1 {
@@ -239,7 +239,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .pager-pb .page-numbers.current:hover {
 	color: #FFFFFF;
 }
+
 /*THE SIDEBAR*/
+
 #sidebar-reference{
 	width: 100%;
 	display: block;
@@ -261,9 +263,10 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	width: 100%;
 }
 .sidebar-menu a {
-	color: white!important;
+	color: white;
 }
-#sidebar-menu ul{
+
+/*#sidebar-menu ul{
 	color: #549053;
 	list-style: none;
 }
@@ -274,14 +277,12 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	font-style: italic;
 	line-height:20px;
 	margin-left: 20px;
+	float: right;
 }
 .sidebar-menu .sidebar-link:hover {
-    color: #FFFFFF;
-
+    color: #FFFFFF;   
     text-decoration: none;
-}
-
-
+}*/
 
 #menu-spectrum-filter {
 	margin: 0;
@@ -319,6 +320,33 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #menu-spectrum-filter li a:hover,
 #menu-spectrum-filter li.active a{
 	color: #FFFFFF;
+}
+
+/* SPECTRUM REDESIGN NEW CSS */
+
+.sidebar-spectrum {
+	background-color: rgba(255,255,255,0.5);
+	height: 50px;
+}
+
+.sidebar-category {
+	color: black!important;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.sidebar-category:hover {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.sidebar-link {
+	color: white!important;
+	font-size: 16px;
+	font-style: italic;
+	line-height:20px;
+	margin-left: 20px;
+	float: right;
 }
 
 /*END DELETE*/

@@ -158,11 +158,11 @@
                       <h4>|</h4> 
                       <h5><?php the_time('F j, g:i a');?> </h5>
                       </span>
-            	<h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+              <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
           
           <div class="entry-content">
-          	<?php the_audio(); ?>
-    		    <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+            <?php the_audio(); ?>
+            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
         </div>
         <?php if(has_post_thumbnail()): ?>
         </div>

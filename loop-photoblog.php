@@ -1,5 +1,6 @@
 <?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
+
 <!-- 1. Link to jQuery (1.8 or later), -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 
@@ -60,6 +61,3 @@
 	</div> <!--photoblog-post-block-->
 
 </div><!-- end div#post -->
-<div class="small-3 columns">
-<?php get_template_part('sidebar','photoblog'); ?>
-</div>
