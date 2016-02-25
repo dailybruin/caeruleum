@@ -233,15 +233,15 @@
 					</a>
 				</div>
 				-->
-        
-        <div class="row db-story below-header db-next hide-for-small">
+        <!--
+        			<div class="row db-story below-header db-next hide-for-small">
 					<a href="http://www.bruinwalk.com/">
 					<div class="small-12 columns">
 						<h2 class="animated fadeInLeft">The all new Bruinwalk is here.</h2>
 						<button class="animated fadeInUp"><i>Get the bear truth</i></button>
 					</div>
 					</a>
-				</div>
+				</div>-->
 				
 				<div class="row db-story below-header">
 					<div class="small-6 columns hide-for-small" style="margin:0;">
