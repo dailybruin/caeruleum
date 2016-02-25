@@ -35,7 +35,7 @@
 				</div>
 
 				<div class="picOverlay">
-					<a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
+					<!-- <a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
 					<?php if ($the_cat->slug == "archives"): { ?>
 						ARCHIVES <?php } ?>
 					<?php elseif ($the_cat->slug == "campus-spectrum"): { ?>
@@ -46,24 +46,30 @@
 						SPORTS <?php } ?>
 					<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
 						WW/LA <?php } ?>
-					
-
 					<?php endif ?>
-					</a>
+					</a> -->
 					
 					<div class="photoblog-text" id="photoblog-post-text">
-							<h2>
+						<h3>
 							<a href="<?php the_permalink() ?>">
-								<?php /*echo $the_cat->name;
-								echo (": "); */
+								<?php
 								the_title();
 								?>
-							</a></h2> 
+							</a>
+						</h3> 
+						<?php $t = get_the_excerpt(); 
+							$periodPosition = strpos($t, '.');
+							if ($periodPosition > 0) {
+								echo  $t = substr($t, 0, $periodPosition); 
+							} else {
+								echo $t;
+							}
 
-						<?php the_excerpt(); ?>
+							?>
+						
 						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 						<p class="photoblog-sm">
-						    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
+						    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 						</p>
 					</div>
 				</div>
@@ -101,6 +107,7 @@ var iso = new Isotope( elem, {
   // options
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
+
 });
 
 // element argument can be a selector string
@@ -111,10 +118,10 @@ var iso = new Isotope( '.grid', {
 
 $("div.grid-item").hover(
 	function () {
-		$(this).find(".picOverlay").show();
+		$(this).find(".picOverlay").fadeIn();
 	}, 
 	function () {
-		$(this).find(".picOverlay").hide();
+		$(this).find(".picOverlay").fadeOut();
 	}
 );
 

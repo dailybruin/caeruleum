@@ -5,6 +5,7 @@
 		<!-- <div class="sidebar-menu hidden-phone"> -->
 			<!-- <hr> -->
 	        <!-- <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?> -->
+	        <img id="spectrum-logo" src="https://files.slack.com/files-pri/T04FG3WDC-F0NQ76QCQ/spectrum_logo.png"/>
 	        <div class="row sidebar-spectrum">
 				<a class="sidebar-category small-3 columns" href="/category/blogs/spectrum">All Stories</a>
 				<a class="sidebar-category small-3 columns" href="/category/spectrum/ae-spectrum">A&E</a>
