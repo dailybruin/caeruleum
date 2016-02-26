@@ -16,6 +16,12 @@ $db-ad-padding: rem-calc(10);
 $db-masthead-description-size: rem-calc(10);
 $db-masthead-subcategory-size: rem-calc(36);
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 
 // Daily Bruin additions
 
