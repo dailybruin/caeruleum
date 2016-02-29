@@ -658,3 +658,17 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	height: 100%;
 	background-color: rgba(0,0,0,0.5);
 }
+
+.fotorama__caption__wrap{
+	margin: auto;
+	width:100%;
+	text-align: center;
+	opacity: 1;
+
+}
+
+.fotorama__caption{
+	opacity: 1.0;
+	font-size: 16px;
+
+}
