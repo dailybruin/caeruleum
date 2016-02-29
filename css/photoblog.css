@@ -677,5 +677,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 .db-content h2 a, .db-content h2 a:hover{
 	color:white;
+	font-size: 2rem;
+	    line-height: 1.2;
 }
 
