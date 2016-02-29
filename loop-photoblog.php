@@ -7,8 +7,12 @@
 <!-- fotorama.css & fotorama.js. -->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-
-
+<div class="row">
+	<div class="small-12 columns" id="post">
+<?php get_template_part('sidebar','photoblog'); ?>
+</div>
+</div>
+<div class = "row">
 <div class="small-12 columns" id="post">
 	<?php the_post();
 	$cats = get_the_category();
@@ -60,6 +64,4 @@
 	</div> <!--photoblog-post-block-->
 
 </div><!-- end div#post -->
-<!-- <div class="small-3 columns">
-<?php get_template_part('sidebar','photoblog'); ?>
-</div> -->
+</div>
