@@ -264,7 +264,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	color: #549053;
 	list-style: none;
 }
-
 .sidebar-menu .sidebar-link {
 	color: #999999;
 	font-size: 16px;
@@ -319,27 +318,30 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 /* SPECTRUM REDESIGN NEW CSS */
 
 .sidebar-spectrum {
-	background-color: rgba(255,255,255,0.5);
 	height: 50px;
 	font-family: 'Roboto Slab', serif;
 }
 
 .sidebar-category {
-	color: black!important;
+	color: white!important;
 	text-align: center;
 	line-height: 50px;
 	font-size: 18px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
 }
 
 .sidebar-category:hover {
-	background-color: rgba(255,255,255,0.7);
+	/*background-color: rgba(255,255,255,0.75);*/
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
 }
 
 .sidebar-link {
 	color: white!important;
 	font-size: 16px;
 	font-style: italic;
-	line-height:20px;
+	line-height:14px;
 	margin-left: 20px;
 	float: right;
 }
@@ -359,7 +361,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .campus.active a,
 .campus a:hover{
-
 }*/
 
 
