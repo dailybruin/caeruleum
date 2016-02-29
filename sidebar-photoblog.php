@@ -17,7 +17,7 @@
 	</div>
 </div>
 <div id="spectrum-single" class="row sidebar-spectrum">
-	<a class="sidebar-category small-12 columns" onclick="filterPhotos('')">BACK TO HOME</a>
+	<a class="sidebar-category small-12 columns" href="/category/blog/spectrum/">BACK TO HOME</a>
 </div>
 <!-- <hr /> -->
 <!--</div>--><!--sidebar-menu-->
