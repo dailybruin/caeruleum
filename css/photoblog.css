@@ -342,7 +342,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	font-size: 16px;
 	font-style: italic;
 	line-height:14px;
-	margin-left: 20px;
+	margin-left: -20px;
+  margin-right: 32px;
+  margin-bottom: 10px;
 	float: right;
 }
 
