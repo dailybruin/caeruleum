@@ -393,7 +393,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 #pb-gallery-block p,
 #pb-gallery-block h2{
-	text-align: left;
+	text-align: center;
 }
 #pb-image-block {
 	padding-bottom: 1rem;
@@ -679,5 +679,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	color:white;
 	font-size: 2rem;
 	    line-height: 1.2;
+	   
 }
 
