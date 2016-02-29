@@ -45,7 +45,7 @@
 			global $nggdb;
 			$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 			foreach($galleryt as $image) {
-				echo '<img class="photo-slide" style="font-size:65px;" src="'.$image->imageURL.'" data-caption="'.$image->description.'">';
+				echo '<img src="'.$image->imageURL.'" data-caption="'.$image->description.'">';
 				
 			}
 			?>
