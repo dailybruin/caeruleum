@@ -20,10 +20,11 @@
 		}
 	}
 	?>
-	<!-- <div class="page-header">
-    	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>
-    	<h2>Exploring the UCLA experience through photojournalism</h2>
-    </div> --><!-- end div.page-header -->
+	
+	<div class="page-header">
+    	<?php get_template_part('sidebar','photoblog'); ?>
+  </div>
+
 	<div id="pb-gallery-block">
 		
 			<h2>
@@ -60,5 +61,4 @@
 
 </div><!-- end div#post -->
 <!-- <div class="small-3 columns">
-<?php get_template_part('sidebar','photoblog'); ?>
 </div> -->
