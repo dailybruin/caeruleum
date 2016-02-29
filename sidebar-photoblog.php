@@ -7,10 +7,10 @@
 	        <!-- <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?> -->
 	        <img id="spectrum-logo" src="https://files.slack.com/files-pri/T04FG3WDC-F0NVDRWB0/spectrum_logo.png"/>
 	        <div class="row sidebar-spectrum">
-				<a class="sidebar-category small-3 columns" href="/category/blogs/spectrum">All Stories</a>
-				<a class="sidebar-category small-3 columns" href="/category/spectrum/ae-spectrum">A&E</a>
-		        <a class="sidebar-category small-3 columns" href="/category/spectrum/news-spectrum">News</a>
-		        <a class="sidebar-category small-3 columns" href="/category/spectrum/sports-spectrum">Sports</a>
+				<a class="sidebar-category small-3 columns" onclick="filterPhotos('')">All Stories</a>
+				<a class="sidebar-category small-3 columns" onclick="filterPhotos('.ae-spectrum')">A&E</a>
+		        <a class="sidebar-category small-3 columns" onclick="filterPhotos('.news-spectrum')">News</a>
+		        <a class="sidebar-category small-3 columns" onclick="filterPhotos('.sports-spectrum')">Sports</a>
 	        </div>
 	        <!-- <hr /> -->
             <a class="sidebar-link" href="/category/photo-galleries">Archive</a> 
