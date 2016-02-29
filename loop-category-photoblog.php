@@ -13,7 +13,7 @@
 			}
 		} ?>
 
-		<div class="grid-item">
+		<div class="grid-item <?php echo $the_cat->slug ?>">
 			<div id="photoblog-post-block">
 				<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
 
@@ -117,4 +117,17 @@ $("div.grid-item").hover(
 		$(this).find(".picOverlay").fadeOut();
 	}
 );
+
+
+/*
+ * Isotope animations
+ */
+
+function filterPhotos(tag) {
+  	iso.arrange({
+  		filter: tag
+	})
+}
+
 </script>
+
