@@ -17,20 +17,20 @@
 		<div class="grid-item">
 			<div id="photoblog-post-block">
 				<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
-
-				<a href="<?php the_permalink(); ?>">
-					<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
-					$image = do_shortcode('[singlepic id='.$singlepicture.']');
+					<a href="<?php the_permalink(); ?>">
+						<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
+						$image = do_shortcode('[singlepic id='.$singlepicture.']');
 		            
-		            $permalink = get_permalink();
-		            $start_of_href = strpos($image, 'href');
-		            $start_of_url = strpos($image, '"', $start_of_href);
-		            $end_of_url = strpos($image, '"', $start_of_url+1);
+		            	$permalink = get_permalink();
+		            	$start_of_href = strpos($image, 'href');
+		            	$start_of_url = strpos($image, '"', $start_of_href);
+		            	$end_of_url = strpos($image, '"', $start_of_url+1);
 
-		            $final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
-		            echo $final_tag;
-					?>
-				</a>
+		            	$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
+		            	echo $final_tag;
+						?>
+					</a>
+					
 				
 				</div>
 
@@ -51,11 +51,13 @@
 					
 					<div class="photoblog-text" id="photoblog-post-text">
 						<h3>
-							<a href="<?php the_permalink() ?>">
-								<?php
-								the_title();
-								?>
-							</a>
+							<p id="photoblog-title">
+								<a href="<?php the_permalink() ?>">
+									<?php
+									the_title();
+									?>
+								</a>
+							</p>
 						</h3> 
 						<?php $t = get_the_excerpt(); 
 							$periodPosition = strpos($t, '.');
