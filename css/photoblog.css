@@ -664,7 +664,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin: auto;
 	width:100%;
 	text-align: center;
-	opacity: 1;
+	background-color: rgba(0,0,0,.7) !important;
+	color: white;
 
 }
 
@@ -672,5 +673,9 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	opacity: 1.0;
 	font-size: 16px;
 
+}
+
+.db-content h2 a, .db-content h2 a:hover{
+	color:white;
 }
 
