@@ -287,7 +287,7 @@
 		                          <p class="contact">contact</p>
 		                        </div>
 		                        <?php endif; ?>
-			                    <div class="email large-6 medium-6 columns show-for-medium-up">
+			                    <div class="email large-5 medium-5 columns show-for-medium-up">
 			                      <?php if ( $email): ?>
 			                      <p><span class="entypo-mail"></span>
 			                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
@@ -295,7 +295,7 @@
 			                      </a></p>
 			                      <?php endif; ?>
 			                    </div>
-			                    <div class="twitter large-4 medium-4 columns show-for-medium-up">
+			                    <div class="twitter large-3 medium-3 columns show-for-medium-up">
 			                      <?php if ( $twitter): ?>
 			                        <p><span class="entypo-twitter"></span>  
 			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
@@ -306,7 +306,7 @@
 			               </div> <!--end bio-row-->
 			              </div>  
 			              		<div class="row contact-info-wrapper show-for-small-only">
-				                    <div class="email small-7 columns">
+				                    <div class="email small-6 columns">
 				                      <?php if ( $email): ?>
 				                      <p><span class="entypo-mail"></span>
 				                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
@@ -314,7 +314,7 @@
 				                      </a></p>
 				                      <?php endif; ?>
 				                    </div>
-				                    <div class="twitter small-5 columns">
+				                    <div class="twitter small-3 columns">
 				                      <?php if ( $twitter): ?>
 				                        <p><span class="entypo-twitter"></span>  
 				                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">

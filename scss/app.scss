@@ -1017,14 +1017,14 @@ div.image {
   padding-right: 0px !important;
 }
 
-div.email.large-6.medium-6.small-12.columns, {
-  margin-left: 10px !important;
+div.email.large-5.medium-5.columns, {
+  margin-left: 0px !important;
 }
 .author-wrapper{
   padding-bottom: .1em;
 }
 
-div.email.small-7.columns{
+div.email.small-6.columns{
   margin-left: 10px !important;
 }
 
@@ -1047,6 +1047,10 @@ div.email.small-7.columns{
   }
   .bio-text {
     width: 100%;
+  }
+
+  div.email.small-12.columns, div.twitter.small-12.columns {
+    margin-left: 2px;
   }
 
 }

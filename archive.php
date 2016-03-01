@@ -58,7 +58,7 @@
                       if($displayMugshot)
                       {
                         ?>
-                        <div class="image large-2 small-3 medium-3 columns"> 
+                        <div class="image large-2 small-3 medium-2 columns"> 
                         <?php
                           ob_start();
                         if(function_exists('userphoto_the_author_photo'))
@@ -83,7 +83,7 @@
                     <?php if ( !$displayMugshot && !get_the_author_meta('description')): ?>
                         <div class="description large-12 small-12 medium-12 columns">
                       <?php elseif ( !$displayMugshot): ?>
-                        <div class="description large-12 small-9 medium-12 columns">
+                        <div class="description large-12 small-9 medium-10 columns">
                     <?php endif; ?>
                       <?php if (get_the_author_meta('description')): ?>
                         <p class="bio-text">
@@ -100,7 +100,7 @@
                           <p class="contact">contact</p>
                         </div>
                         <?php endif; ?>
-                        <div class="email large-6 medium-5 small-12 columns">
+                        <div class="email large-5 medium-5 small-6 columns">
                           <?php if ( get_the_author_meta('user_email')): ?>
                           <p><span class="entypo-mail"></span>
                            <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
@@ -108,7 +108,7 @@
                           </a></p>
                           <?php endif; ?>
                         </div>
-                        <div class="twitter large-4 medium-4 small-12 columns">
+                        <div class="twitter large-3 medium-3 small-3 columns">
                           <?php if ( get_the_author_meta( 'twitter_handle' )): ?>
                             <p><span class="entypo-twitter"></span>  
                             <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
