@@ -119,7 +119,6 @@
                       </div>
                     </div>                   
                   </div>
-                </div>
                 <?php
               } else {
                 $sectionPage = true;
