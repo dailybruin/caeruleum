@@ -6,36 +6,29 @@ Template Name: Olympic Series
 <meta name="viewport" content="width=device-width" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.min.css">
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
+<div class="black-border hide-for-small-only">
+		</div>
+<div class="row">
+	<h1 class="title-primary small-12 large-11 column">
+	  Olympic Series
+	</h1>
+</div>
+<div class='row'>
+	<div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
+	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
+		Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
+		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold.
+		 The following series profiles three such members of UCLA women's water polo.
+		</span>
+	</div>
+</div>
 <div class="container">
 	<div class="row">
-		<div class="black-border hide-for-small-only">
-		</div>
+		
 		<div class="large-12 columns" id="content">
-<<<<<<< HEAD
-			<div class="header-area row">
-				  <h1 class="title-primary large-10 medium-10 small-12 column">
-				      <span>Olympic Series</span>
-				  </h1>
-				  <div class="explainer-text large-10 medium-10 small-12 column">
-				  	<span>Explainer text goes here for this flatpage about Olympics, woohoo!Thank you for looking at this page. It's about Sports,
-				  	and Olympics. Explainer text goes here for this flatpage about Olympics, woohoo! Thank you for look at this page.
-				  	</span>
-				  </div>
-				<h2>By  <a class="author" title="Posts by Author" href="#" rel="author">
-					Author</a></h2>
-=======
-			<div class="header-area small-12">
-				  <h1 class="title-primary">
-				      Olympic Series
-				  </h1>
-				  <div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
-				  	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
-				  		Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
-				  		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold.
-				  		 The following series profiles three such members of UCLA women's water polo.
-				  	</span>
-				  </div>
-
+				<div class="header-area small-12">
+				  
+				  
 				  <div class="mobile-navigation small-12 show-for-small-only">
 				   <nav>
 				    <ul>
@@ -45,8 +38,7 @@ Template Name: Olympic Series
 				    </ul>
 					</nav>
 				  </div>
->>>>>>> e23b5377c219df76960dfe02590ccc3c634137b8
-      		</div>
+      			</div>
 
 			<div class="slide-wrapper">
 				<div class="content-carousel set">
