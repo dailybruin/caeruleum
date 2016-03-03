@@ -8,42 +8,31 @@ Template Name: Olympic Series
 <link href='../css/page-olympic-series.css' rel='stylesheet' type='text/css'>
 <div class="black-border hide-for-small-only">
 		</div>
-<div class="row">
-	<h1 class="title-primary small-12 large-11 column">
-	  Olympic Series
-	</h1>
-</div>
-<div class='row'>
-	<div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
-	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
-		Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
-		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold.
-		 The following series profiles three such members of UCLA women's water polo.
-		</span>
+<div class="wrapper">
+	<div class="headline">
+		<div class="row">
+			<h1 class="title-primary small-12 large-11 column">
+			  Olympic Series
+			</h1>
+		</div>
+		<div class='row'>
+			<div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
+			<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
+				Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
+				 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold.
+				 The following series profiles three such members of UCLA women's water polo.
+				</span>
+			</div>
+			<div class="circle medium-3 large-3 column"></div>
+		</div>
 	</div>
 </div>
 <div class="container">
 	<div class="row">
 		
 		<div class="large-12 columns" id="content">
-<<<<<<< HEAD
 				<div class="header-area small-12">
-				  
-				  
-=======
-			<div class="header-area small-12">
-				  <h1 class="title-primary">
-				      Uncharted Waters
-				  </h1>
-				  <div class="explainer-text small-12 large-8 medium-9 show-for-medium-up">
-				  	<span>As the world's greatest athletes gear up to take on the 2016 Summer Olympics,
-				  		Westwood has made itself a vital stop on the Road to Rio. Many of UCLA's athletes and coaches
-				  		 – both past and present –are integrally involved in the U.S. teams shaping up to go for gold.
-				  		 The following series profiles three such members of UCLA women's water polo.
-				  	</span>
-				  </div>
 
->>>>>>> master
 				  <div class="mobile-navigation small-12 show-for-small-only">
 				   <nav>
 				    <ul>
