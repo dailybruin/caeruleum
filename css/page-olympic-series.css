@@ -35,7 +35,7 @@
 .quote-author{
 	font-family: "Lora", Georgia, serif;
   	font-weight:700;
-  	color: #FFF044;
+  	color: #0080C6;
   	font-size: 2.5em;
 }
 
@@ -77,7 +77,7 @@ div.mobile-navigation nav ul li {
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
-  background: #FFF044;
+  background: #0080C6;
 }
 div.mobile-navigation nav ul li a {
   top: 20%;
@@ -98,6 +98,10 @@ div.mobile-navigation nav ul li a {
 
 .bubble {
 	margin: 1.4%;
+}
+
+div.mobile-navigation nav ul li a:hover {
+  color:white;
 }
 
 
@@ -251,6 +255,7 @@ ul.tabs li {
 		font-size: 1em;
 		font-family: "Roboto", Arial, sans-serif;
 		font-weight: 700;
+		color:white;
 	}
 
 	p{
@@ -268,8 +273,8 @@ ul.tabs li {
 .explainer-text{width:80%;}
 }
 .title-primary{
-	background-color:#FFF044;
-	color:black;
+	background-color:#0080C6;
+	color:white;
 	z-index:2;
 	text-align: left;
 	padding-left: 0.4em;
@@ -277,8 +282,9 @@ ul.tabs li {
 }
 .explainer-text{
 	background-color:black;
-	color:#FFF044;
-	font-size:1.3em;
+	color:white;
+	font-size:1.5em;
+	font-style: bold;
 	padding: 2em 2em 2em 3em;
 	margin-left:2%;
 }
