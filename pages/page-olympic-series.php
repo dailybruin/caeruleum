@@ -184,16 +184,137 @@ Template Name: Olympic Series
 					</div>
 				</div>
 
- 				  <div class="content" id="article-2" data-index="2">
+ 				   <div class="content" id="article-2" data-index="2">
 						<div class="row" data-equalizer="b">
 							<a class="carousel-prev"><div class="medium-1 medium-push-1 columns chevron chevron-left hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
 							<div class="small-12 medium-9 medium-push-1 large-8 columns" data-equalizer-watch="b">
-								<h2 class="coming-soon-center">COMING SOON</h2>
+								<img src="http://dailybruin.com/images/2016/03/web.sp_.wwp_.feat_.KMay_.jpg"/>
+								<div class="img-credits columns">
+									Keila Mayberry/Daily Bruin staff
+								</div>
+								<div class="img-caption columns">
+									Redshirt junior center Alexa Tielmann spent the 2015 season training and competing with the Canadian National Team. 
+								</div>
 							</div>
 							<a class="carousel-next"><div class="medium-1 medium-push-1 columns end chevron hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
 						</div>
+						<div class="row">
+							<div class="small-12 medium-9 large-9 medium-push-2 columns">
+						  	<div class="second-article">
+							  <h3 class="part2">Women's water polo player brings national team experience to Bruins</h3>
+							  <h4>By  <a class="author" title="Posts by Author" href="http://dailybruin.com/author/savannah-shapiro/" rel="author">
+								Savannah Shapiro</a>
+							  </h4>
+							  <h2>Sports Writer</h2>
+							    <p>It is rare to find someone in Canada playing water polo. The pools are located inside due to the cold,
+							     rain, and snow. There are swimming leagues in the summer, but the window to compete is small.
+							      So when redshirt Alexa Tielmann took up the sport, she was surprised how much she took to it.</p>
+
+							    <p>Now, after spending a whole year training with the Canadian national team, Tielmann has competed
+							     at the highest level of water polo and she couldn't see herself playing anything else.</p>
+
+							    <p>The process of getting to that level, however, was not easy.</p>
+
+								<p>Before water polo, there were other sports. After trying soccer, basketball and dance
+								 Tielmann decided to follow the summertime tradition of participating in the swimming program. </p>
+
+								<p>&#8220;I did swimming right before I tried water polo and I enjoyed that, but I was never the fastest
+								 or the best,&#8221; Tielmann said.</p>
+
+								<p>Although Tielmann still enjoyed swimming in the summer with her hometown swimming club, it was water
+								 polo club coach Ian Mitchell, who was affiliated with the swiming club,  who convinced Tielmann to come 
+								 out for a practice.</p>
+
+								  <div class="pullquote">
+										<p class="pullquotetext">
+										  &#8220;I didn&#8217;t have the natural talent at first. So when I was younger, it wasn&#8217;t my aspiration
+								 to go off to school down in the states &#8211; I didn&#8217;t even know about that when I first started 
+								 playing,&#8221; Tielmann said. &#8220;It just took a while for me to come into the player that I am now.&#8221;
+										</p>
+										<p class="quote-author">Tielmann</p>
+									</div>
+
+								<p>&#8220;I was pretty tall so my coach was like, &#8216;You should just try it.&#8217; So I tried it and 
+									I don&#8217;t know, I fell in love with it,&#8221; Tielmann said.</p>
+
+								<p>She was 11 then, and never really stopped. It was uncommon to be playing water polo  in Tielmann&#8217;s 
+									hometown of Abbotsford, Canada, but with the extreme amount of time she spent in the pool, it became a passion.</p>
+
+								<p>&#8220;It&#8217;s kind of  random that I came to play it,&#8221; Tielmann said. &#8220;It&#8217;s definitely
+								 growing a lot . . . especially where I live now so that&#8217;s really good and awesome to see. 
+								 Definitely a lot more kids are starting to play than when I started to get into it intensely."</p>
+
+
+								<p>When you think big Canadian sports, water polo is not very high on that list, and when you compare 
+									the popularity of the sport in Canada to Southern California, it's not even close. <br /></p>
+
+								<p>&#8220;Compared to SoCal, we&#8217;re not quite there,&#8221; said Canadian Senior Women&#8217;s National 
+									Team coach Justin Oliveira. &#8220;I wouldn&#8217;t say it&#8217;s as popular as it is in SoCal, but
+									 it&#8217;s definitely an amateur sport and depending on where you are at in Canada, it is a popular summer
+									  sport.&#8221;<br /></p>
+
+								<p>The sport continued to grow in Canada as did Tielmann&#8217;s love and passion for it. During the 10th grade,
+								 she made her first national team roster and it wasn&#8217;t until then that she began to think that she may be 
+								 able to play water polo at a higher level.</p>
+
+
+								<p>&#8220;I didn&#8217;t have the natural talent at first. So when I was younger, it wasn&#8217;t my aspiration
+								 to go off to school down in the states &#8211; I didn&#8217;t even know about that when I first started 
+								 playing,&#8221; Tielmann said. &#8220;It just took a while for me to come into the player that I am now.&#8221;</p>
+
+
+								<p>Tielmann participated in the summer water polo camps that UCLA held every year during the summer after her
+								 sophomore and junior year in high school. The Canadian caught the eye of UCLA's coaching staff, who began the
+								  process of getting her to play for the Bruins. For Tielmann, UCLA was her No. 1 choice and the only recruiting
+								   trip she needed to take. </p>
+								 <p>&#8220;Alexa was always a very coachable athlete,&#8221; Oliveira said. &#8220;When 
+								   you&#8217;re coaching, she would always look for feedback and ask how she could get better. Those are great qualities
+								    in an athlete and great qualities in an elite athlete who is always looking for that edge to 
+								    get better.&#8221;<br /></p>
+
+
+								    <div class="pullquote2">
+									<p class="pullquote2text">
+									  "After I am done at UCLA, there are so many options for me to continue on with water polo," Tielmann said.
+								 "I just might go back with the next team for the next cycle in hopes of the 2020 Olympics."
+									</p>
+									<p class="quote-author">Tielmann</p>
+								</div>
+
+								<p>Heading into the 2015 season, Tielmann made the decision to take a year off from UCLA when asked to train 
+									with the Canadian national team. In doing so, she exposed herself to a new level of competition and added 
+									new aspects to her game.</p>
+
+								<p>&#8220;I just decided that&#8217;s what I want to do," Tielmann said. "I want to try and be a part of the team
+								 for the next cycle for this Olympics coming up.&#8221;</p>
+
+								<p>In the midst of a competitive pool crowded with strangers, there was one familiar face. Tielmann and fellow
+								 British Columbia native Carmen Eggens knew each other before they both began training with the national team.</p>
+
+								<p>&#8220;It&#8217;s funny because we both are from BC so we kind of came up through water polo together; 
+									she played at a separate club, but I&#8217;ve known her since she started playing and I knew of her,&#8221; 
+									Eggens said.</p>
+
+								<p>After spending a year with the women&#8217;s senior national team, Tielmann made the decision to return to 
+									UCLA for  the 2016 season. For Tielmann, she didn't feel like it was her time to stay with the national team. 
+									Tielmann was receiving little playing time and in the long run, UCLA would allow Tielmann to continue her 
+									education and compete at a high level.  </p>
+
+								<p>&#8220;She chose to go back to UCLA this year. Obviously it was a difficult decision for her to make, 
+									but I think for her it&#8217;s a good one," Oliveira said. "She&#8217;s going to be getting a lot of playing
+									 experience there at UCLA and she&#8217;s under the leadership of a great coach."<br /></p>
+
+								<p>Although 2016 was not Tielmann's year to compete at the Summer Olympics, she hasn't ruled out 2020 just yet.</p>
+
+								<p>"After I am done at UCLA, there are so many options for me to continue on with water polo," Tielmann said.
+								 "I just might go back with the next team for the next cycle in hopes of the 2020 Olympics."<br /></p>
+
+								 <p>For now, she is just focused on this season for the Bruins.</p>
+						  </div>
+						</div>
+					</div>
 				  </div>
 
  				  <div class="content" id="article-3" data-index="3">
