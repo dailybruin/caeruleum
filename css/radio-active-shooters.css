@@ -1,0 +1,79 @@
+body {
+	font-family: Roboto;
+	font-weight: 300;
+	background-color: #fafafa;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 1em;
+	padding: 1em;
+	border: 1px solid #eee;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1, h3 {
+	font-weight: 400;
+	font-size: 4em;
+	color: #0080c6;
+	font-family: Alegreya;
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+h2, h4 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #666;
+}
+
+h3 {
+	font-size: 1.7em;
+	margin-bottom: 0.2em;
+}
+
+h4 {
+	text-align: left;
+	font-size: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+b {
+	font-weight: 500;
+}
+
+hr {
+	border-color: #0080c6;
+}
+
+.audio, .image {
+	width: 50%;
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+a {
+	color:#0080c6;
+}
+
+
+.my-slider li {
+	height: 30em;
+	overflow: auto;
+	padding: 1em;
+}
+
+.unslider-nav {
+	margin: 1em auto 0em auto;
+}
+
+.caption {
+	text-align: right;
+	font-size: 0.7em;
+	display: block;
+}
