@@ -220,8 +220,11 @@
 						<?php
 						//Author Box Variables
 						$position= get_the_author_meta('position', $author->ID);
-						$description = get_the_author_meta('description', $authour->ID);
+						$description = get_the_author_meta('description', $author->ID);
 						$email = get_the_author_meta('user_email', $author->ID);
+						if (strpos($email, 'wordpress') !== false) {
+						    $email=false;
+						}
 						$twitter = get_the_author_meta( 'twitter_handle', $author->ID );
 						?>
 					    <div class="author-wrapper">

@@ -39,6 +39,15 @@
               } elseif (is_year()) {
                 printf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
               } elseif (is_author()) {
+                  //Author Box Variables
+                  $ID = get_the_author_meta( 'ID' );
+                  $position= get_the_author_meta('position', $ID);
+                  $description = get_the_author_meta('description', $ID);
+                  $email = get_the_author_meta('user_email', $ID);
+                  $twitter = get_the_author_meta( 'twitter_handle', $ID );
+                  if (strpos($email, 'wordpress') !== false) {
+                      $email=false;
+                    }
                   ?>
                  <div class="author-wrapper">
                    <div class="row author-box">
@@ -48,8 +57,8 @@
                             |
                         <? endif; ?> 
                         </div>
-                        <?php if ( get_the_author_meta('position', get_the_author_meta( 'ID' ))): ?>
-                            <div class="author-position"> <?php echo get_the_author_meta('position') ?></div>
+                        <?php if ( $position): ?>
+                            <div class="author-position"> <?php echo $position ?></div>
                         <?php endif; ?>
                       </div>
                     </div>
@@ -90,29 +99,29 @@
                             <?php echo get_the_author_meta('description') ?>
                         </p>
                       <?php endif; ?>
-                      <?php if (!get_the_author_meta('description') && !$displayMugshot): ?> <!-- Don't make margin so large -->
+                      <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
                         <div class="row contact-info-wrapper-smaller-margin">
                       <?php else: ?>
                       <div class="row contact-info-wrapper">
                       <?php endif; ?>
-                        <?php if ( get_the_author_meta('user_email') || get_the_author_meta( 'twitter_handle' ) ): ?>
+                        <?php if ( $email || $twitter ): ?>
                         <div class="contact large-2 medium-2 columns show-for-medium-up">
                           <p class="contact">contact</p>
                         </div>
                         <?php endif; ?>
                         <div class="email large-5 medium-5 small-6 columns">
-                          <?php if ( get_the_author_meta('user_email')): ?>
+                          <?php if ( $email ): ?>
                           <p><span class="entypo-mail"></span>
                            <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
-                            <?php the_author_meta('user_email'); ?>
+                            <?php $email; ?>
                           </a></p>
                           <?php endif; ?>
                         </div>
                         <div class="twitter large-3 medium-3 small-3 columns">
-                          <?php if ( get_the_author_meta( 'twitter_handle' )): ?>
+                          <?php if ( $twitter): ?>
                             <p><span class="entypo-twitter"></span>  
                             <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
-                              <?php the_author_meta('twitter_handle' );?>
+                              <?$twitter;?>
                             </a>
                           <?php endif; ?>
                         </div>
