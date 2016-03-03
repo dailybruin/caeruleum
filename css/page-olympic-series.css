@@ -50,11 +50,14 @@
 }
 
 @media screen and (max-width: 480px) {
-
 	.pullquote, .pullquote2 {
 	  font-size: 1.4rem;
 	  padding: 1.6rem 1.2rem 1rem 2rem;
 	}
+}
+
+div.mobile-navigation nav ul li a:hover {
+  color:white;
 }
 
 
@@ -192,6 +195,7 @@ ul.tabs li {
 	  z-index: 2;
 }
 
+
 h3.part1, h3.part2, h3.part3{
 	text-align: center;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
@@ -203,7 +207,7 @@ h3.part1, h3.part2, h3.part3{
 	max-width: 90%;
 	margin: 0 auto;
 	text-transform:none !important;
-	}
+}
 
 	p.quote{
 	font-size:1.2rem;
@@ -223,9 +227,9 @@ h3.part1, h3.part2, h3.part3{
 	left:6vw;
 }
 .title-primary{
-	background-color:yellow;
-	color:black;
 	position:relative;
+	background-color:#0080C6;
+	color:white;
 	z-index:2;
 	margin-top:-1.9em;
 	text-align: left;
@@ -235,15 +239,10 @@ h3.part1, h3.part2, h3.part3{
 	background-color:black;
 	color:yellow;
 	padding:2%;
-	
 	margin-bottom:2%;
-}
-#side-bar{
-	position:absolute;
-	z-index:3;
-	height:78%;
-	width:9vw;
-	background-color:black;
+	font-size: 1em;
+	font-family: "Roboto", Arial, sans-serif;
+	font-weight: 700;	
 }
 .circle {
 	position: relative;

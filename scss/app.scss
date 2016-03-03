@@ -16,6 +16,12 @@ $db-ad-padding: rem-calc(10);
 $db-masthead-description-size: rem-calc(10);
 $db-masthead-subcategory-size: rem-calc(36);
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 
 // Daily Bruin additions
 
@@ -940,26 +946,26 @@ div.twitter{
 
 .author-header {
   display:inline-block;
-  font-size:1.5rem;
+  font-size:1.5rem !important;
   padding-top:0.25rem; 
   float:left;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 400 !important;
   a{
-    color:black;
+    color:black !important;
   }
   a:hover{
-    color:$db-blue;
+    color:$db-blue !important;
   }
 } 
 .author-position {
   display:inline-block;
   float:left;
-  color:$db-blue;
+  color:$db-blue !important;
   padding: { top:0.46rem; left:0.45rem;}
   font-size:1.4rem;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 100 !important;
 }
 
 .bio-text {
@@ -973,8 +979,11 @@ div.twitter{
   padding-bottom: .3em;
 }
 
-.contact-info-wrapper{
-  width:100%;
+.contact-info-wrapper-smaller-margin{
+  margin-top: -0.5rem !important;
+  .contact-info-wrapper{
+    padding-left: 10px;
+  }
 }
 
 div.contact, div.email, div.twitter{
@@ -1000,7 +1009,7 @@ p.contact{
 
 div.description{
   margin-top:0 !important;
-  padding-left: 0px !important;
+  padding-left: 10px !important;
 }
 
 div.image {
@@ -1008,19 +1017,25 @@ div.image {
   padding-right: 0px !important;
 }
 
-div.email.small-6.columns{
-  padding-left: 10px !important;
+div.email.large-5.medium-5.columns, {
+  margin-left: 0px !important;
 }
 .author-wrapper{
   padding-bottom: .1em;
 }
 
+div.email.small-6.columns{
+  margin-left: 10px !important;
+}
+
 @media (max-width: 480px) {
   p.twitter{
     font-size:.6rem;
+    text-align: left;
   }
   p.email{
     font-size:.6rem;
+    text-align: left;
   }
 
   .author-header {
@@ -1033,8 +1048,9 @@ div.email.small-6.columns{
   .bio-text {
     width: 100%;
   }
-  .contact-info-wrapper{
-    width:100%;
+
+  div.email.small-12.columns, div.twitter.small-12.columns {
+    margin-left: 2px;
   }
 
 }
