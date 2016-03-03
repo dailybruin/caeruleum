@@ -28,7 +28,7 @@ Template Name: Olympic Series
 				   <nav>
 				    <ul>
 				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="1"><span>Adam Krikorian</span></a></li></span>
-				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="2"><span>Coming Soon</span></a></li></span>
+				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="2"><span>Alexa Tielmann</span></a></li></span>
 				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="3"><span>Coming Soon</span></a></li></span>
 				    </ul>
 					</nav>
