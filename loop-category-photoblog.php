@@ -7,9 +7,17 @@
 		//$the_cat = get_the_category()[0];
 		if ($cats) {
 			foreach($cats as $cat){
-				if ($cat->name != "Spectrum"){
+				if ($cat->slug == 'ae-spectrum') {
 					$the_cat = $cat;
+					break;
+				} elseif ($cat->slug == 'news-spectrum') {
+					$the_cat = $cat;
+					break;
+				} elseif ($cat->slug == 'sports-spectrum') {
+					$the_cat = $cat;
+					break;
 				}
+				$the_cat = $cat;
 			}
 		} ?>
 
