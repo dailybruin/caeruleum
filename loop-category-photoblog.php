@@ -3,7 +3,6 @@
 
 <div class="grid">
 	<?php while (have_posts() ): the_post(); 
-
 		$cats = get_the_category();
 		//$the_cat = get_the_category()[0];
 		if ($cats) {
@@ -14,13 +13,14 @@
 			}
 		} ?>
 
-		<div class="grid-item">
+		<div class="grid-item <?php echo $the_cat->slug ?>">
 			<div id="photoblog-post-block">
 				<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
 					<a href="<?php the_permalink(); ?>">
 						<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
 						$image = do_shortcode('[singlepic id='.$singlepicture.']');
 		            
+
 		            	$permalink = get_permalink();
 		            	$start_of_href = strpos($image, 'href');
 		            	$start_of_url = strpos($image, '"', $start_of_href);
@@ -31,6 +31,7 @@
 						?>
 					</a>
 					
+
 				
 				</div>
 
@@ -66,7 +67,6 @@
 							} else {
 								echo $t;
 							}
-
 							?>
 						
 						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
@@ -103,21 +103,17 @@ if ($total_pages > 1) {
 <script type="text/javascript">
 	 /* Isotope
   * ==================== */
-
 var elem = document.querySelector('.grid');
 var iso = new Isotope( elem, {
   // options
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
-
 });
-
 // element argument can be a selector string
 //   for an individual element
 var iso = new Isotope( '.grid', {
   // options
 });
-
 $("div.grid-item").hover(
 	function () {
 		$(this).find(".picOverlay").fadeIn();
@@ -127,4 +123,16 @@ $("div.grid-item").hover(
 	}
 );
 
+
+/*
+ * Isotope animations
+ */
+
+function filterPhotos(tag) {
+  	iso.arrange({
+  		filter: tag
+	})
+}
+
 </script>
+
