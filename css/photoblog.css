@@ -199,6 +199,8 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .photoblog-text {
 	width: 90%;
 	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
@@ -213,13 +215,18 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .photoblog-text p {
 	font-family: 'Roboto Slab', serif;
-	font-size: 12px;
+	/*font-size: 12px;*/
 	/*line-height: 1.5;*/
 	/*margin-top: 1rem;*/
 }
 #photoblog-post-author {
+	font-size: 12px;
 	font-style: italic;
 }
+#photoblog-title {
+	font-size: 30px;
+}
+
 .pager-pb{
 	margin-top: 50px;
 }

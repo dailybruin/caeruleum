@@ -5,7 +5,7 @@
 <!-- <div class="sidebar-menu hidden-phone"> -->
 <!-- <hr> -->
 <!-- <?php wp_nav_menu( array( 'theme_location' => 'photoblog_sidebar' ) );?> -->
-<a href="/category/blogs/spectrum"><img id="spectrum-logo" src="https://files.slack.com/files-pri/T04FG3WDC-F0NVDRWB0/spectrum_logo.png"/></a>
+<a href="/category/blogs/spectrum"><img id="spectrum-logo" src="https://files.slack.com/files-pri/T04FG3WDC-F0QPBLSSU/spectrum_-_isabelle.png"/></a>
 <div id="spectrum-all" class="row sidebar-spectrum">
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('')">ALL</a>
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.ae-spectrum')">A&E</a>
