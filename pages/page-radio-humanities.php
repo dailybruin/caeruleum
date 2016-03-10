@@ -17,8 +17,8 @@ Template Name: Radio Humanities
 <div class="card medium-8 medium-centered columns">
 <div style="padding: 1em;">
 
-	<h1>Under the Gun</h1>
-	<h2>Preparing for an active shooter situation at UCLA</h2>
+	<h1>Adapted Language</h1>
+	<h2>The 2011 department merger that never was</h2>
 
 	<hr>
 
@@ -43,7 +43,7 @@ Listen as the three talk about the volleyball team's season sweep of 'SC, the ch
 			<h4>By Katrina Alarkon</h4>
 
 			<div class="audio">
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249920519&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091341&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 
 			<p><b>ALARKON:</b> A few years ago, six of UCLA’s European language departments almost became one super-department in a bid to streamline the humanities.</p>
@@ -53,8 +53,8 @@ Listen as the three talk about the volleyball team's season sweep of 'SC, the ch
 			<p><b>ALARKON:</b> Ezekiel Trautenberg is a TA for Spanish 5, an intermediate-level course.</p>
 
 			<div class="image">
-				<img src="http://dailybruin.com/images/2016/03/jansssteps.jpg">
-				<span class="caption">Laura Uzes/Daily Bruin</span>
+				<img src="http://dailybruin.com/images/2016/03/IMG_20160229_110849.jpg">
+				<span class="caption">(Katrina Alarkon/Daily Bruin)</span>
 			</div>
 
 			<p><b>TRAUTENBERG: </b> We were teaching five days a week. Now we’re spending about two and a half hours in the classroom. There’s a little bit more of an online component and some of their exams are online.
@@ -99,7 +99,7 @@ Listen as the three talk about the volleyball team's season sweep of 'SC, the ch
 			<h4>By Douglas Hseih</h4>
 
 			<div class="audio">
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249920353&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 
 			<p><b>Hsieh:</b> Type in these three words into Google: “Are the humanities …” and you get a list of what people search for when they ask about the humanities. Among these suggestions include: “Are the humanities important, dying, useless.” The list goes on and on. On the surface at least, there is a serious concern over the role of the humanities in our technologically driven society.</p>
@@ -111,8 +111,8 @@ Listen as the three talk about the volleyball team's season sweep of 'SC, the ch
 			<p><b>Hanna-Harwell:</b>  So that particular budget problem was solved internally within the campus. And I should add, it’s not a problem that the humanities uniquely faced. It was part of a bigger problem that has been faced by most if not all of our academic units on campus. (5:28-5:57)</p>
 
 			<div class="image">
-				<img src="http://dailybruin.com/images/2016/03/reslife.jpg">
-				<span class="caption">Daily Bruin file photo</span>
+				<img src="http://dailybruin.com/images/2016/03/royce.jpg">
+				<span class="caption">(Owen Emerson/Daily Bruin)</span>
 			</div>
 
 
@@ -148,45 +148,45 @@ Listen as the three talk about the volleyball team's season sweep of 'SC, the ch
 			<h4>By Joseph Izaguirre</h4>
 
 			<div class="audio">
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249920938&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091521&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 
 			<p><b>Izaguirre:</b> The Department of Germanic Languages here at UCLA was one of the departments slated to be merged under a proposal back in 2011. Like most humanities departments, it faced a problem: balancing the budget. One outspoken voice in the department is Robert Kirsner, professor of Dutch and Afrikaans. Kirsner recalls the feeling around the department at the time of the merger proposal.</p>
 
-<p><b>Kirsner:</b>  The chair at the time, Jim Schultz, who is now retired was going around saying, "Department of Leftover Languages." My joke at the time was, why not call us the "Department of Un-Asian Languages"?</p>
+			<p><b>Kirsner:</b>  The chair at the time, Jim Schultz, who is now retired was going around saying, "Department of Leftover Languages." My joke at the time was, why not call us the "Department of Un-Asian Languages"?</p>
 
-<p><b>Izaguirre:</b>  Kirsner's opposition to the merger is rooted in his love for language. As a linguist, he emphasizes the importance of language in personal connection:</p>
+			<p><b>Izaguirre:</b>  Kirsner's opposition to the merger is rooted in his love for language. As a linguist, he emphasizes the importance of language in personal connection:</p>
 
 			<div class="image">
-				<img src="http://dailybruin.com/images/2016/03/ucpd.jpg">
-				<span class="caption">Jessica Zhou/Daily Bruin</span>
+				<img src="http://dailybruin.com/images/2016/03/3.4.radio_.humanities.edit2a.png">
+				<span class="caption">Daily Bruin Graphics</span>
 			</div>
 
-<p><b>Kirsner:</b> Languages are important. They're the way you get to the insides of people.</p>
+			<p><b>Kirsner:</b> Languages are important. They're the way you get to the insides of people.</p>
 
-<p><b>Izaguirre:</b>  Kirsner noted a trend: Americans nowadays are sheltered from foreign languages. American news channels use voice overs rather than subtitles, exposing the viewer to English only. American films used to give more exposure to foreign languages. In the 1951 film "The Day the Earth Stood Still," there is a scene where the world reacts to a flying saucer approaching Earth.</p>
+			<p><b>Izaguirre:</b>  Kirsner noted a trend: Americans nowadays are sheltered from foreign languages. American news channels use voice overs rather than subtitles, exposing the viewer to English only. American films used to give more exposure to foreign languages. In the 1951 film "The Day the Earth Stood Still," there is a scene where the world reacts to a flying saucer approaching Earth.</p>
 
-<p><b>Kirsner:</b> And when the flying saucer approaches Earth, and people on earth are getting scared and notice it, you have news broadcasts in Hindi, and then in French, and then in British English, and then American English. In the remake with Keanu Reaves, which, ahem, sucks, it's only English. It's changed that way, you see how American culture has changed that way.</p>
+			<p><b>Kirsner:</b> And when the flying saucer approaches Earth, and people on earth are getting scared and notice it, you have news broadcasts in Hindi, and then in French, and then in British English, and then American English. In the remake with Keanu Reaves, which, ahem, sucks, it's only English. It's changed that way, you see how American culture has changed that way.</p>
 
-<p><b>Izaguirre:</b>  Kirsner has a possible solution to the budget problem. He believes that the humanities could make a profit with a project called "Digital Humanities," headed by the Germanic languages department's own professor Todd Presner.</p>
+			<p><b>Izaguirre:</b>  Kirsner has a possible solution to the budget problem. He believes that the humanities could make a profit with a project called "Digital Humanities," headed by the Germanic languages department's own professor Todd Presner.</p>
 
-<p><b>Kirsner:</b> I think there is money in there. Software development, developing software to analyze texts.</p>
+			<p><b>Kirsner:</b> I think there is money in there. Software development, developing software to analyze texts.</p>
 
-<p><b>Izaguirre:</b>  Kirsner's colleague, John McCumber, is a distinguished professor of Germanic languages and the chair of the Germanic languages department. He believes that a language department merger would be a good idea. He recalls the change in attitude that the department has undergone since the proposal back in 2011.</p>
+			<p><b>Izaguirre:</b>  Kirsner's colleague, John McCumber, is a distinguished professor of Germanic languages and the chair of the Germanic languages department. He believes that a language department merger would be a good idea. He recalls the change in attitude that the department has undergone since the proposal back in 2011.</p>
 
-<p><b>McCumber:</b> That was several years ago, and I would say that there were people who were opposed. There's not so much opposition now to that.</p>
+			<p><b>McCumber:</b> That was several years ago, and I would say that there were people who were opposed. There's not so much opposition now to that.</p>
 
-<p><b>Izaguirre:</b>  According to McCumber, a merger would encourage a holistic view of subjects which were once isolated. This would lead to a better understanding of each subject. And if done correctly, the loss of the Department of Germanic Languages would not hurt UCLA.</p>
+			<p><b>Izaguirre:</b>  According to McCumber, a merger would encourage a holistic view of subjects which were once isolated. This would lead to a better understanding of each subject. And if done correctly, the loss of the Department of Germanic Languages would not hurt UCLA.</p>
 
-<p><b>McCumber:</b> If we do it in the right way, I don't think that the reputation would be hurt, I think actually that it will go up because it will provide a way for people to see Germany in context.</p>
+			<p><b>McCumber:</b> If we do it in the right way, I don't think that the reputation would be hurt, I think actually that it will go up because it will provide a way for people to see Germany in context.</p>
 
-<p><b>Izaguirre:</b>  McCumber believes that the humanities are changing, and that UCLA needs to change with them. As the world becomes more interconnected, teaching a subject in isolation is no longer feasible.</p>
+			<p><b>Izaguirre:</b>  McCumber believes that the humanities are changing, and that UCLA needs to change with them. As the world becomes more interconnected, teaching a subject in isolation is no longer feasible.</p>
 
-<p><b>McCumber:</b> As a philosopher, I know that the standard way of teaching German philosophy was to pretend as if no German ever read an English philosopher or Chinese philosopher, or anything like that. It just doesn’t work. We’re looking at these new approaches that help us do a better job of communicating what we have to communicate.</p>
+			<p><b>McCumber:</b> As a philosopher, I know that the standard way of teaching German philosophy was to pretend as if no German ever read an English philosopher or Chinese philosopher, or anything like that. It just doesn’t work. We’re looking at these new approaches that help us do a better job of communicating what we have to communicate.</p>
 
-<p><b>Izaguirre:</b>  But merged or not, the Department of Germanic Languages will continue to impart the German language and culture on students who seek it out.</p>
+			<p><b>Izaguirre:</b>  But merged or not, the Department of Germanic Languages will continue to impart the German language and culture on students who seek it out.</p>
 
-<p>For Daily Bruin Radio, I’m Joseph Izaguirre.</p>
+			<p>For Daily Bruin Radio, I’m Joseph Izaguirre.</p>
 
 		</li>
 	</ul>
@@ -194,17 +194,6 @@ Listen as the three talk about the volleyball team's season sweep of 'SC, the ch
 </div>
 </div>
 
-
-
-<div class="row" style="margin: 1em auto 1em auto;">
-<div class="card medium-8 medium-centered columns">
-
-	<img src="http://dailybruin.com/images/2016/03/graphic.png">
-
-
-</div>
-
-</div>
 
 </div>
 
