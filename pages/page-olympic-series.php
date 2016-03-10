@@ -29,7 +29,7 @@ Template Name: Olympic Series
 				    <ul>
 				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="1"><span>Adam Krikorian</span></a></li></span>
 				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="2"><span>Alexa Tielmann</span></a></li></span>
-				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="3"><span>Coming Soon</span></a></li></span>
+				        <span class="bubble"><li><a class="navi-btn" href="#" data-id="3"><span>Rachel Fattal</span></a></li></span>
 				    </ul>
 					</nav>
 				  </div>
@@ -317,15 +317,144 @@ Template Name: Olympic Series
 					</div>
 				  </div>
 
- 				  <div class="content" id="article-3" data-index="3">
+ 				   <div class="content" id="article-3" data-index="3">
 						<div class="row" data-equalizer="b">
 							<a class="carousel-prev"><div class="medium-1 medium-push-1 columns chevron chevron-left hide-for-small-only" data-equalizer-watch="b">
 							</div></a>
-							<div class="small-12 medium-9 medium-push-1 large-9 columns coming-soon-wrapper" data-equalizer-watch="b">
-								<h2 class="coming-soon">COMING SOON</h2>
+							<div class="small-12 medium-9 medium-push-1 large-8 columns" data-equalizer-watch="b">
+								<img src="http://dailybruin.com/images/2016/03/web.sp_.wwp_.FILE_.jpg"/>
+								<div class="img-credits columns">
+									Daily Bruin file photo
+								</div>
+								<div class="img-caption columns">
+									Junior attacker Rachel Fattal is in the midst of an Olympic 
+									redshirt season, nabbing a roster spot on the national team headed to Rio.
+									 Fattal was a major offensive threat for the Bruins before taking her talents to the
+									  next level.
+								</div>
 							</div>
+							<a class="carousel-next"><div class="medium-1 medium-push-1 columns end chevron hide-for-small-only" data-equalizer-watch="b">
+							</div></a>
 						</div>
-				</div>
+						<div class="row">
+							<div class="small-12 medium-9 large-9 medium-push-2 columns">
+						  	<div class="third-article">
+							  <h3 class="part2">Lifelong passion for water polo takes Rachel Fattal to Rio 2016</h3>
+							  <h4>By  <a class="author" title="Posts by Author" href="http://dailybruin.com/author/savannah-shapiro/" rel="author">
+								Savannah Shapiro</a>
+							  </h4>
+							  <h2>Sports Writer</h2>
+							    <p>Swim lanes were rolled up, water polo nets were flung into the pool and the local water polo club began warming
+							     up for practice. <br /></p>
+
+							    <p>Four-year-old Rachel Fattal floated amidst the activity, waiting for her parents to pick her
+							     up from a swimming lesson. </p>
+							    <p>The curious kid drifted over to a clump of yellow Mikasa water polo balls and attempted to balance 
+							    	them on top of her head. Her hands were too small to grasp the ball and her arms not yet strong 
+							    	enough to throw it more than a couple feet.</p>
+
+							    <p>Fattal, now an attacker for UCLA women's water polo, no longer has any problem gripping a water polo ball, 
+							    	and no problem shooting past the top defenders in the country. Fifteen years of training and preparation 
+							    	propelled her into both the collegiate and international water polo spotlight. </p>
+
+							    	 <div class="pullquote">
+										<p class="pullquotetext">
+										  &#8220;Rachel has a lot of key elements &#8211; she has the talent to be great, the competitiveness
+							       to set high goals and expectations and the work ethic to reach them.&#8221;
+										</p>
+										<p class="quote-author">Brooks</p>
+									</div>
+
+							    <p>&#8220;I think in sports you see it very often where someone is very talented but maybe doesn&#8217;t love the
+							     sport they play, or someone who works really hard but isn&#8217;t that talented,&#8221; said UCLA coach Brandon
+							      Brooks. &#8220;Rachel has a lot of key elements &#8211; she has the talent to be great, the competitiveness
+							       to set high goals and expectations and the work ethic to reach them.&#8221;</p>
+
+							     <p>Fattal has always carried her strong work ethic and competitiveness in every aspect of her sporting
+							      career, which led her to take an Olympic redshirt year in 2016 and apply every effort to make the national
+							       team roster. </p><p>&#8220;I have never met anyone with more energy,&#8221; said senior defender Charlotte 
+							       Pratt. &#8220;On our days off after tournaments, I would wake up to her coming back from a run or a swim. 
+							       She never takes a single day off."</p><p>Because of her young start, Fattal is accustomed to going the extra 
+							       mile to improve her strengths and weaknesses, representing the USA since she was a mere teenager. </p>
+
+							        
+
+							     <p>Fattal entered what is known as the &#8220;Olympic Pipeline&#8221; in water polo at a young age. It is the
+							      gateway to the Olympics &#8211; a status that most young athletes aspire toward, but only a few can reach.
+							       Young players are invited to join national teams early in their careers. Since she was 14 years old, Fattal
+							        was in the pipeline, joining the ranks of the youth team, junior team and now the senior national team. <br /></p>
+
+							     <p>&#8220;I&#8217;ve always had the dream of being on the national team &#8211; I&#8217;ve always wanted to pursue
+							      my dream more than thinking that &#8216;Oh, this could be my thing,&#8217;&#8221; Fattal said. &#8220;I always 
+							      knew that that was the end result of whatever I wanted to do.&#8221;</p>
+
+							     <p>The current national team spends an average day training for six and half hours. The long days, intensive
+							      training and preparation over the course of the year all went into the FINA Women&#8217;s Intercontinental
+							       Tournament in Lewisville, Texas and the upcoming qualifications. </p>
+
+							       	              <div class="pullquote2">
+									<p class="pullquote2text">
+									  &#8220;The Olympics ... it is like nothing else. It is the world&#8217;s highest level. Brooks 
+									You mix the intense competition of trying to be one of the 13 best at your sport in the entire 
+									country, which is a really cool thing to think that someone feels that they&#8217;re going to be one of ... the 
+									very top athletes in the country or the world.&#8221;
+									</p>
+									<p class="quote-author">Brooks </p>
+								</div>
+
+							       <p>&#8220;Everyone that is the best at
+							        the college level is most likely going to be on an international team,&#8221; Fattal said. &#8220;For other
+							         countries, it&#8217;s going to be the best players that they have. It&#8217;s going to be faster, everyone&#8217;s
+							          going to be just as good as you and just as fast as you.&#8221;</p><p>***</p><p>The sound of a cheering crowd 
+							          and the steady drum roll of a high school band welcomed the team to Texas where the women were greeted with 
+							          lines of fans. The arrivals terminal at Dallas/Fort Worth International Airport was packed with an enthusiastic
+							           welcoming committee that rivaled any crowd that the national team had previously experienced. </p>
+
+						
+
+							     <p>&#8220;It was absolutely amazing,&#8221; Fattal said. &#8220;We&#8217;ve never ever had that. We are a 
+							     	California-based team, and water polo is huge in California and we have never ever had that. And it was so 
+							     	unreal and so unexpected.&#8221;</p><p>As Fattal weaved her way through the lines of fans, young aspiring water
+							     	 polo players bombarded Fattal with pictures and T-shirts for her to autograph - a novel experience for the 
+							     	 national team attacker. </p><p>&#8220;I&#8217;m not famous, I just play water polo. This is just what I have
+							     	  done my whole life,&#8221; Fattal said. &#8220;It&#8217;s incredible when someone looks up to you the way that
+							     	   these kids looked up to us in Texas.&#8221;</p>
+
+								<p>The fan base last month in Texas was huge for Fattal and the national team. The stands were packed every
+								 night for all six games in the FINA tournament, cheering on the U.S. National team. The senior team went on to
+								  sweep the tournament in Texas and moved on to the Olympic Qualification Tournament. </p>
+
+								<p>&#8220;The Olympics ... it is like nothing else. It is the world&#8217;s highest level,&#8221; Brooks 
+									said. &#8220;You mix the intense competition of trying to be one of the 13 best at your sport in the entire 
+									country, which is a really cool thing to think that someone feels that they&#8217;re going to be one of ... the 
+									very top athletes in the country or the world.&#8221;</p>
+
+									         <div class="pullquote">
+									<p class="pullquote2text">
+									  "We do what we do because we love it and because we have fun doing it. &#8221; And that&#8217;s the most important thing about any sport. ... Yes, it&#8217;s my job.
+									 Yeah, it might suck at times, but at the end of the day I love playing water polo.""
+									</p>
+									<p class="quote-author">Fattal </p>
+								</div>
+
+								<p>International qualifiers for the Olympics are only a few weeks away and Fattal can feel the anticipation
+								 for Rio 2016 growing stronger. </p><p>&#8220;Hopefully if we qualify and I let myself start thinking about
+								  Rio, I&#8217;m sure it&#8217;s going to be crazy and I am going to be super excited,&#8221; Fattal said. &#8220;This
+								   was in my dreams for many years now. It was always &#8216;2016 2016 Rio here we go&#8217; so I can only guess
+								    how excited I&#8217;m going to be.&#8221;</p>
+
+								<p>Although water polo has evolved for Fattal from a new and exciting hobby as a 4-year-old to a job that 
+									demands constant attention as a 22-year-old, she has always maintained the outlook that water polo 
+									should be fun.</p>
+
+								<p>&#8220;We do what we do because we love it and because we have fun doing it,&#8221; Fattal 
+									said. &#8220;And that&#8217;s the most important thing about any sport. ... Yes, it&#8217;s my job.
+									 Yeah, it might suck at times, but at the end of the day I love playing water polo.&#8221;</p>
+
+						  </div>
+						</div>
+					</div>
+				  </div>
 
 				  </div>
 				</div> <!-- end content-carousel -->
