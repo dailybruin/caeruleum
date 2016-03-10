@@ -22,9 +22,11 @@ Template Name: Radio Humanities
 
 	<hr>
 
-	<p>The best weekly volleyball podcast got even better this week with two – two?! – guests. You won't want to miss this special edition, as junior middle blocker Mitch Stahl and Daily Bruin sports editor Claire Fahy join Tanner Walters.</p>
-<p>
-Listen as the three talk about the volleyball team's season sweep of 'SC, the chaotic crowd in the John Wooden Center and what it's like to balance studying for finals with a Division I sport.</p>
+	<p>The University of California was facing a multi-billion dollar budget crunch in 2011, leading UCLA officials to consider numerous proposals to preserve the quality of the school's education in the face of severe budget cuts. The UCLA Academic Senate floated one such proposal: consolidate six language departments into a single European languages and cultures department.</p>
+
+	<p>However, the new department never materialized, and the departments of French and Francophone studies, Spanish and Portuguese, Slavic languages and literatures, Scandinavian, Italian and Germanic languages remain separate to this day.</p>
+
+	<p>How did the humanities division manage to address the budget shortfall amid stagnant enrollment numbers? Daily Bruin Radio's intern class examines how department funding works and how the language departments have worked to close the budget shortfall.</p>
 
 	<p><i>Intro by Chris Campbell, Radio Director</i></p>
 
