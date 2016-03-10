@@ -383,16 +383,7 @@ Template Name: Olympic Series
 							      gateway to the Olympics &#8211; a status that most young athletes aspire toward, but only a few can reach.
 							       Young players are invited to join national teams early in their careers. Since she was 14 years old, Fattal
 							        was in the pipeline, joining the ranks of the youth team, junior team and now the senior national team. <br /></p>
-
-							     <p>&#8220;I&#8217;ve always had the dream of being on the national team &#8211; I&#8217;ve always wanted to pursue
-							      my dream more than thinking that &#8216;Oh, this could be my thing,&#8217;&#8221; Fattal said. &#8220;I always 
-							      knew that that was the end result of whatever I wanted to do.&#8221;</p>
-
-							     <p>The current national team spends an average day training for six and half hours. The long days, intensive
-							      training and preparation over the course of the year all went into the FINA Women&#8217;s Intercontinental
-							       Tournament in Lewisville, Texas and the upcoming qualifications. </p>
-
-							       	              <div class="pullquote2">
+	              <div class="pullquote2">
 									<p class="pullquote2text">
 									  &#8220;The Olympics ... it is like nothing else. It is the world&#8217;s highest level. Brooks 
 									You mix the intense competition of trying to be one of the 13 best at your sport in the entire 
@@ -401,6 +392,15 @@ Template Name: Olympic Series
 									</p>
 									<p class="quote-author">Brooks </p>
 								</div>
+							     <p>&#8220;I&#8217;ve always had the dream of being on the national team &#8211; I&#8217;ve always wanted to pursue
+							      my dream more than thinking that &#8216;Oh, this could be my thing,&#8217;&#8221; Fattal said. &#8220;I always 
+							      knew that that was the end result of whatever I wanted to do.&#8221;</p>
+
+							     <p>The current national team spends an average day training for six and half hours. The long days, intensive
+							      training and preparation over the course of the year all went into the FINA Women&#8217;s Intercontinental
+							       Tournament in Lewisville, Texas and the upcoming qualifications. </p>
+
+
 
 							       <p>&#8220;Everyone that is the best at
 							        the college level is most likely going to be on an international team,&#8221; Fattal said. &#8220;For other
@@ -419,23 +419,21 @@ Template Name: Olympic Series
 							     	 national team attacker. </p><p>&#8220;I&#8217;m not famous, I just play water polo. This is just what I have
 							     	  done my whole life,&#8221; Fattal said. &#8220;It&#8217;s incredible when someone looks up to you the way that
 							     	   these kids looked up to us in Texas.&#8221;</p>
-
-								<p>The fan base last month in Texas was huge for Fattal and the national team. The stands were packed every
-								 night for all six games in the FINA tournament, cheering on the U.S. National team. The senior team went on to
-								  sweep the tournament in Texas and moved on to the Olympic Qualification Tournament. </p>
-
-								<p>&#8220;The Olympics ... it is like nothing else. It is the world&#8217;s highest level,&#8221; Brooks 
-									said. &#8220;You mix the intense competition of trying to be one of the 13 best at your sport in the entire 
-									country, which is a really cool thing to think that someone feels that they&#8217;re going to be one of ... the 
-									very top athletes in the country or the world.&#8221;</p>
-
-									         <div class="pullquote">
+							     	     <div class="pullquote">
 									<p class="pullquote2text">
 									  "We do what we do because we love it and because we have fun doing it. &#8221; And that&#8217;s the most important thing about any sport. ... Yes, it&#8217;s my job.
 									 Yeah, it might suck at times, but at the end of the day I love playing water polo.""
 									</p>
 									<p class="quote-author">Fattal </p>
 								</div>
+								<p>The fan base last month in Texas was huge for Fattal and the national team. The stands were packed every
+								 night for all six games in the FINA tournament, cheering on the U.S. National team. The senior team went on to
+								  sweep the tournament in Texas and moved on to the Olympic Qualification Tournament. </p>
+		       
+								<p>&#8220;The Olympics ... it is like nothing else. It is the world&#8217;s highest level,&#8221; Brooks 
+									said. &#8220;You mix the intense competition of trying to be one of the 13 best at your sport in the entire 
+									country, which is a really cool thing to think that someone feels that they&#8217;re going to be one of ... the 
+									very top athletes in the country or the world.&#8221;</p>
 
 								<p>International qualifiers for the Olympics are only a few weeks away and Fattal can feel the anticipation
 								 for Rio 2016 growing stronger. </p><p>&#8220;Hopefully if we qualify and I let myself start thinking about
