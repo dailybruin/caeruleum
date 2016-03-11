@@ -101,7 +101,7 @@ Template Name: Radio Humanities
 			<h4>By Douglas Hseih</h4>
 
 			<div class="audio">
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091521&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 
 			<p><b>Hsieh:</b> Type in these three words into Google: “Are the humanities …” and you get a list of what people search for when they ask about the humanities. Among these suggestions include: “Are the humanities important, dying, useless.” The list goes on and on. On the surface at least, there is a serious concern over the role of the humanities in our technologically driven society.</p>
@@ -150,7 +150,7 @@ Template Name: Radio Humanities
 			<h4>By Joseph Izaguirre</h4>
 
 			<div class="audio">
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091521&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 
 			<p><b>Izaguirre:</b> The Department of Germanic Languages here at UCLA was one of the departments slated to be merged under a proposal back in 2011. Like most humanities departments, it faced a problem: balancing the budget. One outspoken voice in the department is Robert Kirsner, professor of Dutch and Afrikaans. Kirsner recalls the feeling around the department at the time of the merger proposal.</p>
