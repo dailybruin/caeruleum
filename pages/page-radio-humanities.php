@@ -55,7 +55,7 @@ Template Name: Radio Humanities
 			<p><b>ALARKON:</b> Ezekiel Trautenberg is a TA for Spanish 5, an intermediate-level course.</p>
 
 			<div class="image">
-				<img src="http://dailybruin.com/images/2016/03/IMG_20160229_110849.jpg">
+				<img src="http://dailybruin.com/images/2016/03/royce.jpg">
 				<span class="caption">(Katrina Alarkon/Daily Bruin)</span>
 			</div>
 
@@ -98,7 +98,7 @@ Template Name: Radio Humanities
 
 			<h3>Humanities enrollment remains steady amid department changes</h3>
 
-			<h4>By Douglas Hseih</h4>
+			<h4>By Douglas Hsieh</h4>
 
 			<div class="audio">
 				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251091521&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -113,7 +113,7 @@ Template Name: Radio Humanities
 			<p><b>Hanna-Harwell:</b>  So that particular budget problem was solved internally within the campus. And I should add, it’s not a problem that the humanities uniquely faced. It was part of a bigger problem that has been faced by most if not all of our academic units on campus. (5:28-5:57)</p>
 
 			<div class="image">
-				<img src="http://dailybruin.com/images/2016/03/royce.jpg">
+				<img src="http://dailybruin.com/images/2016/03/IMG_20160229_110849.jpg">
 				<span class="caption">(Owen Emerson/Daily Bruin)</span>
 			</div>
 
