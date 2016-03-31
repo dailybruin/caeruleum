@@ -287,7 +287,7 @@
 		                      <div class="row contact-info-wrapper">
 		                      <?php endif; ?>
 		                        <?php if ( $email || $twitter ): ?>
-		                        <div class="contact-single large-2 medium-2 columns show-for-medium-up">
+		                        <div class="contact large-2 medium-2 columns show-for-medium-up">
 		                          <p class="contact">contact</p>
 		                        </div>
 		                        <?php endif; ?>
