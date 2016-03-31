@@ -251,15 +251,16 @@
 							    	<div class="image large-2 small-3 medium-2 columns"> 
 							    	<?php
 							        ob_start();
-			    					if(function_exists('userphoto_the_author_photo'))
-			    						userphoto_the_author_photo();
+			    					if(function_exists('userphoto')){
+										userphoto($author->ID);
+			    					}
 			    					$thumbnail = ob_get_contents();
 			    					$thumbnail_class = "";
 			    					ob_end_clean();
 			    					if(!empty($thumbnail))
 			    					{
 			        					?>
-			        						<div class="author-photo"><?php userphoto_the_author_photo(); ?></div>
+			        						<div class="author-photo"><?php userphoto($author->ID);?> </div>
 			        						</div>
 			        						<?php
 			        				}else{
@@ -286,7 +287,7 @@
 		                      <div class="row contact-info-wrapper">
 		                      <?php endif; ?>
 		                        <?php if ( $email || $twitter ): ?>
-		                        <div class="contact large-2 medium-2 columns show-for-medium-up">
+		                        <div class="contact-single large-2 medium-2 columns show-for-medium-up">
 		                          <p class="contact">contact</p>
 		                        </div>
 		                        <?php endif; ?>
