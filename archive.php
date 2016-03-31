@@ -113,7 +113,7 @@
                           <?php if ( $email ): ?>
                           <p><span class="entypo-mail"></span>
                            <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
-                            <?php $email; ?>
+                            <?php echo $email; ?>
                           </a></p>
                           <?php endif; ?>
                         </div>
@@ -121,7 +121,7 @@
                           <?php if ( $twitter): ?>
                             <p><span class="entypo-twitter"></span>  
                             <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
-                              <?$twitter;?>
+                              <?php echo $twitter;?>
                             </a>
                           <?php endif; ?>
                         </div>
