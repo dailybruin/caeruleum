@@ -27,8 +27,6 @@
 					<a href="<?php the_permalink(); ?>">
 						<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
 						$image = do_shortcode('[singlepic id='.$singlepicture.']');
-		            
-
 		            	$permalink = get_permalink();
 		            	$start_of_href = strpos($image, 'href');
 		            	$start_of_url = strpos($image, '"', $start_of_href);
@@ -38,26 +36,9 @@
 		            	echo $final_tag;
 						?>
 					</a>
-					
-
-				
 				</div>
 
 				<div class="picOverlay">
-					<!-- <a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
-					<?php if ($the_cat->slug == "archives"): { ?>
-						ARCHIVES <?php } ?>
-					<?php elseif ($the_cat->slug == "campus-spectrum"): { ?>
-						CAMPUS <?php } ?>
-					<?php elseif ($the_cat->slug == "humans-of-westwood"):{ ?>
-						HOWEWO <?php } ?>
-					<?php elseif ($the_cat->slug == "sports-spectrum"):{ ?>
-						SPORTS <?php } ?>
-					<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
-						WW/LA <?php } ?>
-					<?php endif ?>
-					</a> -->
-					
 					<div class="photoblog-text" id="photoblog-post-text">
 						<h3>
 							<p id="photoblog-title">
@@ -119,9 +100,9 @@ var iso = new Isotope( elem, {
 });
 // element argument can be a selector string
 //   for an individual element
-var iso = new Isotope( '.grid', {
-  // options
-});
+// var iso = new Isotope( '.grid', {
+//   layoutMode: 'packery'
+// });
 $("div.grid-item").hover(
 	function () {
 		$(this).find(".picOverlay").stop().fadeIn();
@@ -141,6 +122,11 @@ function filterPhotos(tag) {
   		filter: tag
 	})
 }
+
+
+var allImgs = $(document).find('.photoblog-post-image img');
+allImgs.height('300px');
+
 
 </script>
 

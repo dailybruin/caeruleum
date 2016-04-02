@@ -658,6 +658,10 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .grid-item { 
 	width: 33%; 
+	
+}
+.grid-item img{ 
+	width: 100%; 
 }
 .grid-item--width2 { 
 	width: 50%; 
