@@ -58,28 +58,24 @@
 		</div>
 
 
-
+<br>
 
 
 <div class="grid">
 	<?php 
 	$categories = get_the_category();
 	foreach ( $categories as $category ) { 
-	    echo '<p>' . esc_attr( $category->name ) . '</p>'; 
-	    if ($category->name == 'A&E Spectrum') {
+	    if ($category->name == 'Sports Spectrum') {
 	    	$currentPostCategory = $category->name;
 	    	break;
 	    } elseif ($category->name == 'News Spectrum') {
 	    	$currentPostCategory = $category->name;
 	    	break;
-	    } elseif ($category->name == 'Sports Spectrum') {
-	    	$currentPostCategory = $category->name;
-	    	break;
+	    } else {
+	    	$currentPostCategory = 'A&E Spectrum';
 	    }
 	}
-
-	echo '<p>' . $currentPostCategory . '</p>';
-
+	
 	query_posts(array(
 		'showposts' => 3,
 		'orderby' => 'rand',
@@ -174,14 +170,14 @@
 
 
 		<?php if(function_exists('the_audio')) the_audio(); ?>
-		<hr>
+		<!-- <hr>
 		<?php the_content(); ?>
 		<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 		<p class="photoblog-sm">
 			<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
-		</p>
+		</p> -->
 
-		<?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
+		<!-- <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?> -->
 		
 	</div> <!--photoblog-post-block-->
 </div>
@@ -226,6 +222,9 @@ function filterPhotos(tag) {
   		filter: tag
 	})
 }
+
+var allImgs = $(document).find('.photoblog-post-image img');
+allImgs.height($(window).width() / 5);
 
 </script>
 
