@@ -7,53 +7,47 @@
 		//$the_cat = get_the_category()[0];
 		if ($cats) {
 			foreach($cats as $cat){
-				if ($cat->name != "Spectrum"){
+				if ($cat->slug == 'ae-spectrum') {
 					$the_cat = $cat;
+					break;
+				} elseif ($cat->slug == 'news-spectrum') {
+					$the_cat = $cat;
+					break;
+				} elseif ($cat->slug == 'sports-spectrum') {
+					$the_cat = $cat;
+					break;
 				}
+				$the_cat = $cat;
 			}
 		} ?>
 
 		<div class="grid-item <?php echo $the_cat->slug ?>">
 			<div id="photoblog-post-block">
 				<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
+					<a href="<?php the_permalink(); ?>">
+						<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
+						$image = do_shortcode('[singlepic id='.$singlepicture.']');
+		            	$permalink = get_permalink();
+		            	$start_of_href = strpos($image, 'href');
+		            	$start_of_url = strpos($image, '"', $start_of_href);
+		            	$end_of_url = strpos($image, '"', $start_of_url+1);
 
-				<a href="<?php the_permalink(); ?>">
-					<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
-					$image = do_shortcode('[singlepic id='.$singlepicture.']');
-		            
-		            $permalink = get_permalink();
-		            $start_of_href = strpos($image, 'href');
-		            $start_of_url = strpos($image, '"', $start_of_href);
-		            $end_of_url = strpos($image, '"', $start_of_url+1);
-		            $final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
-		            echo $final_tag;
-					?>
-				</a>
-				
+		            	$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
+		            	echo $final_tag;
+						?>
+					</a>
 				</div>
 
 				<div class="picOverlay">
-					<!-- <a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
-					<?php if ($the_cat->slug == "archives"): { ?>
-						ARCHIVES <?php } ?>
-					<?php elseif ($the_cat->slug == "campus-spectrum"): { ?>
-						CAMPUS <?php } ?>
-					<?php elseif ($the_cat->slug == "humans-of-westwood"):{ ?>
-						HOWEWO <?php } ?>
-					<?php elseif ($the_cat->slug == "sports-spectrum"):{ ?>
-						SPORTS <?php } ?>
-					<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
-						WW/LA <?php } ?>
-					<?php endif ?>
-					</a> -->
-					
 					<div class="photoblog-text" id="photoblog-post-text">
 						<h3>
-							<a href="<?php the_permalink() ?>">
-								<?php
-								the_title();
-								?>
-							</a>
+							<p id="photoblog-title">
+								<a href="<?php the_permalink() ?>">
+									<?php
+									the_title();
+									?>
+								</a>
+							</p>
 						</h3> 
 						<?php $t = get_the_excerpt(); 
 							$periodPosition = strpos($t, '.');
@@ -106,15 +100,15 @@ var iso = new Isotope( elem, {
 });
 // element argument can be a selector string
 //   for an individual element
-var iso = new Isotope( '.grid', {
-  // options
-});
+// var iso = new Isotope( '.grid', {
+//   layoutMode: 'packery'
+// });
 $("div.grid-item").hover(
 	function () {
-		$(this).find(".picOverlay").fadeIn();
+		$(this).find(".picOverlay").stop().fadeIn();
 	}, 
 	function () {
-		$(this).find(".picOverlay").fadeOut();
+		$(this).find(".picOverlay").stop().fadeOut();
 	}
 );
 
@@ -128,6 +122,11 @@ function filterPhotos(tag) {
   		filter: tag
 	})
 }
+
+
+var allImgs = $(document).find('.photoblog-post-image img');
+allImgs.height('300px');
+
 
 </script>
 
