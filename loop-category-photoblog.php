@@ -57,12 +57,12 @@
 								echo $t;
 							}
 							?>
-						
 						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 						<p class="photoblog-sm">
 						    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 						</p>
 					</div>
+
 				</div>
 			</div> <!--photoblog-post-block-->
 		</div> <!-- isotope grid -->
