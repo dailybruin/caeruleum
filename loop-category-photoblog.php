@@ -124,10 +124,10 @@ var iso = new Isotope( '.grid', {
 });
 $("div.grid-item").hover(
 	function () {
-		$(this).find(".picOverlay").fadeIn();
+		$(this).find(".picOverlay").stop().fadeIn();
 	}, 
 	function () {
-		$(this).find(".picOverlay").fadeOut();
+		$(this).find(".picOverlay").stop().fadeOut();
 	}
 );
 
