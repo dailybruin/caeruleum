@@ -125,8 +125,7 @@ function filterPhotos(tag) {
 
 
 var allImgs = $(document).find('.photoblog-post-image img');
-console.log(allImgs);
-allImgs.height('275px');
+allImgs.height('300px');
 
 
 </script>
