@@ -198,7 +198,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .photoblog-text {
 	width: 90%;
-	margin-top: 20px;
+	margin-top: 20%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -220,11 +220,11 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*margin-top: 1rem;*/
 }
 #photoblog-post-author {
-	font-size: 12px;
+	font-size: 1vw;
 	font-style: italic;
 }
 #photoblog-title {
-	font-size: 30px;
+	font-size: 1.5vw;
 }
 
 .pager-pb{
@@ -596,6 +596,16 @@ a.photoblog-post-tag.pb-tag-westwoodla,
   	width: 80%;
   	height: auto;
   }
+
+  .sidebar-link {
+	font-size: 10px;
+}
+
+.sidebar-category {
+	font-size: 14px;
+}
+
+
 }
 /*
 @keyframes fadein {
