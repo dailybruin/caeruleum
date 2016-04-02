@@ -58,8 +58,9 @@
 		</div>
 
 
-<br>
+<br><br>
 
+<h2><p id="photoblog-title"><a>Suggested Galleries</a></p></h2> 
 
 <div class="grid">
 	<?php 

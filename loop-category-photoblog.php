@@ -2,7 +2,15 @@
 <?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
 <div class="grid">
-	<?php while (have_posts() ): the_post(); 
+	<?php 
+	$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	query_posts(array(
+		'posts_per_page' => 9,
+		'category_name' => 'Spectrum',
+        'paged' => $page
+	));
+
+	while (have_posts() ): the_post();
 		$cats = get_the_category();
 		//$the_cat = get_the_category()[0];
 		if ($cats) {
@@ -78,7 +86,7 @@ if ($total_pages > 1) {
   <div class="pagination-centered"> 
   <?php echo paginate_links(array(  
       'base' => get_pagenum_link(1) . '%_%',  
-      'format' => '/page/%#%',  
+      'format' => 'page/%#%',  
       'current' => $current_page,  
       'total' => $total_pages,  
       'prev_text' => '&larr; Prev',  
