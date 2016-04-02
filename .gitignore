@@ -2,3 +2,5 @@ css/app.css
 *.map
 *.swp
 .sass-cache
+.DS_Store
+	

@@ -4,6 +4,24 @@
         <div class="page-header">
           <h2>
             <?php
+              $articleFormat = $articleFormats[0]->slug;
+              if(empty($articleFormat) || $articleFormat === 'normal')
+                $articleFormat = get_field('db_article_format');
+              $displayMugshot = false;
+              if($articleFormat)
+              {
+                switch($articleFormat)
+                {
+                  case 'brief':
+                    $displayAuthor = false;
+                    break;
+                  case 'column':
+                    $displayMugshot = true;
+                    break;
+                  case 'default':
+                    $displayMugshot = in_array('mugshot', get_field('db_display_options'));
+                }
+              }
               $sectionPage = false;
               $mainSection = false;
               $multSection = false;
@@ -21,7 +39,96 @@
               } elseif (is_year()) {
                 printf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
               } elseif (is_author()) {
-                printf(__('Author Archives: %s', 'roots'), get_the_author());
+                  //Author Box Variables
+                  $ID = get_the_author_meta( 'ID' );
+                  $position= get_the_author_meta('position', $ID);
+                  $description = get_the_author_meta('description', $ID);
+                  $email = get_the_author_meta('user_email', $ID);
+                  $twitter = get_the_author_meta( 'twitter_handle', $ID );
+                  if (strpos($email, 'wordpress') !== false) {
+                      $email=false;
+                    }
+                  ?>
+                 <div class="author-wrapper">
+                   <div class="row author-box">
+                      <div class="large-12 medium-12 small-12 columns author-title">
+                        <div class="author-header"><?php echo get_the_author() ?> 
+                        <?php if ( get_the_author_meta('position')): ?>
+                            |
+                        <? endif; ?> 
+                        </div>
+                        <?php if ( $position): ?>
+                            <div class="author-position"> <?php echo $position ?></div>
+                        <?php endif; ?>
+                      </div>
+                    </div>
+                  <div class="bio row">
+                  <?php // Display the columnist's mugshot
+                      if($displayMugshot)
+                      {
+                        ?>
+                        <div class="image large-2 small-3 medium-2 columns"> 
+                        <?php
+                          ob_start();
+                        if(function_exists('userphoto_the_author_photo'))
+                          userphoto_the_author_photo();
+                        $thumbnail = ob_get_contents();
+                        $thumbnail_class = "";
+                        ob_end_clean();
+                        if(!empty($thumbnail))
+                        {
+                            ?>
+                              <div class="author-photo"> <?php userphoto_the_author_photo(); ?></div>
+                              </div>
+                              <?php
+                        }else{
+                          ?>
+                        </div>
+                          <?php
+                          $displayMugshot=false;
+                        }
+                      }
+                  ?>
+                    <?php if ( !$displayMugshot && !get_the_author_meta('description')): ?>
+                        <div class="description large-12 small-12 medium-12 columns">
+                      <?php elseif ( !$displayMugshot): ?>
+                        <div class="description large-12 small-9 medium-10 columns">
+                    <?php endif; ?>
+                      <?php if (get_the_author_meta('description')): ?>
+                        <p class="bio-text">
+                            <?php echo get_the_author_meta('description') ?>
+                        </p>
+                      <?php endif; ?>
+                      <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
+                        <div class="row contact-info-wrapper-smaller-margin">
+                      <?php else: ?>
+                      <div class="row contact-info-wrapper">
+                      <?php endif; ?>
+                        <?php if ( $email || $twitter ): ?>
+                        <div class="contact large-2 medium-2 columns show-for-medium-up">
+                          <p class="contact">contact</p>
+                        </div>
+                        <?php endif; ?>
+                        <div class="email large-5 medium-5 small-6 columns">
+                          <?php if ( $email ): ?>
+                          <p><span class="entypo-mail"></span>
+                           <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>">
+                            <?php echo $email; ?>
+                          </a></p>
+                          <?php endif; ?>
+                        </div>
+                        <div class="twitter large-3 medium-3 small-3 columns">
+                          <?php if ( $twitter): ?>
+                            <p><span class="entypo-twitter"></span>  
+                            <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter' );?>">
+                              <?php echo $twitter;?>
+                            </a>
+                          <?php endif; ?>
+                        </div>
+                      </div>
+                    </div>                   
+                  </div>
+                <?php
               } else {
                 $sectionPage = true;
                 switch ($categoryTitle)
@@ -43,6 +150,13 @@
                     break;
                   case "Social Commentary":
                     the_blog_banner('two-cents-social-commentary');
+                    break;
+                  case "The Quad":
+                    $directoryurl = get_stylesheet_directory_uri();
+                    $result = '<img src="' . $directoryurl . '/img/quad.svg">
+                    <p class="quad-explainer">Royce Quad was once an epicenter of student life at UCLA. Now, in the digital age, the Quad is an attempt to recreate these discussion spaces online. Come to the Quad for analysis, explanation and student narratives about life on and off campus, within and without Westwood.</p>
+                    <p class="quad-explainer">Students are welcome to submit blog posts at <a href="mailto:quad@media.ucla.edu" style="color: #0080c6">quad@media.ucla.edu</a>. Submissions are subject to the same <a href="/submit" style="color: #0080c6">guidelines for opinion content</a>, with the exception of increased flexibility for word count (300-900 words).</p>';
+                    echo $result;
                     break;
                 	default:
                 		echo $categoryTitle;
@@ -79,6 +193,8 @@
 				<?php endif;
 			endif; ?>
           
+
+        <!--
           <?php if(is_author()): ?>
 			<p><?php the_author_meta('description'); ?></p>
 			<?php if(!get_the_author_meta('graduated')) : ?>					
@@ -89,7 +205,7 @@
 				<a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
 			<?php endif; ?>   
           <?php endif; ?>
-
+-->
           <hr>
         </div><!-- end div.page-header -->
         <?php get_template_part('loop', 'category'); ?>
