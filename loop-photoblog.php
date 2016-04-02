@@ -44,7 +44,7 @@
 					?>
 			</a></p></h2> 
 
-			<div class="fotorama" data-nav="thumbs" data-height="100%" data-width="100%">
+			<div class="fotorama" data-nav="thumbs" data-height="100%" data-keyboard="true" data-arrows="true" data-click="true" data-trackpad="true" data-swipe="true" data-width="100%">
 				<?php $gallery = get_post_meta($post->ID, 'gallery', true);
 			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
 				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
