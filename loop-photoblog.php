@@ -62,7 +62,30 @@
 
 
 <div class="grid">
-	<?php while (have_posts() ): the_post();
+	<?php 
+	$categories = get_the_category();
+	foreach ( $categories as $category ) { 
+	    echo '<p>' . esc_attr( $category->name ) . '</p>'; 
+	    if ($category->name == 'A&E Spectrum') {
+	    	$currentPostCategory = $category->name;
+	    	break;
+	    } elseif ($category->name == 'News Spectrum') {
+	    	$currentPostCategory = $category->name;
+	    	break;
+	    } elseif ($category->name == 'Sports Spectrum') {
+	    	$currentPostCategory = $category->name;
+	    	break;
+	    }
+	}
+
+	echo '<p>' . $currentPostCategory . '</p>';
+
+	query_posts(array(
+		'showposts' => 3,
+		'orderby' => 'rand',
+		'category_name' => $currentPostCategory
+	));
+	while (have_posts() ): the_post();
 		$cats = get_the_category();
 		//$the_cat = get_the_category()[0];
 		if ($cats) {
