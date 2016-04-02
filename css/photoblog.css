@@ -387,6 +387,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	height: inherit;
 	padding: 0px;
 	width: 100%;
+	position:relative;
 }
 
 
@@ -673,6 +674,12 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.5);
+	pointer-events: none;
+
+}
+
+.fb-like{
+	pointer-events: all;
 }
 
 .fotorama__caption__wrap{
@@ -681,7 +688,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	text-align: center;
 	background-color: rgba(0,0,0,.7) !important;
 	color: white;
-
 }
 
 .fotorama__caption{
