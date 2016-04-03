@@ -159,8 +159,8 @@
             <p>
             <?php 
 				if(get_field('corrections') != ''):?>
-                <!-- <b>Correction: </b> -->				
-                <?php echo get_field('corrections')?>
+				<b>Correction: </b> 
+				<?php echo get_field('corrections')?>
 			<?php endif; ?>
             </p>
           </div>

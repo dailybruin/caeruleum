@@ -16,7 +16,7 @@ Template Name: Radio: About the hosts
     background-color: #FAFAFA;
     padding: 0.5em 1em;
     border: 1px solid #DDD;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
 }
 
 .row-fluid {
@@ -43,9 +43,9 @@ Template Name: Radio: About the hosts
 <link rel="stylesheet" href="/css/vendor/audio-player.css">
 <ul class="rh-infobox unstyled">
     <li><img src="/img/radio_download.svg" width=19 px/> <a href="https://itunes.apple.com/us/podcast/daily-bruin-radio/id352605427?mt=2" target="_blank">Download our podcast</a></li>
-    <li><img src="/img/radio_microphone.svg" width=19 px/> <a href="http://UCLAradio.com" target="_blank">Listen live</a></li>
+    <li><img src="/img/radio_microphone.svg" width=19 px/> <a href="http://UCLAradio.com" target="_blank">Listen live</a></li>  
  <li><i class="ticon-twitter"></i> <a href="https://twitter.com/dailybruinradio" "external" target="_blank">Follow us on Twitter</a></li>
-</ul>
+</ul> 
 
 <h1 id="rh-title">Radio: About the Hosts</h1>
     <h2 id="subtitle">Long Story Short</h2>
@@ -55,7 +55,7 @@ Template Name: Radio: About the hosts
 
 <div class="row-fluid">
     <div class="large-6 columns">
-        <img src="http://dailybruin.com/images/2015/05/web.lss_.AlexHyun.AD_.jpg" alt="Alex Hyun" />
+        <img src="http://dailybruin.com/images/2015/01/Alex-Hyun.jpg" alt="Alex Hyun" />
         <h1>Alex Hyun</h1>
             <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:ahyun@media.ucla.edu">ahyun@media.ucla.edu</a> </div>
                 <div class="twitter">
@@ -85,13 +85,24 @@ Template Name: Radio: About the hosts
 
 <div class="row-fluid">
     <div class="large-6 columns">
-        <img src="http://dailybruin.com/images/2015/05/web.lss_.DarianeNabor.AD_.jpg" alt="Sharon Lin" />
-    <h1>Dariane Nabor</h1>
-        <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:dnabor@media.ucla.edu">dnabor@media.ucla.edu</a> </div>
-        <audio src="http://dailybruin.com/images/2015/05/Dariane-Nabor-audio-blurb-.mp3" preload="auto" controls></audio>
-        <p>Dariane Nabor, an avid consumer of podcasts, public radio and all things media, began as a radio reporter at the Daily Bruin in fall 2014. This is her first and last quarter as a host of Long Story Short.</p>
+        <img src="http://dailybruin.com/images/2015/01/Sharon-Lin.jpg" alt="Sharon Lin" />
+    <h1>Sharon Lin</h1>
+        <div class="email"><img src="/img/radio_email_icon.svg"/> <a href=" mailto:slin@media.ucla.edu">slin@media.ucla.edu</a> </div>
+        <audio src="http://dailybruin.com/images/2015/01/Sharons-bio.mp3" preload="auto" controls></audio>
+        <p>Sharon started out as a Mojo blogger for the Daily Bruin but started working with Long Story Short over the summer. Before UCLA, she worked as an associate editor for the online component of a national fashion magazine, where she was given the opportunity to interview various fashion bloggers and designers. Her most memorable interview was with Althea Harper, the runner-up designer of "Project Runway" Season 6. Sharon is interested in pursuing a career in public health and using her background in journalism to effectively communicate health campaign messages.</p>
     </div>
     <div class="large-6 columns">
+        <img src="http://dailybruin.com/images/2015/01/Jennifer-Crane.jpg" alt="Jonaki Mehta." />
+        <h1>Jennifer Crane</h1>
+        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:jcrane@media.ucla.edu">jcrane@media.ucla.edu</a> </div>
+            <div class="twitter">
+            <i class="ticon-twitter" ></i>
+            <a href="https://twitter.com/Jenn_Crane" rel = "external" target="_blank" data-via="dailybruin">
+            @Jenn_Crane
+            </a>
+        </div>
+    <audio src="http://dailybruin.com/images/2015/01/jenns-bio-.mp3" preload="auto" controls></audio>
+    <p>Jennifer launched her career at the Daily Bruin in 2012 as a campus news reporter. She fell in love with obituary and feature writing, having covered multiple events and written several pieces on students, professors and artists. After trying her hand as the Community Engagement Director, she branched out into Radio and has been a part of the Radio team ever since. In 2013, Crane co-hosted "Long Story Short" for a quarter before becoming a Radio reporter. This year, she hopes to bring a little more spunk to the show as well as report on interesting Bruins across campus. In her free time, she enjoys writing, traveling and eating olives.</p>
     </div>
 </div>
 
@@ -101,32 +112,32 @@ Template Name: Radio: About the hosts
 <p> For an in-depth look at the UCLA sports scene, tune into Out of Bounds, the Daily Bruin’s weekly sports talk show. The latest and greatest of UCLA Athletics are presented with the show’s famous “Westwood Week in Review,” clips from UCLA coaches and athletes, and a high-stakes prediction segment called “You Better Be Right,” where failure to pick the winning team of the week may result in Taylor Swift showdowns and changing twitter pictures to the hosts’ worst nightmares. </p>
 <div class="row-fluid">
     <div class="large-6 columns">
-    <img src="http://dailybruin.com/images/2015/05/1.aubreyyeo.AD_.jpg" alt="Andrew Erickson." />
-    <h1>Aubrey Yeo</h1>
-        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:ayeo@media.ucla.edu">ayeo@media.ucla.edu</a> </div>
+    <img src="http://dailybruin.com/images/2014/05/andrew.jpg" alt="Andrew Erickson." />
+    <h1>Andrew Erickson</h1>
+        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:aerickson@media.ucla.edu">aerickson@media.ucla.edu</a> </div>
             <div class="twitter">
             <i class="ticon-twitter" ></i>
-            <a href="https://twitter.com/aubreyyeo" rel = "external" target="_blank" data-via="dailybruin">
-                @aubreyyeo
+            <a href="https://twitter.com/AndrewRErickson" rel = "external" target="_blank" data-via="dailybruin">
+                @AndrewRErickson
             </a>
             </div>
-        <audio src="http://dailybruin.com/images/2015/05/aubrey-yeo-audio-blurb-.mp3" preload="auto" controls></audio>
-        <p>Aubrey Yeo is the Daily Bruin Sports editor and sand volleyball beat writer. He has covered six UCLA teams as a writer and has shot almost all the teams as a photographer. He considers himself a connoisseur of comic books and modern-day television, although he doesn’t have nearly enough time to further those interests.</p>
+        <audio src="http://dailybruin.com/images/2014/05/Andrew.mp3" preload="auto" controls></audio> 
+        <p>Andrew is a Sports senior staff writer for the Daily Bruin, covering football and men's basketball in the 2013-2014 school year. He was an assistant Sports editor during the 2012-2013 school year and writes sports columns and features for Los Angeles Magazine's CityThink Blog. Fun fact: He and two other Daily Bruin Sports writers once drove to Eugene, Ore. for a football game (it's not as fun as it sounds). </p>
     </div>
 
 <div class="large-6 columns">
-    <img src="http://dailybruin.com/images/2015/05/1.mattjoye.AD_.jpg" alt="Matthew Joye" />
-    <h1>Matthew Joye</h1>
-        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:mjoye@media.ucla.edu">mjoye@media.ucla.edu</a> </div>
+    <img src="http://dailybruin.com/images/2014/05/kevin.jpg" alt="Kevin Bowman." />
+    <h1>Kevin Bowman</h1>
+        <div class="email"> <img src="/img/radio_email_icon.svg"/> <a href=" mailto:kbowman@media.ucla.edu">kbowman@media.ucla.edu</a> </div>
             <div class="twitter">
             <i class="ticon-twitter" ></i>
-            <a href="https://twitter.com/mattjoye" rel = "external" target="_blank" data-via="dailybruin">
-            @mattjoye
+            <a href="https://twitter.com/kbo123" rel = "external" target="_blank" data-via="dailybruin">
+            @kbo123 
             </a>
             </div>
         </p>
-        <audio src="http://dailybruin.com/images/2015/05/matt-joye-audio-blurb-.mp3" preload="auto" controls></audio>
-        <p>Matthew Joye is a Daily Bruin Sports assistant editor for 2014-2015, covering UCLA men's soccer and UCLA baseball. The native of Westwood has covered three beats since arriving at UCLA as a third-year transfer student in 2013, starting with UCLA softball coverage in winter 2014. Matthew's ultimate memory from his time at the Daily Bruin is writing a story on UCLA track and field legend Milan Tiff.
+        <audio src="http://dailybruin.com/images/2014/05/Kevin.mp3" preload="auto" controls></audio>
+        <p>Kevin is the Daily Bruin’s Sports editor. He has covered six different UCLA teams in his three years with the Bruin, including men's basketball and, most recently, football. He considers himself culturally illiterate in all subjects except movies, in which he pretends to know more than he does.
     </div>
 </div>
 </div>
