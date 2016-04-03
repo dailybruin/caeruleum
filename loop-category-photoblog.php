@@ -18,7 +18,7 @@
 				if ($cat->slug == 'ae-spectrum') {
 					$the_cat = $cat;
 					break;
-				} elseif ($cat->slug == 'news-spectrum') {
+				} elseif ($cat->slug == 'campus-spectrum') {
 					$the_cat = $cat;
 					break;
 				} elseif ($cat->slug == 'sports-spectrum') {

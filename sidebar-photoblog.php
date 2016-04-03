@@ -9,7 +9,7 @@
 <div id="spectrum-all" class="row sidebar-spectrum">
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('')">ALL</a>
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.ae-spectrum')">A&E</a>
-	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.news-spectrum')">NEWS</a>
+	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.campus-spectrum')">CAMPUS</a>
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.sports-spectrum')">SPORTS</a>
 	<div>
 		<a class="sidebar-link" href="/category/photo-galleries">ARCHIVE</a> 
