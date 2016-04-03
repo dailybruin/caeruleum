@@ -143,6 +143,7 @@ function setupGrid() {
 	filterPhotos('*');
 }
 
+$(document).find('.photoblog-post-image img').css("max-height", '300px');
 setupGrid();
 
 $(window).on('resize', function(){
