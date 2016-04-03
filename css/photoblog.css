@@ -198,7 +198,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 .photoblog-text {
 	width: 90%;
-	margin-top: 35%;
+	margin-top: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -214,7 +214,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*text-decoration: none;*/
 }
 .photoblog-text p {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	/*font-size: 12px;*/
 	/*line-height: 1.5;*/
 	/*margin-top: 1rem;*/
@@ -326,7 +326,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 .sidebar-spectrum {
 	height: 50px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 }
 
 .sidebar-category {

@@ -224,8 +224,18 @@ function filterPhotos(tag) {
 	})
 }
 
-var allImgs = $(document).find('.photoblog-post-image img');
-allImgs.height($(window).width() / 5);
+function setupGrid() {
+	var allImgs = $(document).find('.photoblog-post-image img');
+	allImgs.height($(window).width() / 4);
+	$(document).find('.grid-item').width($(document).find('.grid-wrapper').width() / 3);
+	filterPhotos('*');
+}
+
+setupGrid();
+
+$(window).on('resize', function(){
+	setupGrid();
+});
 
 </script>
 
