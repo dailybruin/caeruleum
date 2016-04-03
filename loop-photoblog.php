@@ -69,7 +69,7 @@
 	    if ($category->name == 'Sports Spectrum') {
 	    	$currentPostCategory = $category->name;
 	    	break;
-	    } elseif ($category->name == 'Campus Spectrum') {
+	    } elseif ($category->name == 'News Spectrum') {
 	    	$currentPostCategory = $category->name;
 	    	break;
 	    } else {
@@ -90,7 +90,7 @@
 				if ($cat->slug == 'ae-spectrum') {
 					$the_cat = $cat;
 					break;
-				} elseif ($cat->slug == 'campus-spectrum') {
+				} elseif ($cat->slug == 'news-spectrum') {
 					$the_cat = $cat;
 					break;
 				} elseif ($cat->slug == 'sports-spectrum') {
@@ -206,10 +206,10 @@ var iso = new Isotope( '.grid', {
 });
 $("div.grid-item").hover(
 	function () {
-		$(this).find(".picOverlay").fadeIn();
+		$(this).find(".picOverlay").stop().fadeIn();
 	}, 
 	function () {
-		$(this).find(".picOverlay").fadeOut();
+		$(this).find(".picOverlay").stop().fadeOut();
 	}
 );
 

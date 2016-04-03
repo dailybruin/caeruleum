@@ -18,7 +18,7 @@
 				if ($cat->slug == 'ae-spectrum') {
 					$the_cat = $cat;
 					break;
-				} elseif ($cat->slug == 'campus-spectrum') {
+				} elseif ($cat->slug == 'news-spectrum') {
 					$the_cat = $cat;
 					break;
 				} elseif ($cat->slug == 'sports-spectrum') {
@@ -57,14 +57,16 @@
 								</a>
 							</p>
 						</h3> 
-						<?php $t = get_the_excerpt(); 
-							$periodPosition = strpos($t, '.');
-							if ($periodPosition > 0) {
-								echo  $t = substr($t, 0, $periodPosition); 
-							} else {
-								echo $t;
-							}
-							?>
+						<p id="photoblog-post-excerpt">
+							<?php $t = get_the_excerpt(); 
+								$periodPosition = strpos($t, '.');
+								if ($periodPosition > 0) {
+									echo  $t = substr($t, 0, $periodPosition); 
+								} else {
+									echo $t;
+								}
+								?>
+						</p>
 						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
 						<p class="photoblog-sm">
 								<!--
