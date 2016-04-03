@@ -148,41 +148,116 @@
 				padding: 1rem 1rem 1.0625rem 1rem;
 				background-color: #0080c6;
 				font-family: 'Roboto Slab', serif;
-			}
-			.db-next button:hover {
-				background-color: rgba(0, 128, 198, 0.7);
-			}
-		</style>
-		
-		<div class="row db-story below-header db-next hide-for-small">
-			<a href="/next">
-				<div class="small-12 columns">
-					<h2 class="animated fadeInLeft">The Daily Bruin is changing.&nbsp;</h2>
-					<button class="animated fadeInUp">&nbsp;Learn more &raquo;</button>
+				}
+				.db-next button:hover {
+					background-color: rgba(0, 128, 198, 0.7);
+				}
+				/*
+				#play-store-logo {
+
+					display: inline-block;
+					margin: 0;
+					margin-left: 1rem;
+				}
+				#app-store-logo {
+					display: inline-block;
+					margin: 0;
+					margin-left: 1rem;
+				}
+				#play-store-logo img {
+					width: 136px;
+				}
+				#app-store-logo img {
+					width: 140px;
+				}
+        #war-twitter-badge {
+          display: inline-block;  
+        }
+        #war-inst-badge {
+          display: inline-block;  
+          margin: 0;   
+          bottom: 5px; 
+        }
+
+        #war-inst-badge span div {
+        	margin: 0 5px 0 0;
+        	position: relative;
+        	bottom: 3px;
+        }
+
+        #war-fb-badge {
+          display: inline-block;  
+          margin: 0;    
+          bottom: 5px; 
+        }
+        #war-sometext {
+			    margin: 0 0 0.7rem 0;
+        }*/
+				</style>
+
+
+				<!-- social media war
+				<div class="row db-story below-header db-next">
+					<div id="war-sometext">
+						<h2 class="animated fadeInLeft">Help us beat the Daily Trojan in our <a href="https://twitter.com/search?q=%23BeatSC">#BeatSC</a> Social Media Showdown!</h2>
+					</div>
+					<div id="war-fb-badge" class="fb-like" data-href="https://www.facebook.com/dailybruin" data-width="400px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+					<div id="war-twitter-badge">
+					<a href="https://twitter.com/dailybruin" class="twitter-follow-button" data-show-count="true" data-size="small">
+						Follow @dailybruin
+     				</a>
+					</div>
+					<div id="war-inst-badge">
+						<span class="ig-follow" data-id="eb43700450" data-handle="dailybruin" data-count="true" data-size="small" data-username="true"></span>
+					</div>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>					
+						<script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
+
+				</div> 
+				-->
+				
+				<!--
+				<div class="row db-story below-header db-next hide-for-small">
+					<a href="http://recruiting.dailybruin.com/">
+					<div class="small-12 columns">
+						<h2 class="animated fadeInLeft">Join the Daily Bruin, UCLA&#39;s student newspaper since 1919.&nbsp;</h2>
+						<button class="animated fadeInUp">&nbsp;Apply here&raquo;</button>
+					</div>
+					</a>
+				</div>
+				-->
+        <!--
+        			<div class="row db-story below-header db-next hide-for-small">
+					<a href="http://www.bruinwalk.com/">
+					<div class="small-12 columns">
+						<h2 class="animated fadeInLeft">The all new Bruinwalk is here.</h2>
+						<button class="animated fadeInUp"><i>Get the bear truth</i></button>
+					</div>
+					</a>
+				</div>-->
+				
+				<div class="row db-story below-header">
+					<div class="small-6 columns hide-for-small" style="margin:0;">
+						<?php ob_start();
+						wp_nav_menu(array('theme_location' => 'in_the_news',
+							'container' => '',
+							'menu_class' => 'in-the-news',
+							));
+						$navmenu = ob_get_contents();
+						ob_end_clean();
+						if($navmenu !== ''):
+							?>
+						<h3 class="in-the-news">In the news: </h3>
+						<?php echo $navmenu; ?>
+					<?php endif; ?>
+				</div>
+				<div class="small-6 columns hide-for-small text-right social-right" style="margin:0;">
+					<a href="http://www.facebook.com/dailybruin" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<a href="http://www.twitter.com/dailybruin" title="Twitter"><i class="fa fa-twitter"></i></a>
+					<a href="http://youtube.com/ucladailybruin" title="Youtube"><i class="fa fa-youtube-play"></i></a>
+					<a href="http://www.github.com/daily-bruin" title="GitHub"><i class="fa fa-github"></i></a>
+					<a href="http://dailybruin.com/feed" title="RSS"><i class="fa fa-rss"></i></a>
+
 				</div>
 			</a>
-		</div>
-		
-		<div class="row db-story below-header">
-			<div class="small-6 columns hide-for-small" style="margin:0;">
-			    <?php ob_start();
-			        wp_nav_menu(array('theme_location' => 'in_the_news',
-			           'container' => '',
-			           'menu_class' => 'in-the-news',
-			        ));
-			        $navmenu = ob_get_contents();
-			        ob_end_clean();
-			        if($navmenu !== ''):
-			    ?>
-				<h3 class="in-the-news">In the news: </h3>
-			        <?php echo $navmenu; ?>
-			    <?php endif; ?>
-			</div>
-			<div class="small-6 columns hide-for-small text-right social-right" style="margin:0;">
-				<a href="http://www.facebook.com/dailybruin" title="Facebook"><i class="fa fa-facebook"></i></a>
-				<a href="http://www.twitter.com/dailybruin" title="Twitter"><i class="fa fa-twitter"></i></a>
-				<a href="http://youtube.com/ucladailybruin" title="Youtube"><i class="fa fa-youtube-play"></i></a>
-				<a href="http://www.github.com/daily-bruin" title="GitHub"><i class="fa fa-github"></i></a>
-				<a href="http://dailybruin.com/feed" title="RSS"><i class="fa fa-rss"></i></a>
-			</div>
 		</div>
