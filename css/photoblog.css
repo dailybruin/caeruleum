@@ -667,14 +667,30 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #lightbox-container div#lb-close:hover {
 	opacity: 0.9;
 }
+.grid-wrapper {
+	text-align: center;
+
+}
+.grid {
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;*/
+	/*width: 91%;
+    margin: 0 auto; */
+}
 .grid-item { 
 	width: 33%; 
+
+	/*overflow: hidden;*/
+
 }
 .grid-item img{ 
-	width: 100%; 
+	/*width: 100%; */
+	
+	/*min-width:100%;*/
 }
 .grid-item--width2 { 
-	width: 50%; 
+	/*width: 50%; */
 }
 .picOverlay {
 	display: none;
