@@ -62,109 +62,111 @@
 
 <h2><p id="photoblog-title"><a>Suggested Galleries</a></p></h2> 
 
-<div class="grid">
-	<?php 
-	$categories = get_the_category();
-	foreach ( $categories as $category ) { 
-	    if ($category->name == 'Sports Spectrum') {
-	    	$currentPostCategory = $category->name;
-	    	break;
-	    } elseif ($category->name == 'News Spectrum') {
-	    	$currentPostCategory = $category->name;
-	    	break;
-	    } else {
-	    	$currentPostCategory = 'A&E Spectrum';
-	    }
-	}
-	
-	query_posts(array(
-		'showposts' => 3,
-		'orderby' => 'rand',
-		'category_name' => $currentPostCategory
-	));
-	while (have_posts() ): the_post();
-		$cats = get_the_category();
-		//$the_cat = get_the_category()[0];
-		if ($cats) {
-			foreach($cats as $cat){
-				if ($cat->slug == 'ae-spectrum') {
+<div class="grid-wrapper">
+	<div class="grid">
+		<?php 
+		$categories = get_the_category();
+		foreach ( $categories as $category ) { 
+		    if ($category->name == 'Sports Spectrum') {
+		    	$currentPostCategory = $category->name;
+		    	break;
+		    } elseif ($category->name == 'News Spectrum') {
+		    	$currentPostCategory = $category->name;
+		    	break;
+		    } else {
+		    	$currentPostCategory = 'A&E Spectrum';
+		    }
+		}
+		
+		query_posts(array(
+			'showposts' => 3,
+			'orderby' => 'rand',
+			'category_name' => $currentPostCategory
+		));
+		while (have_posts() ): the_post();
+			$cats = get_the_category();
+			//$the_cat = get_the_category()[0];
+			if ($cats) {
+				foreach($cats as $cat){
+					if ($cat->slug == 'ae-spectrum') {
+						$the_cat = $cat;
+						break;
+					} elseif ($cat->slug == 'news-spectrum') {
+						$the_cat = $cat;
+						break;
+					} elseif ($cat->slug == 'sports-spectrum') {
+						$the_cat = $cat;
+						break;
+					}
 					$the_cat = $cat;
-					break;
-				} elseif ($cat->slug == 'news-spectrum') {
-					$the_cat = $cat;
-					break;
-				} elseif ($cat->slug == 'sports-spectrum') {
-					$the_cat = $cat;
-					break;
 				}
-				$the_cat = $cat;
-			}
-		} ?>
-		<div class="grid-item <?php echo $the_cat->slug ?>">
-			<div id="photoblog-post-block">
-				<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
-					<a href="<?php the_permalink(); ?>">
-						<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
-						$image = do_shortcode('[singlepic id='.$singlepicture.']');
-		            
+			} ?>
+			<div class="grid-item <?php echo $the_cat->slug ?>">
+				<div id="photoblog-post-block">
+					<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
+						<a href="<?php the_permalink(); ?>">
+							<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
+							$image = do_shortcode('[singlepic id='.$singlepicture.']');
+			            
 
-		            	$permalink = get_permalink();
-		            	$start_of_href = strpos($image, 'href');
-		            	$start_of_url = strpos($image, '"', $start_of_href);
-		            	$end_of_url = strpos($image, '"', $start_of_url+1);
+			            	$permalink = get_permalink();
+			            	$start_of_href = strpos($image, 'href');
+			            	$start_of_url = strpos($image, '"', $start_of_href);
+			            	$end_of_url = strpos($image, '"', $start_of_url+1);
 
-		            	$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
-		            	echo $final_tag;
-						?>
-					</a>
-					
-
-				
-				</div>
-
-				<div class="picOverlay">
-					<!-- <a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
-					<?php if ($the_cat->slug == "archives"): { ?>
-						ARCHIVES <?php } ?>
-					<?php elseif ($the_cat->slug == "campus-spectrum"): { ?>
-						CAMPUS <?php } ?>
-					<?php elseif ($the_cat->slug == "humans-of-westwood"):{ ?>
-						HOWEWO <?php } ?>
-					<?php elseif ($the_cat->slug == "sports-spectrum"):{ ?>
-						SPORTS <?php } ?>
-					<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
-						WW/LA <?php } ?>
-					<?php endif ?>
-					</a> -->
-					
-					<div class="photoblog-text" id="photoblog-post-text">
-						<h3>
-							<p id="photoblog-title">
-								<a href="<?php the_permalink() ?>">
-									<?php
-									the_title();
-									?>
-								</a>
-							</p>
-						</h3> 
-						<?php $t = get_the_excerpt(); 
-							$periodPosition = strpos($t, '.');
-							if ($periodPosition > 0) {
-								echo  $t = substr($t, 0, $periodPosition); 
-							} else {
-								echo $t;
-							}
+			            	$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
+			            	echo $final_tag;
 							?>
+						</a>
 						
-						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
-						<p class="photoblog-sm">
-						    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-						</p>
+
+					
 					</div>
-				</div>
-			</div> <!--photoblog-post-block-->
-		</div> <!-- isotope grid -->
-		<?php endwhile; ?>
+
+					<div class="picOverlay">
+						<!-- <a href= "/category/spectrum/<?php echo $the_cat->slug; ?>" class="photoblog-post-tag pb-tag-<?php echo $the_cat->slug; ?>">
+						<?php if ($the_cat->slug == "archives"): { ?>
+							ARCHIVES <?php } ?>
+						<?php elseif ($the_cat->slug == "campus-spectrum"): { ?>
+							CAMPUS <?php } ?>
+						<?php elseif ($the_cat->slug == "humans-of-westwood"):{ ?>
+							HOWEWO <?php } ?>
+						<?php elseif ($the_cat->slug == "sports-spectrum"):{ ?>
+							SPORTS <?php } ?>
+						<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
+							WW/LA <?php } ?>
+						<?php endif ?>
+						</a> -->
+						
+						<div class="photoblog-text" id="photoblog-post-text">
+							<h3>
+								<p id="photoblog-title">
+									<a href="<?php the_permalink() ?>">
+										<?php
+										the_title();
+										?>
+									</a>
+								</p>
+							</h3> 
+							<?php $t = get_the_excerpt(); 
+								$periodPosition = strpos($t, '.');
+								if ($periodPosition > 0) {
+									echo  $t = substr($t, 0, $periodPosition); 
+								} else {
+									echo $t;
+								}
+								?>
+							
+							<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
+							<p class="photoblog-sm">
+							    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+							</p>
+						</div>
+					</div>
+				</div> <!--photoblog-post-block-->
+			</div> <!-- isotope grid -->
+			<?php endwhile; ?>
+	</div>
 </div>
 
 
