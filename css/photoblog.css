@@ -220,11 +220,15 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*margin-top: 1rem;*/
 }
 #photoblog-post-author {
-	font-size: 1vw;
+	font-size: 0.8vw;
 	font-style: italic;
 }
 #photoblog-title {
 	font-size: 1.5vw;
+}
+
+#photoblog-post-excerpt {
+	font-size: 1vw;
 }
 
 .pager-pb{
