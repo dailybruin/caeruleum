@@ -115,6 +115,10 @@ body,
     padding: 0 1rem 0 1rem;
 }
 
+.db-footer .right {
+    font-size: 0.75rem;
+}
+
 /*THE POSTS*/
 
 #photoblog-post-block{
