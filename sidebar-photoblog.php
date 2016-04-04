@@ -23,7 +23,7 @@
 <!--</div>--><!--sidebar-menu-->
 
 <script>
-	if(window.location.pathname.match("/category/blogs?/spectrum/.*")){
+	if(window.location.pathname.match("/category/blogs?/spectrum/.*") || window.location.pathname.match("/category/spectrum/.*") ){
 		$("#spectrum-single").remove();
 	}
 	else {
