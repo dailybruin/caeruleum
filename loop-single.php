@@ -82,7 +82,7 @@
 		<?php endif; ?>
 		<div class="row">
 			<div class="small-7 columns">
-				<!--<?php // Display the columnist's mugshot
+				<?php // Display the columnist's mugshot
 				    if($displayMugshot && $displayAuthor)
 				    {
 				        ob_start();
@@ -99,7 +99,6 @@
         				}
 				    }
 				?>
-				-->
 				<div class="db-byline">
 					<h4> <?php the_byline(); ?> </h4>
 					<?php if (get_field('db_article_format') != 'brief'): ?>
@@ -159,8 +158,8 @@
             <p>
             <?php 
 				if(get_field('corrections') != ''):?>
-				<b>Correction: </b> 
-				<?php echo get_field('corrections')?>
+                <!-- <b>Correction: </b> -->				
+                <?php echo get_field('corrections')?>
 			<?php endif; ?>
             </p>
           </div>
@@ -212,128 +211,31 @@
 				        {
 				            $lastAuthor = ($finalAuthorKey == $key);
 				            $lastName = get_the_author_meta('last_name', $author->ID);
-				            $firstName = get_the_author_meta('first_name', $author->ID);
 				            $graduated = get_the_author_meta('graduated', $author->ID);
-
-				        ?>
-						<!--Author Box -->
-						<?php
-						//Author Box Variables
-						$position= get_the_author_meta('position', $author->ID);
-						$description = get_the_author_meta('description', $author->ID);
-						$email = get_the_author_meta('user_email', $author->ID);
-						if (strpos($email, 'wordpress') !== false) {
-						    $email=false;
-						}
-						$twitter = get_the_author_meta( 'twitter_handle', $author->ID );
-						?>
-					    <div class="author-wrapper">
-			                <div class="row author-box">
-			                  <div class="large-12 medium-12 small-12 columns author-title">
-			                    <div class="author-header">
-			                    	<a href="<?php echo get_author_posts_url( $author->ID, get_the_author_meta( 'user_nicename',$author->ID ) ); ?>">
-			                    		<?php echo "$firstName $lastName"; ?>
-			                    	</a> 
-			                    	<?php if ( $position ): ?>
-			                    	|
-			                    	<? endif; ?>
-			                    </div>
-			                    <?php if ( $position ): ?>
-			                    	<div class="author-position"> <?php echo $position ?> </div>
-			                	<?php endif; ?>
-			                  </div>
-			                </div>
-			              <div class="bio row">       
-			                  	<?php // Display the columnist's mugshot
-							    if($displayMugshot && $displayAuthor)
-							    {
-							    	?>
-							    	<div class="image large-2 small-3 medium-2 columns"> 
-							    	<?php
-							        ob_start();
-			    					if(function_exists('userphoto')){
-										userphoto($author->ID);
-			    					}
-			    					$thumbnail = ob_get_contents();
-			    					$thumbnail_class = "";
-			    					ob_end_clean();
-			    					if(!empty($thumbnail))
-			    					{
-			        					?>
-			        						<div class="author-photo"><?php userphoto($author->ID);?> </div>
-			        						</div>
-			        						<?php
-			        				}else{
-			        					$displayMugshot=false;
-			        					?>
-			        					</div>
-			        					<?php
-			        				}
-							    }
-								?>
-							<?php if ( !$displayMugshot && !$description): ?>
-		                        <div class="description large-12 small-12 medium-12 columns">
-		                      <?php elseif ( !$displayMugshot): ?>
-		                        <div class="description large-12 small-9 medium-10 columns">
-		                    <?php endif; ?>
-		                      <?php if ($description): ?>
-			                    <p class="bio-text">
-			            			<?php echo $description ?>
-			                    </p>
-			                  <?php endif; ?>
-			                  <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
-		                        <div class="row contact-info-wrapper-smaller-margin">
-		                      <?php else: ?>
-		                      <div class="row contact-info-wrapper">
-		                      <?php endif; ?>
-		                        <?php if ( $email || $twitter ): ?>
-		                        <div class="contact large-2 medium-2 columns show-for-medium-up">
-		                          <p class="contact">contact</p>
-		                        </div>
-		                        <?php endif; ?>
-			                    <div class="email large-5 medium-5 columns show-for-medium-up">
-			                      <?php if ( $email): ?>
-			                      <p><span class="entypo-mail"></span>
-			                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
-			                        <?php echo "$author->user_email"; ?>
-			                      </a></p>
-			                      <?php endif; ?>
-			                    </div>
-			                    <div class="twitter large-3 medium-3 columns show-for-medium-up">
-			                      <?php if ( $twitter): ?>
-			                        <p><span class="entypo-twitter"></span>  
-			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-			                          <?php echo $twitter; ?>
-			                        </a>
-			                      <?php endif; ?>
-			                    </div>
-			               </div> <!--end bio-row-->
-			              </div>  
-			              		<div class="row contact-info-wrapper show-for-small-only">
-				                    <div class="email small-6 columns">
-				                      <?php if ( $email): ?>
-				                      <p><span class="entypo-mail"></span>
-				                       <a class="author-email-inside" href="mailto:<?php echo "$author->user_email"; ?>">
-				                        <?php echo "$author->user_email"; ?>
-				                      </a></p>
-				                      <?php endif; ?>
-				                    </div>
-				                    <div class="twitter small-3 columns">
-				                      <?php if ( $twitter): ?>
-				                        <p><span class="entypo-twitter"></span>  
-				                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> 
-				                        </a>
-				                      <?php endif; ?>
-			                    </div>                 
-			            </div>
-		           	  </div>
-		            	<?php
-		            	}
+				            if(!isset($lastName) || $lastName == "" || !isset($author->user_email) || $graduated || substr($author->user_email,-12) == '@camayak.com') // camayak generates gross-looking author emails that we don't want to display
+				                continue;
+				            if($firstAuthor)
+				                echo "Email ";
+				            else
+				            {
+				                if($lastAuthor && $key == 1)
+				                    echo " and email ";
+				                else if($lastAuthor)
+				                    echo ", and email ";
+				                else
+				                    echo ", email ";
+				            }
+			                echo $lastName . " at <a href='mailto:"
+			                    . $author->user_email . "'>" . $author->user_email 
+			                    . "</a>";
+			                if($lastAuthor)
+			                    echo ".";
+			                $firstAuthor = false;
+				        }
 				    }?>
 				</p>
-			</div><!-- end div.post-content -->
-		</div><!-- end div.entry-content -->
+	</div><!-- end div.post-content -->
+</div><!-- end div.entry-content -->
 
 		<hr>
 		<p id="comment-policy">Comments are supposed to create a forum for thoughtful, respectful community discussion. Please be nice. <a href="<?php echo get_permalink( get_page_by_path( 'comment-policy' ) ); ?>">View our full comments policy here.</a></p>

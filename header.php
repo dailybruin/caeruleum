@@ -10,15 +10,16 @@
   <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 
   <?php if (current_theme_supports('bootstrap-responsive')) { ?><meta name="viewport" content="width=device-width, initial-scale=1.0"><?php } ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.5.3.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-  <link href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css' rel='stylesheet'/>
+  <link href='https://cdn.jsdelivr.net/animatecss/3.4.0/animate.min.css' rel='stylesheet'/>
   <!--<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
   
-	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
@@ -35,10 +36,10 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-	
-	<link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
+  
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
   <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"type="text/javascript"></script>
 
   <!--<script src="//monitor404.s3.amazonaws.com/monitor404.min.js"></script>
@@ -49,20 +50,22 @@
   <?php roots_head(); ?>
   <?php wp_head(); ?>
   
-	<!-- Press Plus script -->  
-	<script type="text/javascript" src="http://s.ppjol.net/pp.js">{
-		'zone':"qnbBZ63hK_pL2086YoKj3J",
-		'mode':"meter",
-		'debug':0
-	}</script>
+  <!-- Press Plus script -->  
+  <script type="text/javascript" src="http://s.ppjol.net/pp.js">{
+    'zone':"qnbBZ63hK_pL2086YoKj3J",
+    'mode':"meter",
+    'debug':0
+  }</script>
 
   <!-- Wordpress Open Graph -->
-  <?php if(has_post_thumbnail()) :
+  <?php if(has_post_thumbnail() && !(is_front_page())) :
     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
     <meta property="og:image" content="<?php echo $url; ?>" />
   <?php else: ?>
     <meta property="og:image" content="http://dailybruin.com/images/2014/01/facebook_default.jpg" />
   <?php endif; ?>
+    <?php $excerpt = wp_trim_words(($post->post_content),30)?>
+    <meta property="og:description" content="<?php echo $excerpt; ?>"/>
 
 </head>
 
@@ -87,4 +90,3 @@
   <?php roots_wrap_before(); ?>
   <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
   <!-- close these in footer -->
-

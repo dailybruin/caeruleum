@@ -23,7 +23,7 @@
   <?php wp_footer(); ?>
   <?php roots_footer(); ?>
 	<span style="clear:both;display:block;"></span>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/foundation/5.5.3/js/foundation.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script> 
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.lightSlider.js"></script>
 

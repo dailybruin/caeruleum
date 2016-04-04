@@ -104,6 +104,10 @@ if ($total_pages > 1) {
 <?php //wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
 
 <script type="text/javascript">
+
+// Set to white DB logo
+$(".db-logo-spectrum").css({'display':'block'});
+
 	 /* Isotope
   * ==================== */
 var elem = document.querySelector('.grid');

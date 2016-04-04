@@ -133,15 +133,15 @@
                 $sectionPage = true;
                 switch ($categoryTitle)
                 {
-                	case "Bruin Sights":
-                		the_blog_banner('bruinsights');
-                		break;
-                	case "Spotlight":
-                		the_blog_banner('spotlight');
-                		break;
-                	case "Timestamp":
-                		the_blog_banner('timestamp');
-                		break;
+                  case "Bruin Sights":
+                    the_blog_banner('bruinsights');
+                    break;
+                  case "Spotlight":
+                    the_blog_banner('spotlight');
+                    break;
+                  case "Timestamp":
+                    the_blog_banner('timestamp');
+                    break;
                   case "Idle Thoughts":
                     the_blog_banner('two-cents-idle-thoughts');
                     break;
@@ -158,8 +158,8 @@
                     <p class="quad-explainer">Students are welcome to submit blog posts at <a href="mailto:quad@media.ucla.edu" style="color: #0080c6">quad@media.ucla.edu</a>. Submissions are subject to the same <a href="/submit" style="color: #0080c6">guidelines for opinion content</a>, with the exception of increased flexibility for word count (300-900 words).</p>';
                     echo $result;
                     break;
-                	default:
-                		echo $categoryTitle;
+                  default:
+                    echo $categoryTitle;
                 }
                 // Separate case for sports as its name is the same as several other categories
                 $cat = get_category(get_query_var('cat'));
@@ -173,37 +173,37 @@
           <?php
           if($sectionPage):
                 $categoryID = get_query_var('cat');
-  	    		$cat_args = array(
-					'parent' => $categoryID,
-					'orderby' => 'name',
-					'hide_empty' => 1,
-					'title_li' => ''
-				);
-				$categories = get_categories($cat_args);
-				if(!empty($categories)): ?>
+            $cat_args = array(
+          'parent' => $categoryID,
+          'orderby' => 'name',
+          'hide_empty' => 1,
+          'title_li' => ''
+        );
+        $categories = get_categories($cat_args);
+        if(!empty($categories)): ?>
         <?php if(count($categories)>8): ?>
         <div class="db-sub-list-col hide-for-small">
         <?php else: ?>
         <div class="db-sub-list">
         <?php endif; ?>
-					<ul>
+          <ul>
           <?php wp_list_categories($cat_args); ?>
           </ul>
         </div>
-				<?php endif;
-			endif; ?>
+        <?php endif;
+      endif; ?>
           
 
         <!--
           <?php if(is_author()): ?>
-			<p><?php the_author_meta('description'); ?></p>
-			<?php if(!get_the_author_meta('graduated')) : ?>					
-				<?php if(get_the_author_meta('twitter_handle')) : ?>
-				<a href="https://twitter.com/<?php echo substr(get_the_author_meta('twitter_handle'),1); ?>" class="twitter-follow-button" data-show-count="false">Follow <?php the_author_meta('twitter_handle'); ?></a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				<?php endif; ?>
-				<a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
-			<?php endif; ?>   
+      <p><?php the_author_meta('description'); ?></p>
+      <?php if(!get_the_author_meta('graduated')) : ?>          
+        <?php if(get_the_author_meta('twitter_handle')) : ?>
+        <a href="https://twitter.com/<?php echo substr(get_the_author_meta('twitter_handle'),1); ?>" class="twitter-follow-button" data-show-count="false">Follow <?php the_author_meta('twitter_handle'); ?></a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <?php endif; ?>
+        <a class="author-email-inside" href="mailto:<?php the_author_meta('user_email'); ?>"><i class="ticon-email"></i>Email</a>
+      <?php endif; ?>   
           <?php endif; ?>
 -->
           <hr>
