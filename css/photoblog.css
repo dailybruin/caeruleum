@@ -720,6 +720,10 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 }
 
+.ngg-gallery-singlepic-image {
+	margin: 0 auto 0 auto;
+}
+
 .fb-like{
 	pointer-events: all;
 }
