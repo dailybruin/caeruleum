@@ -189,16 +189,16 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*max-height: 384px;*/
 	/*padding: 5px 5px 5px 5px;*/
 	/*width: 95%;*/
+	overflow: hidden;
 }
 .photoblog-post-image img {
-	margin-left: auto;
+	/*margin-left: auto;
 	margin-right: auto;
-	max-height: 384px;
-	width: auto;
+	width: auto;*/
 }
 .photoblog-text {
 	width: 90%;
-	margin-top: 35%;
+	margin-top: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -214,17 +214,21 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	/*text-decoration: none;*/
 }
 .photoblog-text p {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	/*font-size: 12px;*/
 	/*line-height: 1.5;*/
 	/*margin-top: 1rem;*/
 }
 #photoblog-post-author {
-	font-size: 1vw;
+	font-size: 0.8vw;
 	font-style: italic;
 }
 #photoblog-title {
 	font-size: 1.5vw;
+}
+
+#photoblog-post-excerpt {
+	font-size: 1vw;
 }
 
 .pager-pb{
@@ -326,7 +330,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 .sidebar-spectrum {
 	height: 50px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 }
 
 .sidebar-category {
@@ -680,11 +684,27 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 #lightbox-container div#lb-close:hover {
 	opacity: 0.9;
 }
+.grid-wrapper {
+	text-align: center;
+
+}
+.grid {
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;*/
+	/*width: 91%;
+    margin: 0 auto; */
+}
 .grid-item { 
 	width: 33%; 
+
+	/*overflow: hidden;*/
+
 }
 .grid-item img{ 
 	width: 100%; 
+	
+	/*min-width:100%;*/
 }
 .grid-item--width2 { 
 	width: 50%; 
@@ -724,4 +744,3 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	    line-height: 1.2;
 	   
 }
-

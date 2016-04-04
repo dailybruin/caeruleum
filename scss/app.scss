@@ -16,14 +16,15 @@ $db-ad-padding: rem-calc(10);
 $db-masthead-description-size: rem-calc(10);
 $db-masthead-subcategory-size: rem-calc(36);
 
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
 
 
 // Daily Bruin additions
+
+  .quad-explainer {
+      text-align: left;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+  }
 
   .tab-bar {
     -webkit-backface-visibility: hidden;
@@ -55,6 +56,7 @@ $db-masthead-subcategory-size: rem-calc(36);
     }
 
     img {
+      width: 448px;
       max-height: $tabbar-height;
     }
   }
@@ -181,7 +183,7 @@ $db-masthead-subcategory-size: rem-calc(36);
 
     .in-the-news {
       list-style-type: none;
-      text-align: left; 
+      text-align: left;
       display: inline-block;
       margin: 0;
       font-weight: 700;
@@ -211,6 +213,13 @@ $db-masthead-subcategory-size: rem-calc(36);
         padding-top: rem-calc(4);
         color: $steel;
       }
+    }
+
+    .db-story-ns .db-image img,
+    .db-story-op .db-image img,
+    .db-story-sp .db-image img,
+    .db-story-ae .db-image img {
+      max-height: 13.5rem;
     }
 
     .db-ad-banner {
@@ -339,7 +348,8 @@ $db-masthead-subcategory-size: rem-calc(36);
 
     .db-divide {
       border-bottom: thin solid #222222;
-      margin-top: rem-calc(10);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 
       .postfix {
         border: none;
@@ -357,7 +367,7 @@ $db-masthead-subcategory-size: rem-calc(36);
   margin: $db-ad-padding auto;
   margin-top: 1rem;
   @media only screen and (max-width: $db-ad-leaderboard-width + ($db-ad-padding * 2)) {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -399,6 +409,10 @@ $db-masthead-subcategory-size: rem-calc(36);
 .db-content .db-story .db-story-c1,
 .db-content .db-story .db-story-c1 img {
   margin-top:0;
+}
+
+.db-content .db-story .db-story-c1 img {
+  max-height: 400px;
 }
 
 .db-section-side h2{
@@ -452,7 +466,7 @@ blockquote {
     border-left: solid #767676;
     margin: 1%;
     padding-left: 2%;
-  
+
 }
 
 @media (max-width: 480px) {
@@ -475,7 +489,7 @@ blockquote {
   text-align: center;
 }
 
-.db-infobox {
+.columns div .db-infobox {
     background-color: white;
     /*border: 1px solid #dbdbdb;*/
     background-color: #F9F9F9;
@@ -484,6 +498,14 @@ blockquote {
   padding: 1.1rem;
   margin-left:10px;
   clear:both;
+}
+
+@media #{ $small-only } {
+  .columns div .db-infobox {
+      float:none;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
 
 .video-story p {
@@ -578,16 +600,16 @@ figure, figure.alignnone {
 .db-top-date p {
   color: grey;
   font-size: 1rem;
-   width: 100%; 
-   text-align: center; 
-   border-bottom: 3px solid lightgrey; 
+   width: 100%;
+   text-align: center;
+   border-bottom: 3px solid lightgrey;
    line-height: 0.1em;
-   margin: 10px 0 20px; 
-} 
+   margin: 10px 0 20px;
+}
 
-.db-top-date p span { 
-    background:#fff; 
-    padding:0 10px; 
+.db-top-date p span {
+    background:#fff;
+    padding:0 10px;
 }
 
 #stickyheader {
@@ -699,7 +721,7 @@ figure, figure.alignnone {
 }
 
 #menu li {
-  
+
 }
 #menu hr {
   color: lightgrey;
@@ -756,8 +778,8 @@ figure, figure.alignnone {
   content: "\f10d";
 }
 
-.menu-mojo span:before {
-  content: "\f1eb";
+.menu-the-quad span:before {
+  content: "\f044";
 }
 
 .menu-classifieds span:before {
@@ -887,149 +909,6 @@ figure, figure.alignnone {
       font-size: 1.5rem;
     }
 }
-
-/* =============================================================
-   Author Box:
-   ============================================================= */
-
-.entypo-twitter, .entypo-mail {
-  color: #00B2E2;
-  font-size: 1.5em;
-  margin-right:2px;
-}
-
-.author-email-inside, .twitter-follow-button{
-  font-size:.88em;
-  position:relative;
-  bottom: 2px;
-}
-
-div.email p, div.twitter p {
-  float:left;
-}
-
-div.twitter{
-  float:left;
-}
-
-.author-box{
-  margin:0;
-  padding:0;
-}
-
-.author-header {
-  display:inline-block;
-  font-size:1.5rem !important;
-  padding-top:0.25rem; 
-  float:left;
-  font-family: 'Roboto Slab', serif !important;
-  font-weight: 400 !important;
-  a{
-    color:black !important;
-  }
-  a:hover{
-    color:$db-blue !important;
-  }
-} 
-.author-position {
-  display:inline-block;
-  float:left;
-  color:$db-blue !important;
-  padding: { top:0.46rem; left:0.45rem;}
-  font-size:1.4rem;
-  font-family: 'Roboto Slab', serif !important;
-  font-weight: 100 !important;
-}
-
-.bio-text {
-  line-height: 1.5em;
-  text-align: left;
-  font-size: .85rem;
-  width: 75%;
-}
-
-.bio{
-  padding-bottom: .3em;
-}
-
-.contact-info-wrapper-smaller-margin{
-  margin-top: -0.5rem !important;
-  .contact-info-wrapper{
-    padding-left: 10px;
-  }
-}
-
-div.contact, div.email, div.twitter{
-  padding:0;
-}
-
-p.contact{
-  font-size: 1rem;
-  font-weight:400;
-  text-align: left;
-  padding:0;
-  margin:0;
-}
-
-.author-title{
-  border-top: 1px solid black;
-  margin-top: 6px !important;
-}
-
-.author-box{
-  border-top: 2px solid black;
-}
-
-div.description{
-  margin-top:0 !important;
-  padding-left: 10px !important;
-}
-
-div.image {
-  margin-top: 2px !important;
-  padding-right: 0px !important;
-}
-
-div.email.large-5.medium-5.columns, {
-  margin-left: 0px !important;
-}
-.author-wrapper{
-  padding-bottom: .1em;
-}
-
-div.email.small-6.columns{
-  margin-left: 10px !important;
-}
-
-@media (max-width: 480px) {
-  p.twitter{
-    font-size:.6rem;
-    text-align: left;
-  }
-  p.email{
-    font-size:.6rem;
-    text-align: left;
-  }
-
-  .author-header {
-    font-size:1.3rem;
-  } 
-  .author-position {
-    font-size:1.2rem;
-    font-weight: 300;
-  }
-  .bio-text {
-    width: 100%;
-  }
-
-  div.email.small-12.columns, div.twitter.small-12.columns {
-    margin-left: 2px;
-  }
-
-}
-
-
-
 
 /* ===== Sidebar ========================================================
    Author:
@@ -1282,8 +1161,8 @@ margin-bottom: 0 !important;
 .now-playing > span {
   color:#333;
 }
- 
-.jp-player {width: 0; height: 0} 
+
+.jp-player {width: 0; height: 0}
 .list-playlist .jp-playlist-player {margin-bottom: 20px}
 .jp-interface {position: relative; display: block; width: 100%; height: auto}
 
@@ -1293,7 +1172,7 @@ margin-bottom: 0 !important;
 
 .jp-interface .jp-controls {margin: 0}
 
-.jp-controls {position: absolute; top: -2px; right: -1px; overflow: hidden; 
+.jp-controls {position: absolute; top: -2px; right: -1px; overflow: hidden;
   margin: 0 !important; list-style: none !important}
 .jp-controls li {float: left; margin-left: 2px}
 .jp-controls a {display: block; cursor: pointer; background: url(/wp-content/plugins/audio/css/images/icons_master.png) no-repeat;}
@@ -1310,7 +1189,7 @@ margin-bottom: 0 !important;
 .jp-play-bar span {display: block; width: 100%; height: 4px; position: relative;
    background: #333; overflow: hidden}
 
-.jp-current-time, .jp-duration {display: inline;}  
+.jp-current-time, .jp-duration {display: inline;}
 .jp-play-time-all {position: absolute; bottom: -3px; right: 5px; display: block; text-align: right;
   font: bold 12px/12px arial;}
 
