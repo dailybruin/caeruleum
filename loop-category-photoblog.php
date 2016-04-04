@@ -64,7 +64,7 @@
 									if ($periodPosition > 0) {
 										echo  $t = substr($t, 0, $periodPosition); 
 									} else {
-										echo $t;
+										echo $t . '...';
 									}
 									?>
 							</p>
