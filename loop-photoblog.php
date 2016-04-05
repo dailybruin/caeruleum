@@ -28,62 +28,65 @@
 </div>
 
 
-	?>
+?>
 	<!-- <div class="page-header">
     	<a class="pb-logo" href="/category/spectrum"><img src="/img/spectrum-<?php echo($the_cat->slug) ?>.png"  /></a>
     	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div> --><!-- end div.page-header -->
-	<div id="pb-gallery-block">
-		
-			<h2>
-			<p id="photoblog-title">
-				<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
+    <div id="pb-gallery-block">
+
+    	<h2>
+    		<p id="photoblog-title">
+    			<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
 					<?php /*echo $the_cat->name;
 					echo (": "); */
 					the_title();
 					?>
-			</a></p></h2> 
-
-			<div class="fotorama" data-nav="thumbs" data-height="100%" data-keyboard="true" data-arrows="true" data-click="true" data-trackpad="true" data-swipe="true" data-width="100%">
-				<?php $gallery = get_post_meta($post->ID, 'gallery', true);
-			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
-				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
-			global $nggdb;
-			$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
-			foreach($galleryt as $image) {
-				echo '<img src="'.$image->imageURL.'" data-caption="'.$image->description.'">';
+				</a></p></h2> 
 				
+					<div class="fotorama" data-nav="thumbs" data-height="100%" data-keyboard="true" data-arrows="true" data-click="true" data-trackpad="true" data-swipe="true" data-width="100%">
+
+						<?php $gallery = get_post_meta($post->ID, 'gallery', true);
+							if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
+							// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
+							global $nggdb;
+							$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
+							foreach($galleryt as $image) {
+								echo '<img class="showcaption" src="'.$image->imageURL.'" data-caption="'.$image->description.'">';
+				
+							}
+						?>
+
+					</div>
+				
+
+
+	<br><br>
+
+	<h2><p id="photoblog-title"><a>Suggested Galleries</a></p></h2> 
+
+	<div class="grid-wrapper">
+		<div class="grid">
+			<?php 
+			$categories = get_the_category();
+			foreach ( $categories as $category ) { 
+				if ($category->name == 'Sports Spectrum') {
+					$currentPostCategory = $category->name;
+					break;
+				} elseif ($category->name == 'News Spectrum') {
+					$currentPostCategory = $category->name;
+					break;
+				} else {
+					$currentPostCategory = 'A&E Spectrum';
+				}
 			}
-			?>
-		</div>
 
-
-<br><br>
-
-<h2><p id="photoblog-title"><a>Suggested Galleries</a></p></h2> 
-
-<div class="grid-wrapper">
-	<div class="grid">
-		<?php 
-		$categories = get_the_category();
-		foreach ( $categories as $category ) { 
-		    if ($category->name == 'Sports Spectrum') {
-		    	$currentPostCategory = $category->name;
-		    	break;
-		    } elseif ($category->name == 'News Spectrum') {
-		    	$currentPostCategory = $category->name;
-		    	break;
-		    } else {
-		    	$currentPostCategory = 'A&E Spectrum';
-		    }
-		}
-		
-		query_posts(array(
-			'showposts' => 3,
-			'orderby' => 'rand',
-			'category_name' => $currentPostCategory
-		));
-		while (have_posts() ): the_post();
+			query_posts(array(
+				'showposts' => 3,
+				'orderby' => 'rand',
+				'category_name' => $currentPostCategory
+				));
+			while (have_posts() ): the_post();
 			$cats = get_the_category();
 			//$the_cat = get_the_category()[0];
 			if ($cats) {
@@ -107,20 +110,20 @@
 						<a href="<?php the_permalink(); ?>">
 							<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
 							$image = do_shortcode('[singlepic id='.$singlepicture.']');
-			            
 
-			            	$permalink = get_permalink();
-			            	$start_of_href = strpos($image, 'href');
-			            	$start_of_url = strpos($image, '"', $start_of_href);
-			            	$end_of_url = strpos($image, '"', $start_of_url+1);
 
-			            	$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
-			            	echo $final_tag;
+							$permalink = get_permalink();
+							$start_of_href = strpos($image, 'href');
+							$start_of_url = strpos($image, '"', $start_of_href);
+							$end_of_url = strpos($image, '"', $start_of_url+1);
+
+							$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
+							echo $final_tag;
 							?>
 						</a>
 						
 
-					
+
 					</div>
 
 					<div class="picOverlay">
@@ -136,43 +139,43 @@
 						<?php elseif ($the_cat->slug == "westwoodla"):{ ?>
 							WW/LA <?php } ?>
 						<?php endif ?>
-						</a> -->
-						
-						<div class="photoblog-text" id="photoblog-post-text">
-							<h3>
-								<p id="photoblog-title">
-									<a href="<?php the_permalink() ?>">
-										<?php
-										the_title();
-										?>
-									</a>
-								</p>
-							</h3> 
-							<?php $t = get_the_excerpt(); 
-								$periodPosition = strpos($t, '.');
-								if ($periodPosition > 0) {
-									echo  $t = substr($t, 0, $periodPosition); 
-								} else {
-									echo $t . '...';
-								}
-								?>
-							
-							<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
-							<p class="photoblog-sm">
-							    <div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+					</a> -->
+
+					<div class="photoblog-text" id="photoblog-post-text">
+						<h3>
+							<p id="photoblog-title">
+								<a href="<?php the_permalink() ?>">
+									<?php
+									the_title();
+									?>
+								</a>
 							</p>
-						</div>
+						</h3> 
+						<?php $t = get_the_excerpt(); 
+						$periodPosition = strpos($t, '.');
+						if ($periodPosition > 0) {
+							echo  $t = substr($t, 0, $periodPosition); 
+						} else {
+							echo $t . '...';
+						}
+						?>
+
+						<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
+						<p class="photoblog-sm">
+							<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+						</p>
 					</div>
-				</div> <!--photoblog-post-block-->
-			</div> <!-- isotope grid -->
-			<?php endwhile; ?>
-	</div>
+				</div>
+			</div> <!--photoblog-post-block-->
+		</div> <!-- isotope grid -->
+	<?php endwhile; ?>
+</div>
 </div>
 
 
 
 
-		<?php if(function_exists('the_audio')) the_audio(); ?>
+<?php if(function_exists('the_audio')) the_audio(); ?>
 		<!-- <hr>
 		<?php the_content(); ?>
 		<p id="photoblog-post-author">Credit: <?php coauthors(); ?></p>
@@ -194,9 +197,9 @@
 
 <script type="text/javascript">
 	 /* Isotope
-  * ==================== */
-var elem = document.querySelector('.grid');
-var iso = new Isotope( elem, {
+	 * ==================== */
+	 var elem = document.querySelector('.grid');
+	 var iso = new Isotope( elem, {
   // options
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
@@ -213,33 +216,33 @@ $("div.grid-item").hover(
 	function () {
 		$(this).find(".picOverlay").fadeOut();
 	}
-);
+	);
 
 
 /*
  * Isotope animations
  */
 
-function filterPhotos(tag) {
-  	iso.arrange({
-  		filter: tag
-	})
-}
+ function filterPhotos(tag) {
+ 	iso.arrange({
+ 		filter: tag
+ 	})
+ }
 
-function setupGrid() {
-	var allImgs = $(document).find('.photoblog-post-image img');
-	allImgs.height($(window).width() / 4);
-	$(document).find('.grid-item').width($(document).find('.grid-wrapper').width() / 3);
-	filterPhotos('*');
-}
+ function setupGrid() {
+ 	var allImgs = $(document).find('.photoblog-post-image img');
+ 	allImgs.height($(window).width() / 4);
+ 	$(document).find('.grid-item').width($(document).find('.grid-wrapper').width() / 3);
+ 	filterPhotos('*');
+ }
 
-setupGrid();
+ setupGrid();
 
-$(window).on('resize', function(){
-	setupGrid();
-});
+ $(window).on('resize', function(){
+ 	setupGrid();
+ });
 
-</script>
+ </script>
 
 
 
