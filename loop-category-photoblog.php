@@ -6,7 +6,7 @@
 		<?php 
 		$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		query_posts(array(
-			'posts_per_page' => 9,
+			'posts_per_page' => 15,
 			'category_name' => 'Spectrum',
 	        'paged' => $page
 		));
