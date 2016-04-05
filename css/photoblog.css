@@ -751,11 +751,15 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 }
 
 .fotorama__caption{
-	opacity: 1.0;
+	opacity: 0;
 	font-size: 16px;
-
+	-webkit-transition: all 0.2s ease-in-out;
 }
 
+.fotorama__stage__frame:hover .fotorama__caption{
+	opacity:1.0;
+	
+}
 .db-content h2 a, .db-content h2 a:hover{
 	color:white;
 	font-size: 2rem;

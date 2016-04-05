@@ -49,7 +49,7 @@
 				global $nggdb;
 				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
-					echo '<img src="' . $image->imageURL . '" data-caption="' . $image->description . ' (photo by ' . $image->alttext . ')">';
+					echo '<img class="showcaption" src="' . $image->imageURL . '" data-caption="' . $image->description . ' (photo by ' . $image->alttext . ')">';
 				}
 				?>
 			</div>
