@@ -34,28 +34,25 @@
     	<h2>Exploring the UCLA experience through photojournalism</h2>
     </div> --><!-- end div.page-header -->
 	<div id="pb-gallery-block">
-		
 			<h2>
-			<p id="photoblog-title">
-				<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
-					<?php /*echo $the_cat->name;
-					echo (": "); */
-					the_title();
-					?>
-			</a></p></h2> 
+				<p id="photoblog-title">
+					<a href="/category/spectrum/<?php echo($the_cat->slug) ?>">
+						<?php the_title();?>
+					</a>
+				</p>
+			</h2> 
 
 			<div class="fotorama" data-nav="thumbs" data-height="100%" data-keyboard="true" data-arrows="true" data-click="true" data-trackpad="true" data-swipe="true" data-width="100%">
 				<?php $gallery = get_post_meta($post->ID, 'gallery', true);
-			if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
-				// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
-			global $nggdb;
-			$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
-			foreach($galleryt as $image) {
-				echo '<img src="'.$image->imageURL.'" data-caption="'.$image->description.'">';
-				
-			}
-			?>
-		</div>
+				if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
+					// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
+				global $nggdb;
+				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
+				foreach($galleryt as $image) {
+					echo '<img src="' . $image->imageURL . '" data-caption="' . $image->description . ' (photo by ' . $image->alttext . ')">';
+				}
+				?>
+			</div>
 
 
 <br><br>
