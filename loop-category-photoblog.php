@@ -1,5 +1,15 @@
 <?php /* Start loop */ ?>
-<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; ?>
+<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; 
+// function for parsing img url
+function get_string_between($string, $start, $end){
+    $string = ' ' . $string;
+    $ini = strpos($string, $start);
+    if ($ini == 0) return '';
+    $ini += strlen($start);
+    $len = strpos($string, $end, $ini) - $ini;
+    return substr($string, $ini, $len);
+}
+?>
 
 <div class="grid-wrapper">
 	<div class="grid">
@@ -32,20 +42,18 @@
 
 			<div class="grid-item <?php echo $the_cat->slug ?>">
 				<div id="photoblog-post-block">
-					<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>">
-						<a href="<?php the_permalink(); ?>">
-							<?php $singlepicture = get_post_meta($post->ID, 'singlepic', true);
-							$image = do_shortcode('[singlepic id='.$singlepicture.']');
-			            	$permalink = get_permalink();
-			            	$start_of_href = strpos($image, 'href');
-			            	$start_of_url = strpos($image, '"', $start_of_href);
-			            	$end_of_url = strpos($image, '"', $start_of_url+1);
-
-			            	$final_tag = substr($image, 0, $start_of_url) . "\"" . $permalink . substr($image, $end_of_url);
-			            	echo $final_tag;
-							?>
-						</a>
-					</div>
+					<a href="<?php the_permalink(); ?>">
+						<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>" 
+							style="background-image: url('<?php 
+															$picID = get_post_meta($post->ID, 'singlepic', true);
+															$image = do_shortcode('[singlepic id='.$picID.']');
+											            	$parsed = get_string_between($image, 'src=', 'alt');
+											            	$parsed = str_replace("\"", "", $parsed);
+											            	echo $parsed;  
+														?>');">
+							
+						</div>
+					</a>
 
 					<div class="picOverlay">
 						<div class="photoblog-text" id="photoblog-post-text">
@@ -143,13 +151,12 @@ function filterPhotos(tag) {
 
 
 function setupGrid() {
-	var allImgs = $(document).find('.photoblog-post-image img');
+	var allImgs = $(document).find('.photoblog-post-image');
 	allImgs.height($(window).width() / 4);
 	$(document).find('.grid-item').width($(document).find('.grid-wrapper').width() / 3);
 	filterPhotos('*');
 }
 
-$(document).find('.photoblog-post-image img').css("max-height", '300px');
 setupGrid();
 
 $(window).on('resize', function(){

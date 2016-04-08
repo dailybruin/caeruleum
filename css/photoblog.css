@@ -193,17 +193,16 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	background-color: #D3A000;
 }
 .photoblog-post-image {
-	/*border: solid;
-	border-color: #606060;*/
-	max-height: 384px;
+	/*max-height: 384px;
 	margin-left: auto;
 	margin-right: auto;
-	/*margin-top: 2%;*/
-	/*max-width: 95%;*/
-	/*max-height: 384px;*/
-	/*padding: 5px 5px 5px 5px;*/
-	/*width: 95%;*/
-	overflow: hidden;
+	overflow: hidden;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .photoblog-post-image img {
 	/*margin-left: auto;
