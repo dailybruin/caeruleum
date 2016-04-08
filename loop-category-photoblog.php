@@ -42,15 +42,18 @@ function get_string_between($string, $start, $end){
 
 			<div class="grid-item <?php echo $the_cat->slug ?>">
 				<div id="photoblog-post-block">
-					<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>" 
-						style="background-image: url('<?php 
-														$picID = get_post_meta($post->ID, 'singlepic', true);
-														$image = do_shortcode('[singlepic id='.$picID.']');
-										            	$parsed = get_string_between($image, 'src=', 'alt');
-										            	$parsed = str_replace("\"", "", $parsed);
-										            	echo $parsed;  
-													?>');">
-					</div>
+					<a href="<?php the_permalink(); ?>">
+						<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>" 
+							style="background-image: url('<?php 
+															$picID = get_post_meta($post->ID, 'singlepic', true);
+															$image = do_shortcode('[singlepic id='.$picID.']');
+											            	$parsed = get_string_between($image, 'src=', 'alt');
+											            	$parsed = str_replace("\"", "", $parsed);
+											            	echo $parsed;  
+														?>');">
+							
+						</div>
+					</a>
 
 					<div class="picOverlay">
 						<div class="photoblog-text" id="photoblog-post-text">
@@ -154,7 +157,6 @@ function setupGrid() {
 	filterPhotos('*');
 }
 
-$(document).find('.photoblog-post-image img').css("max-height", '300px');
 setupGrid();
 
 $(window).on('resize', function(){
