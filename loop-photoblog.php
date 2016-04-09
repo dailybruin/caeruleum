@@ -115,7 +115,7 @@ function get_string_between($string, $start, $end){
 							style="background-image: url('<?php 
 															$picID = get_post_meta($post->ID, 'singlepic', true);
 															$image = do_shortcode('[singlepic id='.$picID.']');
-											            	$parsed = get_string_between($image, 'src=', 'alt');
+                                                            $parsed = get_string_between($image, 'data-src="', PHP_EOL);
 											            	$parsed = str_replace("\"", "", $parsed);
 											            	echo $parsed;  
 														?>');">
