@@ -16,6 +16,12 @@ $db-ad-padding: rem-calc(10);
 $db-masthead-description-size: rem-calc(10);
 $db-masthead-subcategory-size: rem-calc(36);
 
+//Entypo Icons
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
 
 
 // Daily Bruin additions
@@ -968,7 +974,7 @@ div.twitter{
   line-height: 1.5em;
   text-align: left;
   font-size: .85rem;
-  width: 75%;
+  width: 100%;
 }
 
 .bio{
@@ -978,8 +984,11 @@ div.twitter{
 .contact-info-wrapper-smaller-margin{
   margin-top: -0.5rem !important;
   .contact-info-wrapper{
-    padding-left: 10px;
+    padding-left: 10px !important;
   }
+}
+.contact-info-wrapper{
+  padding-left: 10px !important;
 }
 
 div.contact, div.email, div.twitter{
