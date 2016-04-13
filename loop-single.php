@@ -246,9 +246,6 @@
 			                  	<?php // Display the columnist's mugshot
 							    if($displayMugshot && $displayAuthor)
 							    {
-							    	?>
-							    	<div class="image large-2 small-3 medium-2 columns"> 
-							    	<?php
 							        ob_start();
 			    					if(function_exists('userphoto')){
 										userphoto($author->ID);
@@ -259,7 +256,10 @@
 			    					if(!empty($thumbnail))
 			    					{
 			        					?>
-			        						<div class="author-photo"><?php userphoto($author->ID);?> </div>
+			        				
+							    			<div class="image large-2 small-3 medium-2 columns"> 
+							    				<div class="author-photo"><?php userphoto_the_author_photo() ?></div>
+			        						<!-- <div class="author-photo"> <?php userphoto($author->ID);?> </div> -->
 			        						</div>
 			        						<?php
 			        				}else{
@@ -273,15 +273,25 @@
 							<?php if ( !$displayMugshot && !$description): ?>
 		                        <div class="description large-12 small-12 medium-12 columns">
 		                      <?php elseif ( !$displayMugshot): ?>
-		                        <div class="description large-12 small-9 medium-10 columns">
+		                        <div class="description large-12 small-12 medium-12 columns">
 		                    <?php endif; ?>
-		                      <?php if ($description): ?>
-			                    <p class="bio-text">
+		                      <?php if ($description && $displayMugshot): ?>
+			                    <p class="bio-text-mugshot">
+			            			<?php echo $description ?>
+			                    </p>
+			                <?php elseif($description && $displayMugshot): ?>
+			                	<p class="bio-text">
+			            			<?php echo $description ?>
+			                    </p>
+			                <?php elseif($description): ?>
+			                	<p class="bio-text">
 			            			<?php echo $description ?>
 			                    </p>
 			                  <?php endif; ?>
 			                  <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
 		                        <div class="row contact-info-wrapper-smaller-margin">
+		                      <?php elseif ($displayMugshot): ?>
+		                      <div class="row contact-info-wrapper-mugshot">
 		                      <?php else: ?>
 		                      <div class="row contact-info-wrapper">
 		                      <?php endif; ?>

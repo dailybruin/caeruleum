@@ -976,6 +976,21 @@ div.twitter{
   font-size: .85rem;
   width: 100%;
   word-wrap: break-word;
+
+}
+
+.contact-info-wrapper-mugshot
+{
+   padding-left: 10px;
+}
+
+.bio-text-mugshot
+{
+  line-height: 1.5em;
+  text-align: left;
+  font-size: .85rem;
+  width: 100%;
+  word-wrap: break-word;
   padding-left: 10px;
 }
 
@@ -986,11 +1001,11 @@ div.twitter{
 .contact-info-wrapper-smaller-margin{
   margin-top: -0.5rem !important;
   .contact-info-wrapper{
-    padding-left: 10px !important;
+    // padding-left: 10px !important;
   }
 }
 .contact-info-wrapper{
-  padding-left: 10px !important;
+  // padding-left: 10px !important;
 }
 
 div.contact, div.email, div.twitter{
@@ -1016,7 +1031,7 @@ p.contact{
 
 div.description{
   margin-top:0 !important;
-  padding-left: 10px !important;
+  // padding-left: 10px !important;
 }
 
 div.image {
