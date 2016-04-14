@@ -244,7 +244,7 @@
 			                </div>
 			              <div class="bio row">       
 			                  	<?php // Display the columnist's mugshot
-							    if($displayMugshot && $displayAuthor)
+							    if($displayMugshot && $displayAuthor && false)
 							    {
 							        ob_start();
 			    					if(function_exists('userphoto')){
@@ -258,8 +258,7 @@
 			        					?>
 			        				
 							    			<div class="image large-2 small-3 medium-2 columns"> 
-							    				<div class="author-photo"><?php userphoto_the_author_photo() ?></div>
-			        						<!-- <div class="author-photo"> <?php userphoto($author->ID);?> </div> -->
+			        						<div class="author-photo"> <?php userphoto($author->ID);?> </div>
 			        						</div>
 			        						<?php
 			        				}else{

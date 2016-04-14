@@ -64,7 +64,7 @@
                     </div>
                   <div class="bio row">
                   <?php // Display the columnist's mugshot
-                      if($displayMugshot)
+                      if($displayMugshot && false)
                       {
                         ?>
                         <div class="image large-2 small-3 medium-2 columns"> 
