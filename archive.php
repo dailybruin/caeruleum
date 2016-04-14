@@ -89,21 +89,26 @@
                         }
                       }
                   ?>
-                    <?php if ( !$displayMugshot && !get_the_author_meta('description')): ?>
-                        <div class="description large-12 small-12 medium-12 columns">
-                      <?php elseif ( !$displayMugshot): ?>
-                        <div class="description large-12 small-9 medium-10 columns">
-                    <?php endif; ?>
-                      <?php if (get_the_author_meta('description')): ?>
+                    <?php if ($description && $displayMugshot): ?>
+                          <p class="bio-text-mugshot">
+                        <?php echo get_the_author_meta('description'); ?>
+                          </p>
+                      <?php elseif($description && $displayMugshot): ?>
                         <p class="bio-text">
-                            <?php echo get_the_author_meta('description') ?>
-                        </p>
-                      <?php endif; ?>
-                      <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
-                        <div class="row contact-info-wrapper-smaller-margin">
-                      <?php else: ?>
-                      <div class="row contact-info-wrapper">
-                      <?php endif; ?>
+                        <?php echo get_the_author_meta('description');?>
+                          </p>
+                      <?php elseif($description): ?>
+                        <p class="bio-text">
+                        <?php echo get_the_author_meta('description'); ?>
+                          </p>
+                        <?php endif; ?>
+                       <?php if (!$description && !$displayMugshot): ?> <!-- Don't make margin so large -->
+                            <div class="row contact-info-wrapper-smaller-margin">
+                          <?php elseif ($displayMugshot): ?>
+                          <div class="row contact-info-wrapper-mugshot">
+                          <?php else: ?>
+                          <div class="row contact-info-wrapper">
+                          <?php endif; ?>
                         <?php if ( $email || $twitter ): ?>
                         <div class="contact large-2 medium-2 columns show-for-medium-up">
                           <p class="contact">contact</p>
