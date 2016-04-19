@@ -59,7 +59,7 @@ function get_string_between($string, $start, $end){
 				global $nggdb;
 				$galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
 				foreach($galleryt as $image) {
-					echo '<img class="showcaption" src="' . $image->imageURL . '" data-caption="' . $image->description . ' (photo by ' . $image->alttext . ')">';
+					echo '<img class="showcaption" src="' . $image->imageURL . '" data-caption="' . $image->description . ' (' . $image->alttext . '/Daily Bruin)">';
 				}
 				?>
 			</div>
