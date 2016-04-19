@@ -223,16 +223,16 @@
 						</div> 
 						-->
 						
-						<!--
+					
 						<div class="row db-story below-header db-next hide-for-small">
-							<a href="http://recruiting.dailybruin.com/">
+							<a href="http://fee.dailybruin.com/">
 							<div class="small-12 columns">
-								<h2 class="animated fadeInLeft">Join the Daily Bruin, UCLA&#39;s student newspaper since 1919.&nbsp;</h2>
-								<button class="animated fadeInUp">&nbsp;Apply here&raquo;</button>
+								<h2 class="animated fadeInLeft">Daily Bruin and Bruinwalk.com need your help.&nbsp;</h2>
+								<button class="animated fadeInUp">&nbsp;Learn more&raquo;</button>
 							</div>
 							</a>
 						</div>
-						-->
+					
 						
 						<div class="row db-story below-header">
 							<div class="small-6 columns hide-for-small" style="margin:0;">
