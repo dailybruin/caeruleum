@@ -139,7 +139,7 @@ Template Name: USAC Elections 2015
 <a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2015.uparrow.svg"/></a>
 <div class="container">
     <div class="row banner">
-      <img src="http://dailybruin.com/images/2015/04/Elections-Banner1.jpg"/>
+      <img src="http://dailybruin.com/images/2016/04/usac_election_illo_final.jpg"/>
     </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
