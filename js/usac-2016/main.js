@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	setSidebar();
 
-	var url = "https://spreadsheets.google.com/feeds/list/1QxpROQiv4EMUfWMTdaxyiX3PiY0M2wJdPHa18-lILdc/od6/public/values?alt=json";
+	var url = "https://spreadsheets.google.com/feeds/list/1tHCX_qWie5IKYj6TgzySHs4_FGVx9lAC62C60snXCn4/od6/public/values?alt=json";
 	$.getJSON(url, function(data) {
 		data = clean_google_sheet_json(data);
 		$(":checkbox").labelauty();
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         $('.lazyYT').lazyYT();
 	});
 
-    var resultsData = "https://spreadsheets.google.com/feeds/list/1rVOosKq2pnkpFPfSkdrXmGEWIn19MQW24X-bPqqZiXI/od6/public/values?alt=json";
+    var resultsData = "https://spreadsheets.google.com/feeds/list/1i27cJk1pzUSXs4ivyKA_FJ6tqA22Ouucsb0cRhdSqo0/od6/public/values?alt=json";
     $.getJSON(resultsData, function(candidates) {
         candidates = clean_google_sheet_json(candidates);
         var resultsTemplate = _.template($("#results_candidates_template").html());
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
 	});
 
-  var violationsdata = "https://spreadsheets.google.com/feeds/list/19YcaBCjht0rm42LyE3yeFSun-dEwqnrR_4jaR8aU1xo/od6/public/values?alt=json";
+  var violationsdata = "https://spreadsheets.google.com/feeds/list/1MXr_Y4RX8BEP_aBvr02_pEFNtWJAeTqfloOjQSWn6ys/od6/public/values?alt=json";
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
 		compile_and_insert_html('#violations_main_template', '#violations-content', data);
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // LOAD DATA FOR RESULTS GALLERY 
 
-    var gallerydata = "https://spreadsheets.google.com/feeds/list/1jZXS1s1Ibe4nqbCj0CEBzfWwHwoWqjm5p5zWjWhQgkc/od6/public/values?alt=json";
+    var gallerydata = "https://spreadsheets.google.com/feeds/list/1-WiB1T4YWQ7BmXpb2Gh8dZBRO9KlcPnaJoSaDhODR38/od6/public/values?alt=json";
     $.getJSON(gallerydata, function(galleryjson) {
         var data = clean_google_sheet_json(galleryjson);
         var template = _.template($("#results_gallery_template").html());
