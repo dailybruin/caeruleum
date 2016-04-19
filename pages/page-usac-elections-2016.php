@@ -1,15 +1,15 @@
 <?php/*
-Template Name: USAC Elections 2015
+Template Name: USAC Elections 2016
 */ ?>
 
 <?php get_header(); ?>
 
-<link rel="stylesheet" href="../css/usac-elections-2015.css" type="text/css">
+<link rel="stylesheet" href="../css/usac-elections-2016.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
-<script src="../js/usac-2015/main.js"></script>
-<script src="../js/usac-2015/animatescroll.min.js"></script>
-<script src="../js/usac-2015/lazyYT.js"></script>
+<script src="../js/usac-2016/main.js"></script>
+<script src="../js/usac-2016/animatescroll.min.js"></script>
+<script src="../js/usac-2016/lazyYT.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:800|Asap' rel='stylesheet' type='text/css'>
 
@@ -20,7 +20,7 @@ Template Name: USAC Elections 2015
             <img src="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
-                        <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
                         <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                 <hr>
                 <!-- <p><%- candidate.yearmajor %></p> -->
@@ -77,7 +77,7 @@ Template Name: USAC Elections 2015
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
                     <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
@@ -99,7 +99,7 @@ Template Name: USAC Elections 2015
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
-                    <img class="slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
                     <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
@@ -119,7 +119,7 @@ Template Name: USAC Elections 2015
         <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
             <% if(candidate.position != "REF") {%>
-                <img class="results slate-logo" src="/img/usac-2015.<%- candidate.slate %>.logo.svg"/>
+                <img class="results slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
             <% } %>
             <h2 class="results-name"><%- candidate.name %></h2>
             <% if(candidate.position != "Gen-Rep") {%>
@@ -136,7 +136,7 @@ Template Name: USAC Elections 2015
 
 <!-- THE PAGE STARTS HERE -->
 
-<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2015.uparrow.svg"/></a>
+<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2016.uparrow.svg"/></a>
 <div class="container">
     <div class="row banner">
       <img src="http://dailybruin.com/images/2016/04/usac_election_illo_final.jpg"/>
@@ -313,7 +313,7 @@ Template Name: USAC Elections 2015
             </div>
         </div>
         <div class="results-head row">
-            <h1 id="news-title">2015-16 USAC COUNCILMEMBERS</h1>
+            <h1 id="news-title">2016-17 USAC COUNCILMEMBERS</h1>
         </div>
         <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
             <li id="results-President">
@@ -450,7 +450,7 @@ Template Name: USAC Elections 2015
         <div id="stories">
             <?php
             global $post;
-            $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2015', 'posts_per_page' => '-1'));
+            $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2016', 'posts_per_page' => '-1'));
             foreach( $myposts as $post ) :  
                 setup_postdata($post); ?>
       <div class="row db-list">
