@@ -165,6 +165,11 @@ $db-masthead-subcategory-size: rem-calc(36);
       font-weight: 700;
     }
 
+    .db-post-content
+    {
+      margin-bottom: 10px;
+    }
+
     .db-post-content,
     .db-post-content {
 
@@ -921,6 +926,12 @@ figure, figure.alignnone {
    Author Box:
    ============================================================= */
 
+.author-wrapper, .author-box, .author-title{
+  margin-top: 0 !important;
+}
+
+
+
 .entypo-twitter, .entypo-mail {
   color: #00B2E2;
   font-size: 1.5em;
@@ -1021,12 +1032,12 @@ p.contact{
 }
 
 .author-title{
-  border-top: 1px solid black;
-  margin-top: 6px !important;
+  //border-top: 1px solid black;
+  //margin-top: 6px !important;
 }
 
 .author-box{
-  border-top: 2px solid black;
+  //border-top: 2px solid black;
 }
 
 div.description{

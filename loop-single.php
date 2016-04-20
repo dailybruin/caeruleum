@@ -192,7 +192,7 @@
 				<div class="db-post-content">
 					<?php if(!$video_story) {  the_content();  } ?>
 				</div>
-				<p class="author-contact">
+				<!--<p class="author-contact"> -->
 				    <?php 
 				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))
 			    	{ ; }
@@ -215,6 +215,7 @@
 				            $firstName = get_the_author_meta('first_name', $author->ID);
 				            $graduated = get_the_author_meta('graduated', $author->ID);
 				         ?>
+				 <!--</p> -->
 				        <!--Author Box -->
 						<?php
 						//Author Box Variables
@@ -226,6 +227,7 @@
 						}
 						$twitter = get_the_author_meta( 'twitter_handle', $author->ID );
 						?>
+						<img src="http://dailybruin.com/images/2016/04/doublelines.jpg"/>
 					    <div class="author-wrapper">
 			                <div class="row author-box">
 			                  <div class="large-12 medium-12 small-12 columns author-title">
@@ -339,7 +341,7 @@
 		            	<?php
 		            	}
 				    }?>
-				</p>
+				<!-- </p> -->
 	</div><!-- end div.post-content -->
 </div><!-- end div.entry-content -->
 
