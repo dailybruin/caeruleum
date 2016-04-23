@@ -159,8 +159,6 @@ p.results-percent {
 
 #filter>div {
   margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .top-bar {
@@ -276,7 +274,7 @@ input.labelauty + label
 {
   display: table;
   font-size: 11px;
-  width: 120px;
+  width: 130px;
   padding: 10px;
   background-color: #efefef;
   color: #b3b3b3;
