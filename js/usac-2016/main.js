@@ -5,7 +5,7 @@ var currentContainer;
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	/*!
-	 * LABELAUTY jQuery Plugin
+	 * LABELAUTY jQuery Plugi
 	 *
 	 * @file: jquery-labelauty.js
 	 * @author: Francisco Neves (@fntneves)
