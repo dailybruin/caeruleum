@@ -33,11 +33,6 @@ Template Name: USAC Elections 2016
                             <% }); %>
                         </ul>
                     </div>
-              
-                    <div class="large-7 columns">
-                        <div class="lazyYT" data-youtube-id="<%- candidate.lazyvideo %>" data-ratio="16:9">Loading Video...</div>
-                    </div>
-          
                 </div>
             </div>
         </div>
