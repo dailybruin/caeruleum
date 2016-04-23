@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
 	setSidebar();
-
+	/* comment test */
 	var url = "https://spreadsheets.google.com/feeds/list/1tHCX_qWie5IKYj6TgzySHs4_FGVx9lAC62C60snXCn4/od6/public/values?alt=json";
 	$.getJSON(url, function(data) {
 		data = clean_google_sheet_json(data);
