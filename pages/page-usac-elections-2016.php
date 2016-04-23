@@ -20,7 +20,7 @@ Template Name: USAC Elections 2016
             <img src="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
-                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                         <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                 <hr>
                 <!-- <p><%- candidate.yearmajor %></p> -->
@@ -29,15 +29,15 @@ Template Name: USAC Elections 2016
                         <h2>Platforms</h2>
                         <ul>
                             <% _.each(candidate.platforms.split("\n"), function(p) { %>
-                            <li><%- p %></li>  
+                            <li><%- p %></li>
                             <% }); %>
                         </ul>
                     </div>
-              
+
                     <div class="large-7 columns">
                         <div class="lazyYT" data-youtube-id="<%- candidate.lazyvideo %>" data-ratio="16:9">Loading Video...</div>
                     </div>
-          
+
                 </div>
             </div>
         </div>
@@ -77,19 +77,19 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                     <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
-                        <p><%- para %></p>  
+                        <p><%- para %></p>
                     <% }); %>
                 </div>
-            </div> 
             </div>
-        
+            </div>
+
         <% } else { %>
-                    
+
             <div class = "notendorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row notendorsed">
             <h2 class="yesno">Not Endorsed:</h2>
@@ -99,12 +99,12 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                     <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
-                        <p><%- para %></p>  
+                        <p><%- para %></p>
                     <% }); %>
                 </div>
             </div>
@@ -119,7 +119,7 @@ Template Name: USAC Elections 2016
         <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
             <% if(candidate.position != "REF") {%>
-                <img class="results slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                <img class="results slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
             <% } %>
             <h2 class="results-name"><%- candidate.name %></h2>
             <% if(candidate.position != "Gen-Rep") {%>
@@ -136,7 +136,7 @@ Template Name: USAC Elections 2016
 
 <!-- THE PAGE STARTS HERE -->
 
-<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2016.uparrow.svg"/></a>
+<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2016.uparrow.png"/></a>
 <div class="container">
     <div class="row banner">
       <img src="http://dailybruin.com/images/2016/04/usac_election_illo_final.jpg"/>
@@ -148,9 +148,9 @@ Template Name: USAC Elections 2016
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
             <li><a href="#violations">Violations</a></li>
-            <li><a href="#endorsements">Endorsements</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#news">News</a></li>
+            <li style="display:none"><a href="#endorsements">Endorsements</a></li>
+            <li style="display:none"><a href="#results">Results</a></li>
+            <li style="display:none"><a href="#news">News</a></li>
         </ul>
       </section>
     </nav>
@@ -163,10 +163,7 @@ Template Name: USAC Elections 2016
                     <input id="BU" type="checkbox" checked="yes" data-labelauty="Bruins United"/>
                 </div>
                 <div>
-                    <input id="LA" type="checkbox" checked="yes" data-labelauty="LET'S ACT"/>
-                </div>
-                <div>
-                    <input id="TAP" type="checkbox" checked="yes" data-labelauty="The After Party"/>
+                    <input id="WAV" type="checkbox" checked="yes" data-labelauty="Waves of Change"/>
                 </div>
                 <div>
                     <input id="IND" type="checkbox" checked="yes" data-labelauty="Independent"/>
@@ -290,7 +287,7 @@ Template Name: USAC Elections 2016
                 <div class="endorsements-content" id="endorsements-TSR">
                     <h3>Transfer Student Representative</h3>
                 </div>
-            </div> 
+            </div>
             <!-- VIOLATIONS PAGE IS HERE  -->
             <div class="usac-section violations-container" id="violations-content">
             </div>
@@ -437,21 +434,21 @@ Template Name: USAC Elections 2016
                 </div>
             </li>
         </ul>
-       
+
     </div>
     <div class="usac-section news-container">
          <div class="row">
             <div class="results-gallery gallery">
             </div>
             <p class="caption" id="results-gallery-caption">&nbsp;</p>
-        </div> 
+        </div>
 
         <h1 id="news-title">USAC Election Coverage</h1>
         <div id="stories">
             <?php
             global $post;
             $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2016', 'posts_per_page' => '-1'));
-            foreach( $myposts as $post ) :  
+            foreach( $myposts as $post ) :
                 setup_postdata($post); ?>
       <div class="row db-list">
           <?php if(has_post_thumbnail()): ?>
@@ -462,12 +459,12 @@ Template Name: USAC Elections 2016
           <?php endif; ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
               <span class="db-section-date">
-                      <h4><?php the_category(', ');?></h4> 
-                      <h4>|</h4> 
+                      <h4><?php the_category(', ');?></h4>
+                      <h4>|</h4>
                       <h5><?php the_time('F j, g:i a');?> </h5>
                       </span>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-          
+
           <div class="entry-content">
             <?php the_audio(); ?>
                 <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
