@@ -163,10 +163,7 @@ Template Name: USAC Elections 2016
                     <input id="BU" type="checkbox" checked="yes" data-labelauty="Bruins United"/>
                 </div>
                 <div>
-                    <input id="LA" type="checkbox" checked="yes" data-labelauty="LET'S ACT"/>
-                </div>
-                <div>
-                    <input id="TAP" type="checkbox" checked="yes" data-labelauty="The After Party"/>
+                    <input id="WAV" type="checkbox" checked="yes" data-labelauty="Waves of Change"/>
                 </div>
                 <div>
                     <input id="IND" type="checkbox" checked="yes" data-labelauty="Independent"/>
