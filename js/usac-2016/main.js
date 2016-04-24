@@ -5,7 +5,7 @@ var currentContainer;
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	/*!
-	 * LABELAUTY jQuery Plugin
+	 * LABELAUTY jQuery Plugi
 	 *
 	 * @file: jquery-labelauty.js
 	 * @author: Francisco Neves (@fntneves)
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
 	setSidebar();
-
+	/* comment test */
 	var url = "https://spreadsheets.google.com/feeds/list/1tHCX_qWie5IKYj6TgzySHs4_FGVx9lAC62C60snXCn4/od6/public/values?alt=json";
 	$.getJSON(url, function(data) {
 		data = clean_google_sheet_json(data);
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  
     // LOAD DATA FOR ENDORSEMENTS PAGE
 
-	var endorsementsdata = "https://spreadsheets.google.com/feeds/list/1cFFXOuZyKa6hAHtI-1SEPPlQ2LzrXlzwIt6bwRNkRxU/od6/public/values?alt=json";
+	var endorsementsdata = "https://spreadsheets.google.com/feeds/list/1-t3oqQnKN0vMUEYaJC2iA6HauPoeMruP6Ito-jeRDiM/od6/public/values?alt=json";
     $.getJSON(endorsementsdata, function(data) {
         var endorsetable = clean_google_sheet_json(data);
         var template = _.template($("#endorsements_main_template").html());

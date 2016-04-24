@@ -20,7 +20,7 @@ Template Name: USAC Elections 2016
             <img src="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
-                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                         <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                 <hr>
                 <!-- <p><%- candidate.yearmajor %></p> -->
@@ -33,11 +33,6 @@ Template Name: USAC Elections 2016
                             <% }); %>
                         </ul>
                     </div>
-              
-                    <div class="large-7 columns">
-                        <div class="lazyYT" data-youtube-id="<%- candidate.lazyvideo %>" data-ratio="16:9">Loading Video...</div>
-                    </div>
-          
                 </div>
             </div>
         </div>
@@ -77,7 +72,7 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                     <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
@@ -99,7 +94,7 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                     <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
@@ -119,7 +114,7 @@ Template Name: USAC Elections 2016
         <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
             <% if(candidate.position != "REF") {%>
-                <img class="results slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.svg"/>
+                <img class="results slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
             <% } %>
             <h2 class="results-name"><%- candidate.name %></h2>
             <% if(candidate.position != "Gen-Rep") {%>
@@ -136,7 +131,7 @@ Template Name: USAC Elections 2016
 
 <!-- THE PAGE STARTS HERE -->
 
-<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2016.uparrow.svg"/></a>
+<a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2016.uparrow.png"/></a>
 <div class="container">
     <div class="row banner">
       <img src="http://dailybruin.com/images/2016/04/usac_election_illo_final.jpg"/>
@@ -148,9 +143,9 @@ Template Name: USAC Elections 2016
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
             <li><a href="#violations">Violations</a></li>
-            <li><a href="#endorsements">Endorsements</a></li>
+            <!--<li><a href="#endorsements">Endorsements</a></li>
             <li><a href="#results">Results</a></li>
-            <li><a href="#news">News</a></li>
+            <li><a href="#news">News</a></li>-->
         </ul>
       </section>
     </nav>
@@ -163,10 +158,7 @@ Template Name: USAC Elections 2016
                     <input id="BU" type="checkbox" checked="yes" data-labelauty="Bruins United"/>
                 </div>
                 <div>
-                    <input id="LA" type="checkbox" checked="yes" data-labelauty="LET'S ACT"/>
-                </div>
-                <div>
-                    <input id="TAP" type="checkbox" checked="yes" data-labelauty="The After Party"/>
+                    <input id="WAV" type="checkbox" checked="yes" data-labelauty="Waves of Change"/>
                 </div>
                 <div>
                     <input id="IND" type="checkbox" checked="yes" data-labelauty="Independent"/>
