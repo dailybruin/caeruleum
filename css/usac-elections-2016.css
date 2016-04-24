@@ -116,7 +116,7 @@ p.results-percent {
 }
 
 .endorsed .slate-logo {
-    width: 7%; 
+    width: 7%;
     margin-right: .1em;
 }
 
@@ -127,7 +127,7 @@ p.results-percent {
 }
 
 .notendorsed .slate-logo {
-    width: 7%; 
+    width: 7%;
     margin-right: .1em;
 }
 
@@ -138,7 +138,7 @@ p.results-percent {
 }
 
 .candidate .slate-logo {
-    width: 7%; 
+    width: 7%;
     margin-right: .1em;
 }
 
@@ -212,7 +212,7 @@ p.results-percent {
 }
 
 .top-bar-section ul li > a:hover {
-    border-color: #4b9bc7; 
+    border-color: #4b9bc7;
 }
 
 .top-bar-section ul li.active > a {
@@ -584,7 +584,7 @@ http://flickity.metafizzy.co
           transform: translateY(-50%);
 }
 
-.flickity-prev-next-button:hover { 
+.flickity-prev-next-button:hover {
     background: black;
     opacity: 0.6;
 }
