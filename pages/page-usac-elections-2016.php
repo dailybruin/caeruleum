@@ -31,7 +31,7 @@ Template Name: USAC Elections 2016
                 <hr>
                 <!-- <p><%- candidate.yearmajor %></p> -->
                 <div class="row">
-                    <div class="large-5 columns platforms">
+                    <div class="large-12 columns platforms">
                         <h2>Platforms</h2>
                         <ul>
                             <% _.each(candidate.platforms.split("\n"), function(p) { %>
