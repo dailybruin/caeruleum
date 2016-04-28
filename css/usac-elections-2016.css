@@ -395,9 +395,9 @@ input.labelauty + label[for=BU] > span[class$=-image]
   background-image: url(/img/usac-2015.BU.logo.svg);
 }
 
-input.labelauty + label[for=LA] > span[class$=-image]
+input.labelauty + label[for=WAV] > span[class$=-image]
 {
-  background-image: url(/img/usac-2015.LA.logo.svg);
+  background-image: url(/img/usac-2016.WAV.logo.png);
 }
 
 input.labelauty + label[for=IND] > span[class$=-image]
@@ -405,10 +405,10 @@ input.labelauty + label[for=IND] > span[class$=-image]
   background-image: url(/img/usac-2015.IND.logo.svg);
 }
 
-input.labelauty + label[for=TAP] > span[class$=-image]
+/*input.labelauty + label[for=TAP] > span[class$=-image]
 {
   background-image: url(/img/usac-2015.TAP.logo.svg);
-}
+}*/
 
 /*!
 * lazyYT (lazy load YouTube videos)
