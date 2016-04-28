@@ -20,12 +20,18 @@ Template Name: USAC Elections 2016
             <img src="<%- candidate.mug %>"/>
             </div>
             <div class="small-9 columns">
-                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                        <% if(candidate.slate == "BU") {%>
+                            <img class="slate-logo" src="/img/usac-2015.BU.logo.svg"/>
+                        <% } else if (candidate.slate == "IND") { %>
+                            <img class="slate-logo" src="/img/usac-2015.IND.logo.svg"/>
+                        <% } else { %>
+                            <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                        <% } %>
                         <h2 class="candidate-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                 <hr>
                 <!-- <p><%- candidate.yearmajor %></p> -->
                 <div class="row">
-                    <div class="large-5 columns platforms">
+                    <div class="large-12 columns platforms">
                         <h2>Platforms</h2>
                         <ul>
                             <% _.each(candidate.platforms.split("\n"), function(p) { %>
