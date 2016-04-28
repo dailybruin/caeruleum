@@ -113,7 +113,7 @@ Template Name: USAC Evaluations 2016
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
         <div class="usac-eval-2015" >
-            <h2 class="title">2014-2015 USAC Officer Evaluations</h2>
+            <h2 class="title">2015-2016 USAC Officer Evaluations</h2>
             <p><?php the_content(); ?></p>
             <h3 class="click">Click on the photos below to see each officer's evaluation.</h3>
             <!-- <div class="small-12 columns council">
