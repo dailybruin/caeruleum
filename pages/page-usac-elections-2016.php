@@ -167,6 +167,9 @@ Template Name: USAC Elections 2016
                     <input id="WAV" type="checkbox" checked="yes" data-labelauty="Waves of Change"/>
                 </div>
                 <div>
+                    <input id="UCLA" type="checkbox" checked="yes" data-labelauty="MakeUCLAGreatAgain"/>
+                </div>
+                <div>
                     <input id="IND" type="checkbox" checked="yes" data-labelauty="Independent"/>
                 </div>
             </form>

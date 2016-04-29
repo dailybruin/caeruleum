@@ -270,11 +270,15 @@ input.labelauty { display: none !important; }
  * Let's style the input
  * Feel free to work with it as you wish!
  */
+
+form#filter div {
+    margin-left: -6px;
+}
 input.labelauty + label
 {
   display: table;
   font-size: 11px;
-  width: 150px;
+  width: 160px;
   padding: 10px;
   background-color: #efefef;
   color: #b3b3b3;
@@ -398,6 +402,11 @@ input.labelauty + label[for=BU] > span[class$=-image]
 input.labelauty + label[for=WAV] > span[class$=-image]
 {
   background-image: url(/img/usac-2016.WAV.logo.png);
+}
+
+input.labelauty + label[for=UCLA] > span[class$=-image]
+{
+  background-image: url(/img/usac-2016.UCLA.logo.png);
 }
 
 input.labelauty + label[for=IND] > span[class$=-image]
