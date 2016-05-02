@@ -85,7 +85,6 @@ Template Name: USAC Elections 2016
                     <% } else { %>
                         <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                     <% } %>
-                    // <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                     <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
@@ -107,7 +106,13 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                    <% if(candidate.slate == "BU") {%>
+                        <img class="slate-logo" src="/img/usac-2015.BU.logo.svg"/>
+                    <% } else if (candidate.slate == "IND") { %>
+                        <img class="slate-logo" src="/img/usac-2015.IND.logo.svg"/>
+                    <% } else { %>
+                        <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                    <% } %>
                     <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
