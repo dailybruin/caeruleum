@@ -162,8 +162,8 @@ Template Name: USAC Elections 2016
             <li class="active"><a href="#profiles">Profiles</a></li>
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
-            <!--<li><a href="#polls">Polls</a></li>
-            <li><a href="#results">Results</a></li>
+            <li><a href="#polls">Polls</a></li>
+            <!--<li><a href="#results">Results</a></li>
             <li><a href="#news">News</a></li>-->
         </ul>
       </section>
