@@ -78,8 +78,13 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-9 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
-                    <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
+                       <% if(candidate.slate == "BU") {%>
+                            <img class="slate-logo" src="/img/usac-2015.BU.logo.svg"/>
+                        <% } else if (candidate.slate == "IND") { %>
+                            <img class="slate-logo" src="/img/usac-2015.IND.logo.svg"/>
+                        <% } else { %>
+                            <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                        <% } %>                    <h2 class="endorsed-name" style="vertical-align:middle;"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
@@ -100,8 +105,13 @@ Template Name: USAC Elections 2016
                    <img src="<%- candidate.mug %>"/>
                 </div>
                 <div class="small-10 columns">
-                    <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
-                    <h2 class="notendorsed-name"><%- candidate.name %></h2>
+                       <% if(candidate.slate == "BU") {%>
+                            <img class="slate-logo" src="/img/usac-2015.BU.logo.svg"/>
+                        <% } else if (candidate.slate == "IND") { %>
+                            <img class="slate-logo" src="/img/usac-2015.IND.logo.svg"/>
+                        <% } else { %>
+                            <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                        <% } %>                    <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
@@ -120,8 +130,13 @@ Template Name: USAC Elections 2016
         <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
             <% if(candidate.position != "REF") {%>
-                <img class="results slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
-            <% } %>
+                       <% if(candidate.slate == "BU") {%>
+                            <img class="slate-logo" src="/img/usac-2015.BU.logo.svg"/>
+                        <% } else if (candidate.slate == "IND") { %>
+                            <img class="slate-logo" src="/img/usac-2015.IND.logo.svg"/>
+                        <% } else { %>
+                            <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
+                        <% } %>            <% } %>
             <h2 class="results-name"><%- candidate.name %></h2>
             <% if(candidate.position != "Gen-Rep") {%>
                 <p class="results-percent"><%- candidate.percent %>% of the vote</p>
