@@ -145,8 +145,6 @@ function scrollFunction() {
 		content = ".element.violation";
 	else if (currentContainer == "endorsements")
 		content = ".endorsements-content";
-	else if (currentContainer == "polls")
-		content = ".polls-content");
 	else
 		return;  // No scroll highlight for news&result
 	$(content).each(function(){
