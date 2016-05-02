@@ -145,6 +145,8 @@ function scrollFunction() {
 		content = ".element.violation";
 	else if (currentContainer == "endorsements")
 		content = ".endorsements-content";
+	else if (currentContainer == "polls")
+		content = ".polls-content");
 	else
 		return;  // No scroll highlight for news&result
 	$(content).each(function(){
@@ -174,7 +176,7 @@ function switchSection(section) {
 	currentContainer = section;
 	$("." + currentContainer + "-container").show();
  
-	if (currentContainer === "endorsements") {
+	if (currentContainer === "endorsements" || currentContainer === "polls") {
 		$("#filter").hide();
 	} else {
 		$("#filter").show();
