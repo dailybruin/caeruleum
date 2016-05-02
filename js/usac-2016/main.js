@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("violations");
 		else if (hash.indexOf("#news") > -1)
 			switchSection("news");
+		else if (hash.indexOf("#polls") > -1)
+			switchSection("polls");
     });
 
 	setSidebar();
