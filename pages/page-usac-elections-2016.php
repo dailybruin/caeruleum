@@ -111,7 +111,8 @@ Template Name: USAC Elections 2016
                             <img class="slate-logo" src="/img/usac-2015.IND.logo.svg"/>
                         <% } else { %>
                             <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
-                        <% } %>                    <h2 class="notendorsed-name"><%- candidate.name %></h2>
+                        <% } %>                    
+                        <h2 class="notendorsed-name"><%- candidate.name %></h2>
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
@@ -165,8 +166,8 @@ Template Name: USAC Elections 2016
             <li class="active"><a href="#profiles">Profiles</a></li>
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
-            <!--<li><a href="#polls">Polls</a></li>
-            <li><a href="#results">Results</a></li>
+            <li><a href="#polls">Polls</a></li>
+            <!--<li><a href="#results">Results</a></li>
             <li><a href="#news">News</a></li>-->
         </ul>
       </section>
