@@ -328,6 +328,9 @@ Template Name: USAC Elections 2016
             <p class="byline">BY RUPAN BHARANIDARAN, JODUTT BASWARI AND NICHOLAS YU</p>
             <p>Students can vote to increase their quarterly fees to support different referenda in the upcoming undergraduate student government election. The four referenda on the ballot this year aim to fund social justice programs, sustainability efforts, student wellness initiatives and UCLA Student Media. All fees will be adjusted for inflation.</p>
             <p>For a referendum to pass, at least 20 percent of the student body must vote in the USAC election and the majority out of those who vote must vote in favor of the referendum. Voting begins on MyUCLA on Monday, and the polls will close Friday. The USAC Election Board will announce results that night at 9 p.m.</p>
+            
+            <h1 class="referendum-title">The Green Initiative Fund Referendum</h1>
+            <p>The Green Initiative Fund Referendum, a referendum passed in 2008 but set to expire in 2018, funds projects promoting environmental sustainability on campus, such as the JazzReggae Festival and Ecochella. The revised language of the referendum on the ballot will remove the expiration date and allow the referendum to exist indefinitely. The referendum, if passed, would maintain the current cost of $4.80 per quarter.</p>
             <a href="http://www.socialjusticebruins.com/">
                 <h1 class="referendum-title">Social Justice Referendum of 2016</h1>
             </a>
@@ -336,8 +339,7 @@ Template Name: USAC Elections 2016
                 <h1 class="referendum-title">#UCLAWellness Referendum</h1>
             </a>
             <p>The #UCLAwellness Referendum aims to fund three undergraduate student government offices, UCLA Counseling and Psychological Services, or CAPS, and the USAC Contingency Programming Fund, a fund to which student groups and student government offices can apply to. The referendum, if passed, would cost each undergraduate student $6 per quarter in 2017, $12 per quarter in 2018 and $18 per quarter beginning fall 2019.</p>
-            <h1 class="referendum-title">The Green Initiative Fund Referendum</h1>
-            <p>The Green Initiative Fund Referendum, a referendum passed in 2008 but set to expire in 2018, funds projects promoting environmental sustainability on campus, such as the JazzReggae Festival and Ecochella. The revised language of the referendum on the ballot will remove the expiration date and allow the referendum to exist indefinitely. The referendum, if passed, would maintain the current cost of $4.80 per quarter.</p>
+            
             <a href="http://campaign.dailybruin.com/">
                 <h1 class="referendum-title">The Daily Bruin and Bruinwalk.com Referendum</h1>
             </a>
