@@ -14,6 +14,29 @@ body {
     margin-bottom: 2rem;
 }
 
+#referenda-top-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-content {
+  max-width: 800px;
+  width: 90vw;
+  margin: auto;
+}
+
+h1.referendum-title {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+#ref-last-p {
+  margin-bottom: 1rem;
+}
+
 .flickity-slider {
   position: absolute;
   width: 100%;

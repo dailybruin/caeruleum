@@ -164,6 +164,7 @@ Template Name: USAC Elections 2016
         <!-- TOP Nav Section -->
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
+            <li><a href="#referenda">Referenda</a></li>
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
             <li><a href="#polls">Polls</a></li>
@@ -312,13 +313,38 @@ Template Name: USAC Elections 2016
             <!-- VIOLATIONS PAGE IS HERE  -->
             <div class="usac-section violations-container" id="violations-content">
             </div>
-            <!-- POLLS PAGE IS HERE  -->
-            <div class="usac-section polls-container" id="polls-content">
-            <iframe src="https://docs.google.com/a/media.ucla.edu/forms/d/17_iGMfm_Jz7pDHbBhWAxcSc3NcVDYI25Py9g4SCV9Zc/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
     <!-- MAIN CONTENT  DIV END  -->
         </div>
     <!-- PROFILES/VIOLATIONS/ENDORSEMENTS -->
+    </div>
+    <!-- POLLS PAGE IS HERE  -->
+    <div class="usac-section polls-container" id="polls-content">
+        <iframe src="https://docs.google.com/a/media.ucla.edu/forms/d/17_iGMfm_Jz7pDHbBhWAxcSc3NcVDYI25Py9g4SCV9Zc/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    <!-- REFERENDA PAGE IS HERE -->
+    <div class="usac-section referenda-container" id="referenda-container">
+        <div class="article-content">
+            <h1 id="referenda-top-title">Students to vote on four referenda during election week</h1>
+            <p class="byline">BY RUPAN BHARANIDARAN, JODUTT BASWARI AND NICHOLAS YU</p>
+            <p>Students can vote to increase their quarterly fees to support different referenda in the upcoming undergraduate student government election. The four referenda on the ballot this year aim to fund social justice programs, sustainability efforts, student wellness initiatives and UCLA Student Media. All fees will be adjusted for inflation.</p>
+            <p>For a referendum to pass, at least 20 percent of the student body must vote in the USAC election and the majority out of those who vote must vote in favor of the referendum. Voting begins on MyUCLA on Monday, and the polls will close Friday. The USAC Election Board will announce results that night at 9 p.m.</p>
+            <a href="http://www.socialjusticebruins.com/">
+                <h1 class="referendum-title">Social Justice Referendum of 2016</h1>
+            </a>
+            <p>The Social Justice Referendum of 2016 aims to increase funding for a variety of retention and outreach programs, including Community Programs Office-affiliated groups, the Academic Advancement Program and the Academic Affairs Commission, among others. It also aims to keep the John Wooden Center open 24 hours per day. The referendum, if passed, would cost $24.99 per quarter for each undergraduate student.</p>
+            <a href="http://www.bruinwellness.com/">
+                <h1 class="referendum-title">#UCLAWellness Referendum</h1>
+            </a>
+            <p>The #UCLAwellness Referendum aims to fund three undergraduate student government offices, UCLA Counseling and Psychological Services, or CAPS, and the USAC Contingency Programming Fund, a fund to which student groups and student government offices can apply to. The referendum, if passed, would cost each undergraduate student $6 per quarter in 2017, $12 per quarter in 2018 and $18 per quarter beginning fall 2019.</p>
+            <h1 class="referendum-title">The Green Initiative Fund Referendum</h1>
+            <p>The Green Initiative Fund Referendum, a referendum passed in 2008 but set to expire in 2018, funds projects promoting environmental sustainability on campus, such as the JazzReggae Festival and Ecochella. The revised language of the referendum on the ballot will remove the expiration date and allow the referendum to exist indefinitely. The referendum, if passed, would maintain the current cost of $4.80 per quarter.</p>
+            <a href="http://campaign.dailybruin.com/">
+                <h1 class="referendum-title">The Daily Bruin and Bruinwalk.com Referendum</h1>
+            </a>
+            <p id="ref-last-p">The Daily Bruin and Bruinwalk.com Referendum aims to fund the Daily Bruin, Bruinwalk, a professor and course rating website specific to UCLA, and other UCLA Student Media organizations. The referendum, if passed, would cost $3 per quarter.</p>
+            <hr/>
+            <p>Email Bharanidaran at rbharanidaran@dailybruin.com. Email Baswari at jbaswari@dailybruin.com. Email Yu at nyu1@media.ucla.edu.</p>
+        </div>
     </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
@@ -505,6 +531,7 @@ Template Name: USAC Elections 2016
         <?php endforeach; ?>
         </div>
     </div>
-</div></div>
+    </div>
+</div>
 
 <?php get_footer(); ?>

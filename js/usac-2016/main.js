@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("news");
 		else if (hash.indexOf("#polls") > -1)
 			switchSection("polls");
+		else if (hash.indexOf("#referenda") > -1)
+			switchSection("referenda");
     });
 
 	setSidebar();
@@ -174,7 +176,7 @@ function switchSection(section) {
 	currentContainer = section;
 	$("." + currentContainer + "-container").show();
  
-	if (currentContainer === "endorsements" || currentContainer === "polls") {
+	if (currentContainer === "endorsements" || currentContainer === "polls" || currentContainer === "referenda") {
 		$("#filter").hide();
 	} else {
 		$("#filter").show();
