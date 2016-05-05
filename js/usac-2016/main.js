@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var violationsdata = "https://spreadsheets.google.com/feeds/list/1MXr_Y4RX8BEP_aBvr02_pEFNtWJAeTqfloOjQSWn6ys/od6/public/values?alt=json";
 	$.getJSON(violationsdata, function(json) {
 		var data = clean_google_sheet_json(json);
-		compile_and_insert_html('#violations_main_template', '#violations-content', data);
+		compile_and_insert_html('#violations_main_template', '#violations-content', data.reverse());
 		compile_and_insert_html('#violations_sidebar_template', '#violations-sidebar', data);
 	});
  
