@@ -168,8 +168,8 @@ Template Name: USAC Elections 2016
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
             <li><a href="#polls">Polls</a></li>
-            <!--<li><a href="#results">Results</a></li>
-            <li><a href="#news">News</a></li>-->
+            <!--<li><a href="#results">Results</a></li>-->
+            <li><a href="#news">News</a></li>
         </ul>
       </section>
     </nav>
@@ -490,12 +490,6 @@ Template Name: USAC Elections 2016
        
     </div>
     <div class="usac-section news-container">
-         <div class="row">
-            <div class="results-gallery gallery">
-            </div>
-            <p class="caption" id="results-gallery-caption">&nbsp;</p>
-        </div> 
-
         <h1 id="news-title">USAC Election Coverage</h1>
         <div id="stories">
             <?php
