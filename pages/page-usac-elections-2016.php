@@ -138,7 +138,7 @@ Template Name: USAC Elections 2016
                         <% } else { %>
                             <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                         <% } %>            <% } %>
-            <h2 class="results-name"><%- candidate.name %>!</h2>
+            <h2 class="results-name"><%- candidate.name %></h2>
              <p class="results-percent"><%- candidate.percent %>% of the vote</p>
           <!--  <% if(candidate.position != "Gen-Rep") {%>-->
                
