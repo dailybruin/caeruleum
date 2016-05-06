@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			switchSection("polls");
 		else if (hash.indexOf("#referenda") > -1)
 			switchSection("referenda");
+		else
+			switchSection("results");
     });
 
 	setSidebar();
