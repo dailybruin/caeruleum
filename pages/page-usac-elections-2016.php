@@ -168,7 +168,7 @@ Template Name: USAC Elections 2016
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
             <li><a href="#polls">Polls</a></li>
-            <!--<li><a href="#results">Results</a></li>-->
+            <!--<li><a href="#results">Results</a></li> -->
             <li><a href="#news">News</a></li>
         </ul>
       </section>
@@ -350,7 +350,8 @@ Template Name: USAC Elections 2016
     </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
-        <div class="row results-video-container">
+        <!-- VIDEO IS HERE -->
+        <!--<div class="row results-video-container">
             <div class="medium-6 columns">
             <div class="flex-video widescreen">
                 <iframe  src="https://www.youtube.com/embed/G88kSCCxZU8" frameborder="0" allowfullscreen></iframe>
@@ -361,7 +362,8 @@ Template Name: USAC Elections 2016
                 <iframe  src="https://www.youtube.com/embed/qqDqmPoeJpg" frameborder="0" allowfullscreen></iframe>
             </div>
             </div>
-        </div>
+        </div>-->
+
         <div class="results-head row">
             <h1 id="news-title">2016-17 USAC COUNCILMEMBERS</h1>
         </div>
@@ -478,14 +480,38 @@ Template Name: USAC Elections 2016
                     <p class="results-percent">--%</p>
                 </div>
             </li>
-            <li id="results-REF">
-                <h2 class="results-position">REFERENDUM</h2>
+            <li id="results-GIF">
+                <h2 class="results-position">The Green Initiative Fund Referendum</h2>
                 <div class="results-content">
                     <img src="http://placehold.it/200x300"/>
                     <p class="results-name">Pending</p>
                     <p class="results-percent">--%</p>
                 </div>
             </li>
+            <li id="results-SJR">
+                <h2 class="results-position">Social Justice Referendum of 2016</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-WELL">
+                <h2 class="results-position">#UCLAwellness Referendum</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>
+            <li id="results-DB">
+                <h2 class="results-position">The Daily Bruin and Bruinwalk.com Referendum</h2>
+                <div class="results-content">
+                    <img src="http://placehold.it/200x300"/>
+                    <p class="results-name">Pending</p>
+                    <p class="results-percent">--%</p>
+                </div>
+            </li>                                    
         </ul>
        
     </div>
