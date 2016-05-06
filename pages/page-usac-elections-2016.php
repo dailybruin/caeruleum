@@ -130,7 +130,7 @@ Template Name: USAC Elections 2016
     <% candidate = rows; %>
         <img id="results-mug" src="<%- candidate.mug %>"/>
         <div class="row result-nameslate">
-            <% if(candidate.position != "REF") {%>
+            <% if(candidate.position !== "GIF" && candidate.position !== "DB" && candidate.position !== "SJR" && candidate.position !== "WELL") {%>
                        <% if(candidate.slate == "BU") {%>
                             <img class="slate-logo" src="/img/usac-2015.BU.logo.svg"/>
                         <% } else if (candidate.slate == "IND") { %>
@@ -138,10 +138,11 @@ Template Name: USAC Elections 2016
                         <% } else { %>
                             <img class="slate-logo" src="/img/usac-2016.<%- candidate.slate %>.logo.png"/>
                         <% } %>            <% } %>
-            <h2 class="results-name"><%- candidate.name %></h2>
-            <% if(candidate.position != "Gen-Rep") {%>
-                <p class="results-percent"><%- candidate.percent %>% of the vote</p>
-            <% } %>
+            <h2 class="results-name"><%- candidate.name %>!</h2>
+             <p class="results-percent"><%- candidate.percent %>% of the vote</p>
+          <!--  <% if(candidate.position != "Gen-Rep") {%>-->
+               
+           <!-- <% } %>-->
         </div>
 </script>
 
