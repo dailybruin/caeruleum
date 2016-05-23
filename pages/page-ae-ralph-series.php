@@ -43,7 +43,7 @@ Template Name: A&E Ralph Series
     </div>
     <div class="row">
       <div class="large-6 columns">
-        <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.JHan_.PicB_-640x4341.jpg" />
+        <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.JHan_.PicB_-640x434.jpg" />
       </div>
       <div class="large-6 columns">
         <figcaption class="caption wp-caption-text">
@@ -69,7 +69,7 @@ Template Name: A&E Ralph Series
     <div class="row image-snippet full-width">
       <div class="large-6 columns">
         <div class = "row">
-          <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.JHan_.PicA_-215x3001.jpg" />
+          <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.JHan_.PicA_-215x300.jpg" />
         </div>
         <div class = "row">
           <figcaption class="caption wp-caption-text">
@@ -153,7 +153,7 @@ Template Name: A&E Ralph Series
     </div>
     <div class="row">
       <div class="large-6 columns">
-        <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.ZH_-640x4161.jpg" />
+        <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.ZH_-640x416.jpg" />
       </div>
       <div class="large-6 columns">
         <figcaption class="caption wp-caption-text">
@@ -185,7 +185,7 @@ Template Name: A&E Ralph Series
     <div class="row image-snippet full-width">
       <div class="large-6 columns">
         <div class = "row">
-          <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.ZH_.PicA_-300x2001.jpg"  />
+          <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphs.ZH_.PicA_-300x200.jpg"  />
         </div>
         <div class="row">
           <figcaption class="caption wp-caption-text">
@@ -256,7 +256,7 @@ Template Name: A&E Ralph Series
     </div>
     <div class="row">
       <div class="large-6 columns">
-        <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli.JH_-640x4261.jpg" />
+        <img class="title-picture" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli.JH_-640x426.jpg" />
       </div>
       <div class="large-6 columns">
         <figcaption class="caption wp-caption-text">
@@ -281,7 +281,7 @@ Template Name: A&E Ralph Series
     <div class="row image-snippet full-width">
       <div class="large-6 columns">
         <div class = "row">
-          <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli2.JH_-300x2001.jpg" />
+          <img class = "center-image" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli2.JH_-300x200.jpg" />
         </div>
         <div class = "row">
           <figcaption class="caption wp-caption-text">
@@ -335,8 +335,8 @@ Template Name: A&E Ralph Series
     </p>
 
     <div class="row image-snippet">
-      <img style="margin-left:14%;" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli5.JH_-300x2001.jpg" />
-      <img style="margin-right:12%;" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli3.JH_-300x2001.jpg" />
+      <img style="margin-left:14%;" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli5.JH_-300x200.jpg" />
+      <img style="margin-right:12%;" src="http://dailybruin.com/images/2016/01/web.ae_.ralphsdeli3.JH_-300x200.jpg" />
       <figcaption class="caption wp-caption-text center-text">
         Photos taken by: (Jennifer Hu/Daily Bruin)
       </figcaption>
@@ -372,7 +372,7 @@ Template Name: A&E Ralph Series
     </div>
     <div class="row">
       <div class="large-6 columns">
-        <img class="title-picture4" src="http://dailybruin.com/images/2016/02/web.news_.sushi_.JST_-640x3601.jpg" />
+        <img class="title-picture4" src="http://dailybruin.com/images/2016/02/web.news_.sushi_.JST_-640x360.jpg" />
       </div>
       <div class="large-6 columns">
         <figcaption class="caption wp-caption-text">
