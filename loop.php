@@ -62,7 +62,7 @@
         $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorial-cartoons')->term_id  );
         $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorials')->term_id  );
         $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('community')->term_id  );
-        $side_names = array("Our Two Cents", "Latest Editorial Cartoons", "From the Editorial Board", "From the Community");
+        $side_names = array( "Latest Editorial Cartoons", "From the Editorial Board", "From the Community");
         $side_args = array($first_side,$second_side,$third_side,$fourth_side);
         break;
       case "A&amp;E":
