@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
   <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 
   <?php if (current_theme_supports('bootstrap-responsive')) { ?><meta name="viewport" content="width=device-width, initial-scale=1.0"><?php } ?>
@@ -18,7 +18,7 @@
   <link href='https://cdn.jsdelivr.net/animatecss/3.4.0/animate.min.css' rel='stylesheet'/>
   <!--<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-  
+
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
@@ -36,7 +36,7 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  
+
   <link rel="apple-touch-icon" href="/img/apple-touch-icon-precomposed.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
@@ -49,8 +49,8 @@
 
   <?php roots_head(); ?>
   <?php wp_head(); ?>
-  
-  <!-- Press Plus script -->  
+
+  <!-- Press Plus script -->
   <script type="text/javascript" src="http://s.ppjol.net/pp.js">{
     'zone':"qnbBZ63hK_pL2086YoKj3J",
     'mode':"meter",
@@ -66,6 +66,14 @@
   <?php endif; ?>
     <?php $excerpt = wp_trim_words(($post->post_content),30)?>
     <meta property="og:description" content="<?php echo $excerpt; ?>"/>
+    <?php $postUrl = get_permalink(); ?>
+  <?php if($postUrl): ?>
+    <meta property="og:url" content="<?php echo $postUrl; ?>"/>
+  <?php endif; ?>
+    <?php $postTitle = get_the_title( $post->ID ); ?>
+  <?php if($postTitle != ""): ?>
+    <meta property="og:title" content="<?php echo $postTitle; ?>"/>
+  <?php endif; ?>
 
 </head>
 
