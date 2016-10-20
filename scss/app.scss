@@ -17,11 +17,13 @@ $db-masthead-description-size: rem-calc(10);
 $db-masthead-subcategory-size: rem-calc(36);
 
 //Entypo Icons
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
+/* welovefonticons.com is out of commission
+ * @import url(http://weloveiconfonts.com/api/?family=entypo);
+ *
+ * [class*="entypo-"]:before {
+ *   font-family: 'entypo', sans-serif;
+ * }
+ */
 
 
 // Daily Bruin additions
