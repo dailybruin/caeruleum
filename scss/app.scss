@@ -1394,4 +1394,6 @@ margin-bottom: 0 !important;
   text-align: center;
 }
 
-@import 'print';
+@media print {
+  @import 'print';
+}
