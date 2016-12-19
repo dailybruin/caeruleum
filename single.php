@@ -1,7 +1,12 @@
+<?php
+if(get_field('db_article_format') === "list"):
+		get_template_part('loop', 'list');
+else : ?>
+
 <?php get_header(); ?>
 
 <div class="row db-story" id="single-post">
-<?php 
+<?php
 $spectrum = false;
 foreach(get_the_category() as $cat)
 {
@@ -24,7 +29,8 @@ else : ?>
 			<?php get_sidebar(); ?>
 </div>
 <?php endif; ?>
-</div><!-- end div#single-post -->      
+</div><!-- end div#single-post -->
 
 
 <?php get_footer(); ?>
+<?php endif; ?>
