@@ -235,7 +235,7 @@
 					-->
 
 						<div class="row db-story below-header">
-							<div class="row hide-for-small">
+							<div class="small-12 columns hide-for-small">
 								<?php wp_nav_menu(array('theme_location' => 'top_bar',
 									'menu_class' => '',
 									'container' => '',
