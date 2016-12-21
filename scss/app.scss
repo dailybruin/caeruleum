@@ -752,10 +752,27 @@ figure, figure.alignnone {
 #topMenu > li span:before {
   display: inline-block;
   font-family: FontAwesome;
-    margin-right: 6px;
-    font-weight: normal;
-    font-size: 0.85rem;
-    width: 16px;
+  margin-right: 6px;
+  font-weight: normal;
+  font-size: 0.85rem;
+  width: 16px;
+}
+
+#topBar {
+  display: table;
+  margin: 0 auto 0.3rem;
+  list-style: none;
+  li {
+    display: inline;
+    margin: 0 1.2rem;
+    a {
+      font-size: 0.8rem;
+      color: black;
+    }
+    a:hover {
+      color: #0080C6;
+    }
+  }
 }
 
 .menu-news span:before {
