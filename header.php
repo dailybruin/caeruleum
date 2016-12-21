@@ -64,16 +64,21 @@
   <?php else: ?>
     <meta property="og:image" content="http://dailybruin.com/images/2014/01/facebook_default.jpg" />
   <?php endif; ?>
-  <?php $excerpt = wp_trim_words(($post->post_content),30)?>
-  <meta property="og:description" content="<?php echo $excerpt; ?>"/>
+
   <?php $postUrl = get_permalink(); ?>
   <?php if($postUrl && !(is_front_page())): ?>
     <meta property="og:url" content="<?php echo $postUrl; ?>"/>
+    <?php $excerpt = wp_trim_words(($post->post_content),30)?>
+    <meta property="og:description" content="<?php echo $excerpt; ?>"/>
   <?php endif; ?>
-    <?php $postTitle = get_the_title( $post->ID ); ?>
+
+  <?php $postTitle = get_the_title( $post->ID ); ?>
   <?php if($postTitle != "" && !(is_front_page())): ?>
     <meta property="og:title" content="<?php echo $postTitle; ?>"/>
   <?php endif; ?>
+
+  <!-- Meow cards -->
+
 
 </head>
 

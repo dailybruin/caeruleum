@@ -7,7 +7,7 @@
 
 <?php /* Start loop */ ?>
 
-<?php 
+<?php
     $categoryTitle = single_cat_title('',false);
     $multSection = false;
     $hasSidebar = true;
@@ -58,12 +58,11 @@
       case "Opinion":
         $sectionTag = "db-story-op";
         $section_cat = $opinion_cat;
-        $first_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('two-cents')->term_id );
-        $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorial-cartoons')->term_id  );
-        $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorials')->term_id  );
-        $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('community')->term_id  );
+        $first_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorial-cartoons')->term_id  );
+        $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorials')->term_id  );
+        $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('community')->term_id  );
         $side_names = array( "Latest Editorial Cartoons", "From the Editorial Board", "From the Community");
-        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        $side_args = array($first_side,$second_side,$third_side);
         break;
       case "A&amp;E":
         $sectionTag = "db-story-ae";
@@ -110,7 +109,7 @@
                       break;
                   }
   ?>
-<?php 
+<?php
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
 
 <?php if(!$multSection): ?>
@@ -126,13 +125,13 @@
       $args = array( 'numberposts' => 1, 'tag' => $sectionTag );
       $lastposts = get_posts( $args );
 
-      foreach( $lastposts as $post ) :  
-        setup_postdata($post); 
+      foreach( $lastposts as $post ) :
+        setup_postdata($post);
         $excludePostId = get_the_ID(); ?>
       <div class="db-story-c1">
         <span class="db-section-date">
-          <h4><?php the_category(', ');?></h4> 
-          <h4>|</h4> 
+          <h4><?php the_category(', ');?></h4>
+          <h4>|</h4>
           <h5><?php the_time('F j, g:i a');?> </h5>
         </span>
         <h2>
@@ -152,7 +151,7 @@
         </p>
       </div>
       <hr style="border-top: medium double lightgrey;">
-    <?php endforeach; ?>   
+    <?php endforeach; ?>
   <?php endif; ?>
     <?php while (have_posts()) : the_post(); ?>
     <?php if ($post->ID !== $excludePostId): ?>
@@ -165,12 +164,12 @@
           <?php endif; ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
               <span class="db-section-date">
-                      <h4><?php the_category(', ');?></h4> 
-                      <h4>|</h4> 
+                      <h4><?php the_category(', ');?></h4>
+                      <h4>|</h4>
                       <h5><?php the_time('F j, g:i a');?> </h5>
                       </span>
               <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-          
+
           <div class="entry-content">
             <?php the_audio(); ?>
             <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
@@ -186,10 +185,10 @@
       <hr>
     <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
-    </div> 
+    </div>
     <?php if ($hasSidebar): ?>
     <div class="medium-4 columns db-section-side hide-for-small">
-      
+
       <?php
       foreach( $side_args as $index => $args ) : ?>
       <?php if($name_flare){
@@ -201,8 +200,8 @@
       <h4 style="color:<?php echo $name_flare[$index] ?>!important"><?php echo $side_names[$index] ?></h4>
       <?php
       $lastposts = get_posts( $args );
-      foreach( $lastposts as $indexP => $post ) :  
-        setup_postdata($post); 
+      foreach( $lastposts as $indexP => $post ) :
+        setup_postdata($post);
       if ($indexP != 0) : ?>
       <hr>
     <?php endif ?>
@@ -237,14 +236,14 @@
             </div>
             <div class="medium-8 small-12 columns" style="padding-left:0">
           <?php endif; ?>
-          
+
               <span class="db-section-date">
-                      <h4><?php the_category(', ');?></h4> 
-                      <h4>|</h4> 
+                      <h4><?php the_category(', ');?></h4>
+                      <h4>|</h4>
                       <h5><?php the_time('F j, g:i a');?> </h5>
                       </span>
               <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-          
+
           <div class="entry-content">
             <?php the_audio(); ?>
         <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
@@ -252,7 +251,7 @@
         <?php if(has_post_thumbnail() && has_post_thumbnail_caption()): ?>
         <p class="db-image-caption">Photo: <?php the_post_thumbnail_caption() ?>
                           </p>
-          <?php endif; ?>  
+          <?php endif; ?>
           <?php if(has_post_thumbnail()): ?>
           </div>
             </div>
@@ -260,7 +259,7 @@
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
             </div>
           <?php endif; ?>
-        
+
         </article>
       </div>
       <hr>
@@ -272,7 +271,7 @@
 <?php else: ?>
   <? if ($categoryTitle == "Video"): ?>
   <div class="row">
-    <?php $i=0; 
+    <?php $i=0;
           $j=0;
     while (have_posts()) : the_post(); ?>
     <?php if ($j==0): ?>
@@ -282,8 +281,8 @@
         </h2>
           <div class="db-story-m1">
             <span class="db-section-date">
-              <h4><?php the_category(', ');?></h4> 
-              <h4>|</h4> 
+              <h4><?php the_category(', ');?></h4>
+              <h4>|</h4>
               <h5><?php the_time('F j, g:i a');?> </h5>
             </span>
               <?php the_content(); ?>
@@ -306,8 +305,8 @@
                 <div class="row" style="padding-left:0">
             <?php endif; ?>
                 <span class="db-section-date">
-                        <h4><?php the_category(', ');?></h4> 
-                        <h4>|</h4> 
+                        <h4><?php the_category(', ');?></h4>
+                        <h4>|</h4>
                         <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <?php if(has_post_thumbnail()): ?>
@@ -326,7 +325,7 @@
             <?php endif; ?>
             </article>
             </div>
-          <?php if(++$i > 2): 
+          <?php if(++$i > 2):
             $i=0;?>
             </div>
           <?php endif; ?>
@@ -336,14 +335,14 @@
   </div>
 <? elseif ($categoryTitle == "Radio"): ?>
   <div class="row">
-    <?php $i=0; 
+    <?php $i=0;
           $j=0;
     while (have_posts()) : the_post(); ?>
     <?php if ($j==0): ?>
       <div class="db-story-c1">
         <span class="db-section-date">
-          <h4><?php the_category(', ');?></h4> 
-          <h4>|</h4> 
+          <h4><?php the_category(', ');?></h4>
+          <h4>|</h4>
           <h5><?php the_time('F j, g:i a');?> </h5>
         </span>
         <h2 class="db-large-title">
@@ -379,8 +378,8 @@
                 <div class="row" style="padding-left:0">
             <?php endif; ?>
                 <span class="db-section-date">
-                        <h4><?php the_category(', ');?></h4> 
-                        <h4>|</h4> 
+                        <h4><?php the_category(', ');?></h4>
+                        <h4>|</h4>
                         <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
               <?php if(has_post_thumbnail()): ?>
@@ -399,7 +398,7 @@
             <?php endif; ?>
             </article>
             </div>
-          <?php if(++$i > 1): 
+          <?php if(++$i > 1):
             $i=0;?>
             </div>
           <?php endif; ?>
@@ -412,30 +411,30 @@
 
 
 </br>
-<?php        
-$total_pages = $wp_query->max_num_pages;  
-if ($total_pages > 1) {  
+<?php
+$total_pages = $wp_query->max_num_pages;
+if ($total_pages > 1) {
   $current_page = max(1, get_query_var('paged'));  ?>
 
   <?php
 $big = 999999999; // need an unlikely integer
    $pages = paginate_links(array(
       'posts_per_page' => 7,
-      'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),  
-      'format' => '/page/%#%',  
-      'current' => $current_page,  
-      'total' => $total_pages,  
-      'prev_text' => '&laquo; Prev',  
-      'next_text' => 'Next &raquo;'  
+      'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+      'format' => '/page/%#%',
+      'current' => $current_page,
+      'total' => $total_pages,
+      'prev_text' => '&laquo; Prev',
+      'next_text' => 'Next &raquo;'
     )); ?>
 
  <?php if($paged == 1 && $hasSidebar ): ?>
-<div class="large-8 columns db-pagination pagination-centered"> 
+<div class="large-8 columns db-pagination pagination-centered">
 <?php else: ?>
-  <div class="large-12 columns db-pagination pagination-centered"> 
+  <div class="large-12 columns db-pagination pagination-centered">
   <?php endif; ?>
     <?php echo $pages; ?>
   </div><!-- end div.pager -->
 <?php
-} 
+}
 ?>
