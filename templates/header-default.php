@@ -242,6 +242,7 @@
 									'menu_id' => 'topBar',
 									)); ?>
 							</div>
+							<hr style="border-top: medium double lightgrey;"/>
 
 							<div class="small-6 columns hide-for-small" style="margin:0;">
 								<?php ob_start();
