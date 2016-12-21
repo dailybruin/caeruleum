@@ -32,6 +32,7 @@ function roots_setup() {
     'in_the_news' => __('In the News', 'db'),
     'about_footer' => __('About','db'),
     'photoblog_sidebar' => __('Photoblog Sidebar', 'db'),
+    'top_bar' => __('Top Bar', 'db'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
