@@ -38,7 +38,7 @@
 					<div class="db-top-date text-center hide-for-small">
 						<?php date_default_timezone_set('America/Los_Angeles'); ?>
 						<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
-					</div> 
+					</div>
 				</br>
 			</nav>
 		</div>
@@ -103,18 +103,18 @@
 
 			<div class="db-nav-links">
 				<a href="#" class="close-reveal-modal text-right"><i class="fa fa-angle-left"></i></a>
-				<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 
+				<?php wp_nav_menu(array('theme_location' => 'primary_navigation',
 					'menu_class' => '',
 					'container' => '',
 					'menu_id' => 'topMenu',
 					'link_before' => '<span></span>'
 					)); ?>
-				<?php wp_nav_menu(array('theme_location' => 'top_navigation', 
+				<?php wp_nav_menu(array('theme_location' => 'top_navigation',
 					'menu_class' => '',
 					'container' => '',
 					'menu_id' => 'topMenu',
 					)); ?>
-				<?php wp_nav_menu(array('theme_location' => 'share_footer', 
+				<?php wp_nav_menu(array('theme_location' => 'share_footer',
 					'menu_class' => '',
 					'container' => '',
 					'menu_id' => 'topMenu',
@@ -178,12 +178,12 @@
 							width: 140px;
 						}
 		        #war-twitter-badge {
-		          display: inline-block;  
+		          display: inline-block;
 		        }
 		        #war-inst-badge {
-		          display: inline-block;  
-		          margin: 0;   
-		          bottom: 5px; 
+		          display: inline-block;
+		          margin: 0;
+		          bottom: 5px;
 		        }
 
 		        #war-inst-badge span div {
@@ -193,9 +193,9 @@
 		        }
 
 		        #war-fb-badge {
-		          display: inline-block;  
-		          margin: 0;    
-		          bottom: 5px; 
+		          display: inline-block;
+		          margin: 0;
+		          bottom: 5px;
 		        }
 		        #war-sometext {
 					    margin: 0 0 0.7rem 0;
@@ -217,12 +217,12 @@
 							<div id="war-inst-badge">
 								<span class="ig-follow" data-id="eb43700450" data-handle="dailybruin" data-count="true" data-size="small" data-username="true"></span>
 							</div>
-								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>					
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 								<script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
-						</div> 
+						</div>
 						-->
-						
+
 					<!--
 						<div class="row db-story below-header db-next hide-for-small">
 							<a href="http://campaign.dailybruin.com/">
@@ -233,8 +233,16 @@
 							</a>
 						</div>
 					-->
-						
+
 						<div class="row db-story below-header">
+							<div class="row hide-for-small">
+								<?php wp_nav_menu(array('theme_location' => 'top_bar',
+									'menu_class' => '',
+									'container' => '',
+									'menu_id' => 'topBar',
+									)); ?>
+							</div>
+
 							<div class="small-6 columns hide-for-small" style="margin:0;">
 								<?php ob_start();
 								wp_nav_menu(array('theme_location' => 'in_the_news',

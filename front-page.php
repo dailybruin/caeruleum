@@ -7,7 +7,7 @@
   // db-story-d2, db-story-d3, db-story-ns, db-story-op, db-story-ae,
   // db-story-sp
   $frontPageTags = array('4847','4859','4850','4849','4851','4853','4855','4862','4863','4861','4854','4860','4856','4858','4857','4865');
-    
+
   $news_cat = get_category_by_slug('news')->term_id;
   $ae_cat = get_category_by_slug('arts-entertainment')->term_id;
   $sports_cat = get_category_by_slug('sports')->term_id;
@@ -27,8 +27,8 @@
               </p>
             </div>
             <span class="db-section-date">
-              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-              <h4>|</h4> 
+              <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+              <h4>|</h4>
               <h5><?php the_time('F j, g:i a');?> </h5>
             </span>
             <h2>
@@ -52,8 +52,8 @@
             </div>
             <div class="medium-7 columns small-12">
               <span class="db-section-date">
-                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-                <h4>|</h4> 
+                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+                <h4>|</h4>
                 <h5><?php the_time('F j, g:i a');?> </h5>
               </span>
               <h2>
@@ -65,7 +65,7 @@
               </p>
             </div>
           </div>
-          <?php endforeach; ?>    
+          <?php endforeach; ?>
         </div>
 
             <hr class="show-for-small-only">
@@ -76,8 +76,8 @@
       foreach( $lastposts as $post ) :  setup_postdata($post); ?>
               <div class="db-story-a">
                 <span class="db-section-date">
-                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-                <h4>|</h4> 
+                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+                <h4>|</h4>
                 <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h2>
@@ -94,11 +94,11 @@
             <?php
       $args = array( 'numberposts' => 1, 'tag' => 'db-story-b' );
       $lastposts = get_posts( $args );
-      foreach( $lastposts as $post ) :  setup_postdata($post); ?>  
+      foreach( $lastposts as $post ) :  setup_postdata($post); ?>
               <div class="db-story-b">
                 <span class="db-section-date">
-                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-                <h4>|</h4> 
+                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+                <h4>|</h4>
                 <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h2>
@@ -115,11 +115,11 @@
              <?php
       $args = array( 'numberposts' => 1, 'tag' => 'db-story-d1' );
       $lastposts = get_posts( $args );
-      foreach( $lastposts as $post ) :  setup_postdata($post); ?>  
+      foreach( $lastposts as $post ) :  setup_postdata($post); ?>
               <div class="db-story-d">
                 <span class="db-section-date">
-                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-                <h4>|</h4> 
+                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+                <h4>|</h4>
                 <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h3>
@@ -131,11 +131,11 @@
             <?php
       $args = array( 'numberposts' => 1, 'tag' => 'db-story-d2' );
       $lastposts = get_posts( $args );
-      foreach( $lastposts as $post ) :  setup_postdata($post); ?>  
+      foreach( $lastposts as $post ) :  setup_postdata($post); ?>
               <div class="db-story-e">
                 <span class="db-section-date">
-                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-                <h4>|</h4> 
+                <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+                <h4>|</h4>
                 <h5><?php the_time('F j, g:i a');?> </h5>
                 </span>
                 <h3>
@@ -160,12 +160,12 @@
         $args = array( 'category' => $quadid );
         $i=0;
         $lastposts = get_posts( $args );
-        foreach( $lastposts as $post ) :  setup_postdata($post); 
+        foreach( $lastposts as $post ) :  setup_postdata($post);
         if(++$i > 3) break;?>
                 <div class="db-story-breaking-1 large-12 medium-6 columns">
                   <span class="db-section-date">
-                    <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4> 
-                  <h4>|</h4> 
+                    <h4><a href="<?php the_category_link(get_the_category()); ?>"><?php the_category_text(get_the_category()); ?></a></h4>
+                  <h4>|</h4>
                   <h5><?php the_time('F j, g:i a');?> </h5>
                   </span>
                   <h3>
@@ -182,14 +182,14 @@
         <?php endforeach; ?>
               </div>
               <div class="row db-divide hide-for-medium hide-for-small"></div>
-              
+
               <!--  this used to be a MOJO refer
               <div class="row db-image text-center hide-for-medium hide-for-small">
                 <a href="http://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
               </div> -->
 
               <hr style="margin: 1.5rem 0">
-              
+
               <div class="db-ad">
                 <?php get_template_part('ad','side'); ?>
               </div>
@@ -214,13 +214,13 @@
       $args = array( 'numberposts' => 4, 'tag' => 'db-story-m1' );
       $lastposts = get_posts( $args );
       foreach( $lastposts as $post ) :  setup_postdata($post); ?>
-      <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(250,50) ); 
+      <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(250,50) );
       $url = $thumb['0']; ?>
         <li class="center" data-thumb="<?php echo $url; ?>">
           <!-- 705px x 390px for mult -->
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-mult-full'); ?></a>
           <div class="front-mult">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_category_text_mult(get_the_category()); ?>: 
+            <h2><a href="<?php the_permalink(); ?>"><?php the_category_text_mult(get_the_category()); ?>:
             <?php the_headline(); ?></a></h2>
         </div>
         </li>
@@ -262,7 +262,7 @@
             <div class="large-3 show-for-large-up columns db-classifieds" id="db-classifieds">
               <div class="db-classifieds-header">
                   <h1>Featured Classifieds</h1>
-              </div>              
+              </div>
                 <ul>
               <?php
               if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('test-sidebar') ) :
@@ -344,7 +344,7 @@
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
-                  
+
                 <!-- </div> -->
               </div>
             <?php endforeach; ?>
@@ -383,7 +383,7 @@
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
-                  
+
                 <!-- </div> -->
               </div>
             <?php endforeach; ?>
@@ -408,7 +408,7 @@
             <?php
       $args = array( 'numberposts' => 1, 'tag' => 'db-story-sp' );
       $lastposts = get_posts( $args );
-      foreach( $lastposts as $post ) :  setup_postdata($post); ?>  
+      foreach( $lastposts as $post ) :  setup_postdata($post); ?>
               <div class="db-story-sp row">
         <div class="db-image text-center">
                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-rotator'); ?></a>
@@ -422,10 +422,10 @@
                   </p>
                 <!-- </div> -->
                 <!-- <div class="small-6 columns db-image"> -->
-                  
+
                 <!-- </div> -->
               </div>
-            <?php endforeach; ?>  
+            <?php endforeach; ?>
             <hr>
             <?php
       $args = array( 'numberposts' => 3, 'cat' => $sports_cat, 'tag__not_in' => $frontPageTags );
@@ -478,7 +478,7 @@
             </div>
             </div>
           </div>
-          </br>        
+          </br>
             <div class="db-poll large-4 large-pull-8 columns db-poll hide-for-medium" data-equalizer-watch>
                     <h1>Opinion Poll</h1>
                   <hr>
