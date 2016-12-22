@@ -61,24 +61,37 @@
   <?php if(has_post_thumbnail() && !(is_front_page())) :
     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
     <meta property="og:image" content="<?php echo $url; ?>" />
+    <meta name="twitter:image" content="<?php echo $imageUrl; ?>"/>
   <?php else: ?>
-    <meta property="og:image" content="http://dailybruin.com/images/2014/01/facebook_default.jpg" />
+    <meta property="og:image" content="http://dailybruin.com/images/2016/05/Daily-Bruin-Logo.png" />
+  <?php endif; ?>
+
+  <?php $excerpt = wp_trim_words(($post->post_content),30)?>
+  <?php if($excerpt != "" && !(is_front_page())): ?>
+    <meta property="og:description" content="<?php echo $excerpt; ?>"/>
+    <meta name="twitter:description" content="<?php echo $excerpt; ?>"/>
+  <?php else: ?>
+    <meta property="og:description" content="Independent student newspaper for the University of California, Los Angeles."/>
   <?php endif; ?>
 
   <?php $postUrl = get_permalink(); ?>
   <?php if($postUrl && !(is_front_page())): ?>
     <meta property="og:url" content="<?php echo $postUrl; ?>"/>
-    <?php $excerpt = wp_trim_words(($post->post_content),30)?>
-    <meta property="og:description" content="<?php echo $excerpt; ?>"/>
+  <?php else: ?>
+    <meta property="og:url" content="http://dailybruin.com"/>
   <?php endif; ?>
 
   <?php $postTitle = get_the_title( $post->ID ); ?>
   <?php if($postTitle != "" && !(is_front_page())): ?>
     <meta property="og:title" content="<?php echo $postTitle; ?>"/>
+    <meta name="twitter:title" content="<?php echo $postTitle; ?>"/>
+  <?php else: ?>
+    <meta property="og:title" content="The Daily Bruin"/>
   <?php endif; ?>
 
-  <!-- Meow cards -->
-
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@dailybruin"/>
+  <meta name="twitter:creator" content="@dailybruin"/>
 
 </head>
 
