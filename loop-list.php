@@ -64,170 +64,40 @@
         <div class="col-md-7">
           <div class="cards">
             <ul class="card-list">
-              <li class="card showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 1</strong> of <strong>7</strong>
-                    <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
-              <li class="card not-showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 2</strong> of <strong>7</strong>
-                    <a class="next"href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
-              <li class="card not-showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 3</strong> of <strong>7</strong>
-                    <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
-              <li class="card not-showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 4</strong> of <strong>7</strong>
-                    <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
-              <li class="card not-showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 5</strong> of <strong>7</strong>
-                    <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
-              <li class="card not-showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 6</strong> of <strong>7</strong>
-                    <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
-              <li class="card not-showing">
-                <div class="card-upper">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
-                    <strong>CARD 7</strong> of <strong>7</strong>
-                    <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-                <div class="card-content">
-                  <h1>Throwback Thursday: Tackling the eternal problem of overcrowding on campus</h1>
-                  <p>Students. More students. And even more students.</p>
-                  <p>That’s been the tale of enrollment at UCLA.</p>
-                  <p>The familiar groans of not being able to enroll in a class because the discussion sections fill up; the well-acquainted troubles of not finding a space to sit in class, let alone take notes; the nostalgic memories of not being able to order textbooks in time for class – we’ve all had these moments. In fact, some of us are feeling the heat right now, with the recent surge of admitted freshmen due to the University of California’s pledge to enroll 10,000 more California residents between 2016 and 2019.</p>
-                  <p>But the issue of classroom over-enrollment isn’t unique to the 21st-century UCLA. After all, UCLA was a big place before it, well, became a big place.</p>
-                  <p>A Daily Bruin news story published on Oct. 4, 1967, talks about how due to over-enrollment in lower division classes, the Student Book Department was facing a massive shortage of certain textbooks. According to then-Student Book Department manager, Wallace Ruggeri, heightened lower division class sizes and faculty tardiness in submitting book lists were the reasons for the textbook dilemma.</p>
-                </div>
-                <div class="card-lower">
-                  <p>
-                    <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
-                    <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
-                  </p>
-                </div>
-              </li>
+              <?php if(get_field('list_items')): ?>
+                <?php
+                $size = $i-1;
+                $i = 1
+                ?>
+  	            <?php while(has_sub_field('list_items')): ?>
+                  <?php if ($i === 1): ?>
+                    <li class="card showing">
+                  <?php else: ?>
+                    <li class="card not-showing">
+                  <?php endif ?>
+                      <div class="card-upper">
+                        <p>
+                          <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span></a>
+                          <strong>CARD <?php echo $i?></strong> of <strong><?php echo $size?></strong>
+                          <a class="next" href='#'><span class="glyphicon glyphicon-menu-right"></span></a>
+                        </p>
+                      </div>
+                      <div class="card-content">
+                        <h1><?php the_sub_field('item_title'); ?></h1>
+                        <?php the_sub_field('item_body'); ?>
+                      </div>
+                      <div class="card-lower">
+                        <p>
+                          <a class="last" href='#'><span class="glyphicon glyphicon-menu-left"></span>  last</a>
+                          <a class="next" href='#'>next  <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </p>
+                      </div>
+                    </li>
+
+
+                  <?php $i++ ?>
+                <?php endwhile; ?>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
