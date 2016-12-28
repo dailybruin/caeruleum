@@ -12,8 +12,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/list-style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/vectordiv.js"></script>
-    <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/list-script.js"></script>
+    <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/vectordiv.js'></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/list-script.js"></script>
 
   </head>
   <body>
@@ -26,7 +26,6 @@
     <div class="container-fluid">
     <div class="row">
 
-
       <div class="col-md-3 panel panel-default sidebar1">
         <div class="panel-body">
           <h2><center>Share</center></h2>
@@ -37,44 +36,31 @@
 
         <div class="panel-body">
           <ul id="scrollDiv" class="list scroll-list">
-              <li class="l-item active" id="card1">Monday</li>
-              <li class="l-item" id="card2">Tuesday</li>
-              <li class="l-item" id="card3">Wednesday</li>
-              <li class="l-item" id="card4">Thursday</li>
-              <li class="l-item" id="card5">Friday, I'm in Love</li>
-              <li class="l-item" id="card6">Saturday</li>
-              <li class="l-item" id="card7">Sunday</li>
+            <?php if(get_field('list_items')): ?>
+              <?php $i = 1 ?>
+	            <?php while(has_sub_field('list_items')): ?>
+                <?php if ($i === 1): ?>
+                  <li class="l-item active" id="card1">
+                    <?php the_sub_field('item_title'); ?>
+                  </li>
+                <?php else: ?>
+                  <li class="l-item" id="card<?php echo $i?>">
+                    <?php the_sub_field('item_title'); ?>
+                  </li>
+                <?php endif ?>
+                <?php $i++ ?>
+              <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
         </div>
+
         <div class="panel-body outerscroll" id="scroll-down"><a href="#"><center><span class="glyphicon glyphicon-chevron-down"></span></center></a></div>
-
-
-        <!-- MY UP/DOWN -->
-        <!-- <script>
-         $('#scroll-up').click(function() {
-            event.preventDefault();
-
-
-            $('#scrollDiv').animate({
-              marginTop: "-=10px"
-            }, "fast");
-         });
-
-         $('#scroll-down').click(function() {
-            event.preventDefault();
-            $('#scrollDiv').animate({
-              marginBottom: "+=10px"
-            }, "fast");
-         });
-        </script> -->
-
-
-      </div>
+        </div>
 
 
 <!-- CARDS -->
 
-      <div class="row content"> <!-- TANZEELA ADDED content -->
+      <div class="row content">
         <div class="col-md-7">
           <div class="cards">
             <ul class="card-list">
