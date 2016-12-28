@@ -41,13 +41,11 @@
 	            <?php while(has_sub_field('list_items')): ?>
                 <?php if ($i === 1): ?>
                   <li class="l-item active" id="card1">
-                    <?php the_sub_field('item_title'); ?>
-                  </li>
                 <?php else: ?>
                   <li class="l-item" id="card<?php echo $i?>">
-                    <?php the_sub_field('item_title'); ?>
-                  </li>
                 <?php endif ?>
+                    <?php the_sub_field('item_sidebar_title'); ?>
+                  </li>
                 <?php $i++ ?>
               <?php endwhile; ?>
             <?php endif; ?>
@@ -102,7 +100,6 @@
           </div>
         </div>
       </div>
-
     </div>
     </div>
   </body>
