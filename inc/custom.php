@@ -149,6 +149,7 @@ function add_article_formats()
 	wp_insert_term('Normal','article-format', array('slug' => 'normal'));
 	wp_insert_term('Column','article-format', array('slug' => 'column'));
 	wp_insert_term('Brief', 'article-format', array('slug' => 'brief'));
+  wp_insert_term('List', 'article-format', array('slug' => 'list'));
 }
 add_action('init','add_article_formats', 0);
 
@@ -179,14 +180,14 @@ function title_italic_head($title)
 function the_byline($displayBy=true) {
 	global $post, $authordata, $wpdb;
 	$authorid = $post->post_author;
-		
+
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
 	if(isset($articleFormats[0]))
 		$articleFormat = $articleFormats[0]->slug;
-	
+
 	if(empty($articleFormat) || $articleFormat === 'normal')
 		$articleFormat = get_field('db_article_format');
-		
+
     if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief"
     	|| (get_field('db_article_format') == 'default' && in_array('hide_byline', get_field('db_display_options'))))
             return false;
@@ -196,7 +197,7 @@ function the_byline($displayBy=true) {
 	coauthors_posts_links();
 	$coauthors = ob_get_contents();
 	ob_end_clean();
-	
+
 
 	// Code modified from WordPress core, wp-includes/author-template.php
     $by = "By ";
@@ -210,14 +211,14 @@ function the_byline($displayBy=true) {
 function the_byline_front($displayBy=true) {
 	global $post, $authordata, $wpdb;
 	$authorid = $post->post_author;
-		
+
 	$articleFormats = wp_get_post_terms($post->ID,'article-format');
 	if(isset($articleFormats[0]))
 		$articleFormat = $articleFormats[0]->slug;
-	
+
 	if(empty($articleFormat) || $articleFormat === 'normal')
 		$articleFormat = get_field('db_article_format');
-		
+
     if ( $authorid == 0 || !isset($authorid) || $articleFormat == "brief"
     	|| (get_field('db_article_format') == 'default' && in_array('hide_byline', get_field('db_display_options'))))
             return false;
@@ -227,7 +228,7 @@ function the_byline_front($displayBy=true) {
 	coauthors_posts_links();
 	$coauthors = ob_get_contents();
 	ob_end_clean();
-	
+
 
 	// Code modified from WordPress core, wp-includes/author-template.php
     $by = "By ";
@@ -333,11 +334,11 @@ function remove_db_tags($input) {
 }
 add_filter('the_tags','remove_db_tags');
 
-// Template tag to output multimedia post icons 
+// Template tag to output multimedia post icons
 function multimedia_post_flag( $multimedia_type ) {
 	$icon = "etc";
 	$type = $multimedia_type;
-	
+
 	if($multimedia_type == "photo_gallery") {
 		$icon = "photo";
 		$type = "Photo Gallery";
@@ -366,7 +367,7 @@ function multimedia_post_flag( $multimedia_type ) {
 		$icon = "etc";
 		$type = "Interactive Graphic";
 	}
-	
+
 	$output = "<i class='micon-$icon'></i>";
 	$output .= "<span class='multimedia-title'>$type</span>";
 
@@ -381,11 +382,11 @@ function dequeue_polls_style() {
 
 
 // Remove default WordPress Popular Posts stylesheet
-add_action('wp_head', 'remove_wpp_stylesheet', 1); 
-function remove_wpp_stylesheet() { 
-	global $wp_widget_factory; 
+add_action('wp_head', 'remove_wpp_stylesheet', 1);
+function remove_wpp_stylesheet() {
+	global $wp_widget_factory;
 	if(isset($wp_widget_factory->widgets['WordPressPopularPosts']))
-		remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') ); 
+		remove_action( 'wp_head', array($wp_widget_factory->widgets['WordPressPopularPosts'], 'wpp_print_stylesheet') );
 }
 
 
@@ -405,19 +406,19 @@ function db_nav_menu_filter($items, $args) {
 add_filter('wp_nav_menu_items', 'db_nav_menu_filter', 10, 2);
 
 // Filter Template Hierarchy
-function ww_new_subcat_hierarchy() {   
+function ww_new_subcat_hierarchy() {
 	// TODO: This needs a citation
     $category = get_queried_object();
 
     $parent_id = $category->category_parent;
 
     $templates = array();
-    
+
     if ( $parent_id == 0 ) {
             // Use default values from get_category_template()
             $templates[] = "category-{$category->slug}.php";
             $templates[] = "category-{$category->term_id}.php";
-            $templates[] = 'category.php';          
+            $templates[] = 'category.php';
     } else {
             // Create replacement $templates array
             $parent = get_category( $parent_id );
@@ -429,7 +430,7 @@ function ww_new_subcat_hierarchy() {
             // Parent second
             $templates[] = "category-{$parent->slug}.php";
             $templates[] = "category-{$parent->term_id}.php";
-            $templates[] = 'category.php';  
+            $templates[] = 'category.php';
     }
     return locate_template( $templates );
 }
