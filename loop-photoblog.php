@@ -1,4 +1,4 @@
-<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; 
+<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />';
 // function for parsing img url
 function get_string_between($string, $start, $end){
     $string = ' ' . $string;
@@ -50,7 +50,7 @@ function get_string_between($string, $start, $end){
 						<?php the_title();?>
 					</a>
 				</p>
-			</h2> 
+			</h2>
 
 			<div class="fotorama" data-nav="thumbs" data-height="100%" data-keyboard="true" data-arrows="true" data-click="true" data-trackpad="true" data-swipe="true" data-width="100%">
 				<?php $gallery = get_post_meta($post->ID, 'gallery', true);
@@ -67,13 +67,13 @@ function get_string_between($string, $start, $end){
 
 <br><br>
 
-<h2><p id="photoblog-title"><a>Suggested Galleries</a></p></h2> 
+<h2><p id="photoblog-title"><a>Suggested Galleries</a></p></h2>
 
 <div class="grid-wrapper">
 	<div class="grid">
-		<?php 
+		<?php
 		$categories = get_the_category();
-		foreach ( $categories as $category ) { 
+		foreach ( $categories as $category ) {
 		    if ($category->name == 'Sports Spectrum') {
 		    	$currentPostCategory = $category->name;
 		    	break;
@@ -84,7 +84,7 @@ function get_string_between($string, $start, $end){
 		    	$currentPostCategory = 'A&E Spectrum';
 		    }
 		}
-		
+
 		query_posts(array(
 			'showposts' => 3,
 			'orderby' => 'rand',
@@ -112,12 +112,12 @@ function get_string_between($string, $start, $end){
 				<div id="photoblog-post-block">
 					<a href="<?php the_permalink(); ?>">
 						<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>"
-							style="background-image: url('<?php 
+							style="background-image: url('<?php
 															$picID = get_post_meta($post->ID, 'singlepic', true);
 															$image = do_shortcode('[singlepic id='.$picID.']');
                                                             $parsed = get_string_between($image, 'data-src="', PHP_EOL);
 											            	$parsed = str_replace("\"", "", $parsed);
-											            	echo $parsed;  
+											            	echo $parsed;
 														?>');">
 						</div>
 					</a>
@@ -136,7 +136,7 @@ function get_string_between($string, $start, $end){
 							WW/LA <?php } ?>
 						<?php endif ?>
 						</a> -->
-						
+
 						<div class="photoblog-text" id="photoblog-post-text">
 							<h3>
 								<p id="photoblog-title">
@@ -146,12 +146,12 @@ function get_string_between($string, $start, $end){
 										?>
 									</a>
 								</p>
-							</h3> 
+							</h3>
 							<p id="photoblog-post-excerpt">
-								<?php $t = get_the_excerpt(); 
+								<?php $t = get_the_excerpt();
 									$periodPosition = strpos($t, '.');
 									if ($periodPosition > 0) {
-										echo  $t = substr($t, 0, $periodPosition); 
+										echo  $t = substr($t, 0, $periodPosition);
 									} else {
 										echo $t . '...';
 									}
@@ -181,7 +181,7 @@ function get_string_between($string, $start, $end){
 		</p> -->
 
 		<!-- <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?> -->
-		
+
 	</div> <!--photoblog-post-block-->
 </div>
 
@@ -193,6 +193,10 @@ function get_string_between($string, $start, $end){
 
 
 <script type="text/javascript">
+
+// set navbar to white
+$("#topBar > li > a").css({'color': 'white'});
+
 	 /* Isotope
   * ==================== */
 var elem = document.querySelector('.grid');
@@ -209,7 +213,7 @@ var iso = new Isotope( '.grid', {
 $("div.grid-item").hover(
 	function () {
 		$(this).find(".picOverlay").stop().fadeIn();
-	}, 
+	},
 	function () {
 		$(this).find(".picOverlay").stop().fadeOut();
 	}
@@ -240,6 +244,3 @@ $(window).on('resize', function(){
 });
 
 </script>
-
-
-

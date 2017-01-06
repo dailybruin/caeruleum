@@ -35,10 +35,6 @@
 							<span class="hide-for-medium hide-for-small"></span> <i class="fa fa-search"></i>
 						</a>
 					</section>
-					<div class="db-top-date text-center hide-for-small">
-						<?php date_default_timezone_set('America/Los_Angeles'); ?>
-						<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
-					</div>
 				</br>
 			</nav>
 		</div>
@@ -235,7 +231,11 @@
 					-->
 
 						<div class="row db-story below-header">
-							<div class="small-12 columns hide-for-small">
+							<div class="db-top-date text-center hide-for-small">
+								<?php date_default_timezone_set('America/Los_Angeles'); ?>
+								<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
+							</div>
+							<div class="small-12 columns hide-for-small" style="margin-top: 0px;">
 								<?php wp_nav_menu(array('theme_location' => 'top_bar',
 									'menu_class' => '',
 									'container' => '',
