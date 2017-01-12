@@ -61,7 +61,7 @@
   <?php if(has_post_thumbnail() && !(is_front_page())) :
     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
     <meta property="og:image" content="<?php echo $url; ?>" />
-    <meta name="twitter:image" content="<?php echo $imageUrl; ?>"/>
+    <meta name="twitter:image" content="<?php echo $url; ?>"/>
   <?php else: ?>
     <meta property="og:image" content="http://dailybruin.com/images/2016/05/Daily-Bruin-Logo.png" />
   <?php endif; ?>
