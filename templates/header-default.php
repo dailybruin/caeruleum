@@ -231,7 +231,7 @@
 					-->
 
 						<div class="row db-story below-header">
-							<div class="db-top-date text-center hide-for-small">
+							<div class="db-top-date text-center hide-for-small" style="margin-top: -0.5rem;">
 								<?php date_default_timezone_set('America/Los_Angeles'); ?>
 								<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 							</div>

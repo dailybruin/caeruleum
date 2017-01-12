@@ -220,7 +220,7 @@
           <!-- 705px x 390px for mult -->
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('db-mult-full'); ?></a>
           <div class="front-mult">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_category_text_mult(get_the_category()); ?>:
+            <h2><a href="<?php the_permalink(); ?>">
             <?php the_headline(); ?></a></h2>
         </div>
         </li>
