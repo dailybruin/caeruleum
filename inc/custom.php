@@ -149,6 +149,7 @@ function add_article_formats()
 	wp_insert_term('Normal','article-format', array('slug' => 'normal'));
 	wp_insert_term('Column','article-format', array('slug' => 'column'));
 	wp_insert_term('Brief', 'article-format', array('slug' => 'brief'));
+  wp_insert_term('List', 'article-format', array('slug' => 'list'));
 }
 add_action('init','add_article_formats', 0);
 
