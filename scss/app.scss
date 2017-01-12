@@ -25,7 +25,6 @@ $db-masthead-subcategory-size: rem-calc(36);
  * }
  */
 
-
 // Daily Bruin additions
 
   .quad-explainer {
@@ -753,10 +752,27 @@ figure, figure.alignnone {
 #topMenu > li span:before {
   display: inline-block;
   font-family: FontAwesome;
-    margin-right: 6px;
-    font-weight: normal;
-    font-size: 0.85rem;
-    width: 16px;
+  margin-right: 6px;
+  font-weight: normal;
+  font-size: 0.85rem;
+  width: 16px;
+}
+
+#topBar {
+  display: table;
+  margin: 0 auto 0.3rem;
+  list-style: none;
+  li {
+    display: inline;
+    margin: 0 1.2rem;
+    a {
+      font-size: 0.8rem;
+      color: black;
+    }
+    a:hover {
+      color: #0080C6;
+    }
+  }
 }
 
 .menu-news span:before {
@@ -962,7 +978,7 @@ div.twitter{
 .author-header {
   display:inline-block;
   font-size:1.4rem !important;
-  padding-top:0.25rem; 
+  padding-top:0.25rem;
   float:left;
   font-family: 'Roboto Slab', serif !important;
   font-weight: 400 !important;
@@ -972,7 +988,7 @@ div.twitter{
   a:hover{
     color:$db-blue !important;
   }
-} 
+}
 .author-position {
   display: inline-block;
   float: left;
@@ -1075,7 +1091,7 @@ div.email.small-6.columns{
 
   .author-header {
     font-size:1.3rem;
-  } 
+  }
   .author-position {
     font-size:1.2rem;
     font-weight: 300;

@@ -84,7 +84,7 @@ function uploading_doc_link()
         'meta' => array(
             'target' => '_blank',
         ),
-    ) );    
+    ) );
 }
 add_action( 'wp_before_admin_bar_render', 'uploading_doc_link' );
 
@@ -96,7 +96,7 @@ function db_link_stories($permalink, $post, $leavename)
 {
     if(!$post)
         global $post;
-    $dblink = get_post_meta($post->ID,'db_link',true);    
+    $dblink = get_post_meta($post->ID,'db_link',true);
     if($dblink)
         return $dblink;
     else
@@ -124,7 +124,7 @@ function the_headline()
 
 	$headline = apply_filters('the_title',$post->post_title);
 
-	if($articleFormat === "column" || 
+	if($articleFormat === "column" ||
 		($articleFormat === 'default' && in_array('italic_headline', get_field('db_display_options'))))
 	{
 		echo '<em>'.$headline.'</em>';

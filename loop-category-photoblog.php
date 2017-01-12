@@ -1,5 +1,5 @@
 <?php /* Start loop */ ?>
-<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />'; 
+<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />';
 // function for parsing img url
 function get_string_between($string, $start, $end){
     $string = ' ' . $string;
@@ -13,7 +13,7 @@ function get_string_between($string, $start, $end){
 
 <div class="grid-wrapper">
 	<div class="grid">
-		<?php 
+		<?php
 		$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		query_posts(array(
 			'posts_per_page' => 15,
@@ -43,15 +43,15 @@ function get_string_between($string, $start, $end){
 			<div class="grid-item <?php echo $the_cat->slug ?>">
 				<div id="photoblog-post-block">
 					<a href="<?php the_permalink(); ?>">
-						<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>" 
-							style="background-image: url('<?php 
+						<div class="photoblog-post-image" id ="pb-image-<?php echo $the_cat->slug; ?>"
+							style="background-image: url('<?php
 															$picID = get_post_meta($post->ID, 'singlepic', true);
 															$image = do_shortcode('[singlepic id='.$picID.']');
                                                             $parsed = get_string_between($image, 'data-src="', PHP_EOL);
 											            	$parsed = str_replace("\"", "", $parsed);
-											            	echo $parsed;  
+											            	echo $parsed;
 														?>');">
-							
+
 						</div>
 					</a>
 
@@ -65,12 +65,12 @@ function get_string_between($string, $start, $end){
 										?>
 									</a>
 								</p>
-							</h3> 
+							</h3>
 							<p id="photoblog-post-excerpt">
-								<?php $t = get_the_excerpt(); 
+								<?php $t = get_the_excerpt();
 									$periodPosition = strpos($t, '.');
 									if ($periodPosition > 0) {
-										echo  $t = substr($t, 0, $periodPosition); 
+										echo  $t = substr($t, 0, $periodPosition);
 									} else {
 										echo $t . '...';
 									}
@@ -91,22 +91,22 @@ function get_string_between($string, $start, $end){
 	</div>
 </div>
 
-<?php        
-$total_pages = $wp_query->max_num_pages;  
-if ($total_pages > 1) {  
+<?php
+$total_pages = $wp_query->max_num_pages;
+if ($total_pages > 1) {
   $current_page = max(1, get_query_var('paged'));  ?>
-  <div class="pagination-centered"> 
-  <?php echo paginate_links(array(  
-      'base' => get_pagenum_link(1) . '%_%',  
-      'format' => 'page/%#%',  
-      'current' => $current_page,  
-      'total' => $total_pages,  
-      'prev_text' => '&larr; Prev',  
-      'next_text' => 'Next &rarr;'  
+  <div class="pagination-centered">
+  <?php echo paginate_links(array(
+      'base' => get_pagenum_link(1) . '%_%',
+      'format' => 'page/%#%',
+      'current' => $current_page,
+      'total' => $total_pages,
+      'prev_text' => '&larr; Prev',
+      'next_text' => 'Next &rarr;'
     ));  ?>
   </div><!-- end div.pager -->
 <?php
-} 
+}
 ?>
 
 <?php //wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
@@ -115,6 +115,8 @@ if ($total_pages > 1) {
 
 // Set to white DB logo
 $(".db-logo-spectrum").css({'display':'block'});
+// set navbar to white
+$("#topBar > li > a").css({'color': 'white'});
 
 	 /* Isotope
   * ==================== */
@@ -132,7 +134,7 @@ var iso = new Isotope( elem, {
 $("div.grid-item").hover(
 	function () {
 		$(this).find(".picOverlay").stop().fadeIn();
-	}, 
+	},
 	function () {
 		$(this).find(".picOverlay").stop().fadeOut();
 	}
@@ -164,4 +166,3 @@ $(window).on('resize', function(){
 });
 
 </script>
-
