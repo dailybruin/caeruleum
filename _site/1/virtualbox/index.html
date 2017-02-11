@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Jekyll v3.3.1">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Caeruleum" />
+    <!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>VirtualBox - Caeruleum</title>
+<meta property="og:title" content="VirtualBox" />
+<meta name="description" content="For Windows and Macs:  Download VirtualBox. (Any version above 4 is fine!)  Open Virtual Box and in the top left hand corner select File -&gt; Import Appliance" />
+<meta property="og:description" content="For Windows and Macs:  Download VirtualBox. (Any version above 4 is fine!)  Open Virtual Box and in the top left hand corner select File -&gt; Import Appliance" />
+<link rel="canonical" href="http://localhost:4000/1/virtualbox/" />
+<meta property="og:url" content="http://localhost:4000/1/virtualbox/" />
+<meta property="og:site_name" content="Caeruleum" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-02-11T10:58:23-08:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "VirtualBox",
+    "datePublished": "2017-02-11T10:58:23-08:00",
+    "description": "For Windows and Macs:  Download VirtualBox. (Any version above 4 is fine!)  Open Virtual Box and in the top left hand corner select File -&gt; Import Appliance",
+    "logo": "http://localhost:4000/siteicon.png",
+    "url": "http://localhost:4000/1/virtualbox/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+    
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="Caeruleum logo"></a>
+        Caeruleum
+        <button type="button" class="open-nav" id="open-nav"></button>
+      </h1>
+
+      <form action="/search/" method="get">
+        <input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+        <input type="submit" value="Search" style="display: none;">
+      </form>
+
+      <nav class="full-navigation">
+        <ul>
+          <li class="nav-item top-level ">
+            
+            <a href="/">Welcome</a>
+          </li>
+        </ul>
+
+        <ul>
+          
+          
+            <li class="nav-item top-level current">
+              
+              <a href="/1/virtualbox/">Setting Up</a>
+              <ul>
+                
+                  <li class="nav-item current"><a href="/1/virtualbox/">VirtualBox</a></li>
+                
+              </ul>
+            </li>
+          
+        </ul>
+
+        <ul>
+          <li class="nav-item top-level ">
+            
+            <a href="/changelog/">Change Log</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main">
+      <div class="page-header">
+        <h2>Setting Up</h2>
+        <h3>VirtualBox</h3>
+      </div>
+      <article class="content">
+        <p>For Windows and Macs:</p>
+<ol>
+  <li>Download <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>. (Any version above 4 is fine!)</li>
+  <li>Open Virtual Box and in the top left hand corner select File -&gt; Import Appliance</li>
+</ol>
+
+<p><img src="/images/vmsetup00.png" alt="" /></p>
+
+<ol>
+  <li>Open the folder icon and include the “Daily Bruin Training Fall 2013 (server).ova” and create your virtual machine, using the default settings. (If you need this file, message one of the editors)</li>
+  <li>Now run the virtual machine by selecting it and clicking the start button, it will prompt this screen</li>
+</ol>
+
+<p><img src="/images/vmsetup01.png" alt="" /></p>
+
+<ol>
+  <li>The login is dailybruin and password is bruin111 (you actually wont need to log into the virtual machine, because you shouldn’t be making changes to the code through virtual box!)</li>
+  <li>Now that the virtual machine has started, this creates a local Daily Bruin server on your own computer (nobody else can see it, so you are free to make whatever changes you want).</li>
+</ol>
+
+<p>The site is at <a href="http://localhost:8080/">http://localhost:8080/</a>, admin page can be accessed through <a href="http://localhost:8080/wp-admin">http://localhost:8080/wp-admin</a>.</p>
+
+<h3 id="ssh-information">SSH information:</h3>
+
+<p>If you don’t want to make changes using Virtual Box, you will have to ssh into the server.</p>
+<blockquote>
+  <p>What is ssh? <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> stands for “Secure SHell” and is basically just a way for you to login into a computer remotely. In this case, we’re logging into your virtual machine (which emulates the DB server) from your computer.</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">ssh -p 8022 dailybruin@127.0.0.1</code></p>
+
+<p>In VirtualBox, select the Daily Bruin machine. Now in the top bar, click “Machine” then select the option “Network” then in the network tab, click the “Advanced.” Click the “Port Forwarding” button on the bottom. This will give you a screen with these numbers (In the future, if the server is edited, these numbers may have changed.)</p>
+
+<p><img src="/images/vmsetup02.png" alt="" /></p>
+
+<p>This SSH information is what you will use (Specifically note down the “Host Port” section).</p>
+
+<h3 id="editing-caeruleum">Editing Caeruleum</h3>
+
+<p>Make sure you git pull to get the most recent version of Caeruleum.</p>
+
+<p>The code for the main site can be found in the folder: <code class="highlighter-rouge">~/wordpress/wp-content/themes/caeruleum.</code></p>
+
+<p>Also change the git credentials using the command, by default they are for a guy called Neil Bedi, so if you push changes, you will do it in his name
+<code class="highlighter-rouge">$ git config --global user.name YOUR_NAME</code><br />
+<code class="highlighter-rouge">$ git config --global user.email YOUR_EMAIL</code></p>
+
+<p>NOTE: If you want to make updates to main site code, make sure you checkout your own branch for development and don’t develop on the master branch.</p>
+
+<h4 id="making-edits-in-windows">Making edits in Windows</h4>
+
+<p>For windows there is something called MobaXterm which is cool so you should download it. You will use this to ssh into the server.</p>
+
+<p>In the top left hand corner, create a new session. Then fill in the following information for the SSH session:</p>
+
+<p><img src="/images/vmsetup03.png" alt="" /></p>
+
+<p>(The port may be different if the server has changed, information on how to find it can be found in “SSH information”). The password to log in with is bruin111. The code for the main site can be found in the folder: <code class="highlighter-rouge">~/wordpress/wp-content/themes/caeruleum</code>.</p>
+
+<p>Make sure you git pull to get the most recent version of caeruleum.</p>
+
+<h4 id="making-edits-on-mac">Making edits on Mac</h4>
+<h5 id="setting-up-sftp-in-sublimetext">Setting up SFTP in SublimeText</h5>
+<ol>
+  <li>Download SublimeText : http://www.sublimetext.com/2</li>
+  <li>Install: https://packagecontrol.io/installation</li>
+  <li>Restart SublimeText</li>
+  <li>Open SublimeText</li>
+  <li>Preferences &gt; Package Control &gt; Type: Install Package &gt; Hit Enter</li>
+  <li>Search: “SFTP” &gt; Select the first package: “Sublime SFTP”. Download.</li>
+  <li>Go into a local directory and clone the repo for Caeruleum (<code class="highlighter-rouge">git clone https://github.com/daily-bruin/caeruleum</code>)</li>
+  <li>Open the folder in SublimeText</li>
+  <li>Right click on “Caeruleumr”; select SFTP/FTP &gt; Sync Local -&gt; Remote</li>
+</ol>
+
+<h5 id="setting-up-sftp-in-atom">Setting up SFTP in Atom</h5>
+<ol>
+  <li>Download Atom : https://atom.io</li>
+  <li>Install the remote-ftp package for atom: https://atom.io/packages/remote-ftp</li>
+  <li>Go into a local directory and clone the repo for Caeruleum (<code class="highlighter-rouge"> git clone https://github.com/daily-bruin/caeruleum </code>)</li>
+  <li>Open the folder in Atom</li>
+  <li>Add this file to the caeruleum folder</li>
+  <li>“Packages” -&gt; “Remote-FTP” -&gt; “Connect”</li>
+  <li>You should be good!</li>
+</ol>
+
+
+      </article>
+    </section>
+
+    <script>
+      document.getElementById("open-nav").addEventListener("click", function () {
+        document.body.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>
