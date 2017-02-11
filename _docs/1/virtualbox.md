@@ -4,8 +4,10 @@ category: Setting Up
 order: 1
 ---
 
+[Link][1] to server file.
+
 For Windows and Macs:
-1. Download [VirtualBox][1]. (Any version above 4 is fine!)
+1. Download [VirtualBox][2]. (Any version above 4 is fine!)
 2. Open Virtual Box and in the top left hand corner select File -\> Import Appliance
 
 ![][image-1]
@@ -18,12 +20,12 @@ For Windows and Macs:
 5. The login is dailybruin and password is bruin111 (you actually wont need to log into the virtual machine, because you shouldn’t be making changes to the code through virtual box!)
 6. Now that the virtual machine has started, this creates a local Daily Bruin server on your own computer (nobody else can see it, so you are free to make whatever changes you want).
 
-The site is at [http://localhost:8080/][2], admin page can be accessed through [http://localhost:8080/wp-admin][3].
+The site is at [http://localhost:8080/][3], admin page can be accessed through [http://localhost:8080/wp-admin][4].
 
 ### SSH information:
 
 If you don’t want to make changes using Virtual Box, you will have to ssh into the server.
-> What is ssh? [SSH][4] stands for “Secure SHell” and is basically just a way for you to login into a computer remotely. In this case, we’re logging into your virtual machine (which emulates the DB server) from your computer.
+> What is ssh? [SSH][5] stands for “Secure SHell” and is basically just a way for you to login into a computer remotely. In this case, we’re logging into your virtual machine (which emulates the DB server) from your computer.
 
 `ssh -p 8022 dailybruin@127.0.0.1`
 
@@ -59,6 +61,7 @@ Make sure you git pull to get the most recent version of caeruleum.
 
 
 #### Making edits on Mac
+
 ##### Setting up SFTP in SublimeText
 1. Download SublimeText : http://www.sublimetext.com/2
 2. Install: https://packagecontrol.io/installation
@@ -75,16 +78,18 @@ Make sure you git pull to get the most recent version of caeruleum.
 2. Install the remote-ftp package for atom: https://atom.io/packages/remote-ftp
 3. Go into a local directory and clone the repo for Caeruleum (` git clone https://github.com/daily-bruin/caeruleum `)
 4. Open the folder in Atom
-5. Add this file to the caeruleum folder
+5. Add [this][6] file to the caeruleum folder
 6. “Packages” -\> “Remote-FTP” -\> “Connect”
 7. You should be good!  
 
 
 
-[1]:	https://www.virtualbox.org/wiki/Downloads
-[2]:	http://localhost:8080/
-[3]:	http://localhost:8080/wp-admin
-[4]:	https://en.wikipedia.org/wiki/Secure_Shell
+[1]:	https://drive.google.com/file/d/0B0rqan9NKaMNV05RSnAzWjNyZ2M/view?ts=5833e57b
+[2]:	https://www.virtualbox.org/wiki/Downloads
+[3]:	http://localhost:8080/
+[4]:	http://localhost:8080/wp-admin
+[5]:	https://en.wikipedia.org/wiki/Secure_Shell
+[6]:	https://gist.github.com/nathunsmitty/c9cee6e86f427e12218109c96a5b0886
 
 [image-1]:	/images/vmsetup00.png
 [image-2]:	/images/vmsetup01.png
