@@ -76,7 +76,7 @@ Make sure you git pull to get the most recent version of caeruleum.
 ##### Setting up SFTP in Atom
 1. Download Atom : https://atom.io
 2. Install the remote-ftp package for atom: https://atom.io/packages/remote-ftp
-3. Go into a local directory and clone the repo for Caeruleum (` git clone https://github.com/daily-bruin/caeruleum `)
+3. Go into a local directory and clone the repo for Caeruleum (`git clone https://github.com/daily-bruin/caeruleum`)
 4. Open the folder in Atom
 5. Add [this][6] file to the caeruleum folder
 6. “Packages” -\> “Remote-FTP” -\> “Connect”
