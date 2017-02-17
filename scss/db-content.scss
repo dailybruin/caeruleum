@@ -1,0 +1,356 @@
+// this code is for everything EXCEPT the "Daily Bruin" header and the nav menu
+.db-content {
+    padding: 0.625rem;
+    padding-top: 0rem;
+    font-size: 0.75rem;
+    background-color: white;
+    margin: 0 auto;
+
+    // for the first center article, the first one you see on the front apge
+    .db-story .db-story-c1,
+    .db-story .db-story-c1 img {
+      margin-top: 0;
+    }
+
+    .db-story .db-story-c1 img {
+      max-height: 400px;
+    }
+
+    //only on article pages
+    .db-story .db-byline {
+      display: inline-block;
+    }
+
+    // .front-mult is the div for each item in the multimedia slider
+    // #multSlider is the unordered list containing them all
+    .front-mult h2 a,
+    .front-mult h4,
+    .front-mult h5{
+      color: white;
+    }
+    .front-mult h2 {
+      font-size: 1.5rem;
+    }
+    #multSlider li {
+      position: relative;
+    }
+    #multSlider a:hover {
+      opacity: 1;
+    }
+    .front-mult {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 1em;
+      margin: 0;
+      width: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .flex-video {
+      margin: $db-nav-padding;
+    }
+
+    .breadcrumbs {
+      border-bottom: rem-calc(1) solid $aluminum;
+    }
+
+    .sub-nav {
+      margin: 0;
+      padding-bottom: rem-calc(4);
+      border-bottom: rem-calc(1) solid $aluminum;
+      color: $jet;
+    }
+
+    a,
+    a:hover {
+      color: #0080c6;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: rem-calc(16);
+    }
+
+    .db-post-headline h1{
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.5em;
+      line-height: 1.2;
+      text-transform: none;
+      font-weight: 400;
+    }
+
+    h2,
+    h3 {
+      font-weight: 400;
+      font-family: 'Roboto Slab', serif;
+      color: black;
+      line-height: 1.2;
+    }
+
+    .db-story-c1 h2 {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+
+    h2 a,
+    h2 a:hover{
+      color: black;
+    }
+
+    h3 a,
+    h3 a:hover{
+      color: black;
+    }
+
+    .db-sum h3 a {
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .db-sum .no-img h3{
+      padding-top: 5%;
+      padding-bottom: 5%;
+      min-height: 213px;
+    }
+    .db-sum .no-img h3 a {
+      font-weight: normal;
+      font-size: 2rem;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline;
+    }
+
+    h5 {
+      display: inline;
+    }
+
+    .db-story-a h2 a,
+    .db-story-b h2 a,
+    .db-story-d h3 a,
+    .db-story-e h3 a{
+      font-weight: 700;
+    }
+
+    .db-post-content
+    {
+      margin-bottom: 10px;
+    }
+
+    .db-post-content,
+    .db-post-content {
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin-bottom: 0.9rem;
+        }
+
+        ul {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin-bottom: 0.9rem;
+        }
+
+        ol {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin-bottom: 0.9rem;
+        }
+    }
+
+    .in-the-news {
+      list-style-type: none;
+      text-align: left;
+      display: inline-block;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .in-the-news li{
+      display: inline-block;
+      font-family: 'Roboto Slab', serif;
+      margin-left: 0.5rem;
+    }
+
+    .in-the-news li a{
+      font-weight: 400;
+      font-size: 0.9375rem;
+    }
+
+    .db-image {
+      img {
+        margin-top: rem-calc(8);
+        &.db-image-no-margin {
+          margin: 0;
+        }
+      }
+      .db-image-caption{
+        font-size: 0.705rem;
+        line-height: 1.4;
+        padding-top: rem-calc(4);
+        color: $steel;
+      }
+    }
+
+    .db-story-ns .db-image img,
+    .db-story-op .db-image img,
+    .db-story-sp .db-image img,
+    .db-story-ae .db-image img {
+      max-height: 13.5rem;
+    }
+
+    .db-ad-banner {
+      width: $db-ad-banner-width;
+      margin: $db-ad-padding auto;
+    }
+
+    .db-ad-rectangle {
+      width: $db-ad-rectangle-width;
+      margin: $db-ad-padding auto;
+    }
+
+    .db-masthead { // for vertical aligning descrption and date
+      display: flex;
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -ms-align-items: flex-end;
+      -webkit-align-items: flex-end;
+      align-items: center;
+
+      p {
+        font-size: $db-masthead-description-size;
+        text-align: center;
+        margin: 0;
+      }
+      .db-subcategory {
+        h1 {
+          margin: 0;
+          font-family: $font-family-serif;
+          font-size: $db-masthead-subcategory-size;
+          @media #{ $small-only } {
+            font-size: ($db-masthead-subcategory-size * 2 / 3);
+            margin-top: rem-calc(-10);
+          }
+        }
+      }
+    }
+
+    .db-story {
+      div {
+        margin: rem-calc(10) 0 rem-calc(10);
+        margin-bottom: 0;
+      }
+
+      .db-classifieds {
+        border: rem-calc(2) solid $db-classifieds-bg-color;
+      }
+
+      .db-story-fe {
+        .db-image {
+          h2 {
+            font-family: $font-family-sans-serif;
+            font-weight: $font-weight-light;
+            font-size: rem-calc(40);
+            margin-top: (-1 * ( rem-calc(40) + $db-ad-padding * 4));
+            padding: $db-ad-padding * 2;
+            background-color: rbga(255,255,255,0.2);
+          }
+          h3 {
+            font-family: $font-family-sans-serif;
+            font-weight: $font-weight-light;
+            text-align: center;
+            margin-top: (-1 * ($h3-font-size + $db-ad-padding * 2));
+            padding: $db-ad-padding;
+            background-color: rbga(255,255,255,0.2);
+          }
+        }
+      }
+    }
+
+    /*SUB LIST IN CATEGORY PAGE*/
+    .db-sub-list-col ul{
+      list-style-type: none;
+      text-align: left;
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+        -webkit-column-rule: thin outset lightgrey; /* Chrome, Safari, Opera */
+        -moz-column-rule: thin outset lightgrey; /* Firefox */
+        column-rule: thin outset lightgrey;
+    }
+    .db-sub-list-col li{
+      display: block;
+      padding: 0 0.5rem;
+    }
+    .db-sub-list-col li a{
+      color: grey;
+    }
+    .db-sub-list ul{
+      list-style-type: none;
+      text-align: center;
+      margin-left: 0;
+    }
+    .db-sub-list li{
+      display: inline-block;
+      padding: 0 0.5rem;
+      border-right: lightgrey thin solid;
+    }
+    .db-sub-list li a{
+      color: grey;
+    }
+    .db-sub-list li:last-child{
+      border-right: none;
+    }
+
+    .db-footer {
+      p {
+        font-size: rem-calc(10);
+        color: rgba(0,0,0,0.75);
+      }
+
+      ul {
+        margin: rem-calc(10) 0 rem-calc(10) 0;
+
+        li {
+          display: inline-block;
+          list-style-type: none;
+          padding: 0 rem-calc(16) 0 rem-calc(16);
+          p {
+            display: inline;
+          }
+        }
+      }
+    }
+
+    .db-divide {
+      border-bottom: thin solid #222222;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .postfix {
+        border: none;
+        background-color: $white;
+        margin: 0;
+        &:hover {
+          color: $aluminum;
+        }
+      }
+    }
+  }
+
+  .db-ad-leaderboard {
+  width: $db-ad-leaderboard-width;
+  margin: $db-ad-padding auto;
+  margin-top: 1rem;
+  @media only screen and (max-width: $db-ad-leaderboard-width + ($db-ad-padding * 2)) {
+    width: 100%;
+  }
+}

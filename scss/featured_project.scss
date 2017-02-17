@@ -1,0 +1,61 @@
+// stylings for the featured project on the front page, which is at the bottom and usually from prime
+#featuredProject > div {
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color:#f5f5f5;
+  color:black;
+}
+#featuredProject > div > div {
+  padding:5px 20px;
+}
+#featuredProject h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  color:black;
+  display:block;
+  float:left;
+  margin:0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#featuredProject h4 {
+  color:grey;
+  font-weight: 400;
+  display:block;
+  float:left;
+  margin:0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#featuredProject p {
+  line-height: 1.45rem;
+  font-size: 0.80rem;
+}
+
+#featuredProject .sections > li > a:hover {
+  color:black;
+}
+#featuredProject ul.sections {
+    margin-top: 10px;
+}
+#featuredProject .featuredlink {
+    display: block;
+    color: white;
+    background-color: #515791;
+    float: left;
+    padding: 7px;
+  padding-left: 20px;
+  margin-left: -20px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+#featuredProject img {
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+//contains the featured project picture
+.db-story-fe {
+  border-left: thin solid lightgrey;
+}

@@ -1,0 +1,207 @@
+/* === Sidebar ==================================== */
+#sidebar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.db-classifieds li{
+  list-style-type: none;
+}
+.db-classifieds .sidebar-more {
+  padding-top:10px;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    display: block;
+    text-transform: uppercase;
+    border-top: thin solid lightgrey;
+}
+
+.db-classifieds-header h1 {
+  border-bottom: 2pt solid black;
+  padding-bottom: 10px;
+}
+.db-content .db-story #db-classifieds {
+  border: 1px solid grey;
+}
+// this is the "see more classifieds" and "poll archive" links
+.sidebar-more {
+    margin-bottom: -15px;
+    display: block;
+}
+
+// i could not find this anywhere
+.textwidget {
+  margin-bottom: 10px;
+  min-height: 142px;
+}
+
+#sidebar-list > li {
+    display: block;
+    border: 1px solid #adadad;
+    padding: 0 15px 0 7px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    position:relative;
+}
+#sidebar-list > li.sidebar-clean {
+  border:none;
+  padding:0;
+}
+#sidebar-list > li > .sidebar-more:last-child > a {
+  display:block;
+    border-top: 1px solid #ababab;
+    margin: 0 -7px;
+    padding: 5px 7px;
+    text-align: center;
+}
+#sidebar-list > li > h4:first-child {
+    margin: 0 -7px;
+    padding: 10px 7px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.sidebar ul.misc {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar ul.misc > li {
+    padding: 0.1em 0;
+}
+
+/* === Classifieds Page =========================== */
+.classifieds-page {
+  margin-top: 20px;
+}
+
+#classifieds-ads {
+  margin-top: 20px;
+  border-left: thin solid lightgrey;
+  border-right: thin solid lightgrey;
+}
+
+/*from old code*/
+.db-classifieds #classifieds-container {
+    height: 380px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: -15px;
+    margin-top: -5px;
+}
+
+#classifieds-container {
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: -7px;
+    margin-bottom: 0;
+    margin-top: -14px;
+}
+
+#sidebar-list #classifieds-container > div {
+    padding-top: 12px;
+}
+#classifieds-container p {
+    border-bottom: 1px solid #adadad;
+    padding-bottom: 10px;
+}
+#classifieds-container p:last-child {
+  padding-bottom:0;
+  border-bottom:none;
+}
+a.classifieds-button {
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 6px;
+  width: calc(100% - 15px);
+  width: -webkit-calc(100% - 15px);
+  width: -moz-calc(100% - 15px);
+}
+.classifieds-button-group {
+  width:100%;
+  text-align:center;
+  margin-bottom:13px;
+}
+
+/* ===== Polls ==================================== */
+.poll-question {
+  font-family:"Helvetica", sans-serif;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 10px;
+}
+.wp-polls-form, .wp-polls {
+    font-family:"Helvetica", sans-serif;
+}
+.wp-polls-form > submit {
+  text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.wp-polls-ul {
+  list-style: none;
+  margin: 0;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+.wp-polls-ul > li {
+  padding:10px;
+}
+.wp-polls-ul > li:nth-child(2n-1) {
+  background-color: #F2F2F2;
+}
+.poll-view-results {
+    color: #333;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+}
+
+a#poll-past, span.multimedia-more {
+    font-family: "Helvetica Neue";
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 11px;
+}
+
+div#poll h2 img {
+    position: relative;
+    bottom: 5px;
+    padding-left: 10px;
+    opacity:0.3;
+}
+
+.wp-polls-form label {
+  font-size: 1em;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 1rem;
+}
+
+div#poll form label.radio {
+  margin-bottom:13px;
+}
+
+.radio input, .checkbox {
+min-height: 20px;
+margin-left: -17px !important;
+margin-right: 5px !important;
+margin-bottom: 0 !important;
+}
+
+/* css3 for coloring each pollbars */
+.wp-polls-ul li:nth-child(01) .pollbar {
+  background: #BF0C43;
+}
