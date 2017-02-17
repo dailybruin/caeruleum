@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "stylelint-config-primer": "^1.4.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}

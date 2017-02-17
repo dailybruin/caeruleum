@@ -1,0 +1,40 @@
+'use strict';
+
+module.exports.plugins = {
+  lint: {
+    blockquoteIndentation: 2,
+    checkboxCharacterStyle: {checked: 'x', unchecked: ' '},
+    codeBlockStyle: 'fenced',
+    definitionSpacing: true,
+    emphasisMarker: '*',
+    fencedCodeMarker: '`',
+    fileExtension: 'md',
+    finalDefinition: true,
+    finalNewline: true,
+    headingStyle: 'atx',
+    linkTitleStyle: '"',
+    listItemContentIndent: true,
+    listItemIndent: 'space',
+    noAutoLinkWithoutProtocol: true,
+    noBlockquoteWithoutCaret: true,
+    noConsecutiveBlankLines: true,
+    noDuplicateDefinitions: true,
+    noDuplicateHeadingsInSection: true,
+    noEmptyUrl: true,
+    noHeadingContentIndent: true,
+    noHeadingIndent: true,
+    noHeadingLikeParagraph: true,
+    noInlinePadding: true,
+    noMissingBlankLines: {exceptTightLists: true},
+    noTabs: true,
+    noUndefinedReferences: true,
+    noUnusedDefinitions: true,
+    orderedListMarkerStyle: '.',
+    ruleStyle: 'consistent',
+    strongMarker: '*',
+    tableCellPadding: 'consistent',
+    tablePipeAlignment: true,
+    tablePipes: true,
+    unorderedListMarkerStyle: '-'
+  }
+}
