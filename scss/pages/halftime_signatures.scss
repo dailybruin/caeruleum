@@ -1,0 +1,222 @@
+// applies to http://dailybruin.com/features/halftime-signatures/
+// extracted from pages/page-ae-haltime-signatures.php
+
+// fonts to import from google fonts
+@import url('//fonts.googleapis.com/css?family=Raleway:100');
+@import url('//fonts.googleapis.com/css?family=Droid+Serif');
+@import url('//fonts.googleapis.com/css?family=Droid+Sans');
+
+// stylings
+footer {
+  color: black;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+
+  &.tabs {
+    text-align: center;
+
+    li {
+      float: none !important;
+      display: inline-block;
+    }
+  }
+}
+.tab-title {
+  > a  {
+    background-color: white !important;
+    padding: 1rem 1rem !important;
+  }
+  &.active > a {
+    background: transparent;
+    color: black;
+    border-bottom: 3px solid #0080c6;
+
+    &:hover {
+      background: transparent !important;
+      color: black !important;
+      border-bottom: 3px solid #0080c6 !important;
+    }
+  }
+}
+li {
+  display: inline;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.85rem !important;
+}
+h1 {
+  font-family: 'Raleway',Helvetica,Arial,sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align:center;
+}
+article {
+  h2 {
+    font-family: 'Raleway',Helvetica,Arial,sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  }
+  .pq-wrap-2 {
+    width: 200px;
+    margin: 5px 10px 10px 10px auto;
+    padding: 5px 20px 20px 50px;
+    position: relative;
+    float:right;
+    display:inline-block;
+    height: 215px;
+    margin-bottom: 7% !important;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    blockquote {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      border-left: none !important;
+    }
+    cite {
+      font-style: normal;
+    }
+  }
+  .pq-style-2 {
+    blockquote {
+      padding-top: 57px;
+      &:after {
+        font-family: 'icons';
+        background: rgba(0,0,0,0.9);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        content: '\275e';
+        position: absolute;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        top: 0px;
+        left: 50%;
+        margin-left: -65px;
+        color: rgba(255,255,255,0.5);
+        text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+      }
+      &:before {
+        content: '';
+        width: 200px;
+        height: 220px;
+        border-radius: 50%;
+        border-left: 5px solid rgba(0,0,0,0.1);
+        position: absolute;
+        top: 0px;
+        left: -35px;
+        z-index: -1;
+      }
+      p {
+        font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        background: rgba(255,255,255,0.5);
+        display: inline;
+        color: rgba(0,0,0,0.7);
+        text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+        line-height: 23px;
+      }
+    }
+  }
+  .photocred {
+    float: right;
+    color: #c0c0c0;
+    font-style: italic;
+  }
+  .photocred-inline {
+    color: #707070;
+    font-size: 13px;
+    margin:0px;
+    padding:0px;
+  }
+  .thumbnail.with-caption-left {
+    display: inline-block;
+    background: rgba(200,200,200,0.1);
+    float: left;
+    text-align: center;
+    margin: 5px 15px 5px 0px;
+    border:none;
+    font-style: italic;
+
+    p {
+      margin: 0;
+      padding:0;
+    }
+    small {
+      width: 100%;
+      display: inline-block;
+      color: #999;
+
+      &:before {
+        content: '\2014 \00A0';
+      }
+    }
+  }
+  .thumbnail.with-caption-right {
+    display: inline-block;
+    background: rgba(200,200,200,0.1);
+    float: right;
+    text-align: center;
+    margin: 5px 0px 5px 15px;
+    border:none;
+    font-style: italic;
+
+    p {
+      margin: 0;
+      padding:0;
+    }
+
+    small {
+      width: 100%;
+      display: inline-block;
+      color: #999;
+
+      &:before {
+        content: '\2014 \00A0';
+      }
+    }
+  }
+  #page-credit {
+    margin: 3em 0 2em 0;
+    text-align: center;
+    color: gray;
+    border-top: 1px solid #bebebe;
+    padding-top: 0.5em;
+    font-size: 0.9em;
+  }
+}
+blockquote {
+  width: 100% !important;
+}
+.img-vert {
+  width: auto;
+  max-height: 400px;
+}
+.img-hori {
+max-width:auto;
+height:250px;
+}
+.previous {
+  text-align: left;
+}
+.next {
+  text-align: right;
+}
+.full-series {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}

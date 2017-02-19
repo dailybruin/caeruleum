@@ -1,0 +1,130 @@
+// applies to http://dailybruin.com/dance-marathon-2014/
+// extracted from pages/page-dance-marathon-2014.php
+
+// stylings
+#dm-timeline {
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 34px;
+    background-color: #205;
+    z-index: 100;
+    box-shadow: 0 0 10px black;
+    display: none;
+
+    li {
+        display: inline-block;
+        opacity: 0.5;
+        width: 2.84%;
+        height: inherit;
+        box-shadow: 1px 0 0 0 white inset;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 1.7;
+
+        a {
+          color: white;
+          font-size: 1.2em;
+        }
+    }
+
+    li:hover,
+    .current {
+      opacity: 0.75;
+      background-color: rgba(255,255,255, 0.3);
+    }
+
+    .descriptor {
+      width: 26%;
+      float: left;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color: rgba(255,255,255, 0.6);
+      display: inline-block;
+      line-height: 1;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      font-size: 1em;
+    }
+    .instructions {
+      color: rgba(255,255,255, 0.8);
+    }
+}
+
+#dm-banner {
+    position: relative;
+    height: 300px;
+    background: url('http://dailybruin.com/images/2014/04/banner2.jpg');
+    background-size: cover;
+    padding: 2em;
+    color: white;
+    text-shadow: 0.2em 0.2em black;
+    margin-bottom: 2em;
+
+    h1 {
+      text-align: right;
+      font-size: 5em;
+      text-transform: uppercase;
+      color:white;
+    }
+    h2 {
+      text-align: right;
+      font-size: 3.5em;
+      margin: 0.5em 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    .dm-time-remaining {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 2em;
+      padding: 0.5em;
+
+      h3 {
+        font-size: 0.5em;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: white;
+        background-color: rgba(0,0,0, 0.6);
+        padding: 0.4em 0.5em;
+        margin: 0;
+        display: inline-block;
+      }
+    }
+    .dm-timer {
+      background-color: rgba(0,0,0, 0.6);
+      padding: 0.2em;
+
+      .countdown-section {
+        display: inline-block;
+        margin-right: 0.5em;
+      }
+      .countdown-amount {
+        display: inline-block;
+        margin-right: 0.25em;
+      }
+    }
+}
+
+#dm-blog-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0a0;
+}
+
+#dm-instagram h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+div[id*='hour-'] {
+    box-shadow: 0 6px 12px -3px rgba(0,0,0, 0.2);
+    padding: 1em;
+    margin: 2em 0;
+    border: 1px solid rgba(0,0,0, 0.1);
+    overflow: hidden; /* clearfix */
+}
