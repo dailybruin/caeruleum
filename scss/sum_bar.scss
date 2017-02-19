@@ -1,0 +1,13 @@
+/* === SUM Bar (Front Page) ======================= */
+// it's the block of articles from news, opinions, a&e, and sports
+.db-sum {
+  border-right: thin solid lightgrey;
+}
+
+.db-sum:last-child {
+  border-right: none;
+}
+
+.db-sum img{
+  margin-bottom: 0.5rem;
+}

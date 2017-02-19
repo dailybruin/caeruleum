@@ -1,0 +1,36 @@
+// self-explanatory but could not find anywhere
+figure, figure.alignnone {
+  float: right;
+  margin: 0.5rem 0 1.5rem 0.5rem;
+  font-size: 0.75rem;
+}
+// self-explanatory but could not find anywhere
+blockquote {
+    width: 30%;
+    font-size: 150%;
+    font-style: italic;
+    float: right;
+    border-left: solid #767676;
+    margin: 1%;
+    padding-left: 2%;
+
+}
+@media (max-width: 480px) {
+  blockquote {
+    width: 95%;
+    margin-bottom: 1em;
+  }
+}
+
+// used for the accompanying paragraph(s) for articles under video department
+// ex: http://dailybruin.com/2017/02/16/bruin-connections-is-back/
+.video-story p {
+  text-align: left;
+}
+
+// only appears on article pages
+#comment-policy {
+  font-style: italic;
+  font-size: 0.75em;
+  margin-top: 10px;
+}
