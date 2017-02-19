@@ -228,7 +228,7 @@
 							</div>
 							</a>
 						</div>
-					-->
+					 -->
 
 						<div class="row db-story below-header">
 							<div class="db-top-date text-center hide-for-small">

@@ -10,7 +10,6 @@ Template Name: Stonewall
 <head>
 <meta charset="utf-8" />
 <title>Stonewall</title>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <style>
 .accordion .accordion-navigation > a {
@@ -60,7 +59,7 @@ Template Name: Stonewall
 	text-indent: 70px;
     background: #EEE;
     width: 100%;
-    
+
     margin-bottom: 2px;
 }
 #blurb p {
@@ -105,7 +104,7 @@ Template Name: Stonewall
 
 
 </style>
-</head> 
+</head>
 
 <body>
 	<div id="stonewall-wrap">
@@ -120,23 +119,23 @@ Template Name: Stonewall
 						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 2.4s;-moz-animation-delay: 2.4s;-ms-animation-delay: 2.4s;">l</h2>
 			<h3>From the Daily Bruin</h3></div>
 		<div id="blurb"><p>For 96 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can click each stone to read about why it's there.  </p></div>
-		<ul id="stonewall" class="accordion" data-accordion></ul> 
+		<ul id="stonewall" class="accordion" data-accordion></ul>
 	</div>
 </body>
 </html>
 
-<script type="text/javascript"> 
-$(document).ready(function() {	
+<script type="text/javascript">
+$(document).ready(function() {
 
 var position = ["top","center","bottom"];
-//source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE	
+//source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE
 
-$(function showstones() {	
+$(function showstones() {
 $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQUK1Ty6PqyGgkqMf4W7h4/od6/public/values?alt=json",
 
-	function (data) {	
+	function (data) {
 		//$('div#stonewall').append('<div class="stone"></div>');
-		$.each(data.feed.entry.reverse(), function(i,entry) {	
+		$.each(data.feed.entry.reverse(), function(i,entry) {
 		if (entry.gsx$date.$t && entry.gsx$copystatus.$t)
 		{
 			var append = '<li class="accordion-navigation stone s'+(i%3+1)+'">';
@@ -151,14 +150,11 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQU
 		}
 			});
 		});
-  
+
 	});
-	
+
 
 });
 </script>
 
 <?php get_footer(); ?>
-
-
-
