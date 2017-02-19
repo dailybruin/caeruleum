@@ -231,7 +231,7 @@
 					-->
 
 						<div class="row db-story below-header">
-							<div class="db-top-date text-center hide-for-small" style="margin-top: -0.5rem;">
+							<div class="db-top-date text-center hide-for-small">
 								<?php date_default_timezone_set('America/Los_Angeles'); ?>
 								<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 							</div>
@@ -242,7 +242,7 @@
 									'menu_id' => 'topBar',
 									)); ?>
 							</div>
-							<hr style="border-top: medium double lightgrey;"/>
+							<hr/>
 
 							<div class="small-6 columns hide-for-small" style="margin:0;">
 								<?php ob_start();

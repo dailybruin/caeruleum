@@ -605,8 +605,7 @@ figure, figure.alignnone {
 }
 
 .db-top-date {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-top: -1.5rem !important;
 }
 
 .db-top-date p {
@@ -760,18 +759,20 @@ figure, figure.alignnone {
 
 #topBar {
   display: table;
-  margin: 0 auto 0.3rem;
+  margin-top: -0.45rem;
+  width: 100%;
   list-style: none;
   li {
-    display: inline;
-    margin: 0 1.2rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: table-cell;
     a {
-      font-size: 0.8rem;
+      font-size: 1.0rem;
       color: black;
     }
-    a:hover {
-      color: #0080C6;
-    }
+  }
+  li:hover {
+    background-color: #D9E5EC;
   }
 }
 
