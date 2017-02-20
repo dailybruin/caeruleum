@@ -240,6 +240,7 @@
 									'menu_class' => '',
 									'container' => '',
 									'menu_id' => 'topBar',
+									'fallback_cb'    => false,
 									)); ?>
 							</div>
 							<hr/>
