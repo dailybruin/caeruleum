@@ -235,7 +235,7 @@
 								<?php date_default_timezone_set('America/Los_Angeles'); ?>
 								<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 							</div>
-							<div class="small-12 columns hide-for-small" style="margin-top: 0px;">
+							<div class="small-12 columns hide-for-small" id="topBarContainer" style="margin-top: 0px;">
 								<?php wp_nav_menu(array('theme_location' => 'top_bar',
 									'menu_class' => '',
 									'container' => '',
@@ -243,7 +243,6 @@
 									'fallback_cb'    => false,
 									)); ?>
 							</div>
-							<hr/>
 
 							<div class="small-6 columns hide-for-small" style="margin:0;">
 								<?php ob_start();

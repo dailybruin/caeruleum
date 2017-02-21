@@ -757,6 +757,11 @@ figure, figure.alignnone {
   width: 16px;
 }
 
+#topBarContainer {
+  border-bottom: 3px solid lightgray;
+  margin-bottom: 0.60rem;
+}
+
 #topBar {
   display: table;
   margin-top: -0.45rem;
@@ -767,7 +772,7 @@ figure, figure.alignnone {
     text-align: center;
     display: table-cell;
     a {
-      font-size: 1.0rem;
+      font-size: .95rem;
       color: black;
     }
   }
