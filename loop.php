@@ -58,7 +58,7 @@
       case "Opinion":
         $sectionTag = "db-story-op";
         $section_cat = $opinion_cat;
-        $first_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorial-cartoons')->term_id  );
+        $first_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('cartoons')->term_id  );
         $second_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('editorials')->term_id  );
         $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('community')->term_id  );
         $side_names = array( "Latest Editorial Cartoons", "From the Editorial Board", "From the Community");
