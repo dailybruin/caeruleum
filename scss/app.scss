@@ -1419,3 +1419,60 @@ margin-bottom: 0 !important;
 @media print {
   @import 'print';
 }
+
+.yarpp-related-widget {
+    margin-top: 0;
+
+    .side-info {
+        margin-top: 0;
+        
+        h4.yarpp-title {
+                margin: 0 -7px;
+                padding: 10px 7px;
+                margin-bottom: 14px;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: 2;
+        }
+    }
+}
+
+ul.related-posts {
+    margin-left: 0;
+   
+    li {
+        list-style-type: none;
+        margin: .5rem 0;
+        font-size: .9rem;
+        
+        div.row {
+            .columns {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        h4 {
+            display: block;
+        }
+
+        a {
+            color: #222;
+
+            &:hover, h4:hover {
+                color: #0080c6;
+            }
+        }
+
+        img {
+            margin-bottom: .25rem;
+            width: 100%;
+       }
+
+       .related-post-thumbnail {
+            max-height: 200px;
+            overflow: hidden;
+       }
+    }
+
+}
