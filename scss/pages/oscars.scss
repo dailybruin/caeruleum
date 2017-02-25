@@ -1,0 +1,73 @@
+// applies to http://dailybruin.com/oscars/
+// extracted from pages/page-oscars.php
+
+.oscars-title {
+    width: 100%;
+    border: 1px solid #cb9a01;
+    position: relative;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    span {
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #cb9a01;
+        font-size: 0.89em;
+        letter-spacing: 1px;
+        display: block;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        top: -10px;
+        left: 45%;
+    }
+    h3 {
+        text-align: center;
+        color: #cb9a01;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-weight: lighter;
+        font-size: 2.2em;
+    }
+}
+#oscar-results {
+  h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+    top: -10px;
+    margin-top: 21px;
+    > span {
+        background-color: white;
+        padding: 0 10px;
+        position: relative;
+        top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-family: "Georgia",serif;
+        font-weight: normal;
+        text-transform: none;
+        font-style: italic;
+        color: #000;
+    }
+  }
+  h4 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 18px;
+      margin-top: 3px;
+      line-height: 47px;
+      font-weight: bold;
+      z-index: 11;
+      position: relative;
+  }
+  .viz {
+      position: relative;
+      margin-top: -33px;
+  }
+}

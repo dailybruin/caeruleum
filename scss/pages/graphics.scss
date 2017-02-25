@@ -1,0 +1,42 @@
+// applies to ???; looks like this used to be the graphics page before we switched
+// to WordPress a long time ago; could also be before graphics was under /category/graphics
+
+// extracted from pages/page-graphics.php
+
+#modal {
+  img,
+  h2 {
+  	display: inline-block;
+  }
+}
+#graphics-wrap {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+  a img:hover {
+  	opacity: 0.8;
+  }
+  #title {
+  	text-align: center;
+  	margin-bottom: 2rem;
+    h2 {
+    	font-size: 4rem;
+    	line-height: 1.2;
+    }
+    h3 {
+    	font-weight: 400;
+    	margin-left: 12rem;
+    }
+  }
+}
+#blurb p {
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+.graphic {
+	width: 33%;
+	float: left;
+	padding: 0.5rem;
+}

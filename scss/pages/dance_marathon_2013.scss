@@ -1,0 +1,300 @@
+// applies to http://dailybruin.com/dance-marathon-2013/
+// extracted from pages/page-dance-marathon.php
+
+.dm-2013-page {
+  position: relative;
+
+  .dmwhite {
+    padding:16px;
+    color:white;
+    display:block;
+  }
+  .biglink {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #dm-liveblog {
+    display:block;
+    background-color:#f50a1b;
+    span {
+      font-size:1.2em;
+      text-transform:none;
+      padding:10px;
+    }
+    &:hover {
+      text-decoration:none;
+      box-shadow: 0 0 55px rgba(0,0,0,0.2) inset;
+    }
+  }
+  #dm-top {
+    margin-top:20px;
+  }
+  #dm-explain {
+    font-family: "Georgia",serif;
+    font-size: 1.1em;
+    line-height: 22px;
+    font-style: italic;
+    text-align: center;
+  }
+  [id^="dm-c-"] {
+    display:block;
+    height:10px;
+    width:10px;
+    background-color:gray;
+  }
+  #dm-collage {
+    position:relative;
+  }
+  #dm-c-1 {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 10px;
+    background-image:url("/images/features/dm-2013/CHAR3583.JPG");
+    background-position: center center;
+    background-size: 100%;
+  }
+  #dm-c-2 {
+    height: 150px;
+    margin-bottom: 10px;
+    width: 106px;
+    float: left;
+    background-image:url("/images/features/dm-2013/CHAR3599.JPG");
+  }
+  #dm-c-3 {
+    float: left;
+    margin-left: 10px;
+    width: 195px;
+    height: 77px;
+    background-image:url("/images/features/dm-2013/Wide-Shot.jpg");
+  }
+  #dm-c-4 {
+    float: left;
+    margin-left: 10px;
+    height: 150px;
+    width: 200px;
+    background-image: url("/images/features/dm-2013/CHAR3064.JPG");
+    background-position: center center;
+    background-size: 100%;
+  }
+  #dm-c-5 {
+    float: left;
+    margin-left: 10px;
+    width: 89px;
+    height: 74px;
+    background-image: url("/images/features/dm-2013/CHAR3476.JPG");
+    background-position: center center;
+    background-size: 100%;
+  }
+  #dm-c-6 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 66px;
+    width: 89px;
+    background-image: url("/images/features/dm-2013/CHAR3335.JPG");
+    background-position: center center;
+    background-size: 100%;
+  }
+  #dm-c-7 {
+    position: absolute;
+    bottom: 10px;
+    left: 216px;
+    height: 64px;
+    width: 94px;
+    background-image: url("/images/features/dm-2013/CHAR2975.JPG");
+    background-position: center center;
+    background-size: 100%;
+  }
+  #dm-c-8 {
+    position: absolute;
+    bottom: 10px;
+    left: 117px;
+    height: 64px;
+    width: 89px;
+    background-image: url("/images/features/dm-2013/CHAR3208.JPG");
+    background-position: center center;
+    background-size: 100%;
+  }
+  #dm-collage-title {
+    position: absolute;
+    right: 14px;
+    top: 31px;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+  }
+  #dm-collage-title2 {
+    position: absolute;
+    color: white;
+    right: 14px;
+    top: 72px;
+    font-weight: bold;
+    top: 71px;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 1px black;
+  }
+  .dm-timeline-day {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #060342;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 2px;
+    text-shadow: 1px 1px 0 black;
+  }
+  .dm-timeline-event {
+    width: 100%;
+    background-color: #2c7c1d;
+    border-radius: 2px;
+  }
+  hr.vertical {
+    margin: 0;
+    height: 30px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid #aaa;
+    width: 50%;
+  }
+  .timeline-time {
+    display: block;
+    float: right;
+    color: #2c7c1d;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-top: -3px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  }
+  .dm-timeline-link a {
+    font-family: "Georgia",serif;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  }
+  .dm-link {
+    opacity: 0.2;
+    position: relative;
+    top: -3px;
+    display: block;
+    float: left;
+    margin-right: 7px;
+  }
+  .dm-timeline-event .dmwhite {
+    padding:8px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  .unbold {
+    font-weight:normal;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    display: block;
+    opacity: 0.7;
+  }
+  .link-oneline {
+    display: block;
+    padding-top: 7px;
+  }
+  .link-mb1 {
+    margin-bottom:10px;
+  }
+  .link-mb2 {
+    margin-bottom:25px;
+  }
+  .dm-story {
+    font-family: "Georgia",serif;
+    font-size: 1.3em;
+    color: #333;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+    display:block;
+    padding-top:4px;
+    padding-bottom:4px;
+    margin-bottom:10px;
+    &:hover {
+    background-color:#e6e6e6;
+    text-decoration:none;
+    }
+  }
+  .dm-story-column {
+    font-style:italic;
+  }
+  .dm-pubdate {
+    display: block;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-style:normal;
+  }
+  #dm-sm {
+    margin-top: 10px;
+    position:relative;
+    iframe {
+      float:right;
+      position:absolute;
+      top:0;
+      right:0;
+    }
+  }
+  #dm-spectrumrefer {
+    float:right;
+    position:relative;
+    overflow: hidden;
+    display:block;
+    .dm-spectrum-title {
+        position: absolute;
+        color: white;
+        background-color: rgba(0,0,0,0.6);
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        font-family: "Georgia",serif;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        box-shadow: 0 0 4px black;
+        top: 0;
+        display:block;
+        -webkit-transition:background-color, padding 0.2s;
+    }
+    &:hover .dm-spectrum-title {
+      text-decoration:none;
+      padding-top: 21px;
+      background-color: rgba(0,0,0,0.7);
+    }
+  }
+  .dm-spectrum-title:hover {
+    text-decoration:none;
+  }
+  .dm-online-byline {
+    text-align: center;
+    font-family: "Georgia",serif;
+    font-size: 0.8em;
+    opacity: 0.6;
+    font-weight: bold;
+  }
+  #dm-byline-row {
+    padding-top:14px;
+    text-align:center;
+  }
+  #dm-wraplink {
+    &:hover > a {
+      background-color:#333;
+    }
+    > a {
+      background-color:black;
+      color: white;
+      padding: 10px;
+      padding-top: 5px;
+      margin-bottom:10px;
+    }
+  }
+}

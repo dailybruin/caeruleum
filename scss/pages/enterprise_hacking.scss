@@ -1,0 +1,108 @@
+// applies to https://dailybruin.com/features/a-constant-threat-uc-it-security-adapts-practices-as-hacking-evolves/
+// extracted from pages/page-enterprise-hacking.php
+
+#eh-cover {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    background-image: url('http://dailybruin.com/images/2013/10/codeCP_RGB.jpg');
+    color: white;
+    margin-bottom: 10px;
+    h1 {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      font-size: 5em;
+    }
+}
+.eh-header {
+    text-transform: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    clear: both;
+}
+.eh-infobox {
+    width: 350px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    box-shadow: 0 5px 30px rgba(0,0,0, 0.2);
+    h3 {
+        padding-bottom: 3px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+}
+.eh-aside-left {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+.eh-aside-right {
+    float: right;
+    margin: 0 0 2em 2em;
+}
+.eh-caption {
+    font-size: 0.8em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: gray;
+}
+.eh-center {
+    text-align: center;
+}
+.eh-stat {
+    text-align: center;
+    font-size: 3em;
+    font-weight: light;
+    line-height: 1.1;
+}
+.eh-credit {
+    font-size: 0.8em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: gray;
+    font-style: italic;
+}
+.eh-author {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.eh-published {
+    margin-top: 0;
+    font-style: italic;
+}
+.eh-fullwidth {
+    display: block;
+    margin: 10px 0;
+}
+.eh-icon {
+    float: left;
+    clear: both;
+    margin-right: 7px;
+    opacity: 0.5;
+}
+.eh-icon-link {
+    width: 24px; height: 23px;
+    background: url('http://dailybruin.com/images/2013/10/glyphicons_050_link.png') no-repeat top left;
+}
+.eh-icon-speaker {
+    width: 24px; height: 26px;
+    background: url('http://dailybruin.com/images/2013/10/glyphicons_184_volume_up.png') no-repeat top left;
+}
+.eh-refer {
+    line-height: 1.7;
+    width: 450px;
+    a:hover .eh-icon {
+        opacity: 1;
+    }
+}
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hacking {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
