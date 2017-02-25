@@ -1,0 +1,145 @@
+// this is all stuff that appears at the bottom of an article
+.author-wrapper, .author-box, .author-title{
+  margin-top: 0 !important;
+}
+
+.entypo-twitter, .entypo-mail {
+  color: #00B2E2;
+  font-size: 1.5em;
+  margin-right:2px;
+}
+
+.author-email-inside, .twitter-follow-button{
+  font-size:.88em;
+  position:relative;
+  bottom: 2px;
+}
+
+div.email p, div.twitter p {
+  float:left;
+}
+
+div.twitter{
+  float:left;
+}
+
+.author-box{
+  margin:0;
+  padding:0;
+}
+// this appears on both the bottom of an article and the author's page
+.author-header {
+  display:inline-block;
+  font-size:1.4rem !important;
+  padding-top:0.25rem;
+  float:left;
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 400 !important;
+  a{
+    color:black !important;
+  }
+  a:hover{
+    color:$db-blue !important;
+  }
+}
+// this is all stuff that appears on the author's page
+.author-position {
+  display: inline-block;
+  float: left;
+  color: gray;
+  padding: { top:0.46rem; left:0.45rem;}
+  font-size:1.3rem;
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 100 !important;
+}
+
+.bio-text {
+  line-height: 1.5em;
+  text-align: left;
+  font-size: .85rem;
+  width: 100%;
+  word-wrap: break-word;
+
+}
+
+.contact-info-wrapper-mugshot
+{
+   padding-left: 10px;
+}
+
+.bio-text-mugshot
+{
+  line-height: 1.5em;
+  text-align: left;
+  font-size: .85rem;
+  width: 100%;
+  word-wrap: break-word;
+  padding-left: 10px;
+}
+
+.bio {
+  padding-bottom: .3em;
+}
+
+.contact-info-wrapper-smaller-margin{
+  margin-top: -0.5rem !important;
+}
+
+div.contact, div.email, div.twitter{
+  padding:0;
+}
+
+p.contact{
+  font-size: 1rem;
+  font-weight:400;
+  text-align: left;
+  padding:0;
+  margin:0;
+}
+
+div.description{
+  margin-top:0 !important;
+}
+
+div.image {
+  margin-top: 2px !important;
+  padding-right: 0px !important;
+}
+
+div.email.large-5.medium-5.columns, {
+  margin-left: 0px !important;
+}
+.author-wrapper{
+  padding-bottom: .1em;
+}
+
+div.email.small-6.columns{
+  margin-left: 10px !important;
+}
+
+@media (max-width: 480px) {
+  p.twitter{
+    font-size:.6rem;
+    text-align: left;
+  }
+  p.email{
+    font-size:.6rem;
+    text-align: left;
+  }
+
+  .author-header {
+    font-size:1.3rem;
+  }
+  .author-position {
+    font-size:1.2rem;
+    font-weight: 300;
+  }
+  .bio-text {
+    width: 100%;
+  }
+
+  div.email.small-12.columns, div.twitter.small-12.columns {
+    margin-left: 2px;
+  }
+
+}

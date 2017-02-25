@@ -1,0 +1,19 @@
+// KEEP THESE HIDDEN
+// if they are shown, they mess up the whole front page and add a whole new blank section
+.db-story-m {
+  padding-right: 25px;
+  display:none;
+}
+.db-story-m hr {
+  border: white;
+}
+//contains the two center articles on the front page, gives the gray column lines
+.db-story-center {
+  border-left: thin solid lightgrey;
+  border-right: thin solid lightgrey;
+}
+// appears only on front page
+.thumbnail-a {
+  float: right;
+  margin-left: 10px;
+}

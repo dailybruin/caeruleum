@@ -1,0 +1,119 @@
+// applies to http://dailybruin.com/registration-issue-2013/
+// extracted from pages/page-registration-2013.php
+
+body {
+  overflow-x: hidden;
+}
+.reg-banner {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.reg-img-cover {
+  display: block;
+  margin: 0;
+}
+.reg-section {
+  width: 256px;
+  height: 500px;
+  float: left;
+  position: relative;
+}
+.reg-section-wrap {
+  float: right;
+  width: 512px;
+  margin: 0;
+  clear: both;
+}
+.reg-articles {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.6);
+  padding: 1em;
+  a {
+    font-family: Georgia, sans-serif;
+    color: white;
+    font-size: 1.3em;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+#reg-ns {
+  background-image: url('http://dailybruin.com/images/2013/09/title+news_cover_resize.jpg');
+}
+#reg-sp {
+  background-image: url('http://dailybruin.com/images/2013/09/title+sports_cover_resize.jpg');
+}
+#reg-ae {
+  background-image: url('http://dailybruin.com/images/2013/09/title+ae_cover_resize.jpg');
+}
+#reg-op {
+  background-image: url('http://dailybruin.com/images/2013/09/title+opinion_cover_resize.jpg');
+}
+#reg-instagram {
+  margin-top: -60px;
+  h1 {
+    text-align: right;
+    margin-right: 8px;
+  }
+}
+.reg-credit {
+    font-size: 0.8em;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    margin: 1em 0;
+    line-height: 1.4em;
+}
+
+/* REFERS */
+.reg-refer {
+    width: 410px;
+    height: 273px;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 1em;
+    box-shadow: 0 0 30px rgba(0,0,0, 0.3) inset;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: right;
+    &:hover {
+      box-shadow: 0 0 30px rgba(0,0,0, 0.5) inset, 0 0 0 1px rgba(0,0,0, 0.2) inset;
+      .reg-title {
+        text-decoration: underline;
+      }
+      .reg-teaser {
+        background-color: rgba(0,0,0, 0.8);
+      }
+    }
+    .reg-title {
+      font-size: 3em;
+      padding: 20px;
+    }
+    .reg-teaser {
+      text-align: center;
+      margin-top: 150px;
+      font-style: italic;
+      font-size: 1.2em;
+      background-color: rgba(0,0,0, 0.6);
+    }
+}
+#reg-refer-ns {
+  background-image: url('http://dailybruin.com/images/2013/09/ns_feature.jpg');
+}
+#reg-refer-ae {
+  background-image: url('http://dailybruin.com/images/2013/09/ae_feature.jpg');
+}
+#reg-refer-sp {
+  background-image: url('http://dailybruin.com/images/2013/09/sp_feature.jpg');
+}
+#reg-refer-vd {
+  background-image: url('http://dailybruin.com/images/2013/09/vd_feature.png');
+}
+.reg-2013 {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}

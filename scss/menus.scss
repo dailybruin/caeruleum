@@ -1,0 +1,146 @@
+// all the following #menu code applies ONLY to the popout menu
+#menu {
+  border-radius: 0;
+  height: 100vh;
+  overflow-y: auto;
+  top: 0px !important;
+  position: fixed;
+  border: none;
+  right: initial;
+  width: 200px;
+  background-color: #222;
+  padding:0.5rem 1.5rem 0 0.4rem;
+}
+
+#menu .close-reveal-modal {
+  font-size: 1.5rem;
+}
+
+#menu .close-reveal-modal i {
+  color: lightgrey;
+}
+
+#menu label {
+  color: white;
+}
+#menu ul {
+  border-bottom: solid thin grey;
+  padding-top: 0.8rem;
+  margin-bottom: 0;
+}
+#menu ul:nth-child(2) {
+  padding-top: 1rem;
+}
+#menu ul:last-child {
+  border-bottom: none;
+}
+
+#menu li {
+
+}
+#menu hr {
+  color: lightgrey;
+}
+#menu li a {
+  display: block;
+  margin-right: 1rem;
+  padding: 0rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.85rem;
+  border-bottom: none;
+  color: white;
+}
+
+// #topMenu is the div for the news categories on the popout menu
+#topMenu > li span:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 6px;
+  font-weight: normal;
+  font-size: 0.85rem;
+  width: 16px;
+}
+
+// #topBar is the div for the news categories under the date on the homepage
+#topBar {
+  display: table;
+  margin: 0 auto 0.3rem;
+  list-style: none;
+  li {
+    display: inline;
+    margin: 0 1.2rem;
+    a {
+      font-size: 0.8rem;
+      color: black;
+    }
+    a:hover {
+      color: #0080C6;
+    }
+  }
+}
+
+// these are all the icon codes for font awesome for the popout menu
+.menu-news span:before {
+  content: "\f1ea";
+}
+
+.menu-opinion span:before {
+  content: "\f059";
+}
+
+.menu-sports span:before {
+  content: "\f17d";
+}
+
+.menu-ae span:before {
+  content: "\f008";
+}
+
+.menu-photo span:before {
+  content: "\f030";
+}
+
+.menu-radio span:before {
+  content: "\f0a1";
+}
+
+.menu-video span:before {
+  content: "\f03d";
+}
+
+.menu-prime span:before {
+  content: "\f10d";
+}
+
+.menu-the-quad span:before {
+  content: "\f044";
+}
+
+.menu-classifieds span:before {
+  content: "\f075";
+}
+
+.menu-facebook span:before {
+  content: "\f082";
+}
+
+.menu-twitter span:before {
+  content: "\f081";
+}
+
+.menu-github span:before {
+  content: "\f092";
+}
+
+.menu-youtube span:before {
+  content: "\f16a";
+}
+
+.menu-rss span:before {
+  content: "\f143";
+}
+
+.social-right i {
+  padding-left: 0.5rem;
+  font-size:1rem;
+}

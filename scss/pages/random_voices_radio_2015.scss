@@ -1,0 +1,67 @@
+// applies to http://dailybruin.com/musical-journeys-random-voices-a-cappella/
+// extracted from pages/page-random-voices-radio-2015.php
+
+a {
+	color: #0080c6;
+}
+.main-video {
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+  h2 {
+  	margin-bottom: 1rem;
+  }
+}
+.header-text h2{
+	font-size: 1.2rem;
+}
+.body {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	max-width: 65rem;
+	margin-left: auto;
+	margin-right: auto;
+  .where {
+  	border-top: thin lightgrey dashed;
+  	margin-top: 2rem;
+  	padding-top: 1rem;
+  	max-width: 60rem;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  h2 {
+  	font-size: 2rem;
+  	margin-bottom: 1.5rem;
+  }
+  h3 {
+  	font-size: 1.4rem;
+  	line-height: 1.5;
+  }
+  .title {
+  	font-size: 2rem;
+  	text-align: center;
+  	margin-bottom:2rem;
+  }
+  p {
+  	margin-bottom: 1.2rem;
+  	line-height: 1.7;
+  	font-size: 0.9rem;
+  }
+  img {
+  	max-width: 150px;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+}
+.db-ad-leaderboard {
+	display: none;
+}
+.below-header {
+	display: none !important;
+}
+.where .row {
+	margin-top: 3rem;
+}

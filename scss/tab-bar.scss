@@ -1,0 +1,35 @@
+// this code is for the "Daily Bruin" header, but NOT the date underneath
+.tab-bar {
+    -webkit-backface-visibility: hidden;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    line-height: 5rem;
+    position: relative;
+
+    .menu-icon h1{
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-left: 25px;
+      line-height: 5.3rem;
+    }
+
+    .search-icon{
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 5.3rem;
+      margin-right: 25px;
+      color: black;
+    }
+
+    .search-icon i {
+      display: inline;
+      font-size: 1.2rem;
+      line-height: 5.3rem;
+      color: black;
+    }
+
+    img {
+      width: 448px;
+      max-height: $tabbar-height;
+    }
+  }

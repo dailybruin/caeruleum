@@ -1,0 +1,137 @@
+#stickyheader .tab-bar-section.middle,
+#stickyalias .tab-bar-section.middle {
+  top: 0rem;
+}
+
+#stickyheader .tab-bar {
+    max-width: 85rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.db-top-date {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.db-top-date p {
+  color: grey;
+  font-size: 1rem;
+   width: 100%;
+   text-align: center;
+   border-bottom: 3px solid lightgrey;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+.db-top-date p span {
+    background:#fff;
+    padding:0 10px;
+}
+
+#stickyheader {
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+
+@media (min-width: 640px) {
+  #stickyheader{
+      height: 7rem;
+  }
+}
+
+#stickyalias {
+  display: none;
+  z-index: 1000;
+}
+
+#stickyalias img {
+  height: 2.7rem;
+  z-index: 1000;
+}
+#stickyalias .tab-bar{
+  height: 3.5rem;
+  line-height: 3.5rem;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#stickyalias .menu-icon{
+  height: 3.8rem;
+}
+
+#stickyalias .search-icon{
+  position: relative;
+  top: -0.9rem;
+}
+
+#stickyalias .search-icon i {
+  display: inline;
+  font-size: 1.2rem;
+  line-height: 4.3rem;
+  color: black;
+}
+
+.gsc-search-button input {
+  background-image: inherit;
+  box-sizing: content-box;
+}
+
+.gsc-inline-block .gsc-selected-option-container {
+  width: auto !important;
+}
+
+.gsc-control-cse table,
+.gsc-input .gsc-input-box  {
+  border: none;
+  margin-bottom: 0;
+}
+
+#search {
+  position: fixed;
+  top: 10% !important;
+  max-height: 80vh;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+#search .close-reveal-modal {
+  color: grey;
+  font-size: 1.5rem;
+}
+// this code is for the "Daily Bruin" header, but NOT the date underneath
+.tab-bar {
+    -webkit-backface-visibility: hidden;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    line-height: 5rem;
+    position: relative;
+
+    .menu-icon h1{
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-left: 25px;
+      line-height: 5.3rem;
+    }
+
+    .search-icon{
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 5.3rem;
+      margin-right: 25px;
+      color: black;
+    }
+
+    .search-icon i {
+      display: inline;
+      font-size: 1.2rem;
+      line-height: 5.3rem;
+      color: black;
+    }
+
+    img {
+      width: 448px;
+      max-height: $tabbar-height;
+    }
+  }

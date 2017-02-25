@@ -1,0 +1,159 @@
+/* === PLAYLIST STYLING =========================== */
+.audio-playlist {
+  overflow: hidden;
+  padding: 10px;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 3px 3px;
+}
+.audio-playlist span, .audio-playlist abbr, .audio-playlist a {
+  display: none;
+}
+.audio-playlist img {
+  display: block;
+}
+.audio-playlist .haudio {
+  display: none;
+}
+.audio-playlist .fn {
+  float: left;
+  width: 110px;
+  display: block;
+  font: 11px arial;
+}
+.audio-playlist .album {
+  font-style: italic;
+}
+
+/* === AUDIO PLAYER STYLINGS ====================== */
+.now-playing {
+  color:#F6F6F6;
+}
+.now-playing > span {
+  color:#333;
+}
+
+.jp-player {
+  width: 0;
+  height: 0;
+}
+.list-playlist .jp-playlist-player {
+  margin-bottom: 20px;
+}
+.jp-interface {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.now-playing {
+  width: 75%;
+  min-height: 50px;
+  display: block;
+  top: 0;
+  left: 0;
+  //the below is a shorthand way of saying "font-size: 12px; line-height: 15px;"
+  font: bold 12px/15px arial;
+}
+.now-playing span {
+  text-transform: none;
+  display: block;
+  font: 16px/21px arial;
+}
+.now-playing span.audio-songartist {
+  display:none;
+} /* Custom CSS rule! -BL */
+
+.jp-interface .jp-controls {
+  margin: 0;
+}
+
+.jp-controls {
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  overflow: hidden;
+  margin: 0 !important;
+  list-style: none !important;
+}
+.jp-controls li {
+  float: left;
+  margin-left: 2px;
+}
+.jp-controls a {
+  display: block;
+  cursor: pointer;
+  background: url(/wp-content/plugins/audio/css/images/icons_master.png) no-repeat;
+}
+.jp-controls .jp-play {
+  background-position: -27px -35px;
+  width: 31px;
+  height: 31px;
+}
+.jp-controls .jp-pause {
+  background-position: -27px 0;
+  width: 31px;
+  height: 31px;
+}
+.jp-controls .jp-previous {
+  background-position: 0 -39px;
+  width: 23px;
+  height: 23px;
+  margin-top: 5px;
+}
+.jp-controls .jp-next {
+  background-position: -62px -39px;
+  width: 23px;
+  height: 23px;
+  margin-top: 5px;
+}
+.jp-controls .jp-stop, .jp-volume {
+  display: none;
+}
+
+.jp-progress {
+  display: block;
+  width: 80%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  border: 1px solid #dedede;
+  overflow: hidden;
+  cursor: pointer;
+}
+.jp-load-bar {
+  display: block;
+  height: 4px;
+  background: #dedede;
+  overflow: hidden;
+}
+.jp-play-bar {
+  display: block;
+  height: 4px;
+  background: #333;
+  overflow: hidden;
+}
+.jp-play-bar span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: #333;
+  overflow: hidden;
+}
+
+.jp-current-time, .jp-duration {
+  display: inline;
+}
+.jp-play-time-all {
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
+  display: block;
+  text-align: right;
+  font: bold 12px/12px arial;
+}

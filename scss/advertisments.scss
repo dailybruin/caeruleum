@@ -1,0 +1,14 @@
+/* === Advertisements ======================== */
+#side-ad {
+  text-align: center;
+}
+#ad-banner-small {
+  text-align: center;
+}
+//this is the list of "sponsored links" underneath the featured project at the bottom of the home page
+.featured-ads ul {
+  font-size: 0.3rem;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}

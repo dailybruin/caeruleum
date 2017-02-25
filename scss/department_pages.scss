@@ -1,0 +1,32 @@
+/* === Department Pages =========================== */
+// ex: http://dailybruin.com/category/arts-entertainment/
+.db-section-side h2{
+  font-size: 0.9rem;
+}
+.db-section-cp img {
+  max-height: 300px;
+}
+.db-section-thumb img {
+  max-height: 200px;
+}
+.db-list img {
+  margin-bottom: 0.625rem;
+}
+.pagination-centered{
+  font-size: 1rem;
+}
+.page-header h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+// is used on the buttons when you go through article archives
+// ex: http://dailybruin.com/category/news/page/3/
+.db-pagination a, .db-pagination span {
+  display: inline-block;
+  width: auto;
+  padding: 5px 15px;
+  margin: 5px 5px;
+  border: thin solid lightgrey;
+}
