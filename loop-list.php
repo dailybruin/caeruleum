@@ -10,7 +10,7 @@
         </div>
 
 
-        <div class="panel-body outerscroll" id="scroll-up"><a href="#"><center><i class="fa fa-chevron-up" aria-hidden="true"></i></span></center></a></div>
+        <div class="panel-body outerscroll" id="scroll-up"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></a></div>
 
         <div class="panel-body">
           <ul id="scrollDiv" class="list scroll-list">
@@ -30,7 +30,7 @@
           </ul>
         </div>
 
-        <div class="panel-body outerscroll" id="scroll-down"><a href="#"><center><i class="fa fa-chevron-down" aria-hidden="true"></i></center></a></div>
+        <div class="panel-body outerscroll" id="scroll-down"><a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
         </div>
 
 

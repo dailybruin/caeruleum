@@ -1541,6 +1541,10 @@ margin-bottom: 0 !important;
       /*padding-left: 0px;*/
   }
 
+  .panel-body li {
+    list-style: none;
+  }
+
   .panel-body h2 {
     color: white;
     text-align: center;
@@ -1555,12 +1559,10 @@ margin-bottom: 0 !important;
       }
   }
 
-  .list li .active {
+  #scrollDiv .active {
     background-color: rgba(255, 255, 255, 0.2);
     font-weight: bolder;
   }
-
-
 
   .row {
     margin-left: 0px;
@@ -1576,14 +1578,15 @@ margin-bottom: 0 !important;
     opacity: 1;
   }
 
-  .blog-list li {
-   cursor: pointer;
-  }
-
   .outerscroll {
+    text-align: center;
     background-color: rgba(0, 0, 0, .2);
     padding: 5px;
     opacity: 1;
+
+    a {
+      color: white;
+    }
   }
 
   .outerscroll:hover {
@@ -1661,6 +1664,13 @@ margin-bottom: 0 !important;
     line-height: 35px;
     color: #ffffff;
     text-align: center;
+
+    p {
+      font-size: 0.8rem;
+    }
+    a {
+      color: white;
+    }
   }
 
   .card-upper .glyphicon-menu-left {
@@ -1693,8 +1703,11 @@ margin-bottom: 0 !important;
     vertical-align: center;
     text-align: center;
     padding-bottom: 10px;
-    font-size: 18px;
     height: 50px;
+
+    p {
+      font-size: 1rem;
+    }
   }
 
   .card-lower .last {
