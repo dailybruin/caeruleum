@@ -57,8 +57,10 @@
                           <a class="next" href='#'><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                         </p>
                       </div>
-                      <div class="card-content">
-                        <h1><?php the_sub_field('item_title'); ?></h1>
+                      <div class="card-content db-post-content">
+                        <div class="db-post-headline">
+                          <h1><?php the_sub_field('item_title'); ?></h1>
+                        </div>
                         <?php the_sub_field('item_body'); ?>
                       </div>
                       <div class="card-lower">

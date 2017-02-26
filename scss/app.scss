@@ -1549,11 +1549,15 @@ margin-bottom: 0 !important;
   .list li {
       color: white;
 
-      &:hover,
-      .active {
+      &:hover {
         background-color: rgba(255, 255, 255, 0.2);
         font-weight: bolder;
       }
+  }
+
+  .list li .active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bolder;
   }
 
 
