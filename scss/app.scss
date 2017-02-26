@@ -1510,7 +1510,7 @@ margin-bottom: 0 !important;
   }
 
   .blog-list ul {
-    list-style: none;
+    list-style-type: none;
   }
 
   .sidebar1 {
@@ -1679,16 +1679,18 @@ margin-bottom: 0 !important;
 
   .card-content {
     padding: 15px 85px 10px 85px;
+    h1 {
+      font-size: 2.5em;
+      line-height: 1.2;
+      text-transform: none;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 0.9rem;
+    }
   }
-
-  .card-content h1 {
-    font-size: 2.5em;
-    line-height: 1.2;
-    text-transform: none;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }
-
+  
   .card-lower {
     color: #222;
     vertical-align: center;
