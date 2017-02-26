@@ -6,7 +6,7 @@
     <div class="row blog-list">
       <div class="small-3 columns panel panel-default sidebar1">
         <div class="panel-body">
-          <h2><center>Share</center></h2>
+          <h2>Share</h2>
         </div>
 
 
