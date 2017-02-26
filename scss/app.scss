@@ -1541,12 +1541,17 @@ margin-bottom: 0 !important;
       /*padding-left: 0px;*/
   }
 
-
-  .list>li:hover, .active {
-      background-color: rgba(255, 255, 255, 0.2);
+  .list li {
       color: white;
-      font-weight: bolder;
+
+      &:hover,
+      .active {
+        background-color: rgba(255, 255, 255, 0.2);
+        font-weight: bolder;
+      }
   }
+
+
 
   .row {
     margin-left: 0px;
