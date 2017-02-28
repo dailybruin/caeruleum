@@ -1545,18 +1545,39 @@ margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .panel-body h2 {
+  .panel-body {
     color: white;
     text-align: center;
+
+    margin-bottom: 1rem;
+
+    .db-content h1 {
+      margin-top: 0;
+    }
+
+    .db-post-headline h1 {
+      color: white;
+    }
+
+    h4 {
+      color: white;
+    }
+
+    a {
+      color: white;
+    }
   }
 
   .list li {
-      color: white;
+    color: white;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      font-weight: bolder;
+    }
+  }
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        font-weight: bolder;
-      }
+  #scrollDiv {
+    text-align: left;
   }
 
   #scrollDiv .active {
@@ -1595,6 +1616,8 @@ margin-bottom: 0 !important;
   }
 
   .l-item {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     margin-left: 0px;
     font-size: 18px;
   }

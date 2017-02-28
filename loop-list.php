@@ -6,9 +6,9 @@
     <div class="row blog-list">
       <div class="small-3 columns panel panel-default sidebar1">
         <div class="panel-body">
-          <h2>Share</h2>
+          <div class="db-post-headline"><h1><?php the_headline(); ?></h1></div>
+          <?php the_byline(); ?>
         </div>
-
 
         <div class="panel-body outerscroll" id="scroll-up"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></a></div>
 
