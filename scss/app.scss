@@ -765,15 +765,17 @@ figure, figure.alignnone {
 #topBar {
   display: table;
   margin-top: -0.45rem;
+  margin-left: 0;
   width: 100%;
   list-style: none;
   li {
-    padding: 0.5rem;
     text-align: center;
     display: table-cell;
     a {
       font-size: .95rem;
       color: black;
+      display: block;
+      padding: 0.5rem;
     }
   }
   li:hover {
