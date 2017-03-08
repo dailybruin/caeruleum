@@ -95,7 +95,7 @@ ul {
 }
 
 .sidebar1 {
-    position: fixed;
+  position: fixed;
     width: 250px;
       color: #fff;
       background-color: rgba(0, 0, 0, .5);
