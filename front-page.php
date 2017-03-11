@@ -191,7 +191,7 @@
               <hr style="margin: 1.5rem 0">
 
               <div class="db-ad">
-                <?php get_template_part('ad','side'); ?>
+                <?php get_template_part('ads/ad','side'); ?>
               </div>
             </div>
     </div>

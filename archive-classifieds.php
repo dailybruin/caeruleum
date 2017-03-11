@@ -4,10 +4,10 @@
 	<div class="large-8 columns" id="post">
 		<?php get_template_part('loop', 'classified'); ?>
 	</div><!-- end div#post -->
-	
+
 	<aside class="large-4 columns" id="sidebar" role="complementary">
 		<div id="sidebar-inside">
-		
+
 			<div id="place-ad">
 				<div class="side-info">
 					<div class="btn-group classifieds-button-group text-center">
@@ -20,21 +20,21 @@
 					</div><!-- end div.btn-group -->
 				</div><!-- end div.side-info -->
 			  <div class="db-ad-rectangle hide-for-medium hide-for-small">
-                <?php get_template_part('ad','side'); ?>
+                <?php get_template_part('ads/ad','side'); ?>
               </div>
 			</div><!-- end div#place-ad -->
 
-		
-
-			
 
 
-			
-			
+
+
+
+
+
 
 		</div><!-- end div#sidebar-inside -->
 	</aside><!-- end aside#sidebar -->
-</div><!-- end div#single-post -->      
+</div><!-- end div#single-post -->
 </div>
 
 <?php get_footer(); ?>
