@@ -1514,7 +1514,7 @@ margin-bottom: 0 !important;
   }
 
   .sidebar1 {
-      position: fixed;
+      position: absolute;
       width: 250px;
         color: #fff;
         background-color: rgba(0, 0, 0, .5);
@@ -1524,7 +1524,7 @@ margin-bottom: 0 !important;
 
   .sidebar1:after{
     content: '';
-    position: absolute;
+    //position: absolute;
     top: 0px;
     right: -18px;
     bottom: 0px;
@@ -1672,6 +1672,7 @@ margin-bottom: 0 !important;
   .showing {
     opacity: 1;
     z-index: 2;
+    display:block;
 
     animation-duration: 2s;
     animation-name: slidein;

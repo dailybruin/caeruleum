@@ -41,47 +41,7 @@ $(document).ready(function () {
     });
   }
 
-  if($('#bg img').css('display') != 'none') {
-    $('.sidebar1').toggleClass('special');
-  }
-
   vectorDiv( 'scroll-up', 'scrollDiv', "up", 15);
   vectorDiv( 'scroll-down', 'scrollDiv', "down", 15);
 
-  var windw = this;
-
-$.fn.followTo = function ( elem ) {
-    var $this = this,
-        $window = $(windw),
-        $bumper = $(elem),
-        bumperPos = $bumper.offset().top,
-        thisHeight = $this.outerHeight(),
-        setPosition = function(){
-          var currentHeight = (($('.sidebar1').offset().top) + $('.sidebar1').height());
-           console.log(currentHeight),
-           bumperPos = $bumper.offset().top;
-            if (currentHeight > bumperPos) {
-              $this.css({
-                  "position": "absolute",
-                  "top": $('.card-lower').offset().top - $('.card-lower').height() - $('.sidebar1').outerHeight()
-              });
-            } else {
-              $this.css({
-                "position": "fixed !important",
-              })
-            }
-        };
-    $window.resize(function()
-    {
-        bumperPos = pos.offset().top;
-        thisHeight = $this.outerHeight();
-        setPosition();
-    });
-    $window.scroll(setPosition);
-    setPosition();
-};
-
-//$(windw).scroll(function() {
-  $('.sidebar1').followTo('.card-lower');
-//});
 });
