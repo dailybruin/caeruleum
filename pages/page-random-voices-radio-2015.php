@@ -32,6 +32,7 @@ Template Name: Random Voices Radio 2015
 							<h3>Olivia London - Bass</h3>
 							<p>Second-year musical theater student</p>
 							<audio src="http://dailybruin.com/images/2015/04/OliviaLondon.wav" controls></audio>
+							
 						</div>
 					</div>
 					<div class="row">

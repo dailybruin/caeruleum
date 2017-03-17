@@ -228,21 +228,21 @@
 							</div>
 							</a>
 						</div>
-					-->
+					 -->
 
 						<div class="row db-story below-header">
-							<div class="db-top-date text-center hide-for-small" style="margin-top: -0.5rem;">
+							<div class="db-top-date text-center hide-for-small">
 								<?php date_default_timezone_set('America/Los_Angeles'); ?>
 								<p><span><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('j'); ?></span></p>
 							</div>
-							<div class="small-12 columns hide-for-small" style="margin-top: 0px;">
+							<div class="small-12 columns hide-for-small" id="topBarContainer" style="margin-top: 0px;">
 								<?php wp_nav_menu(array('theme_location' => 'top_bar',
 									'menu_class' => '',
 									'container' => '',
 									'menu_id' => 'topBar',
+									'fallback_cb'    => false,
 									)); ?>
 							</div>
-							<hr style="border-top: medium double lightgrey;"/>
 
 							<div class="small-6 columns hide-for-small" style="margin:0;">
 								<?php ob_start();

@@ -605,8 +605,7 @@ figure, figure.alignnone {
 }
 
 .db-top-date {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-top: -1.5rem !important;
 }
 
 .db-top-date p {
@@ -758,20 +757,29 @@ figure, figure.alignnone {
   width: 16px;
 }
 
+#topBarContainer {
+  border-bottom: 3px solid lightgray;
+  margin-bottom: 0.60rem;
+}
+
 #topBar {
   display: table;
-  margin: 0 auto 0.3rem;
+  margin-top: -0.45rem;
+  margin-left: 0;
+  width: 100%;
   list-style: none;
   li {
-    display: inline;
-    margin: 0 1.2rem;
+    text-align: center;
+    display: table-cell;
     a {
-      font-size: 0.8rem;
+      font-size: .95rem;
       color: black;
+      display: block;
+      padding: 0.5rem;
     }
-    a:hover {
-      color: #0080C6;
-    }
+  }
+  li:hover {
+    background-color: #D9E5EC;
   }
 }
 
@@ -1414,7 +1422,6 @@ margin-bottom: 0 !important;
   @import 'print';
 }
 
-
 // BLOG LISTS
 .blog-list {
   @media screen and (max-width: 1200px) {
@@ -1747,4 +1754,59 @@ margin-bottom: 0 !important;
     margin-right: 50px;
     margin-bottom: 20px;
   }
+
+.yarpp-related-widget {
+    margin-top: 0;
+
+    .side-info {
+        margin-top: 0;
+        
+        h4.yarpp-title {
+                margin: 0 -7px;
+                padding: 10px 7px;
+                margin-bottom: 14px;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: 2;
+        }
+    }
+}
+
+ul.related-posts {
+    margin-left: 0;
+   
+    li {
+        list-style-type: none;
+        margin: .5rem 0;
+        font-size: .9rem;
+        
+        div.row {
+            .columns {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        h4 {
+            display: block;
+        }
+
+        a {
+            color: #222;
+
+            &:hover, h4:hover {
+                color: #0080c6;
+            }
+        }
+
+        img {
+            margin-bottom: .25rem;
+            width: 100%;
+       }
+
+       .related-post-thumbnail {
+            max-height: 200px;
+            overflow: hidden;
+       }
+    }
 }
