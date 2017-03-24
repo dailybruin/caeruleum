@@ -1427,7 +1427,7 @@ margin-bottom: 0 !important;
 
     .side-info {
         margin-top: 0;
-        
+
         h4.yarpp-title {
                 margin: 0 -7px;
                 padding: 10px 7px;
@@ -1437,16 +1437,20 @@ margin-bottom: 0 !important;
                 line-height: 2;
         }
     }
+
+    .redirect-text {
+      margin: .65rem 0px 0px 0px;
+    }
 }
 
 ul.related-posts {
     margin-left: 0;
-   
+
     li {
         list-style-type: none;
         margin: .5rem 0;
         font-size: .9rem;
-        
+
         div.row {
             .columns {
                 margin: 0;

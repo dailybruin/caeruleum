@@ -6,7 +6,7 @@ Author: bryanvtran (Bryan Tran)
 */
 ?><?php if (have_posts()):?>
 <div id="sidebar-similar" class="side-info">
-		<h4 class="yarpp-title">Related Posts</h4>
+		<h4 class="yarpp-title">Related Content</h4>
 		<ul class="related-posts">
 			<?php while (have_posts()) : the_post(); ?>
             <li>
@@ -42,4 +42,9 @@ Author: bryanvtran (Bryan Tran)
 			<?php endwhile; ?>
 		</ul>
 </div><!-- end div#sidebar-similar -->
+<?php else: ?>
+	<div id="sidebar-similar" class="side-info">
+			<h4 class="yarpp-title">Related Content</h4>
+			<p class="redirect-text">Read more for <?php the_category(", "); ?></p>
+	</div>
 <?php endif; ?>
