@@ -25,7 +25,6 @@ Author: bryanvtran (Bryan Tran)
                             <?php the_post_thumbnail('db-category-thumb'); ?>
                         </a>
                     </div>
-                    <! -- <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> (<?php the_score(); ?>)-->
                 <?php else: ?>
                 <div class="small-12 columns">
                     <a href="<?php the_permalink() ?>" rel="bookmark">
@@ -34,7 +33,7 @@ Author: bryanvtran (Bryan Tran)
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <?php the_title(); ?>
                     </a>
-                                                                                                                                            </div>
+                </div>
                 <?php endif; ?>
                 </div>
             </li>
