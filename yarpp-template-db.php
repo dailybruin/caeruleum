@@ -12,10 +12,11 @@ Author: bryanvtran (Bryan Tran)
             <li>
                 <div class="row">
                 <?php if (has_post_thumbnail()): ?>
-                    <div class="small-8 columns">
+                    <div class="small-8 columns" style="padding-right: 0.4rem;">
                         <a href="<?php the_permalink() ?>" rel="bookmark">
                             <h4><?php /* get first category in list */ $categories = get_the_category(); echo $categories[0]->name ?></h4>
                         </a>
+												<p><?php the_time('F j, Y'); ?></p>
                         <a href="<?php the_permalink() ?>" rel="bookmark">
                             <?php the_title(); ?>
                         </a>
@@ -30,6 +31,7 @@ Author: bryanvtran (Bryan Tran)
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <h4><?php /* get first category in list */ $categories = get_the_category(); echo $categories[0]->name ?></h4>
                     </a>
+										<p><?php the_time('F j, Y'); ?></p>
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <?php the_title(); ?>
                     </a>
