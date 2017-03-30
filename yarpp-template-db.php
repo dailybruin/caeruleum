@@ -44,8 +44,5 @@ Author: bryanvtran (Bryan Tran)
 		</ul>
 </div><!-- end div#sidebar-similar -->
 <?php else: ?>
-	<div id="sidebar-similar" class="side-info">
-			<h4 class="yarpp-title">Related Content</h4>
-			<p class="redirect-text">Read more for <?php the_category(", "); ?></p>
-	</div>
+
 <?php endif; ?>
