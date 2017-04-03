@@ -8,7 +8,7 @@
     <div class="row blog-list">
       <ul class="contain">
         <li id="sidebar2">
-        <div class="small-3 columns panel sidebar1">
+        <div class="small-3 columns panel blog-list-sidebar">
           <div class="panel-body">
             <div class="db-post-headline"><h1><?php the_headline(); ?></h1></div>
             <?php the_byline(); ?>
@@ -74,7 +74,7 @@
                           <a class="next" href="#">next  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                         </p>
                       </div>
-            
+
 
 
                   <?php $i++ ?>
