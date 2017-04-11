@@ -63,7 +63,8 @@
     <meta property="og:image" content="<?php echo $url; ?>" />
     <meta name="twitter:image" content="<?php echo $url; ?>"/>
   <?php else: ?>
-    <meta property="og:image" content="http://dailybruin.com/images/2016/05/Daily-Bruin-Logo.png" />
+    <meta property="og:image" content="http://dailybruin.com/images/2017/03/db-logo.png" />
+    <meta property="twitter:image" content="http://dailybruin.com/images/2017/03/db-logo.png" />
   <?php endif; ?>
 
   <?php $excerpt = wp_trim_words(($post->post_content),30)?>
