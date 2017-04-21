@@ -72,7 +72,7 @@
         $third_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('music')->term_id  );
         $fourth_side = array( 'numberposts' => 2, 'cat' => get_category_by_slug('film-tv')->term_id  );
         $side_names = array("From the Columnists", "Latest in Music", "Latest in Film/TV");
-        $side_args = array($first_side,$second_side,$third_side,$fourth_side);
+        $side_args = array($second_side,$third_side,$fourth_side);
         break;
       case "Spotlight":
         $section_cat = $spotlight_cat;
