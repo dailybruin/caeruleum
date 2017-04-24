@@ -7,6 +7,7 @@ Template Name: USAC Evaluations 2017
 <style>
     .councilmember img{
         width: 100%;
+        max-height: 400px;
     }
     .councilmember {
         padding: 0.5rem;
