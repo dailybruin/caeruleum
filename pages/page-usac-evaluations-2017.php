@@ -10,6 +10,7 @@ Template Name: USAC Evaluations 2017
     }
     .councilmember {
         padding: 0.5rem;
+        min-height: 400px;
     }
     .councilmember:hover img,
     .council:hover img {
@@ -37,7 +38,7 @@ Template Name: USAC Evaluations 2017
         position: absolute;
         bottom: 10px;
         left: 15px;
-        font-size: 2.2rem;
+        font-size: 1.3rem;
         margin-right: 0.5rem;
         font-weight: bold;  
     }
