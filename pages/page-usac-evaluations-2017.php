@@ -151,7 +151,7 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/1KKgDhFNtOf5s9eEjYFKf3LoS
                 append += '</span>';
                 append += '</a>';
             append += '</div>';
-                append += '<div id="modal'+i+'" class="reveal-modal" data-reveal aria-hidden="true">';
+                append += '<div id="modal'+i+'" class="reveal-modal" data-reveal aria-hidden="true"><a class="close-reveal-modal" aria-label="Close">&#215;</a>';
                 append += '<div class="large-3 columns">';
                     append += '<img class="mug" src="'+entry.gsx$mugurl.$t+'"/>';
                 append += '</div>';
