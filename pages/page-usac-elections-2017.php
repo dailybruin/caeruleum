@@ -50,7 +50,7 @@ Template Name: USAC Elections 2017
             else if (hash.indexOf("#referenda") > -1)
                 switchSection("referenda");
             else
-                switchSection("results");
+                switchSection("profiles");
         });
 
         setSidebar();
