@@ -193,7 +193,7 @@ Template Name: USAC Elections 2017
             $("#filter").show();
         }
 
-        if(currentContainer === "results" || currentContainer === "news") {
+        if(currentContainer === "results" || currentContainer === "news" || currentContainer === "violations") {
             $("#PVE").hide();
         } else {
             $("#PVE").show();
@@ -281,7 +281,7 @@ Template Name: USAC Elections 2017
 </script>
 
 <script type="text/template" id="violations_main_template">
-    <% _.each(rows, function(violation) { %>
+    <!--<% _.each(rows, function(violation) { %>
         <div class = "element violation <%- violation.slates %>" id="<%- violation.id %>">
             <h1>Complaint #<%- violation.id %></h1>
             <hr>
@@ -294,14 +294,49 @@ Template Name: USAC Elections 2017
             <h2>Sanction:</h2>
             <p><%- violation.sanction %></p>
         </div>
-    <% }); %>
+    <% }); %>-->
+                    <h1 id="news-title">USAC Violations Coverage</h1>
+                    <div class="stories">
+                        <?php
+                        global $post;
+                        $myposts = get_posts( array('tag_slug__and'  => 'usac-sanctions-2017', 'posts_per_page' => '-1'));
+                        foreach( $myposts as $post ) :
+                            setup_postdata($post); ?>
+                        <div class="row db-list">
+                            <?php if(has_post_thumbnail()): ?>
+                                <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                                </div>
+                            <div class="medium-8 small-12 columns" style="padding-left:0">
+                            <?php endif; ?>
+                            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <span class="db-section-date">
+                                        <h4><?php the_category(', ');?></h4>
+                                        <h4>|</h4>
+                                        <h5><?php the_time('F j, g:i a');?> </h5>
+                                        </span>
+                                    <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                                <div class="entry-content">
+                                    <?php the_audio(); ?>
+                                        <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+                                </div>
+                                <?php if(has_post_thumbnail()): ?>
+                                </div>
+                                <div class="medium-4 columns hide-for-small">
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                                </div>
+                                <?php endif; ?>
+                            </article>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
 </script>
 
-<script type="text/template" id="violations_sidebar_template">
+<!--<script type="text/template" id="violations_sidebar_template">
     <% _.each(rows, function(violation) { %>
         <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #<%- violation.id %></a></dd>
     <% }); %>
-</script>
+</script>-->
 
 <script type="text/template" id="endorsements_main_template">
     <% _.each(rows, function(candidate) { %>
@@ -408,7 +443,7 @@ Template Name: USAC Elections 2017
         <!-- TOP Nav Section -->
         <ul class="right">
             <li class="active"><a href="#profiles">Profiles</a></li>
-            <!-- <li><a href="#referenda">Referenda</a></li> -->
+             <!--<li><a href="#referenda">Referenda</a></li> -->
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
             <!-- <li><a href="#polls">Polls</a></li> -->
@@ -449,10 +484,10 @@ Template Name: USAC Elections 2017
                 </dl>
             </div>
 
-            <div class="usac-section violations-container">
+            <!--<div class="usac-section violations-container">
                 <dl class="side-nav" id="violations-sidebar">
                 </dl>
-            </div>
+            </div>-->
 
             <div class="usac-section endorsements-container">
                 <dl class="side-nav" id="endorsements-sidebar">
@@ -552,9 +587,6 @@ Template Name: USAC Elections 2017
                     <h3>Transfer Student Representative</h3>
                 </div>
             </div>
-            <!-- VIOLATIONS PAGE IS HERE  -->
-            <div class="usac-section violations-container" id="violations-content">
-            </div>
     <!-- MAIN CONTENT  DIV END  -->
         </div>
     <!-- PROFILES/VIOLATIONS/ENDORSEMENTS -->
@@ -594,6 +626,9 @@ Template Name: USAC Elections 2017
         </div>
     </div>
     -->
+            <!-- VIOLATIONS PAGE IS HERE  -->
+    <div class="usac-section violations-container" id="violations-content">
+    </div>
     <!-- RESULTS PAGE IS HERE  -->
     <div class="usac-section results-container">
         <!-- VIDEO IS HERE -->
@@ -763,43 +798,41 @@ Template Name: USAC Elections 2017
         </ul>
 
     </div>
-
     <div class="usac-section news-container">
         <h1 id="news-title">USAC Election Coverage</h1>
-        <div id="stories">
+        <div class="stories">
             <?php
             global $post;
             $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2017', 'posts_per_page' => '-1'));
             foreach( $myposts as $post ) :
                 setup_postdata($post); ?>
-      <div class="row db-list">
-          <?php if(has_post_thumbnail()): ?>
-            <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+            <div class="row db-list">
+                <?php if(has_post_thumbnail()): ?>
+                    <div class="small-12 columns hide-for-large hide-for-medium show-for-small text-center">
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                    </div>
+                <div class="medium-8 small-12 columns" style="padding-left:0">
+                <?php endif; ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <span class="db-section-date">
+                            <h4><?php the_category(', ');?></h4>
+                            <h4>|</h4>
+                            <h5><?php the_time('F j, g:i a');?> </h5>
+                            </span>
+                        <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
+                    <div class="entry-content">
+                        <?php the_audio(); ?>
+                            <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
+                    </div>
+                    <?php if(has_post_thumbnail()): ?>
+                    </div>
+                    <div class="medium-4 columns hide-for-small">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
+                    </div>
+                    <?php endif; ?>
+                </article>
             </div>
-            <div class="medium-8 small-12 columns" style="padding-left:0">
-          <?php endif; ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-              <span class="db-section-date">
-                      <h4><?php the_category(', ');?></h4>
-                      <h4>|</h4>
-                      <h5><?php the_time('F j, g:i a');?> </h5>
-                      </span>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-
-          <div class="entry-content">
-            <?php the_audio(); ?>
-                <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>
-        </div>
-        <?php if(has_post_thumbnail()): ?>
-        </div>
-          <div class="medium-4 columns hide-for-small">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'db-category-thumb', array('class'=>'category-thumb') ); ?></a>
-          </div>
-        <?php endif; ?>
-        </article>
-      </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
         </div>
     </div>
     </div>
