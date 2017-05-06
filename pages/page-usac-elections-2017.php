@@ -50,7 +50,7 @@ Template Name: USAC Elections 2017
             else if (hash.indexOf("#referenda") > -1)
                 switchSection("referenda");
             else
-                switchSection("profiles");
+                switchSection("results");
         });
 
         setSidebar();
@@ -69,7 +69,7 @@ Template Name: USAC Elections 2017
             $('.lazyYT').lazyYT();
         });
 
-        var resultsData = "https://spreadsheets.google.com/feeds/list/1i27cJk1pzUSXs4ivyKA_FJ6tqA22Ouucsb0cRhdSqo0/od6/public/values?alt=json";
+        var resultsData = "https://spreadsheets.google.com/feeds/list/1kpFjLUNbufAYkYMbyzuOpTTMpD5jECX7ld-fxl8kJzA/od6/public/values?alt=json";
         $.getJSON(resultsData, function(candidates) {
             candidates = clean_google_sheet_json(candidates);
             var resultsTemplate = _.template($("#results_candidates_template").html());
@@ -118,7 +118,7 @@ Template Name: USAC Elections 2017
         var gallerydata = "https://spreadsheets.google.com/feeds/list/1-WiB1T4YWQ7BmXpb2Gh8dZBRO9KlcPnaJoSaDhODR38/od6/public/values?alt=json";
         $.getJSON(gallerydata, function(galleryjson) {
             var data = clean_google_sheet_json(galleryjson);
-            var template = _.template($("#results_gallery_template").html());
+            var template = _.template($("#results_gallery_template").html()); <!-- this used to be results_gallery_template -->
             $(".results-gallery").html(template({rows: data}));
 
             var $gallery = $('.gallery').flickity({
@@ -447,7 +447,7 @@ Template Name: USAC Elections 2017
             <li><a href="#violations">Violations</a></li>
             <li><a href="#endorsements">Endorsements</a></li>
             <!-- <li><a href="#polls">Polls</a></li> -->
-            <!-- <li><a href="#results">Results</a></li> --> <!-- uncomment when results come out -->
+            <li><a href="#results">Results</a></li>
             <li><a href="#news">News</a></li>
         </ul>
       </section>
@@ -652,113 +652,113 @@ Template Name: USAC Elections 2017
             <li id="results-President">
                 <h2 class="results-position">President</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.arielle.mokhtarzadeh.JHan.jpg"/>
+                    <p class="results-name">Arielle Yael Mokhtarzadeh</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-IVP">
                 <h2 class="results-position">Internal Vice President</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.vivy.li.JHan.jpg"/>
+                    <p class="results-name">Vivy Li</p>
+                    <p class="results-percent">54.3%</p>
                 </div>
             </li>
             <li id="results-EVP">
                 <h2 class="results-position">External Vice President</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
-                </div>
-            </li>
-            <li id="results-AAC">
-                <h2 class="results-position">Academic Affairs Commissioner</h2>
-                <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
-                </div>
-            </li>
-            <li id="results-CEC">
-                <h2 class="results-position">Campus Events Commissioner</h2>
-                <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.chloe.pan.JHan.jpg"/>
+                    <p class="results-name">Chloe Pan</p>
+                    <p class="results-percent">55.9%</p>
                 </div>
             </li>
             <li id="results-Gen-Rep1">
                 <h2 class="results-position">General Representative 1</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.nicole.diaz.Ayeo.jpg"/>
+                    <p class="results-name">Nicole Corona Diaz</p>
+
                 </div>
             </li>
             <li id="results-Gen-Rep2">
                 <h2 class="results-position">General Representative 2</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.kayla.he.JHan.jpg"/>
+                    <p class="results-name">Kayla He</p>
+
                 </div>
             </li>
             <li id="results-Gen-Rep3">
                 <h2 class="results-position">General Representative 3</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.justin.jackson.JHan.jpg"/>
+                    <p class="results-name">Justin Jackson</p>
+
+                </div>
+            </li>
+            <li id="results-AAC">
+                <h2 class="results-position">Academic Affairs Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.divya.sharma.MB.jpg"/>
+                    <p class="results-name">Divya Sharma</p>
+                    <p class="results-percent">58.5%</p>
+                </div>
+            </li>
+            <li id="results-CEC">
+                <h2 class="results-position">Campus Events Commissioner</h2>
+                <div class="results-content">
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.nedda.saidian.MB.jpg"/>
+                    <p class="results-name">Nedda Saidian</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-CSC">
                 <h2 class="results-position">Community Service Commissioner</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.adriana.hardwicke.JHan.jpg"/>
+                    <p class="results-name">Adriana Hardwicke</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-CAC">
                 <h2 class="results-position">Cultural Affairs Commissioner</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.malik.flournoy-hooker.MB.jpg"/>
+                    <p class="results-name">Malik D. Flournoy-Hooker</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-FAC">
                 <h2 class="results-position">Facilities Commissioner</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.zahra.hajee.JHan.jpg"/>
+                    <p class="results-name">Zahra Hajee</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-FSC">
                 <h2 class="results-position">Financial Support Commissioner</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.aaron.boudaie.AYeo.jpg"/>
+                    <p class="results-name">Aaron Boudaie</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-SWC">
                 <h2 class="results-position">Student Wellness Commissioner</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.christina.lee.JHan.jpg"/>
+                    <p class="results-name">Christina Lee</p>
+                    <p class="results-percent">100%</p>
                 </div>
             </li>
             <li id="results-TSR">
                 <h2 class="results-position">Transfer Student Representative</h2>
                 <div class="results-content">
-                    <img src="http://placehold.it/200x300"/>
-                    <p class="results-name">Pending</p>
-                    <p class="results-percent">--%</p>
+                    <img src="http://dailybruin.com/wp-content/grand-media/image/web.sayron.stokes.JHan.jpg"/>
+                    <p class="results-name">Sayron Stokes</p>
+                    <p class="results-percent">52.48%</p>
                 </div>
             </li>
             <!--
