@@ -435,7 +435,7 @@ Template Name: USAC Elections 2017
 <a class="fi-arrow-up" href="#" id="scrollup"><img class="show-for-small-only" src="../img/usac-2016.uparrow.png"/></a>
 <div class="container">
     <div class="row banner">
-      <img src="http://dailybruin.com/images/2017/04/USACHEADER.png"/>
+      <img src="http://dailybruin.com/images/2017/05/usacheader-01.png"/>
     </div>
     <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
