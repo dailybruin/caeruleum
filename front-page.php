@@ -478,7 +478,7 @@
              <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
              <span style="display:block;width:100%;clear:both;"></span>
              <img style="height: 199px;" src="http://graphics.dailybruin.com/cannabis-kingdom/img/keyvis.jpg" />
-                        <p>The Daily Bruin sent four staffers up the West Coast to uncover the kingdom of cannabis at the farms near the California-Oregon border. They spoke to students, farmers and business managers about the effects that Proposition 64 has had since it passed in November of last year. This project was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which has funded UCLA’s student journalists for eight years to cover stories of a global reach and local impact.</p>
+                        <p>The Daily Bruin sent four staffers up the West Coast to uncover the kingdom of cannabis at the farms near the California-Oregon border. They spoke to students, farmers and business managers about the effects that Proposition 64 has had since it passed in November of last year.</p>
              <a href="http://graphics.dailybruin.com/cannabis-kingdom/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
              <span style="display:block;width:100%;clear:both"></span>
           </div>
