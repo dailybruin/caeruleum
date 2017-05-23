@@ -474,12 +474,12 @@
               </div>
         <div class="row" id="featuredProject">
           <div style="padding: 5px 20px;">
-             <h1>give a man a fish</h1>
+             <h1>cannabis kingdom</h1>
              <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
              <span style="display:block;width:100%;clear:both;"></span>
-             <img src="http://dailybruin.com/images/2015/10/bob-cover-300x199.jpg" />
-                        <p>Radio reporter Jonaki Mehta, photographer Sonja Bartlett and an external translator, Ravindranath Chandran, spent nine days in Vadamanappakkam covering the progress and effectiveness of Project RISHI’s initiatives and exploring the complexities of this rural village and its residents. This project was made possible by the <a href="http://www.rememberingbridget.com/" target="_blank">Bridget O’Brien Scholarship Foundation</a>, which has funded UCLA’s student journalists for eight years to cover stories of a global reach and local impact.</p>
-             <a href="http://india.dailybruin.com/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
+             <img style="height: 199px;" src="http://graphics.dailybruin.com/cannabis-kingdom/img/keyvis.jpg" />
+                        <p>The Daily Bruin sent four staffers up the West Coast to uncover the kingdom of cannabis at the farms near the California-Oregon border. They spoke to students, farmers and business managers about the effects that Proposition 64 has had since it passed in November of last year.</p>
+             <a href="http://graphics.dailybruin.com/cannabis-kingdom/" class="featuredlink">View the stories, videos, and graphics &nbsp;&raquo;</a>
              <span style="display:block;width:100%;clear:both"></span>
           </div>
         </div><!-- end div#featuredProject -->
