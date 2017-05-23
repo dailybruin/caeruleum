@@ -240,10 +240,16 @@ $(document).ready(function() {
 	
 	// Now trigger this function on a window resize
 	var resizeTimer;
-	$(window).resize(function() {
+	var width = $(window).width(), height = $(window).height();
+	if($(window).width() != width && $(window).height() != height){
 		clearTimeout(resizeTimer);
 		resizeTimer = window.setTimeout(function() {responsive();}, 200);
-	});
+	}
+	// // window resizing on scroll in mobile phones
+	// $(window).resize(function() {
+	// 	clearTimeout(resizeTimer);
+	// 	resizeTimer = window.setTimeout(function() {responsive();}, 200);
+	// });
 	
 	/*********** PHOTO BLOG *************/
 	var $sidebar	= $("#sidebar"); 
