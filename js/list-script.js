@@ -41,10 +41,6 @@ $(document).ready(function () {
     });
   }
 
-  if($('#bg img').css('display') != 'none') {
-    $('.sidebar1').toggleClass('special');
-  }
-
   vectorDiv( 'scroll-up', 'scrollDiv', "up", 15);
   vectorDiv( 'scroll-down', 'scrollDiv', "down", 15);
 
