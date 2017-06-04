@@ -215,8 +215,9 @@
               <div class="row db-image text-center hide-for-medium hide-for-small">
                 <a href="http://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
               </div> -->
-              <div class="db-ad" style="margin-top: 1rem;">
-                <?php get_template_part('ad','side'); ?>
+
+              <div class="db-ad">
+                <?php get_template_part('ads/ad','side'); ?>
               </div>
             </div>
     </div>

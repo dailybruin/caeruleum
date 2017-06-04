@@ -18,7 +18,7 @@ Template Name: HOWEWO
         </div>
       </div>
       <div class="span4">
-        <?php get_template_part('ad','side'); ?>
+        <?php get_template_part('ads/ad','side'); ?>
       </div>
     </div>
     <div class="span12 page-content">
@@ -30,7 +30,7 @@ Template Name: HOWEWO
       </div>
       <div class="row" id="howewo-load"></div>
     </div>
-      
+
   </div><!-- end div#post-listing -->
   <div id="howewo-lightbox" hidden='true'>
     <div id="lightbox-container">

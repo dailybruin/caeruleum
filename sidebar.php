@@ -1,7 +1,7 @@
 			<div class="large-4 columns">
 				<!-- ADD SWITCH STATEMENT FOR CATEGORY STUFF -->
 				<div class="hide-for-medium">
-				<?php get_template_part('ad','side'); ?>
+				<?php get_template_part('ads/ad','side'); ?>		
 				</div>
 				<ul id="sidebar-list">
 					<li>

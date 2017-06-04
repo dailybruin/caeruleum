@@ -1,6 +1,6 @@
 <aside class="span3" id="sidebar" role="complementary">
 	<div id="sidebar-inside">
-<!--       	<?php get_template_part('ad','side'); ?>
+<!--       	<?php get_template_part('ads/ad','side'); ?>
 -->      	<div id="sidebar-reference"> </div>
 <!-- <div class="sidebar-menu hidden-phone"> -->
 <!-- <hr> -->
@@ -12,7 +12,7 @@
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.news-spectrum')">NEWS</a>
 	<a class="sidebar-category small-3 columns" onclick="filterPhotos('.sports-spectrum')">SPORTS</a>
 	<div>
-		<a class="sidebar-link" href="/category/photo-galleries">ARCHIVE</a> 
+		<a class="sidebar-link" href="/category/photo-galleries">ARCHIVE</a>
 		<a class="sidebar-link" href="/about-spectrum"> <?php _e( 'ABOUT SPECTRUM', 'gryphondor' ); ?></a>
 	</div>
 </div>

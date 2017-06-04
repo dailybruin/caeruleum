@@ -43,6 +43,4 @@ Author: bryanvtran (Bryan Tran)
 			<?php endwhile; ?>
 		</ul>
 </div><!-- end div#sidebar-similar -->
-<?php else: ?>
-
 <?php endif; ?>

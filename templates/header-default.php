@@ -1,12 +1,12 @@
 			<div class="row hide-for-small">
 				<div class="db-ad-leaderboard text-center">
-					<?php get_template_part('ad','banner'); ?>
+					<?php get_template_part('ads/ad','banner'); ?>
 				</div>
 			</div>
 
 			<div class="row show-for-small-only">
 				<div class="db-ad-leaderboard text-center">
-					<?php get_template_part('ad','smallbanner'); ?>
+					<?php get_template_part('ads/ad','smallbanner'); ?>
 				</div>
 			</div>
 
