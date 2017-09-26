@@ -218,17 +218,24 @@
 
 						</div>
 						-->
-
-					<!--
-						<div class="row db-story below-header db-next hide-for-small">
+					
+						<!-- <div class="row db-story below-header db-next hide-for-small">
 							<a href="http://campaign.dailybruin.com/">
 							<div class="small-12 columns">
 								<h2 class="animated fadeInLeft">Daily Bruin and Bruinwalk.com need your help.&nbsp;</h2>
 								<button class="animated fadeInUp">&nbsp;Learn more&raquo;</button>
 							</div>
 							</a>
+						</div> -->
+
+						<div class="row db-story below-header db-next hide-for-small">
+							<a href="http://apply.uclastudentmedia.com/applications/daily-bruin/">
+							<div class="small-12 columns">
+								<h2 class="animated fadeInLeft">Join the Daily Bruin.&nbsp;</h2>
+								<button class="animated fadeInUp">&nbsp;Apply here&raquo;</button>
+							</div>
+							</a>
 						</div>
-					 -->
 
 						<div class="row db-story below-header">
 							<div class="db-top-date text-center hide-for-small">
