@@ -226,7 +226,7 @@
 								<button class="animated fadeInUp">&nbsp;Learn more&raquo;</button>
 							</div>
 							</a>
-						</div> -->
+						</div>
 
 						<div class="row db-story below-header db-next hide-for-small">
 							<a href="http://apply.uclastudentmedia.com/applications/daily-bruin/">
@@ -236,6 +236,7 @@
 							</div>
 							</a>
 						</div>
+						-->
 
 						<div class="row db-story below-header">
 							<div class="db-top-date text-center hide-for-small">
