@@ -40,6 +40,7 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
+<?php get_template_part('ad','programmatic'); ?>
 </body>
 	<span style="clear:both;display:block;"></span>
 
