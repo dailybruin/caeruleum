@@ -470,7 +470,7 @@
     <div class="db-divide"></div>
             <div class="db-story-fe large-8 large-push-4 hide-for-small columns" data-equalizer-watch>
               <div class="row text-center">
-                <a href="//graphics.dailybruin.com/prime"><img src="/img/prime-webbanner.jpg"/></a>
+                <a href="//prime.dailybruin.com"><img src="/img/prime-webbanner.jpg"/></a>
               </div>
         <div class="row" id="featuredProject">
           <div style="padding: 5px 20px;">
