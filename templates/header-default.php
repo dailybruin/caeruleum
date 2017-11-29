@@ -230,7 +230,7 @@
             -->
 
             <div class="row db-story below-header db-next hide-for-small">
-              <a href="http://prime.dailybruin.ocm">
+              <a href="//prime.dailybruin.com">
               <div class="small-12 columns">
                 <h2 class="animated fadeInLeft">Prime, the Daily Bruin's quarterly arts, culture, and lifestyle magazine is out now.&nbsp;</h2>
                 <button class="animated fadeInUp">&nbsp;Check it out&raquo;</button>
