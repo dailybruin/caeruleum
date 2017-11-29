@@ -233,7 +233,7 @@
               <a href="//prime.dailybruin.com">
               <div class="small-12 columns">
                 <h2 class="animated fadeInLeft">prime, the Daily Bruin’s quarterly arts, culture and lifestyle magazine, is on newsstands now.&nbsp;</h2>
-                <button class="animated fadeInUp">&nbsp;Read now&raquo;</button>
+                <button class="animated fadeInUp">&nbsp;Read&raquo;</button>
               </div>
               </a>
             </div>
