@@ -232,8 +232,8 @@
             <div class="row db-story below-header db-next hide-for-small">
               <a href="//prime.dailybruin.com">
               <div class="small-12 columns">
-                <h2 class="animated fadeInLeft">Prime, the Daily Bruin's quarterly arts, culture, and lifestyle magazine is out now.&nbsp;</h2>
-                <button class="animated fadeInUp">&nbsp;Check it out&raquo;</button>
+                <h2 class="animated fadeInLeft">The Daily Bruin's quarterly arts, culture, and lifestyle magazine, Prime, is on newsstands now.&nbsp;</h2>
+                <button class="animated fadeInUp">&nbsp;Read now&raquo;</button>
               </div>
               </a>
             </div>
