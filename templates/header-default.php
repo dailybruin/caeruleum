@@ -230,9 +230,9 @@
             -->
 
             <div class="row db-story below-header db-next hide-for-small">
-              <a href="//prime.dailybruin.com">
+              <a href="https://dailybruin.com/tag/skirball-fire-17/">
               <div class="small-12 columns">
-                <h2 class="animated fadeInLeft">prime, the Daily Bruin’s quarterly arts, culture and lifestyle magazine, is on newsstands now.&nbsp;</h2>
+                <h2 class="animated fadeInLeft">Follow the Daily Bruin's coverage of Skirball fire.&nbsp;</h2>
                 <button class="animated fadeInUp">&nbsp;Read&raquo;</button>
               </div>
               </a>
