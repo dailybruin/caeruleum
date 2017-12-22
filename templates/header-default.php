@@ -228,17 +228,7 @@
               </a>
             </div>
             -->
-
-            <div class="row db-story below-header db-next hide-for-small">
-              <a href="https://dailybruin.com/tag/skirball-fire-17/">
-              <div class="small-12 columns">
-                <h2 class="animated fadeInLeft">Follow the Daily Bruin's coverage of Skirball fire.&nbsp;</h2>
-                <button class="animated fadeInUp">&nbsp;Read&raquo;</button>
-              </div>
-              </a>
-            </div>
           
-
             <div class="row db-story below-header">
               <div class="db-top-date text-center hide-for-small">
                 <?php date_default_timezone_set('America/Los_Angeles'); ?>
