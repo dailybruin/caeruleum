@@ -74,6 +74,7 @@ Template Name: USAC Evaluations 2018
         margin-left: 0;
         overflow: hidden;
         font-weight: bold;
+        padding-right: 1em;
     }
     ul.scores li p, ul.platforms p {
         margin-bottom: 0.5rem;
