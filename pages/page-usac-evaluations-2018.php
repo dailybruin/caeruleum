@@ -167,7 +167,7 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/13Zq_6AWNc3EdGQEr_z7lVZ3P
                     append += '<div class="large-4 columns platforms" >';
                         append += '<ul class="scores">Scores';
                             append += '<li><p>Platform: '+entry.gsx$platformeval.$t+'</p></li>';
-                            append += '<li><p>Fulfillment '+entry.gsx$fulfillment.$t+'</p></li>';
+                            append += '<li><p>Fulfillment: '+entry.gsx$fulfillment.$t+'</p></li>';
                             append += '<li><p>Engagement: '+entry.gsx$engagement.$t+'</p></li>';
                             append += '<li><p>Transparency: '+entry.gsx$transparency.$t+'</p></li>';
                         append += '</ul>';
