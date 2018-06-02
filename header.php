@@ -93,6 +93,7 @@
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@dailybruin"/>
   <meta name="twitter:creator" content="@dailybruin"/>
+  <meta name="fb:pages" content="47311244274"/>
 
 </head>
 
