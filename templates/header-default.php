@@ -218,7 +218,7 @@
 
             </div>
             -->
-          
+
             <!-- <div class="row db-story below-header db-next hide-for-small">
               <a href="http://campaign.dailybruin.com/">
               <div class="small-12 columns">
@@ -228,7 +228,7 @@
               </a>
             </div>
             -->
-          
+
             <div class="row db-story below-header">
               <div class="db-top-date text-center hide-for-small">
                 <?php date_default_timezone_set('America/Los_Angeles'); ?>
@@ -261,7 +261,7 @@
               <a href="http://www.facebook.com/dailybruin" title="Facebook"><i class="fa fa-facebook"></i></a>
               <a href="http://www.twitter.com/dailybruin" title="Twitter"><i class="fa fa-twitter"></i></a>
               <a href="http://youtube.com/ucladailybruin" title="Youtube"><i class="fa fa-youtube-play"></i></a>
-              <a href="http://www.github.com/daily-bruin" title="GitHub"><i class="fa fa-github"></i></a>
+              <a href="http://www.github.com/dailybruin" title="GitHub"><i class="fa fa-github"></i></a>
               <a href="http://dailybruin.com/feed" title="RSS"><i class="fa fa-rss"></i></a>
             </div>
           </div>

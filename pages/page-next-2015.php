@@ -28,14 +28,14 @@ Template Name: Next 2015
 						<div class="large-7 columns">
 							<h3>Modern design for a modern audience</h3>
 							<p>The Daily Bruin is working on revamping our design. The new site design is just one piece in that effort. We are focusing on a consistent modern look across all of our platforms. That is why you may notice similarities between our print design and web design.</p>
-							<p>Stories are also getting a new look and feel. Larger projects are now coupled with individualized pages to focus on the online display for stories. The intention is to enhance our written stories with a visual interactive display that captures the reader. </p> 
+							<p>Stories are also getting a new look and feel. Larger projects are now coupled with individualized pages to focus on the online display for stories. The intention is to enhance our written stories with a visual interactive display that captures the reader. </p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="large-7 columns">
 							<h3>Engaging readers online</h3>
 							<p>Our readership is clearly moving online. We know how important it is to have a strong stable social media presence since most of our views come from links on <a href="http://facebook.com/dailybruin">Facebook</a> and <a href="http://twitter.com/dailybruin">Twitter</a>.</p>
-							<p>To maintain that presence, we are simultaneously working on improving the content of our posts to be as reader-friendly as possible while also <a href="https://github.com/daily-bruin/meow">working on digital tools to help us produce posts seamlessly</a>.</p>
+							<p>To maintain that presence, we are simultaneously working on improving the content of our posts to be as reader-friendly as possible while also <a href="https://github.com/dailybruin/meow">working on digital tools to help us produce posts seamlessly</a>.</p>
 						</div>
 						<div class="large-5 columns"><img src="http://dailybruin.com/images/2015/03/Social-Media.jpg"/></div>
 					</div>
