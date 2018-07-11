@@ -474,12 +474,12 @@
               </div>
         <div class="row" id="featuredProject">
           <div style="padding: 5px 20px;">
-             <h1>cannabis kingdom</h1>
+             <h1>atomic city</h1>
              <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
              <span style="display:block;width:100%;clear:both;"></span>
-             <img style="height: 199px;" src="http://graphics.dailybruin.com/cannabis-kingdom/img/keyvis.jpg" />
-                        <p>The Daily Bruin sent four staffers up the West Coast to uncover the kingdom of cannabis at the farms near the California-Oregon border. They spoke to students, farmers and business managers about the effects that Proposition 64 has had since it passed in November of last year.</p>
-             <a href="http://graphics.dailybruin.com/cannabis-kingdom/" class="featuredlink">View the stories, videos and graphics &nbsp;&raquo;</a>
+             <img style="height: 199px;" src="https://assets.dailybruin.com/images/enterprise.lanl/enterprise.news.plutonium.illo-a4cd6c02bf2186e201c355c82babc012.png" />
+                        <p>The current contract for the Los Alamos National Laboratory expires in September 2018, and the UC, which has been involved in the management of the lab since its inception in varying capacities, submitted a bid last year to manage the lab.</p>
+             <a href="https://features.dailybruin.com/2018/atomic-city/index.html" class="featuredlink">View the stories, videos and graphics &nbsp;&raquo;</a>
              <span style="display:block;width:100%;clear:both"></span>
           </div>
         </div><!-- end div#featuredProject -->
