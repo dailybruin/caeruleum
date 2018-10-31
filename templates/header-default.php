@@ -21,12 +21,12 @@
           <section class="middle tab-bar-section">
             <div class="db-logo" style="display: none;">
               <a href="<?php echo home_url('/'); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+                <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_halloween.png">
               </a>
             </div>
             <div class="db-logo-spectrum" style="display: none;">
               <a href="<?php echo home_url('/'); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+                <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_halloween.png">
               </a>
             </div>
           </section>
@@ -48,12 +48,12 @@
         <section class="middle tab-bar-section">
           <div class="db-logo">
             <a href="<?php echo home_url('/'); ?>">
-              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_halloween.png">
             </a>
           </div>
           <div class="db-logo-spectrum">
             <a href="<?php echo home_url('/'); ?>">
-              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_halloween.png">
             </a>
           </div>
         </section>
@@ -74,12 +74,12 @@
         <section class="middle tab-bar-section">
           <div class="db-logo">
             <a href="<?php echo home_url('/'); ?>">
-              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
+              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_halloween.png">
             </a>
           </div>
           <div class="db-logo-spectrum">
             <a href="<?php echo home_url('/'); ?>">
-              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_white.svg">
+              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_halloween.png">
             </a>
           </div>
         </section>
