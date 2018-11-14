@@ -90,7 +90,7 @@
     <meta property="og:title" content="The Daily Bruin"/>
   <?php endif; ?>
 
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@dailybruin"/>
   <meta name="twitter:creator" content="@dailybruin"/>
   <meta property="fb:pages" content="47311244274"/>
