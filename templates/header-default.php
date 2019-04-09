@@ -227,6 +227,7 @@
               </div>
               </a>
             </div>
+            <!--
             <div class="row db-story below-header db-next">
               <a href="https://dailybruin.github.io/to-our-readers/">
               <div class="small-12 columns">
@@ -243,6 +244,7 @@
               </div>
               </a>
             </div>
+            -->
             
 
             <div class="row db-story below-header">
