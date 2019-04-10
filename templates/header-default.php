@@ -219,32 +219,14 @@
             </div>
             -->
 
-            <div style="height: 12vh;" class="row db-story below-header db-next hide-for-small">
-              <a href="https://dailybruin.github.io/to-our-readers/">
-              <div class="small-12 columns">
-                <h2 class="animated fadeInLeft">Daily Bruin staffers are going on strike.&nbsp;</h2>
-                <button class="animated fadeInUp">&nbsp;Read more&raquo;</button>
-              </div>
-              </a>
+            <div style="height: 12vh;" class="row db-story below-header db-next">
+            <a href="https://dailybruin.github.io/to-our-readers/">
+            <div class="small-12 columns">
+            <h2 class="animated fadeInLeft">Daily Bruin staffers are going on strike.&nbsp;</h2>
+            <button class="animated fadeInUp">&nbsp;Read more»</button>
             </div>
-            <!--
-            <div class="row db-story below-header db-next">
-              <a href="https://dailybruin.github.io/to-our-readers/">
-              <div class="small-12 columns">
-                <h2 class="animated fadeInLeft">Daily Bruin staffers are going on strike.&nbsp;</h2>
-                <button class="animated fadeInUp">&nbsp;Read more&raquo;</button>
-              </div>
-              </a>
+            </a>
             </div>
-            <div class="row db-story below-header db-next">
-              <a href="https://dailybruin.github.io/to-our-readers/">
-              <div class="small-12 columns">
-                <h2 class="animated fadeInLeft">Daily Bruin staffers are going on strike.&nbsp;</h2>
-                <button class="animated fadeInUp">&nbsp;Read more&raquo;</button>
-              </div>
-              </a>
-            </div>
-            -->
             
 
             <div class="row db-story below-header">
