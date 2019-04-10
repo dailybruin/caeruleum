@@ -219,7 +219,7 @@
             </div>
             -->
 
-            <div class="row db-story below-header db-next">
+            <div class="row db-story below-header db-next hide-for-small">
               <a href="https://dailybruin.github.io/to-our-readers/">
               <div class="small-12 columns">
                 <h2 class="animated fadeInLeft">Daily Bruin staffers are going on strike.&nbsp;</h2>
