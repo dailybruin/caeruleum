@@ -217,9 +217,9 @@
                 <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
             </div>
-            -->
+            
 
-            <div style="height: 12vh;" class="row db-story below-header db-next">
+            <div class="row db-story below-header db-next">
             <a href="https://dailybruin.github.io/to-our-readers/">
             <div class="small-12 columns">
             <h2 class="animated fadeInLeft">Daily Bruin staffers are going on strike.&nbsp;</h2>
@@ -227,6 +227,8 @@
             </div>
             </a>
             </div>
+
+            -->
             
 
             <div class="row db-story below-header">
