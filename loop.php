@@ -18,7 +18,7 @@
     $sports_cat = get_category_by_slug('sports')->term_id;
     $opinion_cat = get_category_by_slug('opinion')->term_id;
     $video_cat = get_category_by_slug('video')->term_id;
-    $radio_cat = get_category_by_slug('radio')->term_id;
+    $radio_cat = get_category_by_slug('podcasts')->term_id;
     $photo_cat = get_category_by_slug('spectrum')->term_id;
     $spotlight_cat = get_category_by_slug('spotlight')->term_id;
     $twocents_cat = get_category_by_slug('two-cents')->term_id;
@@ -64,7 +64,7 @@
         $side_names = array( "Latest Editorial Cartoons", "From the Editorial Board", "From the Community");
         $side_args = array($first_side,$second_side,$third_side);
         break;
-      case "A&amp;E":
+      case "Arts":
         $sectionTag = "db-story-ae";
         $section_cat = $ae_cat;
         $first_side = array( 'numberposts' => 2, 'cat' => $spotlight_cat);
@@ -102,7 +102,7 @@
                     case "Video":
                       $multSection = true;
                       break;
-                    case "Radio":
+                    case "Podcasts":
                       $multSection = true;
                       break;
                     default:
@@ -333,7 +333,7 @@
     <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
   </div>
-<? elseif ($categoryTitle == "Radio"): ?>
+<? elseif ($categoryTitle == "Podcasts"): ?>
   <div class="row">
     <?php $i=0;
           $j=0;
