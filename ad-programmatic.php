@@ -5,4 +5,3 @@
 	 t ? t.appendChild(m, t) : (t=document.getElementsByTagName("script")[0]).parentNode.insertBefore(m,t);
 	 }();
  </script>
- <script>broadstreet.watch({ networkId: 5876 })</script>
