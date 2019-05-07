@@ -419,7 +419,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 
 
 /*GALLERY PAGE*/
-#pb-gallery-block {/*
+.db-content .db-story div#pb-gallery-block .fotorama div {/*
 	border: solid;
 	border-color: #303030;
 	border-radius: 5px;
@@ -429,6 +429,7 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	margin-bottom: 20px;
 	text-align: center;
 	*/
+	margin-top: 0!important;
 }
 #pb-gallery-block p,
 #pb-gallery-block h2{
@@ -758,11 +759,6 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 .fotorama__stage__frame:hover .fotorama__caption{
 	opacity:1.0;
 	
-}
-
-/* BUG FIX DONT REMOVE */
-.fotorama__stage__shaft, .fotorama__wrap, .fotorama__stage, .fotorama__stage .fotorama__pointer, .fotorama__wrap .fotorama__stage, .fotorama__stage__frame.fotorama__active.fotorama__loaded.fotorama__loaded--img {
-	margin-top: 0!important;
 }
 
 .db-content h2 a, .db-content h2 a:hover{
