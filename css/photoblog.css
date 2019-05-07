@@ -759,6 +759,12 @@ a.photoblog-post-tag.pb-tag-westwoodla,
 	opacity:1.0;
 	
 }
+
+/* BUG FIX DONT REMOVE */
+.fotorama__stage__shaft, .fotorama__wrap, .fotorama__stage, .fotorama__stage .fotorama__pointer, .fotorama__wrap .fotorama__stage, .fotorama__stage__frame.fotorama__active.fotorama__loaded.fotorama__loaded--img {
+	margin-top: 0!important;
+}
+
 .db-content h2 a, .db-content h2 a:hover{
 	color:white;
 	font-size: 2rem;
