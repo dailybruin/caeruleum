@@ -1,5 +1,5 @@
 <?php /* Start loop */ ?>
-<?php echo '<link href="/css/photoblog.css?v=1365830493" rel="stylesheet" media="screen" type="text/css" />';
+<?php echo '<link href="/css/photoblog.css?v=1365830494" rel="stylesheet" media="screen" type="text/css" />';
 // function for parsing img url
 function get_string_between($string, $start, $end){
     $string = ' ' . $string;

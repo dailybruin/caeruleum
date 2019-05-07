@@ -1,5 +1,5 @@
 <?php /* Start loop */ ?>
-<?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
+<?php echo '<link href="/css/photoblog.css?v=1365830494" rel="stylesheet" media="screen" type="text/css" />'; ?>
 
 <?php for ($i = 1; $i <= 12; $i++) : 
 	the_post(); 

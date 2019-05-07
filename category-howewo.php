@@ -4,7 +4,7 @@ Template Name: HOWEWO
 <?php get_header(); ?>
 <div class="row" id="archive-content">
 	<div class="span12" id="post-listing">
-    <?php echo '<link href="/css/photoblog.css?v=1359451557" rel="stylesheet" media="screen" type="text/css" />'; ?>
+    <?php echo '<link href="/css/photoblog.css?v=1365830494" rel="stylesheet" media="screen" type="text/css" />'; ?>
     <div class="row page-header">
       <div class="span8" id="howewo-banner" >
         <img src="/img/howewo-banner.jpg" />
