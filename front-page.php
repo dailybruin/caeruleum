@@ -220,6 +220,7 @@
               </div>
             </div>
     </div>
+    <!-- <img src="https://i.imgur.com/IKDfEji.jpg" style="max-width: 728px; margin: auto;"> -->
     <div class="row db-divide"></div>
       <div class="row">
          <div class="db-story-m large-9 medium-12 columns hide-for-small">
@@ -482,6 +483,7 @@
              <a href="https://features.dailybruin.com/2018/atomic-city/index.html" class="featuredlink">View the stories, videos and graphics &nbsp;&raquo;</a>
              <span style="display:block;width:100%;clear:both"></span>
           </div>
+          <!-- <a href="http://apply.uclastudentmedia.com"><img src="http://dailybruin.com/images/2019/09/RecruitmentBanner2019.jpg" style="width: 100%;"></a> -->
         </div><!-- end div#featuredProject -->
         <div class="row">
             <div class="large-12 columns advertisment featured-ads">

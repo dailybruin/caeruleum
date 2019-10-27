@@ -217,7 +217,7 @@
                 <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
             </div>
-            
+
 
             <div class="row db-story below-header db-next">
             <a href="https://dailybruin.github.io/to-our-readers/">
@@ -229,7 +229,7 @@
             </div>
 
             -->
-            
+
 
             <div class="row db-story below-header">
               <div class="db-top-date text-center hide-for-small">

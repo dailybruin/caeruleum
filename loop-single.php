@@ -25,7 +25,7 @@
 		}
 	}
 	?>
-	<?php 
+	<?php
 	foreach(get_the_category() as $cat)
 	{
 		switch($cat->name)
@@ -117,10 +117,10 @@
 		</div>
 		<div class="db-image text-center">
 			<?php if(has_post_thumbnail() && !$video_story) : ?>
-				<?php the_post_thumbnail('db-category-full'); ?>		
+				<?php the_post_thumbnail('db-category-full'); ?>
 				<p class="db-image-caption text-left">
 					<?php echo get_post(get_post_thumbnail_id($post->ID))->post_excerpt; ?>
-					<?php 
+					<?php
 					// We don't do media credits like this any more
 					if(get_the_time('U') < 1391744168): ?>
 						<?php the_media_credit_html(get_post_thumbnail_id($post->ID)); ?>
@@ -130,16 +130,16 @@
 			<?php endif; ?>
 			<?php if($video_story): ?>
 			<div class="db-post-content">
-				<div class="video-story">					
+				<div class="video-story">
 						<?php the_content(); ?>
 				</div><!-- end div.video-story -->
 			</div>
 			<?php endif; ?>
 		</div>
-		
+
 
 		<div class="row">
-			
+
           <div class="medium-3 columns">
           	<?php if(!$video_story): ?>
             <div class="row text-center">
@@ -157,17 +157,17 @@
             <hr>
             <?php endif; ?>
             <p>
-            <?php 
+            <?php
 				if(get_field('corrections') != ''):?>
-                <!-- <b>Correction: </b> -->				
+                <!-- <b>Correction: </b> -->
                 <?php echo get_field('corrections')?>
 			<?php endif; ?>
             </p>
           </div>
 		  <div class="medium-9 columns">
-				<?php 
-					if(function_exists('the_audio'))
-						the_audio();
+				<?php
+					// if(function_exists('the_audio'))
+					// 	the_audio();
 				?>
 				<?php if(!empty($customFields['db_infobox'][0])) : ?>
 					<div class="db-infobox">
@@ -185,7 +185,7 @@
 							for($i = $numc; $i < 5; $i++)
 								echo '<img src="http://dailybruin.com/images/paws/blank.png" />';
 							echo '</div><!-- end div.infobox-paws -->';
-						} 
+						}
 						?>
 					</div>
 				<?php endif; ?>
@@ -193,12 +193,12 @@
 					<?php if(!$video_story) {  the_content();  } ?>
 				</div>
 				<!--<p class="author-contact"> -->
-				    <?php 
+				    <?php
 				    if(get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options')))
 			    	{ ; }
 				    else if(!empty($customFields['db_authoremail'][0]) || get_field('db_article_format') == 'brief')
 				    {
-				    	if(!empty($customFields['db_authoremail'][0])) 
+				    	if(!empty($customFields['db_authoremail'][0]))
 					        echo $customFields['db_authoremail'][0];
 				    }
                     else if(intval(the_date('U','','',false)) <= 1361363177)
@@ -234,7 +234,7 @@
 			                    <div class="author-header">
 			                    	<a href="<?php echo get_author_posts_url( $author->ID, get_the_author_meta( 'user_nicename',$author->ID ) ); ?>">
 			                    		<?php echo "$firstName $lastName"; ?>
-			                    	</a> 
+			                    	</a>
 			                    	<?php if ( $position ): ?>
 			                    	|
 			                    	<? endif; ?>
@@ -244,7 +244,7 @@
 			                	<?php endif; ?>
 			                  </div>
 			                </div>
-			              <div class="bio row">       
+			              <div class="bio row">
 			                  	<?php // Display the columnist's mugshot
 							    if($displayMugshot && $displayAuthor && false)
 							    {
@@ -258,8 +258,8 @@
 			    					if(!empty($thumbnail))
 			    					{
 			        					?>
-			        				
-							    			<div class="image large-2 small-3 medium-2 columns"> 
+
+							    			<div class="image large-2 small-3 medium-2 columns">
 			        						<div class="author-photo"> <?php userphoto($author->ID);?> </div>
 			        						</div>
 			        						<?php
@@ -311,14 +311,14 @@
 			                    </div>
 			                    <div class="twitter large-3 medium-3 columns show-for-medium-up">
 			                      <?php if ( $twitter): ?>
-			                        <p><span class="entypo-twitter"></span>  
+			                        <p><span class="entypo-twitter"></span>
 			                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
 			                          <?php echo $twitter; ?>
 			                        </a>
 			                      <?php endif; ?>
 			                    </div>
 			               </div> <!--end bio-row-->
-			              </div>  
+			              </div>
 			              		<div class="row contact-info-wrapper show-for-small-only">
 				                    <div class="email small-6 columns">
 				                      <?php if ( $email): ?>
@@ -330,12 +330,12 @@
 				                    </div>
 				                    <div class="twitter small-3 columns">
 				                      <?php if ( $twitter): ?>
-				                        <p><span class="entypo-twitter"></span>  
+				                        <p><span class="entypo-twitter"></span>
 				                        <a class="twitter-follow-button" data-show-count="false" href="http://twitter.com/<?php the_author_meta('twitter', $author->ID );?>">
-				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?> 
+				                          <?php echo get_the_author_meta( 'twitter_handle', $author->ID ); ?>
 				                        </a>
 				                      <?php endif; ?>
-			                    </div>                 
+			                    </div>
 			            </div>
 		           	  </div>
 		            	<?php
