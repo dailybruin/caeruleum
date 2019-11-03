@@ -21,9 +21,7 @@
           <section class="middle tab-bar-section">
             <div class="db-logo" style="display: none;">
               <a href="<?php echo home_url('/'); ?>">
-                <!-- <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"> -->
-                <!-- HALLOWEEN -->
-                <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_HALLOWEEN.png" style="object-fit: contain;">
+                <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
               </a>
             </div>
             <div class="db-logo-spectrum" style="display: none;">
@@ -50,9 +48,7 @@
         <section class="middle tab-bar-section">
           <div class="db-logo">
             <a href="<?php echo home_url('/'); ?>">
-              <!-- <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"> -->
-              <!-- HALLOWEEN -->
-              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_HALLOWEEN.png" style="object-fit: contain;">
+              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
             </a>
           </div>
           <div class="db-logo-spectrum">
@@ -78,9 +74,7 @@
         <section class="middle tab-bar-section">
           <div class="db-logo">
             <a href="<?php echo home_url('/'); ?>">
-              <!-- <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg"> -->
-              <!-- HALLOWEEN -->
-              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo_HALLOWEEN.png" style="object-fit: contain;">
+              <img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/db_logo.svg">
             </a>
           </div>
           <div class="db-logo-spectrum">
