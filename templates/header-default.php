@@ -5,7 +5,7 @@
       </div>
 
       <div class="row show-for-small-only">
-        <div class="db-ad-leaderboard text-center">
+        <div style="overflow-x: auto" class="db-ad-leaderboard text-center">
           <?php get_template_part('ad','smallbanner'); ?>
         </div>
       </div>
@@ -217,7 +217,7 @@
                 <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
             </div>
-            
+
 
             <div class="row db-story below-header db-next">
             <a href="https://dailybruin.github.io/to-our-readers/">
@@ -229,7 +229,7 @@
             </div>
 
             -->
-            
+
 
             <div class="row db-story below-header">
               <div class="db-top-date text-center hide-for-small">
@@ -245,6 +245,11 @@
                   )); ?>
               </div>
 
+              <!-- BREAKING COMPONENT -->
+              <!-- <div class="breaking-banner" style="">
+                  <h3 style="">BREAKING:</h3><a href="https://dailybruin.com/2020/03/06/results-of-three-ucla-students-tested-for-covid-19-come-back-negative">Results of three UCLA students tested for COVID-19 come back negative</a>
+              </div> -->
+
               <div class="small-6 columns hide-for-small" style="margin:0;">
                 <?php ob_start();
                 wp_nav_menu(array('theme_location' => 'in_the_news',
@@ -258,6 +263,7 @@
                 <h3 class="in-the-news">In the news: </h3>
                 <?php echo $navmenu; ?>
               <?php endif; ?>
+
             </div>
             <div class="small-6 columns hide-for-small text-right social-right" style="margin:0;">
               <a href="http://www.facebook.com/dailybruin" title="Facebook"><i class="fa fa-facebook"></i></a>

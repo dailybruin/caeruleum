@@ -29,15 +29,15 @@ Template Name: USAC Elections 2015
                         <h2>Platforms</h2>
                         <ul>
                             <% _.each(candidate.platforms.split("\n"), function(p) { %>
-                            <li><%- p %></li>  
+                            <li><%- p %></li>
                             <% }); %>
                         </ul>
                     </div>
-              
+
                     <div class="large-7 columns">
                         <div class="lazyYT" data-youtube-id="<%- candidate.lazyvideo %>" data-ratio="16:9">Loading Video...</div>
                     </div>
-          
+
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@ Template Name: USAC Elections 2015
 
 <script type="text/template" id="violations_sidebar_template">
     <% _.each(rows, function(violation) { %>
-        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="$('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #<%- violation.id %></a></dd>
+        <dd class="element <%- violation.slates %>"><a href="#<%- violation.id %>" onclick="jQuery('#<%- violation.id %>').animatescroll({padding: 80})">Complaint #<%- violation.id %></a></dd>
     <% }); %>
 </script>
 
@@ -82,14 +82,14 @@ Template Name: USAC Elections 2015
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
-                        <p><%- para %></p>  
+                        <p><%- para %></p>
                     <% }); %>
                 </div>
-            </div> 
             </div>
-        
+            </div>
+
         <% } else { %>
-                    
+
             <div class = "notendorsement <%- candidate.position %> <%- candidate.name %>">
             <div class="row notendorsed">
             <h2 class="yesno">Not Endorsed:</h2>
@@ -104,7 +104,7 @@ Template Name: USAC Elections 2015
                     <hr>
                     <p class="note"><%- candidate.note  %></p>
                     <% _.each(candidate.text.split("\n"), function(para) { %>
-                        <p><%- para %></p>  
+                        <p><%- para %></p>
                     <% }); %>
                 </div>
             </div>
@@ -174,18 +174,18 @@ Template Name: USAC Elections 2015
             </form>
             <div class="usac-section profiles-container">
                 <dl class="side-nav" id="profiles-sidebar">
-                    <dd><a href="#profiles-President" onclick="$('#profiles-President').animatescroll({padding: 80})">President</a></dd>
-                    <dd><a href="#profiles-IVP" onclick="$('#profiles-IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
-                    <dd><a href="#profiles-EVP" onclick="$('#profiles-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
-                    <dd><a href="#profiles-Gen-Rep" onclick="$('#profiles-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
-                    <dd><a href="#profiles-AAC" onclick="$('#profiles-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#profiles-CEC" onclick="$('#profiles-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
-                    <dd><a href="#profiles-CSC" onclick="$('#profiles-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
-                    <dd><a href="#profiles-CAC" onclick="$('#profiles-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
-                    <dd><a href="#profiles-FAC" onclick="$('#profiles-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
-                    <dd><a href="#profiles-FSC" onclick="$('#profiles-FSC').animatescroll({padding: 80})">Financial Support Commissioner</a></dd>
-                    <dd><a href="#profiles-SWC" onclick="$('#profiles-SWC').animatescroll({padding: 80})">Student Wellness Commissioner</a></dd>
-                    <dd><a href="#profiles-TSR" onclick="$('#profiles-TSR').animatescroll({padding: 80})">Transfer Student Representative</a></dd>
+                    <dd><a href="#profiles-President" onclick="jQuery('#profiles-President').animatescroll({padding: 80})">President</a></dd>
+                    <dd><a href="#profiles-IVP" onclick="jQuery('#profiles-IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
+                    <dd><a href="#profiles-EVP" onclick="jQuery('#profiles-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
+                    <dd><a href="#profiles-Gen-Rep" onclick="jQuery('#profiles-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
+                    <dd><a href="#profiles-AAC" onclick="jQuery('#profiles-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
+                    <dd><a href="#profiles-CEC" onclick="jQuery('#profiles-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
+                    <dd><a href="#profiles-CSC" onclick="jQuery('#profiles-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
+                    <dd><a href="#profiles-CAC" onclick="jQuery('#profiles-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
+                    <dd><a href="#profiles-FAC" onclick="jQuery('#profiles-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
+                    <dd><a href="#profiles-FSC" onclick="jQuery('#profiles-FSC').animatescroll({padding: 80})">Financial Support Commissioner</a></dd>
+                    <dd><a href="#profiles-SWC" onclick="jQuery('#profiles-SWC').animatescroll({padding: 80})">Student Wellness Commissioner</a></dd>
+                    <dd><a href="#profiles-TSR" onclick="jQuery('#profiles-TSR').animatescroll({padding: 80})">Transfer Student Representative</a></dd>
                 </dl>
             </div>
 
@@ -196,18 +196,18 @@ Template Name: USAC Elections 2015
 
             <div class="usac-section endorsements-container">
                 <dl class="side-nav" id="endorsements-sidebar">
-                    <dd><a href="#endorsements-President" onclick="$('#endorsements-President').animatescroll({padding: 80})">President</a></dd>
-                    <dd><a href="#endorsements-IVP" onclick="$('#endorsements-IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
-                    <dd><a href="#endorsements-EVP" onclick="$('#endorsements-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
-                    <dd><a href="#endorsements-Gen-Rep" onclick="$('#endorsements-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
-                    <dd><a href="#endorsements-AAC" onclick="$('#endorsements-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
-                    <dd><a href="#endorsements-CEC" onclick="$('#endorsements-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
-                    <dd><a href="#endorsements-CSC" onclick="$('#endorsements-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
-                    <dd><a href="#endorsements-CAC" onclick="$('#endorsements-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
-                    <dd><a href="#endorsements-FAC" onclick="$('#endorsements-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
-                    <dd><a href="#endorsements-FSC" onclick="$('#endorsements-FSC').animatescroll({padding: 80})">Financial Support Commissioner</a></dd>
-                    <dd><a href="#endorsements-SWC" onclick="$('#endorsements-SWC').animatescroll({padding: 80})">Student Wellness Commissioner</a></dd>
-                    <dd><a href="#endorsements-TSR" onclick="$('#endorsements-TSR').animatescroll({padding: 80})">Transfer Student Representative</a></dd>
+                    <dd><a href="#endorsements-President" onclick="jQuery('#endorsements-President').animatescroll({padding: 80})">President</a></dd>
+                    <dd><a href="#endorsements-IVP" onclick="jQuery('#endorsements-IVP').animatescroll({padding: 80})">Internal Vice President</a></dd>
+                    <dd><a href="#endorsements-EVP" onclick="jQuery('#endorsements-EVP').animatescroll({padding: 80})">External Vice President</a></dd>
+                    <dd><a href="#endorsements-Gen-Rep" onclick="jQuery('#endorsements-Gen-Rep').animatescroll({padding: 80})">General Representative</a></dd>
+                    <dd><a href="#endorsements-AAC" onclick="jQuery('#endorsements-AAC').animatescroll({padding: 80})">Academic Affairs Commissioner</a></dd>
+                    <dd><a href="#endorsements-CEC" onclick="jQuery('#endorsements-CEC').animatescroll({padding: 80})">Campus Events Commissioner</a></dd>
+                    <dd><a href="#endorsements-CSC" onclick="jQuery('#endorsements-CSC').animatescroll({padding: 80})">Community Service Commissioner</a></dd>
+                    <dd><a href="#endorsements-CAC" onclick="jQuery('#endorsements-CAC').animatescroll({padding: 80})">Cultural Affairs Commissioner</a></dd>
+                    <dd><a href="#endorsements-FAC" onclick="jQuery('#endorsements-FAC').animatescroll({padding: 80})">Facilities Commissioner</a></dd>
+                    <dd><a href="#endorsements-FSC" onclick="jQuery('#endorsements-FSC').animatescroll({padding: 80})">Financial Support Commissioner</a></dd>
+                    <dd><a href="#endorsements-SWC" onclick="jQuery('#endorsements-SWC').animatescroll({padding: 80})">Student Wellness Commissioner</a></dd>
+                    <dd><a href="#endorsements-TSR" onclick="jQuery('#endorsements-TSR').animatescroll({padding: 80})">Transfer Student Representative</a></dd>
                 </dl>
             </div>
         </div>
@@ -290,7 +290,7 @@ Template Name: USAC Elections 2015
                 <div class="endorsements-content" id="endorsements-TSR">
                     <h3>Transfer Student Representative</h3>
                 </div>
-            </div> 
+            </div>
             <!-- VIOLATIONS PAGE IS HERE  -->
             <div class="usac-section violations-container" id="violations-content">
             </div>
@@ -437,21 +437,21 @@ Template Name: USAC Elections 2015
                 </div>
             </li>
         </ul>
-       
+
     </div>
     <div class="usac-section news-container">
          <div class="row">
             <div class="results-gallery gallery">
             </div>
             <p class="caption" id="results-gallery-caption">&nbsp;</p>
-        </div> 
+        </div>
 
         <h1 id="news-title">USAC Election Coverage</h1>
         <div id="stories">
             <?php
             global $post;
             $myposts = get_posts( array('tag_slug__and'  => 'usac-election-2015', 'posts_per_page' => '-1'));
-            foreach( $myposts as $post ) :  
+            foreach( $myposts as $post ) :
                 setup_postdata($post); ?>
       <div class="row db-list">
           <?php if(has_post_thumbnail()): ?>
@@ -462,12 +462,12 @@ Template Name: USAC Elections 2015
           <?php endif; ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
               <span class="db-section-date">
-                      <h4><?php the_category(', ');?></h4> 
-                      <h4>|</h4> 
+                      <h4><?php the_category(', ');?></h4>
+                      <h4>|</h4>
                       <h5><?php the_time('F j, g:i a');?> </h5>
                       </span>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_headline(); ?></a></h2>
-          
+
           <div class="entry-content">
             <?php the_audio(); ?>
                 <p><?php echo get_the_excerpt();  ?> <a href="<?php the_permalink(); ?>">Read more... </a></p>

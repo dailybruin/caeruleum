@@ -14,6 +14,8 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.5.3.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <link href='https://cdn.jsdelivr.net/animatecss/3.4.0/animate.min.css' rel='stylesheet'/>
   <!--<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>-->
@@ -41,6 +43,15 @@
   <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
   <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"type="text/javascript"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28181852-28"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-28181852-28');
+</script>
 
   <!--<script src="//monitor404.s3.amazonaws.com/monitor404.min.js"></script>
   <script>_404_SETTINGS = {exclude: '#wpadminbar a, .dropdown-toggle'}</script>-->
@@ -48,14 +59,13 @@
   <meta name="apple-itunes-app" content="app-id=548832108">
 
   <?php roots_head(); ?>
-  <?php wp_head(); ?>
 
   <!-- Press Plus script -->
-  <script type="text/javascript" src="http://s.ppjol.net/pp.js">{
+  <!-- <script type="text/javascript" src="http://s.ppjol.net/pp.js">{
     'zone':"qnbBZ63hK_pL2086YoKj3J",
     'mode':"meter",
     'debug':0
-  }</script>
+  }</script> -->
 
   <!-- Wordpress Open Graph -->
   <?php if(has_post_thumbnail() && !(is_front_page())) :
@@ -94,6 +104,8 @@
   <meta name="twitter:site" content="@dailybruin"/>
   <meta name="twitter:creator" content="@dailybruin"/>
   <meta property="fb:pages" content="47311244274"/>
+    <?php wp_head(); ?>
+
 
 </head>
 

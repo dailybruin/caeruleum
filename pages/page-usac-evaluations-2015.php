@@ -39,7 +39,7 @@ Template Name: USAC Evaluations 2015
 		left: 15px;
 		font-size: 2.2rem;
 		margin-right: 0.5rem;
-		font-weight: bold;	
+		font-weight: bold;
 	}
 	h3.hover-position {
 		position: absolute;
@@ -48,7 +48,7 @@ Template Name: USAC Evaluations 2015
 		text-align: right;
 		font-size: 1.5rem;
 		padding-left: 1rem;
-		font-weight: bold;	
+		font-weight: bold;
 	}
 	span.hover-details {
 		display: none;
@@ -127,16 +127,16 @@ Template Name: USAC Evaluations 2015
 		</div>
 	<?php endwhile; ?>
 <?php endif; ?>
-		
 
-<script type="text/javascript"> 
-$(document).ready(function() {	
 
-$(function showstones() {
-$.getJSON( "https://spreadsheets.google.com/feeds/list/11bRISASLiQkKMJjbInzx7f3iDYJEoPBgAQzGjJKdXDA/od6/public/values?alt=json",
+<script type="text/javascript">
+jQuery(document).ready(function() {
 
-	function (data) {	
-		$.each(data.feed.entry, function(i,entry) {	
+jQuery(function showstones() {
+jQuery.getJSON( "https://spreadsheets.google.com/feeds/list/11bRISASLiQkKMJjbInzx7f3iDYJEoPBgAQzGjJKdXDA/od6/public/values?alt=json",
+
+	function (data) {
+		jQuery.each(data.feed.entry, function(i,entry) {
 		if (true)
 		{
 			var append;
@@ -172,15 +172,15 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/11bRISASLiQkKMJjbInzx7f3i
 					append += '<hr>';
 					append += '<span class="evaluation">'+entry.gsx$evaluationtext.$t+'</span>';
 				append += '</div>';
-				
+
 			append += '</div>';
-			$('div.councilmembers').append(append);
+			jQuery('div.councilmembers').append(append);
 		}
 			});
 		});
-  
+
 	});
-	
+
 
 });
 </script>

@@ -114,9 +114,9 @@ if ($total_pages > 1) {
 <script type="text/javascript">
 
 // Set to white DB logo
-$(".db-logo-spectrum").css({'display':'block'});
+jQuery(".db-logo-spectrum").css({'display':'block'});
 // set navbar to white
-$("#topBar > li > a").css({'color': 'white'});
+jQuery("#topBar > li > a").css({'color': 'white'});
 
 	 /* Isotope
   * ==================== */
@@ -131,12 +131,12 @@ var iso = new Isotope( elem, {
 // var iso = new Isotope( '.grid', {
 //   layoutMode: 'packery'
 // });
-$("div.grid-item").hover(
+jQuery("div.grid-item").hover(
 	function () {
-		$(this).find(".picOverlay").stop().fadeIn();
+		jQuery(this).find(".picOverlay").stop().fadeIn();
 	},
 	function () {
-		$(this).find(".picOverlay").stop().fadeOut();
+		jQuery(this).find(".picOverlay").stop().fadeOut();
 	}
 );
 
@@ -153,15 +153,15 @@ function filterPhotos(tag) {
 
 
 function setupGrid() {
-	var allImgs = $(document).find('.photoblog-post-image');
-	allImgs.height($(window).width() / 4);
-	$(document).find('.grid-item').width($(document).find('.grid-wrapper').width() / 3);
+	var allImgs = jQuery(document).find('.photoblog-post-image');
+	allImgs.height(jQuery(window).width() / 4);
+	jQuery(document).find('.grid-item').width(jQuery(document).find('.grid-wrapper').width() / 3);
 	filterPhotos('*');
 }
 
 setupGrid();
 
-$(window).on('resize', function(){
+jQuery(window).on('resize', function(){
 	setupGrid();
 });
 

@@ -118,35 +118,36 @@ Template Name: Stonewall
 						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 2.1s;-moz-animation-delay: 2.1s;-ms-animation-delay: 2.1s;">l</h2>
 						<h2 class="animated fadeInDown" style="-webkit-animation-delay: 2.4s;-moz-animation-delay: 2.4s;-ms-animation-delay: 2.4s;">l</h2>
 			<h3>From the Daily Bruin</h3></div>
-		<div id="blurb"><p>For 98 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can click each stone to read about why it's there.  </p></div>
+		<div id="blurb"><p>For 100 years, the Daily Bruin has strived to hold UCLA accountable to the community it serves. We take that responsibility seriously. And when the Bruin is unjustly thwarted in its efforts to inform students, we believe you have a right to know. Each time our reporters are stonewalled in their attempts to inform readers, we will record that here, stone by stone. No stonewalling that week, no new stone. Below, you can click each stone to read about why it's there.  </p></div>
 		<ul id="stonewall" class="accordion" data-accordion></ul>
 	</div>
 </body>
 </html>
 
 <script type="text/javascript">
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
 var position = ["top","center","bottom"];
-//source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE
+//source file is https://docs.google.com/spreadsheets/d/1e9Fi-WgpB-JVF0v7jepWvywZ1IW4gV9IS39n9JnqXO4/edit#gid=0
+//owner is online@media.ucla.edu
 
-$(function showstones() {
-$.getJSON( "https://spreadsheets.google.com/feeds/list/10_sZS7Y5ljL8NTY2f6RRRQQUK1Ty6PqyGgkqMf4W7h4/od6/public/values?alt=json",
+jQuery(function showstones() {
+jQuery.getJSON( "https://spreadsheets.google.com/feeds/list/1e9Fi-WgpB-JVF0v7jepWvywZ1IW4gV9IS39n9JnqXO4/od6/public/values?alt=json",
 
 	function (data) {
-		//$('div#stonewall').append('<div class="stone"></div>');
-		$.each(data.feed.entry.reverse(), function(i,entry) {
+		//jQuery('div#stonewall').append('<div class="stone"></div>');
+		jQuery.each(data.feed.entry.reverse(), function(i,entry) {
 		if (entry.gsx$date.$t && entry.gsx$copystatus.$t)
 		{
 			var append = '<li class="accordion-navigation stone s'+(i%3+1)+'">';
 			append += '<a href="#panel'+i+'a" class="stone-title" id="t'+i+'"></a>';
 			append += '<div id="panel'+i+'a" class="content stone-desc" id="desc'+i+'"></div>';
 			append += '</li>';
-			$('ul#stonewall').append(append);
+			jQuery('ul#stonewall').append(append);
 			var title = '<b>' + entry.gsx$date.$t + ':</b> ' + entry.gsx$reason.$t;
 			var desc = entry.gsx$description.$t;
-			$('#t'+i+'').append(title);
-			$('#panel'+i+'a').append(desc);
+			jQuery('#t'+i+'').append(title);
+			jQuery('#panel'+i+'a').append(desc);
 		}
 			});
 		});

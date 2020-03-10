@@ -11,7 +11,7 @@
 	</div>
 </div><!-- end div.container -->
 </div>
- <a class="exit-off-canvas"></a>   
+ <a class="exit-off-canvas"></a>
     <!-- END DB FOOTER -->
 
   <!-- closing off-canvas-wrap db-off-canvas-wrap db-wrapper db-content inner wrap-->
@@ -24,7 +24,7 @@
   <?php roots_footer(); ?>
 	<span style="clear:both;display:block;"></span>
   <script src="https://cdn.jsdelivr.net/foundation/5.5.3/js/foundation.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script> 
+  <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery.lightSlider.js"></script>
 
 

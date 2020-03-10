@@ -3,7 +3,8 @@
  * Roots functions
  */
 
-if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
+// DEPRECATED:
+// if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
 require_once locate_template('/inc/util.php');            // Utility functions
 require_once locate_template('/inc/config.php');          // Configuration and constants
@@ -61,3 +62,106 @@ function roots_setup() {
 }
 
 add_action('after_setup_theme', 'roots_setup');
+
+// Re-adds Shortlinks
+add_filter( 'get_shortlink', function( $shortlink ) {return $shortlink;} );
+
+
+// !!! Rest API Routes !!!
+
+register_sidebar( array(
+        'name'          => __( 'REST API', 'caeruleum' ),
+        'id'            => 'rest-api',
+) );
+
+// Add Media Email to View
+register_rest_field( 'user', 'media_email',
+    array(
+        'get_callback'    => function ( $user ) {
+            return $user['email'];
+        },
+        'update_callback' => null,
+        'schema'          => null,
+    )
+);
+
+// Add Coauthors
+if ( function_exists('get_coauthors') ) {
+    add_action( 'rest_api_init', 'custom_register_coauthors' );
+    function custom_register_coauthors() {
+        register_rest_field( 'post',
+            'coauthors',
+            array(
+                'get_callback'    => 'custom_get_coauthors',
+                'update_callback' => null,
+                'schema'          => null,
+            )
+        );
+    }
+    function custom_get_coauthors( $object, $field_name, $request ) {
+        $coauthors = get_coauthors($object['id']);
+ 
+        $authors = array();
+        foreach ($coauthors as $author) {
+            $authors[] = array(
+                'display_name' => $author->display_name,
+                'user_nicename' => $author->user_nicename,
+                'id' => $author->ID,
+            );
+        };
+        return $authors;
+    }
+}
+
+// Fetch NexGenGallery
+function fetch_gallery( $request ) {
+  //get parameters from request
+  $params = $request->get_params();
+  $gallery = $params[id];
+  if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
+		// 	// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
+	global $nggdb;
+  $galleryt = $nggdb->get_gallery($gallery, 'sortorder', 'ASC', true, 0, 0);
+  $images = array();
+  foreach($galleryt as $image) {
+    array_push($images, array(
+      'image' => $image->imageURL,
+      'caption' => $image->description,
+      'credit' => '('.$image->alttext .'/Daily Bruin)',
+    ));
+  }
+  return $images;
+}
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'db/v1', '/gallery/(?P<id>\d+)', array(
+    'methods' => 'GET',
+    'callback' => 'fetch_gallery',
+    'args' => array(
+      'id' => array(
+        'validate_callback' => function($param, $request, $key) {
+          return is_numeric( $param );
+        }
+      ),
+    ),
+  ) );
+});
+
+/*
+register_rest_field( 'post',
+'blocks',
+array(
+    'get_callback'    => 'rest_get_blocks',
+    'update_callback' => null,
+    'schema'          => null,
+));
+*/
+
+/*
+function rest_get_blocks($object) {
+    $post = get_post($object['id']);
+    if ($post instanceof WP_Post) {
+        return parse_blocks($post->post_content);
+    }
+    return array(["missed if statement"]);
+}*/

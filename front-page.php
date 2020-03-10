@@ -14,6 +14,7 @@
   $opinion_cat = get_category_by_slug('opinion')->term_id;
 ?>
   <div class="row db-story" data-equalizer>
+
         <div class="large-6 medium-8 large-push-2 medium-push-4 columns db-story-center" data-equalizer-watch>
     <?php
       $args = array( 'numberposts' => 1, 'tag' => 'db-story-c1' );
@@ -177,8 +178,8 @@
               <div>
               <?php $quadid = get_cat_ID( 'The Quad' ); ?>
                 <div>
-                  <a href="http://dailybruin.com/category/quad/">
-                    <img src="http://dailybruin.com/images/2015/12/Quad-explainerbelow-01.png">
+                  <a href="https://dailybruin.com/category/quad/">
+                    <img src="https://dailybruin.com/images/2015/12/Quad-explainerbelow-01.png">
                   </a>
                 </div>
               </div>
@@ -213,13 +214,14 @@
 
               <!--  this used to be a MOJO refer
               <div class="row db-image text-center hide-for-medium hide-for-small">
-                <a href="http://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
+                <a href="https://mojo.dailybruin.com"><img src="/img/mojo-webfiller.jpg"/></a>
               </div> -->
               <div class="db-ad" style="margin-top: 1rem;">
                 <?php get_template_part('ad','side'); ?>
               </div>
             </div>
     </div>
+    <!-- <img src="https://i.imgur.com/IKDfEji.jpg" style="max-width: 728px; margin: auto;"> -->
     <div class="row db-divide"></div>
       <div class="row">
          <div class="db-story-m large-9 medium-12 columns hide-for-small">
@@ -473,7 +475,7 @@
                 <a href="//prime.dailybruin.com"><img src="/img/prime-webbanner.jpg"/></a>
               </div>
         <div class="row" id="featuredProject">
-          <div style="padding: 5px 20px;">
+          <!-- <div style="padding: 5px 20px;">
              <h1>atomic city</h1>
              <a href="//stack.dailybruin.com" class="right"><h4>More features</h4></a>
              <span style="display:block;width:100%;clear:both;"></span>
@@ -481,7 +483,8 @@
                         <p>The current contract for the Los Alamos National Laboratory expires in September 2018, and the UC, which has been involved in the management of the lab since its inception in varying capacities, submitted a bid last year to manage the lab.</p>
              <a href="https://features.dailybruin.com/2018/atomic-city/index.html" class="featuredlink">View the stories, videos and graphics &nbsp;&raquo;</a>
              <span style="display:block;width:100%;clear:both"></span>
-          </div>
+          </div> -->
+          <a href="https://prime.dailybruin.com"><img src="https://dailybruin.com/images/2020/01/Image-from-iOS-3.jpg" style="width: 100%;"></a>
         </div><!-- end div#featuredProject -->
         <div class="row">
             <div class="large-12 columns advertisment featured-ads">
@@ -512,5 +515,49 @@
         </div>
         <?php wp_reset_query(); ?>
   </div><!-- end div.container -->
+
+  <!-- NEWSLETTER POPUP -->
+  <script src="./js/newsletter.js?v=12"></script>
+  <div id="smokescreen" onclick="closeNewsletterPopup()" style="z-index: 10000; height: 100vh; width: 100vw; display: none; background-color: #0006; position: fixed; top: 0; left: 0; right: 0;"></div>
+  <div id="newsletterPopup" style="z-index: 10001; position: fixed; width: 80%; display: none; max-width: 550px; left: 0px; right: 0px; top: 100px; background-color: rgb(255, 255, 255); padding: 20px; margin: auto; text-align: center; box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;">
+<div style="
+    border: 3px solid #c4c4c4;
+    padding: 10px;
+"><div style="text-align: left; width: 100%;"><div style="font-weight: bold; font-size: 16px; font-family: arial, sans serif; cursor: pointer" onclick="closeNewsletterPopup()">X</div></div>
+<form action="//dailybruin.us15.list-manage.com/subscribe/post?u=15fa3629ea46e975a3174fe51&amp;id=ee621e262a" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+<div style="
+    text-align: left;
+    padding: 0 10px;
+"><h2 style="
+    font-size: 2.75rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #0080c6;
+">Get what's Bruin,</h2>
+<h3 style="
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #5f5f5f;
+">every morning,<br>
+right in your inbox.</h3>
+    </div>
+
+<div style="
+    display: flex;
+    align-items: stretch;
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+"><input type="email" value="" name="EMAIL" class="required email" placeholder="Enter your e-mail" style="
+      font-size: 1rem;
+      border: 3px solid #c4c4c4;
+      margin: 0;
+      height: 38px;
+    ">
+<input type="submit" value="Subscribe" name="subscribe" class="button" onclick="subscribeToNewsletter()" style="background-color: #0080c6;margin: 0 0 0 20px;padding: 5px 30px;font-family: 'PT Serif', serif;"></div>
+
+
+
+    </form></div></div>
 
 <?php get_footer(); ?>
