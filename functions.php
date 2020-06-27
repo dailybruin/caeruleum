@@ -66,7 +66,6 @@ add_action('after_setup_theme', 'roots_setup');
 // Re-adds Shortlinks
 add_filter( 'get_shortlink', function( $shortlink ) {return $shortlink;} );
 
-
 // !!! Rest API Routes !!!
 
 register_sidebar( array(
@@ -84,6 +83,14 @@ register_rest_field( 'user', 'media_email',
         'schema'          => null,
     )
 );
+
+// removes restriction of having one post when listing user
+add_filter('rest_user_query', 'remove_has_published_posts_from_api_user_query', 10, 2);
+function remove_has_published_posts_from_api_user_query($prepared_args, $request)
+{
+    unset($prepared_args['has_published_posts']);
+    return $prepared_args;
+}
 
 // Add Coauthors
 if ( function_exists('get_coauthors') ) {
@@ -113,11 +120,35 @@ if ( function_exists('get_coauthors') ) {
     }
 }
 
+// Add Related Posts
+add_action( 'rest_api_init', 'custom_register_related' );
+    function custom_register_related() {
+        register_rest_field( 'post',
+            'related_posts',
+            array(
+                'get_callback'    => 'custom_get_related',
+                'update_callback' => null,
+                'schema'          => null,
+            )
+        );
+    }
+function custom_get_related( $object, $field_name, $request ) {
+  global $yarpp;
+  $related = $yarpp->get_related($object['id']);
+  $relatedposts = array();
+  foreach ($related as $relatedpost) {
+    $relatedposts[] = array(
+      'id' => $relatedpost->ID,
+    );
+  };
+  return $relatedposts;
+}
+
 // Fetch NexGenGallery
 function fetch_gallery( $request ) {
   //get parameters from request
   $params = $request->get_params();
-  $gallery = $params[id];
+  $gallery = $params['id'];
   if ($gallery != '-1') //THIS PART DONE BY NEIL 2012
 		// 	// echo do_shortcode('[nggallery id='.$gallery.' template="galleryview" images=0]');
 	global $nggdb;
@@ -133,6 +164,18 @@ function fetch_gallery( $request ) {
   return $images;
 }
 
+function fetch_links() {
+  $links = wp_list_bookmarks(array(
+                        'title_li'                      =>      __(''),
+                        'title_before'          =>      '',
+                        'title_after'           =>      '',
+                        'category_before'       =>      '',
+                        'category_after'        =>      '',
+                        'categorize'            =>      0,
+                        'before'                        =>      '<li>'));
+  return $links;                      
+}
+
 add_action( 'rest_api_init', function () {
   register_rest_route( 'db/v1', '/gallery/(?P<id>\d+)', array(
     'methods' => 'GET',
@@ -145,23 +188,18 @@ add_action( 'rest_api_init', function () {
       ),
     ),
   ) );
+  register_rest_route( 'db/v1', '/links', array(
+    'methods' => 'GET',
+    'callback' => 'fetch_links',
+  ) );
 });
 
-/*
-register_rest_field( 'post',
-'blocks',
-array(
-    'get_callback'    => 'rest_get_blocks',
-    'update_callback' => null,
-    'schema'          => null,
-));
-*/
+// make preview links work on the test site
+function set_headless_preview_link( $link ) {
+	return 'https://dailybruin.com/'
+		. '_preview/'
+		. get_the_ID() . '/'
+		. wp_create_nonce( 'wp_rest' );
+}
 
-/*
-function rest_get_blocks($object) {
-    $post = get_post($object['id']);
-    if ($post instanceof WP_Post) {
-        return parse_blocks($post->post_content);
-    }
-    return array(["missed if statement"]);
-}*/
+add_filter( 'preview_post_link', 'set_headless_preview_link' );

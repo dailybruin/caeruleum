@@ -92,13 +92,13 @@ add_action( 'wp_before_admin_bar_render', 'uploading_doc_link' );
 // Add the ability to link to external sites by creating a post
 // in WordPress. It's not a symantically correct solution but it
 // works just fine for what we need, especially in 9 lines of code.
-function db_link_stories($permalink, $post, $leavename)
+function db_link_stories($permalink, $post = null, $leavename = null)
 {
     if(!$post)
         global $post;
-    $dblink = get_post_meta($post->ID,'db_link',true);
+		$dblink = get_post_meta($post->ID,'db_link',true);
     if($dblink)
-        return $dblink;
+				return $dblink;
     else
         return $permalink;
 }

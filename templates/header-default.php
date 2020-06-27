@@ -246,9 +246,24 @@
               </div>
 
               <!-- BREAKING COMPONENT -->
-              <!-- <div class="breaking-banner" style="">
-                  <h3 style="">BREAKING:</h3><a href="https://dailybruin.com/2020/03/06/results-of-three-ucla-students-tested-for-covid-19-come-back-negative">Results of three UCLA students tested for COVID-19 come back negative</a>
-              </div> -->
+              <div class="breaking-banner" style="margin:0;">
+                <?php 
+                $breakingExists = false;
+                ob_start();
+                wp_nav_menu(array(
+                  'menu' => 'breaking',
+                  'container' => 'div',
+                  'fallback_cb' => ''
+                  ));
+                $navmenu = ob_get_contents();
+                ob_end_clean();
+                if($navmenu !== ''):
+                  ?>
+                <?php $breakingExists = true;?>
+                <h3>BREAKING: </h3>
+                <?php echo $navmenu; ?>
+              <?php endif; ?>
+            </div>
 
               <div class="small-6 columns hide-for-small" style="margin:0;">
                 <?php ob_start();
@@ -258,7 +273,7 @@
                   ));
                 $navmenu = ob_get_contents();
                 ob_end_clean();
-                if($navmenu !== ''):
+                if($navmenu !== '' && !($breakingExists)):
                   ?>
                 <h3 class="in-the-news">In the news: </h3>
                 <?php echo $navmenu; ?>

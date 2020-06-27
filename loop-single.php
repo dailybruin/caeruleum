@@ -178,6 +178,10 @@
 						the_content();
 					} ?>
 				</div>
+				<!-- Coronavirus Tags -->
+				<?php if (has_tag(22934)): ?>
+				<a style="font-size: 0.9rem; font-weight: bold;" href="https://features.dailybruin.com/2020/covid-19/">Follow all of our coronavirus coverage <u>here</u></a>
+				<?php endif; ?>
 				<!--<p class="author-contact"> -->
 				<?php
 				if (get_field('db_article_format') == 'default' && in_array('hide_author_blurb', get_field('db_display_options'))) {

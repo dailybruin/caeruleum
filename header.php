@@ -44,15 +44,16 @@
   <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png" />
   <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"type="text/javascript"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28181852-28"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28181852-29"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-28181852-28');
+  gtag('config', 'UA-28181852-29');
 </script>
+
 
   <!--<script src="//monitor404.s3.amazonaws.com/monitor404.min.js"></script>
   <script>_404_SETTINGS = {exclude: '#wpadminbar a, .dropdown-toggle'}</script>-->

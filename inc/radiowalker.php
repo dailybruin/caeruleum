@@ -25,17 +25,17 @@ class Walker_Category_RadioList extends Walker {
 	var $tree_type = 'category';
 	var $db_fields = array ('parent' => 'parent', 'id' => 'term_id'); //TODO: decouple this
 
-	function start_lvl(&$output, $depth, $args) {
+	function start_lvl(&$output, $depth = 0, $args = Array()) {
 		$indent = str_repeat("\t", $depth);
 		$output .= "$indent<ul class='children'>\n";
 	}
 
-	function end_lvl(&$output, $depth, $args) {
+	function end_lvl(&$output, $depth = 0, $args = Array()) {
 		$indent = str_repeat("\t", $depth);
 		$output .= "$indent</ul>\n";
 	}
 
-	function start_el(&$output, $category, $depth, $args) {
+	function start_el(&$output, $object, $depth = 0, $args = Array(), $current_object_id = 0) {
 		extract($args);
 		if ( empty($taxonomy) )
 			$taxonomy = 'category';
@@ -49,7 +49,7 @@ class Walker_Category_RadioList extends Walker {
 		$output .= "\n<li id='{$taxonomy}-{$category->term_id}'$class>" . '<label class="selectit"><input value="' . $category->slug . '" type="radio" name="'.$name.'[]" id="in-'.$taxonomy.'-' . $category->term_id . '"' . checked( in_array( $category->term_id, $selected_cats ), true, false ) . disabled( empty( $args['disabled'] ), false, false ) . ' /> ' . esc_html( apply_filters('the_category', $category->name )) . '</label>';
 	}
 
-	function end_el(&$output, $category, $depth, $args) {
+	function end_el(&$output, $object, $depth = 0, $args = Array()) {
 		$output .= "</li>\n";
 	}
 }

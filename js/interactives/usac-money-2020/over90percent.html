@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body style="height: 100%; width: 100%; padding: 0; margin: 0;">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+
+  <canvas style="height: 100vh; width: 100%;" id='barchart2'></canvas>
+
+  <script>
+    let feeNames2 = [
+      'THE GREEN INITIATIVE FUND',
+      '#UCLAWellness Initiative: CSC',
+      'Student Wellness Commission',
+      'USAC CSC MINI FUND FEES',
+      '#UCLAWellness Initiative: Contingency',
+      'SREC/CPO Fee',
+      'Academic Affairs Commission',
+      'CAC Arts Restoring Community Fee',
+      'USAC PROG FEES',
+    ];
+
+    let data2 = {
+      labels: feeNames2,
+      percents: ['60', '63', '65', '73', '76', '80', '82', '83', '85'],
+      datasets: [
+        {
+          label: 'Expenses',
+          backgroundColor: '#587ebf',
+          data: [
+            195807.41,
+            189675.04,
+            73515.92,
+            65900.25,
+            238363.54,
+            359595.94,
+            36784.72,
+            93465.01,
+            154182.67,
+          ],
+          datalabels: {
+            labels: {
+              title: null,
+            },
+          },
+        },
+        {
+          label: 'Available',
+          backgroundColor: '#f95d6a',
+          data: [
+            129449.12,
+            110987.41,
+            39246.58,
+            23984.0,
+            76351.46,
+            90884.09,
+            8320.28,
+            18696.09,
+            26237.33,
+          ],
+        },
+      ],
+    };
+
+    let options2 = {
+      title: {
+        display: true,
+        text: 'Funds using under 90% of allocated money from 2018-2019 Budget Report',
+      },
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              min: 0,
+              callback: function (value) {
+                return value.toLocaleString('en-US', {
+                  style: 'currency',
+                  currency: 'USD',
+                  minimumFractionDigits: 0,
+                });
+              },
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Amount',
+            },
+            stacked: true,
+          },
+        ],
+        xAxes: [
+          {
+            ticks: {
+              autoSkip: false,
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Student Fee',
+            },
+            stacked: true,
+          },
+        ],
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+        callbacks: {
+          label: function (tooltipItem, data) {
+            var label = data.datasets[tooltipItem.datasetIndex].label || '';
+            if (label) {
+              label += ': ';
+            }
+            label += tooltipItem.yLabel.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              minimumFractionDigits: 2,
+            });
+            return label;
+          },
+        },
+      },
+      plugins: {
+        datalabels: {
+          align: 'end',
+          anchor: 'end',
+          formatter: function (value, context) {
+            return context.chart.data.percents[context.dataIndex] + '% used';
+          },
+        },
+      },
+    };
+
+    let ctx2 = document.getElementById('barchart2');
+    var barchart2 = new Chart(ctx2, {
+      type: 'bar',
+      data: data2,
+      plugins: [ChartDataLabels],
+      options: options2,
+    });
+  </script>
+
+</body>
+
+</html>

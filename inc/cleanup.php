@@ -443,7 +443,7 @@ class Roots_Nav_Walker extends Walker_Nav_Menu {
     return preg_match('/(current[-_])|active|dropdown/', $classes);
   }
 
-  function start_lvl(&$output, $depth) {
+  function start_lvl(&$output, $depth = 0, $args = Array()) {
     if (current_theme_supports('bootstrap-top-navbar')) {
       $output .= "\n<ul class=\"dropdown-menu\">\n";
     } else {
@@ -451,7 +451,7 @@ class Roots_Nav_Walker extends Walker_Nav_Menu {
     }
   }
 
-  function start_el(&$output, $item, $depth, $args) {
+  function start_el(&$output, $item, $depth = 0, $args = Array(), $id = 0) {
     global $wp_query;
     $indent = ($depth) ? str_repeat("\t", $depth) : '';
 

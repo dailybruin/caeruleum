@@ -13,8 +13,11 @@
 	<div class="small-9 columns" id="classified-ads">
 		<h1>Daily Bruin Classified Ads</h1>
 		<hr>
-		<p>Daily Bruin classifieds are the best way to find qualified applicants for your job openings or rental vacancies. Your classified ad appears every day in the Daily Bruin and online and weekly in the Corsair, the campus newspaper at nearby Santa Monica City College.</p>
-		<p>Deadline for placing an ad is 12 noon, one business day before publication. Payment must be received before deadline. In order to receive the flat rate, the ad must be 20 words or fewer. Anything with a space before and after is counted as one word. We reserve the right to edit ads.</p>
+		<p>Daily Bruin classifieds are the best way to find qualified applicants for your job openings or rental vacancies. Your classified ad appears every day in the Daily Bruin, Daily Bruin online, and certain UCLA related Facebook groups when applicable.</p>
+		<p>The deadline for placing an ad is 12 noon, one business day before publication. Payment must be received before deadline. In order to receive the flat rate, the ad must be 20 words or fewer. Anything with a space before and after is counted as one word. We reserve the right to edit ads.</p>
+		<p><b>UPDATE SPRING 2020:</b>  Due to the worldwide Coronavirus Pandemic, UCLA has moved classes to online for spring 2020 and the first half of summer.  The Daily Bruin will publish online, and classifieds will be offered on a weekly basis beginning April 2020 until things return to normal.  Our prices will be weekly for ads to go online and we will push all our classifieds like housing and jobs for UCLA students on appropriate Facebook pages. </p> 
+		<p>To reach students online while they are away from campus, you can place an ad by selecting the green button below.</p>
+		<p>We will be open and working remotely during these stay at home orders.  The best way to reach us is at the email <a href="mailto:classifieds@media.ucla.edu">classifieds@media.ucla.edu</a></p>
 		<p>You can also order over the phone by calling <a href="tel:3108252221">310-825-2221</a>.</p>
 		</br>
 		<div class="side-head">

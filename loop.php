@@ -270,7 +270,7 @@
 
 <!-- MULTIMEDIA CATEGORY STORY LIST -->
 <?php else: ?>
-  <? if ($categoryTitle == "Video"): ?>
+  <?php if ($categoryTitle == "Video"): ?>
   <div class="row">
     <?php $i=0;
           $j=0;
@@ -334,7 +334,7 @@
     <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
   </div>
-<? elseif ($categoryTitle == "Podcasts"): ?>
+<?php elseif ($categoryTitle == "Podcasts"): ?>
   <div class="row">
     <?php $i=0;
           $j=0;
@@ -407,6 +407,7 @@
     <?php endif; ?>
     <?php endwhile; /* End loop */ ?>
   </div>
+  <?php endif; ?>
   <?php endif; ?>
 
 
